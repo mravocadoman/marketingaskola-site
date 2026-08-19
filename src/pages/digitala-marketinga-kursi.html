@@ -3,114 +3,63 @@ layout: page.njk
 title: "Digitālā Mārketinga Kursi"
 description: "Mūsu praktiskie digitālā mārketinga kursi palīdzēs Tev apgūt Meta un TikTok reklāmas, SEO, Google ads un citas svarīgas zināšanas."
 permalink: "/digitala-marketinga-kursi/"
-heroTitle: "Digitālā Mārketinga Kursi uzņēmējiem un mārketinga speciālistiem"
-heroSub: "Mūsu praktiskie digitālā mārketinga kursi palīdzēs Tev apgūt Meta un TikTok reklāmas, SEO, Google ads un citas svarīgas zināšanas."
-heroChip: "Kursi"
 ---
-
-<section class="sec sec--dark">
+<section class="page-hero">
   <div class="container">
-    <div class="row cols-1">
-      <div class="col">
-        <p>Mūsu digitālā mārketinga kursi palīdzēs Tev <strong>izveidot, vadīt un optimizēt digitālā mārketinga stratēģiju, kas dod izmērāmu atdevi</strong>. Sadarbībā ar nozares vadošajiem ekspertiem, esam izstrādājuši intensīvu apmācību programmu, kas palīdzēs Tev un Tavam uzņēmumam sasniegt augstākās digitālā mārketinga virsotnes.</p>
-      </div>
+    <span class="chip">Kursi</span>
+    <h1>Digitālā mārketinga kursi</h1>
+    <p class="sub">Praktiski kursi uzņēmējiem un mārketinga speciālistiem — izveido, vadi un optimizē digitālā mārketinga stratēģiju, kas dod izmērāmu atdevi. Māca nozares eksperti, kas ikdienā strādā ar reālām kampaņām.</p>
+    <div class="chips">
+      <span>150–300 € + PVN</span>
+      <span>Grupās no 4 dalībniekiem</span>
+      <span>Atlaides kolektīviem</span>
     </div>
-    <div class="row cols-1">
-      <div class="col center">
+    <div class="btn-wrap">
+      <a class="btn" href="#piesakies">Piesakies kursiem</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Kursu katalogs</span>
         <h2>Praktiski kursi no nozares ekspertiem</h2>
-        <div class="divider"></div>
       </div>
+      <p class="lead">Sadarbībā ar vadošajiem ekspertiem esam izstrādājuši intensīvu apmācību programmu — no Meta reklāmu pamatiem līdz stratēģijai vadītājiem.</p>
     </div>
-    <div class="row cols-2">
-      <div class="col">
-        <figure class="img"><a href="/meta-reklamas-kurss/"><img src="/img/2025/03/Copy-of-Digital-1200-628px.webp" alt="meta reklāma" loading="lazy"></a></figure>
-        <h3>Meta Reklāmas Kurss – Izveido Peļņu Nesošas Facebook &amp; Instagram Kampaņas</h3>
-        <p>Iesācējiem • 4 stundas</p>
-        <p>✔ Apgūsti Meta Ads teorētisko pamatu un platformas iespējas<br>
-        ✔ Galvenos iestatījumus: kampaņu struktūra, reklāmu testi un optimizācija<br>
-        ✔ Sapratni par to kā pienācīgi jāsagatavojas pirms Facebook un Instagram reklāmu startēšanas</p>
-        <p>Uzzini vairāk</p>
-      </div>
-      <div class="col">
-        <figure class="img"><a href="/meta-reklamas-kurss/"><img src="/img/2025/03/Grey-Course-Banners.webp" alt="meta reklāmas kursi" loading="lazy"></a></figure>
-        <h3>Padziļināts Facebook un Instagram Reklāmas Kurss Speciālistiem</h3>
-        <p>Speciālistiem • 4 stundas</p>
-        <p>✔ Padziļināta un praktiska izpratne par Facebook un Instagram reklāmām un to stratēģisko pielietojumu<br>
-        ✔ Uzlabota mērķauditorijas atlase: remārketings un Lookalike audiences<br>
-        ✔ Facebook Pixel un Conversion API (CAPI) iestatīšana</p>
-        <p>Uzzini vairāk</p>
-      </div>
-    </div>
-    <div class="row cols-2">
-      <div class="col">
-        <figure class="img"><a href="/seo-kursi/"><img src="/img/2025/03/Copy-of-Digital-1200-628px-1.webp" alt="meta reklāma" loading="lazy"></a></figure>
-        <h3>SEO Kurss – Apgūsti Meklētājprogrammu Pamatus!</h3>
-        <p>Iesācējiem • 4 stundas</p>
-        <p>✔ SEO pamati un padziļināta optimizācija<br>
-        ✔ Kā veidot saturu, kas piesaista organisko datplūsmu<br>
-        ✔ Atslēgvārdu izpēte, tehniskais SEO un backlink stratēģija</p>
-        <p>Uzzini vairāk</p>
-      </div>
-      <div class="col">
-        <figure class="img"><a href="/digitala-marketinga-kursi/"><img src="/img/2025/04/Grey-Course-Banners.webp" alt="padziļinātie seo kursi" loading="lazy"></a></figure>
-        <h3>Padziļināts SEO Kurss – Kā Nokļūt Google Pirmajā Lapā?</h3>
-        <p>Speciālistiem • 4 stundas</p>
-        <p>✔ Kā sasniegt augstākās pozīcijas Google<br>
-        ✔ Apgūsti padziļinātas SEO metodes<br>
-        ✔ Uzzini kā uzraudzīt SEO speciālistus un aģentūras</p>
-        <p>Uzzini vairāk</p>
-      </div>
-    </div>
+    {% set catalogExclude = "" %}
+    {% include "course-catalog.njk" %}
   </div>
 </section>
 
-<section class="sec">
+<section class="sec sec--soft">
   <div class="container">
-    <div class="row cols-1">
-      <div class="col">
-        <p>Ja kāds no šiem apgalvojumiem atbilst Tev:</p>
-        <div class="blurb"><h3>Vēlies uzlabot savas digitālā mārketinga prasmes un piesaistīt vairāk klientu;</h3></div>
-        <div class="blurb"><h3>Meklē praktisku pieeju, ne tikai teorētiskas lekcijas;</h3></div>
-        <div class="blurb"><h3>Gribi mācīties no pieredzējušiem nozares ekspertiem, kas reāli strādā ar digitālo reklāmu un stratēģiju,</h3></div>
-        <p>tad piesakies kursiem jau šodien!</p>
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Kāpēc mūsu kursi</span>
+        <h2>Zināšanas, ko vari pielietot jau nākamajā dienā</h2>
       </div>
+      <p class="lead">Ne tikai lekcijas — konkrēti soļi un metodes, kas palīdz palielināt pārdošanu un optimizēt mārketinga izmaksas.</p>
     </div>
-    <div class="row cols-1">
-      <div class="col">
-        <h4>Kursu cena</h4>
-        <h2>150-300eur</h2>
-        <h4>Pieejamas atlaides plašākiem kolektīviem</h4>
-        <p class="btn-wrap"><a class="btn" href="#piesakies">Piesakies!</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="container">
-    <div class="row cols-1">
-      <div class="col center">
-        <h2>Kāpēc Izvēlēties Mūsu Kursus</h2>
-        <div class="divider"></div>
-      </div>
-    </div>
-    <div class="row cols-3">
-      <div class="col">
-        <div class="blurb"><h3>Pieeja jaunākajām tendencēm un rīkiem</h3><p>Saņemsi aktuālu informāciju par jaunākajām digitālā mārketinga metodēm, platformām un stratēģijām.</p></div>
-      </div>
-      <div class="col">
-        <div class="blurb"><h3>Atbalsts un resursi pēc kursa</h3><p>Pēc kursa beigām būs pieejami papildus materiāli, Q&amp;A sesijas un iespēja piedalīties diskusiju grupās.</p></div>
-      </div>
-      <div class="col">
-        <div class="blurb"><h3>Pielietojamas zināšanas un reāls rezultāts</h3><p>Ne tikai “lekcijas”, bet konkrēti soļi un metodes, kas palīdzēs palielināt pārdošanu, piesaistīt vairāk klientu un optimizēt mārketinga izmaksas.</p></div>
-      </div>
-    </div>
-    <div class="row cols-2">
+    <div class="row cols-3 top">
       <div class="col">
         <div class="blurb"><h3>Mācies no pieredzējušiem ekspertiem</h3><p>Mūsu lektori ir profesionāļi ar vairāk nekā 10 gadu pieredzi digitālajā mārketingā un reklāmā.</p></div>
       </div>
       <div class="col">
-        <div class="blurb"><h3>Efektīva un fokusēta mācību programma</h3><p>Strukturēts apmācību plāns ar teoriju, praktisko darbu un Q&amp;A sesijām.</p></div>
+        <div class="blurb"><h3>Pieeja jaunākajām tendencēm un rīkiem</h3><p>Saņemsi aktuālu informāciju par jaunākajām digitālā mārketinga metodēm, platformām un stratēģijām.</p></div>
+      </div>
+      <div class="col">
+        <div class="blurb"><h3>Efektīva un fokusēta programma</h3><p>Strukturēts apmācību plāns ar teoriju, praktisko darbu un Q&amp;A sesijām.</p></div>
+      </div>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <div class="blurb"><h3>Atbalsts un resursi pēc kursa</h3><p>Pēc kursa beigām būs pieejami papildu materiāli, Q&amp;A sesijas un iespēja piedalīties diskusiju grupās.</p></div>
+      </div>
+      <div class="col">
+        <div class="blurb"><h3>Pielietojamas zināšanas un reāls rezultāts</h3><p>Konkrēti soļi un metodes, kas palīdzēs palielināt pārdošanu, piesaistīt vairāk klientu un optimizēt mārketinga izmaksas.</p></div>
       </div>
     </div>
   </div>
@@ -118,35 +67,37 @@ heroChip: "Kursi"
 
 <section class="sec">
   <div class="container">
-    <div class="row cols-2">
+    <div class="row cols-2 top">
       <div class="col">
-        <figure class="img"><img src="/img/2025/03/Grey-Course-Banners-2.webp" alt="" loading="lazy"></figure>
+        <span class="eyebrow">Kam paredzēti</span>
+        <h2>Šie kursi ir Tev, ja esi</h2>
+        <ul class="tick-list" style="margin-top:20px">
+          <li>Uzņēmuma īpašnieks vai vadītājs, kas vēlas attīstīt biznesu digitālajā vidē.</li>
+          <li>Mārketinga speciālists, kas grib uzlabot savas prasmes un rezultātus.</li>
+          <li>E-komercijas vai pārdošanas vadītājs, kas vēlas vairāk klientu ar mazākām izmaksām.</li>
+          <li>Ikviens, kas vēlas praktiskas, nevis akadēmiskas zināšanas.</li>
+        </ul>
       </div>
       <div class="col">
-        <h2>Kam paredzēti digitālā mārketinga kursi</h2>
-        <div class="divider"></div>
-        <div class="blurb"><h3>Uzņēmumu īpašniekiem un vadītājiem, kas vēlas attīstīt biznesu digitālajā vidē</h3></div>
-        <div class="blurb"><h3>Mārketinga speciālistiem, kas grib uzlabot savas prasmes un rezultātus</h3></div>
-        <div class="blurb"><h3>E-komercijas un pārdošanas vadītājiem, kas vēlas vairāk klientu ar mazākām izmaksām</h3></div>
-        <div class="blurb"><h3>Ikvienam, kas vēlas praktiskas, nevis akadēmiskas zināšanas</h3></div>
+        <span class="eyebrow">Cena</span>
+        <h2>150–300 € + PVN</h2>
+        <p style="margin-top:16px">Cena atkarīga no kursa un grupas lieluma. Pieejamas atlaides plašākiem kolektīviem — apmāci visu komandu vienā reizē.</p>
+        <p>Ja vēlies uzlabot savas digitālā mārketinga prasmes, mācīties praktiski un no pieredzējušiem nozares ekspertiem — piesakies jau šodien.</p>
+        <div class="btn-wrap"><a class="btn" href="#piesakies">Piesakies kursiem</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<section id="piesakies" class="sec sec--soft">
   <div class="container">
-    <div class="row cols-1">
-      <div class="col center">
-        <div id="piesakies"><h2><strong>PIESAKIES jau šodien!</strong></h2></div>
-        <div class="divider"></div>
-        <p>Ja vēlies, lai Tavs uzņēmums pārvar digitālo prasmju plaisu un pilnībā izmantotu savu potenciālu, piesakies kursiem jau šodien!</p>
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Pieteikšanās</span>
+        <h2>Piesakies jau šodien</h2>
       </div>
+      <p class="lead">Norādi, kurš kurss Tevi interesē — sazināsimies un saskaņosim nākamās grupas laiku. Pieteikšanās neuzliek saistības.</p>
     </div>
-    <div class="row cols-1">
-      <div class="col">
-        <div class="form-embed"><iframe src="https://tally.so/embed/nrvEB2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" title="Kontaktforma"></iframe></div>
-      </div>
-    </div>
+    <div class="form-embed" style="max-width:820px"><iframe src="https://tally.so/embed/nrvEB2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" title="Pieteikuma forma"></iframe></div>
   </div>
 </section>

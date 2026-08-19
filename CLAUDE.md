@@ -103,6 +103,25 @@ All links that 404'd on the live WordPress site have been repointed (19 Aug
 `/seo-pakalpojumi/` → `/pakalpojumi/`, `/improvizacija-un-izklaide/` →
 `/video-reklama/`. If the owner ever creates those pages, point the links back.
 
+## Course pages (rebuilt by hand, 19 Aug 2026)
+
+`meta-reklamas-kurss`, `seo-kursi`, `tiktok-kursi`, `digitala-marketinga-kursi`
+use the course-sales layout: in-page `.page-hero` with fact `.chips`,
+`.course-layout` (body + sticky `.course-aside` with `.course-card` offer box
+and `.instructor-card`), `.tick-list`, `.faq` module accordions, shared
+catalog include `src/_includes/course-catalog.njk` (set `catalogExclude`
+before including). Facts are owner data — price 150 € + PVN, levels, hours,
+instructors (Rihards / Matīss Seipulāns / Madara Dakse). Data decisions made
+during the rebuild, revisit with the owner if wrong:
+- The stale "Nākamais norises datums: 17. Jūnijs" on the Meta course was
+  replaced with evergreen copy ("datumu precizēsim pēc pieteikšanās").
+- Meta course hours: page said 3 h, catalog card said 4 h — normalized to
+  the course page's 3 h.
+- TikTok course keeps its honest "Šobrīd netiek organizēts" badge and has no
+  signup form (none existed) — CTAs go to /sazinies/.
+- Catalog courses without own pages (padziļinātais Meta/SEO, stratēģija
+  vadītājiem) link to the hub form, not to themselves.
+
 ## Copy rules
 
 - **Consultations are PAID** (€100/h, €60/30 min — see
