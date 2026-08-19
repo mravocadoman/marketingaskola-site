@@ -9,19 +9,33 @@ the original.
 ## Stack and layout
 
 - **Eleventy 3** (Nunjucks templates), no client framework, one plain CSS file.
-- **Design system v4 "editorial"** (19 Aug 2026). **OWNER RULES: no gradients
-  anywhere, ever; WCAG-safe contrast.** Space Grotesk (display, big and
-  tight) + Inter (body), flat solid colors: cyan #03c3f8 is decorative
-  (bars/icons) on light and text/button-fill on dark (always with navy text —
-  never white-on-cyan); interactive text on white uses --link #026492.
-  Layout language: **left-aligned heroes** (`.sec--hero`, `.page-hero`),
-  **split section headers** (`.sec-head`: label+h2 left, `.lead` right),
-  hairline structure (`.sec--hairline`, unboxed `.step` with top rules,
-  `.testimonial` with left hairline), squared 10px-radius buttons,
-  `.arrow-link` for quiet CTAs, full-width `.cta-band` (headline left,
-  buttons right) to close hand-built pages; `.cta` boxed panel remains for
-  generated pages. Blog index uses `.post-grid--featured` (first card spans
-  2 columns). Scroll reveals in `main.js` (reduced-motion safe).
+- **Design system v5 "ledger" — DARK-FIRST** (19 Aug 2026, owner: "not a fan
+  of the white background at all"). **OWNER RULES: no gradients ever; no
+  white/light page backgrounds; WCAG-safe contrast; generous scale — never
+  shave section padding to fit content.**
+  ONE canvas `#020d1c` sitewide — backgrounds never change color, no
+  section stripes. Cards `#00152c` + mandatory 1px `rgba(255,255,255,.08)`
+  hairline; `#051e35` for inputs/hover fills/inset wells; depth = hairlines,
+  NEVER box-shadows or glows. Three text tiers ONLY: headings `#ffffff`,
+  body `#c9d8e8`, muted `#8ba3bd` (the floor — nothing dimmer ever carries
+  text; no opacity-faded text or logos; no font weight <400).
+  **Cyan budget** (≤5% of any viewport, never as heading color/background
+  wash/border-at-rest/mass icon tint): primary CTA fill (ONE per viewport),
+  eyebrow index+tick, stat suffixes + at most one full numeral per page
+  (course price), inline links + active nav, focus ring, featured panel's
+  2px top bar + corner ticks, hero h1 terminal period.
+  Devices: indexed dossier eyebrows (`.eyebrow` + `<span class="idx">01</span>`,
+  rule flexes to edge inside `.sec-head`), collapsed hairline grids
+  (`.hgrid.hgrid--3 > .cell` with `.cell-idx`), ledger stats (`.stats`/`.stat`
+  with `.num` + cyan `.sfx`, `.stats--row` horizontal), evidence `.panel`
+  (cyan top bar + corner ticks — max 1-2 per page), unboxed `.steps`,
+  hairline `.testimonial` columns, `.cta-band` (the ONE `#00152c` full-bleed
+  band per page), boxed `.cta` panel for inner pages. Buttons: cyan fill +
+  `#020d1c` text, radius 4px, flat hover `#45d4fa` (no translate, no glow);
+  `.btn--ghost` white 0.32 border. `.form-embed` stays a WHITE document card
+  (Tally renders dark text — deliberate exception). `.sec--dark`/`.sec--soft`
+  are deprecated no-ops (transparent). Type scale is large on purpose: hero
+  ~96px desktop, sections clamp(6rem,10vw,10rem).
 - **The header is DARK and must stay dark** — the brand logo
   (`src/img/logo.png`) is white artwork, invisible on light backgrounds.
   Likewise the client logos (`*-grey.png/webp`) are light grey: only show

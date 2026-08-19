@@ -1,5 +1,6 @@
-{# Shared course catalog. Set `catalogExclude` (slug) before including to hide
-   the current course. Courses without their own page link to the hub form. #}
+{# Shared course catalog (hairline grid). Set `catalogExclude` (slug) before
+   including to hide the current course. Courses without their own page link
+   to the hub form. #}
 {% set catalog = [
   { slug: "meta", url: "/meta-reklamas-kurss/", tag: "Iesācējiem · 3 stundas",
     title: "Meta reklāmas kurss — izveido peļņu nesošas Facebook un Instagram kampaņas",
@@ -26,17 +27,26 @@
     ticks: ["Kā plānot efektīvu digitālā mārketinga stratēģiju", "Mērķauditorijas un konkurentu analīze", "Budžeta plānošana un mārketinga ROI aprēķins"],
     cta: "Pieteikties interesei" }
 ] %}
-<div class="row cols-3 top">
+<div class="hgrid hgrid--3">
   {% for c in catalog %}{% if c.slug != catalogExclude %}
-  <div class="col">
-    <div class="course-tile">
-      <div class="course-tag">{{ c.tag }}</div>
-      <h3><a href="{{ c.url }}">{{ c.title }}</a></h3>
-      <ul class="tick-list">
-        {% for t in c.ticks %}<li>{{ t }}</li>{% endfor %}
-      </ul>
-      <a class="arrow-link" href="{{ c.url }}">{{ c.cta }}</a>
-    </div>
+  <div class="course-tile">
+    <div class="course-tag">{{ c.tag }}</div>
+    <h3><a href="{{ c.url }}">{{ c.title }}</a></h3>
+    <ul class="tick-list">
+      {% for t in c.ticks %}<li>{{ t }}</li>{% endfor %}
+    </ul>
+    <a class="arrow-link" href="{{ c.url }}">{{ c.cta }}</a>
   </div>
   {% endif %}{% endfor %}
+  {% if catalogExclude %}
+  <div class="course-tile">
+    <div class="course-tag">Katalogs</div>
+    <h3><a href="/digitala-marketinga-kursi/">Visi kursi un apmācības vienuviet</a></h3>
+    <ul class="tick-list">
+      <li>Seši praktiski kursi — Meta, SEO, TikTok un stratēģija</li>
+      <li>Grupu apmācības un atlaides kolektīviem</li>
+    </ul>
+    <a class="arrow-link" href="/digitala-marketinga-kursi/">Apskatīt katalogu</a>
+  </div>
+  {% endif %}
 </div>
