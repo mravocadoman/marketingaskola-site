@@ -31,7 +31,7 @@ SEO var iedalīt trīs galvenajās daļās:
 2.  **Satura SEO.** Tas ietver atslēgvārdu izpēti un kvalitatīva, noderīga satura veidošanu. Lapas nedrīkst būt tikai “skaistas” – tām jāatbild uz reāliem cilvēku jautājumiem.
 3.  **Ārējās saites un autoritāte**. Jo vairāk uzticamu, kvalitatīvu vietņu atsaucas uz Tavu lapu, jo vairāk Google Tev uzticas. Līdzīgi kā reputācija biznesā.
 
-![seo nozīme](/img/2025/12/Gemini_Generated_Image_p4l028p4l028p4l0-1024x585.png)
+![seo nozīme](/img/2025/12/Gemini_Generated_Image_p4l028p4l028p4l0-1024x585.webp)
 
 SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/pakalpojumi/)
 
@@ -78,7 +78,7 @@ Lūk, ko Tu vari sākt darīt jau šodien:
 6.  **Uzlabo lietotāja pieredzi.** Viegls dizains, skaidrs call-to-action jeb aicinājums uz rīcību, kas palīdz sasniegt Tavus mērķus, un labi strukturēts saturs – tas viss tieši ietekmē rezultātus.
 7.  **Regulāri publicē.** Konsekvence ir viens no svarīgākajiem SEO faktoriem – Google mīl “dzīvas” lapas.
 
-![](/img/2025/12/Praktiski-soli-SEO-uzlabosanai-Kas-ir-SEO-un-kapec-tas-ir-butisks-majaslapas-redzamibai_-1024x572.png)
+![](/img/2025/12/Praktiski-soli-SEO-uzlabosanai-Kas-ir-SEO-un-kapec-tas-ir-butisks-majaslapas-redzamibai_-1024x572.webp)
 
 SEO nav burvju nūjiņa, kas dod tūlītējus rezultātus. Tas ir stratēģisks, pārdomāts process, kas ilgtermiņā ļauj Tavai mājaslapai kļūt redzamai, uzticamai un vērtīgai. Ja saproti, kas ir SEO, kā tas darbojas un kā to īstenot praksē, Tu vari būt soli priekšā konkurentiem – īpaši tiem, kas joprojām balstās tikai uz sociālajiem tīkliem vai maksas reklāmām.
 

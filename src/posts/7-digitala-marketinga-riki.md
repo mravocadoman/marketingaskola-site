@@ -39,13 +39,13 @@ Google Analytics ir visizplatītākais analītikas rīks internetā. Tas ir tie�
 
 Tā standarta versija ir pieejama bez maksas un ietver dažādas lieliskas opcijas, piemēram, iespēju redzēt to, cik ilgi lietotāji ir apmeklējuši Tavu mājaslapu, no kurām tīmekļa vietnēm tie nākuši un izsekot reklāmas atdeves rādītājiem.
 
-![Digitālā mārketinga rīki | Google analytics logo](/img/2022/04/riki2.png)
+![Digitālā mārketinga rīki | Google analytics logo](/img/2022/04/riki2.webp)
 
 <h2 id="3">3\. [WordPress](https://wordpress.com/)</h2>
 
 Lai gan WordPress vairāk piederas pie Web Dizaina izstrādes rīkiem, nolēmām to tomēr iekļaut šajā sarakstā, jo uz šīs platformas esam veidojuši gan savu gan klientu mājaslapas. Kā jau noprotams, WordPressir rīks, ar kuru var veidot un uzturēt mājaslapas. Tas ir īpaši populārs blogeru un mazo uzņēmumu vidū. WordPress piedāvā izmantot jau iepriekš sagatavotus šablonus un izkārtojumus mājaslapas dizainam, lai atvieglotu mājaslapas veidotāja darbu. Populāras WordPress alternatīvas ir Wix, Shopify priekš e-veikalie un Mozello priekš Latvijā bāzētām mājaslapām un e-veikaliem.
 
-![Digitālā mārketinga rīki | WordPress logo](/img/2022/04/riki3.png)
+![Digitālā mārketinga rīki | WordPress logo](/img/2022/04/riki3.webp)
 
 <h2 id="4">4\. [Unsplash](https://unsplash.com/)</h2>
 
@@ -55,7 +55,7 @@ Bieži vien bildes nedrīkst izmantot autortiesību dēļ, kas kavē, piemēram,
 
 Unsplash vēlamo attēlu var meklēt pēc atslēgvārdiem, kolekcijas, datuma vai fotogrāfa vārda. Platformā nav nepieciešams reģistrēties, lai gan, protams, vari Unsplash abonēt un saņemt platformas paziņojumus par jaunu saturu.
 
-![Digitālā mārketinga rīki | Unsplash logo](/img/2022/04/riki4.png)
+![Digitālā mārketinga rīki | Unsplash logo](/img/2022/04/riki4.webp)
 
 <h2 id="5">5\. [Grammarly](https://www.grammarly.com/)</h2>
 
@@ -67,7 +67,7 @@ Grammarly ir pieejams gan kā mobilā lietotne, gan kā pārlūkprogrammas papla
 
 Grammarly ir gan bezmaksas, gan maksas versija. Bezmaksas versijā tiek pārbaudītas pamata pareizrakstības, interpunkcijas un gramatikas kļūdas savukārt maksas versijā var pat atklāt plaģiātismu, un Grammarly iesaka, kā uzlabot Tava teksta stilu un toni.
 
-![Digitālā mārketinga rīki | Grammarly logo](/img/2022/04/riki5.png)
+![Digitālā mārketinga rīki | Grammarly logo](/img/2022/04/riki5.webp)
 
 <h2 id="6">6\. [Buffer](https://buffer.com/)</h2>
 
@@ -77,7 +77,7 @@ Mēs paši šajā rīkā attīstām savu sociālo mediju mārketinga stratēģij
 
 Buffer piedāvā arī pieeju analītikai, kurā var redzēt, cik veiksmīgi un efektīvi Tavas publikācijas darbojas dažādās sociālo mediju platformās.
 
-![Digitālā mārketinga rīki | Buffer logo](/img/2022/04/riki6.png)
+![Digitālā mārketinga rīki | Buffer logo](/img/2022/04/riki6.webp)
 
 <h2 id="7">7\. Google Optimize</h2>
 
@@ -87,7 +87,7 @@ Google Optimize ir Google veidots A/B testēšanas un konversijas optimizācijas
 
 Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas versijām ir veiksmīgāka. Mums šīs rīks patīk, jo tādējādi ir iespējams atrast visefektīvāko variantu, kas visvairāk patīk mūsu klientiem un attiecīgi uzrāda augstākos konversijas rādītājus.
 
-![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.png)
+![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.webp)
 
 <h2 id="8">Mārketinga skola iesaka</h2>
 

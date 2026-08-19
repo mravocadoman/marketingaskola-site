@@ -33,7 +33,7 @@ Google ads izmanto _pay-per-click_ modeli jeb latviski tulkojot: maksu par klik�
 
 Veids, kā Google ads darbojas, būtībā paliek nemainīgs. Kad lietotāji meklē kādu atslēgvārdu, piemēram, ziedi, viņi meklēšanas rezultātu lapā saņem sava meklējuma rezultātus. Šajos rezultātos var būt iekļauta arī maksas reklāma, kas vērsta uz šo atslēgas vārdu.
 
-![Google reklāmas piemērs](/img/2022/04/google2.png)
+![Google reklāmas piemērs](/img/2022/04/google2.webp)
 
 Google ads piemērs
 

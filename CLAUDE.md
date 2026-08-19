@@ -9,11 +9,22 @@ the original.
 ## Stack and layout
 
 - **Eleventy 3** (Nunjucks templates), no client framework, one plain CSS file.
-- **Design system v2** (redesigned 19 Aug 2026, owner-approved free reign):
-  Space Grotesk (display) + Inter (body) from Google Fonts, brand cyan #03c3f8
-  / navy #00152c kept, gradient accents (`--grad`), soft-shadow cards, scroll
-  reveals (in `main.js`, reduced-motion safe). All tokens in `:root` of
+- **Design system v3** (flat redesign, 19 Aug 2026). **OWNER RULES: no
+  gradients anywhere, ever; WCAG-safe contrast.** Space Grotesk (display) +
+  Inter (body), flat solid colors only: cyan #03c3f8 is decorative
+  (bars/icons) on light and text/button-fill on dark (always with navy text —
+  never white-on-cyan); interactive text on white uses --link #026492.
+  Scroll reveals in `main.js` (reduced-motion safe). Tokens in `:root` of
   `src/css/style.css`.
+- **The header is DARK and must stay dark** — the brand logo
+  (`src/img/logo.png`) is white artwork, invisible on light backgrounds.
+  Likewise the client logos (`*-grey.png/webp`) are light grey: only show
+  them on navy sections (`.logo-row` sections are flipped to `sec--dark`).
+- **Images**: every raster has a `.webp` twin (`tools/optimize-images.mjs`,
+  max 1600px q78; 33.5 MB → 4.9 MB). Body markup references `.webp`; front
+  matter `image:` keeps the original png/jpg for og:image link previews
+  (templates display it via the `webp` filter). New images: drop the original
+  in `src/img/...`, run the optimizer, reference the `.webp`.
 - `src/pages/*.html` — the 19 site pages. Front matter + plain HTML sections.
   Section conventions: `.sec` (white), `.sec--soft` (light blue-gray),
   `.sec--dark` (navy + glow), `.sec--hero` (home/landing hero; optional

@@ -1,6 +1,19 @@
 const { HtmlBasePlugin } = require("@11ty/eleventy");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function (eleventyConfig) {
+  // Swap a /img/....png|jpg path for its .webp twin when one exists on disk.
+  // Used for <img> display; og:image keeps the original for link previews.
+  const webpCache = {};
+  eleventyConfig.addFilter("webp", (p) => {
+    if (!p || !/\.(png|jpe?g)$/i.test(p)) return p;
+    if (webpCache[p] !== undefined) return webpCache[p];
+    const w = p.replace(/\.(png|jpe?g)$/i, ".webp");
+    const onDisk = path.join(__dirname, "src", ...w.split("/").filter(Boolean));
+    webpCache[p] = fs.existsSync(onDisk) ? w : p;
+    return webpCache[p];
+  });
   // Rewrites all root-relative URLs when a --pathprefix is set (GitHub project pages).
   eleventyConfig.addPlugin(HtmlBasePlugin);
 

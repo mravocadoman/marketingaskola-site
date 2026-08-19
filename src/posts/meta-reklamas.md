@@ -36,7 +36,7 @@ Meta Ads sniedz Tev pieeju vienai no lielākajām digitālajām platformām pasa
 -   **Messenger:** Tieša komunikācija ar klientu – personalizēti piedāvājumi, atgādinājumi vai klientu atbalsts. Ātrs, vienkāršs, efektīvs.
 -   **WhatsApp:** Šī platforma strauji attīstās kā klientu servisa un reklāmas rīks. Ideāli piemērots personalizētai komunikācijai un uzticības veidošanai.
 
-![meta ads](/img/2025/04/Meta-ads-ka-izcelties-ar-inovativiem-reklamas-risinajumiem-1024x576.png)
+![meta ads](/img/2025/04/Meta-ads-ka-izcelties-ar-inovativiem-reklamas-risinajumiem-1024x576.webp)
 
 <h2 id="3">Kā izcelties ar inovatīvām Meta Ads reklāmām?</h2>
 

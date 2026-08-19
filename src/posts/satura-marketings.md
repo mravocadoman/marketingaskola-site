@@ -35,7 +35,7 @@ Satura veidošana mūsdienās ir viens no būtiskākajiem instrumentiem, lai uz�
 4.  **Saturs rada konkurētspējas priekšrocību.**  
     Lielākā daļa uzņēmumu publicē saturu haotiski. Tie, kas to dara stratēģiski, automātiski izceļas.
 
-![](/img/2025/12/Kapec-satura-veidosana-ir-svariga-tavai-uznemejdarbibai_-Satura-marketings_-ka-radit-saturu-kas-piesaista-un-pardod.png)
+![](/img/2025/12/Kapec-satura-veidosana-ir-svariga-tavai-uznemejdarbibai_-Satura-marketings_-ka-radit-saturu-kas-piesaista-un-pardod.webp)
 
 Ja vēlies izveidot spēcīgu mārketinga plānu savam uzņēmumam, [Tev noderēs šis raksts](/marketinga-plans/).
 

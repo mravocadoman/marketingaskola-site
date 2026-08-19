@@ -43,7 +43,7 @@ Zīmola atpazīstamība ikvienam uzņēmumam ir svarīga, jo tā spēj piesaist�
 -   Vieglu radošuma izpausmi
 -   Iespēju veidot vai piedalīties trendos
 
-![](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1-1024x576.png)
+![](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1-1024x576.webp)
 
 Trendiem Instagram Reels ir būtiska loma – populārie formāti, mūzika un izaicinājumi bieži vien strauji izplatās, dodot zīmoliem un satura veidotājiem iespēju piesaistīt lielāku auditoriju īsā laika posmā. Pielāgojot aktuālās tendences savai nišai, iespējams ne tikai palielināt satura redzamību, bet arī stiprināt zīmola tēlu.
 
@@ -98,7 +98,7 @@ _Izveido ieradumu publicēt vismaz 2 Reels nedēļā. Tas uztur algoritmu aktīv
 
 Lai tavs Instagram Reels video piesaistītu skatītāja uzmanību, tam jābūt efektīvi uzbūvētam. Un viss sākas ar 1.sekundi – Hook, ko izmanto.
 
-![instagram reels uzbūve](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1024x576.png)
+![instagram reels uzbūve](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1024x576.webp)
 
 ### **Kas ir Hook?**
 

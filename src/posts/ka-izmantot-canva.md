@@ -28,7 +28,7 @@ Saskaņā ar statistiku, 80% mazo uzņēmumu Latvijā izmanto vizuālo saturu, l
 
 **Canva** ir kļuvis par vienu no populārākajiem _dizaina rīkiem_ pasaulē, un tam ir labs iemesls. Tas ir vienkāršs, pieejams un piedāvā visu, kas Tev vajadzīgs, lai izveidotu profesionālas reklāmas:
 
-![](/img/2025/10/image-1024x466.png)
+![](/img/2025/10/image-1024x466.webp)
 
 -   **Bezmaksas veidnes**: Tūkstošiem gatavu dizainu Instagram, Facebook, Google Ads un drukātajiem materiāliem.
 -   **Vienkārša lietošana**: Drag-and-drop saskarne, kas neprasa nekādas dizaina zināšanas.
@@ -56,7 +56,7 @@ Vai esi gatavs sākt? Šeit ir vienkāršs ceļvedis, kā izveidot profesionālu
 4.  **Pievieno spēcīgu tekstu**: Izveido īsu un skaidru aicinājumu uz darbību, piemēram, “Iegādājies tagad!” vai “Piesakies jau šodien!”.
 5.  **Eksportē un publicē**: Lejupielādē dizainu PNG vai MP4 formātā un publicē to sociālajos tīklos vai mājaslapā.
 
-![](/img/2025/10/image-1-1024x477.png)
+![](/img/2025/10/image-1-1024x477.webp)
 
 Šis process aizņem vien dažas minūtes, tāpēc **Canva** ir ideāls risinājums aizņemtiem uzņēmējiem. Ja Tev vajag sarežģītākus video reklāmas risinājumus, mūsu aģentūra var palīdzēt – [piesakies konsultācijai](/sazinies/)!
 
