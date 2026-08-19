@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<section class="sec sec--dark post-hero">
+  <div class="container container--narrow">
+    <p class="post-meta">
+      <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+      {% if categories.length %} · {% for c in categories %}<a href="/category/{{ c }}/">{{ categoriesBySlug[c] or c }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+    </p>
+    <h1>{{ title }}</h1>
+  </div>
+</section>
+
+<article class="sec">
+  <div class="container container--narrow prose">
+    {% if image %}<img class="post-featured" src="{{ image }}" alt="{{ title }}">{% endif %}
+    {{ content | safe }}
+  </div>
+</article>
+
+<section class="sec sec--dark cta-banner">
+  <div class="container container--narrow center">
+    <h2>Vēlies piesaistīt vairāk klientu?</h2>
+    <p>Piesakies bezmaksas konsultācijai, un izrunāsim Tava biznesa iespējas digitālajā mārketingā.</p>
+    <a class="btn" href="/sazinies/">Piesakies konsultācijai!</a>
+  </div>
+</section>

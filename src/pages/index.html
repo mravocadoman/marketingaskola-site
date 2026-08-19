@@ -1,0 +1,184 @@
+---
+layout: page.njk
+title: "Digitālā Mārketinga Aģentūra, kas Palīdz Tavam Biznesam Augt!"
+description: "Digitālā mārketinga aģentūra, kas specializējas Facebook reklāmās un mārketinga kursos. Palīdzam Tev paredzami piesaistīt jaunus klientus."
+permalink: "/"
+image: "/img/2025/03/Title-1.png"
+---
+<section class="sec sec--hero" style="--bg:url('/img/2020/12/marketingaskola.lv941student-studying-brainstorming-analying-campus-concept-scaled-1.jpg')">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col">
+        <p class="eyebrow">Mārketinga Skola</p>
+        <h1>Digitālā Mārketinga Aģentūra, kas Strādā Rezultātu Vārdā</h1>
+        <p class="sub">KLIENTU PIESAISTE | REKLĀMAS PAKALPOJUMI | KURSI UN APMĀCĪBAS</p>
+        <p class="btn-wrap"><a class="btn" href="/sazinies/">PIESAKIES KONSULTĀCIJAI!</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col center">
+        <div id="pak"><h2>PAKALPOJUMI</h2></div>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="row cols-3">
+      <div class="col">
+        <div class="blurb"><h3>Meta reklāmas kampaņas</h3><p>Mēs veidojam personalizētas Facebook un Instagram reklāmas kampaņas, kas piesaista klientus un veicina pārdošanu.</p></div>
+      </div>
+      <div class="col">
+        <div class="blurb"><h3>Digitālā mārketinga kursi</h3><p>Apgūsti Meta un TikTok reklāmas , SEO un digitālo mārketingu praktiskos kursos no pieredzējušiem lektoriem.</p></div>
+      </div>
+      <div class="col">
+        <div class="blurb"><h3>Video reklāma</h3><p>Radām autentiskus un uzmanību piesaistošus video, kas izceļ Tavu zīmolu sociālajos medijos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="row cols-2">
+      <div class="col">
+        <div id="pak"><h2>Meta reklāmas pakalpojumi</h2></div>
+        <div class="divider"></div>
+        <p>Efektīvas Facebook un Instagram kampaņas</p>
+        <p>Mūsu digitālā mārketinga aģentūra izstrādā pielāgotas Facebook un Instagram kampaņas, kas precīzi sasniedz Tavu mērķauditoriju, piesaista klientus un palielina pārdošanas apjomus.</p>
+        <p>Veidojam stratēģiju, testējam, analizējam un regulāri optimizējam, lai Tu redzētu reālus, izmērāmus rezultātus.</p>
+        <p class="btn-wrap"><a class="btn" href="/facebook-reklama/">Uzzini vairāk</a></p>
+      </div>
+      <div class="col">
+        <figure class="img"><img src="/img/2025/02/Untitled-design-1-1.png" alt="facebook reklāmas" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="row cols-2">
+      <div class="col">
+        <div id="pak"><h2>VIDEO REKLĀMAS UZŅEMŠANA</h2></div>
+        <div class="divider"></div>
+        <p>Radoši video, kas piesaista uzmanību</p>
+        <p>Izcelies ar radošām un uzmanību piesaistošām video reklāmām! Mēs radām autentisku saturu, kas palielina zīmola atpazīstamību un iesaista skatītājus. No idejas un scenārija līdz filmēšanai un dinamiskai montāžai — mēs parūpēsimies par visu, lai Tava reklāma izceltos konkurentu vidū.</p>
+        <p>Uzzini vairāk par to, kā unikālas video reklāmas var palīdzēt Tavam biznesam!</p>
+        <p class="btn-wrap"><a class="btn" href="/video-reklama/">Uzzini vairāk</a></p>
+      </div>
+      <div class="col">
+        <figure class="img"><img src="/img/2025/02/Untitled-design-2.png" alt="video reklāma" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col center">
+        <div id="pak"><h2>Reklāmas padomi uzņēmējiem</h2></div>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="post-grid">
+      {% for post in collections.posts | head(3) %}
+      <article class="post-card">
+        <a href="{{ post.url }}">{% if post.data.image %}<img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">{% endif %}</a>
+        <div class="post-card-body">
+          <span class="date">{{ post.date | readableDate }}</span>
+          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <p>{{ post.data.description | truncate(140) }}</p>
+          <a class="more" href="{{ post.url }}">Lasīt vairāk →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="center btn-wrap"><a class="btn" href="/blogs/">Lasīt vairāk</a></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col">
+        <div class="cta"><h2>Seko mums Instagram!</h2><p>Ikdienas padomi un ieskati digitālajā mārketingā — @marketingaskola.lv</p><p class="btn-wrap"><a class="btn" href="https://www.instagram.com/marketingaskola.lv/" target="_blank" rel="noopener">Pieseko Instagram!</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col center">
+        <div id="pak"><h2>KLIENTU ATSAUKSMES</h2></div>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="row cols-3">
+      <div class="col">
+        <blockquote class="testimonial"><div class="t-body"><p><em>“Kad 2020. gadā uzsākām saunu tirdzniecību Latvijā, meklējām partneri, kurš mums palīdzētu reklamēt mūsu produktus. Paši reklāmas taisīt nemācējām, un negribējām izšķiest reklāmas budžetu.</em></p>
+        <p><em>Šo uzdevumu uzticējām Mārketinga skolai, un tas noteikti bija labākais lēmums mūsu uzņēmējdarbības sākuma posmā. Jau pirmajā nedēļā izdevās iegūt 3 klientus!”</em></p></div><footer><strong>Toms L.</strong><span>Fitosauna.com</span></footer></blockquote>
+      </div>
+      <div class="col">
+        <blockquote class="testimonial"><div class="t-body"><p><em>“Sadarbība ar Mārketinga Skolu bija ļoti viegla, akurāta un visos termiņos.</em> </p>
+        <p><em>Profesionalitāte un precizitāte garantēta.</em> </p>
+        <p><em>Rihards ļoti pieturas pie mūsdienu augstajām prasībām mārketinga jomā, orientējoties arī estētiskajos principos.<br>
+        Iesaku ikvienam!”</em></p></div><footer><strong>Elīna B.</strong><span>Baronesse</span></footer></blockquote>
+      </div>
+      <div class="col">
+        <blockquote class="testimonial"><div class="t-body"><p><em>“Digitālā mārketinga aģentūra</em> <em>Mārketinga Skola mums palīdzēja ar mūsu pārdošanas kampaņas īstenošanu. Mārketinga skolas profesionāļu ieteikumi un padarītais darbs kampaņas īstenošanā ļāva mums īsā laika periodā tikt pie 36 augstas kvalitātes potenciālajiem klientiem, no kuriem 8 kļuva par patstāvīgajiem klientiem!”</em></p></div><footer><strong>Didzis K.</strong><span>More Timber</span></footer></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="row cols-1">
+      <div class="col center">
+        <h2>Pievienojies zīmoliem, kas mums uzticās</h2>
+        <div class="divider"></div>
+      </div>
+    </div>
+    <div class="row cols-6 logo-row">
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/lsua-grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2025/02/Untitled-design-9.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2025/02/Untitled-design-10.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2025/02/Untitled-design-11.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/Tiny-Grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/Excel-Know-How-logo-RGB_-grey.png" alt="" loading="lazy"></figure>
+      </div>
+    </div>
+    <div class="row cols-6 logo-row">
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/ciedru-grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/pin-grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/IC-Grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/Sophia-grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/waxful-grey.png" alt="" loading="lazy"></figure>
+      </div>
+      <div class="col">
+        <figure class="img img--plain"><img src="/img/2020/12/growthbond-Grey.png" alt="" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>

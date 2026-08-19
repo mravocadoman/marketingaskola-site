@@ -1,0 +1,19 @@
+{
+  "name": "marketingaskola-site",
+  "version": "1.0.0",
+  "description": "marketingaskola.lv — static Eleventy site, migrated from WordPress",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --serve --port=8385",
+    "serve": "node tools/serve.cjs",
+    "check": "node tools/check-site.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "markdown-it": "^15.0.0",
+    "node-html-parser": "^9.0.1",
+    "turndown": "^7.2.4"
+  }
+}
