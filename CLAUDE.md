@@ -9,13 +9,19 @@ the original.
 ## Stack and layout
 
 - **Eleventy 3** (Nunjucks templates), no client framework, one plain CSS file.
-- **Design system v3** (flat redesign, 19 Aug 2026). **OWNER RULES: no
-  gradients anywhere, ever; WCAG-safe contrast.** Space Grotesk (display) +
-  Inter (body), flat solid colors only: cyan #03c3f8 is decorative
+- **Design system v4 "editorial"** (19 Aug 2026). **OWNER RULES: no gradients
+  anywhere, ever; WCAG-safe contrast.** Space Grotesk (display, big and
+  tight) + Inter (body), flat solid colors: cyan #03c3f8 is decorative
   (bars/icons) on light and text/button-fill on dark (always with navy text —
   never white-on-cyan); interactive text on white uses --link #026492.
-  Scroll reveals in `main.js` (reduced-motion safe). Tokens in `:root` of
-  `src/css/style.css`.
+  Layout language: **left-aligned heroes** (`.sec--hero`, `.page-hero`),
+  **split section headers** (`.sec-head`: label+h2 left, `.lead` right),
+  hairline structure (`.sec--hairline`, unboxed `.step` with top rules,
+  `.testimonial` with left hairline), squared 10px-radius buttons,
+  `.arrow-link` for quiet CTAs, full-width `.cta-band` (headline left,
+  buttons right) to close hand-built pages; `.cta` boxed panel remains for
+  generated pages. Blog index uses `.post-grid--featured` (first card spans
+  2 columns). Scroll reveals in `main.js` (reduced-motion safe).
 - **The header is DARK and must stay dark** — the brand logo
   (`src/img/logo.png`) is white artwork, invisible on light backgrounds.
   Likewise the client logos (`*-grey.png/webp`) are light grey: only show

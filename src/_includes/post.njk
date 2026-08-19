@@ -33,11 +33,12 @@ layout: base.njk
 {% if related.length %}
 <section class="sec sec--soft">
   <div class="container">
-    <div class="row cols-1">
-      <div class="col center">
+    <div class="sec-head">
+      <div>
         <span class="eyebrow">Turpini lasīt</span>
         <h2>Saistītie raksti</h2>
       </div>
+      <p class="lead"><a class="arrow-link" href="/blogs/">Viss blogs</a></p>
     </div>
     <div class="post-grid">
       {% for post in related %}
