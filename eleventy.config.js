@@ -22,6 +22,15 @@ module.exports = function (eleventyConfig) {
   );
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
+  // Posts sharing a category with the current one (newest first), padded with
+  // the latest posts when the category is thin. Excludes the current post.
+  eleventyConfig.addFilter("relatedPosts", (posts, categories, currentSlug, n) => {
+    const cats = categories || [];
+    const others = (posts || []).filter((p) => p.fileSlug !== currentSlug);
+    const same = others.filter((p) => (p.data.categories || []).some((c) => cats.includes(c)));
+    const rest = others.filter((p) => !same.includes(p));
+    return same.concat(rest).slice(0, n || 3);
+  });
 
   // HtmlBasePlugin does not touch url() inside inline style attributes
   // (hero backgrounds), so prefix those ourselves.

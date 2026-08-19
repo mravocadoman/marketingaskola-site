@@ -1,4 +1,14 @@
 ---
 layout: base.njk
 ---
+{% if heroTitle %}
+<section class="page-hero">
+  <div class="container">
+    {% if heroChip %}<span class="chip">{{ heroChip }}</span>{% endif %}
+    <h1>{{ heroTitle }}</h1>
+    {% if heroSub %}<p class="sub">{{ heroSub }}</p>{% endif %}
+    {% if heroCta %}<div class="btn-wrap center"><a class="btn" href="{{ heroCtaUrl or '/sazinies/' }}">{{ heroCta }}</a></div>{% endif %}
+  </div>
+</section>
+{% endif %}
 {{ content | safe }}

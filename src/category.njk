@@ -9,15 +9,18 @@ eleventyComputed:
   title: "{{ cat.name }} Raksti - Mārketinga Skola"
   description: "Bloga raksti kategorijā {{ cat.name }}."
 ---
-<section class="sec sec--dark post-hero">
-  <div class="container center">
-    <h1>{{ cat.name }} Raksti</h1>
-    <p class="post-meta"><a href="/blogs/">← Viss blogs</a></p>
+<section class="page-hero">
+  <div class="container">
+    <span class="chip"><a href="/blogs/">Blogs</a> · {{ cat.name }}</span>
+    <h1>{{ cat.name }}</h1>
   </div>
 </section>
 
 <section class="sec">
   <div class="container">
+    <div class="chip-row">
+      {% for c in categoryList %}<a class="chip-link" {% if c.slug == cat.slug %}style="border-color:var(--cyan-600);color:var(--cyan-600)"{% endif %} href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
+    </div>
     <div class="post-grid">
       {% for post in collections.posts | inCategory(cat.posts) %}
       <article class="post-card">

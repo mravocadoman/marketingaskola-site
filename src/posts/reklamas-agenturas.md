@@ -71,7 +71,7 @@ Pavisam īsi – mūsu reklāmas aģentūra no citām atšķiras ar to, ka esam 
 
 **Aģentūra**, jo [klientiem, kuri vēlas mārketinga pakalpojumus uzticēt profesionāļiem](/portfolio/), palīdzam sasniegt augstas virsotnes un peļņu ar personalizētu digitālā mārketinga stratēģiju, auditorijas izpēti, maksas reklāmu izveidi, SEO un itin visu, ko klients vien vēlas sasniegt digitālajā mārketingā. 
 
-**Improvizācija**, jo esam riskētāji, un risks ir atmaksājies. Ar impro elementiem nodrošinām to, ka [reklāmas](/video-reklama/) un vadītie [pasākumi](/improvizacija-un-izklaide/) ir revolucionāri un unikāli jeb tādi, kurus klienti atcerēsies. Tādi, kas izcelsies daudzo reklāmu un pasākumu troksnī.
+**Improvizācija**, jo esam riskētāji, un risks ir atmaksājies. Ar impro elementiem nodrošinām to, ka [reklāmas](/video-reklama/) un vadītie [pasākumi](/video-reklama/) ir revolucionāri un unikāli jeb tādi, kurus klienti atcerēsies. Tādi, kas izcelsies daudzo reklāmu un pasākumu troksnī.
 
 Rezultātā sanāk, ka nodrošinām to, ko Marks Cukerbergs tik ļoti akcentējis:
 

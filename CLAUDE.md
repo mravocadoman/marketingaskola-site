@@ -9,11 +9,22 @@ the original.
 ## Stack and layout
 
 - **Eleventy 3** (Nunjucks templates), no client framework, one plain CSS file.
+- **Design system v2** (redesigned 19 Aug 2026, owner-approved free reign):
+  Space Grotesk (display) + Inter (body) from Google Fonts, brand cyan #03c3f8
+  / navy #00152c kept, gradient accents (`--grad`), soft-shadow cards, scroll
+  reveals (in `main.js`, reduced-motion safe). All tokens in `:root` of
+  `src/css/style.css`.
 - `src/pages/*.html` — the 19 site pages. Front matter + plain HTML sections.
-  Section conventions: `.sec` (white), `.sec--dark` (navy), `.sec--hero`
-  (photo + gradient, takes `style="--bg:url('...')"`) with `.row .cols-N > .col`
-  grids inside. Components: `.btn`, `.blurb`, `.testimonial`, `.faq`
-  (`<details>`), `.cta`, `.divider`, `.post-grid`.
+  Section conventions: `.sec` (white), `.sec--soft` (light blue-gray),
+  `.sec--dark` (navy + glow), `.sec--hero` (home/landing hero; optional
+  `style="--bg:url('...')"` photo) with `.row .cols-N > .col` grids inside.
+  Components: `.btn`/`.btn--ghost`/`.btn--sm`, `.blurb` (+`.card-icon`),
+  `.testimonial`, `.faq` (`<details>`), `.cta`, `.divider`, `.eyebrow`,
+  `.stats`/`.stat`, `.steps`/`.step`, `.marquee` (logo strip), `.post-grid`,
+  `.team-card`, `.contact-card`, `.page-hero`.
+- **Inner-page heroes come from front matter**: `heroTitle`, `heroSub`,
+  `heroChip` (rendered by `page.njk` as `.page-hero`). Added in bulk by
+  `tools/upgrade-pages.mjs`, which also de-duplicated first in-body headings.
 - `src/posts/*.md` — the 31 blog posts, Markdown + front matter
   (title, description, date, image, categories, permalink).
 - `src/_includes/` — `base.njk` (head/topbar/header/nav/footer), `page.njk`,
@@ -65,18 +76,24 @@ deploys to GitHub Pages. While on the github.io preview URL the build uses
 - Course pricing shown (e.g. 295€ → 145€) is copied verbatim from the live
   WordPress site — it is the owner's real pricing, only he changes it.
 
-## Known inherited issues (broken on the old WordPress site too)
+## Repaired links (were broken on the old WordPress site too)
 
-These links 404 on the live WordPress site as well; they were copied as-is:
-`/padzilinats-seo-kurss/`, `/digitala-marketinga-strategija-vaditajiem/`,
-`/seo-pakalpojumi/`, `/improvizacija-un-izklaide/` (linked from course pages,
-pakalpojumi, kas-ir-seo, reklamas-agenturas). Fix by creating the pages or
-re-pointing the links — owner's call.
-
-Two links were silently repaired during migration: `/meta-reklamas-kursi/` →
-`/meta-reklamas-kurss/` (page was renamed) and
+All links that 404'd on the live WordPress site have been repointed (19 Aug
+2026, redesign pass): `/meta-reklamas-kursi/` → `/meta-reklamas-kurss/`,
 `/7-padomi-marketinga-strategijas-izstrade/` → `/marketinga-strategijas-izstrade/`
-(was a 301).
+(301 live), `/padzilinats-seo-kurss/` and
+`/digitala-marketinga-strategija-vaditajiem/` → `/digitala-marketinga-kursi/`,
+`/seo-pakalpojumi/` → `/pakalpojumi/`, `/improvizacija-un-izklaide/` →
+`/video-reklama/`. If the owner ever creates those pages, point the links back.
+
+## Copy rules
+
+- **Consultations are PAID** (€100/h, €60/30 min — see
+  `/marketinga-konsultacijas/`). Never write "bezmaksas konsultācija".
+- Stats used on the homepage (10+ gadi, 100+ uzņēmumi, 1M+ € budžeti) come
+  from Rihards' own bio on `/sazinies/` — don't inflate them.
+- No invented claims, ratings, or star reviews; testimonials are verbatim
+  from the original site.
 
 ## What was deliberately changed vs WordPress
 

@@ -33,7 +33,7 @@ SEO var iedalīt trīs galvenajās daļās:
 
 ![seo nozīme](/img/2025/12/Gemini_Generated_Image_p4l028p4l028p4l0-1024x585.png)
 
-SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/seo-pakalpojumi/)
+SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/pakalpojumi/)
 
 <h2 id="2">SEO nozīme mūsdienu digitālajā vidē</h2>
 
@@ -63,7 +63,7 @@ Ja mājaslapa nav optimizēta, Google to var vienkārši “nepamanīt”. Biež
 
 Optimāls SEO palīdz Google saprast, ka Tava lapa ir labākā atbilde uz lietotāja uzdoto jautājumu. Kad tas notiek, organiskā trafika izaugsme ir ļoti jūtama.
 
-Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, mēs to piedāvājam arī kā pakalpojumu ko vari apskatīties [šeit.](/seo-pakalpojumi/)
+Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, mēs to piedāvājam arī kā pakalpojumu ko vari apskatīties [šeit.](/pakalpojumi/)
 
 <h2 id="4">Praktiski soļi SEO uzlabošanai</h2>
 

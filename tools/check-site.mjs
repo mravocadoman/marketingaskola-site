@@ -42,7 +42,7 @@ for (const file of htmlFiles) {
       broken.push(`${rel} -> ${m[1]}`);
     }
   }
-  const main = html.match(/<main>([\s\S]*?)<\/main>/)?.[1] || '';
+  const main = html.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] || '';
   const text = main.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   if (text.length < 200) thin.push(`${rel} (${text.length} chars)`);
 }
@@ -66,7 +66,7 @@ if (MIRROR) {
     const mainEnd = orig.lastIndexOf('</article>');
     const origText = textOf(mainStart !== -1 && mainEnd > mainStart ? orig.slice(mainStart, mainEnd) : orig);
     const built = readFileSync(builtPath, 'utf8');
-    const builtText = textOf(built.match(/<main>([\s\S]*?)<\/main>/)?.[1] || '');
+    const builtText = textOf(built.match(/<main[^>]*>([\s\S]*?)<\/main>/)?.[1] || '');
     const pct = origText.length ? Math.round(100 * builtText.length / origText.length) : 100;
     report.push([slug, pct, origText.length]);
   }

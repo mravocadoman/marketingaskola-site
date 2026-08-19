@@ -4,18 +4,19 @@ title: "Blogs - Mārketinga Skola"
 description: "Reklāmas padomi uzņēmējiem: digitālais mārketings, Facebook un Instagram reklāma, SEO, mākslīgais intelekts un citas tēmas."
 permalink: "/blogs/"
 ---
-<section class="sec sec--dark post-hero">
-  <div class="container center">
-    <h1>Blogs</h1>
-    <p class="post-meta">Reklāmas padomi uzņēmējiem</p>
+<section class="page-hero">
+  <div class="container">
+    <span class="chip">Blogs</span>
+    <h1>Reklāmas padomi uzņēmējiem</h1>
+    <p class="sub">Praktiski raksti par digitālo mārketingu, Meta un Google reklāmu, SEO un mākslīgo intelektu — bez liekas teorijas.</p>
   </div>
 </section>
 
 <section class="sec">
   <div class="container">
-    <p class="center" style="margin-bottom:34px">
-      {% for c in categoryList %}<a class="btn btn--ghost" style="padding:8px 18px;margin:4px 6px;font-size:.85rem" href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
-    </p>
+    <div class="chip-row">
+      {% for c in categoryList %}<a class="chip-link" href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
+    </div>
     <div class="post-grid">
       {% for post in collections.posts %}
       <article class="post-card">
@@ -28,6 +29,16 @@ permalink: "/blogs/"
         </div>
       </article>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--soft" style="padding-top:0;padding-bottom:64px">
+  <div class="container">
+    <div class="cta">
+      <h3>Negribi visu darīt pats?</h3>
+      <p>Uztici reklāmu praktiķiem — piesakies konsultācijai, un izrunāsim Tava biznesa iespējas.</p>
+      <div class="btn-wrap"><a class="btn" href="/sazinies/">Pieteikties konsultācijai</a></div>
     </div>
   </div>
 </section>
