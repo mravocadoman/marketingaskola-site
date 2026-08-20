@@ -5,22 +5,13 @@ seoTitle: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainer
 description: "Uzzini, kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera! Izmēģini Canva AI un citus dizaina rīkus jau tagad!"
 date: 2025-10-25
 updated: 2025-11-21
-image: "/img/2025/10/Digital-1200-628px.png"
+image: "/img/gen/cover-ka-izmantot-canva.webp"
+legacyImage: "/img/2025/10/Digital-1200-628px.png"
 categories: ["dizains"]
 permalink: "/ka-izmantot-canva/"
 ---
 
 Vai Tu vēlies izveidot pievilcīgas reklāmas savam biznesam, bet domā, ka profesionāls dizaineris ir pārāk dārgs? Tad **Canva** ir tieši tas, kas Tev vajadzīgs! Šis vienkāršais un intuitīvais _dizaina rīks_ ļauj pat bez dizaina prasmēm radīt profesionālus vizuālos materiālus – no sociālo tīklu reklāmām līdz plakātiem un baneriem. Turklāt šī rīka AI funkcijas padara procesu vēl ātrāku un vienkāršāku.
-
-## Satura rādītājs
-
--   [Kāpēc Canva ir labākais dizaina rīks maziem uzņēmumiem?](#kapec-canva)
--   [Kā AI padara reklāmu veidošanu vēl vienkāršāku?](#canva-ai)
--   [Soli pa solim: Kā izveidot savu pirmo reklāmu](#pirma-reklama)
--   [Kā Canva salīdzinās ar citiem dizaina rīkiem?](#salidzinajums-riki)
--   [Kā Canva palīdz palielināt Tavu reklāmu efektivitāti?](#efektivitate)
--   [Sāc savu dizaina ceļu jau šodien!](#sakums-dizains)
--   [Apgūsti Digitālo Mārketingu bez maksas!](#lift)
 
 Saskaņā ar statistiku, 80% mazo uzņēmumu Latvijā izmanto vizuālo saturu, lai piesaistītu klientus, bet daudziem trūkst resursu dārgiem dizaina pakalpojumiem. Ietaupi laiku un naudu, vienlaikus radot reklāmas, kas izceļas! Šajā rakstā dalīsimies ar pieciem praktiskiem padomiem, kā izmantot **Canva**, lai Tava mārketinga kampaņa būtu veiksmīga. Sāc jau tagad un [izmēģini Canva bez maksas](https://www.canva.com/)!
 

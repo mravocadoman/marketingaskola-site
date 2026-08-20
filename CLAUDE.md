@@ -90,6 +90,67 @@ deploys to GitHub Pages. While on the github.io preview URL the build uses
 3. DNS: `A` records for apex → 185.199.108.153 / .109. / .110. / .111.153, `CNAME www` → `mravocadoman.github.io`.
 4. Enable "Enforce HTTPS" in repo Settings → Pages once the cert is issued.
 
+
+## Two surfaces: dark canvas + light paper (v6, 20 Aug 2026)
+
+The marketing site is dark; **long-form reading is on white paper** (owner:
+"keep white background for the blog posts; and part of other content too where
+it helps with readability").
+
+- `.paper` is a **token-flipping wrapper** — it redefines --canvas/--card/
+  --line/--heading/--body/--muted/--link, so every existing component (cards,
+  faq, tick-list, stats, forms, buttons) works inside it unchanged. Use
+  `.paper` for any dense reading zone; `.paper--tint` for a #f6f9fc variant.
+- **On paper, cyan is DECORATIVE ONLY.** Interactive text uses --link #01608c
+  (5.9:1 on white); cyan text on white is banned (2.2:1). Buttons on paper are
+  navy fill / white text — a cyan slab on white is too loud.
+- Blog **articles** are paper; the blog **index and category pages stay dark**
+  (they are navigation, not reading). Article structure: dark `.page-hero`
+  (chip, h1, `.article-meta` with date + reading time) → generated cover in
+  `.media` → `.paper > .article-shell > .article-grid` (`.article-body` at
+  68ch + sticky `.toc`) → dark `.cta-band` → dark related posts.
+
+## Imagery pipeline (generated brand artwork)
+
+Every non-photographic image on the site is generated flat brand artwork.
+
+- `src/_data/imagery.json` — the manifest: one entry per slot with
+  `id, page, placement, aspect, alt, prompt`. The id IS the filename.
+- `npm run images` → `tools/generate-images.mjs` calls the OpenAI images API
+  (`gpt-image-2`, medium quality) for every slot with no file yet, then
+  converts to webp at 1600px/q80. `--force`, `--only=<id>`, `--limit`,
+  `--quality`, `--model` supported. Output: `src/img/gen/<id>.webp`.
+- `npm run covers` → `tools/apply-covers.mjs` points each post's front-matter
+  `image:` at `/img/gen/cover-<slug>.webp` and keeps the original WordPress
+  cover in `legacyImage:` (`--revert` restores it).
+- **Art direction** (house style is appended to every prompt by the generator,
+  edit it there to re-tune the whole set): flat editorial vector on solid
+  #020d1c, ONE accent (cyan #03c3f8) plus white and #8ba3bd grey, generous
+  negative space, subtle grain. **Never**: gradients, glow, 3D, and above all
+  **no text/letters/numbers/logos in the image** — the site is Latvian and
+  baked-in type is unmaintainable (the old WordPress covers had headlines
+  burned in, which is why they clashed on the dark canvas).
+- **The API key lives in `.env` (gitignored, never committed).** `.env.example`
+  documents the variable. Rotate the key if it was ever pasted into a chat.
+
+## Motion (src/js/main.js)
+
+Reveal-on-scroll, ledger stat **counters** (count up preserving "1M", "75 000",
+"36,34" formatting — the `.sfx` span is left untouched), article **reading
+progress** bar, **TOC scrollspy**, back-to-top, sticky header state, mobile nav.
+All of it is gated behind `prefers-reduced-motion` and degrades to a static page.
+
+## Tooling gotchas
+
+- `tools/screenshot.mjs` — headless Chrome captures. Run it from PowerShell, or
+  from Git Bash **with `MSYS_NO_PATHCONV=1`**: MSYS rewrites a leading-slash
+  path arg (`/blogs/`) into `C:/Program Files/Git/blogs/`, and the script then
+  silently shoots `about:blank` (a blank dark PNG). It resizes the viewport to
+  the document height rather than using fullPage, which Chrome returns blank
+  for very tall pages, and clips at 15000px.
+- Start the preview server as a persistent background process; a server started
+  inside a one-shot shell call dies before the next call.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,

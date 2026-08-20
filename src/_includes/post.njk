@@ -1,41 +1,83 @@
 ---
 layout: base.njk
 ---
-<section class="page-hero page-hero--pull">
+{% set body = content | withAnchors %}
+{% set outline = body | toc %}
+
+<div class="read-progress" data-read-progress aria-hidden="true"></div>
+
+<section class="page-hero">
   <div class="container container--narrow">
     <span class="chip">
       {% if categories.length %}{% for c in categories %}<a href="/category/{{ c }}/">{{ categoriesBySlug[c] or c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% else %}Blogs{% endif %}
     </span>
     <h1>{{ title }}</h1>
-    <p class="sub"><time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% if updated and (updated != (date | isoDate)) %} · atjaunots {{ updated | readableDate }}{% endif %}</p>
+    <p class="article-meta">
+      <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+      <span class="dot"></span>
+      <span>{{ content | readingTime }} min lasīšana</span>
+      {% if updated and (updated != (date | isoDate)) %}<span class="dot"></span><span>atjaunots {{ updated | readableDate }}</span>{% endif %}
+    </p>
   </div>
 </section>
 
-<article class="sec" style="padding-top:0">
-  <div class="container container--narrow article-pull">
-    {% if image %}<img class="post-featured" src="{{ image | webp }}" alt="{{ title }}">{% endif %}
-    <div class="prose">
-      {{ content | safe }}
-    </div>
+<div class="paper">
+  <div class="container article-shell">
+    {% if image %}
+    <figure class="media media--wide reveal" style="margin-bottom:clamp(40px,5vw,64px)">
+      <img src="{{ image | webp }}" alt="{{ title }}">
+    </figure>
+    {% endif %}
 
-    <div class="cta" style="margin-top:56px">
-      <h3>Vēlies, lai Tavu mārketingu vada praktiķi?</h3>
-      <p>Piesakies konsultācijai — izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus.</p>
-      <div class="btn-wrap">
-        <a class="btn" href="/sazinies/">Pieteikties konsultācijai</a>
-        <a class="btn btn--ghost" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
-      </div>
+    <div class="article-grid">
+      <article class="article-body">
+        <div class="prose">
+          {{ body | safe }}
+        </div>
+
+        <div class="author-strip">
+          <img src="/img/2024/07/Untitled-design-3.webp" alt="Rihards Zeiļa" loading="lazy">
+          <div>
+            <strong>Mārketinga Skola</strong>
+            <span>Praktisks digitālais mārketings — Meta un Google reklāmas, video saturs un kursi.</span>
+          </div>
+        </div>
+      </article>
+
+      {% if outline.length > 2 %}
+      <aside class="toc" aria-label="Satura rādītājs">
+        <h4>Satura rādītājs</h4>
+        <ol data-toc>
+          {% for h in outline %}
+          <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
+          {% endfor %}
+        </ol>
+      </aside>
+      {% endif %}
     </div>
   </div>
-</article>
+</div>
+
+<section class="cta-band">
+  <div class="container cta-band-inner">
+    <div>
+      <h2>Vēlies, lai Tavu mārketingu vada praktiķi?</h2>
+      <p>Piesakies konsultācijai — izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus.</p>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="/sazinies/">Pieteikties konsultācijai</a>
+      <a class="btn btn--ghost" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
+    </div>
+  </div>
+</section>
 
 {% set related = collections.posts | relatedPosts(categories, page.fileSlug, 3) %}
 {% if related.length %}
-<section class="sec sec--soft">
+<section class="sec">
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow">Turpini lasīt</span>
+        <span class="eyebrow"><span class="idx">01</span> Turpini lasīt</span>
         <h2>Saistītie raksti</h2>
       </div>
       <p class="lead"><a class="arrow-link" href="/blogs/">Viss blogs</a></p>

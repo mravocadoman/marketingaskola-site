@@ -5,7 +5,8 @@ seoTitle: "Kas ir SEO un kāpēc tas ir būtisks mājaslapas redzamībai? - Mār
 description: "Uzzini, kas ir SEO un kāpēc tas ir būtisks Tavas mājaslapas redzamībai. Praktiski padomi, kā piesaistīt vairāk klientu ar organisko trafiku."
 date: 2025-12-11
 updated: 2026-01-13
-image: "/img/2025/11/kas-ir-seo-un-kapec-tas-ir-butisks-majaslapas-redzamibai-thumbnail.png.png"
+image: "/img/gen/cover-kas-ir-seo.webp"
+legacyImage: "/img/2025/11/kas-ir-seo-un-kapec-tas-ir-butisks-majaslapas-redzamibai-thumbnail.png.png"
 categories: ["digitalais-marketings"]
 permalink: "/kas-ir-seo/"
 ---
@@ -13,13 +14,6 @@ permalink: "/kas-ir-seo/"
 Ja Tev ir mājaslapa, bet to apmeklē tikai daži cilvēki dienā, tad visdrīzāk kādā brīdī esi sev uzdevis jautājumu: “Kas ir SEO, un vai tas varētu palīdzēt manam biznesam?” Atbilde ir vienkārša – jā, var. Un ne tikai var, bet mūsdienu digitālajā vidē SEO ir praktiski neizbēgams, ja vēlies, lai Tava mājaslapa kļūtu redzama Google rezultātos un bez maksas spētu piesaistīt klientus.
 
 Un tieši tāpēc SEO ir spēcīgākais ilgtermiņa mārketinga kanāls. Tas neliek Tev tērēt naudu katru dienu, bet ļauj veidot stabilu, noturīgu un organisku trafiku. Šajā rakstā paskaidrošu kas ir SEO, kā tas strādā praksē un kāpēc tas ir absolūti svarīgs jebkurai mūsdienīgai mājaslapai – neatkarīgi no nozares.
-
-### Satura rādītājs
-
--   [Kas ir SEO?](#1)
--   [SEO nozīme mūsdienu digitālajā vidē](#2)
--   [Kā SEO palīdz palielināt organisko trafiku?](#3)
--   [Praktiski soļi SEO uzlabošanai](#4)
 
 <h2 id="1">Kas ir SEO?</h2>
 

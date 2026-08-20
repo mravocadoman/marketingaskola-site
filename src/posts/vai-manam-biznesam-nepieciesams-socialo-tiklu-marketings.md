@@ -5,7 +5,8 @@ seoTitle: "Vai manam biznesam nepieciešams sociālo tīklu mārketings? - Mārk
 description: "Vai biznesam nepieciešams sociālo tīklu mārketings? Noskaidro, kādas priekšrocības paver sociālo tīklu izmantošana!"
 date: 2022-03-08
 updated: 2024-10-21
-image: "/img/2022/03/6.jpg"
+image: "/img/gen/cover-vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings.webp"
+legacyImage: "/img/2022/03/6.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/"
 ---
@@ -21,13 +22,6 @@ Tas ir absolūts mīts, kuru vēlamies apgāzt.
 **Treškārt,** uzņēmumam ir nepieciešama precīzi izplānota sociālo tīklu mārketinga stratēģija, lai sasniegtu savus uzņēmējdarbības mērķus. Vienaldzība un vienkārša cerība, ka tiks sasniegti vēlamie mārketinga rezultāti nav efektīvs veids, kā attīstīt mārketingu.
 
 Šajā bloga rakstā vēlamies Tevi iepazīstināt ar  sociālo tīklu mārketinga pasauli un parādīt tās gaišo pusi un arī tumšo, jo tāda, gluži kā visiem digitālā mārketinga rīkiem, pastāv arī sociālajiem tīkliem.
-
-**Satura rādītājs**
-
--   [Kas ir sociālo tīklu mārketings?](#1)
--   [Sociālo tīklu mārketinga gaišā puse](#2)
--   [Sociālo tīklu mārketinga tumšā puse](#3)
--   [Mārketinga skolas piedāvājums](#4)
 
 <h2 id="1">**Kas ir sociālo tīklu mārketings?**</h2>
 

@@ -5,22 +5,13 @@ seoTitle: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt? - M
 description: "Google reklāmas aģentūra palīdz uzņēmumiem sasniegt mērķauditoriju un optimizēt reklāmu izdevumus. Uzzini, kad to izvēlēties un ko sagaidīt!"
 date: 2025-03-11
 updated: 2025-04-15
-image: "/img/2025/03/Digital-1200-628px.png"
+image: "/img/gen/cover-google-reklamas-agentura.webp"
+legacyImage: "/img/2025/03/Digital-1200-628px.png"
 categories: ["google-reklama"]
 permalink: "/google-reklamas-agentura/"
 ---
 
 Digitālā mārketinga laikmetā, kur konkurence tiešsaistes vidē kļūst arvien sīvāka, uzņēmumiem ir svarīgi efektīvi izmantot Google reklāmu. Lai gan daudzi uzņēmēji sākumā mēģina paši pārvaldīt [Google Ads](https://ads.google.com/intl/lv_lv/start/overview-ha/?subid=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&utm_source=aw&utm_medium=ha&utm_campaign=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE&gclsrc=aw.ds) kampaņas, bieži vien rezultāti nav tādi, kā cerēts. Šeit spēlē iesaistās Google reklāmas aģentūra – profesionāļu komanda, kas palīdz sasniegt mērķus ātrāk, efektīvāk un ar mazāku budžeta izšķērdēšanu.
-
-**Satura rādītājs**
-
--   [Kas ir Google reklāmas aģentūra un kā tā darbojas?](#1)
--   [Kad apsvērt sadarbību ar Google reklāmas aģentūru?](#2)
--   [Kā izvēlēties pareizo Google reklāmas aģentūru?](#3)
--   [Kas jāzina, pirms sadarboties ar Google Ads ekspertiem?](#4)
--   [Cik maksā Google reklāmas aģentūras pakalpojumi?](#5)
--   [Vai varu pārvaldīt Google Ads pats bez aģentūras?](#6)
--   [Apgūsti Digitālo Mārketingu bez maksas!](#lift)
 
 <h2 id="1">Kas ir Google reklāmas aģentūra un kā tā darbojas?</h2>
 

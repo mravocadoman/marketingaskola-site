@@ -20,6 +20,8 @@
   --line-hover: rgba(255, 255, 255, 0.28);
   --cyan: #03c3f8;
   --cyan-hover: #45d4fa;
+  --link: #03c3f8;        /* interactive text — flips on .paper */
+  --tick: #03c3f8;        /* checkmarks / small accent glyphs */
   --heading: #ffffff;
   --body: #c9d8e8;
   --muted: #8ba3bd;
@@ -47,7 +49,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 img { max-width: 100%; height: auto; }
-a { color: var(--cyan); text-decoration: none; }
+a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 ::selection { background: rgba(3, 195, 248, 0.35); color: #fff; }
 :focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: 2px; }
@@ -575,7 +577,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .contact-card li:last-child { border-bottom: 0; }
 .contact-card li svg { flex-shrink: 0; color: var(--muted); margin-top: 5px; }
 .contact-card .small { font-size: 0.84rem; color: var(--muted); }
-.contact-card a { color: var(--cyan); }
+.contact-card a { color: var(--link); }
 
 /* Tally embeds render dark text — they stay on a white document card,
    the one deliberate light surface, framed like an embedded form. */
@@ -678,7 +680,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 .tick-list { list-style: none; padding: 0; margin: 0 0 1.2em; }
 .tick-list li { position: relative; padding-left: 30px; margin-bottom: 0.65em; }
-.tick-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--cyan); font-weight: 700; }
+.tick-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--tick); font-weight: 700; }
 
 .course-body h2 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); margin-top: 2.2em; scroll-margin-top: 110px; }
 .course-body > p:first-child, .course-body > .lead:first-child { margin-top: 0; }
@@ -695,7 +697,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .course-tag { font-family: var(--font-display); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
 .course-tile h3 { font-size: 1.1rem; margin-bottom: 16px; }
 .course-tile h3 a { color: var(--heading); }
-.course-tile h3 a:hover { color: var(--cyan); text-decoration: none; }
+.course-tile h3 a:hover { color: var(--link); text-decoration: none; }
 .course-tile .tick-list { flex: 1; margin-bottom: 20px; }
 .course-tile .tick-list li { font-size: 0.9rem; margin-bottom: 0.55em; }
 
@@ -719,7 +721,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .post-card-body { padding: 26px 28px 28px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .post-card h3 { margin: 0; font-size: 1.1rem; }
 .post-card h3 a { color: var(--heading); }
-.post-card h3 a:hover { color: var(--cyan); text-decoration: none; }
+.post-card h3 a:hover { color: var(--link); text-decoration: none; }
 .post-card .date { color: var(--muted); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
 .post-card p { margin: 0; font-size: 0.93rem; color: var(--muted); flex: 1; }
 .post-card .more { font-family: var(--font-display); font-weight: 500; font-size: 0.9rem; color: #fff; }
@@ -743,7 +745,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .prose ul, .prose ol { padding-left: 1.3em; }
 .prose blockquote { border-left: 2px solid var(--line-strong); margin: 1.5em 0; padding: 0.4em 0 0.4em 1.3em; color: var(--muted); }
 .prose iframe { max-width: 100%; width: 100%; aspect-ratio: 16/9; height: auto; border: 0; border-radius: var(--radius); }
-.prose a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+.prose a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
 .prose strong { color: var(--heading); }
 
 .chip-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: clamp(32px, 4vw, 48px); }
@@ -794,3 +796,153 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 .skip-link { position: absolute; left: -9999px; top: 0; background: #fff; color: #020d1c; padding: 12px 18px; z-index: 100; }
 .skip-link:focus { left: 0; }
+
+/* ==========================================================================
+   PAPER — the light reading surface (owner request: white background for the
+   blog posts, and for other content where it helps readability).
+   Token-driven, so every component that works on the dark canvas works here
+   unchanged. Cyan is DECORATIVE ONLY on paper; interactive text uses
+   --link #01608c (5.9:1 on white). Never put cyan text on white.
+   ========================================================================== */
+.paper {
+  --canvas: #ffffff;
+  --card: #f4f8fc;
+  --card2: #e9f1f8;
+  --line: rgba(11, 27, 43, 0.13);
+  --line-strong: rgba(11, 27, 43, 0.24);
+  --line-hover: rgba(11, 27, 43, 0.42);
+  --heading: #0b1b2b;
+  --body: #33475b;
+  --muted: #5a6f84;
+  --link: #01608c;
+  --tick: #01608c;
+  background: var(--canvas);
+  color: var(--body);
+}
+.paper--tint { --canvas: #f6f9fc; background: var(--canvas); }
+.paper .accent-text { color: var(--link); }
+.paper ::selection { background: rgba(3, 195, 248, 0.28); color: #0b1b2b; }
+.paper :focus-visible { outline-color: var(--link); }
+/* buttons on paper: navy fill reads calmer than a cyan slab on white */
+.paper .btn { background: #0b1b2b; color: #ffffff !important; }
+.paper .btn:hover { background: #16324b; }
+.paper .btn--ghost { border-color: rgba(11, 27, 43, 0.3); color: #0b1b2b !important; }
+.paper .btn--ghost:hover { border-color: #0b1b2b; background: rgba(11, 27, 43, 0.05) !important; }
+.paper .eyebrow, .paper .page-hero .chip { color: var(--muted); }
+.paper .eyebrow .idx { color: var(--link); }
+.paper .form-embed { background: var(--card); border: 1px solid var(--line); }
+.paper .faq[open] { background: var(--card); }
+.paper .cta, .paper .panel, .paper .course-card,
+.paper .instructor-card, .paper .contact-card { background: var(--card); }
+.paper .media figcaption { background: rgba(11, 27, 43, 0.9); color: #e9f1f8; }
+
+/* ==========================================================================
+   MEDIA — framed imagery slots. The artwork is flat brand illustration on the
+   same navy, so it sits inside a hairline frame instead of floating.
+   ========================================================================== */
+.media { margin: 0; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+.media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.media--wide { aspect-ratio: 3 / 2; }
+.media--band { aspect-ratio: 21 / 8; }
+.media--square { aspect-ratio: 1; }
+.media--portrait { aspect-ratio: 3 / 4; }
+.media figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 13px 18px;
+  background: rgba(2, 13, 28, 0.82);
+  border-top: 1px solid var(--line);
+  font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: #c9d8e8;
+}
+/* full-bleed editorial band between sections */
+.media-band { border-top: 1px solid var(--line); }
+.media-band .media { border-radius: 0; border-left: 0; border-right: 0; border-bottom: 0; }
+@media (max-width: 640px) { .media--band { aspect-ratio: 16 / 10; } }
+
+/* clip-wipe reveal for imagery (flat — no fade through a color) */
+@media (prefers-reduced-motion: no-preference) {
+  .media.reveal { opacity: 1; transform: none; }
+  .media.reveal img { clip-path: inset(0 0 100% 0); transition: clip-path 0.85s cubic-bezier(0.22, 1, 0.36, 1); }
+  .media.reveal.in img { clip-path: inset(0 0 0 0); }
+}
+
+/* ==========================================================================
+   ARTICLE — long-form reading on paper
+   ========================================================================== */
+.read-progress {
+  position: fixed; top: 0; left: 0; height: 3px; width: 100%;
+  transform: scaleX(0); transform-origin: 0 50%;
+  background: var(--cyan); z-index: 80; pointer-events: none;
+}
+.article-shell { padding: clamp(52px, 6vw, 84px) 0 clamp(64px, 8vw, 104px); }
+.article-grid { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: clamp(36px, 5vw, 76px); align-items: start; }
+@media (max-width: 1020px) { .article-grid { grid-template-columns: 1fr; } }
+
+.article-body { max-width: 68ch; }
+.article-body .prose { font-size: 1.16rem; line-height: 1.78; }
+.article-body .prose > p:first-of-type { font-size: 1.3rem; line-height: 1.6; color: #1d3247; }
+.article-body .prose h2 {
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  margin: 2.4em 0 0.7em;
+  padding-top: 1.1em;
+  border-top: 1px solid var(--line);
+  color: var(--heading);
+}
+.article-body .prose h3 { font-size: 1.28rem; margin: 2em 0 0.6em; color: var(--heading); }
+.article-body .prose img { border: 1px solid var(--line); border-radius: var(--radius); margin: 2em 0; }
+.article-body .prose ul, .article-body .prose ol { padding-left: 1.4em; margin: 0 0 1.4em; }
+.article-body .prose li { margin-bottom: 0.55em; }
+.article-body .prose li::marker { color: var(--muted); }
+.article-body .prose blockquote {
+  border-left: 3px solid var(--cyan);
+  margin: 2em 0; padding: 0.2em 0 0.2em 1.5em;
+  font-size: 1.2rem; line-height: 1.6; color: var(--heading); font-style: normal;
+}
+.article-body .prose strong { color: var(--heading); font-weight: 600; }
+.article-body .prose a { color: var(--link); text-decoration-thickness: 1px; }
+.article-body .prose iframe { border-radius: var(--radius); margin: 2em 0; }
+.article-body .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
+
+/* in-article table of contents */
+.toc { position: sticky; top: 104px; font-size: 0.92rem; }
+@media (max-width: 1020px) {
+  .toc { position: static; margin-bottom: 40px; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; background: var(--card); }
+}
+.toc h4 { font-family: var(--font-body); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+.toc li { counter-increment: toc; border-left: 1px solid var(--line); }
+.toc li.is-active { border-left-color: var(--cyan); }
+.toc a { display: block; padding: 8px 0 8px 16px; color: var(--muted); line-height: 1.4; }
+.toc a::before { content: counter(toc, decimal-leading-zero) "  "; color: var(--line-strong); font-variant-numeric: tabular-nums; }
+.toc a:hover { color: var(--heading); text-decoration: none; }
+.toc li.is-active > a { color: var(--heading); font-weight: 500; }
+
+/* article meta row under the title (on the dark hero) */
+.article-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; margin: 20px 0 0; font-size: 0.85rem; color: var(--muted); letter-spacing: 0.04em; }
+.article-meta .dot { width: 3px; height: 3px; background: currentColor; border-radius: 50%; opacity: 0.6; }
+
+/* author strip closing the article */
+.author-strip { display: flex; gap: 18px; align-items: center; margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--line); }
+.author-strip img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+.author-strip strong { display: block; color: var(--heading); font-family: var(--font-display); }
+.author-strip span { font-size: 0.86rem; color: var(--muted); }
+
+/* ==========================================================================
+   DYNAMICS — counters, scroll cues, back-to-top (all reduced-motion safe)
+   ========================================================================== */
+.stat .num[data-count] { font-variant-numeric: tabular-nums; }
+.to-top {
+  position: fixed; right: 22px; bottom: 22px; z-index: 70;
+  width: 44px; height: 44px; display: grid; place-items: center;
+  background: #00152c; color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 50%;
+  opacity: 0; pointer-events: none; transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+.to-top:hover { border-color: var(--cyan); }
+@media (max-width: 640px) { .to-top { right: 14px; bottom: 14px; } }
+
+/* .steps nested inside a half-width column (homepage process + image) —
+   viewport breakpoints cannot see the narrower container, so scope it. */
+.row .steps { grid-template-columns: 1fr 1fr; }
+@media (max-width: 640px) { .row .steps { grid-template-columns: 1fr; } }

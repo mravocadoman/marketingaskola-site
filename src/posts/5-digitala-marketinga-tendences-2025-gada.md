@@ -5,7 +5,8 @@ seoTitle: "5 digitālā mārketinga tendences 2025.gadā - Mārketinga Skola"
 description: "Rakstā iepazīsi, mūsuprāt, TOP 5 svarīgākās tendences, kā arī iegūsi vērtīgus ieteikumus, ar kuriem varēsi tuvāk iepazīties ar šo tēmu."
 date: 2024-03-20
 updated: 2025-06-14
-image: "/img/2023/04/Digital-1200-628px-1.jpg"
+image: "/img/gen/cover-5-digitala-marketinga-tendences-2025-gada.webp"
+legacyImage: "/img/2023/04/Digital-1200-628px-1.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/5-digitala-marketinga-tendences-2025-gada/"
 ---
@@ -15,15 +16,6 @@ Gluži kā gadi plūst un mainās, arī digitālā mārketinga tendences nestāv
 Šī iemesla dēļ vēlamies Tevi iepazīstināt ar 2025.gada digitālā mārketinga tendencēm, lai Tev būtu vieglāk orientēties šajā arvien straujāk mainīgajā vidē.
 
 Rakstā iepazīsi, mūsuprāt, TOP 5 svarīgākās tendences, kā arī iegūsi vērtīgus ieteikumus un papildus informācijas avotus, kuros varēsi tuvāk iepazīties ar šo tēmu.
-
-**Satura rādītājs**
-
--   [Sociālo tīklu e-komercijas gads](#one)
--   [SEO sociālajos tīklos, SEO balsī](#two)
--   [2025.gada pūķis – mākslīgais intelekts](#three)
--   [TikTok jeb jaunā māte “Google”](#four)
--   [Personalizācija – ceļš uz klienta sirdi](#five)
--   [Mārketinga skola iesaka](#6)
 
 <h2 id="one">1\. Sociālo tīklu e-komercijas gads</h2>
 

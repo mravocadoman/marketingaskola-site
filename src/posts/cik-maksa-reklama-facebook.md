@@ -5,7 +5,8 @@ seoTitle: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem - 
 description: "Uzzini, cik maksā reklāma Facebook tīklā un kā plānot budžetu efektīvai reklāmas kampaņai! Salīdzinām izmaksas un stratēģijas."
 date: 2025-03-19
 updated: 2025-04-29
-image: "/img/2025/03/Digital-1200-628px-1.jpg"
+image: "/img/gen/cover-cik-maksa-reklama-facebook.webp"
+legacyImage: "/img/2025/03/Digital-1200-628px-1.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/cik-maksa-reklama-facebook/"
 ---
@@ -13,16 +14,6 @@ permalink: "/cik-maksa-reklama-facebook/"
 **Cik maksā reklāma Facebook?** Facebook reklāmas cena ir viens no galvenajiem jautājumiem uzņēmējiem, kuri vēlas izmantot digitālo mārketingu. Vai iespējams sākt ar nelielu budžetu, vai arī jāiegulda tūkstoši? Turpini lasīt un uzzināsi, no kā sastāv Facebook reklāmas izmaksas, kā plānot budžetu un cik Tev būtu jāiegulda, lai sasniegtu savus mērķus!
 
 Ja vēlies uzzināt tad lasi tālāk un uzzināsi no kā sastāv Facebook reklāmas izmaksas, kā plānot budžetu un cik Tev būtu jāiegulda, lai sasniegtu savus mērķus!
-
-**Satura rādītājs**
-
--   [Kas ir Facebook reklāmas un kā tās strādā?](#1)
--   [Kāpēc uzņēmumiem vajadzīgas Facebook reklāmas?](#2)
--   [Kas sastāda Facebook reklāmu kopējās izmaksas?](#3)
--   [Kā zināt, cik liels budžets Tev būs vajadzīgs Facebook reklāmām?](#4)
--   [Instagram reklāmas cena – vai atšķiras no Facebook?](#5)
--   [Kur labāk reklamēties – Facebook vai Instagram?](#6)
--   [Vai Facebook reklāmas ir tā vērtas?](#7)
 
 <h2 id="1">Kas ir Facebook reklāmas un kā tās strādā?</h2>
 

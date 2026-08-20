@@ -5,19 +5,13 @@ seoTitle: "Facebook reklāmas: Kā reklamēt savu biznesu internetā? - Mārketi
 description: "Vai vēlies uzzināt, kā Facebook reklāmas var palīdzēt Tavam biznesam? Šajā rakstā Tevi iepazīstināsim ar Facebook kampaņas izveides pamatiem!"
 date: 2022-01-09
 updated: 2025-04-29
-image: "/img/2022/01/8.jpg"
+image: "/img/gen/cover-facebook-reklamas-izstrade.webp"
+legacyImage: "/img/2022/01/8.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/facebook-reklamas-izstrade/"
 ---
 
 Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
-
-**Satura rādītājs**
-
--   [Kas tad īsti ir Facebook reklāmas?](#1)
--   [Stratēģijas izstrāde kā prioritāte](#2)
--   [Kādi ir Facebook reklāmas izveides soļi?](#3)
--   [Mārketinga Skolas piedāvājums](#4)
 
 <h2 id="1">**Kas tad īsti ir Facebook reklāmas?**</h2>
 

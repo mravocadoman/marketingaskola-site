@@ -5,7 +5,8 @@ seoTitle: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam? - 
 description: "SEO optimizācija Tavam biznesam palīdz piesaistīt klientus, palielināt uzticamību un sasniegt Google virsotnes."
 date: 2025-04-22
 updated: 2025-06-14
-image: "/img/2025/04/Digital-1200-628px-2.jpg"
+image: "/img/gen/cover-seo-optimizacija-tavam-biznesam.webp"
+legacyImage: "/img/2025/04/Digital-1200-628px-2.jpg"
 categories: ["digitalais-marketings","marketinga-strategija"]
 permalink: "/seo-optimizacija-tavam-biznesam/"
 ---
@@ -23,18 +24,6 @@ Neatkarīgi no tā, vai esi frizieris, dizaineris, mēbeļu meistars, koučs vai
 SEO palīdz Tev izcelties pār konkurentiem un būt atrastam tieši tajās meklēšanas frāzēs, kas Tavam biznesam ir svarīgas.
 
 Šajā blogā mēs kopīgi ielūkosimies, kas ir SEO, kādi ir tā veidi un kā Tu to vari izmantot savā labā, lai uzlabotu Tava biznesa redzamību un mājaslapas sniegumu. Turpini lasīt, lai izpētītu SEO pamatprincipus un praktiskos ieteikumus.
-
-**Satura rādītājs**
-
--   [Kas ir SEO optimizācija?](#1)
--   [Kā strādā SEO optimizācija?](#2)
--   [Kas ir SEM un kā tas atšķiras no SEO?](#3)
--   [Kādi ir SEO optimizācijas veidi?](#4)
--   [Biežākās kļūdas SEO procesā un kā tās novērst](#5)
--   [Kāpēc SEO optimizācija ir svarīga Tavam biznesam?](#6)
--   [Kā uzsākt ar SEO bez lieliem ieguldījumiem un kā panākt SEO optimizāciju?](#7)
--   [Biežāk uzdotie jautājumi](#8)
--   [Apgūsti Digitālo Mārketingu bez maksas!](#lift)
 
 <h2 id="1">Kas ir SEO optimizācija?</h2>
 

@@ -5,7 +5,8 @@ seoTitle: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā 
 description: "Reklāmu uzstādīšana internetā var būt sarežģīts process. Uzzini kādi ir 7 digitālā mārketinga rīki, kas palīdzēs vieglāk sasniegt mērķus!"
 date: 2022-05-08
 updated: 2024-10-21
-image: "/img/2022/05/5.jpg"
+image: "/img/gen/cover-7-digitala-marketinga-riki.webp"
+legacyImage: "/img/2022/05/5.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/7-digitala-marketinga-riki/"
 ---
@@ -15,17 +16,6 @@ Vai jūties kā ļoti liela daļa uzņēmēju un dažreiz nodomā, ka digitālai
 Šajā bloga rakstā uzzināsi par 7 lieliskiem digitālā mārketinga rīkiem, kurus paši izmantojam ikdienā. Uzzināsi par šo rīku funkcijām un sapratīsi, vai tie varētu būt nepieciešami Tava uzņēmuma digitālā mārketinga attīstībai.
 
 Patiešām ceram, ka šie digitālā mārketinga rīki Tev būs tikpat noderīgi cik mums!
-
-**Satura rādītājs**
-
--   [ChatGPT](#1)
--   [Google Analytics 4](#2)
--   [WordPress](#3)
--   [Unsplash](#4)
--   [Grammarly](#5)
--   [Buffer](#6)
--   [Google Optimize](#7)
--   [Mārketinga skola iesaka](#8)
 
 <h2 id="1">1\. [ChatGPT](https://openai.com/)</h2>
 

@@ -5,7 +5,8 @@ seoTitle: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā"
 description: "Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei."
 date: 2024-02-15
 updated: 2025-03-06
-image: "/img/2024/02/12.png"
+image: "/img/gen/cover-digitalais-marketings.webp"
+legacyImage: "/img/2024/02/12.png"
 categories: []
 permalink: "/digitalais-marketings/"
 ---
@@ -15,15 +16,6 @@ Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings u
 Ne velti sociālos tīklus izmanto **86%** no lielajiem Eiropas Savienības uzņēmumiem un [](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Digital_economy_and_society_statistics_-_enterprises)**60,9%** no itin **visiem** ES uzņēmumiem. Paredzam, ka šie skaitļi tikai augs.
 
 Mēs, Mārketinga Skolā, nebaidāmies teikt, ka digitālais mārketings ir 21.gadsimta uzņēmējdarbības veiksmes atslēga. Kāpēc? Uzzini šajā rakstā.
-
-**Satura rādītājs**
-
--   [Kāpēc digitālais mārketings?](#one)
--   [Digitālā mārketinga kanāli](#two)
--   [3 lielākie digitālā mārketinga ieguvumi](#three)
--   [Kāpēc visi uzņēmumi, kuros īstenots digitālais mārketings, nav veiksmīgi?](#four)
--   [Kā digitālais mārketings manu uzņēmumu aizvedīs līdz peļņai?](#five)
--   [Mārketinga skolas piedāvājums](#6)
 
 <h2 id="one">Kāpēc digitālais mārketings?</h2>
 

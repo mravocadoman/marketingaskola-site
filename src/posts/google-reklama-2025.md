@@ -5,19 +5,13 @@ seoTitle: "Vai Google reklāma ir efektīva arī 2025. gadā? - Mārketinga Skol
 description: "Izvēlēties efektīvākos digitālā mārketinga rīkus nekad nav bijis viegli. Uzzini, vai Google reklāma vēl ir aktuāla 2025. gadā!"
 date: 2025-01-06
 updated: 2025-03-11
-image: "/img/2023/04/Digital-1200-628px.jpg"
+image: "/img/gen/cover-google-reklama-2025.webp"
+legacyImage: "/img/2023/04/Digital-1200-628px.jpg"
 categories: ["google-reklama"]
 permalink: "/google-reklama-2025/"
 ---
 
 Izvēlēties efektīvākos digitālā mārketinga rīkus sava uzņēmuma popularizēšanai nekad nav bijis viegli, īpaši jau tāpēc, ka digitālā vide pastāvīgi mainās. Google reklāma, jeb Google Ads jau daudzus gadus ir plaši izmantota digitālā mārketinga metode, **bet vai arī 2025. gadā tā ir tikpat efektīva?** To noskaidrosim šajā bloga rakstā.
-
-**Satura rādītājs**
-
--   [Kas ir Google reklāma un kā tā strādā?](#1)
--   [Kādi ir šīs reklāmas ieguvumi?](#2)
--   [Kam jāpievērš uzmanība, lietojot Google reklāmu?](#3)
--   [Mārketinga skola iesaka](#4)
 
 Lai palīdzētu Tev izprast, vai Google reklāma ir īstais mārketinga rīks, ko izmantot 2025. gadā, bloga rakstā atbildēsim uz 3 vērtīgiem jautājumiem:
 

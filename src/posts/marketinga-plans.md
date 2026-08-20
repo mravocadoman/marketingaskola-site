@@ -5,7 +5,8 @@ seoTitle: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību -
 description: "Mārketinga plāns ir ceļvedis izaugsmei. Uzzini, kā izveidot mārketinga plāns un saglabāt konkurētspēju mainīgos apstākļos."
 date: 2025-04-09
 updated: 2025-12-18
-image: "/img/2025/04/Digital-1200-628px-3.png"
+image: "/img/gen/cover-marketinga-plans.webp"
+legacyImage: "/img/2025/04/Digital-1200-628px-3.png"
 categories: ["digitalais-marketings","marketinga-strategija"]
 permalink: "/marketinga-plans/"
 ---
@@ -13,15 +14,6 @@ permalink: "/marketinga-plans/"
 Mūsdienu konkurences apstākļos uzņēmuma izaugsme ir gandrīz neiespējama, ja nav labi izstrādāts mārketinga plāns. Nepietiek tikai ar labu produktu vai pakalpojumu – nepieciešama stratēģija, kas palīdz sasniegt pareizo auditoriju, optimizēt resursus un gūt maksimālu atdevi no mārketinga aktivitātēm.
 
 Kā izveidot efektīvu **mārketinga plānu**, kas patiešām darbojas? Kādi ir galvenie elementi, kas jāņem vērā? Turpini lasīt, un uzzināsi visu būtiskāko!
-
-**Satura rādītājs**
-
--   [Kas ir mārketinga plāns un kāpēc tas ir nepieciešams?](#1)
--   [Kā mārketinga plāns ietekmē uzņēmuma izaugsmi?](#2)
--   [Kā izveidot efektīvu mārketinga plānu?](#3)
--   [Biežāk pieļautās kļūdas mārketinga plānošanā un kā no tām izvairīties](#4)
--   [Kā pielāgot mārketinga plānu krīzes apstākļos?](#5)
--   [Apgūsti Digitālo Mārketingu bez maksas!](#lift)
 
 <h2 id="1">Kas ir mārketinga plāns un kāpēc tas ir nepieciešams?</h2>
 

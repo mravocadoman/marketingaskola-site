@@ -5,23 +5,13 @@ seoTitle: "Mārketinga stratēģijas izstrāde - 7 padomi - Mārketinga Skola"
 description: "Uzzini, kas ir veiksmīga mārketinga stratēģijas izstrāde, un kā to īstenot to savā uzņēmumā ar šiem septiņiem padomiem!"
 date: 2021-12-09
 updated: 2024-10-21
-image: "/img/2021/12/9.jpg"
+image: "/img/gen/cover-marketinga-strategijas-izstrade.webp"
+legacyImage: "/img/2021/12/9.jpg"
 categories: []
 permalink: "/marketinga-strategijas-izstrade/"
 ---
 
 Vēlies pacelt sava uzņēmuma mārketingu jaunā līmenī, taču veiksmīgas un efektīvas mārketinga stratēģijas izstrāde šķiet kā liels izaicinājums? Kā ilggadēji mārketinga nozares eksperti, esam rūpīgi izvēlējušies 7 vērtīgus padomus, ko noteikti iesakām Tev ņemt vērā, kad veido savu unikālo mārketinga stratēģiju [Facebook reklāmām](/facebook-reklamas-izstrade/). 
-
-**Satura rādītājs**
-
--   [Plāns, plāns & vēlreiz plāns](#1)
--   [Izvirzi konkrētus mērķus](#2)
--   [Izzini savu mērķauditoriju!](#3)
--   [Aplūko, ko dara konkurenti!](#4)
--   [Izvēlies: tradicionālais vai digitālais mārketings?](#5)
--   [Iepazīsti savas nozares mārketinga tendences no A līdz Z](#6)
--   [Autentiskums kā prioritāte](#7)
--   [Mārketinga skolas piedāvājums](#8)
 
 <h2 id="1">**1\. Plāns, plāns & vēlreiz plāns**</h2>
 

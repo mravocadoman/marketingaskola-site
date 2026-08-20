@@ -5,7 +5,8 @@ seoTitle: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas! - Mā
 description: "Izmanto Mārketinga mācības, lai pilnveidotu savu mārketinga stratēģiju internetā! Iemācies, kā pārvaldīt sociālos tīklus jau tagad!"
 date: 2022-06-11
 updated: 2025-06-14
-image: "/img/2022/06/2.jpg"
+image: "/img/gen/cover-marketinga-macibas.webp"
+legacyImage: "/img/2022/06/2.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/marketinga-macibas/"
 ---
@@ -15,13 +16,6 @@ Vai vēlies pacelt savas Facebook reklāmas prasmes jaunā līmenī?
 Apzinoties to, ka Facebook ir populāra sociālo mediju platforma, kuru uzņēmumi izmanto kā vietu, kurā efektīvi reklamēt savus produktus, esam izveidojuši unikālas Facebook mārketinga mācības tiešsaistes formātā.
 
 Ja vēlies padziļināti apgūt, kā soli pa solim izveidot efektīvu Facebook reklāmas kampaņu, tad šīs mārketinga mācības varētu būt Tev piemērotas. Šajā bloga rakstā tuvāk iepazīsi Facebook reklāmas un sapratīsi, vai šī ir īstā platforma, kurā reklamēt Tavu uzņēmumu.
-
-**Satura rādītājs**
-
--   [Kas ir Facebook reklāma?](#1)
--   [Kā saprast, vai Facebook platforma ir piemērota Tavam uzņēmumam?](#2)
--   [Ko Tev sniegs Facebook mārketinga mācības?](#3)
--   [Mārketinga skolas piedāvājums](#4)
 
 <h2 id="1">Kas ir Facebook reklāma?</h2>
 

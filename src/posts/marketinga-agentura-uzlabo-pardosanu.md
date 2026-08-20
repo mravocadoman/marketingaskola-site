@@ -5,7 +5,8 @@ seoTitle: "Kas ir mārketinga aģentūra un kā tā palīdz uzlabot uzņēmuma r
 description: "Uzzini, kā mārketinga aģentūra palīdz palielināt Tava uzņēmuma redzamību un pārdošanu, izmantojot stratēģiju, reklāmas un digitālos rīkus."
 date: 2025-11-29
 updated: 2026-01-13
-image: "/img/2025/11/Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu.png"
+image: "/img/gen/cover-marketinga-agentura-uzlabo-pardosanu.webp"
+legacyImage: "/img/2025/11/Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu.png"
 categories: ["digitalais-marketings","marketinga-strategija"]
 permalink: "/marketinga-agentura-uzlabo-pardosanu/"
 ---
@@ -13,13 +14,6 @@ permalink: "/marketinga-agentura-uzlabo-pardosanu/"
 Mūsdienās uzņēmējdarbība ir kļuvusi tik strauja un konkurence tik intensīva, ka ar skaistu mājaslapu vai Facebook profilu vien nepietiek. Lai nepazustu informācijas džungļos, uzņēmumiem arvien biežāk nepieciešams profesionāls atbalsts — un te spēlē iesaistās mārketinga aģentūra. Daudzi uzņēmēji domā: “Vai tiešām man vajag aģentūru? Vai nevaru visu izdarīt pats?” Protams, vari, bet jautājums ir — vai tas būs efektīvi un vai tas Tev atmaksāsies?
 
 Šajā rakstā uzzināsi, kas ir mārketinga aģentūra, kādas funkcijas tā pilda, kā mārketinga aģentūras Latvijā strādā ikdienā, kādi mārketinga pakalpojumi ir vispieprasītākie un kāpēc sadarbība ar aģentūru var būt viens no vērtīgākajiem ieguldījumiem Tava biznesa izaugsmē.
-
-### Satura rādītājs
-
--   [Kas ir mārketinga aģentūra?](#1)
--   [Mārketinga aģentūras Latvijā – kā tās darbojas?](#2)
--   [Mārketinga pakalpojumi, ko uzņēmumi izmanto visbiežāk](#3)
--   [Kā mārketinga aģentūra palīdz palielināt redzamību un pārdošanu?](#4)
 
 <h2 id="1">Kas ir mārketinga aģentūra</h2>
 

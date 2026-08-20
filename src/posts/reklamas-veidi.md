@@ -5,7 +5,8 @@ seoTitle: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditor
 description: "Uzzini, kuri reklāmas veidi ir visefektīvākie! Salīdzini digitālo un tradicionālo reklāmu, lai sasniegtu vairāk klientu!"
 date: 2025-04-02
 updated: 2025-04-15
-image: "/img/2025/04/Digital-1200-628px-2.png"
+image: "/img/gen/cover-reklamas-veidi.webp"
+legacyImage: "/img/2025/04/Digital-1200-628px-2.png"
 categories: ["digitalais-marketings","google-reklama","marketinga-strategija"]
 permalink: "/reklamas-veidi/"
 ---
@@ -16,16 +17,6 @@ Digitālais mārketings, Facebook Ads reklāma, SEO un satura mārketings vai tr
 **Lai pieņemtu pareizo lēmumu,** ir svarīgi izprast savu mērķauditoriju, platformu priekšrocības un reklāmas efektivitāti.
 
 Tādēļ turpini lasīt un uzzini, kādi reklāmas veidi ir pieejami, kā tie atšķiras un kurš būs vispiemērotākais Tava uzņēmuma vajadzībām!
-
-**Satura rādītājs**
-
--   [Kas ir reklāmas veidi un kāpēc tie ir svarīgi?](#1)
--   [Populārākie reklāmas veidi un to priekšrocības](#2)
--   [Digitālā reklāma](#3)
--   [Tradicionālā reklāma](#4)
--   [Kā izvēlēties pareizo reklāmas veidu savam biznesam?](#5)
--   [Labākie rīki reklāmas kampaņu veidošanai](#6)
--   [Apgūsti Digitālo Mārketingu bez maksas!](#lift)
 
 <h2 id="1">Kas ir reklāmas veidi un kāpēc tie ir svarīgi?</h2>
 

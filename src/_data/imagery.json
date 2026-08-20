@@ -1,0 +1,436 @@
+{
+  "slots": [
+    {
+      "id": "kursi-programmas-motivs",
+      "page": "digitala-marketinga-kursi",
+      "placement": "Full-width band between the .page-hero section and section 01 \"Kursu katalogs\" — a new <figure class=\"img img--plain\"> directly above the {% include \"course-catalog.njk\" %} block.",
+      "aspect": "landscape",
+      "alt": "Abstrakts kāpņveida grafiskais motīvs, kas attēlo kursu programmas soļus",
+      "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c background: an ascending staircase of five flat horizontal bars of unequal width in cool grey #c9d8e8 and white, exactly one bar filled solid cyan #03c3f8, set behind a sparse hairline dot grid in dim slate. Asymmetric, weight pushed to the right, wide empty navy at the left. Absolutely no text, letters or numbers, no gradients, no glow, no 3D, no soft shadows. Subtle film grain.",
+      "rationale": "The hub page runs hero straight into a dense catalog list with nothing visual to separate them; a curriculum/system motif sets the topic before the grid."
+    },
+    {
+      "id": "meta-reklamas-motivs",
+      "page": "meta-reklamas-kurss",
+      "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width — before the sidebar's course-card scrolls past.",
+      "aspect": "landscape",
+      "alt": "Abstrakts sociālo tīklu plūsmas motīvs no pārklājošiem kvadrātveida laukiem",
+      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background: a fanned cluster of small square feed tiles in cool grey #c9d8e8 and white, offset like a shuffled stack drifting toward the lower right, exactly one tile filled flat cyan #03c3f8, and a single large thin cyan arc sweeping behind the cluster. Generous empty navy on the left. No text, letters, numbers or interface chrome, no gradients, no glow, no 3D render. Flat shapes with 1px hairlines, subtle grain.",
+      "rationale": "Long text-only sales body with five collapsed FAQ blocks; one topic image at the top gives the Meta course a distinct visual identity against the SEO and TikTok pages."
+    },
+    {
+      "id": "seo-mekletaja-motivs",
+      "page": "seo-kursi",
+      "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
+      "aspect": "landscape",
+      "alt": "Abstrakts meklēšanas motīvs — aplis un rezultātu saraksta joslas",
+      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background: a stack of left-aligned thin horizontal bars of descending length in cool grey #c9d8e8, reading as an abstract ranked list, the second bar filled cyan #03c3f8 and nudged forward; above them one large perfect cyan circle outline with a single straight tangent stroke crossing it. Asymmetric, wide negative space at the lower right. No text, letters or numbers, no gradients, no glows, no 3D, flat shapes only, subtle grain.",
+      "rationale": "Same text-dense course template as Meta — needs its own unmistakable motif (ranked list + circle) so the two pages never read as the same picture."
+    },
+    {
+      "id": "tiktok-video-motivs",
+      "page": "tiktok-kursi",
+      "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
+      "aspect": "landscape",
+      "alt": "Abstrakts īsformāta video motīvs no trim vertikāliem kadriem",
+      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background: three tall narrow vertical panels overlapping like swiped cards, cool grey #c9d8e8 and white with crisp 1px hairline edges, the centre panel carrying one small solid cyan #03c3f8 triangle. Along the lower edge, a row of flat vertical tick marks of varying height, two of them cyan. Strong negative space above. No text, no numbers, no UI chrome, no gradients, no glow, no 3D, subtle film grain.",
+      "rationale": "The short-form vertical format is the whole subject of the course; tall stacked frames plus a tick waveform separate it instantly from the Meta tile cluster."
+    },
+    {
+      "id": "produkti-videokurss",
+      "page": "produkti",
+      "placement": "Inside the hgrid--3 grid, cell 01 (Videokurss) — after <span class=\"cell-idx\">01</span> and before the .course-tag label.",
+      "aspect": "square",
+      "alt": "Abstrakts videokursa motīvs — sadaļu plātnes ar progresa joslu",
+      "prompt": "Flat vector editorial graphic, square, on a solid near-black navy #020d1c background: three stacked wide 16:9 plates receding upward in cool grey #c9d8e8 with 1px hairline borders, the front plate crossed by a single flat cyan #03c3f8 progress bar and a small cyan square marker. Strictly orthographic, no perspective distortion, composition pushed left, deep empty navy at the upper right. No text, letters, numbers or interface chrome, no gradients, no glows, no 3D render, subtle film grain.",
+      "rationale": "Three product cells currently carry only a tag and a paragraph; a small square object per cell makes the products page read as a shelf rather than a list."
+    },
+    {
+      "id": "produkti-e-gramata",
+      "page": "produkti",
+      "placement": "Inside the hgrid--3 grid, cell 02 (Bezmaksas e-grāmata) — after <span class=\"cell-idx\">02</span>, before the .course-tag label.",
+      "aspect": "square",
+      "alt": "Abstrakts e-grāmatas motīvs — vēdeklī izklātas lapas",
+      "prompt": "Flat vector editorial graphic, square, on a solid near-black navy #020d1c background: a loosely fanned stack of rectangular sheets seen from above at a slight angle, pale cool grey #c9d8e8 faces with crisp 1px hairline edges, one sheet in the middle flat cyan #03c3f8 and protruding from the stack. Clean flat shapes, no perspective shading, generous empty navy around the stack. No text, letters or numbers, no gradients, no glow, no 3D render, subtle grain.",
+      "rationale": "Needs a product thumbnail that is deliberately NOT the e-book cover object used on /bezmaksas-e-gramata/ — sheets from above versus an upright cover."
+    },
+    {
+      "id": "produkti-veidnes",
+      "page": "produkti",
+      "placement": "Inside the hgrid--3 grid, cell 03 (100 Instagram Stories veidnes) — after <span class=\"cell-idx\">03</span>, before the .course-tag label.",
+      "aspect": "square",
+      "alt": "Abstrakts veidņu režģis ar vertikāliem laukiem",
+      "prompt": "Flat vector editorial graphic, square, on a solid near-black navy #020d1c background: a tidy four-by-four grid of small vertical rounded rectangles with 1px cool grey #c9d8e8 hairline outlines, each holding a differently placed flat grey block, exactly one cell filled solid cyan #03c3f8. Rigid modular composition with a breathing margin of empty navy around the whole grid. No text, letters, numbers, icons or interface chrome, no gradients, no glow, no 3D, subtle film grain.",
+      "rationale": "Templates are a set, not an object — a dense modular grid communicates \"many ready-made layouts\" and contrasts with the other two square cells."
+    },
+    {
+      "id": "e-gramatas-vaks",
+      "page": "bezmaksas-e-gramata",
+      "placement": "Right column of the .row.cols-2 in section 01 — replaces the existing <figure class=\"img\"> pointing at /img/2025/02/Untitled-design.webp.",
+      "aspect": "portrait",
+      "alt": "E-grāmatas vāka grafiskais attēlojums uz tumša fona",
+      "prompt": "Flat vector editorial graphic, portrait, on a solid near-black navy #020d1c background: one upright rectangular book cover seen straight on, pale cool grey #c9d8e8 face with a thin white hairline border and a bold flat cyan #03c3f8 quarter-circle arc filling its lower corner, a narrow cyan spine edge at the left, and a hard-edged darker navy rectangle offset behind it as a purely graphic cast shadow. Centred object, wide empty navy above. No text, letters or numbers, no gradients, no glow, no 3D, subtle grain.",
+      "rationale": "The download page's only image is a legacy light-background WordPress cover that fights the dark canvas; a cover-like object is the one thing this page must show."
+    },
+    {
+      "id": "konsultacijas-saruna",
+      "page": "marketinga-konsultacijas",
+      "placement": "Inside .course-body of section 01, after the two intro paragraphs and directly above the <h2>Kāpēc mārketinga konsultācijas ir vērtīgas</h2>.",
+      "aspect": "landscape",
+      "alt": "Abstrakts konsultācijas motīvs — divas figūras sarunā pie kopīga galda",
+      "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c background: two simplified high-contrast cut-out human head-and-shoulder silhouettes in cool grey #c9d8e8 and white, facing each other from opposite edges of the frame with no facial detail, a single long thin white hairline running between them like a table edge, and one solid cyan #03c3f8 circle resting in the gap between the two figures. Heavy negative space, asymmetric. No text, letters or numbers, no gradients, no glows, no 3D render, subtle film grain.",
+      "rationale": "The longest pure-text page on the list, and the only one whose subject is a conversation — the sole slot using human forms, which keeps it distinct from all eight abstract motifs."
+    },
+    {
+      "id": "cover-5-digitala-marketinga-tendences-2025-gada",
+      "page": "5-digitala-marketinga-tendences-2025-gada",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Abstrakta tumša ilustrācija ar piecām dažāda augstuma vertikālām līnijām un ciāna punktiem, kas simbolizē digitālā mārketinga tendences",
+      "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c field. Five slender vertical hairlines of unequal ascending height rise from the lower right, each capped by a small flat cyan #03c3f8 disc; one wide thin cyan arc sweeps behind them; cool grey #3d5063 tick marks rule the baseline. Large empty navy space upper left, asymmetric, subtle film grain. No text, letters, numbers, logos or interface elements. No gradients, no glow, no 3D.",
+      "rationale": "Trend-forecast piece — an ascending marker field reads as direction without charts or numerals."
+    },
+    {
+      "id": "cover-5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
+      "page": "5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Tumšs grafiskais motīvs ar pelēkām teksta joslām, no kurām viena ciāna josla izlaužas tālu uz labo pusi",
+      "prompt": "Flat vector editorial composition on solid near-black navy #020d1c. A left-aligned stack of blank rounded bars in cool grey #3d5063 suggests paragraph blocks with absolutely no letterforms; one bar is flat cyan #03c3f8 and runs far past the others toward the right edge, ending in a small cyan circle. Wide negative space at right, one white #ffffff hairline rule. Subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Copywriting article — a single line breaking out of a grey block is the idea of a converting line."
+    },
+    {
+      "id": "cover-5-visizplatitakas-kludas-reklamas-izvietosana-facebook",
+      "page": "5-visizplatitakas-kludas-reklamas-izvietosana-facebook",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Tumšs režģis no maziem kvadrātiem, kur daži ir izkrituši no līnijas un iezīmēti ciāna krāsā, attēlojot kļūdas reklāmās",
+      "prompt": "Flat vector editorial graphic on solid near-black navy #020d1c. A precise grid of small flat cool grey #3d5063 squares occupies the lower right; four squares are knocked out of alignment and tilted, two of them flat cyan #03c3f8, and one square is missing entirely leaving a clean void. A white #ffffff hairline crosses the grid and snaps mid-way. Vast empty navy above, asymmetric, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Article on common Facebook ad mistakes — a broken grid states error without any warning-icon cliché."
+    },
+    {
+      "id": "cover-7-digitala-marketinga-riki",
+      "page": "7-digitala-marketinga-riki",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Septiņas vienkāršas ģeometriskas formas rindā uz tumša fona, kas attēlo digitālā mārketinga rīku komplektu",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Seven distinct primitive shapes — circle, half-disc, thin bar, ring, quarter-arc, square, triangle — sit in one uneven row on a single white #ffffff hairline shelf, spaced like a modular kit; two shapes are flat cyan #03c3f8, the rest cool grey #55697e and white. Generous empty navy above and left, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Roundup of seven tools — a kit of primitives reads as a toolset with zero app iconography."
+    },
+    {
+      "id": "cover-cik-maksa-reklama-facebook",
+      "page": "cik-maksa-reklama-facebook",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Tumšs motīvs ar svaru sviru, kur ciāna disks nosvērts pret plānu pelēku disku kaudzi, simbolizējot reklāmas izmaksas",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A long thin white #ffffff beam balances on a small triangular fulcrum, tipped off-centre: one end carries a single large flat cyan #03c3f8 disc, the other a leaning stack of thin cool grey #3d5063 discs. Composition pushed to the lower left, wide empty navy upper right, subtle film grain. No text, letters, numbers, currency symbols, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Budget/cost explainer — a balance beam carries the price question without showing any figures."
+    },
+    {
+      "id": "cover-digitala-marketinga-agentura-izaugsmei",
+      "page": "digitala-marketinga-agentura-izaugsmei",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Augsta kontrasta izgriezta cilvēka fotogrāfija uz tumša fona ar lielu ciāna apli un baltiem lokiem aiz muguras",
+      "prompt": "High-contrast black-and-white cut-out photograph of one standing person, cleanly masked at the edges, placed right of centre on a solid near-black navy #020d1c field. Behind their shoulder sits one large flat cyan #03c3f8 circle, partly overlapped by the figure, with three concentric white #ffffff hairline arcs stepping up to the left. Flat graphic collage, heavy negative space left, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Agency-and-growth page — the brand's own cut-out-person collage language, used once in the set for a human anchor."
+    },
+    {
+      "id": "cover-digitalais-marketings",
+      "page": "digitalais-marketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Ciāna aplis ar koncentriskiem plāniem gredzeniem un maziem punktiem uz tumša fona, kas attēlo digitālā mārketinga izplatību",
+      "prompt": "Flat vector editorial motif on solid near-black navy #020d1c. One dense flat cyan #03c3f8 disc sits low-left, ringed by four widely spaced concentric white #ffffff hairline circles that run off the right edge; a scatter of tiny cool grey #55697e dots sits on the outermost rings, three of them cyan. Radiating, calm, engineered, heavy negative space to the right, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Broad pillar piece on digital marketing — a single source reaching outward is the whole subject in one mark."
+    },
+    {
+      "id": "cover-epasta-marketings",
+      "page": "epasta_marketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Vēdeklī izkārtotas plakanas taisnstūra loksnes uz tumša fona, no kurām viena ir ciāna krāsā, attēlojot e-pasta kampaņas",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Six flat rectangular sheets fan out from a single point at the left, each rotated slightly more than the last, drawn as cool grey #3d5063 planes with white #ffffff hairline edges; the third sheet is solid flat cyan #03c3f8. A thin cyan line traces the arc of the fan. Composition low and wide, big empty navy above, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Email marketing — a fan of identical sheets reads as sequenced sends, avoiding literal envelope or inbox chrome."
+    },
+    {
+      "id": "cover-facebook-reklamas-izstrade",
+      "page": "facebook-reklamas-izstrade",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Tumšs motīvs ar sakrautiem plakaniem blokiem un vienu ciāna bloku, kas tiek novietots vietā, simbolizējot reklāmas kampaņas izveidi",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Four flat cool grey #3d5063 blocks of differing widths are stacked into a low column at the lower left, aligned to white #ffffff hairline guides; one flat cyan #03c3f8 block hovers just above the stack, offset, about to seat into place, a thin cyan drop-line marking its path. Wide empty navy right, asymmetric, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "How-to on building a Facebook campaign — construction from parts, shown as blocks rather than a mock ad manager."
+    },
+    {
+      "id": "cover-google-reklama-2025",
+      "page": "google-reklama-2025",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Plāns ciāna gredzens ar garu kātu virs punktu lauka uz tumša fona, attēlojot meklēšanas reklāmu",
+      "prompt": "Flat vector editorial graphic on solid near-black navy #020d1c. A thin flat cyan #03c3f8 open ring with a long straight cyan stem lies diagonally across the upper right, hovering over a loose field of small cool grey #55697e dots spread across the lower left; exactly one dot inside the ring is flat cyan and slightly larger. White #ffffff hairline crosshair through that dot. Heavy negative space, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Search-advertising relevance piece — finding one signal in a field, without drawing a search box."
+    },
+    {
+      "id": "cover-google-reklamas-agentura",
+      "page": "google-reklamas-agentura",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Trīs sašaurinātas horizontālas spraugas tumšā fonā, caur kurām krīt diski, un apakšā iznāk viens ciāna disks",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Three horizontal white #ffffff hairline slots stack down the centre-left, each narrower than the one above; small flat cool grey #3d5063 discs pass through and thin out at every level, and a single flat cyan #03c3f8 disc emerges below the last slot. Strictly flat, engineered, wide empty navy to the right, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Choosing an agency — a narrowing filter is the vetting process, distinct from the other dot-based motifs."
+    },
+    {
+      "id": "cover-instagram-reels-marketingam",
+      "page": "instagram-reels-marketingam",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Vertikālu šauru kadru rinda pa izliektu ceļu ar ciāna cilpas loku uz tumša fona, attēlojot Instagram Reels",
+      "prompt": "Flat vector editorial graphic on solid near-black navy #020d1c. A row of seven tall narrow vertical rectangles marches along a gently curving path from lower left to upper right, drawn as flat cool grey #3d5063 planes with white #ffffff hairline gaps; the middle one is flat cyan #03c3f8. A large open cyan loop arc encircles the sequence at one end. Asymmetric, big empty navy lower right, subtle grain. No text, letters, numbers, logos, play buttons or UI. No gradients, no glow, no 3D.",
+      "rationale": "Short vertical video — a strip of portrait frames plus a loop arc says Reels without any player chrome."
+    },
+    {
+      "id": "cover-instagram-reklama",
+      "page": "instagram-reklama",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Ciāna punkts un pakāpienveida ceļš ar mazām atzīmēm uz tumša fona, attēlojot pirmos soļus Instagram reklāmā",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A single bold flat cyan #03c3f8 dot sits at the far lower left as an origin, and a stepped white #ffffff hairline path climbs right in sharp right-angle turns, passing four small hollow cool grey #55697e circles as waypoints and ending at a large flat cyan half-disc. Spare, engineered, most of the frame left empty navy, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "\"Where do I start?\" article — an origin point and a stepped route is literally the question answered."
+    },
+    {
+      "id": "cover-isa-pamaciba-izcilu-reklamas-tekstu-veidosana",
+      "page": "isa-pamaciba-izcilu-reklamas-tekstu-veidosana",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Divi spoguļoti paneļi, kurus šķir plāna vertikāla līnija, ar ciāna apli uz robežas, attēlojot reklāmas tekstu A/B testu",
+      "prompt": "Flat vector editorial composition on solid near-black navy #020d1c. Two mirrored rectangular panels sit side by side, split by one crisp vertical white #ffffff hairline: the left panel a flat cool grey #3d5063 plane, the right an empty navy panel outlined in flat cyan #03c3f8. A single flat cyan circle straddles the divide, half over each side. Off-centre, wide empty navy margin above, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Copy guide whose spine is A/B testing — a mirrored split panel is the test made graphic."
+    },
+    {
+      "id": "cover-ka-izmantot-canva",
+      "page": "ka-izmantot-canva",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Pārklājas plakans ciāna aplis, pelēks taisnstūris un balts loks ar drukas atzīmēm stūros uz tumša fona",
+      "prompt": "Flat vector editorial collage on solid near-black navy #020d1c. Three simple shapes overlap off-centre — a flat cyan #03c3f8 circle, a cool grey #3d5063 rectangle rotated a few degrees, and a broad white #ffffff open arc — layered like a composition being assembled; thin white registration and crop marks sit at the frame corners. Flat, graphic, deliberate empty navy at lower left, subtle film grain. No text, letters, numbers, logos, cursors, panels or UI. No gradients, no glow, no 3D.",
+      "rationale": "Design-without-a-designer piece — layered shapes with print marks says composition, not a screenshot of the app."
+    },
+    {
+      "id": "cover-kas-ir-seo",
+      "page": "kas-ir-seo",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Balta horizontāla līnija ar zarojošu ciāna sakņu struktūru zem tās un mazu apli virs, attēlojot organisko SEO redzamību",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. One long white #ffffff horizontal hairline crosses the frame as a ground plane; below it a branching structure of thin flat cyan #03c3f8 lines spreads downward like roots, thinning as it splits, with small cool grey #55697e nodes at the junctions. Above the line, a single small flat cyan disc sits alone in wide empty navy. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "SEO explainer — visible result above the line, structural work below it, with no magnifier or ranking-chart cliché."
+    },
+    {
+      "id": "cover-maksliga-intelekta-riki",
+      "page": "maksliga-intelekta-riki",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Septiņas dažādas ģeometriskas figūras vienā rindā uz tumša fona, viena no tām gaišzila",
+      "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c background: seven distinct small geometric tokens — a circle, a half-arc, a notched bar, a triangle, a cross, a thin ring and a stepped block — aligned in one precise horizontal row on an invisible rail, all cool grey and white except a single token filled flat cyan #03c3f8. Vast negative space above, asymmetric, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers, logos or interface chrome.",
+      "rationale": "A listicle of seven tools reads as a row of seven distinct, countable marks."
+    },
+    {
+      "id": "cover-maksligais-intelekts-marketinga",
+      "page": "maksligais-intelekts-marketinga",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Cilvēka profils sānskatā ar zilu punktu un līniju tīklu, kas izplešas no galvas",
+      "prompt": "High-contrast cut-out photograph of a person's head in strict profile, desaturated cool greys with hard cut edges, placed low-left on a solid near-black navy #020d1c field; from the temple a flat lattice of thin cyan #03c3f8 hairlines and small dots fans out toward the upper right, one node a filled cyan circle. Bold negative space, asymmetric, subtle film grain. Strictly flat graphics, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "The post explains AI applied to marketing work — machine reasoning attached to a human decision-maker."
+    },
+    {
+      "id": "cover-maksligais-intelekts",
+      "page": "maksligais-intelekts",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Aplis, sadalīts divās nesakritīgās pusēs — viena gaišzila, otra pelēka",
+      "prompt": "Abstract flat composition on solid brand navy #00152c: one large perfect circle split down its vertical axis, the left half flat cyan #03c3f8 and the right half cool grey, the two halves offset vertically so the seam deliberately misaligns; a single thin white hairline runs through the gap. Placed off-centre left with enormous empty navy to the right, subtle film grain. Completely flat, no gradients, no glow, no 3D render, no text, letters, numbers or logos.",
+      "rationale": "'Friend or threat' is a dichotomy — one form cleanly split into two mismatched halves."
+    },
+    {
+      "id": "cover-marketinga-agentura-uzlabo-pardosanu",
+      "page": "marketinga-agentura-uzlabo-pardosanu",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Izkaisīti pelēki punkti saplūst caur zilu gredzenu un iznāk kā trīs sakārtotas svītras",
+      "prompt": "Flat vector data motif on a solid near-black navy #020d1c background: a scattered cloud of small cool-grey dots on the left converges through a narrow flat cyan #03c3f8 aperture ring at the centre and emerges on the right as three neat parallel white bars of increasing length. Thin hairline guides, generous empty space, asymmetric balance, subtle film grain. Strictly flat graphic style, no gradients, no glow, no 3D, no text, letters, numbers, logos or interface chrome.",
+      "rationale": "An agency turns scattered effort into ordered, growing sales — disorder funnelled into structure."
+    },
+    {
+      "id": "cover-marketinga-macibas",
+      "page": "marketinga-macibas",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Pieci kāpņu bloki ar zilu augšējo pakāpienu un sēdoša cilvēka siluetu pie apakšējā",
+      "prompt": "Editorial flat illustration on solid near-black navy #020d1c: a rising staircase of five plain rectangular blocks in cool greys seen straight on from the side, the topmost riser filled flat cyan #03c3f8; at the lowest step sits a small high-contrast cut-out photograph of a person with a laptop, desaturated and hard-edged. Wide negative space above and left, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "A step-by-step Facebook-ads course is literally a climb from beginner to competent."
+    },
+    {
+      "id": "cover-marketinga-plans",
+      "page": "marketinga-plans",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Zila līnija ar četriem atzīmju punktiem, kas vijas pāri smalkam pelēkam režģim",
+      "prompt": "Flat engineered blueprint motif on solid brand navy #00152c: a faint cool-grey square grid occupying only the lower right of the frame, with one flat cyan #03c3f8 polyline routed across it, changing direction through four small circular waypoint markers, one of them filled white. Large empty navy field at upper left, 1px hairlines, restrained and technical, subtle film grain. Entirely flat vector, no gradients, no glow, no 3D, no text, letters, numbers, labels or logos.",
+      "rationale": "A marketing plan is a plotted route with defined waypoints, drawn on a plan sheet."
+    },
+    {
+      "id": "cover-marketinga-strategijas-izstrade",
+      "page": "marketinga-strategijas-izstrade",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Koncentriski pelēki gredzeni ar platu zilu loku, kas šķērso to centru",
+      "prompt": "Flat abstract composition on a solid near-black navy #020d1c background: four thin concentric cool-grey rings placed far off-centre toward the right edge, and one wide flat cyan #03c3f8 arc sweeping across them like a single compass stroke, terminating in a small solid cyan dot inside the innermost ring. Immense negative space at left, asymmetric, quiet and engineered, subtle film grain. Purely flat vector, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "Strategy development is a deliberate arc drawn toward a defined target."
+    },
+    {
+      "id": "cover-meta-reklamas",
+      "page": "meta-reklamas",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Trīs vertikālas tukšu paneļu kolonnas dažādos augstumos, viens panelis gaišzils",
+      "prompt": "Flat editorial graphic on solid near-black navy #020d1c: three vertical columns of blank rounded rectangles stacked one above another, the columns staggered at different heights, every panel featureless cool grey except one filled flat cyan #03c3f8; a single thin white hairline crosses all three columns horizontally. Deep empty navy at the top, asymmetric, subtle film grain. Completely flat, no gradients, no glow, no 3D, no text, letters, numbers, icons, avatars or interface chrome.",
+      "rationale": "Meta's ad surfaces are parallel feeds — stacked blank placements, one of them bought."
+    },
+    {
+      "id": "cover-reklamas-agenturas",
+      "page": "reklamas-agenturas",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Liels gaišzils segmentēts gredzens, kas daļēji aizsedz pelēku paneļu vēdekli",
+      "prompt": "Flat vector composition on solid brand navy #00152c: a large flat cyan #03c3f8 ring built from twelve evenly separated segments sits at the right edge, partially eclipsing a fan of four plain overlapping cool-grey rectangular panels angled behind it. Crisp cut edges, no shading or depth, a thin white hairline baseline, huge empty navy space at left, subtle film grain. Strictly flat, no gradients, no glow, no 3D render, no text, letters, numbers or logos.",
+      "rationale": "Agency services are a fanned set of offerings driven by one segmented mechanism."
+    },
+    {
+      "id": "cover-reklamas-veidi",
+      "page": "reklamas-veidi",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Trīs reiz trīs režģis ar dažādām ģeometriskām zīmēm, viena rūtiņa gaišzila",
+      "prompt": "Flat editorial grid on a solid near-black navy #020d1c background: a precise three-by-three matrix of square tiles, each containing one different simple geometric mark — dot, bar, arc, triangle, cross, ring, chevron, filled square, diagonal slash — all cool grey and white except a single tile flooded flat cyan #03c3f8. Thin hairline separators, wide empty navy margin around the grid, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "Choosing among advertising types is a taxonomy with exactly one selection made."
+    },
+    {
+      "id": "cover-satura-marketings",
+      "page": "satura-marketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Pieci tukši lapas formas elementi krīt pa diagonāli, tos savieno zila izliekta līnija",
+      "prompt": "Flat vector motif on solid near-black navy #020d1c: five plain blank cards cascading diagonally down the frame like falling sheets, cool grey with crisp white edges and completely featureless surfaces, one card filled flat cyan #03c3f8; a single continuous thin cyan curve hooks through all five and catches them. Generous empty navy at the upper left, asymmetric, subtle film grain. Entirely flat, no gradients, no glow, no 3D, no text, letters, numbers, marks or logos.",
+      "rationale": "Content marketing is a sequence of pieces held together by one hook."
+    },
+    {
+      "id": "cover-seo-optimizacija-tavam-biznesam",
+      "page": "seo-optimizacija-tavam-biznesam",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Astoņas horizontālas svītras ar sarūkošu platumu, augšējā gaišzila",
+      "prompt": "Flat editorial graphic on solid brand navy #00152c: eight blank horizontal slabs stacked vertically with even gaps, each slightly narrower than the one above it, all featureless cool grey except the topmost slab which is flat cyan #03c3f8; a thin cyan circle outline overlaps the top slab at its left end. Wide empty navy to the right, subtle film grain, restrained and engineered. Strictly flat vector, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "SEO is about occupying the top of a descending stack of results."
+    },
+    {
+      "id": "cover-socialie-tikli",
+      "page": "socialie-tikli",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Blīvs pelēku punktu izkārtojums ar zilām lokveida līnijām, kas staro no viena mezgla",
+      "prompt": "Flat abstract network on a solid near-black navy #020d1c background: a dense constellation of small cool-grey dots spread across the lower half of the frame, with five thin flat cyan #03c3f8 arcs radiating outward from one larger solid cyan node placed off-centre at the lower left, reaching distant dots. Vast empty navy above, asymmetric, quiet and engineered, subtle film grain. Completely flat vector, no gradients, no glow, no bloom, no 3D, no text, letters, numbers or logos.",
+      "rationale": "Social networks are reach — one node touching many across a crowd."
+    },
+    {
+      "id": "cover-tiktok-reklamas-klientu-piesaistisanai",
+      "page": "tiktok-reklamas-klientu-piesaistisanai",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Trīs šauri vertikāli kadri, vidējais gaišzils ar cilvēka siluetu kustībā",
+      "prompt": "Flat editorial composition on solid near-black navy #020d1c: three tall narrow portrait-format rectangles staggered side by side at different heights, the outer two just thin cool-grey outlines, the middle one flooded flat cyan #03c3f8 and holding a high-contrast cut-out photographic silhouette of a person mid-movement rendered in near-black navy. Two thin cyan arcs sweep past suggesting motion. Big negative space, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers, logos or interface elements.",
+      "rationale": "Short vertical video is the format itself — a 9:16 frame with a moving body in it."
+    },
+    {
+      "id": "cover-vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
+      "page": "vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Pelēka josla sazarojas divos virzienos; viens zars kļūst gaišzils, pie sazarojuma stāv cilvēks",
+      "prompt": "Flat vector illustration on solid brand navy #00152c: one thick cool-grey band enters from the left edge and forks at a small solid white dot into two paths — the upper branch stays grey and stops short, the lower branch turns flat cyan #03c3f8 and runs to the right edge. A small high-contrast cut-out photograph of a standing person, desaturated and hard-edged, waits at the junction. Huge negative space, subtle film grain. Entirely flat, no gradients, no glow, no 3D, no text, letters, numbers or logos.",
+      "rationale": "The post is a yes/no decision — a fork where one route is the recommended one."
+    },
+    {
+      "id": "home-hero-performance-band",
+      "page": "index",
+      "placement": "Full-width editorial band inserted between the closing tag of section.sec--hero (right below the .logo-strip) and the '01 Pakalpojumi' section — the first visual the page shows after the stats panel and client logos.",
+      "aspect": "landscape",
+      "alt": "Abstrakta ilustrācija ar augšupejošu līniju un vienu izceltu punktu uz horizontālām atzīmju līnijām.",
+      "prompt": "Flat vector editorial banner on a solid near-black navy #020d1c field: one thin white ascending polyline steps across the right two-thirds, resting on three 1px cool-grey #8ba3bd horizontal rules; a single node is marked by a small solid cyan #03c3f8 disc with a slim cyan vertical drop line beneath it. Vast untouched navy fills the left third. Entirely flat colour, subtle film grain, no gradients, no glow, no 3D, no shadows, no text, letters, numbers, logos or interface elements.",
+      "rationale": "The homepage opens with stats and grey client logos and then runs six text-only sections; it needs one strong image immediately under the hero to stop reading as a generic template."
+    },
+    {
+      "id": "home-process-portrait",
+      "page": "index",
+      "placement": "Inside the '02 Kā mēs strādājam' section — wrap the existing .steps block in a two-column layout (row cols-2 top): this image in the left column, the four numbered process steps in the right.",
+      "aspect": "portrait",
+      "alt": "Cilvēks tumšā kreklā skaidro ideju; fonā vienkāršs zils aplis.",
+      "prompt": "High-contrast cut-out studio photograph of one focused adult in a plain dark charcoal shirt, mid-torso, caught gesturing mid-explanation, hard-edged silhouette knocked out onto a solid #020d1c navy background; a single large flat cyan #03c3f8 circle sits behind the shoulder, partly eclipsed by the figure, with one thin white quarter-arc at lower left. Cool desaturated skin tones, generous empty space above the head. Flat graphic treatment, no gradients, no glow, no drop shadow, no text, numbers, logos or UI.",
+      "rationale": "The process section is the longest stretch of unbroken text on the homepage, and one human presence anchors an otherwise fully abstract image set."
+    },
+    {
+      "id": "services-module-band",
+      "page": "pakalpojumi",
+      "placement": "Full-width band directly beneath the .page-hero section, above the '01 Ko mēs darām' six-cell service grid.",
+      "aspect": "landscape",
+      "alt": "Seši ģeometriski elementi izkārtoti stingrā režģī — aplis, loks, josla, bloks un punkti.",
+      "prompt": "Flat vector composition of six distinct geometric modules spaced across a strict engineered grid on solid #00152c navy: an outlined white circle, a quarter arc, a tall solid cyan #03c3f8 bar, a split rectangle, a nine-dot cool-grey #8ba3bd matrix, and a thin cross. One module is rotated slightly off axis. Hairline 1px white rules divide the columns. Wide margins, editorial calm, faint grain. No gradients, no glow, no shadow, no text, numerals, letters or logos.",
+      "rationale": "The services hub is a text hero followed straight by a text grid; a modular geometric band visually states 'a set of six services' before the reader parses any of them."
+    },
+    {
+      "id": "meta-targeting-band",
+      "page": "facebook-reklama",
+      "placement": "Full-width band directly beneath the .page-hero section, above section '01 Meta reklāma' — which keeps its existing Meta certification badge image in the two-column row.",
+      "aspect": "landscape",
+      "alt": "Koncentriski apļi, kas sašaurinās ap vienu izceltu zilu punktu.",
+      "prompt": "Flat vector diagram on solid #020d1c navy: four widely spaced concentric thin white rings sit off-centre to the right, tightening around one small solid cyan #03c3f8 dot; a scattered field of tiny cool-grey #8ba3bd dots lies outside the outermost ring and thins toward the empty left third. A single straight cyan hairline enters from the frame edge and stops at the centre dot. Purely flat, no gradients, no glow, no depth, no crosshair, no text, numbers, letters or logos.",
+      "rationale": "The page's core promise is precise audience targeting, and its only current image is a certification badge — the hero has no visual at all."
+    },
+    {
+      "id": "brew-scale-ratio",
+      "page": "facebook-reklama",
+      "placement": "In section '04 Portfolio — The Brew Company': place this image and the existing .panel stats block side by side in a row cols-2 top, image on the left, the three stats on the right.",
+      "aspect": "square",
+      "alt": "Mazs zils aplis liela balta apļa iekšpusē kā proporcijas attēlojums.",
+      "prompt": "Flat vector study of proportion on solid #00152c navy: one small solid cyan #03c3f8 disc and one enormous white 1px-outline circle share a horizontal centre line, the tiny disc placed inside the great circle near its left edge; two hairline cool-grey #8ba3bd radius lines and one short tick mark measure the gap between them. Deep negative space, asymmetric, engineered and quiet. Entirely flat, no gradients, no glow, no 3D, no spheres, no text, numerals, labels or logos.",
+      "rationale": "The portfolio section is three bare numbers in a panel; a proportion motif carries the 13x return idea visually without baking any figure into pixels."
+    },
+    {
+      "id": "video-formats-band",
+      "page": "video-reklama",
+      "placement": "Full-width band directly beneath the .page-hero section, above section '01 Pakalpojums'. The only added image on this page — actor portraits and all video embeds below stay untouched.",
+      "aspect": "landscape",
+      "alt": "Trīs dažādu proporciju kadru rāmji ar plānu mērjoslu apakšā.",
+      "prompt": "Flat vector arrangement of three empty frame outlines in different proportions on solid #020d1c navy — a tall vertical rectangle, a square, and a wide horizontal one — overlapping slightly at their corners; one is filled solid cyan #03c3f8 while the others are 1px white outlines. A thin cool-grey #8ba3bd horizontal rule runs beneath them carrying small evenly spaced tick marks. Large empty navy at the right, faint grain. No gradients, no glow, no play buttons, no interface chrome, no text, numbers or logos.",
+      "rationale": "Page already has real actor photos and eight video embeds, so it needs exactly one hero-level graphic — the vertical/horizontal format split its own copy names."
+    },
+    {
+      "id": "smm-orbit-band",
+      "page": "socialo-mediju-marketings",
+      "placement": "Full-width band directly beneath the .page-hero section, above section '01 Kāpēc tas ir svarīgi'.",
+      "aspect": "landscape",
+      "alt": "Zils aplis ar četrām plānām orbītām, uz katras viens neliels punkts.",
+      "prompt": "Flat vector orbit motif on solid #020d1c navy: one solid cyan #03c3f8 circle sits left of centre, encircled by four thin white elliptical paths at differing tilts, each carrying a single small cool-grey #8ba3bd dot at a different point of its loop. The outermost ellipse runs off the right edge of the frame. Sparse, asymmetric, with large areas of untouched navy. Flat colour only, no gradients, no glow, no 3D spheres, no planets, no text, letters, numbers or logos.",
+      "rationale": "This page has no imagery whatsoever, and multi-channel presence (Facebook, Instagram, TikTok, LinkedIn) can be shown as orbits without using any platform logo."
+    },
+    {
+      "id": "smm-cadence-grid",
+      "page": "socialo-mediju-marketings",
+      "placement": "In section '03 Kam piemērots' — place the existing .tick-list and this image side by side in a row cols-2 top, list on the left, image on the right.",
+      "aspect": "square",
+      "alt": "Kvadrātu režģis ar diagonāli izceltiem zilajiem kvadrātiem.",
+      "prompt": "Flat vector cadence matrix on solid #00152c navy: a wide grid of small squares drawn in 1px cool-grey #8ba3bd hairlines, most left empty, crossed by one clean diagonal run of solid cyan #03c3f8 squares, with two isolated white squares sitting off the diagonal. The grid stops well short of the frame, leaving a broad navy margin at top and left. Precise, engineered, faint film grain. No gradients, no glow, no shadow, no text, numbers, dates, weekday labels or logos.",
+      "rationale": "That section is a lone five-item bullet list with no visual weight, and a rhythm matrix reads as the regular monthly publishing the service actually sells."
+    }
+  ]
+}

@@ -5,7 +5,8 @@ seoTitle: "Mākslīgais intelekts: draugs vai drauds? - Mārketinga Skola"
 description: "Atklājiet, kā mākslīgais intelekts uzlabo reklāmu veidošanas procesu, piedāvājot inovatīvus risinājumus un palielinot precizitāti."
 date: 2024-02-15
 updated: 2025-03-19
-image: "/img/2024/02/13.png"
+image: "/img/gen/cover-maksligais-intelekts.webp"
+legacyImage: "/img/2024/02/13.png"
 categories: ["maksligais-intelekets"]
 permalink: "/maksligais-intelekts/"
 ---
@@ -15,14 +16,6 @@ Mākslīgais intelekts 2023.gadā sastāda **27 miljardus** ASV dolāru no pasau
 Skaitļi runā paši par sevi – mākslīgais intelekts attīstās ļoti strauji.
 
 Šī iemesla dēļ vēlamies rakstā iepazīstināt ar mākslīgo intelektu, īpaši akcentējot tā ietekmi mūsu nozarē – mārketingā.
-
-**Satura rādītājs**
-
--   [Kas ir mākslīgais intelekts?](#1)
--   [Mākslīgais intelekta izmantošana mārketingā](#2)
--   [Mākslīgais intelekts: draugs vai drauds?](#3)
--   [Kā mākslīgo intelektu var ieviest Tavā biznesā?](#4)
--   [Mārketinga skola iesaka](#5)
 
 <h2 id="1">Kas ir mākslīgais intelekts?</h2>
 

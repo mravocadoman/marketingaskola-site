@@ -5,7 +5,8 @@ seoTitle: "Sociālie tīkli - mārketinga veiksmes atslēga - Mārketinga Skola"
 description: "Kādēļ sociālie tīkli ir tik plaši izmantoti? Vai Tavam biznesam nepieciešami sociālie tīkli? Uz šiem jautājumiem atbildēsim šajā rakstā."
 date: 2024-03-20
 updated: 2024-10-21
-image: "/img/2024/03/16.jpg"
+image: "/img/gen/cover-socialie-tikli.webp"
+legacyImage: "/img/2024/03/16.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/socialie-tikli/"
 ---
@@ -21,14 +22,6 @@ Skaitļi runā paši par sevi, vai ne?
 Kur gan ir āķis? Kādēļ sociālie tīkli un arī to sniegtā maksas reklāmu iespēja ir tik plaši izmantota? Vai un kāpēc Tavam biznesam nepieciešami sociālie tīkli?
 
 Uz šiem jautājumiem atbildēsim šajā rakstā.
-
-**Satura rādītājs**
-
--   [Vai Tavam biznesam nepieciešami sociālie tīkli?](#vai_tavam_biznesam_nepieciesami_socialie_tikli)
--   [Sociālie tīkli kā uzņēmumu vizītkarte](#socialie_tikli_ka_uznemumu_vizitkarte)
--   [Sociālo tīklu ieguvumi mārketingā](#socialie_tiklu_ieguvumi_marketinga)
--   [Kāpēc maksas reklāmas?](#kapec_maksas_reklamas)
--   [Mārketinga skolas piedāvājums](#5)
 
 <h2 id="vai_tavam_biznesam_nepieciesami_socialie_tikli">Vai Tavam biznesam nepieciešami sociālie tīkli?</h2>
 

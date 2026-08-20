@@ -31,7 +31,16 @@ const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new'
 const page = await browser.newPage();
 for (const { name, path, width } of list) {
   await page.setViewport({ width, height: 940, deviceScaleFactor: width < 500 ? 2 : 1 });
-  await page.goto(BASE + path, { waitUntil: 'networkidle0', timeout: 30000 }).catch(() => {});
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      await page.goto(BASE + path, { waitUntil: 'load', timeout: 25000 });
+      break;
+    } catch (e) {
+      console.log('  goto attempt ' + attempt + ' failed: ' + String(e).split('\n')[0]);
+      if (attempt === 3) console.log('  GIVING UP on ' + path);
+      else await new Promise((r) => setTimeout(r, 1500));
+    }
+  }
   await page.evaluate(async () => {
     await document.fonts.ready;
     document.querySelectorAll('.reveal').forEach((e) => e.classList.add('in'));
@@ -42,7 +51,20 @@ for (const { name, path, width } of list) {
     window.scrollTo(0, 0);
   });
   await new Promise((r) => setTimeout(r, 500));
-  await page.screenshot({ path: join(outDir, name + '.png'), fullPage: true });
+  // Resize the viewport to the document height and capture that — far more
+  // reliable than fullPage for long pages, which Chrome can return blank.
+  const h = await page.evaluate(() => document.body.scrollHeight);
+  console.log('  docHeight=' + h + ' url=' + page.url() + ' imgs=' + (await page.evaluate(() => document.images.length)));
+  const capH = Math.min(h, 15000);
+  await page.setViewport({ width, height: capH, deviceScaleFactor: width < 500 ? 2 : 1 });
+  await new Promise((r) => setTimeout(r, 350));
+  await page.evaluate(() => {
+    document.querySelectorAll('.reveal').forEach((e) => e.classList.add('in'));
+    window.scrollTo(0, 0);
+  });
+  await new Promise((r) => setTimeout(r, 250));
+  await page.screenshot({ path: join(outDir, name + '.png') });
+  if (h > capH) console.log('  (clipped from ' + h + 'px)');
   console.log('shot', name);
 }
 await browser.close();

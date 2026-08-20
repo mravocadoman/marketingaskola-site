@@ -5,7 +5,8 @@ seoTitle: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošan
 description: "E-pasta mārketings palīdz veidot kampaņas, kas palielina pārdošanu un uzticību. Uzzini, kā automatizēt, segmentēt un sasniegt klientus efektīvi."
 date: 2025-12-17
 updated: 2025-12-17
-image: "/img/2025/12/epasta-marketings-ka-izveidot-kampanas-kas-palielina-pardosanu-thumbnail.png.png"
+image: "/img/gen/cover-epasta_marketings.webp"
+legacyImage: "/img/2025/12/epasta-marketings-ka-izveidot-kampanas-kas-palielina-pardosanu-thumbnail.png.png"
 categories: []
 permalink: "/epasta_marketings/"
 ---
@@ -15,15 +16,6 @@ E-pasta mārketings bieži tiek saukts par vienu no ienesīgākajiem digitālā 
 Patiesībā e-pasta mārketings strādā ļoti efektīvi, ja tas tiek veidots pārdomāti. Tas ir kanāls, kurā Tu vari uzrunāt klientu personīgi, veidot uzticību ilgtermiņā un pārvērst interesi reālos darījumos, nemaksājot par katru klikšķi kā reklāmās. E-pasts ļauj savienot sociālos tīklus, reklāmas, mājaslapu un pārdošanu vienā loģiskā sistēmā.
 
 Šajā rakstā Tu uzzināsi, kā veidot e-pasta kampaņas, kas patiesi strādā, kāpēc noder instantly.ai un kādas kļūdas visbiežāk tiek pieļautas strādājot pie e-pasta mārketinga.
-
-### Satura rādītājs
-
--   [Kāpēc e-pasta mārketings ir viens no ienesīgākajiem kanāliem?](#1)
--   [E-pastu saraksts un auditorija](#2)
--   [Kampaņu struktūra un saturs](#3)
--   [Instantly.ai mērķtiecīgām e-pasta kampaņām](#4)
--   [Automatizācija, pārdošana un rezultātu mērīšana](#5)
--   [Biežākās kļūdas](#6)
 
 <h2 id="1">Kāpēc e-pasta mārketings ir viens no ienesīgākajiem kanāliem?</h2>
 

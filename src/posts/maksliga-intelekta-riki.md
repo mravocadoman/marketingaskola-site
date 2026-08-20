@@ -5,7 +5,8 @@ seoTitle: "7 Mākslīgā Intelekta Rīki Mārketingam - Mārketinga Skola"
 description: "Šie 7 lieliskie mākslīgā intelekta rīki optimizēs tavu sniegumu digitālajā vidē lai Tu enerģiju varētu veltīt sava uzņēmuma attīstībai."
 date: 2023-11-07
 updated: 2025-06-14
-image: "/img/2023/11/1.jpg"
+image: "/img/gen/cover-maksliga-intelekta-riki.webp"
+legacyImage: "/img/2023/11/1.jpg"
 categories: ["maksligais-intelekets"]
 permalink: "/maksliga-intelekta-riki/"
 ---
@@ -15,17 +16,6 @@ permalink: "/maksliga-intelekta-riki/"
 Šie 7 lieliskie mākslīgā intelekta rīki optimizēs tavu sniegumu digitālajā vidē un ietaupīs laiku un enerģiju, lai Tu varētu to veltīt nozīmīgākiem uzdevumiem sava uzņēmuma attīstībai.
 
 Mākslīgā intelekta izaugsme nepārtraukti attīstās un digitālajā vidē arvien biežāk parādās jaunas inovācijas. AI var būt patiešām lielisks palīgs biznesa efektivitātes veicināšanai, tāpēc esam apkopojuši sarakstu ar noderīgiem mākslīgā intelekta rīkiem, kurus paši izmantojam ikdienā un ceram, ka arī Tev tie noderēs!
-
-**Satura rādītājs**
-
--   [MidJourney.com](#1)
--   [Canva – Magic Design](#2)
--   [Beautiful.ai](#3)
--   [PodCastle.ai](#4)
--   [Synthesia.io](#5)
--   [InVideo](#6)
--   [Opus.Clip](#7)
--   [Mārketinga skolas piedāvājums](#8)
 
 ![Midjourney — Vikipēdija](https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg)
 
