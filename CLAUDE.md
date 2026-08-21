@@ -427,9 +427,11 @@ Square is the right half of the choice because the system is already a ledger �
 hairline grids, indexed eyebrows, corner ticks on panels, depth from hairlines
 and never shadows. Rounded corners were fighting all of it.
 
-**The only circles left are two true dots** (a 3px separator in `.article-meta`
-and the 4px travelling signal on `.logo-strip`). Containers, images, avatars and
-buttons are boxes and read as boxes. If you add a rounded element, you are
+**The only circle left is one true dot** — the 3px separator in `.article-meta`.
+(The 4px travelling signal on `.logo-strip` was removed on 21 Aug 2026: owner
+did not want the dot animation there. The hero dots are the one place motion of
+that kind lives.) Containers, images, avatars and buttons are boxes and read as
+boxes. If you add a rounded element, you are
 reopening a decision that was made deliberately — change the token instead.
 
 ## Header and nav (21 Aug 2026)
