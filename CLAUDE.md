@@ -169,50 +169,58 @@ Sources stay in `src/img/YYYY/MM/…` and are the source of truth. `npm run port
 
 ## Forms — hand-coded, MailerLite (21 Aug 2026)
 
-The Tally iframes are gone.  defines the fields,
- renders them ( — WITH CONTEXT, or the  global is invisible in the macro),
- submits. Two forms:  and ; the second
-argument presets a field, e.g. .
-Field lists were read off the live Tally embeds, not invented.
+The Tally iframes are gone. `src/_data/forms.json` defines the fields,
+`src/_includes/form.njk` renders them, `src/js/forms.js` submits. Import the
+macro **with context** — `{% from "form.njk" import form with context %}` —
+or the `forms` global is invisible inside the macro and every field silently
+disappears. Two forms, `contact` and `course`; the second argument presets a
+field, e.g. `form("course", { course: "SEO kurss" })`. The field lists were
+read off the live Tally embeds, not invented.
 
 **MailerLite, not Resend — the deciding factor is that this site is static.**
 MailerLite's form endpoint takes a browser POST and carries no secret, so it
 works from GitHub Pages as-is. A Resend API key can never reach the browser, so
 Resend would need a serverless function on a host this project does not have,
-just to receive a form. MailerLite is also a list + automations (free to 1,000
-subscribers / 12,000 emails per month) where Resend stores nothing, so Resend
+purely to receive a form. MailerLite is also a list with automations (free to
+1,000 subscribers / 12,000 emails a month) where Resend stores nothing, so it
 would be an addition to a list tool rather than a replacement for one. The
-provider sits behind an adapter in : switching means adding one entry
-and changing  in forms.json — no markup changes.
+provider sits behind an adapter in `forms.js`: switching means adding one entry
+there and changing `provider` in `forms.json` — no markup changes anywhere.
 
-- Endpoint: .
-  If the browser blocks reading the response, the code retries   — a cross-origin FormData POST is a simple request, so it still arrives.
-- **Every failure path falls back to a pre-filled mailto** rather than an error
-  message. A form that loses a lead is worse than no form.
-- Honeypot + Latvian client-side validation; consent checkbox is required and
-  names SIA "Stonks" as the controller.
-- No-JS: the form cannot submit, so it renders a mailto line instead.
+- Endpoint: `assets.mailerlite.com/jsonp/<account>/forms/<formId>/subscribe`.
+  If the browser refuses to let us read the response, the code retries with
+  `mode:'no-cors'` — a cross-origin FormData POST is a *simple* request, so it
+  still reaches the server even when the reply is opaque.
+- **Every failure path falls back to a pre-filled `mailto:`** rather than an
+  error message. A form that loses a lead is worse than no form.
+- Honeypot field plus Latvian client-side validation. The consent checkbox is
+  required and names SIA "Stonks" as the data controller.
+- The MailerLite form IDs live in `forms.json` under `forms.<key>.id`. With an
+  empty id the form still renders and still works — it just routes to `mailto:`.
 
 ## Marks and white-slab artifacts
 
- () is DELETED. It faked white paper behind
-transparent artwork and punched a light hole in the dark canvas.
--  →  recolours transparent MARK artwork
-  to  through its own alpha, same trick as the logo normaliser. Used
-  for the EU funding lockup. Single-colour reproduction on a dark ground is
-  permitted by the EU emblem guidelines, and the source was already monochrome.
-  The mask must be an image that still HAS an alpha channel — passing an
-  extracted greyscale buffer masks nothing (it is fully opaque) and yields a
-  solid slab, so the tool fails if ink coverage is not between 3% and 70%.
-- The **Meta certification badges are deliberately NOT toned** — they are
-  already brand-coloured on transparent and read fine on navy. Flattening them
-  would destroy an official badge. They just use .
-- Real screenshots (portfolio) keep their light UI and use : a
+`.img--card` (`background:#fff`) is **deleted**. It faked white paper behind
+artwork that was already transparent, punching a light hole in the dark canvas.
+
+- `npm run marks` → `tools/tone-marks.mjs` recolours transparent MARK artwork to
+  `#c9d8e8` through its own alpha, the same trick as the logo normaliser. Used
+  for the EU funding lockup: single-colour reproduction on a dark ground is what
+  the EU emblem guidelines provide for, and the source was already monochrome.
+  **The mask must be an image that still has an alpha channel.** Passing an
+  extracted greyscale buffer masks nothing — a b-w PNG is fully opaque, so
+  `dest-in` keeps every pixel and you get a solid light slab, the exact artifact
+  the tool exists to remove. The tool fails unless ink coverage lands between
+  3% and 70%; the upper bound is what catches that failure.
+- The **Meta certification badges are deliberately NOT toned.** They are already
+  brand-coloured on transparent and read fine on navy; flattening them to one
+  tone would destroy an official badge. They just use `.marks`.
+- Real screenshots (portfolio) keep their own light UI and use `.img--shot` — a
   hairline frame, no white padding.
-- The EU funding notice moved from an orphaned centred card at the foot of
-   into a  band closing the contact section, so the
-  legal disclosures sit together and the page ends on the founder story.
-  **The wording is unchanged and still legally required.**
+- The EU funding notice moved out of an orphaned centred card at the foot of
+  `/sazinies/` into a `.funding` band closing the contact section, so the legal
+  disclosures sit together and the page ends on the founder story instead of on
+  a compliance footnote. **The wording is unchanged and still legally required.**
 
 ## Client / partner logos
 
