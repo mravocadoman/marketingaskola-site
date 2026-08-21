@@ -507,7 +507,7 @@ must be given explicitly or the layer silently runs past the stage.
 
 **Dropped entirely below 980px** (where `.hero-grid` collapses to one column and
 the headline grows into the bands the paths avoid) and under
-`prefers-reduced-motion``prefers-reduced-motion`. CSS cannot pause a SMIL timeline, so removing the
+`prefers-reduced-motion`. CSS cannot pause a SMIL timeline, so removing the
 layer is also the only honest way to stop it.
 
 `npm run test:hero` samples every dot eight times over its path and asserts none
