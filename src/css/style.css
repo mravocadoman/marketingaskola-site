@@ -290,8 +290,10 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .marquee {
   overflow: hidden;
   position: relative;
-  border-block: 1px solid var(--line);
-  padding: 6px 0;
+  /* no borders here — .logo-strip already draws the single hairline, and two
+     bordered boxes read as "a strip inside a strip" */
+  border: 0;
+  padding: 0;
 }
 .marquee-track {
   display: flex;
@@ -302,7 +304,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   will-change: transform;
 }
 .marquee-track img {
-  height: 74px;
+  height: 64px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -311,7 +313,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
-@media (max-width: 640px) { .marquee-track img { height: 60px; } .marquee-track { animation-duration: 34s; } }
+@media (max-width: 640px) { .marquee-track img { height: 52px; } .marquee-track { animation-duration: 34s; } }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; gap: 32px; }
 }
@@ -627,7 +629,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 }
 
 /* ---------- course pages ---------- */
-.page-hero { padding: clamp(72px, 9vw, 120px) 0; border-bottom: 1px solid var(--line); }
+.page-hero { padding: clamp(56px, 6.5vw, 92px) 0 clamp(44px, 4.5vw, 64px); border-bottom: 1px solid var(--line); }
 .page-hero h1 { font-size: clamp(2.4rem, 1.4rem + 4vw, 4.25rem); max-width: 18ch; }
 .page-hero .sub { color: var(--body); max-width: 56ch; margin: 10px 0 0; font-size: clamp(1.05rem, 1rem + 0.5vw, 1.25rem); line-height: 1.6; }
 .page-hero .chip {
@@ -655,6 +657,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   color: var(--body);
 }
 .page-hero--pull { padding-bottom: clamp(130px, 15vw, 190px); }
+
+/* Collapse the join: a hero already provides the top air, so the first
+   section after it must not add a full --sec-pad on top of it. */
+.page-hero + .sec,
+.sec--hero + .sec { padding-top: clamp(44px, 5vw, 72px); }
+.page-hero + .paper .article-shell { padding-top: clamp(40px, 4.5vw, 64px); }
+.page-hero .btn-wrap { margin-top: 26px; }
+.page-hero .chips { margin-top: 22px; }
 
 .course-layout {
   display: grid;

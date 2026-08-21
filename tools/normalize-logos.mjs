@@ -19,16 +19,16 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'src', 'img', 'logos');
 mkdirSync(OUT, { recursive: true });
 
-const CANVAS_W = 300;
-const CANVAS_H = 80;
+const CANVAS_W = 320;
+const CANVAS_H = 64;
 // Pure area-matching shrinks wide wordmarks to nothing and blows up square
 // marks; pure height-matching does the opposite. Use the geometric mean of the
 // two, which is what reads as "same size" on a real logo wall.
-const NOMINAL_H = 42;           // the height a mid-ratio logo lands on
+const NOMINAL_H = 48;           // the height a mid-ratio logo lands on
 const NOMINAL_RATIO = 3;        // ratio considered "typical" for this set
-const MAX_H = 50;
-const MIN_H = 28;
-const MAX_W = 250;
+const MAX_H = 60;
+const MIN_H = 34;
+const MAX_W = 290;
 const TONE = { r: 201, g: 216, b: 232 }; // --body #c9d8e8
 
 const LOGOS = [

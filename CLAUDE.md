@@ -143,19 +143,32 @@ History, so nobody relitigates it:
   did this guy in the main page, use openai api and add the cyan elements/accents, not just
   change the shade slightly."*
 
-**The settled rule:** the OpenAI image-edit endpoint MAY be used on team photographs to place
-them on the brand backdrop with cyan accents — but the person must survive untouched.
+**The settled rule:** the OpenAI image-edit endpoint MAY be used on team photographs — but the
+person must survive untouched, and the PROMPT SHAPE is what decides whether they do.
 
-- `npm run portraits:brand` → `tools/restyle-portraits.mjs` (edit endpoint, gpt-image-1).
-  Output: `src/img/team/<id>-brand.webp`. The prompt is identity-locked and explicitly demands
-  a PHOTOGRAPH: an early version said "flat graphic illustration" and returned vectorised line
-  art with a hardened, older face — if a result looks illustrated, that clause has crept back in.
-- **Always diff the result against the source before shipping.** Check face, build, hairstyle and
-  especially HAIR COLOUR (Katrīna was turned brunette once). If a portrait drifts, re-roll it with
-  a per-person `note` in the PORTRAITS array rather than accepting it.
-- `npm run portraits` → `tools/grade-portraits.mjs` is the no-AI fallback: local colour maths
-  only, face pixels mathematically untouched. Use it if the owner ever wants AI out of the loop.
-- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth for both tools.
+**The lesson that cost three rounds:** `images/edits` is a *generation* call, not a compositing
+call — it re-draws the whole picture, face included. What determines the outcome is where the
+likeness instruction sits relative to everything else:
+- Burying "keep the likeness" under transformation instructions (cut out / convert to B&W / add
+  shapes) invites a full re-render, and the faces drifted every time. Owner: *"OpenAI or YOU still
+  changed people's appearance in my team!"*
+- Leading with **"KEEP THE LIKENESS OF THE PERSON PERFECTLY"**, enumerating the features that must
+  not move, and then scoping the edit to **the background only** works. Owner: *"tell the prompt to
+  adjust the image and KEEP the likeness of the person perfectly! Has worked for me every time."*
+- Never ask the model for the greyscale — that is a whole-image restyle. `selectiveGrey()` in the
+  tool desaturates locally by hue, keeping the cyan disc, and cannot move a facial feature.
+
+- `npm run portraits:brand` → `tools/restyle-portraits.mjs`. Output: `src/img/team/<id>-brand.webp`.
+  Also demand a PHOTOGRAPH explicitly: an early prompt said "flat graphic illustration" and returned
+  vectorised line art with a hardened, older face.
+- **Always diff the result against the source before shipping** (the tool's compare sheet). Check
+  face, build, hairstyle and especially HAIR COLOUR — Katrīna was turned brunette once.
+- `tools/brand-portraits.mjs` is an unfinished non-generative alternative (local ONNX matting via
+  @imgly/background-removal-node, then compositing the original pixels over a drawn backdrop). It
+  currently dies on a libvips/GLib error on this machine. It is the safest approach in principle —
+  the face is literally the original pixels — so it is worth fixing if likeness ever regresses again.
+- `npm run portraits` → `tools/grade-portraits.mjs` is the no-AI fallback: local colour maths only.
+- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth for every tool.
 
 ## Client / partner logos
 

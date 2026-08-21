@@ -48,26 +48,43 @@ const PORTRAITS = [
   { id: 'rihards-wide', src: 'src/img/2024/07/Untitled-design-4.webp' },
 ];
 
+// Likeness first, and ONLY the background is up for edit. Earlier versions
+// buried the likeness rule under "cut out / convert to B&W / add shapes", which
+// invites the model to re-render the person — and it did. Greyscale is applied
+// locally afterwards instead, so it can never move a facial feature.
+
+// Desaturate everything except brand-cyan pixels. Pure channel maths — it
+// cannot shift geometry, so the face stays exactly as photographed.
+async function selectiveGrey(buf) {
+  const img = sharp(buf).ensureAlpha();
+  const { data, info } = await img.raw().toBuffer({ resolveWithObject: true });
+  const ch = info.channels;
+  for (let i = 0; i < data.length; i += ch) {
+    const r = data[i], g = data[i + 1], b = data[i + 2];
+    const cyanish = b > 90 && b > r * 1.45 && g > r * 1.2;
+    if (cyanish) continue;
+    const y = Math.round(0.2126 * r + 0.7152 * g + 0.0722 * b);
+    data[i] = y; data[i + 1] = y; data[i + 2] = y;
+  }
+  return sharp(data, { raw: { width: info.width, height: info.height, channels: ch } })
+    .png()
+    .toBuffer();
+}
+
 const PROMPT =
-  'Keep this PHOTOGRAPH a photograph and place it on a branded background. ' +
-  'It must stay photographic: real skin texture, real hair, real fabric, natural photographic ' +
-  'detail and depth. Do NOT illustrate it, do NOT vectorise, posterise, cel-shade, cartoon, ' +
-  'stencil or turn it into line art or a drawing. ' +
-  'ABSOLUTE REQUIREMENT — the person must stay the same real person: keep the face, facial ' +
-  'features, bone structure, expression, gaze direction, skin, hairstyle, HAIR COLOUR, facial ' +
-  'hair and clothing exactly as photographed. Do not replace the person, do not swap the face, ' +
-  'do not change their age, build, hair colour or hair length, do not beautify or smooth the ' +
-  'skin. They must remain immediately recognisable to colleagues. ' +
-  'Change ONLY the surroundings and the grade: cut the subject out of their original background ' +
-  'and place them on a solid dark navy field (#020d1c) with no room, props or texture behind ' +
-  'them. Behind the subject place ONE large flat cyan (#03c3f8) circle, positioned off-centre ' +
-  'so the person partly eclipses it. Add one thin white quarter-arc outline as a secondary ' +
-  'accent near a lower corner. Render the person in high-contrast black and white so only the ' +
-  'circle and arc carry colour. ' +
-  'The circle and arc are flat graphic shapes behind a real photographic subject — like a studio ' +
-  'portrait shot against a navy backdrop with a painted cyan disc on it. ' +
-  'No gradients, no glow, no bloom, no drop shadow, no vignette, no 3D, no text, no letters, ' +
-  'no logos, no borders, no frames.';
+  'KEEP THE LIKENESS OF THE PERSON PERFECTLY. This is a real, specific person and they must ' +
+  'remain perfectly identical and immediately recognisable: exactly the same face, the same ' +
+  'facial proportions, eyes, nose, mouth, jawline and ears, the same skin, the same expression ' +
+  'and gaze, the same age, the same hairstyle, the same HAIR COLOUR, the same facial hair and ' +
+  'the same clothing. Do not redraw, restyle, beautify, smooth, slim, age or youthen the person. ' +
+  'Do not swap the face. The person must look exactly as they do in the original photograph. ' +
+  'EDIT ONLY THE BACKGROUND BEHIND THEM. Replace whatever is behind the person with a plain, ' +
+  'solid dark navy field (hex #020d1c) — no room, no window, no furniture, no texture. ' +
+  'On that navy field, behind the person, place ONE large flat cyan (hex #03c3f8) circle, ' +
+  'positioned so the person overlaps and partly hides it. Add one thin white quarter-arc ' +
+  'outline near a lower corner. ' +
+  'Keep it a real photograph with real photographic detail — do not illustrate, vectorise, ' +
+  'posterise or cartoon it. No gradients, no glow, no drop shadow, no text, no logos.';
 
 let queue = PORTRAITS.filter((p) => (ONLY ? p.id === ONLY : true));
 if (!FORCE) queue = queue.filter((p) => !existsSync(join(OUT, `${p.id}-brand.webp`)));
@@ -98,7 +115,8 @@ for (const p of queue) {
     const url = json.data?.[0]?.url;
     const buf = b64 ? Buffer.from(b64, 'base64') : Buffer.from(await (await fetch(url)).arrayBuffer());
 
-    await sharp(buf).resize({ width: 1000 }).webp({ quality: 82, effort: 5 }).toFile(join(OUT, `${p.id}-brand.webp`));
+    const toned = await selectiveGrey(buf);
+      await sharp(toned).resize({ width: 1000 }).webp({ quality: 82, effort: 5 }).toFile(join(OUT, `${p.id}-brand.webp`));
     console.log(`  ok  ${p.id} → src/img/gen/${p.id}-brand.webp`);
   } catch (e) {
     console.log(`  FAIL ${p.id}: ${e.message}`);
