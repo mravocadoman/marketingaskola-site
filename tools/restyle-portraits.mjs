@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = join(ROOT, 'src', 'img', 'gen');
+const OUT = join(ROOT, 'src', 'img', 'team');
 mkdirSync(OUT, { recursive: true });
 
 const arg = (k, d) => {
@@ -42,25 +42,35 @@ const PORTRAITS = [
   { id: 'roberts',  src: 'src/img/2025/09/Screenshot-2025-09-28-132933.webp' },
   { id: 'kristaps', src: 'src/img/2020/12/b-w.webp' },
   { id: 'matiss',   src: 'src/img/2024/04/Untitled-design-2.webp' },
+  { id: 'matiss-seo', src: 'src/img/2025/03/Untitled-design-2.webp' },
   { id: 'katrina',  src: 'src/img/2021/09/FullSizeRender-1.webp', note: ' Her hair is LIGHT BLONDE with a straight fringe — keep the blonde colour and the fringe exactly; do not darken her hair.' },
   { id: 'madara',   src: 'src/img/2025/03/Untitled-design-3.webp' },
   { id: 'rihards-wide', src: 'src/img/2024/07/Untitled-design-4.webp' },
 ];
 
 const PROMPT =
-  'Restyle this photograph as a premium editorial team portrait for a dark website. ' +
-  'CRITICAL: keep the same person — preserve their face, facial features, expression, ' +
-  'hairstyle, beard and clothing exactly as photographed. Do not beautify, do not change ' +
-  'age, do not alter identity. Only change the environment and grade: replace the ' +
-  'background with a completely plain, even, solid very dark navy backdrop (#020d1c) with ' +
-  'no props, no window, no texture and no visible room; relight the subject with soft, ' +
-  'directional studio light from one side so the silhouette separates cleanly from the ' +
-  'dark background; grade the image to a refined desaturated near-monochrome with cool ' +
-  'shadows and clean highlights. Flat and photographic — no gradients painted into the ' +
-  'backdrop, no glow, no vignette, no text, no logos, no borders.';
+  'Keep this PHOTOGRAPH a photograph and place it on a branded background. ' +
+  'It must stay photographic: real skin texture, real hair, real fabric, natural photographic ' +
+  'detail and depth. Do NOT illustrate it, do NOT vectorise, posterise, cel-shade, cartoon, ' +
+  'stencil or turn it into line art or a drawing. ' +
+  'ABSOLUTE REQUIREMENT — the person must stay the same real person: keep the face, facial ' +
+  'features, bone structure, expression, gaze direction, skin, hairstyle, HAIR COLOUR, facial ' +
+  'hair and clothing exactly as photographed. Do not replace the person, do not swap the face, ' +
+  'do not change their age, build, hair colour or hair length, do not beautify or smooth the ' +
+  'skin. They must remain immediately recognisable to colleagues. ' +
+  'Change ONLY the surroundings and the grade: cut the subject out of their original background ' +
+  'and place them on a solid dark navy field (#020d1c) with no room, props or texture behind ' +
+  'them. Behind the subject place ONE large flat cyan (#03c3f8) circle, positioned off-centre ' +
+  'so the person partly eclipses it. Add one thin white quarter-arc outline as a secondary ' +
+  'accent near a lower corner. Render the person in high-contrast black and white so only the ' +
+  'circle and arc carry colour. ' +
+  'The circle and arc are flat graphic shapes behind a real photographic subject — like a studio ' +
+  'portrait shot against a navy backdrop with a painted cyan disc on it. ' +
+  'No gradients, no glow, no bloom, no drop shadow, no vignette, no 3D, no text, no letters, ' +
+  'no logos, no borders, no frames.';
 
 let queue = PORTRAITS.filter((p) => (ONLY ? p.id === ONLY : true));
-if (!FORCE) queue = queue.filter((p) => !existsSync(join(OUT, `team-${p.id}.webp`)));
+if (!FORCE) queue = queue.filter((p) => !existsSync(join(OUT, `${p.id}-brand.webp`)));
 
 console.log(`model=${MODEL} → ${queue.length} portrait(s)`);
 
@@ -88,8 +98,8 @@ for (const p of queue) {
     const url = json.data?.[0]?.url;
     const buf = b64 ? Buffer.from(b64, 'base64') : Buffer.from(await (await fetch(url)).arrayBuffer());
 
-    await sharp(buf).resize({ width: 1000 }).webp({ quality: 82, effort: 5 }).toFile(join(OUT, `team-${p.id}.webp`));
-    console.log(`  ok  ${p.id} → src/img/gen/team-${p.id}.webp`);
+    await sharp(buf).resize({ width: 1000 }).webp({ quality: 82, effort: 5 }).toFile(join(OUT, `${p.id}-brand.webp`));
+    console.log(`  ok  ${p.id} → src/img/gen/${p.id}-brand.webp`);
   } catch (e) {
     console.log(`  FAIL ${p.id}: ${e.message}`);
   }

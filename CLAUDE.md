@@ -133,22 +133,29 @@ Every non-photographic image on the site is generated flat brand artwork.
 - **The API key lives in `.env` (gitignored, never committed).** `.env.example`
   documents the variable. Rotate the key if it was ever pasted into a chat.
 
-## Team photographs — NEVER AI-generate or restyle them
+## Team photographs — brand accents YES, new people NO
 
-**Owner instruction, 21 Aug 2026: "why did you change the people in the images,
-my team members... all I wanted is to adjust the colors slightly with some cyan
-elements — revert them!"** A previous pass ran the real portraits through the
-OpenAI image-edit endpoint; it changed lighting, backgrounds and (on one photo)
-hair colour. That was wrong and was reverted.
+History, so nobody relitigates it:
+- A first pass restyled the portraits through the OpenAI image-edit endpoint and changed
+  backgrounds, lighting and one person's hair colour. Owner: *"why did you change the people
+  in the images, my team members… revert them!"* — reverted.
+- A pure local colour grade was then judged too weak. Owner, 21 Aug 2026: *"edit them like you
+  did this guy in the main page, use openai api and add the cyan elements/accents, not just
+  change the shade slightly."*
 
-- The team photographs are pictures of **real people**. Never send them to an
-  image model, never regenerate, never "restyle", never swap backgrounds.
-- Colour work only, and only with deterministic local maths:
-  `npm run portraits` → `tools/grade-portraits.mjs` applies a light cool/cyan
-  cast (tint #cfe4f5 at 0.7 strength, +6% contrast) over the untouched original
-  and writes `src/img/team/<name>.webp`. Adjust `--strength` / `--tint` to
-  re-tune; the pixels of the face are never altered.
-- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth.
+**The settled rule:** the OpenAI image-edit endpoint MAY be used on team photographs to place
+them on the brand backdrop with cyan accents — but the person must survive untouched.
+
+- `npm run portraits:brand` → `tools/restyle-portraits.mjs` (edit endpoint, gpt-image-1).
+  Output: `src/img/team/<id>-brand.webp`. The prompt is identity-locked and explicitly demands
+  a PHOTOGRAPH: an early version said "flat graphic illustration" and returned vectorised line
+  art with a hardened, older face — if a result looks illustrated, that clause has crept back in.
+- **Always diff the result against the source before shipping.** Check face, build, hairstyle and
+  especially HAIR COLOUR (Katrīna was turned brunette once). If a portrait drifts, re-roll it with
+  a per-person `note` in the PORTRAITS array rather than accepting it.
+- `npm run portraits` → `tools/grade-portraits.mjs` is the no-AI fallback: local colour maths
+  only, face pixels mathematically untouched. Use it if the owner ever wants AI out of the loop.
+- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth for both tools.
 
 ## Client / partner logos
 
