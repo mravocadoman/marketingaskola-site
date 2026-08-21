@@ -570,8 +570,28 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   font-variant-numeric: tabular-nums;
 }
 
-.video-embed { position: relative; padding-top: 56.25%; border-radius: var(--radius); overflow: hidden; background: #000; border: 1px solid var(--line); }
-.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* Video frames carry the aspect ratio of the ACTUAL file. Everything used to
+   be hard-coded to 56.25% padding-top, i.e. 16:9 - but all eight case-study
+   clips are 9:16 social verticals (480x854 / 1080x1920), so they were being
+   letterboxed into squat black slabs a fraction of their height. */
+.video-embed { position: relative; aspect-ratio: var(--ar, 16 / 9); border-radius: var(--radius); overflow: hidden; background: #000; border: 1px solid var(--line); }
+.video-embed > iframe, .video-embed > video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; object-fit: cover; background: #000; }
+.video-embed--vertical { --ar: 9 / 16; }
+
+/* A row of verticals: they are tall, so they get their own grid rather than
+   .cols-4, and a max width so four Reels do not tower over the section. */
+.video-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 1.6vw, 22px); align-items: start; max-width: 860px; }
+@media (max-width: 860px) { .video-row { grid-template-columns: repeat(2, 1fr); max-width: 460px; } }
+
+/* Case study block: heading, optional intro, videos and the outcome line all
+   share one left edge, and the outcome is marked as a result rather than
+   floating free as another paragraph. */
+.case { margin-top: clamp(44px, 5vw, 68px); }
+.case > h3 { margin: 0 0 12px; }
+.case > p { max-width: 68ch; margin: 0 0 22px; }
+.case .video-row { margin-bottom: 22px; }
+.case-result { max-width: 68ch; margin: 0; padding-left: 18px; border-left: 2px solid var(--cyan); color: var(--body); }
+.paper .case-result { border-left-color: var(--link); }
 
 /* readable measure for long single-column text runs */
 .col > p { max-width: 75ch; }

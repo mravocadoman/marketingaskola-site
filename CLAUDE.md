@@ -278,6 +278,37 @@ All of it is gated behind `prefers-reduced-motion` and degrades to a static page
 - Start the preview server as a persistent background process; a server started
   inside a one-shot shell call dies before the next call.
 
+## Case-study videos on /video-reklama/ (21 Aug 2026)
+
+`.video-embed` carries the aspect ratio of the **actual file**, via
+`--ar` (default `16 / 9`, `.video-embed--vertical` sets `9 / 16`). It used to
+hard-code `padding-top: 56.25%` for everything, which letterboxed the social
+clips into squat black slabs a fraction of their real height.
+
+`node tools/probe-video.mjs <url…>` reads the true dimensions out of the MP4
+`tkhd` box (no ffprobe here). It measured **all eight case-study clips as 9:16**
+— 480x854, except Lumi's second at 1080x1920. Re-run it before trusting any
+assumption about a video's shape. Note the `tkhd` width/height sit at offset
+76 (v0) / 88 (v1) from the body start, after the 36-byte matrix; 84 lands past
+the end of a v0 box and returns junk.
+
+The MP4s are `<video controls preload="metadata" playsinline>`, not `<iframe>`.
+As iframes the browser wrapped each one in its standalone media viewer, which
+is why one cell showed different player chrome from its neighbours.
+`preload="metadata"` is deliberate — the eight files are ~44 MB together.
+
+Layout: `.video-row` is its own 4-up grid capped at 860px (2-up under 860px) so
+four tall verticals do not tower over the section, and `.case` / `.case-result`
+give each study one left edge with the outcome marked by a thin rule.
+
+**Two open content items, flagged not changed:**
+- The Lumi copy says "vertikāls Reels un horizontāls Feed" and describes making
+  both formats, but all four embedded clips are vertical. Either the horizontal
+  Feed cuts were never uploaded, or they should be added.
+- These videos still stream from `marketingaskola.lv/wp-content/uploads/…` and
+  will 404 at the DNS cutover. ~44 MB, so they need transcoding before they can
+  live in the repo.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,
