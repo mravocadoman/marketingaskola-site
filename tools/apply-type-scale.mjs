@@ -4,7 +4,7 @@
 // (selector, declared value) pair so a selector that appears twice — once in a
 // media query with a different size — is not collapsed by accident.
 //
-//   node tools/apply-type-scale.mjs <scale.json> [--dry]
+//   node tools/apply-type-scale.mjs tools/type-scale.json [--dry]
 //
 // scale.json: { tokens: [{name, value, ...}], mapping: [{selector, declared, token}] }
 //
@@ -19,7 +19,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CSS_PATH = join(ROOT, 'src/css/style.css');
 const DRY = process.argv.includes('--dry');
 const scaleFile = process.argv[2];
-if (!scaleFile) { console.error('usage: node tools/apply-type-scale.mjs <scale.json> [--dry]'); process.exit(1); }
+if (!scaleFile) { console.error('usage: node tools/apply-type-scale.mjs tools/type-scale.json [--dry]'); process.exit(1); }
 
 const scale = JSON.parse(readFileSync(scaleFile, 'utf8'));
 let css = readFileSync(CSS_PATH, 'utf8');

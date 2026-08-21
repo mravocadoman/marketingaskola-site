@@ -23,7 +23,8 @@
     "type:build": "node tools/build-type-scale.mjs",
     "articles:normalize": "node tools/normalize-articles.mjs",
     "articles:defects": "node tools/article-defects.mjs",
-    "content:inventory": "node tools/content-inventory.mjs"
+    "content:inventory": "node tools/content-inventory.mjs",
+    "type:apply": "node tools/apply-type-scale.mjs tools/type-scale.json"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
