@@ -47,7 +47,7 @@ _Valentīndiena ir saldumu laiks! Tikai “Odziņā”, Jūrmalā – zemenes pa
 
 Vai Tu būtu nojautis, ka teksts rakstīts ar mākslīgā intelekta palīdzību?
 
-Visticamāk, nē. 
+Visticamāk, nē.
 
 Šīs piemērs īsi un konkrēti parāda, cik gudrs (pat latviešu valodā) ir mākslīgais intelekts, ģenerējot mums šo atbildi dažu sekunžu laikā.
 
@@ -63,7 +63,7 @@ Lai arī darbavietas pazudīs, šajā pētījumā akcentēts, ka uzradīsies dau
 
 Veidojas loģisks secinājums, ka viss ir atkarīgs no perspektīvas – datu ievades speciālisti mākslīgo intelektu saskata kā draudu, bet ilgtspējas eksperti kā draugu.
 
-Mums, mārketinga nozarē, mākslīgā intelekta izmantošana arī ir vairāk draugs nekā drauds. 
+Mums, mārketinga nozarē, mākslīgā intelekta izmantošana arī ir vairāk draugs nekā drauds.
 
 Tas palīdz ietaupīt daudz laika un enerģijas, kā arī ļauj efektīvāk izmantot mūsu resursus.
 
@@ -77,10 +77,10 @@ Iesakām sekot līdzi tehnoloģiju aktualitātēm un iespēju robežās automati
 
 Ir vērts apgūt tehnoloģijas un tuvāk iepazīt arī digitālo pasauli, pieņemot visu, ko tā sniedz.
 
-Mūsdienu pasaulē ir jārēķinās ar to, ka mākslīgais intelekts nekur nepazudīs, tas tikai attīstīsies straujāk. Aicinām ar to sadraudzēties, aiztaupot liekas galvassāpes jautājumos, kurus var atrisināt tehnoloģijas! 
+Mūsdienu pasaulē ir jārēķinās ar to, ka mākslīgais intelekts nekur nepazudīs, tas tikai attīstīsies straujāk. Aicinām ar to sadraudzēties, aiztaupot liekas galvassāpes jautājumos, kurus var atrisināt tehnoloģijas!
 
 ## Mārketinga skola iesaka
 
 Apvienojiet spēkus ar mākslīgo intelektu un sasniedziet savus mērķus vēl ātrāk un efektīvāk! Mēs, Mārketinga Skola, iesakām iepazīties ar [7 mākslīgā intelekta rīkiem](/maksliga-intelekta-riki/), ko vari izmēģināt jau šodien, lai gūtu ieskatu, kā šie mākslīgā intelekta rīki var Tev palīdzēt ikdienā. Sāciet jau šodien un atklājiet digitālās revolūcijas priekšrocības savā uzņēmumā!
 
-Ja vēlies integrēt mākslīgā intelekta rīkus savā uzņēmumā, bet nezini ar ko sākt, tad Mārketinga skola iesaka pieteikties mārketinga konsultācijai ar Rihardu [šeit](/marketinga-konsultacijas/) — 60 € par 30 min vai 100 € par stundu, un tajā iegūsi personalizētus ieteikumus Tava uzņēmuma attīstībai.
+Ja vēlies integrēt mākslīgā intelekta rīkus savā uzņēmumā, bet nezini ar ko sākt, tad Mārketinga skola iesaka pieteikties mārketinga konsultācijai ar Rihardu [šeit](/marketinga-konsultacijas/) — 60 € par 30 min vai 100 € par stundu, un tajā iegūsi personalizētus ieteikumus Tava uzņēmuma attīstībai.

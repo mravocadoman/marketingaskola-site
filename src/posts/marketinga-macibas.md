@@ -35,7 +35,7 @@ Tas jau vien liek aizdomāties par to, cik Facebook platforma ir populāra arī 
 
 Ir būtiski saprast, vai arī Tavam uzņēmumam šī platforma būtu piemērota un vai mūsu piedāvātās Facebook mārketinga mācības Tev būtu aktuālas. To var saprast, padomājot par dažiem diezgan svarīgiem jautājumiem:
 
-#### **Kurā sociālo mediju platformā Tava mērķauditorija ir aktīvākā?**
+### Kurā sociālo mediju platformā Tava mērķauditorija ir aktīvākā?
 
 Protams, Facebook ir ļoti populāra platforma, kuru izmanto daudzi cilvēki, taču iesakām vērīgi aplūkot analītiskos pārskatus par visiem citiem saviem sociālo mediju profiliem, lai noteiktu, kuros profilos un platformās Tev ir visvairāk sekotāju un visaugstākais sekotāju iesaistīšanās līmenis.
 
@@ -43,15 +43,15 @@ Vēl, protams, var arī vienkārši tieši pajautāt savai auditorijai, kuru soc
 
 _Tev ir jāatceras, ka reklāmas sniegs efektīvus rezultātus tikai tādās sociālo mediju platformās, kurās zini, ka sasniegsi savu mērķauditoriju._
 
-#### **Vai ar Facebook reklāmu vēlies sasniegt cilvēkus arī ārpus Facebook?**
+#### Vai ar Facebook reklāmu vēlies sasniegt cilvēkus arī ārpus Facebook?
 
 Tā kā Facebook ir ļoti daudz lietotāju, var secināt, ka ar Facebook reklāmām ir iespējams sasniegt ļoti daudz cilvēku. Jāņem gan vērā, ka citus potenciālos klientus, kuri ir ārpus šīs konkrētās sociālo plašsaziņas līdzekļu platformas, sasniegt nebūs iespējams. Kāpēc? Diemžēl Facebook reklāma nepiedāvā opciju izmantot to arī citā platformā.
 
-#### **Vai vēlies noteikt pats savu reklāmas budžetu?**
+#### Vai vēlies noteikt pats savu reklāmas budžetu?
 
 Reklamējoties Facebook, var pielāgot savu budžetu reklāmas izmaksām. Protams, jāatceras, ka _jo lielāks budžets, jo vairāk cilvēku ieraudzīs Tavu reklāmu._
 
-#### **Vai meklē sociālo mediju platformu, kas piedāvā daudzas detalizētas reklāmas opcijas?**
+#### Vai meklē sociālo mediju platformu, kas piedāvā daudzas detalizētas reklāmas opcijas?
 
 Viens no iemesliem, kāpēc mums tik ļoti patīk Facebook reklāmas un iesakām tās saviem klientiem, ir daudzās Facebook piedāvātās reklāmas opcijas. Mūsu favorīti ir specifiskie analītikas radītāji, kas ļauj saprast, cik efektīva ir bijusi kampaņa, iespēja detalizēti raksturot savu reklāmas mērķauditoriju, kā arī daudzie reklāmas formāti, kas ļauj izpausties ļoti radoši.
 

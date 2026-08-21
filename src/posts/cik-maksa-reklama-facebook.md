@@ -66,9 +66,9 @@ Pirms sākt, svarīgi saprast, kāds ir Tavs **mērķis** un cik daudz Tev jāma
 
 Lai noskaidrotu, cik maksā Facebook reklāma tavā konkrētajā nišā, iesakām analizēt konkurentu stratēģijas un testēt dažādus reklāmas formātus Facebook platformā. Atceries – reklāmas izmaksas Facebook var ievērojami mainīties atkarībā no sezonas, auditorijas un tirgus konkurences intensitātes.
 
-### **Budžeta aprēķina formula**
+### Budžeta aprēķina formula
 
-Ja vēlies iegūt 100 jaunus klientus un vidējā reklāmas klikšķa cena ir 0,50 EUR, tad:  
+Ja vēlies iegūt 100 jaunus klientus un vidējā reklāmas klikšķa cena ir 0,50 EUR, tad:
 **100 klienti** × **0,50 EUR** × vidējais reklāmas konversijas līmenis (piemēram, 5%) **\= apmēram 1000 EUR budžets**
 
 ## Instagram reklāmas cena – vai atšķiras no Facebook?
@@ -80,7 +80,7 @@ Facebook un Instagram reklāmas cenas ir diezgan līdzīgas, jo abas platformas 
 ## Kur labāk reklamēties – Facebook vai Instagram?
 
 -   **Ja Tavs produkts ir vizuāli pievilcīgs (modes, ēdiena, ceļojumu industrija)** – izvēlies **Instagram**. Šī platforma izceļas ar vizuāli pievilcīgu saturu, un tā ir ideāli piemērota produktiem, kuru vērtība ir saistīta ar estētiku un dzīvesstilu. Ja Tava zīmolam ir spilgta vizuālā identitāte, Instagram reklāmas var palīdzēt piesaistīt jaunus sekotājus un veicināt vēlmi iegādāties. Instagram ir īpaši piemērots video, attēlu un stāstu formātiem, kas palīdz iedvesmot auditoriju un veidot emocionālas saites ar produktu.
--    **Ja mērķē uz plašāku auditoriju un dažādām vecuma grupām** – **Facebook** būs labāka izvēle. Facebook piedāvā plašu auditoriju, kas ietver cilvēkus dažādās vecuma grupās un dzīves posmos, padarot to piemērotu dažādiem uzņēmumiem, kuri vēlas sasniegt plašu un daudzveidīgu tirgu. Facebook arī nodrošina plašas iespējas mērķauditorijas atlasei, ļaujot izveidot kampaņas, kas ir pielāgotas konkrētiem segmentiem, piemēram, pēc interesēm, uzvedības vai ģeogrāfiskās atrašanās vietas.
+-    **Ja mērķē uz plašāku auditoriju un dažādām vecuma grupām** – **Facebook** būs labāka izvēle. Facebook piedāvā plašu auditoriju, kas ietver cilvēkus dažādās vecuma grupās un dzīves posmos, padarot to piemērotu dažādiem uzņēmumiem, kuri vēlas sasniegt plašu un daudzveidīgu tirgu. Facebook arī nodrošina plašas iespējas mērķauditorijas atlasei, ļaujot izveidot kampaņas, kas ir pielāgotas konkrētiem segmentiem, piemēram, pēc interesēm, uzvedības vai ģeogrāfiskās atrašanās vietas.
 -   **Tiem, kas vēlas ieguldīt ilgtermiņā un izveidot dziļākas attiecības ar saviem klientiem**, Facebook ir labāka izvēle, jo tas piedāvā plašas iespējas ne tikai reklāmām, bet arī organiskajam satura veidojumam un grupu izveidei, kas ļauj tieši sazināties ar auditoriju. Facebook arī ir lielisks rīks, lai veidotu lojalitāti un komunikāciju ar klientiem caur komentāriem, ziņojumiem un interaktīvām iespējām, piemēram, aptaujām un pasākumu organizēšanu.
 -   **Ja vēlies vairāk koncentrēties uz jauniem un tehnoloģiski zinošiem lietotājiem**, Instagram būs veiksmīgāka izvēle, jo tas piesaista jaunu paaudzi, kas aktīvi izmanto platformu gan izklaides, gan iepirkšanās nolūkos.
 
@@ -90,7 +90,7 @@ Abas platformas ir spēcīgas, bet tava izvēle ir atkarīga no tava uzņēmuma 
 
 Facebook reklāmas ir viens no efektīvākajiem mārketinga rīkiem, ja tās tiek izmantotas pareizi. Veiksmīgas kampaņas pamatā ir labs reklāmas teksts, pareiza auditorijas atlase un atbilstošs budžets.
 
-**Kā sākt?**
+### Kā sākt?
 
 -   Sāc ar nelielu budžetu. Piemēram, 5–10 EUR dienā.
 -   Testē dažādus reklāmas variantus. Redzi, kas vislabāk darbojas.
@@ -100,7 +100,7 @@ Atceries arī, ka, lai sasniegtu vislabākos rezultātus, ir svarīgi regulāri 
 
 **Izmanto Facebook reklāmas kā daļu no plašāka mārketinga plāna**!
 
- Integrējot tās ar citām mārketinga aktivitātēm, piemēram:
+ Integrējot tās ar citām mārketinga aktivitātēm, piemēram:
 
 -   E-pasta kampaņām
 -   Influenceru sadarbībām

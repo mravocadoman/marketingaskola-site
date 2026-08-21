@@ -66,7 +66,7 @@ Lūk, ko Tu vari sākt darīt jau šodien:
 1.  **Veic atslēgvārdu izpēti.** Saproti, ko cilvēki meklē saistībā ar Tavu nozari. To var izdarīt ar bezmaksas rīkiem kā Ubersuggest vai AnswerThePublic.
 2.  **Sakārto tehnisko struktūru.** Noskaidro, vai lapa ielādējas ātri. Google PageSpeed Insights parāda, ko tieši vajag uzlabot.
 3.  **Veido saturu, kas atbild uz jautājumiem.** Jo noderīgāks saturs, jo ilgāk cilvēki paliek lapā. Tas dod signālu Google: “Šī ir laba lapa, pacelt augstāk!”
-4.  **Pievieno iekšējās saites.** Tas palīdz gan lietotājiem, gan Google. Piemēram, vari iepazīties ar mūsu rakstu:  
+4.  **Pievieno iekšējās saites.** Tas palīdz gan lietotājiem, gan Google. Piemēram, vari iepazīties ar mūsu rakstu:
     Digitālais mārketings – kas tas ir?
 5.  **Strādā pie ārējām saitēm.** Raksti viesrakstus, sadarbojies ar partneriem, esi aktīvs medijos. Ja par Tevi runā – par to uzzina arī Google.
 6.  **Uzlabo lietotāja pieredzi.** Viegls dizains, skaidrs call-to-action jeb aicinājums uz rīcību, kas palīdz sasniegt Tavus mērķus, un labi strukturēts saturs – tas viss tieši ietekmē rezultātus.

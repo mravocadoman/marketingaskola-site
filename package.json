@@ -24,7 +24,9 @@
     "articles:normalize": "node tools/normalize-articles.mjs",
     "articles:defects": "node tools/article-defects.mjs",
     "content:inventory": "node tools/content-inventory.mjs",
-    "type:apply": "node tools/apply-type-scale.mjs tools/type-scale.json"
+    "type:apply": "node tools/apply-type-scale.mjs tools/type-scale.json",
+    "articles:typography": "node tools/article-typography.mjs",
+    "articles:tables": "node tools/rebuild-tables.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

@@ -11,7 +11,7 @@ categories: ["digitalais-marketings"]
 permalink: "/digitalais-marketings/"
 ---
 
-Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei. 
+Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei.
 
 Ne velti sociālos tīklus izmanto **86%** no lielajiem Eiropas Savienības uzņēmumiem un [](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Digital_economy_and_society_statistics_-_enterprises)**60,9%** no itin **visiem** ES uzņēmumiem. Paredzam, ka šie skaitļi tikai augs.
 
@@ -19,7 +19,7 @@ Mēs, Mārketinga Skolā, nebaidāmies teikt, ka digitālais mārketings ir 21.g
 
 ## Kāpēc digitālais mārketings?
 
-Ja tradicionālais mārketings jaunu klientu piesaistē un jau uzticamu klientu noturēšanā izmanto klasiskos reklamēšanās kanālus, kā avīzes vai pastu, tad digitālais mārketings pielāgojas digitalizācijai un faktam, ka pasaule vairs nespēj funkcionēt bez interneta. 
+Ja tradicionālais mārketings jaunu klientu piesaistē un jau uzticamu klientu noturēšanā izmanto klasiskos reklamēšanās kanālus, kā avīzes vai pastu, tad digitālais mārketings pielāgojas digitalizācijai un faktam, ka pasaule vairs nespēj funkcionēt bez interneta.
 
 Šī doma aicina uzņēmumus, kas vēlas būt veiksmīgi ilgtermiņā, pielāgoties digitālās attīstības tempiem. Ir vērts iemācīties digitalizāciju izmantot savā labā, ieviešot rīkus, kas ļauj izdarīt vairāk un pat labāk ar mazāku uzņēmuma resursu izmantošanu.
 
@@ -57,15 +57,15 @@ Digitālā mārketinga trumpis ir spēja parādīt tā darba (vai nedarba) augļ
 
 Uz šo atbilde ir vienkārša: uzņēmumiem pietrūkst digitālo zināšanu, stratēģijas, tirgus izpētes vai visu šo aspektu **kopā**.
 
-Ir uzņēmumi, kuriem ir pārliecība, ka paši lieliski orientējas digitālajā vidē, jo paši prot izveidot sociālo tīklu kontus, ievietot publikācijas un vajadzības gadījumā vienreiz gadā nofilmēt arī kādu video. 
+Ir uzņēmumi, kuriem ir pārliecība, ka paši lieliski orientējas digitālajā vidē, jo paši prot izveidot sociālo tīklu kontus, ievietot publikācijas un vajadzības gadījumā vienreiz gadā nofilmēt arī kādu video.
 
 Ar to diemžēl ir par maz, un efektīviem rezultātiem mēs ieteiktu uzticēties digitālā mārketinga ekspertiem.
 
-Arī pārdomāta stratēģija ir būtiska, jo tās trūkuma dēļ daudzi uzņēmumi, lai arī eksistē digitālajā vidē, to dara bezjēdzīgi, jo pat nepietuvojas mērķa klienta sasniegšanai. 
+Arī pārdomāta stratēģija ir būtiska, jo tās trūkuma dēļ daudzi uzņēmumi, lai arī eksistē digitālajā vidē, to dara bezjēdzīgi, jo pat nepietuvojas mērķa klienta sasniegšanai.
 
-Vēl viena būtiska problēma ir steiga. Ir uzņēmumi, kas nav pārbaudījuši to, vai produkts tiešām tirgū ir nepieciešams, kā arī nav atrasta mērķauditorija. 
+Vēl viena būtiska problēma ir steiga. Ir uzņēmumi, kas nav pārbaudījuši to, vai produkts tiešām tirgū ir nepieciešams, kā arī nav atrasta mērķauditorija.
 
-Pirms investēt digitālajā mārketingā, īpaši maksas reklāmās, noteikti iesakām veikt izpēti un pārliecināties par produkta atbilstību tirgum. 
+Pirms investēt digitālajā mārketingā, īpaši maksas reklāmās, noteikti iesakām veikt izpēti un pārliecināties par produkta atbilstību tirgum.
 
 Ne velti amerikāņu uzņēmējs Ēriks Rīss savā grāmatā “_The Lean Startup_” ir uzsvēris, ka “_ja uzņēmumi apšauba to, vai to produkts ir atbilstošs tirgus vajadzībām, tad, visticamāk, tas tāds nav.”_
 

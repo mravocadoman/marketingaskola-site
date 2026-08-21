@@ -11,7 +11,7 @@ categories: ["socialo-tiklu-reklama"]
 permalink: "/facebook-reklamas-izstrade/"
 ---
 
-Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
+Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
 
 ## Kas tad īsti ir Facebook reklāmas?
 
@@ -27,17 +27,17 @@ Pavisam vienkārši: Tās ir reklāmas, kas tiek izveidotas un publicētas Faceb
 
 ## Stratēģijas izstrāde kā prioritāte
 
-Pirms sāc savu reklāmas ceļojumu, ir jāvelta laiks stratēģijas izveidei. Bez konkrētas stratēģijas, būs tiešām viegli apjukt lielajā informācijas burzmā un piedāvājumu klāstā. Reklāmām ir jābūt mērķtiecīgām, jo bez mērķiem un konkrētiem plāniem tās diemžēl nebūs efektīvas. 
+Pirms sāc savu reklāmas ceļojumu, ir jāvelta laiks stratēģijas izveidei. Bez konkrētas stratēģijas, būs tiešām viegli apjukt lielajā informācijas burzmā un piedāvājumu klāstā. Reklāmām ir jābūt mērķtiecīgām, jo bez mērķiem un konkrētiem plāniem tās diemžēl nebūs efektīvas.
 
-Pirms ķeries klāt pie kampaņas izveides, uzdod sev šos jautājumus: 
+Pirms ķeries klāt pie kampaņas izveides, uzdod sev šos jautājumus:
 
 -   Kādu produktu vai pakalpojumu es konkrēti vēlos reklamēt?
--   Uz kādu auditoriju es mērķēju? 
+-   Uz kādu auditoriju es mērķēju?
 -   Kā viņi izmantos manu produktu un ko tieši no tā iegūs?
 -   Kāds ir manas kampaņas konkrētais mērķis:
     -   Vai es vēlos iegūt jaunus klientus?
     -   Vai tomēr gūt plašāku zīmola atpazīstamību?
-    -   Varbūt veicināt pārdošanas apjomus? 
+    -   Varbūt veicināt pārdošanas apjomus?
 
 ## Kādi ir Facebook reklāmas izveides soļi?
 

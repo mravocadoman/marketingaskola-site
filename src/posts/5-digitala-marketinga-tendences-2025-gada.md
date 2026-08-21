@@ -11,7 +11,7 @@ categories: ["marketinga-strategija"]
 permalink: "/5-digitala-marketinga-tendences-2025-gada/"
 ---
 
-Gluži kā gadi plūst un mainās, arī digitālā mārketinga tendences nestāv uz vietas. 
+Gluži kā gadi plūst un mainās, arī digitālā mārketinga tendences nestāv uz vietas.
 
 Šī iemesla dēļ vēlamies Tevi iepazīstināt ar 2025.gada digitālā mārketinga tendencēm, lai Tev būtu vieglāk orientēties šajā arvien straujāk mainīgajā vidē.
 
@@ -19,7 +19,7 @@ Rakstā iepazīsi, mūsuprāt, TOP 5 svarīgākās tendences, kā arī iegūsi v
 
 ## 1. Sociālo tīklu e-komercijas gads
 
-Sociālu tīklu tendences un augstā popularitāte ir izmainījušas arī e-komercijas lauciņu. 
+Sociālu tīklu tendences un augstā popularitāte ir izmainījušas arī e-komercijas lauciņu.
 
 Jau tagad diezgan ikdienišķa Latvijas tirgū ir _Facebook Marketplace_ opcijas izmantošana, kurā cilvēki pārdod plašu klāstu preču: vāzes, lampas, automašīnas un pat dzīvokļus.
 
@@ -39,11 +39,11 @@ Ieteikums: Ja Tavam produktam vai pakalpojumam ir mājaslapa, kurā to var iegā
 
 ## 2. SEO sociālajos tīklos, SEO balsī
 
-SEO jeb meklētājprogrammu optimizācijas tendences, kas palīdz produktu parādīt kā vienu no pirmajiem meklētājā, jau vairs nav raksturīgas tikai meklētājos _Google_ vai _Bing_. 
+SEO jeb meklētājprogrammu optimizācijas tendences, kas palīdz produktu parādīt kā vienu no pirmajiem meklētājā, jau vairs nav raksturīgas tikai meklētājos _Google_ vai _Bing_.
 
 2025.gads izceļas ar to, ka SEO funkciju izmanto vēl plašāk: īpaši sociālajos tīklos un pat balss aktivizētājā meklēšanā.
 
-Sociālajos tīklos SEO pielāgošanās mērķim iesakām izmantot tēmturus jeb _hashtags_, kā arī aktuālus jeb daudz meklētus atslēgvārdus. 
+Sociālajos tīklos SEO pielāgošanās mērķim iesakām izmantot tēmturus jeb _hashtags_, kā arī aktuālus jeb daudz meklētus atslēgvārdus.
 
 Savukārt balss meklēšanā, kas arī ir palikusi arvien populārāka, iesakām iztēloties, ka esi klients un meklēto nevis raksti, bet saki.
 
@@ -74,7 +74,7 @@ Mūsu tendences nevar būt pilnvērtīgas, ja neiekļaujam 2025.gada top sociāl
 
 Starp citu, ārvalstīs _TikTok_ jau ir izkāpis no ekrāna jeb piedāvā iespēju projecēt _TikTok_ publicēto saturu kā vides reklāmu uz lielajiem ekrāniem, kur apgrozās potenciālā mērķauditorija.
 
-_TikTok_ maina digitālā mārketinga vidi, un mums atliek mainīties līdzi! 
+_TikTok_ maina digitālā mārketinga vidi, un mums atliek mainīties līdzi!
 
 ## 5. Personalizācija – ceļš uz klienta sirdi
 
@@ -98,6 +98,6 @@ Ja šīs tendences vēlies pārvērst konkrētās prasmēs, tieši tām soli pa 
 
 Ja vēlies uzzināt kodolīgāku informāciju par konkrētām platformām, noteikti iesakām iepazīties ar [2025.gada tendencēm _Google_ reklāmas pasaulē](/google-reklama-2025/)!
 
-Digitālās reklāmas aģentūra Mārketinga Skola piedāvā palīdzību sociālo tīklu pārvaldē un reklāmās, tāpēc nekautrējies pierakstīties uz bezmaksas 20 minūšu iepazīšanās zvanu — [sazinies ar mums](/sazinies/).
+Digitālās reklāmas aģentūra Mārketinga Skola piedāvā palīdzību sociālo tīklu pārvaldē un reklāmās, tāpēc nekautrējies pierakstīties uz bezmaksas 20 minūšu iepazīšanās zvanu — [sazinies ar mums](/sazinies/).
 
 _Lai izdodas!_

@@ -49,14 +49,14 @@ Digitālais mārketings attīstās, un **Meta Ads** ir gatavs nākotnei.
 
 -   **Vienmēr testē (A/B testēšana):** Atrodi labāko versiju starp dažādiem virsrakstiem, attēliem un aicinājumiem uz darbību.
 -   **Neaizmirsti analītiku:** Skaties, kas darbojas un kas ne. Optimizē, pārbaudi, uzlabo.
--   **Sadarbojies ar profesionāļiem:** Ja nepieciešams, piesaisti ekspertu, kas palīdzēs veidot stratēģiju un sasniegt rezultātus.  
-    
+-   **Sadarbojies ar profesionāļiem:** Ja nepieciešams, piesaisti ekspertu, kas palīdzēs veidot stratēģiju un sasniegt rezultātus.
+
 
 ## Mērķauditorijas atlases piemēri Meta reklāmās
 
 Viens no galvenajiem Meta reklāmas priekšrocību stūrakmeņiem ir spēja ļoti precīzi un elastīgi atlasīt mērķauditoriju. Nevis vienkārši rādīt reklāmas visiem, bet **tieši tiem, kuriem tās visvairāk interesēs**. Zemāk vari izlasīt par četriem galvenajiem auditorijas atlases veidiem un to praktiskiem piemēriem:
 
-### 1. **Demogrāfiskā atlase: Vecums, dzimums, dzīvesvieta**
+### 1. Demogrāfiskā atlase: Vecums, dzimums, dzīvesvieta
 
 Šī ir viena no vienkāršākajām, bet efektīvākajām atlases iespējām. Meta ļauj segmentēt auditoriju pēc:
 
@@ -64,7 +64,7 @@ Viens no galvenajiem Meta reklāmas priekšrocību stūrakmeņiem ir spēja ļot
 -   **Dzimuma** (sievietes, vīrieši vai visi)
 -   **Ģeogrāfiskās atrašanās vietas** (valsts, pilsēta, rajons, pat konkrēta adrese ar rādiusu)
 
-**Kāpēc tas noder?**
+### Kāpēc tas noder?
 
 Pieņemsim, ka Tu pārdod sieviešu apģērbu vecuma grupai no 25 līdz 40 gadiem Rīgā. Izmantojot šo atlasi, Tu koncentrējies tikai uz tiem cilvēkiem, kuriem Tavs piedāvājums ir aktuāls, nevis tērē budžetu visai Latvijas auditorijai.
 
@@ -93,7 +93,7 @@ Uzvedības atlase balstās uz reālām darbībām, ko cilvēki ir veikuši gan i
 -   Lietotāji, kas skatījušies Tavu video vairāk nekā 50%
 -   Apmeklētāji, kas klikšķinājuši uz reklāmas, bet nav konvertējušies
 
-**Kāpēc tas ir noderīgi?**
+### Kāpēc tas ir noderīgi?
 
 Šī auditorija jau ir izrādījusi interesi, tāpēc konversijas iespēja ir daudz augstāka. Te Tu vari īstenot retārgetingu – parādīt atkārtotu, pielāgotu reklāmu ar atlaidi, atgādinājumu vai piedāvājumu.
 
@@ -116,45 +116,12 @@ Meta pēc tam atrod līdzīgus cilvēkus, kuriem ir līdzīga uzvedība, demogr�
 
 ## Reklāmu formātu salīdzinājums tabulā
 
-**Formāts**
-
-**Ideāli piemērots**
-
-**Priekšrocības**
-
-**Trūkumi**
-
-Video
-
-Zīmola atpazīstamība
-
-Augsta iesaiste, dinamiska prezentācija
-
-Prasa vairāk resursu
-
-Karuselis
-
-Produktu prezentācijai
-
-Vairākas bildes vienā reklāmā
-
-Nepieciešama laba struktūra
-
-Kolekcijas
-
-E-komercijai
-
-Uzreiz redzams produkts + info
-
-Mazāk piemērots B2B
-
-Stāsti (Stories)
-
-Ātrai, vizuālai komunikācijai
-
-Vertikāls formāts, labs iesaistes līmenis
-
-Īss redzamības laiks
+| Formāts | Ideāli piemērots | Priekšrocības | Trūkumi |
+| --- | --- | --- | --- |
+| Video | Zīmola atpazīstamība | Augsta iesaiste, dinamiska prezentācija | Prasa vairāk resursu |
+| Karuselis | Produktu prezentācijai | Vairākas bildes vienā reklāmā | Nepieciešama laba struktūra |
+| Kolekcijas | E-komercijai | Uzreiz redzams produkts + info | Mazāk piemērots B2B |
+| Stāsti (Stories) | Ātrai, vizuālai komunikācijai | Vertikāls formāts, labs iesaistes līmenis | Īss redzamības laiks |
 
 Meta reklāmas nav tikai rīks – tā ir Tava biļete uz mārketinga nākotni. Ar pareizu stratēģiju, datu izmantošanu un radošu pieeju Tu vari ne vien sasniegt savu auditoriju, bet arī izveidot patiesi spēcīgu zīmolu, kas izceļas digitālajā troksnī.
 

@@ -23,17 +23,17 @@ Mākslīgā intelekta izaugsme nepārtraukti attīstās un digitālajā vidē ar
 
 Midjourney ir mākslīgā intelekta rīks, kas spēj izveidot attēlu, pamatojoties uz teksta instrukcijām jeb “prompts”. Izklausās lieliski, ne?
 
-Midjourney ir populārākais šāda veida rīks un ne par velti – pāris sekunžu laikā ar šī rīka palīdzību iespējams izveidot augstas kvalitātes attēlus un pārvērst savu iztēli realitātē. 
+Midjourney ir populārākais šāda veida rīks un ne par velti – pāris sekunžu laikā ar šī rīka palīdzību iespējams izveidot augstas kvalitātes attēlus un pārvērst savu iztēli realitātē.
 
-Šis būs izcils rīks pat tiem, kuri uz mākslu un attēlu radīšanu ir uz “Jūs”.  Galvenais princips ir izveidot pēc iespējas precīzāku aprakstu, lai sniegtu mākslīgajam intelektam pietiekami daudz informācijas Tavam vēlamajam attēlam. Vienīgais ierobežojums ir Tava paša iztēle – jo bagātīgāka tā būs, jo iespaidīgāki attēli sanāks.
+Šis būs izcils rīks pat tiem, kuri uz mākslu un attēlu radīšanu ir uz “Jūs”.  Galvenais princips ir izveidot pēc iespējas precīzāku aprakstu, lai sniegtu mākslīgajam intelektam pietiekami daudz informācijas Tavam vēlamajam attēlam. Vienīgais ierobežojums ir Tava paša iztēle – jo bagātīgāka tā būs, jo iespaidīgāki attēli sanāks.
 
 ![Canva Logo and symbol, meaning, history, PNG, brand](https://1000logos.net/wp-content/uploads/2023/02/Canva-logo.png)
 
 ## 2. [Canva – Magic Design](https://www.canva.com/)
 
-Canva ir viens no populārākajiem bezmaksas grafiskā dizaina rīkiem. Protams, arī šai platformai beidzot ir pieejami mākslīgā intelekta rīki un funkcijas, kas sociālo mediju satura radīšanu padara daudz ātrāku un efektīvāku. 
+Canva ir viens no populārākajiem bezmaksas grafiskā dizaina rīkiem. Protams, arī šai platformai beidzot ir pieejami mākslīgā intelekta rīki un funkcijas, kas sociālo mediju satura radīšanu padara daudz ātrāku un efektīvāku.
 
-Jāmin gan, ka mākslīgā intelekta rīks – Magic Design – būs pieejams Canva pro maksas versijas lietotājiem, bet, ja ikdienā satura radīšana sagādā Tev lielas galvas sāpes, tad šis noteikti ir viens no risinājumiem. 
+Jāmin gan, ka mākslīgā intelekta rīks – Magic Design – būs pieejams Canva pro maksas versijas lietotājiem, bet, ja ikdienā satura radīšana sagādā Tev lielas galvas sāpes, tad šis noteikti ir viens no risinājumiem.
 
 Automātiska prezentāciju, sociālo mediju publikāciju dizainu izveide, teksta pārvēršana dizainā, videomateriālu automātiska rediģēšana un kombinēšana – šīs un vēl daudzas citas funkcijas vienuviet Canva Magic design.
 
@@ -41,9 +41,9 @@ Automātiska prezentāciju, sociālo mediju publikāciju dizainu izveide, teksta
 
 ## 3. [Beautiful.ai](http://Beautiful.ai)
 
-Mūsuprāt, beautiful.ai ir viens no labākajiem mākslīgā intelekta rīkiem, kas ļauj ātri, ērti un pats galvenais – vienkārši – izveidot vizuāli pievilcīgu un profesionālu prezentāciju vien pāris minūtēs. 
+Mūsuprāt, beautiful.ai ir viens no labākajiem mākslīgā intelekta rīkiem, kas ļauj ātri, ērti un pats galvenais – vienkārši – izveidot vizuāli pievilcīgu un profesionālu prezentāciju vien pāris minūtēs.
 
-Šajā rīkā atradīsi vairākas prezentācijas sagataves, no kurām vari izvēlēties sev vispiemērotāko – nav vairs jāuztraucas par to, kā piepildīt tukšu slaidu. Mūsu mīļākā funkcija – mākslīgais intelekts slaidā pievienoto saturu automātiski sakārto vizuāli pievilcīgā veidā. 
+Šajā rīkā atradīsi vairākas prezentācijas sagataves, no kurām vari izvēlēties sev vispiemērotāko – nav vairs jāuztraucas par to, kā piepildīt tukšu slaidu. Mūsu mīļākā funkcija – mākslīgais intelekts slaidā pievienoto saturu automātiski sakārto vizuāli pievilcīgā veidā.
 
 Beautiful.ai ir ļoti ērti un parocīgi lietot un tas nav pārbāzts ar nevajadzīgām un sarežģītām funkcijām. Mārketinga Skolas komandas apstiprināts un pārbaudīts rīks! :)
 
@@ -51,11 +51,11 @@ Beautiful.ai ir ļoti ērti un parocīgi lietot un tas nav pārbāzts ar nevajad
 
 ## 4. [PodCastle.ai](https://podcastle.ai/)
 
-Podcastle ir lielisks mākslīgā intelekta rīks, ja vēlies uzsākt savu podkāstu, tomēr Tev nav nekādu iepriekšējo zināšanu par video un audio rediģēšanu. 
+Podcastle ir lielisks mākslīgā intelekta rīks, ja vēlies uzsākt savu podkāstu, tomēr Tev nav nekādu iepriekšējo zināšanu par video un audio rediģēšanu.
 
-Podcastle ir mākslīgā intelekta podkāstu rediģēšanas un ierakstīšanas aplikācija, ar kuras palīdzību var viegli ierakstīt video un audio “streams”, vienlaicīgi piedaloties tiešsaistes virtuālajās intervijās līdz pat 10 cilvēkiem. 
+Podcastle ir mākslīgā intelekta podkāstu rediģēšanas un ierakstīšanas aplikācija, ar kuras palīdzību var viegli ierakstīt video un audio “streams”, vienlaicīgi piedaloties tiešsaistes virtuālajās intervijās līdz pat 10 cilvēkiem.
 
-Notekti aplikācijas labākā funkcija ir audio rediģēšana, kas automātiski atbrīvosies no klusuma gabaliem Tavā podkāstā. Šī funkcija Tev palīdzēs samazināt audio fona troksni un ieteiks, kur sadalīt ieraksta klipus. 
+Notekti aplikācijas labākā funkcija ir audio rediģēšana, kas automātiski atbrīvosies no klusuma gabaliem Tavā podkāstā. Šī funkcija Tev palīdzēs samazināt audio fona troksni un ieteiks, kur sadalīt ieraksta klipus.
 
 Ja podkāsts ir kaut kas tāds par ko ilgi esi sapņojis, tad šis rīks ir pirmais solis ceļā uz to!
 
@@ -65,7 +65,7 @@ Ja podkāsts ir kaut kas tāds par ko ilgi esi sapņojis, tad šis rīks ir pirm
 
 Šis mākslīgā intelekta rīks mūs patīkami pārsteidza!
 
-Synthesia ir AI rīks, ar kura palīdzību iespējams izveidot video ar mākslīgā intelekta avatariem. Lieliska alternatīva, lai veidotu saturu video formātā gadījumos, kad nevēlies filmēties pats. 
+Synthesia ir AI rīks, ar kura palīdzību iespējams izveidot video ar mākslīgā intelekta avatariem. Lieliska alternatīva, lai veidotu saturu video formātā gadījumos, kad nevēlies filmēties pats.
 
 Koncepts ir ļoti vienkāršs – ar mākslīgā intelekta palīdzību pārvērt savu uzrakstīto video tekstu jeb video “script” īsa formāta video. Izvēlētajiem avatariem vari pielāgot vēlamos balss toņus kā arī mākslīgais intelekts palīdzēs automātiski rediģēt video. Rīks būs izcili piemērots, lai veidotu “how to” video un īsa formāta video priekš TikTok vai Instagram platformām.
 
@@ -73,7 +73,7 @@ Koncepts ir ļoti vienkāršs – ar mākslīgā intelekta palīdzību pārvērt
 
 ## 6. [InVideo](https://invideo.io/)
 
-Varbūt par šo mākslīgā intelekta rīku esi jau dzirdējis, jo InVideo ir viens no populārākajiem un izmantotākajiem video ģenerēšanas AI rīkiem, ar kura palīdzību vari pārvērst savas idejas video formātā. 
+Varbūt par šo mākslīgā intelekta rīku esi jau dzirdējis, jo InVideo ir viens no populārākajiem un izmantotākajiem video ģenerēšanas AI rīkiem, ar kura palīdzību vari pārvērst savas idejas video formātā.
 
 InVideo balstās uz video radīšanu, izmantojot “templates” jeb video sagataves, ko lietotājs var ātri un ērti pielāgot gan savām vēlmēm, gan savam zīmolam, piemēram, video sagatavēs nomainot krāsas vai pievienojot logotipu.
 

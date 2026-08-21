@@ -25,9 +25,9 @@ Ja Tu spēj savā reklāmas tekstā viltīgi atsaukties uz savas mērķauditorij
 
 ## 3. Ieintriģējošs virsraksts
 
-Virsraksts ir pirmais, ko Tavi lasītāji pamana, tāpēc tam ir jābūt vienkārši izcilam. Virsraksts ir tas, no kā, visticamāk, būs atkarīgs tas, vai potenciālie klienti turpinās lasīt Tavu reklāmas teksta saturu. 
+Virsraksts ir pirmais, ko Tavi lasītāji pamana, tāpēc tam ir jābūt vienkārši izcilam. Virsraksts ir tas, no kā, visticamāk, būs atkarīgs tas, vai potenciālie klienti turpinās lasīt Tavu reklāmas teksta saturu.
 
-Mūsuprāt, šīs 4 pazīmes vieno veiksmīgus un efektīvus reklāmas tekstu virsrakstus: 
+Mūsuprāt, šīs 4 pazīmes vieno veiksmīgus un efektīvus reklāmas tekstu virsrakstus:
 
 -   Virsrakstā ir skaitļi
 -   Ir iekļautas specifiskas detaļas, kas ieintriģē lasītāju
@@ -39,11 +39,11 @@ Kad uzraksti savu reklāmas teksta virsrakstu, noteikti iesakām aizdomāties pa
 
 ## 4. Kodolīgs un īss teksts
 
-Reklāmas tekstu sastādīšana ir kā māksla rakstīt īsi, kodolīgi un ieintriģējoši bez gariem ievadiem un noslēgumiem. Ne velti frāze _laiks ir nauda_ ir tik ļoti populāra mūsdienās. Cilvēkiem patiešām nav vēlmes veltīt savu dārgo laiku garu reklāmas tekstu lasīšanai. Rakstot reklāmas tekstu, centies pāriet tieši pie lietas būtības! Vēlies pārdot savam lasītājam putekļsūcēju? Tad kodolīgi iepazīstini lasītāju ar putekļsūcēju un pārliecini lasītāju, ka tieši viņam tas ir nepieciešams.  Potenciālajam klientam tiešām neinteresēs itin visas putekļsūcēja funkcijas vai gari apraksti par to, cik lieliski tas spēj izsūkt putekļus. Neiespringsti! Vienkārši atceries, ka reklāmas teksta kvalitāte iet roku rokā ar kodolīgumu un konkrētību.
+Reklāmas tekstu sastādīšana ir kā māksla rakstīt īsi, kodolīgi un ieintriģējoši bez gariem ievadiem un noslēgumiem. Ne velti frāze _laiks ir nauda_ ir tik ļoti populāra mūsdienās. Cilvēkiem patiešām nav vēlmes veltīt savu dārgo laiku garu reklāmas tekstu lasīšanai. Rakstot reklāmas tekstu, centies pāriet tieši pie lietas būtības! Vēlies pārdot savam lasītājam putekļsūcēju? Tad kodolīgi iepazīstini lasītāju ar putekļsūcēju un pārliecini lasītāju, ka tieši viņam tas ir nepieciešams.  Potenciālajam klientam tiešām neinteresēs itin visas putekļsūcēja funkcijas vai gari apraksti par to, cik lieliski tas spēj izsūkt putekļus. Neiespringsti! Vienkārši atceries, ka reklāmas teksta kvalitāte iet roku rokā ar kodolīgumu un konkrētību.
 
 ## 5. Veiksmes atslēga: vienkāršība
 
-Mūsdienās valda populārs stereotips, ka reklāmas tekstus spēj rakstīt tikai cilvēki ar bagātu vārdu krājumu, jo viņu vārdu izvēle ir unikāla un oriģināla. Tas ir tik aplami! Mārketinga Skola ir veltījusi ļoti daudz laika, lai izpētītu, kā ieinteresēt potenciālos klientus savos reklāmu tekstos. Viens no mūsu vērtīgākajiem secinājumiem ir, ka cilvēkus saista vienkāršība. Viņiem patīk iedziļināties saturā, kas ir skaidrs un viegli saprotams. Reklāmas tekstu sastādīšana ir prasme šo tekstu nepiepildīt ar gudriem zinātniski pierādītiem faktu pamatojumiem vai īpatnējiem īpašības vārdiem, jo bieži vien tieši pārgudra valoda un reklāma, kuras teksts ir sarežģīti saprotams, cilvēkus nevis piesaista, bet atgrūž. 
+Mūsdienās valda populārs stereotips, ka reklāmas tekstus spēj rakstīt tikai cilvēki ar bagātu vārdu krājumu, jo viņu vārdu izvēle ir unikāla un oriģināla. Tas ir tik aplami! Mārketinga Skola ir veltījusi ļoti daudz laika, lai izpētītu, kā ieinteresēt potenciālos klientus savos reklāmu tekstos. Viens no mūsu vērtīgākajiem secinājumiem ir, ka cilvēkus saista vienkāršība. Viņiem patīk iedziļināties saturā, kas ir skaidrs un viegli saprotams. Reklāmas tekstu sastādīšana ir prasme šo tekstu nepiepildīt ar gudriem zinātniski pierādītiem faktu pamatojumiem vai īpatnējiem īpašības vārdiem, jo bieži vien tieši pārgudra valoda un reklāma, kuras teksts ir sarežģīti saprotams, cilvēkus nevis piesaista, bet atgrūž.
 
 ## Mārketinga skola iesaka
 

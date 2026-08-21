@@ -68,21 +68,11 @@ Ja vēlies vienkāršu reklāmas iestatīšanu, izmaksas būs zemākas, bet, ja 
 
 Ja vēlies iegūt pārskatu par vidējām izmaksām vai saprast, kādu summu ņemt vērā, jāņem vērā, ka Google reklāmas aģentūru cenas var mainīties atkarībā no sniegto pakalpojumu apjoma un sarežģītības. Zemāk būs norādītas vidējās izmaksas.
 
-**Pakalpojums**
-
-**Vidējās izmaksas**
-
-Kampaņu izveide un iestatīšana
-
-€300 – €1000 vienreizēja maksa
-
-Mēneša reklāmu pārvaldība
-
-€200 – €5000/mēnesī
-
-Analīze un optimizācija
-
-€50 – €500/h
+| Pakalpojums | Vidējās izmaksas |
+| --- | --- |
+| Kampaņu izveide un iestatīšana | €300 – €1000 vienreizēja maksa |
+| Mēneša reklāmu pārvaldība | €200 – €5000/mēnesī |
+| Analīze un optimizācija | €50 – €500/h |
 
 ## Vai varu pārvaldīt Google Ads pats bez aģentūras?
 

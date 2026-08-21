@@ -41,7 +41,7 @@ Mārketinga aģentūra sniedz pieeju plašam kompetenču lokam:
 
 Tas ir daudz vairāk nekā tikai _palīdzēt ar Facebook_.
 
-[Vairāk par digitālā mārketinga pamatiem esam pastāstījuši šajā rakstā.](/digitalais-marketings/)  
+[Vairāk par digitālā mārketinga pamatiem esam pastāstījuši šajā rakstā.](/digitalais-marketings/)
 
 ## Mārketinga aģentūras Latvijā – kā tās darbojas?
 
@@ -70,27 +70,27 @@ Starpcitu, ja vēlies saprast, vai Tavam biznesam nepieciešams sociālo tīklu 
 
 Mārketinga aģentūru pakalpojumi ir dažādi, bet te norādīti populārākie.
 
-### **Sociālo tīklu pārvaldība un reklāmas**
+### Sociālo tīklu pārvaldība un reklāmas
 
 Facebook, Instagram, TikTok – tas nav tikai par vizuāli pievilcīgu saturu, bet par stratēģisku komunikāciju, kas veido attiecības ar auditoriju. Mārketinga speciālists analizē tendences, veido video, testē dažādas reklāmu versijas, pārbauda _hooks_ (uzmanības āķus) un _call-to-action_ (aicinājumus rīkoties), kā arī optimizē kampaņas pēc datiem. Sociālie tīkli ir vieta, kur ātri redzami rezultāti, tāpēc ir būtiski saprast algoritmu uzvedību un reklāmu mērķēšanas nianses.
 
-### **Google reklāmas (Google Ads)**
+### Google reklāmas (Google Ads)
 
 Tiem, kas vēlas uzreiz sasniegt klientus brīdī, kad viņi aktīvi meklē risinājumu. Google reklāmas ļauj mērķēt pēc atslēgvārdiem, uzvedības un lokācijas, padarot tās īpaši spēcīgas nišas biznesiem. Turklāt iespējams precīzi mērīt katru klikšķi, konversiju un izmaksas. Ja vēlies saprast vairāk, [te vari izlasīt detalizētu skaidrojumu](/google-reklamas-agentura/) par Google reklāmas aģentūrām.
 
-### **SEO un satura mārketings**
+### SEO un satura mārketings
 
 SEO ir digitālā ilgspējas pamats — tas ļauj uzņēmumam ilgtermiņā piesaistīt klientus no Google bez papildu reklāmas izmaksām. Tas ietver gan atslēgvārdu izpēti, gan mājaslapas tehnisko sakārtošanu, gan kvalitatīvu bloga rakstu izstrādi, kas atbild uz auditorijas jautājumiem. Satura mārketings palīdz veidot uzticību un autoritāti, nodrošinot, ka cilvēks atgriežas pie Tava zīmola un to atceras.
 
-### **Dizains un vizuālā identitāte**
+### Dizains un vizuālā identitāte
 
 Logo, stila grāmata, sociālo tīklu vizuālie materiāli, baneri un drukātie materiāli ir zīmola “seja”. Profesionāls dizains palīdz radīt pirmo iespaidu, kas izceļ uzņēmumu starp konkurentiem. Vizuālā identitāte nodrošina vienotību visos kanālos — no sociālajiem tīkliem līdz reklāmas baneriem un iepakojumam, tādējādi veidojot atpazīstamību un uzticamību.
 
-### **Mājaslapas izstrāde un UX**
+### Mājaslapas izstrāde un UX
 
 Mājaslapa ir digitālais pārdevējs, tāpēc tai jābūt ātrai, saprotamai un viegli lietojamai. UX (_User Experience_ jeb lietotāja pieredzes) speciālists domā par to, kāpēc cilvēki pamet lapu, kur viņi apmaldās, kas kavē pirkumu vai pieteikumu. Tiek veidoti pārdošanas ceļi, testēti elementi, uzlabotas pogas, formas un lapu struktūra, lai palielinātu konversijas un klientu ērtības.
 
-### **Stratēģija un konsultācijas**
+### Stratēģija un konsultācijas
 
 Mārketinga stratēģija nosaka virzienu — kā uzņēmums komunicēs, kādi kanāli būs prioritāri, kas ir galvenās auditorijas un kādi KPI (Key Performance Indicator jeb galvenais veiktspējas rādītājs) tiks uzraudzīti. Konsultācijas palīdz uzņēmumam saprast savas stiprās puses, noteikt unikālo vērtību, izveidot pozicionējumu un definēt mērķus. Rezultātā mārketings nevis tiek darīts “uz sajūtām”, bet vadīts caur datiem un ar skaidru plānu.
 

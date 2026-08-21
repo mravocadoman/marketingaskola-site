@@ -926,12 +926,13 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   background: var(--cyan); z-index: 80; pointer-events: none;
 }
 .article-shell { padding: clamp(52px, 6vw, 84px) 0 clamp(64px, 8vw, 104px); }
-.article-grid { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: clamp(36px, 5vw, 76px); align-items: start; }
-@media (max-width: 1020px) { .article-grid { grid-template-columns: 1fr; } }
+/* The single definition of the article grid lives further down, next to the
+   reading-column comment — keeping a second one here silently overrode it. */
+.article-grid { display: grid; align-items: start; }
 
-.article-body { max-width: 68ch; }
 .article-body .prose { font-size: var(--t-body); line-height: 1.78; }
-.article-body .prose > p:first-of-type { font-size: var(--t-lead); line-height: 1.6; color: #1d3247; }
+/* No enlarged first paragraph: it read as a different size mid-article and
+   introduced a fourth text colour on top of the three the system allows. */
 .article-body .prose h2 {
   font-size: var(--t-d2);
   margin: 2.4em 0 0.7em;
@@ -1021,16 +1022,24 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .page-hero--cover::before { background: rgba(2, 13, 28, 0.82); }
 }
 
-/* Article reading column: narrower shell, centred pair, wider side margins. */
-.article-shell > .container { max-width: 1080px; }
+/* Article reading column — the ONE place the article grid is defined.
+   An empty left gutter mirrors the TOC on the right, so the measure sits in the
+   true centre of the page. Without it a right-hand sidebar pushes every line of
+   the article off-centre. The gutter is a FIXED track on purpose: minmax(0,…)
+   collapses to zero when a track has no content, which would un-centre it.
+   The measure is set in px, not ch: ch resolves against the grid container font
+   size rather than the 18px prose, so 62ch was rendering as ~76 characters. */
+.article-shell > .container { max-width: 1060px; }
 .article-grid {
-  grid-template-columns: minmax(0, 68ch) minmax(0, 230px);
+  grid-template-columns: 210px minmax(0, 640px) 210px;
   justify-content: center;
-  gap: clamp(40px, 4.5vw, 68px);
+  gap: clamp(28px, 3.2vw, 48px);
 }
-.article-body { max-width: none; }
+.article-body { grid-column: 2; max-width: none; }
+.toc { grid-column: 3; }
 @media (max-width: 1020px) {
-  .article-grid { grid-template-columns: minmax(0, 68ch); justify-content: center; }
+  .article-grid { grid-template-columns: minmax(0, 640px); justify-content: center; }
+  .article-body, .toc { grid-column: 1; }
 }
 
 /* ==========================================================================
@@ -1193,3 +1202,39 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* screenshots are real captures with their own light UI — they get a hairline
    frame so they read as evidence, not as a stray white block */
 .img--shot img { border: 1px solid var(--line); border-radius: var(--radius); background: var(--well); padding: 0; }
+
+/* Tables in articles. Two pricing/comparison tables had collapsed into loose
+   paragraphs during the WordPress import; rebuilt as real tables by
+   tools/rebuild-tables.mjs, they needed styling that did not exist yet.
+   Every colour is a token, so the same rules serve the dark canvas and .paper. */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: var(--t-sm);
+  text-align: left;
+}
+.prose thead th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--t-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 14px 10px;
+  border-bottom: 1px solid var(--line-strong);
+}
+.prose tbody td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--body);
+  vertical-align: top;
+}
+.prose tbody tr:last-child td { border-bottom: 0; }
+.prose tbody td:first-child { color: var(--heading); font-weight: 500; }
+.prose th:first-child, .prose td:first-child { padding-left: 0; }
+.prose th:last-child, .prose td:last-child { padding-right: 0; }
+/* A table is the one thing in an article allowed to scroll sideways rather
+   than force the whole page to. */
+.prose .table-scroll { overflow-x: auto; }
+@media (max-width: 620px) { .prose table { font-size: var(--t-micro); } }

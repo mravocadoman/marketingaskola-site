@@ -13,7 +13,7 @@ permalink: "/socialie-tikli/"
 
 Sociālie tīkli ir 21.gadsimta mārketinga fenomens.
 
-Ne velti vairāk nekā puse visu Eiropas Savienības uzņēmumu tos izmanto. 
+Ne velti vairāk nekā puse visu Eiropas Savienības uzņēmumu tos izmanto.
 
 Tiek prognozēts, ka 2025.gadā sociālos tīklus izmantos jau 5,1 miljards cilvēku no visas pasaules populācijas jeb ~8 miljardiem cilvēku.
 
