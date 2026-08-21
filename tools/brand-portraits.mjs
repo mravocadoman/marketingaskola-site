@@ -46,6 +46,10 @@ const CYAN = '#03c3f8';
 // Sources are the ORIGINAL photographs from the WordPress export. They are
 // already greyscale, so no tone work is applied at all — output subject pixels
 // are byte-identical to the source.
+//
+// `aspect` is the FRAME shape, not the photograph's. The sources are all
+// square; a taller frame just draws more backdrop above the subject, so the
+// photograph is never stretched or cropped to fit. Default 1:1.
 const PORTRAITS = [
   { id: 'rihards',      src: 'src/img/2024/07/Untitled-design-3.webp' },
   { id: 'rihards-wide', src: 'src/img/2024/07/Untitled-design-4.webp' },
@@ -55,17 +59,26 @@ const PORTRAITS = [
   { id: 'matiss-seo',   src: 'src/img/2025/03/Untitled-design-2.webp' },
   { id: 'katrina',      src: 'src/img/2021/09/FullSizeRender-1.webp' },
   { id: 'madara',       src: 'src/img/2025/03/Untitled-design-3.webp' },
+  // 3:4 founder frame, matching .media--portrait exactly so object-fit:cover
+  // has nothing to crop for the homepage process section, which replaced a
+  // GENERATED stock figure that was standing in for Rihards.
+  { id: 'rihards-founder', src: 'src/img/2024/07/Untitled-design-4.webp', aspect: [3, 4] },
 ];
 
 // Flat brand backdrop — solid navy, one cyan disc, one thin white arc.
-const backdrop = Buffer.from(`
-<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}">
-  <rect width="${SIZE}" height="${SIZE}" fill="${NAVY}"/>
-  <circle cx="${SIZE * 0.5}" cy="${SIZE * 0.42}" r="${SIZE * 0.3}" fill="${CYAN}"/>
-  <path d="M ${SIZE * 0.80} ${SIZE * 0.62}
-           A ${SIZE * 0.26} ${SIZE * 0.26} 0 0 1 ${SIZE * 0.54} ${SIZE * 0.88}"
+// Drawn at whatever size the frame needs; the disc tracks the head, which sits
+// in the upper third of the subject block regardless of frame height.
+const makeBackdrop = (w, h, subjectTop) => {
+  const headY = subjectTop + SIZE * 0.34;
+  return Buffer.from(`
+<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
+  <rect width="${w}" height="${h}" fill="${NAVY}"/>
+  <circle cx="${w * 0.56}" cy="${headY}" r="${SIZE * 0.3}" fill="${CYAN}"/>
+  <path d="M ${w * 0.80} ${headY + SIZE * 0.2}
+           A ${SIZE * 0.26} ${SIZE * 0.26} 0 0 1 ${w * 0.54} ${headY + SIZE * 0.46}"
         fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
 </svg>`);
+};
 
 let done = 0;
 const failed = [];
@@ -78,6 +91,11 @@ for (const p of queue) {
   const inPng = join(TMP, `${p.id}-in.png`);
   const cutPng = join(TMP, `${p.id}-cut.png`);
   try {
+    const [aw, ah] = p.aspect || [1, 1];
+    const W = SIZE;
+    const H = Math.round((SIZE * ah) / aw);
+    const subjectTop = H - SIZE;          // subject anchored to the bottom edge
+
     // 1. square-crop the original, biased to the top so heads are not clipped
     await sharp(src).resize(SIZE, SIZE, { fit: 'cover', position: 'top' }).png().toFile(inPng);
 
@@ -95,11 +113,18 @@ for (const p of queue) {
     const cut = await sharp(inPng).ensureAlpha()
       .composite([{ input: cutPng, blend: 'dest-in' }])
       .png().toBuffer();
-    await sharp(backdrop).composite([{ input: cut }]).webp({ lossless: true, effort: 5 }).toFile(join(OUT, `${p.id}-brand.webp`));
+    const outFile = join(OUT, `${p.id}-brand.webp`);
+    await sharp(makeBackdrop(W, H, subjectTop))
+      .composite([{ input: cut, left: 0, top: subjectTop }])
+      .webp({ lossless: true, effort: 5 }).toFile(outFile);
 
     // --- identity proof: subject pixels must equal the source pixels ---
+    // Compare only the band the photograph occupies; the drawn headroom above
+    // it has no source to compare against.
     const srcRaw = await sharp(inPng).removeAlpha().raw().toBuffer();
-    const outRaw = await sharp(join(OUT, `${p.id}-brand.webp`)).removeAlpha().raw().toBuffer();
+    const outRaw = await sharp(outFile)
+      .extract({ left: 0, top: subjectTop, width: SIZE, height: SIZE })
+      .removeAlpha().raw().toBuffer();
     let diff = 0, counted = 0, bgReplaced = 0, bgTotal = 0;
     for (let px = 0; px < SIZE * SIZE; px++) {
       const a = alphaRaw[px];
@@ -121,7 +146,7 @@ for (const p of queue) {
     const mad = counted ? diff / counted : NaN;
     const pct = ((counted / (SIZE * SIZE)) * 100).toFixed(1);
     const bgPct = bgTotal ? (bgReplaced / bgTotal) * 100 : 0;
-    console.log(`  ok  ${p.id.padEnd(13)} subject ${pct}% (pixel diff ${mad.toFixed(3)}) · backdrop coverage ${bgPct.toFixed(1)}%`);
+    console.log(`  ok  ${p.id.padEnd(16)} ${W}x${H}  subject ${pct}% (pixel diff ${mad.toFixed(3)}) · backdrop coverage ${bgPct.toFixed(1)}%`);
     if (!(mad <= 2.5)) failed.push(`${p.id}: subject pixels differ from source (MAD ${mad.toFixed(2)})`);
     // guards against the failure where the cutout is silently opaque and the
     // original background survives, which would make the MAD check pass trivially

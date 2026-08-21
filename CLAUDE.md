@@ -147,6 +147,14 @@ History, so nobody relitigates it:
 it re-draws the whole picture and repeatedly substituted different people. Owner: *"you changed
 their faces to someone else"*. Prompt engineering did not fix it and must not be relied on.
 
+**No generated person may stand in for a real one.** The homepage process
+section used a GENERATED stock figure (`home-process-portrait`) in a founder
+role; it is replaced by `rihards-founder-brand.webp` and that manifest slot is
+deleted so `npm run images` cannot recreate it. `aspect` in the PORTRAITS list
+sets the FRAME shape only — a taller frame draws more backdrop, it never crops
+or stretches the photograph. Match the slot exactly (`.media--portrait` is 3:4)
+or object-fit:cover silently crops the result.
+
 `npm run portraits:brand` → `tools/brand-portraits.mjs` (non-generative):
 1. sharp square-crops the ORIGINAL photograph;
 2. `tools/_matte.mjs` produces an alpha cutout with a local ONNX model — it decides

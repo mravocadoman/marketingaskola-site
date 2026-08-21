@@ -370,15 +370,6 @@
       "rationale": "The homepage opens with stats and grey client logos and then runs six text-only sections; it needs one strong image immediately under the hero to stop reading as a generic template."
     },
     {
-      "id": "home-process-portrait",
-      "page": "index",
-      "placement": "Inside the '02 Kā mēs strādājam' section — wrap the existing .steps block in a two-column layout (row cols-2 top): this image in the left column, the four numbered process steps in the right.",
-      "aspect": "portrait",
-      "alt": "Cilvēks tumšā kreklā skaidro ideju; fonā vienkāršs zils aplis.",
-      "prompt": "High-contrast cut-out studio photograph of one focused adult in a plain dark charcoal shirt, mid-torso, caught gesturing mid-explanation, hard-edged silhouette knocked out onto a solid #020d1c navy background; a single large flat cyan #03c3f8 circle sits behind the shoulder, partly eclipsed by the figure, with one thin white quarter-arc at lower left. Cool desaturated skin tones, generous empty space above the head. Flat graphic treatment, no gradients, no glow, no drop shadow, no text, numbers, logos or UI.",
-      "rationale": "The process section is the longest stretch of unbroken text on the homepage, and one human presence anchors an otherwise fully abstract image set."
-    },
-    {
       "id": "services-module-band",
       "page": "pakalpojumi",
       "placement": "Full-width band directly beneath the .page-hero section, above the '01 Ko mēs darām' six-cell service grid.",
