@@ -283,16 +283,32 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* client logo strip */
 .logo-strip { border-top: 1px solid var(--line); margin-top: clamp(56px, 7vw, 88px); padding: 36px 0 40px; }
 .logo-strip .caption { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 26px; }
-.logo-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(20px, 3vw, 40px); align-items: center; }
-.logo-grid img {
-  height: 30px; width: auto; max-width: 100%;
-  object-fit: contain;
-  margin: 0 auto; display: block;
-  /* normalize every mixed-tone logo asset into one muted grey */
-  filter: brightness(0) invert(0.72);
-  opacity: 1;
+/* Logo wall — hairline cells, matching the collapsed-grid language.
+   Source files are pre-normalised by tools/normalize-logos.mjs to one tone and
+   one optical weight, so no CSS filters or opacity fading are needed. */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
-@media (max-width: 900px) { .logo-grid { grid-template-columns: repeat(3, 1fr); row-gap: 28px; } }
+.logo-grid img {
+  background: var(--canvas);
+  width: 100%;
+  height: 104px;
+  object-fit: contain;
+  padding: 20px 26px;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  transition: background 0.2s ease;
+}
+.logo-grid img:hover { background: var(--card2); }
+@media (max-width: 900px) { .logo-grid { grid-template-columns: repeat(3, 1fr); } .logo-grid img { height: 88px; padding: 16px 18px; } }
+@media (max-width: 480px) { .logo-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* legacy marquee (unused on new pages, kept for compatibility) */
 .marquee { overflow: hidden; }

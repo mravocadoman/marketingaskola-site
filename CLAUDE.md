@@ -133,6 +133,34 @@ Every non-photographic image on the site is generated flat brand artwork.
 - **The API key lives in `.env` (gitignored, never committed).** `.env.example`
   documents the variable. Rotate the key if it was ever pasted into a chat.
 
+## Team photographs — NEVER AI-generate or restyle them
+
+**Owner instruction, 21 Aug 2026: "why did you change the people in the images,
+my team members... all I wanted is to adjust the colors slightly with some cyan
+elements — revert them!"** A previous pass ran the real portraits through the
+OpenAI image-edit endpoint; it changed lighting, backgrounds and (on one photo)
+hair colour. That was wrong and was reverted.
+
+- The team photographs are pictures of **real people**. Never send them to an
+  image model, never regenerate, never "restyle", never swap backgrounds.
+- Colour work only, and only with deterministic local maths:
+  `npm run portraits` → `tools/grade-portraits.mjs` applies a light cool/cyan
+  cast (tint #cfe4f5 at 0.7 strength, +6% contrast) over the untouched original
+  and writes `src/img/team/<name>.webp`. Adjust `--strength` / `--tint` to
+  re-tune; the pixels of the face are never altered.
+- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth.
+
+## Client / partner logos
+
+`npm run logos` → `tools/normalize-logos.mjs` rebuilds `src/img/logos/`.
+The originals range from 1:1 to 9:1 in aspect with mixed tones and padding, so a
+fixed CSS height makes square marks tiny and wordmarks huge. The tool trims each
+logo, recolours it to one tone (#c9d8e8) via its alpha mask, and scales it to a
+blend of equal-height and equal-area (the geometric mean) so every logo carries
+the same optical weight, then centres it on a 300x80 canvas. The markup just
+uses `.logo-grid` — a 4-column hairline-celled wall. **No CSS filters and no
+opacity fading on logos.**
+
 ## Motion (src/js/main.js)
 
 Reveal-on-scroll, ledger stat **counters** (count up preserving "1M", "75 000",

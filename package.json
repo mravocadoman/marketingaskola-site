@@ -13,7 +13,9 @@
     "images:force": "node tools/generate-images.mjs --force",
     "covers": "node tools/apply-covers.mjs",
     "shots": "node tools/screenshot.mjs shots",
-    "optimize": "node tools/optimize-images.mjs"
+    "optimize": "node tools/optimize-images.mjs",
+    "portraits": "node tools/grade-portraits.mjs",
+    "logos": "node tools/normalize-logos.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
