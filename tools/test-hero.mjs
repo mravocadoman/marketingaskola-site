@@ -28,16 +28,18 @@ ok('dots present', dots === 7, `${dots}`);
 /* Sampled over time: every visible dot must stay inside the hero and clear of
    the headline, at every point on its path. */
 const hero = await p2.$eval('.sec--hero', (e) => { const r = e.getBoundingClientRect(); return { x: r.x, y: r.y, w: r.width, h: r.height }; });
-let samples = 0, outside = 0, onHeadline = 0, moved = 0;
+let samples = 0, outside = 0, onHeadline = 0, onStrip = 0, moved = 0;
 let prev = null;
 for (let t = 0; t < 8; t++) {
   await new Promise((r) => setTimeout(r, 800));
   const s = await p2.evaluate(() => {
     const h1 = document.querySelector('.sec--hero h1').getBoundingClientRect();
+    const ls = document.querySelector('.logo-strip').getBoundingClientRect();
     return [...document.querySelectorAll('.fx-dot')].map((el) => {
       const r = el.getBoundingClientRect();
       return { x: r.x, y: r.y, vis: +getComputedStyle(el).opacity > 0.15,
-               clash: r.right > h1.left && r.left < h1.right && r.bottom > h1.top && r.top < h1.bottom };
+               clash: r.right > h1.left && r.left < h1.right && r.bottom > h1.top && r.top < h1.bottom,
+               strip: r.bottom > ls.top && r.top < ls.bottom };
     });
   });
   s.forEach((d, i) => {
@@ -45,12 +47,16 @@ for (let t = 0; t < 8; t++) {
     samples++;
     if (d.x < hero.x - 12 || d.x > hero.x + hero.w + 12 || d.y < hero.y - 12 || d.y > hero.y + hero.h + 12) outside++;
     if (d.clash) onHeadline++;
+    if (d.strip) onStrip++;
     if (prev && prev[i] && Math.hypot(d.x - prev[i].x, d.y - prev[i].y) > 2) moved++;
   });
   prev = s;
 }
 ok('dots stay inside the hero', outside === 0, `${outside}/${samples} outside`);
 ok('never over the headline', onHeadline === 0, `${onHeadline} clashes`);
+/* The logo strip lives inside .sec--hero, so an unbounded layer drifts dots
+   straight over the client logos. */
+ok('never over the logo strip', onStrip === 0, `${onStrip} clashes`);
 ok('dots are actually moving', moved > samples * 0.6, `${moved}/${samples} samples moved`);
 
 const perf = await p2.evaluate(() => new Promise((res) => {
@@ -73,10 +79,10 @@ ok('hidden from assistive tech', await p2.$eval('.hero-fx', (e) => e.getAttribut
 
 /* --- mobile: dropped, because slice crops all but a narrow window there --- */
 const p3 = await b.newPage();
-await p3.setViewport({ width: 390, height: 800 });
+await p3.setViewport({ width: 900, height: 800 });   // below the 980px cutoff
 await p3.goto(BASE + '/', { waitUntil: 'load' });
-ok('mobile: layer removed', await p3.$eval('.hero-fx', (e) => getComputedStyle(e).display) === 'none');
-ok('mobile: no horizontal overflow', !(await p3.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)));
+ok('removed below 980px', await p3.$eval('.hero-fx', (e) => getComputedStyle(e).display) === 'none');
+ok('no horizontal overflow', !(await p3.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)));
 
 await b.close();
 let bad = 0;

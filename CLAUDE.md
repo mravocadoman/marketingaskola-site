@@ -499,11 +499,16 @@ seven dots out of frame. At 1440x900 nothing is clipped on desktop.
 band or the outer margins. A cyan dot sliding across the white headline reads as
 a rendering artifact, not as design.
 
-**Dropped entirely on phones** (`max-width: 760px`) and under
-`prefers-reduced-motion`. On a 390x1140 hero the slice leaves a ~300-unit
-window, so the dots would flicker through it about a tenth of the time — worse
-than no motion. CSS cannot pause a SMIL timeline, so removing the layer is also
-the only honest way to stop it.
+**The layer is bounded to `.hero-stage`, not to `.sec--hero`.** The client logo
+strip lives inside the hero section too, and an inset:0 layer drifted dots
+straight over the logos. Note an `<svg>` is a REPLACED element: with `height`
+unset it takes its intrinsic viewBox ratio and IGNORES `bottom`, so the height
+must be given explicitly or the layer silently runs past the stage.
+
+**Dropped entirely below 980px** (where `.hero-grid` collapses to one column and
+the headline grows into the bands the paths avoid) and under
+`prefers-reduced-motion``prefers-reduced-motion`. CSS cannot pause a SMIL timeline, so removing the
+layer is also the only honest way to stop it.
 
 `npm run test:hero` samples every dot eight times over its path and asserts none
 leaves the hero box, none overlaps the headline, they are actually moving, there

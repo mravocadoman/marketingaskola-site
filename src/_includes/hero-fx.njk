@@ -8,24 +8,24 @@
    dots rendered hundreds of pixels outside the hero. animateMotion lives in the
    SVG user coordinate system, so it scales with the viewBox for free.
 
-   PLACEMENT MATTERS. The viewBox is 1440x900, chosen to sit close to the hero's real aspect. It used to be 1440x620, and because
-   `slice` scales to COVER, that upscaled the art 1.4x and cropped ~210 units off
-   each side, throwing three of the seven dots outside the hero entirely. Paths run
-   through the top band, the bottom band and the outer margins — a cyan dot crossing
-   the white headline reads as a rendering artifact rather than as design.
+   PLACEMENT MATTERS. The viewBox is 1440x620, matching the shape of the effect layer. That layer is
+   bounded to the HEADLINE AREA, not the whole hero section — the client logo
+   strip lives inside .sec--hero too, and dots were drifting over the logos.
+   Paths run through the top band, the bottom band and the outer margins — a dot
+   crossing the white headline reads as an artifact rather than as design.
 
    Each dot is offset by half its size so it CENTRES on its path. #}
-<svg class="hero-fx" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
+<svg class="hero-fx" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice"
      aria-hidden="true" focusable="false">
   <g class="fx-dots">
     {% set dots = [
-      { s: 7, dur: "19s", b: "0s",    p: "M -60 110 C 260 50, 620 175, 1500 100" },
-      { s: 6, dur: "26s", b: "-3.5s", p: "M -60 190 C 380 120, 900 245, 1500 158" },
-      { s: 5, dur: "15s", b: "-7s",   p: "M -60 60 C 500 -25, 950 150, 1500 42" },
-      { s: 7, dur: "23s", b: "-1.5s", p: "M 1500 765 C 1000 855, 500 700, -60 800" },
-      { s: 6, dur: "17s", b: "-9s",   p: "M -60 838 C 420 762, 860 872, 1500 792" },
-      { s: 5, dur: "21s", b: "-5s",   p: "M 45 -60 C 92 260, 12 620, 58 960" },
-      { s: 6, dur: "24s", b: "-12s",  p: "M 1398 960 C 1348 620, 1430 240, 1382 -60" }
+      { s: 7, dur: "19s", b: "0s",    p: "M -60 105 C 260 45, 620 165, 1500 95" },
+      { s: 6, dur: "26s", b: "-3.5s", p: "M -60 165 C 380 100, 900 210, 1500 138" },
+      { s: 5, dur: "15s", b: "-7s",   p: "M -60 58 C 500 -20, 950 130, 1500 40" },
+      { s: 7, dur: "23s", b: "-1.5s", p: "M 1500 470 C 1000 560, 500 420, -60 500" },
+      { s: 6, dur: "17s", b: "-9s",   p: "M -60 545 C 420 470, 860 578, 1500 500" },
+      { s: 5, dur: "21s", b: "-5s",   p: "M 42 -60 C 88 180, 8 430, 55 680" },
+      { s: 6, dur: "24s", b: "-12s",  p: "M 1400 680 C 1350 430, 1432 170, 1384 -60" }
     ] %}
     {%- for d in dots %}
     <rect class="fx-dot" x="-{{ d.s / 2 }}" y="-{{ d.s / 2 }}" width="{{ d.s }}" height="{{ d.s }}">
