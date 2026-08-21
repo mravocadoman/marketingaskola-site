@@ -51,7 +51,6 @@
           "label": "Mājaslapa",
           "type": "url",
           "hint": "ja ir",
-          "placeholder": "https://",
           "autocomplete": "url"
         },
         {
@@ -129,8 +128,7 @@
           "name": "participants",
           "label": "Dalībnieku skaits",
           "type": "number",
-          "min": 1,
-          "placeholder": "1"
+          "min": 1
         },
         {
           "name": "message",

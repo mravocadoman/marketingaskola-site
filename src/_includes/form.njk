@@ -16,14 +16,21 @@
   <div class="form-grid">
     {% for fl in f.fields %}
     {% set fid = key + "-" + fl.name %}
-    <p class="field{% if fl.full or fl.type == 'textarea' %} field--full{% endif %}">
-      <label for="{{ fid }}">{{ fl.label | safe }}{% if fl.required %}<span class="req" aria-hidden="true">*</span>{% endif %}{% if fl.hint %} <span class="hint">({{ fl.hint | safe }})</span>{% endif %}</label>
+    {#- Floating label. The control comes BEFORE the label so the label can be
+        styled from the control's state with a sibling selector, and every input
+        carries placeholder=" " so :placeholder-shown reports "empty".
+
+        This is deliberately NOT a placeholder-only field. A real placeholder
+        vanishes the moment someone types, which loses the question they are
+        answering and fails WCAG 3.3.2; the label here only LOOKS like
+        placeholder text at rest, then rises out of the way. #}
+    <p class="field{% if fl.full or fl.type == 'textarea' %} field--full{% endif %}{% if fl.type == 'select' %} field--select{% endif %}">
       {%- if fl.type == "textarea" %}
-      <textarea id="{{ fid }}" name="{{ fl.name }}" rows="4"{% if fl.required %} required{% endif %}>{{ p[fl.name] or "" }}</textarea>
+      <textarea id="{{ fid }}" name="{{ fl.name }}" rows="3" placeholder=" "{% if fl.required %} required{% endif %}>{{ p[fl.name] or "" }}</textarea>
       {%- elif fl.type == "select" %}
       <span class="select-wrap">
         <select id="{{ fid }}" name="{{ fl.name }}"{% if fl.required %} required{% endif %}>
-          <option value="">Izvēlies…</option>
+          <option value=""></option>
           {%- for o in fl.options %}
           <option value="{{ o | safe }}"{% if p[fl.name] == o %} selected{% endif %}>{{ o | safe }}</option>
           {%- endfor %}
@@ -32,11 +39,12 @@
       {%- else %}
       <input type="{{ fl.type }}" id="{{ fid }}" name="{{ fl.name }}"
              value="{{ p[fl.name] or '' }}"
+             placeholder="{{ fl.placeholder or ' ' }}"
              {%- if fl.required %} required{% endif %}
-             {%- if fl.placeholder %} placeholder="{{ fl.placeholder }}"{% endif %}
              {%- if fl.autocomplete %} autocomplete="{{ fl.autocomplete }}"{% endif %}
              {%- if fl.min %} min="{{ fl.min }}"{% endif %}>
       {%- endif %}
+      <label for="{{ fid }}">{{ fl.label | safe }}{% if fl.required %}<span class="req" aria-hidden="true">*</span>{% endif %}{% if fl.hint %} <span class="hint">({{ fl.hint | safe }})</span>{% endif %}</label>
       <span class="field-error" data-error hidden></span>
     </p>
     {% endfor %}

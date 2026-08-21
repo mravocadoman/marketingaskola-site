@@ -1190,15 +1190,48 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    below is a token, the same form re-tones itself inside .paper for free.
    ========================================================================== */
 .form { margin: 0; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
-.field { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
+/* The label is absolutely positioned inside the control, so the field is one
+   box rather than a label row stacked on an input row. That is where most of
+   the height saving comes from. */
+.field { margin: 0; position: relative; }
 .field--full { grid-column: 1 / -1; }
 @media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
 
-.field > label { font-size: var(--t-sm); font-weight: 500; color: var(--body); }
+/* Floating label: reads as placeholder text at rest, rises out of the way once
+   the field is focused or filled. Not a real placeholder — that would vanish as
+   soon as someone types, losing the question they are answering (WCAG 3.3.2). */
+.field > label {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  font-size: var(--t-sm);
+  font-weight: 400;
+  color: var(--muted);
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: calc(100% - 34px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left top;
+  transition: transform 0.16s cubic-bezier(0.2, 0.7, 0.3, 1), color 0.16s ease;
+}
 .field .req { color: var(--cyan); margin-left: 2px; }
 .paper .field .req { color: var(--link); }
-.field .hint { font-size: var(--t-sm); color: var(--muted); }
+.field .hint { color: var(--muted); }
+
+/* floated state */
+.field input:focus ~ label,
+.field input:not(:placeholder-shown) ~ label,
+.field textarea:focus ~ label,
+.field textarea:not(:placeholder-shown) ~ label,
+.field select:focus ~ label,
+.field select:required:valid ~ label {
+  transform: translateY(-9px) scale(0.78);
+}
+/* A non-required select is always :valid, so it needs the option check too. */
+.field--select:not(:has(option[value=""]:checked)) > label { transform: translateY(-9px) scale(0.78); }
+@media (prefers-reduced-motion: reduce) { .field > label { transition: none; } }
 
 .form input[type="text"], .form input[type="email"], .form input[type="tel"],
 .form input[type="url"], .form input[type="number"], .form select, .form textarea {
@@ -1209,10 +1242,11 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   background: var(--well);
   border: 1px solid var(--line);
   border-radius: var(--radius-btn);
-  padding: 12px 14px;
+  /* top padding carries the floated label; bottom stays tight */
+  padding: 21px 14px 7px;
   transition: border-color 0.15s ease, background 0.15s ease;
 }
-.form textarea { min-height: 130px; resize: vertical; line-height: 1.6; }
+.form textarea { min-height: 92px; resize: vertical; line-height: 1.55; padding-top: 24px; }
 .form select { appearance: none; cursor: pointer; padding-right: 38px; }
 /* caret drawn as a flat mark; no image request, no gradient */
 .form .select-wrap { position: relative; }
@@ -1228,20 +1262,20 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .paper .form input:focus-visible, .paper .form select:focus-visible, .paper .form textarea:focus-visible { outline-color: var(--link); }
 
 /* consent — legally the important control, so it is a real target, not fine print */
-.form-consent { grid-column: 1 / -1; display: flex; gap: 12px; align-items: flex-start; cursor: pointer; }
+.form-consent { grid-column: 1 / -1; display: flex; gap: 11px; align-items: flex-start; cursor: pointer; margin-top: 4px; }
 .form-consent input { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; accent-color: var(--cyan); cursor: pointer; }
 .paper .form-consent input { accent-color: var(--link); }
 .form-consent span { font-size: var(--t-sm); color: var(--muted); line-height: 1.55; }
 .form-consent a { color: var(--link); }
 
-.form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; margin-top: 26px; }
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin-top: 20px; }
 .form-foot .btn { margin: 0; }
 .form-note { font-size: var(--t-sm); color: var(--muted); margin: 0; max-width: 40ch; }
 
 /* validation + status. Red is the one colour outside the palette; it is
    reserved for errors, never decoration. */
 .form [aria-invalid="true"] { border-color: var(--warn); }
-.field-error { font-size: var(--t-sm); color: var(--warn); }
+.field-error { display: block; margin-top: 4px; font-size: var(--t-micro); color: var(--warn); }
 .form-status { margin: 18px 0 0; font-size: var(--t-sm); min-height: 0; }
 .form-status[data-state="error"] { color: var(--warn); }
 .form-status[data-state="sending"] { color: var(--muted); }
