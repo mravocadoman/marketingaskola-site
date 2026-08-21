@@ -1,0 +1,70 @@
+{# Renders a form from src/_data/forms.json.
+   Import WITH CONTEXT or the `forms` global is not visible inside the macro:
+     {% from "form.njk" import form with context %}
+     {{ form("contact") }}
+     {{ form("course", { course: "SEO kurss" }) }}      <- preselect a value
+   The second argument presets any field by name. #}
+{% macro form(key, preset) %}
+{% set f = forms.forms[key] %}
+{% set p = preset or {} %}
+<form class="form" data-form="{{ key }}"
+      data-provider="{{ forms.provider }}"
+      data-account="{{ forms.account }}"
+      data-form-id="{{ f.id }}"
+      data-fallback="{{ forms.fallbackEmail }}"
+      novalidate>
+  <div class="form-grid">
+    {% for fl in f.fields %}
+    {% set fid = key + "-" + fl.name %}
+    <p class="field{% if fl.full or fl.type == 'textarea' %} field--full{% endif %}">
+      <label for="{{ fid }}">{{ fl.label | safe }}{% if fl.required %}<span class="req" aria-hidden="true">*</span>{% endif %}{% if fl.hint %} <span class="hint">({{ fl.hint | safe }})</span>{% endif %}</label>
+      {%- if fl.type == "textarea" %}
+      <textarea id="{{ fid }}" name="{{ fl.name }}" rows="4"{% if fl.required %} required{% endif %}>{{ p[fl.name] or "" }}</textarea>
+      {%- elif fl.type == "select" %}
+      <span class="select-wrap">
+        <select id="{{ fid }}" name="{{ fl.name }}"{% if fl.required %} required{% endif %}>
+          <option value="">Izv&#275;lies&hellip;</option>
+          {%- for o in fl.options %}
+          <option value="{{ o | safe }}"{% if p[fl.name] == o %} selected{% endif %}>{{ o | safe }}</option>
+          {%- endfor %}
+        </select>
+      </span>
+      {%- else %}
+      <input type="{{ fl.type }}" id="{{ fid }}" name="{{ fl.name }}"
+             value="{{ p[fl.name] or '' }}"
+             {%- if fl.required %} required{% endif %}
+             {%- if fl.placeholder %} placeholder="{{ fl.placeholder }}"{% endif %}
+             {%- if fl.autocomplete %} autocomplete="{{ fl.autocomplete }}"{% endif %}
+             {%- if fl.min %} min="{{ fl.min }}"{% endif %}>
+      {%- endif %}
+      <span class="field-error" data-error hidden></span>
+    </p>
+    {% endfor %}
+    <label class="form-consent">
+      <input type="checkbox" name="consent" required>
+      <span>{{ forms.consent | safe }}</span>
+    </label>
+  </div>
+
+  {# Honeypot. Real people never see it; bots fill every field they find. #}
+  <div class="hp" aria-hidden="true">
+    <label>Neaizpildi &#353;o lauku<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label>
+  </div>
+  <input type="hidden" name="source_page" value="{{ page.url }}">
+
+  <div class="form-foot">
+    <button class="btn" type="submit">{{ f.submit | safe }}</button>
+    <p class="form-note">{{ f.note | safe }}</p>
+  </div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+
+  {# Swapped in on success. Leaving a filled-in form on screen invites a second
+     submit and buries the confirmation below the fold. #}
+  <template data-success>
+    <div class="form-done">
+      <h3>{{ f.successTitle | safe }}</h3>
+      <p>{{ f.successBody | safe }}</p>
+    </div>
+  </template>
+</form>
+{% endmacro %}

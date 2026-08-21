@@ -25,6 +25,8 @@
   --heading: #ffffff;
   --body: #c9d8e8;
   --muted: #8ba3bd;
+  --well: #051e35;         /* inset fill: inputs, hover wells */
+  --warn: #ff9b9b;         /* validation only - never decorative */
   --radius: 8px;
   --radius-btn: 4px;
   --container: 1200px;
@@ -603,19 +605,9 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .contact-card .small { font-size: 0.84rem; color: var(--muted); }
 .contact-card a { color: var(--link); }
 
-/* Tally embeds render dark text — they stay on a white document card,
-   the one deliberate light surface, framed like an embedded form. */
-.form-embed {
-  background: #ffffff;
-  border-radius: var(--radius);
-  padding: clamp(18px, 3vw, 32px);
-}
-.form-embed iframe { width: 100%; border: 0; min-height: 540px; display: block; }
-
 .img { margin: 0; }
 .img img { border-radius: var(--radius); display: block; border: 1px solid var(--line); }
 .img--plain img { border-radius: 0; border: 0; }
-.img--card img { background: #fff; border: 1px solid var(--line); padding: 14px; }
 /* uniform circular B&W crops for people galleries with mixed source assets */
 .img--actor img {
   width: min(100%, 190px);
@@ -842,6 +834,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   --card2: #e9f1f8;
   --line: rgba(11, 27, 43, 0.13);
   --line-strong: rgba(11, 27, 43, 0.24);
+  --well: #eef4f9;         /* inset fill flips too, or inputs stay navy */
+  --warn: #a3232f;         /* the dark-canvas red is unreadable on paper */
   --line-hover: rgba(11, 27, 43, 0.42);
   --heading: #0b1b2b;
   --body: #33475b;
@@ -862,7 +856,6 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .paper .btn--ghost:hover { border-color: #0b1b2b; background: rgba(11, 27, 43, 0.05) !important; }
 .paper .eyebrow, .paper .page-hero .chip { color: var(--muted); }
 .paper .eyebrow .idx { color: var(--link); }
-.paper .form-embed { background: var(--card); border: 1px solid var(--line); }
 .paper .faq[open] { background: var(--card); }
 .paper .cta, .paper .panel, .paper .course-card,
 .paper .instructor-card, .paper .contact-card { background: var(--card); }
@@ -1072,3 +1065,99 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .step.reveal .step-num { transform: translateY(6px); transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s; }
   .step.reveal.in .step-num { transform: none; }
 }
+
+/* ==========================================================================
+   FORMS — hand-coded, no third-party iframe.
+   These replaced Tally embeds. The old .form-embed had to be a white document
+   card because Tally rendered dark text we could not style; owning the markup
+   means the form is finally native to the dark canvas, and because every colour
+   below is a token, the same form re-tones itself inside .paper for free.
+   ========================================================================== */
+.form { margin: 0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
+.field { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.field--full { grid-column: 1 / -1; }
+@media (max-width: 640px) { .form-grid { grid-template-columns: 1fr; } }
+
+.field > label { font-size: 0.86rem; font-weight: 500; color: var(--body); }
+.field .req { color: var(--cyan); margin-left: 2px; }
+.paper .field .req { color: var(--link); }
+.field .hint { font-size: 0.78rem; color: var(--muted); }
+
+.form input[type="text"], .form input[type="email"], .form input[type="tel"],
+.form input[type="url"], .form input[type="number"], .form select, .form textarea {
+  font: inherit;
+  font-size: 0.95rem;
+  width: 100%;
+  color: var(--heading);
+  background: var(--well);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-btn);
+  padding: 12px 14px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.form textarea { min-height: 130px; resize: vertical; line-height: 1.6; }
+.form select { appearance: none; cursor: pointer; padding-right: 38px; }
+/* caret drawn as a flat mark; no image request, no gradient */
+.form .select-wrap { position: relative; }
+.form .select-wrap::after {
+  content: ""; position: absolute; right: 15px; top: 50%; width: 8px; height: 8px;
+  border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+  transform: translateY(-70%) rotate(45deg); pointer-events: none;
+}
+.form ::placeholder { color: var(--muted); opacity: 1; }
+.form input:hover, .form select:hover, .form textarea:hover { border-color: rgba(255,255,255,0.18); }
+.paper .form input:hover, .paper .form select:hover, .paper .form textarea:hover { border-color: rgba(11,27,43,0.28); }
+.form input:focus-visible, .form select:focus-visible, .form textarea:focus-visible { outline: 2px solid var(--cyan); outline-offset: 1px; border-color: transparent; }
+.paper .form input:focus-visible, .paper .form select:focus-visible, .paper .form textarea:focus-visible { outline-color: var(--link); }
+
+/* consent — legally the important control, so it is a real target, not fine print */
+.form-consent { grid-column: 1 / -1; display: flex; gap: 12px; align-items: flex-start; cursor: pointer; }
+.form-consent input { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; accent-color: var(--cyan); cursor: pointer; }
+.paper .form-consent input { accent-color: var(--link); }
+.form-consent span { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+.form-consent a { color: var(--link); }
+
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 22px; margin-top: 26px; }
+.form-foot .btn { margin: 0; }
+.form-note { font-size: 0.8rem; color: var(--muted); margin: 0; max-width: 40ch; }
+
+/* validation + status. Red is the one colour outside the palette; it is
+   reserved for errors, never decoration. */
+.form [aria-invalid="true"] { border-color: var(--warn); }
+.field-error { font-size: 0.78rem; color: var(--warn); }
+.form-status { margin: 18px 0 0; font-size: 0.88rem; min-height: 0; }
+.form-status[data-state="error"] { color: var(--warn); }
+.form-status[data-state="sending"] { color: var(--muted); }
+.form.is-sending { opacity: 0.7; pointer-events: none; }
+
+/* success replaces the form outright — a filled-in form left on screen invites
+   a second submit and hides the confirmation */
+.form-done { border: 1px solid var(--line); border-top: 2px solid var(--cyan); border-radius: var(--radius); background: var(--card); padding: clamp(26px, 4vw, 40px); }
+.paper .form-done { border-top-color: var(--link); }
+.form-done h3 { margin: 0 0 10px; }
+.form-done p { margin: 0; color: var(--body); }
+
+/* honeypot: off-screen, never focusable, never announced */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ==========================================================================
+   MARKS — official third-party lockups (EU funding, Meta certification).
+   They ship as transparent artwork, so they sit on the canvas directly. The
+   old .img--card punched a white slab behind them, which read as a foreign
+   object dropped onto the dark page.
+   ========================================================================== */
+.marks { display: flex; align-items: center; gap: clamp(22px, 4vw, 44px); flex-wrap: wrap; margin: 0; }
+.marks img { display: block; height: auto; border: 0; border-radius: 0; }
+
+/* the EU funding notice: legally mandated wording, given a real structure
+   instead of a centred slab orphaned at the foot of the page */
+.funding { margin-top: clamp(48px, 6vw, 76px); border-top: 1px solid var(--line); padding-top: clamp(28px, 3.5vw, 40px); display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: clamp(24px, 4vw, 52px); align-items: center; }
+.funding img { width: 100%; max-width: 260px; height: auto; display: block; }
+.funding p { margin: 0; font-size: 0.82rem; line-height: 1.65; color: var(--muted); }
+.funding p strong { display: block; margin-bottom: 6px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--body); }
+@media (max-width: 700px) { .funding { grid-template-columns: 1fr; gap: 24px; } }
+
+/* screenshots are real captures with their own light UI — they get a hairline
+   frame so they read as evidence, not as a stray white block */
+.img--shot img { border: 1px solid var(--line); border-radius: var(--radius); background: var(--well); padding: 0; }

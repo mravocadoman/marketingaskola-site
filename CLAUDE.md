@@ -167,6 +167,53 @@ The tool self-verifies and fails loudly:
 Sources stay in `src/img/YYYY/MM/…` and are the source of truth. `npm run portraits`
 (`tools/grade-portraits.mjs`) is the plain local-colour-grade fallback.
 
+## Forms — hand-coded, MailerLite (21 Aug 2026)
+
+The Tally iframes are gone.  defines the fields,
+ renders them ( — WITH CONTEXT, or the  global is invisible in the macro),
+ submits. Two forms:  and ; the second
+argument presets a field, e.g. .
+Field lists were read off the live Tally embeds, not invented.
+
+**MailerLite, not Resend — the deciding factor is that this site is static.**
+MailerLite's form endpoint takes a browser POST and carries no secret, so it
+works from GitHub Pages as-is. A Resend API key can never reach the browser, so
+Resend would need a serverless function on a host this project does not have,
+just to receive a form. MailerLite is also a list + automations (free to 1,000
+subscribers / 12,000 emails per month) where Resend stores nothing, so Resend
+would be an addition to a list tool rather than a replacement for one. The
+provider sits behind an adapter in : switching means adding one entry
+and changing  in forms.json — no markup changes.
+
+- Endpoint: .
+  If the browser blocks reading the response, the code retries   — a cross-origin FormData POST is a simple request, so it still arrives.
+- **Every failure path falls back to a pre-filled mailto** rather than an error
+  message. A form that loses a lead is worse than no form.
+- Honeypot + Latvian client-side validation; consent checkbox is required and
+  names SIA "Stonks" as the controller.
+- No-JS: the form cannot submit, so it renders a mailto line instead.
+
+## Marks and white-slab artifacts
+
+ () is DELETED. It faked white paper behind
+transparent artwork and punched a light hole in the dark canvas.
+-  →  recolours transparent MARK artwork
+  to  through its own alpha, same trick as the logo normaliser. Used
+  for the EU funding lockup. Single-colour reproduction on a dark ground is
+  permitted by the EU emblem guidelines, and the source was already monochrome.
+  The mask must be an image that still HAS an alpha channel — passing an
+  extracted greyscale buffer masks nothing (it is fully opaque) and yields a
+  solid slab, so the tool fails if ink coverage is not between 3% and 70%.
+- The **Meta certification badges are deliberately NOT toned** — they are
+  already brand-coloured on transparent and read fine on navy. Flattening them
+  would destroy an official badge. They just use .
+- Real screenshots (portfolio) keep their light UI and use : a
+  hairline frame, no white padding.
+- The EU funding notice moved from an orphaned centred card at the foot of
+   into a  band closing the contact section, so the
+  legal disclosures sit together and the page ends on the founder story.
+  **The wording is unchanged and still legally required.**
+
 ## Client / partner logos
 
 `npm run logos` → `tools/normalize-logos.mjs` rebuilds `src/img/logos/`.

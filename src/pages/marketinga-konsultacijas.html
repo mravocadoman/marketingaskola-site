@@ -4,6 +4,7 @@ title: "Mārketinga konsultācijas - Mārketinga Skola"
 description: "Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem — €100/h vai €60 par 30 min. 30–60 minūšu saruna par Tavu situāciju, pēc kuras Tev ir prioritātes un konkrēti nākamie soļi."
 permalink: "/marketinga-konsultacijas/"
 ---
+{% from "form.njk" import form with context %}
 
 <section class="page-hero">
   <div class="container">
@@ -243,7 +244,7 @@ permalink: "/marketinga-konsultacijas/"
       </div>
       <p class="lead">Aprakstī savu situāciju formā, vai raksti: <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a> · <a href="https://wa.me/37126673384" target="_blank" rel="noopener">WhatsApp +371 26673384</a></p>
     </div>
-    <div class="form-embed"><iframe src="https://tally.so/embed/wz1DrM?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" title="Kontaktforma"></iframe></div>
+    {{ form("contact") }}
   </div>
 </section>
 

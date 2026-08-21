@@ -4,6 +4,7 @@ title: "Meta Reklāmas Kurss - Mārketinga Skola"
 description: "Meta reklāmas kurss - iemācies piesaistīt klientus ar peļņu nesošām Facebook un Instagram reklāmām! Lieliski piemērots iesācējiem."
 permalink: "/meta-reklamas-kurss/"
 ---
+{% from "form.njk" import form with context %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Meta</span>
@@ -110,7 +111,7 @@ permalink: "/meta-reklamas-kurss/"
       </div>
       <p class="lead">Pieteikšanās ir bez maksas un neuzliek saistības — sazināsimies un saskaņosim nākamās grupas laiku.</p>
     </div>
-    <div class="form-embed" style="max-width:820px"><iframe src="https://tally.so/embed/nrvEB2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" title="Pieteikuma forma"></iframe></div>
+    <div style="max-width:820px">{{ form("course", { course: "Meta reklāmas kurss" }) }}</div>
   </div>
 </section>
 

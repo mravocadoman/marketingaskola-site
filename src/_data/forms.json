@@ -1,0 +1,44 @@
+{
+  "_comment": "Form definitions + provider wiring. Replaced the Tally iframes. Chose MailerLite over Resend because this is a static site with no server: MailerLite's form endpoint is designed to take a browser POST with no secret, while a Resend API key can never reach the browser and would need a serverless function hosted somewhere other than GitHub Pages. See CLAUDE.md.",
+  "provider": "mailerlite",
+  "account": "1475",
+  "fallbackEmail": "rihards@marketingaskola.lv",
+  "consent": "Piekrītu, ka SIA “Stonks” (Mārketinga Skola) apstrādā manās norādītās ziņas, lai sazinātos par šo pieteikumu. Piekrišanu var atsaukt jebkurā brīdī, rakstot uz rihards@marketingaskola.lv.",
+  "forms": {
+    "contact": {
+      "id": "",
+      "submit": "Nosūtīt pieteikumu",
+      "note": "Atbildēsim 1 darba dienas laikā. Ja apsver sadarbību, piedāvāsim bezmaksas 20 min iepazīšanās zvanu.",
+      "successTitle": "Paldies — pieteikums saņemts.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
+      "fields": [
+        { "name": "name",      "label": "Vārds",                 "type": "text",     "required": true, "autocomplete": "given-name" },
+        { "name": "last_name", "label": "Uzvārds",               "type": "text",     "required": true, "autocomplete": "family-name" },
+        { "name": "email",     "label": "E-pasts",                    "type": "email",    "required": true, "autocomplete": "email" },
+        { "name": "phone",     "label": "Tālrunis",              "type": "tel",      "autocomplete": "tel" },
+        { "name": "company",   "label": "Uzņēmuma nosaukums", "type": "text",   "hint": "ja ir",  "autocomplete": "organization" },
+        { "name": "website",   "label": "Mājaslapa",             "type": "url",      "hint": "ja ir",  "placeholder": "https://", "autocomplete": "url" },
+        { "name": "message",   "label": "Pastāsti vairāk par savu uzņēmumu un produktu vai pakalpojumu, ko piedāvā", "type": "textarea", "required": true, "full": true },
+        { "name": "motivation","label": "Vai ir kas specifisks, kas Tevi uzrunāja, lai apsvērtu sadarbību ar mums?", "type": "textarea", "full": true }
+      ]
+    },
+    "course": {
+      "id": "",
+      "submit": "Pieteikties kursam",
+      "note": "Pieteikšanās ir bez maksas un neuzliek par pienākumu iegādāties kursu. Sazināsimies ar detaļām un datumiem.",
+      "successTitle": "Paldies — pieteikums saņemts.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā un nosūtīsim informāciju par nākamajām grupām un datumiem.",
+      "fields": [
+        { "name": "course",    "label": "Kurš kurss Tevi interesē?", "type": "select", "required": true, "full": true,
+          "options": ["Meta reklāmas kurss", "Padziļināts ieskats Meta reklāmā", "SEO kurss", "TikTok kurss", "Digitālā mārketinga stratēģija vadītājiem", "Vēl neesmu izlēmis"] },
+        { "name": "name",      "label": "Vārds",   "type": "text",  "required": true, "autocomplete": "given-name" },
+        { "name": "last_name", "label": "Uzvārds", "type": "text",  "required": true, "autocomplete": "family-name" },
+        { "name": "email",     "label": "E-pasts",      "type": "email", "required": true, "autocomplete": "email" },
+        { "name": "phone",     "label": "Tālrunis","type": "tel",   "autocomplete": "tel" },
+        { "name": "company",   "label": "Uzņēmuma nosaukums", "type": "text", "hint": "ja ir", "autocomplete": "organization" },
+        { "name": "participants", "label": "Dalībnieku skaits", "type": "number", "min": 1, "placeholder": "1" },
+        { "name": "message",   "label": "Kāds ir Tavš mērķis ar šo kursu?", "type": "textarea", "full": true }
+      ]
+    }
+  }
+}
