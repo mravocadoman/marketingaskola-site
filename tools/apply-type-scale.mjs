@@ -50,7 +50,9 @@ for (const m of scale.mapping) {
 let rewritten = 0;
 const unmapped = [];
 css = css.replace(/([^{}]+)\{([^{}]*)\}/g, (full, sel, body) => {
-  const s = sel.trim().replace(/\s+/g, ' ');
+  // A rule preceded by a comment captures that comment into the selector group.
+  // Strip it for matching only — the comment itself stays in the output.
+  const s = sel.replace(/\/\*[\s\S]*?\*\//g, '').trim().replace(/\s+/g, ' ');
   if (s.startsWith('@') || s.startsWith('/*')) return full;
   const newBody = body.replace(/(^|;)(\s*)font-size:\s*([^;]+)/g, (d, pre, ws, val) => {
     const declared = val.replace(/\s+/g, ' ').trim();

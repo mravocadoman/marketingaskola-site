@@ -416,6 +416,63 @@ delivery times if they should be public.
 Latvian versions of its content to live here eventually; nothing from it has
 been used, because it could not be read.
 
+## Geometry — SQUARE, one decision (21 Aug 2026)
+
+The stylesheet had **seven** corner treatments at once: 8px, 6px, 5px, 4px, 2px,
+0 and 50%. Owner: *"too much of a mix of square and rounded… just use one and
+stick with it."*
+
+`--radius: 0` and `--radius-btn: 0`. Every ad-hoc 2/4/5/6px radius is gone.
+Square is the right half of the choice because the system is already a ledger —
+hairline grids, indexed eyebrows, corner ticks on panels, depth from hairlines
+and never shadows. Rounded corners were fighting all of it.
+
+**The only circles left are two true dots** (a 3px separator in `.article-meta`
+and the 4px travelling signal on `.logo-strip`). Containers, images, avatars and
+buttons are boxes and read as boxes. If you add a rounded element, you are
+reopening a decision that was made deliberately — change the token instead.
+
+## Header and nav (21 Aug 2026)
+
+- Brand mark **148px** desktop / 132px under 1020px (was 176px).
+- Topbar is a utility strip, not a second nav: 32px tall, contacts get a cyan
+  hairline that wipes in on hover.
+- Nav hover and active share ONE mark: a 2px cyan rule that wipes in from the
+  left, replacing an inset box-shadow that appeared instantly and read as a
+  different device from everything else.
+- Dropdowns animate (fade + rise, rows staggered 30ms apart) and the caret
+  rotates. All of it degrades to instant state changes under
+  `prefers-reduced-motion` — the menus still work, they just stop moving.
+
+**Two traps, both hit during this change:**
+
+1. **`.dropdown` is a `<ul>`, so `.nav ul` (0,1,1) outranks `.dropdown`
+   (0,1,0).** That is why the old rules carried `display: none !important`.
+   Removing the `!important` silently left every mobile submenu expanded. The
+   fix is specificity, not force: the rules are scoped `.nav .dropdown` (0,2,0).
+   Same reason the desktop rule needed `padding: 8px !important` — also fixed.
+2. **The caret already owns `a::after` on `.has-children` links.** Adding the
+   underline on `::after` merged the two rulesets into one pseudo-element and
+   drew a stray box under the parent items. The underline uses `::before`.
+
+`npm run test:nav` drives both, plus the logo sizes, in headless Chrome:
+hidden-at-rest, hover, pointer-leave, keyboard focus, mobile collapse and tap,
+and horizontal overflow.
+
+## The type audit had a blind spot (found 21 Aug 2026)
+
+The first pass reported "10 distinct sizes, 0 indistinguishable pairs". That was
+measured with a broken scan. **A CSS rule immediately preceded by a comment
+captures that comment into the selector capture group**, and the
+`sel.startsWith('/*')` guard then skipped the entire rule. Six declarations
+never got tokenised — `.topbar`, `.footer`, `.toc`, `.article-meta`, `.eyebrow`
+and `.btn` — and the audit could not see them to report them either.
+
+All three tools now strip comments from the selector before matching. The real
+numbers: **90 declarations, 10 distinct sizes, 0 indistinguishable pairs, zero
+raw font-sizes left in the file.** If the audit ever reports fewer than 90
+declarations, it has gone blind again.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,

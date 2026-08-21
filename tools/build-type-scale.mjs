@@ -79,6 +79,8 @@ const RULES = [
 
   // --- compact UI and fine print -----------------------------------------
   [(s) => /^\.nav a/.test(s), '--t-sm'],
+  // These three sat behind a comment and were invisible to the first pass.
+  [(s) => s === '.footer' || s === '.toc' || s === '.article-meta', '--t-sm'],
   [(s) => /(btn--sm|arrow-link|chip-link|chips li|chips span|badge)$/.test(s), '--t-sm'],
   [(s) => /(\.small|\.fine|\.hint|field-error|form-note|form-status|post-meta|footer-bottom|author-strip span|topbar|\.field > label|form-consent span)$/.test(s), '--t-sm'],
   [(s) => /(team-card p|funding p|blurb blockquote a|post-card \.more|instructor-card \.arrow-link)$/.test(s), '--t-sm'],
@@ -91,7 +93,9 @@ const RULES = [
 const mapping = [];
 const unresolved = [];
 for (const m of CSS.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
-  const sel = m[1].trim().replace(/\s+/g, ' ');
+  // A rule preceded by a comment captures that comment into the selector group.
+  // Strip it, or the guard below skips the whole rule.
+  const sel = m[1].replace(/\/\*[\s\S]*?\*\//g, '').trim().replace(/\s+/g, ' ');
   if (sel.startsWith('@') || sel.startsWith('/*')) continue;
   const fs = [...m[2].matchAll(/(?:^|;)\s*font-size:\s*([^;]+)/g)].pop();
   if (!fs) continue;

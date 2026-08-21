@@ -51,7 +51,10 @@ function splitArgs(s) {
 // it walks rule blocks and keeps the last font-size in each.
 const rules = [];
 for (const m of CSS.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
-  const sel = m[1].trim().replace(/\s+/g, ' ');
+  // A rule preceded by a comment captures that comment into the selector group.
+  // Strip it, or the guard below skips the whole rule — which is exactly how six
+  // declarations escaped the first pass and made this audit report a clean scale.
+  const sel = m[1].replace(/\/\*[\s\S]*?\*\//g, '').trim().replace(/\s+/g, ' ');
   if (sel.startsWith('@') || sel.startsWith('/*')) continue;
   const fs = [...m[2].matchAll(/(?:^|;)\s*font-size:\s*([^;]+)/g)].pop();
   if (fs) rules.push({ sel, expr: fs[1].trim() });

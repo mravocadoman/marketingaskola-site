@@ -39,8 +39,10 @@
   --t-d4: clamp(2.25rem, 1.72rem + 2.15vw, 3.75rem);   /* 36-60px · inner page hero h1 */
   --t-d5: clamp(2.75rem, 1.97rem + 3.2vw, 5rem);   /* 44-80px · home hero h1 */
   /* --- end type scale --- */
-  --radius: 8px;
-  --radius-btn: 4px;
+  --radius: 0;          /* SQUARE. The system is a ledger: hairline grids,
+                             indexed eyebrows, corner ticks. Rounded corners
+                             fought that, and seven different radii were in use. */
+  --radius-btn: 0;
   --container: 1200px;
   --pad-x: clamp(20px, 4vw, 48px);
   --sec-pad: clamp(6rem, 10vw, 10rem);
@@ -66,7 +68,7 @@ img { max-width: 100%; height: auto; }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 ::selection { background: rgba(3, 195, 248, 0.35); color: #fff; }
-:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: 2px; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; border-radius: 0; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -98,10 +100,15 @@ p { margin: 0 0 1.15em; }
 .col:empty { display: none; }
 
 /* ---------- topbar ---------- */
-.topbar { background: var(--canvas); font-size: 0.78rem; border-bottom: 1px solid var(--line); position: relative; z-index: 60; }
-.topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: 38px; gap: 16px; }
+.topbar { background: var(--canvas); font-size: var(--t-sm); border-bottom: 1px solid var(--line); position: relative; z-index: 60; }
+.topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: 32px; gap: 16px; }
 .topbar a { color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
+.topbar a { transition: color .16s ease; }
 .topbar a:hover { color: #fff; text-decoration: none; }
+.topbar-contacts a { position: relative; }
+/* the contact strip earns its own hairline on hover rather than an underline */
+.topbar-contacts a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: var(--cyan); transform: scaleX(0); transform-origin: left; transition: transform .22s cubic-bezier(.2,.7,.3,1); }
+.topbar-contacts a:hover::after { transform: scaleX(1); }
 .topbar-contacts { display: flex; gap: 22px; flex-wrap: wrap; }
 .topbar-social { display: flex; gap: 15px; align-items: center; }
 
@@ -117,7 +124,9 @@ p { margin: 0 0 1.15em; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 24px; }
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
-.brand img { display: block; width: 176px; height: auto; }
+.brand img { display: block; width: 148px; height: auto; transition: opacity .18s ease; }
+.brand:hover img { opacity: .82; }
+@media (max-width: 1020px) { .brand img { width: 132px; } }
 
 .nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 6px; }
 .nav > ul > li { position: relative; }
@@ -131,8 +140,26 @@ p { margin: 0 0 1.15em; }
   white-space: nowrap;
   transition: color 0.15s ease;
 }
+/* Hover and active share ONE mark: a 2px cyan rule that wipes in from the left.
+   It replaces the old inset box-shadow, which appeared instantly and read as a
+   different device from everything else on the page. transform only, so it
+   stays on the compositor. */
+.nav > ul > li > a { position: relative; }
+.nav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  left: 12px; right: 12px; bottom: 3px;
+  height: 2px;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.nav > ul > li > a:hover::before,
+.nav > ul > li:focus-within > a::before { transform: scaleX(1); }
 .nav > ul > li > a:hover { color: #fff; text-decoration: none; }
-.nav > ul > li.active > a { color: #fff; box-shadow: inset 0 -2px 0 var(--cyan); }
+.nav > ul > li.active > a { color: #fff; }
+.nav > ul > li.active > a::before { transform: scaleX(1); }
 .nav li.has-children > a::after {
   content: "";
   display: inline-block;
@@ -142,24 +169,61 @@ p { margin: 0 0 1.15em; }
   border-bottom: 1.5px solid currentColor;
   transform: rotate(45deg) translateY(-3px);
   opacity: 0.5;
+  transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1), opacity 0.18s ease;
 }
-.dropdown {
+.nav li.has-children:hover > a::after,
+.nav li.has-children:focus-within > a::after,
+.nav li.has-children.open > a::after {
+  transform: rotate(-135deg) translateY(-3px) translateX(-3px);
+  opacity: 0.9;
+}
+/* Scoped to .nav for the same reason as the mobile rule below: the dropdown
+   is a <ul>, and .nav ul (0,1,1) outranks .dropdown (0,1,0). */
+.nav .dropdown {
   position: absolute;
   top: calc(100% + 10px); left: 0;
   min-width: 268px;
   background: var(--card2);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  padding: 8px !important;
-  display: none !important;
+  padding: 8px;
+  display: flex;
   flex-direction: column;
+  /* display: none cannot animate. visibility keeps the links out of the tab
+     order while hidden, which opacity alone would not. */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.2s cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0.2s;
 }
 .dropdown::before { content: ""; position: absolute; top: -14px; left: 0; right: 0; height: 14px; }
 .nav li.has-children:hover > .dropdown,
 .nav li.has-children:focus-within > .dropdown,
-.nav li.has-children.open > .dropdown { display: flex !important; }
+.nav li.has-children.open > .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* each row settles a beat after the panel, left to right */
+.dropdown li { opacity: 0; transform: translateX(-6px); transition: opacity 0.2s ease, transform 0.24s cubic-bezier(0.2, 0.7, 0.3, 1); }
+.nav li.has-children:hover > .dropdown li,
+.nav li.has-children:focus-within > .dropdown li,
+.nav li.has-children.open > .dropdown li { opacity: 1; transform: translateX(0); }
+.dropdown li:nth-child(2) { transition-delay: 0.03s; }
+.dropdown li:nth-child(3) { transition-delay: 0.06s; }
+.dropdown li:nth-child(4) { transition-delay: 0.09s; }
+.dropdown li:nth-child(5) { transition-delay: 0.12s; }
 .dropdown li { width: 100%; }
-.dropdown a { padding: 10px 14px; font-weight: 400; white-space: normal; border-radius: 5px; color: var(--body); }
+.dropdown a { padding: 10px 14px; font-weight: 400; white-space: normal; border-radius: 0; color: var(--body); }
+.dropdown a { position: relative; transition: color 0.16s ease, background 0.16s ease; }
+.dropdown a::before {
+  content: "";
+  position: absolute; left: 0; top: 6px; bottom: 6px;
+  width: 2px; background: var(--cyan);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.dropdown a:hover::before { transform: scaleY(1); }
 .dropdown a:hover { background: rgba(255, 255, 255, 0.06); color: #fff; text-decoration: none; }
 
 .nav-cta > a {
@@ -183,7 +247,21 @@ p { margin: 0 0 1.15em; }
   .nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 12px 10px; }
   .nav a { padding: 13px 16px; white-space: normal; font-size: var(--t-sm); }
   .nav > ul > li.active > a { box-shadow: inset 2px 0 0 var(--cyan); }
-  .dropdown { position: static; border: 0 !important; border-left: 1px solid var(--line-strong) !important; border-radius: 0; margin: 0 0 4px 16px; background: transparent; padding: 0 !important; }
+  /* Scoped to .nav on purpose. The dropdown IS a <ul>, so `.nav ul` (0,1,1)
+     outranks a bare `.dropdown` (0,1,0) and its `display: flex` would win —
+     which is exactly why this rule used to carry !important. `.nav .dropdown`
+     reaches (0,2,0) and wins on specificity instead of force. */
+  .nav .dropdown {
+    position: static; border: 0;
+    border-left: 1px solid var(--line-strong);
+    border-radius: 0; margin: 0 0 4px 16px; background: transparent; padding: 0;
+    /* in normal flow the panel must not hold space while closed */
+    display: none; opacity: 1; visibility: visible; transform: none; transition: none;
+  }
+  .nav li.has-children.open > .dropdown { display: flex; }
+  .dropdown li { opacity: 1; transform: none; transition: none; }
+  .nav > ul > li > a::before { display: none; }
+  .nav > ul > li.active > a { box-shadow: inset 2px 0 0 var(--cyan); }
   .nav-cta > a { margin: 10px 16px; text-align: center; }
 }
 
@@ -201,7 +279,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   gap: 14px;
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 0.8125rem;
+  font-size: var(--t-micro);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -330,6 +408,13 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 @media (max-width: 640px) { .marquee-track img { height: 52px; } .marquee-track { animation-duration: 34s; } }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; gap: 32px; }
+  /* Header motion degrades to instant state changes: the underline, the caret,
+     the dropdown and its rows all still WORK, they just stop moving. */
+  .nav > ul > li > a::before,
+  .dropdown, .dropdown li, .dropdown a::before,
+  .nav li.has-children > a::after,
+  .topbar-contacts a::after,
+  .brand img { transition: none !important; }
 }
 
 /* legacy marquee (unused on new pages, kept for compatibility) */
@@ -372,7 +457,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   color: var(--canvas) !important;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--t-base);
   letter-spacing: 0.01em;
   padding: 15px 30px;
   border: 0;
@@ -459,7 +544,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .card-icon {
   width: 46px; height: 46px;
   display: grid; place-items: center;
-  border-radius: 6px;
+  border-radius: 0;
   background: var(--card2);
   border: 1px solid var(--line);
   color: var(--body);
@@ -645,7 +730,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   width: min(100%, 190px);
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0;
   margin: 0 0 18px;
   filter: grayscale(1);
   background: var(--card);
@@ -674,7 +759,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .page-hero .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
 .page-hero .chips span {
   border: 1px solid var(--line-strong);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 8px 14px;
   font-size: var(--t-sm);
   font-weight: 500;
@@ -722,13 +807,13 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .course-facts li span:first-child { color: var(--muted); flex-shrink: 0; }
 .course-facts li span:last-child { text-align: right; color: var(--heading); font-weight: 500; font-variant-numeric: tabular-nums; }
 
-.badge { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line-strong); color: var(--body); border-radius: 4px; padding: 8px 12px; font-size: var(--t-sm); font-weight: 500; }
+.badge { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line-strong); color: var(--body); border-radius: 0; padding: 8px 12px; font-size: var(--t-sm); font-weight: 500; }
 .badge--muted { color: var(--muted); }
 .course-card .badge { margin-top: 14px; }
 
 .instructor-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
 .instructor-card .who { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
-.instructor-card img { width: 60px; height: 60px; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); }
+.instructor-card img { width: 60px; height: 60px; object-fit: cover; border-radius: 0; border: 1px solid var(--line); }
 .instructor-card .who strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: var(--t-base); color: var(--heading); }
 .instructor-card .who span { font-size: var(--t-micro); color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
 .instructor-card p { font-size: var(--t-base); margin: 0 0 12px; }
@@ -812,14 +897,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   color: var(--body);
   background: transparent;
   border: 1px solid var(--line-strong);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 9px 16px;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 .chip-link:hover, .chip-link.active { border-color: rgba(255, 255, 255, 0.6); color: #fff; text-decoration: none; }
 
 /* ---------- footer ---------- */
-.footer { background: var(--canvas); color: var(--muted); padding: clamp(64px, 8vw, 96px) 0 0; font-size: 0.92rem; border-top: 1px solid var(--line); }
+.footer { background: var(--canvas); color: var(--muted); padding: clamp(64px, 8vw, 96px) 0 0; font-size: var(--t-sm); border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: clamp(32px, 4vw, 64px); padding-bottom: clamp(44px, 5vw, 64px); }
 @media (max-width: 980px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
@@ -956,7 +1041,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .article-body .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.6em 0; }
 
 /* in-article table of contents */
-.toc { position: sticky; top: 104px; font-size: 0.92rem; }
+.toc { position: sticky; top: 104px; font-size: var(--t-sm); }
 @media (max-width: 1020px) {
   .toc { position: static; margin-bottom: 40px; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; background: var(--card); }
 }
@@ -970,12 +1055,12 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .toc li.is-active > a { color: var(--heading); font-weight: 500; }
 
 /* article meta row under the title (on the dark hero) */
-.article-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; margin: 20px 0 0; font-size: 0.85rem; color: var(--muted); letter-spacing: 0.04em; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; margin: 20px 0 0; font-size: var(--t-sm); color: var(--muted); letter-spacing: 0.04em; }
 .article-meta .dot { width: 3px; height: 3px; background: currentColor; border-radius: 50%; opacity: 0.6; }
 
 /* author strip closing the article */
 .author-strip { display: flex; gap: 18px; align-items: center; margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--line); }
-.author-strip img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+.author-strip img { width: 56px; height: 56px; border-radius: 0; object-fit: cover; border: 1px solid var(--line); }
 .author-strip strong { display: block; color: var(--heading); font-family: var(--font-display); }
 .author-strip span { font-size: var(--t-sm); color: var(--muted); }
 
@@ -987,7 +1072,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   position: fixed; right: 22px; bottom: 22px; z-index: 70;
   width: 44px; height: 44px; display: grid; place-items: center;
   background: #00152c; color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 0;
   opacity: 0; pointer-events: none; transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }

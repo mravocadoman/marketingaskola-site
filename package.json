@@ -26,7 +26,8 @@
     "content:inventory": "node tools/content-inventory.mjs",
     "type:apply": "node tools/apply-type-scale.mjs tools/type-scale.json",
     "articles:typography": "node tools/article-typography.mjs",
-    "articles:tables": "node tools/rebuild-tables.mjs"
+    "articles:tables": "node tools/rebuild-tables.mjs",
+    "test:nav": "node tools/test-nav.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
