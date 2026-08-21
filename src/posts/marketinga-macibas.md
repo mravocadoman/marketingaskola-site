@@ -17,7 +17,7 @@ Apzinoties to, ka Facebook ir populāra sociālo mediju platforma, kuru uzņēmu
 
 Ja vēlies padziļināti apgūt, kā soli pa solim izveidot efektīvu Facebook reklāmas kampaņu, tad šīs mārketinga mācības varētu būt Tev piemērotas. Šajā bloga rakstā tuvāk iepazīsi Facebook reklāmas un sapratīsi, vai šī ir īstā platforma, kurā reklamēt Tavu uzņēmumu.
 
-<h2 id="1">Kas ir Facebook reklāma?</h2>
+## Kas ir Facebook reklāma?
 
 <iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed&amp;enablejsapi=1&amp;origin=https://marketingaskola.lv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
@@ -27,9 +27,9 @@ Kāpēc? Pēc mārketinga nozarē gūtās pieredzes un mūsu klientu rezultātie
 
 Facebok reklāmas tiek efektīvi mērķētas uz tiem platformas lietotājiem, kuriem reklāma varētu šķist vissaistošākā, un tās ir vienkārši pielāgojamas mērķauditorijai. Reklāmas veidotājs var noteikt to, kāda ir viņa mērķauditorija un atzīmēt dažādus faktorus, kas viņa vēlamajai auditorijai atbilst, piemēram, atrašanās vieta, demogrāfiskais stāvoklis vai intereses.
 
-<h2 id="2">Kā saprast, vai Facebook platforma ir piemērota Tavam uzņēmumam?</h2>
+## Kā saprast, vai Facebook platforma ir piemērota Tavam uzņēmumam?
 
-Šķiet, ka katram otrajam uzņēmumam – gan lielam, gan mazam – ir Facebook lapa, kā arī noteikti ir iemesls, kāpēc _Wolfgang Digital_ 2020\. gada KPI ziņojumā apgalvots, ka Facebook reklāmas ir visefektīvākais reklāmas veids e-komercijas jomā.
+Šķiet, ka katram otrajam uzņēmumam – gan lielam, gan mazam – ir Facebook lapa, kā arī noteikti ir iemesls, kāpēc _Wolfgang Digital_ 2020. gada KPI ziņojumā apgalvots, ka Facebook reklāmas ir visefektīvākais reklāmas veids e-komercijas jomā.
 
 Tas jau vien liek aizdomāties par to, cik Facebook platforma ir populāra arī biznesa vidē un ka tai ir liels mārketinga potenciāls.
 
@@ -55,7 +55,7 @@ Reklamējoties Facebook, var pielāgot savu budžetu reklāmas izmaksām. Protam
 
 Viens no iemesliem, kāpēc mums tik ļoti patīk Facebook reklāmas un iesakām tās saviem klientiem, ir daudzās Facebook piedāvātās reklāmas opcijas. Mūsu favorīti ir specifiskie analītikas radītāji, kas ļauj saprast, cik efektīva ir bijusi kampaņa, iespēja detalizēti raksturot savu reklāmas mērķauditoriju, kā arī daudzie reklāmas formāti, kas ļauj izpausties ļoti radoši.
 
-<h2 id="3">Ko Tev sniegs Facebook mārketinga mācības?</h2>
+## Ko Tev sniegs Facebook mārketinga mācības?
 
 Mēs jau minējām, ka, mūsuprāt, Facebook reklāmas ir uzņēmuma digitālā mārketinga veiksmes atslēga un tāpēc vēlamies sniegt iespēju ikvienam interesentam gan bez, gan ar priekšzināšanām apgūt izzinošu tiešsaistes videolekciju apmācību kursu Facebook reklāmās.
 
@@ -73,7 +73,7 @@ Mūsu Facebook mārketinga mācības sevī iekļauj:
 -   Remārketinga un _lookalike audiences_ apguvi
 -   Izpratni par daudzajām Facebook reklāmas opcijām: Facebook Pixel, Boost Post utt.
 
-<h2 id="4">Mārketinga skolas piedāvājums</h2>
+## Mārketinga skolas piedāvājums
 
 Ja uzskati, ka Facebook ir piemērota sociālo mediju platforma Tavai uzņēmējdarbībai, tad kāpēc gan nepieteikties šīm vērtīgajām Facebook reklāmas apmācībām? Iepazīsties ar Mārketinga Skolas [Facebook reklāmas kursu](/facebook-kursi/)!
 

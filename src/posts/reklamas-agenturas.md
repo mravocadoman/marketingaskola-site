@@ -15,13 +15,13 @@ Mūsdienās populāra ir reklāmas aģentūru nolīgšana mārketinga aktivitā�
 
 Rakstā atbildēsim uz šiem jautājumiem.
 
-<h2 id="1">Reklāmas aģentūras ir vērtība ilgtermiņā</h2>
+## Reklāmas aģentūras ir vērtība ilgtermiņā
 
 Kāpēc?
 
-Slavenais Nike sauklis **_Just Do It_** tika izveidots _Wieden+Kennedy_ reklāmas aģentūrā pirms 36 gadiem.
+Slavenais Nike sauklis **Just Do It** tika izveidots _Wieden+Kennedy_ reklāmas aģentūrā pirms 36 gadiem.
 
-Savukārt McDonalds klasiskais **_I’m lovin’ it_** _ir Heye & Partner_ reklāmas aģentūras darbs, kas tapis pirms 21 gada.
+Savukārt McDonalds klasiskais **I’m lovin’ it** _ir Heye & Partner_ reklāmas aģentūras darbs, kas tapis pirms 21 gada.
 
 Par ko šis liecina?
 
@@ -46,7 +46,7 @@ Mērķis var būt jebkas: gan _Instagram_ sekotāju skaita palielināšana, gan 
 
 Pavisam vienkārši – to, kas jau vairs nav reklāmas pasaules robežās. Piemēram, grāmatvedība vai loģistika _(diemžēl vai par laimi)_ nebūs reklāmas aģentūru piedāvāto pakalpojumu klāstā.
 
-<h2 id="2">Vai Tavam biznesam nepieciešama reklāmas aģentūru palīdzība?</h2>
+## Vai Tavam biznesam nepieciešama reklāmas aģentūru palīdzība?
 
 Facebook dibinātājam Markam Cukerbergam (jeb 5. bagātākajam cilvēkam pasaulē) pieder klasiskais teiciens: _Labākais mārketings nešķiet kā mārketings._
 
@@ -58,7 +58,7 @@ Tev ir nepieciešama aģentūru palīdzība, ja vēlies:
 -   _palielināt jaunu klientu un uzticamu klientu skaitu;_
 -   _veidot profesionālu un pārdomātu saturu, kas tiešām saista mērķauditoriju._
 
-<h2 id="3">Mūsu reklāmas aģentūras trumpis</h2>
+## Mūsu reklāmas aģentūras trumpis
 
 Pavisam īsi – mūsu reklāmas aģentūra no citām atšķiras ar to, ka esam trīs vienā un darbību balstām uz šādu vienādojumu: **skola + aģentūra + improvizācija = efektīvs mārketings.**
 
@@ -72,4 +72,4 @@ Rezultātā sanāk, ka nodrošinām to, ko Marks Cukerbergs tik ļoti akcentēji
 
 _Labākais mārketings nešķiet kā mārketings._
 
-_… ja sadarbojies ar Mārketinga Skolas profesionāļiem un uzticies viņu kvalitatīvajiem_ [_pakalpojumiem_](/pakalpojumi/)_._
+_… ja sadarbojies ar Mārketinga Skolas profesionāļiem un uzticies viņu kvalitatīvajiem_ [_pakalpojumiem_](/pakalpojumi/).

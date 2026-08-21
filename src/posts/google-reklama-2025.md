@@ -19,7 +19,7 @@ Lai palīdzētu Tev izprast, vai Google reklāma ir īstais mārketinga rīks, k
 -   _Kādi ir ieguvumi, ja tiek izmantota Google reklāma?_
 -   _Kam jāpievērš uzmanība, lietojot Google reklāmu?_
 
-<h2 id="1">Kas ir Google reklāma un kā tā strādā?</h2>
+## Kas ir Google reklāma un kā tā strādā?
 
 Google ads ir digitālā reklāma Google meklēšanas rezultātu lapās, vietnēs un rīkos, kā arī partneru vietnēs, piemēram, Youtube un Gmail.
 
@@ -31,7 +31,7 @@ Veids, kā Google ads darbojas, būtībā paliek nemainīgs. Kad lietotāji mekl
 
 Google ads piemērs
 
-<h2 id="2">Kādi ir šīs reklāmas ieguvumi?</h2>
+## Kādi ir šīs reklāmas ieguvumi?
 
 Google ads sniedz iespēju rādīt reklāmas cilvēkiem, kurus, visticamāk, interesē Tavi  produkti un pakalpojumi. Šie cilvēki bieži apmeklē Google jau ar nodomu iegādāties kādu preci vai pakalpojumu, atrisināt savas problēmas, vai piepildīt savas vēlmes. Faktiski tā ir “vissiltākā” mērķauditorija, bieži vien mārketinga piltuves pēdējos posmos.
 
@@ -47,7 +47,7 @@ _Starp citu ekstra pluss ir tāds, ka vari ne tikai aplūkot izmaksas par Google
 
 Tā kā Google ir vispopulārākā meklētājprogramma pasaulē, varam secināt, ka tajā bieži uzturas ļoti daudz cilvēku. Tiešām daudzi uzņēmumi izmanto Google reklāmas tās popularitātes dēļ, jo tādējādi zīmola atpazīstamība, klientu skaits un ienākumi spēj būtiski palielināties.
 
-<h2 id="3">Kam jāpievērš uzmanība, lietojot Google reklāmu?</h2>
+## Kam jāpievērš uzmanība, lietojot Google reklāmu?
 
 **Google ads ir bieds iesācējiem**
 
@@ -61,7 +61,7 @@ Google reklāmai ir jāpievērš uzmanība. Ja esi ļoti aizņemts uzņēmējs, 
 
 Lai gan Google partneru tīkls ir milzīgs, tomēr ir iespējamība, ka Tavi potenciālie klienti var biežāk apmeklēt arī citas vietnes vai sociālo mediju platformas, piemēram, Facebook vai Instagram, kuru popularitāte tikai aug un 2025. gadā augs vēl vairāk. Vēl noteikti ņem vērā, ka Tava mērķauditorija var vienkārši izmantot arī citu meklētājprogrammu, piemēram, Bing, lai meklētu informāciju.
 
-<h2 id="4">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Ja pavisam godīgi – mēs domājam, ka Google reklāmu noteikti ir vērts izmantot arī 2025. gadā. Kāpēc? Google reklāma turpina attīstīties, piedāvājot jaunus optimizācijas un reklāmas kreatīvus veidus. Ļoti populārs pēdējos gados ir kļuvušas Performance max kampaņas, kas ļauj Google algoritmam miksēt dažādus kreatīvu veidus un optimizēt to labākās kombinācijas.  
   

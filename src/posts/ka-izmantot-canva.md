@@ -15,7 +15,7 @@ Vai Tu vēlies izveidot pievilcīgas reklāmas savam biznesam, bet domā, ka pro
 
 Saskaņā ar statistiku, 80% mazo uzņēmumu Latvijā izmanto vizuālo saturu, lai piesaistītu klientus, bet daudziem trūkst resursu dārgiem dizaina pakalpojumiem. Ietaupi laiku un naudu, vienlaikus radot reklāmas, kas izceļas! Šajā rakstā dalīsimies ar pieciem praktiskiem padomiem, kā izmantot **Canva**, lai Tava mārketinga kampaņa būtu veiksmīga. Sāc jau tagad un [izmēģini Canva bez maksas](https://www.canva.com/)!
 
-<h2 id="kapec-canva">Kāpēc Canva ir labākais dizaina rīks maziem uzņēmumiem?</h2>
+## Kāpēc Canva ir labākais dizaina rīks maziem uzņēmumiem?
 
 **Canva** ir kļuvis par vienu no populārākajiem _dizaina rīkiem_ pasaulē, un tam ir labs iemesls. Tas ir vienkāršs, pieejams un piedāvā visu, kas Tev vajadzīgs, lai izveidotu profesionālas reklāmas:
 
@@ -27,7 +27,7 @@ Saskaņā ar statistiku, 80% mazo uzņēmumu Latvijā izmanto vizuālo saturu, l
 
 Nevilcinies – Tu vari izveidot saturu, kas izskatās profesionāli un piesaista klientus. Ja vēlies uzzināt vairāk par efektīvu reklāmu veidošanu, apskati mūsu rakstu par [reklāmas veidiem](/reklamas-veidi/).
 
-<h2 id="canva-ai">Kā AI padara reklāmu veidošanu vēl vienkāršāku?</h2>
+## Kā AI padara reklāmu veidošanu vēl vienkāršāku?
 
 **Canva AI** ir kā Tava personīgā dizaina asistente, kas palīdz ietaupīt laiku un radīt unikālus vizuālos materiālus. Šeit ir dažas no tās populārākajām funkcijām:
 
@@ -37,7 +37,7 @@ Nevilcinies – Tu vari izveidot saturu, kas izskatās profesionāli un piesais
 
 Piemēram, ja Tu plāno Instagram Reels kampaņu, **Canva AI** var ātri izveidot pievilcīgus vizuālos materiālus, kas piesaista jauniešus. Vairāk padomu par video reklāmām atradīsi mūsu rakstā [Kā veiksmīgi izmantot Instagram Reels mārketingam?](/instagram-reels-marketingam/).
 
-<h2 id="pirma-reklama">Soli pa solim: Kā izveidot savu pirmo reklāmu</h2>
+## Soli pa solim: Kā izveidot savu pirmo reklāmu
 
 Vai esi gatavs sākt? Šeit ir vienkāršs ceļvedis, kā izveidot profesionālu reklāmu ar **Canva**:
 
@@ -51,7 +51,7 @@ Vai esi gatavs sākt? Šeit ir vienkāršs ceļvedis, kā izveidot profesionālu
 
 Šis process aizņem vien dažas minūtes, tāpēc **Canva** ir ideāls risinājums aizņemtiem uzņēmējiem. Ja Tev vajag sarežģītākus video reklāmas risinājumus, mūsu aģentūra var palīdzēt – [uzraksti mums](/sazinies/) un sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu!
 
-<h2 id="salidzinajums-riki">Kā Canva salīdzinās ar citiem dizaina rīkiem?</h2>
+## Kā Canva salīdzinās ar citiem dizaina rīkiem?
 
 Lai gan **Canva** ir fantastisks _dizaina rīks_, ir vērts apskatīt arī alternatīvas, lai atrastu sev piemērotāko:
 
@@ -61,7 +61,7 @@ Lai gan **Canva** ir fantastisks _dizaina rīks_, ir vērts apskatīt arī al
 
 **Canva** izceļas ar savu vienkāršību un AI funkcionalitāti, kas ir lieliski piemērota mazo uzņēmumu vajadzībām. Vēlies uzzināt par citiem mārketinga rīkiem? Apskati mūsu rakstu [7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā](/7-digitala-marketinga-riki/).
 
-<h2 id="efektivitate">Kā Canva palīdz palielināt Tavu reklāmu efektivitāti?</h2>
+## Kā Canva palīdz palielināt Tavu reklāmu efektivitāti?
 
 Vizuālais saturs ir atslēga, lai piesaistītu klientus, un **Canva** piedāvā šādas priekšrocības:
 
@@ -73,7 +73,7 @@ Ja dizains ir gatavs, bet trūkst laika regulāri publicēt, satura plānošanu 
 
 Lai reklāmas būtu vēl efektīvākas, apvieno dizainu ar pārdomātu stratēģiju. Uzzini, kā to izdarīt, mūsu rakstā [Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?](/reklamas-veidi/). Ja vēlies profesionālu atbalstu, [piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) ar mūsu komandu!
 
-<h2 id="sakums-dizains">Sāc savu dizaina ceļu jau šodien!</h2>
+## Sāc savu dizaina ceļu jau šodien!
 
 Ar **Canva** Tu vari ātri un viegli izveidot profesionālas reklāmas, kas piesaista klientus un paceļ Tavu biznesu jaunā līmenī. Pateicoties AI un plašajam _dizaina rīku_ klāstam, Tev nav jābūt dizainerim, lai radītu saturu, kas izskatās profesionāli. Sāc jau tagad – [izmēģini to bez maksas](https://www.canva.com/)!
 

@@ -17,7 +17,7 @@ Patiesībā e-pasta mārketings strādā ļoti efektīvi, ja tas tiek veidots p�
 
 Šajā rakstā Tu uzzināsi, kā veidot e-pasta kampaņas, kas patiesi strādā, kāpēc noder instantly.ai un kādas kļūdas visbiežāk tiek pieļautas strādājot pie e-pasta mārketinga.
 
-<h2 id="1">Kāpēc e-pasta mārketings ir viens no ienesīgākajiem kanāliem?</h2>
+## Kāpēc e-pasta mārketings ir viens no ienesīgākajiem kanāliem?
 
 E-pasta mārketings jau gadiem ir viens no stabilākajiem digitālā mārketinga kanāliem, jo tas ļauj komunicēt tieši ar cilvēku, kurš pats ir devis atļauju saņemt ziņas no uzņēmuma. Atšķirībā no sociālajiem tīkliem, kur sasniedzamību nosaka algoritmi, **e-pastā mēs paši kontrolējam auditoriju, ziņojuma laiku un saturu.**
 
@@ -27,7 +27,7 @@ Tas arī lieliski savieno reklāmas, sociālos tīklus un mājaslapu vienotā si
 
 Par digitālā mārketinga kopējo sistēmu vari [izlasīt šajā rakstā](/digitalais-marketings/).
 
-<h2 id="2">E-pastu liste un auditorija</h2>
+## E-pastu liste un auditorija
 
 E-pasta kampaņas nekad nebūs efektīvas, ja aiz tām nestāvēs kvalitatīva e-pastu liste. Cilvēkam _jāgrib_ saņemt Tavas ziņas. Tikai tad e-pasta mārketings var dot reālu atdevi.
 
@@ -43,7 +43,7 @@ Svarīgi ir tas, lai cilvēks e-pasta ziņojuma saņemšanai pierakstās apzinā
 
 Ļoti būtiska loma e-pasta mārketingā ir segmentācijai. **Viens no spēcīgākajiem rezultātu paātrinātājiem ir spēja sadalīt auditoriju mazākās, mērķētās grupās.** Cilvēki neatrodas vienā un tajā pašā posmā, kāds tikai iepazīstas ar zīmolu, kāds jau aktīvi interesējas, bet cits ir kļuvis par pastāvīgu klientu. Ja visiem tiek sūtīts viens un tas pats saturs, daļa e-pastu vienkārši kļūst neaktuāli. Segmentācija ļauj pielāgot vēstījumu konkrētajām vajadzībām, kas rezultātā palielina ziņojuma atvēršanas rādītājus, klikšķus un arī pārdošanu. Par stratēģisku pieeju mārketingam vari [uzzināt šeit](/marketinga-plans/).
 
-<h2 id="3">Kampaņu struktūra un saturs</h2>
+## Kampaņu struktūra un saturs
 
 Katrai e-pasta kampaņai ir jābūt ar skaidru mērķi. Pirms sūtīšanas vienmēr ir jāatbild uz jautājumu: **ko mēs vēlamies, lai cilvēks izdara pēc šī e-pasta izlasīšanas?** Mērķis nosaka gan saturu, gan struktūru, gan arī to, kāds būs aicinājums rīkoties.
 
@@ -63,7 +63,7 @@ Tieši šeit e-pasts visorganiskāk savienojas ar sociālajiem tīkliem, reklām
 
 Bet, lai uzzinātu, kā tad veidot uzrunājošus reklāmas tekstus, [izlasi šo rakstu](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
-<h2 id="4">Instantly.ai **mērķtiecīgām e-pasta kampaņām**</h2>
+## Instantly.ai mērķtiecīgām e-pasta kampaņām
 
 Instantly.ai ir e-pasta kampaņu rīks, kas īpaši piemērots situācijām, kad nepieciešams ātri uzsākt sarunu ar potenciālo klientu un noturēt viņa uzmanību. Tas tiek plaši izmantots B2B mārketingā un pārdošanā, kur e-pasts joprojām ir viens no efektīvākajiem kanāliem pirmajam kontaktam.
 
@@ -71,7 +71,7 @@ Ar Instantly.ai iespējams strādāt ar warm leads jeb jau iesildītiem potenci�
 
 Papildus tam Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu gudrāk iesaistīt kontaktus, analizēt atbildes un optimizēt kampaņas. Dodies uz [Instantly.ai](https://refer.instantly.ai/65dgyt7b8my5) un padari savu e-pasta mārketingu par mērķtiecīgu pārdošanas procesu.
 
-<h2 id="5">Automatizācija, pārdošana un rezultātu mērīšana</h2>
+## Automatizācija, pārdošana un rezultātu mērīšana
 
 Automatizācija nozīmē, ka e-pasti tiek nosūtīti automātiski, balstoties uz cilvēka konkrētām darbībām, piemēram, pēc pierakstīšanās cilvēks saņem sveiciena e-pastu, pēc pirkuma – pateicības vēstuli ar papildu piedāvājumu, bet ilgstošas neaktivitātes gadījumā tiek aktivizēta atgādinājuma kampaņa. Šāda pieeja ļauj uzturēt loģisku un nepārtrauktu komunikāciju bez manuālas iesaistes katrā solī. **Automatizācija palīdz ietaupīt laiku, nezaudēt potenciālos klientus un nodrošina, ka saziņa ar auditoriju notiek arī ārpus darba laika**.
 
@@ -79,7 +79,7 @@ Tieši šeit e-pasts kļūst par pārdošanas dzinēju, kas darbojas katru dienu
 
 Uzzini vairāk par [digitālajiem mārketinga rīkiem šeit](/7-digitala-marketinga-riki/).
 
-<h2 id="6">Biežākās kļūdas e-pasta mārketingā</h2>
+## Biežākās kļūdas e-pasta mārketingā
 
 Viena no biežākajām problēmām e-pasta mārketingā ir skaidra mērķa trūkums katram sūtījumam, kā arī tas, ka visi saņem vienu un to pašu saturu neatkarīgi no interesēm un pieredzes. Bieži tiek pārspīlēts ar tiešo pārdošanu, atstājot novārtā vērtīga satura veidošanu. Vēl viena būtiska kļūda ir automatizācijas neizmantošana, kas liedz pilnvērtīgi strādāt ar klienta ceļu jeb _customer journey_. Visbeidzot, daudzi neanalizē rezultātus, līdz ar to nesaprot, kas darbojas un ko nepieciešams uzlabot.
 

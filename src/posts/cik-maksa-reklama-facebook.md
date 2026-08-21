@@ -15,7 +15,7 @@ permalink: "/cik-maksa-reklama-facebook/"
 
 Ja vēlies uzzināt tad lasi tālāk un uzzināsi no kā sastāv Facebook reklāmas izmaksas, kā plānot budžetu un cik Tev būtu jāiegulda, lai sasniegtu savus mērķus!
 
-<h2 id="1">Kas ir Facebook reklāmas un kā tās strādā?</h2>
+## Kas ir Facebook reklāmas un kā tās strādā?
 
 <iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
@@ -29,7 +29,7 @@ Facebook reklāmas ir maksas reklāmas, kas tiek rādītas Facebook un Instagram
 
 Atceries – Efektīva Facebook reklāma sākas ar izpratni par savu auditoriju un eksperimentēšanu ar dažādiem reklāmas formātiem.
 
-<h2 id="2">Kāpēc uzņēmumiem vajadzīgas Facebook reklāmas?</h2>
+## Kāpēc uzņēmumiem vajadzīgas Facebook reklāmas?
 
 Facebook reklāmas palīdz sasniegt precīzu auditoriju, kas jau ir ieinteresēta Tavā produktā vai pakalpojumā. Lūk, kāpēc tās ir tik efektīvas:
 
@@ -38,7 +38,7 @@ Facebook reklāmas palīdz sasniegt precīzu auditoriju, kas jau ir ieinteresēt
 -   **A/B testēšana** – iespējams pārbaudīt dažādus reklāmas variantus un izvēlēties visefektīvāko.
 -   **Reāllaika analītika** – Tu redzi, kas strādā un vari pielāgot reklāmu jebkurā brīdī.
 
-<h2 id="3">Cik maksā Facebook reklāma un kas ietekmē tās cenu?</h2>
+## Cik maksā Facebook reklāma un kas ietekmē tās cenu?
 
 Facebook reklāmas cena atkarīga no vairākiem faktoriem, tostarp mērķauditorijas un reklāmas veida.
 
@@ -56,7 +56,7 @@ Ja vēlies uzzināt, kā efektīvi izmantot Facebook reklāmas savā uzņēmumā
 
 Tagad, kad noskaidroji, cik maksā Facebook reklāma, ir svarīgi aprēķināt savu budžetu un izvērtēt, vai vēlies reklamēties arī citās Meta platformās, piemēram, Instagram.
 
-<h2 id="4">Kā zināt, cik liels budžets Tev būs vajadzīgs Facebook reklāmām?</h2>
+## Kā zināt, cik liels budžets Tev būs vajadzīgs Facebook reklāmām?
 
 Pirms sākt, svarīgi saprast, kāds ir Tavs **mērķis** un cik daudz Tev jāmaksā par viena klienta piesaisti.
 
@@ -71,13 +71,13 @@ Lai noskaidrotu, cik maksā Facebook reklāma tavā konkrētajā nišā, iesakā
 Ja vēlies iegūt 100 jaunus klientus un vidējā reklāmas klikšķa cena ir 0,50 EUR, tad:  
 **100 klienti** × **0,50 EUR** × vidējais reklāmas konversijas līmenis (piemēram, 5%) **\= apmēram 1000 EUR budžets**
 
-<h2 id="5">Instagram reklāmas cena – vai atšķiras no Facebook?</h2>
+## Instagram reklāmas cena – vai atšķiras no Facebook?
 
 Facebook un Instagram reklāmas cenas ir diezgan līdzīgas, jo abas platformas pieder Meta (iepriekš Facebook). Tomēr **Instagram reklāmas nereti ir dārgākas**, jo tās ir vizuāli pievilcīgākas un konkurence ir lielāka.
 
 -   **Instagram reklāmu CPM** (cena par 1000 skatījumiem) parasti ir no **7 līdz 20 EUR**, savukārt **CPC (klikšķa cena) svārstās no 0,20 līdz 2 EUR**.
 
-<h2 id="6">Kur labāk reklamēties – Facebook vai Instagram?</h2>
+## Kur labāk reklamēties – Facebook vai Instagram?
 
 -   **Ja Tavs produkts ir vizuāli pievilcīgs (modes, ēdiena, ceļojumu industrija)** – izvēlies **Instagram**. Šī platforma izceļas ar vizuāli pievilcīgu saturu, un tā ir ideāli piemērota produktiem, kuru vērtība ir saistīta ar estētiku un dzīvesstilu. Ja Tava zīmolam ir spilgta vizuālā identitāte, Instagram reklāmas var palīdzēt piesaistīt jaunus sekotājus un veicināt vēlmi iegādāties. Instagram ir īpaši piemērots video, attēlu un stāstu formātiem, kas palīdz iedvesmot auditoriju un veidot emocionālas saites ar produktu.
 -    **Ja mērķē uz plašāku auditoriju un dažādām vecuma grupām** – **Facebook** būs labāka izvēle. Facebook piedāvā plašu auditoriju, kas ietver cilvēkus dažādās vecuma grupās un dzīves posmos, padarot to piemērotu dažādiem uzņēmumiem, kuri vēlas sasniegt plašu un daudzveidīgu tirgu. Facebook arī nodrošina plašas iespējas mērķauditorijas atlasei, ļaujot izveidot kampaņas, kas ir pielāgotas konkrētiem segmentiem, piemēram, pēc interesēm, uzvedības vai ģeogrāfiskās atrašanās vietas.
@@ -86,7 +86,7 @@ Facebook un Instagram reklāmas cenas ir diezgan līdzīgas, jo abas platformas 
 
 Abas platformas ir spēcīgas, bet tava izvēle ir atkarīga no tava uzņēmuma specifikas, mērķiem un auditorijas, kuru vēlies sasniegt. Reklāma Facebook platformā ir piemērota plašai auditorijai, kamēr Instagram vairāk uzrunā vizuāli orientētu un jaunāku lietotāju loku. **Mūsu pieredzē labākie rezultāti tiek sasniegti, ja izmanto gan Facebook, gan Instagram, pielāgojot reklāmu katrai platformai atbilstoši tās stiprajām pusēm.**
 
-<h2 id="7">Vai Facebook reklāmas cena ir tā vērta?</h2>
+## Vai Facebook reklāmas cena ir tā vērta?
 
 Facebook reklāmas ir viens no efektīvākajiem mārketinga rīkiem, ja tās tiek izmantotas pareizi. Veiksmīgas kampaņas pamatā ir labs reklāmas teksts, pareiza auditorijas atlase un atbilstošs budžets.
 

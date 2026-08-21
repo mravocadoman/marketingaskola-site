@@ -19,11 +19,11 @@ Sociālo tīklu mārketings, tai skaitā reklāmas izvietošana Facebook ir liel
 
 <iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed&amp;enablejsapi=1&amp;origin=https://marketingaskola.lv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
-<h2 id="1">1\. Garlaicīgs un mērķauditorijas interesēm nepiemērots saturs</h2>
+## 1. Garlaicīgs un mērķauditorijas interesēm nepiemērots saturs
 
 Reklāmas izvietošana Facebook sniedz garantiju, ka Tavu reklāmu parādīs Tavai vēlamajai mērķauditorijai. Tomēr, kad reklāma tiek parādīta īstajam lietotājam, viņš tāpat var uz tās mierīgi neuzspiest. Kādēļ? Ja saturs nešķiet vērtīgs, bet garlaicīgs, tad mums nevienam nebūs intereses iedziļināties reklāmā. Tas taču ir loģiski! Iesakām tiešām pārliecināties, ka maksā tikai par tāda reklāmas satura izplatīšanu, kas Tavai auditorijai patiks visvairāk. Ir vērtīgi izpētīt savas auditorijas intereses, lai veiksmīgi ieintriģētu viņus savā reklāmā.
 
-<h2 id="2">2\. Ads Manager vietā tiek izmantota _Boost post_ funkcija</h2>
+## 2. Ads Manager vietā tiek izmantota Boost post funkcija
 
 Gan Facebook reklāmu pārvaldnieks (Ads manager) gan Boost post ir Facebook reklāmas rīki. Tie abi spēj parādīt reklāmas atlasītajai mērķauditorijai, tomēr jāatzīst, ka Ads manager ir daudz elastīgāks un vieglāk lietojams. Ar Facebook Ads Manager var testēt daudz dažādas reklāmu variācijas, tādējādi labāk nooptimizējot kampaņas un testējot, kas strādā. Boost post savukārt atbalsta tikai vienu reklāmas variantu.
 
@@ -31,7 +31,7 @@ Kopumā mūsu verdikts ir sekojošs: Facebook Ads manager ir jaudīgāks un prof
 
 Ticam, ka laika gaitā saprastīsi, kuri Facebook reklāmas mērķi vislabāk atbilst Taviem Facebook mārketinga mērķiem, lai attiecīgi varētu pilnveidot savu [mārketinga stratēģijas izstrādi](/marketinga-strategijas-izstrade/).
 
-<h2 id="3">3\. Facebook kampaņai nav konkrēta mērķa</h2>
+## 3. Facebook kampaņai nav konkrēta mērķa
 
 Pirms Facebook kampaņas uzsākšanas ir jābūt skaidri noteiktam kampaņas mērķim. Facebook Tavam uzņēmumam dos to, ko Tu viņam prasīsi. Šie mērķi var būt dažādi, piemēram, lielāka sekotāju iesaiste vai plašāka uzņēmuma atpazīstamība.
 
@@ -39,15 +39,15 @@ Pirms Facebook kampaņas uzsākšanas ir jābūt skaidri noteiktam kampaņas mē
 
 Lai arī izklausās diezgan vienkārši, konkrēts Facebook kampaņas mērķis ir īstā veiksmes atslēga. Ja precīzi nenoteiksi, ko vēlies sasniegt ar savu kampaņu, diemžēl visdrīzākais, ka Tava reklāmas izvietošana Facebook nenesīs cerētos augļus.
 
-<h2 id="4">4\. Mājaslapā nav ievietots [Facebook Pixel](https://www.facebook.com/business/tools/meta-pixel) un CAPI</h2>
+## 4. Mājaslapā nav ievietots [Facebook Pixel](https://www.facebook.com/business/tools/meta-pixel) un CAPI
 
 _Facebook Pixel_ ir koda elements, ko var ievietot savā mājaslapā. Tas apkopo datus, ar kuru palīdzību Tu vari izsekot, cik cilvēku ir apskatījuši Tavu mājaslapu, uzklikšķinot uz tās no Facebook reklāmām. Šo datu dēļ vari viegli optimizēt reklāmas un veidot mērķauditorijas nākamajām reklāmām. _Facebook Pixel_ palīdz atkārtoti parādīt reklāmas cilvēkiem, kuri jau iepriekš ir apmeklējuši Tavu mājaslapu, tādējādi atgādinot viņiem par pakalpojumu, ko Tu piedāvā. Reklāmas izvietošana Facebook garantēti nesīs labākus rezultātus, ja izmantosi Facebook Pixel, jo tā sniegtos datus varēsi izmantot, lai palielinātu reklāmas efektivitāti.
 
-<h2 id="5">5\. Bailes testēt vairākas bildes un reklāmas tekstus</h2>
+## 5. Bailes testēt vairākas bildes un reklāmas tekstus
 
 Diemžēl viena no sastopamākajām kļūdām ir cilvēku bailes no dažādu bilžu un reklāmas tekstu testēšanas savai Facebook reklāmai. Reklāmas izvietošana Facebook nevar būt garantēti veiksmīgākā, ja pirms tam nav iztestēts, kuras bildes pie publikācijām mērķauditorijai patīk visvairāk, kā arī, kuri reklāmas teksti šķiet vissaistošākie. Iesakām no sākumā izvēlēties vairākas bildes un izveidot vairākus reklāmas tekstus, lai saprastu, kura bilde un kurš teksts visvairāk ieintriģē Tavu mērķauditoriju.
 
-<h2 id="6">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Cerams, šie ieteikumi patiešām Tev bija vērtīgi! Lai izdodas izveidot lielisku Facebook reklāmu, kurā ne tikai sasniedz savu vēlamo mērķauditoriju, bet diezgan īsā laika periodā pārvērt šo auditoriju par Taviem uzticamajiem klientiem!
 

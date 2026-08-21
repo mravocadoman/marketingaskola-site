@@ -23,7 +23,7 @@ Kur gan ir āķis? Kādēļ sociālie tīkli un arī to sniegtā maksas reklāmu
 
 Uz šiem jautājumiem atbildēsim šajā rakstā.
 
-<h2 id="vai_tavam_biznesam_nepieciesami_socialie_tikli">Vai Tavam biznesam nepieciešami sociālie tīkli?</h2>
+## Vai Tavam biznesam nepieciešami sociālie tīkli?
 
 Vairākumā gadījumu mūsu atbilde būs: **Jā**, Tavam biznesam ir nepieciešama sociālo tīklu izmantošana.
 
@@ -41,7 +41,7 @@ Ir nerakstīts likums mārketinga pasaulē, ko mēs tomēr uzdrošināsimies uzr
 
 Ir liela iespēja, ka Tavs mērķa klients atrodams kādā no pašlaik [pasaulē izmantotākajām](https://umaine.edu/undiscoveredmaine/small-business/resources/marketing-for-small-business/social-media-tools/social-media-statistics-details/) sociālo tīklu platformām: _Facebook, Youtube_ vai _Instagram_. Varbūt arī _TikTok_, ko jau sen vairs neizmanto tikai jaunieši, bet arī vecākas paaudzes auditorija.
 
-<h2 id="socialie_tikli_ka_uznemumu_vizitkarte">Sociālie tīkli kā uzņēmumu vizītkarte</h2>
+## Sociālie tīkli kā uzņēmumu vizītkarte
 
 Sociālie tīkli ir ne tikai digitālā mārketinga atslēga, bet arī uzņēmumu vizītkarte. Tas nozīme, ka tā ir vizītkarte ne tikai klientiem, bet arī medijiem, potenciālajiem darbiniekiem un pat konkurentiem.
 
@@ -51,7 +51,7 @@ Statistika jau vēsta, ka vairāk nekā 50% darba meklētāju, lai uzzinātu vai
 
 Sociālie tīkli var būt pirmais iespaids, ko cilvēks gūst par uzņēmumu, tāpēc ir būtiski šo iespaidu veidot pozitīvu.
 
-<h2 id="socialie_tiklu_ieguvumi_marketinga">Sociālo tīklu ieguvumi mārketingā</h2>
+## Sociālo tīklu ieguvumi mārketingā
 
 Lūk, vien daži no sociālo tīklu mārketinga ieguvumiem, ko esam paši pieredzējuši, palīdzot klientiem:
 
@@ -62,7 +62,7 @@ Lūk, vien daži no sociālo tīklu mārketinga ieguvumiem, ko esam paši piered
 
 Būtisks trumpis šajos ieguvumos ir **maksas reklāmas**.
 
-<h2 id="kapec_maksas_reklamas">Kāpēc maksas reklāmas?</h2>
+## Kāpēc maksas reklāmas?
 
 Ja vēlies veicināt pārdošanas apjomus un klientu pieplūdumu, maksas reklāmas ir Tavs risinājums.
 
@@ -78,7 +78,7 @@ Bieži vien šī apjukuma un zināšanu trūkuma dēļ no maksas reklāmām neti
 
 Lai tas nenotiktu ar Tevi, rosinām veltīt laiku zināšanu paplašināšanai, apgūstot maksas reklāmas. Tā būs vērtīga ilgtermiņa investīcija biznesa izaugsmē.
 
-<h2 id="5">Mārketinga skolas piedāvājums</h2>
+## Mārketinga skolas piedāvājums
 
 [Sociālie tīkli ir mārketinga atslēga](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/), kas uzņēmumiem, kuri spēj sociālos tīklus profesionāli izmantot savā labā, palielina peļņu, klientu skaitu un atpazīstamību. Esi viens no viņiem!
 

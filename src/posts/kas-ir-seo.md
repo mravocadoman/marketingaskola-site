@@ -15,7 +15,7 @@ Ja Tev ir mājaslapa, bet to apmeklē tikai daži cilvēki dienā, tad visdrīz�
 
 Un tieši tāpēc SEO ir spēcīgākais ilgtermiņa mārketinga kanāls. Tas neliek Tev tērēt naudu katru dienu, bet ļauj veidot stabilu, noturīgu un organisku trafiku. Šajā rakstā paskaidrošu kas ir SEO, kā tas strādā praksē un kāpēc tas ir absolūti svarīgs jebkurai mūsdienīgai mājaslapai – neatkarīgi no nozares.
 
-<h2 id="1">Kas ir SEO?</h2>
+## Kas ir SEO?
 
 SEO (Search Engine Optimization) ir optimizācijas process, kas padara Tavu mājaslapu saprotamu gan cilvēkiem, gan Google algoritmiem. Tur nav nekādas maģijas – drīzāk kvalitatīvs darbs pie satura, tehniskās struktūras un autoritātes veidošanas. Līdzīgi kā sociālo tīklu reklāmas palīdz Tavam produktam vai pakalpojumam kļūt redzamam citiem cilvēkiem, SEO palīdz Tavai vietnei parādīties Google pirmajā lapā, kad potenciālie klienti aktīvi meklē to, ko Tu piedāvā.
 
@@ -29,7 +29,7 @@ SEO var iedalīt trīs galvenajās daļās:
 
 SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/pakalpojumi/)
 
-<h2 id="2">SEO nozīme mūsdienu digitālajā vidē</h2>
+## SEO nozīme mūsdienu digitālajā vidē
 
 Šodien cilvēki meklē visu – sākot ar “labākās kafijas pupiņas” līdz “jurists Rīgā” vai “automašīnas diagnostika”. Ja Tavs bizness nav atrodams Google, tas vienkārši neeksistē lielai auditorijas daļai.
 
@@ -45,7 +45,7 @@ Lūk, kāpēc SEO nozīme biznesam ir milzīga:
 
 [Šajā rakstā vari uzzināt kā veikt SEO optimizāciju Tavam biznesam.](/seo-optimizacija-tavam-biznesam/)
 
-<h2 id="3">Kā SEO palīdz palielināt organisko trafiku</h2>
+## Kā SEO palīdz palielināt organisko trafiku
 
 Ja mājaslapa nav optimizēta, Google to var vienkārši “nepamanīt”. Biežākie iemesli ir šādi:
 
@@ -59,7 +59,7 @@ Optimāls SEO palīdz Google saprast, ka Tava lapa ir labākā atbilde uz lietot
 
 Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, mēs to piedāvājam arī kā pakalpojumu ko vari apskatīties [šeit.](/pakalpojumi/)
 
-<h2 id="4">Praktiski soļi SEO uzlabošanai</h2>
+## Praktiski soļi SEO uzlabošanai
 
 Lūk, ko Tu vari sākt darīt jau šodien:
 

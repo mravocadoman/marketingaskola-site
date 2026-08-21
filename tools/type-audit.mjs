@@ -12,8 +12,15 @@ const ROOT = 16;
 
 // Evaluates a CSS length against a viewport width. Handles rem, px, vw, and
 // calc-free sums of those, which is everything this stylesheet uses.
+// Token definitions from :root, so var(--t-x) resolves to a real number
+// instead of silently reading as zero.
+const TOKENS = {};
+for (const m of CSS.matchAll(/(--t-[a-z0-9-]+):\s*([^;]+);/g)) TOKENS[m[1]] = m[2].trim();
+
 function len(expr, vw) {
   expr = expr.trim();
+  const v = expr.match(/^var\((--[a-z0-9-]+)\)$/);
+  if (v) return TOKENS[v[1]] ? len(TOKENS[v[1]], vw) : NaN;
   const clamp = expr.match(/^clamp\((.*)\)$/s);
   if (clamp) {
     const [min, pref, max] = splitArgs(clamp[1]).map((p) => len(p, vw));

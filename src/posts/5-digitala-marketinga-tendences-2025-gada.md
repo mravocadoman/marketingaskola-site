@@ -17,7 +17,7 @@ Gluži kā gadi plūst un mainās, arī digitālā mārketinga tendences nestāv
 
 Rakstā iepazīsi, mūsuprāt, TOP 5 svarīgākās tendences, kā arī iegūsi vērtīgus ieteikumus un papildus informācijas avotus, kuros varēsi tuvāk iepazīties ar šo tēmu.
 
-<h2 id="one">1\. Sociālo tīklu e-komercijas gads</h2>
+## 1. Sociālo tīklu e-komercijas gads
 
 Sociālu tīklu tendences un augstā popularitāte ir izmainījušas arī e-komercijas lauciņu. 
 
@@ -37,7 +37,7 @@ Pirkuma process norit ātri un komfortabli.
 
 Ieteikums: Ja Tavam produktam vai pakalpojumam ir mājaslapa, kurā to var iegādāties, un zini, ka mērķauditorija ir sociālajos tīklos, pielāgojies tendencēm un sāc tur izvietot savu piedāvājumu klāstu ar bildēm, aprakstiem un cenām!
 
-<h2 id="two">2\. SEO sociālajos tīklos, SEO balsī</h2>
+## 2. SEO sociālajos tīklos, SEO balsī
 
 SEO jeb meklētājprogrammu optimizācijas tendences, kas palīdz produktu parādīt kā vienu no pirmajiem meklētājā, jau vairs nav raksturīgas tikai meklētājos _Google_ vai _Bing_. 
 
@@ -51,7 +51,7 @@ Piemēram, ko teiks klients, kurš brauc automašīnā un vēlas nomazgāt maš�
 
 Iesakām šo apsvērt un pielāgoties!
 
-<h2 id="three">3\. 2025.gada fokuss – mākslīgais intelekts</h2>
+## 3. 2025.gada fokuss – mākslīgais intelekts
 
 Pagājušajā gadā pieredzējām aizvien lielāku māksīgā intelekta popularitātes milzīgo pieaugumu. Visi, kuri nebija slinki, to iepraktizējās izmantot dažādiem nolūkiem: reklāmas tekstiem, tulkošanai, kontroldarbiem un pat bilžu ģenerēšanai.
 
@@ -65,7 +65,7 @@ Iesakām apsvērt iespēju integrēt mākslīgo intelektu uzņēmējdarbībā: i
 
 Starp citu, ja ar angļu valodu esi uz Tu un Tev interesē mākslīga intelekta tendences, šajā [YouTube kanālā](https://www.youtube.com/@aiexplained-official/videos) atradīsi jaunāko mākslīgā intelekta tehnoloģiju aprakstus un skaidrojumus.
 
-<h2 id="four">4\. TikTok jeb jaunā māte “Google”</h2>
+## 4. TikTok jeb jaunā māte “Google”
 
 Mūsu tendences nevar būt pilnvērtīgas, ja neiekļaujam 2025.gada top sociālo tīklu platformu: _TikTok_. Iemesli šim titulam ir šādi:
 
@@ -76,7 +76,7 @@ Starp citu, ārvalstīs _TikTok_ jau ir izkāpis no ekrāna jeb piedāvā iespē
 
 _TikTok_ maina digitālā mārketinga vidi, un mums atliek mainīties līdzi! 
 
-<h2 id="five">5\. Personalizācija – ceļš uz klienta sirdi</h2>
+## 5. Personalizācija – ceļš uz klienta sirdi
 
 Digitālā mārketinga tendences jau pagājušajā gadā aicināja veidot saturu, kas ir personalizēts un maksimāli pielāgots mērķauditorijai. Šogad tie, kuri cer, ka ar vispārīgu saturu sasniegs mērķauditoriju, visticamāk, būs vīlušies.
 
@@ -90,7 +90,7 @@ Sociālos tīklus noteikti iesakām izmantot interaktīvai komunikācijai – ie
 
 Arī influenceru mārketings sociālajos tīklos turpina augt, un tā trumpis ir uzticamība. Ņem vērā, ka ieteikumi no influenceriem, kuru saturs ir saistošs, auditorijai itin bieži šķiet ticamāki nekā paša uzņēmuma veidotās reklāmas.
 
-<h2 id="6">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Ceram, ka šajā rakstā uzzināji vērtīgu informāciju par to, kā attīstās digitālā mārketinga tendences un esi gatavs tās integrēt savā mārketinga stratēģijā.
 

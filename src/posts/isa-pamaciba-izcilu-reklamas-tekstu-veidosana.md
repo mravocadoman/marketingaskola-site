@@ -19,7 +19,7 @@ Bet kā saprast, ka Tavs uzrakstītais teksts būs konvertējošs? Kā pārlieci
 
 Izlasot šo bloga rakstu, gūsi atbildes uz šiem un visiem citiem jautājumiem par reklāmas tekstiem, jo sniegsim Tev īsu, bet vērtīgu 5 soļu pamācību, kurā uzzināsi, kā veidot izcilus reklāmas tekstus!
 
-<h2 id="1">**1.** **Iejūties lasītāja lomā**</h2>
+## 1. Iejūties lasītāja lomā
 
 Pavisam vienkārši: lai varētu uzrakstīt izcilu tekstu, ir izcili jāiepazīst cilvēks, kurš lasīs Tavu uzrakstīto reklāmas tekstu. Tas diemžēl ir mīts, ka reklāmas tekstu veidošana sastāv tikai no rakstīšanas, jo, iespējams, pat lielāka šī procesa daļa ir mērķauditorijas iepazīšana. Ir nepieciešams savus lasītājus iepazīt tik tuvu, lai spētu iejusties viņu lomā.
 
@@ -33,7 +33,7 @@ Veiksmīgs reklāmas teksts lasītājā aizskar kādu emocionālo stīgu vai ar�
 -   Rīcība digitālajā vidē
 -   Ieradumi
 
-<h2 id="2">**2.** **Saistošu reklāmas tekstu veidošana – virsraksti**</h2>
+## 2. Saistošu reklāmas tekstu veidošana – virsraksti
 
 Reklāmas tekstu veidošana būs pilnīgi bezjēdzīga, ja neizdomāsi izcilu reklāmas teksta virsrakstu.
 
@@ -52,15 +52,15 @@ Iztēlosimies, ka reklamējam sporta trenažieri. Lūk, daži iespējamie virsra
 -   _Fiziskās aktivitātes ➡ laimes hormoni_
 -   _Jau sen esi vēlējies atgūt motivāciju sportot?_
 
-<h2 id="3">**3\. Fokusējies uz pircēja ieguvumu uzskaiti**</h2>
+## 3. Fokusējies uz pircēja ieguvumu uzskaiti
 
-Esam nonākuši pie reklāmas teksta iztirzājuma daļas, galvenās daļas, arī svarīgās daļas. Sauc to, kā vēlies, bet tā ir Tava teksta **_epicentrs._** Šo daļu lasītājs lasa, kad viņu ir ieintriģējis virsraksts un viņa vēlme ir uzzināt: _Kāds būs mans ieguvums, ja nopirkšu šo sporta trenažieri?_
+Esam nonākuši pie reklāmas teksta iztirzājuma daļas, galvenās daļas, arī svarīgās daļas. Sauc to, kā vēlies, bet tā ir Tava teksta **epicentrs.** Šo daļu lasītājs lasa, kad viņu ir ieintriģējis virsraksts un viņa vēlme ir uzzināt: _Kāds būs mans ieguvums, ja nopirkšu šo sporta trenažieri?_
 
 Reklāmas tekstu veidošana ir process, kura gaitā Tev, kā jau minējām, ir jāiejūtas sava lasītāja ādā un jāizdomā, kādi būtu lasītāja ieguvumi no Tava pārdotā produkta. Reklāmas tekstā nav vērts tērēt laiku uz šī trenažiera ražotāja aprakstu vai trenažiera tehniskajām specifikācijām un sarežģītiem terminiem, kuru nozīmi, iespējams, saprastu tikai pieredzējuši sporta entuziasti.
 
 Šajā daļā maģija ir tajā, ka Tu spēj savam potenciālajam klientam pierādīt, kāpēc tieši viņam šis trenažieris nepieciešams. Lasītājam jāspēj saprast, ka viņš būs tik liels ieguvējs, ja iegādāsies šo trenažieri, jo tas uzlabos viņa dzīvi. Vari ieteikumus sarakstīt plāna punktos, lai teksts būtu pārredzamāks.
 
-**Piemērs_:_**
+**Piemērs:**
 
 _Šī trenažiera iegāde ir fantastisks veids, kā:_
 
@@ -71,7 +71,7 @@ _Šī trenažiera iegāde ir fantastisks veids, kā:_
 -   _Novērst risku saslimt ar dažādām hroniskām slimībām;_
 -   _Parūpēties par savu labsajūtu, jo jebkura fiziska aktivitāte izdala laimes hormonus._
 
-<h2 id="4">**4.** **Iedvesmo lasītāju rīkoties**</h2>
+## 4. Iedvesmo lasītāju rīkoties
 
 Mēs, kopīraitinga entuziasti, par veiksmīgu reklāmas tekstu dēvējam tādu, kas lasītāju iedvesmo rīkoties. Šī rīcība var būt kāda produkta iegāde, ziedošana, iespējams, pat specifiska projekta atbalstīšana, parakstoties vai aizpildot aptauju. Šai rīcībai ir jāsaskan ar to, ko vēlies, lai Tava teksta lasītājs darītu. Mūsu minētā sporta trenažiera reklāmas teksta vēlamā rīcība ir šī trenažiera iegāde.
 
@@ -81,7 +81,7 @@ Ir nepieciešams arī tiešais aicinājums pēc rīcības, kas tiktu ievietots v
 
 _Klikšķini šeit un iegādājies mūsu lielisko trenažieri, lai sāktu savu neaizmirstamo fitnesa ceļojumu jau tagad!_
 
-<h2 id="5">**5.** **Veic A/B testēšanu**</h2>
+## 5. Veic A/B testēšanu
 
 Diemžēl vai par laimi reklāmas tekstu veidošana nebeidzas mirklī, kad ir uzrakstīts viens reklāmas teksts. Ir jāuzraksta vairāki šādi teksti, jo visveiksmīgākā reklāmas teksta noslēpums slēpjas tajā, ka tam sākotnēji ir bijušas vairākas versijas. Šiem tekstiem ir jāatšķiras, bet mērķim jāpaliek vienotam.
 
@@ -89,7 +89,7 @@ Lai noskaidrotu, kurš no tekstiem ir visveiksmīgākais, ir jāveic A/B testē�
 
 Piemēram, veidojot Facebook reklāmas, Facebook platforma piedāvā veikt šo testu, taču Tev tai ir jāsniedz saturs jeb reklāmas teksti vairākās versijās. Pēc A/B testa ir iespējams noskaidrot, kura no reklāmas tekstu versijām ir bijusi visveiksmīgākā, gūstot visvairāk reakcijas no mērķauditorijas. Veicot šo testu, vari saprast, kurš teksts visefektīvāk palīdzēs Tev sasniegt Tavus mārketinga mērķus!
 
-<h2 id="6">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Vai pirms šī bloga raksta izlasīšanas domāji, ka reklāmas tekstu veidošana sastāv tikai no rakstīšanas, lielas domāšanas un teksta strukturēšanas? Ja jā, tad mums prieks, jo tagad zini, ka tā nebūt nav!
 

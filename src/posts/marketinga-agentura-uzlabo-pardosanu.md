@@ -15,7 +15,7 @@ Mūsdienās uzņēmējdarbība ir kļuvusi tik strauja un konkurence tik intens�
 
 Šajā rakstā uzzināsi, kas ir mārketinga aģentūra, kādas funkcijas tā pilda, kā mārketinga aģentūras Latvijā strādā ikdienā, kādi mārketinga pakalpojumi ir vispieprasītākie un kāpēc sadarbība ar aģentūru var būt viens no vērtīgākajiem ieguldījumiem Tava biznesa izaugsmē.
 
-<h2 id="1">Kas ir mārketinga aģentūra</h2>
+## Kas ir mārketinga aģentūra
 
 Mārketinga aģentūra palīdz tieši tur, kur uzņēmumiem parasti pietrūkst laika, resursu vai zināšanu: **stratēģijas izstrādē, reklāmas kampaņās, satura veidošanā, SEO (Search Engine Optimization jeb meklētājprogrammu optimizācija**)**, sociālajos tīklos, vizuālajā identitātē** un **pārdošanas piltuves sakārtošanā**. Tas nav tikai _skaistu bildīšu likšana Facebook_, bet gan konsekvents darbs ar datiem, kanāliem un klientu uzvedību.
 
@@ -43,7 +43,7 @@ Tas ir daudz vairāk nekā tikai _palīdzēt ar Facebook_.
 
 [Vairāk par digitālā mārketinga pamatiem esam pastāstījuši šajā rakstā.](/digitalais-marketings/)  
 
-<h2 id="2">Mārketinga aģentūras Latvijā – kā tās darbojas?</h2>
+## Mārketinga aģentūras Latvijā – kā tās darbojas?
 
 Latvijā darbojas vairāk nekā simts mārketinga un reklāmas aģentūru — sākot ar mazām nišas komandām, līdz lielām pilna servisa aģentūrām. To darba princips ir līdzīgs:
 
@@ -66,7 +66,7 @@ Tas ļauj uzņēmumiem atrast tieši to, kas vajadzīgs.
 
 Starpcitu, ja vēlies saprast, vai Tavam biznesam nepieciešams sociālo tīklu mārketings, [izlasi šo rakstu](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/).
 
-<h2 id="3">Mārketinga pakalpojumi, ko uzņēmumi izmanto visbiežāk</h2>
+## Mārketinga pakalpojumi, ko uzņēmumi izmanto visbiežāk
 
 Mārketinga aģentūru pakalpojumi ir dažādi, bet te norādīti populārākie.
 
@@ -94,7 +94,7 @@ Mājaslapa ir digitālais pārdevējs, tāpēc tai jābūt ātrai, saprotamai un
 
 Mārketinga stratēģija nosaka virzienu — kā uzņēmums komunicēs, kādi kanāli būs prioritāri, kas ir galvenās auditorijas un kādi KPI (Key Performance Indicator jeb galvenais veiktspējas rādītājs) tiks uzraudzīti. Konsultācijas palīdz uzņēmumam saprast savas stiprās puses, noteikt unikālo vērtību, izveidot pozicionējumu un definēt mērķus. Rezultātā mārketings nevis tiek darīts “uz sajūtām”, bet vadīts caur datiem un ar skaidru plānu.
 
-<h2 id="4">Kā mārketinga aģentūra palīdz palielināt redzamību un pārdošanu?</h2>
+## Kā mārketinga aģentūra palīdz palielināt redzamību un pārdošanu?
 
 Labi izveidota mārketinga sistēma var mainīt uzņēmuma izaugsmi pāris mēnešu laikā. Lūk, kā tas notiek praksē:
 

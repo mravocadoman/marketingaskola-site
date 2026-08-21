@@ -15,7 +15,7 @@ Ja Tu domā par mūsdienīgu klientu piesaisti, noteikti esi dzirdējis par satu
 
 Satura mārketings nav tikai bloga ierakstu vai sociālo tīklu video izveide. Tā ir stratēģija, kas palīdz cilvēkam pieņemt lēmumu par pirkumu vieglāk un vienkāršāk. Šajā rakstā uzzināsi, kāpēc saturs ir tik nozīmīgs, kā radīt saturu, ko cilvēki tiešām lasa, un kā izmantot spēcīgas formulu metodes – content hook formulu un hook problem solution formulu – lai saturs piesaistītu uzmanību un veicinātu pārdošanu.
 
-<h2 id="1">Kāpēc satura veidošana ir svarīga tavai uzņēmējdarbībai?</h2>
+## Kāpēc satura veidošana ir svarīga tavai uzņēmējdarbībai?
 
 Kvalitatīvs saturs piesaista uzmanību, palīdz saprast, kā Tu vari palīdzēt, un atbild uz jautājumiem, kas klientam rodas pirms sadarbības. Tas ir kā digitālais pārdevējs, kas strādā 24/7 un palīdz cilvēkiem saprast, kāpēc tieši Tu esi pareizā izvēle. Turklāt, ja saturs ir veidots gudri, tas uzlabo arī redzamību Google, piesaistot klientus bez papildu reklāmas izmaksām.
 
@@ -34,7 +34,7 @@ Satura veidošana mūsdienās ir viens no būtiskākajiem instrumentiem, lai uz�
 
 Ja vēlies izveidot spēcīgu mārketinga plānu savam uzņēmumam, [Tev noderēs šis raksts](/marketinga-plans/).
 
-<h2 id="2">Kā radīt saturu, ko cilvēki tiešām lasa?</h2>
+## Kā radīt saturu, ko cilvēki tiešām lasa?
 
 Lai satura mārketings strādātu, saturam jābūt veidotam tā, lai cilvēks to pamana, saprot, gūst sev ko noderīgu un veic nākamo soli ceļā uz Tava produkta vai pakalpojuma iegādi. Kā to panākt?
 
@@ -51,7 +51,7 @@ Lai satura mārketings strādātu, saturam jābūt veidotam tā, lai cilvēks to
 
 Ja vēlies uzzināt, kā būt klientiem redzamam tieši tad, kad viņi Tevi meklē, [ieskaties mūsu rakstā par SEO optimizāciju Tavam biznesam](/seo-optimizacija-tavam-biznesam/).
 
-<h2 id="3">Kā izmantot content hook un hook problem solution formulu?</h2>
+## Kā izmantot content hook un hook problem solution formulu?
 
 Šīs formulas palīdz izveidot saturu, kas ne tikai informē, bet arī piesaista klientus.
 

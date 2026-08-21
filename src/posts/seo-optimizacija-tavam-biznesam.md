@@ -25,7 +25,7 @@ SEO palīdz Tev izcelties pār konkurentiem un būt atrastam tieši tajās mekl�
 
 Šajā blogā mēs kopīgi ielūkosimies, kas ir SEO, kādi ir tā veidi un kā Tu to vari izmantot savā labā, lai uzlabotu Tava biznesa redzamību un mājaslapas sniegumu. Turpini lasīt, lai izpētītu SEO pamatprincipus un praktiskos ieteikumus.
 
-<h2 id="1">Kas ir SEO optimizācija?</h2>
+## Kas ir SEO optimizācija?
 
 SEO (Search Engine Optimization) ir darbību kopums, kas palīdz Tavai mājaslapai izcelties meklēšanas rezultātos. Tas notiek, pielāgojot lapas saturu, struktūru un tehniskos aspektus, lai meklētājprogrammas, piemēram, Google, saprastu, ka Tavs saturs ir vērtīgs un atbilstošs konkrētiem meklējumiem.
 
@@ -50,7 +50,7 @@ SEO ir viena 2025.gada tendencēm… Kāpēc vari lasīt šeit: [2025.gada mārk
 -   **Bounce rate** – Rādītājs, cik daudz apmeklētāju aiziet no lapas bez jebkādas darbības.
 -   **SEO rādītājs (piemēram, Yoast SEO)** – SEO viedoklis par tavu saturu. Tas analizē virsrakstus, atslēgvārdus, teksta garumu, pārejas vārdus, lasāmību u.c., sniedzot atgriezenisko saiti zaļās, oranžās vai sarkanās krāsās.
 
-<h2 id="2">Kā strādā SEO optimizācija?</h2>
+## Kā strādā SEO optimizācija?
 
 Lai saprastu SEO burvību, ir jāsaprot, kā domā Google. Meklētājprogrammas pārmeklē tavu lapu, analizē tās saturu, kvalitāti, lietojamību un autoritāti. Balstoties uz šo informāciju, tiek noteikta Tavas lapas pozīcija meklēšanas rezultātos.
 
@@ -68,7 +68,7 @@ Google algoritms ir gudrs – tas analizē ne tikai atslēgvārdus, bet arī las
 4.  Ja Tava lapa ir labi optimizēta – tā parādās meklēšanas rezultātu augšgalā.
 5.  Jo augstāk esi, jo lielāka iespēja, ka uz Tevi klikšķinās.
 
-<h2 id="3">Kas ir SEM un kā tas atšķiras no SEO?</h2>
+## Kas ir SEM un kā tas atšķiras no SEO?
 
 ### Lai gan SEO un SEM ir līdzīgi termini, tie nozīmē dažādas lietas. 
 
@@ -80,31 +80,31 @@ Savukārt **SEO (Search Engine Optimization)** ir veids, kā **organiski (bez ma
 
 Apvienojot abus – SEO un SEM – Tu vari palielināt savu redzamību un sasniegt klientus gan tūlīt, gan ilgtermiņā.
 
-<h2 id="4">Kādi ir SEO optimizācijas veidi?</h2>
+## Kādi ir SEO optimizācijas veidi?
 
 SEO optimizācija ietver vairākus svarīgus aspektus, kas palīdz uzlabot Tavas mājaslapas redzamību un sniegumu Google meklēšanas rezultātos. 
 
 ### **Šeit ir galvenie SEO optimizācijas veidi, kas ietver gan tehniskos, gan radošos elementus:**
 
-#### 1\. **On-page SEO: Tava satura karalis**
+#### 1. **On-page SEO: Tava satura karalis**
 
 Šis ir viss, ko Tu kontrolē savā mājaslapā – virsraksti, apraksti, bildes, atslēgvārdi, pārejas vārdi, saites. Ja saturs ir kvalitatīvs, strukturēts un saprotams – Google to novērtēs.
 
 **Piemērs:** Ja Tu raksti par kūkām, bet virsraksts ir “Saldie kārumi no vecmāmiņas virtuves”, iespējams, Tu paliec nepamanīts. Bet, ja tas ir “Labu kūku receptes Tavām ballītēm” – uzreiz ir skaidrs.
 
-#### 2\. Off-page SEO: Tava digitālā reputācija
+#### 2. Off-page SEO: Tava digitālā reputācija
 
 Tas ir viss, kas notiek ārpus Tavas mājaslapas. Saites no citām uzticamām vietnēm (backlinks), pieminēšana sociālajos tīklos, pozitīvas atsauksmes – viss tas Google acīs ceļ Tavu autoritāti.
 
 **Padoms:** Sadarbojies ar blogeriem, esi aktīvs Facebook grupās, lūdz klientus atstāt atsauksmes.
 
-#### 3\. Tehniskais SEO: Mājaslapas mugurkauls
+#### 3. Tehniskais SEO: Mājaslapas mugurkauls
 
 Rūpējas par to, lai Tava mājaslapa būtu ātra, droša un ērti lietojama – īpaši telefonā. Tas ietver lapas ielādes ātrumu, mobilās versijas kvalitāti, drošību (_https://_), kļūdu novēršanu (piemēram, 404 kļūdas) un strukturētu datu sakārtošanu, kas palīdz Google saprast Tavu lapu. Ja šīs lietas nav kārtībā, pat labs saturs var palikt nemanāms.
 
-**Padoms**_:_ Veic regulāru lapas ātruma pārbaudi ar PageSpeed Insights vai piesaisti SEO speciālistu tehniskam auditam.
+**Padoms**: Veic regulāru lapas ātruma pārbaudi ar PageSpeed Insights vai piesaisti SEO speciālistu tehniskam auditam.
 
-<h2 id="5">Biežākās kļūdas SEO procesā un kā tās novērst?</h2>
+## Biežākās kļūdas SEO procesā un kā tās novērst?
 
 #### Kļūdas: 
 
@@ -119,7 +119,7 @@ Rūpējas par to, lai Tava mājaslapa būtu ātra, droša un ērti lietojama –
 -   Lieto atslēgvārdu saprātīgi (1–2,5% no teksta), piemēram – “SEO optimizācija”.
 -   Pārbaudi lasāmības rādītāju – jo vieglāk lasāms teksts, jo ilgāk cilvēks to lasa un vieglāk to saprast..
 
-<h2 id="6">Kāpēc SEO optimizācija ir svarīga Tavam biznesam?</h2>
+## Kāpēc SEO optimizācija ir svarīga Tavam biznesam?
 
 SEO nav vienas dienas akcija – tā ir ilgtermiņa investīcija. Atšķirībā no apmaksātām reklāmām, kuru efekts beidzas, kad izbeidzas budžets, labi optimizēts saturs var nest rezultātus mēnešiem vai pat gadiem.
 
@@ -130,7 +130,7 @@ SEO nav vienas dienas akcija – tā ir ilgtermiņa investīcija. Atšķirībā 
 -   Samazina reklāmu izdevumus ilgtermiņā.
 -   Nodrošina stabilu digitālo klātbūtni.
 
-<h2 id="7">Kā uzsākt ar SEO bez lieliem ieguldījumiem un kā panākt SEO optimizāciju?</h2>
+## Kā uzsākt ar SEO bez lieliem ieguldījumiem un kā panākt SEO optimizāciju?
 
 -   Pārbaudi savas lapas SEO stāvokli ar [Yoast SEO](https://yoast.com/)
 -   Izveido blogu ar vērtīgu saturu
@@ -139,7 +139,7 @@ SEO nav vienas dienas akcija – tā ir ilgtermiņa investīcija. Atšķirībā 
 -   Strukturē saturu ar virsrakstiem (H2, H3) un pārejas vārdiem
 -   Uzlabo lasāmību – īsi teikumi, maz pasīvās balss, skaidra doma
 
-<h2 id="8">Biežāk uzdotie jautājumi</h2>
+## Biežāk uzdotie jautājumi
 
 1.  **Kas ir atslēgvārdi un kā tos atrast?**
 

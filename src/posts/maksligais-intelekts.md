@@ -17,7 +17,7 @@ Skaitļi runā paši par sevi – mākslīgais intelekts attīstās ļoti strauj
 
 Šī iemesla dēļ vēlamies rakstā iepazīstināt ar mākslīgo intelektu, īpaši akcentējot tā ietekmi mūsu nozarē – mārketingā.
 
-<h2 id="1">Kas ir mākslīgais intelekts?</h2>
+## Kas ir mākslīgais intelekts?
 
 Mākslīgais intelekts visbiežāk cilvēkiem asociējas ar robotiem un bailēm par to, kā tie cenšas imitēt cilvēku uzvedību.
 
@@ -31,7 +31,7 @@ Pašbraucošās jeb autonomās mašīnas ir mākslīgais intelekts.
 
 Šis tehnoloģiju sasniegums ir sastopams biežāk nekā mums šķiet un tāpēc ir vērts uzzināt par to vairāk.
 
-<h2 id="2">Mākslīgais intelekta izmantošana mārketingā</h2>
+## Mākslīgais intelekta izmantošana mārketingā
 
 Mārketinga nozarē mākslīgais intelekts ir lielisks palīgs. Arī mums, Mārketinga Skolā. Tas spēj veidot mārketinga tekstus, ģenerēt attēlus un vizuāļus, tas pat var samontēt podkāsta ierakstu.
 
@@ -51,7 +51,7 @@ Visticamāk, nē. 
 
 Šīs piemērs īsi un konkrēti parāda, cik gudrs (pat latviešu valodā) ir mākslīgais intelekts, ģenerējot mums šo atbildi dažu sekunžu laikā.
 
-<h2 id="3">Mākslīgais intelekts: draugs vai drauds?</h2>
+## Mākslīgais intelekts: draugs vai drauds?
 
 Sabiedrībā sastopami dažādi viedokļi par mākslīgā intelekta straujo attīstību. Viena daļa baidās, ka robots nākotnē vadīs cilvēku un ka darba tirgū daudzi zaudēs darbu. Savukārt otra daļa priecājas, jo mākslīgā intelekta rīki palīdz ikdienas darbos un ietaupa laiku.
 
@@ -69,7 +69,7 @@ Tas palīdz ietaupīt daudz laika un enerģijas, kā arī ļauj efektīvāk izma
 
 Papildus sniegto laiku mēs izmantojam lietderīgi, kaļot jaunus klientu mārketinga izaugsmes plānus un attīstot jaunas mārketinga stratēģijas.
 
-<h2 id="4">Kā mākslīgo intelektu var ieviest Tavā biznesā?</h2>
+## Kā mākslīgo intelektu var ieviest Tavā biznesā?
 
 Pavisam vienkārši: ar sapratni, ka mākslīgais intelekts nav nākotne, bet jau tagadne.
 
@@ -79,7 +79,7 @@ Ir vērts apgūt tehnoloģijas un tuvāk iepazīt arī digitālo pasauli, pieņe
 
 Mūsdienu pasaulē ir jārēķinās ar to, ka mākslīgais intelekts nekur nepazudīs, tas tikai attīstīsies straujāk. Aicinām ar to sadraudzēties, aiztaupot liekas galvassāpes jautājumos, kurus var atrisināt tehnoloģijas! 
 
-<h2 id="5">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Apvienojiet spēkus ar mākslīgo intelektu un sasniedziet savus mērķus vēl ātrāk un efektīvāk! Mēs, Mārketinga Skola, iesakām iepazīties ar [7 mākslīgā intelekta rīkiem](/maksliga-intelekta-riki/), ko vari izmēģināt jau šodien, lai gūtu ieskatu, kā šie mākslīgā intelekta rīki var Tev palīdzēt ikdienā. Sāciet jau šodien un atklājiet digitālās revolūcijas priekšrocības savā uzņēmumā!
 

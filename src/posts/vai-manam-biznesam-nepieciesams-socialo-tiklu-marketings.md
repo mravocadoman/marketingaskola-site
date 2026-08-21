@@ -23,13 +23,13 @@ Tas ir absolūts mīts, kuru vēlamies apgāzt.
 
 Šajā bloga rakstā vēlamies Tevi iepazīstināt ar  sociālo tīklu mārketinga pasauli un parādīt tās gaišo pusi un arī tumšo, jo tāda, gluži kā visiem digitālā mārketinga rīkiem, pastāv arī sociālajiem tīkliem.
 
-<h2 id="1">**Kas ir sociālo tīklu mārketings?**</h2>
+## Kas ir sociālo tīklu mārketings?
 
 Pavisam vienkārši: sociālo tīklu mārketings ir sociālo mediju platformu izmantošana, lai reklamētu un tirgotu uzņēmuma produktus un pakalpojumus.
 
 Sociālo tīklu mārketings ir patiešām efektīvs veids, kā dažāda lieluma uzņēmumiem sasniegt potenciālos un jau esošos klientus, jo teju visi mūsdienās izmanto sociālos tīklus.
 
-<h2 id="2">**Sociālo tīklu mārketinga gaišā puse**</h2>
+## Sociālo tīklu mārketinga gaišā puse
 
 ### **Popularitāte**
 
@@ -62,7 +62,7 @@ Daudzi uzņēmumi, piemēram, Instagramā izmanto storiju funkcijas, lai veidotu
 
 Protams, uzņēmumi arī izmanto to, ka sociālajos tīklos var uzsākt komunikāciju ar saviem klientiem. Uzņēmumi var uzdot dažādus jautājumus saviem sekotājiem, un tas ļoti palīdz veidot ne tikai saikni ar pircēju, bet arī uzlabo uzņēmuma darbību. Kāpēc? Tiešo klientu atbildes palīdz veikt dažādus secinājumus, piemēram, saprast, ko uzlabot produktā, lai tas klientiem patiktu vēl vairāk.
 
-<h2 id="3">**Sociālo tīklu mārketinga tumšā puse**</h2>
+## Sociālo tīklu mārketinga tumšā puse
 
 ### **Sociālo tīklu pamatideja nav bizness**
 
@@ -86,6 +86,6 @@ Sociālo tīklu mārketings ir ļoti laikietilpīgs process, jo
 
 Sociālo tīklu mārketings ir visfektīvākais veids, kā palielināt zīmola atpazīstamību, pārdošanas apjomus un klientu skaitu, taču tajā pašā laikā tas ir ļoti sarežģīts un laikietilpīgs veids, kā šo visu sasniegt.
 
-<h2 id="4">Mārketinga skolas piedāvājums</h2>
+## Mārketinga skolas piedāvājums
 
 Ja esi gatavs veltīt ļoti daudz laika sava uzņēmuma mārketinga attīstībai, tad, mūsuprāt, sociālo tīklu mārketings varētu būt Tava veiksmes atslēga! Digitālās reklāmas aģentūra Mārketinga Skola piedāvā palīdzību sociālo tīklu pārvaldē un reklāmās, tāpēc, ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam — [uzraksti mums](/sazinies/). Tāpat piedāvājam tev iegādāties [sociālo mediju mārketinga kursu](/socialo-mediju-marketings/), pēc kura spēsi saprast sociālo mediju mārketinga pamatus, un  to satura veidošanas pamatprincipus.

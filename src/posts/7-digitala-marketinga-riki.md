@@ -17,13 +17,13 @@ Vai jūties kā ļoti liela daļa uzņēmēju un dažreiz nodomā, ka digitālai
 
 Patiešām ceram, ka šie digitālā mārketinga rīki Tev būs tikpat noderīgi cik mums!
 
-<h2 id="1">1\. [ChatGPT](https://openai.com/)</h2>
+## 1. [ChatGPT](https://openai.com/)
 
 ChatGPT ir mākslīgais intelekts, kas apmācīts apstrādāt milzīgu datu apjomu, kā rezultātā tas var paredzēt, kāds ir nākamais vārds teikumā. Citiem vārdiem sakot, komunicējot ar to čata formātā, iespējams ģenerēt dažāda veida saturu. Šī bezmaksas rīka darbība ir tiešām iespaidīga: bloga rakstu tēmas, sociālo tīklu posti un pat pilna apjoma bloga ieraksti – tas viss šim rīkam ir pa spēkam. Arī paši ikdienā izmantojam ChatGPT reklāmas tekstu izveidē, un iesakām to daŗit ari Tev!
 
 ![ChatGPT logo](/img/2022/05/1681038628chatgpt-icon-logo-1024x301.webp)
 
-<h2 id="2">2\. [Google Analytics 4](https://developers.google.com/analytics)</h2>
+## 2. [Google Analytics 4](https://developers.google.com/analytics)
 
 Google Analytics ir visizplatītākais analītikas rīks internetā. Tas ir tiešām viegli izmantojams rīks, ar kura palīdzību var ļoti labi iepazīt savu klientu un mājaslapas apmeklētāju rīcību digitālajā vidē.
 
@@ -31,13 +31,13 @@ Tā standarta versija ir pieejama bez maksas un ietver dažādas lieliskas opcij
 
 ![Digitālā mārketinga rīki | Google analytics logo](/img/2022/04/riki2.webp)
 
-<h2 id="3">3\. [WordPress](https://wordpress.com/)</h2>
+## 3. [WordPress](https://wordpress.com/)
 
 Lai gan WordPress vairāk piederas pie Web Dizaina izstrādes rīkiem, nolēmām to tomēr iekļaut šajā sarakstā, jo uz šīs platformas esam veidojuši gan savu gan klientu mājaslapas. Kā jau noprotams, WordPressir rīks, ar kuru var veidot un uzturēt mājaslapas. Tas ir īpaši populārs blogeru un mazo uzņēmumu vidū. WordPress piedāvā izmantot jau iepriekš sagatavotus šablonus un izkārtojumus mājaslapas dizainam, lai atvieglotu mājaslapas veidotāja darbu. Populāras WordPress alternatīvas ir Wix, Shopify priekš e-veikalie un Mozello priekš Latvijā bāzētām mājaslapām un e-veikaliem.
 
 ![Digitālā mārketinga rīki | WordPress logo](/img/2022/04/riki3.webp)
 
-<h2 id="4">4\. [Unsplash](https://unsplash.com/)</h2>
+## 4. [Unsplash](https://unsplash.com/)
 
 Uzņēmumam Getty Images piederošais Unsplash ir brīnišķīgs rīks, kurā Tu vari piekļūt ļoti daudzām bildēm, kuras vari izmantot pilnībā bez maksas!
 
@@ -47,7 +47,7 @@ Unsplash vēlamo attēlu var meklēt pēc atslēgvārdiem, kolekcijas, datuma va
 
 ![Digitālā mārketinga rīki | Unsplash logo](/img/2022/04/riki4.webp)
 
-<h2 id="5">5\. [Grammarly](https://www.grammarly.com/)</h2>
+## 5. [Grammarly](https://www.grammarly.com/)
 
 Ir pieejami daudzi mārketinga rīki, kas palīdz satura rediģēšanā, taču, mūsuprāt, Grammarly ir klasika!
 
@@ -59,7 +59,7 @@ Grammarly ir gan bezmaksas, gan maksas versija. Bezmaksas versijā tiek pārbaud
 
 ![Digitālā mārketinga rīki | Grammarly logo](/img/2022/04/riki5.webp)
 
-<h2 id="6">6\. [Buffer](https://buffer.com/)</h2>
+## 6. [Buffer](https://buffer.com/)
 
 Šis digitālā mārketinga rīks ir lielisks palīgs sociālo mediju satura menedžmentā. Ar Buffer var ietaupīt laiku un pūles, jo šis rīks nodrošina visaptverošu sociālo tīklu pārvaldību.
 
@@ -69,7 +69,7 @@ Buffer piedāvā arī pieeju analītikai, kurā var redzēt, cik veiksmīgi un e
 
 ![Digitālā mārketinga rīki | Buffer logo](/img/2022/04/riki6.webp)
 
-<h2 id="7">7\. Google Optimize</h2>
+## 7. Google Optimize
 
 Google Optimize ir Google veidots A/B testēšanas un konversijas optimizācijas rīks.
 
@@ -79,7 +79,7 @@ Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas
 
 ![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.webp)
 
-<h2 id="8">Mārketinga skola iesaka</h2>
+## Mārketinga skola iesaka
 
 Ja vēlies uzzināt vairāk tieši par pašu digitālo mārketingu, tad mēs iesakām izlasīt mūsu rakstu [“Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā”](/digitalais-marketings/), kurā tiek aprakstīti galvenie ieguvumi no digitālā mārketinga. Ja vēlies padomu tieši par sava uzņēmuma situāciju, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 100 € par stundu.
 

@@ -13,7 +13,7 @@ permalink: "/facebook-reklamas-izstrade/"
 
 Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
 
-<h2 id="1">**Kas tad īsti ir Facebook reklāmas?**</h2>
+## Kas tad īsti ir Facebook reklāmas?
 
 <iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed&amp;enablejsapi=1&amp;origin=https://marketingaskola.lv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
@@ -25,7 +25,7 @@ Pavisam vienkārši: Tās ir reklāmas, kas tiek izveidotas un publicētas Faceb
 -   Izmantojot analītiskos rādītājus, var rūpīgi sekot līdzi reklāmas efektivitātei;
 -   Ir iespējams ātri un efektīvi gūt plašāku atpazīstamību, palielinot klientu skaitu.
 
-<h2 id="2">**Stratēģijas izstrāde kā prioritāte**</h2>
+## Stratēģijas izstrāde kā prioritāte
 
 Pirms sāc savu reklāmas ceļojumu, ir jāvelta laiks stratēģijas izveidei. Bez konkrētas stratēģijas, būs tiešām viegli apjukt lielajā informācijas burzmā un piedāvājumu klāstā. Reklāmām ir jābūt mērķtiecīgām, jo bez mērķiem un konkrētiem plāniem tās diemžēl nebūs efektīvas. 
 
@@ -39,7 +39,7 @@ Pirms ķeries klāt pie kampaņas izveides, uzdod sev šos jautājumus: 
     -   Vai tomēr gūt plašāku zīmola atpazīstamību?
     -   Varbūt veicināt pārdošanas apjomus? 
 
-<h2 id="3">**Kādi ir Facebook reklām**as **izveides soļi?**</h2>
+## Kādi ir Facebook reklāmas izveides soļi?
 
 Reklāmas izveide sastāv no vairākiem etapiem, un mēs esam izvēlējušies šos 6 etapus kā pašus galvenos:
 
@@ -52,7 +52,7 @@ Reklāmas izveide sastāv no vairākiem etapiem, un mēs esam izvēlējušies š
 
 Vērtīgākais, ko paņemt no šī bloga raksta? Facebook ir digitālā mārketinga veiksmes atslēga! Facebook ir lielisks veids, kā reklamēt savu biznesu internetā, protams, pirms tam izveidojot skaidru spēles plānu.
 
-<h2 id="4">Mārketinga Skolas piedāvājums</h2>
+## Mārketinga Skolas piedāvājums
 
 Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un gūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, mēs esam izveidojuši mūsu apjomīgāko [Facebook un Instagram reklāmas kursu](/facebook-kursi/) tiešsaistes formātā.
 

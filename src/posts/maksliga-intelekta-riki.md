@@ -11,7 +11,7 @@ categories: ["maksligais-intelekets"]
 permalink: "/maksliga-intelekta-riki/"
 ---
 
-<h2 id="h-1-chatgpt">Vēlies ietaupīt laiku un enerģiju, darbojoties digitālajā vidē?</h2>
+## Vēlies ietaupīt laiku un enerģiju, darbojoties digitālajā vidē?
 
 Šie 7 lieliskie mākslīgā intelekta rīki optimizēs tavu sniegumu digitālajā vidē un ietaupīs laiku un enerģiju, lai Tu varētu to veltīt nozīmīgākiem uzdevumiem sava uzņēmuma attīstībai.
 
@@ -19,7 +19,7 @@ Mākslīgā intelekta izaugsme nepārtraukti attīstās un digitālajā vidē ar
 
 ![Midjourney — Vikipēdija](https://upload.wikimedia.org/wikipedia/commons/2/24/Midjourney_Emblem.svg)
 
-<h2 id="1">1\. [MidJourney.com](https://www.midjourney.com/)</h2>
+## 1. [MidJourney.com](https://www.midjourney.com/)
 
 Midjourney ir mākslīgā intelekta rīks, kas spēj izveidot attēlu, pamatojoties uz teksta instrukcijām jeb “prompts”. Izklausās lieliski, ne?
 
@@ -29,7 +29,7 @@ Midjourney ir populārākais šāda veida rīks un ne par velti – pāris sekun
 
 ![Canva Logo and symbol, meaning, history, PNG, brand](https://1000logos.net/wp-content/uploads/2023/02/Canva-logo.png)
 
-<h2 id="2">2\. [Canva – Magic Design](https://www.canva.com/)</h2>
+## 2. [Canva – Magic Design](https://www.canva.com/)
 
 Canva ir viens no populārākajiem bezmaksas grafiskā dizaina rīkiem. Protams, arī šai platformai beidzot ir pieejami mākslīgā intelekta rīki un funkcijas, kas sociālo mediju satura radīšanu padara daudz ātrāku un efektīvāku. 
 
@@ -39,7 +39,7 @@ Automātiska prezentāciju, sociālo mediju publikāciju dizainu izveide, teksta
 
 ![Beautiful.AI - Crunchbase Company Profile & Funding](https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/uquucmjmmxie7usakmv3)
 
-<h2 id="3">3\. [Beautiful.ai](http://Beautiful.ai)</h2>
+## 3. [Beautiful.ai](http://Beautiful.ai)
 
 Mūsuprāt, beautiful.ai ir viens no labākajiem mākslīgā intelekta rīkiem, kas ļauj ātri, ērti un pats galvenais – vienkārši – izveidot vizuāli pievilcīgu un profesionālu prezentāciju vien pāris minūtēs. 
 
@@ -49,7 +49,7 @@ Beautiful.ai ir ļoti ērti un parocīgi lietot un tas nav pārbāzts ar nevajad
 
 ![Podcastle: Easily Create Podcasts with AI - The Podcast Haven](https://thepodcasthaven.com/wp-content/uploads/2023/08/podcastle-logo.png)
 
-<h2 id="4">4\. [PodCastle.ai](https://podcastle.ai/)</h2>
+## 4. [PodCastle.ai](https://podcastle.ai/)
 
 Podcastle ir lielisks mākslīgā intelekta rīks, ja vēlies uzsākt savu podkāstu, tomēr Tev nav nekādu iepriekšējo zināšanu par video un audio rediģēšanu. 
 
@@ -61,7 +61,7 @@ Ja podkāsts ir kaut kas tāds par ko ilgi esi sapņojis, tad šis rīks ir pirm
 
 ![Synthesia - Products, Competitors, Financials, Employees, Headquarters  Locations](https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/original/7811652d-5713-4201-9c86-9ee10e9c1619.png)
 
-<h2 id="5">5\. [Synthesia.io](https://www.synthesia.io/)</h2>
+## 5. [Synthesia.io](https://www.synthesia.io/)
 
 Šis mākslīgā intelekta rīks mūs patīkami pārsteidza!
 
@@ -71,7 +71,7 @@ Koncepts ir ļoti vienkāršs – ar mākslīgā intelekta palīdzību pārvērt
 
 ![InVideo - Updates, News, Events, Signals & Triggers](https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/zpqq37rkp4isz29fiwym)
 
-<h2 id="6">6\. [InVideo](https://invideo.io/)</h2>
+## 6. [InVideo](https://invideo.io/)
 
 Varbūt par šo mākslīgā intelekta rīku esi jau dzirdējis, jo InVideo ir viens no populārākajiem un izmantotākajiem video ģenerēšanas AI rīkiem, ar kura palīdzību vari pārvērst savas idejas video formātā. 
 
@@ -81,7 +81,7 @@ Lieliska funkcija – InVideo ir piekļuve milzīgai attēlu un video datubāzei
 
 ![Opus Clip | LinkedIn](https://media.licdn.com/dms/image/D560BAQHcVb0_QUmqyA/company-logo_200_200/0/1682576303512/opusclip_logo?e=2147483647&v=beta&t=TXZErBLuyui2ZAmjsZ5SDFG2_3zG1FC1EqMVk5nZYFo)
 
-<h2 id="7">7\. [Opus.Clip](https://www.opus.pro/)</h2>
+## 7. [Opus.Clip](https://www.opus.pro/)
 
 Arī šis mākslīgā intelekta rīks ir noteikti kaut kas īpašs.
 
@@ -89,6 +89,6 @@ Opus.Clip ir vispopulārākais jeb #Nr.1 video “clipping” AI rīks. Ar māks
 
 Opus.Clip ļauj ietapīt DAUDZ laiku uz video rediģēšanu manuāli, tāpēc vari aizmirst par to un steidzies izmēģināt šo rīku.
 
-<h2 id="8">Mārketinga skolas piedāvājums</h2>
+## Mārketinga skolas piedāvājums
 
 Ceram, ka Šie 7 mākslīgā intelekta rīki Tev ikdienā ietaupīs laiku un enerģiju, un varbūt pat aizstās kādas galvassāpes saistībā ar prezentāciju sagatavošanu, satura radīšanu un video rediģēšanu! Ja vēlies uzzināt vairāk par mākslīgo intelektu, Mēs Mārketinga skola iesakām tev izlasīt rakstu par [mākslīgā intelekta](/maksligais-intelekts/) integrēšanu savā uzņēmumā. Ja vēlies personalizētus ieteikumus, kas domāti tieši Tavam uzņēmumam, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 100 € par stundu.

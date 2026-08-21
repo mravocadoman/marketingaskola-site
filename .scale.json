@@ -1,0 +1,568 @@
+{
+  "tokens": [
+    {
+      "name": "--t-micro",
+      "value": "0.75rem",
+      "px390": 12,
+      "px1440": 12,
+      "use": "uppercase tracked micro-labels ONLY"
+    },
+    {
+      "name": "--t-sm",
+      "value": "0.875rem",
+      "px390": 14,
+      "px1440": 14,
+      "use": "fine print, meta, nav, badges, compact UI"
+    },
+    {
+      "name": "--t-base",
+      "value": "1rem",
+      "px390": 16,
+      "px1440": 16,
+      "use": "component body text, inputs, buttons"
+    },
+    {
+      "name": "--t-body",
+      "value": "clamp(1rem, 0.94rem + 0.28vw, 1.125rem)",
+      "px390": 16,
+      "px1440": 18,
+      "use": "page and article reading text"
+    },
+    {
+      "name": "--t-lead",
+      "value": "clamp(1.125rem, 1.04rem + 0.35vw, 1.375rem)",
+      "px390": 18,
+      "px1440": 22,
+      "use": "leads, hero subs, blockquotes"
+    },
+    {
+      "name": "--t-d1",
+      "value": "clamp(1.25rem, 1.1rem + 0.62vw, 1.75rem)",
+      "px390": 20,
+      "px1440": 28,
+      "use": "h3, card and module titles"
+    },
+    {
+      "name": "--t-d2",
+      "value": "clamp(1.5rem, 1.27rem + 0.95vw, 2.25rem)",
+      "px390": 24,
+      "px1440": 36,
+      "use": "article, course and prose h2"
+    },
+    {
+      "name": "--t-d3",
+      "value": "clamp(1.875rem, 1.5rem + 1.55vw, 3rem)",
+      "px390": 30,
+      "px1440": 48,
+      "use": "section h2, cta band, stat numerals"
+    },
+    {
+      "name": "--t-d4",
+      "value": "clamp(2.25rem, 1.72rem + 2.15vw, 3.75rem)",
+      "px390": 36,
+      "px1440": 60,
+      "use": "inner page hero h1"
+    },
+    {
+      "name": "--t-d5",
+      "value": "clamp(2.75rem, 1.97rem + 3.2vw, 5rem)",
+      "px390": 44,
+      "px1440": 80,
+      "use": "home hero h1"
+    }
+  ],
+  "mapping": [
+    {
+      "selector": "body",
+      "declared": "clamp(1rem, 0.95rem + 0.25vw, 1.125rem)",
+      "token": "--t-body",
+      "change": "unchanged"
+    },
+    {
+      "selector": "h1",
+      "declared": "clamp(3rem, 1.5rem + 6vw, 6rem)",
+      "token": "--t-d5",
+      "change": "unchanged"
+    },
+    {
+      "selector": "h2",
+      "declared": "clamp(2rem, 1.25rem + 3vw, 3.25rem)",
+      "token": "--t-d3",
+      "change": "unchanged"
+    },
+    {
+      "selector": "h3",
+      "declared": "clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem)",
+      "token": "--t-d1",
+      "change": "unchanged"
+    },
+    {
+      "selector": "h4",
+      "declared": "1.05rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": "h5",
+      "declared": "0.8125rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".lead",
+      "declared": "clamp(1.125rem, 1rem + 0.9vw, 1.375rem)",
+      "token": "--t-lead",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".nav a",
+      "declared": "0.9rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".nav a",
+      "declared": "1rem",
+      "token": "--t-sm",
+      "change": "lowered"
+    },
+    {
+      "selector": ".sec-head .lead",
+      "declared": "1.05rem",
+      "token": "--t-lead",
+      "change": "raised"
+    },
+    {
+      "selector": ".sec--hero .sub",
+      "declared": "clamp(1.125rem, 1rem + 0.9vw, 1.375rem)",
+      "token": "--t-lead",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".stat .num",
+      "declared": "clamp(2.5rem, 2rem + 2vw, 3.5rem)",
+      "token": "--t-d3",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".stat .label",
+      "declared": "0.8125rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".logo-strip .caption",
+      "declared": "0.78rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".marquee-label",
+      "declared": "0.78rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".btn--sm",
+      "declared": "0.88rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".arrow-link",
+      "declared": "0.95rem",
+      "token": "--t-sm",
+      "change": "lowered"
+    },
+    {
+      "selector": ".cell .cell-idx",
+      "declared": "0.8125rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".cell p",
+      "declared": "0.97rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".blurb p",
+      "declared": "0.97rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".blurb blockquote a",
+      "declared": "0.92rem",
+      "token": "--t-sm",
+      "change": "lowered"
+    },
+    {
+      "selector": ".testimonial::before",
+      "declared": "2.6rem",
+      "token": "--t-d3",
+      "change": "raised"
+    },
+    {
+      "selector": ".testimonial .t-body",
+      "declared": "1rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".testimonial footer strong",
+      "declared": "1rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".testimonial footer span",
+      "declared": "0.82rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".faq summary",
+      "declared": "1.02rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".cta h3",
+      "declared": "clamp(1.5rem, 2.6vw, 2rem)",
+      "token": "--t-d2",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".cta-band h2",
+      "declared": "clamp(2.2rem, 4.5vw, 3.6rem)",
+      "token": "--t-d3",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".step .step-num",
+      "declared": "2.5rem",
+      "token": "--t-d3",
+      "change": "raised"
+    },
+    {
+      "selector": ".step h3",
+      "declared": "1.1rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".step p",
+      "declared": "0.95rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".counter .num",
+      "declared": "clamp(2.5rem, 4vw, 3.5rem)",
+      "token": "--t-d3",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".team-card h3",
+      "declared": "1.05rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".team-card p",
+      "declared": "0.84rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".contact-card .small",
+      "declared": "0.84rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".page-hero h1",
+      "declared": "clamp(2.4rem, 1.4rem + 4vw, 4.25rem)",
+      "token": "--t-d4",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".page-hero .sub",
+      "declared": "clamp(1.05rem, 1rem + 0.5vw, 1.25rem)",
+      "token": "--t-lead",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".page-hero .chip",
+      "declared": "0.8125rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".page-hero .chips span",
+      "declared": "0.85rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-card .price-label",
+      "declared": "0.74rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-card .price",
+      "declared": "2.6rem",
+      "token": "--t-d3",
+      "change": "raised"
+    },
+    {
+      "selector": ".course-card .price small",
+      "declared": "1rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-card .fine",
+      "declared": "0.82rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".course-facts li",
+      "declared": "0.9rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".badge",
+      "declared": "0.82rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".instructor-card .who strong",
+      "declared": "1.02rem",
+      "token": "--t-base",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".instructor-card .who span",
+      "declared": "0.78rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".instructor-card p",
+      "declared": "0.9rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".instructor-card .arrow-link",
+      "declared": "0.88rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-body h2",
+      "declared": "clamp(1.5rem, 2.4vw, 1.9rem)",
+      "token": "--t-d2",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-tag",
+      "declared": "0.74rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".course-tile h3",
+      "declared": "1.1rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".course-tile .tick-list li",
+      "declared": "0.9rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".post-card h3",
+      "declared": "1.1rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".post-card .date",
+      "declared": "0.74rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".post-card p",
+      "declared": "0.93rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".post-card .more",
+      "declared": "0.9rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".post-grid--featured .post-card:first-child h3",
+      "declared": "1.5rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".post-meta",
+      "declared": "0.8rem",
+      "token": "--t-micro",
+      "change": "lowered"
+    },
+    {
+      "selector": ".prose",
+      "declared": "1.06rem",
+      "token": "--t-body",
+      "change": "raised"
+    },
+    {
+      "selector": ".prose h2",
+      "declared": "clamp(1.5rem, 2.4vw, 1.9rem)",
+      "token": "--t-d2",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".chip-link",
+      "declared": "0.85rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".footer h4",
+      "declared": "0.76rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".footer-brand .wordmark",
+      "declared": "1.4rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".footer-bottom",
+      "declared": "0.8rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".media figcaption",
+      "declared": "0.76rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".article-body .prose",
+      "declared": "1.16rem",
+      "token": "--t-body",
+      "change": "lowered"
+    },
+    {
+      "selector": ".article-body .prose > p:first-of-type",
+      "declared": "1.3rem",
+      "token": "--t-lead",
+      "change": "raised"
+    },
+    {
+      "selector": ".article-body .prose h2",
+      "declared": "clamp(1.6rem, 2.6vw, 2.1rem)",
+      "token": "--t-d2",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".article-body .prose h3",
+      "declared": "1.28rem",
+      "token": "--t-d1",
+      "change": "raised"
+    },
+    {
+      "selector": ".article-body .prose blockquote",
+      "declared": "1.2rem",
+      "token": "--t-lead",
+      "change": "raised"
+    },
+    {
+      "selector": ".toc h4",
+      "declared": "0.72rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".author-strip span",
+      "declared": "0.86rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".field > label",
+      "declared": "0.86rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".field .hint",
+      "declared": "0.78rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".form input[type=\"text\"], .form input[type=\"email\"], .form input[type=\"tel\"], .form input[type=\"url\"], .form input[type=\"number\"], .form select, .form textarea",
+      "declared": "0.95rem",
+      "token": "--t-base",
+      "change": "raised"
+    },
+    {
+      "selector": ".form-consent span",
+      "declared": "0.82rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".form-note",
+      "declared": "0.8rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".field-error",
+      "declared": "0.78rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".form-status",
+      "declared": "0.88rem",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".funding p",
+      "declared": "0.82rem",
+      "token": "--t-sm",
+      "change": "raised"
+    },
+    {
+      "selector": ".funding p strong",
+      "declared": "0.72rem",
+      "token": "--t-micro",
+      "change": "unchanged"
+    }
+  ]
+}
