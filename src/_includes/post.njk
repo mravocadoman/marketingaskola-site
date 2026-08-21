@@ -6,7 +6,12 @@ layout: base.njk
 
 <div class="read-progress" data-read-progress aria-hidden="true"></div>
 
-<section class="page-hero">
+<section class="page-hero{% if image %} page-hero--cover{% endif %}">
+  {% if image %}
+  <figure class="hero-bg" aria-hidden="true">
+    <img src="{{ image | webp }}" alt="">
+  </figure>
+  {% endif %}
   <div class="container container--narrow">
     <span class="chip">
       {% if categories.length %}{% for c in categories %}<a href="/category/{{ c }}/">{{ categoriesBySlug[c] or c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% else %}Blogs{% endif %}
@@ -18,12 +23,6 @@ layout: base.njk
       <span>{{ content | readingTime }} min lasīšana</span>
       {% if updated and (updated != (date | isoDate)) %}<span class="dot"></span><span>atjaunots {{ updated | readableDate }}</span>{% endif %}
     </p>
-
-    {% if image %}
-    <figure class="hero-media">
-      <img src="{{ image | webp }}" alt="{{ title }}">
-    </figure>
-    {% endif %}
   </div>
 </section>
 
@@ -36,7 +35,7 @@ layout: base.njk
         </div>
 
         <div class="author-strip">
-          <img src="/img/2024/07/Untitled-design-3.webp" alt="Rihards Zeiļa" loading="lazy">
+          <img src="/img/gen/team-rihards.webp" alt="Rihards Zeiļa" loading="lazy">
           <div>
             <strong>Mārketinga Skola</strong>
             <span>Praktisks digitālais mārketings — Meta un Google reklāmas, video saturs un kursi.</span>

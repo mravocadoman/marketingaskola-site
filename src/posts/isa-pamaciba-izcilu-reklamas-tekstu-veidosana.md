@@ -93,6 +93,8 @@ Piemēram, veidojot Facebook reklāmas, Facebook platforma piedāvā veikt šo t
 
 Vai pirms šī bloga raksta izlasīšanas domāji, ka reklāmas tekstu veidošana sastāv tikai no rakstīšanas, lielas domāšanas un teksta strukturēšanas? Ja jā, tad mums prieks, jo tagad zini, ka tā nebūt nav!
 
-Ja vēlies iegūt lielāku priekšstatu par reklāmu izvietošanu tieši Facebook platformā, tad iesakām izlasīt rakstu par [Facebook reklāmu izstrādi](/facebook-reklamas-izstrade/), kurā tiek aprakstīti soļi uz veiksmīgu reklāmu, kā arī pieteikties [bezmaksas konsultācijai](https://calendly.com/rihards-ze/30min?back=1&month=2024-02) ar mums jau šodien!
+Copywriting formulas — AIDA, PAP un BAB — praksē izejam cauri arī [Meta reklāmas kursā](/meta-reklamas-kurss/), ja tekstu rakstīšanu gribi apgūt kopā ar pasniedzēju.
+
+Ja vēlies iegūt lielāku priekšstatu par reklāmu izvietošanu tieši Facebook platformā, tad iesakām izlasīt rakstu par [Facebook reklāmu izstrādi](/facebook-reklamas-izstrade/), kurā tiek aprakstīti soļi uz veiksmīgu reklāmu. Ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam — [uzraksti mums](/sazinies/).
 
 _Reklāmas tekstu veidošana ir process, kura centrā ir Tavs lasītājs, nevis Tavs produkts._ Šo procesu veido detalizēta izpēte, plānošana, rakstīšana un visbeidzot testēšana! Apzinoties, cik laikietilpīgs ir šis process, iespējams, ir nepieciešams sākt savu reklāmas tekstu izveidi jau tagad!

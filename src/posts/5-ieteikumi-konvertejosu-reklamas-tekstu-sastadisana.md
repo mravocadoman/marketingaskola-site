@@ -7,7 +7,7 @@ date: 2021-10-17
 updated: 2025-04-29
 image: "/img/gen/cover-5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana.webp"
 legacyImage: "/img/2021/10/11.jpg"
-categories: []
+categories: ["socialo-tiklu-reklama"]
 permalink: "/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/"
 ---
 
@@ -49,4 +49,4 @@ Mūsdienās valda populārs stereotips, ka reklāmas tekstus spēj rakstīt tika
 
 Ko no šī bloga raksta var secināt? Reklāmas tekstu sastādīšana ir īsta māksla. Tā ir māksla uzrakstīt tekstu, kas ir vienkāršs un kodolīgs. Tā ir māksla lasītājā aizķert kādu emocionālo stīgu un iedvesmot rīkoties. Visbeidzot tā ir māksla caur nelielu tekstu jau sadraudzēties ar savu potenciālo klientu, lai viņš justos tā, ka šis reklāmas teksts ir kā personisks piedāvājums piepildīt tieši viņa sapņus. Jā, reklāmas tekstu sastādīšana ir izaicinošs process, taču, ja veltīsi tam lielu daļu sava laika, Tev noteikti izdosies!
 
-Ja vēlies uzzināt vairāk par reklāmas tekstu sastādīšanu, mēs Mārketinga skola tev iesakām izlasīt rakstu par [Izcilu reklāmas tekstu veidošanu](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/), kā arī iesakām pieteikties jau šodien [bezmaksas konsultācijai](https://calendly.com/rihards-ze/30min?back=1&month=2024-02) ar Rihardu!
+Ja vēlies uzzināt vairāk par reklāmas tekstu sastādīšanu, mēs Mārketinga skola tev iesakām izlasīt rakstu par [Izcilu reklāmas tekstu veidošanu](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/). Ja vēlies skatu no malas saviem tekstiem, [mārketinga konsultācija](/marketinga-konsultacijas/) ar Rihardu maksā 60 € par 30 min vai 100 € par stundu.

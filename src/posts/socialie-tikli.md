@@ -82,4 +82,4 @@ Lai tas nenotiktu ar Tevi, rosinām veltīt laiku zināšanu paplašināšanai, 
 
 [Sociālie tīkli ir mārketinga atslēga](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/), kas uzņēmumiem, kuri spēj sociālos tīklus profesionāli izmantot savā labā, palielina peļņu, klientu skaitu un atpazīstamību. Esi viens no viņiem!
 
-Mēs Mārketinga skola iesakām Tev apsvērt iespēju pieteikties mūsu [Facebook un Instagram reklāmas kursam](/digitala-marketinga-kursi/), jo pēc tā apguves garantējam, ka Tavas reklāmas nesīs peļņu. Pamēģini!
+Mēs Mārketinga skola iesakām Tev apsvērt iespēju pieteikties mūsu [Facebook un Instagram reklāmas kursam](/digitala-marketinga-kursi/), kur soli pa solim apgūsi kampaņu uzstādīšanu, mērķauditorijas atlasi un rezultātu analīzi.

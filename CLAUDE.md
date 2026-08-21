@@ -199,8 +199,18 @@ during the rebuild, revisit with the owner if wrong:
 
 ## Copy rules
 
-- **Consultations are PAID** (€100/h, €60/30 min — see
-  `/marketinga-konsultacijas/`). Never write "bezmaksas konsultācija".
+- **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
+  blanket ban on the word "bezmaksas"):
+  * A **free 20-minute introductory call** ("bezmaksas 20 min iepazīšanās
+    zvans") is offered ONLY to prospects who want to work with the agency —
+    i.e. people interested in services. Its CTA goes to `/sazinies/`.
+  * **Advisory consultations remain PAID**: €100/h, €60/30 min — see
+    `/marketinga-konsultacijas/`. Never advertise free advice/strategy
+    sessions, and never call a paid consultation "bezmaksas".
+  * Course signup pages may keep "Piesakies bez maksas" — that means the
+    *application* is free, not the course.
+- **Rihards has worked with 100+ companies** — use 100+ consistently
+  (one course page said 50+; that was wrong).
 - Stats used on the homepage (10+ gadi, 100+ uzņēmumi, 1M+ € budžeti) come
   from Rihards' own bio on `/sazinies/` — don't inflate them.
 - No invented claims, ratings, or star reviews; testimonials are verbatim

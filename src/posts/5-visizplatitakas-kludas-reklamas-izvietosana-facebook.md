@@ -7,7 +7,7 @@ date: 2021-11-13
 updated: 2025-04-29
 image: "/img/gen/cover-5-visizplatitakas-kludas-reklamas-izvietosana-facebook.webp"
 legacyImage: "/img/2021/11/10.jpg"
-categories: []
+categories: ["socialo-tiklu-reklama"]
 permalink: "/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/"
 ---
 
@@ -51,4 +51,6 @@ Diemžēl viena no sastopamākajām kļūdām ir cilvēku bailes no dažādu bil
 
 Cerams, šie ieteikumi patiešām Tev bija vērtīgi! Lai izdodas izveidot lielisku Facebook reklāmu, kurā ne tikai sasniedz savu vēlamo mērķauditoriju, bet diezgan īsā laika periodā pārvērt šo auditoriju par Taviem uzticamajiem klientiem!
 
-Reklāmas aģentūra Mārketinga Skola piedāvā [bezmaksas konsultāciju](https://calendly.com/rihards-ze/30min?back=1&month=2024-02), ja tomēr nepieciešama papildus palīdzība [Facebook reklāmas](/facebook-reklamas-izstrade/) izvietošanā, stratēģijas izveidē un pārdošanas apjoma palielināšanā!
+Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts mūsu [Meta reklāmas kurss](/meta-reklamas-kurss/).
+
+Ja tomēr nepieciešama papildus palīdzība [Facebook reklāmas](/facebook-reklamas-izstrade/) izvietošanā, stratēģijas izveidē un pārdošanas apjoma palielināšanā, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu — [piesakies šeit](/sazinies/).

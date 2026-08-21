@@ -7,7 +7,7 @@ date: 2025-11-29
 updated: 2026-01-13
 image: "/img/gen/cover-marketinga-agentura-uzlabo-pardosanu.webp"
 legacyImage: "/img/2025/11/Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu.png"
-categories: ["digitalais-marketings","marketinga-strategija"]
+categories: ["marketinga-strategija"]
 permalink: "/marketinga-agentura-uzlabo-pardosanu/"
 ---
 
@@ -107,6 +107,8 @@ Labi izveidota mārketinga sistēma var mainīt uzņēmuma izaugsmi pāris mēne
 
 Ja Tev vajag plašāku pārskatu par digitālajiem rīkiem, [šeit mūsu rakstā](/7-digitala-marketinga-riki/) būs vēl vairāk informācijas.
 
+Kā tas izskatās praksē, vislabāk redzams reālos darbos — mūsu [portfolio](/portfolio/) atradīsi klientu stāstus ar izmantoto stratēģiju, kampaņu veidiem un sasniegtajiem rezultātiem.
+
 Mārketinga aģentūra var kļūt par vienu no vērtīgākajiem Tava biznesa partneriem. Tā palīdz sakārtot haosu, izveidot stratēģiju, piesaistīt vairāk klientu un celt pārdošanas rezultātus — visu to, kas ikdienas darbu steigā bieži paliek novārtā.
 
-Ja jūti, ka Tavs mārketings varētu strādāt labāk, bet nezini, ar ko sākt, atceries: Tev nav jābūt ekspertam visās jomās. Tieši tāpēc eksistē mārketinga aģentūras. [Piesakies konsultācija](tps://marketingaskola.lv/sazinies/)[i](< https://marketingaskola.lv/sazinies/>) un mēs Tev palīdzēsim.
+Ja jūti, ka Tavs mārketings varētu strādāt labāk, bet nezini, ar ko sākt, atceries: Tev nav jābūt ekspertam visās jomās. Tieši tāpēc eksistē mārketinga aģentūras. [Piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) un mēs Tev palīdzēsim.

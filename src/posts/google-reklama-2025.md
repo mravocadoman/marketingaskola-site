@@ -67,4 +67,4 @@ Ja pavisam godīgi – mēs domājam, ka Google reklāmu noteikti ir vērts izma
   
 Mārketinga skolas Google reklāmas guru Kristaps Apeināns ir nopelnījis vairāk nekā **10 miljonus eiro** saviem klientiem, ieguldot tieši Google reklāmās! [Šeit](/portfolio/) vari aplūkot arī citus mūsu veiksmes stāstus.
 
-Lai arī Google Ads prasa sava veida investīciju un uzmanību, tā joprojām ir ļoti efektīva reklāmas platforma, kas spēj nodrošināt augstu atdevi jūsu mārketinga ieguldījumiem. Sāciet savu reklāmas kampaņu ar Google Ads jau šodien un sasniedziet jaunus augstumus savā uzņēmējdarbībā! Piesaki savu [konsultāciju](https://calendly.com/rihards-ze/30min?back=1&month=2024-02) ar mums jau šodien!
+Lai arī Google Ads prasa sava veida investīciju un uzmanību, tā joprojām ir ļoti efektīva reklāmas platforma, kas spēj nodrošināt augstu atdevi jūsu mārketinga ieguldījumiem. Sāciet savu reklāmas kampaņu ar Google Ads jau šodien un sasniedziet jaunus augstumus savā uzņēmējdarbībā! Ja domājat par sadarbību, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu — [rakstiet mums](/sazinies/).

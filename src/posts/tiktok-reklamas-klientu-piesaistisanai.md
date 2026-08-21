@@ -135,3 +135,5 @@ Un tas viss ved uz vienu: autentiskums uzvar pār perfekciju. Īsti lietotāji, 
 TikTok nav vieta tikai izklaidei. Tā ir milzīga iespēja uzņēmējiem un zīmoliem, kas gatavi pielāgoties. Autentiskums, stratēģija un dinamika ir tie elementi, kas pārvērš skatītājus par klientiem. 
 
 Tagad Tu zini, kā veidot TikTok video, kas patiešām pārdod un piesaista klientus.
+
+Ja šos soļus gribi apgūt strukturēti un ar pasniedzēja atbalstu, tam ir domāti mūsu [TikTok reklāmas kursi](/tiktok-kursi/).

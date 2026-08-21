@@ -49,7 +49,7 @@ Vai esi gatavs sākt? Šeit ir vienkāršs ceļvedis, kā izveidot profesionālu
 
 ![](/img/2025/10/image-1-1024x477.webp)
 
-Šis process aizņem vien dažas minūtes, tāpēc **Canva** ir ideāls risinājums aizņemtiem uzņēmējiem. Ja Tev vajag sarežģītākus video reklāmas risinājumus, mūsu aģentūra var palīdzēt – [piesakies konsultācijai](/sazinies/)!
+Šis process aizņem vien dažas minūtes, tāpēc **Canva** ir ideāls risinājums aizņemtiem uzņēmējiem. Ja Tev vajag sarežģītākus video reklāmas risinājumus, mūsu aģentūra var palīdzēt – [uzraksti mums](/sazinies/) un sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu!
 
 <h2 id="salidzinajums-riki">Kā Canva salīdzinās ar citiem dizaina rīkiem?</h2>
 
@@ -69,10 +69,12 @@ Vizuālais saturs ir atslēga, lai piesaistītu klientus, un **Canva** piedāv
 -   **Ātrums un vienkāršība**: Izveido reklāmas dažu minūšu laikā, pat bez pieredzes.
 -   **Pielāgojamība**: Pielāgo dizainus dažādām platformām, lai sasniegtu savu auditoriju.
 
-Lai reklāmas būtu vēl efektīvākas, apvieno dizainu ar pārdomātu stratēģiju. Uzzini, kā to izdarīt, mūsu rakstā [Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?](/reklamas-veidi/). Ja vēlies profesionālu atbalstu, [piesakies bezmaksas konsultācijai](/sazinies/) ar mūsu komandu!
+Ja dizains ir gatavs, bet trūkst laika regulāri publicēt, satura plānošanu un ikmēneša pārvaldību varam uzņemties mēs — par to vairāk sadaļā [sociālo mediju mārketings](/socialo-mediju-marketings/).
+
+Lai reklāmas būtu vēl efektīvākas, apvieno dizainu ar pārdomātu stratēģiju. Uzzini, kā to izdarīt, mūsu rakstā [Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?](/reklamas-veidi/). Ja vēlies profesionālu atbalstu, [piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) ar mūsu komandu!
 
 <h2 id="sakums-dizains">Sāc savu dizaina ceļu jau šodien!</h2>
 
 Ar **Canva** Tu vari ātri un viegli izveidot profesionālas reklāmas, kas piesaista klientus un paceļ Tavu biznesu jaunā līmenī. Pateicoties AI un plašajam _dizaina rīku_ klāstam, Tev nav jābūt dizainerim, lai radītu saturu, kas izskatās profesionāli. Sāc jau tagad – [izmēģini to bez maksas](https://www.canva.com/)!
 
-Vai vēlies, lai Tava mārketinga kampaņa būtu vēl efektīvāka? Mūsu aģentūra piedāvā video reklāmu izveidi un stratēģijas izstrādi, kas pielāgotas Taviem mērķiem. [Piesakies 30 minūšu bezmaksas konsultācijai](https://calendly.com/rihards-ze/30min?back=1) ar Rihardu vai mūsu komandu un uzzini, kā mēs varam palīdzēt Tavam biznesam augt!
+Vai vēlies, lai Tava mārketinga kampaņa būtu vēl efektīvāka? Mūsu aģentūra piedāvā video reklāmu izveidi un stratēģijas izstrādi, kas pielāgotas Taviem mērķiem. [Piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) ar Rihardu vai mūsu komandu un uzzini, kā mēs varam palīdzēt Tavam biznesam augt!

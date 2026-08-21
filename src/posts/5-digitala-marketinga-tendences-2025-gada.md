@@ -94,8 +94,10 @@ Arī influenceru mārketings sociālajos tīklos turpina augt, un tā trumpis ir
 
 Ceram, ka šajā rakstā uzzināji vērtīgu informāciju par to, kā attīstās digitālā mārketinga tendences un esi gatavs tās integrēt savā mārketinga stratēģijā.
 
+Ja šīs tendences vēlies pārvērst konkrētās prasmēs, tieši tām soli pa solim ejam cauri mūsu [digitālā mārketinga kursos](/digitala-marketinga-kursi/).
+
 Ja vēlies uzzināt kodolīgāku informāciju par konkrētām platformām, noteikti iesakām iepazīties ar [2025.gada tendencēm _Google_ reklāmas pasaulē](/google-reklama-2025/)!
 
-Digitālās reklāmas aģentūra Mārketinga Skola piedāvā palīdzību sociālo tīklu pārvaldē un reklāmās, tāpēc nekautrējies pierakstīties uz [bezmaksas konsultāciju](https://calendly.com/rihards-ze/30min?back=1&month=2024-02)!
+Digitālās reklāmas aģentūra Mārketinga Skola piedāvā palīdzību sociālo tīklu pārvaldē un reklāmās, tāpēc nekautrējies pierakstīties uz bezmaksas 20 minūšu iepazīšanās zvanu — [sazinies ar mums](/sazinies/).
 
 _Lai izdodas!_

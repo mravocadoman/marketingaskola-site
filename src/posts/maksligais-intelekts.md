@@ -83,4 +83,4 @@ Mūsdienu pasaulē ir jārēķinās ar to, ka mākslīgais intelekts nekur nepaz
 
 Apvienojiet spēkus ar mākslīgo intelektu un sasniedziet savus mērķus vēl ātrāk un efektīvāk! Mēs, Mārketinga Skola, iesakām iepazīties ar [7 mākslīgā intelekta rīkiem](/maksliga-intelekta-riki/), ko vari izmēģināt jau šodien, lai gūtu ieskatu, kā šie mākslīgā intelekta rīki var Tev palīdzēt ikdienā. Sāciet jau šodien un atklājiet digitālās revolūcijas priekšrocības savā uzņēmumā!
 
-Ja vēlies integrēt mākslīgā intelekta rīkus savā uzņēmumā, bet nezini ar ko sākt, tad Mārketinga skola iesaka pieteikties **bezmaksas** konsultācijai ar Rihardu [šeit](https://calendly.com/rihards-ze/30min?back=1&month=2024-02), kurā varēsi iegūt personalizētus ieteikumus Tava uzņēmuma attīstībai.
+Ja vēlies integrēt mākslīgā intelekta rīkus savā uzņēmumā, bet nezini ar ko sākt, tad Mārketinga skola iesaka pieteikties mārketinga konsultācijai ar Rihardu [šeit](/marketinga-konsultacijas/) — 60 € par 30 min vai 100 € par stundu, un tajā iegūsi personalizētus ieteikumus Tava uzņēmuma attīstībai.

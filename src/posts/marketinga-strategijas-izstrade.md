@@ -7,7 +7,7 @@ date: 2021-12-09
 updated: 2024-10-21
 image: "/img/gen/cover-marketinga-strategijas-izstrade.webp"
 legacyImage: "/img/2021/12/9.jpg"
-categories: []
+categories: ["marketinga-strategija"]
 permalink: "/marketinga-strategijas-izstrade/"
 ---
 
@@ -52,4 +52,4 @@ Veiksmīgs mārketings ir prasme atstāt paliekošu iespaidu uz klientu. Mūsdie
 
 Ko no šī bloga raksta var secināt? Mārketinga stratēģijas izveide ir, nu, ļoti laikietilpīgs process. Tāpat kā _Romu neuzbūvēja vienā dienā_, arī veiksmīgu mārketinga stratēģiju nevar izveidot vienā dienā. Bet veiksmīga mārketinga stratēģija ir pamats panākumiem jebkurā [sociālo tīklu](/socialie-tikli/) platformā.
 
-Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties **bezmaksas** konsultācijai ar Rihardu [šeit](https://calendly.com/rihards-ze/30min?back=1&month=2024-02)!
+Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — tā maksā 60 € par 30 min vai 100 € par stundu.

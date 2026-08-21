@@ -7,7 +7,7 @@ date: 2024-02-15
 updated: 2025-03-06
 image: "/img/gen/cover-digitalais-marketings.webp"
 legacyImage: "/img/2024/02/12.png"
-categories: []
+categories: ["digitalais-marketings"]
 permalink: "/digitalais-marketings/"
 ---
 
@@ -83,6 +83,6 @@ Vai jūsu uzņēmums ir gatavs sasniegt jaunus peļņas līmeņus un izcelties k
 
 Mūsu vadītājs Rihards ir eksperts šajā jomā un ir palīdzējis daudziem uzņēmumiem atrast ceļu uz lielu peļņu un sasniegumiem. Viņš ir izveidojis efektīvas digitālā mārketinga kampaņas, kas pievērš uzmanību un piesaista jūsu mērķauditoriju.
 
-Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies **bezmaksas** konsultācijai ar Rihardu [šeit](https://calendly.com/rihards-ze/30min?back=1&month=2024-02)! Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
+Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — 100 € par stundu vai 60 € par 30 minūtēm. Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
 
 _P.S. Lai izdodas sasniegt augstākās uzņēmējdarbības virsotnes!_

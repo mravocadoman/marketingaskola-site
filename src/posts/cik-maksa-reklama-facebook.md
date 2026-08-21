@@ -106,4 +106,6 @@ Atceries arī, ka, lai sasniegtu vislabākos rezultātus, ir svarīgi regulāri 
 -   Influenceru sadarbībām
 -   SEO un satura mārketingu
 
+Ja budžeta plānošanu, kampaņas mērķu izvēli un auditoriju atlasi gribi apgūt soli pa solim, tieši tas ir [Meta reklāmas kursa](/meta-reklamas-kurss/) saturs.
+
 Ja vēlies uzzināt vairāk par to, kā Facebook reklāmas var palīdzēt tava uzņēmuma izaugsmei, nebaidies eksperimentēt ar dažādām pieejām un testēt jaunus reklāmu formātus. Ar pareizu stratēģiju un rūpīgu uzraudzību Facebook reklāmas var kļūt par vērtīgu ieguldījumu tavu biznesa mērķu sasniegšanā.

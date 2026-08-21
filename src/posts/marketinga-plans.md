@@ -7,7 +7,7 @@ date: 2025-04-09
 updated: 2025-12-18
 image: "/img/gen/cover-marketinga-plans.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-3.png"
-categories: ["digitalais-marketings","marketinga-strategija"]
+categories: ["marketinga-strategija"]
 permalink: "/marketinga-plans/"
 ---
 
@@ -147,6 +147,8 @@ Ekonomiskās svārstības, globālās pandēmijas vai pēkšņas nozares pārmai
 -   **Izmantot datus un analīzi lēmumu pieņemšanā-** Sekojot līdzi klientu uzvedībai un pārdošanas tendencēm, vari ātri pielāgot stratēģiju, koncentrējoties uz to, kas strādā vislabāk. Google Analytics, Facebook Pixel un citi analīzes rīki var būt ļoti noderīgi.
 
 Mārketinga plāns nav tikai formāls dokuments – tas ir uzņēmuma kompass, kas palīdz virzīties uz izaugsmi un ilgtspēju. Efektīvi izstrādāta stratēģija ļauj precīzi sasniegt mērķauditoriju, gudri pārvaldīt budžetu un ātri pielāgoties pārmaiņām tirgū.
+
+Ja plāna sastādīšanā vēlies otru skatu no malas, to var izdarīt arī vienā [mārketinga konsultācijā](/marketinga-konsultacijas/) — kopā izejam cauri prioritātēm, kanālu izvēlei un nākamajiem soļiem.
 
 Atceries – veiksmīgākais bizness ir tas, kurš nepārtraukti attīstās. Tāpēc regulāri pārskati un pielāgo savu mārketinga plānu, lai tas vienmēr būtu soli priekšā konkurentiem.
 

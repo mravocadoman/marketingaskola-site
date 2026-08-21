@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title or site.tagline }}</title>
+  <title>{{ seoTitle or title or site.tagline }}</title>
   {% if env.preview %}<meta name="robots" content="noindex">{% endif %}
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  <meta property="og:title" content="{{ title or site.tagline }}">
+  <meta property="og:title" content="{{ seoTitle or title or site.tagline }}">
   {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
   <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">

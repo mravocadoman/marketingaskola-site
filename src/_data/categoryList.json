@@ -3,14 +3,13 @@
     "slug": "digitalais-marketings",
     "name": "Digitālais mārketings",
     "posts": [
+      "digitalais-marketings",
       "kas-ir-seo",
-      "satura-marketings",
-      "marketinga-agentura-uzlabo-pardosanu",
-      "digitala-marketinga-agentura-izaugsmei",
       "seo-optimizacija-tavam-biznesam",
+      "satura-marketings",
+      "epasta_marketings",
       "instagram-reels-marketingam",
       "meta-reklamas",
-      "marketinga-plans",
       "reklamas-veidi"
     ]
   },
@@ -32,9 +31,10 @@
   },
   {
     "slug": "maksligais-intelekets",
-    "name": "Mākslīgais intelekets",
+    "name": "Mākslīgais intelekts",
     "posts": [
       "maksligais-intelekts",
+      "maksligais-intelekts-marketinga",
       "maksliga-intelekta-riki"
     ]
   },
@@ -42,15 +42,13 @@
     "slug": "marketinga-strategija",
     "name": "Mārketinga stratēģija",
     "posts": [
-      "satura-marketings",
-      "marketinga-agentura-uzlabo-pardosanu",
-      "digitala-marketinga-agentura-izaugsmei",
-      "seo-optimizacija-tavam-biznesam",
+      "marketinga-strategijas-izstrade",
       "marketinga-plans",
-      "reklamas-veidi",
       "5-digitala-marketinga-tendences-2025-gada",
+      "7-digitala-marketinga-riki",
       "reklamas-agenturas",
-      "7-digitala-marketinga-riki"
+      "marketinga-agentura-uzlabo-pardosanu",
+      "digitala-marketinga-agentura-izaugsmei"
     ]
   },
   {
@@ -62,6 +60,8 @@
       "cik-maksa-reklama-facebook",
       "socialie-tikli",
       "isa-pamaciba-izcilu-reklamas-tekstu-veidosana",
+      "5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
+      "5-visizplatitakas-kludas-reklamas-izvietosana-facebook",
       "marketinga-macibas",
       "vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
       "instagram-reklama",
