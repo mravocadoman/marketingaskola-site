@@ -16,34 +16,87 @@
     "address": "Liepu iela 28, Rēzekne, Latvija"
   },
   "nav": [
-    { "label": "Sākums", "url": "/" },
+    {
+      "label": "Sākums",
+      "url": "/"
+    },
     {
       "label": "Pakalpojumi",
       "url": "/pakalpojumi/",
       "children": [
-        { "label": "Mārketinga konsultācijas", "url": "/marketinga-konsultacijas/" },
-        { "label": "Facebook reklāma", "url": "/facebook-reklama/" },
-        { "label": "Video reklāma", "url": "/video-reklama/" }
+        {
+          "label": "Meta un Instagram reklāma",
+          "url": "/facebook-reklama/"
+        },
+        {
+          "label": "Sociālo mediju mārketings",
+          "url": "/socialo-mediju-marketings/"
+        },
+        {
+          "label": "Video reklāma",
+          "url": "/video-reklama/"
+        },
+        {
+          "label": "AI un automatizācijas",
+          "url": "/ai-un-automatizacijas/"
+        },
+        {
+          "label": "Mārketinga konsultācijas",
+          "url": "/marketinga-konsultacijas/"
+        }
       ]
     },
-    { "label": "Portfolio", "url": "/portfolio/" },
     {
-      "label": "Produkti",
-      "url": "/produkti/",
-      "children": [
-        { "label": "Facebook Reklāmas Kurss (Video)", "url": "/facebook-kursi/" },
-        { "label": "Sociālo Mediju Rokasgrāmata", "url": "/bezmaksas-e-gramata/" }
-      ]
+      "label": "Portfolio",
+      "url": "/portfolio/"
     },
-    { "label": "Blogs", "url": "/blogs/" },
     {
       "label": "Kursi",
       "url": "/digitala-marketinga-kursi/",
       "children": [
-        { "label": "Meta Reklāmas Kursi", "url": "/meta-reklamas-kurss/" },
-        { "label": "SEO Kursi", "url": "/seo-kursi/" }
+        {
+          "label": "Visi kursi",
+          "url": "/digitala-marketinga-kursi/"
+        },
+        {
+          "label": "Meta reklāmas kurss",
+          "url": "/meta-reklamas-kurss/"
+        },
+        {
+          "label": "SEO kurss",
+          "url": "/seo-kursi/"
+        },
+        {
+          "label": "TikTok kurss",
+          "url": "/tiktok-kursi/"
+        },
+        {
+          "label": "Facebook reklāmas kurss (video)",
+          "url": "/facebook-kursi/"
+        }
       ]
     },
-    { "label": "Sazinies!", "url": "/sazinies/", "cta": true }
+    {
+      "label": "Produkti",
+      "url": "/produkti/",
+      "children": [
+        {
+          "label": "Bezmaksas e-grāmata",
+          "url": "/bezmaksas-e-gramata/"
+        },
+        {
+          "label": "100 Instagram veidnes",
+          "url": "/100-instagram-stories-veidnes/"
+        }
+      ]
+    },
+    {
+      "label": "Blogs",
+      "url": "/blogs/"
+    },
+    {
+      "label": "Sazinies",
+      "url": "/sazinies/"
+    }
   ]
 }

@@ -39,6 +39,12 @@ for (const f of files) {
     findings.push({ file: f, kind: 'fused-words', detail: `"${w}" — looks like a lost line break` });
   }
 
+  // 2b. Cyrillic or Greek letters hiding inside Latvian words. They look
+  //     identical to their Latin twins, pass every spellcheck, and break search.
+  for (const m of body.matchAll(/[A-Za-zÀ-ſ]*[Ѐ-ӿͰ-Ͽ][A-Za-zÀ-ſ]*/g)) {
+    findings.push({ file: f, kind: 'non-latin-letter', detail: `"${m[0]}" contains a non-Latin lookalike character` });
+  }
+
   // 3. FAQ answers that name a topic the article is not about.
   const topicWords = title.toLowerCase().match(/[a-zāčēģīķļņšūž]{5,}/g) || [];
   for (const m of intro.matchAll(/\*\*Kas ir ([^*?]{3,40})\?\*\*/g)) {

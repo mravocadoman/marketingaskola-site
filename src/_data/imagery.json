@@ -422,6 +422,30 @@
       "alt": "Kvadrātu režģis ar diagonāli izceltiem zilajiem kvadrātiem.",
       "prompt": "Flat vector cadence matrix on solid #00152c navy: a wide grid of small squares drawn in 1px cool-grey #8ba3bd hairlines, most left empty, crossed by one clean diagonal run of solid cyan #03c3f8 squares, with two isolated white squares sitting off the diagonal. The grid stops well short of the frame, leaving a broad navy margin at top and left. Precise, engineered, faint film grain. No gradients, no glow, no shadow, no text, numbers, dates, weekday labels or logos.",
       "rationale": "That section is a lone five-item bullet list with no visual weight, and a rhythm matrix reads as the regular monthly publishing the service actually sells."
+    },
+    {
+      "id": "ai-flow-band",
+      "page": "ai-un-automatizacijas",
+      "placement": "Right column of the .row.cols-2 in section 01 (Situācija), beside the tick-list of repetitive tasks.",
+      "aspect": "landscape",
+      "alt": "Plānas līnijas, kas savieno četrus taisnstūrus vienā nepārtrauktā plūsmā.",
+      "prompt": "Flat vector editorial diagram on a solid near-black navy #020d1c background: four plain rectangular outline blocks of equal size arranged left to right at slightly different heights, joined by one continuous thin connecting line that threads through all four and continues off the right edge. Three blocks are outlined in cool grey #8ba3bd; exactly one block is filled solid cyan #03c3f8. Two small cyan dots sit on the connecting line between blocks, suggesting items in transit. Generous negative space above and below, strictly geometric, subtle film grain."
+    },
+    {
+      "id": "cover-marketinga-automatizacija-ar-ko-sakt",
+      "page": "marketinga-automatizacija-ar-ko-sakt",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Plāna līnija, kas iet caur trim taisnstūriem un pārtop vienā nepārtrauktā ceļā.",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A single continuous thin cool-grey #8ba3bd line enters from the left, loops back on itself three times in tight repeated coils in the left half, then straightens out into one clean horizontal line across the right half and exits the frame. One small cyan #03c3f8 square sits exactly at the point where the coiling stops and the straight line begins. Wide empty margins, strictly geometric, subtle film grain."
+    },
+    {
+      "id": "cover-ai-saturs-bez-zimola-balss-zaudesanas",
+      "page": "ai-saturs-bez-zimola-balss-zaudesanas",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Vairāki vienādi pelēki taisnstūri un viens atšķirīgs ciāns taisnstūris.",
+      "prompt": "Flat vector editorial composition on solid near-black navy #020d1c. Nine identical cool-grey #8ba3bd rectangles of the same size arranged in a loose three-by-three grid, all perfectly aligned and evenly spaced. One single rectangle, off-centre, is filled solid cyan #03c3f8 and is rotated a few degrees out of alignment with the rest. Generous negative space around the whole grid, strictly geometric, subtle film grain."
     }
   ]
 }

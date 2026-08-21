@@ -317,6 +317,105 @@ give each study one left edge with the outcome marked by a thin rule.
   will 404 at the DNS cutover. ~44 MB, so they need transcoding before they can
   live in the repo.
 
+## Type scale (21 Aug 2026)
+
+`npm run type:audit` resolves every font-size in the stylesheet at 390 / 768 /
+1440px and reports how many distinct sizes exist. It found **82 declarations on
+40 distinct desktop sizes, 27 pairs within 1px of each other below 30px** —
+drift, not a scale. Every new component had been inventing its own size.
+
+Ten steps, desktop: **12 / 14 / 16 / 18 / 22 / 28 / 36 / 48 / 60 / 80.**
+Arithmetic at the small end (perceived difference at small sizes tracks absolute
+pixels, not ratio); a widening climb above the reading step, because display
+type appears once or twice per viewport and needs unmistakable separation.
+
+**The display peak is measure-derived, not ratio-derived.** Latvian compounds
+are long and these headings are already capped at 17–18ch, so the hero came down
+96 → 80. Do not raise it back without checking a real headline at 1440px.
+
+- `tools/type-scale.json` is the source of truth: the ten tokens plus a mapping
+  from every selector onto one of them.
+- `npm run type:build` regenerates that mapping by role rules and **fails if any
+  declaration is unmapped** — a silently-unmapped selector keeps its old size.
+- `npm run type:apply` writes the tokens into `:root` and rewrites every
+  `font-size` to `var(--t-…)`. It also refuses to write with anything unmapped.
+- Re-run `npm run type:audit` afterwards. Expect 10 distinct sizes, 0
+  indistinguishable pairs. That is the check.
+- **Every uppercase tracked micro-label uses `--t-micro` (12px) and nothing
+  else.** That one rule removed six near-duplicate sizes.
+
+## Article typography and content defects
+
+Blog posts came out of WordPress with raw `<h2 id="1">` HTML, and markdown-it
+does not parse inline markdown inside a raw HTML block — so `**1.** **Heading**`
+reached the reader as literal asterisks. `npm run articles:normalize` converts
+those to real markdown headings (177 across 31 posts), which fixes the bold and
+gives each section a slug anchor instead of `#1`. `withAnchors` slugifies and
+`toc` follows, so the table of contents stays correct.
+
+A second cause of literal asterisks: `**Instagram:**Attēlu` cannot close its
+emphasis under CommonMark, because the closing run sits between punctuation and
+a letter. The normaliser inserts the missing space.
+
+Two scanners, both worth running after any content import:
+- `npm run articles:defects` — scans **built** `_site` HTML (not `src`, because
+  the failure only appears after the build) for literal markdown, inline
+  font-size/colour and leftover WordPress classes. Target: 0.
+- `node tools/content-defects.mjs` — scans post source for misplaced FAQ blocks,
+  fused words from lost line breaks, duplicated paragraphs, and **non-Latin
+  lookalike letters** (a Cyrillic `с` inside a Latvian word passes every
+  spellcheck and breaks search; one was caught this way).
+
+**The AI article carried a FAQ about `mārketinga plāns`** that belongs to a
+different post, and the splice had swallowed the first word of its own opening
+sentence. The same corruption is present in `archive/wordpress-mirror.zip`, so
+it is upstream content, not a migration regression. The FAQ moved to
+`marketinga-plans.md`, which had none.
+
+## Information architecture (21 Aug 2026)
+
+`npm run content:inventory` dumps every page's title, description, headings and
+CTAs plus the post list and category counts — use it before any IA decision
+rather than working from memory.
+
+Nav was rebuilt because two real service pages were reachable only from the
+footer. Current top level: Sākums · Pakalpojumi · Portfolio · Kursi · Produkti ·
+Blogs · Sazinies.
+- **Pakalpojumi** now lists all five services including
+  `/socialo-mediju-marketings/`, which was a 1000-word page missing from the nav.
+- **Kursi** now includes `/tiktok-kursi/`, previously footer-only.
+- **Produkti** now includes `/100-instagram-stories-veidnes/`, which had one
+  inbound link in the whole site.
+- The homepage services grid holds services only; the courses cell was
+  redundant because the page already has a dedicated courses section below it.
+
+**`/facebook-kurss-landing/` is deliberately not in the nav.** It has zero
+inbound links and duplicates `/facebook-kursi/`, which looks like an orphan but
+is the normal shape of a paid-campaign landing page. It was NOT deleted, because
+an ad campaign may point at it. It only lacked a meta description, now added.
+
+## AI and automations service (21 Aug 2026)
+
+`/ai-un-automatizacijas/` is a fifth service page following the same structure
+as the other service pages. Scope: pieteikumu plūsmas and CRM, e-pastu
+automatizācijas, segmentācija, atskaites, AI satura sagatavošana, komandas
+apmācība. Entry point is an audit, and pricing follows the existing
+"cena pēc darba apjoma" pattern rather than an invented number.
+
+Two posts support it, both categorised `maksligais-intelekets`:
+`/marketinga-automatizacija-ar-ko-sakt/` and
+`/ai-saturs-bez-zimola-balss-zaudesanas/`. They deliberately sit one level more
+practical than the three existing AI posts, which are all "what is AI".
+
+**Owner sign-off still needed** on the service page: it describes an offering
+in general terms and makes no claims about results, clients or tools in use.
+Confirm the scope is what the agency actually delivers, and add real pricing or
+delivery times if they should be public.
+
+**`acquisition.md` was not found anywhere on the machine.** The owner intends
+Latvian versions of its content to live here eventually; nothing from it has
+been used, because it could not be read.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,
