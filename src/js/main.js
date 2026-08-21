@@ -41,7 +41,7 @@
   /* ---------- scroll reveal ---------- */
   if (!reduce && 'IntersectionObserver' in window) {
     var targets = document.querySelectorAll(
-      '.cell, .post-card, .testimonial, .step, .stat, .cta, .counter, .course-tile, .media, .blurb, .team-card'
+      '.cell, .post-card, .testimonial, .step, .stat, .cta, .counter, .course-tile, .media, .blurb, .team-card, .sec-head'
     );
     targets.forEach(function (el) { el.classList.add('reveal'); });
     var io = new IntersectionObserver(function (entries) {

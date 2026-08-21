@@ -18,17 +18,17 @@ layout: base.njk
       <span>{{ content | readingTime }} min lasīšana</span>
       {% if updated and (updated != (date | isoDate)) %}<span class="dot"></span><span>atjaunots {{ updated | readableDate }}</span>{% endif %}
     </p>
+
+    {% if image %}
+    <figure class="hero-media">
+      <img src="{{ image | webp }}" alt="{{ title }}">
+    </figure>
+    {% endif %}
   </div>
 </section>
 
 <div class="paper">
   <div class="container article-shell">
-    {% if image %}
-    <figure class="media media--wide reveal" style="margin-bottom:clamp(40px,5vw,64px)">
-      <img src="{{ image | webp }}" alt="{{ title }}">
-    </figure>
-    {% endif %}
-
     <div class="article-grid">
       <article class="article-body">
         <div class="prose">

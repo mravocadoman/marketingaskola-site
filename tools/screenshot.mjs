@@ -8,7 +8,7 @@ import puppeteer from 'puppeteer-core';
 
 const outDir = process.argv[2] || 'shots';
 mkdirSync(outDir, { recursive: true });
-const BASE = 'http://localhost:8385';
+const BASE = process.env.BASE || 'http://localhost:8385';
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
 const specs = process.argv.slice(3);
