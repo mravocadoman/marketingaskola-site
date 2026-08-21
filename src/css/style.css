@@ -1323,3 +1323,81 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    than force the whole page to. */
 .prose .table-scroll { overflow-x: auto; }
 @media (max-width: 620px) { .prose table { font-size: var(--t-micro); } }
+
+/* ==========================================================================
+   HERO BACKDROP — the signal lattice behind the homepage headline.
+   An ad-routing / neural graph read: signals travel the tracks, nodes fire,
+   paths converge on one hub. No gradients (edges are not faded, the whole
+   layer is simply quiet), squares not circles to match the site geometry, and
+   only transform and opacity animate so it never leaves the compositor.
+   ========================================================================== */
+.sec--hero { position: relative; isolation: isolate; overflow: hidden; }
+.sec--hero > .container { position: relative; z-index: 1; }
+
+.hero-fx {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  /* the lattice must never compete with the headline sitting on top of it */
+  opacity: 1;
+}
+.hero-fx .fx-rule { stroke: rgba(255, 255, 255, 0.075); stroke-width: 1; fill: none; }
+.hero-fx .fx-edge { stroke: rgba(255, 255, 255, 0.07); stroke-width: 1; fill: none; }
+.hero-fx .fx-nodes rect { fill: rgba(201, 216, 232, 0.45); }
+.hero-fx .fx-hub { fill: none; stroke: rgba(3, 195, 248, 0.6); stroke-width: 1.5; }
+/* one slow vertical sweep - the model reading across the lattice */
+/* The sweep is the one bright element that DOES cross the headline, so it
+   stays a faint 1px scan rather than a line that competes with the type. */
+.hero-fx .fx-sweep { stroke: rgba(3, 195, 248, 0.28); stroke-width: 1; }
+.hero-fx .fx-signals rect { fill: var(--cyan); opacity: 0; }
+
+/* Static by default: with reduced motion the lattice is still a lattice, the
+   nodes still read, nothing moves. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-fx .fx-nodes rect {
+    animation: fx-fire 7s ease-in-out infinite;
+    animation-delay: var(--d, 0s);
+  }
+  .hero-fx .fx-hub {
+    animation: fx-hub 4.5s ease-in-out infinite;
+    transform-origin: 720px 300px;
+  }
+  .hero-fx .fx-sweep { animation: fx-sweep 21s cubic-bezier(.65,0,.35,1) infinite; }
+  .hero-fx .fx-signals rect {
+    animation: fx-travel var(--dur, 14s) linear infinite;
+    animation-delay: var(--d, 0s);
+  }
+}
+
+@keyframes fx-fire {
+  0%, 82%, 100% { opacity: 0.28; }
+  88% { opacity: 1; }
+}
+@keyframes fx-hub {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.12); }
+}
+/* translate only — the x attribute stays 0 so this is a pure compositor move */
+@keyframes fx-travel {
+  0%   { transform: translateX(-20px); opacity: 0; }
+  6%   { opacity: 0.9; }
+  94%  { opacity: 0.9; }
+  100% { transform: translateX(1460px); opacity: 0; }
+}
+
+@keyframes fx-sweep {
+  0%, 8%   { transform: translateX(-40px); opacity: 0; }
+  14%      { opacity: 1; }
+  86%      { opacity: 1; }
+  92%, 100% { transform: translateX(1480px); opacity: 0; }
+}
+
+/* On small screens the lattice is mostly hidden behind the text anyway, and
+   fewer moving parts is the right trade on a phone. */
+@media (max-width: 760px) {
+  .hero-fx { opacity: 0.4; }
+  .hero-fx .fx-edge, .hero-fx .fx-sweep, .hero-fx .fx-signals rect:nth-child(n+4) { display: none; }
+}

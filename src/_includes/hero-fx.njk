@@ -1,0 +1,53 @@
+{# Homepage hero backdrop: a signal lattice.
+   Reads as both an ad-routing graph (signals travelling impression -> conversion)
+   and a neural graph (the fan-out converging on one firing hub).
+
+   Constraints it is built to: no gradients anywhere, cyan far inside its budget,
+   squares rather than circles to match the site geometry, and nothing animated
+   except transform and opacity so it stays on the compositor.
+
+   PLACEMENT MATTERS. The viewBox is 1440x620 and the hero renders shorter than
+   that, so `slice` crops roughly 75px off the top and bottom and the headline
+   sits across the vertical middle. Every BRIGHT moving mark is therefore kept in
+   the clear bands near y=100 and y=500 — a cyan square crossing the white
+   headline reads as a rendering artifact, not as design. Only the near-invisible
+   lattice rules are allowed to pass behind the text. #}
+<svg class="hero-fx" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice"
+     aria-hidden="true" focusable="false">
+  <!-- lattice: one path for every rule, so the whole grid is a single node -->
+  <path class="fx-rule" d="
+    M120 0V620 M240 0V620 M360 0V620 M480 0V620 M600 0V620 M720 0V620
+    M840 0V620 M960 0V620 M1080 0V620 M1200 0V620 M1320 0V620
+    M0 100H1440 M0 140H1440 M0 300H1440 M0 460H1440 M0 500H1440"/>
+
+  <!-- attribution fan: paths converging on one point, kept in the top band -->
+  <path class="fx-edge" d="M120 100 L1080 140 M360 140 L1080 140 M600 100 L1080 140
+                           M840 140 L1080 140 M1320 100 L1080 140 M1200 460 L1080 140"/>
+
+  <!-- nodes that fire, staggered so the pattern never reads as a loop -->
+  <g class="fx-nodes">
+    <rect x="117" y="97"  width="6" height="6" style="--d:0s"/>
+    <rect x="357" y="137" width="6" height="6" style="--d:1.7s"/>
+    <rect x="597" y="97"  width="6" height="6" style="--d:3.1s"/>
+    <rect x="837" y="137" width="6" height="6" style="--d:4.4s"/>
+    <rect x="1317" y="97" width="6" height="6" style="--d:2.3s"/>
+    <rect x="1197" y="457" width="6" height="6" style="--d:5.2s"/>
+    <rect x="237" y="497" width="6" height="6" style="--d:6.1s"/>
+    <rect x="957" y="497" width="6" height="6" style="--d:3.8s"/>
+  </g>
+
+  <!-- the convergence point holds a steadier mark -->
+  <rect class="fx-hub" x="1074" y="134" width="12" height="12"/>
+
+  <!-- one slow vertical sweep reading across the lattice -->
+  <line class="fx-sweep" x1="0" y1="0" x2="0" y2="620"/>
+
+  <!-- signals travelling the horizontal tracks, left to right, in the clear
+       bands only -->
+  <g class="fx-signals">
+    <rect y="97"  width="7" height="7" style="--dur:13s; --d:0s"/>
+    <rect y="137" width="7" height="7" style="--dur:17s; --d:2.5s"/>
+    <rect y="457" width="7" height="7" style="--dur:19s; --d:1.2s"/>
+    <rect y="497" width="7" height="7" style="--dur:15s; --d:7s"/>
+  </g>
+</svg>

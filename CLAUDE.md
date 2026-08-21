@@ -473,6 +473,31 @@ numbers: **90 declarations, 10 distinct sizes, 0 indistinguishable pairs, zero
 raw font-sizes left in the file.** If the audit ever reports fewer than 90
 declarations, it has gone blind again.
 
+## Homepage hero backdrop — the signal lattice (21 Aug 2026)
+
+`src/_includes/hero-fx.njk` draws an inline SVG behind the homepage headline: a
+hairline lattice, an attribution fan converging on one hub, nodes that fire,
+cyan signals travelling the tracks, and one slow vertical scan. It reads as an
+ad-routing graph and a neural graph at the same time.
+
+Built to the house rules: no gradients (the edges are not faded, the layer is
+simply quiet), squares not circles, cyan far inside its budget, and **only
+transform and opacity animate** so nothing leaves the compositor. Measured at
+121fps, 0 long frames over 4s, 15 animated elements.
+
+**Placement is the whole trick.** The viewBox is 1440x620 and the hero renders
+shorter, so `preserveAspectRatio="slice"` crops roughly 75px off the top and
+bottom, which puts the headline across the vertical middle. Every BRIGHT moving
+mark is therefore confined to the clear bands near y=100 and y=500. The first
+version ran signals along y=197 and y=297 and cyan squares slid across the white
+headline — that reads as a rendering artifact, not as design. Only the
+near-invisible lattice rules pass behind the type, plus the scan line at 0.28
+alpha.
+
+`npm run test:hero` covers reduced-motion (nothing animates, the lattice still
+renders), the mobile reductions, pointer-inertness, and that the hero CTA is
+still clickable through the layer.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,

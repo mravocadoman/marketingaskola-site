@@ -27,7 +27,8 @@
     "type:apply": "node tools/apply-type-scale.mjs tools/type-scale.json",
     "articles:typography": "node tools/article-typography.mjs",
     "articles:tables": "node tools/rebuild-tables.mjs",
-    "test:nav": "node tools/test-nav.mjs"
+    "test:nav": "node tools/test-nav.mjs",
+    "test:hero": "node tools/test-hero.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
