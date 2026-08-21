@@ -16,7 +16,7 @@
     "optimize": "node tools/optimize-images.mjs",
     "portraits": "node tools/grade-portraits.mjs",
     "logos": "node tools/normalize-logos.mjs",
-    "portraits:brand": "node tools/restyle-portraits.mjs"
+    "portraits:brand": "node tools/brand-portraits.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

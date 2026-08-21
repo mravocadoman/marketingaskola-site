@@ -143,32 +143,29 @@ History, so nobody relitigates it:
   did this guy in the main page, use openai api and add the cyan elements/accents, not just
   change the shade slightly."*
 
-**The settled rule:** the OpenAI image-edit endpoint MAY be used on team photographs — but the
-person must survive untouched, and the PROMPT SHAPE is what decides whether they do.
+**The settled rule: team faces are NEVER generated.** `images/edits` is a *generation* call —
+it re-draws the whole picture and repeatedly substituted different people. Owner: *"you changed
+their faces to someone else"*. Prompt engineering did not fix it and must not be relied on.
 
-**The lesson that cost three rounds:** `images/edits` is a *generation* call, not a compositing
-call — it re-draws the whole picture, face included. What determines the outcome is where the
-likeness instruction sits relative to everything else:
-- Burying "keep the likeness" under transformation instructions (cut out / convert to B&W / add
-  shapes) invites a full re-render, and the faces drifted every time. Owner: *"OpenAI or YOU still
-  changed people's appearance in my team!"*
-- Leading with **"KEEP THE LIKENESS OF THE PERSON PERFECTLY"**, enumerating the features that must
-  not move, and then scoping the edit to **the background only** works. Owner: *"tell the prompt to
-  adjust the image and KEEP the likeness of the person perfectly! Has worked for me every time."*
-- Never ask the model for the greyscale — that is a whole-image restyle. `selectiveGrey()` in the
-  tool desaturates locally by hue, keeping the cyan disc, and cannot move a facial feature.
+`npm run portraits:brand` → `tools/brand-portraits.mjs` (non-generative):
+1. sharp square-crops the ORIGINAL photograph;
+2. `tools/_matte.mjs` produces an alpha cutout with a local ONNX model — it decides
+   *transparency only*, never colour. It runs in a SEPARATE PROCESS: loading libvips (sharp) and
+   onnxruntime together dies with a GLib-GObject error on Windows;
+3. the navy field, cyan disc and white arc are drawn as flat SVG;
+4. the original RGB is masked with the matte's alpha via `composite(blend:'dest-in')` and
+   composited over that backdrop.
+   *Not* `joinChannel` — it silently loses the alpha at PNG encode and the original background
+   survives. *Not* the matte library's own RGB — it resamples internally (~1.6/255 drift).
 
-- `npm run portraits:brand` → `tools/restyle-portraits.mjs`. Output: `src/img/team/<id>-brand.webp`.
-  Also demand a PHOTOGRAPH explicitly: an early prompt said "flat graphic illustration" and returned
-  vectorised line art with a hardened, older face.
-- **Always diff the result against the source before shipping** (the tool's compare sheet). Check
-  face, build, hairstyle and especially HAIR COLOUR — Katrīna was turned brunette once.
-- `tools/brand-portraits.mjs` is an unfinished non-generative alternative (local ONNX matting via
-  @imgly/background-removal-node, then compositing the original pixels over a drawn backdrop). It
-  currently dies on a libvips/GLib error on this machine. It is the safest approach in principle —
-  the face is literally the original pixels — so it is worth fixing if likeness ever regresses again.
-- `npm run portraits` → `tools/grade-portraits.mjs` is the no-AI fallback: local colour maths only.
-- Originals stay in `src/img/YYYY/MM/…` and remain the source of truth for every tool.
+The tool self-verifies and fails loudly:
+- **subject pixel diff vs the original must be ≤2.5/255** (~1.0 is alpha-compositing rounding);
+- **backdrop coverage must be >95%**, which catches an opaque cutout that would make the pixel
+  check pass trivially. Compare the backdrop *colour*, never "differs from the source" — Madara's
+  original background is already near-black, so that test wrongly reported 4.5%.
+
+Sources stay in `src/img/YYYY/MM/…` and are the source of truth. `npm run portraits`
+(`tools/grade-portraits.mjs`) is the plain local-colour-grade fallback.
 
 ## Client / partner logos
 
