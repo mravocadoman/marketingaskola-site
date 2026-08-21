@@ -473,30 +473,48 @@ numbers: **90 declarations, 10 distinct sizes, 0 indistinguishable pairs, zero
 raw font-sizes left in the file.** If the audit ever reports fewer than 90
 declarations, it has gone blind again.
 
-## Homepage hero backdrop — the signal lattice (21 Aug 2026)
+## Homepage hero backdrop — drifting dots (21 Aug 2026)
 
-`src/_includes/hero-fx.njk` draws an inline SVG behind the homepage headline: a
-hairline lattice, an attribution fan converging on one hub, nodes that fire,
-cyan signals travelling the tracks, and one slow vertical scan. It reads as an
-ad-routing graph and a neural graph at the same time.
+`src/_includes/hero-fx.njk` puts seven small cyan squares on curved paths behind
+the homepage headline. That is the whole effect.
 
-Built to the house rules: no gradients (the edges are not faded, the layer is
-simply quiet), squares not circles, cyan far inside its budget, and **only
-transform and opacity animate** so nothing leaves the compositor. Measured at
-121fps, 0 long frames over 4s, 15 animated elements.
+The first version added a hairline lattice, an attribution fan, firing nodes, a
+hub and a scan line on top of the dots. Owner: *"thats way too much. no grids or
+anything, just some simple animations… the blue moving dots I like."* All of it
+is gone; only the dots remain, on more interesting paths.
 
-**Placement is the whole trick.** The viewBox is 1440x620 and the hero renders
-shorter, so `preserveAspectRatio="slice"` crops roughly 75px off the top and
-bottom, which puts the headline across the vertical middle. Every BRIGHT moving
-mark is therefore confined to the clear bands near y=100 and y=500. The first
-version ran signals along y=197 and y=297 and cyan squares slid across the white
-headline — that reads as a rendering artifact, not as design. Only the
-near-invisible lattice rules pass behind the type, plus the scan line at 0.28
-alpha.
+**It uses SVG `<animateMotion>`, not CSS `offset-path`.** offset-path animates
+fine, but its coordinates do not compose with the viewBox transform, so the dots
+rendered hundreds of pixels outside the hero. animateMotion lives in the SVG
+user coordinate system and scales with the viewBox for free.
 
-`npm run test:hero` covers reduced-motion (nothing animates, the lattice still
-renders), the mobile reductions, pointer-inertness, and that the hero CTA is
-still clickable through the layer.
+**The viewBox aspect has to sit near the hero's real aspect.** It was 1440x620
+against an 879px-tall hero; because `slice` scales to COVER, that upscaled
+everything 1.4x and cropped ~210 units off each side, throwing three of the
+seven dots out of frame. At 1440x900 nothing is clipped on desktop.
+
+**Paths avoid the headline.** Every route runs through the top band, the bottom
+band or the outer margins. A cyan dot sliding across the white headline reads as
+a rendering artifact, not as design.
+
+**Dropped entirely on phones** (`max-width: 760px`) and under
+`prefers-reduced-motion`. On a 390x1140 hero the slice leaves a ~300-unit
+window, so the dots would flicker through it about a tenth of the time — worse
+than no motion. CSS cannot pause a SMIL timeline, so removing the layer is also
+the only honest way to stop it.
+
+`npm run test:hero` samples every dot eight times over its path and asserts none
+leaves the hero box, none overlaps the headline, they are actually moving, there
+are no long frames, the layer is pointer-inert and the hero CTA is still
+clickable through it. 11/11.
+
+**Founder portrait crop.** `.media--crop-top` (1:1, `object-position: bottom`)
+is on the homepage founder figure. The 3:4 frame carries deliberate headroom
+above the subject, which made the process section the tallest on the page. The
+photograph occupies the bottom square of that frame, so a 1:1 bottom-anchored
+crop removes the drawn headroom exactly and takes nothing off Rihards. The
+section went 1190px → 1047px, and the steps column is now the tallest element
+rather than the picture.
 
 ## Rules — do not break these
 
