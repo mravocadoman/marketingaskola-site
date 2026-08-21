@@ -17,7 +17,8 @@
     "portraits": "node tools/grade-portraits.mjs",
     "logos": "node tools/normalize-logos.mjs",
     "portraits:brand": "node tools/brand-portraits.mjs",
-    "marks": "node tools/tone-marks.mjs"
+    "marks": "node tools/tone-marks.mjs",
+    "test:forms": "node tools/test-forms.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

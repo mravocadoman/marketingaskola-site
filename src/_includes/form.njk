@@ -23,7 +23,7 @@
       {%- elif fl.type == "select" %}
       <span class="select-wrap">
         <select id="{{ fid }}" name="{{ fl.name }}"{% if fl.required %} required{% endif %}>
-          <option value="">Izv&#275;lies&hellip;</option>
+          <option value="">Izvēlies…</option>
           {%- for o in fl.options %}
           <option value="{{ o | safe }}"{% if p[fl.name] == o %} selected{% endif %}>{{ o | safe }}</option>
           {%- endfor %}
@@ -48,7 +48,7 @@
 
   {# Honeypot. Real people never see it; bots fill every field they find. #}
   <div class="hp" aria-hidden="true">
-    <label>Neaizpildi &#353;o lauku<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label>
+    <label>Neaizpildi šo lauku<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label>
   </div>
   <input type="hidden" name="source_page" value="{{ page.url }}">
 
@@ -56,6 +56,10 @@
     <button class="btn" type="submit">{{ f.submit | safe }}</button>
     <p class="form-note">{{ f.note | safe }}</p>
   </div>
+  <noscript>
+    <p class="form-note">Šai formai nepieciešams JavaScript. Ja tas ir izslēgts, raksti uz <a href="mailto:{{ forms.fallbackEmail }}">{{ forms.fallbackEmail }}</a> vai WhatsApp +371 26673384.</p>
+  </noscript>
+
   <p class="form-status" role="status" aria-live="polite"></p>
 
   {# Swapped in on success. Leaving a filled-in form on screen invites a second

@@ -198,6 +198,33 @@ there and changing `provider` in `forms.json` — no markup changes anywhere.
 - The MailerLite form IDs live in `forms.json` under `forms.<key>.id`. With an
   empty id the form still renders and still works — it just routes to `mailto:`.
 
+### MailerLite objects (created 21 Aug 2026, account 1475)
+
+| what | name | id |
+| --- | --- | --- |
+| group | Web — kontaktforma | `196419625361082354` |
+| group | Web — kursu pieteikumi | `196419628518344585` |
+| form | Mājaslapa — kontaktforma | `196419637828650760` |
+| form | Mājaslapa — kursu pieteikumi | `196419640979621088` |
+
+Custom fields added: `website`, `message`, `motivation`, `course`,
+`participants` (number), `source_page`. The rest map onto MailerLite defaults
+(`name`, `last_name`, `email`, `phone`, `company`).
+
+`npm run test:forms` drives both forms in headless Chrome against the local
+preview, with the MailerLite request stubbed so it asserts client behaviour
+without creating subscribers: validation, Latvian messages, required consent,
+honeypot, payload contents, success panel, course preselect.
+
+**Open decision — double opt-in is ON for these forms.** A submitted enquiry
+lands as `status: unconfirmed` until the person clicks a confirmation email.
+The lead and every custom field are still stored and visible in the dashboard,
+so nothing is lost, but unconfirmed subscribers cannot be emailed in campaigns
+and group-join automations generally will not fire for them. That is sensible
+for a newsletter and wrong for "tell us about your business" — turn it off for
+these two forms in the MailerLite dashboard if enquiries should arrive
+confirmed. Left as-is because it is a consent decision, not a technical one.
+
 ## Marks and white-slab artifacts
 
 `.img--card` (`background:#fff`) is **deleted**. It faked white paper behind

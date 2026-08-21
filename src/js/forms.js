@@ -112,8 +112,8 @@
     var tpl = form.querySelector('template[data-success]');
     if (!tpl) return;
     var done = tpl.content.cloneNode(true);
+    var el = done.firstElementChild;   // grab it BEFORE the fragment is emptied
     form.replaceWith(done);
-    var el = document.querySelector('.form-done');
     if (el) {
       el.setAttribute('tabindex', '-1');
       el.focus({ preventScroll: true });
