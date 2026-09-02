@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā"
-seoTitle: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā"
+seoTitle: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā | Mārketinga Skola"
 description: "Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei."
 date: 2024-02-15
 updated: 2025-03-06
@@ -35,7 +35,7 @@ Digitālais mārketings izmanto pavisam citus kanālus un reklamēšanās rīkus
 -   **E-pasts**, kas palīdz ne tikai palielināt peļņu, bet arī nodibināt personisku saikni ar klientu, veicinot lojalitāti uzņēmumam;
 -   **SEO** jeb meklētājprogrammu optimizācija, kas sniedz iespēju mājaslapām iegūt augstāku pozīciju meklētājprogrammās, kā _Google_ vai _Bing_. SEO uzņēmumiem piesaista jaunus klientus un veicina pārdošanu.
 
-Starp citu, [šeit](/7-digitala-marketinga-riki/) vari tuvāk iepazīties ar 7, mūsuprāt, lieliskiem digitālā mārketinga rīkiem, kas uzņēmumiem var atvieglot ikdienu.
+Starp citu, vari tuvāk iepazīties ar [7, mūsuprāt, lieliskiem digitālā mārketinga rīkiem](/7-digitala-marketinga-riki/), kas uzņēmumiem var atvieglot ikdienu.
 
 ## 3 lielākie digitālā mārketinga ieguvumi
 

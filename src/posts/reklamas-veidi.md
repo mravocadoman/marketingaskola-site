@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?"
-seoTitle: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju? - Mārketinga Skola"
+seoTitle: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju? | Mārketinga Skola"
 description: "Uzzini, kuri reklāmas veidi ir visefektīvākie! Salīdzini digitālo un tradicionālo reklāmu, lai sasniegtu vairāk klientu!"
 date: 2025-04-02
 updated: 2025-04-15
@@ -29,7 +29,7 @@ Reklāmas veidi ietver dažādas metodes un kanālus, kā uzņēmumi var piesais
 
 Reklāma var būt **digitāla, tradicionāla vai kombinēta**, un katrai no tām ir savas priekšrocības un ierobežojumi. Tāpēc ir svarīgi izprast, kā **mārketinga stratēģija** var ietekmēt reklāmas efektivitāti.
 
-**Uzzini vairāk par mārketinga stratēģijas izveidi [šeit](/marketinga-strategijas-izstrade/)**.
+**[Uzzini vairāk par mārketinga stratēģijas izveidi](/marketinga-strategijas-izstrade/)**.
 
 ## Populārākie reklāmas veidi un to priekšrocības
 

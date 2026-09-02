@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā"
-seoTitle: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā - Mārketinga Skola"
+seoTitle: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā | Mārketinga Skola"
 description: "Vai esi aizdomājies, kā ieintriģet vairāk potenciālo klientu savās reklāmās? Uzzini, kā notiek konvertējošu reklāmas tekstu sastādīšana!"
 date: 2021-10-17
 updated: 2025-04-29

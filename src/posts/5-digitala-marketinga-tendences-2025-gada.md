@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "5 digitālā mārketinga tendences 2025.gadā"
-seoTitle: "5 digitālā mārketinga tendences 2025.gadā - Mārketinga Skola"
+seoTitle: "5 digitālā mārketinga tendences 2025.gadā | Mārketinga Skola"
 description: "Rakstā iepazīsi, mūsuprāt, TOP 5 svarīgākās tendences, kā arī iegūsi vērtīgus ieteikumus, ar kuriem varēsi tuvāk iepazīties ar šo tēmu."
 date: 2024-03-20
 updated: 2025-06-14

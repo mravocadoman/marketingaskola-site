@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam?"
-seoTitle: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam? - Mārketinga Skola"
+seoTitle: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam? | Mārketinga Skola"
 description: "SEO optimizācija Tavam biznesam palīdz piesaistīt klientus, palielināt uzticamību un sasniegt Google virsotnes."
 date: 2025-04-22
 updated: 2025-06-14

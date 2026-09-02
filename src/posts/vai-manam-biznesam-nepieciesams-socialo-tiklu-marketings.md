@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Vai manam biznesam nepieciešams sociālo tīklu mārketings?"
-seoTitle: "Vai manam biznesam nepieciešams sociālo tīklu mārketings? - Mārketinga Skola"
+seoTitle: "Vai manam biznesam nepieciešams sociālo tīklu mārketings? | Mārketinga Skola"
 description: "Vai biznesam nepieciešams sociālo tīklu mārketings? Noskaidro, kādas priekšrocības paver sociālo tīklu izmantošana!"
 date: 2022-03-08
 updated: 2024-10-21

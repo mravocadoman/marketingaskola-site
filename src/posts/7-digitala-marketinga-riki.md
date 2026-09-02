@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā"
-seoTitle: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā - Mārketinga Skola"
+seoTitle: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā | Mārketinga Skola"
 description: "Reklāmu uzstādīšana internetā var būt sarežģīts process. Uzzini kādi ir 7 digitālā mārketinga rīki, kas palīdzēs vieglāk sasniegt mērķus!"
 date: 2022-05-08
 updated: 2024-10-21

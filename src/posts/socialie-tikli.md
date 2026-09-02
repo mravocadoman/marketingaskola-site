@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Sociālie tīkli - mārketinga veiksmes atslēga"
-seoTitle: "Sociālie tīkli - mārketinga veiksmes atslēga - Mārketinga Skola"
+seoTitle: "Sociālie tīkli - mārketinga veiksmes atslēga | Mārketinga Skola"
 description: "Kādēļ sociālie tīkli ir tik plaši izmantoti? Vai Tavam biznesam nepieciešami sociālie tīkli? Uz šiem jautājumiem atbildēsim šajā rakstā."
 date: 2024-03-20
 updated: 2024-10-21

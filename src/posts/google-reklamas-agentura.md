@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt?"
-seoTitle: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt? - Mārketinga Skola"
+seoTitle: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt? | Mārketinga Skola"
 description: "Google reklāmas aģentūra palīdz uzņēmumiem sasniegt mērķauditoriju un optimizēt reklāmu izdevumus. Uzzini, kad to izvēlēties un ko sagaidīt!"
 date: 2025-03-11
 updated: 2025-04-15

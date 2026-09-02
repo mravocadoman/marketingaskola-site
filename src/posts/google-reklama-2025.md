@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Vai Google reklāma ir efektīva arī 2025. gadā?"
-seoTitle: "Vai Google reklāma ir efektīva arī 2025. gadā? - Mārketinga Skola"
+seoTitle: "Vai Google reklāma ir efektīva arī 2025. gadā? | Mārketinga Skola"
 description: "Izvēlēties efektīvākos digitālā mārketinga rīkus nekad nav bijis viegli. Uzzini, vai Google reklāma vēl ir aktuāla 2025. gadā!"
 date: 2025-01-06
 updated: 2025-03-11
@@ -65,6 +65,6 @@ Lai gan Google partneru tīkls ir milzīgs, tomēr ir iespējamība, ka Tavi pot
 
 Ja pavisam godīgi – mēs domājam, ka Google reklāmu noteikti ir vērts izmantot arī 2025. gadā. Kāpēc? Google reklāma turpina attīstīties, piedāvājot jaunus optimizācijas un reklāmas kreatīvus veidus. Ļoti populārs pēdējos gados ir kļuvušas Performance max kampaņas, kas ļauj Google algoritmam miksēt dažādus kreatīvu veidus un optimizēt to labākās kombinācijas.
 
-Mārketinga skolas Google reklāmas guru Kristaps Apeināns ir nopelnījis vairāk nekā **10 miljonus eiro** saviem klientiem, ieguldot tieši Google reklāmās! [Šeit](/portfolio/) vari aplūkot arī citus mūsu veiksmes stāstus.
+Mārketinga skolas Google reklāmas guru Kristaps Apeināns ir nopelnījis vairāk nekā **10 miljonus eiro** saviem klientiem, ieguldot tieši Google reklāmās! Aplūko arī [citus mūsu veiksmes stāstus](/portfolio/).
 
 Lai arī Google Ads prasa sava veida investīciju un uzmanību, tā joprojām ir ļoti efektīva reklāmas platforma, kas spēj nodrošināt augstu atdevi jūsu mārketinga ieguldījumiem. Sāciet savu reklāmas kampaņu ar Google Ads jau šodien un sasniedziet jaunus augstumus savā uzņēmējdarbībā! Ja domājat par sadarbību, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu — [rakstiet mums](/sazinies/).

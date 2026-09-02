@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kā reklāmas aģentūras pakalpojumi var palīdzēt biznesam?"
-seoTitle: "Kā reklāmas aģentūras pakalpojumi var palīdzēt biznesam? - Mārketinga Skola"
+seoTitle: "Kā reklāmas aģentūras pakalpojumi var palīdzēt biznesam? | Mārketinga Skola"
 description: "Uzziniet, kā reklāmas aģentūras var pārveidot jūsu biznesu, lai sasniegtu augstākas virsotnes uzņēmuma attīstībā."
 date: 2024-02-15
 updated: 2025-06-14

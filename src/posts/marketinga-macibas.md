@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas!"
-seoTitle: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas! - Mārketinga Skola"
+seoTitle: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas! | Mārketinga Skola"
 description: "Izmanto Mārketinga mācības, lai pilnveidotu savu mārketinga stratēģiju internetā! Iemācies, kā pārvaldīt sociālos tīklus jau tagad!"
 date: 2022-06-11
 updated: 2025-06-14
@@ -19,7 +19,7 @@ Ja vēlies padziļināti apgūt, kā soli pa solim izveidot efektīvu Facebook r
 
 ## Kas ir Facebook reklāma?
 
-<iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed&amp;enablejsapi=1&amp;origin=https://marketingaskola.lv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Mūsuprāt, atbilde varētu būt ļoti īsa un kodolīga: _Facebook reklāma ir uzņēmuma digitālā mārketinga veiksmes atslēga._
 

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Instagram reklāma - no kura gala sākt?"
-seoTitle: "Instagram reklāma - no kura gala sākt? - Mārketinga Skola"
+seoTitle: "Instagram reklāma - no kura gala sākt? | Mārketinga Skola"
 description: "Vai zini, kas ir galvenie soļi, kas nepieciešami, lai Instagram reklāma dotu labākos rezultātus? Šajā rakstā aplūkosim katru no šiem soļiem!"
 date: 2022-02-09
 updated: 2024-10-21

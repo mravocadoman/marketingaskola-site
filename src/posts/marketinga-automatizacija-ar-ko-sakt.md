@@ -1,8 +1,8 @@
 ---
 layout: post.njk
 title: "Mārketinga automatizācija mazam uzņēmumam: ar ko sākt"
-seoTitle: "Mārketinga automatizācija mazam uzņēmumam: ar ko sākt - Mārketinga Skola"
-description: "Praktisks ceļvedis, kā mazam uzņēmumam sākt automatizēt mārketingu: kā saskaitīt, kur aiziet laiks, kuras trīs vietas atmaksājas pirmās un ko labāk neautomatizēt vispār."
+seoTitle: "Mārketinga automatizācija mazam uzņēmumam: ar ko sākt | Mārketinga Skola"
+description: "Praktisks ceļvedis mazam uzņēmumam: kā saskaitīt, kur aiziet laiks, kuras trīs mārketinga vietas atmaksājas automatizēt pirmās un ko labāk neautomatizēt."
 date: 2026-08-21
 image: "/img/gen/cover-marketinga-automatizacija-ar-ko-sakt.webp"
 categories: ["maksligais-intelekets", "digitalais-marketings"]

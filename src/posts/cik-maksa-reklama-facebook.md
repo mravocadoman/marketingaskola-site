@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem"
-seoTitle: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem - Mārketinga Skola"
+seoTitle: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem | Mārketinga Skola"
 description: "Uzzini, cik maksā reklāma Facebook tīklā un kā plānot budžetu efektīvai reklāmas kampaņai! Salīdzinām izmaksas un stratēģijas."
 date: 2025-03-19
 updated: 2025-04-29
@@ -17,7 +17,7 @@ Ja vēlies uzzināt tad lasi tālāk un uzzināsi no kā sastāv Facebook reklā
 
 ## Kas ir Facebook reklāmas un kā tās strādā?
 
-<iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Facebook reklāmas ir maksas reklāmas, kas tiek rādītas Facebook un Instagram lietotājiem, pamatojoties uz viņu interesēm, uzvedību un demogrāfiskajiem datiem. Šīs reklāmas var parādīties:
 

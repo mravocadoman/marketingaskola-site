@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību"
-seoTitle: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību - Mārketinga Skola"
+seoTitle: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību | Mārketinga Skola"
 description: "Mārketinga plāns ir ceļvedis izaugsmei. Uzzini, kā izveidot mārketinga plāns un saglabāt konkurētspēju mainīgos apstākļos."
 date: 2025-04-09
 updated: 2025-12-18

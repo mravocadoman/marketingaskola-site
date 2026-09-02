@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mārketinga stratēģijas izstrāde - 7 padomi"
-seoTitle: "Mārketinga stratēģijas izstrāde - 7 padomi - Mārketinga Skola"
+seoTitle: "Mārketinga stratēģijas izstrāde - 7 padomi | Mārketinga Skola"
 description: "Uzzini, kas ir veiksmīga mārketinga stratēģijas izstrāde, un kā to īstenot to savā uzņēmumā ar šiem septiņiem padomiem!"
 date: 2021-12-09
 updated: 2024-10-21

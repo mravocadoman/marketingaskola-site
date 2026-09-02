@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera"
-seoTitle: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera - Mārketinga Skola"
+seoTitle: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera | Mārketinga Skola"
 description: "Uzzini, kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera! Izmēģini Canva AI un citus dizaina rīkus jau tagad!"
 date: 2025-10-25
 updated: 2025-11-21

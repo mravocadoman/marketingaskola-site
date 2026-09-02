@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu"
-seoTitle: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu - Mārketinga Skola"
+seoTitle: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu | Mārketinga Skola"
 description: "E-pasta mārketings palīdz veidot kampaņas, kas palielina pārdošanu un uzticību. Uzzini, kā automatizēt, segmentēt un sasniegt klientus efektīvi."
 date: 2025-12-17
 updated: 2025-12-17
@@ -69,7 +69,7 @@ Instantly.ai ir e-pasta kampaņu rīks, kas īpaši piemērots situācijām, kad
 
 Ar Instantly.ai iespējams strādāt ar warm leads jeb jau iesildītiem potenciālajiem klientiem, mērogot e-pasta kampaņas un veidot personalizētu uzrunu lielākam kontaktu apjomam. Platforma ir izstrādāta tā, lai e-pasti nonāktu galvenajā iesūtnē, nevis nevēlamo ziņu mapē (piemēram, spam mapē), rūpējoties par sūtīšanas apjomiem un sūtītāju reputāciju.
 
-Papildus tam Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu gudrāk iesaistīt kontaktus, analizēt atbildes un optimizēt kampaņas. Dodies uz [Instantly.ai](https://refer.instantly.ai/65dgyt7b8my5) un padari savu e-pasta mārketingu par mērķtiecīgu pārdošanas procesu.
+Papildus tam Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu gudrāk iesaistīt kontaktus, analizēt atbildes un optimizēt kampaņas. Dodies uz [Instantly.ai](https://instantly.ai/) un padari savu e-pasta mārketingu par mērķtiecīgu pārdošanas procesu.
 
 ## Automatizācija, pārdošana un rezultātu mērīšana
 

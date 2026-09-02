@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kā izmantot AI satura veidošanā, nezaudējot sava zīmola balsi"
-seoTitle: "Kā izmantot AI satura veidošanā, nezaudējot zīmola balsi - Mārketinga Skola"
+seoTitle: "Kā izmantot AI satura veidošanā, nezaudējot zīmola balsi | Mārketinga Skola"
 description: "Praktisks process, kā ar AI sagatavot reklāmu tekstus, e-pastus un sociālo tīklu saturu tā, lai rezultāts skan pēc Tava uzņēmuma, nevis pēc ģenerēta teksta."
 date: 2026-08-21
 image: "/img/gen/cover-ai-saturs-bez-zimola-balss-zaudesanas.webp"

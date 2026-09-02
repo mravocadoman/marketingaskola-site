@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Meta ads: kā izcelties ar inovatīviem reklāmas risinājumiem ?"
-seoTitle: "Meta ads: kā izcelties ar inovatīviem reklāmas risinājumiem ? - Mārketinga Skola"
+seoTitle: "Meta ads: kā izcelties ar inovatīviem reklāmas risinājumiem ? | Mārketinga Skola"
 description: "Uzzini, kā izmantot Meta ads, lai izceltos konkurences vidū un maksimizētu ilgtermiņa mārketinga iespējas!"
 date: 2025-04-10
 updated: 2026-01-13
@@ -17,7 +17,7 @@ Digitālais mārketings attīstās straujāk nekā jebkad agrāk, un viena no sp
 
 Meta Ads sniedz Tev pieeju vienai no lielākajām digitālajām platformām pasaulē: Facebook, Instagram, Messenger un WhatsApp. Tas ir Tavs zelta rīks, lai sasniegtu pareizos cilvēkus, īstajā vietā un laikā. Mārketinga vide kļūst personalizētāka, un Meta piedāvā tieši to – reklāmas, kas runā konkrēti uz Tavu auditoriju.
 
-<iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Kādas platformas pieder Meta un kā tās izmantot?
 

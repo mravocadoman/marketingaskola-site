@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mākslīgais intelekts mārketingā? Kas tas ir un kā to izmantot?"
-seoTitle: "Mākslīgais intelekts mārketingā? Kas tas ir un kā to izmantot? - Mārketinga Skola"
+seoTitle: "Mākslīgais intelekts mārketingā? Kas tas ir un kā to izmantot? | Mārketinga Skola"
 description: "Uzzini, kas ir mākslīgais intelekts un kā to efektīvi izmantot mārketingā. Atklāj jaunākās tendences un labākās stratēģijas!"
 date: 2025-03-19
 updated: 2025-04-02

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Facebook reklāmas: Kā reklamēt savu biznesu internetā?"
-seoTitle: "Facebook reklāmas: Kā reklamēt savu biznesu internetā? - Mārketinga Skola"
+seoTitle: "Facebook reklāmas: Kā reklamēt savu biznesu internetā? | Mārketinga Skola"
 description: "Vai vēlies uzzināt, kā Facebook reklāmas var palīdzēt Tavam biznesam? Šajā rakstā Tevi iepazīstināsim ar Facebook kampaņas izveides pamatiem!"
 date: 2022-01-09
 updated: 2025-04-29
@@ -15,7 +15,7 @@ Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pas
 
 ## Kas tad īsti ir Facebook reklāmas?
 
-<iframe class="lazyload" title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" data-src="https://www.youtube.com/embed/iur9HvAaXVY?feature=oembed&amp;enablejsapi=1&amp;origin=https://marketingaskola.lv" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Pavisam vienkārši: Tās ir reklāmas, kas tiek izveidotas un publicētas Facebook platformā, lai mērķētu tās uz tiem platformas lietotājiem, kuriem reklāma varētu šķist vissaistošākā. Lai pielāgotu reklāmas savai mērķauditorijai, ir nepieciešams atzīmēt dažādus vēlamos faktorus, kas auditorijai atbilst, piemēram, atrašanās vieta, demogrāfiskais stāvoklis vai intereses. Tādējādi Facebook reklāmas ieguvums ir tāds, ka to redz tikai tie lietotāji, kuri atbilst iepriekš atzīmētajiem faktoriem.
 

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod"
-seoTitle: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod - Mārketinga Skola"
+seoTitle: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod | Mārketinga Skola"
 description: "Satura mārketings palīdz piesaistīt klientus un palielināt pārdošanu. Uzzini, kā veidot saturu, kas tiešām strādā un izceļ Tavu biznesu."
 date: 2025-12-11
 updated: 2026-01-13
@@ -41,7 +41,7 @@ Lai satura mārketings strādātu, saturam jābūt veidotam tā, lai cilvēks to
 1.  **Izpēti auditoriju**
     Kas viņus uztrauc? Ko viņi meklē Google? Kas viņiem šķiet sarežģīts?
 2.  **Atrodi pareizos atslēgvārdus**
-    Lai saturs parādītos meklētājā, tam jābalstās uz reāliem meklējumiem. Tam lieliski noder [SurferSEO](https://get.surferseo.com/5j6mw3i2ju81_), kas palīdz veidot saturu tā, lai tas atbilstu Google prasībām un lietotāju uzvedībai.
+    Lai saturs parādītos meklētājā, tam jābalstās uz reāliem meklējumiem. Tam lieliski noder [SurferSEO](https://surferseo.com/), kas palīdz veidot saturu tā, lai tas atbilstu Google prasībām un lietotāju uzvedībai.
 3.  **Strukturē saturu saprotami**
     Virsraksti, saraksti, vizuālie piemēri, īsas rindkopas — atceries, cilvēki nevis lasa visu rakstu, bet skenē ar acīm, tādēļ tas jāveido tā, lai saturu var uztvert viegli un ātri.
 4.  **Pievieno stāsta elementus**

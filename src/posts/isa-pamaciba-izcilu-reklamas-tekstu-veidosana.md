@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Izcilu reklāmas tekstu veidošana - īsa pamācība"
-seoTitle: "Izcilu reklāmas tekstu veidošana - īsa pamācība - Mārketinga Skola"
+seoTitle: "Izcilu reklāmas tekstu veidošana - īsa pamācība | Mārketinga Skola"
 description: "Izcilu konvertējošu reklāmas tekstu veidošana ir nepieciešama prasme ikvienam, kurš vēlas izmantot digitālo mārketingu savu mērķu sasniegšanā."
 date: 2022-07-08
 updated: 2025-04-29
