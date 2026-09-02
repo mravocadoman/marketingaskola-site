@@ -67,8 +67,10 @@ the original.
 - `src/img/YYYY/MM/…` — all images, mirrored from wp-content/uploads.
 - `tools/` — the migration pipeline (see below) and `serve.cjs` (local static
   server for `_site`), `check-site.mjs` (link + content integrity checker).
-- `archive/wordpress-mirror.zip` — raw HTML of every page as WordPress served
-  it on 19 Aug 2026. The design/content reference if anything is ever in doubt.
+- `archive/wordpress-mirror/` (and the identical `wordpress-mirror.zip`) — raw
+  HTML of every page as WordPress served it on 19 Aug 2026. The design/content
+  reference if anything is ever in doubt. The loose copies used to sit in the
+  repo root; they moved on 2 Sep 2026.
 
 ## Commands
 
@@ -76,6 +78,8 @@ the original.
 npm run build     # eleventy -> _site/
 npm run serve     # node tools/serve.cjs  -> http://localhost:8385 (serves _site)
 npm run check     # link integrity + thin-page check over _site
+npm run check:mirror  # + text coverage vs archive/wordpress-mirror (the WP render)
+npm run derived   # og:image twins, default social image, favicon.ico, author thumb
 ```
 
 ## Deploy
@@ -277,6 +281,14 @@ All of it is gated behind `prefers-reduced-motion` and degrades to a static page
 
 ## Tooling gotchas
 
+- **Chrome path**: every headless tool (`screenshot`, `test:nav`, `test:hero`,
+  `test:forms`) resolves Chrome through `tools/_chrome.mjs` — macOS, Windows
+  and Linux defaults, or `CHROME_PATH=…` to override. They used to hard-code
+  the Windows path and silently failed on a Mac.
+- `tools/check-site.mjs` rewrote `/` to `\\` when building paths, so on macOS
+  every internal link was reported BROKEN. Fixed 2 Sep 2026; `npm run check`
+  is trustworthy on all platforms now.
+
 - `tools/screenshot.mjs` — headless Chrome captures. Run it from PowerShell, or
   from Git Bash **with `MSYS_NO_PATHCONV=1`**: MSYS rewrites a leading-slash
   path arg (`/blogs/`) into `C:/Program Files/Git/blogs/`, and the script then
@@ -309,13 +321,20 @@ Layout: `.video-row` is its own 4-up grid capped at 860px (2-up under 860px) so
 four tall verticals do not tower over the section, and `.case` / `.case-result`
 give each study one left edge with the outcome marked by a thin rule.
 
-**Two open content items, flagged not changed:**
-- The Lumi copy says "vertikāls Reels un horizontāls Feed" and describes making
-  both formats, but all four embedded clips are vertical. Either the horizontal
-  Feed cuts were never uploaded, or they should be added.
-- These videos still stream from `marketingaskola.lv/wp-content/uploads/…` and
-  will 404 at the DNS cutover. ~44 MB, so they need transcoding before they can
-  live in the repo.
+**Videos are local now (2 Sep 2026).** All nine clips (eight case studies plus
+the Instagram-templates demo) were downloaded and transcoded with ffmpeg
+(libx264, preset slow, crf 27, faststart, AAC 96k) into `src/video/`:
+52 MB of originals became 14.9 MB, no clip over 3 MB, frame sizes kept
+(Lumi's 1080x1920 capped to 608x1080). Each has a WebP poster frame next to
+it, and the `<video>` tags use `poster` + `preload="none"`, so a page load
+fetches nine small posters instead of nine MP4 headers. The Instagram demo is
+2.57:1 and sets `--ar: 1218 / 474` inline. `src/video/` ships through the
+referenced-assets copy step (see the second-pass section), not a passthrough.
+
+**One open content item, flagged not changed:** the Lumi copy says
+"vertikāls Reels un horizontāls Feed" and describes making both formats, but
+all four clips are vertical. Either the horizontal Feed cuts were never
+uploaded, or they should be added.
 
 ## Type scale (21 Aug 2026)
 
@@ -523,6 +542,96 @@ crop removes the drawn headroom exactly and takes nothing off Rihards. The
 section went 1190px → 1047px, and the steps column is now the tallest element
 rather than the picture.
 
+## Second pass — SEO, sharing, performance, privacy (2 Sep 2026)
+
+An audit of the built site found a handful of things that would have broken
+at the domain cutover and a longer list of SEO/performance gaps. Everything
+below is in place; the mechanisms live in `eleventy.config.js` unless noted.
+
+**Head and sharing.** `<title>` uses one separator (`… | Mārketinga Skola`;
+posts keep the WordPress `seoTitle`). Every page emits og:site_name/locale,
+og:image with width/height, Twitter cards, a canonical (dropped on `noindex`
+pages), `theme-color`, a web manifest (`src/manifest.njk`), `/favicon.ico` and
+an Atom feed link (`/feed.xml`, `@11ty/eleventy-plugin-rss`). Pages without
+an `image:` fall back to `site.image` (`/img/og-default.jpg`).
+
+**og:image is always a JPEG.** `npm run derived` (`tools/derived-images.mjs`)
+writes a 1200x630 `<name>-og.jpg` next to every front-matter `image:` (the
+generated covers exist only as WebP, which WhatsApp/LinkedIn previews still
+mishandle) and the `ogImage` filter picks the twin up when it exists. Re-run
+it after adding a page image or a cover; the optimizer skips `-og.jpg` files.
+
+**Structured data.** The `schemaGraph` filter builds one JSON-LD graph per
+page: Organization + ProfessionalService (address, phone, VAT, socials from
+`site.json`), WebSite, WebPage, BreadcrumbList, BlogPosting on articles and
+Course on course pages. Breadcrumb parents come from `crumb:` front matter
+(`{ label, url }` on service, course and product pages); course facts come
+from `course:` front matter (`name, level, hours, price, vatIncluded, mode,
+instructor`) copied from each page's own chips — keep them in sync with the
+visible price. TikTok has no offer because the page says it is not running.
+
+**Sitemap / robots.** `sitemap.njk` formats `updated` through `isoDate` (it
+used to emit raw JS Date strings for 31 posts), category pages are included
+(`addAllPagesToCollections: true` on the paginated template — without it only
+the first category made it into `collections.all`), and any page with
+`noindex: true` in front matter gets `<meta name="robots" content="noindex">`,
+no canonical and no sitemap entry (`/vebinars-paldies/`, `/404.html`).
+
+**Assets: only what is referenced ships.** `src/img` holds every original next
+to its `.webp` twin, and a blanket passthrough shipped ~37 MB of files no page
+used. An `eleventy.after` step now scans the output for `/img/`, `/video/`
+and `/fonts/` references and copies just those. `npm run check` is the safety
+net: a needed file that nothing references shows up as BROKEN. CSS references
+count too (`fonts.css`); the scan reads html/css/js/xml/json/webmanifest.
+
+**Layout shift.** The `imgDims` transform reads every local `<img>` without
+width/height and injects the intrinsic size (sharp metadata, cached), so
+legacy post images no longer shift the page. Article hero covers carry
+`fetchpriority="high"`. Team portraits are lossy WebP now (q84; 1.7 MB became
+350 KB across nine files) and `brand-portraits.mjs` verifies the lossless
+composite in memory before encoding. The author box loads a 160px thumbnail.
+
+**Fonts are self-hosted** (`src/fonts/`, `src/css/fonts.css`): Google's own
+variable woff2 builds of Inter and Space Grotesk, latin + latin-ext (the
+Latvian diacritics), four files / 171 KB, `font-display: swap`, the two latin
+files preloaded. No more fonts.googleapis.com round trip. `fonts.css` uses
+`../fonts/` URLs so the github.io preview prefix works. OFL texts sit beside
+the files.
+
+**Embeds.** Five posts carried WordPress lazy-load iframes (`data-src`, no
+`src`) that never loaded; they are plain `src` + `loading="lazy"` now, and
+every YouTube embed uses `youtube-nocookie.com`. Third-party tool logos in
+the AI-tools post are local (`src/img/2026/09/`); two dead affiliate links
+point at the vendors' own sites.
+
+**Analytics + consent.** `site.analytics.gtmId` is empty, so nothing loads and
+no banner shows. Set it to the GTM container id and `base.njk` renders the
+consent card (`.consent`, two equal ghost buttons) and `src/js/consent.js`,
+which sets Consent Mode v2 defaults to denied, loads gtm.js only after
+"Piekrītu", remembers the choice in localStorage and reopens from the footer
+"Sīkdatņu iestatījumi" button. Never on `PREVIEW` builds. Put GA4 / Meta
+Pixel inside the container, not in the templates.
+
+**Headings and link names.** Footer and TOC labels are `<p class="footer-h">` /
+`<p class="toc-h">` (they were h4s that skipped levels on every page); post
+cards use `.post-title` — h2 on the blog index and category pages, h3 where a
+section h2 precedes them. The `cellLinkLabels` transform gives every
+"Uzzini vairāk" inside a `.cell` an aria-label ending in the cell's h3. The
+nav toggle has `aria-controls`, active links `aria-current`.
+
+**Blog index search.** `/blogs/` has a client-side filter over title,
+description and category (diacritics folded, so "marketings" finds
+"mārketings"); the count and an empty state update live.
+
+**Services grid.** The seventh cell on `/pakalpojumi/` spans the row
+(`.cell--wide`) instead of leaving two empty cells.
+
+**Copy.** Category pages have real descriptions (`categoryList.json`), eight
+meta descriptions were trimmed under 160 characters, four titles gained the
+brand, the "2025. gadam" e-book copy is evergreen, and five bare "šeit" links
+say where they go. Titles/H1s of the two posts with 2025 in the slug were
+left alone — permalinks and editorial content are the owner's call.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,
@@ -531,11 +640,16 @@ rather than the picture.
 - **The EU funding notice and company requisites on `/sazinies/`**
   (SIA "Stonks", Atveseļošanas fonda paragraph) are legally required — never
   remove or reword them.
-- **Forms are Tally embeds** (`tally.so/embed/wz1DrM` contact,
-  `tally.so/embed/nrvEB2` course signups) and **course purchases go through
-  Thinkific** (`marketingaskola.thinkific.com/enroll/...`) plus one Stripe
-  payment link on the Instagram-templates page. These are external services —
-  they keep working statically; do not replace them with fake forms.
+- **Forms are hand-coded and submit to MailerLite** (see "Forms" above; the
+  Tally iframes are gone) and **course purchases go through Thinkific**
+  (`marketingaskola.thinkific.com/enroll/...`) plus one Stripe payment link on
+  the Instagram-templates page. These are external services — they keep
+  working statically; do not replace them with fake forms.
+- **The privacy policy at `/privatuma-politika/`** is linked from every form's
+  consent checkbox and the footer. It describes what the site actually does
+  (MailerLite, Thinkific, Stripe, GitHub Pages, YouTube/Vimeo, consent-gated
+  analytics). Keep it in sync when a processor changes; owner/legal review of
+  the wording is still pending (2 Sep 2026).
 - Site language is Latvian (`lang="lv"`); keep diacritics intact (files are UTF-8).
 - Course pricing shown (e.g. 295€ → 145€) is copied verbatim from the live
   WordPress site — it is the owner's real pricing, only he changes it.
