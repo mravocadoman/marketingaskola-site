@@ -2,17 +2,26 @@
   "name": "Mārketinga Skola",
   "url": "https://marketingaskola.lv",
   "tagline": "Digitālā Mārketinga Aģentūra, kas Palīdz Tavam Biznesam Augt!",
+  "image": "/img/og-default.jpg",
   "phone": "+371 26673384",
+  "phoneIntl": "+37126673384",
   "phoneNote": "(WhatsApp)",
   "email": "rihards@marketingaskola.lv",
   "facebook": "https://www.facebook.com/marketinga.skola",
   "instagram": "https://www.instagram.com/marketingaskola.lv/",
   "linkedin": "https://www.linkedin.com/in/rihards-ze/",
   "whatsapp": "https://wa.me/37126673384",
+  "analytics": {
+    "_comment": "Google Tag Manager container id (GTM-XXXXXXX). Empty = no analytics, no cookie banner. When set, src/js/consent.js shows the banner and loads GTM only after 'Piekrītu'; preview builds (PREVIEW=1) never load it.",
+    "gtmId": ""
+  },
   "company": {
     "name": "SIA “Stonks”",
+    "legalName": "SIA Stonks",
     "regNr": "40203478847",
     "vat": "LV40203478847",
+    "street": "Liepu iela 28",
+    "city": "Rēzekne",
     "address": "Liepu iela 28, Rēzekne, Latvija"
   },
   "nav": [

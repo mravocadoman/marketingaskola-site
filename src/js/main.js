@@ -154,4 +154,33 @@
     window.addEventListener('scroll', toggleTop, { passive: true });
     toggleTop();
   }
+
+  /* ---------- blog search (/blogs/) ---------- */
+  var search = document.querySelector("[data-blog-search]");
+  var list = document.querySelector("[data-blog-list]");
+  if (search && list) {
+    var cards = Array.prototype.slice.call(list.querySelectorAll("[data-search]"));
+    var count = document.querySelector("[data-blog-count]");
+    var empty = document.querySelector("[data-blog-empty]");
+    var fold = function (s) {
+      return String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    };
+    cards.forEach(function (c) { c.setAttribute("data-fold", fold(c.getAttribute("data-search"))); });
+    var apply = function () {
+      var terms = fold(search.value).split(/\s+/).filter(Boolean);
+      var shown = 0;
+      cards.forEach(function (c) {
+        var hay = c.getAttribute("data-fold");
+        var hit = terms.every(function (t) { return hay.indexOf(t) !== -1; });
+        c.hidden = !hit;
+        if (hit) shown++;
+      });
+      if (count) count.textContent = "Raksti: " + shown;
+      if (empty) empty.hidden = shown !== 0;
+      list.classList.toggle("is-filtered", terms.length > 0);
+    };
+    search.addEventListener("input", apply);
+    search.addEventListener("search", apply);
+    if (search.value) apply();
+  }
 })();

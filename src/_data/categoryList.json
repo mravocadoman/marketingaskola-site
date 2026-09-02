@@ -2,6 +2,7 @@
   {
     "slug": "digitalais-marketings",
     "name": "Digitālais mārketings",
+    "description": "Raksti par digitālo mārketingu: kanālu izvēle, SEO, satura un e-pasta mārketings, automatizācija un praktiski piemēri Latvijas uzņēmumiem.",
     "posts": [
       "ai-saturs-bez-zimola-balss-zaudesanas",
       "marketinga-automatizacija-ar-ko-sakt",
@@ -18,6 +19,7 @@
   {
     "slug": "dizains",
     "name": "Dizains",
+    "description": "Raksti par dizainu mārketingā: kā ar Canva un citiem rīkiem veidot profesionālus reklāmas vizuāļus bez dizainera.",
     "posts": [
       "ka-izmantot-canva"
     ]
@@ -25,6 +27,7 @@
   {
     "slug": "google-reklama",
     "name": "Google reklāma",
+    "description": "Raksti par Google reklāmu: kad tā atmaksājas, kā izvēlēties aģentūru un kā Google Ads kampaņas apvienot ar citiem reklāmas veidiem.",
     "posts": [
       "reklamas-veidi",
       "google-reklamas-agentura",
@@ -34,6 +37,7 @@
   {
     "slug": "maksligais-intelekets",
     "name": "Mākslīgais intelekts",
+    "description": "Raksti par mākslīgo intelektu mārketingā: AI rīki, satura veidošana, nezaudējot zīmola balsi, un automatizācija mazam uzņēmumam.",
     "posts": [
       "ai-saturs-bez-zimola-balss-zaudesanas",
       "marketinga-automatizacija-ar-ko-sakt",
@@ -45,6 +49,7 @@
   {
     "slug": "marketinga-strategija",
     "name": "Mārketinga stratēģija",
+    "description": "Raksti par mārketinga stratēģiju un plānošanu: kā izstrādāt stratēģiju, sastādīt mārketinga plānu un izvēlēties aģentūru.",
     "posts": [
       "marketinga-strategijas-izstrade",
       "marketinga-plans",
@@ -58,6 +63,7 @@
   {
     "slug": "socialo-tiklu-reklama",
     "name": "Sociālo tīklu reklāma",
+    "description": "Raksti par sociālo tīklu reklāmu: Facebook, Instagram un TikTok kampaņas, reklāmas teksti, izmaksas un biežākās kļūdas.",
     "posts": [
       "tiktok-reklamas-klientu-piesaistisanai",
       "meta-reklamas",

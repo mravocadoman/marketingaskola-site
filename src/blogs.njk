@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Blogs - Mārketinga Skola"
+title: "Blogs: reklāmas padomi uzņēmējiem | Mārketinga Skola"
 description: "Reklāmas padomi uzņēmējiem: digitālais mārketings, Facebook un Instagram reklāma, SEO, mākslīgais intelekts un citas tēmas."
 permalink: "/blogs/"
 ---
@@ -17,19 +17,28 @@ permalink: "/blogs/"
     <div class="chip-row">
       {% for c in categoryList %}<a class="chip-link" href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
     </div>
-    <div class="post-grid post-grid--featured">
+    <div class="blog-tools">
+      <label class="blog-search">
+        <span class="visually-hidden">Meklēt rakstos</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" data-blog-search placeholder="Meklēt rakstos…" autocomplete="off" spellcheck="false">
+      </label>
+      <p class="blog-count" data-blog-count aria-live="polite">Raksti: {{ collections.posts.length }}</p>
+    </div>
+    <div class="post-grid post-grid--featured" data-blog-list>
       {% for post in collections.posts %}
-      <article class="post-card">
+      <article class="post-card" data-search="{{ post.data.title }} {{ post.data.description }}{% for c in post.data.categories %} {{ categoriesBySlug[c] or c }}{% endfor %}">
         <a href="{{ post.url }}">{% if post.data.image %}<img src="{{ post.data.image | webp }}" alt="{{ post.data.title }}" loading="lazy">{% endif %}</a>
         <div class="post-card-body">
           <span class="date">{{ post.date | readableDate }}</span>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <h2 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
           <p>{{ post.data.description | truncate(140) }}</p>
           <span class="more">Lasīt vairāk</span>
         </div>
       </article>
       {% endfor %}
     </div>
+    <p class="blog-empty" data-blog-empty hidden>Nekas netika atrasts. Pamēģini citu atslēgvārdu vai izvēlies kategoriju augstāk.</p>
   </div>
 </section>
 

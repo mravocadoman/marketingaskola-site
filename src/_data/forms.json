@@ -3,7 +3,7 @@
   "provider": "mailerlite",
   "account": "1475",
   "fallbackEmail": "rihards@marketingaskola.lv",
-  "consent": "Piekrītu, ka SIA “Stonks” (Mārketinga Skola) apstrādā manās norādītās ziņas, lai sazinātos par šo pieteikumu. Piekrišanu var atsaukt jebkurā brīdī, rakstot uz rihards@marketingaskola.lv.",
+  "consent": "Piekrītu, ka SIA “Stonks” (Mārketinga Skola) apstrādā manis norādītās ziņas, lai sazinātos par šo pieteikumu, saskaņā ar <a href=\"/privatuma-politika/\">privātuma politiku</a>. Piekrišanu var atsaukt jebkurā brīdī, rakstot uz rihards@marketingaskola.lv.",
   "forms": {
     "contact": {
       "id": "196419637828650760",

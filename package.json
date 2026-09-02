@@ -29,10 +29,13 @@
     "articles:tables": "node tools/rebuild-tables.mjs",
     "test:nav": "node tools/test-nav.mjs",
     "test:hero": "node tools/test-hero.mjs",
-    "photos": "node tools/photo-inventory.mjs"
+    "photos": "node tools/photo-inventory.mjs",
+    "derived": "node tools/derived-images.mjs",
+    "check:mirror": "node tools/check-site.mjs archive/wordpress-mirror"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@imgly/background-removal-node": "^1.4.5",
     "markdown-it": "^15.0.0",
     "node-html-parser": "^9.0.1",

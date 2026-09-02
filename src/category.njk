@@ -4,22 +4,24 @@ pagination:
   data: categoryList
   size: 1
   alias: cat
+  addAllPagesToCollections: true
 permalink: "/category/{{ cat.slug }}/"
 eleventyComputed:
-  title: "{{ cat.name }} Raksti - Mārketinga Skola"
-  description: "Bloga raksti kategorijā {{ cat.name }}."
+  title: "{{ cat.name }} — raksti | Mārketinga Skola"
+  description: "{{ cat.description }}"
 ---
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/blogs/">Blogs</a> · {{ cat.name }}</span>
     <h1>{{ cat.name }}</h1>
+    <p class="sub">{{ cat.description }}</p>
   </div>
 </section>
 
 <section class="sec">
   <div class="container">
     <div class="chip-row">
-      {% for c in categoryList %}<a class="chip-link{% if c.slug == cat.slug %} active{% endif %}" href="/category/{{ c.slug }}/">{{ c.name }}</a>{% endfor %}
+      {% for c in categoryList %}<a class="chip-link{% if c.slug == cat.slug %} active{% endif %}" href="/category/{{ c.slug }}/"{% if c.slug == cat.slug %} aria-current="page"{% endif %}>{{ c.name }}</a>{% endfor %}
     </div>
     <div class="post-grid">
       {% for post in collections.posts | inCategory(cat.posts) %}
@@ -27,9 +29,9 @@ eleventyComputed:
         <a href="{{ post.url }}">{% if post.data.image %}<img src="{{ post.data.image | webp }}" alt="{{ post.data.title }}" loading="lazy">{% endif %}</a>
         <div class="post-card-body">
           <span class="date">{{ post.date | readableDate }}</span>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <h2 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
           <p>{{ post.data.description | truncate(140) }}</p>
-          <a class="more" href="{{ post.url }}">Lasīt vairāk →</a>
+          <a class="more" href="{{ post.url }}" aria-label="Lasīt vairāk: {{ post.data.title }}">Lasīt vairāk →</a>
         </div>
       </article>
       {% endfor %}

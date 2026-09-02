@@ -9,7 +9,7 @@ layout: base.njk
 <section class="page-hero{% if image %} page-hero--cover{% endif %}">
   {% if image %}
   <figure class="hero-bg" aria-hidden="true">
-    <img src="{{ image | webp }}" alt="">
+    <img src="{{ image | webp }}" alt="" fetchpriority="high" decoding="async">
   </figure>
   {% endif %}
   <div class="container container--narrow">
@@ -21,7 +21,7 @@ layout: base.njk
       <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
       <span class="dot"></span>
       <span>{{ content | readingTime }} min lasīšana</span>
-      {% if updated and (updated != (date | isoDate)) %}<span class="dot"></span><span>atjaunots {{ updated | readableDate }}</span>{% endif %}
+      {% if updated and ((updated | isoDate) != (date | isoDate)) %}<span class="dot"></span><span>atjaunots <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></span>{% endif %}
     </p>
   </div>
 </section>
@@ -35,7 +35,7 @@ layout: base.njk
         </div>
 
         <div class="author-strip">
-          <img src="/img/team/rihards-brand.webp" alt="Rihards Zeiļa" loading="lazy">
+          <img src="/img/team/rihards-brand-160.webp" alt="Rihards Zeiļa" loading="lazy" width="160" height="160">
           <div>
             <strong>Mārketinga Skola</strong>
             <span>Praktisks digitālais mārketings — Meta un Google reklāmas, video saturs un kursi.</span>
@@ -45,7 +45,7 @@ layout: base.njk
 
       {% if outline.length > 2 %}
       <aside class="toc" aria-label="Satura rādītājs">
-        <h4>Satura rādītājs</h4>
+        <p class="toc-h">Satura rādītājs</p>
         <ol data-toc>
           {% for h in outline %}
           <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
@@ -87,7 +87,7 @@ layout: base.njk
         <a href="{{ post.url }}">{% if post.data.image %}<img src="{{ post.data.image | webp }}" alt="{{ post.data.title }}" loading="lazy">{% endif %}</a>
         <div class="post-card-body">
           <span class="date">{{ post.date | readableDate }}</span>
-          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+          <h3 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
           <p>{{ post.data.description | truncate(120) }}</p>
           <span class="more">Lasīt vairāk</span>
         </div>
