@@ -105,8 +105,9 @@ cutover is a file swap, not a DNS change.
 
 `.wa-float` in `base.njk` is a fixed click-to-chat link to `wa.me/37126673384`
 with a prefilled Latvian message naming the page and its URL (`bareTitle`
-filter strips the brand suffix). Card fill, hairline, white glyph, cyan on
-hover only; icon + label on desktop, icon on phones; back-to-top stacks above
+filter strips the brand suffix). **Cyan fill by owner request** ("make the background cyan so it sticks
+out") - the one deliberate exception to the one-cyan-CTA-per-viewport
+rule; styled like `.btn`. Icon + label on desktop, icon on phones; back-to-top stacks above
 it and the consent card sits above it on phones. `data-track="whatsapp-float"`
 is there for a GTM click trigger once analytics is on. The AI assistant plan
 that would sit behind it is in `docs/ai-assistant.md` — not built.

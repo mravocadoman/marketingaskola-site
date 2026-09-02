@@ -1463,12 +1463,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* Long-form legal text without the article sidebars. */
 .article-body--solo { max-width: 68ch; }
 
-/* Floating WhatsApp entry point. The persistent, low-key way in: square,
-   card fill, hairline, white glyph, cyan only on hover/focus (budget).
-   Icon + label on desktop, icon only on phones; back-to-top stacks above it. */
-.wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 71; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 16px 0 14px; background: var(--card); color: #fff; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 0; font-family: var(--font-display); font-weight: 500; font-size: var(--t-sm); letter-spacing: 0.01em; text-decoration: none; transition: border-color 0.2s ease, background 0.2s ease; }
-.wa-float:hover { border-color: var(--cyan); background: var(--well); color: #fff; text-decoration: none; }
-.wa-float:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+/* Floating WhatsApp entry point. Owner (2 Sep 2026): cyan fill so it sticks
+   out - the one deliberate exception to "one cyan CTA per viewport". Styled
+   exactly like .btn: cyan fill, canvas-dark glyph and label, flat hover,
+   square, no glow. Icon + label on desktop, icon only on phones;
+   back-to-top stacks above it. */
+.wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 71; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 16px 0 14px; background: var(--cyan); color: var(--canvas); border: 1px solid var(--cyan); border-radius: 0; font-family: var(--font-display); font-weight: 600; font-size: var(--t-sm); letter-spacing: 0.01em; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease; }
+.wa-float:hover { background: var(--cyan-hover); border-color: var(--cyan-hover); color: var(--canvas); text-decoration: none; }
+.wa-float:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 .wa-float svg { flex-shrink: 0; }
 @media (max-width: 640px) {
   .wa-float { right: 14px; bottom: 14px; width: 48px; padding: 0; justify-content: center; }
