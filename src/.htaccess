@@ -1,0 +1,87 @@
+# marketingaskola.lv — static Eleventy site served by Apache on SiteGround.
+# Copied to the web root by the build (eleventy.config.js). GitHub Pages and
+# the local preview ignore this file. See docs/siteground-cutover.md.
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+AddDefaultCharset utf-8
+
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType application/manifest+json .webmanifest
+  AddType image/webp .webp
+  AddType video/mp4 .mp4
+  AddType application/atom+xml .atom
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # One host, always https. SiteGround's Site Tools toggles do the same; the
+  # rules live here too so the behaviour is in the repo.
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://marketingaskola.lv%{REQUEST_URI} [R=301,L]
+
+  # URLs that changed on the old WordPress site (these were 301s there too).
+  RewriteRule ^meta-reklamas-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
+  RewriteRule ^7-padomi-marketinga-strategijas-izstrade/?$ /marketinga-strategijas-izstrade/ [R=301,L]
+  RewriteRule ^padzilinats-seo-kurss/?$ /digitala-marketinga-kursi/ [R=301,L]
+  RewriteRule ^digitala-marketinga-strategija-vaditajiem/?$ /digitala-marketinga-kursi/ [R=301,L]
+  RewriteRule ^seo-pakalpojumi/?$ /pakalpojumi/ [R=301,L]
+  RewriteRule ^improvizacija-un-izklaide/?$ /video-reklama/ [R=301,L]
+
+  # WordPress feeds -> the Atom feed.
+  RewriteRule ^(?:category/[^/]+/)?feed/?$ /feed.xml [R=301,L]
+  RewriteRule ^comments/feed/?$ /feed.xml [R=301,L]
+
+  # Old upload URLs (Google Images, external links) -> the mirrored image, or
+  # its .webp twin when only that ships.
+  RewriteCond %{DOCUMENT_ROOT}/img/$1 -f
+  RewriteRule ^wp-content/uploads/(.+)$ /img/$1 [R=301,L]
+  RewriteCond %{DOCUMENT_ROOT}/img/$1.webp -f
+  RewriteRule ^wp-content/uploads/(.+)\.(?:png|jpe?g)$ /img/$1.webp [R=301,L]
+
+  # Case-study videos were transcoded and renamed.
+  RewriteRule ^wp-content/uploads/2023/11/Untitled-design-4-1\.mp4$ /video/fitosauna-1.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/11/Untitled-design-6-3\.mp4$ /video/fitosauna-2.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/11/Untitled-design-7-1\.mp4$ /video/fitosauna-3.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/12/Untitled-design-7\.mp4$ /video/fitosauna-4.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/12/Untitled-design-6\.mp4$ /video/lumi-1.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/12/Untitled-design-5\.mp4$ /video/lumi-2.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/12/Untitled-design-4\.mp4$ /video/lumi-3.mp4 [R=301,L]
+  RewriteRule ^wp-content/uploads/2023/12/Untitled-design\.mp4$ /video/lumi-4.mp4 [R=301,L]
+
+  # WordPress is gone. 410 tells crawlers and bots to stop trying.
+  RewriteRule ^(wp-admin|wp-login\.php|wp-json|xmlrpc\.php|wp-content|wp-includes)(/|$) - [G,L]
+</IfModule>
+
+# Caching. CSS/JS are not fingerprinted, so keep those short; media and fonts
+# only change by changing name. SiteGround's own static cache sits in front.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 10 minutes"
+  ExpiresByType application/xml "access plus 1 hour"
+  ExpiresByType application/atom+xml "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  # Turn on once https has been confirmed working for a few days:
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>

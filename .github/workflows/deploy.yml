@@ -1,9 +1,19 @@
-name: Deploy to GitHub Pages
+name: Deploy
+
+# main -> SiteGround (marketingaskola.lv) once the SG_* secrets exist;
+# until then, and for previews, -> GitHub Pages at the /marketingaskola-site/
+# prefix with noindex. See docs/siteground-cutover.md.
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      target:
+        description: "Where to deploy"
+        type: choice
+        default: auto
+        options: [auto, siteground, pages]
 
 permissions:
   contents: read
@@ -11,24 +21,80 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: true
 
 jobs:
-  build:
+  route:
+    runs-on: ubuntu-latest
+    outputs:
+      siteground: ${{ steps.pick.outputs.siteground }}
+      pages: ${{ steps.pick.outputs.pages }}
+    steps:
+      - id: pick
+        env:
+          HAS_SG: ${{ secrets.SG_HOST != '' && secrets.SG_USER != '' && secrets.SG_SSH_KEY != '' && secrets.SG_PATH != '' }}
+          TARGET: ${{ inputs.target || 'auto' }}
+        run: |
+          if [ "$TARGET" = "siteground" ] || { [ "$TARGET" = "auto" ] && [ "$HAS_SG" = "true" ]; }; then
+            echo "siteground=true" >> "$GITHUB_OUTPUT"; echo "pages=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "siteground=false" >> "$GITHUB_OUTPUT"; echo "pages=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "target=$TARGET has_siteground_secrets=$HAS_SG"
+
+  siteground:
+    needs: route
+    if: needs.route.outputs.siteground == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://marketingaskola.lv
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx @11ty/eleventy
+      - run: npm run check
+      - name: SSH key
+        env:
+          SG_SSH_KEY: ${{ secrets.SG_SSH_KEY }}
+          SG_HOST: ${{ secrets.SG_HOST }}
+          SG_PORT: ${{ secrets.SG_PORT || '18765' }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SG_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$SG_PORT" "$SG_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+      - name: rsync _site to the web root
+        env:
+          SG_HOST: ${{ secrets.SG_HOST }}
+          SG_PORT: ${{ secrets.SG_PORT || '18765' }}
+          SG_USER: ${{ secrets.SG_USER }}
+          SG_PATH: ${{ secrets.SG_PATH }}
+        run: |
+          # --delete makes the web root mirror _site/ exactly: this is what
+          # removes WordPress. .well-known stays (Let's Encrypt renewals).
+          rsync -az --delete --exclude '.well-known' \
+            -e "ssh -i ~/.ssh/deploy_key -p $SG_PORT" \
+            _site/ "$SG_USER@$SG_HOST:$SG_PATH/"
+      - name: Smoke test the live site
+        run: BASE=https://marketingaskola.lv node tools/check-live.mjs
+
+  pages-build:
+    needs: route
+    if: needs.route.outputs.pages == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
       - run: npm ci
-      # While the site lives on the github.io project URL it is built with a
-      # path prefix and marked noindex. On custom-domain cutover:
-      #   1. set PATH_PREFIX to /
-      #   2. delete the PREVIEW env line
-      #   3. add a CNAME file (see README)
       - run: npx @11ty/eleventy --pathprefix="$PATH_PREFIX"
         env:
           PATH_PREFIX: /marketingaskola-site/
@@ -37,8 +103,8 @@ jobs:
         with:
           path: _site
 
-  deploy:
-    needs: build
+  pages-deploy:
+    needs: pages-build
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -11,6 +11,7 @@ const types = {
   '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp',
   '.svg': 'image/svg+xml', '.gif': 'image/gif', '.ico': 'image/x-icon', '.xml': 'application/xml',
   '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2',
+  '.webmanifest': 'application/manifest+json', '.mp4': 'video/mp4', '.webm': 'video/webm', '.json': 'application/json',
 };
 
 http.createServer((req, res) => {
@@ -23,6 +24,7 @@ http.createServer((req, res) => {
     res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
     return res.end(fs.existsSync(notFound) ? fs.readFileSync(notFound) : 'Not found');
   }
-  res.writeHead(200, { 'Content-Type': types[path.extname(file).toLowerCase()] || 'application/octet-stream', 'Cache-Control': 'no-store' });
-  res.end(fs.readFileSync(file));
+  const body = fs.readFileSync(file);
+  res.writeHead(200, { 'Content-Type': types[path.extname(file).toLowerCase()] || 'application/octet-stream', 'Content-Length': body.length, 'Cache-Control': 'no-store' });
+  res.end(req.method === 'HEAD' ? undefined : body);
 }).listen(port, () => console.log(`serving ${root} on http://localhost:${port}`));

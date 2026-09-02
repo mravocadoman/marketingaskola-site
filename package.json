@@ -31,7 +31,8 @@
     "test:hero": "node tools/test-hero.mjs",
     "photos": "node tools/photo-inventory.mjs",
     "derived": "node tools/derived-images.mjs",
-    "check:mirror": "node tools/check-site.mjs archive/wordpress-mirror"
+    "check:mirror": "node tools/check-site.mjs archive/wordpress-mirror",
+    "check:live": "node tools/check-live.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

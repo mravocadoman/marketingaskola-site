@@ -84,16 +84,32 @@ npm run derived   # og:image twins, default social image, favicon.ico, author th
 
 ## Deploy
 
-Push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) builds and
-deploys to GitHub Pages. While on the github.io preview URL the build uses
-`PATH_PREFIX=/marketingaskola-site/` and `PREVIEW=1` (adds `noindex`).
+`.github/workflows/deploy.yml` routes every push to `main`:
 
-**Custom-domain cutover checklist** (when pointing marketingaskola.lv here):
-1. In `deploy.yml`: set `PATH_PREFIX: /` and delete the `PREVIEW: "1"` line.
-2. Add a `CNAME` file containing `marketingaskola.lv` to `src/` and passthrough-copy it (or set the custom domain in repo Settings → Pages, which commits it).
-3. DNS: `A` records for apex → 185.199.108.153 / .109. / .110. / .111.153, `CNAME www` → `mravocadoman.github.io`.
-4. Enable "Enforce HTTPS" in repo Settings → Pages once the cert is issued.
+- **SiteGround (production, https://marketingaskola.lv)** when the `SG_HOST`,
+  `SG_USER`, `SG_SSH_KEY`, `SG_PATH` secrets exist: build, `npm run check`,
+  `rsync --delete` over SSH into the web root, then `npm run check:live`
+  (`tools/check-live.mjs`) smoke-tests the live site from its sitemap.
+  `src/.htaccess` ships with the build: https + no-www, the WordPress-era
+  301s, `/feed/` → `/feed.xml`, old `/wp-content/uploads/` → `/img/`,
+  410 for `/wp-admin` & co, cache lifetimes, security headers.
+- **GitHub Pages (preview)** otherwise, or on `workflow_dispatch` with
+  `target=pages`: `PATH_PREFIX=/marketingaskola-site/` + `PREVIEW=1` (noindex).
 
+The full cutover checklist (backup, SSH key, secrets, first deploy, cache
+flush, Search Console, rollback) is in `docs/siteground-cutover.md`. DNS
+already points at SiteGround and email is on Google Workspace, so the
+cutover is a file swap, not a DNS change.
+
+## WhatsApp entry point (2 Sep 2026)
+
+`.wa-float` in `base.njk` is a fixed click-to-chat link to `wa.me/37126673384`
+with a prefilled Latvian message naming the page and its URL (`bareTitle`
+filter strips the brand suffix). Card fill, hairline, white glyph, cyan on
+hover only; icon + label on desktop, icon on phones; back-to-top stacks above
+it and the consent card sits above it on phones. `data-track="whatsapp-float"`
+is there for a GTM click trigger once analytics is on. The AI assistant plan
+that would sit behind it is in `docs/ai-assistant.md` — not built.
 
 ## Two surfaces: dark canvas + light paper (v6, 20 Aug 2026)
 
