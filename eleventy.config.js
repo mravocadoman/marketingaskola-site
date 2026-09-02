@@ -38,6 +38,9 @@ module.exports = function (eleventyConfig) {
     return ogCache[p];
   });
 
+  // "Kas ir SEO? | Mārketinga Skola" -> "Kas ir SEO?" (WhatsApp prefill, crumbs)
+  eleventyConfig.addFilter("bareTitle", (t) => String(t || "").replace(/\s*[-|–—]\s*Mārketinga Skola\s*$/i, "").trim());
+
   // JSON-LD: JSON with `<` escaped so it can never close the <script>.
   eleventyConfig.addFilter("jsonld", (obj) => JSON.stringify(obj).replace(/</g, "\\u003c"));
 
@@ -261,6 +264,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });
+  // Apache rules for SiteGround (redirects, 404 page, caching, headers).
+  // Ignored by GitHub Pages and by the local server; see docs/siteground-cutover.md.
+  eleventyConfig.addPassthroughCopy({ "src/.htaccess": ".htaccess" });
 
   // ---- ship only the assets that pages actually reference -----------------
   // src/img keeps every original next to its .webp twin (the originals are

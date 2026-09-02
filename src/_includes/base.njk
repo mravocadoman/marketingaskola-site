@@ -148,6 +148,12 @@
 <script src="/js/consent.js" defer data-gtm="{{ site.analytics.gtmId }}"></script>
 {% endif %}
 
+{%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}
+<a class="wa-float" href="https://wa.me/37126673384?text={{ waText | urlencode }}" target="_blank" rel="noopener" data-track="whatsapp-float" aria-label="Rakstīt mums WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.1-1.4A10 10 0 1 0 12 2zm5.8 14.2c-.25.7-1.45 1.35-2 1.4-.55.08-1.05.35-3.55-.74-3-1.32-4.9-4.4-5.05-4.6-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37h.57c.18 0 .43-.07.67.5l.92 2.22c.08.17.13.36.02.56l-.37.56-.53.57c-.16.16-.34.34-.15.67.2.33.87 1.44 1.87 2.33 1.29 1.15 2.37 1.5 2.71 1.67.34.17.53.14.73-.08l1.1-1.28c.25-.33.47-.25.79-.15l2.02.95c.33.17.55.25.63.39.08.13.08.78-.17 1.48z"/></svg>
+  <span class="wa-float-label">WhatsApp</span>
+</a>
+
 <script src="/js/main.js" defer></script>
 <script src="/js/forms.js" defer></script>
 </body>

@@ -1075,7 +1075,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    ========================================================================== */
 .stat .num[data-count] { font-variant-numeric: tabular-nums; }
 .to-top {
-  position: fixed; right: 22px; bottom: 22px; z-index: 70;
+  position: fixed; right: 22px; bottom: 82px; z-index: 70;
   width: 44px; height: 44px; display: grid; place-items: center;
   background: #00152c; color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 0;
@@ -1084,7 +1084,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 }
 .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
 .to-top:hover { border-color: var(--cyan); }
-@media (max-width: 640px) { .to-top { right: 14px; bottom: 14px; } }
+@media (max-width: 640px) { .to-top { right: 14px; bottom: 72px; } }
 
 /* .steps nested inside a half-width column (homepage process + image) —
    viewport breakpoints cannot see the narrower container, so scope it. */
@@ -1442,7 +1442,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* Cookie consent - a card in the corner, hairlines only, two equal ghost
    buttons (accepting must not be louder than declining). Rendered only when
    analytics is configured; see base.njk + js/consent.js. */
-.consent { position: fixed; left: 20px; right: 20px; bottom: 20px; z-index: 90; max-width: 600px; margin: 0 auto; background: var(--card); border: 1px solid var(--line-strong); padding: 22px 24px; display: grid; gap: 16px; }
+.consent { position: fixed; left: 20px; right: 20px; bottom: 76px; z-index: 90; max-width: 600px; margin: 0 auto; background: var(--card); border: 1px solid var(--line-strong); padding: 22px 24px; display: grid; gap: 16px; }
 @media (min-width: 760px) { .consent { left: 24px; right: auto; bottom: 24px; margin: 0; } }
 .consent p { margin: 0; color: var(--body); font-size: var(--t-sm); line-height: 1.55; }
 .consent strong { color: var(--heading); }
@@ -1462,3 +1462,16 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 /* Long-form legal text without the article sidebars. */
 .article-body--solo { max-width: 68ch; }
+
+/* Floating WhatsApp entry point. The persistent, low-key way in: square,
+   card fill, hairline, white glyph, cyan only on hover/focus (budget).
+   Icon + label on desktop, icon only on phones; back-to-top stacks above it. */
+.wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 71; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 16px 0 14px; background: var(--card); color: #fff; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: 0; font-family: var(--font-display); font-weight: 500; font-size: var(--t-sm); letter-spacing: 0.01em; text-decoration: none; transition: border-color 0.2s ease, background 0.2s ease; }
+.wa-float:hover { border-color: var(--cyan); background: var(--well); color: #fff; text-decoration: none; }
+.wa-float:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.wa-float svg { flex-shrink: 0; }
+@media (max-width: 640px) {
+  .wa-float { right: 14px; bottom: 14px; width: 48px; padding: 0; justify-content: center; }
+  .wa-float-label { display: none; }
+}
+@media print { .wa-float, .to-top, .consent { display: none; } }
