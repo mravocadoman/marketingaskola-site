@@ -5,11 +5,12 @@
 import { mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import puppeteer from 'puppeteer-core';
+import { chromePath } from './_chrome.mjs';
 
 const outDir = process.argv[2] || 'shots';
 mkdirSync(outDir, { recursive: true });
 const BASE = process.env.BASE || 'http://localhost:8385';
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const CHROME = chromePath();
 
 const specs = process.argv.slice(3);
 const defaults = [

@@ -3,8 +3,9 @@
 // the headline, inside the hero box, gone under reduced motion and on phones,
 // pointer-inert, and hidden from assistive tech.
 import puppeteer from 'puppeteer-core';
+import { chromePath } from './_chrome.mjs';
 
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const CHROME = chromePath();
 const BASE = process.env.BASE || 'http://localhost:8385';
 const R = []; const ok = (n, c, d = '') => R.push({ n, c, d });
 

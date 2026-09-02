@@ -36,7 +36,7 @@ for (const file of htmlFiles) {
   for (const m of html.matchAll(/(?:href|src)="(\/[^"]*)"/g)) {
     let u = decodeURIComponent(m[1].split('#')[0].split('?')[0]);
     if (!u || u === '/') u = '/index.html';
-    let target = join(SITE, u.replace(/\//g, '\\'));
+    let target = join(SITE, ...u.split('/').filter(Boolean));
     if (u.endsWith('/')) target = join(target, 'index.html');
     if (!existsSync(target) && !existsSync(target + '.html') && !existsSync(join(target, 'index.html'))) {
       broken.push(`${rel} -> ${m[1]}`);

@@ -2,8 +2,9 @@
 // building it, and both were invisible without measuring: the dropdown is a
 // <ul> so `.nav ul` outranks `.dropdown`, and the caret already owns a::after.
 import puppeteer from 'puppeteer-core';
+import { chromePath } from './_chrome.mjs';
 
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const CHROME = chromePath();
 const BASE = process.env.BASE || 'http://localhost:8385';
 const R = []; const ok = (n, c, d = '') => R.push({ n, c, d });
 

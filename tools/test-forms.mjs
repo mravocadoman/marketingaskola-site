@@ -1,8 +1,9 @@
 // Drives the real form in a real browser. The MailerLite request is stubbed so
 // the test proves the client behaviour without creating subscribers.
 import puppeteer from 'puppeteer-core';
+import { chromePath } from './_chrome.mjs';
 
-const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const CHROME = chromePath();
 const BASE = 'http://localhost:8385';
 const results = [];
 const check = (name, pass, detail) => { results.push({ name, pass, detail }); };
