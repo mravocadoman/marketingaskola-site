@@ -18,7 +18,7 @@ const files = [];
   for (const f of readdirSync(d)) {
     const p = join(d, f);
     if (statSync(p).isDirectory()) walk(p);
-    else if (/\.(png|jpe?g)$/i.test(f) && !/^favicon/.test(f)) files.push(p);
+    else if (/\.(png|jpe?g)$/i.test(f) && !/^favicon/.test(f) && !/-og\.jpe?g$/i.test(f) && f !== 'og-default.jpg') files.push(p);
   }
 })(IMG);
 
