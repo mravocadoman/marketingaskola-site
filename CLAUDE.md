@@ -164,14 +164,18 @@ Every non-photographic image on the site is generated flat brand artwork.
   burned in, which is why they clashed on the dark canvas).
 - **The API key lives in `.env` (gitignored, never committed).** `.env.example`
   documents the variable. Rotate the key if it was ever pasted into a chat.
-- **In-article infographics (3 Sep 2026).** Slots with `"style": "paper"` get
-  the white-paper house style (navy ink, cyan accent, still NO text). The
-  `infographic` shortcode in a post — `{% infographic { id, title, items } %}`
-  — renders the artwork with an HTML legend (`.infographic`, numbered
-  `.infographic-list`), so the Latvian labels are real, editable, indexable
-  text instead of baked-in type. It renders nothing until
-  `src/img/gen/<id>.webp` exists, so `npm run images` can lag behind the
-  markup without breaking the build. Six articles carry one each.
+- **In-article infographics (3 Sep 2026) — the one place text in pixels is
+  allowed.** Owner: *"OpenAI image 2 is very good with Latvian texts, so do
+  proper infographics."* Slots with `"style": "paper"` get the white-paper
+  typography brief (navy ink, cyan accent, Inter-like type) and their prompts
+  carry the exact Latvian strings in «guillemets»; generate at
+  `quality: "high"` and proof-read every image — regenerate with
+  `--force --only=<id>` on any misspelling. The `infographic` shortcode —
+  `{% infographic { id, title, items } %}` — renders the image plus a
+  collapsible text version (`<details class="infographic-text">`) so the
+  content stays accessible and indexable. It renders nothing until
+  `src/img/gen/<id>.webp` exists. Six articles carry one each. Covers and
+  page artwork stay text-free.
 
 ## Team photographs — brand accents YES, new people NO
 
@@ -667,6 +671,30 @@ meta descriptions were trimmed under 160 characters, four titles gained the
 brand, the "2025. gadam" e-book copy is evergreen, and five bare "šeit" links
 say where they go. Titles/H1s of the two posts with 2025 in the slug were
 left alone — permalinks and editorial content are the owner's call.
+
+## Homepage and service tiles — imagery pass (3 Sep 2026)
+
+Owner: *"add images for service tiles so it doesn't look so empty; change
+the image next to testimonials, looks weird; improve the above-the-fold
+hero on mobile."* Done from assets already in the repo (no image API on
+this machine):
+
+- **Service tiles** (`.cell--media` + `.cell-media`, 16:10, index in a
+  canvas-coloured box on the picture): real work first — the Brew Company
+  ad for Meta, an improv actor portrait for video, the Četras Zoles
+  creatives for social media, the founder for consultations, the Meta
+  masterclass banner for courses; generated artwork only for AI and SEO,
+  which have no client visuals. The wide seventh cell on `/pakalpojumi/`
+  shows its picture as a side panel (`.cell--wide.cell--media`).
+- **Testimonials**: the abstract chart (`home-hero-performance-band`) is
+  replaced by a frame from the Fitosauna video (`/video/fitosauna-1.webp`)
+  beside the Fitosauna quote, with a caption. The frame is 480px wide, so it
+  is shown at `.media--wide` size, not larger.
+- **Mobile hero**: e-mail hidden from the topbar under 640px (it is in the
+  footer and the WhatsApp float), hero padding cut, stats as three compact
+  ledger rows instead of a 340px card, so the client-logo strip reaches the
+  first screen at 390x844. Measured, not eyeballed: `npm run test:mobile`
+  plus the hero geometry check in the session notes.
 
 ## Rules — do not break these
 
