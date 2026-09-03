@@ -14,6 +14,12 @@ const get = (path, opts = {}) => fetch(BASE + path, { redirect: 'manual', ...opt
 const t0 = Date.now();
 
 const sm = await get('/sitemap.xml');
+if (sm.status === 202 && /text\/html/.test(sm.headers.get('content-type') || '')) {
+  // SiteGround answers datacenter IPs (GitHub Actions runners included) with
+  // a 202 JavaScript challenge page. Nothing can be verified from here.
+  console.log(`${BASE}: blocked by the host's bot challenge (202); run the smoke test from a normal network: npm run check:live`);
+  process.exit(3);
+}
 ok(sm.status === 200, `sitemap.xml -> ${sm.status}`);
 const locs = [...(await sm.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 ok(locs.length > 50, `sitemap has only ${locs.length} urls`);

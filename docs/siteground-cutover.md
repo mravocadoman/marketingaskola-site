@@ -9,8 +9,10 @@
 > manual Site Tools backup `wordpress-before-static-2026-09-02` exists too.
 > Rollback is two renames. Delete the old folder once you are sure (it
 > counts against disk space). The SuperCacher dynamic cache had to be
-> flushed after the swap (it kept serving cached WordPress HTML); every
-> later deploy goes through the workflow.
+> flushed after the swap (it kept serving cached WordPress HTML); the
+> workflow now flushes it over SSH after every upload. GitHub Actions
+> runners get SiteGround's 202 bot challenge, so the HTTP smoke test in CI
+> is a warning only; run `npm run check:live` locally to verify.
 
 Written 2 Sep 2026. The domain already lives at SiteGround, so this is a
 file swap on the same account, not a migration between hosts.

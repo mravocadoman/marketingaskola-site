@@ -99,8 +99,13 @@ npm run derived   # og:image twins, default social image, favicon.ico, author th
 **Live on SiteGround since 3 Sep 2026.** The cutover was a folder swap over
 SSH; the WordPress install is still on the server as
 `public_html_wordpress_2026-09-02` for rollback (delete it once confident).
-After a deploy that changes HTML, flush the SuperCacher dynamic cache in
-Site Tools if a page looks stale — nginx caches HTML for a while. GitHub
+The workflow flushes SuperCacher's dynamic cache after every upload through
+the server-side CLI (`site-tools-client domain-all update id=1 flush_cache=1`
+over SSH) — without it nginx kept serving the previous HTML. SiteGround's
+bot challenge (`protect_captcha`) answers datacenter IPs such as GitHub
+Actions runners with a 202 page, so the workflow verifies the upload over
+SSH and treats a challenged HTTP smoke test as a warning; `npm run check:live`
+and `npm run test:mobile` from a normal network are the real checks. GitHub
 Pages still hosts the noindex preview (`workflow_dispatch`, target=pages).
 The full checklist (backup, SSH key, secrets, first deploy, cache flush,
 Search Console, rollback) is in `docs/siteground-cutover.md`. DNS
