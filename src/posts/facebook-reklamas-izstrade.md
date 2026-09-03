@@ -54,6 +54,6 @@ Vērtīgākais, ko paņemt no šī bloga raksta? Facebook ir digitālā mārketi
 
 ## Mārketinga Skolas piedāvājums
 
-Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un gūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, mēs esam izveidojuši mūsu apjomīgāko [Facebook un Instagram reklāmas kursu](/facebook-kursi/) tiešsaistes formātā.
+Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un gūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, mēs esam izveidojuši mūsu apjomīgāko [Facebook un Instagram reklāmas kursu](/meta-reklamas-kurss/) tiešsaistes formātā.
 
 Un, ja meklē profesionālu atbalstu savu mērķu sasniegšanai, mēs esam šeit, lai palīdzētu. Kā pieredzējusi reklāmas aģentūra, mēs piedāvājam [profesionālu palīdzību Facebook un Instagram reklāmu uzstādīšanā](/facebook-reklama/), nodrošinot, ka Tava kampaņa sasniedz vēlamos rezultātus visefektīvākajā veidā.

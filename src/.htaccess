@@ -24,6 +24,10 @@ AddDefaultCharset utf-8
   RewriteCond %{HTTP_HOST} ^www\. [NC]
   RewriteRule ^ https://marketingaskola.lv%{REQUEST_URI} [R=301,L]
 
+  # The recorded video course was merged into the live online course
+  # (3 Sep 2026): one landing page, live course as the product.
+  RewriteRule ^facebook-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
+
   # URLs that changed on the old WordPress site (these were 301s there too).
   RewriteRule ^meta-reklamas-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
   RewriteRule ^7-padomi-marketinga-strategijas-izstrade/?$ /marketinga-strategijas-izstrade/ [R=301,L]

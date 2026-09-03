@@ -1,0 +1,15 @@
+{
+  "_comment": "Scheduled live course groups. The course page renders `sessions` as fixed dates with a per-date payment link; when the list is empty it falls back to the application form, so the page is always valid. Policy: a group runs from `minSeats` paid participants; below that the participant moves to the next month, takes a refund, or converts the payment into a consultation. Add a session: { date (ISO), label (Latvian, as shown), time, format, seats, url (payment link) }.",
+  "policy": {
+    "minSeats": 5,
+    "decideDaysBefore": 3
+  },
+  "courses": {
+    "meta-reklamas-kurss": {
+      "sessions": []
+    },
+    "seo-kursi": {
+      "sessions": []
+    }
+  }
+}

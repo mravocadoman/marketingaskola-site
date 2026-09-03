@@ -43,4 +43,4 @@ Vai pēc šī bloga raksta izlasīšanas jūties pārliecinātāks par savu Inst
 -   pievilcīga vizuāļa,
 -   [saistoša reklāmas teksta](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/)
 
-Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un iegūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, tad mēs tev piedāvājam [Facebook un Instagram reklāmas kursu](/facebook-kursi/) tiešsaites formātā, kas palīdzēs tavam uzņēmumam attīstīties!
+Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un iegūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, tad mēs tev piedāvājam [Facebook un Instagram reklāmas kursu](/meta-reklamas-kurss/) tiešsaites formātā, kas palīdzēs tavam uzņēmumam attīstīties!

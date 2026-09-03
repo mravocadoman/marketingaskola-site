@@ -75,7 +75,7 @@ Mūsu Facebook mārketinga mācības sevī iekļauj:
 
 ## Mārketinga skolas piedāvājums
 
-Ja uzskati, ka Facebook ir piemērota sociālo mediju platforma Tavai uzņēmējdarbībai, tad kāpēc gan nepieteikties šīm vērtīgajām Facebook reklāmas apmācībām? Iepazīsties ar Mārketinga Skolas [Facebook reklāmas kursu](/facebook-kursi/)!
+Ja uzskati, ka Facebook ir piemērota sociālo mediju platforma Tavai uzņēmējdarbībai, tad kāpēc gan nepieteikties šīm vērtīgajām Facebook reklāmas apmācībām? Iepazīsties ar Mārketinga Skolas [Facebook reklāmas kursu](/meta-reklamas-kurss/)!
 
 Vai šis bloga raksts _Tev ir sniedzis gaismu [Facebook reklāmas](/facebook-reklamas-izstrade/) tuneļa galā_ jeb sapratni par to, vai Facebook ir piemērota platforma Tava uzņēmuma reklamēšanai? Patiešām ceram, ka Tava atbilde ir “_jā”._
 

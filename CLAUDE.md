@@ -718,9 +718,28 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   templates page still holds a working Stripe link (6,99 €) and old ads may
   point at it, so the URLs must keep answering 200. Reversible: delete the
   `noindex` line to bring a page back.
-- **`/facebook-kursi/` (the Thinkific video course) is untouched.** It is
-  self-serve at 145 € with a 30-day guarantee — it generates sales, not
-  labour. Retiring it is a separate decision because it would cost revenue.
+- **`/facebook-kursi/` is retired and 301s to `/meta-reklamas-kurss/`.**
+  Owner: *"the video course is old too. See which content is better and keep
+  just one, and merge them into one solid LP with online (not recorded)
+  course as main product."* The recorded course's marketing copy was much
+  the stronger of the two (audience personas, the "svētais Grāls" argument,
+  the 36,34 € ROAS example, the instructor bio, B2B invoicing, LIFT, the
+  FAQ), so that copy moved onto the live course's page; the **syllabus stays
+  the live course's five modules**, because claiming the recorded course's
+  nine modules for a three-hour live session would be false. Claims tied to
+  the recording did NOT move: 45 lectures, 6,5 h, one-year access, the
+  30-day money-back guarantee, the 295→145 price and the Thinkific link.
+  The Thinkific product still exists for people who already bought it; the
+  site no longer sells it.
+- **Live course groups are data, not prose.** `src/_data/courseSessions.json`
+  holds `policy` (`minSeats`, `decideDaysBefore`) and a `sessions` array per
+  course. With sessions the page lists fixed dates, each with its own
+  payment link; with an empty array it falls back to the application form,
+  so the page is always valid. Adding a month is a data edit, not a
+  template change. The stated policy — a group runs from five paid
+  participants, otherwise move to next month, refund, or convert to a
+  consultation — is in the course card, the pieteikšanās lead and the FAQ,
+  all read from `policy` so the numbers cannot drift apart.
 
 ## Rules — do not break these
 
