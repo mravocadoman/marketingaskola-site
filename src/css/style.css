@@ -430,6 +430,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .row:last-child { margin-bottom: 0; }
 .cols-1 { grid-template-columns: 1fr; }
 .cols-2 { grid-template-columns: 1fr 1fr; }
+.row--form { grid-template-columns: 1.5fr 1fr; }
 .cols-3 { grid-template-columns: repeat(3, 1fr); }
 .cols-4 { grid-template-columns: repeat(4, 1fr); }
 .cols-5 { grid-template-columns: repeat(5, 1fr); }
@@ -1016,7 +1017,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   transform: scaleX(0); transform-origin: 0 50%;
   background: var(--cyan); z-index: 80; pointer-events: none;
 }
-.article-shell { padding: clamp(52px, 6vw, 84px) 0 clamp(64px, 8vw, 104px); }
+.article-shell { padding-block: clamp(52px, 6vw, 84px) clamp(64px, 8vw, 104px); }
 /* The single definition of the article grid lives further down, next to the
    reading-column comment — keeping a second one here silently overrode it. */
 .article-grid { display: grid; align-items: start; }

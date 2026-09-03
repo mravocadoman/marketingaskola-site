@@ -244,6 +244,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Markdown tables come out as bare <table>. Wrapped in .table-scroll they
+  // scroll sideways inside the article instead of widening the whole page
+  // on phones (the Meta ads article's comparison table was 410px on a 390px
+  // screen). Tables that are already wrapped are left alone.
+  eleventyConfig.addTransform("tableScroll", function (content) {
+    if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
+    return content.replace(/(<div class="table-scroll">\s*)?<table\b([\s\S]*?)<\/table>(\s*<\/div>)?/g, (m, open, inner, close) =>
+      open ? m : `<div class="table-scroll"><table${inner}</table></div>`
+    );
+  });
+
   // Rewrites all root-relative URLs when a --pathprefix is set (GitHub project pages).
   eleventyConfig.addPlugin(HtmlBasePlugin);
 
