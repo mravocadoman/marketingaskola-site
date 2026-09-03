@@ -698,6 +698,30 @@ this machine):
   first screen at 390x844. Measured, not eyeballed: `npm run test:mobile`
   plus the hero geometry check in the session notes.
 
+## IA change — courses simplified, products retired (3 Sep 2026)
+
+Owner: *"I don't want to deal with inquiries about TikTok kursi and Facebook
+(video)… ideally we just push the traffic from them towards paid
+Konsultācijas. Swap Visi kursi menu under item link to Kursi and just link
+the page as main nav page. Also remove Produkti page / nav item for now and
+100 veidnes / sociālo mediju rokasgrāmata, as they are all outdated."*
+
+- **Nav is six flat items**: Sākums · Pakalpojumi (the only dropdown) ·
+  Portfolio · Kursi · Blogs · Sazinies. `Kursi` links straight to
+  `/digitala-marketinga-kursi/`; its dropdown is gone.
+- **`/tiktok-kursi/` keeps its page and its SEO** but no longer collects
+  intake. Every CTA goes to `/marketinga-konsultacijas/` and the copy says
+  the group course is not running and names the consultation prices.
+- **`/produkti/`, `/bezmaksas-e-gramata/` and
+  `/100-instagram-stories-veidnes/` are `noindex: true`** — out of the nav,
+  the footer and the sitemap, but **not deleted and not redirected**. The
+  templates page still holds a working Stripe link (6,99 €) and old ads may
+  point at it, so the URLs must keep answering 200. Reversible: delete the
+  `noindex` line to bring a page back.
+- **`/facebook-kursi/` (the Thinkific video course) is untouched.** It is
+  self-serve at 145 € with a 30-day guarantee — it generates sales, not
+  labour. Retiring it is a separate decision because it would cost revenue.
+
 ## Rules — do not break these
 
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,

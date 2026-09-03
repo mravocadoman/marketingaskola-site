@@ -61,43 +61,7 @@
     },
     {
       "label": "Kursi",
-      "url": "/digitala-marketinga-kursi/",
-      "children": [
-        {
-          "label": "Visi kursi",
-          "url": "/digitala-marketinga-kursi/"
-        },
-        {
-          "label": "Meta reklāmas kurss",
-          "url": "/meta-reklamas-kurss/"
-        },
-        {
-          "label": "SEO kurss",
-          "url": "/seo-kursi/"
-        },
-        {
-          "label": "TikTok kurss",
-          "url": "/tiktok-kursi/"
-        },
-        {
-          "label": "Facebook reklāmas kurss (video)",
-          "url": "/facebook-kursi/"
-        }
-      ]
-    },
-    {
-      "label": "Produkti",
-      "url": "/produkti/",
-      "children": [
-        {
-          "label": "Bezmaksas e-grāmata",
-          "url": "/bezmaksas-e-gramata/"
-        },
-        {
-          "label": "100 Instagram veidnes",
-          "url": "/100-instagram-stories-veidnes/"
-        }
-      ]
+      "url": "/digitala-marketinga-kursi/"
     },
     {
       "label": "Blogs",
