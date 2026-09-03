@@ -40,6 +40,12 @@ Pēdējais punkts ir svarīgākais un visbiežāk aizmirstais. Saraksts ar to, k
 
 **3. Pārraksti pēdējo versiju pats.** Šis solis izlaišanai nav paredzēts. Izmet frāzes, kuras nekad neteiktu skaļi, ieliec konkrētu piemēru no savas pieredzes un pārbaudi katru skaitli.
 
+{% infographic { id: "info-ai-tris-soli", title: "Trīs soļu process, kas saglabā zīmola balsi", items: [
+  { label: "Konteksts, pēc tam uzdevums", text: "Vispirms materiāls: kam raksti, kādā situācijā lasa, ko cilvēks jau zina un ko Tu no viņa gribi." },
+  { label: "Varianti, ne gatavs teksts", text: "Pieci virsraksti ar dažādu pieeju ir noderīgāki nekā viens labākais — izvēle paliek pie cilvēka." },
+  { label: "Pēdējo versiju pārraksti pats", text: "Izmet frāzes, ko neteiktu skaļi, ieliec konkrētu piemēru un pārbaudi katru skaitli." }
+] } %}
+
 ## Kas jāpārbauda vienmēr
 
 AI raksta vienlīdz pārliecinoši gan tad, kad tam ir taisnība, gan tad, kad nav. Tāpēc pirms publicēšanas:

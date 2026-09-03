@@ -1478,3 +1478,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .wa-float-label { display: none; }
 }
 @media print { .wa-float, .to-top, .consent { display: none; } }
+
+/* ---------- in-article infographic: generated text-free artwork + HTML legend ---------- */
+.infographic { margin: 2.4em 0; border: 1px solid var(--line); background: #ffffff; }
+.article-body .prose .infographic > img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; }
+.infographic figcaption { padding: clamp(18px, 3vw, 28px); }
+.infographic-title { margin: 0 0 14px; font-family: var(--font-display); font-weight: 600; font-size: var(--t-d1); line-height: 1.25; color: var(--heading); }
+.infographic-list { list-style: none; margin: 0; padding: 0; counter-reset: ig; display: grid; gap: 12px 24px; }
+@media (min-width: 560px) { .infographic-list { grid-template-columns: 1fr 1fr; } }
+.article-body .prose .infographic-list li { counter-increment: ig; position: relative; padding-left: 34px; margin: 0; font-size: var(--t-sm); line-height: 1.5; color: var(--body); }
+.infographic-list li::before { content: counter(ig, decimal-leading-zero); position: absolute; left: 0; top: 3px; font-family: var(--font-display); font-weight: 600; font-size: var(--t-micro); letter-spacing: 0.08em; color: var(--tick); }
+.infographic-list strong { display: block; color: var(--heading); font-weight: 600; margin-bottom: 2px; }

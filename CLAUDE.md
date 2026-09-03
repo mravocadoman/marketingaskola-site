@@ -164,6 +164,14 @@ Every non-photographic image on the site is generated flat brand artwork.
   burned in, which is why they clashed on the dark canvas).
 - **The API key lives in `.env` (gitignored, never committed).** `.env.example`
   documents the variable. Rotate the key if it was ever pasted into a chat.
+- **In-article infographics (3 Sep 2026).** Slots with `"style": "paper"` get
+  the white-paper house style (navy ink, cyan accent, still NO text). The
+  `infographic` shortcode in a post — `{% infographic { id, title, items } %}`
+  — renders the artwork with an HTML legend (`.infographic`, numbered
+  `.infographic-list`), so the Latvian labels are real, editable, indexable
+  text instead of baked-in type. It renders nothing until
+  `src/img/gen/<id>.webp` exists, so `npm run images` can lag behind the
+  markup without breaking the build. Six articles carry one each.
 
 ## Team photographs — brand accents YES, new people NO
 

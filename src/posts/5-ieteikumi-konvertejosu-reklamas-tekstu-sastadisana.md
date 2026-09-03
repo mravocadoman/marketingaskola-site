@@ -45,6 +45,14 @@ Reklāmas tekstu sastādīšana ir kā māksla rakstīt īsi, kodolīgi un ieint
 
 Mūsdienās valda populārs stereotips, ka reklāmas tekstus spēj rakstīt tikai cilvēki ar bagātu vārdu krājumu, jo viņu vārdu izvēle ir unikāla un oriģināla. Tas ir tik aplami! Mārketinga Skola ir veltījusi ļoti daudz laika, lai izpētītu, kā ieinteresēt potenciālos klientus savos reklāmu tekstos. Viens no mūsu vērtīgākajiem secinājumiem ir, ka cilvēkus saista vienkāršība. Viņiem patīk iedziļināties saturā, kas ir skaidrs un viegli saprotams. Reklāmas tekstu sastādīšana ir prasme šo tekstu nepiepildīt ar gudriem zinātniski pierādītiem faktu pamatojumiem vai īpatnējiem īpašības vārdiem, jo bieži vien tieši pārgudra valoda un reklāma, kuras teksts ir sarežģīti saprotams, cilvēkus nevis piesaista, bet atgrūž.
 
+{% infographic { id: "info-reklamas-teksta-ieteikumi", title: "Pieci ieteikumi konvertējošam reklāmas tekstam", items: [
+  { label: "Pazīsti mērķauditoriju", text: "Bez auditorijas izpētes teksts nevar ieinteresēt nevienu." },
+  { label: "Emocionālā saikne", text: "Aizkustini, sasmīdini, pārsteidz — aizķer stīgu, kas liek rīkoties." },
+  { label: "Ieintriģējošs virsraksts", text: "Pirmais, ko pamana; no tā atkarīgs, vai lasīs tālāk." },
+  { label: "Īss un kodolīgs teksts", text: "Bez gariem ievadiem un noslēgumiem — laiks ir nauda." },
+  { label: "Vienkāršība", text: "Skaidri vārdi pārdod labāk nekā bagāts vārdu krājums." }
+] } %}
+
 ## Mārketinga skola iesaka
 
 Ko no šī bloga raksta var secināt? Reklāmas tekstu sastādīšana ir īsta māksla. Tā ir māksla uzrakstīt tekstu, kas ir vienkāršs un kodolīgs. Tā ir māksla lasītājā aizķert kādu emocionālo stīgu un iedvesmot rīkoties. Visbeidzot tā ir māksla caur nelielu tekstu jau sadraudzēties ar savu potenciālo klientu, lai viņš justos tā, ka šis reklāmas teksts ir kā personisks piedāvājums piepildīt tieši viņa sapņus. Jā, reklāmas tekstu sastādīšana ir izaicinošs process, taču, ja veltīsi tam lielu daļu sava laika, Tev noteikti izdosies!

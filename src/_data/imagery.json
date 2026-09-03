@@ -446,6 +446,60 @@
       "aspect": "landscape",
       "alt": "Vairāki vienādi pelēki taisnstūri un viens atšķirīgs ciāns taisnstūris.",
       "prompt": "Flat vector editorial composition on solid near-black navy #020d1c. Nine identical cool-grey #8ba3bd rectangles of the same size arranged in a loose three-by-three grid, all perfectly aligned and evenly spaced. One single rectangle, off-centre, is filled solid cyan #03c3f8 and is rotated a few degrees out of alignment with the rest. Generous negative space around the whole grid, strictly geometric, subtle film grain."
+    },
+    {
+      "id": "info-automatizacija-tris-vietas",
+      "page": "marketinga-automatizacija-ar-ko-sakt",
+      "placement": "in-article infographic before \"Pirmā vieta\"",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: trīs savienotas stacijas — pieteikumu forma, vēstule ar pulksteni un atskaites diagramma — kā trīs vietas, kur mazam uzņēmumam automatizācija atmaksājas pirmā",
+      "prompt": "Infographic composition of three stations connected left to right by one thin navy line with small square nodes: first a simple web form card with three empty field bars and a small tray beneath it, second an envelope with a small clock face beside it, third a small bar chart card with three bars. The middle station carries the single cyan accent. Even spacing, white background."
+    },
+    {
+      "id": "info-ai-tris-soli",
+      "page": "ai-saturs-bez-zimola-balss-zaudesanas",
+      "placement": "in-article infographic after \"Trīs soļu process\"",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: trīs soļi — dokumentu mape, kas ieplūst kastē; pieci zarojoši varianti; pildspalva pār lapu ar ķeksīti — kā AI satura process, kas saglabā zīmola balsi",
+      "prompt": "Infographic of a three-step process reading left to right, separated by thin navy arrows: first a small stack of three document sheets feeding into a square box, second one line splitting into five parallel branch lines ending in small squares with one branch highlighted in cyan, third a flat fountain pen over a single page with a bold check mark. White background, navy ink, minimal."
+    },
+    {
+      "id": "info-facebook-cenas-faktori",
+      "page": "cik-maksa-reklama-facebook",
+      "placement": "in-article infographic after the five price factors",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: cenas zīme centrā ar piecām līnijām uz ikonām — atskaņošanas poga, mērķis, karogs, kalendārs, zvaigzne — kā pieci faktori, kas ietekmē Facebook reklāmas cenu",
+      "prompt": "Radial infographic: a flat price tag shape in the centre, five thin navy lines radiating to five simple icons arranged in a wide arc above and beside it: a play button inside a square, a concentric target, a small flag on a pole, a calendar grid, a five-point star. Only the star is cyan. Plenty of white space, balanced, no text."
+    },
+    {
+      "id": "info-marketinga-plana-soli",
+      "page": "marketinga-plans",
+      "placement": "in-article infographic after the six steps",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: seši soļi uz līkumotas takas — lupa, mērķis, kanālu režģis, zobrats, monētu kaudzes, cikla bultas — kā mārketinga plāna izveides secība",
+      "prompt": "Infographic of a gently winding thin navy path from left to right with six square nodes; at each node a simple flat icon: a magnifying glass, a concentric target, a grid of four small squares, a gear, two small coin stacks of different height, and two arrows forming a loop. The final loop node is cyan. White background, even rhythm, no text."
+    },
+    {
+      "id": "info-reklamas-teksta-ieteikumi",
+      "page": "5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
+      "placement": "in-article infographic before \"Mārketinga skola iesaka\"",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: piecas kartītes rindā — cilvēku silueti, sirds, izcelta virsraksta josla, saīsinātas teksta līnijas un viens aplis — kā pieci ieteikumi konvertējošam reklāmas tekstam",
+      "prompt": "Infographic row of five equal square cards with thin navy outlines, each holding one flat icon: two overlapping person silhouettes, a heart, a thick short headline bar above two thin lines, three text lines with the last one cut short by a small scissors mark, and a single plain circle. The heart is the only cyan element. White background, generous margins, no text."
+    },
+    {
+      "id": "info-digitala-marketinga-ieguvumi",
+      "page": "digitalais-marketings",
+      "placement": "in-article infographic after the three benefits",
+      "aspect": "landscape",
+      "style": "paper",
+      "alt": "Infografika: trīs pīlāri — mērķa krusts, augoša līkne ar monētām un mērinstruments — kā digitālā mārketinga trīs lielākie ieguvumi",
+      "prompt": "Infographic of three tall rectangular panels side by side with thin navy outlines, each with one flat icon centred: a crosshair target, a rising line chart with two small coins at its top, and a semicircular gauge with a needle. The needle is cyan. Beneath each panel a short thick navy baseline bar. White background, symmetrical, no text."
     }
   ]
 }

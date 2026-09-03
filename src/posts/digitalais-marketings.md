@@ -53,6 +53,12 @@ Atlasot uzņēmuma produktam un mērķauditorijai pielāgotu digitālā mārketi
 
 Digitālā mārketinga trumpis ir spēja parādīt tā darba (vai nedarba) augļus. Digitālie rīki spēj to, ko nespēj tradicionālie – ātri un precīzi parādot, vai reklāmai bijusi jēga caur reklāmas klikšķu skaitu, konvertāciju skaitu pirkumos un citiem analītikas rādītājiem.
 
+{% infographic { id: "info-digitala-marketinga-ieguvumi", title: "Trīs lielākie digitālā mārketinga ieguvumi", items: [
+  { label: "Precīza mērķauditorijas sasniegšana", text: "Pie īstā klienta ar pāris klikšķiem, ja zini, kam pārdod." },
+  { label: "Peļņas palielināšana", text: "Produktam un auditorijai pielāgota stratēģija audzē pārdošanu un klientu bāzi." },
+  { label: "Izmērāma efektivitāte", text: "Klikšķi, konversijas un pirkumi rāda, vai reklāmai bijusi jēga." }
+] } %}
+
 ## Kāpēc visi uzņēmumi, kuros īstenots digitālais mārketings, nav veiksmīgi?
 
 Uz šo atbilde ir vienkārša: uzņēmumiem pietrūkst digitālo zināšanu, stratēģijas, tirgus izpētes vai visu šo aspektu **kopā**.

@@ -104,6 +104,15 @@ Lai mārketinga stratēģija sniegtu vēl labākus rezultātus, to regulāri jā
 
 Plānojot 2025. gada mārketinga aktivitātes, ir svarīgi ņemt vērā arī [aktuālās digitālā mārketinga tendences.](/5-digitala-marketinga-tendences-2025-gada/)
 
+{% infographic { id: "info-marketinga-plana-soli", title: "Mārketinga plāns sešos soļos", items: [
+  { label: "Izpēti tirgu un konkurentus", text: "Kas notiek nozarē, ko dara konkurenti, kas interesē auditoriju." },
+  { label: "Nosaki konkrētus mērķus", text: "SMART mērķi, kurus var izmērīt un sasniegt termiņā." },
+  { label: "Izvēlies kanālus", text: "Ne visi kanāli der katram biznesam — sāc ar tiem, kur ir Tavi klienti." },
+  { label: "Izmanto digitālos rīkus", text: "Plānošanai, publicēšanai un analīzei." },
+  { label: "Sadali budžetu un resursus", text: "Lai rezultāti atbilstu ieguldītajam." },
+  { label: "Uzlabo un optimizē", text: "Regulāri pārskati skaitļus un pielāgo plānu." }
+] } %}
+
 ## Biežāk pieļautās kļūdas mārketinga plānošanā un kā no tām izvairīties
 
 Pat ar labu stratēģiju var pieļaut kļūdas, kas kavē panākumus, kas nozīmē, ka pat vislabākajām stratēģijām var būt trūkumi, ja tās netiek pareizi īstenotas.

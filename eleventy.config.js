@@ -41,6 +41,23 @@ module.exports = function (eleventyConfig) {
   // "Kas ir SEO? | Mārketinga Skola" -> "Kas ir SEO?" (WhatsApp prefill, crumbs)
   eleventyConfig.addFilter("bareTitle", (t) => String(t || "").replace(/\s*[-|–—]\s*Mārketinga Skola\s*$/i, "").trim());
 
+  // In-article infographic: generated text-free artwork (tools/generate-images.mjs,
+  // style "paper") plus an HTML legend carrying the Latvian labels. Renders
+  // nothing until the image exists, so a missing generation never breaks the
+  // build. Alt text comes from the imagery manifest, the single source.
+  const imagery = JSON.parse(fs.readFileSync(path.join(SRC, "_data", "imagery.json"), "utf8")).slots;
+  eleventyConfig.addShortcode("infographic", (o) => {
+    const file = onDisk(`/img/gen/${o.id}.webp`);
+    if (!fs.existsSync(file)) return "";
+    const slot = imagery.find((s) => s.id === o.id) || {};
+    const esc = (t) => String(t || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    const items = (o.items || []).map((it) => `<li><strong>${esc(it.label)}</strong>${it.text ? ` <span>${esc(it.text)}</span>` : ""}</li>`).join("");
+    return `<figure class="infographic">
+  <img src="/img/gen/${o.id}.webp" alt="${esc(slot.alt)}" loading="lazy">
+  <figcaption>${o.title ? `<p class="infographic-title">${esc(o.title)}</p>` : ""}<ol class="infographic-list">${items}</ol></figcaption>
+</figure>`;
+  });
+
   // JSON-LD: JSON with `<` escaped so it can never close the <script>.
   eleventyConfig.addFilter("jsonld", (obj) => JSON.stringify(obj).replace(/</g, "\\u003c"));
 

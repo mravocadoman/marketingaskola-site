@@ -27,6 +27,12 @@ Reiziniet pirmos divus un iegūsi stundas mēnesī. Trešais rāda, kur kļūda 
 
 Pieredze rāda vienu atkārtotu pārsteigumu: lielākais laika patērētājs reti ir tas, kas visvairāk kaitina. Kaitina lēni un sarežģīti uzdevumi, bet laiku apēd īsi uzdevumi, kas atkārtojas simts reižu.
 
+{% infographic { id: "info-automatizacija-tris-vietas", title: "Trīs vietas, kur automatizācija atmaksājas pirmā", items: [
+  { label: "Pieteikumu ceļš", text: "Forma raksta tieši sistēmā, saglabā lapu, no kuras cilvēks pieteicās, un ieliek pieteikumu pareizajā sarakstā." },
+  { label: "Pirmā atbilde", text: "Automātisks apstiprinājums nopērk laiku līdz cilvēka atbildei — un tam jāizskatās pēc vēstules, ne sistēmas paziņojuma." },
+  { label: "Atskaites", text: "Automatizē tikai to atskaiti, kuru kāds tiešām lasa un pēc kuras kaut ko izlemj." }
+] } %}
+
 ## Pirmā vieta: pieteikumu ceļš
 
 Vairumā mazo uzņēmumu pieteikums no mājaslapas atnāk uz e-pastu, un tālāk kāds to ar roku pārraksta tabulā vai sistēmā. Katrs solis, kurā cilvēks pārkopē datus no vienas vietas otrā, ir vieta, kur dati pazūd vai sabojājas.

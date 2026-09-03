@@ -56,6 +56,14 @@ Ja vēlies uzzināt, kā efektīvi izmantot Facebook reklāmas savā uzņēmumā
 
 Tagad, kad noskaidroji, cik maksā Facebook reklāma, ir svarīgi aprēķināt savu budžetu un izvērtēt, vai vēlies reklamēties arī citās Meta platformās, piemēram, Instagram.
 
+{% infographic { id: "info-facebook-cenas-faktori", title: "Pieci faktori, kas nosaka Facebook reklāmas cenu", items: [
+  { label: "Reklāmas veids", text: "Video reklāmas parasti maksā vairāk nekā attēlu reklāmas." },
+  { label: "Mērķauditorija", text: "Jo šaurāka un specifiskāka auditorija, jo dārgāks katrs sasniegtais cilvēks." },
+  { label: "Reklāmas mērķis", text: "Pārdošana un pieteikumi maksā vairāk nekā lapas apmeklējumi." },
+  { label: "Sezona un konkurence", text: "Svētku laikā daudzi sacenšas par vienu auditoriju, un cena aug." },
+  { label: "Kvalitāte un atbilstība", text: "Labi novērtētas reklāmas Facebook rāda lētāk." }
+] } %}
+
 ## Kā zināt, cik liels budžets Tev būs vajadzīgs Facebook reklāmām?
 
 Pirms sākt, svarīgi saprast, kāds ir Tavs **mērķis** un cik daudz Tev jāmaksā par viena klienta piesaisti.
