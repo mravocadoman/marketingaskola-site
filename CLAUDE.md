@@ -680,16 +680,18 @@ hero on mobile."* Done from assets already in the repo (no image API on
 this machine):
 
 - **Service tiles** (`.cell--media` + `.cell-media`, 16:10, index in a
-  canvas-coloured box on the picture): real work first — the Brew Company
-  ad for Meta, an improv actor portrait for video, the Četras Zoles
-  creatives for social media, the founder for consultations, the Meta
-  masterclass banner for courses; generated artwork only for AI and SEO,
-  which have no client visuals. The wide seventh cell on `/pakalpojumi/`
-  shows its picture as a side panel (`.cell--wide.cell--media`).
-- **Testimonials**: the abstract chart (`home-hero-performance-band`) is
-  replaced by a frame from the Fitosauna video (`/video/fitosauna-1.webp`)
-  beside the Fitosauna quote, with a caption. The frame is 480px wide, so it
-  is shown at `.media--wide` size, not larger.
+  canvas-coloured box on the picture): **generated house-style artwork only.**
+  A first pass used real campaign photos (Brew Company, an improv actor, the
+  Četras Zoles creatives); owner: *"change the pictures you added on the
+  frontpage from old website to stylized images we have now for consistency,
+  otherwise it looks quite terrible."* All ten tiles across `/` and
+  `/pakalpojumi/` now reuse the existing dark artwork —
+  `meta-targeting-band`, `video-formats-band`, `smm-orbit-band`,
+  `ai-flow-band`, `konsultacijas-saruna`, `seo-mekletaja-motivs`,
+  `kursi-programmas-motivs`. Do not put photographs in this grid.
+- **Testimonials are three equal quotes** (`.row.cols-3`), no picture. The
+  left column used to hold filler artwork, which also forced the first quote
+  into a different shape from the other two.
 - **Mobile hero**: e-mail hidden from the topbar under 640px (it is in the
   footer and the WhatsApp float), hero padding cut, stats as three compact
   ledger rows instead of a 340px card, so the client-logo strip reaches the

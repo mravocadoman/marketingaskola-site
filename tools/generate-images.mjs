@@ -38,15 +38,18 @@ const STYLE_SUFFIX =
   'No text, no letters, no numbers, no words, no logos, no watermarks, no user-interface elements. ' +
   'Generous negative space, asymmetric composition, subtle fine film grain, premium editorial restraint.';
 
-// Artwork for the white "paper" reading surface (in-article infographics).
-// Same discipline, inverted field: navy ink on white, cyan as the one accent,
-// and still NO text - the Latvian labels live in HTML next to the image.
+// Artwork for the white "paper" reading surface: in-article infographics WITH
+// Latvian text. Owner (3 Sep 2026): gpt-image-2 renders Latvian well, so the
+// infographics carry their own headline and labels; the exact strings are in
+// each slot's prompt and a text version sits in the HTML for accessibility.
+// (Covers and page artwork stay text-free - see STYLE_SUFFIX.)
 const PAPER_SUFFIX =
-  ' Flat editorial vector infographic artwork on a pure white background (#ffffff), like a diagram in a premium business magazine. ' +
-  'Strictly flat colour blocking: absolutely no gradients, no glow, no 3D rendering, no glossy reflections, no drop shadows, no vignette, no texture. ' +
-  'Ink colour deep navy #00152c for the main shapes and thin consistent outlines, one accent colour cyan #03c3f8 used sparingly on a single element per group, cool grey #8ba3bd for secondary shapes. ' +
-  'No text, no letters, no numbers, no words, no labels, no logos, no watermarks, no user-interface elements. ' +
-  'Clear reading order, even spacing, generous white space, simple geometric icons with rounded-free square corners, premium editorial restraint.';
+  ' Flat editorial vector infographic on a pure white background (#ffffff), like a diagram in a premium business magazine. ' +
+  'Typography: one clean geometric sans-serif typeface (like Inter), headline bold in deep navy #00152c, labels bold navy, notes regular in slate grey #33475b; all type large and highly legible even when the image is shown at 600 pixels wide. ' +
+  'Strictly flat colour blocking: no gradients, no glow, no 3D, no shadows, no texture, no photographs. Ink deep navy #00152c, one accent colour cyan #03c3f8 used sparingly (the step numbers or one highlight per group), cool grey #8ba3bd for secondary shapes. ' +
+  'Simple square-cornered geometric icons, generous margins, even spacing, clear reading order. ' +
+  'Spell every Latvian word exactly as given, with correct diacritics (ā č ē ģ ī ķ ļ ņ š ū ž); add no other words, no logos, no watermarks. ' +
+  'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other punctuation around the text itself.';
 const styleSuffix = (slot) => (slot.style === 'paper' ? PAPER_SUFFIX : STYLE_SUFFIX);
 
 const SIZES = { landscape: '1536x1024', square: '1024x1024', portrait: '1024x1536' };
@@ -82,7 +85,7 @@ async function one(slot) {
     model: MODEL,
     prompt: slot.prompt + styleSuffix(slot),
     size,
-    quality: QUALITY,
+    quality: slot.quality || QUALITY,
     n: 1,
   };
   for (let attempt = 1; attempt <= 3; attempt++) {
