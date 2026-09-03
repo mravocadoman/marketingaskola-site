@@ -1,5 +1,17 @@
 # Cutover: WordPress on SiteGround → this static site on SiteGround
 
+> **Status (3 Sep 2026): DONE.** The static site has been live on
+> marketingaskola.lv since 11:50 UTC. Steps 1–4 below were carried out from
+> this repo over SSH rather than by the first workflow run: the build was
+> synced to `public_html_static`, verified, then swapped in by renaming, so
+> WordPress was never deleted — it sits untouched next to the live root as
+> `www/marketingaskola.lv/public_html_wordpress_2026-09-02` (4 GB) and a
+> manual Site Tools backup `wordpress-before-static-2026-09-02` exists too.
+> Rollback is two renames. Delete the old folder once you are sure (it
+> counts against disk space). The SuperCacher dynamic cache had to be
+> flushed after the swap (it kept serving cached WordPress HTML); every
+> later deploy goes through the workflow.
+
 Written 2 Sep 2026. The domain already lives at SiteGround, so this is a
 file swap on the same account, not a migration between hosts.
 

@@ -96,8 +96,14 @@ npm run derived   # og:image twins, default social image, favicon.ico, author th
 - **GitHub Pages (preview)** otherwise, or on `workflow_dispatch` with
   `target=pages`: `PATH_PREFIX=/marketingaskola-site/` + `PREVIEW=1` (noindex).
 
-The full cutover checklist (backup, SSH key, secrets, first deploy, cache
-flush, Search Console, rollback) is in `docs/siteground-cutover.md`. DNS
+**Live on SiteGround since 3 Sep 2026.** The cutover was a folder swap over
+SSH; the WordPress install is still on the server as
+`public_html_wordpress_2026-09-02` for rollback (delete it once confident).
+After a deploy that changes HTML, flush the SuperCacher dynamic cache in
+Site Tools if a page looks stale — nginx caches HTML for a while. GitHub
+Pages still hosts the noindex preview (`workflow_dispatch`, target=pages).
+The full checklist (backup, SSH key, secrets, first deploy, cache flush,
+Search Console, rollback) is in `docs/siteground-cutover.md`. DNS
 already points at SiteGround and email is on Google Workspace, so the
 cutover is a file swap, not a DNS change.
 
