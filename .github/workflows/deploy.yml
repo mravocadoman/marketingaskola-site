@@ -64,11 +64,21 @@ jobs:
           SG_SSH_KEY: ${{ secrets.SG_SSH_KEY }}
           SG_HOST: ${{ secrets.SG_HOST }}
           SG_PORT: ${{ secrets.SG_PORT || '18765' }}
+          SG_USER: ${{ secrets.SG_USER }}
         run: |
           mkdir -p ~/.ssh
           printf '%s\n' "$SG_SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p "$SG_PORT" "$SG_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          # keyscan exits 1 when the host does not answer in time (SiteGround
+          # throttles unknown IPs now and then); retry, then fall back to
+          # accept-new on the first real connection instead of failing here.
+          for i in 1 2 3; do ssh-keyscan -T 20 -p "$SG_PORT" "$SG_HOST" >> ~/.ssh/known_hosts 2>/dev/null && break; sleep 15; done
+          printf 'Host *\n  StrictHostKeyChecking accept-new\n  ConnectTimeout 30\n  ServerAliveInterval 15\n' > ~/.ssh/config
+          for i in 1 2 3 4 5; do
+            if ssh -i ~/.ssh/deploy_key -p "$SG_PORT" "$SG_USER@$SG_HOST" 'echo ssh ok'; then break; fi
+            echo "ssh attempt $i failed; retrying in 20s"; sleep 20
+            [ "$i" = 5 ] && { echo "::error::could not reach $SG_HOST:$SG_PORT"; exit 1; }
+          done
       - name: rsync _site to the web root
         env:
           SG_HOST: ${{ secrets.SG_HOST }}
