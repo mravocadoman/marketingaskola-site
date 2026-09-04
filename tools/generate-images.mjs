@@ -31,13 +31,17 @@ const CONCURRENCY = Number(arg('concurrency', 4));
 
 // The house style is appended to every prompt so a single edit re-tunes the set.
 const STYLE_SUFFIX =
-  ' An elegant flat line drawing on one solid uniform dark navy #020d1c background, edge to edge. Fine, confident, evenly weighted line work is the whole character of the image - keep it. ' +
-  'EVERY LINE MUST MEAN SOMETHING. Every stroke belongs to the subject and helps explain it. Do NOT add decorative technical-drawing filler: no dashed guide lines, no registration marks, no crop marks, no measurement tick scales, no background grid, no scattered stray squares floating in the space. If a line does not describe the subject, delete it. ' +
-  'Weave recognisable iconography INTO the line work, subtly rather than as a stuck-on symbol - a browser frame, a search field, a cursor, a cart, an envelope, a simple human figure - drawn with the same fine geometric strokes so it reads as part of one continuous drawing. Never soft rounded clip art, never a portrait-like face standing in for a real person. ' +
-  'Composition: one clear idea, large and confident, asymmetric and weighted to one side, often cropped by an edge of the frame; at least a third of the frame stays calm and empty. Square corners; curves only where a circle or arc genuinely belongs to the subject. ' +
-  'Palette: white and cool grey #8ba3bd line work on the dark ground, plus exactly ONE shape filled solid cyan #03c3f8 as the focal point. Nothing else is cyan. ' +
-  'Strictly flat: no gradients, no glow, no bloom, no 3D, no perspective, no shadows, no vignette. ' +
-  'No text, no letters, no numbers, no words, no logos, no watermarks. Subtle fine film grain.';
+  ' Flat editorial vector artwork on a solid dark navy background (#020d1c). ' +
+  'Strictly flat colour blocking: absolutely no gradients, no glow, no bloom, no neon, ' +
+  'no 3D rendering, no glossy reflections, no drop shadows, no vignette. ' +
+  'Single accent colour cyan #03c3f8 used sparingly, plus white and cool grey #8ba3bd. ' +
+  'The composition must plainly SHOW ITS SUBJECT - a viewer should be able to tell what the page is about from the picture ' +
+  'alone. Simple recognisable forms are welcome and encouraged where they carry the topic: a phone frame, a feed card, a ' +
+  'search field, a video frame, a calendar grid, a human silhouette. Build them from bold flat shapes, square-cornered, with ' +
+  'no outlines and no interior detail - never soft rounded clip art, never a photographic or portrait-like face standing in ' +
+  'for a real person. ' +
+  'No text, no letters, no numbers, no words, no logos, no watermarks. ' +
+  'Generous negative space, asymmetric composition, subtle fine film grain, premium editorial restraint.';
 
 const PAPER_SUFFIX =
   ' CUT-PAPER COLLAGE. Every element is a flat piece of cut coloured paper laid on a warm off-white paper ground, with crisp ' +

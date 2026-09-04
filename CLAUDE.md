@@ -896,6 +896,50 @@ the application form until `bookUrl` is set in `courseSessions.json`. Each
 needs a €150 payment link in the SIA "Stonks" account with its after-payment
 redirect pointing at the Cal.com event above — same recipe as the Meta link.
 
+## Two artwork languages, settled 5 Sep 2026
+
+After a long exploration the owner settled on two — and only two — treatments.
+Everything else was reverted, so do not re-litigate this.
+
+**1. Blog infographics: CUT-PAPER COLLAGE on warm off-white.** Every element is
+a flat piece of cut paper — crisp edges, slight offsets where pieces overlap,
+subtle paper grain — in navy, cyan, pale grey. Big navy numerals, one emblem per
+item, and the emblem must plainly read as its own subject (a form panel, an
+envelope, a bar chart). **Nothing in the margins**: no decorative shapes at the
+left or right edges, no confetti, no background pattern. `PAPER_SUFFIX` encodes
+this; each slot prompt describes its own emblems. All six in-article
+infographics are drawn this way.
+
+**2. Course and LP header images: the ORIGINAL house style, subject made
+explicit.** Flat colour blocking on `#020d1c`, cyan used sparingly, generous
+negative space, asymmetric, cropped by an edge — unchanged. What changed is that
+the picture must now SHOW ITS SUBJECT: a viewer should be able to tell what the
+page sells from the artwork alone. The old blanket ban on user-interface
+elements is lifted, because a phone frame, a search field or a results list is
+usually the clearest way to say what a page is about.
+
+**Only four images use treatment 2** — `meta-reklamas-motivs` (a feed post in a
+phone), `google-ads-motivs` (paid placement above organic results),
+`seo-mekletaja-motivs` (a result climbing the rankings) and
+`konsultacijas-saruna` (two profiles either side of one cyan square). Owner,
+5 Sep 2026: *"dont change anything in the current dark background pages and blog
+thumbnails, i like them as they are. Apply the new UI-related style only to
+course and LP headers where appropriate."* Every other motif and all 31 blog
+covers keep the artwork they already have, and their manifest prompts were
+reverted to the text that produced those files — so `npm run images --force`
+reproduces what is on disk instead of silently redrawing pages that were
+deliberately left alone.
+
+**What was tried and rejected**, so nobody repeats it: a precision-schematic
+hairline redraw of every motif (*"too much of everything in there"*), three
+rounds of thin-line white infographics (*"I honestly hate the white infographic
+drawings"*), and six alternative design languages — Swiss brutalist, editorial
+serif, isometric, riso halftone, data-viz, neon, clay, glassmorphism, Bauhaus,
+blueprint. Two lessons worth keeping: banning icons outright makes the model
+draw the same meaningless scribble in every column, and three small equal
+drawings in a row on a field of white cannot be made to look good at any level
+of polish — something has to be oversized or cropped.
+
 ## Images must carry content (4 Sep 2026)
 
 Owner: *"I thought we agreed not to use the full-size sections with just one
