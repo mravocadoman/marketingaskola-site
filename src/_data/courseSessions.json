@@ -1,18 +1,32 @@
 {
-  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. With sessions the page renders bookable dates, each with its own Stripe payment link; with an empty list it falls back to the application form, so the page is always valid. Add a month: { date (ISO), label (Latvian, as shown), time, format, seats, url (Stripe payment link) }. Policy numbers are read by the templates - change them here, not in the copy. `lateBookingGraceHours` keeps the refund promise at least as generous as the statutory 14-day withdrawal right for someone who books inside the refund window. `vatRate` is the rate the Stripe payment links must add on top of the displayed price.",
+  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. `bookUrl` is a Stripe payment link whose after-payment redirect is set (in Stripe, under After payment) to `calendarUrl`, so one click pays for a seat and lands the buyer on the Cal.com event to pick a month. The dates below mirror the date overrides on that Cal.com event - they are the same schedule, so keep the two in sync. Cal.com holds the real seat count (Offer seats), which is why the page lists dates rather than remaining places. With no bookUrl the page falls back to the application form, so it is valid at every stage. Policy numbers are read by the templates - change them here, not in the copy. `lateBookingGraceHours` keeps the refund promise at least as generous as the statutory 14-day withdrawal right for someone who books inside the refund window. `vatRate` is what Stripe Tax adds on top of the displayed price.",
   "policy": {
     "provider": "stripe",
     "vatRate": 21,
     "minSeats": 5,
+    "maxSeats": 12,
     "decideDaysBefore": 3,
     "refundDaysBefore": 7,
     "lateBookingGraceHours": 24
   },
   "courses": {
     "meta-reklamas-kurss": {
-      "sessions": []
+      "bookUrl": "https://buy.stripe.com/eVqdR9fKf1Kx4zv3dc4gg04",
+      "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/meta-reklamas-pamati",
+      "time": "9:00–12:00",
+      "format": "Tiešsaistē (Google Meet)",
+      "sessions": [
+        { "date": "2026-09-08", "label": "8. septembris" },
+        { "date": "2026-10-06", "label": "6. oktobris" },
+        { "date": "2026-11-03", "label": "3. novembris" },
+        { "date": "2026-12-01", "label": "1. decembris" }
+      ]
     },
     "seo-kursi": {
+      "bookUrl": "",
+      "calendarUrl": "",
+      "time": "",
+      "format": "",
       "sessions": []
     }
   }

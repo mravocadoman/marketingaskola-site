@@ -751,17 +751,23 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   so the page is valid at every stage. The process steps, the offer card and
   a new FAQ all describe booking rather than "we will get back to you".
 - **Live course groups are data, not prose.** `src/_data/courseSessions.json`
-  holds `policy` (`minSeats`, `decideDaysBefore`) and a `sessions` array per
-  course. With sessions the page lists fixed dates, each with its own
-  payment link; with an empty array it falls back to the application form,
-  so the page is always valid. Adding a month is a data edit, not a
-  template change. The stated policy — a group runs from five paid
-  participants, otherwise move to next month, refund, or convert to a
-  consultation — is in the course card, the pieteikšanās lead and the FAQ,
-  all read from `policy` so the numbers cannot drift apart.
-
-## Rules — do not break these
-
+  holds `policy` and, per course, `bookUrl` + `calendarUrl` + the dates.
+  **One Stripe payment link covers every date**, because its after-payment
+  redirect (set in Stripe under After payment) lands the buyer on the Cal.com
+  event, where the months are the real availability and the seat limit is
+  enforced. So the page lists the dates as information and shows ONE call to
+  action; a button per date could not preselect anything anyway. With no
+  `bookUrl` the section falls back to the application form.
+- **Cal.com is the booking system** (account `rihards-zeila-pglbwc`; calendar
+  events land on rihards.zeila@gmail.com, conflicts checked against the
+  marketingaskola.lv Google Calendar). The Meta course event
+  `/meta-reklamas-pamati` is 3 h on Google Meet with **Offer seats = 12** and
+  **no weekly hours at all**: the schedule "Working hours" carries **date
+  overrides**, one per course date (first Tuesday monthly, 9:00-12:00 Riga).
+  Adding a month means adding a date override there AND a date in
+  courseSessions.json - they are the same schedule and must match.
+  Cal.com's own payment app is **Cal Pay, not Stripe**, so payment stays on
+  the Stripe side where Stripe Tax already adds the 21% VAT correctly.
 - **Permalinks are the WordPress URLs.** Posts live at `/{slug}/` (root level,
   not under /blog/), pages keep their slugs, categories at `/category/{slug}/`.
   Changing any permalink breaks SEO and inbound links at cutover.

@@ -1,33 +1,39 @@
 {# Scheduled groups for one live course. Set `courseKey` (matching a key in
-   src/_data/courseSessions.json) and `courseName` (the label the form
-   preselects) before including:
+   src/_data/courseSessions.json) and `courseName` (the label the fallback
+   form preselects) before including:
 
-     {% set courseKey = "seo-kursi" %}
-     {% set courseName = "SEO kurss" %}
+     {% set courseKey = "meta-reklamas-kurss" %}
+     {% set courseName = "Meta reklāmas kurss" %}
      {% include "course-sessions.njk" %}
 
-   With dates in the data file it renders them as bookable cards, each with
-   its own Stripe payment link. With an empty list it falls back to the
-   application form, so the page is valid either way and adding a month is a
-   data edit rather than a template change. #}
+   One Stripe payment link (`bookUrl`) covers every date, because its
+   after-payment redirect drops the buyer on the Cal.com event where the
+   months are the real availability and the seat count is enforced. So the
+   dates here are information and there is ONE call to action, rather than a
+   button per date that could not preselect anything anyway.
+
+   Falls back to the application form until `bookUrl` exists, so the page is
+   valid at every stage. Import with context. #}
 {% from "form.njk" import form with context %}
 {% set cs = courseSessions.courses[courseKey] %}
-{% if cs.sessions.length %}
-<div class="hgrid hgrid--3">
+{% if cs.bookUrl and cs.sessions.length %}
+<div class="hgrid hgrid--4">
   {% for s in cs.sessions %}
   <div class="cell">
     <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
     <h3>{{ s.label }}</h3>
     <ul class="course-facts">
-      <li><span>Laiks</span><span>{{ s.time }}</span></li>
-      <li><span>Norise</span><span>{{ s.format }}</span></li>
-      {% if s.seats %}<li><span>Vietas</span><span>{{ s.seats }}</span></li>{% endif %}
+      <li><span>Laiks</span><span>{{ cs.time }}</span></li>
+      <li><span>Norise</span><span>{{ cs.format }}</span></li>
     </ul>
-    <a class="btn btn--ghost btn--sm" href="{{ s.url }}">Rezervēt vietu</a>
   </div>
   {% endfor %}
 </div>
-<p class="fine">Cenai tiek pievienots PVN {{ courseSessions.policy.vatRate }}%. Vietu rezervē apmaksa. Bezmaksas atteikšanās ar pilnu naudas atmaksu līdz {{ courseSessions.policy.refundDaysBefore }} dienām pirms norises vai {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās, ja piesakies vēlāk; pēc tam vietu varam pārcelt uz nākamo grupu. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu — raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+<div class="btn-wrap" style="margin-top:clamp(28px,3vw,40px)">
+  <a class="btn" href="{{ cs.bookUrl }}">Rezervēt vietu — 150 € + PVN</a>
+  <a class="btn btn--ghost" href="{{ cs.calendarUrl }}" target="_blank" rel="noopener">Apskatīt kalendāru</a>
+</div>
+<p class="fine">Cenai tiek pievienots PVN {{ courseSessions.policy.vatRate }}%. Pēc apmaksas izvēlies sev piemēroto datumu kalendārā — vietu skaits grupā ir ierobežots ({{ courseSessions.policy.maxSeats }} dalībnieki). Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem; ja tik daudz nesanāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises pārceļam uz nākamo mēnesi, atgriežam samaksu vai pārvēršam to individuālā konsultācijā. Bezmaksas atteikšanās līdz {{ courseSessions.policy.refundDaysBefore }} dienām pirms norises vai {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās, ja piesakies vēlāk. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
 {% else %}
 <div style="max-width:820px">{{ form("course", { course: courseName }) }}</div>
 {% endif %}
