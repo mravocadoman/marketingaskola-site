@@ -1,0 +1,25 @@
+{
+  "_comment": "Instant booking for the paid consultation. Each option is a Stripe payment link; configure that link in Stripe to redirect after successful payment to `calendarUrl`, so one click takes someone from choosing a format to holding a slot. While a `url` is empty the page falls back to the enquiry form, so it is never broken. `vatRate` is what the Stripe link must add on top of the shown price.",
+  "vatRate": 21,
+  "consultation": {
+    "calendarUrl": "",
+    "options": [
+      {
+        "id": "60",
+        "label": "Pilnā konsultācija",
+        "duration": "60 minūtes",
+        "price": 100,
+        "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
+        "url": ""
+      },
+      {
+        "id": "30",
+        "label": "Īsā sesija",
+        "duration": "30 minūtes",
+        "price": 60,
+        "best": "Vienam konkrētam jautājumam vai otrajam viedoklim",
+        "url": ""
+      }
+    ]
+  }
+}

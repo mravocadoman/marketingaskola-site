@@ -740,6 +740,16 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   30-day money-back guarantee, the 295→145 price and the Thinkific link.
   The Thinkific product still exists for people who already bought it; the
   site no longer sells it.
+- **The paid consultation books itself (4 Sep 2026).** Owner: *"instead of
+  form, guide them instantly to payment system stripe and book a spot in
+  calendar."* `src/_data/booking.json` holds the two formats (60 min / €100,
+  30 min / €60), each with a Stripe payment link, plus one `calendarUrl`.
+  **Configure each Stripe link to redirect after successful payment to that
+  calendar URL** — that redirect is what makes paying and holding a slot one
+  flow instead of an e-mail exchange. `booking.njk` renders the cards when
+  the links exist and falls back to the contact form while they are empty,
+  so the page is valid at every stage. The process steps, the offer card and
+  a new FAQ all describe booking rather than "we will get back to you".
 - **Live course groups are data, not prose.** `src/_data/courseSessions.json`
   holds `policy` (`minSeats`, `decideDaysBefore`) and a `sessions` array per
   course. With sessions the page lists fixed dates, each with its own

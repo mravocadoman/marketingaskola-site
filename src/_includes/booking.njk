@@ -1,0 +1,28 @@
+{# Instant booking for the paid consultation: pick a format, pay, land on the
+   calendar. Each option's Stripe payment link is configured to redirect to
+   booking.consultation.calendarUrl after payment, so paying and holding a
+   slot is one flow rather than an e-mail exchange.
+
+   Falls back to the enquiry form until the links exist, so the page is
+   valid at every stage. Import with context. #}
+{% from "form.njk" import form with context %}
+{% set bookable = booking.consultation.options | selectattr("url") | list %}
+{% if bookable.length %}
+<div class="hgrid hgrid--2">
+  {% for o in bookable %}
+  <div class="cell">
+    <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+    <h3>{{ o.label }}</h3>
+    <p class="price">€{{ o.price }} <small>+ PVN</small></p>
+    <ul class="course-facts">
+      <li><span>Ilgums</span><span>{{ o.duration }}</span></li>
+      <li><span>Piemērota</span><span>{{ o.best }}</span></li>
+    </ul>
+    <a class="btn{% if not loop.first %} btn--ghost{% endif %}" href="{{ o.url }}">Apmaksāt un izvēlēties laiku</a>
+  </div>
+  {% endfor %}
+</div>
+<p class="fine">Cenai tiek pievienots PVN {{ booking.vatRate }}%. Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku — apstiprinājumu saņem e-pastā. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>. Ja laiks vairs neder, pārcel to kalendārā vai raksti mums.</p>
+{% else %}
+{{ form("contact") }}
+{% endif %}
