@@ -740,18 +740,25 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   30-day money-back guarantee, the 295→145 price and the Thinkific link.
   The Thinkific product still exists for people who already bought it; the
   site no longer sells it.
-- **The paid consultation books itself (4 Sep 2026).** Owner: *"instead of
-  form, guide them instantly to payment system stripe and book a spot in
-  calendar."* `src/_data/booking.json` holds the three formats (60 min / €90,
-  30 min / €60, 5 × 60 min / €370), each with a Stripe payment link, plus one
-  `calendarUrl`. **It is the only place those prices live** — the page renders
-  every mention from it.
-  **Configure each Stripe link to redirect after successful payment to that
-  calendar URL** — that redirect is what makes paying and holding a slot one
-  flow instead of an e-mail exchange. `booking.njk` renders the cards when
-  the links exist and falls back to the contact form while they are empty,
-  so the page is valid at every stage. The process steps, the offer card and
-  a new FAQ all describe booking rather than "we will get back to you".
+- **The paid consultation books itself (4 Sep 2026).**
+  `src/_data/booking.json` holds the three formats (60 min / €90, 30 min /
+  €60, 5 × 60 min / €370), each with a live Stripe payment link and the
+  Cal.com event it lands on. **It is the only place those prices live** — the
+  page renders every mention from it. The redirect itself is configured in
+  **Stripe** (After payment, "Don't show confirmation page"); `calendarUrl`
+  in the data file only tells the templates a calendar exists, so the copy
+  can promise an instant booking. Empty it and the copy honestly falls back
+  to "we will agree a time"; empty a `url` and the section falls back to the
+  enquiry form. The bundle redirects to the 60-minute event and its five
+  sessions are booked one at a time from that link — nothing enforces the
+  count, so it is tracked by eye.
+- **Consultations have their own Cal.com schedule.** The course event uses
+  "Working hours", which has NO weekly hours, only date overrides for the
+  course dates. Attaching a consultation to it would offer only course days,
+  so the two consultation events use a separate schedule, **"Konsultācijas",
+  currently a placeholder Mon-Fri 9:00-17:00 Riga that the owner should
+  adjust**. Google Calendar conflict checking is on, so genuinely busy hours
+  are excluded automatically.
 - **Live course groups are data, not prose.** `src/_data/courseSessions.json`
   holds `policy` and, per course, `bookUrl` + `calendarUrl` + the dates.
   **One Stripe payment link covers every date**, because its after-payment

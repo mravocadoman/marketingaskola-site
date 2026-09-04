@@ -23,7 +23,7 @@
   </div>
   {% endfor %}
 </div>
-<p class="fine">Cenai tiek pievienots PVN {{ booking.vatRate }}%. {% if booking.consultation.calendarUrl %}Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku — apstiprinājumu saņem e-pastā.{% else %}Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %} Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.{% if booking.consultation.calendarUrl %} Ja laiks vairs neder, pārcel to kalendārā vai raksti mums.{% endif %}</p>
+<p class="fine">Cenai tiek pievienots PVN {{ booking.vatRate }}%. {% if booking.consultation.calendarUrl %}Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku — apstiprinājumu saņem e-pastā.{% else %}Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %} Komplekta sesijas rezervē pa vienai — pēc apmaksas saglabā kalendāra saiti un izmanto to katrai nākamajai reizei. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.{% if booking.consultation.calendarUrl %} Ja laiks vairs neder, pārcel to kalendārā vai raksti mums.{% endif %}</p>
 {% else %}
 {{ form("contact") }}
 {% endif %}

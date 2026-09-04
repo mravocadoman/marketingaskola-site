@@ -1,8 +1,8 @@
 {
-  "_comment": "Instant booking for the paid consultation. Each option is a live Stripe payment link in the SIA \"Stonks\" account; Stripe Tax adds 21% VAT on top of the shown price. THIS FILE IS THE ONLY PLACE THE CONSULTATION PRICES LIVE - the consultation page renders them from here, so changing a price here changes every mention on that page. Prose on other pages (tiktok-kursi, blog posts) is static and must be updated by hand; grep for the old number. To finish the one-click flow, set each link's After payment behaviour in Stripe to redirect to `calendarUrl`; until that URL is set the copy promises a follow-up instead of an instant calendar, so nothing on the page is untrue.",
+  "_comment": "Instant booking for the paid consultation. Each option is a live Stripe payment link in the SIA \"Stonks\" account; Stripe Tax adds 21% VAT on top of the shown price. Each link redirects after payment to its Cal.com event, so paying and picking a time is one flow - the redirect is configured IN STRIPE (After payment), and `calendarUrl` here only tells the templates that a calendar exists so the copy can promise it. THIS FILE IS THE ONLY PLACE THE CONSULTATION PRICES LIVE - the consultation page renders them from here. Prose on other pages (tiktok-kursi, blog posts) is static and must be updated by hand; grep for the old number. The bundle redirects to the 60-minute event: the buyer books the five sessions one at a time from that same link.",
   "vatRate": 21,
   "consultation": {
-    "calendarUrl": "",
+    "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes",
     "options": [
       {
         "id": "60",
@@ -10,7 +10,8 @@
         "duration": "60 minūtes",
         "price": 90,
         "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
-        "url": "https://buy.stripe.com/6oU14ndC7ah38PL2984gg05"
+        "url": "https://buy.stripe.com/6oU14ndC7ah38PL2984gg05",
+        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes"
       },
       {
         "id": "30",
@@ -18,7 +19,8 @@
         "duration": "30 minūtes",
         "price": 60,
         "best": "Vienam konkrētam jautājumam vai otrajam viedoklim",
-        "url": "https://buy.stripe.com/7sY7sL55B9cZ6HD8xw4gg03"
+        "url": "https://buy.stripe.com/7sY7sL55B9cZ6HD8xw4gg03",
+        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-30-minutes"
       },
       {
         "id": "bundle5",
@@ -27,7 +29,8 @@
         "price": 370,
         "best": "Ilgākam darbam: sesijas izmanto sev ērtā tempā",
         "note": "Ietaupi 80 € pret atsevišķām stundām",
-        "url": "https://buy.stripe.com/14A00j0Plbl78PL0104gg06"
+        "url": "https://buy.stripe.com/14A00j0Plbl78PL0104gg06",
+        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes"
       }
     ]
   }
