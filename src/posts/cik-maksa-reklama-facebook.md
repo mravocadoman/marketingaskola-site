@@ -9,6 +9,8 @@ image: "/img/gen/cover-cik-maksa-reklama-facebook.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px-1.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/cik-maksa-reklama-facebook/"
+keywords: ["Facebook reklāmas cena", "reklāmas budžets", "CPM", "CPC", "Meta reklāma", "reklāmas izmaksas"]
+
 ---
 
 **Cik maksā reklāma Facebook?** Facebook reklāmas cena ir viens no galvenajiem jautājumiem uzņēmējiem, kuri vēlas izmantot digitālo mārketingu. Vai iespējams sākt ar nelielu budžetu, vai arī jāiegulda tūkstoši? Turpini lasīt un uzzināsi, no kā sastāv Facebook reklāmas izmaksas, kā plānot budžetu un cik Tev būtu jāiegulda, lai sasniegtu savus mērķus!

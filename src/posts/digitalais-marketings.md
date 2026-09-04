@@ -9,6 +9,8 @@ image: "/img/gen/cover-digitalais-marketings.webp"
 legacyImage: "/img/2024/02/12.png"
 categories: ["digitalais-marketings"]
 permalink: "/digitalais-marketings/"
+keywords: ["digitālais mārketings", "mārketinga stratēģija", "mērķauditorija", "reklāma internetā", "konversijas"]
+
 ---
 
 Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei.

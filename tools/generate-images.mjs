@@ -40,12 +40,23 @@ const STYLE_SUFFIX =
   'No text, no letters, no numbers, no words, no logos, no watermarks. Subtle fine film grain.';
 
 const PAPER_SUFFIX =
-  ' A flat editorial infographic on one solid pure white #ffffff background, edge to edge. ' +
-  'TYPOGRAPHY AND LAYOUT ARE SETTLED - keep them exactly: the headline sits top-left, large and bold in deep navy #00152c, ending in a small cyan #03c3f8 full stop. Each item carries a small two-digit index in cyan with a short cyan rule beside it, then a bold navy label, then a note in slate grey #33475b. Items are divided only by single 1px hairlines in pale grey #dbe4ee - no boxes, no cards, no panels, no rounded corners, no shadows. ' +
-  'THE DRAWINGS NEED REAL CRAFT - a few bare strokes look unfinished. Each item carries ONE properly drawn line illustration of its subject: enough considered detail to be satisfying and unmistakable, built from fine even navy #00152c strokes with ONE element filled solid cyan. Weave recognisable iconography into the drawing - a magnifying glass over a page, a funnel with items falling through it, a browser window with a cursor, a person at a desk with a screen - and give each one a little specificity rather than a generic symbol. Keep them clean and geometric, never soft rounded cartoon clip art, never a portrait-like face, and never decorative filler such as dashed guides, tick scales or background grids. The drawings must be clearly DIFFERENT from one another and sized large enough to read at a glance. ' +
-  'Generous white space and even margins; the layout breathes. Strictly flat: no gradients, no glow, no 3D, no shadows, no texture, no photographs. ' +
-  'Spell every Latvian word exactly as given, with correct diacritics; add no other words, no logos, no watermarks. ' +
-  'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other punctuation around the text itself.';
+  ' CUT-PAPER COLLAGE. Every element is a flat piece of cut coloured paper laid on a warm off-white paper ground, with crisp ' +
+  'hard edges, slight offsets where pieces overlap, and a very subtle paper grain across the whole image. Palette strictly: ' +
+  'deep navy #00152c, cyan #03c3f8, pale cool grey and off-white. No outlines, no strokes, no line work, no gradients, no glow, ' +
+  'no 3D, no drop shadows beyond the faint lift of one paper layer over another. ' +
+  'TYPE: heavy geometric sans in deep navy. The headline runs large across the top. Each item is a BIG navy two-digit number, ' +
+  'then a bold label beneath it, then a smaller note. ' +
+  'EMBLEMS: each item carries exactly ONE emblem below its text, assembled from a handful of flat paper shapes so that it ' +
+  'plainly reads as that item subject - a form panel, an envelope, a bar chart, a magnifying glass. Keep the shapes geometric ' +
+  'paper cut-outs; never add interior detail, never draw an illustrated icon, never outline anything. The emblems must be ' +
+  'clearly different from one another. ' +
+  'COMPOSITION DISCIPLINE: the image contains ONLY the headline, the numbered items with their labels and notes, and one emblem ' +
+  'per item sitting under its own text. Nothing else: no decorative shapes in the margins, nothing along the left or right ' +
+  'edges, no scattered confetti, no background pattern, no stray dots or bars. Generous calm empty ground. ' +
+  'Spell every Latvian word exactly as given, with correct diacritics. Add NO other words, numbers, names, e-mail addresses, ' +
+  'phone numbers, logos or watermarks anywhere. ' +
+  'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other ' +
+  'punctuation around the text itself.';
 
 const DARK_INFO_SUFFIX =
   ' A flat editorial diagram on one solid uniform very dark navy #020d1c background, edge to edge. It must look designed and confident, not like documentation. ' +
@@ -58,6 +69,7 @@ const DARK_INFO_SUFFIX =
   'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other punctuation around the text itself.';
 
 const styleSuffix = (slot) =>
+  slot.style === 'raw' ? '' :
   slot.style === 'paper' ? PAPER_SUFFIX : slot.style === 'dark-info' ? DARK_INFO_SUFFIX : STYLE_SUFFIX;
 
 const SIZES = { landscape: '1536x1024', square: '1024x1024', portrait: '1024x1536' };

@@ -11,6 +11,10 @@
   <title>{{ pageTitle }}</title>
   {% if env.preview or noindex %}<meta name="robots" content="noindex">{% endif %}
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  {# Owner asked for this (4 Sep 2026). Google has ignored meta keywords since 2009 and it is not a ranking
+     signal anywhere that matters; it is emitted only when a page sets `keywords:` in front matter, so it
+     costs nothing and stays out of the way of the tags that do work - title, description and image alt. #}
+  {% if keywords %}<meta name="keywords" content="{{ keywords | join(", ") if keywords is iterable and keywords is not string else keywords }}">{% endif %}
   {% if not noindex %}<link rel="canonical" href="{{ pageUrl }}">{% endif %}
   <meta name="theme-color" content="#020d1c">
   <meta property="og:site_name" content="{{ site.name }}">

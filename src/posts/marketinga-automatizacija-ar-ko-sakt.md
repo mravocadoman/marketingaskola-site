@@ -7,6 +7,8 @@ date: 2026-08-21
 image: "/img/gen/cover-marketinga-automatizacija-ar-ko-sakt.webp"
 categories: ["maksligais-intelekets", "digitalais-marketings"]
 permalink: "/marketinga-automatizacija-ar-ko-sakt/"
+keywords: ["mārketinga automatizācija", "automatizācija", "CRM", "e-pastu automatizācija", "pieteikumu plūsma", "digitālais mārketings"]
+
 ---
 
 Automatizācija parasti tiek pārdota kā rīku saraksts. Praksē tas ir tieši otrādi — rīks ir pēdējais lēmums, ne pirmais. Vispirms ir jāsaprot, kur konkrētajā uzņēmumā aiziet laiks, un tikai tad jāizvēlas, ar ko to aizvietot.

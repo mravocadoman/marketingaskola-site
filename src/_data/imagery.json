@@ -462,8 +462,8 @@
       "placement": "in-article infographic before \"Pirmā vieta\"",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika „Kur automatizācija atmaksājas pirmā”: 1 Pieteikumu ceļš — forma raksta tieši sistēmā; 2 Pirmā atbilde — automātisks apstiprinājums nopērk laiku; 3 Atskaites — tikai tās, ko kāds lasa.",
-      "prompt": "Headline top-left: «Trīs vietas, kur automatizācija atmaksājas pirmā». Below it THREE columns separated by hairline rules, each with index, bold label, note and its own drawing below. Column «01» label «Pieteikumu ceļš» note «Forma raksta tieši sistēmā» - drawing: a form outline with three input rules, an arrow leading from it into a stack of three squares. Column «02» label «Pirmā atbilde» note «Automātisks apstiprinājums nopērk laiku» - drawing: an envelope outline with a small clock face beside it and a short line between them. Column «03» label «Atskaites» note «Automatizē tikai to, ko kāds tiešām lasa» - drawing: a page outline containing four small bar-chart columns, with a standing figure reading it.",
+      "alt": "Infografika no izgrieztām papīra formām: trīs vietas, kur mārketinga automatizācija atmaksājas pirmā — pieteikumu ceļš no formas uz sistēmu, automātiska pirmā atbilde un atskaites",
+      "prompt": "Headline: «Trīs vietas, kur automatizācija atmaksājas». THREE items in one row. «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā» - emblem: an off-white paper panel bearing three pale grey bars and one cyan bar at the bottom, a navy arrow pointing right into two offset navy cards. «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku» - emblem: an open envelope from a navy body and pale grey flaps with an off-white letter rising out of it, and beside it a cyan circle with one navy wedge cut from it. «03» «Atskaites» «Automatizē tikai to, ko kāds lasa» - emblem: an off-white page carrying four bars of rising height, the tallest cyan, with a navy quarter-circle in its top corner.",
       "quality": "high"
     },
     {
@@ -472,8 +472,8 @@
       "placement": "in-article infographic after \"Trīs soļu process\"",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika „AI saturs bez zīmola balss zaudēšanas”: 1 Konteksts, pēc tam uzdevums; 2 Varianti, ne gatavs teksts; 3 Pēdējo versiju pārraksti pats.",
-      "prompt": "Headline top-left: «Trīs soļu process, kas saglabā zīmola balsi». Below it THREE columns separated by hairline rules, reading as one sequence, each with index, bold label, note and its own drawing below. Column «01» label «Konteksts, pēc tam uzdevums» note «Vispirms materiāls, tikai tad jautājums» - drawing: three stacked document outlines feeding by a single line into one open square. Column «02» label «Varianti, ne gatavs teksts» note «Pieci virsraksti ar dažādu pieeju» - drawing: one open square fanning out into five short horizontal bars of differing length. Column «03» label «Pēdējo versiju pārraksti pats» note «Izmet frāzes, ko neteiktu skaļi» - drawing: a seated human figure at a screen, with a pen line striking through one bar on the screen.",
+      "alt": "Infografika no izgrieztām papīra formām: trīs soļu process AI satura veidošanai, saglabājot zīmola balsi — vispirms konteksts, tad vairāki varianti, tad pārrakstīšana ar roku",
+      "prompt": "Headline: «Trīs soļu process, kas saglabā zīmola balsi». THREE items in one row. «01» «Konteksts, pēc tam uzdevums» «Vispirms materiāls, tikai tad jautājums» - emblem: three off-white pages fanned in a stack with pale grey text bars, a navy arrow leading from them into a cyan square. «02» «Varianti, ne gatavs teksts» «Pieci virsraksti ar dažādu pieeju» - emblem: one navy square from which five pale grey bars of differing length fan out to the right, the middle one cyan. «03» «Pēdējo versiju pārraksti pats» «Izmet frāzes, ko neteiktu skaļi» - emblem: an off-white page with four grey text bars, one bar struck through by a navy diagonal, and a cyan pencil shape laid across its lower corner.",
       "quality": "high"
     },
     {
@@ -482,8 +482,8 @@
       "placement": "in-article infographic after the five price factors",
       "aspect": "square",
       "style": "paper",
-      "alt": "Infografika „Kas nosaka Facebook reklāmas cenu”: reklāmas veids, mērķauditorija, reklāmas mērķis, sezona un konkurence, kvalitāte un atbilstība; CPM Latvijā 5–15 €, CPC 0,10–2 €.",
-      "prompt": "Headline top-left: «Pieci faktori, kas nosaka Facebook reklāmas cenu». Below it FIVE stacked full-width rows separated by hairline rules, each with index, bold label, note and its own small drawing at the right end. Row «01» label «Reklāmas veids» note «Video maksā vairāk nekā attēls» - drawing: a frame containing a play triangle beside a frame containing a small picture mark. Row «02» label «Mērķauditorija» note «Jo šaurāka auditorija, jo dārgāk» - drawing: a wide row of ten small figures narrowing to a bracket around just two of them. Row «03» label «Reklāmas mērķis» note «Pārdošana maksā vairāk nekā apmeklējumi» - drawing: a funnel outline with a small shopping-cart mark below its spout. Row «04» label «Sezona un konkurence» note «Svētkos daudzi sacenšas par vienu auditoriju» - drawing: five arrows from different directions all converging on one small square. Row «05» label «Kvalitāte un atbilstība» note «Labi novērtētas reklāmas rāda lētāk» - drawing: a horizontal gauge scale with a marker near its high end and a small tick mark beside it.",
+      "alt": "Infografika no izgrieztām papīra formām: pieci faktori, kas nosaka Facebook reklāmas cenu — reklāmas veids, mērķauditorija, kampaņas mērķis, sezona un reklāmas kvalitāte",
+      "prompt": "Headline: «Pieci faktori, kas nosaka Facebook reklāmas cenu». FIVE items laid out in TWO rows - three items in the upper row, two in the lower row, all left aligned on the same grid. «01» «Reklāmas veids» «Video maksā vairāk nekā attēls» - emblem: a navy rectangle with a cyan triangle play shape on it, beside a pale grey rectangle with a small navy square in its corner. «02» «Mērķauditorija» «Jo šaurāka auditorija, jo dārgāk» - emblem: a wide pale grey trapezium narrowing to the right, ending in one small solid cyan square. «03» «Reklāmas mērķis» «Pārdošana maksā vairāk nekā apmeklējumi» - emblem: a navy funnel shape with a cyan square falling from its spout onto a grey bar. «04» «Sezona un konkurence» «Svētkos daudzi sacenšas» - emblem: four navy arrow shapes pointing inward from four sides at one central cyan square. «05» «Kvalitāte un atbilstība» «Labi novērtētas reklāmas rāda lētāk» - emblem: a horizontal grey bar divided into five segments with the rightmost two cyan, and a navy triangle marker beneath the join.",
       "quality": "high"
     },
     {
@@ -492,8 +492,8 @@
       "placement": "in-article infographic after the six steps",
       "aspect": "square",
       "style": "paper",
-      "alt": "Infografika „Mārketinga plāns sešos soļos”: 1 Izpēti tirgu un konkurentus; 2 Nosaki konkrētus mērķus; 3 Izvēlies kanālus; 4 Izmanto digitālos rīkus; 5 Sadali budžetu; 6 Uzlabo un optimizē.",
-      "prompt": "Headline top-left: «Mārketinga plāns sešos soļos». Below it SIX items laid out as two rows of three, separated by hairline rules, each with index, bold label, note and its own small drawing. Item «01» label «Izpēti tirgu un konkurentus» note «Kas notiek nozarē un ko dara konkurenti» - drawing: a magnifying glass over three small squares. Item «02» label «Nosaki konkrētus mērķus» note «SMART mērķi ar termiņu» - drawing: a target of two rings with one small cyan square at its centre. Item «03» label «Izvēlies kanālus» note «Sāc ar tiem, kur ir Tavi klienti» - drawing: one node branching by right-angle lines into three, one branch drawn bolder. Item «04» label «Izmanto digitālos rīkus» note «Plānošanai, publicēšanai un analīzei» - drawing: a browser window frame with a cursor arrow inside it. Item «05» label «Sadali budžetu un resursus» note «Lai rezultāti atbilstu ieguldītajam» - drawing: one long horizontal bar divided by vertical ticks into four unequal segments. Item «06» label «Uzlabo un optimizē» note «Regulāri pārskati skaitļus» - drawing: a line chart that dips and then rises, with a small square marking the turning point.",
+      "alt": "Infografika no izgrieztām papīra formām: mārketinga plāns sešos soļos — tirgus izpēte, mērķi, kanāli, digitālie rīki, budžets un optimizācija",
+      "prompt": "Headline: «Mārketinga plāns sešos soļos». SIX items laid out in TWO rows of three, left aligned on the same grid. «01» «Izpēti tirgu un konkurentus» «Kas notiek nozarē» - emblem: a navy circle with a cyan handle bar reading as a magnifying glass, over two grey squares. «02» «Nosaki konkrētus mērķus» «SMART mērķi ar termiņu» - emblem: two concentric navy rings with a solid cyan square at the centre. «03» «Izvēlies kanālus» «Sāc ar tiem, kur ir Tavi klienti» - emblem: one navy square with three grey bars branching from it at right angles, the middle branch cyan. «04» «Izmanto digitālos rīkus» «Plānošanai un analīzei» - emblem: an off-white browser panel with a navy top bar and a cyan cursor arrow inside it. «05» «Sadali budžetu un resursus» «Lai rezultāti atbilstu ieguldītajam» - emblem: one long horizontal bar cut into four unequal segments in navy, grey, cyan and grey. «06» «Uzlabo un optimizē» «Regulāri pārskati skaitļus» - emblem: a navy line of paper stepping down then up again, with a cyan square marking the turning point.",
       "quality": "high"
     },
     {
@@ -502,8 +502,8 @@
       "placement": "in-article infographic before \"Mārketinga skola iesaka\"",
       "aspect": "square",
       "style": "paper",
-      "alt": "Infografika „5 ieteikumi konvertējošam reklāmas tekstam”: 1 Pazīsti mērķauditoriju; 2 Emocionālā saikne; 3 Ieintriģējošs virsraksts; 4 Īss un kodolīgs teksts; 5 Vienkāršība.",
-      "prompt": "Headline top-left: «Pieci ieteikumi konvertējošam reklāmas tekstam». Below it FIVE stacked full-width rows, separated by hairline rules. Each row: index, bold label, note, and at the right end of the row its own small drawing. Row «01» label «Pazīsti mērķauditoriju» note «Bez auditorijas izpētes teksts nevar ieinteresēt nevienu» - drawing: three concentric rings closing on one small standing figure. Row «02» label «Emocionālā saikne» note «Aizkustini, sasmīdini, pārsteidz» - drawing: a simple standing figure with a single line curving from its chest to a small solid square. Row «03» label «Ieintriģējošs virsraksts» note «Pirmais, ko pamana lasītājs» - drawing: a page outline whose topmost rule is drawn much thicker than the thin rules beneath it. Row «04» label «Īss un kodolīgs teksts» note «Bez gariem ievadiem un noslēgumiem» - drawing: a tall block of many stacked rules beside a short block of two rules, with an arrow from the tall one to the short one. Row «05» label «Vienkāršība» note «Skaidri vārdi pārdod labāk» - drawing: a knot of four crossing lines on the left resolving into one straight horizontal line on the right.",
+      "alt": "Infografika no izgrieztām papīra formām: pieci ieteikumi konvertējoša reklāmas teksta rakstīšanai — mērķauditorija, emocionālā saikne, virsraksts, īsums un vienkāršība",
+      "prompt": "Headline: «Pieci ieteikumi konvertējošam reklāmas tekstam». FIVE items laid out in TWO rows - three items in the upper row, two in the lower row, all left aligned on the same grid. «01» «Pazīsti mērķauditoriju» «Bez auditorijas izpētes teksts neieinteresē» - emblem: a pale grey circle crowd of six small discs with one navy disc among them, and a cyan ring around that one. «02» «Emocionālā saikne» «Aizkustini, sasmīdini, pārsteidz» - emblem: a navy speech-bubble rectangle with a small tail, and a cyan heart-shaped paper cut overlapping its corner. «03» «Ieintriģējošs virsraksts» «Pirmais, ko pamana lasītājs» - emblem: an off-white page whose top bar is a thick cyan block, with three thin pale grey bars beneath it. «04» «Īss un kodolīgs teksts» «Bez gariem ievadiem» - emblem: a tall navy block of many stacked grey bars beside a short cyan block of only two bars, with a navy arrow from the tall one to the short one. «05» «Vienkāršība» «Skaidri vārdi pārdod labāk» - emblem: a knot of three overlapping grey paper shapes on the left resolving into one clean cyan bar on the right.",
       "quality": "high"
     },
     {
@@ -512,8 +512,8 @@
       "placement": "in-article infographic after the three benefits",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika „3 lielākie digitālā mārketinga ieguvumi”: 1 Precīza mērķauditorija; 2 Lielāka peļņa; 3 Izmērāma efektivitāte.",
-      "prompt": "Headline top-left: «Trīs lielākie digitālā mārketinga ieguvumi». Below it THREE columns separated by hairline rules, each with index, bold label, note and its own drawing below. Column «01» label «Precīza mērķauditorijas sasniegšana» note «Pie īstā klienta ar pāris klikšķiem» - drawing: a scattered field of small figures with crosshair rings closing on exactly one of them. Column «02» label «Peļņas palielināšana» note «Stratēģija audzē pārdošanu un klientu bāzi» - drawing: five vertical columns stepping upward left to right, the tallest one topped by a small cyan square. Column «03» label «Izmērāma efektivitāte» note «Klikšķi, konversijas un pirkumi rāda, vai bijusi jēga» - drawing: a browser window frame containing a small line chart and a cursor arrow.",
+      "alt": "Infografika no izgrieztām papīra formām: trīs lielākie digitālā mārketinga ieguvumi — precīza mērķauditorijas sasniegšana, peļņas palielināšana un izmērāma efektivitāte",
+      "prompt": "Headline: «Trīs lielākie digitālā mārketinga ieguvumi». THREE items in one row. «01» «Precīza mērķauditorijas sasniegšana» «Pie īstā klienta ar pāris klikšķiem» - emblem: three concentric paper rings, navy outermost, pale grey, then a solid cyan disc at the centre. «02» «Peļņas palielināšana» «Stratēģija audzē pārdošanu un klientu bāzi» - emblem: four bars stepping upward left to right in grey, grey, navy and cyan, with a navy triangle above the tallest pointing up. «03» «Izmērāma efektivitāte» «Klikšķi, konversijas un pirkumi rāda, vai bijusi jēga» - emblem: an off-white browser panel with a navy bar across its top, a cyan line stepping upward inside it, and a navy cursor arrow overlapping its lower right corner.",
       "quality": "high"
     },
     {
@@ -567,21 +567,238 @@
       "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
     },
     {
-      "id": "zz-sample-dark",
+      "id": "zz-b",
       "page": "sample",
+      "style": "raw",
       "aspect": "landscape",
-      "alt": "Paraugs",
-      "rationale": "Style sample.",
-      "prompt": "The subject is paid search advertising. Draw a browser window frame with a search field across its top, a cursor arrow resting in the field, and beneath the field a ranked column of result rows drawn as fine outlined bars of descending length; the topmost result row is filled solid cyan to mark the paid placement. A slim vertical scale of bid columns rises beside the window, each column tied to a result row by a fine line. The browser frame is cropped by the right edge; the left third of the frame is empty."
+      "alt": "B",
+      "rationale": "variant",
+      "prompt": "Headline top-left, large and bold in deep navy #00152c, ending in a small cyan #03c3f8 full stop, reading exactly: «Trīs vietas, kur automatizācija atmaksājas». Below it THREE equal columns divided ONLY by single 1px pale grey #dbe4ee hairline rules - no boxes, no cards, no panels, no rounded corners, no shadows. Each column carries a small two-digit index in cyan followed by a short cyan rule, then a bold navy label, then a note in slate grey #33475b. Column one: «01», label «Pieteikumu ceļš», note «Forma raksta tieši sistēmā». Column two: «02», label «Pirmā atbilde», note «Automātisks apstiprinājums nopērk laiku». Column three: «03», label «Atskaites», note «Automatizē tikai to, ko kāds lasa». Solid pure white #ffffff background, edge to edge. Generous margins. Strictly flat: no gradients, no glow, no 3D, no shadows, no texture, no photographs. Spell every Latvian word exactly as given with correct diacritics. Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere in the image - the strings above are the only text. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Under each column sits ONE bold FLAT SOLID pictogram - not outlines. Each is built from a few large filled geometric shapes in deep navy #00152c with exactly one shape filled cyan #03c3f8, poster-like and graphic, with no interior detail and no line work at all. Column one: three stacked solid rectangles of descending width feeding into one solid square, the square cyan. Column two: a solid envelope triangle-and-rectangle silhouette with a solid cyan circle overlapping its corner. Column three: four solid vertical bars of rising height, the tallest cyan. All three at the same visual weight, generously sized."
     },
     {
-      "id": "zz-sample-paper",
+      "id": "zz-c",
       "page": "sample",
-      "style": "paper",
+      "style": "raw",
       "aspect": "landscape",
-      "alt": "Paraugs",
-      "rationale": "Style sample.",
-      "prompt": "Headline top-left: «Trīs vietas, kur automatizācija atmaksājas». Below it THREE columns separated by hairline rules, each with index, bold label, note and one properly drawn illustration below. Column «01» label «Pieteikumu ceļš» note «Forma raksta tieši sistēmā» - illustration: a web form with three filled input fields and a submit button, a fine line carrying an envelope from the button into a stack of record cards, the top card tabbed in cyan. Column «02» label «Pirmā atbilde» note «Automātisks apstiprinājums nopērk laiku» - illustration: an open envelope with a letter rising out of it, a clock face beside it whose hand is cyan, and a fine line linking the two. Column «03» label «Atskaites» note «Automatizē tikai to, ko kāds lasa» - illustration: a person seated at a desk holding a printed report, the report showing four bar-chart columns with the tallest filled cyan."
+      "alt": "C",
+      "rationale": "variant",
+      "prompt": "Headline top-left, large and bold in deep navy #00152c, ending in a small cyan #03c3f8 full stop, reading exactly: «Trīs vietas, kur automatizācija atmaksājas». Below it THREE equal columns divided ONLY by single 1px pale grey #dbe4ee hairline rules - no boxes, no cards, no panels, no rounded corners, no shadows. Each column carries a small two-digit index in cyan followed by a short cyan rule, then a bold navy label, then a note in slate grey #33475b. Column one: «01», label «Pieteikumu ceļš», note «Forma raksta tieši sistēmā». Column two: «02», label «Pirmā atbilde», note «Automātisks apstiprinājums nopērk laiku». Column three: «03», label «Atskaites», note «Automatizē tikai to, ko kāds lasa». Solid pure white #ffffff background, edge to edge. Generous margins. Strictly flat: no gradients, no glow, no 3D, no shadows, no texture, no photographs. Spell every Latvian word exactly as given with correct diacritics. Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere in the image - the strings above are the only text. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. There are NO illustrations, NO icons, NO pictograms and NO drawings of any kind anywhere in this image. The design is purely typographic: the type, the cyan indices, the short cyan rules and the hairline column dividers are the entire composition. Set the type generously large, let each column breathe, and give the lower half of the frame calm empty white space. Make the typographic hierarchy itself the thing that looks designed."
+    },
+    {
+      "id": "zz-d",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "D",
+      "rationale": "variant",
+      "prompt": "The only text anywhere in the image is exactly these strings, spelled with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. One clean geometric sans-serif, like Inter. Strictly flat: no gradients, no glow, no 3D, no drop shadows, no texture, no photographs. A high-contrast editorial layout that is deliberately striking, not a polite corporate infographic. A large solid deep navy #00152c block occupies the left third of the frame, full height, bleeding off the top, left and bottom edges; the rest of the frame is pure white #ffffff. The headline sits reversed OUT of that navy block in white, ending in a cyan #03c3f8 full stop, set large and tight. On the white side, the three items run as three rows. Each row leads with an ENORMOUS index numeral - 01, 02, 03 - set in outlined navy type so big it nearly fills the row height and is cropped by the right edge on the last one; the bold navy label and slate grey #33475b note sit tucked into the counter of the numeral. A single continuous cyan hairline enters from the navy block and threads horizontally through all three rows, passing behind the numerals, ending in a small solid cyan square. No pictograms and no illustrations - the numerals, the navy block and the cyan thread are the entire graphic idea."
+    },
+    {
+      "id": "zz-e",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "E",
+      "rationale": "variant",
+      "prompt": "The only text anywhere in the image is exactly these strings, spelled with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. One clean geometric sans-serif, like Inter. Strictly flat: no gradients, no glow, no 3D, no drop shadows, no texture, no photographs. Solid pure white #ffffff background. ONE single large continuous line drawing spans the whole width of the frame and ties the three items into one system - not three separate small icons. Drawn in confident even navy #00152c strokes: at the left a wireframe form panel, from which one unbroken line travels rightward across the image, splitting and rejoining as it goes - through a message node marked with a tick, past a plain clock circle, and finally into a panel of four bar columns at the right, which is cropped by the right edge. Three points along that line are filled solid cyan #03c3f8, one per item. The drawing is BIG - it occupies the lower two thirds of the frame at full width. The headline sits top-left above it in bold navy ending in a cyan full stop. The three index numbers, labels and notes sit directly beneath their own node on the line, aligned to it, with thin cyan leader rules connecting each label up to its node. No boxes, no cards, no column dividers."
+    },
+    {
+      "id": "zz-a1",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "A1",
+      "rationale": "variant",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. One clean geometric sans-serif like Inter. Headline bold deep navy #00152c ending in a cyan #03c3f8 full stop; index numbers cyan with a short cyan rule; labels bold navy; notes slate #33475b. Square corners everywhere - no rounded corners on any panel, frame, card or shape. Strictly flat: no gradients, no glow, no 3D, no drop shadows, no photographs. Ground is a soft cool off-white #f6f9fc, edge to edge - not pure white. The three drawings are sharp UI-schematic line work in even navy strokes, in one consistent register - no characters, no scenery, no props, no desks or mugs. One: a form panel whose output arrow lands on the top row of a three-row list. Two: a message row with a tick, linked to a clock face. Three: a panel of four bar columns with a cursor arrow on one bar. THE DRAWINGS ARE TWICE THE SIZE they would normally be: each fills the lower half of its column and is the dominant visual element of the image. Cyan is used CONFIDENTLY, not as a token - in each drawing one substantial area is filled solid cyan #03c3f8, large enough to read as a colour block. A full-bleed cyan hairline runs straight across the frame directly under the headline, edge to edge. Columns divided by single pale hairlines. Type set large and tight."
+    },
+    {
+      "id": "zz-a2",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "A2",
+      "rationale": "variant",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. One clean geometric sans-serif like Inter. Headline bold deep navy #00152c ending in a cyan #03c3f8 full stop; index numbers cyan with a short cyan rule; labels bold navy; notes slate #33475b. Square corners everywhere - no rounded corners on any panel, frame, card or shape. Strictly flat: no gradients, no glow, no 3D, no drop shadows, no photographs. Ground is pure white #ffffff. The three drawings are sharp UI-schematic line work in even navy strokes, in one consistent register - no characters, no scenery, no props, no desks or mugs. One: a form panel whose output arrow lands on the top row of a three-row list. Two: a message row with a tick, linked to a clock face. Three: a panel of four bar columns with a cursor arrow on one bar. THE COMPOSITION BREAKS ITS OWN GRID, and that is the point. The three columns are DELIBERATELY UNEQUAL in width - the first is the widest, the last the narrowest. The drawings are large and each one OVERLAPS and crosses the hairline divider beside it instead of sitting politely inside its column, and the third drawing is CROPPED by the right edge of the frame so part of it runs off the image. Drawings sit at different heights from one another, staggered rather than aligned. One substantial area per drawing is filled solid cyan. The hairline dividers are drawn behind the artwork so the drawings clearly sit on top."
+    },
+    {
+      "id": "zz-a3",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "A3",
+      "rationale": "variant",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. One clean geometric sans-serif like Inter. Headline bold deep navy #00152c ending in a cyan #03c3f8 full stop; index numbers cyan with a short cyan rule; labels bold navy; notes slate #33475b. Square corners everywhere - no rounded corners on any panel, frame, card or shape. Strictly flat: no gradients, no glow, no 3D, no drop shadows, no photographs. Ground is pure white #ffffff in the upper part, but a large solid soft #f6f9fc tinted band runs full width across the lower two thirds of the frame, bleeding off the left, right and bottom edges, and the drawings sit on that band. The three drawings are sharp UI-schematic line work in even navy strokes, in one consistent register - no characters, no scenery, no props, no desks or mugs. One: a form panel whose output arrow lands on the top row of a three-row list. Two: a message row with a tick, linked to a clock face. Three: a panel of four bar columns with a cursor arrow on one bar. BEHIND each drawing sits its own index numeral - 01, 02, 03 - set ENORMOUS in a very pale grey, so big it is cropped by the band edges, acting as a ghosted background layer that the crisp navy drawing sits on top of. The drawings themselves are large and confident, each with one substantial area filled solid cyan. The headline sits on the white above the band, set large and tight, with the small cyan index numbers and labels between it and the band."
+    },
+    {
+      "id": "zz-s1",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s1",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. SWISS BRUTALIST POSTER. Huge flat colour fields and nothing thin anywhere. The frame is divided into three hard rectangular blocks of unequal size with no gaps: one solid deep navy #00152c, one solid cyan #03c3f8, one plain white. The headline is set ENORMOUS in heavy condensed grotesk, tightly leaded, breaking across two lines and running right up to the edges, reversed white out of the navy block. Each item sits in its own block with its number set gigantic behind the label. No illustrations, no icons, no thin lines, no outlines - only type and flat colour blocks. Uncompromising, graphic, poster-like."
+    },
+    {
+      "id": "zz-s2",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s2",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. EDITORIAL MAGAZINE SPREAD. Like a printed business magazine feature on warm off-white paper #faf9f7. A very large elegant high-contrast serif headline across the top, generously leaded. Below it a fine navy rule runs edge to edge, then three narrow justified text columns in a small serif, each opening with a large cyan drop-cap-style number. One single restrained navy line engraving sits in the outer margin, small and precise, like an old technical plate. Lots of paper showing. Refined, literary, print-first - not a tech graphic."
+    },
+    {
+      "id": "zz-s3",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s3",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. FLAT ISOMETRIC. Three objects drawn in clean flat axonometric projection at a consistent 30 degree angle, sitting on a soft #f2f6fa ground: a form panel, a stacked message tray, a bar-chart slab. Solid flat fills only - navy, white, mid grey and cyan planes to describe the faces, no gradients, no shading, no outlines needed where planes meet. The objects are large and cast no shadows. Type sits cleanly beside them in navy with cyan numbers. Modern, product-marketing, dimensional but flat."
+    },
+    {
+      "id": "zz-s4",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s4",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. RISO PRINT / HALFTONE. Two-colour screen-print look on cream paper #f7f4ee. Shapes are built from coarse visible halftone dot fields in navy and cyan that OVERLAP and misregister slightly where they cross, exactly like a riso print, with visible paper grain throughout. Three bold simple silhouette shapes, one per item, rendered in those dot fields. The headline is chunky sans in solid navy, slightly offset from its own cyan shadow copy. Tactile, printed, imperfect, arty."
+    },
+    {
+      "id": "zz-s5",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s5",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. DATA VISUALISATION. The whole image IS one large elegant chart, in the manner of a financial newspaper graphic. A wide horizontal timeline axis runs the full width with fine navy tick marks; three tall slim cyan columns rise from it at different heights, each annotated in place. The labels and notes are set small and precise directly beside their column with thin navy leader lines, and the numbers act as axis markers. Restrained, information-dense, confident, almost no decoration. White ground."
+    },
+    {
+      "id": "zz-s6",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s6",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. CUT-PAPER COLLAGE. Bold flat geometric shapes that look like torn and cut coloured paper layered over one another on an off-white ground, with crisp hard edges and slight offsets where layers overlap, plus a very subtle paper texture. Big navy, cyan and pale grey shapes - circles, quarter-circles, bars and squares - assembled into three simple abstract emblems, one per item. Type is heavy sans in navy sitting confidently on top of the shapes. Playful, contemporary, gallery-poster energy."
+    },
+    {
+      "id": "zz-s6b",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s6b",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. CUT-PAPER COLLAGE, refined and restrained. Flat geometric shapes that read as cut coloured paper layered over one another on an off-white ground, crisp hard edges, slight offsets where layers overlap, very subtle paper texture. Each of the three emblems is a SIMPLE assembly of only three or four shapes - circles, quarter-circles, bars, squares - in navy, cyan and pale grey. Type is heavy sans in navy. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s7",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s7",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. TECH NEON. Deep near-black navy ground. The three emblems and the rules are drawn as glowing cyan neon tubing with a soft luminous halo and a brighter white-hot core, like a neon sign photographed in the dark, with a faint cyan bloom spilling onto the ground around them. Type is clean sans in bright white, the headline large, with the last word glowing cyan. Everything else stays dark and empty. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s8",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s8",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. SOFT 3D CLAY RENDER. Matte rounded three-dimensional objects that look modelled in soft clay or plasticine, in navy and cyan with gentle diffuse studio lighting and soft contact shadows, floating on a pale neutral ground. Each emblem is one simple chunky 3D object. Type is clean modern sans in navy sitting flat over the scene. Tactile, friendly, very contemporary. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s9",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s9",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. GLASSMORPHISM / SOFT GRADIENT. A smooth deep gradient ground flowing from navy into cyan with soft blurred colour blooms. The three emblems sit on frosted translucent glass panels with subtle blur, thin bright edges and a faint inner glow. Type is crisp white sans over the glass. Sleek, modern SaaS, atmospheric. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s10",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s10",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. BAUHAUS GEOMETRIC. Bold primary geometry on a warm off-white ground: perfect circles, half-circles, triangles and squares in flat navy, cyan and a single warm accent, assembled into three confident abstract emblems. Hard edges, no outlines, no texture, strong asymmetric balance. Type is geometric sans set in tight lowercase. Playful, architectural, timeless. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s11",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-s11",
+      "rationale": "style exploration",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. Brand colours: deep navy #00152c, cyan #03c3f8. BLUEPRINT. Deep navy ground. Everything - emblems, rules, type - is drawn in fine pale cyan and white lines exactly like an architect blueprint, with one emblem picked out in solid cyan. Crisp, technical, monochrome discipline, no fills anywhere else. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, sitting directly under its own label. Nothing else at all. No decorative shapes floating in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars anywhere. Generous calm empty ground around everything. "
+    },
+    {
+      "id": "zz-s6c",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "6c",
+      "rationale": "relevance test",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. CUT-PAPER COLLAGE. Flat geometric shapes that read as pieces of cut coloured paper layered over one another on a warm off-white ground, with crisp hard edges, slight offsets where layers overlap and a very subtle paper grain. Palette strictly: deep navy #00152c, cyan #03c3f8, pale cool grey, on off-white. No outlines, no strokes, no gradients, no glow, no 3D, no drop shadows beyond the faint paper offset. Type is heavy geometric sans in deep navy: the headline large across the top, then each item as a big navy number above a bold label above a smaller note. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, centred under its own text. Nothing else at all: no decorative shapes in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars. Generous calm empty ground. EACH EMBLEM IS BUILT FROM ONLY THREE OR FOUR PAPER SHAPES, but assembled so it clearly SUGGESTS its own subject at a glance. Emblem one, for the application path: an upright navy rectangle with two short pale grey bars laid across its upper half like filled-in form fields, overlapping a cyan square offset to its lower right like the record it lands in. Emblem two, for the first reply: a wide navy rectangle with a large pale grey triangle laid over its top edge pointing down, reading unmistakably as an envelope, with a small cyan circle overlapping its lower right corner. Emblem three, for reports: three flat vertical bars of clearly different heights standing on a common baseline - navy, cyan and pale grey - reading as a bar chart. Keep each emblem simple and bold; the shapes stay geometric paper cut-outs, never illustrated icons with detail."
+    },
+    {
+      "id": "zz-s6d",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "6d",
+      "rationale": "relevance test",
+      "prompt": "The only text anywhere is exactly these strings, with correct Latvian diacritics: headline «Trīs vietas, kur automatizācija atmaksājas»; «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā»; «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku»; «03» «Atskaites» «Automatizē tikai to, ko kāds lasa». Add NO other words, numbers, names, e-mail addresses, phone numbers, logos or watermarks anywhere. The guillemets only mark where a string starts and ends; never draw quotation marks or guillemets around the text itself. CUT-PAPER COLLAGE. Flat geometric shapes that read as pieces of cut coloured paper layered over one another on a warm off-white ground, with crisp hard edges, slight offsets where layers overlap and a very subtle paper grain. Palette strictly: deep navy #00152c, cyan #03c3f8, pale cool grey, on off-white. No outlines, no strokes, no gradients, no glow, no 3D, no drop shadows beyond the faint paper offset. Type is heavy geometric sans in deep navy: the headline large across the top, then each item as a big navy number above a bold label above a smaller note. COMPOSITION DISCIPLINE: the image contains ONLY the headline, the three numbered items with their labels and notes, and exactly THREE emblems - one per item, centred under its own text. Nothing else at all: no decorative shapes in the margins, nothing along the left or right edges, no scattered confetti, no background pattern, no stray dots or bars. Generous calm empty ground. EACH EMBLEM IS A SLIGHTLY MORE LITERAL PAPER CUT-OUT of its subject, still made only of flat geometric paper shapes with no outlines or interior detail, five or six shapes at most. Emblem one, for the application path: a tall off-white paper panel bearing three stacked pale grey bars and one cyan bar at the bottom like a submit button, with a navy arrow shape cut out and pointing to a small stack of two offset navy cards. Emblem two, for the first reply: an open envelope built from a navy rectangle and two pale grey triangles, a white letter shape rising out of it, and a cyan circle beside it with one navy wedge cut from it like a clock hand. Emblem three, for reports: an off-white paper page carrying four bars of rising height, the tallest cyan, with a navy quarter-circle in one corner reading as a pie segment."
+    },
+    {
+      "id": "zz-lp1",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-lp1",
+      "rationale": "LP style exploration",
+      "prompt": "The subject is PAID SEARCH ADVERTISING: a person searches, and one advertiser wins the top placement. No text, no letters, no numbers, no words, no logos, no watermarks anywhere in the image. Brand colours: canvas near-black navy #020d1c, cyan #03c3f8, white and cool grey #8ba3bd. CUT-PAPER COLLAGE ON DARK - the same paper language as the blog infographics, inverted. Flat pieces of cut paper laid on a near-black navy ground, crisp hard edges, slight offsets where pieces overlap, subtle paper grain. A large off-white paper panel reads as a browser, a pale grey bar across it as the search field, and beneath it a stack of paper bars of descending length as results - the top bar solid cyan. No outlines, no line work, no gradients, no glow. Composition weighted right, cropped by the right edge, the left third empty."
+    },
+    {
+      "id": "zz-lp2",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-lp2",
+      "rationale": "LP style exploration",
+      "prompt": "The subject is PAID SEARCH ADVERTISING: a person searches, and one advertiser wins the top placement. No text, no letters, no numbers, no words, no logos, no watermarks anywhere in the image. Brand colours: canvas near-black navy #020d1c, cyan #03c3f8, white and cool grey #8ba3bd. DUOTONE HALFTONE. The whole image is built from a coarse visible halftone dot field in cyan on the near-black navy ground, like a two-colour screen print, with the dots enlarging toward one side. A browser and result-bar shape emerges from the dot field, with one result bar printed as a solid flat cyan block that breaks out of the dots. Grainy, printed, textural."
+    },
+    {
+      "id": "zz-lp3",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-lp3",
+      "rationale": "LP style exploration",
+      "prompt": "The subject is PAID SEARCH ADVERTISING: a person searches, and one advertiser wins the top placement. No text, no letters, no numbers, no words, no logos, no watermarks anywhere in the image. Brand colours: canvas near-black navy #020d1c, cyan #03c3f8, white and cool grey #8ba3bd. LONG-SHADOW FLAT GEOMETRY. Bold solid flat shapes in white, cool grey and one cyan, each casting a long hard-edged diagonal shadow in a slightly darker navy - no blur, no gradient, pure flat geometry. A browser rectangle, a search bar and descending result bars, the winning one cyan. Confident, graphic, poster-like, with strong diagonal rhythm."
+    },
+    {
+      "id": "zz-lp4",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-lp4",
+      "rationale": "LP style exploration",
+      "prompt": "The subject is PAID SEARCH ADVERTISING: a person searches, and one advertiser wins the top placement. No text, no letters, no numbers, no words, no logos, no watermarks anywhere in the image. Brand colours: canvas near-black navy #020d1c, cyan #03c3f8, white and cool grey #8ba3bd. ISOMETRIC PAPER STACK. Flat axonometric projection at 30 degrees on the dark ground: a stack of layered flat planes floating one above another like sheets - the lowest a wide grey plane, the middle an off-white plane bearing a search bar, the top plane solid cyan and smaller, reading as the winning placement rising above the rest. Solid flat fills only, no outlines, no shading, no shadows. Dimensional but strictly flat."
+    },
+    {
+      "id": "zz-lp5",
+      "page": "sample",
+      "style": "raw",
+      "aspect": "landscape",
+      "alt": "zz-lp5",
+      "rationale": "LP style exploration",
+      "prompt": "The subject is PAID SEARCH ADVERTISING: a person searches, and one advertiser wins the top placement. No text, no letters, no numbers, no words, no logos, no watermarks anywhere in the image. Brand colours: canvas near-black navy #020d1c, cyan #03c3f8, white and cool grey #8ba3bd. EXTREME MACRO CROP. One single element fills almost the entire frame at enormous scale and is cropped hard by three edges: a search field rendered as a huge off-white rounded-free rectangle with a thick cyan caret bar inside it, and just the top edge of one result bar entering from below. Dramatic scale, almost abstract, very little else in the frame."
     }
   ]
 }

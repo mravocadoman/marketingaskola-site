@@ -9,6 +9,8 @@ image: "/img/gen/cover-5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana.webp
 legacyImage: "/img/2021/10/11.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/"
+keywords: ["reklāmas teksts", "copywriting", "konvertējošs teksts", "reklāmas virsraksti", "Facebook reklāma"]
+
 ---
 
 Vai esi kādreiz aizdomājies, kā varētu ieintriģet vairāk potenciālo klientu savos reklāmu tekstos? Saistošu reklāmas tekstu sastādīšana ir process, par kuru noteikti vērts aizdomāties, jo atmiņā paliekoši un unikāli reklāmas teksti ne tikai palīdz precei vai pakalpojumam izcelties, bet arī var lasītāju iedvesmot rīkoties. Šajā bloga rakstā gūsi 5 vērtīgus ieteikumus, kā panākt to, lai Tavs nākamais reklāmas teksts būtu konvertējošs un potenciālajiem klientiem ļoti saistošs!

@@ -9,6 +9,8 @@ image: "/img/gen/cover-marketinga-plans.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-3.png"
 categories: ["marketinga-strategija"]
 permalink: "/marketinga-plans/"
+keywords: ["mārketinga plāns", "mārketinga stratēģija", "SMART mērķi", "mārketinga budžets", "kanālu izvēle"]
+
 ---
 
 Mūsdienu konkurences apstākļos uzņēmuma izaugsme ir gandrīz neiespējama, ja nav labi izstrādāts mārketinga plāns. Nepietiek tikai ar labu produktu vai pakalpojumu – nepieciešama stratēģija, kas palīdz sasniegt pareizo auditoriju, optimizēt resursus un gūt maksimālu atdevi no mārketinga aktivitātēm.
