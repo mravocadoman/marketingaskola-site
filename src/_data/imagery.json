@@ -28,6 +28,15 @@
       "rationale": "Same text-dense course template as Meta — needs its own unmistakable motif (ranked list + circle) so the two pages never read as the same picture."
     },
     {
+      "id": "google-ads-motivs",
+      "page": "google-ads-kurss",
+      "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
+      "aspect": "landscape",
+      "alt": "Abstrakts izsoles motīvs — augošas kolonnas virs meklēšanas joslas",
+      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background: a row of five slim vertical columns of clearly different heights, evenly spaced, in cool grey #c9d8e8, with the second-tallest column filled solid cyan #03c3f8 — an abstract auction of bids. Beneath the columns, separated by generous space, one long thin horizontal capsule bar in cool grey #8ba3bd with a short vertical cyan caret stroke standing inside its left end. Everything sits in the right two thirds; the left third is empty. Purely flat, no gradients, no glow, no 3D, no perspective, no magnifying glass, no arrows, no text, letters, numbers or logos, subtle grain.",
+      "rationale": "The Google Ads course needs a motif that is unmistakably paid search — a bid auction over a query field — and cannot be confused with the SEO course's ranked-list-and-circle or Meta's concentric targeting rings."
+    },
+    {
       "id": "tiktok-video-motivs",
       "page": "tiktok-kursi",
       "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
@@ -453,8 +462,9 @@
       "placement": "in-article infographic before \"Pirmā vieta\"",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika: trīs savienotas stacijas — pieteikumu forma, vēstule ar pulksteni un atskaites diagramma — kā trīs vietas, kur mazam uzņēmumam automatizācija atmaksājas pirmā",
-      "prompt": "Infographic composition of three stations connected left to right by one thin navy line with small square nodes: first a simple web form card with three empty field bars and a small tray beneath it, second an envelope with a small clock face beside it, third a small bar chart card with three bars. The middle station carries the single cyan accent. Even spacing, white background."
+      "alt": "Infografika „Kur automatizācija atmaksājas pirmā”: 1 Pieteikumu ceļš — forma raksta tieši sistēmā; 2 Pirmā atbilde — automātisks apstiprinājums nopērk laiku; 3 Atskaites — tikai tās, ko kāds lasa.",
+      "prompt": "Infographic in Latvian. Headline across the top, exactly: «Kur automatizācija atmaksājas pirmā». Below it three equal panels left to right connected by a thin navy line, each with a large cyan step number, a simple flat icon, a bold label and a one-line note, with this exact text. Panel 1: number «1», icon of a web form card with three empty field bars, label «Pieteikumu ceļš», note «Forma raksta tieši sistēmā». Panel 2: number «2», icon of an envelope with a small clock, label «Pirmā atbilde», note «Automātisks apstiprinājums nopērk laiku». Panel 3: number «3», icon of a bar chart card, label «Atskaites», note «Tikai tās, ko kāds lasa». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
     },
     {
       "id": "info-ai-tris-soli",
@@ -462,35 +472,39 @@
       "placement": "in-article infographic after \"Trīs soļu process\"",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika: trīs soļi — dokumentu mape, kas ieplūst kastē; pieci zarojoši varianti; pildspalva pār lapu ar ķeksīti — kā AI satura process, kas saglabā zīmola balsi",
-      "prompt": "Infographic of a three-step process reading left to right, separated by thin navy arrows: first a small stack of three document sheets feeding into a square box, second one line splitting into five parallel branch lines ending in small squares with one branch highlighted in cyan, third a flat fountain pen over a single page with a bold check mark. White background, navy ink, minimal."
+      "alt": "Infografika „AI saturs bez zīmola balss zaudēšanas”: 1 Konteksts, pēc tam uzdevums; 2 Varianti, ne gatavs teksts; 3 Pēdējo versiju pārraksti pats.",
+      "prompt": "Infographic in Latvian. Headline across the top, exactly: «AI saturs bez zīmola balss zaudēšanas». Below it a three-step process left to right separated by thin navy arrows, each step with a large cyan number, a simple flat icon and a bold label, with this exact text. Step 1: number «1», icon of three stacked document sheets feeding into a square box, label «Konteksts, pēc tam uzdevums». Step 2: number «2», icon of one line splitting into five branch lines, label «Varianti, ne gatavs teksts». Step 3: number «3», icon of a pen over a page with a check mark, label «Pēdējo versiju pārraksti pats». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
     },
     {
       "id": "info-facebook-cenas-faktori",
       "page": "cik-maksa-reklama-facebook",
       "placement": "in-article infographic after the five price factors",
-      "aspect": "landscape",
+      "aspect": "square",
       "style": "paper",
-      "alt": "Infografika: cenas zīme centrā ar piecām līnijām uz ikonām — atskaņošanas poga, mērķis, karogs, kalendārs, zvaigzne — kā pieci faktori, kas ietekmē Facebook reklāmas cenu",
-      "prompt": "Radial infographic: a flat price tag shape in the centre, five thin navy lines radiating to five simple icons arranged in a wide arc above and beside it: a play button inside a square, a concentric target, a small flag on a pole, a calendar grid, a five-point star. Only the star is cyan. Plenty of white space, balanced, no text."
+      "alt": "Infografika „Kas nosaka Facebook reklāmas cenu”: reklāmas veids, mērķauditorija, reklāmas mērķis, sezona un konkurence, kvalitāte un atbilstība; CPM Latvijā 5–15 €, CPC 0,10–2 €.",
+      "prompt": "Square infographic in Latvian. Headline at the top, exactly: «Kas nosaka Facebook reklāmas cenu». In the centre a flat price-tag shape; five thin navy lines radiate to five items arranged around it, each with a simple flat icon and a bold label, with this exact text: «Reklāmas veids» (icon: play button in a square), «Mērķauditorija» (icon: concentric target), «Reklāmas mērķis» (icon: small flag), «Sezona un konkurence» (icon: calendar grid), «Kvalitāte un atbilstība» (icon: five-point star, cyan). Along the bottom one line of facts in navy, exactly: «CPM Latvijā 5–15 € · CPC 0,10–2 €». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
     },
     {
       "id": "info-marketinga-plana-soli",
       "page": "marketinga-plans",
       "placement": "in-article infographic after the six steps",
-      "aspect": "landscape",
+      "aspect": "square",
       "style": "paper",
-      "alt": "Infografika: seši soļi uz līkumotas takas — lupa, mērķis, kanālu režģis, zobrats, monētu kaudzes, cikla bultas — kā mārketinga plāna izveides secība",
-      "prompt": "Infographic of a gently winding thin navy path from left to right with six square nodes; at each node a simple flat icon: a magnifying glass, a concentric target, a grid of four small squares, a gear, two small coin stacks of different height, and two arrows forming a loop. The final loop node is cyan. White background, even rhythm, no text."
+      "alt": "Infografika „Mārketinga plāns sešos soļos”: 1 Izpēti tirgu un konkurentus; 2 Nosaki konkrētus mērķus; 3 Izvēlies kanālus; 4 Izmanto digitālos rīkus; 5 Sadali budžetu; 6 Uzlabo un optimizē.",
+      "prompt": "Square infographic in Latvian. Headline at the top, exactly: «Mārketinga plāns sešos soļos». Below it a gently winding thin navy path with six square nodes in reading order, each node with a large cyan number, a simple flat icon and a bold label, with this exact text: «1» magnifying glass «Izpēti tirgu un konkurentus»; «2» concentric target «Nosaki konkrētus mērķus»; «3» grid of four squares «Izvēlies kanālus»; «4» gear «Izmanto digitālos rīkus»; «5» two coin stacks «Sadali budžetu»; «6» two arrows forming a loop «Uzlabo un optimizē». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
     },
     {
       "id": "info-reklamas-teksta-ieteikumi",
       "page": "5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
       "placement": "in-article infographic before \"Mārketinga skola iesaka\"",
-      "aspect": "landscape",
+      "aspect": "square",
       "style": "paper",
-      "alt": "Infografika: piecas kartītes rindā — cilvēku silueti, sirds, izcelta virsraksta josla, saīsinātas teksta līnijas un viens aplis — kā pieci ieteikumi konvertējošam reklāmas tekstam",
-      "prompt": "Infographic row of five equal square cards with thin navy outlines, each holding one flat icon: two overlapping person silhouettes, a heart, a thick short headline bar above two thin lines, three text lines with the last one cut short by a small scissors mark, and a single plain circle. The heart is the only cyan element. White background, generous margins, no text."
+      "alt": "Infografika „5 ieteikumi konvertējošam reklāmas tekstam”: 1 Pazīsti mērķauditoriju; 2 Emocionālā saikne; 3 Ieintriģējošs virsraksts; 4 Īss un kodolīgs teksts; 5 Vienkāršība.",
+      "prompt": "Square infographic in Latvian. Headline at the top, exactly: «5 ieteikumi konvertējošam reklāmas tekstam». Below it five horizontal rows, each a thin-outlined card with a large cyan number on the left, a simple flat icon and a bold label, with this exact text: «1» two overlapping person silhouettes «Pazīsti mērķauditoriju»; «2» heart «Emocionālā saikne»; «3» thick headline bar above two thin lines «Ieintriģējošs virsraksts»; «4» three text lines with the last cut short «Īss un kodolīgs teksts»; «5» single plain circle «Vienkāršība». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
     },
     {
       "id": "info-digitala-marketinga-ieguvumi",
@@ -498,8 +512,36 @@
       "placement": "in-article infographic after the three benefits",
       "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika: trīs pīlāri — mērķa krusts, augoša līkne ar monētām un mērinstruments — kā digitālā mārketinga trīs lielākie ieguvumi",
-      "prompt": "Infographic of three tall rectangular panels side by side with thin navy outlines, each with one flat icon centred: a crosshair target, a rising line chart with two small coins at its top, and a semicircular gauge with a needle. The needle is cyan. Beneath each panel a short thick navy baseline bar. White background, symmetrical, no text."
+      "alt": "Infografika „3 lielākie digitālā mārketinga ieguvumi”: 1 Precīza mērķauditorija; 2 Lielāka peļņa; 3 Izmērāma efektivitāte.",
+      "prompt": "Infographic in Latvian. Headline across the top, exactly: «3 lielākie digitālā mārketinga ieguvumi». Below it three tall panels side by side with thin navy outlines, each with a large cyan number, one flat icon and a bold label, with this exact text: «1» crosshair target «Precīza mērķauditorija»; «2» rising line chart with two coins at its top «Lielāka peļņa»; «3» semicircular gauge with a needle «Izmērāma efektivitāte». Small source line in the bottom right corner, exactly: «marketingaskola.lv».",
+      "quality": "high"
+    },
+    {
+      "id": "google-ads-konversijas-band",
+      "page": "google-ads-kurss",
+      "placement": "Full-width .media--band directly above the '04 Rezultāti' .sec-head.",
+      "aspect": "landscape",
+      "alt": "Trīs sašaurinošas rindas no maziem kvadrātiem, kas beidzas ar vienu ciānkrāsas kvadrātu",
+      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background, very wide banner composition: three horizontal lanes of small equal squares in cool grey #8ba3bd run from the left edge toward the right, each lane losing squares as it goes so the field visibly thins; all three lanes converge on one single larger solid cyan #03c3f8 square sitting alone at the right, separated by generous empty space. No connecting arrows, no funnel outline, no cone shape. Purely flat, no gradients, no glow, no 3D, no perspective, no text, letters, numbers or logos, subtle grain.",
+      "rationale": "The results section argues that clicks are not customers — a thinning field ending in one solid mark says that without a chart."
+    },
+    {
+      "id": "seo-satura-struktura-band",
+      "page": "seo-kursi",
+      "placement": "Full-width .media--band above the 'Kursa saturs' heading inside .course-body.",
+      "aspect": "landscape",
+      "alt": "Zarojoša struktūra no plānām līnijām ar vienu izceltu mezglu",
+      "prompt": "Flat vector diagram on solid near-black navy #020d1c, wide banner composition: one small square node near the top centre-right, thin cool-grey #8ba3bd straight lines dropping and branching from it to a row of five small square nodes below, and from two of those a second shorter branch to a few smaller nodes; exactly one node in the bottom row is a solid cyan #03c3f8 square. Strictly orthogonal lines, right angles only, no curves. The left third of the frame is empty. Purely flat, no gradients, no glow, no 3D, no text, letters, numbers or logos, subtle grain.",
+      "rationale": "The SEO page is the most text-dense course page and carries one image; site architecture is its subject and reads instantly as a tree."
+    },
+    {
+      "id": "meta-kreativu-testi-band",
+      "page": "meta-reklamas-kurss",
+      "placement": "Full-width .media--band above the '02 Kam kurss paredzēts' .sec-head.",
+      "aspect": "landscape",
+      "alt": "Vienāda izmēra taisnstūru režģis, kurā viens ir aizpildīts ciānkrāsā",
+      "prompt": "Flat vector editorial graphic. The entire background is one single uniform very dark navy #020d1c, edge to edge, exactly the same colour in every corner. Wide banner composition: a neat grid of nine identical portrait-oriented rectangles in three rows of three, sitting in the right half of the frame. Eight of them are drawn as thin cool-grey #c9d8e8 outlines with nothing inside - the background shows through them unchanged. Exactly one rectangle, in the middle row, is filled with flat solid cyan #03c3f8 at full opacity across its whole area. Even spacing between rectangles, generous empty background to the left. Absolutely no gradients anywhere, no fades, no partial opacity, no soft edges, no shadows, no glow, no reflection, no 3D, no perspective, no device frames, no text, letters, numbers or logos. Subtle even grain over the whole image.",
+      "rationale": "The Meta course sells creative testing; a grid where one tile wins states that in one glance and cannot be mistaken for the targeting rings."
     }
   ]
 }

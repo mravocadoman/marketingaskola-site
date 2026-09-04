@@ -803,6 +803,19 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .course-card .btn { width: 100%; margin-top: 20px; }
 .course-card .fine { font-size: var(--t-sm); color: var(--muted); text-align: center; margin: 12px 0 0; }
 
+/* Standalone fine print under a payment/booking block. Without these it
+   inherited body size at full container width and read as a wall of terms.
+   The full policy lives in .fine-more so it stays available without
+   dominating the section. */
+.fine { font-size: var(--t-sm); color: var(--muted); max-width: 68ch; margin: 22px 0 0; }
+.fine-more { max-width: 68ch; margin-top: 10px; }
+.fine-more .faq summary { font-size: var(--t-sm); font-weight: 400; color: var(--muted); padding: 12px 40px 12px 0; }
+.fine-more .faq summary::after { right: 6px; width: 7px; height: 7px; }
+.fine-more .faq[open] { background: transparent; }
+.fine-more .faq > div { padding: 0 0 16px; font-size: var(--t-sm); color: var(--muted); }
+.fine-more .faq > div p { margin: 0 0 10px; }
+.fine-more .faq > div p:last-child { margin-bottom: 0; }
+
 .course-facts { list-style: none; margin: 20px 0 0; padding: 0; }
 .course-facts li { display: flex; justify-content: space-between; gap: 18px; padding: 12px 0; border-top: 1px solid var(--line); font-size: var(--t-base); }
 .course-facts li span:first-child { color: var(--muted); flex-shrink: 0; }
@@ -1007,6 +1020,36 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .media.reveal { opacity: 1; transform: none; }
   .media.reveal img { clip-path: inset(0 0 100% 0); transition: clip-path 0.85s cubic-bezier(0.22, 1, 0.36, 1); }
   .media.reveal.in img { clip-path: inset(0 0 0 0); }
+}
+
+/* Inner-page hero entrance. Pure CSS so it needs no observer and cannot leave
+   content hidden if the script never runs; `backwards` holds the from-state
+   during the delay. Same rise as .reveal, so the page reads as one system. */
+@keyframes hero-rise { from { opacity: 0; transform: translateY(14px); } }
+@media (prefers-reduced-motion: no-preference) {
+  .page-hero .chip,
+  .page-hero h1,
+  .page-hero .sub,
+  .page-hero .chips,
+  .page-hero .btn-wrap { animation: hero-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+  .page-hero .chip { animation-delay: 0.04s; }
+  .page-hero h1 { animation-delay: 0.1s; }
+  .page-hero .sub { animation-delay: 0.18s; }
+  .page-hero .chips { animation-delay: 0.26s; }
+  .page-hero .btn-wrap { animation-delay: 0.34s; }
+
+  /* Tick items cascade inside their own list (main.js staggers by sibling
+     index), so the shift is smaller than a card's or it reads as jitter. */
+  .tick-list li.reveal { transform: translateY(6px); }
+
+  /* Picture creeps in on hover. .cell-media already clips, so this stays a
+     flat crop change - no shadow, no glow, nothing the ledger forbids. */
+  .cell-media img,
+  .course-tile--media .cell-media img { transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+  .cell--media:hover .cell-media img,
+  .course-tile--media:hover .cell-media img,
+  .cell--media:focus-within .cell-media img,
+  .course-tile--media:focus-within .cell-media img { transform: scale(1.045); }
 }
 
 /* ==========================================================================

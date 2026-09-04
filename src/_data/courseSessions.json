@@ -16,13 +16,32 @@
       "time": "9:00–12:00",
       "format": "Tiešsaistē (Google Meet)",
       "sessions": [
-        { "date": "2026-09-08", "label": "8. septembris" },
-        { "date": "2026-10-06", "label": "6. oktobris" },
-        { "date": "2026-11-03", "label": "3. novembris" },
-        { "date": "2026-12-01", "label": "1. decembris" }
+        {
+          "date": "2026-09-08",
+          "label": "8. septembris"
+        },
+        {
+          "date": "2026-10-06",
+          "label": "6. oktobris"
+        },
+        {
+          "date": "2026-11-03",
+          "label": "3. novembris"
+        },
+        {
+          "date": "2026-12-01",
+          "label": "1. decembris"
+        }
       ]
     },
     "seo-kursi": {
+      "bookUrl": "",
+      "calendarUrl": "",
+      "time": "",
+      "format": "",
+      "sessions": []
+    },
+    "google-ads-kurss": {
       "bookUrl": "",
       "calendarUrl": "",
       "time": "",

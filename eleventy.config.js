@@ -54,7 +54,7 @@ module.exports = function (eleventyConfig) {
     const items = (o.items || []).map((it) => `<li><strong>${esc(it.label)}</strong>${it.text ? ` <span>${esc(it.text)}</span>` : ""}</li>`).join("");
     return `<figure class="infographic">
   <img src="/img/gen/${o.id}.webp" alt="${esc(slot.alt)}" loading="lazy">
-  <figcaption>${o.title ? `<p class="infographic-title">${esc(o.title)}</p>` : ""}<ol class="infographic-list">${items}</ol></figcaption>
+  <figcaption><details class="infographic-text"><summary>${esc(o.title || "Teksta versija")}</summary><ol class="infographic-list">${items}</ol></details></figcaption>
 </figure>`;
   });
 

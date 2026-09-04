@@ -826,6 +826,70 @@ during the rebuild, revisit with the owner if wrong:
 - Catalog courses without own pages (padziļinātais Meta/SEO, stratēģija
   vadītājiem) link to the hub form, not to themselves.
 
+## Third course, LIFT retired, fine print shrunk (4 Sep 2026)
+
+**`/google-ads-kurss/` is a full course page**, built on the Meta page's
+structure (hero → par kursu → kam paredzēts → 5 moduļi + sticky aside →
+rezultāti → pieteikšanās → pasniedzējs → rēķins → BUJ → katalogs → cta-band).
+It is wired into the nav dropdown, the footer, `course-catalog.njk` (now
+`hgrid--3`), the course form's dropdown and `courseSessions.json`.
+
+- **Instructor is Kristaps Apeināns**, the agency's Google reklāmas
+  speciālists per `/sazinies/`. The "vairāk nekā 10 miljonus eiro" figure is
+  the site's own claim, lifted verbatim from `/google-reklama-2025/` — it was
+  not invented here.
+- **Price 150 € + PVN and 3 stundas are assumed** from the Meta course, since
+  the owner has not set them. Owner data — confirm before promoting the page.
+- Its `courseSessions.json` entry is empty, so **it falls back to the
+  application form** exactly like SEO. To sell seats it needs the same three
+  things as Meta: agreed monthly dates, a Cal.com event with seats and date
+  overrides, and a Stripe payment link redirecting to that event.
+
+**LIFT is gone — the programme ended (owner, 4 Sep 2026).** Removed: the LIFT
+section on the Meta course page (eyebrows renumbered 09→08, 10→09), the clause
+in Rihards's instructor bio, the present-tense LIFT sentence in his bio on
+`/sazinies/`, the CTA in `kas-ir-seo.md`, and the SEO page's "Pieejams 100%
+līdzfinansējums" badge plus the same claim in its meta description — the
+co-financing WAS the LIFT programme, so it stopped being true too.
+**One reference survives on purpose:** the "LIFT vebinārs" case study on
+`/portfolio/` is a record of work actually delivered, not an offer. Delete it
+only if the owner asks.
+
+**Fine print under a payment block is small and collapsible.** `.fine` had no
+bare CSS rule, so the standalone ones in `course-sessions.njk` and
+`booking.njk` inherited body size at full container width and read as a wall
+of terms (owner: *"this is too big on course pages"*). There is now a `.fine`
+rule (14px, muted, 68ch) and a `.fine-more` disclosure that holds the group
+minimum, the cancellation window and the invoice line. **The terms were
+shortened in presentation, not removed** — they are consumer terms and the
+refund promise must stay reachable.
+
+## Motion on inner pages (4 Sep 2026)
+
+Owner: *"add cooler images and subtle animations to the course pages."* Done
+by extending what already exists, not by adding a library:
+
+- `main.js`'s reveal target list gained `.course-card, .instructor-card, .faq,
+  .tick-list li` — the stagger is per parent, so tick items cascade inside
+  their own list. `.tick-list li.reveal` uses a 6px rise instead of 12px,
+  because at list density the larger shift reads as jitter.
+- `.page-hero` children rise in on load through a **CSS-only** `hero-rise`
+  keyframe with `backwards` fill. No observer, so a page can never be left
+  with an invisible headline if the script fails. It applies to every inner
+  page, not just courses — one hero treatment, not two.
+- `.cell-media img` scales to 1.045 on hover/focus-within. `.cell-media`
+  already clips, so this stays a flat crop change: no shadow, no glow.
+- All of it sits inside `@media (prefers-reduced-motion: no-preference)`.
+
+Three new artwork slots: `google-ads-motivs` (bid columns over a query field),
+`google-ads-konversijas-band` (thinning click lanes ending in one solid mark),
+`seo-satura-struktura-band` (site architecture tree), `meta-kreativu-testi-band`
+(9-up creative grid, one tile wins). **The Meta grid needed a second pass** —
+the first render came back with a lighter background and a gradient-filled
+tile. The prompt now states the background colour as edge-to-edge uniform and
+forbids gradients, fades and partial opacity explicitly. Proof-read generated
+artwork against the house style; the model drifts on "flat".
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

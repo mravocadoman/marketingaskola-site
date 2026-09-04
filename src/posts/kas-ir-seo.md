@@ -78,4 +78,4 @@ SEO nav burvju nūjiņa, kas dod tūlītējus rezultātus. Tas ir stratēģisks,
 
 SEO ir ieguldījums, kas atmaksājas.
 
-Ja vēlies saprast, kā pielāgot SEO savam biznesam, piesakies uz [LIFT līdzfinansētajiem SEO kursiem!](/seo-kursi/)
+Ja vēlies saprast, kā pielāgot SEO savam biznesam, piesakies uz [mūsu SEO kursu!](/seo-kursi/)

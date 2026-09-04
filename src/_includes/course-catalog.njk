@@ -13,6 +13,12 @@
     title: "Meta reklāmas kurss — izveido peļņu nesošas Facebook un Instagram kampaņas",
     ticks: ["Apgūsti Meta Ads pamatus un padziļinātu stratēģiju", "Praktiski iestatījumi: kampaņu struktūra, testi un optimizācija", "Kā palielināt ROI un samazināt reklāmas izmaksas"],
     cta: "Uzzini vairāk" },
+  { slug: "google", url: "/google-ads-kurss/", tag: "Tiešsaistē · Iesācējiem · 3 stundas",
+    img: "/img/gen/google-ads-motivs.webp",
+    alt: "Abstrakts izsoles motīvs — dažāda augstuma kolonnas virs meklēšanas joslas",
+    title: "Google Ads kurss — reklāma cilvēkiem, kas jau meklē Tavu produktu",
+    ticks: ["Atslēgvārdu izpēte, atbilstības veidi un negatīvie atslēgvārdi", "Meklēšanas kampaņas, Performance Max un Shopping", "Konversiju uzskaite: cik maksā klients, nevis klikšķis"],
+    cta: "Uzzini vairāk" },
   { slug: "seo", url: "/seo-kursi/", tag: "Tiešsaistē · Iesācējiem · 4 stundas",
     img: "/img/gen/seo-mekletaja-motivs.webp",
     alt: "Abstrakts meklētāja motīvs — aplis ar līniju un rezultātu joslām",
@@ -20,7 +26,7 @@
     ticks: ["SEO pamati un padziļināta optimizācija", "Kā veidot saturu, kas piesaista organisko datplūsmu", "Atslēgvārdu izpēte, tehniskais SEO un backlink stratēģija"],
     cta: "Uzzini vairāk" }
 ] %}
-<div class="hgrid hgrid--{% if catalogExclude %}2{% else %}2{% endif %}">
+<div class="hgrid hgrid--3">
   {% for c in catalog %}{% if c.slug != catalogExclude %}
   <div class="course-tile course-tile--media">
     <figure class="cell-media"><img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy"></figure>
@@ -38,7 +44,7 @@
     <div class="course-tag">Katalogs</div>
     <h3><a href="/digitala-marketinga-kursi/">Visi kursi un apmācības vienuviet</a></h3>
     <ul class="tick-list">
-      <li>Tiešsaistes kursi ar pasniedzēju — Meta reklāma un SEO</li>
+      <li>Tiešsaistes kursi ar pasniedzēju — Meta reklāma, Google Ads un SEO</li>
       <li>Grupu apmācības un atlaides kolektīviem</li>
     </ul>
     <a class="arrow-link" href="/digitala-marketinga-kursi/">Apskatīt katalogu</a>
