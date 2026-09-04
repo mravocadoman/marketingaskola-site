@@ -1,5 +1,5 @@
 {
-  "_comment": "Instant booking for the paid consultation. Each option is a Stripe payment link; configure that link in Stripe to redirect after successful payment to `calendarUrl`, so one click takes someone from choosing a format to holding a slot. While a `url` is empty the page falls back to the enquiry form, so it is never broken. `vatRate` is what the Stripe link must add on top of the shown price.",
+  "_comment": "Instant booking for the paid consultation. Each option is a live Stripe payment link in the SIA \"Stonks\" account; Stripe Tax adds 21% VAT on top of the shown price (verified at checkout: 100 EUR -> 121 EUR). To finish the one-click flow, set each link's After payment behaviour in Stripe to redirect to `calendarUrl`; until that URL is set the copy promises a follow-up instead of an instant calendar, so nothing on the page is untrue.",
   "vatRate": 21,
   "consultation": {
     "calendarUrl": "",
@@ -10,7 +10,7 @@
         "duration": "60 minūtes",
         "price": 100,
         "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
-        "url": ""
+        "url": "https://buy.stripe.com/aFafZhfKfbl7fe99BA4gg02"
       },
       {
         "id": "30",
@@ -18,7 +18,7 @@
         "duration": "30 minūtes",
         "price": 60,
         "best": "Vienam konkrētam jautājumam vai otrajam viedoklim",
-        "url": ""
+        "url": "https://buy.stripe.com/7sY7sL55B9cZ6HD8xw4gg03"
       }
     ]
   }
