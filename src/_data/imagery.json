@@ -565,6 +565,23 @@
       "alt": "Infografika: trīs kursi un trīs kanāli — Meta reklāma, Google Ads un SEO",
       "prompt": "Headline top-left: «Trīs kursi, trīs kanāli». Three columns, each ending with a duration line set in cool grey at the bottom of the column. Column one: index «01», label «Meta reklāma», note «Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē», duration «3 stundas». Column two: index «02», label «Google Ads», note «Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu», duration «3 stundas». Column three: index «03», label «SEO», note «Nopelni vietu meklētājā bez maksas par klikšķi», duration «3 stundas». Under column one draw four concentric thin rings tightening onto a single small node - a defined audience being targeted. Under column two draw a short horizontal query bar with a caret at its left end, and above the bar a row of five narrow vertical columns of different heights - bids in an auction. Under column three draw a vertical stack of six horizontal bars of descending length with one bar promoted upward out of the stack - a ranked result climbing.",
       "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
+    },
+    {
+      "id": "zz-sample-dark",
+      "page": "sample",
+      "aspect": "landscape",
+      "alt": "Paraugs",
+      "rationale": "Style sample.",
+      "prompt": "The subject is paid search advertising. Draw a browser window frame with a search field across its top, a cursor arrow resting in the field, and beneath the field a ranked column of result rows drawn as fine outlined bars of descending length; the topmost result row is filled solid cyan to mark the paid placement. A slim vertical scale of bid columns rises beside the window, each column tied to a result row by a fine line. The browser frame is cropped by the right edge; the left third of the frame is empty."
+    },
+    {
+      "id": "zz-sample-paper",
+      "page": "sample",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Paraugs",
+      "rationale": "Style sample.",
+      "prompt": "Headline top-left: «Trīs vietas, kur automatizācija atmaksājas». Below it THREE columns separated by hairline rules, each with index, bold label, note and one properly drawn illustration below. Column «01» label «Pieteikumu ceļš» note «Forma raksta tieši sistēmā» - illustration: a web form with three filled input fields and a submit button, a fine line carrying an envelope from the button into a stack of record cards, the top card tabbed in cyan. Column «02» label «Pirmā atbilde» note «Automātisks apstiprinājums nopērk laiku» - illustration: an open envelope with a letter rising out of it, a clock face beside it whose hand is cyan, and a fine line linking the two. Column «03» label «Atskaites» note «Automatizē tikai to, ko kāds lasa» - illustration: a person seated at a desk holding a printed report, the report showing four bar-chart columns with the tallest filled cyan."
     }
   ]
 }
