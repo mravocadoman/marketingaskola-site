@@ -50,7 +50,22 @@ const PAPER_SUFFIX =
   'Simple square-cornered geometric icons, generous margins, even spacing, clear reading order. ' +
   'Spell every Latvian word exactly as given, with correct diacritics (ā č ē ģ ī ķ ļ ņ š ū ž); add no other words, no logos, no watermarks. ' +
   'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other punctuation around the text itself.';
-const styleSuffix = (slot) => (slot.style === 'paper' ? PAPER_SUFFIX : STYLE_SUFFIX);
+// Infographics for the DARK marketing pages. Same permission to carry Latvian
+// type as PAPER_SUFFIX, but on the house canvas - a white-paper diagram dropped
+// on a dark page is the white-slab artifact `.img--card` was deleted for.
+// Owner (4 Sep 2026): "when I asked to add images, add it via OpenAI API and
+// oftentimes with text where it makes sense" - so a full-width picture that
+// says nothing is not an option; it either carries content or it goes.
+const DARK_INFO_SUFFIX =
+  ' Flat editorial vector infographic on a solid dark navy background (#020d1c), like a diagram in a premium business magazine. ' +
+  'Typography: one clean geometric sans-serif typeface (like Inter), headline bold in pure white #ffffff, labels bold white, notes regular in cool grey #8ba3bd; all type large and highly legible even when the image is shown at 600 pixels wide. ' +
+  'Strictly flat colour blocking: no gradients, no glow, no bloom, no 3D, no shadows, no vignette, no photographs. One accent colour cyan #03c3f8 used sparingly (the step numbers or one highlight per group), panels may sit on flat #00152c blocks separated by 1px #1d3550 hairlines. ' +
+  'Simple square-cornered geometric icons, generous margins, even spacing, clear reading order, subtle fine film grain. ' +
+  'Spell every Latvian word exactly as given, with correct diacritics (a c e g i k l n s u z with macrons, cedillas and carons); add no other words, no logos, no watermarks. ' +
+  'The guillemets in this prompt only mark where a string starts and ends - never draw quotation marks, guillemets or any other punctuation around the text itself.';
+
+const styleSuffix = (slot) =>
+  slot.style === 'paper' ? PAPER_SUFFIX : slot.style === 'dark-info' ? DARK_INFO_SUFFIX : STYLE_SUFFIX;
 
 const SIZES = { landscape: '1536x1024', square: '1024x1024', portrait: '1024x1536' };
 

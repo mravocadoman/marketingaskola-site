@@ -517,31 +517,54 @@
       "quality": "high"
     },
     {
-      "id": "google-ads-konversijas-band",
+      "id": "info-google-ads-budzets",
       "page": "google-ads-kurss",
-      "placement": "Full-width .media--band directly above the '04 Rezultāti' .sec-head.",
+      "style": "dark-info",
+      "placement": "Inside section 02, replacing the standalone band, under the paragraph about why Google Ads gets expensive.",
       "aspect": "landscape",
-      "alt": "Trīs sašaurinošas rindas no maziem kvadrātiem, kas beidzas ar vienu ciānkrāsas kvadrātu",
-      "prompt": "Flat vector editorial graphic on a solid near-black navy #020d1c background, very wide banner composition: three horizontal lanes of small equal squares in cool grey #8ba3bd run from the left edge toward the right, each lane losing squares as it goes so the field visibly thins; all three lanes converge on one single larger solid cyan #03c3f8 square sitting alone at the right, separated by generous empty space. No connecting arrows, no funnel outline, no cone shape. Purely flat, no gradients, no glow, no 3D, no perspective, no text, letters, numbers or logos, subtle grain.",
-      "rationale": "The results section argues that clicks are not customers — a thinning field ending in one solid mark says that without a chart."
+      "alt": "Infografika: trīs vietas, kur pazūd Google Ads budžets — pārāk plaši atslēgvārdi, trūkstoši negatīvie atslēgvārdi un neuzstādīta konversiju uzskaite",
+      "prompt": "A three-panel infographic. The headline across the top reads «Kur pazūd Google Ads budžets». Below it three equal vertical panels side by side, each with a large cyan number, a bold white label and one grey line of note. Panel one: number «01», label «Pārāk plaši atslēgvārdi», note «Reklāma parādās meklējumos bez pirkšanas nodoma». Panel two: number «02», label «Nav negatīvo atslēgvārdu», note «Budžets aiziet nesaistītiem vaicājumiem». Panel three: number «03», label «Nav konversiju uzskaites», note «Redzi klikšķus, bet ne klientus». Above each label a simple flat square-cornered icon: a wide funnel-shaped net, a rectangle holding three plain horizontal bars with a single diagonal line struck through it, a target ring with no arrow in it. The icons must contain no letters or words of any kind - only plain geometric shapes.",
+      "rationale": "The page argues that Google Ads gets expensive in three specific places; naming them in the picture is worth more than an abstract motif."
     },
     {
-      "id": "seo-satura-struktura-band",
-      "page": "seo-kursi",
-      "placement": "Full-width .media--band above the 'Kursa saturs' heading inside .course-body.",
-      "aspect": "landscape",
-      "alt": "Zarojoša struktūra no plānām līnijām ar vienu izceltu mezglu",
-      "prompt": "Flat vector diagram on solid near-black navy #020d1c, wide banner composition: one small square node near the top centre-right, thin cool-grey #8ba3bd straight lines dropping and branching from it to a row of five small square nodes below, and from two of those a second shorter branch to a few smaller nodes; exactly one node in the bottom row is a solid cyan #03c3f8 square. Strictly orthogonal lines, right angles only, no curves. The left third of the frame is empty. Purely flat, no gradients, no glow, no 3D, no text, letters, numbers or logos, subtle grain.",
-      "rationale": "The SEO page is the most text-dense course page and carries one image; site architecture is its subject and reads instantly as a tree."
-    },
-    {
-      "id": "meta-kreativu-testi-band",
+      "id": "info-meta-kampanas-uzbuve",
       "page": "meta-reklamas-kurss",
-      "placement": "Full-width .media--band above the '02 Kam kurss paredzēts' .sec-head.",
+      "style": "dark-info",
+      "placement": "Inside section 02, replacing the standalone band.",
       "aspect": "landscape",
-      "alt": "Vienāda izmēra taisnstūru režģis, kurā viens ir aizpildīts ciānkrāsā",
-      "prompt": "Flat vector editorial graphic. The entire background is one single uniform very dark navy #020d1c, edge to edge, exactly the same colour in every corner. Wide banner composition: a neat grid of nine identical portrait-oriented rectangles in three rows of three, sitting in the right half of the frame. Eight of them are drawn as thin cool-grey #c9d8e8 outlines with nothing inside - the background shows through them unchanged. Exactly one rectangle, in the middle row, is filled with flat solid cyan #03c3f8 at full opacity across its whole area. Even spacing between rectangles, generous empty background to the left. Absolutely no gradients anywhere, no fades, no partial opacity, no soft edges, no shadows, no glow, no reflection, no 3D, no perspective, no device frames, no text, letters, numbers or logos. Subtle even grain over the whole image.",
-      "rationale": "The Meta course sells creative testing; a grid where one tile wins states that in one glance and cannot be mistaken for the targeting rings."
+      "alt": "Infografika: Meta kampaņas uzbūve trīs līmeņos — kampaņa, reklāmu kopa un reklāma",
+      "prompt": "A three-step horizontal infographic. The headline across the top reads «Meta kampaņas uzbūve». Below it three boxes in a row, connected left to right by a thin cyan line, each box holding a cyan number, a bold white label and one grey note. Box one: «01», label «Kampaņa», note «Mērķis: pārdošana, pieteikumi vai atpazīstamība». Box two: «02», label «Reklāmu kopa», note «Auditorija, budžets un izvietojumi». Box three: «03», label «Reklāma», note «Teksts, vizuālis un aicinājums rīkoties». Each box carries one simple flat square-cornered icon above the label.",
+      "rationale": "Account structure is the single thing beginners get wrong, and it is a hierarchy - a picture explains it faster than the module list."
+    },
+    {
+      "id": "info-seo-tris-pilari",
+      "page": "seo-kursi",
+      "style": "dark-info",
+      "placement": "Inside .course-body above the 'Kursa saturs' heading, replacing the standalone band.",
+      "aspect": "landscape",
+      "alt": "Infografika: SEO trīs pīlāri — tehniskais SEO, saturs un atpakaļsaites",
+      "prompt": "A three-column infographic. The headline across the top reads «SEO trīs pīlāri». Below it three equal columns, each drawn as a tall flat panel with a cyan number at the top, a bold white label and one grey note. Column one: «01», label «Tehniskais SEO», note «Ātrums, struktūra un indeksēšana». Column two: «02», label «Saturs», note «Atslēgvārdi un lapas, kas atbild uz jautājumu». Column three: «03», label «Atpakaļsaites», note «Uzticamība citu vietņu acīs». One simple flat square-cornered icon above each label: a wrench, a document, a chain link.",
+      "rationale": "The SEO syllabus is five modules of detail; the three pillars are the mental model a buyer needs before reading them."
+    },
+    {
+      "id": "info-konsultacija-kad",
+      "page": "marketinga-konsultacijas",
+      "style": "dark-info",
+      "placement": "Top of the page, replacing the standalone performance band.",
+      "aspect": "landscape",
+      "alt": "Infografika: kad mārketinga konsultācija ir īstā izvēle — jauns kanāls, kritums rezultātos un otrais viedoklis",
+      "prompt": "A three-panel infographic. The headline across the top reads «Kad konsultācija ir īstā izvēle». Below it three equal panels side by side, each with a cyan number, a bold white label and one grey note. Panel one: «01», label «Sāc jaunu kanālu», note «Gribi zināt, ar ko sākt un cik tas maksās». Panel two: «02», label «Rezultāti krīt», note «Kampaņas darbojas, bet atdeve vairs nesanāk». Panel three: «03», label «Vajag otro viedokli», note «Plāns ir gatavs, bet gribi to pārbaudīt». One simple flat square-cornered icon above each label.",
+      "rationale": "The page opened with a decorative chart that said nothing; the reader's real question at that point is whether this is for them."
+    },
+    {
+      "id": "info-kursi-tris-kanali",
+      "page": "digitala-marketinga-kursi",
+      "style": "dark-info",
+      "placement": "Top of the catalogue section, replacing the standalone band.",
+      "aspect": "landscape",
+      "alt": "Infografika: trīs kursi un trīs kanāli — Meta reklāma, Google Ads un SEO",
+      "prompt": "A three-column comparison infographic. The headline across the top reads «Trīs kursi, trīs kanāli». Below it three equal columns, each a flat panel with a bold white title, one grey note and a small cyan duration line at the bottom. Column one: title «Meta reklāma», note «Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē», bottom line «3 stundas». Column two: title «Google Ads», note «Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu», bottom line «3 stundas». Column three: title «SEO», note «Nopelni vietu meklētājā bez maksas par klikšķi», bottom line «4 stundas». One simple flat square-cornered icon above each title.",
+      "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
     }
   ]
 }

@@ -1523,7 +1523,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 @media print { .wa-float, .to-top, .consent { display: none; } }
 
 /* ---------- in-article infographic: generated text-free artwork + HTML legend ---------- */
-.infographic { margin: 2.4em 0; border: 1px solid var(--line); background: #ffffff; }
+/* The card colour is a TOKEN, not #fff: inside .paper it resolves to white for
+   articles, on the dark marketing pages it resolves to #00152c. Hard-coding
+   white punched a light slab into the dark canvas - the same artifact
+   `.img--card` was deleted for. */
+.infographic { margin: 2.4em 0; border: 1px solid var(--line); background: var(--card); }
+.infographic > img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-bottom: 1px solid var(--line); }
+.infographic--page { margin: clamp(28px, 3vw, 40px) 0 0; }
+.infographic--page .infographic-list li { position: relative; padding-left: 34px; margin: 0; font-size: var(--t-sm); line-height: 1.5; color: var(--body); counter-increment: ig; }
 .article-body .prose .infographic > img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; }
 .infographic figcaption { padding: 12px clamp(16px, 2.5vw, 24px); }
 .infographic-text > summary { cursor: pointer; list-style: none; font-size: var(--t-sm); color: var(--muted); display: flex; align-items: center; gap: 8px; }

@@ -1,5 +1,5 @@
 {
-  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. `bookUrl` is a Stripe payment link whose after-payment redirect is set (in Stripe, under After payment) to `calendarUrl`, so one click pays for a seat and lands the buyer on the Cal.com event to pick a month. The dates below mirror the date overrides on that Cal.com event - they are the same schedule, so keep the two in sync. Cal.com holds the real seat count (Offer seats), which is why the page lists dates rather than remaining places. With no bookUrl the page falls back to the application form, so it is valid at every stage. Policy numbers are read by the templates - change them here, not in the copy. `lateBookingGraceHours` keeps the refund promise at least as generous as the statutory 14-day withdrawal right for someone who books inside the refund window. `vatRate` is what Stripe Tax adds on top of the displayed price.",
+  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. `bookUrl` is a Stripe payment link whose after-payment redirect is set (in Stripe, under After payment) to `calendarUrl`, so one click pays for a seat and lands the buyer on the Cal.com event to pick a month. The dates below mirror the date overrides on that Cal.com event - they are the same schedule, so keep the two in sync. Cal.com holds the real seat count (Offer seats), which is why the page lists dates rather than remaining places. With no bookUrl the page falls back to the application form, so it is valid at every stage. Policy numbers are read by the templates - change them here, not in the copy. `lateBookingGraceHours` keeps the refund promise at least as generous as the statutory 14-day withdrawal right for someone who books inside the refund window. `vatRate` is what Stripe Tax adds on top of the displayed price. Three courses run on deliberately non-clashing slots: Meta on the FIRST Tuesday 9:00-12:00, Google Ads on the FOURTH Tuesday 14:00-17:00, SEO on the SECOND Thursday 16:00-20:00 (four hours, so it starts latest). December's Google date is pulled to the third Tuesday - the fourth falls in Christmas week. Keep these in sync with the date overrides on each course's Cal.com schedule.",
   "policy": {
     "provider": "stripe",
     "vatRate": 21,
@@ -37,16 +37,50 @@
     "seo-kursi": {
       "bookUrl": "",
       "calendarUrl": "",
-      "time": "",
-      "format": "",
-      "sessions": []
+      "time": "16:00–20:00",
+      "format": "Tiešsaistē (Google Meet)",
+      "sessions": [
+        {
+          "date": "2026-10-08",
+          "label": "8. oktobris"
+        },
+        {
+          "date": "2026-11-12",
+          "label": "12. novembris"
+        },
+        {
+          "date": "2026-12-10",
+          "label": "10. decembris"
+        },
+        {
+          "date": "2027-01-14",
+          "label": "14. janvāris"
+        }
+      ]
     },
     "google-ads-kurss": {
       "bookUrl": "",
       "calendarUrl": "",
-      "time": "",
-      "format": "",
-      "sessions": []
+      "time": "14:00–17:00",
+      "format": "Tiešsaistē (Google Meet)",
+      "sessions": [
+        {
+          "date": "2026-09-22",
+          "label": "22. septembris"
+        },
+        {
+          "date": "2026-10-27",
+          "label": "27. oktobris"
+        },
+        {
+          "date": "2026-11-24",
+          "label": "24. novembris"
+        },
+        {
+          "date": "2026-12-15",
+          "label": "15. decembris"
+        }
+      ]
     }
   }
 }

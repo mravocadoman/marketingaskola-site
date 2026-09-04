@@ -23,7 +23,6 @@ permalink: "/digitala-marketinga-kursi/"
 
 <section class="sec">
   <div class="container">
-    <figure class="media media--band"><img src="/img/gen/kursi-programmas-motivs.webp" alt="Abstrakts kāpņveida motīvs, kas attēlo kursu programmas soļus no pamatiem līdz stratēģijai" loading="lazy"></figure>
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">01</span> Kursu katalogs</span>
@@ -31,6 +30,11 @@ permalink: "/digitala-marketinga-kursi/"
       </div>
       <p class="lead">Trīs tiešsaistes kursi, kas notiek dzīvā nodarbībā ar pasniedzēju — Meta reklāma, Google Ads un SEO. Bez ierakstiem, ko skatīties vienam.</p>
     </div>
+    {% infographic { id: "info-kursi-tris-kanali", class: "infographic--page", title: "Trīs kursi, trīs kanāli", items: [
+      { label: "Meta reklāma — 3 stundas", text: "Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē." },
+      { label: "Google Ads — 3 stundas", text: "Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu." },
+      { label: "SEO — 4 stundas", text: "Nopelni vietu meklētājā bez maksas par klikšķi." }
+    ] } %}
     {% set catalogExclude = "" %}
     {% include "course-catalog.njk" %}
   </div>

@@ -864,6 +864,69 @@ minimum, the cancellation window and the invoice line. **The terms were
 shortened in presentation, not removed** — they are consumer terms and the
 refund promise must stay reachable.
 
+## Three courses, three non-clashing slots (4 Sep 2026)
+
+Owner set the pattern: Google Ads "anytime after 20. Sept, 14:00, monthly";
+SEO the same but not clashing with Meta or Google and later in the day.
+
+| Course | Day | Time | Cal.com event | Schedule |
+| --- | --- | --- | --- | --- |
+| Meta reklāmas kurss | 1st Tuesday | 9:00-12:00 | `/meta-reklamas-pamati` (6262225) | Working hours |
+| Google Ads kurss | 4th Tuesday | 14:00-17:00 | `/google-ads-kurss` (6949203) | Google Ads kurss (2325540) |
+| SEO kurss | 2nd Thursday | 16:00-20:00 | `/seo-kurss` (6949227) | SEO kurss (2325556) |
+
+Nothing collides on a date, and nothing collides in time even if a date ever
+does. **December's Google date is the THIRD Tuesday (15 Dec), not the fourth**
+— the fourth is Christmas week. Each course has **its own schedule with no
+weekly hours at all**, only date overrides; the dates in
+`src/_data/courseSessions.json` mirror those overrides and the two must be
+kept in sync by hand. Both new events were **duplicated from the Meta event**,
+which is why they carry Offer seats = 12 and Google Meet without being
+configured again.
+
+**Cal.com automation notes, learned the hard way:** coordinate clicks land on
+the wrong row in this browser — always act on a `ref` from `find`. For the
+schedule `<select>`, open it and then TYPE the schedule name (or arrow down)
+and press Enter; clicking an option by ref or coordinate silently picks its
+neighbour. The date-override dialog keeps selections ACROSS months, so all
+four dates go in one override with one time range and one Save.
+
+**Still missing: the two Stripe seat links.** Both course pages fall back to
+the application form until `bookUrl` is set in `courseSessions.json`. Each
+needs a €150 payment link in the SIA "Stonks" account with its after-payment
+redirect pointing at the Cal.com event above — same recipe as the Meta link.
+
+## Images must carry content (4 Sep 2026)
+
+Owner: *"I thought we agreed not to use the full-size sections with just one
+image without text… when I asked to add images, add it via OpenAI API and
+oftentimes with text where it makes sense."*
+
+**A full-width `.media--band` holding one decorative picture and nothing else
+is not allowed.** Five of them were removed (`/marketinga-konsultacijas/`,
+`/digitala-marketinga-kursi/`, and the three course pages) and their
+text-free artwork deleted from the manifest. An image either sits beside copy
+in a `.row.cols-2` / `.cell-media`, or it carries its own content as an
+infographic.
+
+- **`"style": "dark-info"`** in `imagery.json` is the third generator style:
+  the PAPER_SUFFIX permission to render exact Latvian strings, but on the house
+  dark canvas. Use it for infographics on marketing pages; `paper` stays for
+  in-article ones on white, and the default text-free style for covers and
+  motifs.
+- **`.infographic` background is `var(--card)`, not `#fff`.** Hard-coding white
+  punched a light slab into the dark canvas — the artifact `.img--card` was
+  deleted for. The token resolves to white inside `.paper` and `#00152c`
+  outside it, so one component serves both surfaces. Pass
+  `class: "infographic--page"` outside articles.
+- Generate these at `--quality=high` and **proof-read every one**. The first
+  Google Ads render drew the literal word "vārds" inside an icon because the
+  prompt said "a crossed-out word" — describe icons as shapes and state that
+  they contain no letters.
+- Don't add an infographic that restates the cells next to it. The
+  consultations page lost its band and got nothing back, because section 01
+  already answers "is this for me" in three cells.
+
 ## Motion on inner pages (4 Sep 2026)
 
 Owner: *"add cooler images and subtle animations to the course pages."* Done

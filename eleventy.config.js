@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
     const slot = imagery.find((s) => s.id === o.id) || {};
     const esc = (t) => String(t || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
     const items = (o.items || []).map((it) => `<li><strong>${esc(it.label)}</strong>${it.text ? ` <span>${esc(it.text)}</span>` : ""}</li>`).join("");
-    return `<figure class="infographic">
+    return `<figure class="infographic${o.class ? ` ${o.class}` : ""}">
   <img src="/img/gen/${o.id}.webp" alt="${esc(slot.alt)}" loading="lazy">
   <figcaption><details class="infographic-text"><summary>${esc(o.title || "Teksta versija")}</summary><ol class="infographic-list">${items}</ol></details></figcaption>
 </figure>`;
