@@ -1,10 +1,12 @@
 {
-  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. With sessions the page renders bookable dates, each with its own Stripe payment link; with an empty list it falls back to the application form, so the page is always valid. Add a month: { date (ISO), label (Latvian, as shown), time, format, seats, url (Stripe payment link) }. Policy numbers are read by the templates - change them here, not in the copy.",
+  "_comment": "Scheduled live course groups. Set `courseKey` and `courseName`, then include course-sessions.njk. With sessions the page renders bookable dates, each with its own Stripe payment link; with an empty list it falls back to the application form, so the page is always valid. Add a month: { date (ISO), label (Latvian, as shown), time, format, seats, url (Stripe payment link) }. Policy numbers are read by the templates - change them here, not in the copy. `lateBookingGraceHours` keeps the refund promise at least as generous as the statutory 14-day withdrawal right for someone who books inside the refund window. `vatRate` is the rate the Stripe payment links must add on top of the displayed price.",
   "policy": {
     "provider": "stripe",
+    "vatRate": 21,
     "minSeats": 5,
     "decideDaysBefore": 3,
-    "refundDaysBefore": 7
+    "refundDaysBefore": 7,
+    "lateBookingGraceHours": 24
   },
   "courses": {
     "meta-reklamas-kurss": {
