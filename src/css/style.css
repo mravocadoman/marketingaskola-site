@@ -1531,3 +1531,11 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .cell--wide.cell--media .cell-media { grid-row: 1 / 5; margin: calc(-1 * var(--card-pad)) 0 calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)); aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--line); min-height: 220px; }
 .cell--wide.cell--media .cell-idx { top: var(--card-pad); right: var(--card-pad); background: none; padding: 0; }
 @media (max-width: 640px) { .cell--wide.cell--media { display: flex; padding-top: 0; } .cell--wide.cell--media .cell-media { margin: 0 calc(-1 * var(--card-pad)) 22px; aspect-ratio: 16 / 10; border-right: 0; border-bottom: 1px solid var(--line); min-height: 0; } .cell--wide.cell--media .cell-idx { top: 14px; right: 14px; background: var(--canvas); padding: 5px 8px; } }
+
+/* Course tiles carry the same picture treatment as the ledger service cells. */
+.course-tile--media { padding-top: 0; }
+.course-tile--media .cell-media { margin-bottom: 22px; }
+/* A full-width motif band under a page hero. Wider than .media--wide so it
+   reads as a divider rather than as an illustration inside a column. */
+.media--band { aspect-ratio: 24 / 7; margin-bottom: clamp(44px, 5vw, 72px); }
+@media (max-width: 640px) { .media--band { aspect-ratio: 16 / 9; } }

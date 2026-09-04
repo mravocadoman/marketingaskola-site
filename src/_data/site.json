@@ -57,7 +57,17 @@
     },
     {
       "label": "Kursi",
-      "url": "/digitala-marketinga-kursi/"
+      "url": "/digitala-marketinga-kursi/",
+      "children": [
+        {
+          "label": "Meta reklāmas kurss",
+          "url": "/meta-reklamas-kurss/"
+        },
+        {
+          "label": "SEO kurss",
+          "url": "/seo-kursi/"
+        }
+      ]
     },
     {
       "label": "Blogs",

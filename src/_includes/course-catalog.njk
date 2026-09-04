@@ -1,35 +1,29 @@
 {# Shared course catalog (hairline grid). Set `catalogExclude` (slug) before
-   including to hide the current course. Courses without their own page link
-   to the hub form. #}
+   including to hide the current course.
+
+   Only courses we actually run belong here. The placeholder entries that
+   linked to the hub form ("padziļinātais Meta", "padziļinātais SEO",
+   "stratēģija vadītājiem") and the TikTok course were taken out on
+   4 Sep 2026 — they existed to collect interest, which is exactly the
+   labour the owner wanted removed. #}
 {% set catalog = [
   { slug: "meta", url: "/meta-reklamas-kurss/", tag: "Tiešsaistē · Iesācējiem · 3 stundas",
+    img: "/img/gen/meta-reklamas-motivs.webp",
+    alt: "Abstrakts sociālo tīklu plūsmas motīvs no pārklājošiem kvadrātveida laukiem",
     title: "Meta reklāmas kurss — izveido peļņu nesošas Facebook un Instagram kampaņas",
     ticks: ["Apgūsti Meta Ads pamatus un padziļinātu stratēģiju", "Praktiski iestatījumi: kampaņu struktūra, testi un optimizācija", "Kā palielināt ROI un samazināt reklāmas izmaksas"],
     cta: "Uzzini vairāk" },
-  { slug: "meta-pro", url: "/digitala-marketinga-kursi/#piesakies", tag: "Speciālistiem · 4 stundas",
-    title: "Padziļināts Facebook un Instagram reklāmas kurss",
-    ticks: ["Padziļināta izpratne par Meta Ads stratēģisko pielietojumu", "Uzlabota mērķauditorijas atlase: remārketings un lookalike auditorijas", "Facebook Pixel un Conversion API (CAPI) iestatīšana"],
-    cta: "Pieteikties interesei" },
-  { slug: "tiktok", url: "/tiktok-kursi/", tag: "Iesācējiem · 4 stundas",
-    title: "TikTok reklāmas kurss — sasniedz jaunu auditoriju",
-    ticks: ["TikTok Ads platformas iespējas un labākās prakses", "Kā izveidot augstas veiktspējas reklāmas un palielināt iesaisti", "Budžeta un mērķauditorijas optimizācija"],
-    cta: "Uzzini vairāk" },
-  { slug: "seo", url: "/seo-kursi/", tag: "Iesācējiem · 4 stundas",
+  { slug: "seo", url: "/seo-kursi/", tag: "Tiešsaistē · Iesācējiem · 4 stundas",
+    img: "/img/gen/seo-mekletaja-motivs.webp",
+    alt: "Abstrakts meklētāja motīvs — aplis ar līniju un rezultātu joslām",
     title: "SEO kurss — apgūsti meklētājprogrammu pamatus",
     ticks: ["SEO pamati un padziļināta optimizācija", "Kā veidot saturu, kas piesaista organisko datplūsmu", "Atslēgvārdu izpēte, tehniskais SEO un backlink stratēģija"],
-    cta: "Uzzini vairāk" },
-  { slug: "seo-pro", url: "/digitala-marketinga-kursi/#piesakies", tag: "Speciālistiem · 4 stundas",
-    title: "Padziļināts SEO kurss — kā nokļūt Google pirmajā lapā",
-    ticks: ["Kā sasniegt augstākās pozīcijas Google", "Padziļinātas SEO metodes praksē", "Kā uzraudzīt SEO speciālistus un aģentūras"],
-    cta: "Pieteikties interesei" },
-  { slug: "strategija", url: "/digitala-marketinga-kursi/#piesakies", tag: "Vadītājiem · 4 stundas",
-    title: "Digitālā mārketinga stratēģijas kurss vadītājiem",
-    ticks: ["Kā plānot efektīvu digitālā mārketinga stratēģiju", "Mērķauditorijas un konkurentu analīze", "Budžeta plānošana un mārketinga ROI aprēķins"],
-    cta: "Pieteikties interesei" }
+    cta: "Uzzini vairāk" }
 ] %}
-<div class="hgrid hgrid--3">
+<div class="hgrid hgrid--{% if catalogExclude %}2{% else %}2{% endif %}">
   {% for c in catalog %}{% if c.slug != catalogExclude %}
-  <div class="course-tile">
+  <div class="course-tile course-tile--media">
+    <figure class="cell-media"><img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy"></figure>
     <div class="course-tag">{{ c.tag }}</div>
     <h3><a href="{{ c.url }}">{{ c.title }}</a></h3>
     <ul class="tick-list">
@@ -39,11 +33,12 @@
   </div>
   {% endif %}{% endfor %}
   {% if catalogExclude %}
-  <div class="course-tile">
+  <div class="course-tile course-tile--media">
+    <figure class="cell-media"><img src="/img/gen/kursi-programmas-motivs.webp" alt="Abstrakts kāpņveida motīvs, kas attēlo kursu programmas soļus" loading="lazy"></figure>
     <div class="course-tag">Katalogs</div>
     <h3><a href="/digitala-marketinga-kursi/">Visi kursi un apmācības vienuviet</a></h3>
     <ul class="tick-list">
-      <li>Seši praktiski kursi — Meta, SEO, TikTok un stratēģija</li>
+      <li>Tiešsaistes kursi ar pasniedzēju — Meta reklāma un SEO</li>
       <li>Grupu apmācības un atlaides kolektīviem</li>
     </ul>
     <a class="arrow-link" href="/digitala-marketinga-kursi/">Apskatīt katalogu</a>
