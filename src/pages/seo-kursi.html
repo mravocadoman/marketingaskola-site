@@ -6,7 +6,6 @@ permalink: "/seo-kursi/"
 course: { name: "SEO kurss", level: "Iesācējiem", hours: 4, price: 150, vatIncluded: false, mode: "Onsite", instructor: "Matīss Valters Seipulāns" }
 crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 ---
-{% from "form.njk" import form with context %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · SEO</span>
@@ -85,12 +84,12 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
           <ul class="course-facts">
             <li><span>Līmenis</span><span>Iesācējiem</span></li>
             <li><span>Ilgums</span><span>4 stundas</span></li>
-            <li><span>Norise</span><span>Katru mēnesi, grupā no 5</span></li>
+            <li><span>Norise</span><span>Katru mēnesi, grupā no {{ courseSessions.policy.minSeats }}</span></li>
             <li><span>Priekšzināšanas</span><span>Izpratne par meklētājprogrammām</span></li>
             <li><span>Metodes</span><span>Aktīvās mācības, diskusijas, lekcija, piemēru izpēte</span></li>
           </ul>
           <a class="btn" href="#piesakies">Pieteikties kursam</a>
-          <p class="fine">Grupa notiek no 5 dalībniekiem. Ja tik daudz nesanāk, pārceļam uz nākamo mēnesi, atgriežam samaksu vai pārvēršam to individuālā konsultācijā.</p>
+          <p class="fine">Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja tik daudz nesanāk, pārceļam uz nākamo mēnesi, atgriežam samaksu vai pārvēršam to individuālā konsultācijā.</p>
         </div>
         <div class="instructor-card">
           <div class="who">
@@ -110,11 +109,13 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">01</span> Pieteikšanās</span>
-        <h2>Piesakies jau šodien</h2>
+        <h2>{% if courseSessions.courses["seo-kursi"].sessions.length %}Nākamās grupas{% else %}Piesakies kursam{% endif %}</h2>
       </div>
-      <p class="lead">Pieteikšanās ir bez maksas un neuzliek saistības — sazināsimies un saskaņosim nākamās grupas laiku.</p>
+      <p class="lead">Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja grupa nesanāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises piedāvājam pārcelt uz nākamo mēnesi, atgriezt samaksu vai pārvērst to individuālā konsultācijā.</p>
     </div>
-    <div style="max-width:820px">{{ form("course", { course: "SEO kurss" }) }}</div>
+    {% set courseKey = "seo-kursi" %}
+    {% set courseName = "SEO kurss" %}
+    {% include "course-sessions.njk" %}
   </div>
 </section>
 
