@@ -914,6 +914,27 @@ infographic.
   dark canvas. Use it for infographics on marketing pages; `paper` stays for
   in-article ones on white, and the default text-free style for covers and
   motifs.
+
+**All three styles were rewritten on 4 Sep 2026 into the site's own ledger
+language** (owner: *"currently look very basic… make them cooler and more
+aligned with the website"*). The shared vocabulary is now: left-aligned
+headline ending in a cyan full stop, indexed columns (`01` in cyan plus a short
+cyan rule, exactly the `.eyebrow` device), hairline separators instead of boxed
+cards, square corners only, cyan rationed to under 5% of the frame, and depth
+from line weight rather than fill. Motifs read as precision schematics cropped
+by the frame, not as flat shape compositions.
+
+**Two corrections came from the owner while tuning it, both worth keeping:**
+1. *"why are they simple lines; make them relevant to the subject."* Banning
+   icons outright made the model draw the same meaningless scribble in every
+   column. Every slot prompt now describes **its own diagram per item** — a
+   funnel, a struck-out keyword row, a ranked list — and the style brief
+   requires the drawings to differ from each other.
+2. *"Icons and people are okay as long as they fit the overall style,
+   especially when making the subject more clear."* So recognisable icons and
+   simple human figures ARE allowed, drafted in the same thin geometric line
+   work. They must never be soft rounded clip art, and never a portrait-like
+   face standing in for a real team member — that rule is unchanged.
 - **`.infographic` background is `var(--card)`, not `#fff`.** Hard-coding white
   punched a light slab into the dark canvas — the artifact `.img--card` was
   deleted for. The token resolves to white inside `.paper` and `#00152c`
