@@ -91,6 +91,6 @@ Ja vēlies uzzināt, kā uzlabot savu reklāmu tekstu, [izlasi šo rakstu](/5-ie
 
 Satura mārketings ir viens no efektīvākajiem mūsdienu mārketinga rīkiem — tas piesaista uzmanību, veido uzticību, stiprina pozīcijas Google un ilgtermiņā palīdz sasniegt stabilus pārdošanas rezultātus. Ja saturs tiek veidots strukturēti un mērķtiecīgi, tas kļūst par spēcīgu biznesa attīstības pamatu.
 
-Ja satura veidošanu un ikmēneša plānošanu labprāt uzticētu komandai, tieši to darām [sociālo mediju mārketinga pakalpojumā](/socialo-mediju-marketings/).
+Ja satura veidošanā un ikmēneša plānošanā trūkst sistēmas, to var izrunāt [mārketinga konsultācijā](/marketinga-konsultacijas/).
 
 Ja vēlies saprast, kā šo pieeju pielāgot tieši savam uzņēmumam, droši [piesakies konsultācijai](/sazinies/)!

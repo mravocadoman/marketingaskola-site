@@ -69,7 +69,7 @@ Vizuālais saturs ir atslēga, lai piesaistītu klientus, un **Canva** piedāvā
 -   **Ātrums un vienkāršība**: Izveido reklāmas dažu minūšu laikā, pat bez pieredzes.
 -   **Pielāgojamība**: Pielāgo dizainus dažādām platformām, lai sasniegtu savu auditoriju.
 
-Ja dizains ir gatavs, bet trūkst laika regulāri publicēt, satura plānošanu un ikmēneša pārvaldību varam uzņemties mēs — par to vairāk sadaļā [sociālo mediju mārketings](/socialo-mediju-marketings/).
+Ja dizains ir gatavs, bet trūkst laika regulāri publicēt, kārtību satura plānā var ieviest arī vienā sarunā — apskati [mārketinga konsultācijas](/marketinga-konsultacijas/).
 
 Lai reklāmas būtu vēl efektīvākas, apvieno dizainu ar pārdomātu stratēģiju. Uzzini, kā to izdarīt, mūsu rakstā [Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?](/reklamas-veidi/). Ja vēlies profesionālu atbalstu, [piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) ar mūsu komandu!
 

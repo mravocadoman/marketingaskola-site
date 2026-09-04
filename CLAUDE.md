@@ -718,6 +718,15 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   templates page still holds a working Stripe link (6,99 €) and old ads may
   point at it, so the URLs must keep answering 200. Reversible: delete the
   `noindex` line to bring a page back.
+- **`/socialo-mediju-marketings/` is taken out as a service (4 Sep 2026).**
+  Owner: *"take out sociālo mediju mārketings as service for now to compress
+  the offerings; niche down."* Same treatment as the products: `noindex`,
+  out of the nav, the footer and the services grid, but the URL still
+  answers 200. The grid is six tiles now, which fills two rows of three
+  exactly, so `.cell--wide` is no longer used on that page. Three blog
+  posts sold the service in body copy and were rewritten to point at
+  consultations and the Meta course instead. Reversible: delete the
+  `noindex` line and put the nav entry and tile back.
 - **`/facebook-kursi/` is retired and 301s to `/meta-reklamas-kurss/`.**
   Owner: *"the video course is old too. See which content is better and keep
   just one, and merge them into one solid LP with online (not recorded)
