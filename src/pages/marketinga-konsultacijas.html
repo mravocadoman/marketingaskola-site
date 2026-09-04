@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: "Mārketinga konsultācijas | Mārketinga Skola"
-description: "Maksas mārketinga konsultācija uzņēmējiem un vadītājiem — €100/h vai €60 par 30 min. Saruna par Tavu situāciju ar skaidrām prioritātēm un nākamajiem soļiem."
+description: "Maksas mārketinga konsultācija uzņēmējiem un vadītājiem — €90/h, €60 par 30 min vai 5 sesiju komplekts par €370. Prioritātes un konkrēti nākamie soļi."
 permalink: "/marketinga-konsultacijas/"
 crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
 ---
@@ -13,8 +13,9 @@ crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
     <h1>Saruna, pēc kuras zini, ko darīt tālāk</h1>
     <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: 30–60 minūtes par Tavu situāciju, pēc kurām Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi. Izvēlies formātu un apmaksā ar karti — pārējo nokārtojam bez liekas sarakstes.</p>
     <div class="chips">
-      <span>€100 / h</span>
-      <span>€60 / 30 min</span>
+      <span>€{{ booking.consultation.options[0].price }} / h</span>
+      <span>€{{ booking.consultation.options[1].price }} / 30 min</span>
+      <span>5 sesijas — €{{ booking.consultation.options[2].price }}</span>
       <span>30–60 min saruna</span>
       <span>Vada Rihards Zeiļa</span>
     </div>
@@ -73,8 +74,8 @@ crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
       </div>
       <div class="cell">
         <span class="cell-idx">02</span>
-        <h3>Mārketinga konsultācija — €100 / h</h3>
-        <p>Domāta, ja Tev vajadzīgi ieteikumi par savu biznesu neatkarīgi no tā, vai pēc tam strādāsim kopā. Maksas saruna 30–60 minūtes, kuras rezultāts ir prioritātes un rīcības plāns. Īsā sesija — €60 par 30 min.</p>
+        <h3>Mārketinga konsultācija — €{{ booking.consultation.options[0].price }} / h</h3>
+        <p>Domāta, ja Tev vajadzīgi ieteikumi par savu biznesu neatkarīgi no tā, vai pēc tam strādāsim kopā. Maksas saruna 30–60 minūtes, kuras rezultāts ir prioritātes un rīcības plāns. Īsā sesija — €{{ booking.consultation.options[1].price }} par 30 min; ilgākam darbam ir 5 sesiju komplekts par €{{ booking.consultation.options[2].price }}.</p>
         <a class="arrow-link" href="#piesakies">Rezervēt konsultāciju</a>
       </div>
     </div>
@@ -136,9 +137,10 @@ crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
       <aside class="course-aside">
         <div class="course-card">
           <p class="price-label">Konsultācijas cena</p>
-          <p class="price">€100 <small>/ h</small></p>
+          <p class="price">€{{ booking.consultation.options[0].price }} <small>/ h</small></p>
           <ul class="course-facts">
-            <li><span>Īsā sesija</span><span>€60 / 30 min</span></li>
+            <li><span>Īsā sesija</span><span>€{{ booking.consultation.options[1].price }} / 30 min</span></li>
+            <li><span>5 sesiju komplekts</span><span>€{{ booking.consultation.options[2].price }}</span></li>
             <li><span>Norise</span><span>30–60 min saruna</span></li>
             <li><span>Pirms zvana</span><span>Izskatām Tavus materiālus</span></li>
             <li><span>Rezultāts</span><span>Prioritātes un rīcības plāns</span></li>
@@ -220,7 +222,8 @@ crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
           <p>Iepazīšanās zvans ir domāts tiem, kas apsver sadarbību ar mums kā aģentūru — tajā izrunājam, vai un kā varam palīdzēt. Konsultācija ir maksas pakalpojums: 30–60 minūtes veltām Tavai situācijai, un Tu aizej ar prioritātēm un rīcības plānu neatkarīgi no tā, vai pēc tam strādāsim kopā.</p>
         </div></details>
         <details class="faq"><summary>Cik tas maksā un cik ilgi notiek?</summary><div>
-          <p>€100 par stundu vai €60 par 30 minūšu sesiju. Formātu izvēlies Tu — 30 minūtes ir pietiekami vienam konkrētam jautājumam, stunda ļauj iziet cauri visai mārketinga situācijai.</p>
+          <p>€{{ booking.consultation.options[0].price }} par stundu vai €{{ booking.consultation.options[1].price }} par 30 minūšu sesiju. Formātu izvēlies Tu — 30 minūtes ir pietiekami vienam konkrētam jautājumam, stunda ļauj iziet cauri visai mārketinga situācijai.</p>
+          <p>Ja paredzi ilgāku darbu, ir 5 sesiju komplekts par €{{ booking.consultation.options[2].price }} — tas ir par 80 € lētāk nekā piecas atsevišķas stundas. Sesijas izmanto sev ērtā tempā.</p>
         </div></details>
         <details class="faq"><summary>Kā notiek rezervācija un apmaksa?</summary><div>
           <p>Izvēlies formātu un apmaksā ar karti.{% if booking.consultation.calendarUrl %} Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku, un apstiprinājumu saņem e-pastā.{% else %} Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %} Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu — tādā gadījumā vispirms uzraksti mums.</p>

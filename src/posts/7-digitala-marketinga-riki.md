@@ -81,6 +81,6 @@ Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas
 
 ## Mārketinga skola iesaka
 
-Ja vēlies uzzināt vairāk tieši par pašu digitālo mārketingu, tad mēs iesakām izlasīt mūsu rakstu [“Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā”](/digitalais-marketings/), kurā tiek aprakstīti galvenie ieguvumi no digitālā mārketinga. Ja vēlies padomu tieši par sava uzņēmuma situāciju, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 100 € par stundu.
+Ja vēlies uzzināt vairāk tieši par pašu digitālo mārketingu, tad mēs iesakām izlasīt mūsu rakstu [“Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā”](/digitalais-marketings/), kurā tiek aprakstīti galvenie ieguvumi no digitālā mārketinga. Ja vēlies padomu tieši par sava uzņēmuma situāciju, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 90 € par stundu.
 
 Mēs ļoti ceram, ka šie 7 digitālā mārketinga rīki būs noderīgi arī Tev! Lai arī šie digitālā mārketinga rīki ir tik dažādi, uzskatām, ka tie cits citu lieliski papildina un varētu Tev ļoti palīdzēt atvieglot ikdienu!

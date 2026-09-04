@@ -1,5 +1,5 @@
 {
-  "_comment": "Instant booking for the paid consultation. Each option is a live Stripe payment link in the SIA \"Stonks\" account; Stripe Tax adds 21% VAT on top of the shown price (verified at checkout: 100 EUR -> 121 EUR). To finish the one-click flow, set each link's After payment behaviour in Stripe to redirect to `calendarUrl`; until that URL is set the copy promises a follow-up instead of an instant calendar, so nothing on the page is untrue.",
+  "_comment": "Instant booking for the paid consultation. Each option is a live Stripe payment link in the SIA \"Stonks\" account; Stripe Tax adds 21% VAT on top of the shown price. THIS FILE IS THE ONLY PLACE THE CONSULTATION PRICES LIVE - the consultation page renders them from here, so changing a price here changes every mention on that page. Prose on other pages (tiktok-kursi, blog posts) is static and must be updated by hand; grep for the old number. To finish the one-click flow, set each link's After payment behaviour in Stripe to redirect to `calendarUrl`; until that URL is set the copy promises a follow-up instead of an instant calendar, so nothing on the page is untrue.",
   "vatRate": 21,
   "consultation": {
     "calendarUrl": "",
@@ -8,9 +8,9 @@
         "id": "60",
         "label": "Pilnā konsultācija",
         "duration": "60 minūtes",
-        "price": 100,
+        "price": 90,
         "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
-        "url": "https://buy.stripe.com/aFafZhfKfbl7fe99BA4gg02"
+        "url": "https://buy.stripe.com/6oU14ndC7ah38PL2984gg05"
       },
       {
         "id": "30",
@@ -19,6 +19,15 @@
         "price": 60,
         "best": "Vienam konkrētam jautājumam vai otrajam viedoklim",
         "url": "https://buy.stripe.com/7sY7sL55B9cZ6HD8xw4gg03"
+      },
+      {
+        "id": "bundle5",
+        "label": "Komplekts — 5 sesijas",
+        "duration": "5 × 60 minūtes",
+        "price": 370,
+        "best": "Ilgākam darbam: sesijas izmanto sev ērtā tempā",
+        "note": "Ietaupi 80 € pret atsevišķām stundām",
+        "url": "https://buy.stripe.com/14A00j0Plbl78PL0104gg06"
       }
     ]
   }

@@ -1,14 +1,14 @@
-{# Instant booking for the paid consultation: pick a format, pay, land on the
-   calendar. Each option's Stripe payment link is configured to redirect to
-   booking.consultation.calendarUrl after payment, so paying and holding a
-   slot is one flow rather than an e-mail exchange.
+{# Instant booking for the paid consultation: pick a format, pay, and (once
+   booking.consultation.calendarUrl is set and each Stripe link redirects to
+   it) land straight on the calendar.
 
-   Falls back to the enquiry form until the links exist, so the page is
-   valid at every stage. Import with context. #}
+   Prices come from src/_data/booking.json and nowhere else, so a price
+   change is a one-line edit. Falls back to the enquiry form until the links
+   exist, so the page is valid at every stage. Import with context. #}
 {% from "form.njk" import form with context %}
 {% set bookable = booking.consultation.options | selectattr("url") | list %}
 {% if bookable.length %}
-<div class="hgrid hgrid--2">
+<div class="hgrid hgrid--{% if bookable.length > 2 %}3{% else %}2{% endif %}">
   {% for o in bookable %}
   <div class="cell">
     <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
@@ -17,6 +17,7 @@
     <ul class="course-facts">
       <li><span>Ilgums</span><span>{{ o.duration }}</span></li>
       <li><span>Piemērota</span><span>{{ o.best }}</span></li>
+      {% if o.note %}<li><span>Ieguvums</span><span>{{ o.note }}</span></li>{% endif %}
     </ul>
     <a class="btn{% if not loop.first %} btn--ghost{% endif %}" href="{{ o.url }}">Apmaksāt un rezervēt</a>
   </div>

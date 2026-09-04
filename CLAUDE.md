@@ -742,8 +742,10 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   site no longer sells it.
 - **The paid consultation books itself (4 Sep 2026).** Owner: *"instead of
   form, guide them instantly to payment system stripe and book a spot in
-  calendar."* `src/_data/booking.json` holds the two formats (60 min / €100,
-  30 min / €60), each with a Stripe payment link, plus one `calendarUrl`.
+  calendar."* `src/_data/booking.json` holds the three formats (60 min / €90,
+  30 min / €60, 5 × 60 min / €370), each with a Stripe payment link, plus one
+  `calendarUrl`. **It is the only place those prices live** — the page renders
+  every mention from it.
   **Configure each Stripe link to redirect after successful payment to that
   calendar URL** — that redirect is what makes paying and holding a slot one
   flow instead of an e-mail exchange. `booking.njk` renders the cards when
@@ -824,8 +826,11 @@ during the rebuild, revisit with the owner if wrong:
   * A **free 20-minute introductory call** ("bezmaksas 20 min iepazīšanās
     zvans") is offered ONLY to prospects who want to work with the agency —
     i.e. people interested in services. Its CTA goes to `/sazinies/`.
-  * **Advisory consultations remain PAID**: €100/h, €60/30 min — see
-    `/marketinga-konsultacijas/`. Never advertise free advice/strategy
+  * **Advisory consultations remain PAID**: €90/h, €60/30 min, or a 5-session
+    bundle at €370 (owner, 4 Sep 2026 — was €100/h). The prices live in
+    `src/_data/booking.json` and the consultation page renders them from
+    there, so change them once; prose on other pages is static, so grep for
+    the old number too. See `/marketinga-konsultacijas/`. Never advertise free advice/strategy
     sessions, and never call a paid consultation "bezmaksas".
   * Course signup pages may keep "Piesakies bez maksas" — that means the
     *application* is free, not the course.

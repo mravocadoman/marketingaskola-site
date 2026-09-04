@@ -52,4 +52,4 @@ Veiksmīgs mārketings ir prasme atstāt paliekošu iespaidu uz klientu. Mūsdie
 
 Ko no šī bloga raksta var secināt? Mārketinga stratēģijas izveide ir, nu, ļoti laikietilpīgs process. Tāpat kā _Romu neuzbūvēja vienā dienā_, arī veiksmīgu mārketinga stratēģiju nevar izveidot vienā dienā. Bet veiksmīga mārketinga stratēģija ir pamats panākumiem jebkurā [sociālo tīklu](/socialie-tikli/) platformā.
 
-Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — tā maksā 60 € par 30 min vai 100 € par stundu.
+Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — tā maksā 60 € par 30 min vai 90 € par stundu.

@@ -89,6 +89,6 @@ Vai jūsu uzņēmums ir gatavs sasniegt jaunus peļņas līmeņus un izcelties k
 
 Mūsu vadītājs Rihards ir eksperts šajā jomā un ir palīdzējis daudziem uzņēmumiem atrast ceļu uz lielu peļņu un sasniegumiem. Viņš ir izveidojis efektīvas digitālā mārketinga kampaņas, kas pievērš uzmanību un piesaista jūsu mērķauditoriju.
 
-Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — 100 € par stundu vai 60 € par 30 minūtēm. Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
+Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — 90 € par stundu vai 60 € par 30 minūtēm. Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
 
 _P.S. Lai izdodas sasniegt augstākās uzņēmējdarbības virsotnes!_
