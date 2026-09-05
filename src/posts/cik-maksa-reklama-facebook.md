@@ -101,7 +101,7 @@ Vienīgais, kas Tev tiešām jāizlemj, ir formāts. Vertikāls video der visur,
 
 Divas lietas maina reklāmas cenu vairāk nekā auditorijas iestatījumi.
 
-**Datu kvalitāte.** Ja Meta redz tikai daļu pirkumu, sistēma mācās lēnāk un pārmaksā par katru klientu. Pikselis vien vairs nepietiek, jo pārlūkprogrammas to bloķē. Servera puses notikumi jeb Conversions API parasti ir lētākais veids, kā samazināt klienta cenu, un tas nav saistīts ar budžetu vispār.
+**Datu kvalitāte.** Ja Meta redz tikai daļu pirkumu, sistēma mācās lēnāk un pārmaksā par katru klientu. Pikselis vien vairs nepietiek, jo pārlūkprogrammas to bloķē. Servera puses notikumi jeb Conversions API neko nepadara lētāku paši par sevi. Tie parāda patieso klienta cenu un iedod algoritmam, no kā mācīties. Cenu pēc tam samazina lēmumi, ko uz šiem datiem pieņem: kuru materiālu izslēgt, kuru piedāvājumu pastiprināt, kur pārtraukt tērēt.
 
 **Materiāla nolietošanās.** Viena un tā pati reklāma pēc mēneša tai pašai auditorijai maksā ievērojami dārgāk. Pirmā pazīme ir aizvien dārgāks klikšķis bez citām izmaiņām kontā. Trīs līdz pieci atšķirīgi materiāli vienā kopā šo problēmu atliek.
 

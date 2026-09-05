@@ -934,6 +934,33 @@
       "alt": "Infografika no izgrieztām papīra formām: trīs soļi, ar ko sākt mākslīgā intelekta ieviešanu uzņēmumā",
       "rationale": "The article says the order matters more than the tool; three numbered steps are the one thing a reader can act on today.",
       "prompt": "Headline: «Ar ko sākt: trīs soļi». THREE items in one row. «01» «Pieraksti, kas atkārtojas» «Nedēļu tikai fakti, ne idejas» - emblem: a pale cool grey notepad panel with five short navy lines and one cyan line among them. «02» «Automatizē vienu darbu» «Sāc ar pieteikumu ceļu» - emblem: a navy arrow shape running from a single grey square through a cyan square to a grey circle. «03» «Nepublicē nepārlasītu» «Piecas minūtes pirms publicēšanas» - emblem: a pale grey page with a large navy magnifying glass laid over it, its handle cut from cyan paper."
+    },
+    {
+      "id": "cover-konversiju-uzskaite",
+      "page": "konversiju-uzskaite",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Ciāna signāla līnija, kas ceļā pārtrūkst un atsākas, ar tumšu pārtraukumu vidū, attēlojot pazaudētus konversiju datus",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A single flat cyan #03c3f8 horizontal line travels from the left edge; partway across it breaks into a run of short dashes that fade to cool grey #55697e, then resumes as a solid cyan line reaching the right edge, where it ends in one small solid cyan square. Below the break, three tiny grey squares fall away downward with generous empty navy around them. Asymmetric, off-centre, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "rationale": "Conversion tracking explainer - the signal that leaves the site, loses part of itself on the way, and arrives incomplete."
+    },
+    {
+      "id": "info-konversiju-uzskaites-slani",
+      "page": "konversiju-uzskaite",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: konversiju uzskaite trijos slāņos — tavi dati, reklāmu sistēmas un piekrišana",
+      "rationale": "Readers conflate analytics with ad-platform tracking; separating the three layers is the whole point of the article.",
+      "prompt": "Headline: «Konversiju uzskaite trijos slāņos». THREE items in one row. «01» «Tavi dati» «Google Analytics 4: lēmumiem» - emblem: a pale grey panel holding three navy bars of rising height with a cyan arrow above the tallest. «02» «Reklāmu sistēmas» «Pikselis un Conversions API» - emblem: a navy server slab with a solid cyan arrow rising from it into a pale grey browser panel. «03» «Piekrišana» «Bez tās datu nav» - emblem: a navy shield shape with a solid cyan tick inside it."
+    },
+    {
+      "id": "info-konversiju-parbaude",
+      "page": "konversiju-uzskaite",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā pārbaudīt, vai konversiju uzskaite strādā",
+      "rationale": "Everyone installs tracking and believes it; the checking sequence is the part that is skipped, so it deserves its own picture.",
+      "prompt": "Headline: «Kā pārbaudīt uzskaiti». FOUR items in one row. «01» «Veic testa darbību» - emblem: a pale grey form panel with three navy field bars and a solid cyan button beneath them. «02» «Pārbaudi Meta pusē» - emblem: a navy rounded square containing a solid cyan check mark. «03» «Pārbaudi Google pusē» - emblem: a navy magnifying glass over a pale grey panel with two cyan bars. «04» «Salīdzini ar grāmatvedību» - emblem: two pale grey documents side by side with a solid cyan equals sign between them."
     }
   ]
 }

@@ -59,7 +59,7 @@ Trīs izmaiņas, kas maina darba secību.
 
 **Advantage+ kampaņas ir kļuvušas par noklusējumu.** Sistēma pati izvēlas auditoriju, izvietojumus un materiālu kombinācijas. Mazam uzņēmumam tas parasti ir izdevīgi, jo aiztaupa darbu, ko algoritms bieži izdara labāk nekā cilvēks.
 
-**Datu signāls ietekmē izmaksas.** Pārlūkprogrammas bloķē pikseli, tāpēc daļa pirkumu nenonāk līdz Meta. Servera puses notikumi jeb Conversions API šodien var samazināt izmaksas par klientu vairāk nekā jebkurš auditorijas iestatījums.
+**Datu signāls ietekmē izmaksas.** Pārlūkprogrammas bloķē pikseli, tāpēc daļa pirkumu nenonāk līdz Meta. Servera puses notikumi jeb Conversions API pašas izmaksas nesamazina. Tie parāda, cik klients maksā patiesībā, un iedod sistēmai, no kā mācīties; izmaksas pēc tam samazina lēmumi, kas balstīti uz šiem datiem.
 
 Zemāk ir skaidrots, kas no vecajām metodēm vēl ir noderīgs un kas vairs nav.
 
