@@ -669,8 +669,18 @@ description and category (diacritics folded, so "marketings" finds
 **Copy.** Category pages have real descriptions (`categoryList.json`), eight
 meta descriptions were trimmed under 160 characters, four titles gained the
 brand, the "2025. gadam" e-book copy is evergreen, and five bare "šeit" links
-say where they go. Titles/H1s of the two posts with 2025 in the slug were
-left alone — permalinks and editorial content are the owner's call.
+say where they go.
+
+**The two year-stamped permalinks are gone (5 Sep 2026, owner's call).** Their
+titles already said 2026 while the URLs still said 2025, and these articles are
+rewritten every year, so the year had to leave the URL rather than be bumped:
+`/5-digitala-marketinga-tendences-2025-gada/` → `/digitala-marketinga-tendences/`
+and `/google-reklama-2025/` → `/google-reklama/`. Both old URLs 301 in
+`src/.htaccess`, and all 24 internal references were repointed. The SOURCE
+FILENAMES deliberately keep their old slugs (`google-reklama-2025.md`), because
+`apply-covers.mjs` derives `cover-<filename>.webp` from them and renaming the
+file would orphan the cover image. The permalink is explicit in front matter,
+so the filename never reaches a URL.
 
 ## Homepage and service tiles — imagery pass (3 Sep 2026)
 
