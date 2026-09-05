@@ -21,7 +21,7 @@ Digitālā mārketinga aģentūra nav tikai pakalpojumu sniedzējs. Tā ir strat
 
 Piemēram, digitālā aģentūra analizē datus no Google Analytics, Facebook Insights un citiem rīkiem, lai atrastu vājās vietas Tavā pašreizējā pieejā. Vai Tava mājaslapa piesaista pietiekami daudz potenciālo klientu pieteikumu? Vai sociālie mediji tiešām pārvērš sekotājus klientos? Aģentūra ne tikai atbild uz šiem jautājumiem, bet arī ievieš izmaiņas un mēra to ietekmi. Tā kļūst skaidrs, kas uzlabo rezultātus un kas ne.
 
-Turklāt Latvijā, kur MVU konkurē ar lieliem uzņēmumiem, digitālā mārketinga aģentūra palīdz labāk izmantot budžetu. Tā vietā, lai tērētu naudu neefektīvām kampaņām, Tu iegūsti mērķētas stratēģijas, kas koncentrējas uz ieguldījumu atdevi. Ja vēlies uzzināt vairāk par budžeta plānošanu, ieskaties mūsu rakstā par [digitālo reklāmu tendencēm 2025. gadā](/5-digitala-marketinga-tendences-2025-gada/).
+Turklāt Latvijā, kur MVU konkurē ar lieliem uzņēmumiem, digitālā mārketinga aģentūra palīdz labāk izmantot budžetu. Tā vietā, lai tērētu naudu neefektīvām kampaņām, Tu iegūsti mērķētas stratēģijas, kas koncentrējas uz ieguldījumu atdevi. Ja vēlies uzzināt vairāk par budžeta plānošanu, ieskaties mūsu rakstā par [digitālo reklāmu tendencēm 2025. gadā](/digitala-marketinga-tendences/).
 
 ## Kā digitālā aģentūra padara Tavu uzņēmumu konkurētspējīgāku un palielina pārdošanu?
 

@@ -8,7 +8,7 @@ updated: 2026-09-05
 image: "/img/gen/cover-google-reklama-2025.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px.jpg"
 categories: ["google-reklama"]
-permalink: "/google-reklama-2025/"
+permalink: "/google-reklama/"
 keywords: ["Google reklāma", "Google Ads", "pay-per-click", "Performance Max", "atslēgvārdi", "konversiju uzskaite"]
 
 ---

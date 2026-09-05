@@ -35,7 +35,7 @@ Google izmanto sarežģītus algoritmus. Tie analizē Tavu saturu, lapas ātrumu
 
 Tēlaini sakot, SEO optimizācija ir kā ceļa norāde, kas ved cilvēkus pie Tava uzņēmuma. Ja šīs norādes nav vai tā ir neskaidra, potenciālie klienti paiet garām. Ja tā ir skaidra un atrodas īstajā vietā, viņi Tevi atrod daudz vieglāk.
 
-Kāpēc SEO joprojām ir viens no svarīgākajiem kanāliem, esam aprakstījuši rakstā par [digitālā mārketinga tendencēm](/5-digitala-marketinga-tendences-2025-gada/).
+Kāpēc SEO joprojām ir viens no svarīgākajiem kanāliem, esam aprakstījuši rakstā par [digitālā mārketinga tendencēm](/digitala-marketinga-tendences/).
 
 ### SEO terminoloģija
 
@@ -193,6 +193,6 @@ Reizi sešos mēnešos pārskati vecos rakstus. Pievieno jaunu informāciju, iz�
 
 Nesāc ar visu sarakstu. Pievieno mājaslapu Google Search Console, atrodi vienu vaicājumu, kur esi otrajā lapā, un pārraksti attiecīgo lapu tā, lai tā tiešām atbild uz jautājumu. Tas ir viens vakars darba un bieži dod labāku rezultātu nekā mēnesis tehnisku labojumu.
 
-Kas ir SEO pamatos un kā tas iekļaujas kopējā ainā, lasi rakstā [kas ir SEO](/kas-ir-seo/). Ja klienti vajadzīgi ātrāk, nekā SEO spēj dot, paralēli noder [Google reklāma](/google-reklama-2025/).
+Kas ir SEO pamatos un kā tas iekļaujas kopējā ainā, lasi rakstā [kas ir SEO](/kas-ir-seo/). Ja klienti vajadzīgi ātrāk, nekā SEO spēj dot, paralēli noder [Google reklāma](/google-reklama/).
 
 Ja gribi visu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/). Ja gribi, lai to izdara kāds cits, apskati [mūsu pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).

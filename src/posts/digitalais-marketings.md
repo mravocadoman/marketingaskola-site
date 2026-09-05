@@ -99,7 +99,7 @@ Ir tikai viens nosacījums. Digitālais mārketings prasa augsta līmeņa digit�
 
 ## Mārketinga skolas piedāvājums
 
-Vai Tavs uzņēmums ir gatavs sasniegt jaunus peļņas līmeņus un izcelties konkurentu vidū? Ja jā, digitālais mārketings ir rīks, kas Tev ir nepieciešams. Tāpēc iesakām aplūkot rakstu par [2025. gada aktuālākajām tendencēm digitālajā mārketingā](/5-digitala-marketinga-tendences-2025-gada/).
+Vai Tavs uzņēmums ir gatavs sasniegt jaunus peļņas līmeņus un izcelties konkurentu vidū? Ja jā, digitālais mārketings ir rīks, kas Tev ir nepieciešams. Tāpēc iesakām aplūkot rakstu par [2025. gada aktuālākajām tendencēm digitālajā mārketingā](/digitala-marketinga-tendences/).
 
 Mūsu vadītājs Rihards ir eksperts šajā jomā. Viņš ir palīdzējis daudziem uzņēmumiem atrast ceļu uz lielāku peļņu un labākiem rezultātiem. Rihards ir veidojis efektīvas digitālā mārketinga kampaņas, kas piesaista uzmanību un sasniedz uzņēmuma mērķauditoriju.
 

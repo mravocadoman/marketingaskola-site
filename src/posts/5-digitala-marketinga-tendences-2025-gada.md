@@ -8,7 +8,7 @@ updated: 2026-09-05
 image: "/img/gen/cover-5-digitala-marketinga-tendences-2025-gada.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px-1.jpg"
 categories: ["marketinga-strategija"]
-permalink: "/5-digitala-marketinga-tendences-2025-gada/"
+permalink: "/digitala-marketinga-tendences/"
 keywords: ["digitālā mārketinga tendences", "digitālais mārketings 2026", "MI meklēšana", "sociālo tīklu e-komercija", "pirmās puses dati", "mārketinga automatizācija"]
 ---
 

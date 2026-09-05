@@ -37,7 +37,7 @@ Ja mērķu ir trīs, nav nevienas skaidras prioritātes. Izvēlies vienu nākama
 
 Biežākā kļūda ir mēģināt būt visur. Pieci pa pusei darīti kanāli dod mazāk nekā viens kārtīgi izdarīts kanāls.
 
-Izvēle ir vienkārša. Ja cilvēks Tevi meklē pats, sāc ar meklētāju: [SEO](/kas-ir-seo/) un [Google reklāmu](/google-reklama-2025/). Ja par Tevi vēl nezina, sāc ar [Meta reklāmu](/facebook-reklamas-izstrade/), kur pieprasījumu radi Tu pats.
+Izvēle ir vienkārša. Ja cilvēks Tevi meklē pats, sāc ar meklētāju: [SEO](/kas-ir-seo/) un [Google reklāmu](/google-reklama/). Ja par Tevi vēl nezina, sāc ar [Meta reklāmu](/facebook-reklamas-izstrade/), kur pieprasījumu radi Tu pats.
 
 Otro kanālu pievieno tad, kad pirmais strādā, nevis paralēli.
 

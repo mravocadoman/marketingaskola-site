@@ -104,7 +104,7 @@ Lai mārketinga stratēģija dotu labākus rezultātus, tā regulāri jāpilnvei
 - **Pārbaudi konkurentu aktivitātes**: kas viņiem strādā un ko vari no tā mācīties?
 - **Analizē datus un pieņem pamatotus lēmumus**: tikai reāli dati palīdzēs izveidot stratēģiju, kas strādā.
 
-Plānojot 2025. gada mārketinga aktivitātes, ir svarīgi ņemt vērā arī [aktuālās digitālā mārketinga tendences.](/5-digitala-marketinga-tendences-2025-gada/)
+Plānojot 2025. gada mārketinga aktivitātes, ir svarīgi ņemt vērā arī [aktuālās digitālā mārketinga tendences.](/digitala-marketinga-tendences/)
 
 {% infographic { id: "info-marketinga-plana-soli", title: "Mārketinga plāns sešos soļos", items: [
  { label: "Izpēti tirgu un konkurentus", text: "Kas notiek nozarē, ko dara konkurenti, kas interesē auditoriju." },

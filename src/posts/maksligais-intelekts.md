@@ -107,7 +107,7 @@ Gandrīz visas neveiksmīgās MI ieviešanas izskatās vienādi: uzņēmums mē�
 
 Ikdienas darbam pietiek ar [ChatGPT](https://chatgpt.com/) vai [Claude](https://claude.ai/), vizuāļiem noder [Canva](https://www.canva.com/), bet e-pastu sarakstam der [MailerLite](https://www.mailerlite.com/).
 
-Plašāk par to, kā šī tendence iekļaujas pārējā ainā, lasi [digitālā mārketinga tendencēs](/5-digitala-marketinga-tendences-2025-gada/).
+Plašāk par to, kā šī tendence iekļaujas pārējā ainā, lasi [digitālā mārketinga tendencēs](/digitala-marketinga-tendences/).
 
 ## Nākamais solis
 

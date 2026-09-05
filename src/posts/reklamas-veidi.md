@@ -181,7 +181,7 @@ Lai atvieglotu reklāmas veidošanu un uzlabošanu, izmanto noderīgus rīkus:
 
 Praksē lēmums parasti sākas ar vienu jautājumu: vai cilvēks Tavu produktu jau meklē?
 
-**Ja meklē**, sāc ar meklētāju. [Google reklāma](/google-reklama-2025/) atved cilvēku, kurš jau ir gatavs pirkt, un [SEO](/kas-ir-seo/) ar laiku samazina šīs piesaistes cenu.
+**Ja meklē**, sāc ar meklētāju. [Google reklāma](/google-reklama/) atved cilvēku, kurš jau ir gatavs pirkt, un [SEO](/kas-ir-seo/) ar laiku samazina šīs piesaistes cenu.
 
 **Ja nemeklē**, pieprasījums Tev jārada pašam. Tad sāc ar [Meta reklāmu](/facebook-reklamas-izstrade/), kur produktu vari parādīt cilvēkam, kurš par to vēl nedomā.
 

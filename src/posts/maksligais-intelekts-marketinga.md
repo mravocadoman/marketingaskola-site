@@ -99,7 +99,7 @@ Grūtāk izmērāms ir otrs ieguvums, pieteikumi, kas vairs nepazūd. Tos nevien
 
 Ikdienas darbam pilnīgi pietiek ar [ChatGPT](https://chatgpt.com/) vai [Claude](https://claude.ai/). Vizuāļiem der [Canva](https://www.canva.com/), e-pastam, [MailerLite](https://www.mailerlite.com/), bet rezultātu mērīšanai [Google Analytics 4](https://analytics.google.com/) un [Google Search Console](https://search.google.com/search-console/about).
 
-Plašāku rīku sarakstu ar konkrētiem pielietojumiem apkopojām rakstā [7 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/). Ja interesē lielākā aina, noder arī [digitālā mārketinga tendences](/5-digitala-marketinga-tendences-2025-gada/) un godīgs skatījums uz riskiem rakstā [mākslīgais intelekts: draugs vai drauds](/maksligais-intelekts/).
+Plašāku rīku sarakstu ar konkrētiem pielietojumiem apkopojām rakstā [7 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/). Ja interesē lielākā aina, noder arī [digitālā mārketinga tendences](/digitala-marketinga-tendences/) un godīgs skatījums uz riskiem rakstā [mākslīgais intelekts: draugs vai drauds](/maksligais-intelekts/).
 
 ## Biežākie jautājumi
 

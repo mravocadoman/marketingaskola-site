@@ -28,6 +28,11 @@ AddDefaultCharset utf-8
   # (3 Sep 2026): one landing page, live course as the product.
   RewriteRule ^facebook-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
 
+  # Year stamps removed from two evergreen posts (5 Sep 2026, owner's call).
+  # The articles are updated each year; the URL should not have to be.
+  RewriteRule ^5-digitala-marketinga-tendences-2025-gada/?$ /digitala-marketinga-tendences/ [R=301,L]
+  RewriteRule ^google-reklama-2025/?$ /google-reklama/ [R=301,L]
+
   # URLs that changed on the old WordPress site (these were 301s there too).
   RewriteRule ^meta-reklamas-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
   RewriteRule ^7-padomi-marketinga-strategijas-izstrade/?$ /marketinga-strategijas-izstrade/ [R=301,L]

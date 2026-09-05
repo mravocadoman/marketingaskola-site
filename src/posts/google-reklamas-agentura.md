@@ -122,7 +122,7 @@ Skaidrs, kas ir konversija, pieteikums, zvans, pirkums vai kaut kas cits. Saraks
 Pirmie dati, dažās dienās. Nopietni secinājumi, pēc mēneša vai diviem, atkarībā no apjoma.
 
 **Vai varu pārvaldīt Google Ads pats?**
-Jā. Pamatlietas ir apgūstamas dažās stundās, un tieši tās nosaka lielāko daļu rezultāta. Kā tas notiek praksē, aprakstīts rakstā [vai Google reklāma ir efektīva](/google-reklama-2025/).
+Jā. Pamatlietas ir apgūstamas dažās stundās, un tieši tās nosaka lielāko daļu rezultāta. Kā tas notiek praksē, aprakstīts rakstā [vai Google reklāma ir efektīva](/google-reklama/).
 
 **Vai vajag arī Facebook reklāmu?**
 Bieži jā, jo tie risina dažādus uzdevumus: Google uzrunā tos, kas jau meklē, Meta rada pieprasījumu. Sk. [Meta reklāmas](/meta-reklamas/).

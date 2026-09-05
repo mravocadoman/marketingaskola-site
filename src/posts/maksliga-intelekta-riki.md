@@ -75,7 +75,7 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 [Synthesia](https://www.synthesia.io/) veido video, kurā avatārs runā Tavu tekstu, daudzās valodās. Noder apmācībām, instrukcijām un iekšējai komunikācijai.
 
-**Kam neder:** sociālo tīklu reklāmai. Tur uzvar autentiskums, un avatārs to nedod, par to sīkāk rakstā [digitālā mārketinga tendences](/5-digitala-marketinga-tendences-2025-gada/).
+**Kam neder:** sociālo tīklu reklāmai. Tur uzvar autentiskums, un avatārs to nedod, par to sīkāk rakstā [digitālā mārketinga tendences](/digitala-marketinga-tendences/).
 
 ## 7. InVideo, video no teksta
 
