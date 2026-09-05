@@ -1057,10 +1057,46 @@ alone long enough to leave the learning phase. Stacked interest audiences and
 tight lookalikes are called out as harmful in a market this small; the 10%
 lookalike advice for Latvia is the owner's own and stays.
 
-Done so far: the five AI/trends posts, the three Google posts,
-`instagram-reklama`, `facebook-reklamas-izstrade`,
-`5-visizplatitakas-kludas-reklamas-izvietosana-facebook`, `meta-reklamas`,
-`cik-maksa-reklama-facebook`.
+**All 33 posts have been through this pass (5 Sep 2026).** Recent ones
+(`marketinga-automatizacija-ar-ko-sakt`, written 21 Aug 2026) were left
+alone; the rest were either rewritten or corrected.
+
+**Factual errors found in the existing copy and fixed** - worth listing,
+because they were live for years:
+- `cik-maksa-reklama-facebook` published a budget formula that MULTIPLIED
+  by the conversion rate instead of dividing (100 x 0,50 x 5% = 2,50, not
+  the 1000 EUR it claimed). It now works backwards: customers -> clicks ->
+  budget.
+- `marketinga-macibas` stated a Facebook ad cannot run on any other
+  platform. One Meta ad runs across Facebook, Instagram, Reels, Messenger
+  and partner sites.
+- `seo-optimizacija-tavam-biznesam` credited Google's algorithm with scoring
+  transition words and passive voice. Those are Yoast plugin criteria. It
+  also taught keyword density (1-2,5%), an obsolete myth.
+- `7-digitala-marketinga-riki` recommended Google Optimize, shut down by
+  Google in 2023.
+- `epasta_marketings` treated open rate as a metric to steer by; it has not
+  been reliable since Apple began pre-loading images.
+- `tiktok-reklamas-klientu-piesaistisanai` closed by selling the TikTok
+  course, retired in Sep 2026.
+- `kas-ir-seo` told the reader to see a "Digitālais mārketings" article and
+  did not link it; `instagram-reels-marketingam` had no CTA at all.
+- Stale third-party statistics were dropped rather than carried forward (a
+  Wolfgang Digital 2020 report, 2023/2028 AI market sizes).
+
+**The one editorial line the whole blog now shares**, so posts stop
+contradicting each other: execution got cheap (a draft is a prompt away),
+algorithms took over audience selection, and some search answers never
+reach a website - so value moved from making to choosing. In the ad posts
+that means signal (pixel PLUS Conversions API), three to five genuinely
+different creatives, and leaving a campaign alone long enough to leave the
+learning phase. In the SEO and content posts it means general explainers
+lose clicks and what earns the visit is what a model cannot invent.
+
+**Length.** Latvian posts land 580-2,250 words, most 650-1,200. Several
+decision-shaped posts are deliberately short; padding them was rejected in
+favour of adding sections that were genuinely missing (what it costs in
+time and money, what to measure, what the tools actually cost).
 
 **No affiliate links have been invented.** Outbound links point at the
 vendors themselves (ChatGPT, Claude, Canva, CapCut, MailerLite, Meta's own

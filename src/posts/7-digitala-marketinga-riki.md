@@ -13,21 +13,21 @@ keywords: ["digitālā mārketinga rīki", "Google Search Console", "Canva", "Ma
 
 ---
 
-Rīku saraksti bieži ir garāki, nekā vajag. Praksē mazam uzņēmumam pietiek ar septiņiem rīkiem, un seši no tiem ir bez maksas vai gandrīz bez maksas.
+Rīku saraksti bieži ir garāki, nekā vajag. Praksē mazam uzņēmumam pietiek ar septiņiem rīkiem. Seši no tiem ir bez maksas vai gandrīz bez maksas.
 
-Šis ir saraksts, ko ikdienā lietojam paši. Tas ir sakārtots pēc darba, ko katrs rīks palīdz paveikt. Ja kāds rīks Tev nav vajadzīgs, tad nav. Šis saraksts nav jāievieš pilnībā.
+Šo sarakstu ikdienā lietojam paši. Tas ir sakārtots pēc darba, ko katrs rīks palīdz paveikt. Ja kāds rīks Tev nav vajadzīgs, izlaid to. Šis saraksts nav jāievieš pilnībā.
 
 ## 1. [ChatGPT](https://chatgpt.com/) vai [Claude](https://claude.ai/) melnrakstiem
 
-Darbs, ko tas atvieglo: tukšā lapa. Piecas virsrakstu versijas, e-pasta melnraksts, klientu atsauksmju sašķirošana pēc tēmām.
+Darbs, ko tas atvieglo: tukša lapa. Piecas virsrakstu versijas, e-pasta melnraksts, klientu atsauksmju sakārtošana pa tēmām.
 
-Ir viens svarīgs nosacījums: iedod tam savu materiālu. Klientu atsauksmes, cenu lapu, pēdējās sarunas piezīmes. Bez tā rīks uzrakstīs ļoti līdzīgu tekstu tam, ko uzrakstītu Tavam konkurentam.
+Ir viens svarīgs nosacījums: iedod tam savu materiālu. Klientu atsauksmes, cenu lapu, pēdējās sarunas piezīmes. Bez tā rīks uzrakstīs tekstu, kas būs ļoti līdzīgs tam, ko tas uzrakstītu Tavam konkurentam.
 
 Ko ar to nedarīt: nepublicē tekstu bez pārlasīšanas. Skaitlis vai atsauce var būt izdomāta, bet teikums ap to skanēs nevainojami.
 
 ## 2. [Google Search Console](https://search.google.com/search-console/about/) redzamībai meklētājā
 
-Šis ir vienīgais rīks, kas rāda īstos Google datus par Tavu mājaslapu: ar kādiem vaicājumiem cilvēki Tevi atrod, kurā pozīcijā esi un kuras lapas Google vispār neredz.
+Šis ir vienīgais rīks, kas rāda īstos Google datus par Tavu mājaslapu: ar kādiem vaicājumiem cilvēki Tevi atrod, kurā pozīcijā Tu esi un kuras lapas Google vispār neredz.
 
 Tas ir bez maksas, un tam nav alternatīvas. Ja mājaslapa tajā vēl nav pievienota, tas ir pirmais darbs šodienai. Kā to izmantot, aprakstīts rakstā [kas ir SEO](/kas-ir-seo/).
 
@@ -39,7 +39,7 @@ Uzstādi vismaz vienu konversiju, pirms sāc tērēt naudu reklāmai.
 
 ## 4. [Canva](https://www.canva.com/) vizuālajiem materiāliem
 
-Banerus, prezentācijas un sociālo tīklu vizuāļus vari sagatavot bez dizainera. Svarīgākais solis, ko lielākā daļa izlaiž: vienreiz saliec zīmola krāsas un fontus. Tad visi nākamie vizuāļi izskatīsies kā viena uzņēmuma darbi.
+Banerus, prezentācijas un sociālo tīklu attēlus vari sagatavot bez dizainera. Svarīgākais solis, ko lielākā daļa izlaiž: vienreiz saliec zīmola krāsas un fontus. Tad visi nākamie vizuālie materiāli izskatīsies kā viena uzņēmuma darbi.
 
 Kā to darīt praktiski, aprakstīts rakstā [kā izmantot Canva](/ka-izmantot-canva/).
 
@@ -69,7 +69,7 @@ MailerLite ir bez maksas līdz tūkstoš adresātiem un ietver automatizācijas.
 
 Facebook un Instagram ierakstus vari ieplānot vienā vietā. Turpat ir arī reklāmu pārvaldnieks. Mazam uzņēmumam ar vienu vai diviem kanāliem tas pilnībā aizstāj atsevišķu plānošanas rīku.
 
-Ja kanālu ir vairāk un tie ietver LinkedIn vai TikTok, der [Buffer](https://buffer.com/). Tam ir bezmaksas plāns trim kanāliem.
+Ja kanālu ir vairāk un tajos ir arī LinkedIn vai TikTok, der [Buffer](https://buffer.com/). Tam ir bezmaksas plāns trim kanāliem.
 
 ## Ko izsvītrot no vecajiem sarakstiem
 
@@ -78,6 +78,16 @@ Divas lietas joprojām parādās ieteikumos, bet vairs neder.
 **Google Optimize.** Google to slēdza 2023. gadā. Ja meklē A/B testēšanu, sāc ar to, ko piedāvā pati reklāmu platforma vai mājaslapas sistēma. Atsevišķs rīks mazam uzņēmumam reti atmaksājas.
 
 **Atsevišķi rīki katram sīkumam.** Piecu rīku abonementi, kurus izmanto reizi mēnesī, izmaksā vairāk nekā viens rīks, ko izmanto katru dienu. Rīks, kuru neatver nedēļu, nav rīks. Tas ir rēķins.
+
+## Cik tas viss maksā
+
+Īsā atbilde: mazam uzņēmumam šo sarakstu var sākt lietot gandrīz bez maksas.
+
+Bez maksas paliek Search Console, Analytics un Business Suite. Canva, CapCut un MailerLite darbojas bezmaksas versijās, ar kurām lielākā daļa iztiek gadiem. MailerLite kļūst maksas pēc tūkstoš adresātiem, Canva tad, kad vajag zīmola komplektu un komandas piekļuvi.
+
+Vienīgais, par ko parasti tiešām jāmaksā, ir mākslīgā intelekta rīks. Arī tur bezmaksas versija der, ja to lieto dažas reizes nedēļā.
+
+Praktiskais secinājums: ja apsver abonementu, vispirms pārbaudi, vai bezmaksas versija tiešām vairs neder. Biežāk pietrūkst laika, ko tai velti, nevis paša rīka iespēju.
 
 ## Ar ko sākt, ja nav nekā
 

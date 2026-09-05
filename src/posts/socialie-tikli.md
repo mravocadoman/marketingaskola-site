@@ -13,17 +13,17 @@ keywords: ["sociālo tīklu mārketings", "organiskais sasniegums", "Instagram",
 
 ---
 
-Sociālie tīkli joprojām ir vieta, kur Latvijas uzņēmumi atrod klientus. Mainījies ir veids, kā tas notiek.
+Sociālie tīkli joprojām ir vieta, kur Latvijas uzņēmumi atrod klientus. Taču ir mainījies veids, kā tas notiek.
 
-Vēl pirms dažiem gadiem pietika publicēt regulāri, un daļa sekotāju ierakstus redzēja. Šodien bezmaksas sasniedzamība ir tik maza, ka ieraksts bez apmaksātas izplatīšanas parasti nonāk tikai pie nelielas daļas sekotāju. Sekotāju skaits vairs nav resurss, ko vari droši izmantot. Tas ir tikai skaitlis profilā.
+Vēl pirms dažiem gadiem pietika publicēt regulāri, un daļa sekotāju ierakstus redzēja. Šodien bezmaksas sasniedzamība ir tik maza, ka ieraksts bez apmaksātas izplatīšanas parasti nonāk tikai pie nelielas daļas sekotāju. Sekotāju skaits vairs nav resurss, ar kuru vari droši rēķināties. Tas ir tikai skaitlis profilā.
 
-Šis raksts ir par to, ko tas nozīmē praksē: kurš kanāls Tev tiešām vajadzīgs, kas vēl darbojas bez budžeta un kur budžets ir neizbēgams.
+Šis raksts ir par to, ko tas nozīmē praksē: kurš kanāls Tev tiešām ir vajadzīgs, kas vēl darbojas bez budžeta un kur budžets ir neizbēgams.
 
 ## Vai Tavam biznesam vajag sociālos tīklus
 
 Godīgā atbilde ir "ne visiem un ne visus kanālus".
 
-Sociālie tīkli strādā labi, ja Tavu produktu var parādīt, ja pirkuma lēmums ir salīdzinoši ātrs un ja klients ir plaša auditorija. Piemēram, restorāni, skaistumkopšana, e-veikali, kursi, remontdarbi un vietējie pakalpojumi.
+Sociālie tīkli strādā labi, ja Tavu produktu var parādīt, ja pirkuma lēmums ir salīdzinoši ātrs un ja klienti ir plaša auditorija. Piemēram, restorāni, skaistumkopšana, e-veikali, kursi, remontdarbi un vietējie pakalpojumi.
 
 Tie strādā vājāk, ja pārdod ļoti šauram profesionāļu lokam, ja pārdošanas cikls ir garš un ja lēmumu pieņem vairāki cilvēki. Tad meklētājprogramma, ieteikumi un tieša uzruna parasti dod vairāk. Par šādām situācijām vairāk rakstā [vai manam biznesam nepieciešams sociālo tīklu mārketings](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/).
 
@@ -31,22 +31,22 @@ Tie strādā vājāk, ja pārdod ļoti šauram profesionāļu lokam, ja pārdoš
 
 Biežākā maza uzņēmuma kļūda ir mēģināt būt visur. Rezultāts ir četri pusaizmirsti profili, no kuriem neviens īsti nestrādā.
 
-Praktiskā izvēle Latvijā:
+Praktiska izvēle Latvijā:
 
 - **Instagram** ir pirmā izvēle, ja produktu var parādīt.
 - **Facebook** joprojām ir spēcīgs plašākai un vecākai auditorijai, vietējiem pakalpojumiem un grupām.
 - **TikTok** ir vērts izmantot, ja vari regulāri filmēt īsus video un Tava auditorija ir jaunāka.
 - **LinkedIn** ir piemērots tikai B2B un darbinieku piesaistei.
 
-Izvēlies vienu kanālu, kur Tava auditorija tiešām ir, un strādā ar to kārtīgi. Otro pievieno tad, kad pirmais jau dod rezultātu.
+Izvēlies vienu kanālu, kur Tava auditorija tiešām ir, un strādā ar to kārtīgi. Otro pievieno tikai tad, kad pirmais jau dod rezultātu.
 
 ## Kas vēl darbojas bez budžeta
 
 Trīs lietas joprojām palīdz sasniegt cilvēkus bez maksas.
 
-**Īsi vertikāli video.** Tas ir vienīgais formāts, ko platformas joprojām aktīvi rāda cilvēkiem ārpus Taviem sekotājiem. Par to vairāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
+**Īsi vertikāli video.** Tas ir vienīgais formāts, ko platformas joprojām aktīvi rāda cilvēkiem ārpus Tavu sekotāju loka. Par to vairāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
 
-**Saturs, kas atbild uz reālu jautājumu.** Cilvēki arvien biežāk meklē informāciju tieši sociālajos tīklos, nevis meklētājprogrammā. Ierakstu, kas atbild uz konkrētu jautājumu, var atrast vēl mēnešus vēlāk.
+**Saturs, kas atbild uz reālu jautājumu.** Cilvēki arvien biežāk meklē informāciju tieši sociālajos tīklos, nevis meklētājprogrammā. Ierakstu, kas atbild uz konkrētu jautājumu, var atrast arī pēc vairākiem mēnešiem.
 
 **Sarunas komentāros un ziņās.** To nevar viegli palielināt, bet mazam uzņēmumam tieši šeit bieži rodas klienti. Atbilde piecās minūtēs ir vērtīgāka par vēl vienu publikāciju.
 
@@ -59,11 +59,11 @@ Trīs lietas joprojām palīdz sasniegt cilvēkus bez maksas.
 
 ## Kāpēc maksas reklāma nav izvēle, bet nosacījums
 
-Šī ir daļa, ko negribas dzirdēt, bet tā ir patiesa: sociālo tīklu platformas ir reklāmas uzņēmumi. Tāpēc bezmaksas izplatīšana tajās ir apzināti ierobežota.
+Šo ne vienmēr gribas dzirdēt, bet tā ir taisnība: sociālo tīklu platformas ir reklāmas uzņēmumi. Tāpēc bezmaksas izplatīšana tajās ir apzināti ierobežota.
 
-Praksē tas nozīmē, ka labs saturs bez budžeta sasniedz tikai dažus, bet tas pats saturs ar nelielu budžetu sasniedz cilvēkus, kuri tiešām var nopirkt. Nav jāsāk ar lielām summām. Desmit līdz divdesmit eiro dienā vienam mērķim Latvijā ir reāls sākums.
+Praksē tas nozīmē, ka labs saturs bez budžeta sasniedz tikai dažus cilvēkus. Tas pats saturs ar nelielu budžetu sasniedz cilvēkus, kuri tiešām var nopirkt. Nav jāsāk ar lielām summām. Desmit līdz divdesmit eiro dienā vienam mērķim Latvijā ir reāls sākums.
 
-Svarīgi arī tas, ka maksas reklāma ļauj mērīt rezultātu. Bezmaksas publikācija parāda patīk atzīmes un komentārus. Reklāma parāda, cik maksāja viens klients. Tikai otrais skaitlis palīdz pieņemt lēmumus.
+Svarīgi arī tas, ka maksas reklāma ļauj mērīt rezultātu. Bezmaksas publikācija parāda atzīmes "Patīk" un komentārus. Reklāma parāda, cik maksāja viens klients. Tikai otrais skaitlis palīdz pieņemt lēmumus.
 
 Kā to uzstādīt no nulles, aprakstīts rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/), bet budžeta puse rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
@@ -77,6 +77,20 @@ Ja resursu ir maz, dari šo un neko vairāk:
 - atbildes uz ziņām tajā pašā dienā.
 
 Tas ir mazāk, nekā iesaka lielākā daļa satura plānu, un vairāk, nekā izdara lielākā daļa uzņēmumu.
+
+## Ko mērīt, lai saprastu, vai strādā
+
+Sociālo tīklu atskaites rāda daudz skaitļu, bet lielākā daļa no tiem neko neizšķir.
+
+**Nemēri sekotāju skaitu.** Tas aug arī tad, kad nekas būtisks nenotiek, un nekrīt, kad cilvēki pārstāj skatīties.
+
+**Nemēri atzīmes "Patīk".** Tās parāda, ka saturs patika tiem, kas jau seko, nevis to, vai atnāca kāds jauns.
+
+**Mēri trīs lietas.** Cik cilvēku uzrakstīja ziņu vai komentāru ar jautājumu. Cik pārgāja uz mājaslapu. Cik no viņiem kļuva par klientiem.
+
+Ja pirmais skaitlis aug, bet trešais ne, problēma nav saturā. Tā ir tajā, kas notiek pēc klikšķa. Ja pirmais skaitlis nekustas vispār, problēma ir saturā vai izplatīšanā.
+
+Šos skaitļus var redzēt bez maksas: pirmos divus pašā platformā, trešo [Google Analytics 4](https://analytics.google.com/), ja ir uzstādīta vismaz viena konversija.
 
 ## Nākamais solis
 
