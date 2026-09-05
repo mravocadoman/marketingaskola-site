@@ -769,9 +769,9 @@
       "page": "socialie-tikli",
       "style": "paper",
       "aspect": "landscape",
-      "alt": "Infografika no izgrieztām papīra formām: četri sociālo tīklu mārketinga ieguvumi — pārdošanas apjomi, zīmola atpazīstamība, saikne ar klientu un izmērāma efektivitāte",
+      "alt": "Infografika no izgrieztām papīra formām: kas sociālajos tīklos darbojas 2026. gadā",
       "rationale": "The post lists four benefits it has seen with clients; they carry better as a graphic than a bullet list.",
-      "prompt": "Headline: «Sociālo tīklu ieguvumi». FOUR items in one row. «01» «Pieaug pārdošana» «Vairāk pirkumu no tās pašas auditorijas» - emblem: four bars of rising height, the tallest cyan. «02» «Zīmola atpazīstamība» «Cilvēki zina, kas Tu esi» - emblem: a navy square with three pale grey rings widening out from it and one cyan ring. «03» «Saikne ar klientu» «Komūna, ne tikai sekotāji» - emblem: two navy head profiles facing each other with a cyan square between them. «04» «Izmērāma efektivitāte» «Analītika rāda, kas strādā» - emblem: a pale grey panel with a navy line chart and a cyan square marking its peak."
+      "prompt": "Headline: «Sociālie tīkli: kas darbojas». FOUR items in one row. «01» «Viens kanāls, ne četri» - emblem: four navy square app tiles in a row, three of them faded pale grey and one solid cyan. «02» «Vertikāls video» - emblem: a tall navy vertical video frame with a solid cyan play triangle. «03» «Atbildes uz jautājumiem» - emblem: a pale grey search field panel with a navy magnifying glass and a cyan cursor bar. «04» «Budžets izplatīšanai» - emblem: a navy megaphone shape with a cyan cone of three widening bars in front of it."
     },
     {
       "id": "info-tiktok-reklamas-soli",
@@ -786,10 +786,10 @@
       "id": "info-socialo-tiklu-abas-puses",
       "page": "vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: sociālo tīklu mārketinga gaišā un tumšā puse — popularitāte, analītika un saikne ar klientu pret laikietilpību un platformas dabu",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri nosacījumi, kas norāda, vai sociālie tīkli ir Tavs kanāls",
       "rationale": "The post is explicitly two-sided; showing both halves is more honest than picking one.",
-      "prompt": "Headline: «Sociālo tīklu mārketings: abas puses». FIVE items in TWO rows - three above, two below. «01» «Popularitāte» «Lietotāju skaits aug katru gadu» - emblem: a navy figure with three pale grey figures behind it and one cyan figure. «02» «Analītikas rīki» «Var izmērīt, vai atmaksājās» - emblem: four bars of rising height, the tallest cyan. «03» «Saikne ar klientu» «Komūna ap zīmolu» - emblem: two navy profiles facing each other with a cyan square between them. «04» «Pamatideja nav bizness» «Cilvēki nāk atslēgties, ne pirkt» - emblem: a navy speech bubble with a pale grey square inside and a cyan square set apart outside it. «05» «Prasa pastāvīgu aktivitāti» «Viena publikācija neko nemaina» - emblem: a pale grey calendar grid with cyan squares in a dense repeating rhythm."
+      "prompt": "Headline: «Vai sociālie tīkli ir Tavs kanāls». FOUR items in one row. «01» «Produktu var parādīt» - emblem: a pale grey picture frame holding a navy mountain shape with a cyan circle above it. «02» «Ātrs lēmums» - emblem: a navy stopwatch outline with a solid cyan wedge inside. «03» «Ir budžets» - emblem: a navy wallet shape with three cyan coins rising out of it. «04» «Ir, kas atbild» - emblem: two overlapping navy chat bubbles, the smaller one cut from cyan paper."
     },
     {
       "id": "info-reels-kludas",

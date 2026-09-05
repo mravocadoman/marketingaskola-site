@@ -2,93 +2,84 @@
 layout: post.njk
 title: "Sociālie tīkli - mārketinga veiksmes atslēga"
 seoTitle: "Sociālie tīkli - mārketinga veiksmes atslēga | Mārketinga Skola"
-description: "Kādēļ sociālie tīkli ir tik plaši izmantoti? Vai Tavam biznesam nepieciešami sociālie tīkli? Uz šiem jautājumiem atbildēsim šajā rakstā."
+description: "Sociālie tīkli 2026. gadā: kāpēc organiskais sasniegums vairs nepietiek, kurš viens kanāls Tev vajadzīgs un kāds ir praktiskais minimums mēnesī."
 date: 2024-03-20
-updated: 2024-10-21
+updated: 2026-09-05
 image: "/img/gen/cover-socialie-tikli.webp"
 legacyImage: "/img/2024/03/16.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/socialie-tikli/"
-keywords: ["sociālie tīkli", "sociālo tīklu mārketings", "maksas reklāmas", "zīmola atpazīstamība"]
+keywords: ["sociālo tīklu mārketings", "organiskais sasniegums", "Instagram", "Facebook", "vertikāls video"]
 
 ---
 
-Sociālie tīkli ir 21.gadsimta mārketinga fenomens.
+Sociālie tīkli joprojām ir vieta, kur Latvijas uzņēmumi atrod klientus. Mainījies ir veids, kā tas notiek.
 
-Ne velti vairāk nekā puse visu Eiropas Savienības uzņēmumu tos izmanto.
+Vēl pirms dažiem gadiem pietika publicēt regulāri, un daļa sekotāju ierakstus redzēja. Šodien bezmaksas sasniedzamība ir tik maza, ka ieraksts bez apmaksātas izplatīšanas parasti nonāk tikai pie nelielas daļas sekotāju. Sekotāju skaits vairs nav resurss, ko vari droši izmantot. Tas ir tikai skaitlis profilā.
 
-Tiek prognozēts, ka 2025.gadā sociālos tīklus izmantos jau 5,1 miljards cilvēku no visas pasaules populācijas jeb ~8 miljardiem cilvēku.
+Šis raksts ir par to, ko tas nozīmē praksē: kurš kanāls Tev tiešām vajadzīgs, kas vēl darbojas bez budžeta un kur budžets ir neizbēgams.
 
-Skaitļi runā paši par sevi, vai ne?
+## Vai Tavam biznesam vajag sociālos tīklus
 
-Kur gan ir āķis? Kādēļ sociālie tīkli un arī to sniegtā maksas reklāmu iespēja ir tik plaši izmantota? Vai un kāpēc Tavam biznesam nepieciešami sociālie tīkli?
+Godīgā atbilde ir "ne visiem un ne visus kanālus".
 
-Uz šiem jautājumiem atbildēsim šajā rakstā.
+Sociālie tīkli strādā labi, ja Tavu produktu var parādīt, ja pirkuma lēmums ir salīdzinoši ātrs un ja klients ir plaša auditorija. Piemēram, restorāni, skaistumkopšana, e-veikali, kursi, remontdarbi un vietējie pakalpojumi.
 
-## Vai Tavam biznesam nepieciešami sociālie tīkli?
+Tie strādā vājāk, ja pārdod ļoti šauram profesionāļu lokam, ja pārdošanas cikls ir garš un ja lēmumu pieņem vairāki cilvēki. Tad meklētājprogramma, ieteikumi un tieša uzruna parasti dod vairāk. Par šādām situācijām vairāk rakstā [vai manam biznesam nepieciešams sociālo tīklu mārketings](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/).
 
-Vairākumā gadījumu mūsu atbilde būs: **Jā**, Tavam biznesam ir nepieciešama sociālo tīklu izmantošana.
+## Izvēlies vienu kanālu, nevis četrus
 
-Kādi būs izņēmuma gadījumi?
+Biežākā maza uzņēmuma kļūda ir mēģināt būt visur. Rezultāts ir četri pusaizmirsti profili, no kuriem neviens īsti nestrādā.
 
-Sociālo tīklu izmantošanu kā prioritāti sava biznesa izaugsmei **neiesakām** izmantot tiem uzņēmumiem, kas zina, ka atbildes uz šiem diviem jautājumiem nebūs apstiprinošas:
+Praktiskā izvēle Latvijā:
 
-- Vai sociālajos tīklos ir atrodams Tavs mērķa klients?
+- **Instagram** ir pirmā izvēle, ja produktu var parādīt.
+- **Facebook** joprojām ir spēcīgs plašākai un vecākai auditorijai, vietējiem pakalpojumiem un grupām.
+- **TikTok** ir vērts izmantot, ja vari regulāri filmēt īsus video un Tava auditorija ir jaunāka.
+- **LinkedIn** ir piemērots tikai B2B un darbinieku piesaistei.
 
-- Vai ir veikta mērķtirgus izpēte, kas pierāda, ka Tavs produkts vai pakalpojums ir pieprasīts un ka ir vērts investēt tā mārketingā?
+Izvēlies vienu kanālu, kur Tava auditorija tiešām ir, un strādā ar to kārtīgi. Otro pievieno tad, kad pirmais jau dod rezultātu.
 
-Ja uz pirmo jautājumu atbilde ir apstiprinoša, tad (pirms sociālo tīklu kontu izveides) iesakām veikt izpēti un noskaidrot tieši kuri sociālie tīkli ir piesaistījuši Tavu mērķa klientu uzmanību.
+## Kas vēl darbojas bez budžeta
 
-Ir nerakstīts likums mārketinga pasaulē, ko mēs tomēr uzdrošināsimies uzrakstīt: _“Esi tur, kur ir Tavs klients. Ja nebūsi, tad Tavā vietā ātri vien ienāks kāds cits.”_
+Trīs lietas joprojām palīdz sasniegt cilvēkus bez maksas.
 
-Ir liela iespēja, ka Tavs mērķa klients atrodams kādā no pašlaik [pasaulē izmantotākajām](https://umaine.edu/undiscoveredmaine/small-business/resources/marketing-for-small-business/social-media-tools/social-media-statistics-details/) sociālo tīklu platformām: _Facebook, Youtube_ vai _Instagram_. Varbūt arī _TikTok_, ko jau sen vairs neizmanto tikai jaunieši, bet arī vecākas paaudzes auditorija.
+**Īsi vertikāli video.** Tas ir vienīgais formāts, ko platformas joprojām aktīvi rāda cilvēkiem ārpus Taviem sekotājiem. Par to vairāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
 
-## Sociālie tīkli kā uzņēmumu vizītkarte
+**Saturs, kas atbild uz reālu jautājumu.** Cilvēki arvien biežāk meklē informāciju tieši sociālajos tīklos, nevis meklētājprogrammā. Ierakstu, kas atbild uz konkrētu jautājumu, var atrast vēl mēnešus vēlāk.
 
-Sociālie tīkli ir ne tikai digitālā mārketinga atslēga, bet arī uzņēmumu vizītkarte. Tas nozīme, ka tā ir vizītkarte ne tikai klientiem, bet arī medijiem, potenciālajiem darbiniekiem un pat konkurentiem.
+**Sarunas komentāros un ziņās.** To nevar viegli palielināt, bet mazam uzņēmumam tieši šeit bieži rodas klienti. Atbilde piecās minūtēs ir vērtīgāka par vēl vienu publikāciju.
 
-Sociālie tīkli paver brīnišķīgu iespēju atainot uzņēmumu sev vēlamā gaismā, piemēram, parādot vērtības, izstāstot zīmola stāstu, parādot sociālās atbildības aktivitātes un vēl, un vēl.. Mēs iesakām attīstīt savu zīmola tēlu sociālajos tīklus jau **tagad**, jo..
-
-Statistika jau vēsta, ka vairāk nekā 50% darba meklētāju, lai uzzinātu vairāk par savu potenciālo darbavietu, vienkārši apskata uzņēmuma sociālo tīklu kontu. Daudzi arī atrod sev vēlamo vakanci tieši caur sociālajiem tīkliem.
-
-Sociālie tīkli var būt pirmais iespaids, ko cilvēks gūst par uzņēmumu, tāpēc ir būtiski šo iespaidu veidot pozitīvu.
-
-## Sociālo tīklu ieguvumi mārketingā
-
-Lūk, vien daži no sociālo tīklu mārketinga ieguvumiem, ko esam paši pieredzējuši, palīdzot klientiem:
-
-- Pieaug pārdošanas apjomi;
-- Palielinās zīmola atpazīstamība;
-- Izveidojas saikne ar klientu, veicinot lojalitāti zīmolam;
-- Ievērojami uzlabojas mārketinga aktivitāšu efektivitāte, jo ar analītikas rīkiem tiek izvērtēti mārketinga rezultāti un veikti nepieciešamie uzlabojumi.
-
-Būtisks trumpis šajos ieguvumos ir **maksas reklāmas**.
-
-{% infographic { id: "info-socialo-tiklu-ieguvumi", title: "Sociālo tīklu ieguvumi", items: [
- { label: "Pieaug pārdošana", text: "Vairāk pirkumu no tās pašas auditorijas." },
- { label: "Zīmola atpazīstamība", text: "Cilvēki zina, kas Tu esi." },
- { label: "Saikne ar klientu", text: "Komūna, ne tikai sekotāji." },
- { label: "Izmērāma efektivitāte", text: "Analītika rāda, kas strādā." }
+{% infographic { id: "info-socialo-tiklu-ieguvumi", title: "Sociālie tīkli: kas darbojas 2026. gadā", items: [
+ { label: "Viens kanāls, ne četri", text: "Divi pusaizmirsti profili nedod neko." },
+ { label: "Vertikāls video", text: "Vienīgais formāts ar organisko sasniegumu." },
+ { label: "Atbildes uz jautājumiem", text: "Cilvēki meklē arī sociālajos tīklos." },
+ { label: "Budžets izplatīšanai", text: "Bez tā redz tikai daļa sekotāju." }
 ] } %}
 
-## Kāpēc maksas reklāmas?
+## Kāpēc maksas reklāma nav izvēle, bet nosacījums
 
-Ja vēlies veicināt pārdošanas apjomus un klientu pieplūdumu, maksas reklāmas ir Tavs risinājums.
+Šī ir daļa, ko negribas dzirdēt, bet tā ir patiesa: sociālo tīklu platformas ir reklāmas uzņēmumi. Tāpēc bezmaksas izplatīšana tajās ir apzināti ierobežota.
 
-Šis risinājums īstenībā piemērots visiem, kuru auditorija atrodama sociālajos tīklos. Tas ir lielisks mārketinga instruments, jo ir izmantojams ar jebkādu budžeta apjomu un ļauj ātri izvērtēt reklāmas efektivitāti.
+Praksē tas nozīmē, ka labs saturs bez budžeta sasniedz tikai dažus, bet tas pats saturs ar nelielu budžetu sasniedz cilvēkus, kuri tiešām var nopirkt. Nav jāsāk ar lielām summām. Desmit līdz divdesmit eiro dienā vienam mērķim Latvijā ir reāls sākums.
 
-Ne velti 2023.gadā sociālo tīklu maksas reklāmu izdevumi sastādījuši 270 miljardus ASV dolāru un mārketinga pētnieki prognozē, ka 2024.gadā jau tiks pārsniegts 300 miljardu slieksnis.
+Svarīgi arī tas, ka maksas reklāma ļauj mērīt rezultātu. Bezmaksas publikācija parāda patīk atzīmes un komentārus. Reklāma parāda, cik maksāja viens klients. Tikai otrais skaitlis palīdz pieņemt lēmumus.
 
-Sociālie tīkli, reģistrējot lietotājus, ievāc par tiem noderīgu informāciju, kā vecums, dzimums, dzīvesvieta, intereses, un šie dati nodrošina to, ka ar maksas reklāmām var viegli sasniegt savu mērķa klientu.
+Kā to uzstādīt no nulles, aprakstīts rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/), bet budžeta puse rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
-Problēma gan rodas brīdī, kad maksas reklāmu dažādās detaļas raisa apjukumu un pietrūkst zināšanu, lai šīs reklāmas veidotu efektīvas.
+## Praktiskais minimums mēnesī
 
-Bieži vien šī apjukuma un zināšanu trūkuma dēļ no maksas reklāmām netiek gūta peļņa.
+Ja resursu ir maz, dari šo un neko vairāk:
 
-Lai tas nenotiktu ar Tevi, rosinām veltīt laiku zināšanu paplašināšanai, apgūstot maksas reklāmas. Tā būs vērtīga ilgtermiņa investīcija biznesa izaugsmē.
+- viens kanāls;
+- četri līdz astoņi ieraksti mēnesī, no kuriem vismaz puse ir vertikāli video;
+- viena aktīva reklāmas kampaņa ar trim līdz pieciem atšķirīgiem materiāliem;
+- atbildes uz ziņām tajā pašā dienā.
 
-## Mārketinga skolas piedāvājums
+Tas ir mazāk, nekā iesaka lielākā daļa satura plānu, un vairāk, nekā izdara lielākā daļa uzņēmumu.
 
-[Sociālie tīkli ir mārketinga atslēga](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/), kas uzņēmumiem, kuri spēj sociālos tīklus profesionāli izmantot savā labā, palielina peļņu, klientu skaitu un atpazīstamību. Esi viens no viņiem!
+## Nākamais solis
 
-Mēs Mārketinga skola iesakām Tev apsvērt iespēju pieteikties mūsu [Facebook un Instagram reklāmas kursam](/digitala-marketinga-kursi/), kur soli pa solim apgūsi kampaņu uzstādīšanu, mērķauditorijas atlasi un rezultātu analīzi.
+Ja gribi iemācīties reklāmas daļu pats, strādājot savā kontā, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē, mazā grupā.
+
+Ja gribi, lai kampaņas veido un uztur kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja vēl neesi drošs, kurš kanāls Tavā situācijā ir pareizais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
