@@ -533,7 +533,7 @@
       "placement": "Inside section 02, replacing the standalone band.",
       "aspect": "landscape",
       "alt": "Infografika: Meta kampaņas uzbūve trīs līmeņos — kampaņa, reklāmu kopa un reklāma",
-      "prompt": "Headline top-left: «Meta kampaņas uzbūve». Three columns reading left to right as a hierarchy. Column one: index «01», label «Kampaņa», note «Mērķis: pārdošana, pieteikumi vai atpazīstamība». Column two: index «02», label «Reklāmu kopa», note «Auditorija, budžets un izvietojumi». Column three: index «03», label «Reklāma», note «Teksts, vizuālis un aicinājums rīkoties». A single thin grey hairline runs horizontally behind the three index numbers, tying them into one sequence. The three drawings form ONE hierarchy read left to right. Under column one draw a single open square with one vertical line dropping from its base. Under column two draw that line splitting into three shorter vertical branches. Under column three draw the three branches each ending in a small rectangle, the middle one filled cyan.",
+      "prompt": "Headline top-left: «Meta kampaņas uzbūve». Three columns reading left to right as one hierarchy. Column one: index «01», label «Kampaņa», note «Mērķis: pārdošana, pieteikumi vai atpazīstamība». Column two: index «02», label «Reklāmu kopa», note «Auditorija, budžets un izvietojumi». Column three: index «03», label «Reklāma», note «Teksts, vizuālis un aicinājums rīkoties». THE THREE DRAWINGS ARE THE SAME SIZE AND SIT ON THE SAME BASELINE, each one a single large square-cornered frame of identical width and height, centred in its column with equal margins. No lines connect the columns to each other and nothing dangles below a drawing. Column one drawing: inside the frame a large concentric target of two squares with a solid cyan square at its centre, and two short heavy white bars beneath it. Column two drawing: the same frame divided into three equal vertical cells by two hairlines, one simple geometric human figure standing in each cell, the middle figure solid cyan. Column three drawing: the same frame holding a heavy white picture placeholder on the left, three short white text bars stacked on the right, and one solid cyan button bar across the bottom right.",
       "rationale": "Account structure is the single thing beginners get wrong, and it is a hierarchy - a picture explains it faster than the module list."
     },
     {
@@ -916,6 +916,24 @@
       "alt": "Infografika no izgrieztām papīra formām: kuri dati pieder Tev. E-pastu saraksts, pirkumu vēsture un konversiju uzskaite pretstatā platformas auditorijai, kuru var zaudēt",
       "rationale": "The first-party data trend is abstract in prose; separating what you own from what you borrow makes the argument concrete.",
       "prompt": "Headline: «Kuri dati pieder Tev». FOUR items in one row. The first three sit together as things you own, the fourth is visibly set apart. «01» «E-pastu saraksts» «Neviens algoritms to neatņem» : emblem: a navy envelope above a pale grey stack of three record cards, the top card tabbed cyan. «02» «Pirkumu vēsture» «Ko cilvēks jau ir pircis» : emblem: a pale grey page with four navy rows and one cyan row, and a small navy cart shape beside it. «03» «Konversiju uzskaite» «Zini, kas tiešām nopelnīja» : emblem: four bars of rising height on a navy baseline, the tallest cyan, with a small cyan tick above it. «04» «Platformas auditorija» «Aizņemta, ne Tava» : emblem: a navy cloud-free rounded-free rectangle outline holding pale grey figures, drawn with a broken navy line around it to show it is not yours, and one cyan figure escaping outside the outline."
+    },
+    {
+      "id": "info-mi-kur-palidz",
+      "page": "maksligais-intelekts",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs vietas, kur mākslīgais intelekts mārketingā palīdz visvairāk — melnraksti, atkārtoti darbi un reklāmas optimizācija",
+      "rationale": "The article argues MI is strong where a task has many right answers; naming the three places makes the argument usable.",
+      "prompt": "Headline: «Kur MI palīdz visvairāk». THREE items in one row. «01» «Melnraksti» «Piecas versijas trīsdesmit sekundēs» - emblem: a pale cool grey page with three short navy text bars, and two more grey pages offset behind it as a stack. «02» «Atkārtoti darbi» «Šķirošana, sagataves, atskaites» - emblem: three pale grey rectangles in a row flowing into one navy tray shape, one of the rectangles cut from cyan paper. «03» «Reklāmas optimizācija» «Algoritms testē ātrāk par cilvēku» - emblem: four navy vertical bars of rising height with the tallest cut from cyan paper."
+    },
+    {
+      "id": "info-mi-tris-soli",
+      "page": "maksligais-intelekts",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs soļi, ar ko sākt mākslīgā intelekta ieviešanu uzņēmumā",
+      "rationale": "The article says the order matters more than the tool; three numbered steps are the one thing a reader can act on today.",
+      "prompt": "Headline: «Ar ko sākt: trīs soļi». THREE items in one row. «01» «Pieraksti, kas atkārtojas» «Nedēļu tikai fakti, ne idejas» - emblem: a pale cool grey notepad panel with five short navy lines and one cyan line among them. «02» «Automatizē vienu darbu» «Sāc ar pieteikumu ceļu» - emblem: a navy arrow shape running from a single grey square through a cyan square to a grey circle. «03» «Nepublicē nepārlasītu» «Piecas minūtes pirms publicēšanas» - emblem: a pale grey page with a large navy magnifying glass laid over it, its handle cut from cyan paper."
     }
   ]
 }
