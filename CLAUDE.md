@@ -1077,6 +1077,20 @@ finding whose quote is not literally in the file** (the model paraphrases and
 would otherwise invent). It also reads `src/pages`, which lv-polish cannot —
 and the worst of those three offenders was on a page.
 
+**Precision: roughly one finding in three is worth acting on.** Measured, not
+guessed — every finding on one article was judged by hand: 5 of 14 were real.
+A full run reports ~650 findings over 41 posts, which is not 650 errors; the
+model over-flags on long prose. **Use it to find PATTERNS that repeat across
+files, not as a to-do list.** Two such patterns were real and were fixed
+sitewide: "X puse" (14 instances) and the reflexive "optimizēties/optimizējas
+uz" (a system does not optimise *itself* onto a goal). The plain active
+"optimizē uz konversijām" is normal industry Latvian and stays.
+
+**It cannot tell voice from error.** On `/video-reklama/` it flagged the improv
+performers' own comedic bios — *"esmu improvēzijs gan Latvijā, gan citā vietā
+Latvijā"* is a joke, not a mistake. Never apply its findings to quoted people,
+testimonials or verbatim client copy. It is reliable on OUR prose only.
+
 **The calque it found most of: "X puse" for the English "the X side (of it)".**
 Fourteen instances across the blog — "kampaņas puse", "budžeta puse",
 "mājaslapas pusi", "meklētāja pusi", "plānošanas puse" — nearly all in the

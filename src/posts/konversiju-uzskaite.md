@@ -60,7 +60,7 @@ Otrā ir **notikumu atbilstības kvalitāte** jeb Event Match Quality. Tas ir v�
 
 ## Google: konversijas, ne apmeklējumi
 
-Google Ads pusē princips ir tāds pats. Kampaņa var optimizēties uz konversijām tikai tad, ja tās ir definētas.
+Google Ads kontā princips ir tāds pats. Kampaņu var optimizēt uz konversijām tikai tad, ja tās ir definētas.
 
 Praktiskā secība ir vienkārša. Google Analytics 4 atzīmē notikumu kā galveno notikumu, pēc tam importē to Google Ads kontā kā konversiju. Alternatīvi Google Ads uzskaites kodu var ievietot tieši paldies lapā.
 
@@ -90,7 +90,7 @@ Tie paši dati ir pamats atkārtotai uzrunai; kuras auditorijas tur vēl strād�
 
 ## Četras kļūdas, kas sabojā datus
 
-**Viss ir konversija.** Ja kontā ir atzīmētas septiņas konversijas, tostarp lapas apskates, sistēma optimizējas uz lētāko no tām. Atstāj vienu vai divas, kas tiešām nozīmē naudu.
+**Viss ir konversija.** Ja kontā ir atzīmētas septiņas konversijas, tostarp lapas apskates, sistēma optimizē reklāmu uz lētāko no tām. Atstāj vienu vai divas, kas tiešām nozīmē naudu.
 
 **Dubulta uzskaite.** Pikselis un serveris vienu pirkumu sūta divreiz, un atdeve izskatās divreiz labāka, nekā ir patiesībā. Lēmumi, kas pieņemti pēc šādiem datiem, maksā dārgi.
 
@@ -115,7 +115,7 @@ Ja reklāmas budžets jau tiek tērēts, šis ir darbs, pēc kura pirmo reizi re
 
 Nevis tāpēc, ka tas būtu grūti. Tāpēc, ka tas ir darbs, kuru izdara vienu reizi, un darbu, ko dara vienu reizi, neviens īsti neprot.
 
-Uzskaite nekad nesalūst skaļi. Tā nesūta paziņojumu. Formas spraudnis atjaunojas, paldies lapa tiek pārtaisīta, un notikums vienkārši pārstāj sūtīties. Reklāma turpina strādāt, atskaites turpina rādīt skaitļus, un pēc trim mēnešiem izrādās, ka sistēma visu šo laiku ir optimizējusies uz nepareizo darbību. Nauda ir iztērēta, un sliktākais ir tas, ka zaudēta arī mācīšanās. Dati par šo periodu vairs nav izmantojami.
+Uzskaite nekad nesalūst skaļi. Tā nesūta paziņojumu. Formas spraudnis atjaunojas, paldies lapa tiek pārtaisīta, un notikums vienkārši vairs netiek nosūtīts. Reklāma turpina strādāt, atskaites turpina rādīt skaitļus, un pēc trim mēnešiem izrādās, ka sistēma visu šo laiku ir optimizējusi reklāmu uz nepareizo darbību. Nauda ir iztērēta, un sliktākais ir tas, ka zaudēti arī dati, no kuriem sistēma mācās. Dati par šo periodu vairs nav izmantojami.
 
 Tieši te ir atšķirība starp cilvēku, kurš savu kontu redz vienu reizi, un cilvēku, kurš redz desmitiem kontu. Mēs nezinām Tavu biznesu labāk par Tevi. Bet mēs zinām, kā izskatās salūzusi uzskaite, jo esam redzējuši visus veidus, kā tā mēdz salūzt. Tāpēc pārbaudām tieši šīs vietas, pirms vispār pieskaramies kampaņai.
 
@@ -125,7 +125,7 @@ Un ir vēl viens arguments, kuru vērts pateikt skaidri. Stunda, ko Tu pavadi Ev
 
 **Ja gribi to saprast un uzstādīt pats**, mērīšanas pamati ir gan [Meta reklāmas kursā](/meta-reklamas-kurss/), gan [Google Ads kursā](/google-ads-kurss/), kur konversiju uzskaitei veltīts atsevišķs modulis. Trīs stundas tiešsaistē, mazā grupā, ar Tavu kontu ekrānā, nevis ar teoriju.
 
-**Ja gribi, lai to vienkārši salīdzina un salabo**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Vienā stundā izejam cauri Tavam kontam un pasakām, kas skaitās pareizi, kas neskaitās vispār un ko darīt vispirms. Konkrēts saraksts, ko vari izpildīt pats vai iedot kādam citam.
+**Ja gribi, lai to vienkārši pārbauda un salabo**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Vienā stundā izejam cauri Tavam kontam un pasakām, kas skaitās pareizi, kas neskaitās vispār un ko darīt vispirms. Konkrēts saraksts, ko vari izpildīt pats vai iedot kādam citam.
 
 **Ja gribi, lai kontu vada un uztur kāds cits**, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/).
 

@@ -12,7 +12,7 @@ keywords: ["B2B mārketings", "LinkedIn", "aukstā uzruna", "garš pārdošanas 
 
 ---
 
-Lielākā daļa mārketinga padomu ir rakstīti uzņēmumiem, kas pārdod tūkstošiem cilvēku. Ja Tavs viss tirgus Latvijā ir divsimt uzņēmumu, no kuriem patiešām piemēroti ir piecdesmit, šie padomi nestrādā. Un tā nav Tavas izpildes vaina.
+Lielākā daļa mārketinga padomu ir rakstīti uzņēmumiem, kas pārdod tūkstošiem cilvēku. Ja viss Tavs tirgus Latvijā ir divsimt uzņēmumu, no kuriem patiešām piemēroti ir piecdesmit, šie padomi nestrādā. Un tā nav Tavas izpildes vaina.
 
 Atšķirība nav tikai apjomā. B2B pircējs nav viens cilvēks, lēmums netiek pieņemts pāris dienās, un reklāmas sistēmas nav veidotas tam, lai atrastu piecdesmit konkrētus cilvēkus.
 
@@ -59,11 +59,11 @@ Sāc ar lapām par konkrētām problēmām, nevis par uzņēmumu. Reklāmā tie 
 
 Šo jautājumu B2B kontekstā uzdod visbiežāk, un uz to jāatbild precīzi.
 
-Eiropā komerciālu e-pastu sūtīšana bez piekrišanas ir ierobežota. Fiziskām personām tā nav atļauta. Uzņēmumu vispārējām adresēm dažos gadījumos to drīkst darīt, bet katrā vēstulē jābūt skaidram sūtītājam un iespējai atteikties. Dati jāiegūst likumīgi.
+Eiropā komerciālu e-pastu sūtīšana bez piekrišanas ir ierobežota. Fiziskām personām tā nav atļauta. Uz uzņēmumu vispārējām adresēm dažos gadījumos komerciālus e-pastus sūtīt drīkst, bet katrā vēstulē jābūt skaidram sūtītājam un iespējai atteikties. Dati jāiegūst likumīgi.
 
-Praktiski tas nozīmē trīs lietas. Nopirkts saraksts nav variants. Personiskas darbinieku adreses, kas savāktas internetā, nav variants. Un apjoms nav stratēģija. Piecdesmit personalizētas vēstules cilvēkiem, kuriem risinājums tiešām der, dod vairāk nekā pieci tūkstoši vienādu vēstuļu.
+Praktiski tas nozīmē trīs lietas. Nopirkts saraksts nav variants. Personiskas darbinieku adreses, kas savāktas internetā, nav variants. Un liels adresātu skaits pats par sevi nav stratēģija. Piecdesmit personalizētas vēstules cilvēkiem, kuriem risinājums tiešām der, dod vairāk nekā pieci tūkstoši vienādu vēstuļu.
 
-Ja neesi drošs, kurā pusē ir Tava kampaņa, sāc ar savu sarakstu un ieteikumiem. Rīki, ar ko to darīt, aprakstīti rakstā [e-pasta mārketings](/epasta_marketings/).
+Ja neesi drošs, vai Tava kampaņa ir pieļaujama, sāc ar savu sarakstu un ieteikumiem. Rīki, ar ko to darīt, aprakstīti rakstā [e-pasta mārketings](/epasta_marketings/).
 
 ## Kā mērīt, kad cikls ir garš
 
