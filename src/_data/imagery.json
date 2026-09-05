@@ -615,10 +615,10 @@
       "id": "info-facebook-kludas",
       "page": "5-visizplatitakas-kludas-reklamas-izvietosana-facebook",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: piecas biežākās kļūdas Facebook reklāmās — garlaicīgs saturs, Boost post Ads Manager vietā, kampaņa bez mērķa, trūkstošs Pixel un CAPI, un bailes testēt",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: piecas biežākās Facebook reklāmu kļūdas",
       "rationale": "The post is a numbered list of five named mistakes - the clearest possible fit for a five-item infographic.",
-      "prompt": "Headline: «Piecas biežākās Facebook reklāmu kļūdas». FIVE items in TWO rows - three above, two below. «01» «Garlaicīgs saturs» «Reklāma neuzrunā mērķauditoriju» - emblem: a pale grey feed card with three flat grey bars and one navy square, all muted, with a small cyan square set apart from it. «02» «Boost post Ads Manager vietā» «Mazāk kontroles, dārgāks rezultāts» - emblem: a navy square button shape beside a larger pale grey panel with three control rows, one cyan. «03» «Kampaņa bez mērķa» «Neviens nav pateicis, kas ir konversija» - emblem: a navy target ring with an empty centre and a cyan square lying outside it. «04» «Nav Pixel un CAPI» «Rezultāti netiek nomērīti» - emblem: a pale grey page joined by a broken navy line, with a visible gap, to a cyan square. «05» «Bailes testēt» «Viena bilde un viens teksts» - emblem: one navy rectangle alone beside a row of three pale grey rectangles, the middle one cyan."
+      "prompt": "Headline: «Piecas biežākās Facebook reklāmu kļūdas». FIVE items in one row. «01» «Poga zem ieraksta» «Viens variants, nav mērīšanas» - emblem: a pale grey post panel with one wide navy button bar beneath it and a small cyan cross over the button. «02» «Nepareizs mērķis» «Iesaiste, kad vajag pircējus» - emblem: a navy heart shape beside an empty navy shopping bag, the heart cut from cyan paper. «03» «Tikai pikselis» «Daļa pirkumu nenonāk līdz Meta» - emblem: a pale grey browser panel with a navy arrow leaving it that breaks into a gap before a cyan square. «04» «Piecas šauras auditorijas» «Sadalīts budžets» - emblem: five narrow navy columns of unequal height crowded together, one cut from cyan paper. «05» «Viens materiāls» «Auditorija to jau ir redzējusi» - emblem: one navy image frame repeated as five faint stacked copies behind it, the front one cyan."
     },
     {
       "id": "info-reklamas-teksta-solis",

@@ -2,9 +2,9 @@
 layout: post.njk
 title: "5 Visizplatītākās kļūdas reklāmas izvietošanā Facebook"
 seoTitle: "5 Visizplatītākās kļūdas reklāmas izvietošanā Facebook | Mārketinga Skola"
-description: "Reklāmas izvietošana Facebook ne vienmēr ir vienkāršs un saprotams process. Uzzini 5 visizplatītākās kļūdas reklāmas izvietošanā Facebook!"
+description: "Piecas kļūdas, kas Latvijas kontos apēd Facebook reklāmas budžetu: poga zem ieraksta, nepareizs mērķis, trūkstošs Conversions API, šauras auditorijas un viens materiāls."
 date: 2021-11-13
-updated: 2025-04-29
+updated: 2026-09-05
 image: "/img/gen/cover-5-visizplatitakas-kludas-reklamas-izvietosana-facebook.webp"
 legacyImage: "/img/2021/11/10.jpg"
 categories: ["socialo-tiklu-reklama"]
@@ -13,54 +13,74 @@ keywords: ["Facebook reklāmas kļūdas", "Ads Manager", "Boost post", "Facebook
 
 ---
 
-Vai dažreiz šķiet, ka Tavas reklāmas izvietošana Facebook ir izmaksājusi ļoti daudz naudas, taču diemžēl reklāma nav pat pietuvojusies vēlamajiem rezultātiem?
+Facebook reklāma reti izgāžas tāpēc, ka platforma ir slikta. Tā izgāžas tāpēc, ka budžets aiziet vienā no piecām vietām, ko var pamanīt vēl pirms kampaņas palaišanas.
 
-Šī problēma ir itin bieži sastopama, tāpēc neuztraucies : Tu neesi vienīgais! Tik daudzi cilvēki pieļauj tās pašas kļūdas un galu galā vienkārši velti izšķiež visu savu Facebook reklāmas budžetu.
-
-Sociālo tīklu mārketings, tai skaitā reklāmas izvietošana Facebook ir lielisks veids, kā piesaistīt jaunus potenciālos klientus un attīstīt sava uzņēmuma mārketingu, tāpēc tiešām vēlamies Tev palīdzēt. Šajā rakstā gūsi vērtīgu ieskatu 5 visizplatītākajās kļūdās, ko cilvēki pieļauj, izvietojot savas reklāmas Facebook. Sapratīsi, no kā tiešām jāizvairās un kas jāņem vērā, lai izveidotu veiksmīgu un ienesīgu Facebook reklāmas kampaņu!
+Šīs piecas kļūdas Latvijas kontos redzam biežāk nekā visas pārējās kopā. Katrai kļūdai ir norādīts, kā to pamanīt un ko darīt citādi.
 
 <iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## 1. Garlaicīgs un mērķauditorijas interesēm nepiemērots saturs
+## 1. Poga "Reklamēt ierakstu" reklāmu pārvaldnieka vietā
 
-Reklāmas izvietošana Facebook sniedz garantiju, ka Tavu reklāmu parādīs Tavai vēlamajai mērķauditorijai. Tomēr, kad reklāma tiek parādīta īstajam lietotājam, viņš tāpat var uz tās mierīgi neuzspiest. Kādēļ? Ja saturs nešķiet vērtīgs, bet garlaicīgs, tad mums nevienam nebūs intereses iedziļināties reklāmā. Tas taču ir loģiski! Iesakām tiešām pārliecināties, ka maksā tikai par tāda reklāmas satura izplatīšanu, kas Tavai auditorijai patiks visvairāk. Ir vērtīgi izpētīt savas auditorijas intereses, lai veiksmīgi ieintriģētu viņus savā reklāmā.
+Poga zem ieraksta ir ērtākais veids, kā iztērēt naudu bez rezultāta. Tā palaiž vienu reklāmas variantu, piedāvā ierobežotu mērķu izvēli un neļauj pilnvērtīgi izmērīt rezultātus.
 
-## 2. Ads Manager vietā tiek izmantota Boost post funkcija
+Reklāmu pārvaldnieks jeb Ads Manager ļauj izvēlēties pareizo mērķi, salikt vairākus materiālus vienā reklāmu kopā un redzēt, kurš no tiem tiešām atved klientus.
 
-Gan Facebook reklāmu pārvaldnieks (Ads manager) gan Boost post ir Facebook reklāmas rīki. Tie abi spēj parādīt reklāmas atlasītajai mērķauditorijai, tomēr jāatzīst, ka Ads manager ir daudz elastīgāks un vieglāk lietojams. Ar Facebook Ads Manager var testēt daudz dažādas reklāmu variācijas, tādējādi labāk nooptimizējot kampaņas un testējot, kas strādā. Boost post savukārt atbalsta tikai vienu reklāmas variantu.
+**Kā pamanīt:** ja Tu nekad neesi atvēris [Meta Ads Manager](https://adsmanager.facebook.com/) un visas reklāmas esi palaidis no lapas, šī kļūda ir Tavā kontā.
 
-Kopumā mūsu verdikts ir sekojošs: Facebook Ads manager ir jaudīgāks un profesionālāks rīks par Boost post. Lai gan ar Boost post uzsākt reklāmu ir krietni vienkāršāk, tas nesniedz pietiekami daudz fleksibilitātes, lai spētu kampaņai nest ilgstošus un optimizētus rezultātus.
+## 2. Nepareizs kampaņas mērķis
 
-Ticam, ka laika gaitā saprastīsi, kuri Facebook reklāmas mērķi vislabāk atbilst Taviem Facebook mārketinga mērķiem, lai attiecīgi varētu pilnveidot savu [mārketinga stratēģijas izstrādi](/marketinga-strategijas-izstrade/).
+Meta optimizē reklāmu tieši tam, ko Tu prasi. Prasi patīk atzīmes un komentārus, un tos arī saņemsi. Tikai bieži no cilvēkiem, kuri nekad neko nepirks.
 
-## 3. Facebook kampaņai nav konkrēta mērķa
+Praktiskais ieteikums lielākajai daļai Latvijas uzņēmumu paliek nemainīgs. E-komercijai izvēlies pārdošanu ar optimizāciju pirkumam. Pakalpojumu sniedzējiem izvēlies potenciālos klientus.
 
-Pirms Facebook kampaņas uzsākšanas ir jābūt skaidri noteiktam kampaņas mērķim. Facebook Tavam uzņēmumam dos to, ko Tu viņam prasīsi. Šie mērķi var būt dažādi, piemēram, lielāka sekotāju iesaiste vai plašāka uzņēmuma atpazīstamība.
+**Kā pamanīt:** kampaņa rāda lētus klikšķus un labu iesaisti, bet pieteikumu vai pasūtījumu skaits nemainās.
 
-90% Latvijas uzņēmumu iesakām rīkoties sekojoši – _e-komercijai izmantot Sales (Purchase) optimizāciju,_ un _pakalpojumu sniedzījiem Leads – potenciālo klientu piesaisti._
+## 3. Signāls nāk tikai no pikseļa
 
-Lai arī izklausās diezgan vienkārši, konkrēts Facebook kampaņas mērķis ir īstā veiksmes atslēga. Ja precīzi nenoteiksi, ko vēlies sasniegt ar savu kampaņu, diemžēl visdrīzākais, ka Tava reklāmas izvietošana Facebook nenesīs cerētos augļus.
+Šī ir kļūda, kas dažu gadu laikā no sīkuma kļuvusi par būtisku problēmu. Pikselis darbojas pārlūkprogrammā, un pārlūkprogrammas to bloķē arvien biežāk. Daļa pirkumu vienkārši nenonāk līdz Meta.
 
-## 4. Mājaslapā nav ievietots [Facebook Pixel](https://www.facebook.com/business/tools/meta-pixel) un CAPI
+Risinājums ir servera puses notikumi jeb Conversions API. Tas nosūta datus no Tavas mājaslapas servera, kur reklāmu bloķētājs tos neaizsniedz. Abus var savienot [Meta Events Manager](https://business.facebook.com/events_manager2/) sadaļā, un lielākajai daļai mājaslapu platformu tam ir gatavs pieslēgums.
 
-_Facebook Pixel_ ir koda elements, ko var ievietot savā mājaslapā. Tas apkopo datus, ar kuru palīdzību Tu vari izsekot, cik cilvēku ir apskatījuši Tavu mājaslapu, uzklikšķinot uz tās no Facebook reklāmām. Šo datu dēļ vari viegli optimizēt reklāmas un veidot mērķauditorijas nākamajām reklāmām. _Facebook Pixel_ palīdz atkārtoti parādīt reklāmas cilvēkiem, kuri jau iepriekš ir apmeklējuši Tavu mājaslapu, tādējādi atgādinot viņiem par pakalpojumu, ko Tu piedāvā. Reklāmas izvietošana Facebook garantēti nesīs labākus rezultātus, ja izmantosi Facebook Pixel, jo tā sniegtos datus varēsi izmantot, lai palielinātu reklāmas efektivitāti.
+**Kā pamanīt:** notikumu kvalitātes rādītājs ir zems, vai Meta rāda mazāk pirkumu nekā Tava grāmatvedība.
 
-## 5. Bailes testēt vairākas bildes un reklāmas tekstus
+## 4. Pārāk daudz un pārāk šauras auditorijas
 
-Diemžēl viena no sastopamākajām kļūdām ir cilvēku bailes no dažādu bilžu un reklāmas tekstu testēšanas savai Facebook reklāmai. Reklāmas izvietošana Facebook nevar būt garantēti veiksmīgākā, ja pirms tam nav iztestēts, kuras bildes pie publikācijām mērķauditorijai patīk visvairāk, kā arī, kuri reklāmas teksti šķiet vissaistošākie. Iesakām no sākumā izvēlēties vairākas bildes un izveidot vairākus reklāmas tekstus, lai saprastu, kura bilde un kurš teksts visvairāk ieintriģē Tavu mērķauditoriju.
+Kādreiz uzvarēja tas, kurš prata izveidot precīzāku interešu auditoriju. Šodien tas parasti traucē.
+
+Vairākas šauras kopas savā starpā pārklājas un konkurē vienā izsolē. Budžets sadalās, neviena kopa nesavāc pietiekami daudz datu, un sistēma nepaspēj saprast, kuri cilvēki pērk.
+
+Tā vietā sāc ar vienu reklāmu kopu un plašu auditoriju: valsts, valoda, vecums. Auditorijas atlasi atstāj algoritmam, bet savu darbu ieguldi materiālos.
+
+**Kā pamanīt:** kontā ir piecas vai vairāk aktīvas reklāmu kopas, un katra tērē tikai dažus eiro dienā.
+
+## 5. Viens reklāmas materiāls, kas nolietojas
+
+Reklāma, kas pirmajā nedēļā strādāja lieliski, pēc mēneša maksā divreiz dārgāk. Tas nenozīmē, ka algoritms ir sabojājies. Tā pati auditorija šo reklāmu jau ir redzējusi piecas reizes.
+
+Praktiskais minimums ir trīs līdz pieci atšķirīgi materiāli vienā kopā. Ne vienas bildes krāsu varianti, bet dažādas idejas: produkts darbībā, klienta atsauksme, atbilde uz konkrētu iebildumu.
+
+**Kā pamanīt:** klikšķa cena aug nedēļu no nedēļas, bet kontā nekas nav mainīts.
 
 {% infographic { id: "info-facebook-kludas", title: "Piecas biežākās Facebook reklāmu kļūdas", items: [
- { label: "Garlaicīgs saturs", text: "Reklāma neuzrunā mērķauditoriju." },
- { label: "Boost post Ads Manager vietā", text: "Mazāk kontroles, dārgāks rezultāts." },
- { label: "Kampaņa bez mērķa", text: "Neviens nav pateicis, kas ir konversija." },
- { label: "Nav Pixel un CAPI", text: "Rezultāti netiek nomērīti." },
- { label: "Bailes testēt", text: "Viena bilde un viens teksts." }
+ { label: "Poga zem ieraksta", text: "Viens variants, nav mērīšanas." },
+ { label: "Nepareizs mērķis", text: "Iesaiste, kad vajag pircējus." },
+ { label: "Tikai pikselis", text: "Daļa pirkumu nenonāk līdz Meta." },
+ { label: "Piecas šauras auditorijas", text: "Sadalīts budžets, nesalasāmi dati." },
+ { label: "Viens materiāls", text: "Auditorija to jau ir redzējusi." }
 ] } %}
 
-## Mārketinga skola iesaka
+## Bonuss: kļūda, ko pieļauj arī pieredzējušie
 
-Cerams, šie ieteikumi patiešām Tev bija vērtīgi! Lai izdodas izveidot lielisku Facebook reklāmu, kurā ne tikai sasniedz savu vēlamo mērķauditoriju, bet diezgan īsā laika periodā pārvērt šo auditoriju par Taviem uzticamajiem klientiem!
+Kampaņas maiņa katru dienu. Sistēmai vajag apmēram piecdesmit konversijas nedēļā vienā kopā, lai izietu no mācīšanās posma. Katrs budžeta vai auditorijas labojums šo posmu sāk no jauna.
 
-Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts mūsu [Meta reklāmas kurss](/meta-reklamas-kurss/).
+Praktiska robeža: budžetu nemaini biežāk kā reizi nedēļā un ne vairāk kā par divdesmit procentiem. Rezultātus vērtē nedēļas, nevis dienas griezumā.
 
-Ja tomēr nepieciešama papildus palīdzība [Facebook reklāmas](/facebook-reklamas-izstrade/) izvietošanā, stratēģijas izveidē un pārdošanas apjoma palielināšanā, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).
+## Ar ko sākt labošanu
+
+Ja kontā ir vairākas no šīm kļūdām, nelabo visas vienlaikus. Sāc ar signālu, jo bez tā pārējie labojumi nav izmērāmi. Tad nomaini mērķi, pēc tam izveido vienu plašu kopu ar vairākiem materiāliem un tikai pēc divām nedēļām skaties, kas ir mainījies.
+
+Kā šī secība izskatās no nulles, esam aprakstījuši rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Ko darīt ar materiāliem, lasi rakstā [Instagram reklāma](/instagram-reklama/).
+
+Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē ar savu kontu rokās.
+
+Ja gribi, lai konts tiek sakārtots bez Tavas iesaistes, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).
