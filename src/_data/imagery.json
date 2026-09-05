@@ -961,6 +961,33 @@
       "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā pārbaudīt, vai konversiju uzskaite strādā",
       "rationale": "Everyone installs tracking and believes it; the checking sequence is the part that is skipped, so it deserves its own picture.",
       "prompt": "Headline: «Kā pārbaudīt uzskaiti». FOUR items in one row. «01» «Veic testa darbību» - emblem: a pale grey form panel with three navy field bars and a solid cyan button beneath them. «02» «Pārbaudi Meta pusē» - emblem: a navy rounded square containing a solid cyan check mark. «03» «Pārbaudi Google pusē» - emblem: a navy magnifying glass over a pale grey panel with two cyan bars. «04» «Salīdzini ar grāmatvedību» - emblem: two pale grey documents side by side with a solid cyan equals sign between them."
+    },
+    {
+      "id": "cover-google-ads-pirma-kampana",
+      "page": "google-ads-pirma-kampana",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Balta meklēšanas rinda ar vienu ciāna bloku virs pārējiem rezultātiem, attēlojot pirmo Google Ads kampaņu",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Left of centre, one long white #ffffff horizontal hairline forms an empty input field, open at both ends. Beneath it, four flat cool grey #55697e horizontal bars of decreasing length stack downward with generous spacing, and one solid cyan #03c3f8 bar sits above them all, slightly wider, offset to the left. Vast empty navy on the right. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "First Google Ads campaign - the paid placement sitting above the organic rows, with nothing else in the frame."
+    },
+    {
+      "id": "info-google-ads-pirms-sakt",
+      "page": "google-ads-pirma-kampana",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs lietas, kas jāsakārto pirms pirmās Google Ads kampaņas",
+      "rationale": "The three prerequisites are where first campaigns fail; naming them before the setup steps is the point of the article.",
+      "prompt": "Headline: «Trīs lietas pirms pirmās kampaņas». THREE items in one row. «01» «Konversiju uzskaite» «Bez tās maksā par klikšķiem» - emblem: a pale grey browser panel with a solid cyan arrow leaving its base into a navy server slab. «02» «Galamērķa lapa» «Ar cenu un vienu darbību» - emblem: a pale grey page with two navy text bars and one solid cyan button bar beneath them. «03» «Vaicājumu saraksts» «Ko cilvēki tiešām meklē» - emblem: a navy magnifying glass over a pale grey panel holding three short cyan bars."
+    },
+    {
+      "id": "info-google-ads-pirmas-nedelas",
+      "page": "google-ads-pirma-kampana",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: ko darīt Google Ads kampaņas pirmajās divās nedēļās",
+      "rationale": "Beginners fiddle daily with the wrong things; the picture separates what to touch every day from what to leave alone.",
+      "prompt": "Headline: «Pirmās divas nedēļas». FOUR items in one row. «01» «Katru dienu» «Vaicājumi un negatīvie» - emblem: a pale grey list panel of navy bars with a solid cyan cross removing one of them. «02» «Neaiztiec» «Budžetu un cenas» - emblem: a navy hand shape flat over a pale grey slider bar with a cyan knob. «03» «Otrā nedēļa» «Izslēdz vājos» - emblem: four navy bars of unequal height with the tallest cut from cyan paper. «04» «Pēc mēneša» «Vērtē pēc klienta cenas» - emblem: a navy person silhouette beside a solid cyan coin circle."
     }
   ]
 }
