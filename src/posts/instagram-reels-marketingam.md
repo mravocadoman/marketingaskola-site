@@ -213,6 +213,8 @@ Reels joprojām ir formāts ar lielāko organisko sasniedzamību Instagram, un t
 
 Tieši šī kombinācija darbojas vislabāk: organiski testē, ar budžetu palielini sasniedzamību. Kā to uzstādīt, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet cenu puse rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
+Tas pats amats der arī citur: kā šos video veidot TikTok un kāpēc materiāls pārceļas starp platformām, aprakstīts rakstā [TikTok reklāmas](/tiktok-reklamas-klientu-piesaistisanai/).
+
 ## Ar ko sākt šonedēļ
 
 Uzfilmē trīs īsus vertikālus video ar telefonu. Pirmajās trīs sekundēs parādi cilvēku vai konkrētu problēmu. Subtitri ir obligāti. Katrā video iekļauj vienu domu.

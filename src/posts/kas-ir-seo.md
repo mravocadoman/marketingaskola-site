@@ -103,6 +103,8 @@ Lūk, ko Tu vari sākt darīt jau šodien:
  { label: "Regulāra publicēšana", text: "Konsekvence signalizē, ka lapa ir aktīva." }
 ] } %}
 
+Kā šo saturu praktiski plānot un rakstīt, aprakstīts rakstā [satura mārketings](/satura-marketings/).
+
 ## Cik ilgi jāgaida rezultāts
 
 Godīga atbilde: pirmās izmaiņas parasti redzamas pēc trim mēnešiem, nopietns rezultāts pēc sešiem līdz divpadsmit mēnešiem. Tāpēc SEO nav risinājums, ja klienti vajadzīgi jau nākamnedēļ. Tam der [Google reklāma](/google-reklama-2025/) vai [Meta reklāma](/facebook-reklama/). Abus kanālus ir gudri izmantot paralēli: reklāma nes klientus tagad, bet SEO ar laiku samazina to cenu.

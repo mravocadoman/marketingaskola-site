@@ -111,6 +111,8 @@ Mārketinga stratēģija nosaka virzienu: kā uzņēmums komunicēs, kuri kanāl
  { label: "Stratēģija", text: "Plāns pirms izpildes." }
 ] } %}
 
+Vai aģentūra Tavā situācijā vispār ir pareizā izvēle salīdzinājumā ar frīlanseri vai savu komandu, apskatām rakstā [digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt](/digitala-marketinga-agentura-izaugsmei/), bet to, kad ārējs partneris tiešām atmaksājas un kad izdevīgāk darīt pašam, rakstā [reklāmas aģentūras](/reklamas-agenturas/).
+
 ## Ko jautāt aģentūrai, pirms paraksti līgumu
 
 Sešas lietas, kas 2026. gadā atšķir aģentūru, kura tiešām strādā, no tādas, kura tikai sūta atskaites.

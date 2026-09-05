@@ -24,6 +24,8 @@ Tāpēc šis raksts nav par to, kā aģentūras sevi apraksta. Tas ir par to, **
  { label: "Rezultāti nepieaug", text: "Budžets tērēts, skaitļi stāv." }
 ] } %}
 
+Ja meklē plašāku salīdzinājumu starp aģentūru, frīlanseri un savu komandu, tas ir rakstā [digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt](/digitala-marketinga-agentura-izaugsmei/).
+
 ## Trīs pazīmes, ka ir laiks
 
 **Reklāma vienmēr paliek uz vēlāk.** Kampaņa palaista pirms trim mēnešiem un kopš tā laika neviens tajā nav ieskatījies. Tas ir dārgākais variants, budžets tērējas, uzmanība nav.

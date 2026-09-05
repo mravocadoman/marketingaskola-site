@@ -61,6 +61,8 @@ Digitālā reklāma ar aģentūras palīdzību pārspēj tradicionālo TV vai av
  { label: "Sava komanda", text: "Pilna kontrole, augstākas izmaksas." }
 ] } %}
 
+Kad aģentūra dod reālu vērtību un kad izdevīgāk darīt pašam, esam izvērtējuši rakstā [reklāmas aģentūras](/reklamas-agenturas/), bet to, ko aģentūra praktiski dara ikdienā, rakstā [kas ir mārketinga aģentūra](/marketinga-agentura-uzlabo-pardosanu/).
+
 ## Ceturtā iespēja: "mēs to izdarīsim ar mākslīgo intelektu"
 
 Šo variantu 2026. gadā apsver gandrīz katrs uzņēmums, tāpēc ir vērts to izvērtēt godīgi.

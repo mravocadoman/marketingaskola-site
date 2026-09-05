@@ -81,6 +81,8 @@ Ja kontā ir vairākas no šīm kļūdām, nelabo visas vienlaikus. Sāc ar sign
 
 Kā šī secība izskatās no nulles, esam aprakstījuši rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Ko darīt ar materiāliem, lasi rakstā [Instagram reklāma](/instagram-reklama/).
 
+Vai Facebook vispār ir Tavai auditorijai pareizā platforma, palīdz izvērtēt raksts [mārketinga mācības: kā izmantot Facebook reklāmas](/marketinga-macibas/).
+
 Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē ar savu kontu rokās.
 
 Ja gribi, lai konts tiek sakārtots bez Tavas iesaistes, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).
