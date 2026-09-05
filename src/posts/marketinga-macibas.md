@@ -69,16 +69,16 @@ Mūsu Mārketinga skolas vadītājs Rihards Zeiļa mūsu komandā ir ne tikai va
 
 Mūsu Facebook mārketinga mācības sevī iekļauj:
 
--   Facebook algoritma apguvi
--   ️Saistošu reklāmas tekstu un dizaina izveidi
--   ️Efektīvas reklāmas pamatprincipu apguvi
--   Remārketinga un _lookalike audiences_ apguvi
--   Izpratni par daudzajām Facebook reklāmas opcijām: Facebook Pixel, Boost Post utt.
+- Facebook algoritma apguvi
+- ️Saistošu reklāmas tekstu un dizaina izveidi
+- ️Efektīvas reklāmas pamatprincipu apguvi
+- Remārketinga un _lookalike audiences_ apguvi
+- Izpratni par daudzajām Facebook reklāmas opcijām: Facebook Pixel, Boost Post utt.
 
 {% infographic { id: "info-marketinga-macibas", title: "Pirms sāc mācīties Facebook reklāmu", items: [
-  { label: "Kas ir Facebook reklāma", text: "Maksas ieraksts cilvēka plūsmā." },
-  { label: "Vai platforma Tev der", text: "Kur ir Tavi klienti." },
-  { label: "Ko sniegs mācības", text: "Prasme uzstādīt kampaņu pašam." }
+ { label: "Kas ir Facebook reklāma", text: "Maksas ieraksts cilvēka plūsmā." },
+ { label: "Vai platforma Tev der", text: "Kur ir Tavi klienti." },
+ { label: "Ko sniegs mācības", text: "Prasme uzstādīt kampaņu pašam." }
 ] } %}
 
 ## Mārketinga skolas piedāvājums

@@ -33,22 +33,22 @@ Atceries: _Tavas reklāmas teksts ir viens no svarīgākajiem faktoriem, jo tas 
 
 ## Piemēroti vizuālie materiāli
 
-Kāpēc Instagram ir viena no labākajām sociālo mediju mārketinga platformām? Cilvēkus dabiski piesaista vizuāls saturs un estētiski vizuālie materiāli. Cilvēka uztvere un pirmais iespaids par zīmolu ir atkarīgs no tā, ko viņš vai viņa redz Instagram reklāmā. Ja vēlies piesaistīt vairāk uzmanības Instagram, tad noteikti atceries, ka ir jāveido reklāmas, kas ir estētiski pievilcīgas. Īsāk sakot, Tavs uzdevums ir izveidot vai atrast vizuāli (bildi, attēlu, zīmējumu) , kas ir “vienīgais īstais”, jo parāda tieši to, ko vēlies pateikt.
+Kāpēc Instagram ir viena no labākajām sociālo mediju mārketinga platformām? Cilvēkus dabiski piesaista vizuāls saturs un estētiski vizuālie materiāli. Cilvēka uztvere un pirmais iespaids par zīmolu ir atkarīgs no tā, ko viņš vai viņa redz Instagram reklāmā. Ja vēlies piesaistīt vairāk uzmanības Instagram, tad noteikti atceries, ka ir jāveido reklāmas, kas ir estētiski pievilcīgas. Īsāk sakot, Tavs uzdevums ir izveidot vai atrast vizuāli (bildi, attēlu, zīmējumu), kas ir “vienīgais īstais”, jo parāda tieši to, ko vēlies pateikt.
 
 Noteikti atceries, ka Tavam vizuālim ir jābūt piemērotam nozarei, kurā darbojies, kā arī silti iesakām publicēt sava reklamējamā produktu attēlu. Noteikti apsver domu par sadarbību ar grafisko dizaineri, kurš varētu Tavas Instagram reklāmas vizuālos materiālus pacelt jaunā līmenī!
 
 {% infographic { id: "info-instagram-reklamas-soli", title: "Instagram reklāmas trīs pamati", items: [
-  { label: "Mērķauditorijas izpēte", text: "Kam Tu runā." },
-  { label: "Saistošs teksts", text: "Pirmā rinda izlemj visu." },
-  { label: "Piemēroti vizuālie materiāli", text: "Attēls, ko pamana plūsmā." }
+ { label: "Mērķauditorijas izpēte", text: "Kam Tu runā." },
+ { label: "Saistošs teksts", text: "Pirmā rinda izlemj visu." },
+ { label: "Piemēroti vizuālie materiāli", text: "Attēls, ko pamana plūsmā." }
 ] } %}
 
 ## Mārketinga skolas piedāvājums
 
 Vai pēc šī bloga raksta izlasīšanas jūties pārliecinātāks par savu Instagram reklāmu? Atceries, ka jaudīga Instagram reklāma ir pavisam vienkārši izveidojama un sastāv no 3 galvenajiem faktoriem:
 
--   mērķauditorijas izpētes,
--   pievilcīga vizuāļa,
--   [saistoša reklāmas teksta](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/)
+- mērķauditorijas izpētes,
+- pievilcīga vizuāļa,
+- [saistoša reklāmas teksta](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/)
 
 Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un iegūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, tad mēs tev piedāvājam [Facebook un Instagram reklāmas kursu](/meta-reklamas-kurss/) tiešsaites formātā, kas palīdzēs tavam uzņēmumam attīstīties!

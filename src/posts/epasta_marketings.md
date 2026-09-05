@@ -35,11 +35,11 @@ E-pasta kampaņas nekad nebūs efektīvas, ja aiz tām nestāvēs kvalitatīva e
 
 Biežāk sastopamie veidi, kā Tu vari tikt pie potenciālo vai esošo pircēju e-pastiem:
 
--   caur mājaslapas pieteikuma formām,
--   piedāvājot lejupielādējamus bezmaksas materiālus _(lead magnets)_
--   no semināriem gan online, gan klātienē,
--   pēcpirkuma komunikācijā,
--   no reklāmām.
+- caur mājaslapas pieteikuma formām,
+- piedāvājot lejupielādējamus bezmaksas materiālus _(lead magnets)_
+- no semināriem gan online, gan klātienē,
+- pēcpirkuma komunikācijā,
+- no reklāmām.
 
 Svarīgi ir tas, lai cilvēks e-pasta ziņojuma saņemšanai pierakstās apzināti. Pirktas datubāzes praktiski vienmēr beidzas ar zemu iesaisti, sūdzībām un bloķētiem sūtītājiem.
 
@@ -55,11 +55,11 @@ E-pasta pamattekstā ir svarīgi nerakstīt “sausas” reklāmas: “Pērciet,
 
 **Vislabāk e-pasta pārdošanas komunikācijā strādā šāda secība:**
 
-1.  vispirms tiek sniegts vērtīgs saturs,
-2.  pēc tam aktualizēta klienta problēma,
-3.  piedāvāts risinājums,
-4.  nostiprināta uzticība citu klientu pieredzi, stāstiem un
-5.  beigās dots skaidrs aicinājums rīkoties.
+1. vispirms tiek sniegts vērtīgs saturs,
+2. pēc tam aktualizēta klienta problēma,
+3. piedāvāts risinājums,
+4. nostiprināta uzticība citu klientu pieredzi, stāstiem un
+5. beigās dots skaidrs aicinājums rīkoties.
 
 Tieši šeit e-pasts visorganiskāk savienojas ar sociālajiem tīkliem, reklāmām un mājaslapu vienotā sistēmā.
 
@@ -74,8 +74,8 @@ Ar Instantly.ai iespējams strādāt ar warm leads jeb jau iesildītiem potenci�
 Papildus tam Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu gudrāk iesaistīt kontaktus, analizēt atbildes un optimizēt kampaņas. Dodies uz [Instantly.ai](https://instantly.ai/) un padari savu e-pasta mārketingu par mērķtiecīgu pārdošanas procesu.
 
 {% infographic { id: "info-epasta-kludas", title: "Divas biežākās e-pasta kļūdas", items: [
-  { label: "Sūtījums bez mērķa", text: "Nav pateikts, ko cilvēkam darīt." },
-  { label: "Viens saturs visiem", text: "Segmentācijas trūkums." }
+ { label: "Sūtījums bez mērķa", text: "Nav pateikts, ko cilvēkam darīt." },
+ { label: "Viens saturs visiem", text: "Segmentācijas trūkums." }
 ] } %}
 
 ## Automatizācija, pārdošana un rezultātu mērīšana
@@ -87,10 +87,10 @@ Tieši šeit e-pasts kļūst par pārdošanas dzinēju, kas darbojas katru dienu
 Uzzini vairāk par [digitālajiem mārketinga rīkiem šeit](/7-digitala-marketinga-riki/).
 
 {% infographic { id: "info-epasta-marketinga-soli", title: "E-pasta mārketings četros soļos", items: [
-  { label: "Kvalitatīva liste", text: "Cilvēkam pašam jāgrib saņemt Tavas ziņas." },
-  { label: "Skaidrs kampaņas mērķis", text: "Ko cilvēkam vajadzētu izdarīt pēc šī e-pasta." },
-  { label: "Automatizācija", text: "E-pasts aiziet pēc konkrētas darbības." },
-  { label: "Rezultātu mērīšana", text: "Atvērumi, klikšķi un pārdošana." }
+ { label: "Kvalitatīva liste", text: "Cilvēkam pašam jāgrib saņemt Tavas ziņas." },
+ { label: "Skaidrs kampaņas mērķis", text: "Ko cilvēkam vajadzētu izdarīt pēc šī e-pasta." },
+ { label: "Automatizācija", text: "E-pasts aiziet pēc konkrētas darbības." },
+ { label: "Rezultātu mērīšana", text: "Atvērumi, klikšķi un pārdošana." }
 ] } %}
 
 ## Biežākās kļūdas e-pasta mārketingā
@@ -102,6 +102,6 @@ Kļūdas gan pieļauj ne tikai e-pastu mārketingā, bet arī tik bieži izmanto
 
 E-pasta mārketings nav vecmodīgs instruments – tas ir viens no stabilākajiem pārdošanas balstiem digitālajā mārketingā. Ja ir **kvalitatīvs e-pastu saraksts, skaidra stratēģija, automatizācija un regulāra rezultātu analīze**, e-pasts spēj nodrošināt ilgtermiņa ieņēmumus un uzticamus klientus.
 
-E-pasts reti strādā viens pats — kā to savieno ar pārējiem kanāliem, redzams mūsu [pakalpojumu sadaļā](/pakalpojumi/).
+E-pasts reti strādā viens pats, kā to savieno ar pārējiem kanāliem, redzams mūsu [pakalpojumu sadaļā](/pakalpojumi/).
 
 Ja vēlies, lai mēs palīdzam sakārtot e-pasta mārketingu Tavā biznesā un izveidot sistēmu, kas reāli strādā, [piesakies konsultācijai.](/sazinies/)

@@ -35,11 +35,11 @@ Vēl viens pluss – satura mārketings. Aģentūra rada bloga ierakstus, video 
 
 Lai sadarbība būtu efektīva, seko šim plānam:
 
-1.  **Definē mērķus.** Sāc ar skaidriem, izmērāmiem KPI – vairāk mājaslapas apmeklējumu, vairāk pieteikumu vai lielāks pārdošanas apjoms. Aģentūra palīdzēs Tev šos mērķus padarīt konkrētus un reālistiskus, balstoties uz Taviem datiem un pieredzi.
-2.  **Veic auditu.** Aģentūra pārbauda Tavu mājaslapu, sociālos profilus un esošās kampaņas. Tas atklāj ātras uzvaras, piemēram, lēni ielādējošas lapas vai neoptimizētus meta tagus.
-3.  **Izstrādā stratēģiju.** Balstoties uz datiem, tiek izveidots plāns: SEO, PPC, sociālie mediji, e-pasts. Piemēram, digitālā reklāma sākas ar A/B testiem, lai atrastu kreatīvus, kas konvertējas vislabāk.
-4.  **Īstenošana un pastāvīga optimizācija.** Kad kampaņas ir palaistas, darbs tikai sākas: katru nedēļu analizējam rezultātus, veicam precīzas korekcijas un vizualizējam datus Google Data Studio pārskatos – tā mēs nodrošinām, ka Tavs reklāmas budžets strādā ar maksimālu efektivitāti.
-5.  **Mēri rezultātus.** Pēc 3 mēnešiem vērtē ROI. Ja nepieciešams, skalē uzvarējošos kanālus.
+1. **Definē mērķus.** Sāc ar skaidriem, izmērāmiem KPI – vairāk mājaslapas apmeklējumu, vairāk pieteikumu vai lielāks pārdošanas apjoms. Aģentūra palīdzēs Tev šos mērķus padarīt konkrētus un reālistiskus, balstoties uz Taviem datiem un pieredzi.
+2. **Veic auditu.** Aģentūra pārbauda Tavu mājaslapu, sociālos profilus un esošās kampaņas. Tas atklāj ātras uzvaras, piemēram, lēni ielādējošas lapas vai neoptimizētus meta tagus.
+3. **Izstrādā stratēģiju.** Balstoties uz datiem, tiek izveidots plāns: SEO, PPC, sociālie mediji, e-pasts. Piemēram, digitālā reklāma sākas ar A/B testiem, lai atrastu kreatīvus, kas konvertējas vislabāk.
+4. **Īstenošana un pastāvīga optimizācija.** Kad kampaņas ir palaistas, darbs tikai sākas: katru nedēļu analizējam rezultātus, veicam precīzas korekcijas un vizualizējam datus Google Data Studio pārskatos – tā mēs nodrošinām, ka Tavs reklāmas budžets strādā ar maksimālu efektivitāti.
+5. **Mēri rezultātus.** Pēc 3 mēnešiem vērtē ROI. Ja nepieciešams, skalē uzvarējošos kanālus.
 
 Katrs solis balstās uz iepriekšējo, tāpēc tos nav vērts izlaist – un rezultātus vērtē pēc datiem, nevis sajūtas. Vairāk par to, kāpēc digitālais mārketings ir svarīgs, lasi rakstā [par digitālo mārketingu](/digitalais-marketings/).
 
@@ -49,20 +49,20 @@ Daudzi uzņēmumi mēģina darīt visu paši vai izmanto frīlanserus, bet digit
 
 Piemēram, salīdzinot ar pašmāju reklāmu pārvaldību:
 
--   **Pašam:** Laiks, kļūdas, zems ROI.
--   **Frīlanseris:** Lētāks, bet nestabila kvalitāte.
--   **Aģentūra:** Eksperti, dati, regulāra optimizācija.
+- **Pašam:** Laiks, kļūdas, zems ROI.
+- **Frīlanseris:** Lētāks, bet nestabila kvalitāte.
+- **Aģentūra:** Eksperti, dati, regulāra optimizācija.
 
 Digitālā reklāma caur aģentūru pārspēj tradicionālo TV vai avīžu sludinājumus, jo ir mērāma un pielāgojama reāllaikā.
 
 {% infographic { id: "info-agentura-vai-komanda", title: "Aģentūra, frīlanseris vai sava komanda", items: [
-  { label: "Aģentūra", text: "Vairākas kompetences uzreiz." },
-  { label: "Frīlanseris", text: "Viena joma, elastīgi." },
-  { label: "Sava komanda", text: "Pilna kontrole, augstākas izmaksas." }
+ { label: "Aģentūra", text: "Vairākas kompetences uzreiz." },
+ { label: "Frīlanseris", text: "Viena joma, elastīgi." },
+ { label: "Sava komanda", text: "Pilna kontrole, augstākas izmaksas." }
 ] } %}
 
 ## Secinājumi un ieteikumi
 
 Digitālā mārketinga aģentūra ir investīcija redzamībā, pieprasījumā un pārdošanā – ar skaidru procesu un mērāmiem rezultātiem. Ja Tava uzņēmuma izaugsme ir apstājusies, sāc ar sarunu.
 
-Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/) — izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/).
+Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/).

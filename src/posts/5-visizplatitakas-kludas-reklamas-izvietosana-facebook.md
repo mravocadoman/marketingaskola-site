@@ -50,11 +50,11 @@ _Facebook Pixel_ ir koda elements, ko var ievietot savā mājaslapā. Tas apkopo
 Diemžēl viena no sastopamākajām kļūdām ir cilvēku bailes no dažādu bilžu un reklāmas tekstu testēšanas savai Facebook reklāmai. Reklāmas izvietošana Facebook nevar būt garantēti veiksmīgākā, ja pirms tam nav iztestēts, kuras bildes pie publikācijām mērķauditorijai patīk visvairāk, kā arī, kuri reklāmas teksti šķiet vissaistošākie. Iesakām no sākumā izvēlēties vairākas bildes un izveidot vairākus reklāmas tekstus, lai saprastu, kura bilde un kurš teksts visvairāk ieintriģē Tavu mērķauditoriju.
 
 {% infographic { id: "info-facebook-kludas", title: "Piecas biežākās Facebook reklāmu kļūdas", items: [
-  { label: "Garlaicīgs saturs", text: "Reklāma neuzrunā mērķauditoriju." },
-  { label: "Boost post Ads Manager vietā", text: "Mazāk kontroles, dārgāks rezultāts." },
-  { label: "Kampaņa bez mērķa", text: "Neviens nav pateicis, kas ir konversija." },
-  { label: "Nav Pixel un CAPI", text: "Rezultāti netiek nomērīti." },
-  { label: "Bailes testēt", text: "Viena bilde un viens teksts." }
+ { label: "Garlaicīgs saturs", text: "Reklāma neuzrunā mērķauditoriju." },
+ { label: "Boost post Ads Manager vietā", text: "Mazāk kontroles, dārgāks rezultāts." },
+ { label: "Kampaņa bez mērķa", text: "Neviens nav pateicis, kas ir konversija." },
+ { label: "Nav Pixel un CAPI", text: "Rezultāti netiek nomērīti." },
+ { label: "Bailes testēt", text: "Viena bilde un viens teksts." }
 ] } %}
 
 ## Mārketinga skola iesaka
@@ -63,4 +63,4 @@ Cerams, šie ieteikumi patiešām Tev bija vērtīgi! Lai izdodas izveidot lieli
 
 Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts mūsu [Meta reklāmas kurss](/meta-reklamas-kurss/).
 
-Ja tomēr nepieciešama papildus palīdzība [Facebook reklāmas](/facebook-reklamas-izstrade/) izvietošanā, stratēģijas izveidē un pārdošanas apjoma palielināšanā, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu — [piesakies šeit](/sazinies/).
+Ja tomēr nepieciešama papildus palīdzība [Facebook reklāmas](/facebook-reklamas-izstrade/) izvietošanā, stratēģijas izveidē un pārdošanas apjoma palielināšanā, sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).

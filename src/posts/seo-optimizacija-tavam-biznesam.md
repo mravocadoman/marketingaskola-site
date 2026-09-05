@@ -43,14 +43,14 @@ Lai nesaprotami termini par SEO optimizāciju nekļūtu par šķērsli, ir vērt
 
 **Mini SEO vārdnīca:**
 
--   **SEO** – Mājaslapas optimizēšana Google meklēšanas rezultātiem.
--   **Atslēgvārds( keyword)** – Frāze, ko cilvēks ievada meklētājā, meklējot konkrētu informāciju.
--   **Backlink** – Saites no citām lapām, kas ved uz Tavu mājaslapu.
--   **Internal link** – Saites Tavā lapā, kas ved uz citu Tavas pašas lapas sadaļu.
--   **Outbound link** – Saites no Tavas lapas uz citām, ārējām un uzticamām vietnēm.
--   **CTR (Click-Through Rate)** – Klikšķu skaits salīdzinājumā ar skatījumu skaitu.
--   **Bounce rate** – Rādītājs, cik daudz apmeklētāju aiziet no lapas bez jebkādas darbības.
--   **SEO rādītājs (piemēram, Yoast SEO)** – SEO viedoklis par tavu saturu. Tas analizē virsrakstus, atslēgvārdus, teksta garumu, pārejas vārdus, lasāmību u.c., sniedzot atgriezenisko saiti zaļās, oranžās vai sarkanās krāsās.
+- **SEO** – Mājaslapas optimizēšana Google meklēšanas rezultātiem.
+- **Atslēgvārds( keyword)** – Frāze, ko cilvēks ievada meklētājā, meklējot konkrētu informāciju.
+- **Backlink** – Saites no citām lapām, kas ved uz Tavu mājaslapu.
+- **Internal link** – Saites Tavā lapā, kas ved uz citu Tavas pašas lapas sadaļu.
+- **Outbound link** – Saites no Tavas lapas uz citām, ārējām un uzticamām vietnēm.
+- **CTR (Click-Through Rate)** – Klikšķu skaits salīdzinājumā ar skatījumu skaitu.
+- **Bounce rate** – Rādītājs, cik daudz apmeklētāju aiziet no lapas bez jebkādas darbības.
+- **SEO rādītājs (piemēram, Yoast SEO)** – SEO viedoklis par tavu saturu. Tas analizē virsrakstus, atslēgvārdus, teksta garumu, pārejas vārdus, lasāmību u.c., sniedzot atgriezenisko saiti zaļās, oranžās vai sarkanās krāsās.
 
 ## Kā strādā SEO optimizācija?
 
@@ -64,16 +64,16 @@ Google algoritms ir gudrs – tas analizē ne tikai atslēgvārdus, bet arī las
 
 #### Darbību secība:
 
-1.  Cilvēks ieraksta meklēšanas frāzi Google.
-2.  Google pārskata savu indeksu (miljoniem lapu).
-3.  Algoritms izvērtē lapas atbilstību, kvalitāti, struktūru.
-4.  Ja Tava lapa ir labi optimizēta – tā parādās meklēšanas rezultātu augšgalā.
-5.  Jo augstāk esi, jo lielāka iespēja, ka uz Tevi klikšķinās.
+1. Cilvēks ieraksta meklēšanas frāzi Google.
+2. Google pārskata savu indeksu (miljoniem lapu).
+3. Algoritms izvērtē lapas atbilstību, kvalitāti, struktūru.
+4. Ja Tava lapa ir labi optimizēta – tā parādās meklēšanas rezultātu augšgalā.
+5. Jo augstāk esi, jo lielāka iespēja, ka uz Tevi klikšķinās.
 
 {% infographic { id: "info-seo-veidi", title: "Trīs SEO optimizācijas veidi", items: [
-  { label: "Lapas saturs", text: "Atslēgvārdi, virsraksti un teksts." },
-  { label: "Tehniskais SEO", text: "Ātrums, struktūra un indeksēšana." },
-  { label: "Ārējās atsauces", text: "Cik uzticamas vietnes uz Tevi norāda." }
+ { label: "Lapas saturs", text: "Atslēgvārdi, virsraksti un teksts." },
+ { label: "Tehniskais SEO", text: "Ātrums, struktūra un indeksēšana." },
+ { label: "Ārējās atsauces", text: "Cik uzticamas vietnes uz Tevi norāda." }
 ] } %}
 
 ## Kas ir SEM un kā tas atšķiras no SEO?
@@ -89,8 +89,8 @@ Savukārt **SEO (Search Engine Optimization)** ir veids, kā **organiski (bez ma
 Apvienojot abus – SEO un SEM – Tu vari palielināt savu redzamību un sasniegt klientus gan tūlīt, gan ilgtermiņā.
 
 {% infographic { id: "info-seo-vai-sem", title: "SEO un SEM meklētājā", items: [
-  { label: "SEM — apmaksātie rezultāti", text: "Redzamība uzreiz, kamēr maksā." },
-  { label: "SEO — organiskie rezultāti", text: "Aug lēnāk, paliek ilgāk." }
+ { label: "SEM: apmaksātie rezultāti", text: "Redzamība uzreiz, kamēr maksā." },
+ { label: "SEO: organiskie rezultāti", text: "Aug lēnāk, paliek ilgāk." }
 ] } %}
 
 ## Kādi ir SEO optimizācijas veidi?
@@ -121,16 +121,16 @@ Rūpējas par to, lai Tava mājaslapa būtu ātra, droša un ērti lietojama –
 
 ### Kļūdas:
 
--   Pārspīlēta atslēgvārdu lietošana – Google to ātri pamana un soda.
--   Dublikāta saturs – viens un tas pats teksts vairākās lapās samazina kvalitāti.
--   Lēna mājaslapa – cilvēki negaida ilgāk par dažām sekundēm.
--   Mobilajām ierīcēm nepieejama lapa – vairāk nekā puse apmeklējumu notiek no telefona.
+- Pārspīlēta atslēgvārdu lietošana – Google to ātri pamana un soda.
+- Dublikāta saturs – viens un tas pats teksts vairākās lapās samazina kvalitāti.
+- Lēna mājaslapa – cilvēki negaida ilgāk par dažām sekundēm.
+- Mobilajām ierīcēm nepieejama lapa – vairāk nekā puse apmeklējumu notiek no telefona.
 
 #### Ieteikumi:
 
--   Izmanto pārejas vārdus (piemēram, “tāpēc”, “turklāt”, “rezultātā”), lai veidotu plūstošu tekstu.
--   Lieto atslēgvārdu saprātīgi (1–2,5% no teksta), piemēram – “SEO optimizācija”.
--   Pārbaudi lasāmības rādītāju – jo vieglāk lasāms teksts, jo ilgāk cilvēks to lasa un vieglāk to saprast..
+- Izmanto pārejas vārdus (piemēram, “tāpēc”, “turklāt”, “rezultātā”), lai veidotu plūstošu tekstu.
+- Lieto atslēgvārdu saprātīgi (1–2,5% no teksta), piemēram – “SEO optimizācija”.
+- Pārbaudi lasāmības rādītāju – jo vieglāk lasāms teksts, jo ilgāk cilvēks to lasa un vieglāk to saprast..
 
 ## Kāpēc SEO optimizācija ir svarīga Tavam biznesam?
 
@@ -138,43 +138,43 @@ SEO nav vienas dienas akcija – tā ir ilgtermiņa investīcija. Atšķirībā 
 
 **SEO ieguvumi:**
 
--   Palielina lapas apmeklējumu un potenciālo klientu skaitu.
--   Uzlabo zīmola uzticamību – cilvēki uzticas tam, ko atrod organiskajos rezultātos.
--   Samazina reklāmu izdevumus ilgtermiņā.
--   Nodrošina stabilu digitālo klātbūtni.
+- Palielina lapas apmeklējumu un potenciālo klientu skaitu.
+- Uzlabo zīmola uzticamību – cilvēki uzticas tam, ko atrod organiskajos rezultātos.
+- Samazina reklāmu izdevumus ilgtermiņā.
+- Nodrošina stabilu digitālo klātbūtni.
 
 ## Kā uzsākt ar SEO bez lieliem ieguldījumiem un kā panākt SEO optimizāciju?
 
--   Pārbaudi savas lapas SEO stāvokli ar [Yoast SEO](https://yoast.com/)
--   Izveido blogu ar vērtīgu saturu
--   Izmanto iekšējās saites
--   Atrodi galveno atslēgvārdu un izmanto to saprātīgi (2-3 reizes uz lapu)
--   Strukturē saturu ar virsrakstiem (H2, H3) un pārejas vārdiem
--   Uzlabo lasāmību – īsi teikumi, maz pasīvās balss, skaidra doma
+- Pārbaudi savas lapas SEO stāvokli ar [Yoast SEO](https://yoast.com/)
+- Izveido blogu ar vērtīgu saturu
+- Izmanto iekšējās saites
+- Atrodi galveno atslēgvārdu un izmanto to saprātīgi (2-3 reizes uz lapu)
+- Strukturē saturu ar virsrakstiem (H2, H3) un pārejas vārdiem
+- Uzlabo lasāmību – īsi teikumi, maz pasīvās balss, skaidra doma
 
 ## Biežāk uzdotie jautājumi
 
-1.  **Kas ir atslēgvārdi un kā tos atrast?**
+1. **Kas ir atslēgvārdi un kā tos atrast?**
 
 Atslēgvārdi ir vārdi vai frāzes, ko cilvēki raksta Google meklētājā. Tos vari atrast ar bezmaksas rīkiem kā Ubersuggest vai Google Keyword Planner.
 
-2.  **Vai SEO rezultāti redzami uzreiz?**
+2. **Vai SEO rezultāti redzami uzreiz?**
 
 Nē. SEO ir maratons, nevis sprints. Parasti pirmie rezultāti ir jūtami pēc 3–6 mēnešiem.
 
-3.  **Vai varu pats veikt SEO?**
+3. **Vai varu pats veikt SEO?**
 
 Protams! Ar nedaudz pacietības, pareizu informāciju un rīkiem, SEO var kļūt par Tavu ikdienas rutīnu.
 
-4.  **Vai sociālie tīkli ietekmē SEO?**
+4. **Vai sociālie tīkli ietekmē SEO?**
 
 Tieši nē, bet netieši – noteikti. Dalīšanās un klikšķi no sociālajiem tīkliem var celt Tava satura popularitāti.
 
-5.  **Kā noteikt, vai mans SEO ir labs?**
+5. **Kā noteikt, vai mans SEO ir labs?**
 
 Izmanto SEO audita rīkus kā Ahrefs, SEMrush vai pat vienkāršo Google Search Console. Skaties klikšķus, pozīcijas, kļūdas.
 
-6.  **Cik bieži jāatjauno SEO saturs?**
+6. **Cik bieži jāatjauno SEO saturs?**
 
 Reizi 6 mēnešos pārskati vecos rakstus, pievieno jaunu informāciju un atslēgvārdus. Google mīl aktuālu saturu!
 

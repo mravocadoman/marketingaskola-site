@@ -82,13 +82,13 @@ Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas
 ![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.webp)
 
 {% infographic { id: "info-marketinga-riki-darbi", title: "Septiņi darbi, septiņi rīki", items: [
-  { label: "Saturs", text: "Melnraksti un idejas." },
-  { label: "Analītika", text: "Kas notiek mājaslapā." },
-  { label: "Mājaslapa", text: "Vieta, kur cilvēks nonāk." },
-  { label: "Attēli", text: "Bezmaksas vizuāļi." },
-  { label: "Valodas kvalitāte", text: "Teksts bez kļūdām." },
-  { label: "Publicēšana", text: "Ieplāno un aizmirsti." },
-  { label: "Testēšana", text: "Divi varianti, viens uzvarētājs." }
+ { label: "Saturs", text: "Melnraksti un idejas." },
+ { label: "Analītika", text: "Kas notiek mājaslapā." },
+ { label: "Mājaslapa", text: "Vieta, kur cilvēks nonāk." },
+ { label: "Attēli", text: "Bezmaksas vizuāļi." },
+ { label: "Valodas kvalitāte", text: "Teksts bez kļūdām." },
+ { label: "Publicēšana", text: "Ieplāno un aizmirsti." },
+ { label: "Testēšana", text: "Divi varianti, viens uzvarētājs." }
 ] } %}
 
 ## Mārketinga skola iesaka

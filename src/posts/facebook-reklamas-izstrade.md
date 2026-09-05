@@ -13,7 +13,7 @@ keywords: ["Facebook reklāmas izstrāde", "reklāmas kampaņa", "mērķauditori
 
 ---
 
-Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
+Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi! (1 160 000 + Latvijā)_ Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/)) tuvāk, tad šis bloga raksts ir domāts tieši Tev!
 
 ## Kas tad īsti ir Facebook reklāmas?
 
@@ -23,9 +23,9 @@ Pavisam vienkārši: Tās ir reklāmas, kas tiek izveidotas un publicētas Faceb
 
 **Lūk, vēl daži reklāmas ieguvumi:**
 
--   Viegli pielāgot savu budžetu;
--   Izmantojot analītiskos rādītājus, var rūpīgi sekot līdzi reklāmas efektivitātei;
--   Ir iespējams ātri un efektīvi gūt plašāku atpazīstamību, palielinot klientu skaitu.
+- Viegli pielāgot savu budžetu;
+- Izmantojot analītiskos rādītājus, var rūpīgi sekot līdzi reklāmas efektivitātei;
+- Ir iespējams ātri un efektīvi gūt plašāku atpazīstamību, palielinot klientu skaitu.
 
 ## Stratēģijas izstrāde kā prioritāte
 
@@ -33,34 +33,34 @@ Pirms sāc savu reklāmas ceļojumu, ir jāvelta laiks stratēģijas izveidei. B
 
 Pirms ķeries klāt pie kampaņas izveides, uzdod sev šos jautājumus:
 
--   Kādu produktu vai pakalpojumu es konkrēti vēlos reklamēt?
--   Uz kādu auditoriju es mērķēju?
--   Kā viņi izmantos manu produktu un ko tieši no tā iegūs?
--   Kāds ir manas kampaņas konkrētais mērķis:
-    -   Vai es vēlos iegūt jaunus klientus?
-    -   Vai tomēr gūt plašāku zīmola atpazīstamību?
-    -   Varbūt veicināt pārdošanas apjomus?
+- Kādu produktu vai pakalpojumu es konkrēti vēlos reklamēt?
+- Uz kādu auditoriju es mērķēju?
+- Kā viņi izmantos manu produktu un ko tieši no tā iegūs?
+- Kāds ir manas kampaņas konkrētais mērķis:
+ - Vai es vēlos iegūt jaunus klientus?
+ - Vai tomēr gūt plašāku zīmola atpazīstamību?
+ - Varbūt veicināt pārdošanas apjomus?
 
 ## Kādi ir Facebook reklāmas izveides soļi?
 
 Reklāmas izveide sastāv no vairākiem etapiem, un mēs esam izvēlējušies šos 6 etapus kā pašus galvenos:
 
--   [_Mārketinga stratēģijas izstrāde_](/marketinga-strategijas-izstrade/): Jau izcēlām to, cik šis posms ir svarīgs, bet tiešām atceries, ka bez konkrētas stratēģijas nav iespējami efektīvi rezultāti.
--   _Mērķa izvēle_: Posms, kurā Tev jāizvirza savs mērķis, piemēram, plašāka zīmola atpazīstamība vai lietotāju iesaistes palielināšana. Mērķim ir jāsaskan ar Taviem uzņēmējdarbības mērķiem.
--   _Mērķauditorijas atlase_: Posms, kurā izvēlies pēc kādiem kritērijiem pielāgot reklāmas lietotājiem.
--   _Lokācijas izvēle_: Posms, kurā izvēlies, kur tieši Tavas reklāmas šajā platformā būs redzamas, piemēram, storijos.
--   _Budžeta, laika un optimizācijas fiksēšana_: Posms, kurā vari izvēlēties savu reklāmas budžetu, izvēlēties, vai Tavas reklāmas uzrādīsies ar vai bez definēta sākuma un beigu posma, kā arī varēsi veikt reklāmas optimizāciju.
--   _Formāta izvēle:_ Posms, kurā izvēlies, vai Tavu reklāmu formāts būs, piemēram, bilde, video, slaidšovs vai vēl cits formāts.
+- [_Mārketinga stratēģijas izstrāde_](/marketinga-strategijas-izstrade/): Jau izcēlām to, cik šis posms ir svarīgs, bet tiešām atceries, ka bez konkrētas stratēģijas nav iespējami efektīvi rezultāti.
+- _Mērķa izvēle_: Posms, kurā Tev jāizvirza savs mērķis, piemēram, plašāka zīmola atpazīstamība vai lietotāju iesaistes palielināšana. Mērķim ir jāsaskan ar Taviem uzņēmējdarbības mērķiem.
+- _Mērķauditorijas atlase_: Posms, kurā izvēlies pēc kādiem kritērijiem pielāgot reklāmas lietotājiem.
+- _Lokācijas izvēle_: Posms, kurā izvēlies, kur tieši Tavas reklāmas šajā platformā būs redzamas, piemēram, storijos.
+- _Budžeta, laika un optimizācijas fiksēšana_: Posms, kurā vari izvēlēties savu reklāmas budžetu, izvēlēties, vai Tavas reklāmas uzrādīsies ar vai bez definēta sākuma un beigu posma, kā arī varēsi veikt reklāmas optimizāciju.
+- _Formāta izvēle:_ Posms, kurā izvēlies, vai Tavu reklāmu formāts būs, piemēram, bilde, video, slaidšovs vai vēl cits formāts.
 
 Vērtīgākais, ko paņemt no šī bloga raksta? Facebook ir digitālā mārketinga veiksmes atslēga! Facebook ir lielisks veids, kā reklamēt savu biznesu internetā, protams, pirms tam izveidojot skaidru spēles plānu.
 
 {% infographic { id: "info-facebook-reklamas-etapi", title: "Facebook reklāma sešos etapos", items: [
-  { label: "Stratēģija", text: "Bez tās nav rezultātu." },
-  { label: "Mērķis", text: "Atpazīstamība vai pārdošana." },
-  { label: "Mērķauditorija", text: "Pēc kādiem kritērijiem atlasīt." },
-  { label: "Lokācija", text: "Kur reklāma parādīsies." },
-  { label: "Budžets un laiks", text: "Cik un cik ilgi." },
-  { label: "Formāts", text: "Bilde, video vai slaidšovs." }
+ { label: "Stratēģija", text: "Bez tās nav rezultātu." },
+ { label: "Mērķis", text: "Atpazīstamība vai pārdošana." },
+ { label: "Mērķauditorija", text: "Pēc kādiem kritērijiem atlasīt." },
+ { label: "Lokācija", text: "Kur reklāma parādīsies." },
+ { label: "Budžets un laiks", text: "Cik un cik ilgi." },
+ { label: "Formāts", text: "Bilde, video vai slaidšovs." }
 ] } %}
 
 ## Mārketinga Skolas piedāvājums

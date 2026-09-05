@@ -14,30 +14,30 @@ keywords: ["mākslīgā intelekta rīki", "AI rīki mārketingam", "ChatGPT", "C
 ---
 
 
-Rīku sarakstu internetā ir simtiem, un lielākā daļa no tiem ir bezjēdzīgi — trīsdesmit nosaukumi bez konteksta, no kuriem pusi neviens nekad nav lietojis.
+Rīku sarakstu internetā ir simtiem, un lielākā daļa no tiem ir bezjēdzīgi, trīsdesmit nosaukumi bez konteksta, no kuriem pusi neviens nekad nav lietojis.
 
-Šis saraksts ir īsāks un ar citu loģiku: **astoņi rīki, kas atrisina astoņus konkrētus darbus**, ar ko mazs uzņēmums saskaras katru nedēļu. Pie katra ir arī tas, kam tas neder — parasti tā ir noderīgākā daļa.
+Šis saraksts ir īsāks un ar citu loģiku: **astoņi rīki, kas atrisina astoņus konkrētus darbus**, ar ko mazs uzņēmums saskaras katru nedēļu. Pie katra ir arī tas, kam tas neder, parasti tā ir noderīgākā daļa.
 
 {% infographic { id: "info-ai-riki-marketinga", title: "Kur MI rīki ietaupa laiku", items: [
-  { label: "Attēli", text: "Vizuāļi bez fotosesijas." },
-  { label: "Prezentācijas", text: "Slaidi dažās minūtēs." },
-  { label: "Audio", text: "Ieraksti un balss." },
-  { label: "Video", text: "Montāža un subtitri." }
+ { label: "Attēli", text: "Vizuāļi bez fotosesijas." },
+ { label: "Prezentācijas", text: "Slaidi dažās minūtēs." },
+ { label: "Audio", text: "Ieraksti un balss." },
+ { label: "Video", text: "Montāža un subtitri." }
 ] } %}
 
 ## Pirms sāc: viens rīks, viens darbs
 
-Biežākā kļūda ir savākt piecus abonementus un lietot vienu. Rīks pats par sevi neko neatrisina — atrisina process, kurā tas iekļaujas.
+Biežākā kļūda ir savākt piecus abonementus un lietot vienu. Rīks pats par sevi neko neatrisina, atrisina process, kurā tas iekļaujas.
 
 Tāpēc praktiskākais veids ir šāds: nedēļu pieraksti, kuri darbi atkārtojas un aizņem laiku. Tikai tad meklē rīku tieši tam darbam. Gandrīz vienmēr izrādās, ka vajadzīgi divi, nevis astoņi.
 
-## 1. ChatGPT vai Claude — teksts un domāšana
+## 1. ChatGPT vai Claude, teksts un domāšana
 
 Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un [Claude](https://claude.ai/) der reklāmas tekstu variantiem, e-pastu melnrakstiem, garu tekstu saīsināšanai un ideju sarakstiem, kad tēmas ir beigušās.
 
 **Kam neder:** faktiem un skaitļiem. Modelis tos mēdz izdomāt pārliecinoši, tāpēc katrs skaitlis jāpārbauda. Kā izmantot šos rīkus, nezaudējot savu toni, aprakstīts rakstā [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/).
 
-## 2. Midjourney — attēli, kad fotosesija nav iespējama
+## 2. Midjourney, attēli, kad fotosesija nav iespējama
 
 ![Midjourney logotips](/img/2026/09/logo-midjourney.webp)
 
@@ -45,7 +45,7 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 **Kam neder:** produktu bildēm. Ja pārdod konkrētu preci, cilvēks grib redzēt tieši to preci, nevis līdzīgu. Tāpat ģenerēts cilvēks nedrīkst uzdoties par Tavu komandu.
 
-## 3. Canva — dizains bez dizainera
+## 3. Canva, dizains bez dizainera
 
 ![Canva logotips](/img/2026/09/logo-canva.webp)
 
@@ -53,7 +53,7 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 **Kam neder:** unikālas vizuālās identitātes izveidei. Veidnes ir ērtas, bet, ja neko nemaini, Tavs saturs izskatīsies kā vēl simt citiem. Praktiskus soļus apkopojām rakstā [kā izmantot Canva](/ka-izmantot-canva/).
 
-## 4. Beautiful.ai — prezentācijas
+## 4. Beautiful.ai, prezentācijas
 
 ![Beautiful.ai logotips](/img/2026/09/logo-beautiful-ai.webp)
 
@@ -61,7 +61,7 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 **Kam neder:** svarīgākajai pārdošanas prezentācijai, kurā vajag tieši Tavu stilu.
 
-## 5. Podcastle — audio un balss
+## 5. Podcastle, audio un balss
 
 ![Podcastle logotips](/img/2026/09/logo-podcastle.webp)
 
@@ -69,15 +69,15 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 **Kam neder:** emocionālam vēstījumam. Ģenerēta balss joprojām skan līdzeni, un reklāmā, kur svarīga sajūta, dzīva balss uzvar.
 
-## 6. Synthesia — video ar runājošu avatāru
+## 6. Synthesia, video ar runājošu avatāru
 
 ![Synthesia logotips](/img/2026/09/logo-synthesia.webp)
 
 [Synthesia](https://www.synthesia.io/) veido video, kurā avatārs runā Tavu tekstu, daudzās valodās. Noder apmācībām, instrukcijām un iekšējai komunikācijai.
 
-**Kam neder:** sociālo tīklu reklāmai. Tur uzvar autentiskums, un avatārs to nedod — par to sīkāk rakstā [digitālā mārketinga tendences](/5-digitala-marketinga-tendences-2025-gada/).
+**Kam neder:** sociālo tīklu reklāmai. Tur uzvar autentiskums, un avatārs to nedod, par to sīkāk rakstā [digitālā mārketinga tendences](/5-digitala-marketinga-tendences-2025-gada/).
 
-## 7. InVideo — video no teksta
+## 7. InVideo, video no teksta
 
 ![InVideo logotips](/img/2026/09/logo-invideo.webp)
 
@@ -85,7 +85,7 @@ Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un 
 
 **Kam neder:** ja gaidi gatavu rezultātu bez rediģēšanas. Automātiskie kadri bieži neatbilst tekstam, un tos nākas mainīt.
 
-## 8. Opus.Clip — gari video īsajos formātos
+## 8. Opus.Clip, gari video īsajos formātos
 
 [Opus.Clip](https://www.opus.pro/) no gara video izgriež īsos fragmentus vertikālajam formātam un pieliek subtitrus. Ja Tev ir podkāsts vai vebinārs, tas ir vienkāršākais veids, kā no tā dabūt desmit ierakstus.
 
@@ -97,7 +97,7 @@ Kā šos fragmentus izmantot, lai tie tiešām tiek noskatīti, aprakstīts raks
 
 Neliels aprēķins, jo šis jautājums parasti paliek neatbildēts.
 
-Teksta rīks maksas plānā izmaksā aptuveni divdesmit eiro mēnesī. Canva — līdzīgi. Video un balss rīki ir dārgāki, bet tos vairums maza uzņēmuma vajadzībām nemaz nevajag katru mēnesi; tos ir jēga ieslēgt uz to mēnesi, kad top konkrēts projekts.
+Teksta rīks maksas plānā izmaksā aptuveni divdesmit eiro mēnesī. Canva, līdzīgi. Video un balss rīki ir dārgāki, bet tos vairums maza uzņēmuma vajadzībām nemaz nevajag katru mēnesi; tos ir jēga ieslēgt uz to mēnesi, kad top konkrēts projekts.
 
 Praksē reāls sākuma komplekts mazam uzņēmumam iznāk ap četrdesmit eiro mēnesī. Salīdzini to ar stundām, ko tas ietaupa, un lēmums parasti ir vienkāršs. Svarīgāk ir cits: **neabonē neko, pirms neesi mēnesi lietojis bezmaksas versiju.**
 
@@ -107,7 +107,7 @@ Ir vērts to pateikt tieši, jo tas ietaupa vilšanos.
 
 Neviens no šiem rīkiem nepateiks, kāpēc klients izvēlas Tevi, nevis konkurentu. Neviens neizdomās Tavu piedāvājumu vai cenu. Un neviens neizlabos situāciju, kurā reklāma ved uz lapu, kas nepārdod.
 
-Rīki paātrina to, kas jau strādā. Ja pamatlietas nav sakārtotas, ātrāka ražošana tikai ātrāk iztērē budžetu — par to sīkāk rakstā [5 izplatītākās kļūdas Facebook reklāmās](/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/).
+Rīki paātrina to, kas jau strādā. Ja pamatlietas nav sakārtotas, ātrāka ražošana tikai ātrāk iztērē budžetu, par to sīkāk rakstā [5 izplatītākās kļūdas Facebook reklāmās](/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/).
 
 ## Ar kuru sākt
 
@@ -121,18 +121,18 @@ Divi rīki, kas lietoti katru dienu, dod daudz vairāk nekā astoņi, kas atvēr
 Sākumā gandrīz vienmēr jā. Maksas plāns kļūst pamatots, kad rīku lieto katru nedēļu un ierobežojumi sāk traucēt.
 
 **Vai šie rīki strādā latviski?**
-Teksta rīki — jā, labi, bet ar pārlasīšanu. Video un balss rīkos latviešu valodas kvalitāte ir nevienmērīga, tāpēc pārbaudi rezultātu pirms publicēšanas.
+Teksta rīki, jā, labi, bet ar pārlasīšanu. Video un balss rīkos latviešu valodas kvalitāte ir nevienmērīga, tāpēc pārbaudi rezultātu pirms publicēšanas.
 
 **Vai MI aizstās dizaineru vai video montētāju?**
-Rutīnas darbos — lielā mērā jā. Tur, kur vajag oriģinālu ideju vai zīmola konsekvenci, cilvēks paliek. Godīgu skatījumu uz to sniedz raksts [mākslīgais intelekts: draugs vai drauds](/maksligais-intelekts/).
+Rutīnas darbos, lielā mērā jā. Tur, kur vajag oriģinālu ideju vai zīmola konsekvenci, cilvēks paliek. Godīgu skatījumu uz to sniedz raksts [mākslīgais intelekts: draugs vai drauds](/maksligais-intelekts/).
 
 **Cik daudz laika prasa iemācīties?**
-Pirmais rezultāts nāk pirmajā stundā. Labi rezultāti — pēc pāris nedēļām regulāras lietošanas.
+Pirmais rezultāts nāk pirmajā stundā. Labi rezultāti, pēc pāris nedēļām regulāras lietošanas.
 
 ## Nākamais solis
 
-Rīki ir tikai puse. Otra puse ir process, kurā tie iekļaujas — un tieši tur parasti slēpjas lielākais ieguvums.
+Rīki ir tikai puse. Otra puse ir process, kurā tie iekļaujas un tieši tur parasti slēpjas lielākais ieguvums.
 
 Ja gribi saprast, kurš darbs Tavā uzņēmumā jāautomatizē vispirms, sāc ar rakstu [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) vai izrunā to [individuālā konsultācijā](/marketinga-konsultacijas/). Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
 
-Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Pārējos kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/), bet visu mārketingu kopumā varam pārņemt mēs — sk. [pakalpojumus](/pakalpojumi/).
+Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Pārējos kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/), bet visu mārketingu kopumā varam pārņemt mēs. Sk. [pakalpojumus](/pakalpojumi/).

@@ -19,16 +19,16 @@ Google Ads kontu var atvērt piecās minūtēs. Tieši tāpēc daudzi uzņēmumi
 Parasti nestrādā nevis kanāls, bet uzstādījums. Šajā rakstā apskatām, ko aģentūra tiešām dara, kad to ir vērts piesaistīt, cik tas maksā un ko pajautāt, pirms paraksti līgumu.
 
 {% infographic { id: "info-google-ads-agentura", title: "Ko pajautāt Google reklāmas aģentūrai", items: [
-  { label: "Kas pārvaldīs kontu", text: "Cilvēks, ar kuru runāsi ikdienā." },
-  { label: "Kā mērīsiet rezultātu", text: "Klikšķi vai klienti." },
-  { label: "Kam pieder konts", text: "Datiem jāpaliek pie Tevis." }
+ { label: "Kas pārvaldīs kontu", text: "Cilvēks, ar kuru runāsi ikdienā." },
+ { label: "Kā mērīsiet rezultātu", text: "Klikšķi vai klienti." },
+ { label: "Kam pieder konts", text: "Datiem jāpaliek pie Tevis." }
 ] } %}
 
 ## Ko aģentūra tiešām dara
 
 Priekšstats, ka aģentūra "palaiž reklāmas", ir maldinošs. Reklāmu palaišana aizņem stundu. Pārējais darbs ir tas, kas nosaka rezultātu.
 
-**Atslēgvārdu izpēte.** Kurus meklējumus pirkt un — vēl svarīgāk — kurus izslēgt. Negatīvo atslēgvārdu saraksts bieži ietaupa vairāk naudas nekā jebkurš cits solis.
+**Atslēgvārdu izpēte.** Kurus meklējumus pirkt un, vēl svarīgāk, kurus izslēgt. Negatīvo atslēgvārdu saraksts bieži ietaupa vairāk naudas nekā jebkurš cits solis.
 
 **Konta struktūra.** Kampaņas un reklāmu grupas jāsakārto tā, lai tās var lasīt un optimizēt. Slikti strukturēts konts strādā, bet to nevar uzlabot, jo nav skaidrs, kas ko izraisa.
 
@@ -46,7 +46,7 @@ Trīs pazīmes, kas norāda uz to skaidri.
 
 **Trūkst kompetences.** Google saskarne mainās bieži, un noklusējuma iestatījumi ne vienmēr ir Tavās interesēs.
 
-**Budžets ir pietiekami liels.** Ja mēnesī tērē simts eiro, aģentūras maksa būs lielāka par ieguvumu. Šajā gadījumā izdevīgāk ir apgūt pamatus pašam — piemēram, [Google Ads kursā](/google-ads-kurss/).
+**Budžets ir pietiekami liels.** Ja mēnesī tērē simts eiro, aģentūras maksa būs lielāka par ieguvumu. Šajā gadījumā izdevīgāk ir apgūt pamatus pašam, piemēram, [Google Ads kursā](/google-ads-kurss/).
 
 ## Trīs jautājumi pirms līguma
 
@@ -54,9 +54,9 @@ Trīs pazīmes, kas norāda uz to skaidri.
 
 **Kā mērīsim rezultātu?** Ja atbilde ir par klikšķiem un rādījumiem, tas ir slikts signāls. Laba atbilde runā par pieteikumiem, klienta cenu un atdevi.
 
-**Kam pieder konts?** Šis ir vissvarīgākais. Google Ads kontam jābūt reģistrētam uz Tavu uzņēmumu, aģentūrai pieejot ar atļauju. Ja konts pieder aģentūrai, sadarbības beigās Tu zaudē visu vēsturi — un vēsture ir tieši tas, kas padara kampaņas lētākas.
+**Kam pieder konts?** Šis ir vissvarīgākais. Google Ads kontam jābūt reģistrētam uz Tavu uzņēmumu, aģentūrai pieejot ar atļauju. Ja konts pieder aģentūrai, sadarbības beigās Tu zaudē visu vēsturi un vēsture ir tieši tas, kas padara kampaņas lētākas.
 
-## Sarkanie karogi
+## Kas ir jāsatrauc
 
 **Garantēta pirmā vieta.** Neviens to nevar garantēt, jo izsole notiek katrā meklējumā no jauna.
 
@@ -76,7 +76,7 @@ Tirgū sastopami trīs modeļi.
 
 **Procenti no reklāmas budžeta.** Izplatīts, bet ar iebūvētu interešu konfliktu: aģentūrai izdevīgi, lai Tu tērētu vairāk.
 
-**Maksa par rezultātu.** Izklausās vislabāk, bet praksē grūti, jo rezultātu ietekmē arī Tava lapa, cena un piegāde — lietas, ko aģentūra nekontrolē.
+**Maksa par rezultātu.** Izklausās vislabāk, bet praksē grūti, jo rezultātu ietekmē arī Tava lapa, cena un piegāde, lietas, ko aģentūra nekontrolē.
 
 Neatkarīgi no modeļa: reklāmas budžets un aģentūras maksa ir divas dažādas summas, un tām atskaitēs jābūt atsevišķi.
 
@@ -92,11 +92,11 @@ Reklāma pastiprina to, kas jau pastāv. Ja pamats ir vājš, tā to tikai ātr�
 
 Nav viena pareizā atbilde, ir trīs situācijas.
 
-**Pats** — ja budžets neliels un ir laiks mācīties. Ieguvums paliek uzņēmumā uz visiem laikiem.
+**Pats**, ja budžets neliels un ir laiks mācīties. Ieguvums paliek uzņēmumā uz visiem laikiem.
 
-**Frīlanseris** — ja vajadzīga viena kompetence un elastība. Lētāk, bet atkarīgs no viena cilvēka pieejamības.
+**Frīlanseris**, ja vajadzīga viena kompetence un elastība. Lētāk, bet atkarīgs no viena cilvēka pieejamības.
 
-**Aģentūra** — ja vajadzīgas vairākas kompetences vienlaikus un rezultāts jāiegūst ātri. Salīdzinājumu izvērsām rakstā [digitālā mārketinga aģentūra izaugsmei](/digitala-marketinga-agentura-izaugsmei/).
+**Aģentūra**, ja vajadzīgas vairākas kompetences vienlaikus un rezultāts jāiegūst ātri. Salīdzinājumu izvērsām rakstā [digitālā mārketinga aģentūra izaugsmei](/digitala-marketinga-agentura-izaugsmei/).
 
 ## Kā izskatās pirmie trīs mēneši
 
@@ -114,12 +114,12 @@ Ja pēc trim mēnešiem neviens nespēj nosaukt klienta cenu, tas ir daudz slikt
 
 Sadarbība iet ātrāk, ja šīs lietas ir gatavas jau pirmajā sarunā.
 
-Skaidrs, kas ir konversija — pieteikums, zvans, pirkums vai kaut kas cits. Saraksts ar pakalpojumiem prioritārā secībā, jo reklamēt visu vienlaikus nav jēgas. Vidējais darījuma apjoms, lai var rēķināt atdevi. Un cilvēks Tavā pusē, kurš atbild uz pieteikumiem — visātrākā reklāma neko nedod, ja atbilde nāk pēc trim dienām.
+Skaidrs, kas ir konversija, pieteikums, zvans, pirkums vai kaut kas cits. Saraksts ar pakalpojumiem prioritārā secībā, jo reklamēt visu vienlaikus nav jēgas. Vidējais darījuma apjoms, lai var rēķināt atdevi. Un cilvēks Tavā pusē, kurš atbild uz pieteikumiem, visātrākā reklāma neko nedod, ja atbilde nāk pēc trim dienām.
 
 ## Biežākie jautājumi
 
 **Cik ilgi jāgaida rezultāts?**
-Pirmie dati — dažās dienās. Nopietni secinājumi — pēc mēneša vai diviem, atkarībā no apjoma.
+Pirmie dati, dažās dienās. Nopietni secinājumi, pēc mēneša vai diviem, atkarībā no apjoma.
 
 **Vai varu pārvaldīt Google Ads pats?**
 Jā. Pamatlietas ir apgūstamas dažās stundās, un tieši tās nosaka lielāko daļu rezultāta. Kā tas notiek praksē, aprakstīts rakstā [vai Google reklāma ir efektīva](/google-reklama-2025/).
@@ -132,7 +132,7 @@ Vispirms pārbaudi konversiju uzskaiti un meklējumu atskaiti. Ļoti bieži prob
 
 ## Nākamais solis
 
-Laba aģentūra ir vērtīga tad, kad tā atbild uz jautājumiem, kurus Tu vēl nebiji uzdevis. Slikta — tad, kad tā parāda skaistas atskaites bez sakara ar pārdošanu.
+Laba aģentūra ir vērtīga tad, kad tā atbild uz jautājumiem, kurus Tu vēl nebiji uzdevis. Slikta, tad, kad tā parāda skaistas atskaites bez sakara ar pārdošanu.
 
 Ja neesi drošs, vai Tev vajag aģentūru vai vienkārši sakārtotu kontu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi to darīt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā un aptver tieši tos soļus, par kuriem šis raksts. Meta reklāmu apgūsi [Meta reklāmas kursā](/meta-reklamas-kurss/), bet visu klāstu skati [kursu sadaļā](/digitala-marketinga-kursi/).
 

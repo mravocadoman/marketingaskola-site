@@ -19,14 +19,14 @@ Digitālā mārketinga rīku ir daudz, un katrs solās būt tas pareizais. Googl
 Tas ir gan tās lielākais spēks, gan iemesls, kāpēc tā daudziem izrādās dārga. Šajā rakstā atbildam uz trim jautājumiem: kā tā strādā, kad tā atmaksājas un kam pievērst uzmanību, pirms iztērē pirmos simts eiro.
 
 {% infographic { id: "info-google-reklamas-riski", title: "Kam pievērst uzmanību Google reklāmā", items: [
-  { label: "Sarežģīts iesācējiem", text: "Daudz iestatījumu jau pašā sākumā." },
-  { label: "Prasa pastāvīgu uzmanību", text: "Nav palaid un aizmirsti." },
-  { label: "Tikai Google vidē", text: "Ārpus tās reklāma neparādās." }
+ { label: "Sarežģīts iesācējiem", text: "Daudz iestatījumu jau pašā sākumā." },
+ { label: "Prasa pastāvīgu uzmanību", text: "Nav palaid un aizmirsti." },
+ { label: "Tikai Google vidē", text: "Ārpus tās reklāma neparādās." }
 ] } %}
 
 ## Kā Google reklāma strādā
 
-Google Ads ir izsole. Tu neizvēlies vietu — Tu piedāvā cenu par klikšķi uz konkrētu meklējumu, un algoritms izlemj, kurš parādīsies un kādā secībā.
+Google Ads ir izsole. Tu neizvēlies vietu, Tu piedāvā cenu par klikšķi uz konkrētu meklējumu, un algoritms izlemj, kurš parādīsies un kādā secībā.
 
 Svarīgi: **augstākā cena ne vienmēr uzvar.** Google vērtē arī to, cik Tava reklāma un lapa atbilst meklējumam. Labāka atbilstība nozīmē lētāku klikšķi par to pašu pozīciju. Tieši tāpēc satura kvalitāte šeit ir naudas jautājums, ne estētikas.
 
@@ -36,9 +36,9 @@ Reklāmas parādās meklēšanas rezultātos, bet arī _YouTube_, _Gmail_ un par
 
 Vienkāršs tests: **vai Tavu produktu cilvēki meklē?**
 
-Ja kāds raksta "santehniķis Rīgā" vai "ergonomisks krēsls", pieprasījums jau pastāv — Tavs uzdevums ir tajā brīdī tur būt. Šādos gadījumos Google reklāma bieži atmaksājas ātrāk par jebkuru citu kanālu.
+Ja kāds raksta "santehniķis Rīgā" vai "ergonomisks krēsls", pieprasījums jau pastāv, Tavs uzdevums ir tajā brīdī tur būt. Šādos gadījumos Google reklāma bieži atmaksājas ātrāk par jebkuru citu kanālu.
 
-Ja produkts ir jauns un neviens to nemeklē, jo nezina, ka tāds pastāv, Google reklāma cīnās pret tukšumu. Tad pieprasījumu vispirms jārada, un tur lētāk strādā sociālie tīkli — par to rakstām sadaļā [Meta reklāmas](/meta-reklamas/).
+Ja produkts ir jauns un neviens to nemeklē, jo nezina, ka tāds pastāv, Google reklāma cīnās pret tukšumu. Tad pieprasījumu vispirms jārada, un tur lētāk strādā sociālie tīkli, par to rakstām sadaļā [Meta reklāmas](/meta-reklamas/).
 
 Daudziem uzņēmumiem pareizā atbilde ir abi kanāli, tikai dažādos uzdevumos.
 
@@ -48,11 +48,11 @@ Daudziem uzņēmumiem pareizā atbilde ir abi kanāli, tikai dažādos uzdevumos
 
 **Mērāmība.** Var precīzi redzēt, cik maksāja klikšķis, cik no tiem kļuva par pieteikumiem un cik maksāja viens klients. Ja tas ir uzstādīts pareizi.
 
-**Kontrole.** Budžetu var mainīt jebkurā brīdī, apturēt un atsākt. Nav līgumu uz mēnešiem, kā tradicionālajā reklāmā — salīdzinājumu apkopojām rakstā [reklāmas veidi](/reklamas-veidi/).
+**Kontrole.** Budžetu var mainīt jebkurā brīdī, apturēt un atsākt. Nav līgumu uz mēnešiem, kā tradicionālajā reklāmā, salīdzinājumu apkopojām rakstā [reklāmas veidi](/reklamas-veidi/).
 
 ## Kam pievērst uzmanību
 
-**Iesācējam tas ir sarežģīti.** Konts piedāvā desmitiem iestatījumu, un noklusējuma varianti bieži nav Tavās interesēs. Visbiežākā kļūda ir pārāk plaši atslēgvārdi — reklāma parādās meklējumos bez pirkšanas nodoma, un budžets aiziet nedēļas laikā.
+**Iesācējam tas ir sarežģīti.** Konts piedāvā desmitiem iestatījumu, un noklusējuma varianti bieži nav Tavās interesēs. Visbiežākā kļūda ir pārāk plaši atslēgvārdi, reklāma parādās meklējumos bez pirkšanas nodoma, un budžets aiziet nedēļas laikā.
 
 **Tas prasa uzmanību.** Google Ads nav "palaid un aizmirsti". Reizi nedēļā jāpaskatās meklējumu atskaite un jāpievieno negatīvie atslēgvārdi. Bez tā izmaksas aug klusi.
 
@@ -74,7 +74,7 @@ Praktiskā secinājumā: koncentrējies uz meklējumiem, kuros ir darbība vai v
 
 ## Performance Max un automatizācija
 
-Google arvien vairāk uzstāj uz automatizētām kampaņām, kas pašas sadala budžetu starp kanāliem. Tās var strādāt ļoti labi — ar diviem nosacījumiem.
+Google arvien vairāk uzstāj uz automatizētām kampaņām, kas pašas sadala budžetu starp kanāliem. Tās var strādāt ļoti labi, ar diviem nosacījumiem.
 
 Pirmais: konversiju uzskaitei jābūt pareizai, citādi automātika optimizē uz nepareizo mērķi. Otrais: jābūt pietiekami daudz datu, lai algoritms iemācītos.
 
@@ -84,11 +84,11 @@ Mazam kontam ar dažiem pieteikumiem mēnesī bieži labāk sākt ar vienkāršu
 
 Sarežģītību var mazināt, ja no paša sākuma ievēro dažus principus.
 
-**Viena kampaņa — viens mērķis.** Nemēģini vienā kampaņā pārdot trīs dažādas lietas. Algoritms nesapratīs, uz ko optimizēt.
+**Viena kampaņa, viens mērķis.** Nemēģini vienā kampaņā pārdot trīs dažādas lietas. Algoritms nesapratīs, uz ko optimizēt.
 
 **Šauras reklāmu grupas.** Atslēgvārdi, kas nozīmē vienu un to pašu, ienāk vienā grupā, un tai raksta savu tekstu. Tā aug atbilstība, un krīt klikšķa cena.
 
-**Negatīvo atslēgvārdu saraksts no pirmās dienas.** "Bezmaksas", "darbs", "kā pašam" — vārdi, kas norāda, ka cilvēks nepirks.
+**Negatīvo atslēgvārdu saraksts no pirmās dienas.** "Bezmaksas", "darbs", "kā pašam", vārdi, kas norāda, ka cilvēks nepirks.
 
 **Lapa, kas atbilst solījumam.** Ja reklāma sola cenu, cenai jābūt redzamai uzreiz. Laba reklāma uz sliktas lapas ir izniekota nauda.
 
@@ -107,10 +107,10 @@ Tieši tāpēc konversiju uzskaite nav tehniska detaļa. Bez tās šo aprēķinu
 ## Biežākie jautājumi
 
 **Cik liels budžets vajadzīgs?**
-Nav universālas summas, jo klikšķa cena atšķiras pa nozarēm daudzkārt. Praktiski: budžetam jābūt tādam, lai mēnesī savāktos vismaz daži desmiti klikšķu uz galvenajiem atslēgvārdiem — citādi datu nepietiek nekādiem secinājumiem.
+Nav universālas summas, jo klikšķa cena atšķiras pa nozarēm daudzkārt. Praktiski: budžetam jābūt tādam, lai mēnesī savāktos vismaz daži desmiti klikšķu uz galvenajiem atslēgvārdiem, citādi datu nepietiek nekādiem secinājumiem.
 
 **Cik ātri redzami rezultāti?**
-Pirmie klikšķi — tajā pašā dienā. Secinājumi par to, kas strādā — parasti pēc dažām nedēļām.
+Pirmie klikšķi, tajā pašā dienā. Secinājumi par to, kas strādā, parasti pēc dažām nedēļām.
 
 **Vai varu to darīt pats?**
 Jā. Pamatlietas ir apgūstamas, un mēs tās mācām [Google Ads kursā](/google-ads-kurss/). Kad ir vērts piesaistīt palīgu, aprakstīts rakstā [Google reklāmas aģentūra](/google-reklamas-agentura/).
@@ -120,10 +120,10 @@ Klikšķis parasti ir dārgāks, bet cilvēks ir tuvāk pirkumam. Salīdzināt i
 
 ## Mārketinga skola iesaka
 
-Google reklāma joprojām ir viens no efektīvākajiem kanāliem — ar nosacījumu, ka to lieto tur, kur pieprasījums jau pastāv, un ar sakārtotu mērīšanu.
+Google reklāma joprojām ir viens no efektīvākajiem kanāliem, ar nosacījumu, ka to lieto tur, kur pieprasījums jau pastāv, un ar sakārtotu mērīšanu.
 
 Mārketinga Skolas Google reklāmas speciālists Kristaps Apeināns ar Google reklāmām saviem klientiem ir nopelnījis vairāk nekā **10 miljonus eiro**. Apskati arī [citus mūsu veiksmes stāstus](/portfolio/).
 
-Ja gribi to apgūt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā — trīs stundas, no atslēgvārdiem līdz konversiju uzskaitei. Ja Meta reklāma Tev ir tikpat aktuāla, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).
+Ja gribi to apgūt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā, trīs stundas no atslēgvārdiem līdz konversiju uzskaitei. Ja Meta reklāma Tev ir tikpat aktuāla, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).
 
-Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), bet visu kampaņu vadīšanu varam uzņemties mēs — sk. [pakalpojumus](/pakalpojumi/).
+Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), bet visu kampaņu vadīšanu varam uzņemties mēs. Sk. [pakalpojumus](/pakalpojumi/).

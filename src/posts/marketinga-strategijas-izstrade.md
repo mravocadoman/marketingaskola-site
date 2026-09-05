@@ -17,16 +17,16 @@ Vēlies pacelt sava uzņēmuma mārketingu jaunā līmenī, taču veiksmīgas un
 
 ## 1. Plāns, plāns & vēlreiz plāns
 
-Iztēlojies, ka mārketinga stratēģijas izstrāde ir kā detalizēta plāna piepildījums. Jo labāku  un stabilāku pamatu Tu izveido sākumā, jo labāka ir Tava izpratne par to, ko vēlies sasniegt caur mārketingu. Tas var šķist garlaicīgi, bet ir tiešām  vērts izplānot savas darbības mārketingā līdz pat sīkākajām detaļām, lai Tev būtu garantētas lielākas izredzes attīstīt veiksmīgu un efektīvu mārketinga stratēģiju.
+Iztēlojies, ka mārketinga stratēģijas izstrāde ir kā detalizēta plāna piepildījums. Jo labāku un stabilāku pamatu Tu izveido sākumā, jo labāka ir Tava izpratne par to, ko vēlies sasniegt caur mārketingu. Tas var šķist garlaicīgi, bet ir tiešām vērts izplānot savas darbības mārketingā līdz pat sīkākajām detaļām, lai Tev būtu garantētas lielākas izredzes attīstīt veiksmīgu un efektīvu mārketinga stratēģiju.
 
 ## 2. Izvirzi konkrētus mērķus
 
 Varbūt izklausīsies skarbi, taču mārketinga stratēģijas izstrāde nevar būt veiksmīga, ja nav izvirzīti precīzi mērķi. Ir svarīgi rast atbildi uz šo jautājumu: _Ko Tu vēlies sasniegt savā uzņēmējdarbībā un kā Tu vari izmantot savu mārketinga stratēģiju, lai to sasniegtu?_ Konkrēti mērķi palīdz Tavu mārketinga stratēģiju ievirzīt pareizajā gultnē un nodrošina to, ka esi uz īstā ceļa. Iespējams, Tev nav ideju, kādi varētu būt Tavas mārketinga stratēģijas mērķi. Lūk, iedvesmai vari apsvērt, vai kāds no šiem mērķiem atbilst Tev:
 
--   Vēlos palielināt sava uzņēmuma atpazīstamību
--   Vēlos palielināt pārdošanas apjomus
--   Vēlos palielināt savas mājaslapas un sociālo mediju profilu apmeklējumu
--   Vēlos palielināt uzticamo klientu skaitu
+- Vēlos palielināt sava uzņēmuma atpazīstamību
+- Vēlos palielināt pārdošanas apjomus
+- Vēlos palielināt savas mājaslapas un sociālo mediju profilu apmeklējumu
+- Vēlos palielināt uzticamo klientu skaitu
 
 P.S. Ņem vērā, ka šie mērķi ir vispārēji. Ja, piemēram, _vēlies palielināt uzticamo klientu skaitu_, tad precizē, par cik klientiem vēlies to palielināt. Mārketinga stratēģijas izstrāde nav iespējama bez konkrētības, jo konkrētība palīdzēs Tev visveiksmīgāk izplānot mārketinga stratēģijas budžetu, kā arī saprast, kurā no mārketinga virzieniem bīdīt savu uzņēmumu.
 
@@ -51,17 +51,17 @@ Diezgan daudz šajā bloga rakstā runājam par pētniecību, jo mārketinga str
 Veiksmīgs mārketings ir prasme atstāt paliekošu iespaidu uz klientu. Mūsdienās patērētāji labi apzinās, ka uzņēmumu radītais saturs ir orientēts uz savu pakalpojumu pārdošanu. Maz ticams, ka viņi pozitīvi reaģēs uz saturu, kurā viņi skaidri saredz tikai to, ka viņiem vēlas kaut ko pārdot. Efektīvas mārketinga stratēģijas izstrāde sevī iekļauj autentisku attiecību veidošanu ar savu auditoriju, kā arī radoša, personalizēta un unikāla satura radīšanu.
 
 {% infographic { id: "info-strategijas-septini-soli", title: "Mārketinga stratēģija septiņos soļos", items: [
-  { label: "Plāns", text: "Vispirms uz papīra." },
-  { label: "Konkrēti mērķi", text: "Izmērāmi un ar termiņu." },
-  { label: "Mērķauditorija", text: "Kas ir Tavs klients." },
-  { label: "Konkurenti", text: "Ko dara citi Tavā nozarē." },
-  { label: "Kanālu izvēle", text: "Tradicionālais vai digitālais." },
-  { label: "Nozares tendences", text: "Kas mainās ap Tevi." },
-  { label: "Autentiskums", text: "Balss, kas pieder Tev." }
+ { label: "Plāns", text: "Vispirms uz papīra." },
+ { label: "Konkrēti mērķi", text: "Izmērāmi un ar termiņu." },
+ { label: "Mērķauditorija", text: "Kas ir Tavs klients." },
+ { label: "Konkurenti", text: "Ko dara citi Tavā nozarē." },
+ { label: "Kanālu izvēle", text: "Tradicionālais vai digitālais." },
+ { label: "Nozares tendences", text: "Kas mainās ap Tevi." },
+ { label: "Autentiskums", text: "Balss, kas pieder Tev." }
 ] } %}
 
 ## Mārketinga skolas piedāvājums
 
 Ko no šī bloga raksta var secināt? Mārketinga stratēģijas izveide ir, nu, ļoti laikietilpīgs process. Tāpat kā _Romu neuzbūvēja vienā dienā_, arī veiksmīgu mārketinga stratēģiju nevar izveidot vienā dienā. Bet veiksmīga mārketinga stratēģija ir pamats panākumiem jebkurā [sociālo tīklu](/socialie-tikli/) platformā.
 
-Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — tā maksā 60 € par 30 min vai 90 € par stundu.
+Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu. Tā maksā 60 € par 30 min vai 90 € par stundu.

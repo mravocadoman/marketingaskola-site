@@ -33,9 +33,9 @@ Kādi būs izņēmuma gadījumi?
 
 Sociālo tīklu izmantošanu kā prioritāti sava biznesa izaugsmei **neiesakām** izmantot tiem uzņēmumiem, kas zina, ka atbildes uz šiem diviem jautājumiem nebūs apstiprinošas:
 
--   Vai sociālajos tīklos ir atrodams Tavs mērķa klients?
+- Vai sociālajos tīklos ir atrodams Tavs mērķa klients?
 
--   Vai ir veikta mērķtirgus izpēte, kas pierāda, ka Tavs produkts vai pakalpojums ir pieprasīts un ka ir vērts investēt tā mārketingā?
+- Vai ir veikta mērķtirgus izpēte, kas pierāda, ka Tavs produkts vai pakalpojums ir pieprasīts un ka ir vērts investēt tā mārketingā?
 
 Ja uz pirmo jautājumu atbilde ir apstiprinoša, tad (pirms sociālo tīklu kontu izveides) iesakām veikt izpēti un noskaidrot tieši kuri sociālie tīkli ir piesaistījuši Tavu mērķa klientu uzmanību.
 
@@ -57,18 +57,18 @@ Sociālie tīkli var būt pirmais iespaids, ko cilvēks gūst par uzņēmumu, t�
 
 Lūk, vien daži no sociālo tīklu mārketinga ieguvumiem, ko esam paši pieredzējuši, palīdzot klientiem:
 
--   Pieaug pārdošanas apjomi;
--   Palielinās zīmola atpazīstamība;
--   Izveidojas saikne ar klientu, veicinot lojalitāti zīmolam;
--   Ievērojami uzlabojas mārketinga aktivitāšu efektivitāte, jo ar analītikas rīkiem tiek izvērtēti mārketinga rezultāti un veikti nepieciešamie uzlabojumi.
+- Pieaug pārdošanas apjomi;
+- Palielinās zīmola atpazīstamība;
+- Izveidojas saikne ar klientu, veicinot lojalitāti zīmolam;
+- Ievērojami uzlabojas mārketinga aktivitāšu efektivitāte, jo ar analītikas rīkiem tiek izvērtēti mārketinga rezultāti un veikti nepieciešamie uzlabojumi.
 
 Būtisks trumpis šajos ieguvumos ir **maksas reklāmas**.
 
 {% infographic { id: "info-socialo-tiklu-ieguvumi", title: "Sociālo tīklu ieguvumi", items: [
-  { label: "Pieaug pārdošana", text: "Vairāk pirkumu no tās pašas auditorijas." },
-  { label: "Zīmola atpazīstamība", text: "Cilvēki zina, kas Tu esi." },
-  { label: "Saikne ar klientu", text: "Komūna, ne tikai sekotāji." },
-  { label: "Izmērāma efektivitāte", text: "Analītika rāda, kas strādā." }
+ { label: "Pieaug pārdošana", text: "Vairāk pirkumu no tās pašas auditorijas." },
+ { label: "Zīmola atpazīstamība", text: "Cilvēki zina, kas Tu esi." },
+ { label: "Saikne ar klientu", text: "Komūna, ne tikai sekotāji." },
+ { label: "Izmērāma efektivitāte", text: "Analītika rāda, kas strādā." }
 ] } %}
 
 ## Kāpēc maksas reklāmas?

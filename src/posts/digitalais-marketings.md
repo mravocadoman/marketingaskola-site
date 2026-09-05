@@ -33,9 +33,9 @@ Digitālais mārketings izmanto pavisam citus kanālus un reklamēšanās rīkus
 
 Šie ir vien daži no tiem:
 
--   **Sociālo mediju platformas**, starp kurām _Facebook_ ir bijusi izmantotākā platforma mārketinga nolūkiem 2025. gadā. [Sociālie mediji](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/) nodrošina iespēju uzņēmumiem sasniegt savu mērķa klientu, pilnveidot veiksmīgu tēlu un palielināt pārdošanas apjomus;
--   **E-pasts**, kas palīdz ne tikai palielināt peļņu, bet arī nodibināt personisku saikni ar klientu, veicinot lojalitāti uzņēmumam;
--   **SEO** jeb meklētājprogrammu optimizācija, kas sniedz iespēju mājaslapām iegūt augstāku pozīciju meklētājprogrammās, kā _Google_ vai _Bing_. SEO uzņēmumiem piesaista jaunus klientus un veicina pārdošanu.
+- **Sociālo mediju platformas**, starp kurām _Facebook_ ir bijusi izmantotākā platforma mārketinga nolūkiem 2025. gadā. [Sociālie mediji](/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/) nodrošina iespēju uzņēmumiem sasniegt savu mērķa klientu, pilnveidot veiksmīgu tēlu un palielināt pārdošanas apjomus;
+- **E-pasts**, kas palīdz ne tikai palielināt peļņu, bet arī nodibināt personisku saikni ar klientu, veicinot lojalitāti uzņēmumam;
+- **SEO** jeb meklētājprogrammu optimizācija, kas sniedz iespēju mājaslapām iegūt augstāku pozīciju meklētājprogrammās, kā _Google_ vai _Bing_. SEO uzņēmumiem piesaista jaunus klientus un veicina pārdošanu.
 
 Starp citu, vari tuvāk iepazīties ar [7, mūsuprāt, lieliskiem digitālā mārketinga rīkiem](/7-digitala-marketinga-riki/), kas uzņēmumiem var atvieglot ikdienu.
 
@@ -43,22 +43,22 @@ Starp citu, vari tuvāk iepazīties ar [7, mūsuprāt, lieliskiem digitālā mā
 
 Kā ilggadēji mārketinga nozares eksperti, uzskatām, ka digitālais mārketings ir pārpildīts ar potenciālu uzņēmumus aizvest uz jaunām virsotnēm un peļņu. Mūsu pieredzē šie ir 3 lielākie digitālā mārketinga ieguvumi:
 
--   **Precīza mērķauditorijas sasniegšana**
+- **Precīza mērķauditorijas sasniegšana**
 
 Digitālais mārketings palīdz sasniegt mērķa klientu ar pāris klikšķiem. Kā? Ja apzinies, kam vēlies pārdot produktu, tad ar stratēģisku digitālo rīku izmantošanu pie klienta nonāksi mirkļa ātrumā.
 
--   **Peļņas palielināšana**
+- **Peļņas palielināšana**
 
 Atlasot uzņēmuma produktam un mērķauditorijai pielāgotu digitālā mārketinga stratēģiju, var ievērojami palielināt pārdošanas apjomus un klientu bāzi.
 
--   **Mārketinga efektivitātes izmērīšana**
+- **Mārketinga efektivitātes izmērīšana**
 
 Digitālā mārketinga trumpis ir spēja parādīt tā darba (vai nedarba) augļus. Digitālie rīki spēj to, ko nespēj tradicionālie – ātri un precīzi parādot, vai reklāmai bijusi jēga caur reklāmas klikšķu skaitu, konvertāciju skaitu pirkumos un citiem analītikas rādītājiem.
 
 {% infographic { id: "info-digitala-marketinga-ieguvumi", title: "Trīs lielākie digitālā mārketinga ieguvumi", items: [
-  { label: "Precīza mērķauditorijas sasniegšana", text: "Pie īstā klienta ar pāris klikšķiem, ja zini, kam pārdod." },
-  { label: "Peļņas palielināšana", text: "Produktam un auditorijai pielāgota stratēģija audzē pārdošanu un klientu bāzi." },
-  { label: "Izmērāma efektivitāte", text: "Klikšķi, konversijas un pirkumi rāda, vai reklāmai bijusi jēga." }
+ { label: "Precīza mērķauditorijas sasniegšana", text: "Pie īstā klienta ar pāris klikšķiem, ja zini, kam pārdod." },
+ { label: "Peļņas palielināšana", text: "Produktam un auditorijai pielāgota stratēģija audzē pārdošanu un klientu bāzi." },
+ { label: "Izmērāma efektivitāte", text: "Klikšķi, konversijas un pirkumi rāda, vai reklāmai bijusi jēga." }
 ] } %}
 
 ## Kāpēc visi uzņēmumi, kuros īstenots digitālais mārketings, nav veiksmīgi?
@@ -91,6 +91,6 @@ Vai jūsu uzņēmums ir gatavs sasniegt jaunus peļņas līmeņus un izcelties k
 
 Mūsu vadītājs Rihards ir eksperts šajā jomā un ir palīdzējis daudziem uzņēmumiem atrast ceļu uz lielu peļņu un sasniegumiem. Viņš ir izveidojis efektīvas digitālā mārketinga kampaņas, kas pievērš uzmanību un piesaista jūsu mērķauditoriju.
 
-Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu — 90 € par stundu vai 60 € par 30 minūtēm. Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
+Ja vēlies pārrunāt savus personīgos mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, piesakies [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu, 90 € par stundu vai 60 € par 30 minūtēm. Mēs piedāvājam ceļu uz panākumiem, kas sākas ar precīzi izstrādātu stratēģiju un turpinās ar mērķtiecīgu darbību.
 
 _P.S. Lai izdodas sasniegt augstākās uzņēmējdarbības virsotnes!_

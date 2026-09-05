@@ -463,7 +463,7 @@
       "aspect": "landscape",
       "style": "paper",
       "alt": "Infografika no izgrieztām papīra formām: trīs vietas, kur mārketinga automatizācija atmaksājas pirmā — pieteikumu ceļš no formas uz sistēmu, automātiska pirmā atbilde un atskaites",
-      "prompt": "Headline: «Trīs vietas, kur automatizācija atmaksājas». THREE items in one row. «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā» - emblem: a pale grey paper panel bearing three pale grey bars and one cyan bar at the bottom, a navy arrow pointing right into two offset navy cards. «02» «Pirmā atbilde» «Automātisks apstiprinājums nopērk laiku» - emblem: an open envelope from a navy body and pale grey flaps with an pale grey letter rising out of it, and beside it a cyan circle with one navy wedge cut from it. «03» «Atskaites» «Automatizē tikai to, ko kāds lasa» - emblem: a pale grey page carrying four bars of rising height, the tallest cyan, with a navy quarter-circle in its top corner.",
+      "prompt": "Headline: «Trīs vietas, kur automatizācija atmaksājas». THREE items in one row. «01» «Pieteikumu ceļš» «Forma raksta tieši sistēmā» - emblem: a pale grey paper panel bearing three pale grey bars and one cyan bar at the bottom, a navy arrow pointing right into two offset navy cards. «02» «Pirmā atbilde» «Klients nepaliek bez atbildes» - emblem: an open envelope from a navy body and pale grey flaps with an pale grey letter rising out of it, and beside it a cyan circle with one navy wedge cut from it. «03» «Atskaites» «Automatizē tikai to, ko kāds lasa» - emblem: a pale grey page carrying four bars of rising height, the tallest cyan, with a navy quarter-circle in its top corner.",
       "quality": "high"
     },
     {
@@ -898,6 +898,24 @@
       "alt": "Infografika no izgrieztām papīra formām: piecas digitālā mārketinga tendences — meklēšana pārceļas uz mākslīgo intelektu, sociālie tīkli kā meklētājs, autentiskums pārspēj produkciju, pirmās puses dati un MI procesos",
       "rationale": "Replaces the 2025 version after the article was rewritten for 2026-2027; the old graphic listed trends the text no longer discusses.",
       "prompt": "Headline: «Piecas digitālā mārketinga tendences». FIVE items in TWO rows - three above, two below. «01» «Meklēšana pārceļas uz MI» «Mērķis ir kļūt par avotu, ko asistents citē» - emblem: a pale grey panel with a navy answer block filling its top and three short grey result bars beneath it, one cyan. «02» «Sociālie tīkli kā meklētājs» «Pirkums notiek turpat plūsmā» - emblem: a tall navy phone frame with a pale grey search bar across its top and a cyan cart square at its base. «03» «Autentiskums pārspēj produkciju» «Telefona video bieži uzvar» - emblem: a small navy phone frame beside a larger pale grey studio frame, with a cyan tick above the phone. «04» «Pirmās puses dati» «Vērtīgi ir tie dati, kas pieder Tev» - emblem: a navy folder holding three pale grey record cards, the top one tabbed cyan. «05» «MI pārceļas uz procesiem» «Automatizē darbu, ne tikai tekstu» - emblem: four navy squares linked left to right by pale grey connectors, the third cyan."
+    },
+    {
+      "id": "info-mekleana-mainas",
+      "page": "5-digitala-marketinga-tendences-2025-gada",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: kā mainījusies meklēšana. Agrāk cilvēks saņēma rezultātu sarakstu un izvēlējās, tagad viņš saņem gatavu atbildi un bieži nekur neklikšķina",
+      "rationale": "The article's first trend is the biggest shift it describes; a before/after picture makes it land faster than the paragraph.",
+      "prompt": "Headline: «Kā mainījusies meklēšana». TWO items in one row, each with a large emblem, reading as a before and after. «01» «Agrāk: saraksts ar rezultātiem» «Cilvēks izvēlējās un klikšķināja» : emblem: a pale grey search panel with a navy query bar at the top and six navy result bars of descending length beneath it, one bar cyan, and a small navy cursor arrow resting on it. «02» «Tagad: gatava atbilde» «Bieži neviens nekur neklikšķina» : emblem: the same pale grey panel, but almost all of it filled by one large navy answer block with three cyan lines of text inside, and only two very short grey result bars pushed to the very bottom edge."
+    },
+    {
+      "id": "info-kuri-dati-pieder-tev",
+      "page": "5-digitala-marketinga-tendences-2025-gada",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: kuri dati pieder Tev. E-pastu saraksts, pirkumu vēsture un konversiju uzskaite pretstatā platformas auditorijai, kuru var zaudēt",
+      "rationale": "The first-party data trend is abstract in prose; separating what you own from what you borrow makes the argument concrete.",
+      "prompt": "Headline: «Kuri dati pieder Tev». FOUR items in one row. The first three sit together as things you own, the fourth is visibly set apart. «01» «E-pastu saraksts» «Neviens algoritms to neatņem» : emblem: a navy envelope above a pale grey stack of three record cards, the top card tabbed cyan. «02» «Pirkumu vēsture» «Ko cilvēks jau ir pircis» : emblem: a pale grey page with four navy rows and one cyan row, and a small navy cart shape beside it. «03» «Konversiju uzskaite» «Zini, kas tiešām nopelnīja» : emblem: four bars of rising height on a navy baseline, the tallest cyan, with a small cyan tick above it. «04» «Platformas auditorija» «Aizņemta, ne Tava» : emblem: a navy cloud-free rounded-free rectangle outline holding pale grey figures, drawn with a broken navy line around it to show it is not yours, and one cyan figure escaping outside the outline."
     }
   ]
 }

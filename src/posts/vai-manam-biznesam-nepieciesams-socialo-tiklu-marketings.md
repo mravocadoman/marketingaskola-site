@@ -23,7 +23,7 @@ Tas ir absolūts mīts, kuru vēlamies apgāzt.
 
 **Treškārt,** uzņēmumam ir nepieciešama precīzi izplānota sociālo tīklu mārketinga stratēģija, lai sasniegtu savus uzņēmējdarbības mērķus. Vienaldzība un vienkārša cerība, ka tiks sasniegti vēlamie mārketinga rezultāti nav efektīvs veids, kā attīstīt mārketingu.
 
-Šajā bloga rakstā vēlamies Tevi iepazīstināt ar  sociālo tīklu mārketinga pasauli un parādīt tās gaišo pusi un arī tumšo, jo tāda, gluži kā visiem digitālā mārketinga rīkiem, pastāv arī sociālajiem tīkliem.
+Šajā bloga rakstā vēlamies Tevi iepazīstināt ar sociālo tīklu mārketinga pasauli un parādīt tās gaišo pusi un arī tumšo, jo tāda, gluži kā visiem digitālā mārketinga rīkiem, pastāv arī sociālajiem tīkliem.
 
 ## Kas ir sociālo tīklu mārketings?
 
@@ -45,10 +45,10 @@ LinkedIn ir aptuveni **950 miljoni** lietotāju
 
 Sociālo tīklu popularitātes dēļ:
 
--   Pieaug pārdošanas apjomi
--   Palielinās zīmola atpazīstamība
--   Pieaug gan uzticamu, gan jaunu klientu skaits
--   Var viegli uzrunāt savu mērķauditoriju, izmantojot, piemēram, Facebook reklāmas, ar kurām var precīzi mērķēt uz saviem potenciālajiem klientiem
+- Pieaug pārdošanas apjomi
+- Palielinās zīmola atpazīstamība
+- Pieaug gan uzticamu, gan jaunu klientu skaits
+- Var viegli uzrunāt savu mērķauditoriju, izmantojot, piemēram, Facebook reklāmas, ar kurām var precīzi mērķēt uz saviem potenciālajiem klientiem
 
 ### Analītikas rīki
 
@@ -70,11 +70,11 @@ Protams, uzņēmumi arī izmanto to, ka sociālajos tīklos var uzsākt komunik�
 
 Sociālie tīkli ir veidoti ar mērķi nepiespiestā veidā veidot komunikāciju starp cilvēkiem. To pamatideja ir atslēgties no ikdienas steigas jeb
 
--   tērzēt ar draugiem
--   apskatīt saistošas publikācijas _(postus)_
--   sekot cilvēkiem, kuri ir pazīstami vai šķiet interesanti
+- tērzēt ar draugiem
+- apskatīt saistošas publikācijas _(postus)_
+- sekot cilvēkiem, kuri ir pazīstami vai šķiet interesanti
 
-Reklāma noteikti nav tas, ko cilvēki vēlētos sastapt sociālajos tīklos, taču tā mūsdienās ir realitāte. Tagad starp sirsnīgām bildēm, ko publicē mūsu ģimene vai draugi, ir redzami sponsorēti  ieraksti un reklāmas, kas, algoritmu skatījumā, mums varētu patikt.
+Reklāma noteikti nav tas, ko cilvēki vēlētos sastapt sociālajos tīklos, taču tā mūsdienās ir realitāte. Tagad starp sirsnīgām bildēm, ko publicē mūsu ģimene vai draugi, ir redzami sponsorēti ieraksti un reklāmas, kas, algoritmu skatījumā, mums varētu patikt.
 
 Ja vēlies attīstīt sociālo tīklu mārketingu, noteikti atceries, kāpēc cilvēki izmanto sociālos tīklus. Tādējādi varēsi veidot pielāgotākās reklāmas.
 
@@ -82,20 +82,20 @@ Ja vēlies attīstīt sociālo tīklu mārketingu, noteikti atceries, kāpēc ci
 
 Sociālo tīklu mārketings ir ļoti laikietilpīgs process, jo
 
--   ar reklāmas vai publikācijas izvietošanu sociālajos tīklos noteikti nepietiek: šai reklāmai ir pastāvīgi jāseko līdzi un jāanalizē analītika
--   sociālo tīklu tendences mainās gaismas ātrumā, ir jāvelta laiks šo tendenču izpētei
--   ir pastāvīgi jāpublicē jauns saturs sociālajos tīklos, lai nepazaudētu sekotāju interesi uzņēmumā
+- ar reklāmas vai publikācijas izvietošanu sociālajos tīklos noteikti nepietiek: šai reklāmai ir pastāvīgi jāseko līdzi un jāanalizē analītika
+- sociālo tīklu tendences mainās gaismas ātrumā, ir jāvelta laiks šo tendenču izpētei
+- ir pastāvīgi jāpublicē jauns saturs sociālajos tīklos, lai nepazaudētu sekotāju interesi uzņēmumā
 
 Sociālo tīklu mārketings ir visfektīvākais veids, kā palielināt zīmola atpazīstamību, pārdošanas apjomus un klientu skaitu, taču tajā pašā laikā tas ir ļoti sarežģīts un laikietilpīgs veids, kā šo visu sasniegt.
 
 {% infographic { id: "info-socialo-tiklu-abas-puses", title: "Sociālo tīklu mārketings: abas puses", items: [
-  { label: "Popularitāte", text: "Lietotāju skaits aug katru gadu." },
-  { label: "Analītikas rīki", text: "Var izmērīt, vai atmaksājās." },
-  { label: "Saikne ar klientu", text: "Komūna ap zīmolu." },
-  { label: "Pamatideja nav bizness", text: "Cilvēki nāk atslēgties, ne pirkt." },
-  { label: "Prasa pastāvīgu aktivitāti", text: "Viena publikācija neko nemaina." }
+ { label: "Popularitāte", text: "Lietotāju skaits aug katru gadu." },
+ { label: "Analītikas rīki", text: "Var izmērīt, vai atmaksājās." },
+ { label: "Saikne ar klientu", text: "Komūna ap zīmolu." },
+ { label: "Pamatideja nav bizness", text: "Cilvēki nāk atslēgties, ne pirkt." },
+ { label: "Prasa pastāvīgu aktivitāti", text: "Viena publikācija neko nemaina." }
 ] } %}
 
 ## Mārketinga skolas piedāvājums
 
-Ja esi gatavs veltīt ļoti daudz laika sava uzņēmuma mārketinga attīstībai, tad, mūsuprāt, sociālo tīklu mārketings varētu būt Tava veiksmes atslēga! Digitālās reklāmas aģentūra Mārketinga Skola veido un pārvalda Meta reklāmas kampaņas, tāpēc, ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam — [uzraksti mums](/sazinies/). Ja gribi šo jomu apgūt pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/), pēc kura spēsi saprast sociālo tīklu reklāmas pamatus un satura veidošanas pamatprincipus.
+Ja esi gatavs veltīt ļoti daudz laika sava uzņēmuma mārketinga attīstībai, tad, mūsuprāt, sociālo tīklu mārketings varētu būt Tava veiksmes atslēga! Digitālās reklāmas aģentūra Mārketinga Skola veido un pārvalda Meta reklāmas kampaņas, tāpēc, ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam, [uzraksti mums](/sazinies/). Ja gribi šo jomu apgūt pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/), pēc kura spēsi saprast sociālo tīklu reklāmas pamatus un satura veidošanas pamatprincipus.

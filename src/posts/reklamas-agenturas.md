@@ -19,14 +19,14 @@ Reklāmas aģentūru piedāvājumi izskatās līdzīgi: profesionāla komanda, i
 Tāpēc šis raksts nav par to, kā aģentūras sevi apraksta. Tas ir par to, **kad ārējs partneris tiešām atmaksājas, kad izdevīgāk darīt pašam un pēc kā atšķirt vienu no otra.**
 
 {% infographic { id: "info-kad-vajag-agenturu", title: "Kad reklāmas aģentūra atmaksājas", items: [
-  { label: "Trūkst laika", text: "Reklāma paliek pēdējā sarakstā." },
-  { label: "Trūkst kompetences", text: "Iestatījumi, kurus neviens nepārzina." },
-  { label: "Rezultāti nepieaug", text: "Budžets tērēts, skaitļi stāv." }
+ { label: "Trūkst laika", text: "Reklāma paliek pēdējā sarakstā." },
+ { label: "Trūkst kompetences", text: "Iestatījumi, kurus neviens nepārzina." },
+ { label: "Rezultāti nepieaug", text: "Budžets tērēts, skaitļi stāv." }
 ] } %}
 
 ## Trīs pazīmes, ka ir laiks
 
-**Reklāma vienmēr paliek uz vēlāk.** Kampaņa palaista pirms trim mēnešiem un kopš tā laika neviens tajā nav ieskatījies. Tas ir dārgākais variants — budžets tērējas, uzmanība nav.
+**Reklāma vienmēr paliek uz vēlāk.** Kampaņa palaista pirms trim mēnešiem un kopš tā laika neviens tajā nav ieskatījies. Tas ir dārgākais variants, budžets tērējas, uzmanība nav.
 
 **Neviens nepārzina iestatījumus.** Kontā ir opcijas, kuras neviens nav mainījis, jo nav skaidrs, ko tās dara. Noklusējumi reti ir Tavās interesēs.
 
@@ -38,7 +38,7 @@ Tāpēc šis raksts nav par to, kā aģentūras sevi apraksta. Tas ir par to, **
 
 **Ārēju skatienu.** Uzņēmuma iekšienē visi zina produktu pārāk labi un aizmirst, kā tas izskatās svešam cilvēkam.
 
-**Pieredzi no citiem klientiem.** Ko šogad ir mēģinājuši desmit citi uzņēmumi un kas no tā strādāja — šo informāciju nevar nopirkt atsevišķi.
+**Pieredzi no citiem klientiem.** Ko šogad ir mēģinājuši desmit citi uzņēmumi un kas no tā strādāja, šo informāciju nevar nopirkt atsevišķi.
 
 **Nepārtrauktību.** Kampaņas neapstājas atvaļinājuma laikā.
 
@@ -60,7 +60,7 @@ Cenas atšķiras, bet lēmumu atvieglo viens aprēķins.
 
 Sasummē aģentūras maksu un reklāmas budžetu. Sadali ar klientu skaitu, ko no tā sagaidi. Salīdzini ar to, cik Tev vērts viens klients.
 
-Ja klients nes divsimt eiro peļņas un izmaksā piecdesmit, sadarbība ir izdevīga pat tad, ja maksa šķiet augsta. Ja klients nes divdesmit eiro, nekāda aģentūra to nesalabos — mainīt vajag piedāvājumu.
+Ja klients nes divsimt eiro peļņas un izmaksā piecdesmit, sadarbība ir izdevīga pat tad, ja maksa šķiet augsta. Ja klients nes divdesmit eiro, nekāda aģentūra to nesalabos, mainīt vajag piedāvājumu.
 
 **Reklāmas budžets un aģentūras maksa vienmēr jāredz atsevišķi.** Ja tie ir sajaukti vienā summā, nevar saprast, par ko maksā.
 
@@ -74,9 +74,9 @@ Ja klients nes divsimt eiro peļņas un izmaksā piecdesmit, sadarbība ir izdev
 
 **Piedāvā sākt mazāk.** Labs partneris nebaidās no izmēģinājuma perioda.
 
-**Piekļuve kontiem paliek Tev.** Konti reģistrēti uz Tavu uzņēmumu — vienmēr.
+**Piekļuve kontiem paliek Tev.** Konti reģistrēti uz Tavu uzņēmumu, vienmēr.
 
-## Sarkanie karogi
+## Kas ir jāsatrauc
 
 Garantēta pirmā vieta Google. Fiksēts klientu skaits mēnesī. Atskaites, kurās nav nevienas problēmas. Līgums uz gadu bez iespējas izstāties. Un piedāvājums, kas atsūtīts bez vienas sarunas.
 
@@ -86,7 +86,7 @@ Neviens no tiem pats par sevi nav pierādījums, bet divi vienlaikus ir pietieka
 
 Aģentūras darbs vienā mēnesī reti izskatās iespaidīgs. Vērtība rodas no uzkrāšanās: konts kļūst gudrāks, auditorijas precīzākas, teksti pārbaudīti, un klienta cena pamazām krīt.
 
-Tieši tāpēc bieža partneru maiņa ir dārga — katra maiņa sāk mācīšanos no jauna.
+Tieši tāpēc bieža partneru maiņa ir dārga, katra maiņa sāk mācīšanos no jauna.
 
 ## Kā izskatās laba sadarbība ikdienā
 
@@ -102,7 +102,7 @@ Jo skaidrāki ievaddati, jo lētāk un ātrāk sadarbība sāk strādāt.
 
 Zini, cik Tev ir vērts viens klients. Zini, kurš pakalpojums ir vissvarīgākais tuvākajos mēnešos. Zini, kas Tavā pusē atbildēs uz pieteikumiem un cik ātri. Un esi gatavs pateikt, kas iepriekš jau ir mēģināts un kāpēc tas nenostrādāja.
 
-Šie četri punkti atsijā pusi no sliktajiem piedāvājumiem paši par sevi — jo aģentūra, kuru šī informācija neinteresē, visticamāk, pārdod pakalpojumu, nevis rezultātu.
+Šie četri punkti atsijā pusi no sliktajiem piedāvājumiem paši par sevi, jo aģentūra, kuru šī informācija neinteresē, visticamāk, pārdod pakalpojumu, nevis rezultātu.
 
 ## Biežākie jautājumi
 
@@ -113,7 +113,7 @@ Vismaz trīs mēneši. Ātrāk redzami tikai pirmie signāli, ne tendence.
 Nē. Sāc ar īsāku periodu un skaidru mērķi.
 
 **Vai aģentūra strādās arī ar saturu?**
-Daudzas jā, bet pajautā konkrēti — reklāmas un satura kompetences bieži ir dažādas.
+Daudzas jā, bet pajautā konkrēti, reklāmas un satura kompetences bieži ir dažādas.
 
 **Ko darīt, ja rezultāta nav?**
 Vispirms pārbaudi, vai mērīšana ir pareiza. Ļoti bieži rezultāts ir, tikai to neviens neredz.
@@ -122,6 +122,6 @@ Vispirms pārbaudi, vai mērīšana ir pareiza. Ļoti bieži rezultāts ir, tika
 
 Aģentūra nav risinājums pati par sevi. Tā ir veids, kā ātrāk tikt pie rezultāta, ja pamati jau ir vietā.
 
-Ja neesi drošs, vai Tev vajag partneri vai vienkārši skaidrāku plānu, sāc ar [individuālu konsultāciju](/marketinga-konsultacijas/) — stundas laikā izejam cauri situācijai un saliekam prioritātes. Apskati arī [mūsu pakalpojumus](/pakalpojumi/) un [veiksmes stāstus](/portfolio/).
+Ja neesi drošs, vai Tev vajag partneri vai vienkārši skaidrāku plānu, sāc ar [individuālu konsultāciju](/marketinga-konsultacijas/), stundas laikā izejam cauri situācijai un saliekam prioritātes. Apskati arī [mūsu pakalpojumus](/pakalpojumi/) un [veiksmes stāstus](/portfolio/).
 
 Ja gribi zināšanas paturēt savā komandā, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).

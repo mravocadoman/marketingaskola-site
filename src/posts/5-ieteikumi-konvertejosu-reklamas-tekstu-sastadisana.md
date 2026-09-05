@@ -31,28 +31,28 @@ Virsraksts ir pirmais, ko Tavi lasītāji pamana, tāpēc tam ir jābūt vienkā
 
 Mūsuprāt, šīs 4 pazīmes vieno veiksmīgus un efektīvus reklāmas tekstu virsrakstus:
 
--   Virsrakstā ir skaitļi
--   Ir iekļautas specifiskas detaļas, kas ieintriģē lasītāju
--   Virsraksts aizķer cilvēku emocionāli
--   Virsraksts ir kā jautājuma forma : liek lasītājam domāt
--   Virsraksts nav garš (~7 vārdi)
+- Virsrakstā ir skaitļi
+- Ir iekļautas specifiskas detaļas, kas ieintriģē lasītāju
+- Virsraksts aizķer cilvēku emocionāli
+- Virsraksts ir kā jautājuma forma : liek lasītājam domāt
+- Virsraksts nav garš (~7 vārdi)
 
 Kad uzraksti savu reklāmas teksta virsrakstu, noteikti iesakām aizdomāties par šīm 5 pazīmēm un saprast, vai Tavam virsrakstam tās ir.
 
 ## 4. Kodolīgs un īss teksts
 
-Reklāmas tekstu sastādīšana ir kā māksla rakstīt īsi, kodolīgi un ieintriģējoši bez gariem ievadiem un noslēgumiem. Ne velti frāze _laiks ir nauda_ ir tik ļoti populāra mūsdienās. Cilvēkiem patiešām nav vēlmes veltīt savu dārgo laiku garu reklāmas tekstu lasīšanai. Rakstot reklāmas tekstu, centies pāriet tieši pie lietas būtības! Vēlies pārdot savam lasītājam putekļsūcēju? Tad kodolīgi iepazīstini lasītāju ar putekļsūcēju un pārliecini lasītāju, ka tieši viņam tas ir nepieciešams.  Potenciālajam klientam tiešām neinteresēs itin visas putekļsūcēja funkcijas vai gari apraksti par to, cik lieliski tas spēj izsūkt putekļus. Neiespringsti! Vienkārši atceries, ka reklāmas teksta kvalitāte iet roku rokā ar kodolīgumu un konkrētību.
+Reklāmas tekstu sastādīšana ir kā māksla rakstīt īsi, kodolīgi un ieintriģējoši bez gariem ievadiem un noslēgumiem. Ne velti frāze _laiks ir nauda_ ir tik ļoti populāra mūsdienās. Cilvēkiem patiešām nav vēlmes veltīt savu dārgo laiku garu reklāmas tekstu lasīšanai. Rakstot reklāmas tekstu, centies pāriet tieši pie lietas būtības! Vēlies pārdot savam lasītājam putekļsūcēju? Tad kodolīgi iepazīstini lasītāju ar putekļsūcēju un pārliecini lasītāju, ka tieši viņam tas ir nepieciešams. Potenciālajam klientam tiešām neinteresēs itin visas putekļsūcēja funkcijas vai gari apraksti par to, cik lieliski tas spēj izsūkt putekļus. Neiespringsti! Vienkārši atceries, ka reklāmas teksta kvalitāte iet roku rokā ar kodolīgumu un konkrētību.
 
 ## 5. Veiksmes atslēga: vienkāršība
 
 Mūsdienās valda populārs stereotips, ka reklāmas tekstus spēj rakstīt tikai cilvēki ar bagātu vārdu krājumu, jo viņu vārdu izvēle ir unikāla un oriģināla. Tas ir tik aplami! Mārketinga Skola ir veltījusi ļoti daudz laika, lai izpētītu, kā ieinteresēt potenciālos klientus savos reklāmu tekstos. Viens no mūsu vērtīgākajiem secinājumiem ir, ka cilvēkus saista vienkāršība. Viņiem patīk iedziļināties saturā, kas ir skaidrs un viegli saprotams. Reklāmas tekstu sastādīšana ir prasme šo tekstu nepiepildīt ar gudriem zinātniski pierādītiem faktu pamatojumiem vai īpatnējiem īpašības vārdiem, jo bieži vien tieši pārgudra valoda un reklāma, kuras teksts ir sarežģīti saprotams, cilvēkus nevis piesaista, bet atgrūž.
 
 {% infographic { id: "info-reklamas-teksta-ieteikumi", title: "Pieci ieteikumi konvertējošam reklāmas tekstam", items: [
-  { label: "Pazīsti mērķauditoriju", text: "Bez auditorijas izpētes teksts nevar ieinteresēt nevienu." },
-  { label: "Emocionālā saikne", text: "Aizkustini, sasmīdini, pārsteidz — aizķer stīgu, kas liek rīkoties." },
-  { label: "Ieintriģējošs virsraksts", text: "Pirmais, ko pamana; no tā atkarīgs, vai lasīs tālāk." },
-  { label: "Īss un kodolīgs teksts", text: "Bez gariem ievadiem un noslēgumiem — laiks ir nauda." },
-  { label: "Vienkāršība", text: "Skaidri vārdi pārdod labāk nekā bagāts vārdu krājums." }
+ { label: "Pazīsti mērķauditoriju", text: "Bez auditorijas izpētes teksts nevar ieinteresēt nevienu." },
+ { label: "Emocionālā saikne", text: "Aizkustini, sasmīdini, pārsteidz: aizķer stīgu, kas liek rīkoties." },
+ { label: "Ieintriģējošs virsraksts", text: "Pirmais, ko pamana; no tā atkarīgs, vai lasīs tālāk." },
+ { label: "Īss un kodolīgs teksts", text: "Bez gariem ievadiem un noslēgumiem: laiks ir nauda." },
+ { label: "Vienkāršība", text: "Skaidri vārdi pārdod labāk nekā bagāts vārdu krājums." }
 ] } %}
 
 ## Mārketinga skola iesaka

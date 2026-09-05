@@ -29,11 +29,11 @@ Saprotot to, kā viņi uztver Tavu uzrakstīto, Tu spēsi uzrakstīt vien 2 teik
 
 Veiksmīgs reklāmas teksts lasītājā aizskar kādu emocionālo stīgu vai arī liek viņam par lasīto aizdomāties. Lai Tu spētu panākt vienu no šīm reakcijām, Tev ir jāveic diezgan liela mērķauditorijas izpēte. Mēs ieteiktu aizdomāties par šādiem Tavus lasītājus aprakstošiem aspektiem:
 
--   Demogrāfiskais stāvoklis
--   Intereses
--   Kvēlākie sapņi un mērķi
--   Rīcība digitālajā vidē
--   Ieradumi
+- Demogrāfiskais stāvoklis
+- Intereses
+- Kvēlākie sapņi un mērķi
+- Rīcība digitālajā vidē
+- Ieradumi
 
 ## 2. Saistošu reklāmas tekstu veidošana – virsraksti
 
@@ -43,16 +43,16 @@ Kāpēc virsraksts ir tik svarīgs? Virsraksts ir tas, ko mēs pamanām pirmo, k
 
 Ja Tava reklāmas teksta virsraksts būs garlaicīgs un potenciālos klientus nesaistīs, viņi nemaz netērēs vairāk sava laika pārējā reklāmas teksta izlasīšanai. Ņem vērā, ka saistošs, vērtīgs un veiksmīgs reklāmas teksts:
 
--   Nav garš un to veido ~7 vārdi
--   Sastāv no specifiskām detaļām, kas ieintriģē un rada jautājumus
--   Aizķer cilvēku emocionāli
--   Liek lasītājam aizdomāties (īpaši veiksmīgi to var panākt, uzrakstot virsrakstu jautājuma formā)
+- Nav garš un to veido ~7 vārdi
+- Sastāv no specifiskām detaļām, kas ieintriģē un rada jautājumus
+- Aizķer cilvēku emocionāli
+- Liek lasītājam aizdomāties (īpaši veiksmīgi to var panākt, uzrakstot virsrakstu jautājuma formā)
 
 Iztēlosimies, ka reklamējam sporta trenažieri. Lūk, daži iespējamie virsraksti, ko mēs kā zinoši kopīraiteri jeb cilvēki, kuri raksta tekstus mārketinga mērķiem, izmantotu Facebook/Instagram reklāmā:
 
--   _Sapņo par ideālo pludmales figūru?_
--   _Fiziskās aktivitātes ➡ laimes hormoni_
--   _Jau sen esi vēlējies atgūt motivāciju sportot?_
+- _Sapņo par ideālo pludmales figūru?_
+- _Fiziskās aktivitātes ➡ laimes hormoni_
+- _Jau sen esi vēlējies atgūt motivāciju sportot?_
 
 ## 3. Fokusējies uz pircēja ieguvumu uzskaiti
 
@@ -66,12 +66,12 @@ Reklāmas tekstu veidošana ir process, kura gaitā Tev, kā jau minējām, ir j
 
 _Šī trenažiera iegāde ir fantastisks veids, kā:_
 
--   _Samazināt stresu un negatīvās emocijas;_
--   _Netērēt daudz naudas sporta zāles abonementos;_
--   _Uzlabot savu fizisko formu, iegūstot izcilo pludmales figūru;_
--   _Palielināt pašpārliecinātību un iemīlēt sevi;_
--   _Novērst risku saslimt ar dažādām hroniskām slimībām;_
--   _Parūpēties par savu labsajūtu, jo jebkura fiziska aktivitāte izdala laimes hormonus._
+- _Samazināt stresu un negatīvās emocijas;_
+- _Netērēt daudz naudas sporta zāles abonementos;_
+- _Uzlabot savu fizisko formu, iegūstot izcilo pludmales figūru;_
+- _Palielināt pašpārliecinātību un iemīlēt sevi;_
+- _Novērst risku saslimt ar dažādām hroniskām slimībām;_
+- _Parūpēties par savu labsajūtu, jo jebkura fiziska aktivitāte izdala laimes hormonus._
 
 ## 4. Iedvesmo lasītāju rīkoties
 
@@ -92,19 +92,19 @@ Lai noskaidrotu, kurš no tekstiem ir visveiksmīgākais, ir jāveic A/B testē�
 Piemēram, veidojot Facebook reklāmas, Facebook platforma piedāvā veikt šo testu, taču Tev tai ir jāsniedz saturs jeb reklāmas teksti vairākās versijās. Pēc A/B testa ir iespējams noskaidrot, kura no reklāmas tekstu versijām ir bijusi visveiksmīgākā, gūstot visvairāk reakcijas no mērķauditorijas. Veicot šo testu, vari saprast, kurš teksts visefektīvāk palīdzēs Tev sasniegt Tavus mārketinga mērķus!
 
 {% infographic { id: "info-reklamas-teksta-solis", title: "Reklāmas teksts piecos soļos", items: [
-  { label: "Iejūties lasītāja lomā", text: "Kam Tu raksti un kas viņu satrauc." },
-  { label: "Virsraksts", text: "Pirmais, ko pamana." },
-  { label: "Pircēja ieguvumi", text: "Ne funkcijas, bet rezultāts." },
-  { label: "Aicinājums rīkoties", text: "Pasaki, kas jādara tālāk." },
-  { label: "A/B testēšana", text: "Divi varianti, viens uzvarētājs." }
+ { label: "Iejūties lasītāja lomā", text: "Kam Tu raksti un kas viņu satrauc." },
+ { label: "Virsraksts", text: "Pirmais, ko pamana." },
+ { label: "Pircēja ieguvumi", text: "Ne funkcijas, bet rezultāts." },
+ { label: "Aicinājums rīkoties", text: "Pasaki, kas jādara tālāk." },
+ { label: "A/B testēšana", text: "Divi varianti, viens uzvarētājs." }
 ] } %}
 
 ## Mārketinga skola iesaka
 
 Vai pirms šī bloga raksta izlasīšanas domāji, ka reklāmas tekstu veidošana sastāv tikai no rakstīšanas, lielas domāšanas un teksta strukturēšanas? Ja jā, tad mums prieks, jo tagad zini, ka tā nebūt nav!
 
-Copywriting formulas — AIDA, PAP un BAB — praksē izejam cauri arī [Meta reklāmas kursā](/meta-reklamas-kurss/), ja tekstu rakstīšanu gribi apgūt kopā ar pasniedzēju.
+Copywriting formulas, AIDA, PAP un BAB, praksē izejam cauri arī [Meta reklāmas kursā](/meta-reklamas-kurss/), ja tekstu rakstīšanu gribi apgūt kopā ar pasniedzēju.
 
-Ja vēlies iegūt lielāku priekšstatu par reklāmu izvietošanu tieši Facebook platformā, tad iesakām izlasīt rakstu par [Facebook reklāmu izstrādi](/facebook-reklamas-izstrade/), kurā tiek aprakstīti soļi uz veiksmīgu reklāmu. Ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam — [uzraksti mums](/sazinies/).
+Ja vēlies iegūt lielāku priekšstatu par reklāmu izvietošanu tieši Facebook platformā, tad iesakām izlasīt rakstu par [Facebook reklāmu izstrādi](/facebook-reklamas-izstrade/), kurā tiek aprakstīti soļi uz veiksmīgu reklāmu. Ja domā par sadarbību, piesakies bezmaksas 20 minūšu iepazīšanās zvanam, [uzraksti mums](/sazinies/).
 
 _Reklāmas tekstu veidošana ir process, kura centrā ir Tavs lasītājs, nevis Tavs produkts._ Šo procesu veido detalizēta izpēte, plānošana, rakstīšana un visbeidzot testēšana! Apzinoties, cik laikietilpīgs ir šis process, iespējams, ir nepieciešams sākt savu reklāmas tekstu izveidi jau tagad!

@@ -23,14 +23,14 @@ SEO (Search Engine Optimization) ir optimizācijas process, kas padara Tavu māj
 
 SEO var iedalīt trīs galvenajās daļās:
 
-1.  **Tehniskais SEO**. Šeit ietilpst lapas ātrums, struktūra, mobilā versija, XML kartes, SSL sertifikāts u. c. lietas, kas palīdz Google “izlasīt” Tavu vietni.
-2.  **Satura SEO.** Tas ietver atslēgvārdu izpēti un kvalitatīva, noderīga satura veidošanu. Lapas nedrīkst būt tikai “skaistas” – tām jāatbild uz reāliem cilvēku jautājumiem.
-3.  **Ārējās saites un autoritāte**. Jo vairāk uzticamu, kvalitatīvu vietņu atsaucas uz Tavu lapu, jo vairāk Google Tev uzticas. Līdzīgi kā reputācija biznesā.
+1. **Tehniskais SEO**. Šeit ietilpst lapas ātrums, struktūra, mobilā versija, XML kartes, SSL sertifikāts u. c. lietas, kas palīdz Google “izlasīt” Tavu vietni.
+2. **Satura SEO.** Tas ietver atslēgvārdu izpēti un kvalitatīva, noderīga satura veidošanu. Lapas nedrīkst būt tikai “skaistas” – tām jāatbild uz reāliem cilvēku jautājumiem.
+3. **Ārējās saites un autoritāte**. Jo vairāk uzticamu, kvalitatīvu vietņu atsaucas uz Tavu lapu, jo vairāk Google Tev uzticas. Līdzīgi kā reputācija biznesā.
 
 {% infographic { id: "info-seo-tris-pilari-raksts", title: "SEO trīs pīlāri", items: [
-  { label: "Tehniskais SEO", text: "Struktūra un ātrums." },
-  { label: "Satura SEO", text: "Kvalitāte un nozīme." },
-  { label: "Ārējais SEO", text: "Uzticība un reputācija." }
+ { label: "Tehniskais SEO", text: "Struktūra un ātrums." },
+ { label: "Satura SEO", text: "Kvalitāte un nozīme." },
+ { label: "Ārējais SEO", text: "Uzticība un reputācija." }
 ] } %}
 
 SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/pakalpojumi/)
@@ -55,11 +55,11 @@ Lūk, kāpēc SEO nozīme biznesam ir milzīga:
 
 Ja mājaslapa nav optimizēta, Google to var vienkārši “nepamanīt”. Biežākie iemesli ir šādi:
 
--   lapā nav skaidras struktūras,
--   trūkst atslēgvārdu,
--   saturs ir pārāk īss vai nekvalitatīvs,
--   nav ārējo saišu,
--   lapas ielādes ātrums ir pārāk lēns.
+- lapā nav skaidras struktūras,
+- trūkst atslēgvārdu,
+- saturs ir pārāk īss vai nekvalitatīvs,
+- nav ārējo saišu,
+- lapas ielādes ātrums ir pārāk lēns.
 
 Optimāls SEO palīdz Google saprast, ka Tava lapa ir labākā atbilde uz lietotāja uzdoto jautājumu. Kad tas notiek, organiskā trafika izaugsme ir ļoti jūtama.
 
@@ -69,23 +69,23 @@ Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, 
 
 Lūk, ko Tu vari sākt darīt jau šodien:
 
-1.  **Veic atslēgvārdu izpēti.** Saproti, ko cilvēki meklē saistībā ar Tavu nozari. To var izdarīt ar bezmaksas rīkiem kā Ubersuggest vai AnswerThePublic.
-2.  **Sakārto tehnisko struktūru.** Noskaidro, vai lapa ielādējas ātri. Google PageSpeed Insights parāda, ko tieši vajag uzlabot.
-3.  **Veido saturu, kas atbild uz jautājumiem.** Jo noderīgāks saturs, jo ilgāk cilvēki paliek lapā. Tas dod signālu Google: “Šī ir laba lapa, pacelt augstāk!”
-4.  **Pievieno iekšējās saites.** Tas palīdz gan lietotājiem, gan Google. Piemēram, vari iepazīties ar mūsu rakstu:
-    Digitālais mārketings – kas tas ir?
-5.  **Strādā pie ārējām saitēm.** Raksti viesrakstus, sadarbojies ar partneriem, esi aktīvs medijos. Ja par Tevi runā – par to uzzina arī Google.
-6.  **Uzlabo lietotāja pieredzi.** Viegls dizains, skaidrs call-to-action jeb aicinājums uz rīcību, kas palīdz sasniegt Tavus mērķus, un labi strukturēts saturs – tas viss tieši ietekmē rezultātus.
-7.  **Regulāri publicē.** Konsekvence ir viens no svarīgākajiem SEO faktoriem – Google mīl “dzīvas” lapas.
+1. **Veic atslēgvārdu izpēti.** Saproti, ko cilvēki meklē saistībā ar Tavu nozari. To var izdarīt ar bezmaksas rīkiem kā Ubersuggest vai AnswerThePublic.
+2. **Sakārto tehnisko struktūru.** Noskaidro, vai lapa ielādējas ātri. Google PageSpeed Insights parāda, ko tieši vajag uzlabot.
+3. **Veido saturu, kas atbild uz jautājumiem.** Jo noderīgāks saturs, jo ilgāk cilvēki paliek lapā. Tas dod signālu Google: “Šī ir laba lapa, pacelt augstāk!”
+4. **Pievieno iekšējās saites.** Tas palīdz gan lietotājiem, gan Google. Piemēram, vari iepazīties ar mūsu rakstu:
+ Digitālais mārketings – kas tas ir?
+5. **Strādā pie ārējām saitēm.** Raksti viesrakstus, sadarbojies ar partneriem, esi aktīvs medijos. Ja par Tevi runā – par to uzzina arī Google.
+6. **Uzlabo lietotāja pieredzi.** Viegls dizains, skaidrs call-to-action jeb aicinājums uz rīcību, kas palīdz sasniegt Tavus mērķus, un labi strukturēts saturs – tas viss tieši ietekmē rezultātus.
+7. **Regulāri publicē.** Konsekvence ir viens no svarīgākajiem SEO faktoriem – Google mīl “dzīvas” lapas.
 
 {% infographic { id: "info-seo-septini-soli", title: "Septiņi soļi SEO uzlabošanai", items: [
-  { label: "Atslēgvārdu izpēte", text: "Ko cilvēki tiešām meklē." },
-  { label: "Tehniskā struktūra", text: "Lapa ielādējas ātri." },
-  { label: "Vērtīgs saturs", text: "Atbildi uz lietotāju jautājumiem." },
-  { label: "Iekšējās saites", text: "Palīdzi orientēties saturā." },
-  { label: "Ārējās saites", text: "Citas vietnes norāda uz Tevi." },
-  { label: "Lietotāja pieredze", text: "Skaidrs dizains un pārskatāms saturs." },
-  { label: "Regulāra publicēšana", text: "Konsekvence signalizē, ka lapa ir aktīva." }
+ { label: "Atslēgvārdu izpēte", text: "Ko cilvēki tiešām meklē." },
+ { label: "Tehniskā struktūra", text: "Lapa ielādējas ātri." },
+ { label: "Vērtīgs saturs", text: "Atbildi uz lietotāju jautājumiem." },
+ { label: "Iekšējās saites", text: "Palīdzi orientēties saturā." },
+ { label: "Ārējās saites", text: "Citas vietnes norāda uz Tevi." },
+ { label: "Lietotāja pieredze", text: "Skaidrs dizains un pārskatāms saturs." },
+ { label: "Regulāra publicēšana", text: "Konsekvence signalizē, ka lapa ir aktīva." }
 ] } %}
 
 SEO nav burvju nūjiņa, kas dod tūlītējus rezultātus. Tas ir stratēģisks, pārdomāts process, kas ilgtermiņā ļauj Tavai mājaslapai kļūt redzamai, uzticamai un vērtīgai. Ja saproti, kas ir SEO, kā tas darbojas un kā to īstenot praksē, Tu vari būt soli priekšā konkurentiem – īpaši tiem, kas joprojām balstās tikai uz sociālajiem tīkliem vai maksas reklāmām.

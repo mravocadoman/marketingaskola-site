@@ -23,47 +23,47 @@ Meta Ads sniedz Tev pieeju vienai no lielākajām digitālajām platformām pasa
 
 ## Kādas platformas pieder Meta un kā tās izmantot?
 
--   **Facebook:** Plaša auditorija, detalizēta mērķauditorijas atlase un dažādi formāti: video, karuseļi, dinamiskās reklāmas – iespējas ir nebeidzamas.
--   **Instagram:** Attēlu un video spēks runā skaļāk nekā vārdi. Instagram ļauj izmantot Stāstus, Reels, sadarbības ar influenceriem un interaktīvus elementus, lai piesaistītu modernu un aktīvu auditoriju
--   **Messenger:** Tieša komunikācija ar klientu – personalizēti piedāvājumi, atgādinājumi vai klientu atbalsts. Ātrs, vienkāršs, efektīvs.
--   **WhatsApp:** Šī platforma strauji attīstās kā klientu servisa un reklāmas rīks. Ideāli piemērots personalizētai komunikācijai un uzticības veidošanai.
+- **Facebook:** Plaša auditorija, detalizēta mērķauditorijas atlase un dažādi formāti: video, karuseļi, dinamiskās reklāmas – iespējas ir nebeidzamas.
+- **Instagram:** Attēlu un video spēks runā skaļāk nekā vārdi. Instagram ļauj izmantot Stāstus, Reels, sadarbības ar influenceriem un interaktīvus elementus, lai piesaistītu modernu un aktīvu auditoriju
+- **Messenger:** Tieša komunikācija ar klientu – personalizēti piedāvājumi, atgādinājumi vai klientu atbalsts. Ātrs, vienkāršs, efektīvs.
+- **WhatsApp:** Šī platforma strauji attīstās kā klientu servisa un reklāmas rīks. Ideāli piemērots personalizētai komunikācijai un uzticības veidošanai.
 
 {% infographic { id: "info-meta-platformas", title: "Četras Meta platformas", items: [
-  { label: "Facebook", text: "Plaša auditorija un detalizēta atlase." },
-  { label: "Instagram", text: "Attēli, Stāsti un Reels." },
-  { label: "Messenger", text: "Tieša saruna ar klientu." },
-  { label: "WhatsApp", text: "Personalizēta komunikācija." }
+ { label: "Facebook", text: "Plaša auditorija un detalizēta atlase." },
+ { label: "Instagram", text: "Attēli, Stāsti un Reels." },
+ { label: "Messenger", text: "Tieša saruna ar klientu." },
+ { label: "WhatsApp", text: "Personalizēta komunikācija." }
 ] } %}
 
 ## Kā izcelties ar inovatīvām Meta Ads reklāmām?
 
 Lai izceltos, pietiek ar dažiem viediem soļiem:
 
-1.  **Personalizācija un dinamiska satura izmantošana:** Neviens negrib redzēt vispārīgu reklāmu. Izmanto Meta dinamiskās reklāmas, kas automātiski pielāgojas lietotāja interesēm, pārlūkošanas vēsturei un uzvedībai.
-2.  **Video reklāmas un stāsti:** Video = iesaiste. Meta platformās video un stāsti darbojas kā magnēts – tie piesaista uzmanību un mudina rīkoties. Vēl labāk, ja pievieno tekstus un klikšķināmos elementus.
-3.  **AR filtri un interaktīvas reklāmas:** Gribi būt moderns? Tad izmēģini papildinātās realitātes filtrus, aptaujas, stāstus ar jautājumiem vai spēles elementus – lietotāji mīl interaktivitāti.
-4.  **Retārgetings jeb atkārtota mērķēšana:** Atgādini par sevi tiem, kas jau iepriekš mijiedarbojušies ar Tavu zīmolu – piemēram, apmeklējuši mājaslapu vai atstājuši grozā preci.
+1. **Personalizācija un dinamiska satura izmantošana:** Neviens negrib redzēt vispārīgu reklāmu. Izmanto Meta dinamiskās reklāmas, kas automātiski pielāgojas lietotāja interesēm, pārlūkošanas vēsturei un uzvedībai.
+2. **Video reklāmas un stāsti:** Video = iesaiste. Meta platformās video un stāsti darbojas kā magnēts – tie piesaista uzmanību un mudina rīkoties. Vēl labāk, ja pievieno tekstus un klikšķināmos elementus.
+3. **AR filtri un interaktīvas reklāmas:** Gribi būt moderns? Tad izmēģini papildinātās realitātes filtrus, aptaujas, stāstus ar jautājumiem vai spēles elementus – lietotāji mīl interaktivitāti.
+4. **Retārgetings jeb atkārtota mērķēšana:** Atgādini par sevi tiem, kas jau iepriekš mijiedarbojušies ar Tavu zīmolu – piemēram, apmeklējuši mājaslapu vai atstājuši grozā preci.
 
 {% infographic { id: "info-meta-formati", title: "Četri Meta reklāmu formāti", items: [
-  { label: "Video", text: "Zīmola atpazīstamībai." },
-  { label: "Karuselis", text: "Vairākas bildes vienā reklāmā." },
-  { label: "Kolekcijas", text: "E-komercijai." },
-  { label: "Stāsti", text: "Ātrai vizuālai komunikācijai." }
+ { label: "Video", text: "Zīmola atpazīstamībai." },
+ { label: "Karuselis", text: "Vairākas bildes vienā reklāmā." },
+ { label: "Kolekcijas", text: "E-komercijai." },
+ { label: "Stāsti", text: "Ātrai vizuālai komunikācijai." }
 ] } %}
 
 ## Meta reklāmas nākotnē: kas mūs sagaida?
 
 Digitālais mārketings attīstās, un **Meta Ads** ir gatavs nākotnei.
 
--   **Mākslīgais intelekts (AI):** Meta jau tagad izmanto AI, lai personalizētu reklāmas un optimizētu rezultātus. Ar laiku šīs sistēmas kļūs vēl precīzākas un viedākas.
--   **Metaverss un virtuālā realitāte (VR):** Meta strādā pie nākotnes platformām, kur reklāmas būs 3D, virtuālas un klātesošas. Iedomājies iespēju reklamēties virtuālā telpā, kur lietotājs mijiedarbojas ar Tavu zīmolu reālā laikā!
--   **Automatizācija un kampaņu vienkāršošana:** Drīz kampaņu veidošana notiks kā spēle – izvēlies mērķi, saturu un Meta pats palīdzēs izveidot efektīvāko risinājumu.
+- **Mākslīgais intelekts (AI):** Meta jau tagad izmanto AI, lai personalizētu reklāmas un optimizētu rezultātus. Ar laiku šīs sistēmas kļūs vēl precīzākas un viedākas.
+- **Metaverss un virtuālā realitāte (VR):** Meta strādā pie nākotnes platformām, kur reklāmas būs 3D, virtuālas un klātesošas. Iedomājies iespēju reklamēties virtuālā telpā, kur lietotājs mijiedarbojas ar Tavu zīmolu reālā laikā!
+- **Automatizācija un kampaņu vienkāršošana:** Drīz kampaņu veidošana notiks kā spēle – izvēlies mērķi, saturu un Meta pats palīdzēs izveidot efektīvāko risinājumu.
 
 ## Padomi, kā uzlabot Meta ads rezultātus
 
--   **Vienmēr testē (A/B testēšana):** Atrodi labāko versiju starp dažādiem virsrakstiem, attēliem un aicinājumiem uz darbību.
--   **Neaizmirsti analītiku:** Skaties, kas darbojas un kas ne. Optimizē, pārbaudi, uzlabo.
--   **Sadarbojies ar profesionāļiem:** Ja nepieciešams, piesaisti ekspertu, kas palīdzēs veidot stratēģiju un sasniegt rezultātus.
+- **Vienmēr testē (A/B testēšana):** Atrodi labāko versiju starp dažādiem virsrakstiem, attēliem un aicinājumiem uz darbību.
+- **Neaizmirsti analītiku:** Skaties, kas darbojas un kas ne. Optimizē, pārbaudi, uzlabo.
+- **Sadarbojies ar profesionāļiem:** Ja nepieciešams, piesaisti ekspertu, kas palīdzēs veidot stratēģiju un sasniegt rezultātus.
 
 
 ## Mērķauditorijas atlases piemēri Meta reklāmās
@@ -74,9 +74,9 @@ Viens no galvenajiem Meta reklāmas priekšrocību stūrakmeņiem ir spēja ļot
 
 Šī ir viena no vienkāršākajām, bet efektīvākajām atlases iespējām. Meta ļauj segmentēt auditoriju pēc:
 
--   **Vecuma** (piemēram, 18–24, 25–34, 35–44 utt.)
--   **Dzimuma** (sievietes, vīrieši vai visi)
--   **Ģeogrāfiskās atrašanās vietas** (valsts, pilsēta, rajons, pat konkrēta adrese ar rādiusu)
+- **Vecuma** (piemēram, 18–24, 25–34, 35–44 utt.)
+- **Dzimuma** (sievietes, vīrieši vai visi)
+- **Ģeogrāfiskās atrašanās vietas** (valsts, pilsēta, rajons, pat konkrēta adrese ar rādiusu)
 
 ### Kāpēc tas noder?
 
@@ -90,9 +90,9 @@ Pieņemsim, ka Tu pārdod sieviešu apģērbu vecuma grupai no 25 līdz 40 gadie
 
 **Praktiski piemēri:**
 
--   Ja Tu piedāvā ceļojumu somas – izvēlies intereses: “travel”, “adventure tourism”, “frequent travelers”.
--   Pārdod sporta uzturu? Tad mērķē uz interesēm: “fitness”, “gym”, “health food”.
--   Veido modes aksesuārus? Tad izvēlies: “fashion”, “handmade accessories”, “online shopping”.
+- Ja Tu piedāvā ceļojumu somas – izvēlies intereses: “travel”, “adventure tourism”, “frequent travelers”.
+- Pārdod sporta uzturu? Tad mērķē uz interesēm: “fitness”, “gym”, “health food”.
+- Veido modes aksesuārus? Tad izvēlies: “fashion”, “handmade accessories”, “online shopping”.
 
 **Padoms:** Apvieno intereses ar demogrāfiju – piemēram, sporta apģērbs sievietēm vecumā no 20–35 gadiem ar interesi par “fitness & yoga”
 
@@ -102,10 +102,10 @@ Uzvedības atlase balstās uz reālām darbībām, ko cilvēki ir veikuši gan i
 
 **Daži piemēri:**
 
--   Cilvēki, kas apmeklējuši Tavu mājaslapu pēdējo 30 dienu laikā
--   Tie, kas ielikuši preci grozā, bet nepabeidza pirkumu
--   Lietotāji, kas skatījušies Tavu video vairāk nekā 50%
--   Apmeklētāji, kas klikšķinājuši uz reklāmas, bet nav konvertējušies
+- Cilvēki, kas apmeklējuši Tavu mājaslapu pēdējo 30 dienu laikā
+- Tie, kas ielikuši preci grozā, bet nepabeidza pirkumu
+- Lietotāji, kas skatījušies Tavu video vairāk nekā 50%
+- Apmeklētāji, kas klikšķinājuši uz reklāmas, bet nav konvertējušies
 
 ### Kāpēc tas ir noderīgi?
 
@@ -117,10 +117,10 @@ Uzvedības atlase balstās uz reālām darbībām, ko cilvēki ir veikuši gan i
 
 Lookalike (jeb līdzīgo) auditoriju funkcija ir īstais zelts kampaņas mērogošanai. Tu vari izveidot auditoriju, balstoties uz cilvēkiem, kas jau ir:
 
--   Apmeklējuši Tavu lapu
--   Veikuši pirkumu
--   Sekotāji Tavā Facebook/Instagram lapā
--   Aizpildījuši formu u.c.
+- Apmeklējuši Tavu lapu
+- Veikuši pirkumu
+- Sekotāji Tavā Facebook/Instagram lapā
+- Aizpildījuši formu u.c.
 
 Meta pēc tam atrod līdzīgus cilvēkus, kuriem ir līdzīga uzvedība, demogrāfija vai intereses.
 

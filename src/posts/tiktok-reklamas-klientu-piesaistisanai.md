@@ -27,14 +27,14 @@ Un tieši tas padara TikTok par unikālu reklāmas vidi. Šeit reklāma nestrād
 
 ## TikTok reklāmu vide: dinamika, stāsts un lietotāja loma
 
-TikTok izceļas ar ātru tempu un stāstiem, kas tiek izstāstīti caur kustīgiem, vizuāli piesaistošiem video. Tā nav tikai kārtējā sociālā tīkla aplikācija — tā ir dinamiska vide, kur katrs video var kļūt par īsu, bet spēcīgu vēstījumu, kas spēj pārliecināt un pārvērst skatītāju par klientu.
+TikTok izceļas ar ātru tempu un stāstiem, kas tiek izstāstīti caur kustīgiem, vizuāli piesaistošiem video. Tā nav tikai kārtējā sociālā tīkla aplikācija. Tā ir dinamiska vide, kur katrs video var kļūt par īsu, bet spēcīgu vēstījumu, kas spēj pārliecināt un pārvērst skatītāju par klientu.
 
  Lai reklāma šeit strādātu, tai jāspēj:
 
--   **Iesaistīt uzreiz** (pirmajās sekundēs)
--   **Izstāstīt jēgpilnu stāstu** (bieži vien 15–30 sekunžu robežās)
--   **Parādīt vērtību**, nevis tikai funkcionalitāte
--   **Iedrošināt uz rīcību**, kas šķiet dabiska un neuzbāzīga
+- **Iesaistīt uzreiz** (pirmajās sekundēs)
+- **Izstāstīt jēgpilnu stāstu** (bieži vien 15–30 sekunžu robežās)
+- **Parādīt vērtību**, nevis tikai funkcionalitāte
+- **Iedrošināt uz rīcību**, kas šķiet dabiska un neuzbāzīga
 
 Turklāt TikTok ir vidē ļoti ātri izplatās idejas. Viena labi noformulēta reklāma vai produkta demonstrācija var pārvērsties par **trendu**, ko atkārto tūkstošiem citu lietotāju. Tas nozīmē, ka veiksmīga reklāma nav vienkārši “redzama” tā kļūst par daļu no kopienas pieredzes, un tas uzņēmumiem dod pavisam citu spēku.
 
@@ -60,9 +60,9 @@ Ja tu nepiesaisti skatītāja uzmanību pirmajās sekundēs, viņš ļoti iespē
 
  Izmanto:
 
--   Pārsteidzošu kustību vai skaņu,
--   Jautājumu, kas izraisa ziņkāri,
--   Sejas izteiksmi ar spēcīgām emocijām.
+- Pārsteidzošu kustību vai skaņu,
+- Jautājumu, kas izraisa ziņkāri,
+- Sejas izteiksmi ar spēcīgām emocijām.
 
 ### 2. Reālistiskums un autentiskums
 
@@ -89,10 +89,10 @@ Kad izvēlies izmantot aktuālos trendus, tev ir iespēja piesaistīt cilvēkus,
 TikTok ir platforma, kur trendi ātri mainās, tāpēc jābbū spējīgam tiem sekot līdzi un ātri pielāgoties, lai nezaudētu iespēju sasniegt plašāku auditoriju.
 
 {% infographic { id: "info-tiktok-reklamas-soli", title: "Efektīva TikTok reklāma četros soļos", items: [
-  { label: "Trīs sekunžu likums", text: "Ja neaizķer uzreiz, cilvēks aizslīd tālāk." },
-  { label: "Autentiskums", text: "Dabisks saturs, ne studijas reklāma." },
-  { label: "Subtitri", text: "Lielākā daļa skatās bez skaņas." },
-  { label: "Trendu audio", text: "Populārs skaņas celiņš paceļ skatījumus." }
+ { label: "Trīs sekunžu likums", text: "Ja neaizķer uzreiz, cilvēks aizslīd tālāk." },
+ { label: "Autentiskums", text: "Dabisks saturs, ne studijas reklāma." },
+ { label: "Subtitri", text: "Lielākā daļa skatās bez skaņas." },
+ { label: "Trendu audio", text: "Populārs skaņas celiņš paceļ skatījumus." }
 ] } %}
 
 ## Kas piesaista uzmanību TikTok reklāmās?
@@ -118,9 +118,9 @@ Tādējādi, ja video vizuālais noformējums ir piesaistošs, skatītājs daudz
 Visbeidzot, piesaistīt uzmanību TikTok reklāmās nav tikai par pārsteidzošiem efektiem vai ātriem pārejām: tas ir arī par spēju radīt emocionālu saikni ar skatītāju; ja tev izdosies ieinteresēt viņu ne tikai ar vizuālajām sastāvdaļām, bet arī ar saturu, kas izsaka vērtību, tad tavs video būs daudz veiksmīgāks.
 
 {% infographic { id: "info-tiktok-uzmaniba", title: "Kas notur uzmanību TikTok", items: [
-  { label: "Pirmās sekundes", text: "Ja nepārsteidz, skatītājs aizslīd tālāk." },
-  { label: "Dinamiska struktūra", text: "Katrai sekundei jābūt interesantai." },
-  { label: "Pārejas starp kadriem", text: "Kustība tur skatienu." }
+ { label: "Pirmās sekundes", text: "Ja nepārsteidz, skatītājs aizslīd tālāk." },
+ { label: "Dinamiska struktūra", text: "Katrai sekundei jābūt interesantai." },
+ { label: "Pārejas starp kadriem", text: "Kustība tur skatienu." }
 ] } %}
 
 ## Kā veicināt klientu iesaisti ar TikTok reklāmām?
@@ -141,9 +141,9 @@ Reklāma, kas “neiet”, nav izgāšanās – tā ir vērtīgs datu apkopojums
 
 Lūk, kā tas notiek praksē:
 
--   **A/B testēšana** – tas nozīmē divu vai vairāku versiju testēšanu, lai saprastu, kura darbojas labāk. Piemēram, tu vari palaist vienu video ar emocionālu sākumu un otru – ar jautru un redzēt, kuru skatās ilgāk vai uz kura vairāk klikšķina.
--   **Datu analīze** – katrs skatījums, klikšķis, komentārs vai skatījuma ilgums ir vērtīga informācija. Analizējot šos datus, rodas priekšstats, kādu saturu tava auditorija patiesībā vēlas redzēt.
--   **Nemitīga satura uzlabošana** – neviens video nav perfekts no pirmās reizes. Balstoties uz datiem, pielāgo nākamo versiju – maini tekstu, mūziku un “hook”, lai panāktu labāku iesaisti.
+- **A/B testēšana** – tas nozīmē divu vai vairāku versiju testēšanu, lai saprastu, kura darbojas labāk. Piemēram, tu vari palaist vienu video ar emocionālu sākumu un otru – ar jautru un redzēt, kuru skatās ilgāk vai uz kura vairāk klikšķina.
+- **Datu analīze** – katrs skatījums, klikšķis, komentārs vai skatījuma ilgums ir vērtīga informācija. Analizējot šos datus, rodas priekšstats, kādu saturu tava auditorija patiesībā vēlas redzēt.
+- **Nemitīga satura uzlabošana** – neviens video nav perfekts no pirmās reizes. Balstoties uz datiem, pielāgo nākamo versiju – maini tekstu, mūziku un “hook”, lai panāktu labāku iesaisti.
 
 Un tas viss ved uz vienu: autentiskums uzvar pār perfekciju. Īsti lietotāji, īsti stāsti, pat neliela kļūme kadrā, tas viss padara saturu dzīvu un uzticamu. Jo bieži vien vislabākie rezultāti nāk nevis no noslīpēta video, bet no patiesas, cilvēkiem atpazīstamas pieredzes.
 
