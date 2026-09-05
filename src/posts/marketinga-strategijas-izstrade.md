@@ -41,6 +41,8 @@ Izvēle ir vienkārša. Ja cilvēks Tevi meklē pats, sāc ar meklētāju: [SEO]
 
 Otro kanālu pievieno tad, kad pirmais strādā, nevis paralēli.
 
+Ja Tavs tirgus ir šaurs un lēmumu pieņem vairāki cilvēki, secība ir citāda; par to rakstā [B2B mārketings Latvijā](/b2b-marketings/).
+
 ## 4. Ko dara konkurenti, un kur viņi nav
 
 Konkurentu analīze bieži pārvēršas par sarakstu ar lietām, ko no viņiem pārņemt. Noderīgāks ir pretējs jautājums: ko viņi visi dara vienādi?

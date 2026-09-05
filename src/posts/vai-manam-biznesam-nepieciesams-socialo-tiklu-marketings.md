@@ -44,6 +44,8 @@ Ir situācijas, kurās nauda un laiks labāk atmaksājas citur.
 
 **Ja pārdod ļoti šauram lokam.** Piecdesmit potenciālie klienti Latvijā nav auditorija, ko meklēt ziņu plūsmā. Tieša uzruna un ieteikumi dos vairāk.
 
+Ko darīt šādā situācijā, aprakstīts rakstā [B2B mārketings Latvijā](/b2b-marketings/).
+
 **Ja klients Tevi meklē pats.** Santehniķis, jurists, autoserviss. Cilvēks ar problēmu iet uz meklētāju, nevis ritina Instagram. Sāc ar [SEO](/kas-ir-seo/) un [Google reklāmu](/google-reklama/).
 
 **Ja nav neviena, kas to darīs.** Sociālo tīklu profils nav vienreizējs projekts. Ja neviens nevar tam veltīt dažas stundas nedēļā, labāk nesākt vispār.

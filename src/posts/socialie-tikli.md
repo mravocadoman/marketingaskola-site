@@ -40,6 +40,8 @@ Praktiska izvēle Latvijā:
 
 Izvēlies vienu kanālu, kur Tava auditorija tiešām ir, un strādā ar to kārtīgi. Otro pievieno tikai tad, kad pirmais jau dod rezultātu.
 
+Ja Tavs tirgus ir daži desmiti uzņēmumu, sociālie tīkli reti ir pareizā atbilde; kas strādā to vietā, aprakstīts rakstā [B2B mārketings Latvijā](/b2b-marketings/).
+
 ## Kas vēl darbojas bez budžeta
 
 Trīs lietas joprojām palīdz sasniegt cilvēkus bez maksas.

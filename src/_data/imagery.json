@@ -1123,6 +1123,33 @@
       "alt": "Infografika no izgrieztām papīra formām: atslēgvārdu izpēte piecos soļos",
       "rationale": "The order matters more than the tools: it starts with customer language and ends with page structure, and tools sit in the middle.",
       "prompt": "Headline: «Izpēte piecos soļos». FIVE items in one row. «01» «Klientu vārdi» - emblem: a navy telephone handset shape beside a solid cyan speech bubble. «02» «Search Console» - emblem: a pale grey panel with four navy bars and one solid cyan bar. «03» «Nodoma šķirošana» - emblem: three navy blocks of different sizes sorted into a descending row with the smallest cut from cyan paper. «04» «Rezultātu pārbaude» - emblem: a pale grey results page with three navy rows and a solid cyan frame around the top row. «05» «Viena lapa uz nodomu» - emblem: three small navy cards merging by short cyan lines into one larger pale grey page."
+    },
+    {
+      "id": "cover-b2b-marketings",
+      "page": "b2b-marketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Neliela ciāna kvadrātu grupa plašā tukšā laukā, attēlojot šauru B2B tirgu",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. In the lower left third, a small tight cluster of about nine flat squares sits close together: eight in cool grey #55697e and one solid cyan #03c3f8. A single thin white #ffffff hairline runs horizontally beneath the cluster and continues to the right edge, where nothing else appears. The upper two thirds of the frame are empty navy. Strongly asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "A narrow B2B market - a countable handful of prospects in a very large empty field, which is the whole premise of the article."
+    },
+    {
+      "id": "info-b2b-kanali",
+      "page": "b2b-marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri kanāli, kas B2B mārketingā tiešām strādā",
+      "rationale": "The channels that work here are the opposite of the usual advice, so the ranking has to be stated visually.",
+      "prompt": "Headline: «Kas B2B tiešām strādā». FOUR items in one row. «01» «Zināms saraksts» «Uzņēmumi pēc vārda» - emblem: a pale grey list card with five short navy bars, one of them solid cyan. «02» «Meklētājs» «Cilvēks ar problēmu» - emblem: a navy magnifying glass over a small solid cyan square. «03» «Ieteikumi» «Klienti, kas iesaka» - emblem: two navy person silhouettes with a solid cyan line arcing from one to a third grey silhouette. «04» «Redzamība nozarē» «Raksti un uzstāšanās» - emblem: a navy speaker podium block with a solid cyan bar rising above it."
+    },
+    {
+      "id": "info-b2b-merisana",
+      "page": "b2b-marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs skaitļi, ko mērīt garā B2B pārdošanas ciklā",
+      "rationale": "With a six-month cycle a monthly report says nothing, so the article replaces it with three steps that move at different speeds.",
+      "prompt": "Headline: «Trīs skaitļi garam ciklam». THREE items in one row. «01» «Jaunas sarunas» «Kustas ātri» - emblem: three solid cyan speech bubbles in a row, tightly spaced. «02» «Piedāvājumi» «Cik pārtop» - emblem: two pale grey documents with a navy arrow between them and one solid cyan corner. «03» «Noslēgti darījumi» «Kustas lēni» - emblem: one navy document with a solid cyan tick and a small navy handshake-free shape: two interlocking navy blocks beneath it."
     }
   ]
 }

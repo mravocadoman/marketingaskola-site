@@ -1141,6 +1141,23 @@ cluster and had nowhere to land.
 | `/google-uznemuma-profils/` | local search, the channel the trades examples in other posts need |
 | `/majaslapa-kas-pardod/` | posts say "fix the destination first" and had nowhere to send readers |
 | `/reklamas-video-ar-telefonu/` | posts repeatedly say "film three vertical videos" and never said how |
+| `/remarketings/` | mentioned across the ad cluster, never explained; the standard advice is now backwards |
+| `/atslegvardu-izpete/` | both SEO posts and the Google Ads post send readers here |
+| `/b2b-marketings/` | several posts tell narrow-B2B readers to do something else and had nowhere to send them |
+
+Three more were added the same day (eight in total, 41 posts). Two carry
+findings worth keeping:
+- **Retargeting has inverted.** The version every guide leads with (pixel,
+  follow the site visitor around the web) is now the WEAKEST of the four
+  options: third-party cookies are blocked by default in Safari and Firefox,
+  iOS opt-in is a minority, and Meta's cookie-based match rate has fallen
+  materially. Uploaded first-party lists and in-platform engagement
+  audiences (video viewers, message senders) are the strongest, because no
+  browser can block them. `/remarketings/` ranks all four accordingly.
+- **Keyword tools under-report this market.** A large share of valuable
+  Latvian queries show as "0 searches a month" because the volume sits under
+  the tool's threshold. Never discard a query the tool cannot see if
+  customers actually ask it.
 
 Facts in these were **researched, not recalled** (Meta's one-click CAPI from
 spring 2026 and the 1-10 Event Match Quality score; Google retiring
