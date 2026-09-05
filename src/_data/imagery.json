@@ -1015,6 +1015,33 @@
       "alt": "Infografika no izgrieztām papīra formām: Google uzņēmuma profila sakārtošana četros soļos",
       "rationale": "The article is a to-do list; the picture is the order to do it in, which is the part that decides whether it gets done at all.",
       "prompt": "Headline: «Profils četros soļos». FOUR items in one row. «01» «Pamati» «Kategorija un darba laiks» - emblem: a pale grey card with a navy clock face whose hands are cyan. «02» «Atsauksmes» «Ar atbildēm uz katru» - emblem: a navy speech bubble containing a solid cyan five-pointed star. «03» «Foto un ieraksti» «Īsti attēli» - emblem: a pale grey picture frame holding a navy mountain shape with a solid cyan circle above it. «04» «Mājaslapa» «Pakalpojums un pilsēta» - emblem: a navy map pin joined by a short cyan line to a pale grey browser panel."
+    },
+    {
+      "id": "cover-majaslapa-kas-pardod",
+      "page": "majaslapa-kas-pardod",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Balta lapas kontūra ar vienu ciāna pogas bloku un šauru bultu, kas ienāk no malas, attēlojot apmeklētāju, kas nonāk galamērķa lapā",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Right of centre, a tall open rectangle drawn in one thin white #ffffff hairline stands as an empty page; inside it, near the lower third, one solid cyan #03c3f8 horizontal block sits alone as a button, and two short cool grey #55697e bars sit above it. From the left edge, a single flat cyan line runs in and stops just short of the rectangle without touching it. Vast empty navy on the left. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "The gap between the traffic arriving and the page converting - the line reaches the page but does not connect."
+    },
+    {
+      "id": "info-majaslapas-pirmais-ekrans",
+      "page": "majaslapa-kas-pardod",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četras lietas, kas jāpasaka mājaslapas pirmajā ekrānā",
+      "rationale": "The first screen is where most pages lose the visitor; four questions is the whole brief and fits one picture.",
+      "prompt": "Headline: «Ko pateikt pirmajā ekrānā». FOUR items in one row. «01» «Kas tas ir» «Konkrēts pakalpojums» - emblem: a pale grey card with one wide solid navy headline bar and two short navy bars beneath. «02» «Kam tas domāts» «Ne visiem» - emblem: three navy person silhouettes side by side with the middle one cut from cyan paper. «03» «Cik tas maksā» «Cena vai diapazons» - emblem: a pale grey tag shape with a solid cyan bar across it and a navy hole at its corner. «04» «Ko darīt tālāk» «Viena poga» - emblem: one wide solid cyan button bar with a navy arrow pointing into it."
+    },
+    {
+      "id": "info-majaslapas-parbaude",
+      "page": "majaslapa-kas-pardod",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: piecu minūšu pārbaude mājaslapai",
+      "rationale": "Four checks the owner can run tonight without a developer, which is what makes the article actionable rather than a list of principles.",
+      "prompt": "Headline: «Piecu minūšu pārbaude». FOUR items in one row. «01» «Piecu sekunžu tests» - emblem: a navy stopwatch outline with a solid cyan wedge inside it. «02» «Cenas tests» - emblem: a pale grey page with a navy magnifying glass over a solid cyan price tag shape. «03» «Telefona tests» - emblem: a tall navy phone outline with a solid cyan circle where a thumb would press. «04» «Formas tests» - emblem: a pale grey form panel with two navy field bars and a solid cyan tick beside it."
     }
   ]
 }
