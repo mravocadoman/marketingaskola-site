@@ -46,7 +46,7 @@ Kādi pakalpojumi visbiežāk tiek izmantoti, apkopojām rakstā [kas ir mārket
 
 ## Kad izdevīgāk darīt pašam
 
-Godīga atbilde, kas aģentūru mājaslapās parasti neparādās.
+Atbilde, kas aģentūru mājaslapās parasti neparādās.
 
 **Ja budžets ir neliels.** Kad reklāmai atvēlēti daži simti eiro mēnesī, apkalpošanas maksa apēd lielāko daļu ieguvuma.
 
