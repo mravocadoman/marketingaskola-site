@@ -90,6 +90,6 @@ Pilnu sarakstu ar to, kā katru no tām pamanīt, esam apkopojuši rakstā [5 vi
 
 ## Nākamais solis
 
-Ja gribi to visu izdarīt pats un savā kontā, to mācām [Meta reklāmas kursā](/meta-reklamas-kurss/). Trīs stundas tiešsaistē, mazā grupā: kampaņu mērķi, auditorijas, formāti un kreatīvi, tostarp tas, kā tos ātrāk sagatavot ar mākslīgā intelekta rīkiem.
+Ja gribi to visu izdarīt pats un savā kontā, to mācām [Meta reklāmas kursā](/meta-reklamas-kurss/). Trīs stundas tiešsaistē, mazā grupā: konta uzbūve un konversiju mērīšanas pamati, kampaņu mērķi, auditorijas, formāti un kreatīvi, tostarp tas, kā tos ātrāk sagatavot ar mākslīgā intelekta rīkiem.
 
 Ja gribi, lai to izdara kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja vēl neesi drošs, kurš no abiem variantiem ir pareizais Tavā situācijā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).

@@ -848,8 +848,9 @@ It is wired into the nav dropdown, the footer, `course-catalog.njk` (now
   speciālists per `/sazinies/`. The "vairāk nekā 10 miljonus eiro" figure is
   the site's own claim, lifted verbatim from `/google-reklama-2025/` — it was
   not invented here.
-- **Price 150 € + PVN and 3 stundas are assumed** from the Meta course, since
-  the owner has not set them. Owner data — confirm before promoting the page.
+- **Price 150 € + PVN and 3 stundas confirmed by the owner (5 Sep 2026).**
+  They started as assumptions copied from the Meta course; they are now the
+  real figures and can be quoted.
 - Its `courseSessions.json` entry is empty, so **it falls back to the
   application form** exactly like SEO. To sell seats it needs the same three
   things as Meta: agreed monthly dates, a Cal.com event with seats and date
@@ -932,17 +933,15 @@ four dates go in one override with one time range and one Save.
 `courseSessions.json` pointing at a Stripe payment link whose after-payment
 redirect lands on the Cal.com event above.
 
-**Open gap the blog now exposes: the Meta course syllabus has no
-measurement module.** Its five modules are platform basics, objectives,
-audiences, formats and creatives-with-AI. The 2026 blog pass argues
-throughout that the signal (pixel PLUS Conversions API) is what decides the
-cost per customer, and two posts had CTAs promising the course walks
-through it. Those CTAs were corrected to describe what is actually listed,
-rather than inventing a module. The Google Ads course does cover it
-(module 5, "Konversiju uzskaite, budžets un optimizācija") and the SEO
-course covers analytics (module 4). **Ask the owner whether the Meta course
-covers conversion tracking in practice; if it does, it belongs in the
-syllabus, and the blog CTAs can go back to promising it.**
+**Resolved 5 Sep 2026: the Meta course does cover tracking, "a bit"**
+(owner). Module 1 gained one line — *"Pikselis un konversiju mērīšanas
+pamati"* — placed there because that module already covers Business Manager
+setup. Deliberately ONE bullet, not a module: the owner said a bit, so the
+page says a bit. The blog CTAs now say "konta uzbūve un konversiju
+mērīšanas pamati" rather than promising a full walkthrough, and
+`/konversiju-uzskaite/` points at the **Google Ads** course for the deeper
+treatment, because that one genuinely has a whole module for it (module 5).
+The SEO course covers analytics in module 4.
 
 ## Two artwork languages, settled 5 Sep 2026
 

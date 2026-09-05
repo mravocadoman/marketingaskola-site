@@ -123,7 +123,7 @@ Un ir vēl viens arguments, kuru vērts pateikt skaidri. Stunda, ko Tu pavadi Ev
 
 ## Nākamais solis
 
-**Ja gribi to saprast un uzstādīt pats**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/). Trīs stundas tiešsaistē, mazā grupā, ar Tavu kontu ekrānā, nevis ar teoriju.
+**Ja gribi to saprast un uzstādīt pats**, mērīšanas pamati ir gan [Meta reklāmas kursā](/meta-reklamas-kurss/), gan [Google Ads kursā](/google-ads-kurss/), kur konversiju uzskaitei veltīts atsevišķs modulis. Trīs stundas tiešsaistē, mazā grupā, ar Tavu kontu ekrānā, nevis ar teoriju.
 
 **Ja gribi, lai to vienkārši salīdzina un salabo**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Vienā stundā izejam cauri Tavam kontam un pasakām, kas skaitās pareizi, kas neskaitās vispār un ko darīt vispirms. Konkrēts saraksts, ko vari izpildīt pats vai iedot kādam citam.
 
