@@ -9,6 +9,8 @@ image: "/img/gen/cover-google-reklamas-agentura.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px.png"
 categories: ["google-reklama"]
 permalink: "/google-reklamas-agentura/"
+keywords: ["Google reklāmas aģentūra", "Google Ads", "reklāmas konts", "PPC", "aģentūras izvēle"]
+
 ---
 
 Digitālā mārketinga laikmetā, kur konkurence tiešsaistes vidē kļūst arvien sīvāka, uzņēmumiem ir svarīgi efektīvi izmantot Google reklāmu. Lai gan daudzi uzņēmēji sākumā mēģina paši pārvaldīt [Google Ads](https://ads.google.com/intl/lv_lv/start/overview-ha/?subid=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&utm_source=aw&utm_medium=ha&utm_campaign=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE&gclsrc=aw.ds) kampaņas, bieži vien rezultāti nav tādi, kā cerēts. Šeit spēlē iesaistās Google reklāmas aģentūra – profesionāļu komanda, kas palīdz sasniegt mērķus ātrāk, efektīvāk un ar mazāku budžeta izšķērdēšanu.
@@ -52,6 +54,12 @@ Ja esi uzņēmuma īpašnieks un domā par to vai Google reklāmas aģentūra ir
 -   **Mērķtiecīgu reklāmas stratēģiju** – reklāmas netiks rādītas nejaušai auditorijai, bet precīzi atlasītiem potenciālajiem klientiem.
 -   **Budžeta optimizāciju** – aģentūra palīdzēs izvairīties no liekiem izdevumiem un palielinās reklāmas atdevi.
 -   **Regulāru monitoringu un uzlabojumus** – nepārtraukta uzraudzība un testēšana nodrošinās, ka reklāmas paliek konkurētspējīgas.
+
+{% infographic { id: "info-google-ads-agentura", title: "Ko pajautāt Google reklāmas aģentūrai", items: [
+  { label: "Kas pārvaldīs kontu", text: "Cilvēks, ar kuru runāsi ikdienā." },
+  { label: "Kā mērīsiet rezultātu", text: "Klikšķi vai klienti." },
+  { label: "Kam pieder konts", text: "Datiem jāpaliek pie Tevis." }
+] } %}
 
 ## Cik maksā Google reklāmas aģentūras pakalpojumi?
 

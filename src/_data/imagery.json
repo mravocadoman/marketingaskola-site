@@ -619,6 +619,60 @@
       "alt": "Infografika no izgrieztām papīra formām: trīs SEO optimizācijas veidi — lapas iekšējā optimizācija, tehniskais SEO un ārējās atsauces",
       "rationale": "The post asks what kinds of SEO exist; the three-way split is the answer a reader keeps.",
       "prompt": "Headline: «Trīs SEO optimizācijas veidi». THREE items in one row. «01» «Lapas saturs» «Atslēgvārdi, virsraksti un teksts» - emblem: a pale grey page with a navy heading bar and three shorter grey bars, one cyan. «02» «Tehniskais SEO» «Ātrums, struktūra un indeksēšana» - emblem: a navy square with a cyan gear-like notched square overlapping its corner. «03» «Ārējās atsauces» «Cik uzticamas vietnes uz Tevi norāda» - emblem: three pale grey squares joined by navy lines to one central cyan square."
+    },
+    {
+      "id": "info-facebook-kludas",
+      "page": "5-visizplatitakas-kludas-reklamas-izvietosana-facebook",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: piecas biežākās kļūdas Facebook reklāmās — garlaicīgs saturs, Boost post Ads Manager vietā, kampaņa bez mērķa, trūkstošs Pixel un CAPI, un bailes testēt",
+      "rationale": "The post is a numbered list of five named mistakes - the clearest possible fit for a five-item infographic.",
+      "prompt": "Headline: «Piecas biežākās Facebook reklāmu kļūdas». FIVE items in TWO rows - three above, two below. «01» «Garlaicīgs saturs» «Reklāma neuzrunā mērķauditoriju» - emblem: a pale grey feed card with three flat grey bars and one navy square, all muted, with a small cyan square set apart from it. «02» «Boost post Ads Manager vietā» «Mazāk kontroles, dārgāks rezultāts» - emblem: a navy square button shape beside a larger pale grey panel with three control rows, one cyan. «03» «Kampaņa bez mērķa» «Neviens nav pateicis, kas ir konversija» - emblem: a navy target ring with an empty centre and a cyan square lying outside it. «04» «Nav Pixel un CAPI» «Rezultāti netiek nomērīti» - emblem: a pale grey page joined by a broken navy line, with a visible gap, to a cyan square. «05» «Bailes testēt» «Viena bilde un viens teksts» - emblem: one navy rectangle alone beside a row of three pale grey rectangles, the middle one cyan."
+    },
+    {
+      "id": "info-reklamas-teksta-solis",
+      "page": "isa-pamaciba-izcilu-reklamas-tekstu-veidosana",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: pieci soļi izcila reklāmas teksta veidošanai — iejūties lasītāja lomā, virsraksts, pircēja ieguvumi, aicinājums rīkoties un A/B testēšana",
+      "rationale": "A five-step writing method the reader is meant to apply; a numbered graphic makes it usable.",
+      "prompt": "Headline: «Reklāmas teksts piecos soļos». FIVE items in TWO rows - three above, two below. «01» «Iejūties lasītāja lomā» «Kam Tu raksti un kas viņu satrauc» - emblem: a navy head profile with a cyan square where the eye would be. «02» «Virsraksts» «Pirmais, ko pamana» - emblem: a pale grey page whose top bar is a thick cyan block above three thin grey bars. «03» «Pircēja ieguvumi» «Ne funkcijas, bet rezultāts» - emblem: three pale grey squares with navy tick marks and one cyan tick. «04» «Aicinājums rīkoties» «Pasaki, kas jādara tālāk» - emblem: a navy rectangle with a cyan button bar across its lower edge and a small navy cursor arrow on it. «05» «A/B testēšana» «Divi varianti, viens uzvarētājs» - emblem: two side-by-side rectangles, the left pale grey and the right cyan, with a navy tick above the cyan one."
+    },
+    {
+      "id": "info-google-ads-agentura",
+      "page": "google-reklamas-agentura",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs jautājumi pirms sadarbības ar Google reklāmas aģentūru — kas pārvalda kontu, kā mēra rezultātu un kam pieder konts",
+      "rationale": "The article is a buyer's guide; three questions to ask is the part worth keeping.",
+      "prompt": "Headline: «Ko pajautāt Google reklāmas aģentūrai». THREE items in one row. «01» «Kas pārvaldīs kontu» «Cilvēks, ar kuru runāsi ikdienā» - emblem: two navy head profiles facing each other with a cyan square between them. «02» «Kā mērīsiet rezultātu» «Klikšķi vai klienti» - emblem: four bars of rising height on a pale grey baseline, the tallest cyan. «03» «Kam pieder konts» «Datiem jāpaliek pie Tevis» - emblem: a navy folder shape with a cyan key-like bar beside it."
+    },
+    {
+      "id": "info-ai-riki-marketinga",
+      "page": "maksliga-intelekta-riki",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: kur mārketingā palīdz mākslīgā intelekta rīki — attēli, prezentācijas, audio un video",
+      "rationale": "The post lists seven tools; grouping them by the job they do is more useful than the brand names.",
+      "prompt": "Headline: «Kur MI rīki ietaupa laiku». FOUR items in one row. «01» «Attēli» «Vizuāļi bez fotosesijas» - emblem: a pale grey frame with a navy mountain shape and a cyan square sun inside it. «02» «Prezentācijas» «Slaidi dažās minūtēs» - emblem: three overlapping navy rectangles offset like stacked slides, the top one with a cyan bar. «03» «Audio» «Ieraksti un balss» - emblem: five vertical bars of differing height reading as a waveform, the tallest cyan. «04» «Video» «Montāža un subtitri» - emblem: a navy horizontal frame with a cyan triangle in its centre and a pale grey progress bar beneath."
+    },
+    {
+      "id": "info-canva-soli",
+      "page": "ka-izmantot-canva",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs soļi pirmās reklāmas izveidei Canva — izvēlies izmēru, pielāgo veidni, eksportē",
+      "rationale": "The post has a step-by-step section; the steps are what a reader follows.",
+      "prompt": "Headline: «Pirmā reklāma trijos soļos». THREE items in one row. «01» «Izvēlies formātu» «Katram kanālam savs izmērs» - emblem: three frames side by side of different proportions - wide, square and tall - the tall one cyan. «02» «Pielāgo veidni» «Krāsas, teksts un logo» - emblem: a pale grey page with a navy heading bar, two grey text bars and one cyan block. «03» «Eksportē un publicē» «Gatavs failu formāts» - emblem: a navy page with a cyan arrow pointing down out of it into a pale grey tray shape."
+    },
+    {
+      "id": "info-seo-soli",
+      "page": "kas-ir-seo",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri praktiski soļi SEO uzlabošanai — atslēgvārdi, saturs, tehniskā puse un atsauces",
+      "rationale": "The post closes with practical steps; a four-step graphic is the takeaway.",
+      "prompt": "Headline: «Četri soļi SEO uzlabošanai». FOUR items in one row. «01» «Atslēgvārdi» «Ko cilvēki tiešām meklē» - emblem: a navy circle with a cyan handle bar reading as a magnifying glass over a pale grey bar. «02» «Saturs» «Lapas, kas atbild uz jautājumu» - emblem: a pale grey page with a navy heading bar and three grey text bars, one cyan. «03» «Tehniskā puse» «Ātrums un struktūra» - emblem: a navy square with a cyan notched square overlapping its corner. «04» «Atsauces» «Citas vietnes norāda uz Tevi» - emblem: three pale grey squares joined by navy lines to one central cyan square."
     }
   ]
 }

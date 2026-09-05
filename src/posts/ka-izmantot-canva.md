@@ -9,6 +9,8 @@ image: "/img/gen/cover-ka-izmantot-canva.webp"
 legacyImage: "/img/2025/10/Digital-1200-628px.png"
 categories: ["dizains"]
 permalink: "/ka-izmantot-canva/"
+keywords: ["Canva", "dizaina rīks", "reklāmas dizains", "veidnes", "AI dizains"]
+
 ---
 
 Vai Tu vēlies izveidot pievilcīgas reklāmas savam biznesam, bet domā, ka profesionāls dizaineris ir pārāk dārgs? Tad **Canva** ir tieši tas, kas Tev vajadzīgs! Šis vienkāršais un intuitīvais _dizaina rīks_ ļauj pat bez dizaina prasmēm radīt profesionālus vizuālos materiālus – no sociālo tīklu reklāmām līdz plakātiem un baneriem. Turklāt šī rīka AI funkcijas padara procesu vēl ātrāku un vienkāršāku.
@@ -50,6 +52,12 @@ Vai esi gatavs sākt? Šeit ir vienkāršs ceļvedis, kā izveidot profesionālu
 ![](/img/2025/10/image-1-1024x477.webp)
 
 Šis process aizņem vien dažas minūtes, tāpēc **Canva** ir ideāls risinājums aizņemtiem uzņēmējiem. Ja Tev vajag sarežģītākus video reklāmas risinājumus, mūsu aģentūra var palīdzēt – [uzraksti mums](/sazinies/) un sāksim ar bezmaksas 20 minūšu iepazīšanās zvanu!
+
+{% infographic { id: "info-canva-soli", title: "Pirmā reklāma trijos soļos", items: [
+  { label: "Izvēlies formātu", text: "Katram kanālam savs izmērs." },
+  { label: "Pielāgo veidni", text: "Krāsas, teksts un logo." },
+  { label: "Eksportē un publicē", text: "Gatavs faila formāts." }
+] } %}
 
 ## Kā Canva salīdzinās ar citiem dizaina rīkiem?
 

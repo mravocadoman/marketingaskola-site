@@ -9,6 +9,8 @@ image: "/img/gen/cover-kas-ir-seo.webp"
 legacyImage: "/img/2025/11/kas-ir-seo-un-kapec-tas-ir-butisks-majaslapas-redzamibai-thumbnail.png.png"
 categories: ["digitalais-marketings"]
 permalink: "/kas-ir-seo/"
+keywords: ["SEO", "meklētājprogrammu optimizācija", "organiskais trafiks", "atslēgvārdi", "atpakaļsaites"]
+
 ---
 
 Ja Tev ir mājaslapa, bet to apmeklē tikai daži cilvēki dienā, tad visdrīzāk kādā brīdī esi sev uzdevis jautājumu: “Kas ir SEO, un vai tas varētu palīdzēt manam biznesam?” Atbilde ir vienkārša – jā, var. Un ne tikai var, bet mūsdienu digitālajā vidē SEO ir praktiski neizbēgams, ja vēlies, lai Tava mājaslapa kļūtu redzama Google rezultātos un bez maksas spētu piesaistīt klientus.
@@ -58,6 +60,13 @@ Ja mājaslapa nav optimizēta, Google to var vienkārši “nepamanīt”. Biež
 Optimāls SEO palīdz Google saprast, ka Tava lapa ir labākā atbilde uz lietotāja uzdoto jautājumu. Kad tas notiek, organiskā trafika izaugsme ir ļoti jūtama.
 
 Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, mēs to piedāvājam arī kā pakalpojumu ko vari apskatīties [šeit.](/pakalpojumi/)
+
+{% infographic { id: "info-seo-soli", title: "Četri soļi SEO uzlabošanai", items: [
+  { label: "Atslēgvārdi", text: "Ko cilvēki tiešām meklē." },
+  { label: "Saturs", text: "Lapas, kas atbild uz jautājumu." },
+  { label: "Tehniskā puse", text: "Ātrums un struktūra." },
+  { label: "Atsauces", text: "Citas vietnes norāda uz Tevi." }
+] } %}
 
 ## Praktiski soļi SEO uzlabošanai
 

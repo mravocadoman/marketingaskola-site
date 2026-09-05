@@ -9,6 +9,8 @@ image: "/img/gen/cover-maksliga-intelekta-riki.webp"
 legacyImage: "/img/2023/11/1.jpg"
 categories: ["maksligais-intelekets"]
 permalink: "/maksliga-intelekta-riki/"
+keywords: ["mākslīgā intelekta rīki", "AI mārketingā", "MidJourney", "Synthesia", "video montāža", "satura veidošana"]
+
 ---
 
 ## Vēlies ietaupīt laiku un enerģiju, darbojoties digitālajā vidē?
@@ -86,6 +88,13 @@ Arī šis mākslīgā intelekta rīks ir noteikti kaut kas īpašs.
 Opus.Clip ir vispopulārākais jeb #Nr.1 video “clipping” AI rīks. Ar mākslīgā intelekta palīdzību varēsi vienu garu video pārvērst 10 īsa formāta video vien pāris klikšķos, kuri būs lieliski piemēroti publicēšanai TikTok vai Instagram platformās.
 
 Opus.Clip ļauj ietapīt DAUDZ laiku uz video rediģēšanu manuāli, tāpēc vari aizmirst par to un steidzies izmēģināt šo rīku.
+
+{% infographic { id: "info-ai-riki-marketinga", title: "Kur MI rīki ietaupa laiku", items: [
+  { label: "Attēli", text: "Vizuāļi bez fotosesijas." },
+  { label: "Prezentācijas", text: "Slaidi dažās minūtēs." },
+  { label: "Audio", text: "Ieraksti un balss." },
+  { label: "Video", text: "Montāža un subtitri." }
+] } %}
 
 ## Mārketinga skolas piedāvājums
 

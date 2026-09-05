@@ -9,6 +9,8 @@ image: "/img/gen/cover-5-visizplatitakas-kludas-reklamas-izvietosana-facebook.we
 legacyImage: "/img/2021/11/10.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/"
+keywords: ["Facebook reklāmas kļūdas", "Ads Manager", "Boost post", "Facebook Pixel", "CAPI", "reklāmas testēšana"]
+
 ---
 
 Vai dažreiz šķiet, ka Tavas reklāmas izvietošana Facebook ir izmaksājusi ļoti daudz naudas, taču diemžēl reklāma nav pat pietuvojusies vēlamajiem rezultātiem?
@@ -46,6 +48,14 @@ _Facebook Pixel_ ir koda elements, ko var ievietot savā mājaslapā. Tas apkopo
 ## 5. Bailes testēt vairākas bildes un reklāmas tekstus
 
 Diemžēl viena no sastopamākajām kļūdām ir cilvēku bailes no dažādu bilžu un reklāmas tekstu testēšanas savai Facebook reklāmai. Reklāmas izvietošana Facebook nevar būt garantēti veiksmīgākā, ja pirms tam nav iztestēts, kuras bildes pie publikācijām mērķauditorijai patīk visvairāk, kā arī, kuri reklāmas teksti šķiet vissaistošākie. Iesakām no sākumā izvēlēties vairākas bildes un izveidot vairākus reklāmas tekstus, lai saprastu, kura bilde un kurš teksts visvairāk ieintriģē Tavu mērķauditoriju.
+
+{% infographic { id: "info-facebook-kludas", title: "Piecas biežākās Facebook reklāmu kļūdas", items: [
+  { label: "Garlaicīgs saturs", text: "Reklāma neuzrunā mērķauditoriju." },
+  { label: "Boost post Ads Manager vietā", text: "Mazāk kontroles, dārgāks rezultāts." },
+  { label: "Kampaņa bez mērķa", text: "Neviens nav pateicis, kas ir konversija." },
+  { label: "Nav Pixel un CAPI", text: "Rezultāti netiek nomērīti." },
+  { label: "Bailes testēt", text: "Viena bilde un viens teksts." }
+] } %}
 
 ## Mārketinga skola iesaka
 

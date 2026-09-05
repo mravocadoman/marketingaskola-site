@@ -9,6 +9,8 @@ image: "/img/gen/cover-isa-pamaciba-izcilu-reklamas-tekstu-veidosana.webp"
 legacyImage: "/img/2022/07/4.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/"
+keywords: ["reklāmas teksts", "copywriting", "virsraksti", "A/B testēšana", "aicinājums rīkoties"]
+
 ---
 
 Izcilu un augsti konvertējošu reklāmas tekstu veidošana ir nepieciešama prasme ikvienam, kurš nodarbojas ar uzņēmējdarbību un vēlas izmantot mārketingu kā palīgu savu lielo uzņēmējdarbības mērķu sasniegšanai.
@@ -88,6 +90,14 @@ Diemžēl vai par laimi reklāmas tekstu veidošana nebeidzas mirklī, kad ir uz
 Lai noskaidrotu, kurš no tekstiem ir visveiksmīgākais, ir jāveic A/B testēšana. Iespējams, prāto, kas ir A/B testēšana? A/B testēšana – bieži saukta arī par “dalītu testēšanu” – ir process, kurā tiek testēts konkrēts reklāmas kampaņas elements, lai novērtētu, kā tas ietekmē visa teksta veiktspēju. Tas palīdz viegli saprast, uz kāda veida saturu labāk reaģē Tava auditorija, un tas savukārt var palīdzēt optimizēt turpmākās kampaņas.
 
 Piemēram, veidojot Facebook reklāmas, Facebook platforma piedāvā veikt šo testu, taču Tev tai ir jāsniedz saturs jeb reklāmas teksti vairākās versijās. Pēc A/B testa ir iespējams noskaidrot, kura no reklāmas tekstu versijām ir bijusi visveiksmīgākā, gūstot visvairāk reakcijas no mērķauditorijas. Veicot šo testu, vari saprast, kurš teksts visefektīvāk palīdzēs Tev sasniegt Tavus mārketinga mērķus!
+
+{% infographic { id: "info-reklamas-teksta-solis", title: "Reklāmas teksts piecos soļos", items: [
+  { label: "Iejūties lasītāja lomā", text: "Kam Tu raksti un kas viņu satrauc." },
+  { label: "Virsraksts", text: "Pirmais, ko pamana." },
+  { label: "Pircēja ieguvumi", text: "Ne funkcijas, bet rezultāts." },
+  { label: "Aicinājums rīkoties", text: "Pasaki, kas jādara tālāk." },
+  { label: "A/B testēšana", text: "Divi varianti, viens uzvarētājs." }
+] } %}
 
 ## Mārketinga skola iesaka
 
