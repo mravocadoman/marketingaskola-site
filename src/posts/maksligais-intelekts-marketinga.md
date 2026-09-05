@@ -9,6 +9,8 @@ image: "/img/gen/cover-maksligais-intelekts-marketinga.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px.jpg"
 categories: ["maksligais-intelekets"]
 permalink: "/maksligais-intelekts-marketinga/"
+keywords: ["mākslīgais intelekts mārketingā", "AI automatizācija", "satura veidošana", "analītika"]
+
 ---
 
 Vai vēlies uzzināt, kā mākslīgais intelekts mārketingā var uzlabot tavu stratēģiju?
@@ -68,6 +70,12 @@ Mākslīgais intelekts (MI) mūsdienās ir spēcīgs rīks ne tikai datu analīz
     MI var ģenerēt attēlus, veidot video montāžas un pat radīt interaktīvus elementus, kas piesaista uzmanību un uzlabo lietotāju iesaisti.
 
 Ja vēlies iepazīties ar labākajiem MI rīkiem digitālajam mārketingam, apskati šo rakstu: [7 digitālā mārketinga rīki](/7-digitala-marketinga-riki/).
+
+{% infographic { id: "info-ai-marketinga-lomas", title: "Kur MI maina mārketingu", items: [
+  { label: "Automatizācija", text: "Atkārtotie soļi notiek paši." },
+  { label: "Satura veidošana", text: "Reklāmas, raksti un idejas." },
+  { label: "Analītika", text: "Ātrāk saprast, kas strādā." }
+] } %}
 
 ## Mākslīgā intelekta nākotne mārketingā
 

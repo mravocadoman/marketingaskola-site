@@ -9,6 +9,8 @@ image: "/img/gen/cover-google-reklama-2025.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px.jpg"
 categories: ["google-reklama"]
 permalink: "/google-reklama-2025/"
+keywords: ["Google reklāma", "Google Ads", "pay-per-click", "Performance Max", "atslēgvārdi"]
+
 ---
 
 Izvēlēties efektīvākos digitālā mārketinga rīkus sava uzņēmuma popularizēšanai nekad nav bijis viegli, īpaši jau tāpēc, ka digitālā vide pastāvīgi mainās. Google reklāma, jeb Google Ads jau daudzus gadus ir plaši izmantota digitālā mārketinga metode, **bet vai arī 2025. gadā tā ir tikpat efektīva?** To noskaidrosim šajā bloga rakstā.
@@ -60,6 +62,12 @@ Google reklāmai ir jāpievērš uzmanība. Ja esi ļoti aizņemts uzņēmējs, 
 ### Google ads darbojas tikai Google un tās partneru vietnēs
 
 Lai gan Google partneru tīkls ir milzīgs, tomēr ir iespējamība, ka Tavi potenciālie klienti var biežāk apmeklēt arī citas vietnes vai sociālo mediju platformas, piemēram, Facebook vai Instagram, kuru popularitāte tikai aug un 2025. gadā augs vēl vairāk. Vēl noteikti ņem vērā, ka Tava mērķauditorija var vienkārši izmantot arī citu meklētājprogrammu, piemēram, Bing, lai meklētu informāciju.
+
+{% infographic { id: "info-google-reklamas-riski", title: "Kam pievērst uzmanību Google reklāmā", items: [
+  { label: "Sarežģīts iesācējiem", text: "Daudz iestatījumu jau pašā sākumā." },
+  { label: "Prasa pastāvīgu uzmanību", text: "Nav palaid un aizmirsti." },
+  { label: "Tikai Google vidē", text: "Ārpus tās reklāma neparādās." }
+] } %}
 
 ## Mārketinga skola iesaka
 

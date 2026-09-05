@@ -9,6 +9,8 @@ image: "/img/gen/cover-marketinga-strategijas-izstrade.webp"
 legacyImage: "/img/2021/12/9.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/marketinga-strategijas-izstrade/"
+keywords: ["mārketinga stratēģija", "mārketinga plāns", "mērķauditorija", "konkurentu analīze", "SMART mērķi"]
+
 ---
 
 Vēlies pacelt sava uzņēmuma mārketingu jaunā līmenī, taču veiksmīgas un efektīvas mārketinga stratēģijas izstrāde šķiet kā liels izaicinājums? Kā ilggadēji mārketinga nozares eksperti, esam rūpīgi izvēlējušies 7 vērtīgus padomus, ko noteikti iesakām Tev ņemt vērā, kad veido savu unikālo mārketinga stratēģiju [Facebook reklāmām](/facebook-reklamas-izstrade/).
@@ -47,6 +49,16 @@ Diezgan daudz šajā bloga rakstā runājam par pētniecību, jo mārketinga str
 ## 7. Autentiskums kā prioritāte
 
 Veiksmīgs mārketings ir prasme atstāt paliekošu iespaidu uz klientu. Mūsdienās patērētāji labi apzinās, ka uzņēmumu radītais saturs ir orientēts uz savu pakalpojumu pārdošanu. Maz ticams, ka viņi pozitīvi reaģēs uz saturu, kurā viņi skaidri saredz tikai to, ka viņiem vēlas kaut ko pārdot. Efektīvas mārketinga stratēģijas izstrāde sevī iekļauj autentisku attiecību veidošanu ar savu auditoriju, kā arī radoša, personalizēta un unikāla satura radīšanu.
+
+{% infographic { id: "info-strategijas-septini-soli", title: "Mārketinga stratēģija septiņos soļos", items: [
+  { label: "Plāns", text: "Vispirms uz papīra." },
+  { label: "Konkrēti mērķi", text: "Izmērāmi un ar termiņu." },
+  { label: "Mērķauditorija", text: "Kas ir Tavs klients." },
+  { label: "Konkurenti", text: "Ko dara citi Tavā nozarē." },
+  { label: "Kanālu izvēle", text: "Tradicionālais vai digitālais." },
+  { label: "Nozares tendences", text: "Kas mainās ap Tevi." },
+  { label: "Autentiskums", text: "Balss, kas pieder Tev." }
+] } %}
 
 ## Mārketinga skolas piedāvājums
 

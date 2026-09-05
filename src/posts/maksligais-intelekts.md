@@ -9,6 +9,8 @@ image: "/img/gen/cover-maksligais-intelekts.webp"
 legacyImage: "/img/2024/02/13.png"
 categories: ["maksligais-intelekets"]
 permalink: "/maksligais-intelekts/"
+keywords: ["mākslīgais intelekts", "AI biznesā", "automatizācija", "tehnoloģijas"]
+
 ---
 
 Mākslīgais intelekts 2023.gadā sastāda **27 miljardus** ASV dolāru no pasaules mārketinga tirgus vērtības. 2028.gadā pētnieki prognozē, ka tā tirgus vērtība jau būs sasniegusi **107 miljardus** ASV dolāru.
@@ -78,6 +80,13 @@ Iesakām sekot līdzi tehnoloģiju aktualitātēm un iespēju robežās automati
 Ir vērts apgūt tehnoloģijas un tuvāk iepazīt arī digitālo pasauli, pieņemot visu, ko tā sniedz.
 
 Mūsdienu pasaulē ir jārēķinās ar to, ka mākslīgais intelekts nekur nepazudīs, tas tikai attīstīsies straujāk. Aicinām ar to sadraudzēties, aiztaupot liekas galvassāpes jautājumos, kurus var atrisināt tehnoloģijas!
+
+{% infographic { id: "info-ai-ievieana", title: "Mākslīgais intelekts biznesā", items: [
+  { label: "Kas tas ir", text: "Tehnoloģija, kas mācās no datiem." },
+  { label: "Kur to lietot", text: "Saturs, analītika, automatizācija." },
+  { label: "Draugs vai drauds", text: "Lēmumu pieņem cilvēks." },
+  { label: "Ar ko sākt", text: "Automatizē vienu atkārtotu soli." }
+] } %}
 
 ## Mārketinga skola iesaka
 

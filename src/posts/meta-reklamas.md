@@ -9,6 +9,8 @@ image: "/img/gen/cover-meta-reklamas.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-4.png"
 categories: ["digitalais-marketings","socialo-tiklu-reklama"]
 permalink: "/meta-reklamas/"
+keywords: ["Meta reklāmas", "Facebook", "Instagram", "Messenger", "WhatsApp", "Meta Ads"]
+
 ---
 
 Digitālais mārketings attīstās straujāk nekā jebkad agrāk, un viena no spēcīgākajām platformām reklāmu izvietošanai ir Meta reklāmas jeb Meta Ads. Ja vēlies sasniegt plašu auditoriju, izmantot inovatīvas reklāmas metodes un sagatavoties nākotnes tendencēm, tad šis raksts ir tieši tev! Iepazīstināsim ar Meta Ads iespējām, izcelšanas stratēģijām un ilgtermiņa potenciālu.
@@ -27,6 +29,13 @@ Meta Ads sniedz Tev pieeju vienai no lielākajām digitālajām platformām pasa
 -   **WhatsApp:** Šī platforma strauji attīstās kā klientu servisa un reklāmas rīks. Ideāli piemērots personalizētai komunikācijai un uzticības veidošanai.
 
 ![meta ads](/img/2025/04/Meta-ads-ka-izcelties-ar-inovativiem-reklamas-risinajumiem-1024x576.webp)
+
+{% infographic { id: "info-meta-platformas", title: "Četras Meta platformas", items: [
+  { label: "Facebook", text: "Plaša auditorija un detalizēta atlase." },
+  { label: "Instagram", text: "Attēli, Stāsti un Reels." },
+  { label: "Messenger", text: "Tieša saruna ar klientu." },
+  { label: "WhatsApp", text: "Personalizēta komunikācija." }
+] } %}
 
 ## Kā izcelties ar inovatīvām Meta Ads reklāmām?
 

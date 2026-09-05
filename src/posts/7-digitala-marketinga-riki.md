@@ -9,6 +9,8 @@ image: "/img/gen/cover-7-digitala-marketinga-riki.webp"
 legacyImage: "/img/2022/05/5.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/7-digitala-marketinga-riki/"
+keywords: ["digitālā mārketinga rīki", "ChatGPT", "Google Analytics", "WordPress", "Buffer", "Grammarly"]
+
 ---
 
 Vai jūties kā ļoti liela daļa uzņēmēju un dažreiz nodomā, ka digitālais mārketings ir efektīvs, bet tajā pašā laikā arī tik ļoti sarežģīts un laikietilpīgs process? Par laimi, eksistē daudzi digitālā mārketinga rīki, kas atvieglo uzņēmēju ikdienu, palīdzot no tā gūt maksimālo labumu.
@@ -78,6 +80,16 @@ Google Optimize ir Google veidots A/B testēšanas un konversijas optimizācijas
 Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas versijām ir veiksmīgāka. Mums šīs rīks patīk, jo tādējādi ir iespējams atrast visefektīvāko variantu, kas visvairāk patīk mūsu klientiem un attiecīgi uzrāda augstākos konversijas rādītājus.
 
 ![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.webp)
+
+{% infographic { id: "info-marketinga-riki-darbi", title: "Septiņi darbi, septiņi rīki", items: [
+  { label: "Saturs", text: "Melnraksti un idejas." },
+  { label: "Analītika", text: "Kas notiek mājaslapā." },
+  { label: "Mājaslapa", text: "Vieta, kur cilvēks nonāk." },
+  { label: "Attēli", text: "Bezmaksas vizuāļi." },
+  { label: "Valodas kvalitāte", text: "Teksts bez kļūdām." },
+  { label: "Publicēšana", text: "Ieplāno un aizmirsti." },
+  { label: "Testēšana", text: "Divi varianti, viens uzvarētājs." }
+] } %}
 
 ## Mārketinga skola iesaka
 

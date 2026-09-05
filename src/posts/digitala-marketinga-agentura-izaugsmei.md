@@ -9,6 +9,8 @@ image: "/img/gen/cover-digitala-marketinga-agentura-izaugsmei.webp"
 legacyImage: "/img/2025/11/Marketinga-Skola-Blog-Thumbnails-1.png"
 categories: ["marketinga-strategija"]
 permalink: "/digitala-marketinga-agentura-izaugsmei/"
+keywords: ["digitālā mārketinga aģentūra", "frīlanseris", "in-house komanda", "uzņēmuma izaugsme"]
+
 ---
 
 Digitālā mārketinga aģentūra kļūst par neaizstājamu partneri uzņēmumiem, kas vēlas strauji augt mūsdienu konkurences pilnajā vidē. Ja Tavs bizness vēl joprojām paļaujas tikai uz tradicionālajām metodēm vai haotisku sociālo mediju pārvaldību, Tu, iespējams, zaudē potenciālos klientus katru dienu. Šajā rakstā uzzināsi, kā profesionāla digitālā aģentūra var pārveidot Tavu uzņēmumu, palielināt pārdošanu un nodrošināt ilgtermiņa izaugsmi. Turpinot lasīt, atklāsi praktiskus piemērus un stratēģijas, kas jau palīdzējušas daudziem Latvijas uzņēmumiem!
@@ -52,6 +54,12 @@ Piemēram, salīdzinot ar pašmāju reklāmu pārvaldību:
 -   **Aģentūra:** Eksperti, dati, regulāra optimizācija.
 
 Digitālā reklāma caur aģentūru pārspēj tradicionālo TV vai avīžu sludinājumus, jo ir mērāma un pielāgojama reāllaikā.
+
+{% infographic { id: "info-agentura-vai-komanda", title: "Aģentūra, frīlanseris vai sava komanda", items: [
+  { label: "Aģentūra", text: "Vairākas kompetences uzreiz." },
+  { label: "Frīlanseris", text: "Viena joma, elastīgi." },
+  { label: "Sava komanda", text: "Pilna kontrole, augstākas izmaksas." }
+] } %}
 
 ## Secinājumi un ieteikumi
 

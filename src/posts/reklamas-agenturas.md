@@ -9,6 +9,8 @@ image: "/img/gen/cover-reklamas-agenturas.webp"
 legacyImage: "/img/2024/02/14.png"
 categories: ["marketinga-strategija"]
 permalink: "/reklamas-agenturas/"
+keywords: ["reklāmas aģentūra", "reklāmas kampaņas", "mārketinga pakalpojumi"]
+
 ---
 
 Mūsdienās populāra ir reklāmas aģentūru nolīgšana mārketinga aktivitāšu īstenošanai. Kāpēc? Ko tik vērienīgu reklāmas aģentūras var paveikt? Vai Tev vajadzīgi reklāmas aģentūru pakalpojumi?
@@ -57,6 +59,12 @@ Tev ir nepieciešama aģentūru palīdzība, ja vēlies:
 -   _īstenot mārketingu, kas klientam nešķiet kā mārketings, lai arī rezultātā palielina pirkumu skaitu;_
 -   _palielināt jaunu klientu un uzticamu klientu skaitu;_
 -   _veidot profesionālu un pārdomātu saturu, kas tiešām saista mērķauditoriju._
+
+{% infographic { id: "info-kad-vajag-agenturu", title: "Kad reklāmas aģentūra atmaksājas", items: [
+  { label: "Trūkst laika", text: "Reklāma paliek pēdējā sarakstā." },
+  { label: "Trūkst kompetences", text: "Iestatījumi, kurus neviens nepārzina." },
+  { label: "Rezultāti nepieaug", text: "Budžets tērēts, skaitļi stāv." }
+] } %}
 
 ## Mūsu reklāmas aģentūras trumpis
 

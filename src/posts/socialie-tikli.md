@@ -9,6 +9,8 @@ image: "/img/gen/cover-socialie-tikli.webp"
 legacyImage: "/img/2024/03/16.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/socialie-tikli/"
+keywords: ["sociālie tīkli", "sociālo tīklu mārketings", "maksas reklāmas", "zīmola atpazīstamība"]
+
 ---
 
 Sociālie tīkli ir 21.gadsimta mārketinga fenomens.
@@ -61,6 +63,13 @@ Lūk, vien daži no sociālo tīklu mārketinga ieguvumiem, ko esam paši piered
 -   Ievērojami uzlabojas mārketinga aktivitāšu efektivitāte, jo ar analītikas rīkiem tiek izvērtēti mārketinga rezultāti un veikti nepieciešamie uzlabojumi.
 
 Būtisks trumpis šajos ieguvumos ir **maksas reklāmas**.
+
+{% infographic { id: "info-socialo-tiklu-ieguvumi", title: "Sociālo tīklu ieguvumi", items: [
+  { label: "Pieaug pārdošana", text: "Vairāk pirkumu no tās pašas auditorijas." },
+  { label: "Zīmola atpazīstamība", text: "Cilvēki zina, kas Tu esi." },
+  { label: "Saikne ar klientu", text: "Komūna, ne tikai sekotāji." },
+  { label: "Izmērāma efektivitāte", text: "Analītika rāda, kas strādā." }
+] } %}
 
 ## Kāpēc maksas reklāmas?
 

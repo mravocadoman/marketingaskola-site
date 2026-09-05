@@ -9,6 +9,8 @@ image: "/img/gen/cover-facebook-reklamas-izstrade.webp"
 legacyImage: "/img/2022/01/8.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/facebook-reklamas-izstrade/"
+keywords: ["Facebook reklāmas izstrāde", "reklāmas kampaņa", "mērķauditorija", "reklāmas budžets", "Ads Manager"]
+
 ---
 
 Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi!  (1 160 000 + Latvijā)_  Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/))  tuvāk, tad šis bloga raksts ir domāts tieši Tev!
@@ -51,6 +53,15 @@ Reklāmas izveide sastāv no vairākiem etapiem, un mēs esam izvēlējušies š
 -   _Formāta izvēle:_ Posms, kurā izvēlies, vai Tavu reklāmu formāts būs, piemēram, bilde, video, slaidšovs vai vēl cits formāts.
 
 Vērtīgākais, ko paņemt no šī bloga raksta? Facebook ir digitālā mārketinga veiksmes atslēga! Facebook ir lielisks veids, kā reklamēt savu biznesu internetā, protams, pirms tam izveidojot skaidru spēles plānu.
+
+{% infographic { id: "info-facebook-reklamas-etapi", title: "Facebook reklāma sešos etapos", items: [
+  { label: "Stratēģija", text: "Bez tās nav rezultātu." },
+  { label: "Mērķis", text: "Atpazīstamība vai pārdošana." },
+  { label: "Mērķauditorija", text: "Pēc kādiem kritērijiem atlasīt." },
+  { label: "Lokācija", text: "Kur reklāma parādīsies." },
+  { label: "Budžets un laiks", text: "Cik un cik ilgi." },
+  { label: "Formāts", text: "Bilde, video vai slaidšovs." }
+] } %}
 
 ## Mārketinga Skolas piedāvājums
 

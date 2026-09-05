@@ -9,6 +9,8 @@ image: "/img/gen/cover-vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings.
 legacyImage: "/img/2022/03/6.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings/"
+keywords: ["sociālo tīklu mārketings", "sociālie tīkli biznesam", "analītika", "klientu saikne"]
+
 ---
 
 Daudziem uzņēmējiem šķiet, ka sociālo tīklu mārketings nav piemērots viņu uzņēmumam, jo sociālos tīklus taču izmanto tikai jaunieši.
@@ -85,6 +87,14 @@ Sociālo tīklu mārketings ir ļoti laikietilpīgs process, jo
 -   ir pastāvīgi jāpublicē jauns saturs sociālajos tīklos, lai nepazaudētu sekotāju interesi uzņēmumā
 
 Sociālo tīklu mārketings ir visfektīvākais veids, kā palielināt zīmola atpazīstamību, pārdošanas apjomus un klientu skaitu, taču tajā pašā laikā tas ir ļoti sarežģīts un laikietilpīgs veids, kā šo visu sasniegt.
+
+{% infographic { id: "info-socialo-tiklu-abas-puses", title: "Sociālo tīklu mārketings: abas puses", items: [
+  { label: "Popularitāte", text: "Lietotāju skaits aug katru gadu." },
+  { label: "Analītikas rīki", text: "Var izmērīt, vai atmaksājās." },
+  { label: "Saikne ar klientu", text: "Komūna ap zīmolu." },
+  { label: "Pamatideja nav bizness", text: "Cilvēki nāk atslēgties, ne pirkt." },
+  { label: "Prasa pastāvīgu aktivitāti", text: "Viena publikācija neko nemaina." }
+] } %}
 
 ## Mārketinga skolas piedāvājums
 

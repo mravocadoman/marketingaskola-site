@@ -9,6 +9,8 @@ image: "/img/gen/cover-tiktok-reklamas-klientu-piesaistisanai.webp"
 legacyImage: "/img/2025/05/Digital-1200-628px-4.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/tiktok-reklamas-klientu-piesaistisanai/"
+keywords: ["TikTok reklāmas", "īsie video", "TikTok algoritms", "subtitri", "trendu audio"]
+
 ---
 
 Tāpat kā sociālo tīklu algoritmi nepārtraukti mainās, arī uzņēmumiem ir nemitīgi jāpielāgojas, lai paliktu redzami. Tieši šajā kontekstā TikTok no pusaudžu izklaides vietnes ir kļuvusi par vienu no ietekmīgākajām digitālā mārketinga platformām.
@@ -85,6 +87,13 @@ Populāri audio un efekti ir viena no spēcīgākajām metodēm, kā palielināt
 Kad izvēlies izmantot aktuālos trendus, tev ir iespēja piesaistīt cilvēkus, kuri jau seko šiem populārajiem elementiem. Tomēr svarīgi ir pievienoties trendam, saglabājot savu zīmola autentiskumu un toni. Audio izvēle ir būtiska, jo tas palīdz radīt emocijas un uzlabot skatītāja pieredzi. Izvēloties pareizo mūziku vai skaņas efektu, vari pastiprināt video vēstījumu un pievērst uzmanību, taču pārliecinies, ka audio un vizuālais saturs ir saskaņots ar tavu zīmola identitāti.
 
 TikTok ir platforma, kur trendi ātri mainās, tāpēc jābbū spējīgam tiem sekot līdzi un ātri pielāgoties, lai nezaudētu iespēju sasniegt plašāku auditoriju.
+
+{% infographic { id: "info-tiktok-reklamas-soli", title: "Efektīva TikTok reklāma četros soļos", items: [
+  { label: "Trīs sekunžu likums", text: "Ja neaizķer uzreiz, cilvēks aizslīd tālāk." },
+  { label: "Autentiskums", text: "Dabisks saturs, ne studijas reklāma." },
+  { label: "Subtitri", text: "Lielākā daļa skatās bez skaņas." },
+  { label: "Trendu audio", text: "Populārs skaņas celiņš paceļ skatījumus." }
+] } %}
 
 ## Kas piesaista uzmanību TikTok reklāmās?
 

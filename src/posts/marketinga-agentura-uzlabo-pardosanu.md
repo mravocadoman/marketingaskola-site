@@ -9,6 +9,8 @@ image: "/img/gen/cover-marketinga-agentura-uzlabo-pardosanu.webp"
 legacyImage: "/img/2025/11/Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu.png"
 categories: ["marketinga-strategija"]
 permalink: "/marketinga-agentura-uzlabo-pardosanu/"
+keywords: ["mārketinga aģentūra", "mārketinga pakalpojumi", "SEO", "Google Ads", "mājaslapas izstrāde"]
+
 ---
 
 Mūsdienās uzņēmējdarbība ir kļuvusi tik strauja un konkurence tik intensīva, ka ar skaistu mājaslapu vai Facebook profilu vien nepietiek. Lai nepazustu informācijas džungļos, uzņēmumiem arvien biežāk nepieciešams profesionāls atbalsts — un te spēlē iesaistās mārketinga aģentūra. Daudzi uzņēmēji domā: “Vai tiešām man vajag aģentūru? Vai nevaru visu izdarīt pats?” Protams, vari, bet jautājums ir — vai tas būs efektīvi un vai tas Tev atmaksāsies?
@@ -93,6 +95,15 @@ Mājaslapa ir digitālais pārdevējs, tāpēc tai jābūt ātrai, saprotamai un
 ### Stratēģija un konsultācijas
 
 Mārketinga stratēģija nosaka virzienu — kā uzņēmums komunicēs, kādi kanāli būs prioritāri, kas ir galvenās auditorijas un kādi KPI (Key Performance Indicator jeb galvenais veiktspējas rādītājs) tiks uzraudzīti. Konsultācijas palīdz uzņēmumam saprast savas stiprās puses, noteikt unikālo vērtību, izveidot pozicionējumu un definēt mērķus. Rezultātā mārketings nevis tiek darīts “uz sajūtām”, bet vadīts caur datiem un ar skaidru plānu.
+
+{% infographic { id: "info-agenturas-pakalpojumi", title: "Ko dara mārketinga aģentūra", items: [
+  { label: "Sociālie tīkli", text: "Saturs un reklāmas." },
+  { label: "Google reklāmas", text: "Meklēšanas kampaņas." },
+  { label: "SEO un saturs", text: "Organiskā redzamība." },
+  { label: "Dizains", text: "Vizuālā identitāte." },
+  { label: "Mājaslapa un UX", text: "Vieta, kur notiek pirkums." },
+  { label: "Stratēģija", text: "Plāns pirms izpildes." }
+] } %}
 
 ## Kā mārketinga aģentūra palīdz palielināt redzamību un pārdošanu?
 

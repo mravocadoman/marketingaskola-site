@@ -9,6 +9,8 @@ image: "/img/gen/cover-instagram-reklama.webp"
 legacyImage: "/img/2022/02/7.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/instagram-reklama/"
+keywords: ["Instagram reklāma", "mērķauditorija", "reklāmas teksts", "vizuālie materiāli"]
+
 ---
 
 Instagram reklāma ir viens no efektīvākajiem un populārākajiem veidiem, kā popularizēt savu uzņēmumu. Kāpēc? Instagram ir sastopami lietotāji ar dažādām interesēm, tāpēc tā ļoti strauji kļūst par populārāko sociālo mediju platformu, kurā uzņēmumi īsteno savas mārketinga stratēģijas.
@@ -34,6 +36,12 @@ Atceries: _Tavas reklāmas teksts ir viens no svarīgākajiem faktoriem, jo tas 
 Kāpēc Instagram ir viena no labākajām sociālo mediju mārketinga platformām? Cilvēkus dabiski piesaista vizuāls saturs un estētiski vizuālie materiāli. Cilvēka uztvere un pirmais iespaids par zīmolu ir atkarīgs no tā, ko viņš vai viņa redz Instagram reklāmā. Ja vēlies piesaistīt vairāk uzmanības Instagram, tad noteikti atceries, ka ir jāveido reklāmas, kas ir estētiski pievilcīgas. Īsāk sakot, Tavs uzdevums ir izveidot vai atrast vizuāli (bildi, attēlu, zīmējumu) , kas ir “vienīgais īstais”, jo parāda tieši to, ko vēlies pateikt.
 
 Noteikti atceries, ka Tavam vizuālim ir jābūt piemērotam nozarei, kurā darbojies, kā arī silti iesakām publicēt sava reklamējamā produktu attēlu. Noteikti apsver domu par sadarbību ar grafisko dizaineri, kurš varētu Tavas Instagram reklāmas vizuālos materiālus pacelt jaunā līmenī!
+
+{% infographic { id: "info-instagram-reklamas-soli", title: "Instagram reklāmas trīs pamati", items: [
+  { label: "Mērķauditorijas izpēte", text: "Kam Tu runā." },
+  { label: "Saistošs teksts", text: "Pirmā rinda izlemj visu." },
+  { label: "Piemēroti vizuālie materiāli", text: "Attēls, ko pamana plūsmā." }
+] } %}
 
 ## Mārketinga skolas piedāvājums
 
