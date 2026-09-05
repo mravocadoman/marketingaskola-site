@@ -2,9 +2,9 @@
 layout: post.njk
 title: "Mārketinga stratēģijas izstrāde - 7 padomi"
 seoTitle: "Mārketinga stratēģijas izstrāde - 7 padomi | Mārketinga Skola"
-description: "Uzzini, kas ir veiksmīga mārketinga stratēģijas izstrāde, un kā to īstenot to savā uzņēmumā ar šiem septiņiem padomiem!"
+description: "Mārketinga stratēģija, kas ietilpst vienā lapā: septiņi jautājumi par auditoriju, mērķi, kanāliem, piedāvājumu, budžetu un vienu skaitli, pēc kura vērtē."
 date: 2021-12-09
-updated: 2024-10-21
+updated: 2026-09-05
 image: "/img/gen/cover-marketinga-strategijas-izstrade.webp"
 legacyImage: "/img/2021/12/9.jpg"
 categories: ["marketinga-strategija"]
@@ -13,55 +13,88 @@ keywords: ["mārketinga stratēģija", "mārketinga plāns", "mērķauditorija",
 
 ---
 
-Vēlies pacelt sava uzņēmuma mārketingu jaunā līmenī, taču veiksmīgas un efektīvas mārketinga stratēģijas izstrāde šķiet kā liels izaicinājums? Kā ilggadēji mārketinga nozares eksperti, esam rūpīgi izvēlējušies 7 vērtīgus padomus, ko noteikti iesakām Tev ņemt vērā, kad veido savu unikālo mārketinga stratēģiju [Facebook reklāmām](/facebook-reklamas-izstrade/).
+Lielākā daļa mārketinga stratēģiju neizgāžas tāpēc, ka tās ir nepareizas. Tās izgāžas tāpēc, ka ir pārāk garas, un pēc mēneša tās vairs neviens neatver.
 
-## 1. Plāns, plāns & vēlreiz plāns
+Mazam uzņēmumam noderīga stratēģija ietilpst vienā lapā un atbild uz septiņiem jautājumiem. Šajā rakstā apskatām visus septiņus, ņemot vērā to, kas mainījies 2026. gadā.
 
-Iztēlojies, ka mārketinga stratēģijas izstrāde ir kā detalizēta plāna piepildījums. Jo labāku un stabilāku pamatu Tu izveido sākumā, jo labāka ir Tava izpratne par to, ko vēlies sasniegt caur mārketingu. Tas var šķist garlaicīgi, bet ir tiešām vērts izplānot savas darbības mārketingā līdz pat sīkākajām detaļām, lai Tev būtu garantētas lielākas izredzes attīstīt veiksmīgu un efektīvu mārketinga stratēģiju.
+## 1. Kam Tu pārdod un kāpēc viņi pērk tieši pie Tevis
 
-## 2. Izvirzi konkrētus mērķus
+Šis ir vienīgais punkts, kuru nevar ne nopirkt, ne uzģenerēt. Reklāmas tekstu rīks uzraksta minūtē, bet zināšanas par to, kāpēc klients izvēlējās Tevi, ir tikai Tavā galvā un Tavos datos.
 
-Varbūt izklausīsies skarbi, taču mārketinga stratēģijas izstrāde nevar būt veiksmīga, ja nav izvirzīti precīzi mērķi. Ir svarīgi rast atbildi uz šo jautājumu: _Ko Tu vēlies sasniegt savā uzņēmējdarbībā un kā Tu vari izmantot savu mārketinga stratēģiju, lai to sasniegtu?_ Konkrēti mērķi palīdz Tavu mārketinga stratēģiju ievirzīt pareizajā gultnē un nodrošina to, ka esi uz īstā ceļa. Iespējams, Tev nav ideju, kādi varētu būt Tavas mārketinga stratēģijas mērķi. Lūk, iedvesmai vari apsvērt, vai kāds no šiem mērķiem atbilst Tev:
+Praktisks veids, kā to noskaidrot, nav aptauja. Uzdod pēdējiem pieciem klientiem vienu jautājumu: ko Tu izmēģināji pirms mums un kas Tevi pārliecināja.
 
-- Vēlos palielināt sava uzņēmuma atpazīstamību
-- Vēlos palielināt pārdošanas apjomus
-- Vēlos palielināt savas mājaslapas un sociālo mediju profilu apmeklējumu
-- Vēlos palielināt uzticamo klientu skaitu
+Viņu vārdi kļūst par Tavu mārketingu. Nozares valoda un klienta valoda gandrīz nekad nesakrīt. Pārdod tas, kā runā klients.
 
-P.S. Ņem vērā, ka šie mērķi ir vispārēji. Ja, piemēram, _vēlies palielināt uzticamo klientu skaitu_, tad precizē, par cik klientiem vēlies to palielināt. Mārketinga stratēģijas izstrāde nav iespējama bez konkrētības, jo konkrētība palīdzēs Tev visveiksmīgāk izplānot mārketinga stratēģijas budžetu, kā arī saprast, kurā no mārketinga virzieniem bīdīt savu uzņēmumu.
+## 2. Viens mērķis, kas izteikts skaitlī
 
-## 3. Izzini savu mērķauditoriju!
+"Vairāk atpazīstamības" nav mērķis, jo neviens nevar pateikt, vai tas ir sasniegts.
 
-Mērķauditorijas iepazīšana un definēšana ir ļoti būtisks solis efektīvas mārketinga stratēģijas izveidē. Tu, iespējams, prāto kāpēc? Pavisam vienkārši: lai ieinteresētu cilvēkus savā pakalpojumā, Tev ir jāzina, kā šos cilvēkus uzrunāt tā, lai viņi paliktu ieinteresēti. Nav diemžēl iespējams panākt to, ka cilvēki ir ieintriģēti saturā, kas viņus vienkārši nesaista. Mārketinga stratēģijas izstrāde ir patiešām laikietilpīgs process, jo Tev būs daudz laika jāvelta tam, lai uzzinātu, kādi ir Tavu potenciālo un esošo klientu ieradumi, intereses, vēlmes, demogrāfiskais stāvoklis, kā arī rīcība digitālajā vidē. Tev ir jāspēj izveidot neticami detalizēts priekšstats par savu mērķauditoriju, lai spētu to efektīvi uzrunāt.
+Noderīgs mērķis izskatās šādi: divdesmit pieteikumi mēnesī, kas maksā ne vairāk kā trīsdesmit eiro katrs. Tad ir skaidrs, ko darīt un kad apstāties.
 
-## 4. Aplūko, ko dara konkurenti!
+Ja mērķu ir trīs, nav nevienas skaidras prioritātes. Izvēlies vienu nākamajiem sešiem mēnešiem.
 
-Mārketinga stratēģijas izstrāde nav iedomājama bez savu konkurentu identificēšanas un viņu darbību rūpīgas izpētīšanas. Noskaidro, kādi ir Tavi galvenie konkurenti (gan tiešie, gan netiešie), un velti laiku tam, lai analizētu gan viņu panākumus, gan neveiksmes. Analizējot savus konkurentus, ir vieglāk saskatīt to, kā Tavas nozares piedāvātie produkti un pakalpojumi izskatās no malas, kā arī saprast, kādas mārketinga stratēģijas noteikti nestrādās. Nekopē, bet gan smelies iedvesmu!
+## 3. Divi kanāli, ne pieci
 
-## 5. Izvēlies: tradicionālais vai digitālais mārketings?
+Biežākā kļūda ir mēģināt būt visur. Pieci pa pusei darīti kanāli dod mazāk nekā viens kārtīgi izdarīts kanāls.
 
-Mārketings iedalās divos lielos virzienos : tradicionālajā mārketingā un digitālajā mārketingā. Tev ir jāsaprot, kurā no šiem virzieniem vēlies darboties visvairāk. Iespējams, abos. Protams, mūsu silts ieteikums būtu doties līdzi laikiem un dot priekšroku digitālajam mārketingam. Kāpēc? Digitālais mārketings dažkārt ir ne tikai rentablāks nekā tradicionālais, bet arī daudz tiešāks veids, kā sazināties ar savu mērķauditoriju visā pasaulē. Digitālais mārketings mūsdienās uzņēmumiem var būt kā īsta veiksmes atslēga, jo patērētāji ir tik ļoti pieraduši pie digitālās vides, ka tur pavada ļoti lielu daļu savas ikdienas. Ar dažādiem digitālā mārketinga elementiem ir iespējams panākt to, ka Tavas reklāmas digitālajā vidē parādās tieši tiem cilvēkiem, kuriem potenciāli būs vislielākā interese Tavā pakalpojumā.
+Izvēle ir vienkārša. Ja cilvēks Tevi meklē pats, sāc ar meklētāju: [SEO](/kas-ir-seo/) un [Google reklāmu](/google-reklama-2025/). Ja par Tevi vēl nezina, sāc ar [Meta reklāmu](/facebook-reklamas-izstrade/), kur pieprasījumu radi Tu pats.
 
-## 6. Iepazīsti savas nozares mārketinga tendences no A līdz Z
+Otro kanālu pievieno tad, kad pirmais strādā, nevis paralēli.
 
-Diezgan daudz šajā bloga rakstā runājam par pētniecību, jo mārketinga stratēģijas izstrāde tiešām nav iedomājama bez tās. Izpētes posms ir ārkārtīgi svarīgs. Iepazīstot savu mērķauditoriju un konkurentus, nepiemirsti arī par sava piedāvātā pakalpojuma vai produkta nozares iepazīšanu! Būtu vērtīgi uzzināt, kādas mārketinga tendences valda tieši Tavā nozarē. Piemēram, ja vēlies īstenot sociālo mediju mārketinga stratēģiju, tad noteikti iesakām noskaidrot, kādas ir izmantotākās sociālo mediju platformas, kur publicēt informāciju par šīs nozares pakalpojumiem.
+## 4. Ko dara konkurenti, un kur viņi nav
 
-## 7. Autentiskums kā prioritāte
+Konkurentu analīze bieži pārvēršas par sarakstu ar lietām, ko no viņiem pārņemt. Noderīgāks ir pretējs jautājums: ko viņi visi dara vienādi?
 
-Veiksmīgs mārketings ir prasme atstāt paliekošu iespaidu uz klientu. Mūsdienās patērētāji labi apzinās, ka uzņēmumu radītais saturs ir orientēts uz savu pakalpojumu pārdošanu. Maz ticams, ka viņi pozitīvi reaģēs uz saturu, kurā viņi skaidri saredz tikai to, ka viņiem vēlas kaut ko pārdot. Efektīvas mārketinga stratēģijas izstrāde sevī iekļauj autentisku attiecību veidošanu ar savu auditoriju, kā arī radoša, personalizēta un unikāla satura radīšanu.
+Parasti tā ir vieta, kur vari izcelties. Ja visi Tavā nozarē runā par kvalitāti un pieredzi, tad cena, termiņš vai garantija ir brīva vieta.
 
-{% infographic { id: "info-strategijas-septini-soli", title: "Mārketinga stratēģija septiņos soļos", items: [
- { label: "Plāns", text: "Vispirms uz papīra." },
- { label: "Konkrēti mērķi", text: "Izmērāmi un ar termiņu." },
- { label: "Mērķauditorija", text: "Kas ir Tavs klients." },
- { label: "Konkurenti", text: "Ko dara citi Tavā nozarē." },
- { label: "Kanālu izvēle", text: "Tradicionālais vai digitālais." },
- { label: "Nozares tendences", text: "Kas mainās ap Tevi." },
- { label: "Autentiskums", text: "Balss, kas pieder Tev." }
+Praktisks rīks ir vienkāršs: apskati piecu konkurentu mājaslapas un pieraksti pirmo teikumu no katras. Ja tos var savstarpēji aizvietot, tā ir Tava iespēja.
+
+{% infographic { id: "info-strategijas-septini-soli", title: "Mārketinga stratēģija septiņos jautājumos", items: [
+ { label: "Kam Tu pārdod", text: "Pēdējo klientu vārdiem, ne nozares valodā." },
+ { label: "Viens mērķis skaitlī", text: "Cik klientu un par kādu cenu." },
+ { label: "Divi kanāli", text: "Otro pievieno, kad pirmais strādā." },
+ { label: "Brīvā vieta tirgū", text: "Ko konkurenti dara vienādi." },
+ { label: "Piedāvājums", text: "Viens teikums, ko var pārbaudīt." },
+ { label: "Budžets un laiks", text: "Cik naudas un kurš to darīs." },
+ { label: "Skaitlis, ko mēra", text: "Klienta cena, ne klikšķi." }
 ] } %}
 
-## Mārketinga skolas piedāvājums
+## 5. Piedāvājums, ko var pateikt vienā teikumā
 
-Ko no šī bloga raksta var secināt? Mārketinga stratēģijas izveide ir, nu, ļoti laikietilpīgs process. Tāpat kā _Romu neuzbūvēja vienā dienā_, arī veiksmīgu mārketinga stratēģiju nevar izveidot vienā dienā. Bet veiksmīga mārketinga stratēģija ir pamats panākumiem jebkurā [sociālo tīklu](/socialie-tikli/) platformā.
+Stratēģija bieži apstājas pie kanāliem un nepieskaras tam, ko tajos teiksi. Rezultātā reklāma stāsta par uzņēmumu, nevis par piedāvājumu.
 
-Ja vēlies pārrunāt sava uzņēmuma mārketinga mērķus un iegūt personalizētus ieteikumus biznesa attīstībai, Mārketinga skola iesaka pieteikties [mārketinga konsultācijai](/marketinga-konsultacijas/) ar Rihardu. Tā maksā 60 € par 30 min vai 90 € par stundu.
+Labs piedāvājums ir konkrēts: ko cilvēks saņem, cik ilgā laikā un kas notiek, ja neizdodas. Ja teikumā nav neviena skaitļa vai termiņa, tas visdrīzāk ir tukšs.
+
+Pārbaude ir ātra: aizstāj savu nosaukumu ar konkurenta nosaukumu. Ja teikums joprojām ir patiess, tas neko nepasaka.
+
+## 6. Cik naudas, cik laika un kurš to darīs
+
+Šo daļu izlaiž visbiežāk, un tieši tāpēc stratēģijas netiek īstenotas.
+
+Godīgi atbildi uz trim jautājumiem. Cik eiro mēnesī vari atvēlēt reklāmai. Cik stundu nedēļā kāds var veltīt saturam. Kurš konkrētais cilvēks to darīs.
+
+Ja atbilde uz trešo jautājumu ir "atradīsim laiku", stratēģija nesāksies. Labāk plānot mazāk un izdarīt.
+
+Kur mākslīgais intelekts te palīdz: melnrakstos, vizuālajos materiālos un atkārtotos darbos. Kur nepalīdz: lēmumos un atbildībā. Par to rakstā [mākslīgais intelekts mārketingā](/maksligais-intelekts-marketinga/).
+
+## 7. Viens skaitlis, pēc kura vērtē
+
+Stratēģijai vajag vienu rādītāju, ko skaties katru mēnesi. Gandrīz vienmēr tās ir klienta piesaistes izmaksas un summa, ko klients samaksā.
+
+Klikšķi, sasniegtie cilvēki un patīk ir starprādītāji. Tie palīdz saprast, kur kaut kas apstājas, bet lēmumus pēc tiem nepieņem.
+
+Lai šis skaitlis vispār pastāvētu, jābūt ieviestai konversiju uzskaitei. Bez tās stratēģija ir tikai viedokļu apmaiņa.
+
+## Kā to salikt vienā lapā
+
+Uzraksti septiņas atbildes vienā dokumentā, katru vienā vai divos teikumos. Tas ir viss. Ja neietilpst lapā, problēma nav stratēģijā, bet fokusā.
+
+Pārskati to reizi ceturksnī, nevis reizi gadā. Mainās kanāli un cenas, bet pirmie divi jautājumi parasti paliek tie paši.
+
+Detalizētāku plānu ar kalendāru un budžeta sadalījumu palīdzēs salikt raksts [mārketinga plāns](/marketinga-plans/).
+
+## Nākamais solis
+
+Ja gribi šo lapu aizpildīt kopā ar kādu, kurš ir redzējis, kur šādi plāni parasti apstājas, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): vienā stundā izejam cauri Tavai situācijai un saliekam soļus secībā.
+
+Ja gribi apgūt izpildes daļu pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Ja meklē partneri, kas uzņemas visu procesu, apskati [mūsu pakalpojumus](/pakalpojumi/).

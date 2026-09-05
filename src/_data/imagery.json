@@ -741,10 +741,10 @@
       "id": "info-strategijas-septini-soli",
       "page": "marketinga-strategijas-izstrade",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: septiņi soļi mārketinga stratēģijas izstrādē — plāns, mērķi, mērķauditorija, konkurenti, kanālu izvēle, nozares tendences un autentiskums",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: mārketinga stratēģija septiņos jautājumos",
       "rationale": "The post is a seven-step method; a numbered graphic is its natural form.",
-      "prompt": "Headline: «Mārketinga stratēģija septiņos soļos». SEVEN items in TWO rows - four above, three below. «01» «Plāns» «Vispirms uz papīra» - emblem: a pale grey page with three navy lines and a cyan square. «02» «Konkrēti mērķi» «Izmērāmi un ar termiņu» - emblem: two navy rings with a cyan square centre. «03» «Mērķauditorija» «Kas ir Tavs klients» - emblem: five pale grey figures with one cyan figure. «04» «Konkurenti» «Ko dara citi Tavā nozarē» - emblem: three navy squares of differing height beside one cyan square. «05» «Kanālu izvēle» «Tradicionālais vai digitālais» - emblem: one navy node branching into two pale grey paths, one ending cyan. «06» «Nozares tendences» «Kas mainās ap Tevi» - emblem: a navy line stepping upward with a cyan square at its top. «07» «Autentiskums» «Balss, kas pieder Tev» - emblem: a navy head profile with a cyan square where the voice would leave it."
+      "prompt": "Headline: «Stratēģija septiņos jautājumos». SEVEN items in two rows, four above and three below, evenly spaced, each a big navy two-digit number with a bold label and one emblem beneath. «01» «Kam Tu pārdod» - emblem: a navy speech bubble with a small cyan square inside. «02» «Viens mērķis» - emblem: two concentric navy squares with a solid cyan square at the centre. «03» «Divi kanāli» - emblem: two navy arrows running in parallel, one cut from cyan paper. «04» «Brīvā vieta» - emblem: five identical navy blocks in a row with a cyan gap where one is missing. «05» «Piedāvājums» - emblem: a pale grey card with one wide cyan bar across it. «06» «Budžets un laiks» - emblem: a navy wallet beside a navy clock face with a cyan hand. «07» «Viens skaitlis» - emblem: a pale grey panel with three navy bars and one solid cyan bar rising above them."
     },
     {
       "id": "info-meta-platformas",
