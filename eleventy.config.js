@@ -146,7 +146,10 @@ module.exports = function (eleventyConfig) {
       graph.push({
         "@type": "BlogPosting",
         "@id": pageUrl + "#article",
-        headline: c.title,
+        // The article's own headline, not the <title> tag: pageTitle prefers
+        // seoTitle, which carries the "| Mārketinga Skola" suffix, and a brand
+        // suffix does not belong in schema.org headline.
+        headline: c.headline || c.title,
         description: c.description,
         image: [abs(c.image)],
         datePublished: iso(c.date),

@@ -40,7 +40,7 @@
   <link rel="preload" href="/fonts/space-grotesk-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/style.css">
-  {%- set sd = { site: site, url: page.url, title: pageTitle, description: description, image: pageImage, layout: layout, date: date, updated: updated, categories: categories, cat: cat, crumb: crumb, course: course, heroTitle: heroTitle, categoriesBySlug: categoriesBySlug } %}
+  {%- set sd = { site: site, url: page.url, title: pageTitle, headline: title, description: description, image: pageImage, layout: layout, date: date, updated: updated, categories: categories, cat: cat, crumb: crumb, course: course, heroTitle: heroTitle, categoriesBySlug: categoriesBySlug } %}
   <script type="application/ld+json">{{ sd | schemaGraph | jsonld | safe }}</script>
 </head>
 <body>
