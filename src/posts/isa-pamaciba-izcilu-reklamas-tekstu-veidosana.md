@@ -92,6 +92,6 @@ Plašāk par to rakstā [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-be
 
 Paņem vienu reklāmu, kas šobrīd strādā. Pārraksti tās pirmo rindu tā, lai tā sāktos ar secinājumu, un uzraksti vēl divas versijas pēc PAS un BAB. Ieliec visas trīs vienā kopā un divas nedēļas neaiztiec.
 
-Papildu ieteikumi ir rakstā [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/), bet kampaņas puse rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
+Papildu ieteikumi ir rakstā [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/), bet par pašu kampaņu lasi rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
 
 Šīs formulas praksē izejam cauri [Meta reklāmas kursā](/meta-reklamas-kurss/), kur tekstus raksta savam piedāvājumam un uzreiz ieliek kampaņā. Ja domā par sadarbību, sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [uzraksti mums](/sazinies/).

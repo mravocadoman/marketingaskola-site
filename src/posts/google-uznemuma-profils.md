@@ -71,7 +71,7 @@ Profils un mājaslapa strādā kopā. Trīs praktiskas lietas:
 2. **Vienādi kontaktdati visur.** Nosaukumam, adresei un telefonam profilā, mājaslapā un katalogos jāsakrīt burtiski. Atšķirīgs pieraksts ir viens no retajiem tehniskajiem faktoriem, kas tiešām traucē.
 3. **Zvanu uzskaite.** Vietējos pakalpojumos lielākā daļa pieteikumu ir zvani, un tie nekur neparādās, ja tos nemēra. Kā to salikt, aprakstīts rakstā [konversiju uzskaite](/konversiju-uzskaite/).
 
-Plašāk par mājaslapas pusi rakstā [kas ir SEO](/kas-ir-seo/) un [SEO optimizācija Tavam biznesam](/seo-optimizacija-tavam-biznesam/).
+Plašāk par mājaslapu rakstā [kas ir SEO](/kas-ir-seo/) un [SEO optimizācija Tavam biznesam](/seo-optimizacija-tavam-biznesam/).
 
 {% infographic { id: "info-uznemuma-profila-soli", title: "Profils četros soļos", items: [
  { label: "Pamati", text: "Kategorija, darba laiks, pakalpojumi ar cenām." },
@@ -106,4 +106,4 @@ Tāda ir šī kanāla īpatnība: zaudējumu neredz. Redz tikai to, ka telefons 
 
 **Ja gribi saprast, kur tieši Tavā nozarē ir lielākā atdeve**, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Vietējos pakalpojumos bieži izrādās, ka reklāmas budžets vispār nav vajadzīgs, kamēr profils un mājaslapa nav sakārtoti. To pateikt godīgi ir daļa no darba.
 
-**Ja gribi apgūt meklētāja pusi pamatīgi**, tam ir domāts [SEO kurss](/seo-kursi/). Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).
+**Ja gribi pamatīgi apgūt meklētājprogrammu darbību**, tam ir domāts [SEO kurss](/seo-kursi/). Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).

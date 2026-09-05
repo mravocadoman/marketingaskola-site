@@ -123,6 +123,6 @@ Kļūdas pieļauj ne tikai e-pasta mārketingā, bet arī bieži izmantotajās F
 
 E-pasta mārketings nav vecmodīgs instruments. Tas ir viens no stabilākajiem pārdošanas balstiem digitālajā mārketingā. Ja ir **kvalitatīvs e-pastu saraksts, skaidra stratēģija, automatizācija un regulāra rezultātu analīze**, e-pasts spēj nodrošināt ilgtermiņa ieņēmumus un uzticamus klientus.
 
-E-pasts reti darbojas viens pats. Kā to savienot ar pārējiem kanāliem, vari redzēt [mūsu pakalpojumu sadaļā](/pakalpojumi/), bet automatizācijas puse ir aprakstīta rakstā [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/).
+E-pasts reti darbojas viens pats. Kā to savienot ar pārējiem kanāliem, vari redzēt [mūsu pakalpojumu sadaļā](/pakalpojumi/), bet par automatizāciju plašāk rakstā [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/).
 
 Ja gribi sakārtot e-pasta mārketingu savā uzņēmumā un saprast, ar ko sākt tieši Tavā situācijā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).

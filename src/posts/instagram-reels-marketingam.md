@@ -211,11 +211,11 @@ Reels joprojām ir formāts ar lielāko organisko sasniedzamību Instagram, un t
 
 **Vislabākais video ir arī vislabākā reklāma.** Šis ir praktiskākais secinājums. Ja kāds Reels labi nostrādā organiski, tas jau ir pārbaudīts materiāls. Pieliec tam nelielu reklāmas budžetu, un tas pats video sasniegs tieši tos cilvēkus, kuri varētu pirkt.
 
-Tieši šī kombinācija darbojas vislabāk: organiski testē, ar budžetu palielini sasniedzamību. Kā to uzstādīt, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet cenu puse rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
+Tieši šī kombinācija darbojas vislabāk: organiski testē, ar budžetu palielini sasniedzamību. Kā to uzstādīt, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet cik tas maksā, esam sarēķinājuši rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
 Tas pats amats der arī citur: kā šos video veidot TikTok un kāpēc materiāls pārceļas starp platformām, aprakstīts rakstā [TikTok reklāmas](/tiktok-reklamas-klientu-piesaistisanai/).
 
-Praktiskā filmēšanas puse, no gaismas līdz subtitriem, ir rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
+Kā to praktiski nofilmēt, no gaismas līdz subtitriem, aprakstīts rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
 
 ## Ar ko sākt šonedēļ
 

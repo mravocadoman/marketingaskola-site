@@ -87,7 +87,7 @@ Nesāc ar satura plānu. Sāc ar diviem soļiem.
 
 Pirmkārt, izvēlies vienu kanālu, kur Tava auditorija tiešām ir, un aizmirsti pārējos. Otrkārt, uzfilmē trīs īsus vertikālus video ar telefonu un palaid tiem nelielu reklāmas budžetu. Divās nedēļās redzēsi, vai cilvēki reaģē. Tas maksās mazāk nekā mēnesis satura plānošanas.
 
-Kampaņas puse aprakstīta rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
+Kā uzstādīt pašu kampaņu, aprakstīts rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
 
 ## Nākamais solis
 

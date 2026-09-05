@@ -157,7 +157,7 @@ Vertikāls video ar āķi pirmajās trīs sekundēs, subtitriem un dabisku pasni
 
 Divas atšķirības tomēr ir vērts zināt. Meta reklāmā rezultātu izšķir ne tikai video, bet arī konversiju uzskaite. Bez tās sistēma nezina, kurš nopirka, un klients maksā dārgāk. Meta pusē video parasti tiek ievietots vienā reklāmu kopā ar vēl diviem līdz četriem atšķirīgiem materiāliem, nevis palaists viens pats.
 
-Kā to salikt praktiski, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet kampaņas puse rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Par Instagram formātu sīkāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
+Kā to salikt praktiski, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet kampaņas uzstādīšana aprakstīta rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Par Instagram formātu sīkāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
 
 Praktiskā filmēšanas daļa, ko var izdarīt ar telefonu vienā pēcpusdienā, ir rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
 

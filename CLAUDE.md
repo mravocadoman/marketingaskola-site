@@ -1066,6 +1066,26 @@ Model ids on this key are the `gpt-5.x` / `gpt-6-astra` family; `gpt-5.5` is
 what these runs used. `gpt-5` is NOT a valid id, despite being the tool's
 old default.
 
+**`npm run lv:review` is the companion that only REPORTS** (`tools/lv-review.mjs`;
+takes slugs, paths, `--posts` or `--pages`). It exists because lv-polish
+rewrites wholesale and therefore never tells you what it *left alone* — over
+one session the owner caught three constructions it had passed over
+("Esi pārāk tuvu savam biznesam", "ar sveša cilvēka acīm", "svešs skatiens"),
+all calques that read fine to a non-native writer. lv-review quotes the
+offending sentence, says why, suggests a fix, changes nothing, and **drops any
+finding whose quote is not literally in the file** (the model paraphrases and
+would otherwise invent). It also reads `src/pages`, which lv-polish cannot —
+and the worst of those three offenders was on a page.
+
+**The calque it found most of: "X puse" for the English "the X side (of it)".**
+Fourteen instances across the blog — "kampaņas puse", "budžeta puse",
+"mājaslapas pusi", "meklētāja pusi", "plānošanas puse" — nearly all in the
+same closing formula "bet X puse rakstā Y". All rewritten to natural forms
+("bet par budžetu lasi rakstā Y"), which also broke up a template that was
+repeating across a dozen articles. **Keep**: `servera puses notikumi` (the
+accepted term for server-side events), `juridiskā puse` (genuinely idiomatic),
+and `pusi lauku` / `uz pusi` (literally "half").
+
 ## The 2026/2027 blog rewrite pass (in progress)
 
 Owner: *"go through each blog article and re-write it for 2026/2027 current

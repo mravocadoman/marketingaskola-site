@@ -125,4 +125,4 @@ Mēs neuzminēsim Tavu biznesu labāk par Tevi. Bet mēs redzam Tavu lapu tā, k
 
 **Ja gribi saprast visu ķēdi no reklāmas līdz pieteikumam**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/).
 
-**Ja meklē partneri visam procesam**, apskati [mūsu pakalpojumus](/pakalpojumi/). Plānošanas pusi palīdzēs salikt raksts [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).
+**Ja meklē partneri visam procesam**, apskati [mūsu pakalpojumus](/pakalpojumi/). Plānu palīdzēs salikt raksts [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).

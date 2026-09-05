@@ -109,4 +109,4 @@ Mēs nezinām Tavu nozari labāk par Tevi. Bet mēs esam redzējuši, kā izskat
 
 **Ja gribi izlemt kanālu un piedāvājumu kopā ar kādu**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundas laikā izejam cauri sarakstam, ciklam un skaitļiem un saliekam soļus secībā.
 
-**Ja meklē partneri izpildei**, apskati [mūsu pakalpojumus](/pakalpojumi/). Plānošanas puse ir rakstā [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).
+**Ja meklē partneri izpildei**, apskati [mūsu pakalpojumus](/pakalpojumi/). Kā salikt plānu, aprakstīts rakstā [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).

@@ -69,7 +69,7 @@ Praksē tas nozīmē, ka labs saturs bez budžeta sasniedz tikai dažus cilvēku
 
 Svarīgi arī tas, ka maksas reklāma ļauj mērīt rezultātu. Bezmaksas publikācija parāda atzīmes "Patīk" un komentārus. Reklāma parāda, cik maksāja viens klients. Tikai otrais skaitlis palīdz pieņemt lēmumus.
 
-Kā to uzstādīt no nulles, aprakstīts rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/), bet budžeta puse rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
+Kā to uzstādīt no nulles, aprakstīts rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/), bet par budžetu lasi rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
 ## Praktiskais minimums mēnesī
 

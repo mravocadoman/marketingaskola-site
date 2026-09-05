@@ -38,7 +38,7 @@ Mazam uzņēmumam bez lielas mājaslapas plūsmas šī bieži ir labākā audito
 
 **3. Mājaslapas apmeklētāji.** Joprojām noderīgi, bet nepilnīgi. Ja ir pieslēgts Conversions API, auditorija ir ievērojami pilnīgāka nekā tikai ar pikseli. Kā to izdarīt, aprakstīts rakstā [konversiju uzskaite](/konversiju-uzskaite/).
 
-**4. Banneri svešās vietnēs.** Vājākā no četrām. Google pusē remārketings joprojām labi strādā pašos Google kanālos, proti, meklētājā, YouTube un Gmail. Ārpus tiem sasniedzamība kļuvusi nepārliecinoša.
+**4. Banneri svešās vietnēs.** Vājākā no četrām. Google remārketings joprojām labi strādā pašos Google kanālos, proti, meklētājā, YouTube un Gmail. Ārpus tiem sasniedzamība kļuvusi nepārliecinoša.
 
 {% infographic { id: "info-remarketinga-auditorijas", title: "Četras auditorijas pēc uzticamības", items: [
  { label: "Tavi saraksti", text: "E-pasti un telefoni, ko cilvēki devuši paši." },
@@ -92,7 +92,7 @@ Divi godīgi gadījumi.
 
 **Ja plūsmas nav.** Auditorijai vajag cilvēkus. Ja mājaslapā mēnesī ienāk simts apmeklētāju un video neviens neskatās, remārketingam nav, no kā veidoties. Vispirms vajag piesaisti. Par to rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
 
-**Ja piedāvājums nav problēma.** Remārketings pastiprina to, kas jau notiek. Ja cilvēki neatgriežas tāpēc, ka cena nav konkurētspējīga vai lapa nepārliecina, atkārtota reklāma to neizlabos. Tā tikai biežāk parādīs to pašu iemeslu neatgriezties. Par lapas pusi rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
+**Ja piedāvājums nav problēma.** Remārketings pastiprina to, kas jau notiek. Ja cilvēki neatgriežas tāpēc, ka cena nav konkurētspējīga vai lapa nepārliecina, atkārtota reklāma to neizlabos. Tā tikai biežāk parādīs to pašu iemeslu neatgriezties. Par pašu lapu lasi rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
 
 ## Kāpēc to reti salikt sanāk pašam
 

@@ -93,6 +93,6 @@ Praktiskais secinājums: ja apsver abonementu, vispirms pārbaudi, vai bezmaksas
 
 Sāc šādā secībā, viens rīks nedēļā: Search Console, tad Analytics ar vienu konversiju, tad Canva ar zīmola krāsām. Pārējais var pagaidīt, līdz šie trīs strādā.
 
-Kā šos rīkus izmantot ātrāk, aprakstīts rakstā [8 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/), bet automatizācijas puse rakstā [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/).
+Kā šos rīkus izmantot ātrāk, aprakstīts rakstā [8 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/), bet par automatizāciju lasi rakstā [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/).
 
 Ja gribi, lai kāds izvērtē Tavu situāciju un pasaka, kuri no šiem rīkiem Tev tiešām vajadzīgi, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi apgūt reklāmas daļu pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/).
