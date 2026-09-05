@@ -666,15 +666,6 @@
       "prompt": "Headline: «Pirmā reklāma trijos soļos». THREE items in one row. «01» «Izvēlies formātu» «Katram kanālam savs izmērs» - emblem: three frames side by side of different proportions - wide, square and tall - the tall one cyan. «02» «Pielāgo veidni» «Krāsas, teksts un logo» - emblem: a pale grey page with a navy heading bar, two grey text bars and one cyan block. «03» «Eksportē un publicē» «Gatavs failu formāts» - emblem: a navy page with a cyan arrow pointing down out of it into a pale grey tray shape."
     },
     {
-      "id": "info-seo-soli",
-      "page": "kas-ir-seo",
-      "style": "paper",
-      "aspect": "landscape",
-      "alt": "Infografika no izgrieztām papīra formām: četri praktiski soļi SEO uzlabošanai — atslēgvārdi, saturs, tehniskā puse un atsauces",
-      "rationale": "The post closes with practical steps; a four-step graphic is the takeaway.",
-      "prompt": "Headline: «Četri soļi SEO uzlabošanai». FOUR items in one row. «01» «Atslēgvārdi» «Ko cilvēki tiešām meklē» - emblem: a navy circle with a cyan handle bar reading as a magnifying glass over a pale grey bar. «02» «Saturs» «Lapas, kas atbild uz jautājumu» - emblem: a pale grey page with a navy heading bar and three grey text bars, one cyan. «03» «Tehniskā puse» «Ātrums un struktūra» - emblem: a navy square with a cyan notched square overlapping its corner. «04» «Atsauces» «Citas vietnes norāda uz Tevi» - emblem: three pale grey squares joined by navy lines to one central cyan square."
-    },
-    {
       "id": "info-marketinga-riki-darbi",
       "page": "7-digitala-marketinga-riki",
       "style": "paper",
@@ -808,6 +799,105 @@
       "alt": "Infografika no izgrieztām papīra formām: sociālo tīklu mārketinga gaišā un tumšā puse — popularitāte, analītika un saikne ar klientu pret laikietilpību un platformas dabu",
       "rationale": "The post is explicitly two-sided; showing both halves is more honest than picking one.",
       "prompt": "Headline: «Sociālo tīklu mārketings: abas puses». FIVE items in TWO rows - three above, two below. «01» «Popularitāte» «Lietotāju skaits aug katru gadu» - emblem: a navy figure with three pale grey figures behind it and one cyan figure. «02» «Analītikas rīki» «Var izmērīt, vai atmaksājās» - emblem: four bars of rising height, the tallest cyan. «03» «Saikne ar klientu» «Komūna ap zīmolu» - emblem: two navy profiles facing each other with a cyan square between them. «04» «Pamatideja nav bizness» «Cilvēki nāk atslēgties, ne pirkt» - emblem: a navy speech bubble with a pale grey square inside and a cyan square set apart outside it. «05» «Prasa pastāvīgu aktivitāti» «Viena publikācija neko nemaina» - emblem: a pale grey calendar grid with cyan squares in a dense repeating rhythm."
+    },
+    {
+      "id": "info-reels-kludas",
+      "page": "instagram-reels-marketingam",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: piecas kļūdas, kāpēc Instagram Reels nesasniedz rezultātus — nav mērķauditorijas, vājš sākums, nepiemērots audio, slikta kvalitāte un trūkstošs aicinājums rīkoties",
+      "rationale": "The post names five specific reasons a Reel underperforms; the article already carries a build diagram, so this second one covers the failure side.",
+      "prompt": "Headline: «Kāpēc Reels nesasniedz rezultātus». FIVE items in TWO rows - three above, two below. «01» «Nav skaidras mērķauditorijas» «Saturs ir pārāk vispārīgs» - emblem: a wide scatter of pale grey figures with no navy bracket around any of them and one cyan square set apart. «02» «Vājš video sākums» «Izšķir jau pirmā sekunde» - emblem: a tall navy vertical frame whose narrow top strip is cyan and the rest empty. «03» «Nepiemērots audio» «Algoritms dod priekšroku populāram skaņu celiņam» - emblem: five vertical bars reading as a waveform, all pale grey and low, with one cyan bar apart from them. «04» «Video kvalitāte un formāts» «Vertikāls, skaidrs, labi izgaismots» - emblem: a wide pale grey frame beside a tall navy frame, the tall one marked with a small cyan square. «05» «Nav aicinājuma rīkoties» «Skatītājs nezina, ko darīt tālāk» - emblem: a navy vertical frame with an empty pale grey button outline at its base and a cyan square beside it."
+    },
+    {
+      "id": "info-tiktok-uzmaniba",
+      "page": "tiktok-reklamas-klientu-piesaistisanai",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: kas notur uzmanību TikTok reklāmās — pirmās sekundes, dinamiska struktūra un pārejas starp kadriem",
+      "rationale": "The post has a separate section on holding attention, distinct from its four-step build; the article is long enough to carry both.",
+      "prompt": "Headline: «Kas notur uzmanību TikTok». THREE items in one row. «01» «Pirmās sekundes» «Ja nepārsteidz, skatītājs aizslīd tālāk» - emblem: a tall navy frame whose top strip is solid cyan, with a pale grey arrow curving away from its lower edge. «02» «Dinamiska struktūra» «Katrai sekundei jābūt interesantai» - emblem: five navy bars of varying height in a row, evenly spaced, the middle one cyan. «03» «Pārejas starp kadriem» «Kustība tur skatienu» - emblem: three navy vertical frames overlapping in a stepped row, the last one cyan."
+    },
+    {
+      "id": "info-seo-vai-sem",
+      "page": "seo-optimizacija-tavam-biznesam",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: SEO un SEM atšķirība — apmaksātie rezultāti meklētāja augšā un organiskie rezultāti zem tiem",
+      "rationale": "The post explains the SEO/SEM difference with a search-results example; a picture of the results page carries it better than prose.",
+      "prompt": "Headline: «SEO un SEM meklētājā». TWO items in one row, each with a large emblem. «01» «SEM — apmaksātie rezultāti» «Redzamība uzreiz, kamēr maksā» - emblem: a pale grey search panel whose top two result bars are solid cyan, each with a small navy square marking them as ads. «02» «SEO — organiskie rezultāti» «Aug lēnāk, paliek ilgāk» - emblem: the same pale grey search panel with five navy result bars beneath the top area and one bar rising out of the stack."
+    },
+    {
+      "id": "info-meta-formati",
+      "page": "meta-reklamas",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri Meta reklāmu formāti — video, karuselis, kolekcijas un stāsti",
+      "rationale": "The article carries a formats comparison table; a four-up graphic reads faster than the table on a phone.",
+      "prompt": "Headline: «Četri Meta reklāmu formāti». FOUR items in one row. «01» «Video» «Zīmola atpazīstamībai» - emblem: a wide navy frame with a cyan triangle in its centre. «02» «Karuselis» «Vairākas bildes vienā reklāmā» - emblem: three navy squares in a row partly overlapping, the middle one cyan, with a pale grey arrow at the right. «03» «Kolekcijas» «E-komercijai» - emblem: one large navy square above a row of three small pale grey squares, one of them cyan. «04» «Stāsti» «Ātrai vizuālai komunikācijai» - emblem: a tall navy vertical frame with a thin cyan progress bar across its top."
+    },
+    {
+      "id": "info-epasta-kludas",
+      "page": "epasta_marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: divas biežākās e-pasta mārketinga kļūdas — sūtījums bez skaidra mērķa un viens saturs visiem saņēmējiem",
+      "rationale": "The post names two mistakes explicitly; they are the counterweight to its four-step method.",
+      "prompt": "Headline: «Divas biežākās e-pasta kļūdas». TWO items in one row, each with a large emblem. «01» «Sūtījums bez mērķa» «Nav pateikts, ko cilvēkam darīt» - emblem: a navy envelope with an empty pale grey button outline on it and a cyan square lying outside the envelope. «02» «Viens saturs visiem» «Segmentācijas trūkums» - emblem: one navy envelope duplicated four times in identical pale grey copies, with a single cyan envelope apart from the row."
+    },
+    {
+      "id": "info-reklamas-digitala-vai-tradicionala",
+      "page": "reklamas-veidi",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: digitālā un tradicionālā reklāma — mērāmība un mērķēšana pret plašu vietējo sasniedzamību",
+      "rationale": "The post contrasts the two families before its choosing steps; the contrast is what a reader weighs.",
+      "prompt": "Headline: «Digitālā vai tradicionālā reklāma». TWO items in one row, each with a large emblem. «01» «Digitālā» «Precīza mērķēšana un izmērāms rezultāts» - emblem: a navy browser panel with a pale grey chart inside it and a cyan cursor arrow. «02» «Tradicionālā» «Plaša vietēja sasniedzamība» - emblem: a navy broadcast tower shape with three pale grey arcs widening from it, the outermost cyan."
+    },
+    {
+      "id": "info-seo-tris-pilari-raksts",
+      "page": "kas-ir-seo",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: SEO trīs pīlāri — tehniskais SEO, satura SEO un ārējais SEO",
+      "rationale": "Replaces a legacy light-blue line-art graphic that carried this content in a style the site no longer uses.",
+      "prompt": "Headline: «SEO trīs pīlāri». THREE items in one row. «01» «Tehniskais SEO» «Struktūra un ātrums» - emblem: a pale grey browser panel with a navy speed dial arc inside it and a cyan marker at its end. «02» «Satura SEO» «Kvalitāte un nozīme» - emblem: a navy open page shape with three pale grey text bars and a cyan magnifying circle over it. «03» «Ārējais SEO» «Uzticība un reputācija» - emblem: three pale grey squares joined by navy links to one central cyan square."
+    },
+    {
+      "id": "info-seo-septini-soli",
+      "page": "kas-ir-seo",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: septiņi praktiski soļi SEO uzlabošanai — atslēgvārdu izpēte, tehniskā struktūra, vērtīgs saturs, iekšējās saites, ārējās saites, lietotāja pieredze un regulāra publicēšana",
+      "rationale": "Replaces a legacy seven-step graphic in a different visual language; the seven steps are the article's practical core.",
+      "prompt": "Headline: «Septiņi soļi SEO uzlabošanai». SEVEN items in TWO rows - four above, three below. «01» «Atslēgvārdu izpēte» «Ko cilvēki tiešām meklē» - emblem: a navy magnifying circle with a cyan handle over a pale grey bar. «02» «Tehniskā struktūra» «Lapa ielādējas ātri» - emblem: a navy browser panel with a cyan speed arc inside it. «03» «Vērtīgs saturs» «Atbildi uz lietotāju jautājumiem» - emblem: a pale grey page with a navy question-mark square and three cyan-tipped text bars. «04» «Iekšējās saites» «Palīdzi orientēties saturā» - emblem: two navy page squares joined by a cyan link bar. «05» «Ārējās saites» «Citas vietnes norāda uz Tevi» - emblem: three pale grey squares with navy lines converging on one cyan square. «06» «Lietotāja pieredze» «Skaidrs dizains un pārskatāms saturs» - emblem: a navy browser panel with a cyan button bar and a pale grey cursor arrow. «07» «Regulāra publicēšana» «Konsekvence signalizē, ka lapa ir aktīva» - emblem: a pale grey calendar grid with three cyan squares in a steady rhythm."
+    },
+    {
+      "id": "info-satura-ieguvumi",
+      "page": "satura-marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri satura mārketinga ieguvumi — uzticība, redzamība, pārdošana un konkurētspēja",
+      "rationale": "Replaces a legacy graphic carrying the same four benefits in an older visual style.",
+      "prompt": "Headline: «Četri satura mārketinga ieguvumi». FOUR items in one row. «01» «Uzticība» «Vērtīgas zināšanas un skaidrojumi» - emblem: a navy shield shape with a cyan square at its centre. «02» «Redzamība» «Organiskie apmeklējumi bez reklāmas izmaksām» - emblem: a navy magnifying circle over four bars of rising height, the tallest cyan. «03» «Pārdošana» «Strukturēts saturs virza klientu» - emblem: a navy funnel with a cyan square falling from its spout onto a pale grey bar. «04» «Konkurētspēja» «Stratēģiski izceļas tirgū» - emblem: a navy flag shape on a pale grey pole with a cyan square at its top."
+    },
+    {
+      "id": "info-agenturas-process",
+      "page": "marketinga-agentura-uzlabo-pardosanu",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: pieci soļi darbā ar mārketinga aģentūru — situācijas analīze, stratēģijas izstrāde, izpilde, rezultātu uzraudzība un ilgtermiņa sadarbība",
+      "rationale": "Replaces a legacy five-step process graphic in the old light-blue line style.",
+      "prompt": "Headline: «Kā notiek darbs ar aģentūru». FIVE items in TWO rows - three above, two below. «01» «Situācijas analīze» «Tirgus, konkurenti un esošā komunikācija» - emblem: a navy magnifying circle over three pale grey squares, one cyan. «02» «Stratēģijas izstrāde» «Plāns klientu piesaistei» - emblem: a pale grey page with a navy route stepping upward and a cyan square at its end. «03» «Izpilde» «Reklāmas, saturs, dizains un SEO» - emblem: four navy squares in a row, the third cyan. «04» «Rezultātu uzraudzība» «Regulāra datu analīze» - emblem: a pale grey panel with a navy line chart and a cyan square at its peak. «05» «Ilgtermiņa sadarbība» «Aģentūra strādā kā Tava komanda» - emblem: two navy head profiles facing each other with a cyan square between them."
+    },
+    {
+      "id": "info-reels-jomas",
+      "page": "instagram-reels-marketingam",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četras Instagram Reels jomas — auditorija, saturs, trendi un audio, un optimizācija",
+      "rationale": "Replaces a legacy four-quadrant graphic; distinct from the post's build diagram, which covers the clip itself.",
+      "prompt": "Headline: «Reels: četras jomas». FOUR items in one row. «01» «Auditorija» «Kas viņiem rūp un ko viņi skatās» - emblem: five pale grey figures with a navy ring around two and one cyan figure. «02» «Saturs» «Humors, izglītojošs saturs, aizkulises» - emblem: a tall navy vertical frame with three pale grey bars and one cyan bar inside. «03» «Trendi un audio» «Adaptē trendu savai nišai» - emblem: five vertical bars reading as a waveform, the tallest cyan, with a navy arrow curving over them. «04» «Optimizācija» «Testē hooks, CTA un formātus» - emblem: two navy rectangles side by side with a cyan tick above the right one."
     }
   ]
 }

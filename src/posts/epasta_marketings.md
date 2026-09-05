@@ -73,6 +73,11 @@ Ar Instantly.ai iespējams strādāt ar warm leads jeb jau iesildītiem potenci�
 
 Papildus tam Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu gudrāk iesaistīt kontaktus, analizēt atbildes un optimizēt kampaņas. Dodies uz [Instantly.ai](https://instantly.ai/) un padari savu e-pasta mārketingu par mērķtiecīgu pārdošanas procesu.
 
+{% infographic { id: "info-epasta-kludas", title: "Divas biežākās e-pasta kļūdas", items: [
+  { label: "Sūtījums bez mērķa", text: "Nav pateikts, ko cilvēkam darīt." },
+  { label: "Viens saturs visiem", text: "Segmentācijas trūkums." }
+] } %}
+
 ## Automatizācija, pārdošana un rezultātu mērīšana
 
 Automatizācija nozīmē, ka e-pasti tiek nosūtīti automātiski, balstoties uz cilvēka konkrētām darbībām, piemēram, pēc pierakstīšanās cilvēks saņem sveiciena e-pastu, pēc pirkuma – pateicības vēstuli ar papildu piedāvājumu, bet ilgstošas neaktivitātes gadījumā tiek aktivizēta atgādinājuma kampaņa. Šāda pieeja ļauj uzturēt loģisku un nepārtrauktu komunikāciju bez manuālas iesaistes katrā solī. **Automatizācija palīdz ietaupīt laiku, nezaudēt potenciālos klientus un nodrošina, ka saziņa ar auditoriju notiek arī ārpus darba laika**.

@@ -36,7 +36,12 @@ Zīmola atpazīstamība ikvienam uzņēmumam ir svarīga, jo tā spēj piesaist�
 -   Vieglu radošuma izpausmi
 -   Iespēju veidot vai piedalīties trendos
 
-![](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1-1024x576.webp)
+{% infographic { id: "info-reels-jomas", title: "Reels: četras jomas", items: [
+  { label: "Auditorija", text: "Kas viņiem rūp un ko viņi skatās." },
+  { label: "Saturs", text: "Humors, izglītojošs saturs, aizkulises." },
+  { label: "Trendi un audio", text: "Adaptē trendu savai nišai." },
+  { label: "Optimizācija", text: "Testē hooks, CTA un formātus." }
+] } %}
 
 Trendiem Instagram Reels ir būtiska loma – populārie formāti, mūzika un izaicinājumi bieži vien strauji izplatās, dodot zīmoliem un satura veidotājiem iespēju piesaistīt lielāku auditoriju īsā laika posmā. Pielāgojot aktuālās tendences savai nišai, iespējams ne tikai palielināt satura redzamību, bet arī stiprināt zīmola tēlu.
 
@@ -87,11 +92,17 @@ _Izmanto Instagram Insights, lai analizētu skatījumu ilgumu, saves, likes un i
 
 _Izveido ieradumu publicēt vismaz 2 Reels nedēļā. Tas uztur algoritmu aktīvu un auditoriju – iesaistītu._
 
+{% infographic { id: "info-reels-kludas", title: "Kāpēc Reels nesasniedz rezultātus", items: [
+  { label: "Nav skaidras mērķauditorijas", text: "Saturs ir pārāk vispārīgs." },
+  { label: "Vājš video sākums", text: "Izšķir jau pirmā sekunde." },
+  { label: "Nepiemērots audio", text: "Algoritms dod priekšroku populāram skaņu celiņam." },
+  { label: "Video kvalitāte un formāts", text: "Vertikāls, skaidrs, labi izgaismots." },
+  { label: "Nav aicinājuma rīkoties", text: "Skatītājs nezina, ko darīt tālāk." }
+] } %}
+
 ## Veiksmīga Reels uzbūve: Kas ir “Hook” un kā to izveidot?
 
 Lai tavs Instagram Reels video piesaistītu skatītāja uzmanību, tam jābūt efektīvi uzbūvētam. Un viss sākas ar 1.sekundi – Hook, ko izmanto.
-
-![instagram reels uzbūve](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1024x576.webp)
 
 {% infographic { id: "info-reels-uzbuve", title: "Reels uzbūve trīs daļās", items: [
   { label: "Hook pirmajās sekundēs", text: "Jautājums vai negaidīts apgalvojums." },

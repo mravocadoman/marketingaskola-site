@@ -88,6 +88,11 @@ Savukārt **SEO (Search Engine Optimization)** ir veids, kā **organiski (bez ma
 
 Apvienojot abus – SEO un SEM – Tu vari palielināt savu redzamību un sasniegt klientus gan tūlīt, gan ilgtermiņā.
 
+{% infographic { id: "info-seo-vai-sem", title: "SEO un SEM meklētājā", items: [
+  { label: "SEM — apmaksātie rezultāti", text: "Redzamība uzreiz, kamēr maksā." },
+  { label: "SEO — organiskie rezultāti", text: "Aug lēnāk, paliek ilgāk." }
+] } %}
+
 ## Kādi ir SEO optimizācijas veidi?
 
 SEO optimizācija ietver vairākus svarīgus aspektus, kas palīdz uzlabot Tavas mājaslapas redzamību un sniegumu Google meklēšanas rezultātos.

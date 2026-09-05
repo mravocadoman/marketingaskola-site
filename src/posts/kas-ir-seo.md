@@ -27,7 +27,11 @@ SEO var iedalīt trīs galvenajās daļās:
 2.  **Satura SEO.** Tas ietver atslēgvārdu izpēti un kvalitatīva, noderīga satura veidošanu. Lapas nedrīkst būt tikai “skaistas” – tām jāatbild uz reāliem cilvēku jautājumiem.
 3.  **Ārējās saites un autoritāte**. Jo vairāk uzticamu, kvalitatīvu vietņu atsaucas uz Tavu lapu, jo vairāk Google Tev uzticas. Līdzīgi kā reputācija biznesā.
 
-![seo nozīme](/img/2025/12/Gemini_Generated_Image_p4l028p4l028p4l0-1024x585.webp)
+{% infographic { id: "info-seo-tris-pilari-raksts", title: "SEO trīs pīlāri", items: [
+  { label: "Tehniskais SEO", text: "Struktūra un ātrums." },
+  { label: "Satura SEO", text: "Kvalitāte un nozīme." },
+  { label: "Ārējais SEO", text: "Uzticība un reputācija." }
+] } %}
 
 SEO būtība nav “apmānīt” Google, bet gan palīdzēt tam labāk saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu Google rezultātos parādīsies biežāk, augstāk un ilgāk. Ja vēlies uzticēt SEO profesionāļiem, apskati mūsu [SEO Pakalpojumus!](/pakalpojumi/)
 
@@ -61,13 +65,6 @@ Optimāls SEO palīdz Google saprast, ka Tava lapa ir labākā atbilde uz lietot
 
 Ja Tev nepieciešama palīdzība ar SEO stratēģijas izveidi vai īstenošanu, mēs to piedāvājam arī kā pakalpojumu ko vari apskatīties [šeit.](/pakalpojumi/)
 
-{% infographic { id: "info-seo-soli", title: "Četri soļi SEO uzlabošanai", items: [
-  { label: "Atslēgvārdi", text: "Ko cilvēki tiešām meklē." },
-  { label: "Saturs", text: "Lapas, kas atbild uz jautājumu." },
-  { label: "Tehniskā puse", text: "Ātrums un struktūra." },
-  { label: "Atsauces", text: "Citas vietnes norāda uz Tevi." }
-] } %}
-
 ## Praktiski soļi SEO uzlabošanai
 
 Lūk, ko Tu vari sākt darīt jau šodien:
@@ -81,7 +78,15 @@ Lūk, ko Tu vari sākt darīt jau šodien:
 6.  **Uzlabo lietotāja pieredzi.** Viegls dizains, skaidrs call-to-action jeb aicinājums uz rīcību, kas palīdz sasniegt Tavus mērķus, un labi strukturēts saturs – tas viss tieši ietekmē rezultātus.
 7.  **Regulāri publicē.** Konsekvence ir viens no svarīgākajiem SEO faktoriem – Google mīl “dzīvas” lapas.
 
-![](/img/2025/12/Praktiski-soli-SEO-uzlabosanai-Kas-ir-SEO-un-kapec-tas-ir-butisks-majaslapas-redzamibai_-1024x572.webp)
+{% infographic { id: "info-seo-septini-soli", title: "Septiņi soļi SEO uzlabošanai", items: [
+  { label: "Atslēgvārdu izpēte", text: "Ko cilvēki tiešām meklē." },
+  { label: "Tehniskā struktūra", text: "Lapa ielādējas ātri." },
+  { label: "Vērtīgs saturs", text: "Atbildi uz lietotāju jautājumiem." },
+  { label: "Iekšējās saites", text: "Palīdzi orientēties saturā." },
+  { label: "Ārējās saites", text: "Citas vietnes norāda uz Tevi." },
+  { label: "Lietotāja pieredze", text: "Skaidrs dizains un pārskatāms saturs." },
+  { label: "Regulāra publicēšana", text: "Konsekvence signalizē, ka lapa ir aktīva." }
+] } %}
 
 SEO nav burvju nūjiņa, kas dod tūlītējus rezultātus. Tas ir stratēģisks, pārdomāts process, kas ilgtermiņā ļauj Tavai mājaslapai kļūt redzamai, uzticamai un vērtīgai. Ja saproti, kas ir SEO, kā tas darbojas un kā to īstenot praksē, Tu vari būt soli priekšā konkurentiem – īpaši tiem, kas joprojām balstās tikai uz sociālajiem tīkliem vai maksas reklāmām.
 

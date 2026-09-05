@@ -28,8 +28,6 @@ Meta Ads sniedz Tev pieeju vienai no lielākajām digitālajām platformām pasa
 -   **Messenger:** Tieša komunikācija ar klientu – personalizēti piedāvājumi, atgādinājumi vai klientu atbalsts. Ātrs, vienkāršs, efektīvs.
 -   **WhatsApp:** Šī platforma strauji attīstās kā klientu servisa un reklāmas rīks. Ideāli piemērots personalizētai komunikācijai un uzticības veidošanai.
 
-![meta ads](/img/2025/04/Meta-ads-ka-izcelties-ar-inovativiem-reklamas-risinajumiem-1024x576.webp)
-
 {% infographic { id: "info-meta-platformas", title: "Četras Meta platformas", items: [
   { label: "Facebook", text: "Plaša auditorija un detalizēta atlase." },
   { label: "Instagram", text: "Attēli, Stāsti un Reels." },
@@ -45,6 +43,13 @@ Lai izceltos, pietiek ar dažiem viediem soļiem:
 2.  **Video reklāmas un stāsti:** Video = iesaiste. Meta platformās video un stāsti darbojas kā magnēts – tie piesaista uzmanību un mudina rīkoties. Vēl labāk, ja pievieno tekstus un klikšķināmos elementus.
 3.  **AR filtri un interaktīvas reklāmas:** Gribi būt moderns? Tad izmēģini papildinātās realitātes filtrus, aptaujas, stāstus ar jautājumiem vai spēles elementus – lietotāji mīl interaktivitāti.
 4.  **Retārgetings jeb atkārtota mērķēšana:** Atgādini par sevi tiem, kas jau iepriekš mijiedarbojušies ar Tavu zīmolu – piemēram, apmeklējuši mājaslapu vai atstājuši grozā preci.
+
+{% infographic { id: "info-meta-formati", title: "Četri Meta reklāmu formāti", items: [
+  { label: "Video", text: "Zīmola atpazīstamībai." },
+  { label: "Karuselis", text: "Vairākas bildes vienā reklāmā." },
+  { label: "Kolekcijas", text: "E-komercijai." },
+  { label: "Stāsti", text: "Ātrai vizuālai komunikācijai." }
+] } %}
 
 ## Meta reklāmas nākotnē: kas mūs sagaida?
 

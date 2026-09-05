@@ -139,6 +139,11 @@ Vides reklāma ir lielisks veids, kā piesaistīt uzmanību lielai auditorijai p
 -   Nav iespējams izslēgt vai bloķēt, atšķirībā no digitālajām reklāmām.
 -   Var izmantot kā papildinājumu digitālajai stratēģijai.
 
+{% infographic { id: "info-reklamas-digitala-vai-tradicionala", title: "Digitālā vai tradicionālā reklāma", items: [
+  { label: "Digitālā", text: "Precīza mērķēšana un izmērāms rezultāts." },
+  { label: "Tradicionālā", text: "Plaša vietēja sasniedzamība." }
+] } %}
+
 ## Kā izvēlēties pareizo reklāmas veidu savam biznesam?
 
 ### 1. Izproti savu mērķauditoriju

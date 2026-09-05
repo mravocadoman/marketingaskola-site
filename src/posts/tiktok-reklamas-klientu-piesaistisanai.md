@@ -117,6 +117,12 @@ Tādējādi, ja video vizuālais noformējums ir piesaistošs, skatītājs daudz
 
 Visbeidzot, piesaistīt uzmanību TikTok reklāmās nav tikai par pārsteidzošiem efektiem vai ātriem pārejām: tas ir arī par spēju radīt emocionālu saikni ar skatītāju; ja tev izdosies ieinteresēt viņu ne tikai ar vizuālajām sastāvdaļām, bet arī ar saturu, kas izsaka vērtību, tad tavs video būs daudz veiksmīgāks.
 
+{% infographic { id: "info-tiktok-uzmaniba", title: "Kas notur uzmanību TikTok", items: [
+  { label: "Pirmās sekundes", text: "Ja nepārsteidz, skatītājs aizslīd tālāk." },
+  { label: "Dinamiska struktūra", text: "Katrai sekundei jābūt interesantai." },
+  { label: "Pārejas starp kadriem", text: "Kustība tur skatienu." }
+] } %}
+
 ## Kā veicināt klientu iesaisti ar TikTok reklāmām?
 
 Kad veido TikTok reklāmas, ir svarīgi ne tikai piedāvāt produktu, bet arī radīt stāstu, kas rezonē ar skatītājiem un mudina viņus iesaistīties. TikTok videoklipi, kas spēj piesaistīt auditorijas uzmanību, bieži vien balstās uz autentisku pieredzi un reāliem stāstiem. Tā vietā, lai tikai izceltu perfektus attēlus vai ideālus produktus, labāk pārdot pieredzi. Skatītājiem ir daudz vieglāk identificēties ar reklāmām, kurās ir stāsti, kas atspoguļo viņu pašu ikdienu un emocijas, nevis tikai nevainojami noformētas ainas.

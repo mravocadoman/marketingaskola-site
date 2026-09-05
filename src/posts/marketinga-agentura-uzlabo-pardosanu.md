@@ -55,7 +55,13 @@ Latvijā darbojas vairāk nekā simts mārketinga un reklāmas aģentūru — s�
 4.  **Rezultātu uzraudzība**. Aģentūras regulāri seko datiem – kas strādā, kas nestrādā, ko optimizēt.
 5.  **Ilgtermiņa sadarbība**. Efektīvas aģentūras strādā tā, it kā būtu Tava komanda — ar mērķi celt ieņēmumus un zīmola vērtību.
 
-![](/img/2025/11/Marketinga-agenturas-Latvija-ka-tas-darbojas_-Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu_-1024x572.webp)
+{% infographic { id: "info-agenturas-process", title: "Kā notiek darbs ar aģentūru", items: [
+  { label: "Situācijas analīze", text: "Tirgus, konkurenti un esošā komunikācija." },
+  { label: "Stratēģijas izstrāde", text: "Plāns klientu piesaistei." },
+  { label: "Izpilde", text: "Reklāmas, saturs, dizains un SEO." },
+  { label: "Rezultātu uzraudzība", text: "Regulāra datu analīze." },
+  { label: "Ilgtermiņa sadarbība", text: "Aģentūra strādā kā Tava komanda." }
+] } %}
 
 Daudzas mārketinga aģentūras Latvijā piedāvā specializētus pakalpojumus, piemēram:
 
