@@ -124,4 +124,6 @@ Google reklāma joprojām ir viens no efektīvākajiem kanāliem — ar nosacīj
 
 Mārketinga Skolas Google reklāmas speciālists Kristaps Apeināns ar Google reklāmām saviem klientiem ir nopelnījis vairāk nekā **10 miljonus eiro**. Apskati arī [citus mūsu veiksmes stāstus](/portfolio/).
 
-Ja gribi to apgūt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā — trīs stundas, no atslēgvārdiem līdz konversiju uzskaitei. Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi to apgūt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā — trīs stundas, no atslēgvārdiem līdz konversiju uzskaitei. Ja Meta reklāma Tev ir tikpat aktuāla, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).
+
+Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), bet visu kampaņu vadīšanu varam uzņemties mēs — sk. [pakalpojumus](/pakalpojumi/).

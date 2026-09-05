@@ -134,6 +134,6 @@ Vispirms pārbaudi konversiju uzskaiti un meklējumu atskaiti. Ļoti bieži prob
 
 Laba aģentūra ir vērtīga tad, kad tā atbild uz jautājumiem, kurus Tu vēl nebiji uzdevis. Slikta — tad, kad tā parāda skaistas atskaites bez sakara ar pārdošanu.
 
-Ja neesi drošs, vai Tev vajag aģentūru vai vienkārši sakārtotu kontu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi to darīt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā un aptver tieši tos soļus, par kuriem šis raksts.
+Ja neesi drošs, vai Tev vajag aģentūru vai vienkārši sakārtotu kontu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi to darīt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā un aptver tieši tos soļus, par kuriem šis raksts. Meta reklāmu apgūsi [Meta reklāmas kursā](/meta-reklamas-kurss/), bet visu klāstu skati [kursu sadaļā](/digitala-marketinga-kursi/).
 
 Apskati arī [mūsu veiksmes stāstus](/portfolio/) un [pakalpojumu klāstu](/pakalpojumi/).

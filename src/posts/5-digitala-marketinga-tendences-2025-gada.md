@@ -98,6 +98,6 @@ Piecas tendences izklausās pēc daudz darba, bet patiesībā tās norāda uz vi
 
 Tāpēc nemēģini ieviest visu uzreiz. Izvēlies vienu tendenci, kas Tavā biznesā šobrīd sāp visvairāk, un veic tieši vienu soli. Nākamajā mēnesī — nākamo.
 
-Ja neesi drošs, ar ko sākt, tieši to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/) — stundas laikā izskatām Tavu situāciju un saliekam prioritātes secībā. Ja gribi šīs lietas apgūt pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/), [Google Ads kursu](/google-ads-kurss/) vai [SEO kursu](/seo-kursi/) — visi notiek tiešsaistē mazā grupā, un jautājumus par savu biznesu vari uzdot uzreiz.
+Ja neesi drošs, ar ko sākt, tieši to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/) — stundas laikā izskatām Tavu situāciju un saliekam prioritātes secībā. Ja gribi šīs lietas apgūt pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) — tas notiek tiešsaistē mazā grupā, un jautājumus par savu biznesu vari uzdot uzreiz. Pārējos kanālus aptver [visi mūsu kursi](/digitala-marketinga-kursi/). Ja gribi, lai to izdara mūsu komanda, apskati [pakalpojumus](/pakalpojumi/).
 
 Un, ja gribi vispirms sakārtot plānu uz papīra, sāc ar rakstu [mārketinga plāns](/marketinga-plans/).

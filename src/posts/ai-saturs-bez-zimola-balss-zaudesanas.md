@@ -135,4 +135,4 @@ Zīmola balss nav stila jautājums. Tā ir iemesls, kāpēc cilvēks izvēlas Te
 
 Ja gribi sakārtot satura procesu tā, lai MI palīdz, nevis izlīdzina, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Plašāk par satura pieeju lasi rakstā [satura mārketings](/satura-marketings/), bet par MI lomu kopumā — [mākslīgais intelekts mārketingā](/maksligais-intelekts-marketinga/).
 
-Ja gribi apgūt reklāmu veidošanu, kurā MI ir palīgs, nevis autopilots, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/).
+Ja gribi apgūt reklāmu veidošanu, kurā MI ir palīgs, nevis autopilots, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/). Satura darbu varam uzņemties arī mēs — sk. [pakalpojumus](/pakalpojumi/).

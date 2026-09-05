@@ -124,4 +124,4 @@ Aģentūra nav risinājums pati par sevi. Tā ir veids, kā ātrāk tikt pie rez
 
 Ja neesi drošs, vai Tev vajag partneri vai vienkārši skaidrāku plānu, sāc ar [individuālu konsultāciju](/marketinga-konsultacijas/) — stundas laikā izejam cauri situācijai un saliekam prioritātes. Apskati arī [mūsu pakalpojumus](/pakalpojumi/) un [veiksmes stāstus](/portfolio/).
 
-Ja gribi zināšanas paturēt savā komandā, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai [Google Ads kursu](/google-ads-kurss/).
+Ja gribi zināšanas paturēt savā komandā, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).

@@ -105,4 +105,4 @@ MI nav jāievieš visur uzreiz. Gandrīz vienmēr pietiek ar vienu labi izvēlē
 
 Ja gribi saprast, kurš tieši process tas ir Tavā uzņēmumā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/) — vienas stundas laikā izejam cauri Tavai situācijai un saliekam soļus secībā. Ja meklē gatavu risinājumu, apskati [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/).
 
-Bet, ja gribi to apgūt pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai [Google Ads kursu](/google-ads-kurss/) — abos rādām, kā MI rīkus izmantot kampaņu veidošanā, nezaudējot kontroli pār rezultātu.
+Bet, ja gribi to apgūt pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) — tajā rādām, kā MI rīkus izmantot kampaņu veidošanā, nezaudējot kontroli pār rezultātu. Pārējo kanālu kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/).

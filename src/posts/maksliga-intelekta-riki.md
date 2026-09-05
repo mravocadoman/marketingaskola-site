@@ -135,4 +135,4 @@ Rīki ir tikai puse. Otra puse ir process, kurā tie iekļaujas — un tieši tu
 
 Ja gribi saprast, kurš darbs Tavā uzņēmumā jāautomatizē vispirms, sāc ar rakstu [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) vai izrunā to [individuālā konsultācijā](/marketinga-konsultacijas/). Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
 
-Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai [Google Ads kursu](/google-ads-kurss/).
+Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Pārējos kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/), bet visu mārketingu kopumā varam pārņemt mēs — sk. [pakalpojumus](/pakalpojumi/).
