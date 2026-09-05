@@ -1,59 +1,22 @@
 ---
 layout: post.njk
-title: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt?"
-seoTitle: "Google reklāmas aģentūra: Kā to izvēlēties un ko sagaidīt? | Mārketinga Skola"
-description: "Google reklāmas aģentūra palīdz uzņēmumiem sasniegt mērķauditoriju un optimizēt reklāmu izdevumus. Uzzini, kad to izvēlēties un ko sagaidīt!"
+title: "Google reklāmas aģentūra: kā to izvēlēties un ko sagaidīt"
+seoTitle: "Google reklāmas aģentūra: kā izvēlēties | Mārketinga Skola"
+description: "Ko Google reklāmas aģentūra tiešām dara, kad tā atmaksājas, cik tas maksā un kuri trīs jautājumi jāuzdod pirms līguma parakstīšanas."
 date: 2025-03-11
-updated: 2025-04-15
+updated: 2026-09-05
 image: "/img/gen/cover-google-reklamas-agentura.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px.png"
 categories: ["google-reklama"]
 permalink: "/google-reklamas-agentura/"
-keywords: ["Google reklāmas aģentūra", "Google Ads", "reklāmas konts", "PPC", "aģentūras izvēle"]
+keywords: ["Google reklāmas aģentūra", "Google Ads", "reklāmas konts", "PPC", "aģentūras izvēle", "konversiju uzskaite"]
 
 ---
 
-Digitālā mārketinga laikmetā, kur konkurence tiešsaistes vidē kļūst arvien sīvāka, uzņēmumiem ir svarīgi efektīvi izmantot Google reklāmu. Lai gan daudzi uzņēmēji sākumā mēģina paši pārvaldīt [Google Ads](https://ads.google.com/intl/lv_lv/start/overview-ha/?subid=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&utm_source=aw&utm_medium=ha&utm_campaign=lv-lv-ha-aw-bk-c-bau!o3~CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE~114968235739~kwd-94527731~11808585493~581484146820&gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXsP7FztvosCG38xPpoFvIRdEVUIOcywDzTQ8sJm3A1QD8CGM9-Vm5hoCM-8QAvD_BwE&gclsrc=aw.ds) kampaņas, bieži vien rezultāti nav tādi, kā cerēts. Šeit spēlē iesaistās Google reklāmas aģentūra – profesionāļu komanda, kas palīdz sasniegt mērķus ātrāk, efektīvāk un ar mazāku budžeta izšķērdēšanu.
 
-## Kas ir Google reklāmas aģentūra un kā tā darbojas?
+Google Ads kontu var atvērt piecās minūtēs. Tieši tāpēc daudzi uzņēmumi sāk paši, iztērē dažus simtus eiro un nonāk pie secinājuma, ka "Google reklāma nestrādā".
 
-Google reklāmas aģentūra ir uzņēmums vai speciālistu komanda, kas specializējas Google Ads platformas pārvaldībā. Viņi plāno, optimizē un analizē reklāmas kampaņas, lai nodrošinātu maksimālu atdevi no ieguldītā budžeta.
-
-Profesionāla **Google reklāmas aģentūra** piedāvā ne tikai iestatīt reklāmas, bet arī nodrošina **Google reklāmas pakalpojumus**, kas ietver stratēģiju izstrādi, kampaņu uzraudzību un rezultātu analīzi.
-
-Galvenie pakalpojumi, ko piedāvā šāda aģentūra, ietver:
-
--   **Reklāmas stratēģijas izstrādi** – mērķauditorijas noteikšana, reklāmas mērķu definēšana.
--   **PPC (pay-per-click) reklāmas pārvaldību** – efektīva budžeta sadale, atslēgvārdu analīze.
--   **Reklāmu optimizāciju** – CTR (click-through rate) un ROI (return on investment) uzlabošana.
--   **Datu analīzi un pārskatus** – detalizēti atskaites un rekomendācijas kampaņu uzlabošanai.
-
-## Kad apsvērt sadarbību ar Google reklāmas aģentūru?
-
-Ja esi uzņēmuma īpašnieks un domā par to vai Google reklāmas aģentūra ir nepieciešama Tavam biznesam, apsver šādus faktorus:
-
-1.  **Tev nav laika pārvaldīt reklāmas kampaņas** – efektīva reklāmu pārvaldība prasa regulāru uzraudzību un optimizāciju.
-2.  **Tavas pašreizējās Google Ads kampaņas nenes gaidītos rezultātus** – ja Tu ieguldi naudu reklāmās, bet nesaņem pietiekami daudz konversiju, iespējams, ir jāuzlabo stratēģija.
-3.  **Tu nezini, kā pareizi iestatīt reklāmu mērķauditoriju** – profesionāļi palīdzēs sasniegt īsto klientu, samazinot nevajadzīgu budžeta tērēšanu.
-4.  **Konkurence Tavā nozarē ir ļoti sīva** – ja Tavi konkurenti jau izmanto Google reklāmu, tad Tev ir jābūt soli priekšā, izmantojot efektīvākās stratēģijas.
-5.  **Ja Tavs uzņēmums jau ir izmēģinājis Google Ads reklāmu, bet neredz vēlamos rezultātus**– Aģentūra var palīdzēt to optimizēt, balstoties uz **Google Adwords reklāmas** labāko praksi.
-
-## Kā izvēlēties pareizo Google reklāmas aģentūru?
-
-**1. Pārbaudi aģentūras pieredzi un reputāciju**Meklē klientu atsauksmes un veiksmes stāstus. Uzzini, ar kādiem uzņēmumiem viņi ir strādājuši un kādi rezultāti ir sasniegti.
-
-**2. Uzzini, kādas stratēģijas un rīkus viņi izmanto**Labai aģentūrai jāizmanto Google Analytics, Google Tag Manager un citi uz datiem balstīti rīki efektīvai reklāmu pārvaldībai.
-
-**3. Pārliecinies par caurspīdīgu cenu politiku**Uzzini, kā tiek aprēķinātas komisijas maksas – vai tās ir fiksētas vai atkarīgas no reklāmas budžeta.
-
-**4. Jautā par komunikāciju un atskaitēm**Svarīgi, lai aģentūra regulāri sniegtu detalizētus pārskatus un skaidri komunicētu kampaņu progresu.
-
-## Kas jāzina, pirms sadarboties ar Google Ads ekspertiem?
-
--   **Datu balstītu pieeju** – profesionāļi analizēs datus un pielāgos kampaņas, lai tās būtu pēc iespējas efektīvākas.
--   **Mērķtiecīgu reklāmas stratēģiju** – reklāmas netiks rādītas nejaušai auditorijai, bet precīzi atlasītiem potenciālajiem klientiem.
--   **Budžeta optimizāciju** – aģentūra palīdzēs izvairīties no liekiem izdevumiem un palielinās reklāmas atdevi.
--   **Regulāru monitoringu un uzlabojumus** – nepārtraukta uzraudzība un testēšana nodrošinās, ka reklāmas paliek konkurētspējīgas.
+Parasti nestrādā nevis kanāls, bet uzstādījums. Šajā rakstā apskatām, ko aģentūra tiešām dara, kad to ir vērts piesaistīt, cik tas maksā un ko pajautāt, pirms paraksti līgumu.
 
 {% infographic { id: "info-google-ads-agentura", title: "Ko pajautāt Google reklāmas aģentūrai", items: [
   { label: "Kas pārvaldīs kontu", text: "Cilvēks, ar kuru runāsi ikdienā." },
@@ -61,43 +24,116 @@ Ja esi uzņēmuma īpašnieks un domā par to vai Google reklāmas aģentūra ir
   { label: "Kam pieder konts", text: "Datiem jāpaliek pie Tevis." }
 ] } %}
 
-## Cik maksā Google reklāmas aģentūras pakalpojumi?
+## Ko aģentūra tiešām dara
 
-Izmaksas var mainīties atkarībā no izvēlētajiem Google reklāmas pakalpojumiem, kampaņu sarežģītības un reklāmas mērķiem.
+Priekšstats, ka aģentūra "palaiž reklāmas", ir maldinošs. Reklāmu palaišana aizņem stundu. Pārējais darbs ir tas, kas nosaka rezultātu.
 
-Google reklāmas aģentūras cenas var būt ļoti dažādas, jo tās atkarīgas no vairākiem faktoriem:
+**Atslēgvārdu izpēte.** Kurus meklējumus pirkt un — vēl svarīgāk — kurus izslēgt. Negatīvo atslēgvārdu saraksts bieži ietaupa vairāk naudas nekā jebkurš cits solis.
 
--   **Reklāmas budžets –** jo lielāks budžets, jo sarežģītāka kļūst tā pārvaldība un optimizācija.
--   **Kampaņu sarežģītība –** vienkārša reklāma ar dažiem atslēgvārdiem maksās mazāk nekā kompleksa kampaņa ar vairākiem reklāmas veidiem un detalizētu segmentāciju.
--   **Pakalpojumu klāsts –** dažas aģentūras piedāvā tikai reklāmu iestatīšanu, bet citas sniedz arī analīzi, optimizāciju un regulāru kampaņu uzlabošanu.
--   **Sadarbības modelis –** dažas aģentūras strādā ar fiksētu maksu, citas ņem procentuālu daļu no reklāmas budžeta vai piedāvā elastīgas maksājumu shēmas.
+**Konta struktūra.** Kampaņas un reklāmu grupas jāsakārto tā, lai tās var lasīt un optimizēt. Slikti strukturēts konts strādā, bet to nevar uzlabot, jo nav skaidrs, kas ko izraisa.
 
-Ja vēlies vienkāršu reklāmas iestatīšanu, izmaksas būs zemākas, bet, ja meklē ilgtermiņa sadarbību ar pastāvīgu reklāmu uzlabošanu un analīzi, tās jau būs lielākas izmaksas. Labā ziņa – pareizi pārvaldīta Google Ads kampaņa parasti atmaksājas ar uzviju!
+**Konversiju uzskaite.** Bez tās nekas pārējais nav svarīgs. Ja nav nomērīts, kas ir pieteikums, algoritms optimizē uz nepareizo mērķi.
 
-Ja vēlies iegūt pārskatu par vidējām izmaksām vai saprast, kādu summu ņemt vērā, jāņem vērā, ka Google reklāmas aģentūru cenas var mainīties atkarībā no sniegto pakalpojumu apjoma un sarežģītības. Zemāk būs norādītas vidējās izmaksas.
+**Ikdienas optimizācija.** Meklējumu atskaites pārskatīšana, likmju un budžeta korekcijas, reklāmu tekstu testēšana.
 
-| Pakalpojums | Vidējās izmaksas |
-| --- | --- |
-| Kampaņu izveide un iestatīšana | €300 – €1000 vienreizēja maksa |
-| Mēneša reklāmu pārvaldība | €200 – €5000/mēnesī |
-| Analīze un optimizācija | €50 – €500/h |
+**Atskaites, kas ir saprotamas.** Ne klikšķu skaits, bet klientu cena.
 
-## Vai varu pārvaldīt Google Ads pats bez aģentūras?
+## Kad to ir vērts piesaistīt
 
-Jā, taču tam ir savi izaicinājumi:
+Trīs pazīmes, kas norāda uz to skaidri.
 
--   Nepieciešamas zināšanas par Google Ads algoritmiem un atslēgvārdu optimizāciju.
--   Nepārtraukta reklāmu analīze un pielāgošana.
--   Risks iztērēt budžetu bez būtiskiem rezultātiem.
+**Trūkst laika.** Konts prasa uzmanību katru nedēļu. Ja reklāma vienmēr paliek saraksta beigās, tā klusi tērē budžetu.
 
-Lai gan Google Ads reklāma ir pieejama ikvienam, tās efektīva pārvaldība prasa zināšanas par AdWords reklāmas sistēmu un regulāru uzraudzību.
+**Trūkst kompetences.** Google saskarne mainās bieži, un noklusējuma iestatījumi ne vienmēr ir Tavās interesēs.
 
-Ja Tavam uzņēmumam nav sava speciālista, ilgtermiņā sadarbība ar aģentūru var būt efektīvāka un izdevīgāka.
+**Budžets ir pietiekami liels.** Ja mēnesī tērē simts eiro, aģentūras maksa būs lielāka par ieguvumu. Šajā gadījumā izdevīgāk ir apgūt pamatus pašam — piemēram, [Google Ads kursā](/google-ads-kurss/).
 
-Ja meklē komandu, kas šo darbu paveiktu Tavā vietā, apskati mūsu [mārketinga pakalpojumus](/pakalpojumi/) — tur redzēsi, ar ko strādājam ikdienā un kā veidojas sadarbība.
+## Trīs jautājumi pirms līguma
 
-Google reklāmas aģentūra var būt izšķirošs faktors uzņēmuma izaugsmei digitālajā vidē. Pareizi izvēlēta aģentūra ne tikai palīdzēs piesaistīt vairāk klientu, bet arī optimizēs reklāmu izdevumus. Ja vēlies maksimāli efektīvi izmantot Google Ads platformu, profesionāļu palīdzība ir ieguldījums, kas ilgtermiņā atmaksājas.
+**Kas tieši strādās ar manu kontu?** Pārdod bieži viens cilvēks, strādā cits. Pajautā vārdu un pieredzi.
 
-Ja vēlies uzzināt vairāk par google reklāmu, iesakām izlasīt rakstu: [Vai Google reklāma ir efektīva arī 2025. gadā?](/google-reklama-2025/)
+**Kā mērīsim rezultātu?** Ja atbilde ir par klikšķiem un rādījumiem, tas ir slikts signāls. Laba atbilde runā par pieteikumiem, klienta cenu un atdevi.
 
-Neatkarīgi no tā, vai esi iesācējs Google Ads reklāmā vai jau darbojies ar Google reklāmas pakalpojumiem, pareiza pieeja Google AdWords reklāmai var būt izšķiroša. Tas var palīdzēt tev ne tikai samazināt izmaksas, bet arī ievērojami palielināt reklāmas atdevi.
+**Kam pieder konts?** Šis ir vissvarīgākais. Google Ads kontam jābūt reģistrētam uz Tavu uzņēmumu, aģentūrai pieejot ar atļauju. Ja konts pieder aģentūrai, sadarbības beigās Tu zaudē visu vēsturi — un vēsture ir tieši tas, kas padara kampaņas lētākas.
+
+## Sarkanie karogi
+
+**Garantēta pirmā vieta.** Neviens to nevar garantēt, jo izsole notiek katrā meklējumā no jauna.
+
+**Atskaites tikai par klikšķiem.** Klikšķi nav bizness.
+
+**Nav pieejas kontam.** Ja nedrīksti redzēt savu kontu, kaut kas nav kārtībā.
+
+**Ilgs līgums bez izmēģinājuma perioda.** Pirmajos trīs mēnešos parasti kļūst skaidrs, vai sadarbība strādā.
+
+**Solījums bez jautājumiem.** Ja aģentūra piedāvā cenu, neuzdodot nevienu jautājumu par Tavu biznesu, tā pārdod pakalpojumu, ne risinājumu.
+
+## Cik tas maksā
+
+Tirgū sastopami trīs modeļi.
+
+**Fiksēta mēneša maksa.** Vienkāršākais un caurskatāmākais variants mazam kontam.
+
+**Procenti no reklāmas budžeta.** Izplatīts, bet ar iebūvētu interešu konfliktu: aģentūrai izdevīgi, lai Tu tērētu vairāk.
+
+**Maksa par rezultātu.** Izklausās vislabāk, bet praksē grūti, jo rezultātu ietekmē arī Tava lapa, cena un piegāde — lietas, ko aģentūra nekontrolē.
+
+Neatkarīgi no modeļa: reklāmas budžets un aģentūras maksa ir divas dažādas summas, un tām atskaitēs jābūt atsevišķi.
+
+## Ko aģentūra nevar izdarīt Tavā vietā
+
+Šo daļu bieži noklusē.
+
+Aģentūra nevar salabot piedāvājumu, kas nav konkurētspējīgs. Nevar pārdot no lapas, kas ielādējas piecas sekundes. Nevar kompensēt to, ka uz pieteikumiem neviens neatbild divas dienas.
+
+Reklāma pastiprina to, kas jau pastāv. Ja pamats ir vājš, tā to tikai ātrāk parāda. Tāpēc pirms budžeta palielināšanas ir vērts izlasīt [5 izplatītākās kļūdas reklāmās](/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/) un sakārtot [mārketinga plānu](/marketinga-plans/).
+
+## Aģentūra, frīlanseris vai pats
+
+Nav viena pareizā atbilde, ir trīs situācijas.
+
+**Pats** — ja budžets neliels un ir laiks mācīties. Ieguvums paliek uzņēmumā uz visiem laikiem.
+
+**Frīlanseris** — ja vajadzīga viena kompetence un elastība. Lētāk, bet atkarīgs no viena cilvēka pieejamības.
+
+**Aģentūra** — ja vajadzīgas vairākas kompetences vienlaikus un rezultāts jāiegūst ātri. Salīdzinājumu izvērsām rakstā [digitālā mārketinga aģentūra izaugsmei](/digitala-marketinga-agentura-izaugsmei/).
+
+## Kā izskatās pirmie trīs mēneši
+
+Laba sadarbība parasti izvēršas paredzamā ritmā, un ir vērts to zināt iepriekš.
+
+**Pirmais mēnesis ir sakārtošana.** Konversiju uzskaite, konta struktūra, atslēgvārdu izpēte un negatīvo saraksts. Šajā mēnesī rezultāti bieži pat pasliktinās, jo tiek apturēts tas, kas tērēja naudu bez atdeves. Tas ir normāli.
+
+**Otrais mēnesis ir dati.** Kampaņas darbojas pietiekami ilgi, lai parādītos, kuri meklējumi nes pieteikumus un kuri tikai klikšķus. Sākas nopietna optimizācija.
+
+**Trešais mēnesis ir secinājumi.** Tikai tagad var pateikt, cik maksā klients un vai kanāls Tavā nozarē atmaksājas.
+
+Ja pēc trim mēnešiem neviens nespēj nosaukt klienta cenu, tas ir daudz sliktāks signāls nekā vāji rezultāti.
+
+## Ko sagatavot pirms sākuma
+
+Sadarbība iet ātrāk, ja šīs lietas ir gatavas jau pirmajā sarunā.
+
+Skaidrs, kas ir konversija — pieteikums, zvans, pirkums vai kaut kas cits. Saraksts ar pakalpojumiem prioritārā secībā, jo reklamēt visu vienlaikus nav jēgas. Vidējais darījuma apjoms, lai var rēķināt atdevi. Un cilvēks Tavā pusē, kurš atbild uz pieteikumiem — visātrākā reklāma neko nedod, ja atbilde nāk pēc trim dienām.
+
+## Biežākie jautājumi
+
+**Cik ilgi jāgaida rezultāts?**
+Pirmie dati — dažās dienās. Nopietni secinājumi — pēc mēneša vai diviem, atkarībā no apjoma.
+
+**Vai varu pārvaldīt Google Ads pats?**
+Jā. Pamatlietas ir apgūstamas dažās stundās, un tieši tās nosaka lielāko daļu rezultāta. Kā tas notiek praksē, aprakstīts rakstā [vai Google reklāma ir efektīva](/google-reklama-2025/).
+
+**Vai vajag arī Facebook reklāmu?**
+Bieži jā, jo tie risina dažādus uzdevumus: Google uzrunā tos, kas jau meklē, Meta rada pieprasījumu. Sk. [Meta reklāmas](/meta-reklamas/).
+
+**Ko darīt, ja jau esmu iztērējis naudu bez rezultāta?**
+Vispirms pārbaudi konversiju uzskaiti un meklējumu atskaiti. Ļoti bieži problēma ir tieši tur, nevis budžetā.
+
+## Nākamais solis
+
+Laba aģentūra ir vērtīga tad, kad tā atbild uz jautājumiem, kurus Tu vēl nebiji uzdevis. Slikta — tad, kad tā parāda skaistas atskaites bez sakara ar pārdošanu.
+
+Ja neesi drošs, vai Tev vajag aģentūru vai vienkārši sakārtotu kontu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi to darīt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā un aptver tieši tos soļus, par kuriem šis raksts.
+
+Apskati arī [mūsu veiksmes stāstus](/portfolio/) un [pakalpojumu klāstu](/pakalpojumi/).
