@@ -918,10 +918,21 @@ and press Enter; clicking an option by ref or coordinate silently picks its
 neighbour. The date-override dialog keeps selections ACROSS months, so all
 four dates go in one override with one time range and one Save.
 
-**Still missing: the two Stripe seat links.** Both course pages fall back to
-the application form until `bookUrl` is set in `courseSessions.json`. Each
-needs a €150 payment link in the SIA "Stonks" account with its after-payment
-redirect pointing at the Cal.com event above — same recipe as the Meta link.
+**All three courses now sell seats.** Each has a `bookUrl` in
+`courseSessions.json` pointing at a Stripe payment link whose after-payment
+redirect lands on the Cal.com event above.
+
+**Open gap the blog now exposes: the Meta course syllabus has no
+measurement module.** Its five modules are platform basics, objectives,
+audiences, formats and creatives-with-AI. The 2026 blog pass argues
+throughout that the signal (pixel PLUS Conversions API) is what decides the
+cost per customer, and two posts had CTAs promising the course walks
+through it. Those CTAs were corrected to describe what is actually listed,
+rather than inventing a module. The Google Ads course does cover it
+(module 5, "Konversiju uzskaite, budžets un optimizācija") and the SEO
+course covers analytics (module 4). **Ask the owner whether the Meta course
+covers conversion tracking in practice; if it does, it belongs in the
+syllabus, and the blog CTAs can go back to promising it.**
 
 ## Two artwork languages, settled 5 Sep 2026
 
