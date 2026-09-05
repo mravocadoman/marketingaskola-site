@@ -44,9 +44,12 @@ const STYLE_SUFFIX =
   'Generous negative space, asymmetric composition, subtle fine film grain, premium editorial restraint.';
 
 const PAPER_SUFFIX =
-  ' CUT-PAPER COLLAGE. Every element is a flat piece of cut coloured paper laid on a warm off-white paper ground, with crisp ' +
+  ' CUT-PAPER COLLAGE. Every element is a flat piece of cut coloured paper laid on a PURE WHITE #ffffff ground, edge to edge, ' +
+  'the same white in every corner - it must match a white web page exactly, with no warm, cream, beige or yellow cast at all. ' +
+  'The cut paper pieces themselves carry the texture; the ground behind them stays clean white. Crisp ' +
   'hard edges, slight offsets where pieces overlap, and a very subtle paper grain across the whole image. Palette strictly: ' +
-  'deep navy #00152c, cyan #03c3f8, pale cool grey and off-white. No outlines, no strokes, no line work, no gradients, no glow, ' +
+  'deep navy #00152c, cyan #03c3f8 and pale cool grey. Do NOT cut pieces from white or off-white paper - they would vanish into ' +
+  'the white ground; a shape that needs to read as a page or panel is pale cool grey. No outlines, no strokes, no line work, no gradients, no glow, ' +
   'no 3D, no drop shadows beyond the faint lift of one paper layer over another. ' +
   'TYPE: heavy geometric sans in deep navy. The headline runs large across the top. Each item is a BIG navy two-digit number, ' +
   'then a bold label beneath it, then a smaller note. ' +

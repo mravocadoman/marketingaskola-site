@@ -33,7 +33,8 @@
     "derived": "node tools/derived-images.mjs",
     "check:mirror": "node tools/check-site.mjs archive/wordpress-mirror",
     "check:live": "node tools/check-live.mjs",
-    "test:mobile": "node tools/test-mobile.mjs"
+    "test:mobile": "node tools/test-mobile.mjs",
+    "whiten": "node tools/whiten-paper.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

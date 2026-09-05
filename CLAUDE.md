@@ -901,7 +901,7 @@ redirect pointing at the Cal.com event above — same recipe as the Meta link.
 After a long exploration the owner settled on two — and only two — treatments.
 Everything else was reverted, so do not re-litigate this.
 
-**1. Blog infographics: CUT-PAPER COLLAGE on warm off-white.** Every element is
+**1. Blog infographics: CUT-PAPER COLLAGE on PURE WHITE.** Every element is
 a flat piece of cut paper — crisp edges, slight offsets where pieces overlap,
 subtle paper grain — in navy, cyan, pale grey. Big navy numerals, one emblem per
 item, and the emblem must plainly read as its own subject (a form panel, an
@@ -909,6 +909,22 @@ envelope, a bar chart). **Nothing in the margins**: no decorative shapes at the
 left or right edges, no confetti, no background pattern. `PAPER_SUFFIX` encodes
 this; each slot prompt describes its own emblems. All six in-article
 infographics are drawn this way.
+
+**The ground must be exactly `#ffffff`** — these sit flush on a white article
+page, and a cream rectangle pasted onto white is the whole problem the owner
+reported. gpt-image-2 keeps a warm cast on some of them however firmly the
+prompt asks, and re-rolling returns byte-identical files, so `npm run whiten`
+(`tools/whiten-paper.mjs`) fixes it deterministically: it measures the ground
+from the four corners and repaints only pixels at or above that luminance with
+a low channel spread, leaving every navy, cyan and pale-grey cut-out and its
+paper texture untouched. It REFUSES to write when the match covers under 15% or
+over 92% of the image, which is what caught a too-tight saturation cutoff —
+that threshold is now derived from the ground's own warmth. Cut no shape from
+white or off-white paper; it would vanish. Run it after regenerating any
+`style: "paper"` slot.
+
+`.infographic` takes its background from `--canvas`, not `--card`, so the
+figure matches the page ground on both surfaces.
 
 **2. Course and LP header images: the ORIGINAL house style, subject made
 explicit.** Flat colour blocking on `#020d1c`, cyan used sparingly, generous
@@ -991,6 +1007,29 @@ by the frame, not as flat shape compositions.
 - Don't add an infographic that restates the cells next to it. The
   consultations page lost its band and got nothing back, because section 01
   already answers "is this for me" in three cells.
+
+## Whole-card links (5 Sep 2026)
+
+Owner: *"make the whole cards in pakalpojumi and kursi clickable, urls not just
+the links at the bottom of the cards"* — and the main page.
+
+Done as the **stretched-link pattern in CSS only**: the card keeps ONE real
+anchor, the existing "Uzzini vairāk", and that link's `::after` is absolutely
+positioned over the whole card. No nested anchors, no JavaScript, no markup
+change, and screen readers and search engines still see a single properly
+labelled link rather than a div with a click handler.
+
+Cards are selected with `:has()`, so nothing in the HTML moved; where `:has()`
+is unsupported the bottom link simply keeps working. **This is only safe because
+no card in these grids points at two different URLs** — that was verified before
+writing the rule, and it is the thing to re-check before adding a second link
+inside a cell. Text inside a stretched card is no longer selectable; that is the
+accepted trade and not worth a JS workaround here.
+
+`tools/_stretch-check.mjs` is not kept in the repo, but the check that matters
+is: for every `.cell`/`.course-tile` with an `.arrow-link`, scroll it to centre
+and confirm `document.elementFromPoint` at its middle resolves to that card's
+own href. 15/15 pass across `/`, `/pakalpojumi/` and `/digitala-marketinga-kursi/`.
 
 ## Motion on inner pages (4 Sep 2026)
 

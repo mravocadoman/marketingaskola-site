@@ -506,6 +506,23 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   transition: background 0.15s ease;
 }
 .cell:hover { background: var(--card2); }
+
+/* Whole-card links (owner, 5 Sep 2026: "make the whole cards clickable, not
+   just the links at the bottom"). This is the stretched-link pattern: the card
+   stays ONE real anchor - the existing "Uzzini vairāk" - whose ::after covers
+   the card, so screen readers and search engines still see a single properly
+   labelled link and there is no nested-anchor markup and no JavaScript.
+   Selected with :has() so no card markup changed; where :has() is missing the
+   bottom link simply keeps working as before. Safe here because no card in the
+   grid points at two different URLs - verified before writing this. */
+.cell:has(> .arrow-link),
+.course-tile:has(.arrow-link) { position: relative; }
+.cell:has(> .arrow-link) .arrow-link::after,
+.course-tile:has(.arrow-link) .arrow-link::after {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+}
+.cell:has(> .arrow-link),
+.course-tile:has(.arrow-link) { cursor: pointer; }
 .cell .cell-idx {
   position: absolute;
   top: var(--card-pad); right: var(--card-pad);
@@ -807,7 +824,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    inherited body size at full container width and read as a wall of terms.
    The full policy lives in .fine-more so it stays available without
    dominating the section. */
-.fine { font-size: var(--t-sm); color: var(--muted); max-width: 68ch; margin: 22px 0 0; }
+.fine { font-size: var(--t-sm); color: var(--muted); max-width: 68ch; margin: clamp(28px, 3vw, 40px) 0 0; }
 .fine-more { max-width: 68ch; margin-top: 10px; }
 .fine-more .faq summary { font-size: var(--t-sm); font-weight: 400; color: var(--muted); padding: 12px 40px 12px 0; }
 .fine-more .faq summary::after { right: 6px; width: 7px; height: 7px; }
@@ -1527,7 +1544,10 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    articles, on the dark marketing pages it resolves to #00152c. Hard-coding
    white punched a light slab into the dark canvas - the same artifact
    `.img--card` was deleted for. */
-.infographic { margin: 2.4em 0; border: 1px solid var(--line); background: var(--card); }
+/* The figure sits flush on the page, so its ground must equal the page ground -
+   on paper that is white, on the dark canvas it is the card colour. Using --card
+   everywhere left a tinted rim around a white-ground image on articles. */
+.infographic { margin: 2.4em 0; border: 1px solid var(--line); background: var(--canvas); }
 .infographic > img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-bottom: 1px solid var(--line); }
 .infographic--page { margin: clamp(28px, 3vw, 40px) 0 0; }
 .infographic--page .infographic-list li { position: relative; padding-left: 34px; margin: 0; font-size: var(--t-sm); line-height: 1.5; color: var(--body); counter-increment: ig; }
