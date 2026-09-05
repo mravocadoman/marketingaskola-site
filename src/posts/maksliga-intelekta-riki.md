@@ -1,93 +1,22 @@
 ---
 layout: post.njk
-title: "7 Mākslīgā Intelekta Rīki Mārketingam"
-seoTitle: "7 Mākslīgā Intelekta Rīki Mārketingam | Mārketinga Skola"
-description: "Šie 7 lieliskie mākslīgā intelekta rīki optimizēs tavu sniegumu digitālajā vidē lai Tu enerģiju varētu veltīt sava uzņēmuma attīstībai."
+title: "8 mākslīgā intelekta rīki mārketingam"
+seoTitle: "8 mākslīgā intelekta rīki mārketingam | Mārketinga Skola"
+description: "Astoņi MI rīki, ko mārketingā tiešām izmanto ikdienā: kam katrs der, kam neder un ar kuru sākt, ja nekad neesi ne ar vienu strādājis."
 date: 2023-11-07
-updated: 2025-06-14
+updated: 2026-09-05
 image: "/img/gen/cover-maksliga-intelekta-riki.webp"
 legacyImage: "/img/2023/11/1.jpg"
 categories: ["maksligais-intelekets"]
 permalink: "/maksliga-intelekta-riki/"
-keywords: ["mākslīgā intelekta rīki", "AI mārketingā", "MidJourney", "Synthesia", "video montāža", "satura veidošana"]
+keywords: ["mākslīgā intelekta rīki", "AI rīki mārketingam", "ChatGPT", "Canva", "video montāža", "satura veidošana"]
 
 ---
 
-## Vēlies ietaupīt laiku un enerģiju, darbojoties digitālajā vidē?
 
-Šie 7 lieliskie mākslīgā intelekta rīki optimizēs tavu sniegumu digitālajā vidē un ietaupīs laiku un enerģiju, lai Tu varētu to veltīt nozīmīgākiem uzdevumiem sava uzņēmuma attīstībai.
+Rīku sarakstu internetā ir simtiem, un lielākā daļa no tiem ir bezjēdzīgi — trīsdesmit nosaukumi bez konteksta, no kuriem pusi neviens nekad nav lietojis.
 
-Mākslīgā intelekta izaugsme nepārtraukti attīstās un digitālajā vidē arvien biežāk parādās jaunas inovācijas. AI var būt patiešām lielisks palīgs biznesa efektivitātes veicināšanai, tāpēc esam apkopojuši sarakstu ar noderīgiem mākslīgā intelekta rīkiem, kurus paši izmantojam ikdienā un ceram, ka arī Tev tie noderēs!
-
-![Midjourney logotips](/img/2026/09/logo-midjourney.webp)
-
-## 1. [MidJourney.com](https://www.midjourney.com/)
-
-Midjourney ir mākslīgā intelekta rīks, kas spēj izveidot attēlu, pamatojoties uz teksta instrukcijām jeb “prompts”. Izklausās lieliski, ne?
-
-Midjourney ir populārākais šāda veida rīks un ne par velti – pāris sekunžu laikā ar šī rīka palīdzību iespējams izveidot augstas kvalitātes attēlus un pārvērst savu iztēli realitātē.
-
-Šis būs izcils rīks pat tiem, kuri uz mākslu un attēlu radīšanu ir uz “Jūs”.  Galvenais princips ir izveidot pēc iespējas precīzāku aprakstu, lai sniegtu mākslīgajam intelektam pietiekami daudz informācijas Tavam vēlamajam attēlam. Vienīgais ierobežojums ir Tava paša iztēle – jo bagātīgāka tā būs, jo iespaidīgāki attēli sanāks.
-
-![Canva logotips](/img/2026/09/logo-canva.webp)
-
-## 2. [Canva – Magic Design](https://www.canva.com/)
-
-Canva ir viens no populārākajiem bezmaksas grafiskā dizaina rīkiem. Protams, arī šai platformai beidzot ir pieejami mākslīgā intelekta rīki un funkcijas, kas sociālo mediju satura radīšanu padara daudz ātrāku un efektīvāku.
-
-Jāmin gan, ka mākslīgā intelekta rīks – Magic Design – būs pieejams Canva pro maksas versijas lietotājiem, bet, ja ikdienā satura radīšana sagādā Tev lielas galvas sāpes, tad šis noteikti ir viens no risinājumiem.
-
-Automātiska prezentāciju, sociālo mediju publikāciju dizainu izveide, teksta pārvēršana dizainā, videomateriālu automātiska rediģēšana un kombinēšana – šīs un vēl daudzas citas funkcijas vienuviet Canva Magic design.
-
-![Beautiful.ai logotips](/img/2026/09/logo-beautiful-ai.webp)
-
-## 3. [Beautiful.ai](https://www.beautiful.ai/)
-
-Mūsuprāt, beautiful.ai ir viens no labākajiem mākslīgā intelekta rīkiem, kas ļauj ātri, ērti un pats galvenais – vienkārši – izveidot vizuāli pievilcīgu un profesionālu prezentāciju vien pāris minūtēs.
-
-Šajā rīkā atradīsi vairākas prezentācijas sagataves, no kurām vari izvēlēties sev vispiemērotāko – nav vairs jāuztraucas par to, kā piepildīt tukšu slaidu. Mūsu mīļākā funkcija – mākslīgais intelekts slaidā pievienoto saturu automātiski sakārto vizuāli pievilcīgā veidā.
-
-Beautiful.ai ir ļoti ērti un parocīgi lietot un tas nav pārbāzts ar nevajadzīgām un sarežģītām funkcijām. Mārketinga Skolas komandas apstiprināts un pārbaudīts rīks! :)
-
-![Podcastle logotips](/img/2026/09/logo-podcastle.webp)
-
-## 4. [PodCastle.ai](https://podcastle.ai/)
-
-Podcastle ir lielisks mākslīgā intelekta rīks, ja vēlies uzsākt savu podkāstu, tomēr Tev nav nekādu iepriekšējo zināšanu par video un audio rediģēšanu.
-
-Podcastle ir mākslīgā intelekta podkāstu rediģēšanas un ierakstīšanas aplikācija, ar kuras palīdzību var viegli ierakstīt video un audio “streams”, vienlaicīgi piedaloties tiešsaistes virtuālajās intervijās līdz pat 10 cilvēkiem.
-
-Notekti aplikācijas labākā funkcija ir audio rediģēšana, kas automātiski atbrīvosies no klusuma gabaliem Tavā podkāstā. Šī funkcija Tev palīdzēs samazināt audio fona troksni un ieteiks, kur sadalīt ieraksta klipus.
-
-Ja podkāsts ir kaut kas tāds par ko ilgi esi sapņojis, tad šis rīks ir pirmais solis ceļā uz to!
-
-![Synthesia logotips](/img/2026/09/logo-synthesia.webp)
-
-## 5. [Synthesia.io](https://www.synthesia.io/)
-
-Šis mākslīgā intelekta rīks mūs patīkami pārsteidza!
-
-Synthesia ir AI rīks, ar kura palīdzību iespējams izveidot video ar mākslīgā intelekta avatariem. Lieliska alternatīva, lai veidotu saturu video formātā gadījumos, kad nevēlies filmēties pats.
-
-Koncepts ir ļoti vienkāršs – ar mākslīgā intelekta palīdzību pārvērt savu uzrakstīto video tekstu jeb video “script” īsa formāta video. Izvēlētajiem avatariem vari pielāgot vēlamos balss toņus kā arī mākslīgais intelekts palīdzēs automātiski rediģēt video. Rīks būs izcili piemērots, lai veidotu “how to” video un īsa formāta video priekš TikTok vai Instagram platformām.
-
-![InVideo logotips](/img/2026/09/logo-invideo.webp)
-
-## 6. [InVideo](https://invideo.io/)
-
-Varbūt par šo mākslīgā intelekta rīku esi jau dzirdējis, jo InVideo ir viens no populārākajiem un izmantotākajiem video ģenerēšanas AI rīkiem, ar kura palīdzību vari pārvērst savas idejas video formātā.
-
-InVideo balstās uz video radīšanu, izmantojot “templates” jeb video sagataves, ko lietotājs var ātri un ērti pielāgot gan savām vēlmēm, gan savam zīmolam, piemēram, video sagatavēs nomainot krāsas vai pievienojot logotipu.
-
-Lieliska funkcija – InVideo ir piekļuve milzīgai attēlu un video datubāzei, kur vari smelties saturu un kā jau lielākajā daļā mākslīgā intelekta video ģenerēšanas rīkos. Ar InVideo varēsi ģenerēt savu video tekstu un neuztraukties par video manuālu rediģēšanu un pielāgošanu.
-
-## 7. [Opus.Clip](https://www.opus.pro/)
-
-Arī šis mākslīgā intelekta rīks ir noteikti kaut kas īpašs.
-
-Opus.Clip ir vispopulārākais jeb #Nr.1 video “clipping” AI rīks. Ar mākslīgā intelekta palīdzību varēsi vienu garu video pārvērst 10 īsa formāta video vien pāris klikšķos, kuri būs lieliski piemēroti publicēšanai TikTok vai Instagram platformās.
-
-Opus.Clip ļauj ietapīt DAUDZ laiku uz video rediģēšanu manuāli, tāpēc vari aizmirst par to un steidzies izmēģināt šo rīku.
+Šis saraksts ir īsāks un ar citu loģiku: **astoņi rīki, kas atrisina astoņus konkrētus darbus**, ar ko mazs uzņēmums saskaras katru nedēļu. Pie katra ir arī tas, kam tas neder — parasti tā ir noderīgākā daļa.
 
 {% infographic { id: "info-ai-riki-marketinga", title: "Kur MI rīki ietaupa laiku", items: [
   { label: "Attēli", text: "Vizuāļi bez fotosesijas." },
@@ -96,6 +25,114 @@ Opus.Clip ļauj ietapīt DAUDZ laiku uz video rediģēšanu manuāli, tāpēc va
   { label: "Video", text: "Montāža un subtitri." }
 ] } %}
 
-## Mārketinga skolas piedāvājums
+## Pirms sāc: viens rīks, viens darbs
 
-Ceram, ka Šie 7 mākslīgā intelekta rīki Tev ikdienā ietaupīs laiku un enerģiju, un varbūt pat aizstās kādas galvassāpes saistībā ar prezentāciju sagatavošanu, satura radīšanu un video rediģēšanu! Ja vēlies uzzināt vairāk par mākslīgo intelektu, Mēs Mārketinga skola iesakām tev izlasīt rakstu par [mākslīgā intelekta](/maksligais-intelekts/) integrēšanu savā uzņēmumā. Ja vēlies personalizētus ieteikumus, kas domāti tieši Tavam uzņēmumam, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 90 € par stundu.
+Biežākā kļūda ir savākt piecus abonementus un lietot vienu. Rīks pats par sevi neko neatrisina — atrisina process, kurā tas iekļaujas.
+
+Tāpēc praktiskākais veids ir šāds: nedēļu pieraksti, kuri darbi atkārtojas un aizņem laiku. Tikai tad meklē rīku tieši tam darbam. Gandrīz vienmēr izrādās, ka vajadzīgi divi, nevis astoņi.
+
+## 1. ChatGPT vai Claude — teksts un domāšana
+
+Ja izvēlies tikai vienu rīku, tas ir šis. [ChatGPT](https://chatgpt.com/) un [Claude](https://claude.ai/) der reklāmas tekstu variantiem, e-pastu melnrakstiem, garu tekstu saīsināšanai un ideju sarakstiem, kad tēmas ir beigušās.
+
+**Kam neder:** faktiem un skaitļiem. Modelis tos mēdz izdomāt pārliecinoši, tāpēc katrs skaitlis jāpārbauda. Kā izmantot šos rīkus, nezaudējot savu toni, aprakstīts rakstā [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/).
+
+## 2. Midjourney — attēli, kad fotosesija nav iespējama
+
+![Midjourney logotips](/img/2026/09/logo-midjourney.webp)
+
+[Midjourney](https://www.midjourney.com/) ģenerē attēlus pēc apraksta. Noder fona vizuāļiem, ilustrācijām un koncepta bildēm, kad reālas fotografēšanas nav.
+
+**Kam neder:** produktu bildēm. Ja pārdod konkrētu preci, cilvēks grib redzēt tieši to preci, nevis līdzīgu. Tāpat ģenerēts cilvēks nedrīkst uzdoties par Tavu komandu.
+
+## 3. Canva — dizains bez dizainera
+
+![Canva logotips](/img/2026/09/logo-canva.webp)
+
+[Canva](https://www.canva.com/) ir visnoderīgākais rīks tiem, kam nav dizainera. Veidnes visiem formātiem, fona noņemšana, izmēru maiņa un MI funkcijas vienā vietā.
+
+**Kam neder:** unikālas vizuālās identitātes izveidei. Veidnes ir ērtas, bet, ja neko nemaini, Tavs saturs izskatīsies kā vēl simt citiem. Praktiskus soļus apkopojām rakstā [kā izmantot Canva](/ka-izmantot-canva/).
+
+## 4. Beautiful.ai — prezentācijas
+
+![Beautiful.ai logotips](/img/2026/09/logo-beautiful-ai.webp)
+
+[Beautiful.ai](https://www.beautiful.ai/) pats sakārto slaidu izkārtojumu, kamēr Tu raksti saturu. Noder piedāvājumiem un iekšējām atskaitēm, kur svarīgs ātrums, ne oriģinalitāte.
+
+**Kam neder:** svarīgākajai pārdošanas prezentācijai, kurā vajag tieši Tavu stilu.
+
+## 5. Podcastle — audio un balss
+
+![Podcastle logotips](/img/2026/09/logo-podcastle.webp)
+
+[Podcastle](https://podcastle.ai/) tīra ierakstus, noņem fona troksni un ģenerē balsi. Noder podkāstiem un video balsij, kad ierakstīšanas apstākļi nav ideāli.
+
+**Kam neder:** emocionālam vēstījumam. Ģenerēta balss joprojām skan līdzeni, un reklāmā, kur svarīga sajūta, dzīva balss uzvar.
+
+## 6. Synthesia — video ar runājošu avatāru
+
+![Synthesia logotips](/img/2026/09/logo-synthesia.webp)
+
+[Synthesia](https://www.synthesia.io/) veido video, kurā avatārs runā Tavu tekstu, daudzās valodās. Noder apmācībām, instrukcijām un iekšējai komunikācijai.
+
+**Kam neder:** sociālo tīklu reklāmai. Tur uzvar autentiskums, un avatārs to nedod — par to sīkāk rakstā [digitālā mārketinga tendences](/5-digitala-marketinga-tendences-2025-gada/).
+
+## 7. InVideo — video no teksta
+
+![InVideo logotips](/img/2026/09/logo-invideo.webp)
+
+[InVideo](https://invideo.io/) pārvērš tekstu par video ar gataviem kadriem, mūziku un subtitriem. Ātrs veids, kā tikt pie pirmās versijas.
+
+**Kam neder:** ja gaidi gatavu rezultātu bez rediģēšanas. Automātiskie kadri bieži neatbilst tekstam, un tos nākas mainīt.
+
+## 8. Opus.Clip — gari video īsajos formātos
+
+[Opus.Clip](https://www.opus.pro/) no gara video izgriež īsos fragmentus vertikālajam formātam un pieliek subtitrus. Ja Tev ir podkāsts vai vebinārs, tas ir vienkāršākais veids, kā no tā dabūt desmit ierakstus.
+
+**Kam neder:** kad avota video nav laba fragmenta. Rīks izgriež, bet nerada.
+
+Kā šos fragmentus izmantot, lai tie tiešām tiek noskatīti, aprakstīts rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
+
+## Ko šie rīki kopā maksā
+
+Neliels aprēķins, jo šis jautājums parasti paliek neatbildēts.
+
+Teksta rīks maksas plānā izmaksā aptuveni divdesmit eiro mēnesī. Canva — līdzīgi. Video un balss rīki ir dārgāki, bet tos vairums maza uzņēmuma vajadzībām nemaz nevajag katru mēnesi; tos ir jēga ieslēgt uz to mēnesi, kad top konkrēts projekts.
+
+Praksē reāls sākuma komplekts mazam uzņēmumam iznāk ap četrdesmit eiro mēnesī. Salīdzini to ar stundām, ko tas ietaupa, un lēmums parasti ir vienkāršs. Svarīgāk ir cits: **neabonē neko, pirms neesi mēnesi lietojis bezmaksas versiju.**
+
+## Kur šie rīki nepalīdzēs
+
+Ir vērts to pateikt tieši, jo tas ietaupa vilšanos.
+
+Neviens no šiem rīkiem nepateiks, kāpēc klients izvēlas Tevi, nevis konkurentu. Neviens neizdomās Tavu piedāvājumu vai cenu. Un neviens neizlabos situāciju, kurā reklāma ved uz lapu, kas nepārdod.
+
+Rīki paātrina to, kas jau strādā. Ja pamatlietas nav sakārtotas, ātrāka ražošana tikai ātrāk iztērē budžetu — par to sīkāk rakstā [5 izplatītākās kļūdas Facebook reklāmās](/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/).
+
+## Ar kuru sākt
+
+Ja neesi lietojis nevienu, secība ir vienkārša. Sāc ar ChatGPT vai Claude, jo tas maina visvairāk darbu. Pievieno Canva, jo vizuāļi vajadzīgi katru nedēļu. Visu pārējo pievieno tikai tad, kad rodas konkrēta vajadzība.
+
+Divi rīki, kas lietoti katru dienu, dod daudz vairāk nekā astoņi, kas atvērti reizi mēnesī.
+
+## Biežākie jautājumi
+
+**Vai bezmaksas plāni ir pietiekami?**
+Sākumā gandrīz vienmēr jā. Maksas plāns kļūst pamatots, kad rīku lieto katru nedēļu un ierobežojumi sāk traucēt.
+
+**Vai šie rīki strādā latviski?**
+Teksta rīki — jā, labi, bet ar pārlasīšanu. Video un balss rīkos latviešu valodas kvalitāte ir nevienmērīga, tāpēc pārbaudi rezultātu pirms publicēšanas.
+
+**Vai MI aizstās dizaineru vai video montētāju?**
+Rutīnas darbos — lielā mērā jā. Tur, kur vajag oriģinālu ideju vai zīmola konsekvenci, cilvēks paliek. Godīgu skatījumu uz to sniedz raksts [mākslīgais intelekts: draugs vai drauds](/maksligais-intelekts/).
+
+**Cik daudz laika prasa iemācīties?**
+Pirmais rezultāts nāk pirmajā stundā. Labi rezultāti — pēc pāris nedēļām regulāras lietošanas.
+
+## Nākamais solis
+
+Rīki ir tikai puse. Otra puse ir process, kurā tie iekļaujas — un tieši tur parasti slēpjas lielākais ieguvums.
+
+Ja gribi saprast, kurš darbs Tavā uzņēmumā jāautomatizē vispirms, sāc ar rakstu [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) vai izrunā to [individuālā konsultācijā](/marketinga-konsultacijas/). Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
+
+Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai [Google Ads kursu](/google-ads-kurss/).
