@@ -500,10 +500,10 @@
       "id": "info-reklamas-teksta-ieteikumi",
       "page": "5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana",
       "placement": "in-article infographic before \"Mārketinga skola iesaka\"",
-      "aspect": "square",
+      "aspect": "landscape",
       "style": "paper",
-      "alt": "Infografika no izgrieztām papīra formām: pieci ieteikumi konvertējoša reklāmas teksta rakstīšanai — mērķauditorija, emocionālā saikne, virsraksts, īsums un vienkāršība",
-      "prompt": "Headline: «Pieci ieteikumi konvertējošam reklāmas tekstam». FIVE items laid out in TWO rows - three items in the upper row, two in the lower row, all left aligned on the same grid. «01» «Pazīsti mērķauditoriju» «Bez auditorijas izpētes teksts neieinteresē» - emblem: a pale grey circle crowd of six small discs with one navy disc among them, and a cyan ring around that one. «02» «Emocionālā saikne» «Aizkustini, sasmīdini, pārsteidz» - emblem: a navy speech-bubble rectangle with a small tail, and a cyan heart-shaped paper cut overlapping its corner. «03» «Ieintriģējošs virsraksts» «Pirmais, ko pamana lasītājs» - emblem: a pale grey page whose top bar is a thick cyan block, with three thin pale grey bars beneath it. «04» «Īss un kodolīgs teksts» «Bez gariem ievadiem» - emblem: a tall navy block of many stacked grey bars beside a short cyan block of only two bars, with a navy arrow from the tall one to the short one. «05» «Vienkāršība» «Skaidri vārdi pārdod labāk» - emblem: a knot of three overlapping grey paper shapes on the left resolving into one clean cyan bar on the right.",
+      "alt": "Infografika no izgrieztām papīra formām: pieci ieteikumi konvertējošam reklāmas tekstam",
+      "prompt": "Headline: «Pieci ieteikumi reklāmas tekstam». FIVE items in one row. «01» «Raksti vienam» «Lieto klienta vārdus» - emblem: a navy speech bubble with one small cyan figure beside it. «02» «Konkrētība» «Skaitlis vai termiņš» - emblem: a pale grey card with three navy bars and one solid cyan bar among them. «03» «Pirmā rinda» «Vispirms secinājums» - emblem: a pale grey text block whose top line is cut from cyan paper and is wider than the rest. «04» «Viens aicinājums» «Ne trīs izvēles» - emblem: one wide solid cyan button bar with two smaller navy bars crossed out beneath it. «05» «Konkurenta tests» «Ja to var teikt arī viņi, izmet» - emblem: two identical navy cards side by side with a cyan cross over one of them.",
       "quality": "high"
     },
     {
@@ -624,10 +624,10 @@
       "id": "info-reklamas-teksta-solis",
       "page": "isa-pamaciba-izcilu-reklamas-tekstu-veidosana",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: pieci soļi izcila reklāmas teksta veidošanai — iejūties lasītāja lomā, virsraksts, pircēja ieguvumi, aicinājums rīkoties un A/B testēšana",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: reklāmas teksts piecos soļos",
       "rationale": "A five-step writing method the reader is meant to apply; a numbered graphic makes it usable.",
-      "prompt": "Headline: «Reklāmas teksts piecos soļos». FIVE items in TWO rows - three above, two below. «01» «Iejūties lasītāja lomā» «Kam Tu raksti un kas viņu satrauc» - emblem: a navy head profile with a cyan square where the eye would be. «02» «Virsraksts» «Pirmais, ko pamana» - emblem: a pale grey page whose top bar is a thick cyan block above three thin grey bars. «03» «Pircēja ieguvumi» «Ne funkcijas, bet rezultāts» - emblem: three pale grey squares with navy tick marks and one cyan tick. «04» «Aicinājums rīkoties» «Pasaki, kas jādara tālāk» - emblem: a navy rectangle with a cyan button bar across its lower edge and a small navy cursor arrow on it. «05» «A/B testēšana» «Divi varianti, viens uzvarētājs» - emblem: two side-by-side rectangles, the left pale grey and the right cyan, with a navy tick above the cyan one."
+      "prompt": "Headline: «Reklāmas teksts piecos soļos». FIVE items in one row. «01» «Sāc ar cilvēku» «Klienta vārdi» - emblem: a navy speech bubble containing one small cyan square. «02» «Pirmā rinda» «Vispirms secinājums» - emblem: a pale grey text block whose top line is a wide cyan bar and the lines below are short navy bars. «03» «Viena formula» «PAS, BAB vai AIDA» - emblem: three navy blocks stacked as a descending staircase, the top one cyan. «04» «Ieguvums ar pierādījumu» «Skaitlis vai termiņš» - emblem: a navy card with a solid cyan bar and a small navy tick beside it. «05» «Vairāki varianti» «Trīs teksti vienā kopā» - emblem: three pale grey cards fanned out with the front one cut from cyan paper."
     },
     {
       "id": "info-google-ads-agentura",
