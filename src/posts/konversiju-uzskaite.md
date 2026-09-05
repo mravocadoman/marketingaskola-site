@@ -86,6 +86,8 @@ Ceturtais solis ir svarīgākais, un to izlaiž gandrīz visi. Pirmie trīs pār
  { label: "Salīdzini ar grāmatvedību", text: "Pēc nedēļas, ne pēc dienas." }
 ] } %}
 
+Tie paši dati ir pamats atkārtotai uzrunai; kuras auditorijas tur vēl strādā, aprakstīts rakstā [remārketings](/remarketings/).
+
 ## Četras kļūdas, kas sabojā datus
 
 **Viss ir konversija.** Ja kontā ir atzīmētas septiņas konversijas, tostarp lapas apskates, sistēma optimizējas uz lētāko no tām. Atstāj vienu vai divas, kas tiešām nozīmē naudu.

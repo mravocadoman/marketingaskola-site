@@ -152,6 +152,8 @@ Pēc tam Meta atrod līdzīgus cilvēkus, kuriem ir līdzīga uzvedība, demogr�
 
 Ja jāizvēlas viens formāts, izvēlies vertikālu video. Horizontāls attēls Reels sadaļā izskatās svešs, un tieši tur šodien bieži ir lētākais sasniegums.
 
+Kā šīs auditorijas salikt praktiski un kuras no tām 2026. gadā vēl strādā, aprakstīts rakstā [remārketings](/remarketings/).
+
 ## Ar ko sākt
 
 Praktiskā secība ir īsa. Vispirms sakārto datu signālu, tad izvēlies pārdošanas vai pieteikumu mērķi. Pēc tam izveido vienu kampaņu ar plašu auditoriju un trim līdz pieciem atšķirīgiem materiāliem. Atkārtoto mērķēšanu pievieno tikai tad, kad pirmā kampaņa jau savāc datus.

@@ -109,6 +109,8 @@ Uzraksti pirmo ekrānu no jauna, pievieno cenu vai diapazonu, izmet no formas pu
 
 Kad lapa pārliecina, reklāma kļūst lētāka pati no sevis: tas pats budžets atved tikpat cilvēku, bet vairāk no viņiem kļūst par klientiem. Kā tad plānot budžetu, aprakstīts rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
+Cilvēkus, kuri lapu apskatīja, bet neko nedarīja, var uzrunāt vēlreiz; kā, aprakstīts rakstā [remārketings](/remarketings/).
+
 ## Kāpēc to reti izdara pats īpašnieks
 
 Ne laika trūkuma dēļ. Tāpēc, ka savu lapu nevar izlasīt ar sveša cilvēka acīm.

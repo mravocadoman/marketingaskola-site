@@ -99,6 +99,8 @@ Uzzini vairāk par [digitālajiem mārketinga rīkiem šeit](/7-digitala-marketi
  { label: "Rezultātu mērīšana", text: "Atvērumi, klikšķi un pārdošana." }
 ] } %}
 
+Šo pašu sarakstu var izmantot arī reklāmā: augšupielādēts kontaktu saraksts šodien ir uzticamākā reklāmas auditorija, kāda pastāv. Par to rakstā [remārketings](/remarketings/).
+
 ## Piegādājamība: kas mainījies
 
 Gmail un Yahoo ir pastiprinājuši prasības sūtītājiem, kas izsūta lielākus e-pastu apjomus. Šīs prasības ietekmē arī nelielus uzņēmumus, tiklīdz saraksts kļūst lielāks.

@@ -1069,6 +1069,33 @@
       "alt": "Infografika no izgrieztām papīra formām: piecas idejas, ko uzfilmēt reklāmas video",
       "rationale": "The blank page is the real obstacle, so five ready formats are the most useful thing the article carries.",
       "prompt": "Headline: «Ko uzfilmēt». FIVE items in one row. «01» «Biežākais jautājums» - emblem: a navy speech bubble holding a solid cyan question-mark-free shape: a single thick cyan bar. «02» «Pirms un pēc» - emblem: two pale grey squares side by side, the left one plain and the right one carrying a solid cyan tick. «03» «Kā tas notiek» - emblem: three navy gear-free blocks connected left to right by a cyan line into a small cyan square. «04» «Biežākā kļūda» - emblem: a pale grey card with a navy bar crossed out by a solid cyan diagonal. «05» «Klienta balss» - emblem: a navy person silhouette beside a solid cyan speech bubble."
+    },
+    {
+      "id": "cover-remarketings",
+      "page": "remarketings",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Ciāna līnija, kas izliecas atpakaļ pie sākuma punkta, attēlojot atkārtotu uzrunu tam pašam cilvēkam",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Left of centre, one small solid cyan #03c3f8 square. A single flat cyan line leaves it travelling right, curves in a wide arc and returns to end beside the same square, forming an open loop that does not quite close. Two flat cool grey #55697e squares sit outside the loop, well apart, untouched by it. Generous empty navy. Asymmetric, subtle film grain. No text, letters, numbers, logos, arrows or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "Retargeting - the path that goes out and comes back to the same person, while everyone outside the loop is left alone."
+    },
+    {
+      "id": "info-remarketinga-auditorijas",
+      "page": "remarketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četras remārketinga auditorijas, sakārtotas pēc uzticamības",
+      "rationale": "The ranking is the whole argument of the article: what most guides describe first is now the weakest option.",
+      "prompt": "Headline: «Auditorijas pēc uzticamības». FOUR items in one row. «01» «Tavi saraksti» «Ko cilvēki devuši paši» - emblem: a pale grey list card with four short navy bars and one solid cyan bar, sitting on a solid navy base block. «02» «Iesaiste platformā» «Video un ziņas» - emblem: a navy vertical video frame with a solid cyan play triangle beside a small cyan speech bubble. «03» «Mājaslapas apmeklētāji» «Nepilnīgi» - emblem: a pale grey browser panel whose lower edge breaks into three separated navy fragments. «04» «Banneri svešās vietnēs» «Vājākais» - emblem: a small navy rectangle almost lost inside a much larger pale grey rectangle, with a single cyan dot in its corner."
+    },
+    {
+      "id": "info-remarketinga-kludas",
+      "page": "remarketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četras biežākās remārketinga kļūdas",
+      "rationale": "Each of these costs money every day it runs, and none of them shows up as a problem in the reporting.",
+      "prompt": "Headline: «Četras remārketinga kļūdas». FOUR items in one row. «01» «Tā pati reklāma» - emblem: three identical navy cards stacked with slight offsets, the front one carrying a solid cyan cross. «02» «Nav izslēgti klienti» - emblem: a navy person silhouette inside a pale grey circle with a solid cyan coin beside it. «03» «Pārāk garš logs» - emblem: a pale grey calendar panel of small navy squares with a long solid cyan bar running across many of them. «04» «Auditorija bez satura» - emblem: a navy empty picture frame with nothing inside and one small cyan square outside its lower corner."
     }
   ]
 }
