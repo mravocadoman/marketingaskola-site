@@ -112,6 +112,8 @@ HOOK → PROBLEM → SOLUTION → OUTCOME+ CTA
 - **CTA** jeb aicinājums rīkoties. Skaidrs nākamais solis. Aicinājums rīkoties nedrīkst būt agresīvs. Tam jābūt viegli saprotamam un noderīgam.
  Piemērs: "Pamēģini šo formulu savā nākamajā ierakstā un paskaties, kā mainās iesaiste. Ja vēlies personalizētu padomu tieši Tavam uzņēmumam, piesakies konsultācijai."
 
+Kā atrast tēmas, ko cilvēki tiešām meklē, aprakstīts rakstā [atslēgvārdu izpēte](/atslegvardu-izpete/).
+
 ## Ar ko sākt
 
 Nesāc ar satura plānu pusgadam. Paņem vienu jautājumu, ko klienti Tev uzdod katru nedēļu, un uzraksti godīgu atbildi ar konkrētiem skaitļiem. Tas ir vērtīgāk par desmit vispārīgiem ierakstiem.

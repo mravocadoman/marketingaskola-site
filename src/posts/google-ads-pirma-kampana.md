@@ -62,6 +62,8 @@ Izmanto **frāzes atbilstību** kā noklusējumu. Precīzā atbilstība ir pār�
 
 Tad pirmajā nedēļā katru dienu atver meklēšanas vaicājumu atskaiti un izslēdz visu, kas nav Tavs klients. Šis ir vienīgais Google Ads darbs, kas dod atdevi katru reizi, un tas aizņem desmit minūtes dienā.
 
+Kā šo sarakstu izveidot no nulles, aprakstīts rakstā [atslēgvārdu izpēte](/atslegvardu-izpete/).
+
 ## Solis 3: reklāmas teksts
 
 Google apvieno Tavus virsrakstus un aprakstus dažādās kombinācijās. Tavs uzdevums ir iedot materiālu, no kura tam ir ko izvēlēties.

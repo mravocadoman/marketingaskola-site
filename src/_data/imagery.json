@@ -1096,6 +1096,33 @@
       "alt": "Infografika no izgrieztām papīra formām: četras biežākās remārketinga kļūdas",
       "rationale": "Each of these costs money every day it runs, and none of them shows up as a problem in the reporting.",
       "prompt": "Headline: «Četras remārketinga kļūdas». FOUR items in one row. «01» «Tā pati reklāma» - emblem: three identical navy cards stacked with slight offsets, the front one carrying a solid cyan cross. «02» «Nav izslēgti klienti» - emblem: a navy person silhouette inside a pale grey circle with a solid cyan coin beside it. «03» «Pārāk garš logs» - emblem: a pale grey calendar panel of small navy squares with a long solid cyan bar running across many of them. «04» «Auditorija bez satura» - emblem: a navy empty picture frame with nothing inside and one small cyan square outside its lower corner."
+    },
+    {
+      "id": "cover-atslegvardu-izpete",
+      "page": "atslegvardu-izpete",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Balta meklēšanas rinda ar vienu ciāna vārdu bloku starp pelēkiem, attēlojot atslēgvārdu izvēli",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Across the middle sits a long horizontal row of flat cool grey #55697e rectangular blocks of varying widths, evenly spaced, running off both edges of the frame like words in a line. One block, left of centre, is solid cyan #03c3f8 and slightly taller than the rest. A single thin white #ffffff hairline runs beneath the whole row. Generous empty navy above and below. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "Keyword research - one term picked out of a line of many, without resorting to a magnifying glass."
+    },
+    {
+      "id": "info-meklesanas-nodoms",
+      "page": "atslegvardu-izpete",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri meklēšanas nodomi un to vērtība",
+      "rationale": "Intent is the whole argument: the highest-volume terms are the least valuable, and the picture has to make that inversion obvious.",
+      "prompt": "Headline: «Četri meklēšanas nodomi». FOUR items in one row. «01» «Informatīvs» «Liels apjoms, tāls pirkums» - emblem: a tall wide navy block with a very small cyan square at its top corner. «02» «Salīdzinošs» «Izvēlas» - emblem: two pale grey cards side by side with a solid cyan bar between them. «03» «Darījuma» «Mazs apjoms, liela vērtība» - emblem: a small navy block, clearly narrower than the first, filled almost entirely with solid cyan. «04» «Navigācijas» «Meklē konkrētu uzņēmumu» - emblem: a navy map pin above a pale grey card with one short cyan bar."
+    },
+    {
+      "id": "info-atslegvardu-seciba",
+      "page": "atslegvardu-izpete",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: atslēgvārdu izpēte piecos soļos",
+      "rationale": "The order matters more than the tools: it starts with customer language and ends with page structure, and tools sit in the middle.",
+      "prompt": "Headline: «Izpēte piecos soļos». FIVE items in one row. «01» «Klientu vārdi» - emblem: a navy telephone handset shape beside a solid cyan speech bubble. «02» «Search Console» - emblem: a pale grey panel with four navy bars and one solid cyan bar. «03» «Nodoma šķirošana» - emblem: three navy blocks of different sizes sorted into a descending row with the smallest cut from cyan paper. «04» «Rezultātu pārbaude» - emblem: a pale grey results page with three navy rows and a solid cyan frame around the top row. «05» «Viena lapa uz nodomu» - emblem: three small navy cards merging by short cyan lines into one larger pale grey page."
     }
   ]
 }

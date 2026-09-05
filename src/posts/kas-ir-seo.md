@@ -107,6 +107,8 @@ Kā šo saturu praktiski plānot un rakstīt, aprakstīts rakstā [satura mārke
 
 Ja Tavs bizness apkalpo cilvēkus konkrētā vietā, sāc nevis ar mājaslapu, bet ar [Google uzņēmuma profilu](/google-uznemuma-profils/); tur atdeve uz ieguldīto stundu ir vislielākā.
 
+Kā šos vaicājumus atrast un sakārtot pēc nodoma, aprakstīts rakstā [atslēgvārdu izpēte](/atslegvardu-izpete/).
+
 ## Cik ilgi jāgaida rezultāts
 
 Godīga atbilde: pirmās izmaiņas parasti redzamas pēc trim mēnešiem, nopietns rezultāts pēc sešiem līdz divpadsmit mēnešiem. Tāpēc SEO nav risinājums, ja klienti vajadzīgi jau nākamnedēļ. Tam der [Google reklāma](/google-reklama/) vai [Meta reklāma](/facebook-reklama/). Abus kanālus ir gudri izmantot paralēli: reklāma nes klientus tagad, bet SEO ar laiku samazina to cenu.
