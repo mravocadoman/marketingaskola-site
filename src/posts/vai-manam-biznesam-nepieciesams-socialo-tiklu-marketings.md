@@ -48,7 +48,7 @@ Ir situācijas, kurās nauda un laiks labāk atmaksājas citur.
 
 **Ja nav neviena, kas to darīs.** Sociālo tīklu profils nav vienreizējs projekts. Ja neviens nevar tam veltīt dažas stundas nedēļā, labāk nesākt vispār.
 
-**Ja mājaslapa vēl nepārdod.** Reklāma tikai ātrāk atved cilvēkus uz lapu, kas nepārvērš apmeklētājus par klientiem. Vispirms sakārto lapu, pēc tam domā par apmeklētāju piesaisti.
+**Ja mājaslapa vēl nepārdod.** Reklāma tikai ātrāk atved cilvēkus uz lapu, kas nepārvērš apmeklētājus par klientiem. Vispirms sakārto lapu, pēc tam domā par apmeklētāju piesaisti; ko tieši labot, aprakstīts rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
 
 {% infographic { id: "info-socialo-tiklu-abas-puses", title: "Vai sociālie tīkli ir Tavs kanāls", items: [
  { label: "Produktu var parādīt", text: "Attēls vai video pasaka vairāk par tekstu." },

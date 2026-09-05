@@ -52,6 +52,8 @@ Kas 2026. gadā strādā Instagram plūsmā:
 
 Plašāk par formātu esam rakstījuši sadaļā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
 
+Kā tos praktiski uzfilmēt ar telefonu, aprakstīts rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
+
 ## Solis trīs: pirmās trīs sekundes
 
 Vecais padoms bija "padari tekstu saistošu". Šodien ar to nepietiek. Cilvēks reklāmu redz kustībā, tāpēc pirmās trīs sekundes izšķir visu, un tās notiek attēlā, nevis parakstā.

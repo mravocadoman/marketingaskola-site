@@ -66,7 +66,7 @@ Praktiskā secība ir vienkārša. Google Analytics 4 atzīmē notikumu kā galv
 
 Vienu lietu Latvijā aizmirst īpaši bieži: **zvanus**. Pakalpojumu uzņēmumos liela daļa pieteikumu nāk pa telefonu, un tie nekur neparādās. Google Ads var uzskaitīt zvanus no reklāmas un no mājaslapā redzamā numura. Bez tā pusi rezultāta neredz neviens.
 
-Kā to visu ielikt kampaņā, aprakstīts rakstā [Google reklāma](/google-reklama/).
+Kā to visu ielikt pirmajā kampaņā, aprakstīts rakstā [Google Ads: kā palaist pirmo kampaņu](/google-ads-pirma-kampana/), bet kanāla vispārīgais vērtējums ir rakstā [vai Google reklāma ir efektīva](/google-reklama/).
 
 ## Kā pārbaudīt, vai tiešām strādā
 

@@ -57,6 +57,8 @@ Trīs lietas joprojām palīdz sasniegt cilvēkus bez maksas.
  { label: "Budžets izplatīšanai", text: "Bez tā redz tikai daļa sekotāju." }
 ] } %}
 
+Ko tieši filmēt un ar ko, aprakstīts rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
+
 ## Kāpēc maksas reklāma nav izvēle, bet nosacījums
 
 Šo ne vienmēr gribas dzirdēt, bet tā ir taisnība: sociālo tīklu platformas ir reklāmas uzņēmumi. Tāpēc bezmaksas izplatīšana tajās ir apzināti ierobežota.

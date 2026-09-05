@@ -129,6 +129,8 @@ Atceries arī, ka, lai sasniegtu vislabākos rezultātus, ir svarīgi regulāri 
 
 Ja budžeta plānošanu, kampaņas mērķu izvēli un auditoriju atlasi gribi apgūt soli pa solim, tieši tas ir [Meta reklāmas kursa](/meta-reklamas-kurss/) saturs.
 
+Lētākais veids, kā samazināt klienta cenu, bieži nav reklāmā, bet lapā, uz kuru tā ved; par to rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
+
 Bet skaties uz pareizo skaitli. Klikšķa cena ir tikai starpstacija; vienīgais rādītājs, pēc kura vērts pieņemt lēmumus, ir cik maksā viens klients un cik viņš atstāj kasē.
 
 Kā šo sistēmu uzstādīt no nulles, esam aprakstījuši rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Ja gribi, lai budžetu plāno un kontu vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).

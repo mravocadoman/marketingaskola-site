@@ -24,6 +24,8 @@ Parasti nestrādā nevis kanāls, bet uzstādījums. Šajā rakstā apskatām, k
  { label: "Kam pieder konts", text: "Datiem jāpaliek pie Tevis." }
 ] } %}
 
+Ja vispirms gribi izmēģināt pats, secība ir rakstā [Google Ads: kā palaist pirmo kampaņu](/google-ads-pirma-kampana/).
+
 ## Ko aģentūra tiešām dara
 
 Priekšstats, ka aģentūra "palaiž reklāmas", ir maldinošs. Reklāmu palaišana aizņem stundu. Pārējais darbs ir tas, kas nosaka rezultātu.

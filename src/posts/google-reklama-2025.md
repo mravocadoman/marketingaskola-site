@@ -24,6 +24,8 @@ Tas ir gan tās lielākais spēks, gan iemesls, kāpēc tā daudziem izrādās d
  { label: "Tikai Google vidē", text: "Ārpus tās reklāma neparādās." }
 ] } %}
 
+Ja esi izlēmis to izmēģināt, praktiskā secība ir rakstā [Google Ads: kā palaist pirmo kampaņu](/google-ads-pirma-kampana/).
+
 ## Kā Google reklāma strādā
 
 Google Ads ir izsole. Tu neizvēlies vietu, Tu piedāvā cenu par klikšķi uz konkrētu meklējumu, un algoritms izlemj, kurš parādīsies un kādā secībā.

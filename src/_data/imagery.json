@@ -1042,6 +1042,33 @@
       "alt": "Infografika no izgrieztām papīra formām: piecu minūšu pārbaude mājaslapai",
       "rationale": "Four checks the owner can run tonight without a developer, which is what makes the article actionable rather than a list of principles.",
       "prompt": "Headline: «Piecu minūšu pārbaude». FOUR items in one row. «01» «Piecu sekunžu tests» - emblem: a navy stopwatch outline with a solid cyan wedge inside it. «02» «Cenas tests» - emblem: a pale grey page with a navy magnifying glass over a solid cyan price tag shape. «03» «Telefona tests» - emblem: a tall navy phone outline with a solid cyan circle where a thumb would press. «04» «Formas tests» - emblem: a pale grey form panel with two navy field bars and a solid cyan tick beside it."
+    },
+    {
+      "id": "cover-reklamas-video-ar-telefonu",
+      "page": "reklamas-video-ar-telefonu",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Balta vertikāla kadra kontūra ar ciāna joslu augšdaļā, attēlojot vertikālu reklāmas video",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Left of centre, one tall narrow vertical rectangle drawn in a single thin white #ffffff hairline stands upright as a phone-shaped frame, cropped by the bottom edge of the image. Across its upper third runs one solid cyan #03c3f8 horizontal band. To its right, three flat cool grey #55697e horizontal bars of decreasing length sit at the lower left, well separated. Vast empty navy across the right half. Asymmetric, subtle film grain. No text, letters, numbers, logos or camera or UI iconography. No gradients, no glow, no 3D.",
+      "rationale": "Vertical video - the tall frame cropped by the edge, with the first seconds marked as the only band that carries colour."
+    },
+    {
+      "id": "info-video-tehniskais-minimums",
+      "page": "reklamas-video-ar-telefonu",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: tehniskais minimums reklāmas video filmēšanai ar telefonu",
+      "rationale": "Owners think they need a camera; the four things that actually change the result are all free or nearly free.",
+      "prompt": "Headline: «Tehniskais minimums». FOUR items in one row. «01» «Skaņa» «Klusa telpa» - emblem: a navy microphone shape with a solid cyan band across its middle. «02» «Gaisma» «Logs Tev priekšā» - emblem: a pale grey window panel divided into four panes with a solid cyan square in one pane. «03» «Vertikāli» «9:16» - emblem: a tall navy vertical frame beside a short wide navy frame, the tall one cut from cyan paper. «04» «Nostiprināts» «Trijkājis» - emblem: a navy tripod drawn as three straight legs meeting under a solid cyan rectangle."
+    },
+    {
+      "id": "info-video-idejas",
+      "page": "reklamas-video-ar-telefonu",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: piecas idejas, ko uzfilmēt reklāmas video",
+      "rationale": "The blank page is the real obstacle, so five ready formats are the most useful thing the article carries.",
+      "prompt": "Headline: «Ko uzfilmēt». FIVE items in one row. «01» «Biežākais jautājums» - emblem: a navy speech bubble holding a solid cyan question-mark-free shape: a single thick cyan bar. «02» «Pirms un pēc» - emblem: two pale grey squares side by side, the left one plain and the right one carrying a solid cyan tick. «03» «Kā tas notiek» - emblem: three navy gear-free blocks connected left to right by a cyan line into a small cyan square. «04» «Biežākā kļūda» - emblem: a pale grey card with a navy bar crossed out by a solid cyan diagonal. «05» «Klienta balss» - emblem: a navy person silhouette beside a solid cyan speech bubble."
     }
   ]
 }

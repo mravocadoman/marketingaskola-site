@@ -67,6 +67,8 @@ Labs piedāvājums ir konkrēts: ko cilvēks saņem, cik ilgā laikā un kas not
 
 Pārbaude ir ātra: aizstāj savu nosaukumu ar konkurenta nosaukumu. Ja teikums joprojām ir patiess, tas neko nepasaka.
 
+Kā izskatās lapa, kas šo piedāvājumu tiešām pārdod, aprakstīts rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
+
 ## 6. Cik naudas, cik laika un kurš to darīs
 
 Šo daļu izlaiž visbiežāk, un tieši tāpēc stratēģijas netiek īstenotas.

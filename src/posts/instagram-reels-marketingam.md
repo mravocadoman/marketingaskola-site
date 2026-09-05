@@ -215,6 +215,8 @@ Tieši šī kombinācija darbojas vislabāk: organiski testē, ar budžetu palie
 
 Tas pats amats der arī citur: kā šos video veidot TikTok un kāpēc materiāls pārceļas starp platformām, aprakstīts rakstā [TikTok reklāmas](/tiktok-reklamas-klientu-piesaistisanai/).
 
+Praktiskā filmēšanas puse, no gaismas līdz subtitriem, ir rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
+
 ## Ar ko sākt šonedēļ
 
 Uzfilmē trīs īsus vertikālus video ar telefonu. Pirmajās trīs sekundēs parādi cilvēku vai konkrētu problēmu. Subtitri ir obligāti. Katrā video iekļauj vienu domu.

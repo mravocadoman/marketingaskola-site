@@ -189,6 +189,8 @@ Izmanto SEO audita rīkus, piemēram, Ahrefs, SEMrush vai vienkāršo Google Sea
 
 Reizi sešos mēnešos pārskati vecos rakstus. Pievieno jaunu informāciju, izņem novecojušo un pārliecinies, ka raksts joprojām atbild uz jautājumu, kura dēļ cilvēks tajā nonāk.
 
+Vietējiem uzņēmumiem atsevišķs un ātrāks ceļš ir [Google uzņēmuma profils](/google-uznemuma-profils/), kas nosaka redzamību kartē un vietējos rezultātos.
+
 ## Nākamais solis
 
 Nesāc ar visu sarakstu. Pievieno mājaslapu Google Search Console, atrodi vienu vaicājumu, kur esi otrajā lapā, un pārraksti attiecīgo lapu tā, lai tā tiešām atbild uz jautājumu. Tas ir viens vakars darba un bieži dod labāku rezultātu nekā mēnesis tehnisku labojumu.

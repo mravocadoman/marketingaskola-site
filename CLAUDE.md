@@ -1130,6 +1130,42 @@ decision-shaped posts are deliberately short; padding them was rejected in
 favour of adding sections that were genuinely missing (what it costs in
 time and money, what to measure, what the tools actually cost).
 
+**Five new posts written 5 Sep 2026**, chosen by gap analysis rather than
+keyword volume: each one was already being linked toward by the rewritten
+cluster and had nowhere to land.
+
+| slug | why it exists |
+| --- | --- |
+| `/konversiju-uzskaite/` | 16 of 33 posts said tracking decides results; none explained it |
+| `/google-ads-pirma-kampana/` | the site sells a Google Ads course and had no practical campaign post |
+| `/google-uznemuma-profils/` | local search, the channel the trades examples in other posts need |
+| `/majaslapa-kas-pardod/` | posts say "fix the destination first" and had nowhere to send readers |
+| `/reklamas-video-ar-telefonu/` | posts repeatedly say "film three vertical videos" and never said how |
+
+Facts in these were **researched, not recalled** (Meta's one-click CAPI from
+spring 2026 and the 1-10 Event Match Quality score; Google retiring
+standalone Display into Demand Gen in July 2026 and AI Max absorbing DSA;
+Google Business Profile carrying the largest share of local ranking
+signals). Re-check them before reusing; this is the fastest-moving material
+on the site.
+
+**Owner directions that shaped them (5 Sep 2026):**
+- *"tracking also does not really decide the cost, just shows it"* — correct,
+  and an overclaim of mine had spread to three posts. The honest line, now
+  used everywhere: tracking makes the real cost visible and gives the
+  algorithm something to learn from; **decisions** lower the cost.
+- *"use smart copywriting and persuasion to move and inform people why
+  professional services like mine move the needle"* — each new post closes
+  with a section making that case from the article's own logic (tracking
+  breaks silently and nobody invoices you for it; you cannot read your own
+  page with a stranger's eyes), then three routed options: learn it, get it
+  audited, or hand it over. **Persuasion through specificity, never through
+  invented numbers** — the only figures used are the owner's own from
+  `/sazinies/` and the course pages.
+
+**Every post now has at least two inbound links from other posts.** New
+posts arrive as orphans; wire them in deliberately or they stay that way.
+
 **No affiliate links have been invented.** Outbound links point at the
 vendors themselves (ChatGPT, Claude, Canva, CapCut, MailerLite, Meta's own
 tools). Send real affiliate ids for a one-pass swap.

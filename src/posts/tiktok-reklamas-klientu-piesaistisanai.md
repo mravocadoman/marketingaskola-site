@@ -159,6 +159,8 @@ Divas atšķirības tomēr ir vērts zināt. Meta reklāmā rezultātu izšķir 
 
 Kā to salikt praktiski, aprakstīts rakstā [Instagram reklāma](/instagram-reklama/), bet kampaņas puse rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/). Par Instagram formātu sīkāk rakstā [Instagram Reels mārketingam](/instagram-reels-marketingam/).
 
+Praktiskā filmēšanas daļa, ko var izdarīt ar telefonu vienā pēcpusdienā, ir rakstā [kā uzfilmēt reklāmas video ar telefonu](/reklamas-video-ar-telefonu/).
+
 ## Nākamais solis
 
 Grupu TikTok kursu šobrīd neorganizējam. Ja gribi apgūt vertikālā video reklāmu strukturēti, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē, kur to pašu materiālu ieliekam kampaņā ar tavu kontu.
