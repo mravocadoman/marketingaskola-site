@@ -988,6 +988,33 @@
       "alt": "Infografika no izgrieztām papīra formām: ko darīt Google Ads kampaņas pirmajās divās nedēļās",
       "rationale": "Beginners fiddle daily with the wrong things; the picture separates what to touch every day from what to leave alone.",
       "prompt": "Headline: «Pirmās divas nedēļas». FOUR items in one row. «01» «Katru dienu» «Vaicājumi un negatīvie» - emblem: a pale grey list panel of navy bars with a solid cyan cross removing one of them. «02» «Neaiztiec» «Budžetu un cenas» - emblem: a navy hand shape flat over a pale grey slider bar with a cyan knob. «03» «Otrā nedēļa» «Izslēdz vājos» - emblem: four navy bars of unequal height with the tallest cut from cyan paper. «04» «Pēc mēneša» «Vērtē pēc klienta cenas» - emblem: a navy person silhouette beside a solid cyan coin circle."
+    },
+    {
+      "id": "cover-google-uznemuma-profils",
+      "page": "google-uznemuma-profils",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Ciāna atrašanās vietas punkts virs trīs baltām sarakstu līnijām, attēlojot vietējo meklēšanas rezultātu",
+      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Slightly left of centre, one solid cyan #03c3f8 map pin shape, drawn as a simple flat teardrop with a small navy dot at its centre, sits above three flat cool grey #55697e horizontal bars of decreasing length stacked with wide spacing. A single thin white #ffffff hairline runs horizontally behind the pin, edge to edge. Generous empty navy to the right. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "rationale": "Local search - one pin standing above the ordinary result rows, which is exactly what the map pack is."
+    },
+    {
+      "id": "info-vietejais-seo-signali",
+      "page": "google-uznemuma-profils",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri signāli, kas nosaka vietējo redzamību meklētājā",
+      "rationale": "Owners assume local ranking is about the website; the picture puts the profile first, where the weight actually sits.",
+      "prompt": "Headline: «Kas nosaka vietējo redzamību». FOUR items in one row. «01» «Uzņēmuma profils» «Kategorijas un darba laiks» - emblem: a solid cyan map pin above a pale grey card with two navy bars. «02» «Atsauksmes» «Skaits un svaigums» - emblem: three pale grey review cards stacked with slight offsets, each carrying two short navy text bars, and one solid cyan five-pointed star sitting on the front card. Do not draw a row of stars that could read as a low rating. «03» «Mājaslapa» «Lapa par pakalpojumu un pilsētu» - emblem: a pale grey browser panel with three navy bars and one cyan bar. «04» «Aktivitāte» «Jauni ieraksti un atbildes» - emblem: two overlapping navy speech bubbles, the smaller one solid cyan."
+    },
+    {
+      "id": "info-uznemuma-profila-soli",
+      "page": "google-uznemuma-profils",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: Google uzņēmuma profila sakārtošana četros soļos",
+      "rationale": "The article is a to-do list; the picture is the order to do it in, which is the part that decides whether it gets done at all.",
+      "prompt": "Headline: «Profils četros soļos». FOUR items in one row. «01» «Pamati» «Kategorija un darba laiks» - emblem: a pale grey card with a navy clock face whose hands are cyan. «02» «Atsauksmes» «Ar atbildēm uz katru» - emblem: a navy speech bubble containing a solid cyan five-pointed star. «03» «Foto un ieraksti» «Īsti attēli» - emblem: a pale grey picture frame holding a navy mountain shape with a solid cyan circle above it. «04» «Mājaslapa» «Pakalpojums un pilsēta» - emblem: a navy map pin joined by a short cyan line to a pale grey browser panel."
     }
   ]
 }
