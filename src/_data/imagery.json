@@ -565,6 +565,60 @@
       "alt": "Infografika: trīs kursi un trīs kanāli — Meta reklāma, Google Ads un SEO",
       "prompt": "Headline top-left: «Trīs kursi, trīs kanāli». Three columns, each ending with a duration line set in cool grey at the bottom of the column. Column one: index «01», label «Meta reklāma», note «Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē», duration «3 stundas». Column two: index «02», label «Google Ads», note «Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu», duration «3 stundas». Column three: index «03», label «SEO», note «Nopelni vietu meklētājā bez maksas par klikšķi», duration «3 stundas». Under column one draw four concentric thin rings tightening onto a single small node - a defined audience being targeted. Under column two draw a short horizontal query bar with a caret at its left end, and above the bar a row of five narrow vertical columns of different heights - bids in an auction. Under column three draw a vertical stack of six horizontal bars of descending length with one bar promoted upward out of the stack - a ranked result climbing.",
       "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
+    },
+    {
+      "id": "info-marketinga-tendences-2025",
+      "page": "5-digitala-marketinga-tendences-2025-gada",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: piecas digitālā mārketinga tendences — sociālo tīklu e-komercija, SEO sociālajos tīklos un balsī, mākslīgais intelekts, TikTok kā meklētājs un personalizācija",
+      "rationale": "The post is a numbered list of five trends - exactly the shape an infographic carries better than prose.",
+      "prompt": "Headline: «Piecas digitālā mārketinga tendences». FIVE items in TWO rows - three above, two below. «01» «Sociālo tīklu e-komercija» «Pirkums notiek turpat platformā» - emblem: a pale grey phone panel with a navy product square inside it and a cyan cart shape at its lower corner. «02» «SEO sociālajos tīklos un balsī» «Meklē ne tikai Google» - emblem: a navy magnifying circle with a cyan sound-wave bar beside it. «03» «Mākslīgais intelekts» «No satura līdz analītikai» - emblem: a navy square with four pale grey nodes joined to it and one cyan node. «04» «TikTok kā jaunais meklētājs» «Īsais video kļūst par atbildi» - emblem: a tall navy vertical frame with a cyan triangle centred in it. «05» «Personalizācija» «Saturs, kas pielāgots konkrētam cilvēkam» - emblem: three pale grey figures with one cyan figure among them."
+    },
+    {
+      "id": "info-reklamas-veida-izvele",
+      "page": "reklamas-veidi",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs soļi, kā izvēlēties pareizo reklāmas veidu — izproti mērķauditoriju, nosaki budžetu un mērķus, testē un analizē",
+      "rationale": "The post ends with a three-step choosing method; it is the practical part a reader wants to keep.",
+      "prompt": "Headline: «Kā izvēlēties pareizo reklāmas veidu». THREE items in one row. «01» «Izproti mērķauditoriju» «Kas ir Tavi klienti un kur viņi pavada laiku» - emblem: three pale grey figures with a navy ring closing around one of them and a cyan square at its centre. «02» «Nosaki budžetu un mērķus» «Ātri rezultāti vai ilgtermiņa izaugsme» - emblem: one long pale grey bar cut into three unequal segments, the middle one cyan, with a navy triangle marker below it. «03» «Testē un analizē» «Nav viena ideāla kanāla — lēmumu pieņem dati» - emblem: three navy bars of differing height on a baseline with a cyan arrow curving from the shortest back to the tallest."
+    },
+    {
+      "id": "info-epasta-marketinga-soli",
+      "page": "epasta_marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi e-pasta mārketingā — kvalitatīva liste, skaidrs kampaņas mērķis, automatizācija un rezultātu mērīšana",
+      "rationale": "The article is organised as list, campaign, automation, measurement - a sequence readers can act on.",
+      "prompt": "Headline: «E-pasta mārketings četros soļos». FOUR items in one row. «01» «Kvalitatīva liste» «Cilvēkam pašam jāgrib saņemt Tavas ziņas» - emblem: a pale grey page with three navy rows and a cyan tick square beside the top row. «02» «Skaidrs kampaņas mērķis» «Ko cilvēkam vajadzētu izdarīt pēc šī e-pasta» - emblem: a navy envelope with a cyan square button shape on it. «03» «Automatizācija» «E-pasts aiziet pēc konkrētas darbības» - emblem: a navy square linked by a pale grey line to two further squares, the last cyan. «04» «Rezultātu mērīšana» «Atvērumi, klikšķi un pārdošana» - emblem: four bars of rising height, the tallest cyan, on a pale grey baseline."
+    },
+    {
+      "id": "info-reels-uzbuve",
+      "page": "instagram-reels-marketingam",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: Reels uzbūve trīs daļās — hook pirmajās sekundēs, vērtība vidū un aicinājums rīkoties beigās",
+      "rationale": "The post explains the hook at length; showing where it sits in the clip makes the advice usable.",
+      "prompt": "Headline: «Reels uzbūve trīs daļās». THREE items in one row, reading as one clip left to right. «01» «Hook pirmajās sekundēs» «Jautājums vai negaidīts apgalvojums» - emblem: a tall navy vertical video frame whose top third is filled solid cyan. «02» «Vērtība vidusdaļā» «Konkrēts padoms, nevis vispārīgi vārdi» - emblem: the same tall navy frame with three pale grey content bars across its middle. «03» «Aicinājums beigās» «Pasaki, ko darīt tālāk» - emblem: the same tall navy frame with a cyan button bar across its lower third."
+    },
+    {
+      "id": "info-satura-hook-formula",
+      "page": "satura-marketings",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: Hook–Problem–Solution formula trijos soļos — aizķer uzmanību, nosauc problēmu, piedāvā risinājumu",
+      "rationale": "The post teaches one named formula; a three-beat diagram is the clearest way to carry it.",
+      "prompt": "Headline: «Hook — Problem — Solution». THREE items in one row forming one sequence. «01» «Aizķer uzmanību» «Pirmais teikums izlemj, vai lasīs tālāk» - emblem: a navy hook-shaped paper curve with a small cyan square caught on it. «02» «Nosauc problēmu» «Cilvēkam jāatpazīst sevi» - emblem: a pale grey page with a navy zigzag crack running down it and a cyan square at the break. «03» «Piedāvā risinājumu» «Konkrēts nākamais solis» - emblem: a navy key-like bar entering a cyan square opening."
+    },
+    {
+      "id": "info-seo-veidi",
+      "page": "seo-optimizacija-tavam-biznesam",
+      "style": "paper",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: trīs SEO optimizācijas veidi — lapas iekšējā optimizācija, tehniskais SEO un ārējās atsauces",
+      "rationale": "The post asks what kinds of SEO exist; the three-way split is the answer a reader keeps.",
+      "prompt": "Headline: «Trīs SEO optimizācijas veidi». THREE items in one row. «01» «Lapas saturs» «Atslēgvārdi, virsraksti un teksts» - emblem: a pale grey page with a navy heading bar and three shorter grey bars, one cyan. «02» «Tehniskais SEO» «Ātrums, struktūra un indeksēšana» - emblem: a navy square with a cyan gear-like notched square overlapping its corner. «03» «Ārējās atsauces» «Cik uzticamas vietnes uz Tevi norāda» - emblem: three pale grey squares joined by navy lines to one central cyan square."
     }
   ]
 }

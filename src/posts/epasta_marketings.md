@@ -9,6 +9,8 @@ image: "/img/gen/cover-epasta_marketings.webp"
 legacyImage: "/img/2025/12/epasta-marketings-ka-izveidot-kampanas-kas-palielina-pardosanu-thumbnail.png.png"
 categories: ["digitalais-marketings"]
 permalink: "/epasta_marketings/"
+keywords: ["e-pasta mārketings", "e-pasta kampaņas", "automatizācija", "e-pastu liste", "konversijas"]
+
 ---
 
 E-pasta mārketings bieži tiek saukts par vienu no ienesīgākajiem digitālā mārketinga kanāliem, taču vienlaikus tas ir arī viens no visbiežāk nepareizi izmantotajiem. Daudzi uzņēmumi sūta e-pastus “ķeksīša pēc”, neiedziļinoties ne auditorijas vajadzībās, ne saturā, ne stratēģijā. Rezultātā vēstules netiek atvērtas, klikšķu skaits ir zems un pārdošana nepieaug.
@@ -78,6 +80,13 @@ Automatizācija nozīmē, ka e-pasti tiek nosūtīti automātiski, balstoties uz
 Tieši šeit e-pasts kļūst par pārdošanas dzinēju, kas darbojas katru dienu. Tomēr, lai saprastu, vai sistēma strādā, ir regulāri jāmēra rezultāti. Jāseko līdzi atvēršanas rādītājiem, klikšķiem, pirkumiem un atteikumiem. Bez datiem nav iespējams pieņemt pamatotus lēmumus.
 
 Uzzini vairāk par [digitālajiem mārketinga rīkiem šeit](/7-digitala-marketinga-riki/).
+
+{% infographic { id: "info-epasta-marketinga-soli", title: "E-pasta mārketings četros soļos", items: [
+  { label: "Kvalitatīva liste", text: "Cilvēkam pašam jāgrib saņemt Tavas ziņas." },
+  { label: "Skaidrs kampaņas mērķis", text: "Ko cilvēkam vajadzētu izdarīt pēc šī e-pasta." },
+  { label: "Automatizācija", text: "E-pasts aiziet pēc konkrētas darbības." },
+  { label: "Rezultātu mērīšana", text: "Atvērumi, klikšķi un pārdošana." }
+] } %}
 
 ## Biežākās kļūdas e-pasta mārketingā
 

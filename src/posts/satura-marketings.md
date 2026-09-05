@@ -9,6 +9,8 @@ image: "/img/gen/cover-satura-marketings.webp"
 legacyImage: "/img/2025/12/satura-marketings-thumbnail.png.png"
 categories: ["digitalais-marketings"]
 permalink: "/satura-marketings/"
+keywords: ["satura mārketings", "satura veidošana", "copywriting", "hook formula", "zīmola saturs"]
+
 ---
 
 Ja Tu domā par mūsdienīgu klientu piesaisti, noteikti esi dzirdējis par satura mārketingu. Tā būtība ir ļoti vienkārša – cilvēki pērk no tiem, kurus saprot un kuriem uzticas. Statistikas dati rāda, ka 70% patērētāju vēlas uzzināt par uzņēmumu caur saturu, nevis tradicionālām reklāmām. Kvalitatīvs saturs būvē uzticību, pozicionē Tevi kā ekspertu savā jomā un rada ilgtermiņa attiecības ar klientiem.
@@ -54,6 +56,12 @@ Ja vēlies uzzināt, kā būt klientiem redzamam tieši tad, kad viņi Tevi mekl
 ## Kā izmantot content hook un hook problem solution formulu?
 
 Šīs formulas palīdz izveidot saturu, kas ne tikai informē, bet arī piesaista klientus.
+
+{% infographic { id: "info-satura-hook-formula", title: "Hook — Problem — Solution", items: [
+  { label: "Aizķer uzmanību", text: "Pirmais teikums izlemj, vai lasīs tālāk." },
+  { label: "Nosauc problēmu", text: "Cilvēkam jāatpazīst sevi." },
+  { label: "Piedāvā risinājumu", text: "Konkrēts nākamais solis." }
+] } %}
 
 ### Content Hook Formula — kā panākt, lai cilvēks apstājas un lasa tālāk
 

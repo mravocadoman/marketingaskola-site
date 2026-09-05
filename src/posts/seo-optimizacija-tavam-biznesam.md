@@ -9,6 +9,8 @@ image: "/img/gen/cover-seo-optimizacija-tavam-biznesam.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-2.jpg"
 categories: ["digitalais-marketings"]
 permalink: "/seo-optimizacija-tavam-biznesam/"
+keywords: ["SEO optimizācija", "meklētājprogrammu optimizācija", "tehniskais SEO", "atslēgvārdi", "SEM"]
+
 ---
 
 ## SEO optimizācija – kas tā ir un vai Tev tā ir nepieciešama?
@@ -67,6 +69,12 @@ Google algoritms ir gudrs – tas analizē ne tikai atslēgvārdus, bet arī las
 3.  Algoritms izvērtē lapas atbilstību, kvalitāti, struktūru.
 4.  Ja Tava lapa ir labi optimizēta – tā parādās meklēšanas rezultātu augšgalā.
 5.  Jo augstāk esi, jo lielāka iespēja, ka uz Tevi klikšķinās.
+
+{% infographic { id: "info-seo-veidi", title: "Trīs SEO optimizācijas veidi", items: [
+  { label: "Lapas saturs", text: "Atslēgvārdi, virsraksti un teksts." },
+  { label: "Tehniskais SEO", text: "Ātrums, struktūra un indeksēšana." },
+  { label: "Ārējās atsauces", text: "Cik uzticamas vietnes uz Tevi norāda." }
+] } %}
 
 ## Kas ir SEM un kā tas atšķiras no SEO?
 

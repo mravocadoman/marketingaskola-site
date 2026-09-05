@@ -772,7 +772,7 @@ the page as main nav page. Also remove Produkti page / nav item for now and
   marketingaskola.lv Google Calendar). The Meta course event
   `/meta-reklamas-pamati` is 3 h on Google Meet with **Offer seats = 12** and
   **no weekly hours at all**: the schedule "Working hours" carries **date
-  overrides**, one per course date (first Tuesday monthly, 9:00-12:00 Riga).
+  overrides**, one per course date (first Tuesday monthly, 10:00-13:00 Riga).
   Adding a month means adding a date override there AND a date in
   courseSessions.json - they are the same schedule and must match.
   Cal.com's own payment app is **Cal Pay, not Stripe**, so payment stays on
@@ -871,7 +871,7 @@ SEO the same but not clashing with Meta or Google and later in the day.
 
 | Course | Day | Time | Cal.com event | Schedule |
 | --- | --- | --- | --- | --- |
-| Meta reklāmas kurss | 1st Tuesday | 9:00-12:00 | `/meta-reklamas-pamati` (6262225) | Working hours |
+| Meta reklāmas kurss | 1st Tuesday | 10:00-13:00 | `/meta-reklamas-pamati` (6262225) | Working hours |
 | Google Ads kurss | 4th Tuesday | 14:00-17:00 | `/google-ads-kurss` (6949203) | Google Ads kurss (2325540) |
 | SEO kurss | 2nd Thursday | 16:00-20:00 | `/seo-kurss` (6949227) | SEO kurss (2325556) |
 

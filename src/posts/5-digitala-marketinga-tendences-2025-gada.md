@@ -9,6 +9,8 @@ image: "/img/gen/cover-5-digitala-marketinga-tendences-2025-gada.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px-1.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/5-digitala-marketinga-tendences-2025-gada/"
+keywords: ["digitālā mārketinga tendences", "sociālo tīklu e-komercija", "mākslīgais intelekts", "TikTok", "personalizācija", "SEO"]
+
 ---
 
 Gluži kā gadi plūst un mainās, arī digitālā mārketinga tendences nestāv uz vietas.
@@ -89,6 +91,14 @@ Digitālais mārketings un tā analītikas rīki spēj pavērt plašu ainu par T
 Sociālos tīklus noteikti iesakām izmantot interaktīvai komunikācijai – iekļauj auditoriju produktu ražošanas procesā, liec kientiem justies īpašiem un uzklausītiem, uzdod jautājumus, kā “Ko Tu labāk izvēlētos – pārgājienu dabā vai atpūtu spa”? Šķietami bezjēdzīgs jautājums var pavērt Tev apvāršņus un saprast tik daudz par patērētāja personību un vēlmēm.
 
 Arī influenceru mārketings sociālajos tīklos turpina augt, un tā trumpis ir uzticamība. Ņem vērā, ka ieteikumi no influenceriem, kuru saturs ir saistošs, auditorijai itin bieži šķiet ticamāki nekā paša uzņēmuma veidotās reklāmas.
+
+{% infographic { id: "info-marketinga-tendences-2025", title: "Piecas digitālā mārketinga tendences", items: [
+  { label: "Sociālo tīklu e-komercija", text: "Pirkums notiek turpat platformā." },
+  { label: "SEO sociālajos tīklos un balsī", text: "Meklē ne tikai Google." },
+  { label: "Mākslīgais intelekts", text: "No satura līdz analītikai." },
+  { label: "TikTok kā jaunais meklētājs", text: "Īsais video kļūst par atbildi." },
+  { label: "Personalizācija", text: "Saturs, kas pielāgots konkrētam cilvēkam." }
+] } %}
 
 ## Mārketinga skola iesaka
 

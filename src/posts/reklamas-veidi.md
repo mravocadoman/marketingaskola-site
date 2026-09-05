@@ -9,6 +9,8 @@ image: "/img/gen/cover-reklamas-veidi.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-2.png"
 categories: ["digitalais-marketings","google-reklama"]
 permalink: "/reklamas-veidi/"
+keywords: ["reklāmas veidi", "digitālā reklāma", "tradicionālā reklāma", "Google Ads", "reklāmas budžets", "mērķauditorija"]
+
 ---
 
 Mūsdienās reklāma ir neatņemama biznesa sastāvdaļa, taču ir tik daudz dažādi reklāmas veidi līdz ar to var būt sarežģīti saprast, kurš būs visefektīvākais tieši Tavam uzņēmumam.
@@ -154,6 +156,12 @@ Ja esi mazs uzņēmums, prioritizē izmaksu efektīvus risinājumus, piemēram, 
 ### 3. Testē un analizē rezultātus
 
 Nav viena ideāla reklāmas veida – testē dažādus kanālus un pielāgo stratēģiju, balstoties uz **datu analīzi un ROI mērījumiem**.
+
+{% infographic { id: "info-reklamas-veida-izvele", title: "Kā izvēlēties pareizo reklāmas veidu", items: [
+  { label: "Izproti mērķauditoriju", text: "Kas ir Tavi klienti un kur viņi pavada laiku." },
+  { label: "Nosaki budžetu un mērķus", text: "Ātri rezultāti vai ilgtermiņa izaugsme." },
+  { label: "Testē un analizē", text: "Nav viena ideāla kanāla — lēmumu pieņem dati." }
+] } %}
 
 ## Labākie rīki reklāmas kampaņu veidošanai
 

@@ -9,6 +9,8 @@ image: "/img/gen/cover-instagram-reels-marketingam.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-5.png"
 categories: ["digitalais-marketings"]
 permalink: "/instagram-reels-marketingam/"
+keywords: ["Instagram Reels", "Reels mārketingam", "īsie video", "hook", "sociālie tīkli"]
+
 ---
 
 Vai zini, kas šobrīd ir viens no spēcīgākajiem rīkiem Instagram Reels mārketingam? Autentisks un īss saturs, kas uzrunā jau pirmajās sekundēs.
@@ -90,6 +92,12 @@ _Izveido ieradumu publicēt vismaz 2 Reels nedēļā. Tas uztur algoritmu aktīv
 Lai tavs Instagram Reels video piesaistītu skatītāja uzmanību, tam jābūt efektīvi uzbūvētam. Un viss sākas ar 1.sekundi – Hook, ko izmanto.
 
 ![instagram reels uzbūve](/img/2025/04/Ka-veiksmigi-izmantot-Instagram-Reels-marketingam-1024x576.webp)
+
+{% infographic { id: "info-reels-uzbuve", title: "Reels uzbūve trīs daļās", items: [
+  { label: "Hook pirmajās sekundēs", text: "Jautājums vai negaidīts apgalvojums." },
+  { label: "Vērtība vidusdaļā", text: "Konkrēts padoms, nevis vispārīgi vārdi." },
+  { label: "Aicinājums beigās", text: "Pasaki, ko darīt tālāk." }
+] } %}
 
 ### Kas ir Hook?
 
