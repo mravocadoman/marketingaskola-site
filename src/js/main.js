@@ -183,4 +183,15 @@
     search.addEventListener("search", apply);
     if (search.value) apply();
   }
+
+  /* Infographic text version, open by default on phones.
+     The collages bake their labels into a 1536px-wide image. In the 602px
+     article column that reads at ~16px, but at 375px it renders at ~9px and
+     the notes at ~6.5px - unreadable, and most blog traffic is a phone. The
+     picture stays (it carries the structure); the words just stop being
+     hidden behind a disclosure on the screens where the picture cannot be
+     read. Without JS nothing changes: the details still works as a toggle. */
+  if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) {
+    document.querySelectorAll(".infographic-text").forEach(function (d) { d.open = true; });
+  }
 })();

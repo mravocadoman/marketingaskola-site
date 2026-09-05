@@ -974,6 +974,17 @@ white or off-white paper; it would vanish. Run it after regenerating any
 `.infographic` takes its background from `--canvas`, not `--card`, so the
 figure matches the page ground on both surfaces.
 
+**On phones the text version leads (5 Sep 2026).** These collages bake their
+labels into a 1536px-wide image. In the 602px article column that reads at
+~16px, but at 375px the image renders at 333px, so labels land at ~9px and the
+notes at ~6.5px — unreadable, and most blog traffic is a phone. Measured, not
+guessed. `main.js` therefore sets `open` on every `.infographic-text` under
+700px, so the words are visible and the picture supports them instead of
+carrying them. Desktop is unchanged (the disclosure still collapses), and with
+JS off nothing changes at all — the `<details>` still works as a toggle.
+**Do not solve this by shrinking the type in the prompts**: fewer, larger
+items per image is the real fix if one ever has to be redrawn.
+
 **2. Course and LP header images: the ORIGINAL house style, subject made
 explicit.** Flat colour blocking on `#020d1c`, cyan used sparingly, generous
 negative space, asymmetric, cropped by an edge — unchanged. What changed is that

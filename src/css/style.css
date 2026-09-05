@@ -1565,6 +1565,13 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .infographic-list li::before { content: counter(ig, decimal-leading-zero); position: absolute; left: 0; top: 3px; font-family: var(--font-display); font-weight: 600; font-size: var(--t-micro); letter-spacing: 0.08em; color: var(--tick); }
 .infographic-list strong { display: block; color: var(--heading); font-weight: 600; margin-bottom: 2px; }
 
+/* On phones the baked-in labels are ~9px, so the text version leads and the
+   picture supports it. main.js opens the details; this makes the open state
+   read like a caption rather than an expanded widget. */
+@media (max-width: 700px) {
+  .infographic-text[open] > summary { color: var(--heading); font-weight: 600; }
+  .infographic-list { gap: 14px; }
+}
 /* ---------- homepage hero on phones (3 Sep 2026) ----------
    Above the fold at 390x844 used to be: a two-line topbar, 96px of hero
    padding, headline, two stacked buttons and the top edge of a 340px stats
