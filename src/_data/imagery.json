@@ -678,10 +678,10 @@
       "id": "info-facebook-reklamas-etapi",
       "page": "facebook-reklamas-izstrade",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: seši Facebook reklāmas izveides etapi — stratēģija, mērķis, mērķauditorija, lokācija, budžets un formāts",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: Facebook reklāma piecos soļos — konts un signāls, mērķis, viena reklāmu kopa, materiāli un divas nedēļas",
       "rationale": "The article names six stages explicitly; a numbered graphic is exactly its shape.",
-      "prompt": "Headline: «Facebook reklāma sešos etapos». SIX items in TWO rows of three. «01» «Stratēģija» «Bez tās nav rezultātu» - emblem: a pale grey page with a navy route line stepping across it and a cyan square at its end. «02» «Mērķis» «Atpazīstamība vai pārdošana» - emblem: two navy rings with a cyan square at the centre. «03» «Mērķauditorija» «Pēc kādiem kritērijiem atlasīt» - emblem: five pale grey figures with a navy bracket around two and one cyan figure. «04» «Lokācija» «Kur reklāma parādīsies» - emblem: a tall navy phone frame with a cyan band across its top third. «05» «Budžets un laiks» «Cik un cik ilgi» - emblem: one long pale grey bar cut into three segments, the middle cyan. «06» «Formāts» «Bilde, video vai slaidšovs» - emblem: three frames of different proportions, the tall one cyan with a navy triangle."
+      "prompt": "Headline: «Facebook reklāma piecos soļos». FIVE items in one row. «01» «Konts un signāls» - emblem: a pale grey browser panel with a navy padlock and a cyan arrow leaving its base. «02» «Mērķis» - emblem: a navy shopping bag with a cyan handle. «03» «Viena kopa» - emblem: one wide navy rectangle with a small cyan dot at its centre. «04» «Materiāli» - emblem: three tall navy vertical frames, the middle one cut from cyan paper. «05» «Divas nedēļas» - emblem: a pale grey calendar panel of small navy squares with two cyan squares side by side. Notes under the labels: «Business Manager un Conversions API», «Pārdošana, nevis iesaiste», «Plaša auditorija», «Trīs līdz pieci atšķirīgi», «Nemaini neko bez datiem»."
     },
     {
       "id": "info-google-reklamas-riski",
@@ -697,9 +697,9 @@
       "page": "instagram-reklama",
       "style": "paper",
       "aspect": "landscape",
-      "alt": "Infografika no izgrieztām papīra formām: trīs Instagram reklāmas pamatelementi — mērķauditorijas izpēte, saistošs teksts un piemēroti vizuālie materiāli",
+      "alt": "Infografika no izgrieztām papīra formām: Instagram reklāmas trīs pamati — signāls, kreatīvs un pacietība",
       "rationale": "The article is built on exactly these three elements.",
-      "prompt": "Headline: «Instagram reklāmas trīs pamati». THREE items in one row. «01» «Mērķauditorijas izpēte» «Kam Tu runā» - emblem: three navy rings tightening on one cyan square among pale grey squares. «02» «Saistošs teksts» «Pirmā rinda izlemj visu» - emblem: a pale grey page whose top bar is a thick cyan block above three thin navy bars. «03» «Piemēroti vizuālie materiāli» «Attēls, ko pamana plūsmā» - emblem: a tall navy frame with a large cyan square filling its upper half."
+      "prompt": "Headline: «Instagram reklāmas trīs pamati». THREE items in one row. «01» «Signāls» «Pikselis un Conversions API strādā» - emblem: a navy server slab with a cyan arrow rising from it into a pale grey browser panel. «02» «Kreatīvs» «Trīs līdz pieci atšķirīgi video» - emblem: three tall vertical navy video frames side by side, the middle one cut from cyan paper. «03» «Pacietība» «Nemaini kampaņu katru dienu» - emblem: a pale grey calendar panel of small navy squares with a single cyan square marking one week."
     },
     {
       "id": "info-ai-marketinga-lomas",

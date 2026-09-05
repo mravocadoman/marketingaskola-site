@@ -2,69 +2,94 @@
 layout: post.njk
 title: "Facebook reklāmas: Kā reklamēt savu biznesu internetā?"
 seoTitle: "Facebook reklāmas: Kā reklamēt savu biznesu internetā? | Mārketinga Skola"
-description: "Vai vēlies uzzināt, kā Facebook reklāmas var palīdzēt Tavam biznesam? Šajā rakstā Tevi iepazīstināsim ar Facebook kampaņas izveides pamatiem!"
+description: "Kā 2026. gadā palaist Facebook reklāmu, kas pārdod: konts, signāls, pareizais mērķis, vienkārša uzbūve un pirmās divas nedēļas."
 date: 2022-01-09
-updated: 2025-04-29
+updated: 2026-09-05
 image: "/img/gen/cover-facebook-reklamas-izstrade.webp"
 legacyImage: "/img/2022/01/8.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/facebook-reklamas-izstrade/"
-keywords: ["Facebook reklāmas izstrāde", "reklāmas kampaņa", "mērķauditorija", "reklāmas budžets", "Ads Manager"]
+keywords: ["Facebook reklāma", "Meta reklāma", "Business Manager", "Conversions API", "reklāmas budžets"]
 
 ---
 
-Vai esi kādreiz aizdomājies par to, cik lielu lomu digitālā mārketingā pasaulē spēlē Facebook reklāmas? Mēs Tev varam sniegt atbildi: _Būtiski lielu, jo M_eta platformas _aktīvi izmanto 3,2 miljardi cilvēku katru mēnesi! (1 160 000 + Latvijā)_ Tā ir patiesi lieliska sociālo mediju platforma, kurā reklamēties, tāpēc, ja vēlies iepazīt Facebook reklāmas (Kas ietver arī [Instagram reklāmas](/instagram-reklama/)) tuvāk, tad šis bloga raksts ir domāts tieši Tev!
+Facebook reklāmu var palaist piecās minūtēs, nospiežot pogu "Reklamēt ierakstu". Tieši tāpēc lielākā daļa mazo uzņēmumu to izmēģina, neko neiegūst un secina, ka reklāma nestrādā.
 
-## Kas tad īsti ir Facebook reklāmas?
+Problēma nav platformā. Problēma ir tajā, ka šis pogas ceļš izlaiž trīs lietas, no kurām atkarīgs viss pārējais.
+
+Šis raksts ir praktiska secība: kas jāsakārto pirms pirmās kampaņas, kā to izveidot 2026. gadā un ko darīt pirmajās divās nedēļās.
+
+## Kas Facebook reklāma ir šodien
 
 <iframe title="Mārketinga Stratēģija: Facebook Reklāma Klientu Piesaistei (2025 – Reklāmas Aģentūras Padomi)" width="1080" height="608" src="https://www.youtube-nocookie.com/embed/iur9HvAaXVY" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Pavisam vienkārši: Tās ir reklāmas, kas tiek izveidotas un publicētas Facebook platformā, lai mērķētu tās uz tiem platformas lietotājiem, kuriem reklāma varētu šķist vissaistošākā. Lai pielāgotu reklāmas savai mērķauditorijai, ir nepieciešams atzīmēt dažādus vēlamos faktorus, kas auditorijai atbilst, piemēram, atrašanās vieta, demogrāfiskais stāvoklis vai intereses. Tādējādi Facebook reklāmas ieguvums ir tāds, ka to redz tikai tie lietotāji, kuri atbilst iepriekš atzīmētajiem faktoriem.
+Tā ir viena sistēma, nevis viena platforma. Palaižot reklāmu, Tu vienlaikus vari parādīties Facebook plūsmā, [Instagram](/instagram-reklama/) plūsmā un Reels sadaļā, Messenger un Meta partneru vietnēs. Tāpēc precīzāk to saukt par Meta reklāmu.
 
-**Lūk, vēl daži reklāmas ieguvumi:**
+Otra izmaiņa ir vēl svarīgāka. Agrāk cilvēks izvēlējās auditoriju, un sistēma tai rādīja reklāmu. Šodien sistēma pati meklē cilvēkus, kuri visdrīzāk nopirks, ja vien Tu tai iedod datus un vairākus reklāmas materiālus. Tavs darbs vairs nav tik daudz atlase, cik sagatavošana.
 
-- Viegli pielāgot savu budžetu;
-- Izmantojot analītiskos rādītājus, var rūpīgi sekot līdzi reklāmas efektivitātei;
-- Ir iespējams ātri un efektīvi gūt plašāku atpazīstamību, palielinot klientu skaitu.
+## Trīs lietas, kas jāsakārto pirms pirmās kampaņas
 
-## Stratēģijas izstrāde kā prioritāte
+**Konts, kas Tev pieder.** Reklāmas kontam un lapai jābūt [Meta Business Manager](https://business.facebook.com/) profilā, kas reģistrēts uz uzņēmumu. Ja to izveido darbinieks savā personīgajā profilā, konts pazūd kopā ar viņu.
 
-Pirms sāc savu reklāmas ceļojumu, ir jāvelta laiks stratēģijas izveidei. Bez konkrētas stratēģijas, būs tiešām viegli apjukt lielajā informācijas burzmā un piedāvājumu klāstā. Reklāmām ir jābūt mērķtiecīgām, jo bez mērķiem un konkrētiem plāniem tās diemžēl nebūs efektīvas.
+**Signāls no mājaslapas.** Ar pikseli vien vairs nepietiek, jo pārlūkprogrammas to bloķē. Vajag arī servera puses notikumus jeb Conversions API. Bez tā sistēma nezina, kurš nopirka, un mācās no nejaušiem datiem.
 
-Pirms ķeries klāt pie kampaņas izveides, uzdod sev šos jautājumus:
+**Piedāvājums, ko var pateikt vienā teikumā.** Ja Tu pats nevari pateikt, kāpēc cilvēkam būtu jāpērk tieši pie Tevis, reklāma to neizdomās. Šo daļu palīdz sakārtot [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).
 
-- Kādu produktu vai pakalpojumu es konkrēti vēlos reklamēt?
-- Uz kādu auditoriju es mērķēju?
-- Kā viņi izmantos manu produktu un ko tieši no tā iegūs?
-- Kāds ir manas kampaņas konkrētais mērķis:
- - Vai es vēlos iegūt jaunus klientus?
- - Vai tomēr gūt plašāku zīmola atpazīstamību?
- - Varbūt veicināt pārdošanas apjomus?
+## Kā izvēlēties kampaņas mērķi
 
-## Kādi ir Facebook reklāmas izveides soļi?
+Šī ir biežākā vieta, kur nauda aiziet garām. Meta piedāvā dažādus mērķus, un sistēma optimizē reklāmu tieši tam, ko Tu izvēlies.
 
-Reklāmas izveide sastāv no vairākiem etapiem, un mēs esam izvēlējušies šos 6 etapus kā pašus galvenos:
+Izvēlies **pārdošanu vai potenciālos klientus**, ja gribi pircējus. Tad algoritms meklē cilvēkus, kuri mēdz pirkt, nevis cilvēkus, kuri mēdz spiest "patīk".
 
-- [_Mārketinga stratēģijas izstrāde_](/marketinga-strategijas-izstrade/): Jau izcēlām to, cik šis posms ir svarīgs, bet tiešām atceries, ka bez konkrētas stratēģijas nav iespējami efektīvi rezultāti.
-- _Mērķa izvēle_: Posms, kurā Tev jāizvirza savs mērķis, piemēram, plašāka zīmola atpazīstamība vai lietotāju iesaistes palielināšana. Mērķim ir jāsaskan ar Taviem uzņēmējdarbības mērķiem.
-- _Mērķauditorijas atlase_: Posms, kurā izvēlies pēc kādiem kritērijiem pielāgot reklāmas lietotājiem.
-- _Lokācijas izvēle_: Posms, kurā izvēlies, kur tieši Tavas reklāmas šajā platformā būs redzamas, piemēram, storijos.
-- _Budžeta, laika un optimizācijas fiksēšana_: Posms, kurā vari izvēlēties savu reklāmas budžetu, izvēlēties, vai Tavas reklāmas uzrādīsies ar vai bez definēta sākuma un beigu posma, kā arī varēsi veikt reklāmas optimizāciju.
-- _Formāta izvēle:_ Posms, kurā izvēlies, vai Tavu reklāmu formāts būs, piemēram, bilde, video, slaidšovs vai vēl cits formāts.
+Neizvēlies **iesaisti vai sasniedzamību**, ja gribi pārdot. Tu saņemsi lētus klikšķus un komentārus no cilvēkiem, kuri nekad neko nepirks. Rādītāji izskatīsies labi, bet kase paliks tukša.
 
-Vērtīgākais, ko paņemt no šī bloga raksta? Facebook ir digitālā mārketinga veiksmes atslēga! Facebook ir lielisks veids, kā reklamēt savu biznesu internetā, protams, pirms tam izveidojot skaidru spēles plānu.
+**Atpazīstamība** ir godīgs mērķis, bet tikai tad, ja Tev jau ir stabila pārdošana un budžets, ko vari atļauties ilgtermiņā.
 
-{% infographic { id: "info-facebook-reklamas-etapi", title: "Facebook reklāma sešos etapos", items: [
- { label: "Stratēģija", text: "Bez tās nav rezultātu." },
- { label: "Mērķis", text: "Atpazīstamība vai pārdošana." },
- { label: "Mērķauditorija", text: "Pēc kādiem kritērijiem atlasīt." },
- { label: "Lokācija", text: "Kur reklāma parādīsies." },
- { label: "Budžets un laiks", text: "Cik un cik ilgi." },
- { label: "Formāts", text: "Bilde, video vai slaidšovs." }
+## Kampaņas uzbūve
+
+Vecais padoms bija veidot daudzas reklāmu kopas ar dažādām auditorijām. 2026. gadā tas parasti kaitē: kopas konkurē savā starpā, budžets sadalās, un neviena nesavāc pietiekami daudz datu, lai iemācītos.
+
+Sāc ar vienkāršāko uzbūvi:
+
+- viena kampaņa;
+- viena reklāmu kopa ar plašu auditoriju, tikai valsts, valoda un vecums;
+- trīs līdz pieci atšķirīgi reklāmas materiāli tajā;
+- automātiskie izvietojumi ieslēgti.
+
+Tas izskatās pārāk vienkārši, un tieši tāpēc tas strādā. Kā šī uzbūve izskatās praksē, esam parādījuši rakstā [Meta reklāmas](/meta-reklamas/).
+
+{% infographic { id: "info-facebook-reklamas-etapi", title: "Facebook reklāma piecos soļos", items: [
+ { label: "Konts un signāls", text: "Business Manager, pikselis un Conversions API." },
+ { label: "Mērķis", text: "Pārdošana, nevis iesaiste." },
+ { label: "Viena kopa", text: "Plaša auditorija, ne piecas šauras." },
+ { label: "Materiāli", text: "Trīs līdz pieci atšķirīgi." },
+ { label: "Divas nedēļas", text: "Nemaini neko bez datiem." }
 ] } %}
 
-## Mārketinga Skolas piedāvājums
+## Cik naudas vajag sākumā
 
-Ja vēlies padziļināti iepazīt Facebook un Instagram reklāmu pasauli, un gūt visu nepieciešamo informāciju, lai veidotu veiksmīgas reklāmas kampaņas, mēs esam izveidojuši mūsu apjomīgāko [Facebook un Instagram reklāmas kursu](/meta-reklamas-kurss/) tiešsaistes formātā.
+Latvijā reāls sākuma budžets vienam mērķim ir aptuveni desmit līdz divdesmit eiro dienā. Ar mazāku budžetu sistēma savāc pārāk maz datu, lai vispār iemācītos.
 
-Un, ja meklē profesionālu atbalstu savu mērķu sasniegšanai, mēs esam šeit, lai palīdzētu. Kā pieredzējusi reklāmas aģentūra, mēs piedāvājam [profesionālu palīdzību Facebook un Instagram reklāmu uzstādīšanā](/facebook-reklama/), nodrošinot, ka Tava kampaņa sasniedz vēlamos rezultātus visefektīvākajā veidā.
+Rēķinies, ka pirmās divas nedēļas ir mācīšanās, nevis peļņa. Ja šajā laikā izslēdz kampaņu vai katru dienu maini budžetu, mācīšanās sākas no nulles un rezultāta nav nekad.
+
+Kā veidojas cenas un no kā tās ir atkarīgas, esam sarēķinājuši rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
+
+## Ko darīt pirmajās divās nedēļās
+
+Pirmā nedēļa: neko nedari. Skaties, bet neaiztiec. Vienīgais izņēmums ir acīmredzama kļūda, piemēram, nestrādājoša saite.
+
+Otrā nedēļa: paskaties, kurš reklāmas materiāls dod lētākos rezultātus, un pieliec klāt divus jaunus, kas līdzinās uzvarētājam. Vājākos izslēdz. Auditoriju neaiztiec.
+
+Pēc mēneša: rēķini nevis atsevišķu reklāmu atdevi, bet to, cik maksā viens klients un cik kopā ienāca kasē. Cilvēks reklāmu var redzēt Facebook, bet nopirkt pēc trim dienām citur.
+
+## Biežākās kļūdas
+
+Pārāk sīki salikta interešu auditorija, kas ierobežo sistēmu. Viens reklāmas materiāls, kas mēneša laikā nolietojas. Mērķis "iesaiste", kad vajadzīgi pircēji. Un kampaņas maiņa katru dienu.
+
+Pilnu sarakstu ar to, kā katru no tām pamanīt, esam apkopojuši rakstā [5 visizplatītākās kļūdas reklāmas izvietošanā Facebook](/5-visizplatitakas-kludas-reklamas-izvietosana-facebook/).
+
+## Nākamais solis
+
+Ja gribi to visu izdarīt pats un savā kontā, to mācām [Meta reklāmas kursā](/meta-reklamas-kurss/). Trīs stundas tiešsaistē, kur kopā ejam cauri tieši šai secībai: konts, signāls, mērķis, uzbūve un materiāli.
+
+Ja gribi, lai to izdara kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja vēl neesi drošs, kurš no abiem variantiem ir pareizais Tavā situācijā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
