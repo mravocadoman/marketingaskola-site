@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Kas ir SEO un kāpēc tas ir būtisks mājaslapas redzamībai?"
 seoTitle: "Kas ir SEO un kāpēc tas ir būtisks mājaslapas redzamībai? | Mārketinga Skola"
-description: "Uzzini, kas ir SEO un kāpēc tas ir būtisks Tavas mājaslapas redzamībai. Praktiski padomi, kā piesaistīt vairāk klientu ar organisko trafiku."
+description: "Kas ir SEO, kā tas strādā praksē un kas mainījies, kopš meklētājs rāda atbildes savā lapā. Praktiski soļi, ar ko sākt jau šodien."
 date: 2025-12-11
 updated: 2026-09-05
 image: "/img/gen/cover-kas-ir-seo.webp"

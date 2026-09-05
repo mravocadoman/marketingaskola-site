@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Izcilu reklāmas tekstu veidošana - īsa pamācība"
 seoTitle: "Izcilu reklāmas tekstu veidošana - īsa pamācība | Mārketinga Skola"
-description: "Piecu soļu pamācība reklāmas tekstiem: sāc ar cilvēku, uzraksti pirmo rindu, izvēlies vienu formulu (PAS, BAB, AIDA), pierādi ieguvumu un testē vairākus variantus."
+description: "Piecu soļu pamācība reklāmas tekstiem: sāc ar cilvēku, uzraksti pirmo rindu, izvēlies vienu formulu (PAS, BAB, AIDA) un pierādi ieguvumu."
 date: 2022-07-08
 updated: 2026-09-05
 image: "/img/gen/cover-isa-pamaciba-izcilu-reklamas-tekstu-veidosana.webp"

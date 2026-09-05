@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera"
 seoTitle: "Kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera | Mārketinga Skola"
-description: "Uzzini, kā izmantot Canva, lai radītu profesionālas reklāmas bez dizainera! Izmēģini Canva AI un citus dizaina rīkus jau tagad!"
+description: "Kā ar Canva izveidot profesionālas reklāmas bez dizainera: zīmola komplekts, AI rīki, pirmā reklāma trijos soļos un divas robežas ģenerētiem attēliem."
 date: 2025-10-25
 updated: 2026-09-05
 image: "/img/gen/cover-ka-izmantot-canva.webp"

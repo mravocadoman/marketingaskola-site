@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas!"
 seoTitle: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas! | Mārketinga Skola"
-description: "Izmanto Mārketinga mācības, lai pilnveidotu savu mārketinga stratēģiju internetā! Iemācies, kā pārvaldīt sociālos tīklus jau tagad!"
+description: "Kas ir Facebook reklāma, kā saprast, vai platforma ir piemērota Tavam uzņēmumam, un ko šodien nozīmē iemācīties Meta reklāmu."
 date: 2022-06-11
 updated: 2026-09-05
 image: "/img/gen/cover-marketinga-macibas.webp"

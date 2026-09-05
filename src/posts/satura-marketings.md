@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod"
 seoTitle: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod | Mārketinga Skola"
-description: "Satura mārketings palīdz piesaistīt klientus un palielināt pārdošanu. Uzzini, kā veidot saturu, kas tiešām strādā un izceļ Tavu biznesu."
+description: "Kā veidot saturu, kas piesaista un pārdod: hook formulas, kāds saturs 2026. gadā vēl atmaksājas un ar ko sākt, ja plāna vēl nav."
 date: 2025-12-11
 updated: 2026-09-05
 image: "/img/gen/cover-satura-marketings.webp"

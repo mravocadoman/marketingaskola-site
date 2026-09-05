@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā"
 seoTitle: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā | Mārketinga Skola"
-description: "Mēs dzīvojam digitālā pasaulē, un šajā pasaulē digitālais mārketings un tā rīki ir kļuvuši par lielisku palīgu daudzu uzņēmumu izaugsmei."
+description: "Kas ir digitālais mārketings, kādi ir tā kanāli un ieguvumi, un kāpēc vērtība ir pārcēlusies no satura izgatavošanas uz izvēli, ko publicēt."
 date: 2024-02-15
 updated: 2026-09-05
 image: "/img/gen/cover-digitalais-marketings.webp"

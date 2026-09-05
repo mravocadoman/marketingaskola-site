@@ -2,7 +2,7 @@
 layout: post.njk
 title: "AI saturs bez zīmola balss zaudēšanas"
 seoTitle: "AI saturs bez zīmola balss zaudēšanas | Mārketinga Skola"
-description: "Kā izmantot mākslīgo intelektu satura veidošanā tā, lai teksts joprojām skan kā Tavs uzņēmums: trīs soļu process, konkrēti piemēri un pazīmes, ka saturs ir kļuvis bezpersonisks."
+description: "Kā izmantot mākslīgo intelektu satura veidošanā tā, lai teksts joprojām skan kā Tavs uzņēmums: trīs soļu process un pazīmes, ka saturs kļuvis bezpersonisks."
 date: 2026-08-21
 image: "/img/gen/cover-ai-saturs-bez-zimola-balss-zaudesanas.webp"
 categories: ["maksligais-intelekets", "digitalais-marketings"]
