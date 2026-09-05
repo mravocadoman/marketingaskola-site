@@ -660,10 +660,10 @@
       "id": "info-marketinga-riki-darbi",
       "page": "7-digitala-marketinga-riki",
       "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: septiņi digitālā mārketinga darbi un rīki tiem — saturs, analītika, mājaslapa, attēli, valoda, publicēšana un testēšana",
+      "aspect": "landscape",
+      "alt": "Infografika no izgrieztām papīra formām: septiņi mārketinga darbi un rīks katram no tiem",
       "rationale": "Seven named tools; grouping them by the job each one does is the useful part.",
-      "prompt": "Headline: «Septiņi darbi, septiņi rīki». SEVEN items in TWO rows - four above, three below. «01» «Saturs» «Melnraksti un idejas» - emblem: a pale grey page with three navy text bars and one cyan bar. «02» «Analītika» «Kas notiek mājaslapā» - emblem: four bars of rising height, the tallest cyan. «03» «Mājaslapa» «Vieta, kur cilvēks nonāk» - emblem: a navy browser panel with a cyan top bar. «04» «Attēli» «Bezmaksas vizuāļi» - emblem: a pale grey frame with a navy triangle mountain and a cyan square sun. «05» «Valodas kvalitāte» «Teksts bez kļūdām» - emblem: a navy page with a cyan tick in its corner. «06» «Publicēšana» «Ieplāno un aizmirsti» - emblem: a pale grey calendar grid with three cyan squares in a regular rhythm. «07» «Testēšana» «Divi varianti, viens uzvarētājs» - emblem: two rectangles side by side, the left pale grey and the right cyan."
+      "prompt": "Headline: «Septiņi darbi, septiņi rīki». SEVEN items laid out in two rows, four above and three below, evenly spaced. Each item is a big navy two-digit number, a bold label and a small note, with one emblem beneath. «01» «Melnraksti» «ChatGPT vai Claude» - emblem: a pale grey page with three navy text bars, one of them cyan. «02» «Redzamība» «Search Console» - emblem: a navy magnifying glass over a small cyan bar chart. «03» «Skaitļi» «Analytics» - emblem: three navy bars of rising height with a cyan arrow above them. «04» «Vizuāļi» «Canva» - emblem: a pale grey frame holding a navy triangle and a cyan circle. «05» «Video» «CapCut» - emblem: a tall navy vertical frame with a cyan play triangle. «06» «E-pasts» «MailerLite» - emblem: a navy envelope with a cyan flap. «07» «Publicēšana» «Business Suite» - emblem: a pale grey calendar panel of small navy squares with one cyan square."
     },
     {
       "id": "info-agentura-vai-komanda",

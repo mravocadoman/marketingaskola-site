@@ -2,97 +2,87 @@
 layout: post.njk
 title: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā"
 seoTitle: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā | Mārketinga Skola"
-description: "Reklāmu uzstādīšana internetā var būt sarežģīts process. Uzzini kādi ir 7 digitālā mārketinga rīki, kas palīdzēs vieglāk sasniegt mērķus!"
+description: "Septiņi digitālā mārketinga rīki, ko mazam uzņēmumam tiešām vajag, sakārtoti pēc darba, un divi, kurus no vecajiem sarakstiem var izsvītrot."
 date: 2022-05-08
-updated: 2024-10-21
+updated: 2026-09-05
 image: "/img/gen/cover-7-digitala-marketinga-riki.webp"
 legacyImage: "/img/2022/05/5.jpg"
 categories: ["marketinga-strategija"]
 permalink: "/7-digitala-marketinga-riki/"
-keywords: ["digitālā mārketinga rīki", "ChatGPT", "Google Analytics", "WordPress", "Buffer", "Grammarly"]
+keywords: ["digitālā mārketinga rīki", "Google Search Console", "Canva", "MailerLite", "bezmaksas rīki"]
 
 ---
 
-Vai jūties kā ļoti liela daļa uzņēmēju un dažreiz nodomā, ka digitālais mārketings ir efektīvs, bet tajā pašā laikā arī tik ļoti sarežģīts un laikietilpīgs process? Par laimi, eksistē daudzi digitālā mārketinga rīki, kas atvieglo uzņēmēju ikdienu, palīdzot no tā gūt maksimālo labumu.
+Rīku saraksti bieži ir garāki, nekā vajag. Praksē mazam uzņēmumam pietiek ar septiņiem rīkiem, un seši no tiem ir bez maksas vai gandrīz bez maksas.
 
-Šajā bloga rakstā uzzināsi par 7 lieliskiem digitālā mārketinga rīkiem, kurus paši izmantojam ikdienā. Uzzināsi par šo rīku funkcijām un sapratīsi, vai tie varētu būt nepieciešami Tava uzņēmuma digitālā mārketinga attīstībai.
+Šis ir saraksts, ko ikdienā lietojam paši. Tas ir sakārtots pēc darba, ko katrs rīks palīdz paveikt. Ja kāds rīks Tev nav vajadzīgs, tad nav. Šis saraksts nav jāievieš pilnībā.
 
-Patiešām ceram, ka šie digitālā mārketinga rīki Tev būs tikpat noderīgi cik mums!
+## 1. [ChatGPT](https://chatgpt.com/) vai [Claude](https://claude.ai/) melnrakstiem
 
-## 1. [ChatGPT](https://openai.com/)
+Darbs, ko tas atvieglo: tukšā lapa. Piecas virsrakstu versijas, e-pasta melnraksts, klientu atsauksmju sašķirošana pēc tēmām.
 
-ChatGPT ir mākslīgais intelekts, kas apmācīts apstrādāt milzīgu datu apjomu, kā rezultātā tas var paredzēt, kāds ir nākamais vārds teikumā. Citiem vārdiem sakot, komunicējot ar to čata formātā, iespējams ģenerēt dažāda veida saturu. Šī bezmaksas rīka darbība ir tiešām iespaidīga: bloga rakstu tēmas, sociālo tīklu posti un pat pilna apjoma bloga ieraksti – tas viss šim rīkam ir pa spēkam. Arī paši ikdienā izmantojam ChatGPT reklāmas tekstu izveidē, un iesakām to daŗit ari Tev!
+Ir viens svarīgs nosacījums: iedod tam savu materiālu. Klientu atsauksmes, cenu lapu, pēdējās sarunas piezīmes. Bez tā rīks uzrakstīs ļoti līdzīgu tekstu tam, ko uzrakstītu Tavam konkurentam.
 
-![ChatGPT logo](/img/2022/05/1681038628chatgpt-icon-logo-1024x301.webp)
+Ko ar to nedarīt: nepublicē tekstu bez pārlasīšanas. Skaitlis vai atsauce var būt izdomāta, bet teikums ap to skanēs nevainojami.
 
-## 2. [Google Analytics 4](https://developers.google.com/analytics)
+## 2. [Google Search Console](https://search.google.com/search-console/about/) redzamībai meklētājā
 
-Google Analytics ir visizplatītākais analītikas rīks internetā. Tas ir tiešām viegli izmantojams rīks, ar kura palīdzību var ļoti labi iepazīt savu klientu un mājaslapas apmeklētāju rīcību digitālajā vidē.
+Šis ir vienīgais rīks, kas rāda īstos Google datus par Tavu mājaslapu: ar kādiem vaicājumiem cilvēki Tevi atrod, kurā pozīcijā esi un kuras lapas Google vispār neredz.
 
-Tā standarta versija ir pieejama bez maksas un ietver dažādas lieliskas opcijas, piemēram, iespēju redzēt to, cik ilgi lietotāji ir apmeklējuši Tavu mājaslapu, no kurām tīmekļa vietnēm tie nākuši un izsekot reklāmas atdeves rādītājiem.
+Tas ir bez maksas, un tam nav alternatīvas. Ja mājaslapa tajā vēl nav pievienota, tas ir pirmais darbs šodienai. Kā to izmantot, aprakstīts rakstā [kas ir SEO](/kas-ir-seo/).
 
-![Digitālā mārketinga rīki | Google analytics logo](/img/2022/04/riki2.webp)
+## 3. [Google Analytics 4](https://analytics.google.com/) skaitļiem
 
-## 3. [WordPress](https://wordpress.com/)
+Rāda, no kurienes cilvēki nāk un ko dara Tavā lapā. Svarīgākā daļa nav atskaites, bet konversijas: pieteikums, zvans, pirkums. Bez tām visi pārējie skaitļi ir tikai apmeklējumu skaitīšana.
 
-Lai gan WordPress vairāk piederas pie Web Dizaina izstrādes rīkiem, nolēmām to tomēr iekļaut šajā sarakstā, jo uz šīs platformas esam veidojuši gan savu gan klientu mājaslapas. Kā jau noprotams, WordPressir rīks, ar kuru var veidot un uzturēt mājaslapas. Tas ir īpaši populārs blogeru un mazo uzņēmumu vidū. WordPress piedāvā izmantot jau iepriekš sagatavotus šablonus un izkārtojumus mājaslapas dizainam, lai atvieglotu mājaslapas veidotāja darbu. Populāras WordPress alternatīvas ir Wix, Shopify priekš e-veikalie un Mozello priekš Latvijā bāzētām mājaslapām un e-veikaliem.
+Uzstādi vismaz vienu konversiju, pirms sāc tērēt naudu reklāmai.
 
-![Digitālā mārketinga rīki | WordPress logo](/img/2022/04/riki3.webp)
+## 4. [Canva](https://www.canva.com/) vizuālajiem materiāliem
 
-## 4. [Unsplash](https://unsplash.com/)
+Banerus, prezentācijas un sociālo tīklu vizuāļus vari sagatavot bez dizainera. Svarīgākais solis, ko lielākā daļa izlaiž: vienreiz saliec zīmola krāsas un fontus. Tad visi nākamie vizuāļi izskatīsies kā viena uzņēmuma darbi.
 
-Uzņēmumam Getty Images piederošais Unsplash ir brīnišķīgs rīks, kurā Tu vari piekļūt ļoti daudzām bildēm, kuras vari izmantot pilnībā bez maksas!
+Kā to darīt praktiski, aprakstīts rakstā [kā izmantot Canva](/ka-izmantot-canva/).
 
-Bieži vien bildes nedrīkst izmantot autortiesību dēļ, kas kavē, piemēram, bloga raksta veiksmīgu vizuālo noformēšanu. Unsplash attēlus vari brīvi izmantot pat komerciāliem nolūkiem, neuztraucoties par autortiesību jautājumiem. Protams, var būt visādi un tomēr iesakām drošības pēc pārbaudīt, vai attēla licencē nav noteikti kādi ierobežojumi.
+## 5. [CapCut](https://www.capcut.com/) video
 
-Unsplash vēlamo attēlu var meklēt pēc atslēgvārdiem, kolekcijas, datuma vai fotogrāfa vārda. Platformā nav nepieciešams reģistrēties, lai gan, protams, vari Unsplash abonēt un saņemt platformas paziņojumus par jaunu saturu.
+Vertikālais video šobrīd ir viens no lētākajiem veidiem, kā sasniegt cilvēkus gan sociālajos tīklos, gan reklāmā. CapCut ļauj to samontēt telefonā: apgriezt, pievienot subtitrus un tekstu uz ekrāna.
 
-![Digitālā mārketinga rīki | Unsplash logo](/img/2022/04/riki4.webp)
+Subtitri ir vajadzīgi. Lielākā daļa skatās bez skaņas.
 
-## 5. [Grammarly](https://www.grammarly.com/)
+## 6. [MailerLite](https://www.mailerlite.com/) e-pastam
 
-Ir pieejami daudzi mārketinga rīki, kas palīdz satura rediģēšanā, taču, mūsuprāt, Grammarly ir klasika!
+E-pasta saraksts ir vienīgais kanāls, kas pieder Tev. Sekotājus var atņemt platforma, pozīcijas meklētājā var mainīt algoritms, bet adrešu saraksts paliek Tavā rīcībā.
 
-Grammarly ir ļoti populārs tiešsaistes rīks satura rediģēšanai, kuru digitālā mārketinga nolūkiem vari izmantot, veidojot bloga rakstus, attīstot e-pastu mārketinga saturu vai rakstot dažādus reklāmu tekstus.
-
-Grammarly ir pieejams gan kā mobilā lietotne, gan kā pārlūkprogrammas paplašinājums. Šajā programmā Tev teksta lodziņā ir jāieraksta vai jāielīmē savs teksts, un Grammarly ļoti efektīvi pārbauda teksta pareizību.
-
-Grammarly ir gan bezmaksas, gan maksas versija. Bezmaksas versijā tiek pārbaudītas pamata pareizrakstības, interpunkcijas un gramatikas kļūdas savukārt maksas versijā var pat atklāt plaģiātismu, un Grammarly iesaka, kā uzlabot Tava teksta stilu un toni.
-
-![Digitālā mārketinga rīki | Grammarly logo](/img/2022/04/riki5.webp)
-
-## 6. [Buffer](https://buffer.com/)
-
-Šis digitālā mārketinga rīks ir lielisks palīgs sociālo mediju satura menedžmentā. Ar Buffer var ietaupīt laiku un pūles, jo šis rīks nodrošina visaptverošu sociālo tīklu pārvaldību.
-
-Mēs paši šajā rīkā attīstām savu sociālo mediju mārketinga stratēģiju un plānu, jo Buffer var jau laikus saplānot, kurā datumā un cikos tiks publicētas sociālo mediju publikācijas jeb _posti_.
-
-Buffer piedāvā arī pieeju analītikai, kurā var redzēt, cik veiksmīgi un efektīvi Tavas publikācijas darbojas dažādās sociālo mediju platformās.
-
-![Digitālā mārketinga rīki | Buffer logo](/img/2022/04/riki6.webp)
-
-## 7. Google Optimize
-
-Google Optimize ir Google veidots A/B testēšanas un konversijas optimizācijas rīks.
-
-Šis rīks palīdz saprast, kura no versijām, piemēram, mājaslapām, ir visefektīvākā. Ar Google Optimize var arī viegli izveidot dažādas mājaslapu versijas, jo tajā ir vizuālā redaktora funkcija. Izmantojot vizuālo redaktoru, var viegli nomainīt virsrakstus, satura lodziņus, kā arī pievienot dažādus būtiskus elementus, kas varētu uzlabot konversijas rādītāju.
-
-Pēc šiem uzlabojumiem ar Google Optimize var salīdzināt, kura no mājaslapas versijām ir veiksmīgāka. Mums šīs rīks patīk, jo tādējādi ir iespējams atrast visefektīvāko variantu, kas visvairāk patīk mūsu klientiem un attiecīgi uzrāda augstākos konversijas rādītājus.
-
-![Digitālā mārketinga rīki | Google optimize logo](/img/2022/04/riki8.webp)
+MailerLite ir bez maksas līdz tūkstoš adresātiem un ietver automatizācijas. Arī šī mājaslapa to izmanto. Plašāk rakstā [e-pasta mārketings](/epasta_marketings/).
 
 {% infographic { id: "info-marketinga-riki-darbi", title: "Septiņi darbi, septiņi rīki", items: [
- { label: "Saturs", text: "Melnraksti un idejas." },
- { label: "Analītika", text: "Kas notiek mājaslapā." },
- { label: "Mājaslapa", text: "Vieta, kur cilvēks nonāk." },
- { label: "Attēli", text: "Bezmaksas vizuāļi." },
- { label: "Valodas kvalitāte", text: "Teksts bez kļūdām." },
- { label: "Publicēšana", text: "Ieplāno un aizmirsti." },
- { label: "Testēšana", text: "Divi varianti, viens uzvarētājs." }
+ { label: "Melnraksti", text: "ChatGPT vai Claude." },
+ { label: "Redzamība meklētājā", text: "Google Search Console." },
+ { label: "Skaitļi", text: "Google Analytics 4." },
+ { label: "Vizuāļi", text: "Canva." },
+ { label: "Video", text: "CapCut." },
+ { label: "E-pasts", text: "MailerLite." },
+ { label: "Publicēšana", text: "Meta Business Suite." }
 ] } %}
 
-## Mārketinga skola iesaka
+## 7. [Meta Business Suite](https://business.facebook.com/) publicēšanai un reklāmai
 
-Ja vēlies uzzināt vairāk tieši par pašu digitālo mārketingu, tad mēs iesakām izlasīt mūsu rakstu [“Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā”](/digitalais-marketings/), kurā tiek aprakstīti galvenie ieguvumi no digitālā mārketinga. Ja vēlies padomu tieši par sava uzņēmuma situāciju, [mārketinga konsultācija](/marketinga-konsultacijas/) maksā 60 € par 30 min vai 90 € par stundu.
+Facebook un Instagram ierakstus vari ieplānot vienā vietā. Turpat ir arī reklāmu pārvaldnieks. Mazam uzņēmumam ar vienu vai diviem kanāliem tas pilnībā aizstāj atsevišķu plānošanas rīku.
 
-Mēs ļoti ceram, ka šie 7 digitālā mārketinga rīki būs noderīgi arī Tev! Lai arī šie digitālā mārketinga rīki ir tik dažādi, uzskatām, ka tie cits citu lieliski papildina un varētu Tev ļoti palīdzēt atvieglot ikdienu!
+Ja kanālu ir vairāk un tie ietver LinkedIn vai TikTok, der [Buffer](https://buffer.com/). Tam ir bezmaksas plāns trim kanāliem.
+
+## Ko izsvītrot no vecajiem sarakstiem
+
+Divas lietas joprojām parādās ieteikumos, bet vairs neder.
+
+**Google Optimize.** Google to slēdza 2023. gadā. Ja meklē A/B testēšanu, sāc ar to, ko piedāvā pati reklāmu platforma vai mājaslapas sistēma. Atsevišķs rīks mazam uzņēmumam reti atmaksājas.
+
+**Atsevišķi rīki katram sīkumam.** Piecu rīku abonementi, kurus izmanto reizi mēnesī, izmaksā vairāk nekā viens rīks, ko izmanto katru dienu. Rīks, kuru neatver nedēļu, nav rīks. Tas ir rēķins.
+
+## Ar ko sākt, ja nav nekā
+
+Sāc šādā secībā, viens rīks nedēļā: Search Console, tad Analytics ar vienu konversiju, tad Canva ar zīmola krāsām. Pārējais var pagaidīt, līdz šie trīs strādā.
+
+Kā šos rīkus izmantot ātrāk, aprakstīts rakstā [8 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/), bet automatizācijas puse rakstā [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/).
+
+Ja gribi, lai kāds izvērtē Tavu situāciju un pasaka, kuri no šiem rīkiem Tev tiešām vajadzīgi, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja gribi apgūt reklāmas daļu pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/).
