@@ -113,7 +113,7 @@ Cilvēkus, kuri lapu apskatīja, bet neko nedarīja, var uzrunāt vēlreiz; kā,
 
 ## Kāpēc to reti izdara pats īpašnieks
 
-Ne laika trūkuma dēļ. Tāpēc, ka savu lapu nevar izlasīt ar sveša cilvēka acīm.
+Ne laika trūkuma dēļ. Tāpēc, ka savu lapu nav iespējams redzēt tā, kā to redz cilvēks, kurš tur nokļuvis pirmo reizi.
 
 Tu zini, ko pārdod, tāpēc pirmais ekrāns Tev ir saprotams. Tu zini, kāpēc cena ir tāda, tāpēc tās trūkums netraucē. Tu zini, ka forma strādā, jo kādreiz tā strādāja. Apmeklētājs neko no tā nezina. Tieši tāpēc skats no malas šeit ir vērtīgāks nekā jebkurā citā mārketinga darbā.
 

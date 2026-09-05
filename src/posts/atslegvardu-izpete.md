@@ -105,7 +105,7 @@ Vēl viena priekšrocība: reklāma atbild ātri. Nedēļa ar nelielu budžetu p
 
 **Izpēte vienreiz.** Vaicājumi mainās, īpaši tur, kur mainās tehnoloģijas vai likumi. Pārskati tos reizi pusgadā.
 
-## Kāpēc svešs skatiens šeit palīdz visvairāk
+## Kāpēc te visvairāk noder skats no malas
 
 Šis ir tas mārketinga darbs, kur pieredze savā nozarē traucē visvairāk.
 
