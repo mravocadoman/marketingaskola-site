@@ -884,7 +884,34 @@ kept in sync by hand. Both new events were **duplicated from the Meta event**,
 which is why they carry Offer seats = 12 and Google Meet without being
 configured again.
 
-**Cal.com automation notes, learned the hard way:** coordinate clicks land on
+**Cal.com automation notes, learned the hard way:** if the page reports
+`innerWidth: 0` and `document.hidden: true`, the tab is a BACKGROUND tab —
+Chromium never lays it out, so clicks register but React never opens the dialog
+and screenshots fail with "0 width". It is not a minimised window and resizing
+does not fix it. Bring the tab to the front first; on this machine the browser
+is **Brave, not Chrome**, so:
+
+```
+osascript -e 'tell application "Brave Browser"
+  repeat with w in windows
+    set i to 0
+    repeat with t in tabs of w
+      set i to i + 1
+      if URL of t contains "<some-url-fragment>" then
+        set active tab index of w to i
+        set index of w to 1
+        activate
+      end if
+    end repeat
+  end repeat
+end tell'
+```
+
+Reading Cal.com's tRPC API from the page works for inspection
+(`/api/trpc/availability/schedule.get?input=…`), but **writing through it is
+blocked by the permission classifier** — drive the UI instead.
+
+**More automation notes:** coordinate clicks land on
 the wrong row in this browser — always act on a `ref` from `find`. For the
 schedule `<select>`, open it and then TYPE the schedule name (or arrow down)
 and press Enter; clicking an option by ref or coordinate silently picks its
