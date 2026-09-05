@@ -983,6 +983,89 @@ draw the same meaningless scribble in every column, and three small equal
 drawings in a row on a field of white cannot be made to look good at any level
 of polish — something has to be oversized or cropped.
 
+## No background decoration on the dark infographics (5 Sep 2026)
+
+`DARK_INFO_SUFFIX` used to ask for a faint construction layer behind the
+content: long rules, dashed guides, registration squares and tick scales in
+`#16283f`, running off all four edges. Owner: *"whats up with that extra
+subtle linework in the edges... we agreed not to use that"* - the same
+decision already made about the hero (*"no grids or anything"*). The suffix
+now states the dark navy is empty and forbids construction layers, grids,
+dashed guides, registration marks and tick scales anywhere in the frame.
+Depth comes from the weight of the drawings alone. All five dark-info
+images were regenerated.
+
+**Equal drawings on one baseline beat a clever cross-column diagram.**
+`info-meta-kampanas-uzbuve` asked for a single hierarchy tree spanning the
+three columns. The model gave column 01 a small box with a dangling line and
+half a column of dead space while column 03 got a detailed mock, so the three
+drawings were different sizes and the picture read as unfinished. Owner:
+*"fix this image, its quite ugly"*. It is now three frames of identical size
+on a shared baseline, with nothing connecting them. Use that shape unless a
+diagram genuinely needs to flow between columns.
+
+## Latvian polish through the OpenAI API (5 Sep 2026)
+
+Owner: *"please consider using a later OpenAI model for writing via API;
+their Latvian is actually quite good, so let's test it on one article."*
+
+`node tools/lv-polish.mjs <slug> [--model=gpt-5.5] [--write]` sends a post's
+body to an OpenAI text model with a Latvian editing brief (fix calques,
+English sentence shapes, American marketing jargon and grammar; change no
+facts, structure, links, shortcodes or length; "Tu", short sentences, no em
+dashes). Without `--write` it writes `<slug>.polished.md` for a diff.
+
+**It is a second pass, not a writer.** What it reliably catches on this
+site's drafts: wrong cases (`tikai fakti` -> `tikai faktus`), agreement
+(`no lieliem datu apjomiem` -> `no liela datu apjoma un uz tā pamata`),
+outright typos (`salieekam`, `nediraini`), and anglicisms the owner has
+objected to (it replaces the noun `kreatīvs` with `reklāmas materiāls`
+throughout). What it costs: it flattens a couple of idioms per article into
+plainer phrasing, so **read the diff before applying**.
+
+Three guards, each added because the model broke something:
+- it verifies heading count, the link list and the `{% infographic %}`
+  blocks, and **exits 2 without writing** if any changed;
+- typographic quotes are normalised back to straight ones (the site uses
+  straight quotes everywhere);
+- **raw HTML lines are restored verbatim** - it rewrote an en dash inside a
+  YouTube embed's `title` attribute.
+
+Model ids on this key are the `gpt-5.x` / `gpt-6-astra` family; `gpt-5.5` is
+what these runs used. `gpt-5` is NOT a valid id, despite being the tool's
+old default.
+
+## The 2026/2027 blog rewrite pass (in progress)
+
+Owner: *"go through each blog article and re-write it for 2026/2027 current
+trends... deep linking between the relevant blog posts, and also outbound
+links to affiliates or actually good tools where appropriate. Leave those
+that are still relevant today without much changes. End posts with good
+CTAs."* Length target 900-1,100 Latvian words (Latvian runs ~40% shorter
+than English, so that is 1,200-1,400 English words - do not pad to hit a
+literal 1,000 floor).
+
+**Link priority, owner's own:** the Meta course and the agency services
+first, the general digital marketing course second, other lecturers' courses
+only where the topic genuinely belongs to them.
+
+**The Meta cluster shares one editorial line**, so the five posts agree
+rather than contradicting each other: the algorithm now picks the audience,
+so the work moved to (a) the signal - pixel PLUS Conversions API, (b) three
+to five genuinely different creatives per ad set, (c) leaving the campaign
+alone long enough to leave the learning phase. Stacked interest audiences and
+tight lookalikes are called out as harmful in a market this small; the 10%
+lookalike advice for Latvia is the owner's own and stays.
+
+Done so far: the five AI/trends posts, the three Google posts,
+`instagram-reklama`, `facebook-reklamas-izstrade`,
+`5-visizplatitakas-kludas-reklamas-izvietosana-facebook`, `meta-reklamas`,
+`cik-maksa-reklama-facebook`.
+
+**No affiliate links have been invented.** Outbound links point at the
+vendors themselves (ChatGPT, Claude, Canva, CapCut, MailerLite, Meta's own
+tools). Send real affiliate ids for a one-pass swap.
+
 ## Images must carry content (4 Sep 2026)
 
 Owner: *"I thought we agreed not to use the full-size sections with just one

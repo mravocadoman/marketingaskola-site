@@ -68,13 +68,20 @@ const out = (await res.json()).choices?.[0]?.message?.content?.trim()
   ?.replace(/[\u201c\u201d\u201e]/g, '"').replace(/[\u2018\u2019]/g, "'");
 if (!out) { console.error('empty response'); process.exit(1); }
 
+// Raw HTML blocks (the YouTube embeds) are markup, not prose - restore them
+// verbatim. The model rewrote an en dash inside an iframe's title attribute.
+const HTML = /^<[a-z][^>]*>.*$/gim;
+const originalHtml = body.match(HTML) || [];
+let h = 0;
+const restored = out.replace(HTML, () => originalHtml[h++] ?? '');
+
 // The model must not have touched the load-bearing parts.
 const shape = (t) => ({
   headings: (t.match(/^#{2,3} .+$/gm) || []).length,
   links: [...t.matchAll(/\]\(([^)]+)\)/g)].map((m) => m[1]).sort(),
   shortcodes: (t.match(/\{%\s*infographic[\s\S]*?%\}/g) || []),
 });
-const a = shape(body), b = shape(out);
+const a = shape(body), b = shape(restored);
 const problems = [];
 if (a.headings !== b.headings) problems.push(`headings ${a.headings} -> ${b.headings}`);
 if (JSON.stringify(a.links) !== JSON.stringify(b.links)) {
@@ -83,11 +90,11 @@ if (JSON.stringify(a.links) !== JSON.stringify(b.links)) {
   problems.push(`links changed (lost ${lost.length}, added ${added.length})${lost.length ? ': ' + lost.slice(0, 3).join(', ') : ''}`);
 }
 if (JSON.stringify(a.shortcodes) !== JSON.stringify(b.shortcodes)) problems.push('infographic shortcodes altered');
-if (/—/.test(out)) problems.push('em dash reintroduced');
+if (/—/.test(restored)) problems.push('em dash reintroduced');
 
 const words = (t) => t.replace(/\{%[\s\S]*?%\}/g, '').split(/\s+/).filter(Boolean).length;
-console.log(`${slug}: ${words(body)} -> ${words(out)} words, model ${MODEL}`);
+console.log(`${slug}: ${words(body)} -> ${words(restored)} words, model ${MODEL}`);
 if (problems.length) { console.error('REJECTED:\n  ' + problems.join('\n  ')); process.exit(2); }
 
-if (WRITE) { fs.writeFileSync(file, `---${frontMatter}---\n\n${out}\n`); console.log('written'); }
-else { fs.writeFileSync(path.join(ROOT, `${slug}.polished.md`), out); console.log(`preview -> ${slug}.polished.md (not applied; pass --write to apply)`); }
+if (WRITE) { fs.writeFileSync(file, `---${frontMatter}---\n\n${restored}\n`); console.log('written'); }
+else { fs.writeFileSync(path.join(ROOT, `${slug}.polished.md`), restored); console.log(`preview -> ${slug}.polished.md (not applied; pass --write to apply)`); }
