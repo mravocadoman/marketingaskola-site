@@ -567,15 +567,6 @@
       "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
     },
     {
-      "id": "info-marketinga-tendences-2025",
-      "page": "5-digitala-marketinga-tendences-2025-gada",
-      "style": "paper",
-      "aspect": "square",
-      "alt": "Infografika no izgrieztām papīra formām: piecas digitālā mārketinga tendences — sociālo tīklu e-komercija, SEO sociālajos tīklos un balsī, mākslīgais intelekts, TikTok kā meklētājs un personalizācija",
-      "rationale": "The post is a numbered list of five trends - exactly the shape an infographic carries better than prose.",
-      "prompt": "Headline: «Piecas digitālā mārketinga tendences». FIVE items in TWO rows - three above, two below. «01» «Sociālo tīklu e-komercija» «Pirkums notiek turpat platformā» - emblem: a pale grey phone panel with a navy product square inside it and a cyan cart shape at its lower corner. «02» «SEO sociālajos tīklos un balsī» «Meklē ne tikai Google» - emblem: a navy magnifying circle with a cyan sound-wave bar beside it. «03» «Mākslīgais intelekts» «No satura līdz analītikai» - emblem: a navy square with four pale grey nodes joined to it and one cyan node. «04» «TikTok kā jaunais meklētājs» «Īsais video kļūst par atbildi» - emblem: a tall navy vertical frame with a cyan triangle centred in it. «05» «Personalizācija» «Saturs, kas pielāgots konkrētam cilvēkam» - emblem: three pale grey figures with one cyan figure among them."
-    },
-    {
       "id": "info-reklamas-veida-izvele",
       "page": "reklamas-veidi",
       "style": "paper",
@@ -898,6 +889,15 @@
       "alt": "Infografika no izgrieztām papīra formām: četras Instagram Reels jomas — auditorija, saturs, trendi un audio, un optimizācija",
       "rationale": "Replaces a legacy four-quadrant graphic; distinct from the post's build diagram, which covers the clip itself.",
       "prompt": "Headline: «Reels: četras jomas». FOUR items in one row. «01» «Auditorija» «Kas viņiem rūp un ko viņi skatās» - emblem: five pale grey figures with a navy ring around two and one cyan figure. «02» «Saturs» «Humors, izglītojošs saturs, aizkulises» - emblem: a tall navy vertical frame with three pale grey bars and one cyan bar inside. «03» «Trendi un audio» «Adaptē trendu savai nišai» - emblem: five vertical bars reading as a waveform, the tallest cyan, with a navy arrow curving over them. «04» «Optimizācija» «Testē hooks, CTA un formātus» - emblem: two navy rectangles side by side with a cyan tick above the right one."
+    },
+    {
+      "id": "info-marketinga-tendences-2026",
+      "page": "5-digitala-marketinga-tendences-2025-gada",
+      "style": "paper",
+      "aspect": "square",
+      "alt": "Infografika no izgrieztām papīra formām: piecas digitālā mārketinga tendences — meklēšana pārceļas uz mākslīgo intelektu, sociālie tīkli kā meklētājs, autentiskums pārspēj produkciju, pirmās puses dati un MI procesos",
+      "rationale": "Replaces the 2025 version after the article was rewritten for 2026-2027; the old graphic listed trends the text no longer discusses.",
+      "prompt": "Headline: «Piecas digitālā mārketinga tendences». FIVE items in TWO rows - three above, two below. «01» «Meklēšana pārceļas uz MI» «Mērķis ir kļūt par avotu, ko asistents citē» - emblem: a pale grey panel with a navy answer block filling its top and three short grey result bars beneath it, one cyan. «02» «Sociālie tīkli kā meklētājs» «Pirkums notiek turpat plūsmā» - emblem: a tall navy phone frame with a pale grey search bar across its top and a cyan cart square at its base. «03» «Autentiskums pārspēj produkciju» «Telefona video bieži uzvar» - emblem: a small navy phone frame beside a larger pale grey studio frame, with a cyan tick above the phone. «04» «Pirmās puses dati» «Vērtīgi ir tie dati, kas pieder Tev» - emblem: a navy folder holding three pale grey record cards, the top one tabbed cyan. «05» «MI pārceļas uz procesiem» «Automatizē darbu, ne tikai tekstu» - emblem: four navy squares linked left to right by pale grey connectors, the third cyan."
     }
   ]
 }
