@@ -3,6 +3,7 @@ const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
+const crypto = require("crypto");
 
 const SRC = path.join(__dirname, "src");
 // "/img/a/b.webp" -> absolute path inside src/
@@ -46,6 +47,24 @@ module.exports = function (eleventyConfig) {
   // nothing until the image exists, so a missing generation never breaks the
   // build. Alt text comes from the imagery manifest, the single source.
   const imagery = JSON.parse(fs.readFileSync(path.join(SRC, "_data", "imagery.json"), "utf8")).slots;
+  // Cache-busting stamp for CSS/JS. SiteGround's cache layer overrides the
+  // "access plus 1 day" in .htaccess and serves these with max-age=31536000,
+  // so without a changing URL a returning visitor keeps last year's script -
+  // which silently swallowed the analytics rollout on 6 Sep 2026. The hash is
+  // of the file's own contents, so the URL only changes when the file does.
+  const bustCache = new Map();
+  eleventyConfig.addFilter("bust", (url) => {
+    if (bustCache.has(url)) return bustCache.get(url);
+    const file = onDisk(url);
+    let out = url;
+    if (fs.existsSync(file)) {
+      const hash = crypto.createHash("sha1").update(fs.readFileSync(file)).digest("hex").slice(0, 8);
+      out = `${url}?v=${hash}`;
+    }
+    bustCache.set(url, out);
+    return out;
+  });
+
   eleventyConfig.addShortcode("infographic", (o) => {
     const file = onDisk(`/img/gen/${o.id}.webp`);
     if (!fs.existsSync(file)) return "";

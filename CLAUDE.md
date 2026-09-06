@@ -644,6 +644,18 @@ every YouTube embed uses `youtube-nocookie.com`. Third-party tool logos in
 the AI-tools post are local (`src/img/2026/09/`); two dead affiliate links
 point at the vendors' own sites.
 
+**CSS and JS are cache-busted, and they have to be.** `.htaccess` asks for
+"access plus 1 day" on CSS/JS, but **SiteGround's own cache layer overrides it
+and serves them with `max-age=31536000` — a full year.** Without a changing
+URL, a returning visitor keeps last year's script: this silently swallowed the
+analytics rollout on 6 Sep 2026, and the browser was still running pre-deploy
+JS while the server had the new file. `base.njk` now passes every CSS/JS href
+through the `bust` filter (`eleventy.config.js`), which appends `?v=<8 hex of
+the file's own sha1>`, so the URL changes when and only when the file does.
+Verified by editing a file, rebuilding and reverting: the hash moved and came
+back. **Any new CSS/JS reference must use `| bust` or it will not reach
+returning visitors.**
+
 **Analytics + consent. GA4 IS LIVE (6 Sep 2026), loaded DIRECTLY, not via
 GTM.** `site.analytics.ga4Id` = `G-5SEQ339399`; `gtmId` stays empty. Setting
 EITHER renders the consent card (`.consent`) and `src/js/consent.js`, which

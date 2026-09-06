@@ -38,8 +38,8 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} — blogs" href="/feed.xml">
   <link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-var-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/fonts.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ "/css/fonts.css" | bust }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | bust }}">
   {%- set sd = { site: site, url: page.url, title: pageTitle, headline: title, description: description, image: pageImage, layout: layout, date: date, updated: updated, categories: categories, cat: cat, crumb: crumb, course: course, heroTitle: heroTitle, categoriesBySlug: categoriesBySlug } %}
   <script type="application/ld+json">{{ sd | schemaGraph | jsonld | safe }}</script>
 </head>
@@ -147,7 +147,7 @@
     <button class="btn btn--ghost btn--sm" type="button" data-consent-reject>Noraidīt</button>
   </div>
 </div>
-<script src="/js/consent.js" defer data-ga4="{{ site.analytics.ga4Id }}" data-gtm="{{ site.analytics.gtmId }}"></script>
+<script src="{{ "/js/consent.js" | bust }}" defer data-ga4="{{ site.analytics.ga4Id }}" data-gtm="{{ site.analytics.gtmId }}"></script>
 {% endif %}
 
 {%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}
@@ -156,7 +156,7 @@
   <span class="wa-float-label">WhatsApp</span>
 </a>
 
-<script src="/js/main.js" defer></script>
-<script src="/js/forms.js" defer></script>
+<script src="{{ "/js/main.js" | bust }}" defer></script>
+<script src="{{ "/js/forms.js" | bust }}" defer></script>
 </body>
 </html>
