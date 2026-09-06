@@ -644,6 +644,29 @@ every YouTube embed uses `youtube-nocookie.com`. Third-party tool logos in
 the AI-tools post are local (`src/img/2026/09/`); two dead affiliate links
 point at the vendors' own sites.
 
+**Meta pixel is live too (6 Sep 2026): `3817680101624891`**, in
+`site.analytics.metaPixelId`, loaded by the same consent gate as GA4 and never
+before "Piekrītu". `consent.js` maps the site's GA4 events onto Meta standard
+events — `generate_lead`→`Lead`, `begin_checkout`→`InitiateCheckout`,
+`schedule_booking`→`Schedule`, `contact_click`→`Contact` — so one `msTrack`
+call feeds both. Verified on the wire: PageView, Lead, InitiateCheckout and
+Contact all reached pixel 3817680101624891, and refusing consent loads nothing
+from Meta or Google at all.
+
+**Meta CAPI is NOT installed and cannot be, as the site stands.** The
+Conversions API sends events from a SERVER; this is a static site with no
+backend and no serverless host. Real options, none of them free of a decision:
+a Cloudflare Worker (free tier), a paid server-side tagging service such as
+Stape, or a Make/Zapier automation covering just the two events that matter
+(MailerLite lead, Stripe purchase). Owner's call — do not pretend the pixel
+alone is CAPI.
+
+**The privacy policy was wrong about the host.** It still named GitHub Pages
+as the processor doing the hosting, three days after the 3 Sep 2026 cutover to
+SiteGround; corrected, and Meta Platforms Ireland added to the processor list
+now that its pixel runs. **The exact SiteGround legal entity is not stated —
+confirm it with the owner and add it.**
+
 **CSS and JS are cache-busted, and they have to be.** `.htaccess` asks for
 "access plus 1 day" on CSS/JS, but **SiteGround's own cache layer overrides it
 and serves them with `max-age=31536000` — a full year.** Without a changing
