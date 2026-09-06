@@ -653,13 +653,37 @@ call feeds both. Verified on the wire: PageView, Lead, InitiateCheckout and
 Contact all reached pixel 3817680101624891, and refusing consent loads nothing
 from Meta or Google at all.
 
-**Meta CAPI is NOT installed and cannot be, as the site stands.** The
-Conversions API sends events from a SERVER; this is a static site with no
-backend and no serverless host. Real options, none of them free of a decision:
-a Cloudflare Worker (free tier), a paid server-side tagging service such as
-Stape, or a Make/Zapier automation covering just the two events that matter
-(MailerLite lead, Stripe purchase). Owner's call — do not pretend the pixel
-alone is CAPI.
+**Meta CAPI runs through n8n (6 Sep 2026).** The earlier note that CAPI was
+impossible here was wrong once the owner pointed at n8n: the missing server is
+the n8n Cloud instance they already run. Workflow **"Mārketinga Skola — Meta
+CAPI relay"** (`KiiDciCuUsCc3ezc`, personal project) exposes
+`POST /webhook/meta-capi`, hashes anything still raw, and forwards to
+`graph.facebook.com/v21.0/3817680101624891/events`.
+
+**Both roads share one `event_id`.** `msTrack` mints an id, passes it to the
+pixel as `{ eventID }` AND to the relay, so Meta keeps one event rather than
+counting the conversion twice. This is the part that silently double-counts if
+someone later changes one side without the other.
+
+**Personal data is hashed in the BROWSER**, not in n8n: `consent.js` SHA-256s
+email and phone (trimmed/lowercased; phone digits only, per Meta's
+normalisation) before the request leaves, so raw identifiers never reach n8n or
+its execution logs. Verified against Node's crypto: the browser hashes match
+byte for byte. The workflow also has `saveDataSuccessExecution: none` and
+routes failures to the shared alert workflow `R9OmXjBXdhYetZkM`.
+
+**Two things the owner must do before it works**, and it is INACTIVE until
+they do: create the `Meta CAPI token` credential (httpTemplatedCustomAuth,
+`{"headers":{"Authorization":"Bearer <token>"}}`, token generated in Events
+Manager for pixel 3817680101624891) and activate the workflow. The endpoint
+answers 404 until then, and `consent.js` swallows the failure so visitors never
+see it.
+
+**`capiSecret` in site.json is obfuscation, not authentication** — it ships in
+client JS and anyone can read it. It stops drive-by noise. The genuinely
+tamper-proof events would be server-to-server ones (Stripe purchase,
+MailerLite subscribe) posted to the same webhook; those are NOT built yet and
+are the obvious next step, because they also carry real revenue values.
 
 **The privacy policy was wrong about the host.** It still named GitHub Pages
 as the processor doing the hosting, three days after the 3 Sep 2026 cutover to

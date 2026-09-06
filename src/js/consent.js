@@ -15,6 +15,8 @@
   var script = document.currentScript;
   var ga4Id = script && script.getAttribute('data-ga4');
   var metaId = script && script.getAttribute('data-meta');
+  var capiUrl = script && script.getAttribute('data-capi');
+  var capiSecret = script && script.getAttribute('data-capi-secret');
   var gtmId = script && script.getAttribute('data-gtm');
   if (!ga4Id && !metaId && !gtmId) return;
 
@@ -44,12 +46,59 @@
     schedule_booking: 'Schedule',
     contact_click: 'Contact'
   };
-  window.msTrack = function (name, params) {
+
+  var cookie = function (n) {
+    var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+    return m ? m.pop() : undefined;
+  };
+  // Hash in the BROWSER so raw personal data never reaches n8n or its logs.
+  var sha256 = function (v) {
+    if (!v || !window.crypto || !crypto.subtle) return Promise.resolve(undefined);
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(String(v)))
+      .then(function (b) {
+        return Array.prototype.map.call(new Uint8Array(b), function (x) {
+          return ('0' + x.toString(16)).slice(-2);
+        }).join('');
+      })
+      .catch(function () { return undefined; });
+  };
+
+  // Same event, two roads: the pixel from the browser and the Conversions API
+  // from n8n. Both carry the SAME event_id, so Meta keeps one and drops the
+  // duplicate. The server road survives the ad blockers that kill the pixel.
+  function toCapi(metaName, params, id, identity) {
+    if (!capiUrl) return;
+    var idty = identity || {};
+    Promise.all([sha256(idty.email && String(idty.email).trim().toLowerCase()),
+                 sha256(idty.phone && String(idty.phone).replace(/[^0-9]/g, ''))])
+      .then(function (h) {
+        var body = {
+          event_name: metaName,
+          event_id: id,
+          event_source_url: location.href,
+          action_source: 'website',
+          client_user_agent: navigator.userAgent,
+          fbp: cookie('_fbp'),
+          fbc: cookie('_fbc'),
+          em: h[0],
+          ph: h[1]
+        };
+        if (params && params.value !== undefined) { body.value = params.value; body.currency = params.currency || 'EUR'; }
+        var headers = { 'content-type': 'application/json' };
+        if (capiSecret) headers['x-ms-secret'] = capiSecret;
+        // keepalive so the request survives the click navigating away.
+        fetch(capiUrl, { method: 'POST', headers: headers, body: JSON.stringify(body), keepalive: true })
+          .catch(function () { /* analytics must never affect the visitor */ });
+      });
+  }
+
+  window.msTrack = function (name, params, identity) {
     try { gtag('event', name, params || {}); } catch (e) { /* never break the page for analytics */ }
-    try {
-      var meta = META_EVENT[name];
-      if (meta && window.fbq) window.fbq('track', meta, params || {});
-    } catch (e) { /* same */ }
+    var meta = META_EVENT[name];
+    if (!meta) return;
+    var id = name + '.' + Date.now() + '.' + Math.random().toString(36).slice(2, 10);
+    try { if (window.fbq) window.fbq('track', meta, params || {}, { eventID: id }); } catch (e) { /* same */ }
+    try { toCapi(meta, params, id, identity); } catch (e) { /* same */ }
   };
 
   var add = function (src) {

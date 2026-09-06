@@ -147,7 +147,7 @@
     <button class="btn btn--ghost btn--sm" type="button" data-consent-reject>Noraidīt</button>
   </div>
 </div>
-<script src="{{ "/js/consent.js" | bust }}" defer data-ga4="{{ site.analytics.ga4Id }}" data-meta="{{ site.analytics.metaPixelId }}" data-gtm="{{ site.analytics.gtmId }}"></script>
+<script src="{{ "/js/consent.js" | bust }}" defer data-ga4="{{ site.analytics.ga4Id }}" data-meta="{{ site.analytics.metaPixelId }}" data-capi="{{ site.analytics.capiUrl }}" data-capi-secret="{{ site.analytics.capiSecret }}" data-gtm="{{ site.analytics.gtmId }}"></script>
 {% endif %}
 
 {%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}

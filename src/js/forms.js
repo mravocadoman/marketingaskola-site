@@ -110,10 +110,14 @@
 
   function succeed(form) {
     // GA4: the one place every successful submission passes through.
-    if (window.msTrack) window.msTrack('generate_lead', {
-      form_id: form.getAttribute('data-form') || 'unknown',
-      page_path: location.pathname
-    });
+    if (window.msTrack) {
+      var val = function (n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value : ''; };
+      // The identity is hashed in consent.js before it leaves the browser.
+      window.msTrack('generate_lead', {
+        form_id: form.getAttribute('data-form') || 'unknown',
+        page_path: location.pathname
+      }, { email: val('email'), phone: val('phone') });
+    }
     var tpl = form.querySelector('template[data-success]');
     if (!tpl) return;
     var done = tpl.content.cloneNode(true);
