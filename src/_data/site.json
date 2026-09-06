@@ -12,7 +12,9 @@
   "linkedin": "https://www.linkedin.com/in/rihards-ze/",
   "whatsapp": "https://wa.me/37126673384",
   "analytics": {
-    "_comment": "Google Tag Manager container id (GTM-XXXXXXX). Empty = no analytics, no cookie banner. When set, src/js/consent.js shows the banner and loads GTM only after 'Piekrītu'; preview builds (PREVIEW=1) never load it.",
+    "_comment": "Set EITHER ga4Id (G-XXXXXXXXXX, loads gtag.js straight) OR gtmId (GTM-XXXXXXX, loads a container). Both empty = no analytics and no cookie banner. src/js/consent.js shows the banner and loads nothing until 'Piekrītu'; preview builds (PREVIEW=1) never load either.",
+    "_ga4Note": "Direct GA4 was chosen over GTM on 6 Sep 2026: the GTM-MVJJGQ4 container still holds a dead Universal Analytics tag and a Facebook Pixel from 2020 that would fire on All Pages the moment the container was published.",
+    "ga4Id": "G-5SEQ339399",
     "gtmId": ""
   },
   "company": {

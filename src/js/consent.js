@@ -1,11 +1,19 @@
-// Cookie consent + Google Tag Manager loader. Rendered only when
-// site.analytics.gtmId is set (src/_data/site.json) and never on PREVIEW
-// builds. Nothing from Google loads until the visitor presses "Piekrītu";
-// the choice lives in localStorage so the banner is asked once per browser.
+// Cookie consent + Google analytics loader. Rendered only when
+// site.analytics.ga4Id OR .gtmId is set (src/_data/site.json), and never on
+// PREVIEW builds. Nothing from Google loads until the visitor presses
+// "Piekrītu"; the choice lives in localStorage so the banner is asked once
+// per browser.
+//
+// GA4 is loaded DIRECTLY (gtag.js) rather than through a container. The
+// GTM-MVJJGQ4 container still holds a dead Universal Analytics tag and a
+// 2020 Facebook Pixel set to fire on All Pages, so publishing it would have
+// switched that pixel back on as a side effect of turning analytics on.
+// The gtmId path is kept working for the day that container is cleaned up.
 (function () {
   var script = document.currentScript;
+  var ga4Id = script && script.getAttribute('data-ga4');
   var gtmId = script && script.getAttribute('data-gtm');
-  if (!gtmId) return;
+  if (!ga4Id && !gtmId) return;
 
   var KEY = 'ms-consent';
   var banner = document.querySelector('[data-consent]');
@@ -23,8 +31,15 @@
     wait_for_update: 500
   });
 
+  var add = function (src) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = src;
+    document.head.appendChild(s);
+  };
+
   var loaded = false;
-  function loadGtm() {
+  function loadAnalytics() {
     if (loaded) return;
     loaded = true;
     gtag('consent', 'update', {
@@ -33,21 +48,27 @@
       ad_personalization: 'granted',
       analytics_storage: 'granted'
     });
-    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(gtmId);
-    document.head.appendChild(s);
+    if (ga4Id) {
+      // gtag.js reads the same window.dataLayer, so these queue safely before
+      // the script arrives.
+      gtag('js', new Date());
+      gtag('config', ga4Id);
+      add('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4Id));
+    }
+    if (gtmId) {
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      add('https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(gtmId));
+    }
   }
   function show() { if (banner) { banner.hidden = false; var b = banner.querySelector('button'); if (b) b.focus(); } }
   function hide() { if (banner) banner.hidden = true; }
 
   var state = read();
-  if (state === 'granted') loadGtm();
+  if (state === 'granted') loadAnalytics();
   else if (state !== 'denied') show();
 
   if (banner) {
-    banner.querySelector('[data-consent-accept]').addEventListener('click', function () { write('granted'); hide(); loadGtm(); });
+    banner.querySelector('[data-consent-accept]').addEventListener('click', function () { write('granted'); hide(); loadAnalytics(); });
     banner.querySelector('[data-consent-reject]').addEventListener('click', function () { write('denied'); hide(); });
   }
   // Footer "Sīkdatņu iestatījumi" reopens the banner so a choice can be changed.

@@ -644,13 +644,34 @@ every YouTube embed uses `youtube-nocookie.com`. Third-party tool logos in
 the AI-tools post are local (`src/img/2026/09/`); two dead affiliate links
 point at the vendors' own sites.
 
-**Analytics + consent.** `site.analytics.gtmId` is empty, so nothing loads and
-no banner shows. Set it to the GTM container id and `base.njk` renders the
-consent card (`.consent`, two equal ghost buttons) and `src/js/consent.js`,
-which sets Consent Mode v2 defaults to denied, loads gtm.js only after
-"Piekrītu", remembers the choice in localStorage and reopens from the footer
-"Sīkdatņu iestatījumi" button. Never on `PREVIEW` builds. Put GA4 / Meta
-Pixel inside the container, not in the templates.
+**Analytics + consent. GA4 IS LIVE (6 Sep 2026), loaded DIRECTLY, not via
+GTM.** `site.analytics.ga4Id` = `G-5SEQ339399`; `gtmId` stays empty. Setting
+EITHER renders the consent card (`.consent`) and `src/js/consent.js`, which
+sets Consent Mode v2 defaults to denied, loads nothing until "Piekrītu",
+remembers the choice in localStorage and reopens from the footer "Sīkdatņu
+iestatījumi" button. Never on `PREVIEW` builds. The gtmId path still works
+and both can run together.
+
+**Why direct and not the container** (owner's call, asked and answered):
+`GTM-MVJJGQ4` still holds two tags last edited in 2020 — a **dead Universal
+Analytics** tag (Google shut UA down in July 2023) and a **Facebook Pixel set
+to fire on All Pages**. Publishing that container to turn analytics on would
+have switched that pixel back on as a side effect. Nothing in the Google
+accounts was changed. If the container is ever cleaned up, set `gtmId` and
+clear `ga4Id`.
+
+**How the tracking was lost in the first place, worth knowing:** the GA4 data
+stream is named *"MonsterInsights - marketingaskola.lv"* — a WordPress
+plugin. It died with the WordPress install at the 3 Sep 2026 cutover, and the
+static site carried no tag at all, so GA4 recorded **no data from 3 to 6 Sep**.
+Anything in GA4 dated before the cutover is WordPress-era; the page titles in
+those reports are the old ones and do not match the current site.
+
+Verified end to end in the browser before shipping: before consent zero
+Google requests and all four Consent Mode signals denied; after "Piekrītu"
+gtag.js loads, consent updates to granted and a real hit reaches
+`region1.google-analytics.com/g/collect?v=2&tid=G-5SEQ339399`; after
+"Noraidīt" zero Google requests on reload.
 
 **Headings and link names.** Footer and TOC labels are `<p class="footer-h">` /
 `<p class="toc-h">` (they were h4s that skipped levels on every page); post

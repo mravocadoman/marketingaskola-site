@@ -7,7 +7,7 @@
   {%- set pageImage = (image or site.image) | ogImage %}
   {%- set pageUrl = site.url + page.url %}
   {%- set isArticle = layout == 'post.njk' %}
-  {%- set analytics = site.analytics.gtmId and not env.preview %}
+  {%- set analytics = (site.analytics.ga4Id or site.analytics.gtmId) and not env.preview %}
   <title>{{ pageTitle }}</title>
   {% if env.preview or noindex %}<meta name="robots" content="noindex">{% endif %}
   {% if description %}<meta name="description" content="{{ description }}">{% endif %}
@@ -147,7 +147,7 @@
     <button class="btn btn--ghost btn--sm" type="button" data-consent-reject>Noraidīt</button>
   </div>
 </div>
-<script src="/js/consent.js" defer data-gtm="{{ site.analytics.gtmId }}"></script>
+<script src="/js/consent.js" defer data-ga4="{{ site.analytics.ga4Id }}" data-gtm="{{ site.analytics.gtmId }}"></script>
 {% endif %}
 
 {%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}
