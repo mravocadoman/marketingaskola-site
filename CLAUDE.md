@@ -679,6 +679,35 @@ Manager for pixel 3817680101624891) and activate the workflow. The endpoint
 answers 404 until then, and `consent.js` swallows the failure so visitors never
 see it.
 
+**What was already sending CAPI events, investigated 6 Sep 2026.** The owner
+noticed Events Manager still showing Conversions API traffic. It is real but it
+is not ours and it is not healthy:
+
+- the event is **`pageView` in lowercase**, which is NOT Meta's standard
+  `PageView`. Meta files it as a custom event, so it cannot drive standard
+  optimisation and never aggregates with the real `PageView` row;
+- it **stopped 3 days before** (the 3 Sep cutover), like everything else;
+- it comes from **`meistarklase.marketingaskola.lv`**, a "Meta Reklāmas
+  Vebinārs" landing page, not from marketingaskola.lv. The pixel
+  3817680101624891 is shared across **four** websites.
+
+That page is a **Lovable app** (`gpt-engineer-file-uploads` assets,
+`/~flock.js`) behind Cloudflare, with the pixel hardcoded client-side. The
+CAPI sender itself could NOT be identified from outside: `/~flock.js` is only
+Lovable's web-vitals bundle, and neither Supabase project has any edge
+functions. It is most likely a Lovable or partner integration configured
+inside Events Manager. **Find and fix or retire it before switching our relay
+on**, or two senders with different naming conventions will write to one
+dataset. Event Match Quality on the dataset is currently **6.1/10**, under the
+~7 Meta considers workable.
+
+**Stripe → CAPI is written but NOT created in n8n.** The workflow is validated
+and preserved in `docs/n8n-stripe-to-meta-capi.md`; the automated creation call
+was refused by a permission classifier, so it needs pasting in by hand. It is
+the most valuable of the three because it is server to server (immune to
+blockers) and carries the real amount, and it uses the Stripe session id as
+`event_id` so retries cannot double-count.
+
 **`capiSecret` in site.json is obfuscation, not authentication** — it ships in
 client JS and anyone can read it. It stops drive-by noise. The genuinely
 tamper-proof events would be server-to-server ones (Stripe purchase,
