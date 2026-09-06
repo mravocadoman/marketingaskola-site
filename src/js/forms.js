@@ -109,6 +109,11 @@
   }
 
   function succeed(form) {
+    // GA4: the one place every successful submission passes through.
+    if (window.msTrack) window.msTrack('generate_lead', {
+      form_id: form.getAttribute('data-form') || 'unknown',
+      page_path: location.pathname
+    });
     var tpl = form.querySelector('template[data-success]');
     if (!tpl) return;
     var done = tpl.content.cloneNode(true);

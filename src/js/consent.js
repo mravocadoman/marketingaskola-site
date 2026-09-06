@@ -31,6 +31,14 @@
     wait_for_update: 500
   });
 
+  // One place for the rest of the site to report a conversion. Events queue on
+  // the dataLayer whether or not consent has been given; if it is refused
+  // gtag.js never loads and nothing is ever sent, so this is safe to call
+  // unconditionally from anywhere.
+  window.msTrack = function (name, params) {
+    try { gtag('event', name, params || {}); } catch (e) { /* never break the page for analytics */ }
+  };
+
   var add = function (src) {
     var s = document.createElement('script');
     s.async = true;

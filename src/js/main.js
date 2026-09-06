@@ -194,4 +194,29 @@
   if (window.matchMedia && window.matchMedia("(max-width: 700px)").matches) {
     document.querySelectorAll(".infographic-text").forEach(function (d) { d.open = true; });
   }
+
+  /* GA4 outbound and intent tracking (6 Sep 2026).
+     One delegated listener rather than per-element handlers, so nothing has to
+     be wired into the markup when a new button appears. window.msTrack comes
+     from consent.js and is a no-op until analytics is switched on, so this is
+     safe whether or not the visitor has consented. */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a, [data-track]');
+    if (!a || !window.msTrack) return;
+    var href = a.getAttribute('href') || '';
+    var tag = a.getAttribute('data-track');
+
+    if (tag) {
+      window.msTrack('contact_click', { method: tag, page_path: location.pathname });
+    } else if (href.indexOf('https://buy.stripe.com') === 0) {
+      // Money leaving for checkout: the closest thing this site has to a sale.
+      window.msTrack('begin_checkout', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('https://cal.com') === 0) {
+      window.msTrack('schedule_booking', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('tel:') === 0) {
+      window.msTrack('contact_click', { method: 'phone', page_path: location.pathname });
+    } else if (href.indexOf('mailto:') === 0) {
+      window.msTrack('contact_click', { method: 'email', page_path: location.pathname });
+    }
+  }, true);
 })();
