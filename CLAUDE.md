@@ -761,6 +761,16 @@ gtag.js loads, consent updates to granted and a real hit reaches
 `region1.google-analytics.com/g/collect?v=2&tid=G-5SEQ339399`; after
 "Noraidīt" zero Google requests on reload.
 
+**The consent card could not be closed until 7 Sep 2026.** Owner: *"a cookie
+banner that wont close at the button click"*. `consent.js` was doing its job
+(`banner.hidden = true`, choice saved, gtag and fbq loaded) but
+`.consent { display: grid }` is a class rule and outranks the browser's own
+`[hidden] { display: none }`, so the card stayed painted. The stylesheet now
+opens with `[hidden] { display: none !important; }`, so the attribute wins over
+any display rule. **Toggle visibility with `el.hidden`, never with a class
+that sets `display`** - and if you give an element a `display` rule, it will
+still hide correctly because of that reset.
+
 **Headings and link names.** Footer and TOC labels are `<p class="footer-h">` /
 `<p class="toc-h">` (they were h4s that skipped levels on every page); post
 cards use `.post-title` — h2 on the blog index and category pages, h3 where a
