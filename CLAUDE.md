@@ -1144,9 +1144,22 @@ promises a list "ko pats pierakstīsi", and its instructor card carries the
 Meta badges and the lecturing sentence verbatim from `/sazinies/`; 38 blog
 closers quote a price through `{% offer %}`.
 
+**The ladder is published (7 Sep 2026).** `src/_includes/ladder.njk` is the
+three rungs in one place — Dari pats (course, price and hours from
+`courseSessions.json`) → the hub; Izlem kopā ar mums (consultation, price
+from `booking.json`) → `/marketinga-konsultacijas/`; Nodod mums (managed
+Meta ads from 500 €/mēn, video and automation priced by scope) →
+`/sazinies/`. It closes `/pakalpojumi/` in place of the old cta-band and
+sits above the application form on the course hub. **Exactly ONE
+`.arrow-link` per cell, as a direct child**, so `.cell:has(> .arrow-link)`
+makes each card clickable and still points at one URL; the block carries
+no button and therefore no cyan, so it is safe on a page that already has
+a primary CTA. The 500 €/mēn figure is the page's own public line
+(`/facebook-reklama/` hero and FAQ), not a new claim.
+
 **Owner-gated — NOT done, do not guess (plan §4, 6 Sep 2026):**
-1. Is 500 €/mēn ad spend the public line for managed Meta ads? Gates the
-   ladder block (`ladder.njk`, not built) and the routing line in ad posts.
+1. Confirm 500 €/mēn is still the line you want quoted on `/pakalpojumi/`
+   and the course hub, and whether the ad posts should carry it too.
 2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
    (hub, meta description, catalog tile). Closed corporate sessions yes/no.
 3. Brew Company: 75 000 € per month (prose) or total (stat tiles)? Excel

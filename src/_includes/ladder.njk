@@ -1,0 +1,32 @@
+{# The three rungs of the offer, in one place. The site had all of them and no
+   page showed them together, so a 200 EUR/mēn and a 75 000 EUR/mēn prospect
+   met the same funnel (offers audit, 6 Sep 2026).
+
+   ONE link per cell, as a direct child .arrow-link, so the stretched-link rule
+   (.cell:has(> .arrow-link)) makes each card clickable and still points at a
+   single URL. No button here: the block carries no cyan, so it is safe to
+   include on a page that already has a primary call to action.
+
+   Prices come from courseSessions.json and booking.json. Include with context. #}
+{% set km = courseSessions.courses["meta-reklamas-kurss"] %}
+{% set o60 = booking.consultation.options[0] %}
+<div class="hgrid hgrid--3">
+  <div class="cell">
+    <span class="cell-idx">01</span>
+    <h3>Dari pats</h3>
+    <p>Tiešsaistes kurss mazā grupā ar pasniedzēju: Meta reklāma, Google Ads vai SEO. Viena nodarbība ir {{ km.hours }} stundas, un dalība maksā {{ km.price }} € + PVN.</p>
+    <a class="arrow-link" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
+  </div>
+  <div class="cell">
+    <span class="cell-idx">02</span>
+    <h3>Izlem kopā ar mums</h3>
+    <p>Maksas konsultācija par Tavu situāciju: {{ o60.duration }} par {{ o60.price }} € + PVN. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
+    <a class="arrow-link" href="/marketinga-konsultacijas/">Apskatīt konsultācijas</a>
+  </div>
+  <div class="cell">
+    <span class="cell-idx">03</span>
+    <h3>Nodod mums</h3>
+    <p>Meta reklāmas kampaņas vadām mēs uzņēmumiem, kas reklāmā iegulda vismaz 500 € mēnesī. Video un automatizācijas darbiem cena ir atkarīga no darba apjoma.</p>
+    <a class="arrow-link" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
+  </div>
+</div>
