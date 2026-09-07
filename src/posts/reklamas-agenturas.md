@@ -4,7 +4,7 @@ title: "Reklāmas aģentūra: kad tā atmaksājas un kad nē"
 seoTitle: "Reklāmas aģentūra: kad tā atmaksājas | Mārketinga Skola"
 description: "Kad reklāmas aģentūra dod reālu vērtību, kad izdevīgāk darīt pašam, cik tas maksā un pēc kā atpazīt aģentūru, kas domā par Tavu rezultātu."
 date: 2024-02-15
-updated: 2026-09-05
+updated: 2026-09-07
 image: "/img/gen/cover-reklamas-agenturas.webp"
 legacyImage: "/img/2024/02/14.png"
 categories: ["marketinga-strategija"]

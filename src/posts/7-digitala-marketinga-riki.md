@@ -4,7 +4,7 @@ title: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā"
 seoTitle: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā | Mārketinga Skola"
 description: "Septiņi digitālā mārketinga rīki, ko mazam uzņēmumam tiešām vajag, sakārtoti pēc darba, un divi, kurus no vecajiem sarakstiem var izsvītrot."
 date: 2022-05-08
-updated: 2026-09-05
+updated: 2026-08-06
 image: "/img/gen/cover-7-digitala-marketinga-riki.webp"
 legacyImage: "/img/2022/05/5.jpg"
 categories: ["marketinga-strategija"]

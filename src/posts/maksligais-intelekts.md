@@ -4,7 +4,7 @@ title: "Mākslīgais intelekts mārketingā: draugs vai drauds?"
 seoTitle: "Mākslīgais intelekts: draugs vai drauds? | Mārketinga Skola"
 description: "Mākslīgais intelekts vairs nav jaunums. Kur tas mārketingā tiešām palīdz, kur tas kļūdās un maksā naudu, un kāpēc lēmumu joprojām pieņem cilvēks."
 date: 2024-02-15
-updated: 2026-09-05
+updated: 2026-08-28
 image: "/img/gen/cover-maksligais-intelekts.webp"
 legacyImage: "/img/2024/02/13.png"
 categories: ["maksligais-intelekets"]

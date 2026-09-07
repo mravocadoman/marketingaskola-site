@@ -4,7 +4,7 @@ title: "Kas ir mārketinga aģentūra un kā tā palīdz uzlabot uzņēmuma redz
 seoTitle: "Kas ir mārketinga aģentūra un kā tā palīdz uzlabot uzņēmuma redzamību un pārdošanu? | Mārketinga Skola"
 description: "Ko mārketinga aģentūra dara, kā notiek darbs praksē un sešas lietas, ko jautāt pirms līguma parakstīšanas, sākot ar to, kam piederēs konts."
 date: 2025-11-29
-updated: 2026-09-05
+updated: 2026-08-31
 image: "/img/gen/cover-marketinga-agentura-uzlabo-pardosanu.webp"
 legacyImage: "/img/2025/11/Kas-ir-marketinga-agentura-un-ka-ta-palidz-uzlabot-uznemuma-redzamibu-un-pardosanu.png"
 categories: ["marketinga-strategija"]

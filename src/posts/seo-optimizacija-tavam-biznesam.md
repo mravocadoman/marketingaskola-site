@@ -4,7 +4,7 @@ title: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam?"
 seoTitle: "Kas ir SEO optimizācija un kā tā var palīdzēt Tavam biznesam? | Mārketinga Skola"
 description: "Kas ir SEO optimizācija, kā tā strādā, kādi ir tās veidi un ar ko sākt bez lieliem ieguldījumiem. Ar mini vārdnīcu un biežāk uzdotajiem jautājumiem."
 date: 2025-04-22
-updated: 2026-09-05
+updated: 2026-08-05
 image: "/img/gen/cover-seo-optimizacija-tavam-biznesam.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-2.jpg"
 categories: ["digitalais-marketings"]

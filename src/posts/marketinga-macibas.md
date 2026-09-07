@@ -4,7 +4,7 @@ title: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas!"
 seoTitle: "Mārketinga mācības: Uzzini, kā izmantot Facebook reklāmas! | Mārketinga Skola"
 description: "Kas ir Facebook reklāma, kā saprast, vai platforma ir piemērota Tavam uzņēmumam, un ko šodien nozīmē iemācīties Meta reklāmu."
 date: 2022-06-11
-updated: 2026-09-05
+updated: 2026-09-01
 image: "/img/gen/cover-marketinga-macibas.webp"
 legacyImage: "/img/2022/06/2.jpg"
 categories: ["socialo-tiklu-reklama"]

@@ -4,7 +4,7 @@ title: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā"
 seoTitle: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā | Mārketinga Skola"
 description: "Pieci ieteikumi reklāmas tekstiem, kas strādā tad, kad melnrakstu var uzrakstīt ikviens: konkrētība, pirmā rinda, viens aicinājums un konkurenta tests."
 date: 2021-10-17
-updated: 2026-09-05
+updated: 2026-08-04
 image: "/img/gen/cover-5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana.webp"
 legacyImage: "/img/2021/10/11.jpg"
 categories: ["socialo-tiklu-reklama"]

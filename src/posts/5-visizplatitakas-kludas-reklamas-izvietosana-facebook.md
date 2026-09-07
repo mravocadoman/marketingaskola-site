@@ -4,7 +4,7 @@ title: "5 Visizplatītākās kļūdas reklāmas izvietošanā Facebook"
 seoTitle: "5 Visizplatītākās kļūdas reklāmas izvietošanā Facebook | Mārketinga Skola"
 description: "Piecas kļūdas, kas apēd Facebook reklāmas budžetu: poga zem ieraksta, nepareizs mērķis, trūkstošs Conversions API un šauras auditorijas."
 date: 2021-11-13
-updated: 2026-09-05
+updated: 2026-08-05
 image: "/img/gen/cover-5-visizplatitakas-kludas-reklamas-izvietosana-facebook.webp"
 legacyImage: "/img/2021/11/10.jpg"
 categories: ["socialo-tiklu-reklama"]

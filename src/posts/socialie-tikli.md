@@ -4,7 +4,7 @@ title: "Sociālie tīkli - mārketinga veiksmes atslēga"
 seoTitle: "Sociālie tīkli - mārketinga veiksmes atslēga | Mārketinga Skola"
 description: "Sociālie tīkli 2026. gadā: kāpēc organiskais sasniegums vairs nepietiek, kurš viens kanāls Tev vajadzīgs un kāds ir praktiskais minimums mēnesī."
 date: 2024-03-20
-updated: 2026-09-05
+updated: 2026-08-06
 image: "/img/gen/cover-socialie-tikli.webp"
 legacyImage: "/img/2024/03/16.jpg"
 categories: ["socialo-tiklu-reklama"]

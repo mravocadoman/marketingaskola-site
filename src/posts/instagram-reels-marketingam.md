@@ -4,7 +4,7 @@ title: "Kā veiksmīgi izmantot Instagram Reels mārketingam?"
 seoTitle: "Kā veiksmīgi izmantot Instagram Reels mārketingam? | Mārketinga Skola"
 description: "Kā veidot Instagram Reels, ko cilvēki noskatās līdz beigām, kāpēc ar organisko sasniegumu vien nepietiek un kuram video pielikt reklāmas budžetu."
 date: 2025-04-17
-updated: 2026-09-05
+updated: 2026-08-18
 image: "/img/gen/cover-instagram-reels-marketingam.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-5.png"
 categories: ["digitalais-marketings"]

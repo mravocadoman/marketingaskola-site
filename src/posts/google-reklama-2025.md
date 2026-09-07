@@ -4,7 +4,7 @@ title: "Vai Google reklāma ir efektīva? Ko zināt 2026. gadā"
 seoTitle: "Vai Google reklāma ir efektīva 2026. gadā? | Mārketinga Skola"
 description: "Google reklāma uzrunā cilvēku, kurš jau meklē. Kā tā strādā, kad tā atmaksājas, kam pievērst uzmanību un ko mainījusi MI meklēšana."
 date: 2025-01-06
-updated: 2026-09-05
+updated: 2026-08-14
 image: "/img/gen/cover-google-reklama-2025.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px.jpg"
 categories: ["google-reklama"]

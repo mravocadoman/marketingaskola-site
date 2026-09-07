@@ -4,7 +4,7 @@ title: "Vai manam biznesam nepieciešams sociālo tīklu mārketings?"
 seoTitle: "Vai manam biznesam nepieciešams sociālo tīklu mārketings? | Mārketinga Skola"
 description: "Godīga atbilde uz jautājumu, vai Tavam biznesam vajag sociālo tīklu mārketingu: kad tas atmaksājas, kad nauda labāk der citur un ar ko sākt."
 date: 2022-03-08
-updated: 2026-09-05
+updated: 2026-08-10
 image: "/img/gen/cover-vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings.webp"
 legacyImage: "/img/2022/03/6.jpg"
 categories: ["socialo-tiklu-reklama"]

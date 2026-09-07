@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 const crypto = require("crypto");
+const { execSync } = require("child_process");
 
 const SRC = path.join(__dirname, "src");
 // "/img/a/b.webp" -> absolute path inside src/
@@ -404,6 +405,43 @@ module.exports = function (eleventyConfig) {
     const dt = new Date(d);
     return dt.toLocaleDateString("lv-LV", { year: "numeric", month: "long", day: "numeric" });
   });
+  /* Sitemap lastmod, from git rather than from the filesystem (7 Sep 2026).
+     A CI checkout rewrites every file's mtime to the clone time, so Eleventy's
+     default date made all 21 pages report the DEPLOY DAY as their last
+     modification - the live sitemap had 21 URLs stamped 2026-09-07 and 40 more
+     stamped 2026-09-05. A lastmod that moves for every page on every deploy is
+     false and is a signal crawlers learn to ignore, so it is worse than none.
+     One `git log` pass gives the real date each file last changed.
+
+     This needs history: `actions/checkout` clones shallow by default, which
+     would map every file to the single commit it fetched. deploy.yml therefore
+     sets fetch-depth: 0, and the guard below refuses a map that came out of a
+     shallow clone rather than silently recreating the cluster. */
+  const gitDates = (() => {
+    const map = new Map();
+    try {
+      const log = execSync("git log --format=%x00%cI --name-only --no-renames", {
+        cwd: __dirname, encoding: "utf8", maxBuffer: 64 * 1024 * 1024, stdio: ["ignore", "pipe", "ignore"],
+      });
+      let when = null;
+      for (const line of log.split("\n")) {
+        if (line.startsWith("\0")) { when = line.slice(1); continue; }
+        const f = line.trim();
+        if (f && when && !map.has(f)) map.set(f, when);   // log is newest-first
+      }
+    } catch { return map; }                                // no git: fall back
+    if (map.size > 10 && new Set(map.values()).size === 1) {
+      console.warn("[sitemap] shallow clone - falling back to file dates for lastmod");
+      return new Map();
+    }
+    return map;
+  })();
+  eleventyConfig.addFilter("lastmod", (p) => {
+    if (p && p.data && p.data.updated) return p.data.updated;   // an explicit editorial date wins
+    const rel = String((p && p.inputPath) || "").replace(/^\.\//, "");
+    return gitDates.get(rel) || (p && p.date);
+  });
+
   eleventyConfig.addFilter("isoDate", (d) => {
     const dt = new Date(d);
     return isNaN(dt) ? "" : dt.toISOString().slice(0, 10);

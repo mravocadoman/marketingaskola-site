@@ -4,7 +4,7 @@ title: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību"
 seoTitle: "Mārketinga plāns tā nozīme un ietekme uz uzņēmuma attīstību | Mārketinga Skola"
 description: "Kā izveidot mārketinga plānu, kas tiešām strādā: elementi, seši soļi, budžeta sadalījums 70/20/10 un biežākās kļūdas plānošanā."
 date: 2025-04-09
-updated: 2026-09-05
+updated: 2026-09-02
 image: "/img/gen/cover-marketinga-plans.webp"
 legacyImage: "/img/2025/04/Digital-1200-628px-3.png"
 categories: ["marketinga-strategija"]

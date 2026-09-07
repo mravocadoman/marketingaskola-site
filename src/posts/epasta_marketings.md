@@ -4,7 +4,7 @@ title: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu"
 seoTitle: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu | Mārketinga Skola"
 description: "E-pasta mārketings praksē: saraksts, kampaņas uzbūve, automatizācija, piegādājamības prasības un kāpēc atvēršanas rādītājs vairs nav uzticams."
 date: 2025-12-17
-updated: 2026-09-05
+updated: 2026-08-12
 image: "/img/gen/cover-epasta_marketings.webp"
 legacyImage: "/img/2025/12/epasta-marketings-ka-izveidot-kampanas-kas-palielina-pardosanu-thumbnail.png.png"
 categories: ["digitalais-marketings"]

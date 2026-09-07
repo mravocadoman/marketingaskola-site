@@ -4,7 +4,7 @@ title: "8 mākslīgā intelekta rīki mārketingam"
 seoTitle: "8 mākslīgā intelekta rīki mārketingam | Mārketinga Skola"
 description: "Astoņi MI rīki, ko mārketingā tiešām izmanto ikdienā: kam katrs der, kam neder un ar kuru sākt, ja nekad neesi ne ar vienu strādājis."
 date: 2023-11-07
-updated: 2026-09-05
+updated: 2026-08-26
 image: "/img/gen/cover-maksliga-intelekta-riki.webp"
 legacyImage: "/img/2023/11/1.jpg"
 categories: ["maksligais-intelekets"]

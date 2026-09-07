@@ -4,7 +4,7 @@ title: "Mākslīgais intelekts mārketingā: kur tas tiešām strādā"
 seoTitle: "Mākslīgais intelekts mārketingā: kur tas strādā | Mārketinga Skola"
 description: "Praktisks ceļvedis: kur mākslīgais intelekts mārketingā dod reālu rezultātu mazam uzņēmumam, ar ko sākt un kuras kļūdas maksā visdārgāk."
 date: 2025-03-19
-updated: 2026-09-05
+updated: 2026-08-27
 image: "/img/gen/cover-maksligais-intelekts-marketinga.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px.jpg"
 categories: ["maksligais-intelekets"]

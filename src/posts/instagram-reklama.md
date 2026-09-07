@@ -4,7 +4,7 @@ title: "Instagram reklāma - no kura gala sākt?"
 seoTitle: "Instagram reklāma - no kura gala sākt? | Mārketinga Skola"
 description: "Instagram reklāma 2026. gadā: signāls, kreatīvs un budžets. Pieci soļi, ar ko sākt, un kļūdas, kas maksā visdārgāk."
 date: 2022-02-09
-updated: 2026-09-05
+updated: 2026-08-19
 image: "/img/gen/cover-instagram-reklama.webp"
 legacyImage: "/img/2022/02/7.jpg"
 categories: ["socialo-tiklu-reklama"]

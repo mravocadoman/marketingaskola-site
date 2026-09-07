@@ -4,7 +4,7 @@ title: "Facebook reklāmas: Kā reklamēt savu biznesu internetā?"
 seoTitle: "Facebook reklāmas: Kā reklamēt savu biznesu internetā? | Mārketinga Skola"
 description: "Kā 2026. gadā palaist Facebook reklāmu, kas pārdod: konts, signāls, pareizais mērķis, vienkārša uzbūve un pirmās divas nedēļas."
 date: 2022-01-09
-updated: 2026-09-05
+updated: 2026-08-13
 image: "/img/gen/cover-facebook-reklamas-izstrade.webp"
 legacyImage: "/img/2022/01/8.jpg"
 categories: ["socialo-tiklu-reklama"]

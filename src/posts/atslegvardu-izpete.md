@@ -4,7 +4,7 @@ title: "Atslēgvārdu izpēte: kā uzzināt, ko cilvēki tiešām meklē"
 seoTitle: "Atslēgvārdu izpēte: praktisks ceļvedis | Mārketinga Skola"
 description: "Kā atrast atslēgvārdus, kas atved klientus, nevis apmeklētājus: nodoms, bezmaksas rīki, mazā tirgus īpatnības un kļūdas, kas maksā visdārgāk."
 date: 2026-08-26
-updated: 2026-09-05
+updated: 2026-08-26
 image: "/img/gen/cover-atslegvardu-izpete.webp"
 categories: ["digitalais-marketings"]
 permalink: "/atslegvardu-izpete/"

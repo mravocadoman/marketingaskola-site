@@ -4,7 +4,7 @@ title: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod"
 seoTitle: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod | Mārketinga Skola"
 description: "Kā veidot saturu, kas piesaista un pārdod: hook formulas, kāds saturs 2026. gadā vēl atmaksājas un ar ko sākt, ja plāna vēl nav."
 date: 2025-12-11
-updated: 2026-09-05
+updated: 2026-08-04
 image: "/img/gen/cover-satura-marketings.webp"
 legacyImage: "/img/2025/12/satura-marketings-thumbnail.png.png"
 categories: ["digitalais-marketings"]

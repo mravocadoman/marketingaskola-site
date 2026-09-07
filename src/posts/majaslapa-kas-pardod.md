@@ -4,7 +4,7 @@ title: "Mājaslapa, kas pārdod: kāpēc reklāma nepalīdz, ja lapa nepārlieci
 seoTitle: "Mājaslapa, kas pārdod: konversiju pamati | Mārketinga Skola"
 description: "Kāpēc reklāma nedod rezultātu, ja mājaslapa nepārliecina, un septiņas lietas, kas izšķir, vai apmeklētājs kļūst par klientu."
 date: 2026-08-28
-updated: 2026-09-05
+updated: 2026-08-28
 image: "/img/gen/cover-majaslapa-kas-pardod.webp"
 categories: ["marketinga-strategija"]
 permalink: "/majaslapa-kas-pardod/"

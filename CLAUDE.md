@@ -771,6 +771,25 @@ any display rule. **Toggle visibility with `el.hidden`, never with a class
 that sets `display`** - and if you give an element a `display` rule, it will
 still hide correctly because of that reset.
 
+**Sitemap `lastmod` comes from git, not the filesystem (7 Sep 2026).**
+Eleventy dates a page from its file mtime, and `actions/checkout` rewrites
+every mtime to the clone time — so the LIVE sitemap stamped all 21 pages
+with the deploy day and all 40 posts with `updated: 2026-09-05`. A lastmod
+that moves for every page on every deploy is false, and it is a signal
+crawlers learn to ignore, so it was worse than having none. The `lastmod`
+filter now resolves, in order: an explicit front-matter `updated:`, then
+the date of the last commit that touched the source file (one `git log`
+pass, cached for the build), then the file date. **`deploy.yml` sets
+`fetch-depth: 0` on both checkouts** — without the history every file maps
+to the one fetched commit, so the filter refuses a map with a single
+distinct date and warns rather than silently recreating the cluster.
+
+Post `updated:` dates were spread across August–7 September the same day.
+Two rules hold and must keep holding: **`updated` is never earlier than
+`date`**, and the eight posts published in that window have `updated ==
+date`, which is what suppresses the reader-facing "atjaunots" line in
+`post.njk` for a post that has not actually been revised.
+
 **Headings and link names.** Footer and TOC labels are `<p class="footer-h">` /
 `<p class="toc-h">` (they were h4s that skipped levels on every page); post
 cards use `.post-title` — h2 on the blog index and category pages, h3 where a

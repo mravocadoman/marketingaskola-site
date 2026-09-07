@@ -4,7 +4,7 @@ title: "TikTok reklāmas: Kā izveidot efektīvus video un piesaistīt klientus?
 seoTitle: "TikTok reklāmas: Kā izveidot efektīvus video un piesaistīt klientus? | Mārketinga Skola"
 description: "Kā veidot TikTok video, kas piesaista klientus: trīs sekunžu likums, autentiskums, subtitri un kāpēc tas pats video strādā arī Instagram un Facebook."
 date: 2025-05-01
-updated: 2026-09-05
+updated: 2026-08-07
 image: "/img/gen/cover-tiktok-reklamas-klientu-piesaistisanai.webp"
 legacyImage: "/img/2025/05/Digital-1200-628px-4.jpg"
 categories: ["socialo-tiklu-reklama"]

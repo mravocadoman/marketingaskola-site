@@ -4,7 +4,7 @@ title: "Digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt"
 seoTitle: "Digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt | Mārketinga Skola"
 description: "Ko dara digitālā mārketinga aģentūra, kā izskatās sadarbības process solis pa solim un kad tā ir labāka izvēle nekā frīlanseris vai iekšējā komanda."
 date: 2025-11-21
-updated: 2026-09-05
+updated: 2026-08-10
 image: "/img/gen/cover-digitala-marketinga-agentura-izaugsmei.webp"
 legacyImage: "/img/2025/11/Marketinga-Skola-Blog-Thumbnails-1.png"
 categories: ["marketinga-strategija"]

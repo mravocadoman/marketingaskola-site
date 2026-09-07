@@ -4,7 +4,7 @@ title: "Google reklāmas aģentūra: kā to izvēlēties un ko sagaidīt"
 seoTitle: "Google reklāmas aģentūra: kā izvēlēties | Mārketinga Skola"
 description: "Ko Google reklāmas aģentūra tiešām dara, kad tā atmaksājas, cik tas maksā un kuri trīs jautājumi jāuzdod pirms līguma parakstīšanas."
 date: 2025-03-11
-updated: 2026-09-05
+updated: 2026-08-17
 image: "/img/gen/cover-google-reklamas-agentura.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px.png"
 categories: ["google-reklama"]
