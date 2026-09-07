@@ -3,7 +3,7 @@ layout: post.njk
 title: "Google uzņēmuma profils: lētākais veids, kā tikt atrastam vietēji"
 seoTitle: "Google uzņēmuma profils un vietējais SEO | Mārketinga Skola"
 description: "Kā sakārtot Google uzņēmuma profilu, kas nosaka vietējos meklēšanas rezultātus: kategorijas, atsauksmes, foto, ieraksti un biežākās kļūdas."
-date: 2026-09-05
+date: 2026-08-12
 updated: 2026-09-05
 image: "/img/gen/cover-google-uznemuma-profils.webp"
 categories: ["digitalais-marketings"]

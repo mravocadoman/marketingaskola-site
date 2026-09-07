@@ -3,7 +3,7 @@ layout: post.njk
 title: "Kā uzfilmēt reklāmas video ar telefonu, kas tiešām strādā"
 seoTitle: "Kā uzfilmēt reklāmas video ar telefonu | Mārketinga Skola"
 description: "Praktiska pamācība reklāmas video filmēšanai ar telefonu: gaisma, skaņa, pirmās trīs sekundes, subtitri un piecas idejas, ko uzfilmēt jau šonedēļ."
-date: 2026-09-05
+date: 2026-08-14
 updated: 2026-09-05
 image: "/img/gen/cover-reklamas-video-ar-telefonu.webp"
 categories: ["socialo-tiklu-reklama"]

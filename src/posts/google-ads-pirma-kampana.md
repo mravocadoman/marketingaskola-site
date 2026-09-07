@@ -3,7 +3,7 @@ layout: post.njk
 title: "Google Ads: kā palaist pirmo kampaņu, kas neaizskalo budžetu"
 seoTitle: "Google Ads: kā palaist pirmo kampaņu | Mārketinga Skola"
 description: "Praktiska secība pirmajai Google Ads kampaņai: kāpēc sākt ar meklēšanu, nevis Performance Max, atslēgvārdi, budžets un pirmās divas nedēļas."
-date: 2026-09-05
+date: 2026-09-03
 updated: 2026-09-05
 image: "/img/gen/cover-google-ads-pirma-kampana.webp"
 categories: ["google-reklama"]

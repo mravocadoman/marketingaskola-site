@@ -3,7 +3,7 @@ layout: post.njk
 title: "Remārketings 2026: kas vēl strādā, kad sīkdatnes vairs nestrādā"
 seoTitle: "Remārketings: kā to darīt 2026. gadā | Mārketinga Skola"
 description: "Remārketings ir mainījies: sīkdatņu auditorijas sarūk, bet savi saraksti un platformas iesaistes auditorijas strādā labāk nekā jebkad. Kā to salikt."
-date: 2026-09-05
+date: 2026-09-02
 updated: 2026-09-05
 image: "/img/gen/cover-remarketings.webp"
 categories: ["socialo-tiklu-reklama"]

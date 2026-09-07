@@ -3,7 +3,7 @@ layout: post.njk
 title: "Konversiju uzskaite: bez tās Tu nezini, ko reklāma maksā"
 seoTitle: "Konversiju uzskaite: kā to uzstādīt | Mārketinga Skola"
 description: "Kas ir konversiju uzskaite, kā to uzstādīt Meta un Google reklāmām, kā pārbaudīt, vai tā tiešām strādā, un četras kļūdas, kas klusi sabojā datus."
-date: 2026-09-05
+date: 2026-09-04
 updated: 2026-09-05
 image: "/img/gen/cover-konversiju-uzskaite.webp"
 categories: ["digitalais-marketings"]
