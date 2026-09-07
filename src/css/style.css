@@ -53,6 +53,9 @@
 
 /* ---------- base ---------- */
 * { box-sizing: border-box; }
+/* The hidden attribute must beat any display rule. Without this, .consent { display:grid }
+   outranked the UA's [hidden]{display:none} and the cookie card never closed. */
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; background: var(--canvas); }
 body {
   margin: 0;
