@@ -119,4 +119,4 @@ Sāc ar diviem soļiem, nevis septiņiem. Pievieno mājaslapu Google Search Cons
 
 Kā to izdarīt soli pa solim, esam aprakstījuši rakstā [SEO optimizācija Tavam biznesam](/seo-optimizacija-tavam-biznesam/).
 
-Ja gribi visu sistēmu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/). Ja gribi, lai to izdara kāds cits, apskati [SEO pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi visu sistēmu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/), kas notiek {% offer "seo-kursi", "cadence" %} un maksā {% offer "seo-kursi" %}. Ja gribi, lai to izdara kāds cits, apskati [SEO pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Stunda kopā ar Rihardu ir {% offer "60" %}.

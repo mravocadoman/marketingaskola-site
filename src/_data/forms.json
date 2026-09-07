@@ -73,7 +73,7 @@
       "submit": "Pieteikties kursam",
       "note": "Pieteikšanās ir bez maksas un neuzliek par pienākumu iegādāties kursu. Sazināsimies ar detaļām un datumiem.",
       "successTitle": "Paldies — pieteikums saņemts.",
-      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā un nosūtīsim informāciju par nākamajām grupām un datumiem.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā un nosūtīsim informāciju par nākamajām grupām un datumiem. Vietu var rezervēt arī uzreiz: <a href=\"/digitala-marketinga-kursi/#kursi\">izvēlies kursu un rezervē vietu tā lapā</a>.",
       "fields": [
         {
           "name": "course",

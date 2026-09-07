@@ -110,4 +110,4 @@ Pārējos gadījumos telefons ir ne tikai pietiekams, bet arī labāks. Un tas i
 
 **Ja gribi, lai video top profesionāli**, apskati [video reklāmas pakalpojumu](/video-reklama/): tur ir arī iepriekšējie darbi, pēc kuriem vari spriest, vai stils Tev der.
 
-**Ja neesi drošs, vai video Tavā nozarē vispār ir īstais kanāls**, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Dažreiz atbilde ir, ka naudu labāk ieguldīt meklētājā, un to pateikt ir lētāk nekā uzzināt pēc trim mēnešiem.
+**Ja neesi drošs, vai video Tavā nozarē vispār ir īstais kanāls**, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Dažreiz atbilde ir, ka naudu labāk ieguldīt meklētājā, un to pateikt par {% offer "60" %} ir lētāk nekā uzzināt pēc trim mēnešiem.

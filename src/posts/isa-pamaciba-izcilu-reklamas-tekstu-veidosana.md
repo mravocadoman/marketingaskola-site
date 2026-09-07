@@ -94,4 +94,4 @@ Paņem vienu reklāmu, kas šobrīd strādā. Pārraksti tās pirmo rindu tā, l
 
 Papildu ieteikumi ir rakstā [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/), bet par pašu kampaņu lasi rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/).
 
-Šīs formulas praksē izejam cauri [Meta reklāmas kursā](/meta-reklamas-kurss/), kur tekstus raksta savam piedāvājumam un uzreiz ieliek kampaņā. Ja domā par sadarbību, sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [uzraksti mums](/sazinies/).
+Šīs formulas praksē izejam cauri [Meta reklāmas kursā](/meta-reklamas-kurss/), kur tekstus raksta savam piedāvājumam un uzreiz ieliek kampaņā. Kurss ilgst {% offer "meta-reklamas-kurss", "hours" %} un maksā {% offer "meta-reklamas-kurss" %}. Ja domā par sadarbību, sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [uzraksti mums](/sazinies/).

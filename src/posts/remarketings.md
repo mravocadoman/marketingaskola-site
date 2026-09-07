@@ -106,6 +106,6 @@ Abos gadījumos zaudējums atskaitē nav redzams. To var pamanīt tikai tad, ja 
 
 **Ja gribi to uzstādīt pats**, sāc ar vienu auditoriju: cilvēki, kuri pēdējās 30 dienās bija tuvu pirkumam. Tā ir maza, lēta un gandrīz vienmēr rentabla.
 
-**Ja gribi zināt, kas Tavā kontā jau ir un kā trūkst**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundā izejam cauri auditorijām, izslēgšanām un logiem un iedodam sarakstu.
+**Ja gribi zināt, kas Tavā kontā jau ir un kā trūkst**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundā izejam cauri auditorijām, izslēgšanām un logiem un iedodam sarakstu. Tā ir maksas stunda, {% offer "60" %}.
 
-**Ja gribi apgūt visu sistēmu**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/). Ja gribi, lai to vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/).
+**Ja gribi apgūt visu sistēmu**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/). Meta kurss notiek {% offer "meta-reklamas-kurss", "cadence" %} un maksā {% offer "meta-reklamas-kurss" %}. Ja gribi, lai to vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/).

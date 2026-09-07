@@ -199,4 +199,4 @@ Nesāc ar visu sarakstu. Pievieno mājaslapu Google Search Console, atrodi vienu
 
 Kas ir SEO pamatos un kā tas iekļaujas kopējā ainā, lasi rakstā [kas ir SEO](/kas-ir-seo/). Ja klienti vajadzīgi ātrāk, nekā SEO spēj dot, paralēli noder [Google reklāma](/google-reklama/).
 
-Ja gribi visu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/). Ja gribi, lai to izdara kāds cits, apskati [mūsu pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi visu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/), kas sanāk {% offer "seo-kursi", "cadence" %}; par {% offer "seo-kursi" %} Tu saņem {% offer "seo-kursi", "hours" %} ar pasniedzēju. Ja gribi, lai to izdara kāds cits, apskati [mūsu pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Stundas saruna ir {% offer "60" %}.

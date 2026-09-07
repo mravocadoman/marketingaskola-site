@@ -124,6 +124,6 @@ Vispirms pārbaudi, vai mērīšana ir pareiza. Ļoti bieži rezultāts ir, tika
 
 Aģentūra nav risinājums pati par sevi. Tā ir veids, kā ātrāk tikt pie rezultāta, ja pamati jau ir vietā.
 
-Ja neesi drošs, vai Tev vajag partneri vai vienkārši skaidrāku plānu, sāc ar [individuālu konsultāciju](/marketinga-konsultacijas/), stundas laikā izejam cauri situācijai un saliekam prioritātes. Apskati arī [mūsu pakalpojumus](/pakalpojumi/) un [veiksmes stāstus](/portfolio/).
+Ja neesi drošs, vai Tev vajag partneri vai vienkārši skaidrāku plānu, sāc ar [individuālu konsultāciju](/marketinga-konsultacijas/), stundas laikā izejam cauri situācijai un saliekam prioritātes; par stundu tas ir {% offer "60" %}. Apskati arī [mūsu pakalpojumus](/pakalpojumi/) un [veiksmes stāstus](/portfolio/).
 
-Ja gribi zināšanas paturēt savā komandā, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).
+Ja gribi zināšanas paturēt savā komandā, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/). Meta kursā nodarbība ilgst {% offer "meta-reklamas-kurss", "hours" %} un maksā {% offer "meta-reklamas-kurss" %}.

@@ -160,6 +160,6 @@ Praktiskā secība ir īsa. Vispirms sakārto datu signālu, tad izvēlies pārd
 
 Soli pa solim šī uzstādīšana ir aprakstīta rakstā [Facebook reklāmas: kā reklamēt savu biznesu internetā](/facebook-reklamas-izstrade/), materiālu daļa rakstā [Instagram reklāma](/instagram-reklama/), bet budžeta plānošana rakstā [cik maksā reklāma Facebook](/cik-maksa-reklama-facebook/).
 
-Ja gribi visu sistēmu apgūt secīgi un ar savu kontu rokās, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē, mazā grupā.
+Ja gribi visu sistēmu apgūt secīgi un ar savu kontu rokās, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Nodarbības notiek {% offer "meta-reklamas-kurss", "cadence" %}, mazā grupā, un vieta tajās ir {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi, lai kontu vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi, lai kontu vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Esošam kontam der pilnā stunda, {% offer "60" %}.

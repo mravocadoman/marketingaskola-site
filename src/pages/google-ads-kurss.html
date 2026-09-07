@@ -8,6 +8,7 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 image: "/img/gen/google-ads-motivs.webp"
 ---
 {% set cs = courseSessions.courses["google-ads-kurss"] %}
+{% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Google Ads</span>
@@ -16,11 +17,11 @@ image: "/img/gen/google-ads-motivs.webp"
     <div class="chips">
       <span>Tiešsaistē</span>
       <span>Iesācējiem</span>
-      <span>3 stundas</span>
-      <span>150 € + PVN</span>
+      <span>{{ cs.hours }} stundas</span>
+      <span>{{ cs.price }} € + PVN</span>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Pieteikties kursam</a>
+      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
       <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
     </div>
   </div>
@@ -106,7 +107,7 @@ image: "/img/gen/google-ads-motivs.webp"
         <div class="sec-head">
           <div>
             <span class="eyebrow"><span class="idx">03</span> Kursa saturs</span>
-            <h2>Pieci moduļi, trīs stundas</h2>
+            <h2>Pieci moduļi, {{ cs.hours }} stundas</h2>
           </div>
         </div>
         <p class="lead">Klikšķini uz katra moduļa, lai redzētu tajā iekļautās apakštēmas.</p>
@@ -144,16 +145,18 @@ image: "/img/gen/google-ads-motivs.webp"
       <aside class="course-aside">
         <div class="course-card">
           <p class="price-label">Kursa cena</p>
-          <p class="price">150 € <small>+ PVN</small></p>
+          <p class="price">{{ cs.price }} € <small>+ PVN</small></p>
           <ul class="course-facts">
             <li><span>Norise</span><span>Tiešsaistē, dzīvā nodarbībā</span></li>
+            <li><span>Laiks</span><span>{{ cs.time }} (Rīgas laiks)</span></li>
+            <li><span>Valoda</span><span>Latviešu</span></li>
             <li><span>Līmenis</span><span>Iesācējiem</span></li>
-            <li><span>Ilgums</span><span>3 stundas</span></li>
+            <li><span>Ilgums</span><span>{{ cs.hours }} stundas</span></li>
             <li><span>Grupa</span><span>No {{ courseSessions.policy.minSeats }} dalībniekiem</span></li>
             <li><span>Priekšzināšanas</span><span>Nav nepieciešamas</span></li>
             <li><span>Metodes</span><span>Aktīvās mācības, diskusijas, lekcija, piemēru izpēte</span></li>
           </ul>
-          <a class="btn" href="#piesakies">Pieteikties kursam</a>
+          <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
         </div>
         <div class="instructor-card">
           <div class="who">
@@ -172,7 +175,7 @@ image: "/img/gen/google-ads-motivs.webp"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">04</span> Rezultāti</span>
-        <h2>Ko Tu vari pēc trim stundām</h2>
+        <h2>Ko Tu vari pēc {{ cs.hours }} stundām</h2>
       </div>
       <p class="lead">Kursā apskatītās stratēģijas ikdienā izmantojam klientu kampaņās.</p>
     </div>
@@ -258,11 +261,11 @@ image: "/img/gen/google-ads-motivs.webp"
     </div>
     <div class="row cols-2 top">
       <div class="col">
-        <details class="faq"><summary>Kāds ir apmācību formāts?</summary><div><p>Šī ir dzīva tiešsaistes nodarbība mazā grupā, nevis ieraksts. Trīs stundu laikā ejam cauri kursa saturam, apskatām reālus kontus un atbildam uz dalībnieku jautājumiem par viņu pašu biznesu.</p>
+        <details class="faq"><summary>Kāds ir apmācību formāts?</summary><div><p>Šī ir dzīva tiešsaistes nodarbība mazā grupā, nevis ieraksts. {{ cs.hours }} stundu laikā ejam cauri kursa saturam, apskatām reālus kontus un atbildam uz dalībnieku jautājumiem par viņu pašu biznesu.</p>
         <p>Pieslēgšanās saiti nosūtām uz e-pastu pirms nodarbības.</p></div></details>
         <details class="faq"><summary>Vai man vajag jau esošu Google Ads kontu?</summary><div><p>Nē. Kurss ir piemērots arī tad, ja konta vēl nav — nodarbībā parādām, kā to izveidot un uzstādīt no nulles.</p>
         <p>Ja konts jau darbojas, ņem līdzi jautājumus par to: dzīvajā nodarbībā tos var uzdot uzreiz.</p></div></details>
-        <details class="faq"><summary>Vai kursa cenā ietilpst reklāmas budžets?</summary><div><p>Nē. 150 € + PVN ir maksa par apmācību. Reklāmas budžetu Google maksā tieši Tu no sava konta, un tā apmēru izvēlies pats.</p>
+        <details class="faq"><summary>Vai kursa cenā ietilpst reklāmas budžets?</summary><div><p>Nē. {{ cs.price }} € + PVN ir maksa par apmācību. Reklāmas budžetu Google maksā tieši Tu no sava konta, un tā apmēru izvēlies pats.</p>
         <p>Kursā apskatām, kā sākuma budžetu noteikt tā, lai no tā varētu ko iemācīties.</p></div></details>
         <details class="faq"><summary>Kas notiek, ja grupa nesanāk?</summary><div><p>Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja pieteikušos ir mazāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises sazināmies un piedāvājam trīs iespējas: pārcelt vietu uz nākamā mēneša grupu, atgriezt samaksu pilnā apmērā vai pārvērst samaksu individuālā konsultācijā.</p>
         <p>Izvēle vienmēr paliek dalībniekam.</p></div></details>
@@ -271,7 +274,7 @@ image: "/img/gen/google-ads-motivs.webp"
         <details class="faq"><summary>Vai varu atteikties no vietas?</summary><div><p>Jā. Ja atsakies vismaz {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, atgriežam samaksu pilnā apmērā. Ja piesakies vēlāk nekā {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, pilna atmaksa pienākas {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās.</p>
         <p>Pēc šī termiņa vietu varam pārcelt uz nākamo grupu. Ja grupu atceļam mēs, izvēle starp atmaksu, nākamo mēnesi un konsultāciju vienmēr paliek Tev.</p></div></details>
         <details class="faq"><summary>Ar ko šis kurss atšķiras no Meta reklāmas kursa?</summary><div><p>Meta reklāma uzrunā cilvēku, kurš Tavu produktu vēl nemeklē — tur galvenais darbs ir pieprasījuma radīšana. Google Ads uzrunā cilvēku, kurš jau meklē, tāpēc galvenais darbs ir atslēgvārdi, nodoms un klikšķa cena.</p>
-        <p>Kursi viens otru nedublē. Daudzi dalībnieki iziet abus — sk. <a href="/meta-reklamas-kurss/">Meta reklāmas kursu</a>.</p></div></details>
+        <p>Kursi viens otru nedublē — tos var iziet abus, sk. <a href="/meta-reklamas-kurss/">Meta reklāmas kursu</a>.</p></div></details>
         <details class="faq"><summary>Vai kurss noderēs, ja Google Ads jau lietoju?</summary><div><p>Jā, ja rezultāts vēl nav skaidrs. Vairākums kontu, ko redzam, klūp pie tā paša: nav negatīvo atslēgvārdu, nav uzstādīta konversiju uzskaite un viss ir vienā kampaņā.</p>
         <p>Nodarbībā šīs trīs lietas sakārtojam soli pa solim.</p></div></details>
         <details class="faq"><summary>Vai saņemšu materiālus pēc kursa?</summary><div><p>Jā. Pēc nodarbības nosūtām kursa materiālus un pārbaudes sarakstu, pēc kura vari iziet savu kontu.</p>
@@ -299,10 +302,10 @@ image: "/img/gen/google-ads-motivs.webp"
   <div class="container cta-band-inner">
     <div>
       <h2>Pārstāj maksāt par klikšķiem, kas nepārdod</h2>
-      <p>Trīs stundas tiešsaistē mazā grupā ar praktiķi, kas ikdienā pārvalda reālus Google Ads kontus.</p>
+      <p>{{ cs.hours }} stundas tiešsaistē mazā grupā ar praktiķi, kas ikdienā pārvalda reālus Google Ads kontus.</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Pieteikties kursam</a>
+      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
       <a class="btn btn--ghost" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
     </div>
   </div>

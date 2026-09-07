@@ -133,6 +133,6 @@ Pirmais rezultāts nāk pirmajā stundā. Labi rezultāti, pēc pāris nedēļā
 
 Rīki ir tikai puse. Otra puse ir process, kurā tie iekļaujas un tieši tur parasti slēpjas lielākais ieguvums.
 
-Ja gribi saprast, kurš darbs Tavā uzņēmumā jāautomatizē vispirms, sāc ar rakstu [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) vai izrunā to [individuālā konsultācijā](/marketinga-konsultacijas/). Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
+Ja gribi saprast, kurš darbs Tavā uzņēmumā jāautomatizē vispirms, sāc ar rakstu [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) vai izrunā to [individuālā konsultācijā](/marketinga-konsultacijas/). Īsā sesija, {% offer "30", "hours" %}, maksā {% offer "30" %}. Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
 
-Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Pārējos kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/), bet visu mārketingu kopumā varam pārņemt mēs. Sk. [pakalpojumus](/pakalpojumi/).
+Ja gribi apgūt reklāmu veidošanu, kurā MI rīki ir daļa no darba, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Nodarbības notiek {% offer "meta-reklamas-kurss", "cadence" %}, cena {% offer "meta-reklamas-kurss" %}. Pārējos kursus atradīsi [kursu sadaļā](/digitala-marketinga-kursi/), bet visu mārketingu kopumā varam pārņemt mēs. Sk. [pakalpojumus](/pakalpojumi/).

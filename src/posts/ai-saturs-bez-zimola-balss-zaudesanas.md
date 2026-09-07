@@ -133,6 +133,6 @@ Pieraksti zīmola balsi vienā lapā: pieci teikumi, kā runājam, un pieci, kā
 
 Zīmola balss nav stila jautājums. Tā ir iemesls, kāpēc cilvēks izvēlas Tevi, nevis lētāko piedāvājumu un tieši to bezpersonisks saturs klusi noārda.
 
-Ja gribi sakārtot satura darbu tā, lai MI palīdz, nevis padara visu vienādu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Plašāk par satura pieeju lasi rakstā [satura mārketings](/satura-marketings/), bet par MI lomu kopumā, [mākslīgais intelekts mārketingā](/maksligais-intelekts-marketinga/).
+Ja gribi sakārtot satura darbu tā, lai MI palīdz, nevis padara visu vienādu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja satura darbs prasa vairākas sarunas, ir {% offer "bundle5", "sessions" %} sesiju komplekts par {% offer "bundle5" %}. Plašāk par satura pieeju lasi rakstā [satura mārketings](/satura-marketings/), bet par MI lomu kopumā, [mākslīgais intelekts mārketingā](/maksligais-intelekts-marketinga/).
 
-Ja gribi apgūt reklāmu veidošanu, kurā MI ir palīgs, nevis autopilots, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/). Satura darbu varam uzņemties arī mēs. Sk. [pakalpojumus](/pakalpojumi/).
+Ja gribi apgūt reklāmu veidošanu, kurā MI ir palīgs, nevis autopilots, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/), kas maksā {% offer "meta-reklamas-kurss" %} un notiek {% offer "meta-reklamas-kurss", "cadence" %}, vai apskati [visus kursus](/digitala-marketinga-kursi/). Satura darbu varam uzņemties arī mēs. Sk. [pakalpojumus](/pakalpojumi/).

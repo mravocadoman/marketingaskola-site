@@ -1062,6 +1062,127 @@ mērīšanas pamati" rather than promising a full walkthrough, and
 treatment, because that one genuinely has a whole module for it (module 5).
 The SEO course covers analytics in module 4.
 
+## Offers pass (7 Sep 2026) — prices are data, the ladder has one name per rung
+
+Owner: *"how can we further improve the whole website from offers
+standpoint"*, then *"continue on the old offers plan"*. The audit (33 agents,
+adversarially verified) found a complete ladder — free 20-min call → 150 €
+course → 60/90 € consultation → 370 € bundle → managed ads → automation audit
+— that no page showed, with prices typed by hand in five places and the
+rungs mislabelled at the joins. The owner-independent items were built; the
+owner-gated ones are listed at the end of this section and must not be
+guessed at.
+
+**`src/_data/courseSessions.json` is now the ONLY source for a course's
+`price`, `hours`, `name`, `instructor`, `cadence` and `proof`.** The hero
+chips, the `.course-card`, the Stripe button in `course-sessions.njk`, the
+catalog tiles and the JSON-LD `Course` (matched by slug in `schemaGraph`, so
+the schema can never disagree with the button) all read it; the
+front-matter `course:` blocks no longer carry `price`/`hours`. `booking.json`
+does the same for the consultation (`best2` is the 60-minute option's
+second fit line, `sessions: 5` drives the bundle's per-session price).
+**Never type a price into copy again** — in `src/pages/*.html` use
+`{{ courseSessions.courses["meta-reklamas-kurss"].price }}`; in posts use
+the `{% offer %}` shortcode. Front-matter `description:` strings are YAML
+and cannot render Nunjucks, so the few price mentions there are the
+remaining hand-typed ones: grep `+ PVN` in `src/pages` after any change.
+
+- **`gross` filter** (`eleventy.config.js`): `150 | gross` → `181,50`,
+  Latvian comma. The consumer-facing total is printed ONCE beside the net
+  where a private person buys (course button fine print, each consultation
+  cell) — muted text, not cyan. Consumer price rules want the final price
+  visible; one parenthetical is not the wall of terms the owner objected to.
+- **`{% offer "key" [, "field"] %}`** — keys are the three course slugs or
+  the consultation ids `60` / `30` / `bundle5`; fields `price` (default,
+  "150 € + PVN"), `gross`, `hours` ("3 stundas"), `cadence` ("pirmajā
+  otrdienā katru mēnesi"). An unknown key THROWS at build time rather than
+  printing an empty string into a sentence. `lv-polish.mjs` treats it as
+  load-bearing like `{% infographic %}` and refuses to write if the model
+  altered it. It is applied by hand in each post's closing section with
+  varied phrasing — one stamped clause across 41 posts would recreate the
+  "bet X puse rakstā Y" template that lv-review just dismantled.
+- **Past course dates hide themselves.** Session cells carry `data-date`
+  and `main.js` sets `hidden` on any date before today (the Meta page was
+  selling 8 Sep like December on 6 Sep). Cal.com remains the real
+  availability; this only stops the page contradicting it. If every listed
+  date is past, the grid is empty — add dates. The optional daily rebuild
+  cron in `deploy.yml` was NOT added.
+- **Course checkout copy.** The refund promise ("Bezmaksas atteikšanās līdz
+  7 dienām pirms norises…") is a visible line under the button, not only
+  inside the collapsed disclosure — it is the strongest risk reversal on the
+  site. The invoice route is a prefilled `mailto:` (subject + body listing
+  what to send) ending "Pēc rēķina apmaksas nosūtām kalendāra saiti", so an
+  invoice buyer has a path to the calendar. "Apskatīt kalendāru" stays: the
+  URL is the Stripe redirect target, removing the button closes nothing —
+  the free-seat hole is closed on the Cal.com side (owner action, below).
+- **`proof` per course renders under the buy button only when non-empty.**
+  `course-sessions.njk` is one include for three instructors, so a literal
+  proof line there would render under the wrong name. Meta carries the
+  certifications line; SEO and Google Ads are empty until there is
+  something true to say.
+
+
+**What the pass changed on the pages (all rendered from data, nothing
+typed):** "Pieteikties iepazīšanās zvanam" on `/` and `/portfolio/`;
+`/pakalpojumi/` closes on two doors (free call, cyan; paid consultation,
+ghost, with the prices); the `/sazinies/` card says the paid formats and
+"Šī nav iepazīšanās saruna"; the four portfolio cases carry ids
+(`#brew-company`, `#cetras-zoles`, `#instant-change`, `#excel-know-how`)
+and the hero chips plus a "Skatīt rezultātus" line under each marquee link
+to them; `/facebook-reklama/` proves at the buyer's budget (Četras Zoles as
+one dated outcome in a `.stats--row`, NOT a second `.panel`), prices the
+60-min consultation, describes "Kas notiek pēc zvana" with "parasti" and no
+numbers, and promises ONE report (CAC/ROAS-first, conditional on tracking)
+in all four places; course pages say "Rezervēt vietu" only while a
+`bookUrl` exists, carry "Rīgas laiks" and the language once in the price
+card, and the Meta page answers the budget and the two-courses questions
+the Google page already did; `/tiktok-kursi/` no longer shows a course
+price; the hub is a flat "150 € + PVN par kursu" with the catalog tiles
+rendering price, instructor and cadence from data; the consultation page
+names the two fixed lengths plus the bundle everywhere (no "30-60 min"),
+promises a list "ko pats pierakstīsi", and its instructor card carries the
+Meta badges and the lecturing sentence verbatim from `/sazinies/`; 38 blog
+closers quote a price through `{% offer %}`.
+
+**Owner-gated — NOT done, do not guess (plan §4, 6 Sep 2026):**
+1. Is 500 €/mēn ad spend the public line for managed Meta ads? Gates the
+   ladder block (`ladder.njk`, not built) and the routing line in ad posts.
+2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
+   (hub, meta description, catalog tile). Closed corporate sessions yes/no.
+3. Brew Company: 75 000 € per month (prose) or total (stat tiles)? Excel
+   Know How 1174 vs 1175 €? Year of each portfolio case? Do horizontal Lumi
+   cuts exist (copy says "horizontāls Feed", all four clips are vertical)?
+4. Do Meta and SEO participants get materials and a checklist? Attendance
+   confirmation? The hub's "Q&A sesijas un diskusiju grupas" — ever?
+5. Group-failure conversion rule and who delivers post-course sessions for
+   the Google and SEO courses (the "Pēc nodarbības" block, §3 D, not built).
+6. Consultation: cancellation window checked against the 14-day withdrawal
+   right; written recap yes/no (page now promises none); Google Meet +
+   Latvian chip; bundle expiry/transferability; Cal.com booking questions
+   ("Mājaslapa", "Kas šobrīd nestrādā?") — step 02 copy waits for them.
+7. Meta service: fee model, setup fee, term, notice, proposal turnaround,
+   time to launch, report day (§3 F). Nothing with placeholders goes live.
+8. More Timber quote on `/facebook-reklama/` only if it was a Meta lead-gen
+   engagement. Četras Zoles IS now named on the Meta course page (the
+   portfolio already publishes it) — veto if unwanted.
+9. Kristaps: LinkedIn, certification, basis for "vairāk nekā 10 miljonus
+   eiro". Matīss: a nameable client behind "2–10 reizes".
+10. Account actions: Stripe adjustable quantity (1–12) on the three course
+    links; Cal.com — booking questions, minimum notice 3 days, course and
+    consultation events hidden from the public profile (the public calendar
+    link books a seat WITHOUT paying — that hole is closed on the Cal.com
+    side, not by removing the button); whether the Cal.com plan has
+    Workflows; the webinar thank-you page's redirect target (its button
+    still goes to the blog).
+11. Who delivers a TikTok consultation — until then the button says
+    "Individuāla konsultācija".
+
+**Nunjucks trap hit three times in one pass:** `selectattr("id", "equalto",
+"60")` silently ignores the test and returns every item with a truthy `id`,
+so `| first` is always the first option. Look up by index, loop with an
+`{% if %}`, or use `rejectattr("sessions")`; on pages the `{% offer "60" %}`
+shortcode is the simplest.
+
 ## Two artwork languages, settled 5 Sep 2026
 
 After a long exploration the owner settled on two — and only two — treatments.
@@ -1455,6 +1576,13 @@ artwork against the house style; the model drifts on "flat".
     sessions, and never call a paid consultation "bezmaksas".
   * Course signup pages may keep "Piesakies bez maksas" — that means the
     *application* is free, not the course.
+- **One name per rung (7 Sep 2026).** "Konsultācija" is reserved for the
+  PAID product on `/marketinga-konsultacijas/`. The free 20-minute call is
+  always "iepazīšanās zvans" — buttons read "Pieteikties iepazīšanās
+  zvanam" and go to `/sazinies/`. Never "Pieteikties konsultācijai" on a
+  link to `/sazinies/`: the same word was selling two rungs at two prices,
+  and a reader who saw "bezmaksas 20 minūšu" forty lines up assumed the
+  30-60 min talk was free too.
 - **Rihards has worked with 100+ companies** — use 100+ consistently
   (one course page said 50+; that was wrong).
 - Stats used on the homepage (10+ gadi, 100+ uzņēmumi, 1M+ € budžeti) come

@@ -86,4 +86,4 @@ Paņem vienu reklāmu, kas šobrīd darbojas, un pārbaudi to ar konkurenta test
 
 Vairāk par teksta uzbūvi lasi rakstā [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/).
 
-Ja gribi iemācīties šos tekstus rakstīt kopā ar kampaņu, kurā tie darbojas, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Ja gribi skatu no malas tieši saviem tekstiem, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi iemācīties šos tekstus rakstīt kopā ar kampaņu, kurā tie darbojas, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Viena {% offer "meta-reklamas-kurss", "hours" %} gara tiešsaistes nodarbība par {% offer "meta-reklamas-kurss" %}. Ja gribi skatu no malas tieši saviem tekstiem, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), īsākais formāts ir {% offer "30", "hours" %} par {% offer "30" %}.

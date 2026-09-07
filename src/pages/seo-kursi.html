@@ -6,20 +6,22 @@ permalink: "/seo-kursi/"
 course: { name: "SEO kurss", level: "Iesācējiem", vatIncluded: false, mode: "Online", instructor: "Matīss Valters Seipulāns" }
 crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 ---
+{% set cs = courseSessions.courses["seo-kursi"] %}
+{% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · SEO</span>
-    <h1>SEO kursi</h1>
-    <p class="sub">Apgūsti meklētājprogrammu pamatus — palielini mājaslapas redzamību Google un piesaisti vairāk organisko apmeklētāju.</p>
+    <h1>SEO kurss — nopelni vietu Google bez maksas par klikšķi</h1>
+    <p class="sub">Apgūsti meklētājprogrammu pamatus — palielini mājaslapas redzamību Google un piesaisti vairāk organisko apmeklētāju. Kam kurss NAV domāts: ja rezultāts vajadzīgs jau šomēnes, sāc ar <a href="/google-ads-kurss/">Google Ads kursu</a>.</p>
     <div class="chips">
       <span>Tiešsaistē</span>
       <span>Iesācējiem</span>
-      <span>3 stundas</span>
+      <span>{{ cs.hours }} stundas</span>
       <span>Notiek katru mēnesi</span>
-      <span>150 € + PVN</span>
+      <span>{{ cs.price }} € + PVN</span>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Pieteikties kursam</a>
+      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
       <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
     </div>
   </div>
@@ -85,22 +87,24 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
       <aside class="course-aside">
         <div class="course-card">
           <p class="price-label">Kursa cena</p>
-          <p class="price">150 € <small>+ PVN</small></p>
+          <p class="price">{{ cs.price }} € <small>+ PVN</small></p>
           <ul class="course-facts">
             <li><span>Līmenis</span><span>Iesācējiem</span></li>
-            <li><span>Ilgums</span><span>3 stundas</span></li>
+            <li><span>Ilgums</span><span>{{ cs.hours }} stundas</span></li>
+            <li><span>Laiks</span><span>{{ cs.time }} (Rīgas laiks)</span></li>
+            <li><span>Valoda</span><span>Latviešu</span></li>
             <li><span>Norise</span><span>Katru mēnesi, grupā no {{ courseSessions.policy.minSeats }}</span></li>
             <li><span>Priekšzināšanas</span><span>Izpratne par meklētājprogrammām</span></li>
             <li><span>Metodes</span><span>Aktīvās mācības, diskusijas, lekcija, piemēru izpēte</span></li>
           </ul>
-          <a class="btn" href="#piesakies">Pieteikties kursam</a>
+          <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
         </div>
         <div class="instructor-card">
           <div class="who">
             <img src="/img/team/matiss-seo-brand.webp" alt="Matīss Valters Seipulāns" loading="lazy">
             <div><strong>Matīss Valters Seipulāns</strong><span>Kursa pasniedzējs</span></div>
           </div>
-          <p>Digitālā mārketinga speciālists ar 8 gadu pieredzi, fokusējoties uz SEO. Strādājis ar uzņēmumiem Latvijā, Eiropā, Dienvidamerikā un Āzijā, kopā pārvaldījis 15M EUR reklāmas budžetu. Sava darba rezultātā palielinājis organisko apmeklētāju skaitu 2–10 reizes.</p>
+          <p>Digitālā mārketinga speciālists ar 8 gadu pieredzi, fokusējoties uz SEO. Strādājis ar uzņēmumiem Latvijā, Eiropā, Dienvidamerikā un Āzijā, kopā pārvaldījis 15M EUR reklāmas budžetu. Pasniedzēja klientu rezultāti: organisko apmeklētāju skaits pieaudzis 2–10 reizes.</p>
           <a class="arrow-link" href="https://www.linkedin.com/in/matiss-seipulans/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </aside>
@@ -123,11 +127,50 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
   </div>
 </section>
 
+<section class="sec" id="rekins">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">02</span> Rēķins</span>
+        <h2>Nepieciešams rēķins?</h2>
+      </div>
+      <p class="lead">B2B pirkumiem izrakstām rēķinu ar bankas pārskaitījumu.</p>
+    </div>
+    <p>Ļoti labi saprotam B2B pirkumu specifiku, tāpēc, lai padarītu Tavu grāmatvedi laimīgu, izveidosim Tavam uzņēmumam rēķinu pirkumam ar bankas pārskaitījumu. Rēķinu saņemsi, sūtot e-pastu ar uzņēmuma rekvizītiem uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    <p>Vietu grupā rezervējam pēc rēķina apmaksas.</p>
+  </div>
+</section>
+
 <section class="sec">
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">02</span> Citi kursi</span>
+        <span class="eyebrow"><span class="idx">03</span> BUJ</span>
+        <h2>Biežāk uzdotie jautājumi</h2>
+      </div>
+      <p class="lead">Ja neatrodi atbildi, raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <details class="faq"><summary>Kāds ir apmācību formāts?</summary><div><p>Šī ir dzīva tiešsaistes nodarbība mazā grupā, nevis ieraksts. {{ cs.hours }} stundu laikā ejam cauri kursa saturam un atbildam uz dalībnieku jautājumiem par viņu pašu mājaslapu.</p>
+        <p>Pieslēgšanās saiti nosūtām uz e-pastu pirms nodarbības.</p></div></details>
+        <details class="faq"><summary>Kas notiek, ja grupa nesanāk?</summary><div><p>Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja pieteikušos ir mazāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises sazināmies un piedāvājam trīs iespējas: pārcelt vietu uz nākamā mēneša grupu, atgriezt samaksu pilnā apmērā vai pārvērst samaksu individuālā konsultācijā.</p>
+        <p>Izvēle vienmēr paliek dalībniekam.</p></div></details>
+      </div>
+      <div class="col">
+        <details class="faq"><summary>Vai varu atteikties no vietas?</summary><div><p>Jā. Ja atsakies vismaz {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, atgriežam samaksu pilnā apmērā. Ja piesakies vēlāk nekā {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, pilna atmaksa pienākas {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās.</p>
+        <p>Pēc šī termiņa vietu varam pārcelt uz nākamo grupu. Ja grupu atceļam mēs, izvēle starp atmaksu, nākamo mēnesi un konsultāciju vienmēr paliek Tev.</p></div></details>
+        <details class="faq"><summary>Ko darīt, ja nevaru ierasties?</summary><div><p>Raksti mums — vietu varam pārcelt uz nākamo grupu.</p></div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">04</span> Citi kursi</span>
         <h2>Apskati arī citus digitālā mārketinga kursus</h2>
       </div>
       <p class="lead"><a class="arrow-link" href="/digitala-marketinga-kursi/">Visi kursi</a></p>

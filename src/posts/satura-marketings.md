@@ -120,4 +120,4 @@ Nesāc ar satura plānu pusgadam. Paņem vienu jautājumu, ko klienti Tev uzdod 
 
 Teksta uzbūvi palīdzēs sakārtot raksti [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/). Ja daļu darba gribi uzticēt mākslīgajam intelektam, nezaudējot savu balsi, tam ir veltīts raksts [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/).
 
-Ja satura veidošanā un ikmēneša plānošanā trūkst sistēmas, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja meklē gatavu risinājumu, apskati [mūsu pakalpojumus](/pakalpojumi/).
+Ja satura veidošanā un ikmēneša plānošanā trūkst sistēmas, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja saturam vajag regulāru skatu no malas, {% offer "bundle5", "sessions" %} sesijas komplektā maksā {% offer "bundle5" %}. Ja meklē gatavu risinājumu, apskati [mūsu pakalpojumus](/pakalpojumi/).

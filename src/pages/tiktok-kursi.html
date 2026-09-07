@@ -1,24 +1,25 @@
 ---
 layout: page.njk
 title: "TikTok Reklāmas Kursi | Mārketinga Skola"
-description: "Praktisks TikTok reklāmas kurss: kā izveidot, optimizēt un analizēt kampaņas. Grupu kurss šobrīd netiek organizēts — TikTok reklāmu var izrunāt konsultācijā."
+description: "TikTok reklāmas grupu kurss šobrīd netiek organizēts — TikTok reklāmu var izrunāt individuālā konsultācijā. Kursa programma: kā izveidot, optimizēt un analizēt kampaņas."
 permalink: "/tiktok-kursi/"
 course: { name: "TikTok reklāmas kurss", level: "Iesācējiem", hours: 4 }
 crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
 ---
+{# Nunjucks selectattr ignores test arguments, so filter by shape: the single sessions are the options without a `sessions` count. #}
+{% set singles = booking.consultation.options | rejectattr("sessions") %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · TikTok</span>
     <h1>TikTok reklāmas kursi</h1>
-    <p class="sub">Sasniedz jaunu auditoriju un palielini pārdošanu — praktiski kursi, kas iemāca izveidot, optimizēt un analizēt veiksmīgas TikTok kampaņas.</p>
+    <p class="sub">Grupu kurss šobrīd netiek organizēts — ja TikTok reklāma ir aktuāla jau tagad, to izrunājam individuālā konsultācijā. Zemāk ir kursa programma: kā izveidot, optimizēt un analizēt TikTok kampaņas.</p>
     <div class="chips">
       <span>Iesācējiem</span>
       <span>4 stundas</span>
-      <span>150 € + PVN</span>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="/marketinga-konsultacijas/">Pieteikties konsultācijai</a>
+      <a class="btn" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
       <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
     </div>
   </div>
@@ -68,8 +69,6 @@ image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
 
       <aside class="course-aside">
         <div class="course-card">
-          <p class="price-label">Kursa cena</p>
-          <p class="price">150 € <small>+ PVN</small></p>
           <span class="badge badge--muted">Šobrīd netiek organizēts</span>
           <ul class="course-facts">
             <li><span>Līmenis</span><span>Iesācējiem</span></li>
@@ -77,8 +76,8 @@ image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
             <li><span>Priekšzināšanas</span><span>Izpratne par TikTok platformu</span></li>
             <li><span>Metodes</span><span>Teorija, QA diskusija, lekcija, piemēru izpēte</span></li>
           </ul>
-          <a class="btn" href="/marketinga-konsultacijas/">Pieteikties konsultācijai</a>
-          <p class="fine">Kurss šobrīd netiek organizēts. Ja TikTok reklāma ir aktuāla jau tagad, to var izrunāt individuālā konsultācijā — 90 € stundā vai 60 € par 30 minūtēm.</p>
+          <a class="btn" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
+          <p class="fine">Kurss šobrīd netiek organizēts. Ja TikTok reklāma ir aktuāla jau tagad, to var izrunāt individuālā konsultācijā — {% for o in singles %}{{ o.price }} € + PVN ({{ o.duration }}){% if not loop.last %} vai {% endif %}{% endfor %}.</p>
         </div>
         <div class="instructor-card">
           <div class="who">
@@ -102,7 +101,7 @@ image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
       </div>
       <p class="lead"><a class="arrow-link" href="/digitala-marketinga-kursi/">Visi kursi</a></p>
     </div>
-    {% set catalogExclude = "tiktok" %}
+    {% set catalogExclude = "" %}
     {% include "course-catalog.njk" %}
   </div>
 </section>
@@ -111,7 +110,7 @@ image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
   <div class="container cta-band-inner">
     <div>
       <h2>Vajag TikTok reklāmu jau tagad?</h2>
-      <p>Grupu kurss šobrīd netiek organizēts. Individuālā konsultācijā izrunājam Tavu situāciju un konkrētos nākamos soļus — 90 € stundā vai 60 € par 30 minūtēm.</p>
+      <p>Grupu kurss šobrīd netiek organizēts. Individuālā konsultācijā izrunājam Tavu situāciju un konkrētos nākamos soļus — {% for o in singles %}{{ o.price }} € + PVN ({{ o.duration }}){% if not loop.last %} vai {% endif %}{% endfor %}.</p>
     </div>
     <div class="btn-wrap">
       <a class="btn" href="/marketinga-konsultacijas/">Apskatīt konsultācijas</a>

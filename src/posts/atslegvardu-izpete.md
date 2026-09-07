@@ -117,6 +117,6 @@ Tāpēc labākā atslēgvārdu izpēte gandrīz nekad nesākas ar rīku. Tā sā
 
 **Ja gribi sākt šodien**, atver Google Search Console un izraksti desmit vaicājumus, kuros esi otrajā lapā. Tas ir viss pirmais solis.
 
-**Ja gribi apgūt visu sistēmu**, tam ir domāts [SEO kurss](/seo-kursi/), bet par reklāmu meklētājā ir [Google Ads kurss](/google-ads-kurss/).
+**Ja gribi apgūt visu sistēmu**, tam ir domāts [SEO kurss](/seo-kursi/), {% offer "seo-kursi", "hours" %} ar pasniedzēju par {% offer "seo-kursi" %}, bet par reklāmu meklētājā ir [Google Ads kurss](/google-ads-kurss/).
 
-**Ja gribi sarakstu, kas jau sakārtots pēc nodoma un prioritātes**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/) vai kā daļu no [mūsu pakalpojumiem](/pakalpojumi/). Plašāk par kanālu kopumā rakstā [kas ir SEO](/kas-ir-seo/).
+**Ja gribi sarakstu, kas jau sakārtots pēc nodoma un prioritātes**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/) vai kā daļu no [mūsu pakalpojumiem](/pakalpojumi/). Par stundu rēķini ar {% offer "60" %}. Plašāk par kanālu kopumā rakstā [kas ir SEO](/kas-ir-seo/).

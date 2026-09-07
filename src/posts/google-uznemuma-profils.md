@@ -104,6 +104,6 @@ Tāda ir šī kanāla īpatnība: zaudējumu neredz. Redz tikai to, ka telefons 
 
 **Ja gribi to izdarīt pats**, sāc šodien ar vienu stundu: kategorija, darba laiks, pakalpojumi ar cenām, piecas jaunas bildes. Pārējais var pagaidīt.
 
-**Ja gribi saprast, kur tieši Tavā nozarē ir lielākā atdeve**, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Vietējos pakalpojumos bieži izrādās, ka reklāmas budžets vispār nav vajadzīgs, kamēr profils un mājaslapa nav sakārtoti. To pateikt godīgi ir daļa no darba.
+**Ja gribi saprast, kur tieši Tavā nozarē ir lielākā atdeve**, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Vienam konkrētam jautājumam ir īsā sesija: {% offer "30", "hours" %} par {% offer "30" %}. Vietējos pakalpojumos bieži izrādās, ka reklāmas budžets vispār nav vajadzīgs, kamēr profils un mājaslapa nav sakārtoti. To pateikt godīgi ir daļa no darba.
 
-**Ja gribi pamatīgi apgūt meklētājprogrammu darbību**, tam ir domāts [SEO kurss](/seo-kursi/). Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).
+**Ja gribi pamatīgi apgūt meklētājprogrammu darbību**, tam ir domāts [SEO kurss](/seo-kursi/): tiešsaistē, {% offer "seo-kursi", "cadence" %}, {% offer "seo-kursi" %}. Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).

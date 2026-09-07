@@ -113,8 +113,8 @@ Problēma nav laiks, bet secība. Ja kādu no šiem soļiem izdari nepareizā se
 
 ## Nākamais solis
 
-**Ja gribi to uzstādīt pats un saprast katru izvēli**, tam ir domāts [Google Ads kurss](/google-ads-kurss/). Trīs stundas tiešsaistē ar Kristapu Apeinānu, kurš ar Google reklāmām saviem klientiem ir nopelnījis vairāk nekā 10 miljonus eiro, un ar Tavu kontu ekrānā, nevis ar prezentāciju.
+**Ja gribi to uzstādīt pats un saprast katru izvēli**, tam ir domāts [Google Ads kurss](/google-ads-kurss/). Nodarbība ir {% offer "google-ads-kurss", "hours" %} gara, ar Kristapu Apeinānu, kurš ar Google reklāmām saviem klientiem ir nopelnījis vairāk nekā 10 miljonus eiro, un ar Tavu kontu ekrānā, nevis ar prezentāciju. Cena ir {% offer "google-ads-kurss" %}, grupa sanāk {% offer "google-ads-kurss", "cadence" %}.
 
-**Ja konts jau strādā, bet rezultāts nesanāk**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Stundas laikā izskatām kontu un konkrētā sarakstā pasakām, kur aiziet nauda.
+**Ja konts jau strādā, bet rezultāts nesanāk**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Stundas laikā izskatām kontu un konkrētā sarakstā pasakām, kur aiziet nauda. Šis skats no malas maksā {% offer "60" %}.
 
 **Ja gribi, lai kontu vada kāds cits**, apskati [mūsu pakalpojumus](/pakalpojumi/). Kā izvēlēties partneri un ko jautāt pirms līguma, rakstīts rakstā [Google reklāmas aģentūra](/google-reklamas-agentura/).

@@ -187,6 +187,6 @@ Praksē lēmums parasti sākas ar vienu jautājumu: vai cilvēks Tavu produktu j
 
 Tradicionālie kanāli, piemēram, radio un āra reklāma, mazam uzņēmumam parasti nāk pēc tam, kad digitālie kanāli jau strādā un ir zināma klienta cena. Tos ir grūtāk izmērīt, tāpēc tos gudrāk ir pievienot vēlāk, nevis sākt ar tiem.
 
-Ja neesi drošs, ar kuru kanālu Tavā gadījumā sākt, apskati, ko katrā no tiem darām mēs, [pakalpojumu sadaļā](/pakalpojumi/), vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja neesi drošs, ar kuru kanālu Tavā gadījumā sākt, apskati, ko katrā no tiem darām mēs, [pakalpojumu sadaļā](/pakalpojumi/), vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Kanāla izvēlei der arī īsā sesija, {% offer "30", "hours" %} par {% offer "30" %}.
 
 Neatkarīgi no izvēlētā kanāla viens noteikums paliek: reklāma nav vienreizējs process. Testē, pielāgo un vērtē rezultātu pēc klienta cenas, nevis pēc klikšķiem.

@@ -107,6 +107,6 @@ Mēs nezinām Tavu nozari labāk par Tevi. Bet mēs esam redzējuši, kā izskat
 
 **Ja gribi sākt šonedēļ**, uzraksti sarakstu ar uzņēmumiem, kuriem Tavs risinājums der, un pieraksti pie katra, kāda problēma viņiem ir. Šis viens darbs parasti maina visu pārējo plānu.
 
-**Ja gribi izlemt kanālu un piedāvājumu kopā ar kādu**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundas laikā izejam cauri sarakstam, ciklam un skaitļiem un saliekam soļus secībā.
+**Ja gribi izlemt kanālu un piedāvājumu kopā ar kādu**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundas laikā izejam cauri sarakstam, ciklam un skaitļiem un saliekam soļus secībā. Tā ir maksas saruna, {% offer "60" %} par stundu.
 
 **Ja meklē partneri izpildei**, apskati [mūsu pakalpojumus](/pakalpojumi/). Kā salikt plānu, aprakstīts rakstā [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).

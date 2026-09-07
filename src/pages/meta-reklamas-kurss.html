@@ -8,6 +8,7 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries-ar-agenturam-kuras-agresivi-gruzas-virsu-ar-saviem-marketinga-pakalpojumiem_-5.png"
 ---
 {% set cs = courseSessions.courses["meta-reklamas-kurss"] %}
+{% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
 <section class="page-hero">
   <div class="container">
     <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Meta</span>
@@ -16,11 +17,11 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
     <div class="chips">
       <span>Tiešsaistē</span>
       <span>Iesācējiem</span>
-      <span>3 stundas</span>
-      <span>150 € + PVN</span>
+      <span>{{ cs.hours }} stundas</span>
+      <span>{{ cs.price }} € + PVN</span>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Pieteikties kursam</a>
+      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
       <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
     </div>
   </div>
@@ -103,7 +104,7 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
       <div class="cell">
         <span class="cell-idx">02</span>
         <h3>Mārketinga speciālists</h3>
-        <p>Izejot šo kursu, spēsi palīdzēt citiem uzņēmumiem un aģentūrām uzstādīt ienesīgas maksas Facebook un Instagram reklāmas.</p>
+        <p>Pieci moduļi dod struktūru katram kontam, ko pārvaldi: konta uzbūve un pikselis, kampaņu mērķi, auditorijas, formāti un testi, kreatīvi ar MI. Ja jautājums ir par vienu konkrētu kontu, ātrāk to ir izrunāt <a href="/marketinga-konsultacijas/">konsultācijā</a>.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">03</span>
@@ -137,7 +138,7 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
         <div class="sec-head">
           <div>
             <span class="eyebrow"><span class="idx">03</span> Kursa saturs</span>
-            <h2>Pieci moduļi, trīs stundas</h2>
+            <h2>Pieci moduļi, {{ cs.hours }} stundas</h2>
           </div>
         </div>
         <p class="lead">Klikšķini uz katra moduļa, lai redzētu tajā iekļautās apakštēmas.</p>
@@ -171,16 +172,18 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
       <aside class="course-aside">
         <div class="course-card">
           <p class="price-label">Kursa cena</p>
-          <p class="price">150 € <small>+ PVN</small></p>
+          <p class="price">{{ cs.price }} € <small>+ PVN</small></p>
           <ul class="course-facts">
             <li><span>Norise</span><span>Tiešsaistē, dzīvā nodarbībā</span></li>
+            <li><span>Laiks</span><span>{{ cs.time }} (Rīgas laiks)</span></li>
+            <li><span>Valoda</span><span>Latviešu</span></li>
             <li><span>Līmenis</span><span>Iesācējiem</span></li>
-            <li><span>Ilgums</span><span>3 stundas</span></li>
+            <li><span>Ilgums</span><span>{{ cs.hours }} stundas</span></li>
             <li><span>Grupa</span><span>No {{ courseSessions.policy.minSeats }} dalībniekiem</span></li>
             <li><span>Priekšzināšanas</span><span>Izpratne par Facebook un Instagram</span></li>
             <li><span>Metodes</span><span>Aktīvās mācības, diskusijas, lekcija, piemēru izpēte</span></li>
           </ul>
-          <a class="btn" href="#piesakies">Pieteikties kursam</a>
+          <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
         </div>
         <div class="instructor-card">
           <div class="who">
@@ -215,9 +218,12 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
         </ul>
       </div>
       <div class="col">
-        <h3>Piemērs no klientu kampaņām</h3>
-        <p>Izmantojot kursā aprakstītās stratēģijas, esam spējuši klientam <strong>no katra investētā eiro iegūt 36,34 €.</strong> Lai sasniegtu šādus rezultātus, <strong>Tavam mārketinga budžetam nebūt nav jābūt desmitiem tūkstošu lielam.</strong></p>
+        <h3>Klientu rezultāti ar šīm metodēm</h3>
+        <p>Ar kursā aprakstītajām stratēģijām klientam <a href="/portfolio/#cetras-zoles">Četras Zoles</a> esam <strong>no katra investētā eiro ieguvuši 36,34 €.</strong> Lai sasniegtu šādus rezultātus, <strong>Tavam mārketinga budžetam nebūt nav jābūt desmitiem tūkstošu lielam.</strong></p>
         <p>Kursā ejam cauri tam, kā šo atdevi izmērīt savā kontā un ko darīt, kad skaitlis nav tāds, kādu gribētos. Apskati arī <a href="/portfolio/">citus veiksmes stāstus</a>.</p>
+        <h3>Google vai Meta — ar kuru sākt?</h3>
+        <p>Godīgā atbilde: <strong>tas ir atkarīgs no tā, vai Tavu produktu cilvēki jau meklē.</strong> Ja produkts ir jauns vai pieprasījums vēl jārada, Meta reklāma to izdara lētāk. Ja meklē — Google Ads parasti atmaksājas ātrāk, jo runā ar cilvēku, kuram vajadzība jau ir.</p>
+        <p>Kursā šo izvēli izrunājam atklāti, nevis pārdodam vienu kanālu par katru cenu. Daudziem uzņēmumiem pareizā atbilde ir abi — un tad ir vērts apskatīt arī <a href="/google-ads-kurss/">Google Ads kursu</a>.</p>
       </div>
     </div>
   </div>
@@ -285,12 +291,15 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
     </div>
     <div class="row cols-2 top">
       <div class="col">
-        <details class="faq"><summary>Kāds ir apmācību formāts?</summary><div><p>Šī ir dzīva tiešsaistes nodarbība mazā grupā, nevis ieraksts. Trīs stundu laikā ejam cauri kursa saturam, apskatām reālus piemērus un atbildam uz dalībnieku jautājumiem par viņu pašu biznesu.</p>
+        <details class="faq"><summary>Kāds ir apmācību formāts?</summary><div><p>Šī ir dzīva tiešsaistes nodarbība mazā grupā, nevis ieraksts. {{ cs.hours }} stundu laikā ejam cauri kursa saturam, apskatām reālus piemērus un atbildam uz dalībnieku jautājumiem par viņu pašu biznesu.</p>
         <p>Pieslēgšanās saiti nosūtām uz e-pastu pirms nodarbības.</p></div></details>
+        <details class="faq"><summary>Vai kursa cenā ietilpst reklāmas budžets?</summary><div><p>Nē. {{ cs.price }} € + PVN ir maksa par apmācību. Reklāmas budžetu Meta maksā tieši Tu no sava reklāmas konta, un tā apmēru izvēlies pats.</p>
+        <p></p></div></details>
         <details class="faq"><summary>Kas notiek, ja grupa nesanāk?</summary><div><p>Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja pieteikušos ir mazāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises sazināmies un piedāvājam trīs iespējas: pārcelt vietu uz nākamā mēneša grupu, atgriezt samaksu pilnā apmērā vai pārvērst samaksu individuālā konsultācijā.</p>
         <p>Izvēle vienmēr paliek dalībniekam.</p></div></details>
         <details class="faq"><summary>Vai varu atteikties no vietas?</summary><div><p>Jā. Ja atsakies vismaz {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, atgriežam samaksu pilnā apmērā. Ja piesakies vēlāk nekā {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, pilna atmaksa pienākas {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās.</p>
         <p>Pēc šī termiņa vietu varam pārcelt uz nākamo grupu. Ja grupu atceļam mēs, izvēle starp atmaksu, nākamo mēnesi un konsultāciju vienmēr paliek Tev.</p></div></details>
+        <details class="faq"><summary>Ko darīt, ja nevaru ierasties?</summary><div><p>Raksti mums — vietu varam pārcelt uz nākamo grupu.</p></div></details>
         <details class="faq"><summary>Kāpēc ir nepieciešams mācīties par maksas reklāmu izvietošanu internetā?</summary><div><p>Pieprasījums pēc digitālā mārketinga ekspertiem aug gadu no gada. Tas skaidrojams ar pieaugošo pāreju no tradicionālā mārketinga uz digitālo vidi, kur gandrīz ar simtprocentu pārliecību var izmērīt digitālās reklāmas atdevi.</p>
         <p>Ja Tev ir savs uzņēmums, kuram ir nepieciešams pastāvīgs jaunu klientu pieplūdums, to ir iespējams ātri un efektīvi piesaistīt, izmantojot maksas reklāmas internetā.</p></div></details>
       </div>
@@ -323,10 +332,10 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
   <div class="container cta-band-inner">
     <div>
       <h2>Sāc veidot reklāmas, kas atmaksājas</h2>
-      <p>Trīs stundas tiešsaistē mazā grupā ar praktiķi, kas ikdienā pārvalda reālus reklāmas budžetus.</p>
+      <p>{{ cs.hours }} stundas tiešsaistē mazā grupā ar praktiķi, kas ikdienā pārvalda reālus reklāmas budžetus.</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Pieteikties kursam</a>
+      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
       <a class="btn btn--ghost" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
     </div>
   </div>

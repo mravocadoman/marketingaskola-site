@@ -163,6 +163,6 @@ Praktiskā filmēšanas daļa, ko var izdarīt ar telefonu vienā pēcpusdienā,
 
 ## Nākamais solis
 
-Grupu TikTok kursu šobrīd neorganizējam. Ja gribi apgūt vertikālā video reklāmu strukturēti, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē, kur to pašu materiālu ieliekam kampaņā ar tavu kontu.
+Grupu TikTok kursu šobrīd neorganizējam. Ja gribi apgūt vertikālā video reklāmu strukturēti, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/), kur to pašu materiālu ieliekam kampaņā ar tavu kontu; nodarbība ilgst {% offer "meta-reklamas-kurss", "hours" %} un maksā {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi runāt tieši par TikTok savā situācijā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja meklē partneri video reklāmu izveidei, apskati [video reklāmas pakalpojumu](/video-reklama/).
+Ja gribi runāt tieši par TikTok savā situācijā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/); par īso sesiju maksāsi {% offer "30" %}. Ja meklē partneri video reklāmu izveidei, apskati [video reklāmas pakalpojumu](/video-reklama/).

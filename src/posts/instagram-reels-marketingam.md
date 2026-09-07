@@ -225,4 +225,4 @@ Publicē tos nedēļas laikā, paskaties, kuru noskatās līdz beigām visbiež�
 
 Vizuāļus un sagataves palīdzēs izveidot [Canva](https://www.canva.com/), bet video telefonā vari sagriezt ar [CapCut](https://www.capcut.com/). Pārējie rīki ir rakstā [7 digitālā mārketinga rīki](/7-digitala-marketinga-riki/).
 
-Ja gribi apgūt reklāmas daļu strukturēti un ar savu kontu rokās, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Ja gribi, lai video un kampaņas top kopā ar kādu citu, apskati [video reklāmas pakalpojumu](/video-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi apgūt reklāmas daļu strukturēti un ar savu kontu rokās, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Nodarbība ilgst {% offer "meta-reklamas-kurss", "hours" %} un notiek mazā grupā; dalība ir {% offer "meta-reklamas-kurss" %}. Ja gribi, lai video un kampaņas top kopā ar kādu citu, apskati [video reklāmas pakalpojumu](/video-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/), par {% offer "60" %} stundā.

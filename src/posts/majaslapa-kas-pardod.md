@@ -121,8 +121,8 @@ Mēs neuzminēsim Tavu biznesu labāk par Tevi. Bet mēs redzam Tavu lapu tā, k
 
 ## Nākamais solis
 
-**Ja gribi konkrētu sarakstu, ko labot savā lapā**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundā kopā izejam cauri lapai un kampaņai un pasakām, kas maksā pieteikumus.
+**Ja gribi konkrētu sarakstu, ko labot savā lapā**, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): stundā kopā izejam cauri lapai un kampaņai un pasakām, kas maksā pieteikumus. Šī stunda ir maksas, {% offer "60" %}.
 
-**Ja gribi saprast visu ķēdi no reklāmas līdz pieteikumam**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/).
+**Ja gribi saprast visu ķēdi no reklāmas līdz pieteikumam**, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/) un [Google Ads kurss](/google-ads-kurss/). Abi notiek tiešsaistē; Meta kursam viena nodarbība, {% offer "meta-reklamas-kurss", "hours" %}, maksā {% offer "meta-reklamas-kurss" %}.
 
 **Ja meklē partneri visam procesam**, apskati [mūsu pakalpojumus](/pakalpojumi/). Plānu palīdzēs salikt raksts [mārketinga stratēģijas izstrāde](/marketinga-strategijas-izstrade/).

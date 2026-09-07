@@ -113,6 +113,6 @@ Plašāk par to, kā šī tendence iekļaujas pārējā ainā, lasi [digitālā 
 
 MI nav jāievieš visur uzreiz. Gandrīz vienmēr pietiek ar vienu labi izvēlētu procesu, kas vairs nepazūd ikdienas darbos.
 
-Ja gribi saprast, kurš process tas ir Tavā uzņēmumā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Vienas stundas laikā izejam cauri Tavai situācijai un saliekam soļus secībā. Ja meklē gatavu risinājumu, apskati [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/).
+Ja gribi saprast, kurš process tas ir Tavā uzņēmumā, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Vienas stundas laikā izejam cauri Tavai situācijai un saliekam soļus secībā. Par stundu maksāsi {% offer "60" %}. Ja meklē gatavu risinājumu, apskati [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/).
 
 Praktiskus soļus atradīsi arī rakstos [mārketinga automatizācija: ar ko sākt](/marketinga-automatizacija-ar-ko-sakt/) un [8 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/).

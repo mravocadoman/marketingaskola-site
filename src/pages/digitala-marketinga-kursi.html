@@ -1,27 +1,31 @@
 ---
 layout: page.njk
 title: "Digitālā mārketinga kursi | Mārketinga Skola"
-description: "Praktiski tiešsaistes kursi ar pasniedzēju: Meta reklāma, Google Ads un SEO. Mazās grupās, no 150 € + PVN, ar atlaidēm kolektīviem."
+description: "Praktiski tiešsaistes kursi ar pasniedzēju: Meta reklāma, Google Ads un SEO. Mazās grupās, 150 € + PVN par kursu, ar atlaidēm kolektīviem."
 permalink: "/digitala-marketinga-kursi/"
 ---
 {% from "form.njk" import form with context %}
+{% set km = courseSessions.courses["meta-reklamas-kurss"] %}
+{% set kg = courseSessions.courses["google-ads-kurss"] %}
+{% set ks = courseSessions.courses["seo-kursi"] %}
+{# All three courses share one price; the hub quotes the Meta entry as the flat figure. If they ever diverge, this page has to say so. #}
 <section class="page-hero">
   <div class="container">
     <span class="chip">Kursi</span>
     <h1>Digitālā mārketinga kursi</h1>
     <p class="sub">Praktiski tiešsaistes kursi uzņēmējiem un mārketinga speciālistiem. Dzīva nodarbība mazā grupā, ko vada praktiķi, kas ikdienā pārvalda reālas kampaņas.</p>
     <div class="chips">
-      <span>No 150 € + PVN</span>
-      <span>Grupā no 5 dalībniekiem</span>
+      <span>{{ km.price }} € + PVN par kursu</span>
+      <span>Grupā no {{ courseSessions.policy.minSeats }} dalībniekiem</span>
       <span>Atlaides kolektīviem</span>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Piesakies kursiem</a>
+      <a class="btn" href="#kursi">Piesakies kursiem</a>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="kursi">
   <div class="container">
     <div class="sec-head">
       <div>
@@ -30,10 +34,10 @@ permalink: "/digitala-marketinga-kursi/"
       </div>
       <p class="lead">Trīs tiešsaistes kursi, kas notiek dzīvā nodarbībā ar pasniedzēju — Meta reklāma, Google Ads un SEO. Bez ierakstiem, ko skatīties vienam.</p>
     </div>
-    {% infographic { id: "info-kursi-tris-kanali", class: "infographic--page", title: "Trīs kursi, trīs kanāli", items: [
-      { label: "Meta reklāma — 3 stundas", text: "Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē." },
-      { label: "Google Ads — 3 stundas", text: "Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu." },
-      { label: "SEO — 3 stundas", text: "Nopelni vietu meklētājā bez maksas par klikšķi." }
+    {% infographic { id: "info-kursi-tris-kanali", class: "infographic--page", title: "Trīs kursi, trīs kanāli: kuru izvēlēties?", items: [
+      { label: km.name ~ " — " ~ km.hours ~ " stundas, " ~ km.price ~ " € + PVN, " ~ km.cadence, text: "Izvēlies, ja Tavu produktu cilvēki vēl nemeklē — pieprasījums jārada. Vada " ~ km.instructor ~ "." },
+      { label: kg.name ~ " — " ~ kg.hours ~ " stundas, " ~ kg.price ~ " € + PVN, " ~ kg.cadence, text: "Izvēlies, ja cilvēki Tavu produktu jau meklē Google un rezultāts vajadzīgs drīz. Vada " ~ kg.instructor ~ "." },
+      { label: ks.name ~ " — " ~ ks.hours ~ " stundas, " ~ ks.price ~ " € + PVN, " ~ ks.cadence, text: "Izvēlies, ja gribi vietu meklētājā bez maksas par klikšķi un vari gaidīt mēnešus, ne nedēļas. Vada " ~ ks.instructor ~ "." }
     ] } %}
     {% set catalogExclude = "" %}
     {% include "course-catalog.njk" %}
@@ -55,12 +59,12 @@ permalink: "/digitala-marketinga-kursi/"
       </div>
       <div class="col">
         <p>Visi trīs kursi ir paredzēti iesācējiem un notiek tiešsaistē mazā grupā, tāpēc jautājumus par savu biznesu vari uzdot uzreiz. Vari sākt ar vienu kanālu un turpināt ar nākamo.</p>
-        <p>Kursi notiek grupās no 5 dalībniekiem, un plašākiem kolektīviem ir pieejamas atlaides — apmāci visu komandu vienā reizē.</p>
+        <p>Kursi notiek grupās no {{ courseSessions.policy.minSeats }} dalībniekiem. Komandām — raksti, sagatavosim piedāvājumu.</p>
       </div>
     </div>
     <div class="row cols-3 top">
       <div class="col">
-        <div class="blurb"><h3>Mācies no pieredzējušiem ekspertiem</h3><p>Mūsu lektori ir profesionāļi ar vairāk nekā 10 gadu pieredzi digitālajā mārketingā un reklāmā.</p></div>
+        <div class="blurb"><h3>Mācies no pieredzējušiem ekspertiem</h3><p>Kursus vada praktiķi, kas ikdienā pārvalda reālas kampaņas — jautājumus par savu biznesu uzdod cilvēkam, kurš to dara katru dienu.</p></div>
       </div>
       <div class="col">
         <div class="blurb"><h3>Pieeja jaunākajām tendencēm un rīkiem</h3><p>Saņemsi aktuālu informāciju par jaunākajām digitālā mārketinga metodēm, platformām un stratēģijām.</p></div>
@@ -96,10 +100,11 @@ permalink: "/digitala-marketinga-kursi/"
       <div class="col">
         <figure class="media media--wide" style="margin-bottom:28px"><img src="/img/gen/services-module-band.webp" alt="Ģeometrisku elementu režģis — kursu moduļu uzbūve" loading="lazy"></figure>
         <span class="eyebrow"><span class="idx">04</span> Cena</span>
-        <h2>No 150 € + PVN</h2>
-        <p style="margin-top:16px">Cena atkarīga no kursa un grupas lieluma. Pieejamas atlaides plašākiem kolektīviem — apmāci visu komandu vienā reizē.</p>
-        <p>Ja vēlies uzlabot savas digitālā mārketinga prasmes, mācīties praktiski un no pieredzējušiem nozares ekspertiem — piesakies jau šodien.</p>
-        <div class="btn-wrap"><a class="btn" href="#piesakies">Piesakies kursiem</a></div>
+        <h2>{{ km.price }} € + PVN par kursu</h2>
+        <p style="margin-top:16px">Viena cena visiem trim kursiem. Atlaides kolektīviem — komandām raksti, sagatavosim piedāvājumu.</p>
+        {% set invoiceBody = "Kurss: \nDatums: \nUzņēmums: \nReģ. nr.: \nE-pasts rēķinam: \nDalībnieku skaits: " %}
+        <p>Vietu rezervē katra kursa lapā — apmaksā un uzreiz izvēlies datumu kalendārā. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ "Rēķins: kurss" | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a>.</p>
+        <div class="btn-wrap"><a class="btn" href="#kursi">Izvēlēties kursu</a></div>
       </div>
     </div>
   </div>
@@ -110,9 +115,9 @@ permalink: "/digitala-marketinga-kursi/"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">05</span> Pieteikšanās</span>
-        <h2>Piesakies jau šodien</h2>
+        <h2>Nezini, kuru izvēlēties, vai piesaki komandu?</h2>
       </div>
-      <p class="lead">Norādi, kurš kurss Tevi interesē — sazināsimies un saskaņosim nākamās grupas laiku. Pieteikšanās neuzliek saistības.</p>
+      <p class="lead">Norādi kursu vai izvēlies “Vēl neesmu izlēmis” — sazināsimies un palīdzēsim izvēlēties. Komandām sagatavosim piedāvājumu. Pieteikšanās neuzliek saistības.</p>
     </div>
     <div style="max-width:820px">{{ form("course") }}</div>
   </div>

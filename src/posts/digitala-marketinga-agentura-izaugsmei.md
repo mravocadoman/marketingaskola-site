@@ -77,4 +77,4 @@ Praktiskais secinājums: mākslīgais intelekts samazina izpildes izmaksas, nevi
 
 Digitālā mārketinga aģentūra ir ieguldījums redzamībā, pieprasījumā un pārdošanā ar skaidru procesu un izmērāmiem rezultātiem. Ja Tava uzņēmuma izaugsme ir apstājusies, sāc ar sarunu.
 
-Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/).
+Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/): tā ir maksas saruna, {% offer "60" %} par stundu.

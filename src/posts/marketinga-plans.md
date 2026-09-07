@@ -210,4 +210,4 @@ Ja plāna vēl nav, nesāc ar dokumentu. Sāc ar vienu lapu: kam pārdod, viens 
 
 Kalendāru un budžeta sadalījumu pievieno tad, kad šī lapa ir aizpildīta. Otrādi tas parasti nesanāk.
 
-Ja gribi to izdarīt kopā ar kādu, kurš ir redzējis, kur šādi plāni apstājas, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).
+Ja gribi to izdarīt kopā ar kādu, kurš ir redzējis, kur šādi plāni apstājas, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja plāns prasa vairākas sarunas, komplekts ({% offer "bundle5", "hours" %}) maksā {% offer "bundle5" %}. Ja meklē partneri visam procesam, apskati [mūsu pakalpojumus](/pakalpojumi/).

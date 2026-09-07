@@ -91,6 +91,6 @@ Kā uzstādīt pašu kampaņu, aprakstīts rakstā [Facebook reklāmas: kā rekl
 
 ## Nākamais solis
 
-Ja gribi šo jomu apgūt pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/): trīs stundas tiešsaistē, kur kampaņu saliekam kopā ar Tavu kontu.
+Ja gribi šo jomu apgūt pats, apskati [Meta reklāmas kursu](/meta-reklamas-kurss/), kur kampaņu saliekam kopā ar Tavu kontu. Grupas sanāk {% offer "meta-reklamas-kurss", "cadence" %}, un dalība ir {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi, lai kampaņas veido un uztur kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja neesi drošs, vai šis kanāls Tavā situācijā vispār ir pareizais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi, lai kampaņas veido un uztur kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja neesi drošs, vai šis kanāls Tavā situācijā vispār ir pareizais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Par stundu tas ir {% offer "60" %}.

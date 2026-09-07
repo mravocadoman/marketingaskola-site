@@ -98,6 +98,6 @@ Ja pirmais skaitlis aug, bet trešais ne, problēma nav saturā. Tā ir tajā, k
 
 ## Nākamais solis
 
-Ja gribi iemācīties reklāmas daļu pats, strādājot savā kontā, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē, mazā grupā.
+Ja gribi iemācīties reklāmas daļu pats, strādājot savā kontā, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/), {% offer "meta-reklamas-kurss", "hours" %} garš un mazā grupā, par {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi, lai kampaņas veido un uztur kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja vēl neesi drošs, kurš kanāls Tavā situācijā ir pareizais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/).
+Ja gribi, lai kampaņas veido un uztur kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/). Ja vēl neesi drošs, kurš kanāls Tavā situācijā ir pareizais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Tā ir maksas stunda par {% offer "60" %}.

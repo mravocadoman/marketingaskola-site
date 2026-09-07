@@ -119,6 +119,6 @@ Ar nulli. Pirmie soļi, mērīšanas pārbaude un viens automatizēts process, n
 
 MI nav projekts, ko "ievieš". Tas ir veids, kā atbrīvot laiku no darbiem, kuriem cilvēks nav vajadzīgs, lai to ieguldītu tur, kur ir.
 
-Ja gribi saprast, kurš process Tavā uzņēmumā to atmaksātu vispirms, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), stundas laikā izejam cauri situācijai un saliekam soļus secībā. Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
+Ja gribi saprast, kurš process Tavā uzņēmumā to atmaksātu vispirms, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), stundas laikā izejam cauri situācijai un saliekam soļus secībā; tas maksā {% offer "60" %}. Gatavu risinājumu piedāvājam sadaļā [AI un automatizācijas](/ai-un-automatizacijas/).
 
-Ja gribi šīs prasmes apgūt pats, [Meta reklāmas kursā](/meta-reklamas-kurss/) rādām, kā MI rīkus izmantot kampaņu veidošanā, nezaudējot kontroli pār rezultātu. Visu kursu klāstu skati [šeit](/digitala-marketinga-kursi/), bet, ja gribi to nodot mums, apskati [pakalpojumus](/pakalpojumi/).
+Ja gribi šīs prasmes apgūt pats, [Meta reklāmas kursā](/meta-reklamas-kurss/) rādām, kā MI rīkus izmantot kampaņu veidošanā, nezaudējot kontroli pār rezultātu. Kurss ilgst {% offer "meta-reklamas-kurss", "hours" %}, un dalība ir {% offer "meta-reklamas-kurss" %}. Visu kursu klāstu skati [šeit](/digitala-marketinga-kursi/), bet, ja gribi to nodot mums, apskati [pakalpojumus](/pakalpojumi/).

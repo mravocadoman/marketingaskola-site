@@ -99,6 +99,6 @@ Detalizētāku plānu ar kalendāru un budžeta sadalījumu palīdzēs salikt ra
 
 ## Nākamais solis
 
-Ja gribi šo lapu aizpildīt kopā ar kādu, kurš ir redzējis, kur šādi plāni parasti apstājas, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): vienā stundā izejam cauri Tavai situācijai un saliekam soļus secībā.
+Ja gribi šo lapu aizpildīt kopā ar kādu, kurš ir redzējis, kur šādi plāni parasti apstājas, to var izdarīt [individuālā konsultācijā](/marketinga-konsultacijas/): vienā stundā izejam cauri Tavai situācijai un saliekam soļus secībā. Viena stunda ir {% offer "60" %}.
 
-Ja gribi apgūt izpildes daļu pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Ja meklē partneri, kas uzņemas visu procesu, apskati [mūsu pakalpojumus](/pakalpojumi/).
+Ja gribi apgūt izpildes daļu pats, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/). Par {% offer "meta-reklamas-kurss" %} Tu saņem {% offer "meta-reklamas-kurss", "hours" %} mazā grupā, ar savu kontu rokās. Ja meklē partneri, kas uzņemas visu procesu, apskati [mūsu pakalpojumus](/pakalpojumi/).

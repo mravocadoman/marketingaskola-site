@@ -63,21 +63,19 @@ Viena lieta gan ir mainījusies. Detalizēta mērķauditorijas atlase vairs nav 
 
 ## Ko Tev sniegs Facebook mārketinga mācības?
 
-Jau minējām, ka, mūsuprāt, Facebook reklāmas ir svarīgs uzņēmuma digitālā mārketinga rīks. Tāpēc vēlamies dot iespēju ikvienam interesentam, gan bez priekšzināšanām, gan ar pieredzi, apgūt tiešsaistes videolekciju kursu par Facebook reklāmām.
+Jau minējām, ka, mūsuprāt, Facebook reklāmas ir svarīgs uzņēmuma digitālā mārketinga rīks. Tāpēc tās mācām dzīvā tiešsaistes nodarbībā mazā grupā, gan tiem, kam nav priekšzināšanu, gan tiem, kas jau reklamējas. [Meta reklāmas kurss](/meta-reklamas-kurss/) ilgst {% offer "meta-reklamas-kurss", "hours" %}, notiek {% offer "meta-reklamas-kurss", "cadence" %} un maksā {% offer "meta-reklamas-kurss" %}.
 
-Mūsu Mārketinga skolas vadītājs Rihards Zeiļa mūsu komandā ir ne tikai vadītājs, bet arī Facebook reklāmu speciālists un šo mācību veidotājs.
+Nodarbību vada Mārketinga skolas vadītājs Rihards Zeiļa, kurš ikdienā pārvalda klientu Meta reklāmas kontus. Tā nav videolekcija, ko noskatīties vienam: jautājumus par savu biznesu vari uzdot uzreiz.
 
-Šīs Facebook mārketinga mācības ir veidotas, lai izglītotu interesentus par Facebook reklāmām. Pie mums bieži vēršas klienti, kuri vēlas apgūt Facebook reklāmu specifiku vai saprast, kāpēc viņu Facebook reklāmas nesniedz vēlamos rezultātus.
+Pie mums bieži vēršas klienti, kuri vēlas apgūt Facebook reklāmu specifiku vai saprast, kāpēc viņu Facebook reklāmas nesniedz vēlamos rezultātus. Kursā ejam cauri visam ceļam no stratēģijas līdz gatavai kampaņai.
 
-Šīs mārketinga mācības Tev soli pa solim iemācīs, kā no A līdz Z izveidot efektīvu Facebook reklāmas kampaņu.
+Kursa pieci moduļi:
 
-Mūsu Facebook mārketinga mācībās ietilpst:
-
-- Facebook algoritma apguve
-- ️Saistošu reklāmas tekstu un dizaina izveide
-- ️Efektīvas reklāmas pamatprincipu apguve
-- Remārketinga un _lookalike audiences_ apguve
-- Izpratne par daudzajām Facebook reklāmas iespējām: Facebook Pixel, Boost Post utt.
+- Meta reklāmas pamati un platformas iespējas
+- Kampaņu mērķi un to stratēģiskais pielietojums
+- Meta platformās pieejamās mērķauditorijas
+- Reklāmu formāti un radošās pieejas
+- Reklāmas kreatīvie elementi un MI izmantošana to izveidē
 
 {% infographic { id: "info-marketinga-macibas", title: "Pirms sāc mācīties Facebook reklāmu", items: [
  { label: "Kas ir Facebook reklāma", text: "Maksas ieraksts cilvēka plūsmā." },
@@ -100,8 +98,8 @@ Ja mācības sola tikai pirmo daļu, tās māca to, kas vairs neizšķir rezult�
 
 ## Mārketinga skolas piedāvājums
 
-Ja uzskati, ka Facebook ir piemērota sociālo mediju platforma Tavam uzņēmumam, kāpēc nepieteikties šīm vērtīgajām Facebook reklāmas mācībām? Iepazīsties ar Mārketinga Skolas [Facebook reklāmas kursu](/meta-reklamas-kurss/)!
+Ja uzskati, ka Facebook ir piemērota sociālo mediju platforma Tavam uzņēmumam, kāpēc nepieteikties šīm vērtīgajām Facebook reklāmas mācībām? Iepazīsties ar Mārketinga Skolas [Meta reklāmas kursu](/meta-reklamas-kurss/)!
 
 Vai šis bloga raksts _Tev palīdzēja saprast, vai [Facebook reklāmas](/facebook-reklamas-izstrade/) ir piemērotas Tava uzņēmuma reklamēšanai?_ Patiešām ceram, ka Tava atbilde ir "_jā_."
 
-_P.S. Ja Tava atbilde tomēr ir "nē", varbūt ir vērts rakstu izlasīt vēlreiz vai pieteikties mūsu Facebook mārketinga kursiem?_
+_P.S. Ja Tava atbilde tomēr ir "nē", varbūt ir vērts rakstu izlasīt vēlreiz vai pieteikties mūsu Meta reklāmas kursam?_

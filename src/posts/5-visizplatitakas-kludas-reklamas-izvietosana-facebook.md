@@ -83,6 +83,6 @@ Kā šī secība izskatās no nulles, esam aprakstījuši rakstā [Facebook rekl
 
 Vai Facebook vispār ir Tavai auditorijai pareizā platforma, palīdz izvērtēt raksts [mārketinga mācības: kā izmantot Facebook reklāmas](/marketinga-macibas/).
 
-Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/): trīs stundas tiešsaistē ar savu kontu rokās.
+Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/), kurā strādā ar savu kontu rokās. Grupas sanāk {% offer "meta-reklamas-kurss", "cadence" %}; dalība ir {% offer "meta-reklamas-kurss" %}.
 
 Ja gribi, lai konts tiek sakārtots bez Tavas iesaistes, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).
