@@ -717,12 +717,30 @@ its execution logs. Verified against Node's crypto: the browser hashes match
 byte for byte. The workflow also has `saveDataSuccessExecution: none` and
 routes failures to the shared alert workflow `R9OmXjBXdhYetZkM`.
 
-**Two things the owner must do before it works**, and it is INACTIVE until
-they do: create the `Meta CAPI token` credential (httpTemplatedCustomAuth,
-`{"headers":{"Authorization":"Bearer <token>"}}`, token generated in Events
-Manager for pixel 3817680101624891) and activate the workflow. The endpoint
-answers 404 until then, and `consent.js` swallows the failure so visitors never
-see it.
+**The relay is LIVE as of 7 Sep 2026** and verified end to end: a POST to
+`/webhook/meta-capi` carrying `x-ms-secret: ms-site-2026` came back
+`{"ok":true,"events_received":1}`, and the same request with a wrong secret
+dies in the Code node without ever reaching Meta. Three things had to be
+fixed, and all three would have kept it dead on their own:
+
+1. **`$env` throws on this instance.** It runs with
+   `N8N_BLOCK_ENV_ACCESS_IN_NODE`, so `$env.META_CAPI_SECRET` raised
+   `ExpressionError: access to env vars denied` and the workflow died at the
+   Code node before the HTTP request. **Never reference `$env` in a Code
+   node here** — the shared secret is a literal in the node for that reason
+   (it ships in client JS anyway, so it was never authentication).
+2. **The credential type has to match the node.** The owner created
+   `Mata CAPI Token` as `httpCustomAuth`, while the node was set to
+   `httpTemplatedCustomAuth`; n8n will not attach across types, so the node
+   silently had no credential. The node is `httpCustomAuth` now.
+3. The workflow then had to be published, not merely saved.
+
+**Successful executions are not stored** (`saveDataSuccessExecution: none`),
+so an empty execution list after a good request is the expected result, not
+evidence of failure. Errors ARE stored and routed to the shared alert
+workflow `R9OmXjBXdhYetZkM` — which means every probe with a bad secret
+raises an alert. If that ever gets noisy, replace the `throw` with an IF
+node that answers politely instead.
 
 **What was already sending CAPI events, investigated 6 Sep 2026.** The owner
 noticed Events Manager still showing Conversions API traffic. It is real but it

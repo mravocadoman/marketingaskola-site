@@ -16,7 +16,7 @@
     "_ga4Note": "Direct GA4 was chosen over GTM on 6 Sep 2026: the GTM-MVJJGQ4 container still holds a dead Universal Analytics tag and a Facebook Pixel from 2020 that would fire on All Pages the moment the container was published.",
     "ga4Id": "G-5SEQ339399",
     "metaPixelId": "3817680101624891",
-    "_capiNote": "n8n relay that forwards the same events to the Meta Conversions API. Empty = browser pixel only. The site hashes email/phone before sending, so n8n never sees raw personal data. The secret is visible in client JS by design: it stops drive-by noise, it is not authentication.",
+    "_capiNote": "n8n relay that forwards the same events to the Meta Conversions API. LIVE since 7 Sep 2026 (workflow KiiDciCuUsCc3ezc, verified events_received:1). Empty = browser pixel only. The site hashes email/phone before sending, so n8n never sees raw personal data. The secret is visible in client JS by design: it stops drive-by noise, it is not authentication.",
     "capiUrl": "https://marketingaskola.app.n8n.cloud/webhook/meta-capi",
     "capiSecret": "ms-site-2026",
     "gtmId": ""
