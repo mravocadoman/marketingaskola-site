@@ -19,6 +19,8 @@
   --line-strong: rgba(255, 255, 255, 0.16);
   --line-hover: rgba(255, 255, 255, 0.28);
   --cyan: #03c3f8;
+  --navy-ink: #00152c;  /* ink for the cyan topbar - 8.9:1 on #03c3f8 */
+  --topbar-h: 32px;     /* the header sticks below this; keep them in sync */
   --cyan-hover: #45d4fa;
   --link: #03c3f8;        /* interactive text — flips on .paper */
   --tick: #03c3f8;        /* checkmarks / small accent glyphs */
@@ -101,19 +103,36 @@ p { margin: 0 0 1.15em; }
 .container--narrow { max-width: 820px; }
 .center { text-align: center; }
 .col:empty { display: none; }
+/* Sticky chrome is the strip plus the header, so a linked heading has to clear
+   both or it lands underneath them. */
+[id] { scroll-margin-top: calc(var(--topbar-h) + 88px); }
 
 /* ---------- topbar ---------- */
-.topbar { background: var(--canvas); font-size: var(--t-sm); border-bottom: 1px solid var(--line); position: relative; z-index: 60; }
-.topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: 32px; gap: 16px; }
-.topbar a { color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
-.topbar a { transition: color .16s ease; }
-.topbar a:hover { color: #fff; text-decoration: none; }
-.topbar-contacts a { position: relative; }
+/* CYAN STRIP, owner's call (7 Sep 2026): "cyan background, dark navy
+   typography... make them always visible". This is the second deliberate
+   exception to the cyan budget, after the WhatsApp float — the phone number
+   and the address are the two things a service buyer looks for first, so they
+   get the one loud surface on the site and they never scroll away.
+   Navy #00152c on cyan #03c3f8 measures 8.9:1, comfortably past WCAG AAA;
+   never lighten the ink toward --muted here, that tier is for the dark canvas
+   and would fail on this ground. The strip sticks and the header sticks below
+   it, so --topbar-h has to match the real height at every width. */
+.topbar { background: var(--cyan); color: var(--navy-ink); font-size: var(--t-sm); position: sticky; top: 0; z-index: 60; }
+.topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: var(--topbar-h); gap: 16px; }
+.topbar a { color: var(--navy-ink); font-weight: 500; display: inline-flex; align-items: center; gap: 7px; transition: color .16s ease, background-color .16s ease; }
+.topbar a:hover { color: var(--navy-ink); text-decoration: none; }
+.topbar-contacts { display: flex; align-items: center; gap: 18px; }
+.topbar-contacts a { position: relative; letter-spacing: .01em; white-space: nowrap; }
 /* the contact strip earns its own hairline on hover rather than an underline */
-.topbar-contacts a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: var(--cyan); transform: scaleX(0); transform-origin: left; transition: transform .22s cubic-bezier(.2,.7,.3,1); }
+.topbar-contacts a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 1px; background: var(--navy-ink); transform: scaleX(0); transform-origin: left; transition: transform .22s cubic-bezier(.2,.7,.3,1); }
 .topbar-contacts a:hover::after { transform: scaleX(1); }
-.topbar-contacts { display: flex; gap: 22px; flex-wrap: wrap; }
-.topbar-social { display: flex; gap: 15px; align-items: center; }
+/* a navy hairline between the two contacts, the ledger's own separator */
+.topbar-contacts a + a { padding-left: 18px; }
+.topbar-contacts a + a::before { content: ""; position: absolute; left: 0; top: 50%; height: 13px; width: 1px; margin-top: -6px; background: rgba(0, 21, 44, .28); }
+/* social marks invert the strip on hover: navy square, cyan glyph */
+.topbar-social { display: flex; gap: 4px; align-items: center; }
+.topbar-social a { width: 26px; height: 26px; justify-content: center; }
+.topbar-social a:hover { background: var(--navy-ink); color: var(--cyan); }
 
 /* ---------- header ---------- */
 .header {
@@ -121,7 +140,7 @@ p { margin: 0 0 1.15em; }
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   position: sticky;
-  top: 0;
+  top: var(--topbar-h);
   z-index: 50;
   border-bottom: 1px solid var(--line);
 }
@@ -245,7 +264,7 @@ p { margin: 0 0 1.15em; }
 
 @media (max-width: 1020px) {
   .nav-toggle { display: block; }
-  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--canvas); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line-strong); max-height: calc(100vh - 120px); overflow: auto; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--canvas); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line-strong); max-height: calc(100vh - 160px); overflow: auto; }
   .nav.open { display: block; }
   .nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 12px 10px; }
   .nav a { padding: 13px 16px; white-space: normal; font-size: var(--t-sm); }
@@ -1582,8 +1601,15 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    WhatsApp float), tighter padding, and the stats as three compact ledger
    rows so the client-logo strip reaches the first screen. */
 @media (max-width: 640px) {
-  .topbar-contacts a[href^="mailto:"] { display: none; }
-  .topbar-inner { min-height: 40px; }
+  /* The e-mail stays (owner: always visible). The social marks are what give
+     up the room - they are in the footer too, and the phone and the address
+     are what a phone-sized visitor actually taps. */
+  :root { --topbar-h: 36px; }
+  .topbar { font-size: var(--t-micro); }
+  .topbar-social { display: none; }
+  .topbar-inner { justify-content: flex-start; }
+  .topbar-contacts { gap: 12px; width: 100%; justify-content: space-between; }
+  .topbar-contacts a + a { padding-left: 12px; }
 }
 @media (max-width: 980px) {
   .sec--hero { padding-top: clamp(40px, 6vw, 64px); }

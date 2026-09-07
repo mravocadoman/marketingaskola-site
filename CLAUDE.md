@@ -493,6 +493,34 @@ that kind lives.) Containers, images, avatars and buttons are boxes and read as
 boxes. If you add a rounded element, you are
 reopening a decision that was made deliberately — change the token instead.
 
+## The topbar is a CYAN strip and it sticks (7 Sep 2026)
+
+Owner: *"improve the design of 2nd nav bar (on top) with number and email;
+make them always visible; cyan background, dark navy typography."*
+
+**This is the second deliberate exception to the cyan budget**, after the
+WhatsApp float. The phone number and the address are the first two things a
+service buyer looks for, so they get the one loud surface on the site.
+Do not "fix" it back to `--canvas` — it is the owner's call, twice made.
+
+- Ground `--cyan`, ink `--navy-ink` (#00152c) at weight 500. **8.9:1**,
+  past WCAG AAA. Never reach for `--muted` here: those three text tiers
+  exist for the dark canvas and would fail on this ground.
+- **Both bars stick.** `.topbar` is `sticky; top: 0` and `.header` is
+  `sticky; top: var(--topbar-h)`, so the contacts never scroll away. The
+  token is 32px, 36px under 640px, and **the header's `top` reads it — if
+  the strip's height ever changes, change the token, not the rule.**
+- Because the sticky chrome grew, `[id] { scroll-margin-top: calc(var(--topbar-h) + 88px) }`
+  keeps a linked heading from landing underneath it, and the mobile nav's
+  `max-height` went to `calc(100vh - 160px)`.
+- The hover hairline that used to be cyan is now navy; the social marks
+  invert the strip instead (navy square, cyan glyph).
+- **On phones the e-mail stays and the SOCIAL MARKS give up the room.**
+  That reverses the 3 Sep decision to hide the e-mail under 640px. At
+  375px the two contacts measure 113px and 175px and sit on one line with
+  the strip at `--t-micro`; the marks are in the footer anyway. Adding a
+  third item to the strip will break that line — measure before you do.
+
 ## Header and nav (21 Aug 2026)
 
 - Brand mark **148px** desktop / 132px under 1020px (was 176px).
