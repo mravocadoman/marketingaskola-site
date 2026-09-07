@@ -1,9 +1,9 @@
 # Stripe purchase → Meta CAPI (n8n)
 
-Built and validated on 6 Sep 2026 but **not created in n8n**: the automated
-creation call was refused by a permission classifier, so it is preserved here
-for Rihards to paste in (n8n → Workflows → Import from code / Create from
-code). The Meta CAPI relay it feeds (`KiiDciCuUsCc3ezc`) already exists.
+**CREATED AND LIVE-PENDING-CREDENTIAL as of 8 Sep 2026:** workflow
+`8LkHb0BppFhCPuv3`, feeding the relay `KiiDciCuUsCc3ezc`. The code below is the
+ORIGINAL 6 Sep draft and is kept only as a record - **do not paste it in, it
+does not work on this instance.** See "What actually shipped" for why.
 
 ## Why this one matters more than the browser events
 
@@ -25,14 +25,38 @@ amount**, which is the only event Meta can optimise revenue against.
 5. Uses the **Stripe session id as `event_id`**, so a webhook retry cannot
    double-count the same sale.
 
-## Before it will work
+## What actually shipped, and why it differs
 
-- n8n env vars: `STRIPE_WEBHOOK_SECRET` (from the Stripe endpoint you create)
-  and `META_CAPI_SECRET` (same value the site sends).
-- In Stripe: add an endpoint pointing at
-  `https://marketingaskola.app.n8n.cloud/webhook/stripe-meta-purchase`,
-  subscribed to `checkout.session.completed`.
-- Activate the workflow, and the relay too.
+The draft below reads `$env.STRIPE_WEBHOOK_SECRET` and `$env.META_CAPI_SECRET`.
+**`$env` throws on this instance** (`N8N_BLOCK_ENV_ACCESS_IN_NODE`), which is
+the same fault that kept the browser relay dead for two days. So the shipped
+version uses the **Stripe Trigger node** instead of a raw webhook plus
+hand-rolled HMAC:
+
+- the trigger registers the endpoint in Stripe itself, so there is no URL to
+  create by hand and **no signing secret to store** - the signature check the
+  draft implemented is the node's job now;
+- the only secret left is the relay's, which is a literal, because it ships in
+  the site's client JS anyway;
+- what makes this sender trustworthy is that only Stripe knows the trigger's
+  generated webhook URL.
+
+It also drops the IF node (the trigger filters to one event type), skips
+sessions whose `payment_status` is not `paid`, and reports `amount_total`,
+which is gross - Stripe Tax adds the 21% on top of the listed price.
+
+**Execution data is NOT retained** (`saveDataSuccessExecution: none`). Unlike
+the browser relay, where the site hashes before sending, Stripe hands over the
+buyer's RAW e-mail and phone; keeping successful runs would park customer
+personal data in n8n's logs. n8n and Cal.com were added to the privacy
+policy's processor list the same day, for the same reason.
+
+## The one thing left
+
+Add a **Stripe API credential** to the `Stripe purchase` trigger (the
+placeholder is named `Stripe (SIA Stonks)`) and activate the workflow. The
+trigger cannot register its webhook without it, so activation fails until then.
+Use a restricted key if you can: it only needs webhook read/write.
 
 ## Workflow code (validated against the n8n SDK)
 
