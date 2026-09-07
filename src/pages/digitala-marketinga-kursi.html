@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: "Digitālā mārketinga kursi | Mārketinga Skola"
-description: "Praktiski tiešsaistes kursi ar pasniedzēju: Meta reklāma, Google Ads un SEO. Mazās grupās, 150 € + PVN par kursu, ar atlaidēm kolektīviem."
+description: "Praktiski tiešsaistes kursi ar pasniedzēju: Meta reklāma, Google Ads un SEO. Mazās grupās, 150 € + PVN par kursu, un atsevišķu piedāvājumu komandām."
 permalink: "/digitala-marketinga-kursi/"
 ---
 {% from "form.njk" import form with context %}
@@ -17,7 +17,7 @@ permalink: "/digitala-marketinga-kursi/"
     <div class="chips">
       <span>{{ km.price }} € + PVN par kursu</span>
       <span>Grupā no {{ courseSessions.policy.minSeats }} dalībniekiem</span>
-      <span>Atlaides kolektīviem</span>
+      <span>Piedāvājums komandām</span>
     </div>
     <div class="btn-wrap">
       <a class="btn" href="#kursi">Piesakies kursiem</a>
@@ -75,7 +75,7 @@ permalink: "/digitala-marketinga-kursi/"
     </div>
     <div class="row cols-2 top">
       <div class="col">
-        <div class="blurb"><h3>Atbalsts un resursi pēc kursa</h3><p>Pēc kursa beigām būs pieejami papildu materiāli, Q&amp;A sesijas un iespēja piedalīties diskusiju grupās.</p></div>
+        <div class="blurb"><h3>Pēc kursa</h3><p>Kursi ir praktiski, tāpēc lielākā daļa darba sākas pēc nodarbības. Ja gribi izrunāt tieši savu kontu, tam ir maksas konsultācija: {% offer "60", "hours" %} par {% offer "60" %}.</p></div>
       </div>
       <div class="col">
         <div class="blurb"><h3>Pielietojamas zināšanas un reāls rezultāts</h3><p>Konkrēti soļi un metodes, kas palīdzēs palielināt pārdošanu, piesaistīt vairāk klientu un optimizēt mārketinga izmaksas.</p></div>
@@ -101,7 +101,7 @@ permalink: "/digitala-marketinga-kursi/"
         <figure class="media media--wide" style="margin-bottom:28px"><img src="/img/gen/services-module-band.webp" alt="Ģeometrisku elementu režģis — kursu moduļu uzbūve" loading="lazy"></figure>
         <span class="eyebrow"><span class="idx">04</span> Cena</span>
         <h2>{{ km.price }} € + PVN par kursu</h2>
-        <p style="margin-top:16px">Viena cena visiem trim kursiem. Atlaides kolektīviem — komandām raksti, sagatavosim piedāvājumu.</p>
+        <p style="margin-top:16px">Viena cena visiem trim kursiem. Komandām sagatavojam atsevišķu piedāvājumu.</p>
         {% set invoiceBody = "Kurss: \nDatums: \nUzņēmums: \nReģ. nr.: \nE-pasts rēķinam: \nDalībnieku skaits: " %}
         <p>Vietu rezervē katra kursa lapā — apmaksā un uzreiz izvēlies datumu kalendārā. Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ "Rēķins: kurss" | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a>.</p>
         <div class="btn-wrap"><a class="btn" href="#kursi">Izvēlēties kursu</a></div>

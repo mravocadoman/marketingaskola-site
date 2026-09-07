@@ -1157,16 +1157,42 @@ no button and therefore no cyan, so it is safe on a page that already has
 a primary CTA. The 500 €/mēn figure is the page's own public line
 (`/facebook-reklama/` hero and FAQ), not a new claim.
 
+**Meta ad management terms are public (owner, 7 Sep 2026):** *"meta ads is
+recurring with 3 months commitment; they dont pay if we dont provide
+results (they still pay adspend)"*. `/facebook-reklama/` now states it in
+two places — the section 02 lead and two FAQs: the service is monthly with
+a **three-month initial period**, and **if the result agreed BEFORE the
+start is not reached, the management fee is not paid**; the ad budget is a
+separate expense Meta charges straight from the client's own account and
+is owed either way. The price itself stays "atkarīga no darba apjoma".
+**The phrase "par kuru vienojāmies pirms sākuma" is load-bearing** — it is
+what makes the promise enforceable in one direction only, so do not
+shorten it to a bare "ja nav rezultātu, nemaksā". **What counts as the
+result, and who decides it, is still undefined** — agree it in writing per
+client at the proposal stage, or the clause is a dispute waiting to
+happen. The team-discount promise was removed the same day: nothing
+anywhere now says "atlaides kolektīviem" (no percentage or threshold
+existed), only "komandām sagatavojam atsevišķu piedāvājumu".
+
 **Owner-gated — NOT done, do not guess (plan §4, 6 Sep 2026):**
 1. Confirm 500 €/mēn is still the line you want quoted on `/pakalpojumi/`
    and the course hub, and whether the ad posts should carry it too.
 2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
    (hub, meta description, catalog tile). Closed corporate sessions yes/no.
-3. Brew Company: 75 000 € per month (prose) or total (stat tiles)? Excel
-   Know How 1174 vs 1175 €? Year of each portfolio case? Do horizontal Lumi
-   cuts exist (copy says "horizontāls Feed", all four clips are vertical)?
-4. Do Meta and SEO participants get materials and a checklist? Attendance
-   confirmation? The hub's "Q&A sesijas un diskusiju grupas" — ever?
+3. Brew Company: 75 000 € per month (prose, and the `/facebook-reklama/`
+   stat label) or the total (the portfolio tiles only add up as a total:
+   75 000 × 13,36 ≈ the 1M+ revenue tile)? STILL UNANSWERED and still the
+   one live claim that reads two ways — do not "fix" it by arithmetic, ask.
+   Year of each portfolio case is also still missing. Excel Know How was
+   1174 € in the stat and 1175 € in the prose; the stat was aligned to the
+   prose (the older, original WordPress text) on 7 Sep — reverse it if the
+   stat was right. The Lumi horizontal Feed cuts are claimed in the prose
+   as delivered but were never uploaded, so only the section heading was
+   changed to stop promising a format the gallery does not contain.
+4. Do Meta and SEO participants get materials and a checklist (only the
+   Google page claims it)? Attendance confirmation? The hub's "Q&A sesijas
+   un diskusiju grupas" claim was DELETED on 7 Sep — nobody runs them; the
+   blurb now routes to the paid consultation instead.
 5. Group-failure conversion rule and who delivers post-course sessions for
    the Google and SEO courses (the "Pēc nodarbības" block, §3 D, not built).
 6. Consultation: cancellation window checked against the 14-day withdrawal
