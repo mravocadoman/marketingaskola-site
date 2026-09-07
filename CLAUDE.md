@@ -266,7 +266,24 @@ Custom fields added: `website`, `message`, `motivation`, `course`,
 `npm run test:forms` drives both forms in headless Chrome against the local
 preview, with the MailerLite request stubbed so it asserts client behaviour
 without creating subscribers: validation, Latvian messages, required consent,
-honeypot, payload contents, success panel, course preselect.
+honeypot, payload contents, success panel. **16/16 as of 7 Sep 2026.** It had
+been failing since 4 Sep for a reason that was never the form: it drove the
+course form on `/seo-kursi/`, and once all three courses got a Stripe
+`bookUrl` that page renders the buy button instead, so `form("course")`
+survives only on the hub. The preselect assertion went with it - the preset
+path (`form("course", { course: courseName })`) is NOT dead code, it is what
+`course-sessions.njk` renders for a course with no `bookUrl`, so put the
+assertion back against any course that ever loses its Stripe link.
+
+**Every submit in that test goes through the `submit()` helper, and must.**
+`html { scroll-behavior: smooth }` makes scrolling asynchronous, and
+puppeteer's `click` scrolls the target into view and then clicks its
+coordinates - on a long page the animation is still running when the click
+lands, so it hits whatever is under those coordinates. The hub's form sits
+~7 200px down and failed exactly this way while the identical code passed on
+`/sazinies/` at ~1 050px. The helper pins `scroll-behavior: auto` and centres
+the button first. Suspect this the moment a headless click "succeeds" and
+nothing happens.
 
 **Open decision — double opt-in is ON for these forms.** A submitted enquiry
 lands as `status: unconfirmed` until the person clicks a confirmation email.
