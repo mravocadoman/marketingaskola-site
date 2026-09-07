@@ -77,6 +77,31 @@ module.exports = function (eleventyConfig) {
 </figure>`;
   });
 
+  // Prices live in src/_data (courseSessions.json, booking.json) and nowhere
+  // else. `gross` prints the consumer-facing total once beside a net price
+  // (150 -> "181,50"); `offer` lets a blog post quote a price, cadence or
+  // length inline - {% offer "meta-reklamas-kurss" %} -> "150 € + PVN",
+  // {% offer "60" %} -> "90 € + PVN", {% offer "meta-reklamas-kurss", "cadence" %}
+  // - so 41 posts stay right when a number changes. Unknown keys throw at
+  // build time rather than printing an empty string into a sentence.
+  const readJSON = (f) => JSON.parse(fs.readFileSync(path.join(SRC, "_data", f), "utf8"));
+  const lvNum = (n) => (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, "").replace(".", ",");
+  eleventyConfig.addFilter("gross", (n, rate) => lvNum(Number(n) * (1 + (rate ?? 21) / 100)));
+  eleventyConfig.addShortcode("offer", (key, field) => {
+    const sessions = readJSON("courseSessions.json"), booking = readJSON("booking.json");
+    const course = sessions.courses[key];
+    const opt = booking.consultation.options.find((o) => o.id === key);
+    const item = course || opt;
+    if (!item) throw new Error(`offer: unknown key "${key}"`);
+    const f = field || "price";
+    if (f === "price") return `${lvNum(item.price)} € + PVN`;
+    if (f === "gross") return `${lvNum(item.price * (1 + (sessions.policy?.vatRate ?? booking.vatRate ?? 21) / 100))} €`;
+    if (f === "hours") return course ? `${course.hours} stund${course.hours === 1 ? "a" : "as"}` : opt.duration;
+    if (f === "cadence") return course ? course.cadence : "";
+    if (item[f] == null) throw new Error(`offer: "${key}" has no "${f}"`);
+    return String(item[f]);
+  });
+
   // JSON-LD: JSON with `<` escaped so it can never close the <script>.
   eleventyConfig.addFilter("jsonld", (obj) => JSON.stringify(obj).replace(/</g, "\\u003c"));
 
@@ -183,6 +208,11 @@ module.exports = function (eleventyConfig) {
 
     if (c.course) {
       const k = c.course;
+      // Price and length come from courseSessions.json, matched by slug, so
+      // the schema can never disagree with the button on the page.
+      const cs = c.courseSessions?.courses?.[String(c.url || "").replace(/\//g, "")] || {};
+      if (cs.price != null) k.price = cs.price;
+      if (cs.hours != null) k.hours = cs.hours;
       const hours = (h) => {
         if (!h) return undefined;
         const whole = Math.floor(h), mins = Math.round((h - whole) * 60);

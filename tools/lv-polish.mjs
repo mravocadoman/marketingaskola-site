@@ -79,7 +79,7 @@ const restored = out.replace(HTML, () => originalHtml[h++] ?? '');
 const shape = (t) => ({
   headings: (t.match(/^#{2,3} .+$/gm) || []).length,
   links: [...t.matchAll(/\]\(([^)]+)\)/g)].map((m) => m[1]).sort(),
-  shortcodes: (t.match(/\{%\s*infographic[\s\S]*?%\}/g) || []),
+  shortcodes: (t.match(/\{%\s*(?:infographic|offer)[\s\S]*?%\}/g) || []),
 });
 const a = shape(body), b = shape(restored);
 const problems = [];
@@ -89,7 +89,7 @@ if (JSON.stringify(a.links) !== JSON.stringify(b.links)) {
   const added = b.links.filter((l) => !a.links.includes(l));
   problems.push(`links changed (lost ${lost.length}, added ${added.length})${lost.length ? ': ' + lost.slice(0, 3).join(', ') : ''}`);
 }
-if (JSON.stringify(a.shortcodes) !== JSON.stringify(b.shortcodes)) problems.push('infographic shortcodes altered');
+if (JSON.stringify(a.shortcodes) !== JSON.stringify(b.shortcodes)) problems.push('shortcodes altered');
 if (/—/.test(restored)) problems.push('em dash reintroduced');
 
 const words = (t) => t.replace(/\{%[\s\S]*?%\}/g, '').split(/\s+/).filter(Boolean).length;

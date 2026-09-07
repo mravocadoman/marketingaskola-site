@@ -195,6 +195,15 @@
     document.querySelectorAll(".infographic-text").forEach(function (d) { d.open = true; });
   }
 
+  /* Course dates that have passed are hidden client-side (7 Sep 2026).
+     The site is static and rebuilds only on push, so a listed date would
+     otherwise keep selling like a live one for weeks. Cal.com is the real
+     availability; this just stops the page contradicting it. */
+  var today = new Date().toISOString().slice(0, 10);
+  document.querySelectorAll('[data-date]').forEach(function (el) {
+    if (el.getAttribute('data-date') < today) el.hidden = true;
+  });
+
   /* GA4 outbound and intent tracking (6 Sep 2026).
      One delegated listener rather than per-element handlers, so nothing has to
      be wired into the markup when a new button appears. window.msTrack comes

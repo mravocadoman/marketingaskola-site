@@ -11,7 +11,8 @@
         "price": 90,
         "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
         "url": "https://buy.stripe.com/6oU14ndC7ah38PL2984gg05",
-        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes"
+        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes",
+        "best2": "Esošam reklāmas kontam — izejam cauri kampaņām un vienojamies, ko labot vispirms"
       },
       {
         "id": "30",
@@ -30,7 +31,8 @@
         "best": "Ilgākam darbam: sesijas izmanto sev ērtā tempā",
         "note": "Ietaupi 80 € pret atsevišķām stundām",
         "url": "https://buy.stripe.com/14A00j0Plbl78PL0104gg06",
-        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes"
+        "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes",
+        "sessions": 5
       }
     ]
   }

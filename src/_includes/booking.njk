@@ -13,11 +13,14 @@
   <div class="cell">
     <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
     <h3>{{ o.label }}</h3>
-    <p class="price">€{{ o.price }} <small>+ PVN</small></p>
+    <p class="price">€{{ o.price }} <small>+ PVN · kopā {{ o.price | gross(booking.vatRate) }} €</small></p>
     <ul class="course-facts">
       <li><span>Ilgums</span><span>{{ o.duration }}</span></li>
       <li><span>Piemērota</span><span>{{ o.best }}</span></li>
+      {% if o.best2 %}<li><span>Piemērota</span><span>{{ o.best2 }}</span></li>{% endif %}
+      {% if o.sessions %}<li><span>Par sesiju</span><span>{{ (o.price / o.sessions) | round }} € + PVN</span></li>{% endif %}
       {% if o.note %}<li><span>Ieguvums</span><span>{{ o.note }}</span></li>{% endif %}
+      {% if o.sessions %}<li><span>Rezervācija</span><span>Sesijas rezervē pa vienai no tās pašas kalendāra saites</span></li>{% endif %}
     </ul>
     <a class="btn{% if not loop.first %} btn--ghost{% endif %}" href="{{ o.url }}">Apmaksāt un rezervēt</a>
   </div>
@@ -28,7 +31,8 @@
   <details class="faq"><summary>Komplekts, pārcelšana un rēķins</summary><div>
     <p>Komplekta sesijas rezervē pa vienai — pēc apmaksas saglabā kalendāra saiti un izmanto to katrai nākamajai reizei.</p>
     {% if booking.consultation.calendarUrl %}<p>Ja laiks vairs neder, pārcel to kalendārā vai raksti mums.</p>{% endif %}
-    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    {% set invoiceBody = "Konsultācija: \nUzņēmums: \nReģ. nr.: \nE-pasts rēķinam: \nVēlamais laiks: " %}
+    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ "Rēķins: mārketinga konsultācija" | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a> — norādi formātu, uzņēmumu un reģistrācijas numuru. Pēc rēķina apmaksas nosūtām kalendāra saiti.</p>
   </div></details>
 </div>
 {% else %}

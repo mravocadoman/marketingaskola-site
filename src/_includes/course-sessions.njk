@@ -21,7 +21,7 @@
 {% if cs.sessions.length %}
 <div class="hgrid hgrid--4">
   {% for s in cs.sessions %}
-  <div class="cell">
+  <div class="cell" data-date="{{ s.date }}">
     <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
     <h3>{{ s.label }}</h3>
     <ul class="course-facts">
@@ -32,16 +32,20 @@
   {% endfor %}
 </div>
 {% if cs.bookUrl %}
+{% set invoiceSubject = "Rēķins: " ~ cs.name %}
+{% set invoiceBody = "Kurss: " ~ cs.name ~ "\nDatums: \nUzņēmums: \nReģ. nr.: \nE-pasts rēķinam: \nDalībnieku skaits: " %}
 <div class="btn-wrap" style="margin-top:clamp(28px,3vw,40px)">
-  <a class="btn" href="{{ cs.bookUrl }}">Rezervēt vietu — 150 € + PVN</a>
+  <a class="btn" href="{{ cs.bookUrl }}">Rezervēt vietu — {{ cs.price }} € + PVN</a>
   {% if cs.calendarUrl %}<a class="btn btn--ghost" href="{{ cs.calendarUrl }}" target="_blank" rel="noopener">Apskatīt kalendāru</a>{% endif %}
 </div>
-<p class="fine">Cenai tiek pievienots PVN {{ courseSessions.policy.vatRate }}%. Pēc apmaksas izvēlies sev piemēroto datumu kalendārā — grupā līdz {{ courseSessions.policy.maxSeats }} dalībniekiem.</p>
+<p class="fine">{{ cs.price }} € + PVN {{ courseSessions.policy.vatRate }}% — kopā {{ cs.price | gross(courseSessions.policy.vatRate) }} €. Pēc apmaksas izvēlies sev piemēroto datumu kalendārā — grupā līdz {{ courseSessions.policy.maxSeats }} dalībniekiem.</p>
+<p class="fine" style="margin-top:10px">Bezmaksas atteikšanās līdz {{ courseSessions.policy.refundDaysBefore }} dienām pirms norises. Ja grupa nesanāk — pilna atmaksa, pārcelšana vai konsultācija, izvēle ir Tava.</p>
+{% if cs.proof %}<p class="fine" style="margin-top:10px">{{ cs.proof }}</p>{% endif %}
 <div class="fine-more">
   <details class="faq"><summary>Grupas nosacījumi, atteikšanās un rēķins</summary><div>
     <p>Grupa notiek no {{ courseSessions.policy.minSeats }} dalībniekiem. Ja tik daudz nesanāk, {{ courseSessions.policy.decideDaysBefore }} dienas pirms norises pārceļam uz nākamo mēnesi, atgriežam samaksu vai pārvēršam to individuālā konsultācijā — izvēle ir Tava.</p>
-    <p>Bezmaksas atteikšanās līdz {{ courseSessions.policy.refundDaysBefore }} dienām pirms norises. Ja piesakies vēlāk, pilna atmaksa pienākas {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās.</p>
-    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: raksti uz <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    <p>Ja piesakies vēlāk nekā {{ courseSessions.policy.refundDaysBefore }} dienas pirms norises, pilna atmaksa pienākas {{ courseSessions.policy.lateBookingGraceHours }} stundu laikā pēc pieteikšanās.</p>
+    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ invoiceSubject | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a> — norādi kursu, datumu, uzņēmumu, reģistrācijas numuru un dalībnieku skaitu. Pēc rēķina apmaksas nosūtām kalendāra saiti.</p>
   </div></details>
 </div>
 {% else %}
