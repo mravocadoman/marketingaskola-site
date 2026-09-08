@@ -892,6 +892,31 @@ Two rules hold and must keep holding: **`updated` is never earlier than
 date`, which is what suppresses the reader-facing "atjaunots" line in
 `post.njk` for a post that has not actually been revised.
 
+**GA4 key events are set (8 Sep 2026).** In the property (363934063,
+`marketingaskola.lv`) under Data display → Events, three are starred and all
+three are live on the stream: **`generate_lead`, `begin_checkout` and
+`contact_click`**. Without this Google Ads cannot import them as conversions
+and nothing in GA4 says which article produces an enquiry, which is what
+should choose the next post.
+
+**`schedule_booking` is NOT starred and cannot be yet** — GA4 only lists
+events it has seen in the last 28 days, and nobody has clicked a Cal.com link
+since tracking went live on 6 Sep. Star it once it appears; the code already
+fires it (`main.js` delegated click handler, any `cal.com` href).
+
+Three legacy key events remain from the MonsterInsights era and all say "No
+stream data detected": `close_convert_lead`, `purchase`, `qualify_lead`. They
+were left alone deliberately — harmless, and unstarring is the owner's call —
+but they do pad the conversions report with rows that will never populate.
+
+**Meta descriptions were rewritten for CTR the same day.** Google bolds query
+matches inside the snippet, so eight descriptions that never contained their
+own focus phrase were throwing away the cheapest CTR gain available to a page
+that already ranks (`/b2b-marketings/` never said "B2B"; `/maksliga-intelekta-riki/`
+said "MI rīki" while searchers type "mākslīgā intelekta rīki"). Length was NOT
+the problem and was left alone: only four descriptions sitewide are under 120
+characters and three of those are correct.
+
 **Headings and link names.** Footer and TOC labels are `<p class="footer-h">` /
 `<p class="toc-h">` (they were h4s that skipped levels on every page); post
 cards use `.post-title` — h2 on the blog index and category pages, h3 where a
