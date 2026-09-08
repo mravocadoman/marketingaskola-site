@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Vai Google reklāma ir efektīva? Ko zināt 2026. gadā"
-seoTitle: "Vai Google reklāma ir efektīva 2026. gadā? | Mārketinga Skola"
+seoTitle: "Vai Google reklāma atmaksājas 2026. gadā? | Mārketinga Skola"
 description: "Google reklāma uzrunā cilvēku, kurš jau meklē. Kā tā strādā, kad tā atmaksājas, kam pievērst uzmanību un ko mainījusi MI meklēšana."
 date: 2025-01-06
 updated: 2026-08-14

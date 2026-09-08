@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kā veiksmīgi izmantot Instagram Reels mārketingam?"
-seoTitle: "Kā veiksmīgi izmantot Instagram Reels mārketingam? | Mārketinga Skola"
+seoTitle: "Instagram Reels mārketingam | Mārketinga Skola"
 description: "Kā veidot Instagram Reels, ko cilvēki noskatās līdz beigām, kāpēc ar organisko sasniegumu vien nepietiek un kuram video pielikt reklāmas budžetu."
 date: 2025-04-17
 updated: 2026-08-18

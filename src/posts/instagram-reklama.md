@@ -60,7 +60,7 @@ Vecais padoms bija "padari tekstu saistošu". Šodien ar to nepietiek. Cilvēks 
 
 Pārbaudi savu reklāmu tā: noskaties pirmās trīs sekundes bez skaņas. Ja šajā laikā nav skaidrs, par ko ir runa un kam tas domāts, reklāmas materiāls ir jāpārtaisa.
 
-Paraksts ir otrajā vietā. Viena doma, konkrēta priekšrocība un skaidrs aicinājums rīkoties. Praktiskas formulas atradīsi rakstos [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/) un [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanai](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
+Paraksts ir otrajā vietā. Viena doma, konkrēta priekšrocība un skaidrs aicinājums rīkoties. Praktiskas formulas atradīsi rakstos [īsa pamācība izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanai](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
 ## Solis četri: budžets un pacietība
 

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Meta ads: kā izcelties ar inovatīviem reklāmas risinājumiem ?"
-seoTitle: "Meta ads: kā izcelties ar inovatīviem reklāmas risinājumiem ? | Mārketinga Skola"
+seoTitle: "Meta reklāmas: kā izcelties plūsmā | Mārketinga Skola"
 description: "Meta reklāmas 2026. gadā: kas mainījies auditoriju atlasē, kuri atlases veidi vēl noder, reklāmu formātu salīdzinājums un ar ko sākt."
 date: 2025-04-10
 updated: 2026-09-04

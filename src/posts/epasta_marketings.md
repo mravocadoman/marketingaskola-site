@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu"
-seoTitle: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu | Mārketinga Skola"
+seoTitle: "E-pasta mārketings: kampaņas, kas pārdod | Mārketinga Skola"
 description: "E-pasta mārketings praksē: saraksts, kampaņas uzbūve, automatizācija, piegādājamības prasības un kāpēc atvēršanas rādītājs vairs nav uzticams."
 date: 2025-12-17
 updated: 2026-08-12

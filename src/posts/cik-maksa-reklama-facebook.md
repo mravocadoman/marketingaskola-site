@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem"
-seoTitle: "Cik maksā reklāma Facebook tīklā? Īsa pamācība uzņēmumiem | Mārketinga Skola"
+seoTitle: "Cik maksā reklāma Facebook tīklā? | Mārketinga Skola"
 description: "Cik maksā Facebook reklāma Latvijā, no kā veidojas cena, kā rēķināt budžetu no klienta uz klikšķi un kas 2026. gadā to ietekmē visvairāk."
 date: 2025-03-19
 updated: 2026-08-07
@@ -9,7 +9,7 @@ image: "/img/gen/cover-cik-maksa-reklama-facebook.webp"
 legacyImage: "/img/2025/03/Digital-1200-628px-1.jpg"
 categories: ["socialo-tiklu-reklama"]
 permalink: "/cik-maksa-reklama-facebook/"
-keywords: ["Facebook reklāmas cena", "reklāmas budžets", "CPM", "CPC", "Meta reklāma", "reklāmas izmaksas"]
+keywords: ["cik maksā Facebook reklāma", "Facebook reklāmas cena", "reklāmas budžets", "CPM", "CPC", "Meta reklāma", "reklāmas izmaksas"]
 
 ---
 

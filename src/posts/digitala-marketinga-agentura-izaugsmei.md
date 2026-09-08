@@ -9,7 +9,7 @@ image: "/img/gen/cover-digitala-marketinga-agentura-izaugsmei.webp"
 legacyImage: "/img/2025/11/Marketinga-Skola-Blog-Thumbnails-1.png"
 categories: ["marketinga-strategija"]
 permalink: "/digitala-marketinga-agentura-izaugsmei/"
-keywords: ["digitālā mārketinga aģentūra", "frīlanseris", "in-house komanda", "uzņēmuma izaugsme"]
+keywords: ["kā izvēlēties mārketinga aģentūru", "digitālā mārketinga aģentūra", "frīlanseris", "in-house komanda", "uzņēmuma izaugsme"]
 
 ---
 

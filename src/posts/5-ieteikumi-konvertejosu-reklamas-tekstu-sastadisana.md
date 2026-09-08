@@ -1,8 +1,8 @@
 ---
 layout: post.njk
-title: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā"
-seoTitle: "5 Ieteikumi konvertējošu reklāmas tekstu sastādīšanā | Mārketinga Skola"
-description: "Pieci ieteikumi reklāmas tekstiem, kas strādā tad, kad melnrakstu var uzrakstīt ikviens: konkrētība, pirmā rinda, viens aicinājums un konkurenta tests."
+title: "Reklāmas teksts, kas konvertē: septiņi ieteikumi"
+seoTitle: "Reklāmas teksts, kas konvertē | Mārketinga Skola"
+description: "Septiņi ieteikumi reklāmas tekstiem, kas strādā tad, kad melnrakstu var uzrakstīt ikviens: konkrētība, pirmā rinda, PAS un AIDA formulas un konkurenta tests."
 date: 2021-10-17
 updated: 2026-08-04
 image: "/img/gen/cover-5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana.webp"
@@ -50,13 +50,45 @@ Video reklāmā tas pats notiek attēlā: pirmās trīs sekundes izšķir visu, 
 **Vājš:** "Jau desmit gadus mēs palīdzam uzņēmumiem augt, un šodien gribam pastāstīt par..."
 **Labāks:** "Tava reklāma maksā divreiz dārgāk nekā pirms mēneša. Lūk, kāpēc."
 
-## 4. Viens aicinājums rīkoties, nevis trīs
+## 4. Trīs formulas, kas der gandrīz visam
+
+Formulas nav radošuma pretstats. Tās palīdz netērēt laiku struktūrai un vairāk domāt par saturu.
+
+**PAS: problēma, saasinājums, risinājums.** Der tad, kad cilvēks problēmu jau jūt.
+*"Reklāma tērē budžetu, bet zvani nenāk. Katra nedēļa bez konversiju uzskaites ir nauda, kuru vairs neizsekosi. Vienā stundā parādām, kur tas apstājas."*
+
+**BAB: pirms, pēc, tilts.** Der pakalpojumiem un apmācībām.
+*"Šodien kampaņu maina pēc sajūtas. Pēc mēneša to maina pēc skaitļa. Starpība ir viens uzstādīts rīks."*
+
+**AIDA: uzmanība, interese, vēlme, darbība.** Der garākiem tekstiem un e-pastiem, kur ir vieta izvērsumam.
+
+Izvēlies vienu un uzraksti visu tekstu pēc tās. Formulu jaukšana vienā reklāmā ir biežākais iemesls, kāpēc teksts izklausās juceklīgs.
+
+## 5. Ieguvumi, nevis funkcijas, bet ar pierādījumu
+
+Vecais padoms "raksti par ieguvumiem, nevis funkcijām" joprojām ir pareizs, bet ar vienu papildinājumu: ieguvums bez pierādījuma šodien izklausās pēc ģenerēta teksta.
+
+**Funkcija:** "Automatizēta pieteikumu apstrāde."
+**Ieguvums:** "Klients saņem atbildi uzreiz, nevis nākamajā dienā."
+**Ieguvums ar pierādījumu:** "Klients saņem atbildi piecās minūtēs, arī sestdienā."
+
+Skaitlis, termiņš vai konkrēts apstāklis ir tas, kas atšķir apgalvojumu no solījuma.
+
+{% infographic { id: "info-reklamas-teksta-solis", title: "Reklāmas teksts piecos soļos", items: [
+ { label: "Sāc ar cilvēku", text: "Klienta vārdi, ne nozares valoda." },
+ { label: "Pirmā rinda", text: "Vispirms secinājums, tad paskaidrojums." },
+ { label: "Viena formula", text: "PAS, BAB vai AIDA, ne visas kopā." },
+ { label: "Ieguvums ar pierādījumu", text: "Skaitlis vai termiņš, ne apgalvojums." },
+ { label: "Vairāki varianti", text: "Trīs teksti vienā kopā, izvēlas sistēma." }
+] } %}
+
+## 6. Viens aicinājums rīkoties, nevis trīs
 
 Reklāma, kas piedāvā piezvanīt, uzrakstīt e-pastu un vēl sekot Instagram, praksē parasti nesaņem nevienu no šīm darbībām. Katra papildu izvēle samazina iespēju, ka cilvēks kaut ko izdarīs.
 
 Izlem, kāda ir viena nākamā darbība, un izmet pārējo. Ja tiešām ir divas auditorijas ar divām dažādām darbībām, tad tās ir divas reklāmas.
 
-## 5. Pārbaudi ar konkurenta testu
+## 7. Pārbaudi ar konkurenta testu
 
 Šī ir ātrākā pārbaude, ko zinām. Paņem savu reklāmas tekstu un iedomājies, ka vietā, kur ir Tava uzņēmuma nosaukums, ir konkurenta nosaukums.
 
@@ -84,6 +116,6 @@ Kā to izdarīt, nezaudējot zīmola balsi, esam aprakstījuši rakstā [AI satu
 
 Paņem vienu reklāmu, kas šobrīd darbojas, un pārbaudi to ar konkurenta testu. Tad uzraksti divas jaunas versijas, kur pirmā rinda sākas ar secinājumu. Palaid visas trīs vienā reklāmu kopā un ļauj sistēmai izvēlēties.
 
-Vairāk par teksta uzbūvi lasi rakstā [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/).
+Vairāk par teksta uzbūvi lasi rakstā [īsa pamācība izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
 Ja gribi iemācīties šos tekstus rakstīt kopā ar kampaņu, kurā tie darbojas, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Viena {% offer "meta-reklamas-kurss", "hours" %} gara tiešsaistes nodarbība par {% offer "meta-reklamas-kurss" %}. Ja gribi skatu no malas tieši saviem tekstiem, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/), īsākais formāts ir {% offer "30", "hours" %} par {% offer "30" %}.

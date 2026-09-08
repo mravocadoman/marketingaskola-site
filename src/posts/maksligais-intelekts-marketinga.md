@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mākslīgais intelekts mārketingā: kur tas tiešām strādā"
-seoTitle: "Mākslīgais intelekts mārketingā: kur tas strādā | Mārketinga Skola"
+seoTitle: "Mākslīgais intelekts mārketingā | Mārketinga Skola"
 description: "Praktisks ceļvedis: kur mākslīgais intelekts mārketingā dod reālu rezultātu mazam uzņēmumam, ar ko sākt un kuras kļūdas maksā visdārgāk."
 date: 2025-03-19
 updated: 2026-08-27

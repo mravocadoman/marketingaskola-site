@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Mārketinga stratēģijas izstrāde - 7 padomi"
-seoTitle: "Mārketinga stratēģijas izstrāde - 7 padomi | Mārketinga Skola"
+seoTitle: "Mārketinga stratēģijas izstrāde | Mārketinga Skola"
 description: "Mārketinga stratēģija, kas ietilpst vienā lapā: septiņi jautājumi par auditoriju, mērķi, kanāliem, piedāvājumu, budžetu un vienu skaitli, pēc kura vērtē."
 date: 2021-12-09
 updated: 2026-09-03

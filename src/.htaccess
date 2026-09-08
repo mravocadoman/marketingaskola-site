@@ -34,6 +34,12 @@ AddDefaultCharset utf-8
   # the live course instead, same destination as /facebook-kursi/.
   RewriteRule ^facebook-kurss-landing/?$ /meta-reklamas-kurss/ [R=301,L]
 
+  # Two ~700-word posts argued the same case about ad copy, with the same five
+  # sections and the same focus phrase, so they were merged into one on
+  # 8 Sep 2026. The formulas and proof sections moved across; this URL 301s to
+  # the survivor rather than 404ing, because six posts linked to it.
+  RewriteRule ^isa-pamaciba-izcilu-reklamas-tekstu-veidosana/?$ /5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/ [R=301,L]
+
   # Year stamps removed from two evergreen posts (5 Sep 2026, owner's call).
   # The articles are updated each year; the URL should not have to be.
   RewriteRule ^5-digitala-marketinga-tendences-2025-gada/?$ /digitala-marketinga-tendences/ [R=301,L]

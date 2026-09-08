@@ -54,7 +54,7 @@ Viens "labākais" variants ir slikts uzdevums, jo Tev nav ar ko to salīdzināt.
 
 Pieci virsraksti ar apzināti dažādu pieeju ir daudz noderīgāki: viens ar jautājumu, viens ar skaitli, viens ar problēmu, viens ar solījumu, viens tiešs un vienkāršs. Izvēle paliek pie cilvēka, un tieši izvēle ir tā vieta, kur parādās zīmols.
 
-Turklāt varianti ļauj **testēt**, un testēšana ir vienīgais veids, kā uzzināt, kas Tavā nozarē tiešām strādā. Kā rakstīt tekstus, kas konvertē, apkopojām rakstā [5 ieteikumi konvertējošam reklāmas tekstam](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un plašāk, [īsā pamācībā izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/).
+Turklāt varianti ļauj **testēt**, un testēšana ir vienīgais veids, kā uzzināt, kas Tavā nozarē tiešām strādā. Kā rakstīt tekstus, kas konvertē, apkopojām rakstā [5 ieteikumi konvertējošam reklāmas tekstam](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un plašāk, [īsā pamācībā izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
 ## Solis trešais: pēdējo versiju pārraksti pats
 

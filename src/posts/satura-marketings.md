@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod"
-seoTitle: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod | Mārketinga Skola"
+seoTitle: "Satura mārketings, kas pārdod | Mārketinga Skola"
 description: "Kā veidot saturu, kas piesaista un pārdod: hook formulas, kāds saturs 2026. gadā vēl atmaksājas un ar ko sākt, ja plāna vēl nav."
 date: 2025-12-11
 updated: 2026-08-04
@@ -118,6 +118,6 @@ Kā atrast tēmas, ko cilvēki tiešām meklē, aprakstīts rakstā [atslēgvār
 
 Nesāc ar satura plānu pusgadam. Paņem vienu jautājumu, ko klienti Tev uzdod katru nedēļu, un uzraksti godīgu atbildi ar konkrētiem skaitļiem. Tas ir vērtīgāk par desmit vispārīgiem ierakstiem.
 
-Teksta uzbūvi palīdzēs sakārtot raksti [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/). Ja daļu darba gribi uzticēt mākslīgajam intelektam, nezaudējot savu balsi, tam ir veltīts raksts [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/).
+Teksta uzbūvi palīdzēs sakārtot raksti [5 ieteikumi konvertējošu reklāmas tekstu sastādīšanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/) un [īsa pamācība izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/). Ja daļu darba gribi uzticēt mākslīgajam intelektam, nezaudējot savu balsi, tam ir veltīts raksts [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/).
 
 Ja satura veidošanā un ikmēneša plānošanā trūkst sistēmas, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Ja saturam vajag regulāru skatu no malas, {% offer "bundle5", "sessions" %} sesijas komplektā maksā {% offer "bundle5" %}. Ja meklē gatavu risinājumu, apskati [mūsu pakalpojumus](/pakalpojumi/).

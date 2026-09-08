@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "TikTok reklāmas: Kā izveidot efektīvus video un piesaistīt klientus?"
-seoTitle: "TikTok reklāmas: Kā izveidot efektīvus video un piesaistīt klientus? | Mārketinga Skola"
+seoTitle: "TikTok reklāmas: kā piesaistīt klientus | Mārketinga Skola"
 description: "Kā veidot TikTok video, kas piesaista klientus: trīs sekunžu likums, autentiskums, subtitri un kāpēc tas pats video strādā arī Instagram un Facebook."
 date: 2025-05-01
 updated: 2026-08-07
@@ -78,7 +78,7 @@ Liela daļa video, īpaši TikTok, tiek skatīti bez skaņas. Cilvēki bieži sk
 
 Lai skatīšanās pieredze būtu labāka, izmanto subtitrus, kas ir viegli salasāmi un nepārslogo ekrānu. Tas ne tikai uzlabo skatītāja pieredzi, bet arī palīdz saturam sasniegt vairāk cilvēku. Mūsdienu digitālajā vidē tas ir ļoti svarīgi.
 
-Ja vēlies padziļināt zināšanas par to, kā radīt pārliecinošus un pārdošanu veicinošus tekstus, iesaku ieskatīties šeit: [Īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/).
+Ja vēlies padziļināt zināšanas par to, kā radīt pārliecinošus un pārdošanu veicinošus tekstus, iesaku ieskatīties šeit: [Īsa pamācība izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
 ### 4. Trendu izmantošana un audio izvēle
 

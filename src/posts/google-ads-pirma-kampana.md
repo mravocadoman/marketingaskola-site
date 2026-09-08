@@ -70,7 +70,7 @@ Google apvieno Tavus virsrakstus un aprakstus dažādās kombinācijās. Tavs uz
 
 Praktiskais minimums: astoņi līdz desmit virsraksti un trīs līdz četri apraksti vienā reklāmā. Vismaz vienā virsrakstā iekļauj tieši to vārdu, ko cilvēks meklēja, vismaz vienā cenu vai termiņu, un vismaz vienā to, ar ko Tu atšķiries.
 
-Formulas, pēc kurām rakstīt šos tekstus, ir rakstā [īsa pamācība izcilu reklāmas tekstu veidošanā](/isa-pamaciba-izcilu-reklamas-tekstu-veidosana/).
+Formulas, pēc kurām rakstīt šos tekstus, ir rakstā [īsa pamācība izcilu reklāmas tekstu veidošanā](/5-ieteikumi-konvertejosu-reklamas-tekstu-sastadisana/).
 
 ## Solis 4: budžets un cenu stratēģija
 

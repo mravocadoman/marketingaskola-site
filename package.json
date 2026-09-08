@@ -8,6 +8,7 @@
     "build": "eleventy",
     "watch": "eleventy --serve --port=8385",
     "serve": "node tools/serve.cjs",
+    "seo": "node tools/seo-audit.mjs",
     "check": "node tools/check-site.mjs",
     "images": "node tools/generate-images.mjs",
     "images:force": "node tools/generate-images.mjs --force",
