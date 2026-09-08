@@ -38,6 +38,11 @@ AddDefaultCharset utf-8
   # The articles are updated each year; the URL should not have to be.
   RewriteRule ^5-digitala-marketinga-tendences-2025-gada/?$ /digitala-marketinga-tendences/ [R=301,L]
   RewriteRule ^google-reklama-2025/?$ /google-reklama/ [R=301,L]
+  # An older year-stamped version of the same article. It redirected on
+  # WordPress and 404ed from the 3 Sep 2026 cutover until 8 Sep; Search Console
+  # still had it as a redirect, which is how it surfaced. Not in
+  # archive/wordpress-mirror, so the URL sweep could not have found it.
+  RewriteRule ^vai-google-reklama-ir-efektiva-ari-2024-gada/?$ /google-reklama/ [R=301,L]
 
   # URLs that changed on the old WordPress site (these were 301s there too).
   RewriteRule ^meta-reklamas-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
