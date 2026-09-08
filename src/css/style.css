@@ -1212,7 +1212,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    size rather than the 18px prose, so 62ch was rendering as ~76 characters. */
 .article-shell > .container { max-width: 1060px; }
 .article-grid {
-  grid-template-columns: 210px minmax(0, 640px) 210px;
+  grid-template-columns: 1fr minmax(0, 640px) 210px;
   justify-content: center;
   gap: clamp(28px, 3.2vw, 48px);
 }
