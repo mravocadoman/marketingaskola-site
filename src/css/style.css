@@ -375,11 +375,18 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .stats { display: flex; flex-direction: column; margin: 0; max-width: none; gap: 0; padding: 0; border: 0; }
 .stat { border-top: 1px solid var(--line); border-left: 0; padding: 20px 0 22px; }
 .stat:first-child { border-top: 0; padding-top: 0; }
+/* ONE rank below a section h2, deliberately (8 Sep 2026). At --t-d3 a stat
+   numeral rendered at exactly the same size, weight and colour as a section
+   heading, so /portfolio/ presented 12 numerals competing with 6 real headings
+   and the eye had no way to tell a title from a figure. The numeral is still
+   the largest thing inside its own cell by a wide margin (the label is 12px),
+   so it keeps its punch without pretending to start a section. The mobile hero
+   already did exactly this. */
 .stat .num {
   display: block;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: var(--t-d3);
+  font-size: var(--t-d2);
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--heading);

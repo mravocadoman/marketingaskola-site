@@ -492,6 +492,45 @@ delivery times if they should be public.
 Latvian versions of its content to live here eventually; nothing from it has
 been used, because it could not be read.
 
+## One reading pattern per page (8 Sep 2026)
+
+Owner, relaying a friend: *"when he looks at the page he's not sure where he's
+supposed to look and what to read."* Audited by measuring the rendered
+hierarchy, not by eye, and it was two concrete faults rather than taste.
+
+**1. Stat numerals were impersonating section headings.** `.stat .num` sat on
+`--t-d3`, the same token as a section `h2`, and shares its weight (600) and
+colour (`--heading`). So a numeral rendered at 46px white — pixel-identical to
+a section title. `/portfolio/` presented **12 numerals against 6 real
+headings**: twice as many false entry points as true ones, which is exactly
+what "I don't know where to look" feels like. Numerals now sit one rank down
+on `--t-d2`. They are still the largest thing in their own cell by a mile (the
+label is 12px), so they keep their punch without pretending to open a section.
+The mobile hero had already done this locally. **Do not put `.stat .num` back
+on `--t-d3`** — and if a new device wants that size, remember `--t-d3` means
+"this begins a section" and nothing else.
+
+**2. Two course pages had no reading path.** `/meta-reklamas-kurss/` and
+`/google-ads-kurss/` open 01 Par kursu → 02 Kam paredzēts → 03 Kursa saturs.
+`/seo-kursi/` and `/tiktok-kursi/` dropped the reader straight into
+`.course-body` with three unlabelled same-size `h2`s and only reached their
+first eyebrow halfway down the page, where a "01" then implied the page
+started there. Both now carry the full numbered path from the top. **All four
+course pages open on "01 Par kursu"** — keep it that way when adding a fifth.
+
+**The anchor is the indexed eyebrow**, not the heading: cyan tick, `01`, a
+label, and a rule flexing to the edge inside `.sec-head`. Every content
+section on every marketing page now has one — 87 of 88. The single exception
+is the featured post card on `/blogs/`, whose `h2` is a post title
+(`.post-title`), not a section head, and must stay that way for the blog
+index's document outline.
+
+**A `.sec-head` is a TWO-column grid**: eyebrow + `h2` on the left, `.lead` as
+its SIBLING in the right-hand column. Putting the intro `<p>` inside the left
+`<div>` renders it as body copy under the heading instead of as the lead, and
+that is a different-looking section. Two of mine did exactly that and were
+corrected the same day.
+
 ## Geometry — SQUARE, one decision (21 Aug 2026)
 
 The stylesheet had **seven** corner treatments at once: 8px, 6px, 5px, 4px, 2px,
