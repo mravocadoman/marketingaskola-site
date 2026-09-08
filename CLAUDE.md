@@ -1873,6 +1873,30 @@ open**, because two overlays on a first visit is how people leave. Suppressed
 on `/sazinies/`, `/privatuma-politika/`, `/marketinga-konsultacijas/` and any
 `noindex` page. `src/js/leadmagnet.js`, `.lm*` in the stylesheet.
 
+**On phones it is a BOTTOM SHEET, not a full-screen panel (9 Sep 2026).**
+Owner: *"maybe don't make the popup full screen on mobile"*. The `max-width:
+560px` rule used to set `place-items: stretch` and `min-height: 100%`, so the
+panel covered the article edge to edge. That is an interstitial, which is the
+exact pattern the 20-second delay and the scroll gate exist to avoid, so the
+markup was undoing the timing work. It now aligns to the bottom
+(`place-items: end stretch`) and caps at `88svh` with its own `overflow-y`.
+**`svh`, not `vh`** - `vh` on a phone measures the viewport without the
+browser chrome, so 88vh still pushed the submit button under Chrome's toolbar;
+a plain `88vh` line stays above it as the fallback. Measured with the result
+state, which is the tallest the sheet ever gets: at 360x640 it scrolls inside
+itself and the CTA stays reachable, and 77px of the page still shows above it.
+
+**The copy leads with the stake, not the disclaimer.** The first version
+opened on "Bezmaksas pārbaude" with an abstract headline and carried the
+same caveat twice, once in the body ("To veic robots, nevis cilvēks") and
+again in the fine print. Owner: *"this doesn't sound very exciting"*. It now
+names what is actually checked (nine points, listed) and why it matters, using
+the site's own true line: measurement breaks quietly, the ads keep spending
+and the data stops arriving. **Specificity is what makes this exciting, not
+adjectives** - and it stays inside the rule above, because naming the nine
+machine-checkable points is not advice. One caveat remains, in the fine print
+only.
+
 **Owner action, and the lead magnet is worth little without it: MailerLite
 double opt-in is still ON.** Every address collected here lands `unconfirmed`
 until the person clicks a confirmation e-mail, which means they cannot be

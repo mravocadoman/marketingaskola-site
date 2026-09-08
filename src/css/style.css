@@ -1590,7 +1590,23 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .lm-check--bad .lm-mark { color: var(--warn); }
 .lm-check--unknown .lm-mark { color: var(--muted); }
 .lm-next { margin: 20px 0 22px; font-size: var(--t-sm); color: var(--body); }
-@media (max-width: 560px) { .lm { padding: 0; place-items: stretch; } .lm-panel { max-width: none; min-height: 100%; } }
+/* A bottom sheet, NOT a full-screen takeover. This rule used to stretch the
+   panel to min-height:100%, which covered the article edge to edge and read as
+   an interstitial - the exact pattern Google treats as a mobile ranking problem
+   and the reason the popup is delayed and scroll-gated in the first place.
+   Leaving the page visible above the sheet is what makes it a dialog.
+   svh, not vh: vh on a phone measures the viewport WITHOUT browser chrome, so
+   88vh still pushed the button under Chrome's toolbar. */
+@media (max-width: 560px) {
+  .lm { padding: 0; place-items: end stretch; overflow: hidden; }
+  .lm-panel {
+    max-width: none;
+    max-height: 88vh;
+    max-height: 88svh;
+    overflow-y: auto;
+    padding: 26px 20px 22px;
+  }
+}
 
 @media print { .wa-float, .to-top, .consent { display: none; } }
 
