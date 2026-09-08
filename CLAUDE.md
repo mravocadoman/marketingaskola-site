@@ -112,6 +112,46 @@ Search Console, rollback) is in `docs/siteground-cutover.md`. DNS
 already points at SiteGround and email is on Google Workspace, so the
 cutover is a file swap, not a DNS change.
 
+## A red deploy usually still shipped — check WHICH step died (8 Sep 2026)
+
+`deploy.yml` goes red often, and the run's status on its own tells you
+nothing. Three distinct failures, and **only one of them keeps changes off the
+live site**:
+
+| Failed step | Ran before rsync? | Is the change live? |
+| --- | --- | --- |
+| `Run npx @11ty/eleventy` | yes | **No** — real build break |
+| `SSH key` | yes | **No** — nothing uploaded |
+| `Smoke test the live site` | no | **Yes** — upload already succeeded |
+
+- **Build break** is almost always front-matter YAML: an unescaped `"` inside
+  a double-quoted `description:`. That took three consecutive red runs on
+  5 Sep before it was spotted, because it was misread as a shell artefact.
+- **`SSH key`** is five `Connection timed out` attempts to the SiteGround
+  host, before rsync, so nothing reaches the server. Seen 8 Sep 21:09 UTC.
+  It cleared on `gh run rerun <id> --failed`, so treat it as intermittent
+  before assuming a broken credential.
+- **`Smoke test the live site`** runs last, after rsync, the SSH verify and
+  the cache flush. A failure here means the deploy worked and the *test* is
+  wrong or the runner was challenged. `check-live.mjs` exits 3 for
+  SiteGround's `protect_captcha` and the workflow downgrades only that to a
+  warning; any other non-zero is a hard failure.
+
+**The trap this created:** `check-live.mjs` asserted that `/seo-pakalpojumi/`
+301s to `/pakalpojumi/`. When that URL became a real page on 8 Sep the
+assertion was not updated, so every deploy went red at the last step while
+deploying perfectly. Two days of that trains you to wave red runs through —
+and the very next failure was the SSH one, which genuinely had shipped
+nothing. **Fix a failing smoke test the day it starts failing.**
+
+`gh` is logged in on this machine, so `gh run list`, `gh run view --log-failed`
+and `gh run rerun <id> --failed` all work directly.
+
+**The cheapest proof a CSS/JS change actually reached visitors** is the
+cache-bust hash: compute `sha1(_site/css/style.css)[:8]` locally and compare
+it against the `?v=` the live HTML references. Equal means live; different
+means the deploy has not landed, whatever the run says.
+
 ## WhatsApp entry point (2 Sep 2026)
 
 `.wa-float` in `base.njk` is a fixed click-to-chat link to `wa.me/37126673384`
