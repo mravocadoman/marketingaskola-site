@@ -69,7 +69,9 @@ for (const entry of fs.readdirSync(SITE, { withFileTypes: true })) {
   const file = path.join(SITE, entry.name, 'index.html');
   if (!fs.existsSync(file)) continue;
   const html = fs.readFileSync(file, 'utf8');
-  const isPost = html.includes('article-body');
+  // Not : the privacy policy uses that layout too. The BlogPosting
+  // node in the JSON-LD graph is emitted for articles and nothing else.
+  const isPost = html.includes('\"BlogPosting\"');
   if (!isPost && !FLAG('pages')) continue;
   if (only.length && !only.includes(entry.name)) continue;
   docs.push({ slug: entry.name, url: `/${entry.name}/`, html, isPost, root: parse(html) });
