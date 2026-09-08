@@ -27,6 +27,12 @@ AddDefaultCharset utf-8
   # The recorded video course was merged into the live online course
   # (3 Sep 2026): one landing page, live course as the product.
   RewriteRule ^facebook-kursi/?$ /meta-reklamas-kurss/ [R=301,L]
+  # The paid-campaign landing page was deleted by accident in a bulk
+  # typography run on 21 Aug 2026 and 404ed unnoticed until 8 Sep, because it
+  # was an orphan by design and no internal link pointed at it. Not restored:
+  # it sold the RECORDED course, which was retired on 3 Sep. Ad clicks go to
+  # the live course instead, same destination as /facebook-kursi/.
+  RewriteRule ^facebook-kurss-landing/?$ /meta-reklamas-kurss/ [R=301,L]
 
   # Year stamps removed from two evergreen posts (5 Sep 2026, owner's call).
   # The articles are updated each year; the URL should not have to be.
