@@ -47,7 +47,9 @@ if (!fs.existsSync(SITE)) { console.error('No _site. Run `npm run build` first.'
 // report false misses on almost every post, so compare on a crude stem and a
 // prefix test. This over-matches slightly, which is the right direction for a
 // checker that must not cry wolf.
-const stem = (w) => (w.length > 5 ? w.slice(0, -3) : w);
+// Chop up to three characters but never below four, so short pairs like
+// "plāns"/"plānu" still meet ("plān") instead of being reported as a miss.
+const stem = (w) => (w.length > 4 ? w.slice(0, Math.max(4, w.length - 3)) : w);
 const words = (t) => t.toLowerCase().normalize('NFC').match(/[\p{L}\p{N}]+/gu) || [];
 // Latvian endings run 1-3 characters ("reklāma" / "reklāmas" / "reklāmām"), so a
 // fixed-length chop makes forms of one word disagree. Compare on prefix: two

@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Digitālā mārketinga tendences 2026. gadā: 5 lietas, kas mainās"
 seoTitle: "Digitālā mārketinga tendences 2026. gadā | Mārketinga Skola"
-description: "Piecas tendences, kas 2026. un 2027. gadā maina klientu piesaisti: MI meklēšana, sociālie tīkli kā meklētājs, autentisks video un pirmās puses dati."
+description: "Digitālā mārketinga tendences 2026. un 2027. gadā: MI meklēšana, sociālie tīkli kā meklētājs, autentisks video un pirmās puses dati. Ko darīt ar katru."
 date: 2024-03-20
 updated: 2026-08-03
 image: "/img/gen/cover-5-digitala-marketinga-tendences-2025-gada.webp"

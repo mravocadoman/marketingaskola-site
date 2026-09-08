@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Satura mārketings: kā radīt saturu, kas piesaista un pārdod"
 seoTitle: "Satura mārketings, kas pārdod | Mārketinga Skola"
-description: "Kā veidot saturu, kas piesaista un pārdod: hook formulas, kāds saturs 2026. gadā vēl atmaksājas un ar ko sākt, ja plāna vēl nav."
+description: "Satura mārketings, kas piesaista un pārdod: hook formulas, kāds saturs 2026. gadā vēl atmaksājas un ar ko sākt, ja plāna vēl nav."
 date: 2025-12-11
 updated: 2026-08-04
 image: "/img/gen/cover-satura-marketings.webp"

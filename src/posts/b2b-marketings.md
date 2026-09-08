@@ -2,7 +2,7 @@
 layout: post.njk
 title: "B2B mārketings Latvijā: kad reklāma plūsmā nav pareizā atbilde"
 seoTitle: "B2B mārketings Latvijā: kas tiešām strādā | Mārketinga Skola"
-description: "Kā piesaistīt klientus, kad tirgus ir šaurs un lēmumu pieņem vairāki cilvēki: kanāli, kas strādā, aukstās uzrunas robežas un kā mērīt garu ciklu."
+description: "B2B mārketings, kad tirgus ir šaurs un lēmumu pieņem vairāki cilvēki: kanāli, kas strādā, aukstās uzrunas robežas un kā mērīt garu pirkuma ciklu."
 date: 2026-08-19
 updated: 2026-08-19
 image: "/img/gen/cover-b2b-marketings.webp"

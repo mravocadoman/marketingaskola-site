@@ -2,7 +2,7 @@
 layout: post.njk
 title: "8 mākslīgā intelekta rīki mārketingam"
 seoTitle: "8 mākslīgā intelekta rīki mārketingam | Mārketinga Skola"
-description: "Astoņi MI rīki, ko mārketingā tiešām izmanto ikdienā: kam katrs der, kam neder un ar kuru sākt, ja nekad neesi ne ar vienu strādājis."
+description: "Astoņi mākslīgā intelekta rīki, ko mārketingā izmanto ikdienā: kam katrs der, kam neder un ar kuru sākt, ja nekad neesi strādājis ne ar vienu."
 date: 2023-11-07
 updated: 2026-08-26
 image: "/img/gen/cover-maksliga-intelekta-riki.webp"
