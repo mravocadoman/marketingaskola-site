@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: "Digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt"
-seoTitle: "Digitālā mārketinga aģentūra: kā tā palīdz uzņēmumam augt | Mārketinga Skola"
+title: "Kā izvēlēties mārketinga aģentūru un ko sagaidīt no sadarbības"
+seoTitle: "Kā izvēlēties mārketinga aģentūru | Mārketinga Skola"
 description: "Ko dara digitālā mārketinga aģentūra, kā izskatās sadarbības process solis pa solim un kad tā ir labāka izvēle nekā frīlanseris vai iekšējā komanda."
 date: 2025-11-21
 updated: 2026-08-10
@@ -77,4 +77,4 @@ Praktiskais secinājums: mākslīgais intelekts samazina izpildes izmaksas, nevi
 
 Digitālā mārketinga aģentūra ir ieguldījums redzamībā, pieprasījumā un pārdošanā ar skaidru procesu un izmērāmiem rezultātiem. Ja Tava uzņēmuma izaugsme ir apstājusies, sāc ar sarunu.
 
-Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/): tā ir maksas saruna, {% offer "60" %} par stundu.
+Ar šo ikdienā nodarbojas mūsu [digitālā mārketinga aģentūra](/). Piesakies [bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), izrunāsim Tavu situāciju un ieteiksim konkrētus nākamos soļus. Ja vajadzīga padziļināta padomdevēja sesija, apskati [mārketinga konsultācijas](/marketinga-konsultacijas/): tā ir maksas saruna, {% offer "60" %} par stundu.

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Kas ir mārketinga aģentūra un kā tā palīdz uzlabot uzņēmuma redzamību un pārdošanu?"
-seoTitle: "Kas ir mārketinga aģentūra un kā tā palīdz uzlabot uzņēmuma redzamību un pārdošanu? | Mārketinga Skola"
+seoTitle: "Kas ir mārketinga aģentūra un ko tā dara | Mārketinga Skola"
 description: "Ko mārketinga aģentūra dara, kā notiek darbs praksē un sešas lietas, ko jautāt pirms līguma parakstīšanas, sākot ar to, kam piederēs konts."
 date: 2025-11-29
 updated: 2026-08-31
@@ -141,4 +141,4 @@ Kā tas izskatās praksē, vislabāk redzams reālos darbos. Mūsu [portfolio](/
 
 Mārketinga aģentūra var kļūt par vienu no vērtīgākajiem Tava biznesa partneriem. Tā palīdz sakārtot haosu, izveidot stratēģiju, piesaistīt vairāk klientu un uzlabot pārdošanas rezultātus. Tieši tās ir lietas, kas ikdienas darbu steigā bieži paliek novārtā.
 
-Ja jūti, ka Tavs mārketings varētu strādāt labāk, bet nezini, ar ko sākt, atceries: Tev nav jābūt ekspertam visās jomās. Tieši tāpēc pastāv mārketinga aģentūras. [Piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), un mēs Tev palīdzēsim.
+Ja jūti, ka Tavs mārketings varētu strādāt labāk, bet nezini, ar ko sākt, atceries: Tev nav jābūt ekspertam visās jomās. Tieši tāpēc pastāv mārketinga aģentūras. Mēs esam [digitālā mārketinga aģentūra](/), kas strādā tieši šādi. [Piesakies bezmaksas 20 minūšu iepazīšanās zvanam](/sazinies/), un mēs Tev palīdzēsim.

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā"
-seoTitle: "Digitālais mārketings: 21. gadsimta veiksmes atslēga biznesā | Mārketinga Skola"
+seoTitle: "Digitālais mārketings: kanāli un ieguvumi | Mārketinga Skola"
 description: "Kas ir digitālais mārketings, kādi ir tā kanāli un ieguvumi, un kāpēc vērtība ir pārcēlusies no satura izgatavošanas uz izvēli, ko publicēt."
 date: 2024-02-15
 updated: 2026-08-11

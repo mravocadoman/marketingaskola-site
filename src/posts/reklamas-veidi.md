@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju?"
-seoTitle: "Reklāmas veidi: Kā izvēlēties pareizo, lai sasniegtu savu auditoriju? | Mārketinga Skola"
+seoTitle: "Reklāmas veidi: kā izvēlēties pareizo | Mārketinga Skola"
 description: "Digitālie un tradicionālie reklāmas veidi salīdzinājumā, un viens jautājums, kas parasti izšķir, ar kuru kanālu sākt: vai cilvēks Tevi jau meklē?"
 date: 2025-04-02
 updated: 2026-08-03
