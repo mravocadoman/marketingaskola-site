@@ -66,8 +66,12 @@ if (withRedirects) {
   };
   await expect('/7-padomi-marketinga-strategijas-izstrade/', '/marketinga-strategijas-izstrade/');
   await expect('/meta-reklamas-kursi/', '/meta-reklamas-kurss/');
-  await expect('/seo-pakalpojumi/', '/pakalpojumi/');
   await expect('/feed/', '/feed.xml');
+  // /seo-pakalpojumi/ stopped being a redirect on 8 Sep 2026 and became a real
+  // service page. Assert the page, so removing the 301 stays covered rather
+  // than merely untested.
+  const seo = await get('/seo-pakalpojumi/');
+  ok(seo.status === 200, `/seo-pakalpojumi/ -> ${seo.status} (want 200, it is a page now)`);
   await expect('/wp-content/uploads/2023/12/Untitled-design-5.mp4', '/video/lumi-2.mp4');
   const gone = await get('/wp-login.php', { method: 'HEAD' });
   ok(gone.status === 410, `/wp-login.php -> ${gone.status} (want 410)`);

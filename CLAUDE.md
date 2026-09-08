@@ -1122,7 +1122,7 @@ All links that 404'd on the live WordPress site have been repointed (19 Aug
 `/7-padomi-marketinga-strategijas-izstrade/` → `/marketinga-strategijas-izstrade/`
 (301 live), `/padzilinats-seo-kurss/` and
 `/digitala-marketinga-strategija-vaditajiem/` → `/digitala-marketinga-kursi/`,
-`/seo-pakalpojumi/` → `/pakalpojumi/`, `/improvizacija-un-izklaide/` →
+`/improvizacija-un-izklaide/` →
 `/video-reklama/`. If the owner ever creates those pages, point the links back.
 
 ## Course pages (rebuilt by hand, 19 Aug 2026)
