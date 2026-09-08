@@ -32,6 +32,8 @@ Trīs izmaiņas, kas tieši ietekmē pirmo kampaņu.
 
 **Konversiju uzskaite.** Bez tās Google nezina, kas notika pēc klikšķa, un Tu maksā par apmeklējumiem. Kā to uzstādīt, aprakstīts rakstā [konversiju uzskaite](/konversiju-uzskaite/). Tas nav solis, ko atlikt uz vēlāk; tas ir solis, bez kura pārējie neko nedod.
 
+Cik lielu budžetu šai pirmajai kampaņai plānot, izrēķināms rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/).
+
 **Lapa, uz kuru sūtīt cilvēku.** Ne sākumlapa. Vajag lapu par to konkrēto lietu, ko cilvēks meklēja, ar cenu vai cenas diapazonu un vienu skaidru darbību.
 
 **Saraksts ar to, ko cilvēki tiešām meklē.** Sāc ar [Google Search Console](https://search.google.com/search-console/about/), ja mājaslapa jau ir: tas parāda īstos vaicājumus, ar kuriem Tevi jau atrod.

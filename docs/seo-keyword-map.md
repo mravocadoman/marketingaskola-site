@@ -70,7 +70,18 @@ Add the sibling cost queries and the Google-price gap is bigger than it looks:
 cena` 263 = **1,424 impressions with no page**, against an existing and
 well-performing `/cik-maksa-reklama-facebook/`.
 
-## The SEO-services tension, stated not resolved
+## The SEO gap — corrected, then closed
+
+My first pass on this said no SEO service page existed because SEO had been
+dropped in the 4 Sep "niche down". **That was wrong.** The 4 Sep decision
+removed *sociālo mediju mārketings*, not SEO. `/pakalpojumi/` carries a full
+"SEO pakalpojumi" cell — audits, tehniskais SEO, optimizācija, stratēģija —
+and two blog posts already used the anchor text "SEO pakalpojumus". The
+service was being sold the whole time.
+
+What was missing was the page. The cell's button went to the contact form,
+and `/seo-pakalpojumi/` (the WordPress-era URL) 301'd to the services index.
+So nothing on the site could rank for:
 
 | Query | Impressions |
 | --- | --- |
@@ -80,12 +91,51 @@ well-performing `/cik-maksa-reklama-facebook/`.
 | seo izmaksas | 231 |
 | **total** | **2,557** |
 
-There is no SEO service page. That is deliberate — the 4 Sep decision was to
-"compress the offerings; niche down", and a separate SEO service page was
-explicitly rejected then. This table is not an argument to reverse it; it is
-the price of it, now measured. **Owner's call**, and the honest options are:
-sell SEO as a service again, fold it into `/pakalpojumi/` as one named
-deliverable, or accept the 2,557 and keep the offering narrow.
+`/seo-pakalpojumi/` now exists as a real service page, the 301 is removed, and
+it is in the nav, the footer and the services cell. It has a section on what
+drives cost (for `seo izmaksas`) and a FAQ answering whether you need a
+specialist at all (for `seo speciālists`). **No prices are invented** — cost
+is quoted after a call, exactly like the Meta service page.
+
+## The Google Ads gap — flagged, not closed
+
+This one is the owner's call, so it is written down rather than acted on.
+
+| Query | Impressions | What ranks |
+| --- | --- | --- |
+| google reklāmas aģentūra | 876 | the Google Ads **course** page |
+| google ads pakalpojumi | 755 | a blog post |
+| **total** | **1,631** | |
+
+There is no Google Ads *service* page and no Google Ads cell in the services
+grid — yet the homepage hero sells "Meta un Google reklāmas" and the site
+claims more than 10 million euro of managed budgets. Either the grid is
+missing a service the agency actually delivers, or the homepage is promising
+one it does not. **That inconsistency has to be resolved before a page is
+worth building**, which is why one was not built here.
+
+What was closed instead is the *cost* half of the Google cluster, where
+intent is informational and a post is the right answer:
+
+| Query | Impressions |
+| --- | --- |
+| cik maksā reklāma google | 873 |
+| reklama google cena | 288 |
+| google reklama cena | 263 |
+| **total** | **1,424** |
+
+`/cik-maksa-google-reklama/` mirrors `/cik-maksa-reklama-facebook/`, which is
+one of the site's better-performing posts. Same working-backwards budget
+arithmetic, no invented Latvian click prices.
+
+## One query deliberately not chased
+
+`reklāmas aģentūras rīgā` (160 impressions) and the local cluster around it.
+**SIA "Stonks" is registered at Liepu iela 28, Rēzekne.** Writing "reklāmas
+aģentūra Rīgā" onto a page would be a false location claim for 160
+impressions. `mārketinga aģentūras latvijā` (293) is fair and the homepage
+already says "digitālā mārketinga aģentūra Latvijā" — that one is a ranking
+problem, not a targeting gap.
 
 ## What owns what, going forward
 
@@ -106,3 +156,21 @@ One page per intent, and nothing else competes for it:
 questions; service pages answer "who do I hire". When a post starts ranking for
 a commercial term, that is cannibalisation, and it is what kept the homepage
 off "digitālā mārketinga aģentūra" until 8 Sep.
+
+## What changed on 8 Sep 2026
+
+| Change | Query it serves | Impressions |
+| --- | --- | --- |
+| `/seo-pakalpojumi/` built; 301 removed; added to nav, footer, services cell | the SEO services cluster | 2,557 |
+| `/cik-maksa-google-reklama/` written | Google cost cluster | 1,424 |
+| Two "SEO pakalpojumus" anchors repointed off `/pakalpojumi/` | `seo pakalpojumi` | 1,025 |
+| Five posts wired inbound to the new pages (house rule: 2 each) | — | — |
+| Meta and Google course titles cut to fit; TikTok description cut | the one cluster that converts | 1,998 |
+
+Both new pages pass `npm run seo` clean, and no new cannibalisation appears.
+Course-page title errors are gone: the audit went from 7 errors to 3, and all
+three remaining sit on pages that are deliberately `noindex`.
+
+**Not done, and why.** No Google Ads service page (see above — needs the
+offering settled first). No page chasing Rīga (wrong city). No SEO prices on
+the new page (quoted after a call, like every other service here).

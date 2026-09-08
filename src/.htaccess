@@ -55,7 +55,6 @@ AddDefaultCharset utf-8
   RewriteRule ^7-padomi-marketinga-strategijas-izstrade/?$ /marketinga-strategijas-izstrade/ [R=301,L]
   RewriteRule ^padzilinats-seo-kurss/?$ /digitala-marketinga-kursi/ [R=301,L]
   RewriteRule ^digitala-marketinga-strategija-vaditajiem/?$ /digitala-marketinga-kursi/ [R=301,L]
-  RewriteRule ^seo-pakalpojumi/?$ /pakalpojumi/ [R=301,L]
   RewriteRule ^improvizacija-un-izklaide/?$ /video-reklama/ [R=301,L]
 
   # WordPress feeds -> the Atom feed.

@@ -35,7 +35,7 @@ SEO var iedalīt trīs galvenajās daļās:
  { label: "Ārējais SEO", text: "Uzticība un reputācija." }
 ] } %}
 
-SEO mērķis nav apmānīt Google. Mērķis ir palīdzēt tam saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu meklētājā parādīsies biežāk, augstāk un ilgāk. Ja gribi to uzticēt kādam citam, apskati mūsu [SEO pakalpojumus](/pakalpojumi/).
+SEO mērķis nav apmānīt Google. Mērķis ir palīdzēt tam saprast, kāpēc Tava lapa ir noderīga. Ja to izdari labi, Tu meklētājā parādīsies biežāk, augstāk un ilgāk. Ja gribi to uzticēt kādam citam, apskati mūsu [SEO pakalpojumus](/seo-pakalpojumi/).
 
 ## Kas SEO mainījies: atbildes meklētāja lapā
 
@@ -119,4 +119,4 @@ Sāc ar diviem soļiem, nevis septiņiem. Pievieno mājaslapu Google Search Cons
 
 Kā to izdarīt soli pa solim, esam aprakstījuši rakstā [SEO optimizācija Tavam biznesam](/seo-optimizacija-tavam-biznesam/).
 
-Ja gribi visu sistēmu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/), kas notiek {% offer "seo-kursi", "cadence" %} un maksā {% offer "seo-kursi" %}. Ja gribi, lai to izdara kāds cits, apskati [SEO pakalpojumus](/pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Stunda kopā ar Rihardu ir {% offer "60" %}.
+Ja gribi visu sistēmu apgūt secīgi, tam ir domāts [SEO kurss](/seo-kursi/), kas notiek {% offer "seo-kursi", "cadence" %} un maksā {% offer "seo-kursi" %}. Ja gribi, lai to izdara kāds cits, apskati [SEO pakalpojumus](/seo-pakalpojumi/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Stunda kopā ar Rihardu ir {% offer "60" %}.

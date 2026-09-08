@@ -89,6 +89,8 @@ Facebook un Instagram reklāmas cenas ir diezgan līdzīgas, jo abas platformas 
 
 - **Instagram reklāmu CPM** (cena par 1000 skatījumiem) parasti ir no **7 līdz 20 EUR**, savukārt **CPC (klikšķa cena) svārstās no 0,20 līdz 2 EUR**.
 
+Ja salīdzini nevis Facebook ar Instagram, bet sociālos tīklus ar meklētāju, tā paša aprēķina Google puse ir rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/).
+
 ## Kur labāk reklamēties – Facebook vai Instagram?
 
 Šis jautājums 2026. gadā ir kļuvis mazsvarīgs. Abas platformas ir viena reklāmu sistēma, un ar ieslēgtiem automātiskajiem izvietojumiem tā pati izvēlas, kur konkrētais cilvēks reklāmu redzēs lētāk.

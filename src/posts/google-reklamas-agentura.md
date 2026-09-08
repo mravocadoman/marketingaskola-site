@@ -40,6 +40,8 @@ Priekšstats, ka aģentūra "palaiž reklāmas", ir maldinošs. Reklāmu palaiš
 
 **Atskaites, kas ir saprotamas.** Ne klikšķu skaits, bet klientu cena.
 
+Pirms sarunas ar aģentūru ir vērts pašam saprast, no kā veidojas cena; tas apkopots rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/).
+
 ## Kad to ir vērts piesaistīt
 
 Trīs pazīmes, kas norāda uz to skaidri.

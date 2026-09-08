@@ -49,7 +49,7 @@ Tad atver [Google Search Console](https://search.google.com/search-console/about
 1. vaicājumus, kur esi 8. līdz 20. pozīcijā, tas ir, otrajā lapā; tur viens labs uzlabojums dod visvairāk;
 2. vaicājumus, kuros parādies, bet kuriem Tev nav atsevišķas lapas.
 
-Otrais saraksts ir Tavs satura plāns nākamajiem mēnešiem, un tas ir bez maksas.
+Otrais saraksts ir Tavs satura plāns nākamajiem mēnešiem, un tas ir bez maksas. Ja gribi, lai izpēti un tai sekojošo darbu pārņem kāds cits, to sedz mūsu [SEO pakalpojumi](/seo-pakalpojumi/).
 
 ## Rīki, un ko no tiem sagaidīt Latvijā
 

@@ -28,7 +28,7 @@ Ja esi izlēmis to izmēģināt, praktiskā secība ir rakstā [Google Ads: kā 
 
 ## Kā Google reklāma strādā
 
-Google Ads ir izsole. Tu neizvēlies vietu, Tu piedāvā cenu par klikšķi uz konkrētu meklējumu, un algoritms izlemj, kurš parādīsies un kādā secībā.
+Google Ads ir izsole. Tu neizvēlies vietu, Tu piedāvā cenu par klikšķi uz konkrētu meklējumu, un algoritms izlemj, kurš parādīsies un kādā secībā. Kā no šīs izsoles rēķināt savu mēneša budžetu, atsevišķi rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/).
 
 Svarīgi: **augstākā cena ne vienmēr uzvar.** Google vērtē arī to, cik Tava reklāma un lapa atbilst meklējumam. Labāka atbilstība nozīmē lētāku klikšķi par to pašu pozīciju. Tieši tāpēc satura kvalitāte šeit ir naudas jautājums, ne estētikas.
 
