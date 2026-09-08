@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Atslēgvārdu izpēte: kā uzzināt, ko cilvēki tiešām meklē"
 seoTitle: "Atslēgvārdu izpēte: praktisks ceļvedis | Mārketinga Skola"
-description: "Atslēgvārdu izpēte mazā tirgū: kā atrast vaicājumus, kas atved klientus, nevis apmeklētājus, un kāpēc rīku "0 meklējumu" bieži nozīmē pretējo."
+description: "Atslēgvārdu izpēte mazā tirgū: kā atrast vaicājumus, kas atved klientus, nevis apmeklētājus, un kāpēc nulle meklējumu rīkā bieži nozīmē pretējo."
 date: 2026-08-26
 updated: 2026-08-26
 image: "/img/gen/cover-atslegvardu-izpete.webp"

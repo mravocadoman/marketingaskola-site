@@ -19,6 +19,8 @@
     "_capiNote": "n8n relay that forwards the same events to the Meta Conversions API. LIVE since 7 Sep 2026 (workflow KiiDciCuUsCc3ezc, verified events_received:1). Empty = browser pixel only. The site hashes email/phone before sending, so n8n never sees raw personal data. The secret is visible in client JS by design: it stops drive-by noise, it is not authentication.",
     "capiUrl": "https://marketingaskola.app.n8n.cloud/webhook/meta-capi",
     "capiSecret": "ms-site-2026",
+    "_auditNote": "Lead magnet: the popup posts a URL here and renders the returned checks inline. n8n workflow PxXdIWi34gIyEfMz. Empty = the popup never renders.",
+    "auditUrl": "https://marketingaskola.app.n8n.cloud/webhook/audits",
     "gtmId": ""
   },
   "company": {

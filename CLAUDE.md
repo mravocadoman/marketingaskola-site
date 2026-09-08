@@ -1746,6 +1746,50 @@ tile. The prompt now states the background colour as edge-to-edge uniform and
 forbids gradients, fades and partial opacity explicitly. Proof-read generated
 artwork against the house style; the model drifts on "flat".
 
+## Lead magnet: the automated page check (8 Sep 2026)
+
+Owner asked for a lead magnet, "free ad or automation audit", as a popup.
+Built as an **automated on-page check**, deliberately not as a free audit.
+
+**Why the naming matters.** The copy rules forbid advertising free advice, to
+protect the paid consultation. A machine-generated report is not advice, so it
+does not breach that rule - but only while it stays machine-generated. It
+reports ONLY what one HTTP fetch of the visitor's page can prove and routes
+every interpretation to `/marketinga-konsultacijas/`. **Do not add judgement,
+scores, recommendations or anything a human would have to stand behind**, or
+it becomes the free consulting the rule exists to prevent.
+
+- **n8n workflow `PxXdIWi34gIyEfMz`** (`POST /webhook/audits`) fetches the URL
+  and returns nine checks as JSON: GA4, Meta pixel, Google Ads tag, title
+  length, description length, H1 count, viewport, structured data, og:image.
+- **Consent-gated tracking is reported as "could not verify", never as
+  missing.** Tags that load after a cookie banner are absent from the served
+  HTML, so a flat "no GA4" would be wrong on every well-built site -
+  marketingaskola.lv included. A detected consent manager downgrades those
+  three checks. Verified: the site scores 8 ok / 1 unknown / 0 failures on
+  itself, and 6 failures on a bare page.
+- **The e-mail never reaches n8n.** The browser sends the URL to the webhook
+  and the address straight to MailerLite, so no personal data enters n8n's
+  logs and a MailerLite outage cannot cost the visitor their report.
+- **CORS is pinned to `https://marketingaskola.lv`** in the respond node.
+  n8n answers the preflight itself (verified: 204 with the right headers), so
+  a JSON POST works from the site and from nowhere else. It therefore CANNOT
+  be tested from `localhost` - the local failure path is the expected result.
+
+**The popup never opens immediately.** Google treats an interstitial covering
+content on arrival as a mobile ranking problem, and it is rude. Twenty seconds
+of arming, then exit intent on desktop or 55% scroll on phones; once per
+visitor, 60 days after a dismissal; **never while the cookie banner is still
+open**, because two overlays on a first visit is how people leave. Suppressed
+on `/sazinies/`, `/privatuma-politika/`, `/marketinga-konsultacijas/` and any
+`noindex` page. `src/js/leadmagnet.js`, `.lm*` in the stylesheet.
+
+**Owner action, and the lead magnet is worth little without it: MailerLite
+double opt-in is still ON.** Every address collected here lands `unconfirmed`
+until the person clicks a confirmation e-mail, which means they cannot be
+emailed in campaigns and group automations generally will not fire. That is
+correct for a newsletter and wrong for a lead magnet.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

@@ -1566,6 +1566,32 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .wa-float { right: 14px; bottom: 14px; width: 48px; padding: 0; justify-content: center; }
   .wa-float-label { display: none; }
 }
+/* ---------- lead magnet (automated page check) ---------- */
+/* Sits ABOVE the consent card (z 90) because it can only open once that card
+   is gone. Square, hairline, one cyan button: same ledger language as the
+   rest, so it reads as part of the site rather than a bought-in widget. */
+.lm { position: fixed; inset: 0; z-index: 200; background: rgba(2, 13, 28, .82); display: grid; place-items: center; padding: 20px; overflow-y: auto; }
+.lm-panel { position: relative; width: 100%; max-width: 620px; background: var(--card); border: 1px solid var(--line-strong); padding: clamp(24px, 4vw, 44px); }
+.lm-panel::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: var(--cyan); }
+.lm-panel h2 { font-size: var(--t-d2); margin: 10px 0 0; }
+.lm-panel h3 { margin: 0 0 6px; }
+.lm-sub { color: var(--muted); font-size: var(--t-sm); margin: 12px 0 0; }
+.lm-close { position: absolute; top: 10px; right: 12px; background: none; border: 0; color: var(--muted); font-size: var(--t-d1); line-height: 1; cursor: pointer; padding: 6px 10px; }
+.lm-close:hover { color: var(--heading); }
+.lm-form { display: grid; gap: 16px; margin-top: 22px; }
+.lm-form .btn { justify-self: start; }
+.lm-fine { color: var(--muted); font-size: var(--t-micro); margin: 0; }
+.lm-checks { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 0; }
+.lm-check { display: grid; grid-template-columns: 22px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); align-items: start; }
+.lm-check strong { display: block; color: var(--heading); font-size: var(--t-sm); }
+.lm-check span { color: var(--muted); font-size: var(--t-sm); }
+.lm-mark { font-weight: 600; line-height: 1.5; }
+.lm-check--ok .lm-mark { color: var(--cyan); }
+.lm-check--bad .lm-mark { color: var(--warn); }
+.lm-check--unknown .lm-mark { color: var(--muted); }
+.lm-next { margin: 20px 0 22px; font-size: var(--t-sm); color: var(--body); }
+@media (max-width: 560px) { .lm { padding: 0; place-items: stretch; } .lm-panel { max-width: none; min-height: 100%; } }
+
 @media print { .wa-float, .to-top, .consent { display: none; } }
 
 /* ---------- in-article infographic: generated text-free artwork + HTML legend ---------- */
