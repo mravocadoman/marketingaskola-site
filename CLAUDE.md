@@ -147,6 +147,12 @@ nothing. **Fix a failing smoke test the day it starts failing.**
 `gh` is logged in on this machine, so `gh run list`, `gh run view --log-failed`
 and `gh run rerun <id> --failed` all work directly.
 
+**A fourth status: `cancelled` is not a failure.** The workflow sets
+`concurrency: { group: deploy, cancel-in-progress: true }`, so pushing again
+while a deploy is running kills the earlier one. Two commits in quick
+succession therefore leave a `cancelled` run behind that never deployed, and
+only the last push's run matters. Do not go debugging a cancelled run.
+
 **The cheapest proof a CSS/JS change actually reached visitors** is the
 cache-bust hash: compute `sha1(_site/css/style.css)[:8]` locally and compare
 it against the `?v=` the live HTML references. Equal means live; different
