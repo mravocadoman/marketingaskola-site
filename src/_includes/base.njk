@@ -164,22 +164,26 @@
     <h2 id="lm-title">Ko Tava lapa pastāsta par sevi?</h2>
     <p class="lm-sub">Ieraksti adresi, un automātiskā pārbaude 20 sekundēs parādīs, vai lapā ir atrodama analītika, reklāmu mērīšana un tas, ko Google rāda meklēšanas rezultātos. To veic robots, nevis cilvēks.</p>
 
-    <form class="lm-form" data-lm-form novalidate>
-      <div class="field">
-        <label for="lm-url">Tavas mājaslapas adrese</label>
-        <input id="lm-url" name="url" type="text" inputmode="url" autocomplete="url" placeholder="piemers.lv" required>
+    <form class="form lm-form" data-lm-form novalidate>
+      {# Field order matters: the input comes FIRST and the label AFTER, because
+         the floating label is driven by `input ~ label`, and placeholder=" "
+         (one space) is what makes :not(:placeholder-shown) fire. Getting this
+         wrong parks the label on top of the input. #}
+      <p class="field">
+        <input type="text" id="lm-url" name="url" placeholder=" " inputmode="url" autocomplete="url" required>
+        <label for="lm-url">Tavas mājaslapas adrese<span class="req" aria-hidden="true">*</span></label>
         <span class="field-error" data-error hidden></span>
-      </div>
-      <div class="field">
-        <label for="lm-email">E-pasts</label>
-        <input id="lm-email" name="email" type="email" autocomplete="email" required>
+      </p>
+      <p class="field">
+        <input type="email" id="lm-email" name="email" placeholder=" " autocomplete="email" required>
+        <label for="lm-email">E-pasts<span class="req" aria-hidden="true">*</span></label>
         <span class="field-error" data-error hidden></span>
-      </div>
-      <div class="field">
-        <label class="form-consent"><input type="checkbox" name="consent" required>
-          <span>Piekrītu, ka SIA &ldquo;Stonks&rdquo; apstrādā manus datus un sūta noderīgus materiālus. Atteikties var jebkurā brīdī. <a href="/privatuma-politika/">Privātuma politika</a></span></label>
-        <span class="field-error" data-error hidden></span>
-      </div>
+      </p>
+      {# Consent is NOT a .field: that class absolutely positions its direct
+         child label, which would lift this whole sentence onto the checkbox. #}
+      <label class="form-consent"><input type="checkbox" name="consent" required>
+        <span>Piekrītu, ka SIA &ldquo;Stonks&rdquo; apstrādā manus datus un sūta noderīgus materiālus. Atteikties var jebkurā brīdī. <a href="/privatuma-politika/">Privātuma politika</a></span></label>
+      <span class="field-error" data-error hidden></span>
       <button class="btn" type="submit">Pārbaudīt lapu</button>
       <p class="lm-fine">Pārbaude ir automātiska un neaizstāj auditu, ko veic cilvēks.</p>
     </form>

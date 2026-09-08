@@ -100,8 +100,16 @@
   /* ---------- submit ---------- */
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   function fail(el, msg) {
-    var slot = el.closest('.field') || el.parentNode;
-    slot = slot.querySelector('[data-error]');
+    // Text inputs keep their error inside .field; the consent checkbox has no
+    // .field wrapper (that class would lift its label onto the box), so its
+    // error span is the next sibling of the label instead.
+    var box2 = el.closest('.field');
+    var slot = box2 ? box2.querySelector('[data-error]') : null;
+    if (!slot) {
+      var lab = el.closest('.form-consent');
+      var next = lab && lab.nextElementSibling;
+      if (next && next.hasAttribute('data-error')) slot = next;
+    }
     if (slot) { slot.textContent = msg; slot.hidden = false; }
     el.setAttribute('aria-invalid', 'true');
   }
