@@ -2131,6 +2131,28 @@ picture entirely. So it also compares **retained ink**. With only the first
 test, 5 of 59 failed; with both, **16 did** - including `band-meta-targeting`,
 which looked fine and kept 15% of its drawing.
 
+### It is also lighter, which was not the point but is worth knowing
+
+Gzipped, a traced motif is roughly **a sixth** of the raster it replaced, and
+it costs no image request at all. Measured across six:
+
+| | inline SVG, gzipped | raster |
+| --- | --- | --- |
+| six motifs | 12.7 KB | 80.9 KB |
+
+SVG path data compresses very well and webp is already compressed, so the raw
+file sizes are misleading - compare gzipped. Sixty-seven inline motifs render
+across sixty-two pages with none blank and no page overflowing.
+
+### Why the sixteen cannot be rescued, so nobody retries it
+
+They are not slab compositions. `meta-targeting-band` is 96% dark ground with
+thin anti-aliased line work; traced at full resolution with a low area
+threshold it yields **248 fragments**, which is both meaningless to animate and
+past the tool's own sanity guard. Lowering the threshold or raising the trace
+resolution does not help, because the strokes are anti-aliased rather than
+flat. This technique suits flat colour blocking and nothing else.
+
 Current state: **43 traced, 16 keep their raster.** A rejected motif is not a
 problem to fix - some of this artwork is not flat-block art and does not
 survive quantisation. `post.njk` falls back to `<img>`, and three bands went
