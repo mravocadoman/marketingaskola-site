@@ -9,18 +9,23 @@ image: "/img/2025/03/Copy-of-Digital-1200-628px-2.jpg"
 ---
 {# Nunjucks selectattr ignores test arguments, so filter by shape: the single sessions are the options without a `sessions` count. #}
 {% set singles = booking.consultation.options | rejectattr("sessions") %}
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · TikTok</span>
-    <h1>TikTok reklāmas kursi</h1>
-    <p class="sub">Grupu kurss šobrīd netiek organizēts — ja TikTok reklāma ir aktuāla jau tagad, to izrunājam individuālā konsultācijā. Zemāk ir kursa programma: kā izveidot, optimizēt un analizēt TikTok kampaņas.</p>
-    <div class="chips">
-      <span>Iesācējiem</span>
-      <span>4 stundas</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
-      <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · TikTok</span>
+      <h1>TikTok reklāmas kursi</h1>
+      <p class="sub">Grupu kurss šobrīd netiek organizēts — ja TikTok reklāma ir aktuāla jau tagad, to izrunājam individuālā konsultācijā. Zemāk ir kursa programma: kā izveidot, optimizēt un analizēt TikTok kampaņas.</p>
+      <div class="chips">
+        <span>Iesācējiem</span>
+        <span>4 stundas</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="/marketinga-konsultacijas/">Individuāla konsultācija</a>
+        <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/kurss-tiktok.njk" %}</figure>
     </div>
   </div>
 </section>

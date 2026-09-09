@@ -9,20 +9,25 @@ image: "/img/2024/04/L15abIxRLoo57p4DsV1Q_Copy-of-Vai-pedeja-laika-esi-saskaries
 ---
 {% set cs = courseSessions.courses["meta-reklamas-kurss"] %}
 {% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Meta</span>
-    <h1>Meta reklāmas kurss — Facebook un Instagram reklāma no A līdz Z</h1>
-    <p class="sub">Tiešsaistes nodarbība mazā grupā, kurā kopā ar praktiķi izej ceļu no stratēģijas līdz gatavai kampaņai. Nevis ieraksts, ko noskatīties vienam — dzīva saruna, kurā vari uzdot jautājumus par savu biznesu.</p>
-    <div class="chips">
-      <span>Tiešsaistē</span>
-      <span>Iesācējiem</span>
-      <span>{{ cs.hours }} stundas</span>
-      <span>{{ cs.price }} € + PVN</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
-      <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Meta</span>
+      <h1>Meta reklāmas kurss — Facebook un Instagram reklāma no A līdz Z</h1>
+      <p class="sub">Tiešsaistes nodarbība mazā grupā, kurā kopā ar praktiķi izej ceļu no stratēģijas līdz gatavai kampaņai. Nevis ieraksts, ko noskatīties vienam — dzīva saruna, kurā vari uzdot jautājumus par savu biznesu.</p>
+      <div class="chips">
+        <span>Tiešsaistē</span>
+        <span>Iesācējiem</span>
+        <span>{{ cs.hours }} stundas</span>
+        <span>{{ cs.price }} € + PVN</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
+        <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/kurss-meta.njk" %}</figure>
     </div>
   </div>
 </section>

@@ -9,18 +9,23 @@ permalink: "/digitala-marketinga-kursi/"
 {% set kg = courseSessions.courses["google-ads-kurss"] %}
 {% set ks = courseSessions.courses["seo-kursi"] %}
 {# All three courses share one price; the hub quotes the Meta entry as the flat figure. If they ever diverge, this page has to say so. #}
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip">Kursi</span>
-    <h1>Digitālā mārketinga kursi</h1>
-    <p class="sub">Praktiski tiešsaistes kursi uzņēmējiem un mārketinga speciālistiem. Dzīva nodarbība mazā grupā, ko vada praktiķi, kas ikdienā pārvalda reālas kampaņas.</p>
-    <div class="chips">
-      <span>{{ km.price }} € + PVN par kursu</span>
-      <span>Grupā no {{ courseSessions.policy.minSeats }} dalībniekiem</span>
-      <span>Piedāvājums komandām</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="#kursi">Piesakies kursiem</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip">Kursi</span>
+      <h1>Digitālā mārketinga kursi</h1>
+      <p class="sub">Praktiski tiešsaistes kursi uzņēmējiem un mārketinga speciālistiem. Dzīva nodarbība mazā grupā, ko vada praktiķi, kas ikdienā pārvalda reālas kampaņas.</p>
+      <div class="chips">
+        <span>{{ km.price }} € + PVN par kursu</span>
+        <span>Grupā no {{ courseSessions.policy.minSeats }} dalībniekiem</span>
+        <span>Piedāvājums komandām</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="#kursi">Piesakies kursiem</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/kurss-hub.njk" %}</figure>
     </div>
   </div>
 </section>

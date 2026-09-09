@@ -2036,6 +2036,27 @@ it. The consultations page lost its band and got nothing back, because section
 01 already answers 'is this for me' in three cells."* Owner's call. The closing note gets a hairline and its own
 padding, or it reads as a runaway third sentence of the description.
 
+## Course pages have headers too, and in-page motifs animate on scroll (9 Sep 2026)
+
+Owner: *"make headers for courses exactly in the same style and animations as
+pakalpojumi headers"*, and separately *"for images like this through the page,
+blend them into the page too by dissolving them into multiple elements; and
+animate them when scrolled to to appear. also remove frame and put same
+background as page."*
+
+Five course motifs, same solid-fill language and `--i` stagger as the service
+ones: `kurss-meta`, `kurss-google`, `kurss-seo`, `kurss-tiktok`, `kurss-hub`.
+All five course pages now use `page-hero--media`. Zero strokes across the set.
+
+**In-page motifs use `.motif--scroll` and ride the reveal observer that already
+exists** in `main.js` - the parent picks up `.in` / `.is-visible` and the parts
+stagger from there. No second observer.
+
+**The holding `opacity: 0` sits INSIDE the `prefers-reduced-motion:
+no-preference` block, and must stay there.** Under `reduce` it is never
+applied, so the drawing is simply present rather than invisible waiting for an
+observer that will never fire. That is the failure mode this pattern invites.
+
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
 Owner: *"can we make them as svgs or similar, break the image into elements and

@@ -8,21 +8,26 @@ crumb: { label: "Kursi", url: "/digitala-marketinga-kursi/" }
 ---
 {% set cs = courseSessions.courses["seo-kursi"] %}
 {% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · SEO</span>
-    <h1>SEO kurss — nopelni vietu Google bez maksas par klikšķi</h1>
-    <p class="sub">Apgūsti meklētājprogrammu pamatus — palielini mājaslapas redzamību Google un piesaisti vairāk organisko apmeklētāju. Kam kurss NAV domāts: ja rezultāts vajadzīgs jau šomēnes, sāc ar <a href="/google-ads-kurss/">Google Ads kursu</a>.</p>
-    <div class="chips">
-      <span>Tiešsaistē</span>
-      <span>Iesācējiem</span>
-      <span>{{ cs.hours }} stundas</span>
-      <span>Notiek katru mēnesi</span>
-      <span>{{ cs.price }} € + PVN</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
-      <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · SEO</span>
+      <h1>SEO kurss — nopelni vietu Google bez maksas par klikšķi</h1>
+      <p class="sub">Apgūsti meklētājprogrammu pamatus — palielini mājaslapas redzamību Google un piesaisti vairāk organisko apmeklētāju. Kam kurss NAV domāts: ja rezultāts vajadzīgs jau šomēnes, sāc ar <a href="/google-ads-kurss/">Google Ads kursu</a>.</p>
+      <div class="chips">
+        <span>Tiešsaistē</span>
+        <span>Iesācējiem</span>
+        <span>{{ cs.hours }} stundas</span>
+        <span>Notiek katru mēnesi</span>
+        <span>{{ cs.price }} € + PVN</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
+        <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/kurss-seo.njk" %}</figure>
     </div>
   </div>
 </section>

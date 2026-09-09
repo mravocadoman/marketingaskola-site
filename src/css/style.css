@@ -1139,6 +1139,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    during the delay. Same rise as .reveal, so the page reads as one system. */
 @keyframes hero-rise { from { opacity: 0; transform: translateY(var(--rise, 14px)); } }
 @keyframes motif-in { from { opacity: 0; transform: translateY(12px) scale(0.94); } }
+@keyframes motif-in-scroll { from { opacity: 0; transform: translateY(14px) scale(0.94); } to { opacity: 1; transform: none; } }
 @keyframes hero-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 @media (prefers-reduced-motion: no-preference) {
   .page-hero .chip,
@@ -1162,6 +1163,19 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
      IMG and the entrance is on the FIGURE, because two animations on one
      element would fight over transform. */
   .hero-media img { animation: hero-drift 9s ease-in-out 1.2s infinite; }
+  /* In-page motifs assemble when they scroll into view rather than on load.
+     They ride the reveal observer that already exists in main.js: the parent
+     picks up .in (or .is-visible), and the parts stagger from there.
+     The holding opacity:0 lives INSIDE this no-preference block on purpose -
+     under `reduce` it is never applied, so the drawing is simply present
+     rather than stuck invisible waiting for an observer that never fires. */
+  .motif--scroll .m { opacity: 0; }
+  .reveal.in .motif--scroll .m,
+  .is-visible .motif--scroll .m,
+  .in .motif--scroll .m {
+    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--i, 0) * 0.07s);
+  }
   /* Parts assemble in drawing order, then the whole motif drifts with the rest
      of the hero. transform-box: fill-box is required or the scale pivots on the
      SVG user-space origin and the shape flies in from the corner. */

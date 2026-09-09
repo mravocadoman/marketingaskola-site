@@ -9,20 +9,25 @@ image: "/img/gen/google-ads-motivs.webp"
 ---
 {% set cs = courseSessions.courses["google-ads-kurss"] %}
 {% set ctaLabel = "Rezervēt vietu" if cs.bookUrl else "Pieteikties kursam" %}
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Google Ads</span>
-    <h1>Google Ads kurss — reklāma cilvēkiem, kas jau meklē Tavu produktu</h1>
-    <p class="sub">Tiešsaistes nodarbība mazā grupā, kurā kopā ar praktiķi izej ceļu no atslēgvārdu izpētes līdz kampaņai, kuras atdevi vari izmērīt eiro. Nevis ieraksts, ko noskatīties vienam — dzīva saruna, kurā jautājumus par savu biznesu uzdod uzreiz.</p>
-    <div class="chips">
-      <span>Tiešsaistē</span>
-      <span>Iesācējiem</span>
-      <span>{{ cs.hours }} stundas</span>
-      <span>{{ cs.price }} € + PVN</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
-      <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/digitala-marketinga-kursi/">Kursi</a> · Google Ads</span>
+      <h1>Google Ads kurss — reklāma cilvēkiem, kas jau meklē Tavu produktu</h1>
+      <p class="sub">Tiešsaistes nodarbība mazā grupā, kurā kopā ar praktiķi izej ceļu no atslēgvārdu izpētes līdz kampaņai, kuras atdevi vari izmērīt eiro. Nevis ieraksts, ko noskatīties vienam — dzīva saruna, kurā jautājumus par savu biznesu uzdod uzreiz.</p>
+      <div class="chips">
+        <span>Tiešsaistē</span>
+        <span>Iesācējiem</span>
+        <span>{{ cs.hours }} stundas</span>
+        <span>{{ cs.price }} € + PVN</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="#piesakies">{{ ctaLabel }}</a>
+        <a class="btn btn--ghost" href="#saturs">Kursa saturs</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/kurss-google.njk" %}</figure>
     </div>
   </div>
 </section>
