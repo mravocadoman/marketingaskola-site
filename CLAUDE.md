@@ -941,6 +941,23 @@ Verified by editing a file, rebuilding and reverting: the hash moved and came
 back. **Any new CSS/JS reference must use `| bust` or it will not reach
 returning visitors.**
 
+**Images are stamped too, by a TRANSFORM, not a filter (10 Sep 2026.)**
+`.htaccess` asks for "access plus 30 days" on `/img/` and SiteGround overrides
+it with `max-age=31536000` there as well, so an image REDRAWN at a path a
+visitor has already loaded never reaches them again. Ten blog covers were
+replaced that day, the server had the new bytes, `curl` confirmed them - and
+`/blogs/` went on showing the previous artwork. Owner: *"you didnt update the
+new header images in /blogs and other linked pages."*
+The `imgBust` transform in `eleventy.config.js` appends the same `?v=<sha1>`
+to every `src="/img/…"` and to the absolute `og:image` / `twitter:image`
+URLs. **A transform rather than a filter on purpose** - covers are rendered
+from front-matter `image:` in six templates (blog index, categories, homepage
+loop, related posts, the post hero fallback, in-article infographics), and a
+filter has to be remembered at all six. Three things read these URLs back and
+all three already cope: `ASSET_RE` stops at `?`, `cleanPath` strips the query,
+and `check-site.mjs` splits it off.
+**So a redrawn image needs no other action** - rebuild and the URL changes.
+
 **Analytics + consent. GA4 IS LIVE (6 Sep 2026), loaded DIRECTLY, not via
 GTM.** `site.analytics.ga4Id` = `G-5SEQ339399`; `gtmId` stays empty. Setting
 EITHER renders the consent card (`.consent`) and `src/js/consent.js`, which

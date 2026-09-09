@@ -54,7 +54,7 @@ module.exports = function (eleventyConfig) {
   // which silently swallowed the analytics rollout on 6 Sep 2026. The hash is
   // of the file's own contents, so the URL only changes when the file does.
   const bustCache = new Map();
-  eleventyConfig.addFilter("bust", (url) => {
+  const stamp = (url) => {
     if (bustCache.has(url)) return bustCache.get(url);
     const file = onDisk(url);
     let out = url;
@@ -64,6 +64,33 @@ module.exports = function (eleventyConfig) {
     }
     bustCache.set(url, out);
     return out;
+  };
+  eleventyConfig.addFilter("bust", stamp);
+
+  // IMAGES NEED THE SAME STAMP, and for the same reason. .htaccess asks for
+  // "access plus 30 days" on /img/, and SiteGround's cache layer overrides
+  // that with max-age=31536000 exactly as it does for CSS and JS. So an image
+  // REDRAWN at a path someone has already visited never reaches them again:
+  // ten blog covers were replaced on 10 Sep 2026, the server had the new
+  // bytes, and /blogs/ went on showing the previous artwork for a year.
+  // Owner: "you didnt update the new header images in /blogs and other linked
+  // pages."
+  //
+  // Doing it as a transform rather than a filter is deliberate - a filter has
+  // to be remembered at every call site, and covers are rendered from
+  // front-matter `image:` in six different templates. This catches every
+  // <img> on every page, including ones added later.
+  //
+  // Safe against the three things that read these URLs back: ASSET_RE below
+  // stops at "?", cleanPath strips the query, and check-site.mjs splits it off.
+  eleventyConfig.addTransform("imgBust", function (content) {
+    if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
+    return content
+      .replace(/(\ssrc=")(\/img\/[^"?#]+)(")/g, (_, a, url, z) => a + stamp(url) + z)
+      // og:image and twitter:image are absolute, and social scrapers cache by
+      // URL just as hard - without this a redrawn cover keeps the old preview.
+      .replace(/(\scontent="https:\/\/marketingaskola\.lv)(\/img\/[^"?#]+)(")/g,
+        (_, a, url, z) => a + stamp(url) + z);
   });
 
   eleventyConfig.addShortcode("infographic", (o) => {
