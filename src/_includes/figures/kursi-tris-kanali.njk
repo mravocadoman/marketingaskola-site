@@ -1,0 +1,64 @@
+{# "Trīs kursi, trīs kanāli" — was a raster with Latvian text baked into pixels.
+   Now real text (selectable, indexable, reflows on phones) plus one inline SVG
+   diagram per column. Hours and names come from courseSessions, so the figure
+   cannot drift from the price card the way a picture silently could. #}
+{% set km = courseSessions.courses["meta-reklamas-kurss"] %}
+{% set kg = courseSessions.courses["google-ads-kurss"] %}
+{% set ks = courseSessions.courses["seo-kursi"] %}
+<figure class="figcols">
+  <h3 class="figcols-h">Trīs kursi, trīs kanāli<span class="accent-text">.</span></h3>
+  <div class="figcols-grid">
+    <div class="figcol">
+      <span class="figcol-idx">01</span>
+      <h4>{{ km.name }}</h4>
+      <p>Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē</p>
+      <svg class="motif figcol-art" viewBox="0 0 320 300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <g class="m" style="--i:0"><circle cx="160" cy="150" r="118" fill="none" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:1"><circle cx="160" cy="150" r="78" fill="none" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:2"><circle cx="160" cy="150" r="38" fill="none" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:3"><path d="M160 32 v236 M42 150 h236" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="6 8" fill="none"/></g>
+        <g class="m" style="--i:4"><circle cx="160" cy="143" r="9" fill="none" stroke="#f2f5f8" stroke-width="2"/><path d="M146 166 a14 14 0 0 1 28 0" fill="none" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:5"><rect x="152" y="24" width="16" height="16" fill="#020d1c" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:6"><rect x="34" y="142" width="16" height="16" fill="#020d1c" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:7"><rect x="270" y="142" width="16" height="16" fill="#020d1c" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:8"><rect x="152" y="260" width="16" height="16" fill="#020d1c" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:9"><rect x="236" y="86" width="14" height="14" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:10"><rect x="72" y="206" width="14" height="14" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+      </svg>
+      <p class="figcol-foot">{{ km.hours }} stundas</p>
+    </div>
+
+    <div class="figcol">
+      <span class="figcol-idx">02</span>
+      <h4>{{ kg.name }}</h4>
+      <p>Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu</p>
+      <svg class="motif figcol-art" viewBox="0 0 320 300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <g class="m" style="--i:0"><rect x="26" y="238" width="268" height="42" fill="none" stroke="#f2f5f8" stroke-width="2"/><path d="M40 250 v18" stroke="#03c3f8" stroke-width="3"/><circle cx="264" cy="259" r="9" fill="none" stroke="#f2f5f8" stroke-width="2"/><path d="M271 266 l9 9" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:1"><rect x="38" y="140" width="34" height="70" fill="none" stroke="#8ba3bd" stroke-width="2"/><path d="M55 210 v18 M44 228 h22" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="4 5"/></g>
+        <g class="m" style="--i:2"><rect x="94" y="92" width="34" height="118" fill="none" stroke="#8ba3bd" stroke-width="2"/><path d="M111 210 v18 M100 228 h22" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="4 5"/></g>
+        <g class="m" style="--i:3"><rect x="150" y="58" width="34" height="152" fill="none" stroke="#f2f5f8" stroke-width="2"/><path d="M167 210 v18 M156 228 h22" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="4 5"/></g>
+        <g class="m" style="--i:4"><rect x="206" y="106" width="34" height="104" fill="none" stroke="#8ba3bd" stroke-width="2"/><path d="M223 210 v18 M212 228 h22" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="4 5"/></g>
+        <g class="m" style="--i:5"><rect x="262" y="132" width="34" height="78" fill="none" stroke="#8ba3bd" stroke-width="2"/><path d="M279 210 v18 M268 228 h22" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="4 5"/></g>
+      </svg>
+      <p class="figcol-foot">{{ kg.hours }} stundas</p>
+    </div>
+
+    <div class="figcol">
+      <span class="figcol-idx">03</span>
+      <h4>SEO</h4>
+      <p>Nopelni vietu meklētājā bez maksas par klikšķi</p>
+      <svg class="motif figcol-art" viewBox="0 0 320 300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <g class="m" style="--i:0"><rect x="96" y="16" width="196" height="30" fill="none" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:1"><path d="M84 31 h-42 v76" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="5 6" fill="none"/><rect x="84" y="24" width="14" height="14" fill="#020d1c" stroke="#f2f5f8" stroke-width="2"/></g>
+        <g class="m" style="--i:2"><path d="M160 100 v-46 M154 60 l6-8 6 8" stroke="#03c3f8" stroke-width="2" fill="none"/></g>
+        <g class="m" style="--i:3"><rect x="60" y="100" width="200" height="28" fill="none" stroke="#f2f5f8" stroke-width="2"/><rect x="48" y="107" width="14" height="14" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:4"><rect x="60" y="140" width="164" height="24" fill="none" stroke="#8ba3bd" stroke-width="2"/><rect x="48" y="146" width="12" height="12" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:5"><rect x="60" y="176" width="140" height="24" fill="none" stroke="#8ba3bd" stroke-width="2"/><rect x="48" y="182" width="12" height="12" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:6"><rect x="60" y="212" width="112" height="24" fill="none" stroke="#8ba3bd" stroke-width="2"/><rect x="48" y="218" width="12" height="12" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:7"><rect x="60" y="248" width="86" height="24" fill="none" stroke="#8ba3bd" stroke-width="2"/><rect x="48" y="254" width="12" height="12" fill="#020d1c" stroke="#8ba3bd" stroke-width="2"/></g>
+        <g class="m" style="--i:8"><path d="M54 128 v128" stroke="#8ba3bd" stroke-width="2" stroke-dasharray="5 6" fill="none"/></g>
+      </svg>
+      <p class="figcol-foot">{{ ks.hours }} stundas</p>
+    </div>
+  </div>
+</figure>

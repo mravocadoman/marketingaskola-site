@@ -517,56 +517,6 @@
       "quality": "high"
     },
     {
-      "id": "info-google-ads-budzets",
-      "page": "google-ads-kurss",
-      "style": "dark-info",
-      "placement": "Inside section 02, replacing the standalone band, under the paragraph about why Google Ads gets expensive.",
-      "aspect": "landscape",
-      "alt": "Infografika: trīs vietas, kur pazūd Google Ads budžets — pārāk plaši atslēgvārdi, trūkstoši negatīvie atslēgvārdi un neuzstādīta konversiju uzskaite",
-      "prompt": "Headline top-left: «Kur pazūd Google Ads budžets». Three columns. Column one: index «01», label «Pārāk plaši atslēgvārdi», note «Reklāma parādās meklējumos bez pirkšanas nodoma». Column two: index «02», label «Nav negatīvo atslēgvārdu», note «Budžets aiziet nesaistītiem vaicājumiem». Column three: index «03», label «Nav konversiju uzskaites», note «Redzi klikšķus, bet ne klientus». Under column one draw a wide funnel outline with about twelve small open squares entering across its top and only one square leaving the narrow bottom. Under column two draw a horizontal row of eight small open squares with a single long diagonal line struck cleanly through five of them. Under column three draw a dashed measuring line that runs from the left and stops short at a visible gap, with an empty open target square beyond the gap that it never reaches.",
-      "rationale": "The page argues that Google Ads gets expensive in three specific places; naming them in the picture is worth more than an abstract motif."
-    },
-    {
-      "id": "info-meta-kampanas-uzbuve",
-      "page": "meta-reklamas-kurss",
-      "style": "dark-info",
-      "placement": "Inside section 02, replacing the standalone band.",
-      "aspect": "landscape",
-      "alt": "Infografika: Meta kampaņas uzbūve trīs līmeņos — kampaņa, reklāmu kopa un reklāma",
-      "prompt": "Headline top-left: «Meta kampaņas uzbūve». Three columns reading left to right as one hierarchy. Column one: index «01», label «Kampaņa», note «Mērķis: pārdošana, pieteikumi vai atpazīstamība». Column two: index «02», label «Reklāmu kopa», note «Auditorija, budžets un izvietojumi». Column three: index «03», label «Reklāma», note «Teksts, vizuālis un aicinājums rīkoties». THE THREE DRAWINGS ARE THE SAME SIZE AND SIT ON THE SAME BASELINE, each one a single large square-cornered frame of identical width and height, centred in its column with equal margins. No lines connect the columns to each other and nothing dangles below a drawing. Column one drawing: inside the frame a large concentric target of two squares with a solid cyan square at its centre, and two short heavy white bars beneath it. Column two drawing: the same frame divided into three equal vertical cells by two hairlines, one simple geometric human figure standing in each cell, the middle figure solid cyan. Column three drawing: the same frame holding a heavy white picture placeholder on the left, three short white text bars stacked on the right, and one solid cyan button bar across the bottom right.",
-      "rationale": "Account structure is the single thing beginners get wrong, and it is a hierarchy - a picture explains it faster than the module list."
-    },
-    {
-      "id": "info-seo-tris-pilari",
-      "page": "seo-kursi",
-      "style": "dark-info",
-      "placement": "Inside .course-body above the 'Kursa saturs' heading, replacing the standalone band.",
-      "aspect": "landscape",
-      "alt": "Infografika: SEO trīs pīlāri — tehniskais SEO, saturs un atpakaļsaites",
-      "prompt": "Headline top-left: «SEO trīs pīlāri». Three columns. Column one: index «01», label «Tehniskais SEO», note «Ātrums, struktūra un indeksēšana». Column two: index «02», label «Saturs», note «Atslēgvārdi un lapas, kas atbild uz jautājumu». Column three: index «03», label «Atpakaļsaites», note «Uzticamība citu vietņu acīs». Under column one draw a site tree: one node at the top, orthogonal right-angle lines dropping to a row of four smaller nodes, two of which branch once more. Under column two draw a tall page outline containing a stack of five horizontal rules of varying length, like paragraphs of body copy. Under column three draw four separate small page squares scattered around one larger central square, each joined to the centre by a single straight line.",
-      "rationale": "The SEO syllabus is five modules of detail; the three pillars are the mental model a buyer needs before reading them."
-    },
-    {
-      "id": "info-konsultacija-kad",
-      "page": "marketinga-konsultacijas",
-      "style": "dark-info",
-      "placement": "Top of the page, replacing the standalone performance band.",
-      "aspect": "landscape",
-      "alt": "Infografika: kad mārketinga konsultācija ir īstā izvēle — jauns kanāls, kritums rezultātos un otrais viedoklis",
-      "prompt": "Headline top-left: «Kad konsultācija ir īstā izvēle». Three columns. Column one: index «01», label «Sāc jaunu kanālu», note «Gribi zināt, ar ko sākt un cik tas maksās». Column two: index «02», label «Rezultāti krīt», note «Kampaņas darbojas, bet atdeve vairs nesanāk». Column three: index «03», label «Vajag otro viedokli», note «Plāns ir gatavs, bet gribi to pārbaudīt». Under column one draw a plotted line that begins at a node on a baseline and steps upward to the right in three even steps. Under column two draw a plotted line that rises, peaks, then falls back down through the horizontal baseline. Under column three draw two identical page outlines offset and overlapping, with a small tick mark in the corner of the upper one.",
-      "rationale": "The page opened with a decorative chart that said nothing; the reader's real question at that point is whether this is for them."
-    },
-    {
-      "id": "info-kursi-tris-kanali",
-      "page": "digitala-marketinga-kursi",
-      "style": "dark-info",
-      "placement": "Top of the catalogue section, replacing the standalone band.",
-      "aspect": "landscape",
-      "alt": "Infografika: trīs kursi un trīs kanāli — Meta reklāma, Google Ads un SEO",
-      "prompt": "Headline top-left: «Trīs kursi, trīs kanāli». Three columns, each ending with a duration line set in cool grey at the bottom of the column. Column one: index «01», label «Meta reklāma», note «Radi pieprasījumu tur, kur cilvēks Tevi vēl nemeklē», duration «3 stundas». Column two: index «02», label «Google Ads», note «Esi klāt brīdī, kad cilvēks jau meklē Tavu produktu», duration «3 stundas». Column three: index «03», label «SEO», note «Nopelni vietu meklētājā bez maksas par klikšķi», duration «3 stundas». Under column one draw four concentric thin rings tightening onto a single small node - a defined audience being targeted. Under column two draw a short horizontal query bar with a caret at its left end, and above the bar a row of five narrow vertical columns of different heights - bids in an auction. Under column three draw a vertical stack of six horizontal bars of descending length with one bar promoted upward out of the stack - a ranked result climbing.",
-      "rationale": "The catalogue's job is to help someone choose between three courses; a side-by-side does that, a decorative staircase does not."
-    },
-    {
       "id": "info-reklamas-veida-izvele",
       "page": "reklamas-veidi",
       "style": "paper",

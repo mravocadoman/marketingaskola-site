@@ -1953,6 +1953,44 @@ Both forms are now written out, with a comment saying why.
 Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
 label 5.20:1, chip link 6.88:1. Nothing under 4.5.
 
+## The dark infographics are HTML + SVG now, not pictures (9 Sep 2026)
+
+Owner: *"can you make the same style as for the pakalpojumi headers also for
+these dark-infographics? same visual style; add animation and same background
+as page, no frame?"*
+
+All five `style: "dark-info"` rasters are gone, replaced by
+`src/_includes/figures/*.njk`: **real HTML text plus one inline SVG diagram per
+column**, no frame, page ground, animated with the same `--i` stagger as the
+hero motifs.
+
+**This fixes a documented defect rather than restyling one.** Those images had
+Latvian baked into pixels, which meant: unreadable at ~9px on a phone (the
+reason `main.js` force-opens the text version under 700px), a misspelling risk
+no spellcheck could catch, invisible to search, and a re-render needed for a
+one-word change. All four problems are gone because the words are now text.
+
+**The hours come from `courseSessions`.** `kursi-tris-kanali` renders
+`{{ km.hours }} stundas` rather than a drawn "3 stundas", so the figure cannot
+drift from the price card the way a picture silently could.
+
+`.figcols` layout notes, both found by measuring:
+
+- **Every column carries the same `--figpad`.** Dropping it on the first column
+  made that column's content box wider, so its SVG rendered 31px taller and its
+  diagram and footer sat out of line. The grid is pulled left by the same
+  amount instead, so column one still lines up with the heading.
+- **Title and description both reserve two lines.** On a narrow column - the
+  course pages put this beside a sticky sidebar - one title wraps and the
+  others do not, which was another 33px of misalignment.
+
+Verified across all five pages at 1360 / 900 / 390px: footer spread 0-5px, no
+horizontal overflow.
+
+**Pre-existing and untouched:** every page overflows 2px at 1024px from a
+hidden `ul.dropdown` in the nav. Not caused by this work; confirmed on pages
+without a figure.
+
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
 Owner: *"can we make them as svgs or similar, break the image into elements and

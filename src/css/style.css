@@ -1732,6 +1732,41 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* The figure sits flush on the page, so its ground must equal the page ground -
    on paper that is white, on the dark canvas it is the card colour. Using --card
    everywhere left a tinted rim around a white-ground image on articles. */
+/* Column figures (9 Sep 2026). These replace the "dark-info" rasters, whose
+   Latvian labels were baked into pixels - unreadable at ~9px on a phone, at
+   risk of a misspelling no spellcheck could catch, and invisible to search.
+   Text is real HTML now and the diagrams are inline SVG that animates. No
+   frame and no fill: same ground as the page, like the hero motifs. */
+.figcols { margin: clamp(28px, 3.5vw, 48px) 0 0; }
+.figcols-h { font-size: var(--t-d2); margin: 0 0 clamp(24px, 3vw, 36px); }
+/* Every column carries the same padding so the content boxes are equal and the
+   SVGs render at identical heights - dropping it on the first column made that
+   one 31px taller and knocked its diagram and footer out of line. The grid is
+   pulled left by the same amount instead, so column one still sits flush with
+   the heading above it. */
+.figcols { --figpad: clamp(20px, 2.4vw, 34px); }
+.figcols-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 44px); margin-left: calc(-1 * var(--figpad)); }
+.figcol { position: relative; padding-left: var(--figpad); border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+.figcol:first-child { border-left: 0; }
+.figcol-idx { font-family: var(--font-display); font-weight: 600; font-size: var(--t-base); color: var(--cyan); letter-spacing: .06em; display: flex; align-items: center; gap: 12px; }
+.figcol-idx::after { content: ""; height: 1px; flex: 1; background: var(--line-strong); }
+/* Two lines reserved for the title as well as the description. On a narrow
+   column - the course pages put this figure beside a sticky sidebar - one
+   title wraps and the others do not, which pushed that column's diagram and
+   footer 33px out of line with its neighbours. */
+.figcol h4 { font-size: var(--t-d1); margin: 12px 0 6px; color: var(--heading); min-height: 2.6em; }
+/* Two lines reserved: one column's description wraps and the others do not,
+   which pushed its diagram and footer out of line with its neighbours. */
+.figcol > p { margin: 0; color: var(--muted); font-size: var(--t-sm); line-height: 1.5; min-height: 3em; }
+.figcol-art { margin: clamp(20px, 2.6vw, 34px) 0; }
+.figcol-foot { margin-top: auto; color: var(--muted); font-size: var(--t-sm); }
+@media (max-width: 780px) {
+  .figcols-grid { grid-template-columns: 1fr; gap: 32px; }
+  .figcols-grid { margin-left: 0; }
+  .figcol { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); padding-top: 24px; }
+  .figcol:first-child { border-top: 0; padding-top: 0; }
+}
+
 .infographic { margin: 2.4em 0; border: 1px solid var(--line); background: var(--canvas); }
 .infographic > img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-bottom: 1px solid var(--line); }
 .infographic--page { margin: clamp(28px, 3vw, 40px) 0 0; }

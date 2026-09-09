@@ -34,11 +34,7 @@ permalink: "/digitala-marketinga-kursi/"
       </div>
       <p class="lead">Trīs tiešsaistes kursi, kas notiek dzīvā nodarbībā ar pasniedzēju — Meta reklāma, Google Ads un SEO. Bez ierakstiem, ko skatīties vienam.</p>
     </div>
-    {% infographic { id: "info-kursi-tris-kanali", class: "infographic--page", title: "Trīs kursi, trīs kanāli: kuru izvēlēties?", items: [
-      { label: km.name ~ " — " ~ km.hours ~ " stundas, " ~ km.price ~ " € + PVN, " ~ km.cadence, text: "Izvēlies, ja Tavu produktu cilvēki vēl nemeklē — pieprasījums jārada. Vada " ~ km.instructor ~ "." },
-      { label: kg.name ~ " — " ~ kg.hours ~ " stundas, " ~ kg.price ~ " € + PVN, " ~ kg.cadence, text: "Izvēlies, ja cilvēki Tavu produktu jau meklē Google un rezultāts vajadzīgs drīz. Vada " ~ kg.instructor ~ "." },
-      { label: ks.name ~ " — " ~ ks.hours ~ " stundas, " ~ ks.price ~ " € + PVN, " ~ ks.cadence, text: "Izvēlies, ja gribi vietu meklētājā bez maksas par klikšķi un vari gaidīt mēnešus, ne nedēļas. Vada " ~ ks.instructor ~ "." }
-    ] } %}
+    {% include "figures/kursi-tris-kanali.njk" %}
     {% set catalogExclude = "" %}
     {% include "course-catalog.njk" %}
   </div>
