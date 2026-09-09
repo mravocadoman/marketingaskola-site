@@ -828,7 +828,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   gap: clamp(32px, 4.5vw, 72px);
   align-items: center;
 }
-.hero-media { margin: 0; border: 1px solid var(--line); background: var(--canvas); }
+.hero-media { margin: 0; border: 1px solid var(--line); background: #020d1c; }
 .hero-media img { display: block; width: 100%; height: auto; }
 @media (max-width: 980px) {
   .page-hero--media .hero-grid2 { grid-template-columns: 1fr; gap: clamp(28px, 4vw, 40px); }
@@ -1052,7 +1052,17 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .paper .btn:hover { background: #16324b; }
 .paper .btn--ghost { border-color: rgba(11, 27, 43, 0.3); color: #0b1b2b !important; }
 .paper .btn--ghost:hover { border-color: #0b1b2b; background: rgba(11, 27, 43, 0.05) !important; }
-.paper .eyebrow, .paper .page-hero .chip { color: var(--muted); }
+/* Both forms, deliberately. `.paper .page-hero` only matches when paper is an
+   ANCESTOR - and a service page's hero carries both classes on the SAME
+   element, so the descendant form silently never applies there. That is how a
+   cyan chip link survived on a white ground at 2.07:1, which is the exact
+   combination the paper rules ban. Any future `.paper .page-hero ...` rule
+   needs its `.page-hero.paper ...` twin. */
+.paper .eyebrow,
+.paper .page-hero .chip,
+.page-hero.paper .chip { color: var(--muted); }
+.paper .page-hero .chip a,
+.page-hero.paper .chip a { color: var(--link); }
 .paper .eyebrow .idx { color: var(--link); }
 .paper .faq[open] { background: var(--card); }
 .paper .cta, .paper .panel, .paper .course-card,

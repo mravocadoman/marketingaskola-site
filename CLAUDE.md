@@ -1903,6 +1903,45 @@ until the person clicks a confirmation e-mail, which means they cannot be
 emailed in campaigns and group automations generally will not fire. That is
 correct for a newsletter and wrong for a lead magnet.
 
+## Service page heroes are LIGHT (9 Sep 2026)
+
+Owner: *"hero section is also too dark now; both before and next to generated
+images. I think some contrast / lightness is needed here too to ease the
+browsing."* The artwork had not fixed it, because the artwork is drawn on
+`#020d1c` too - header dark, hero dark, picture dark, next section dark, with
+no tonal step anywhere near the top of the page.
+
+The six service heroes now carry `.paper` alongside `.page-hero`, so the page
+reads white hero → dark → dark → white process section → dark → dark → band.
+Two light zones, well separated, which is rhythm rather than stripes.
+
+**The dark artwork on a light hero is the point, not a problem.** `.hero-media`
+keeps an explicit `#020d1c` fill rather than `var(--canvas)`, so on white the
+picture reads as a framed screen - a deliberate object - instead of a hole
+punched in the page.
+
+**Only service pages.** The homepage hero carries the drifting-dot SVG layer
+that is built for a dark ground, and a blog post's dark hero is what separates
+it from the white article beneath it. Course page heroes are still dark and
+could go either way.
+
+### The selector trap this exposed, and it will bite again
+
+`.paper .page-hero .chip a { color: var(--link) }` did **nothing** here, and
+the hero shipped a cyan chip link on white at **2.07:1** - the exact
+combination the paper rules exist to ban.
+
+The reason: `.paper .page-hero` is a DESCENDANT selector, and on these heroes
+both classes sit on the SAME element. Every `.paper X` rule where X is a
+descendant (`.paper .btn`, `.paper .panel`) keeps working; only the ones
+naming `.page-hero` broke, silently, with no warning anywhere.
+
+**Any `.paper .page-hero ...` rule needs its `.page-hero.paper ...` twin.**
+Both forms are now written out, with a comment saying why.
+
+Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
+label 5.20:1, chip link 6.88:1. Nothing under 4.5.
+
 ## Service heroes carry artwork now (9 Sep 2026)
 
 Owner: *"for each service, in the hero section there should be a cool image...
