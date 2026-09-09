@@ -2005,7 +2005,19 @@ column competes with the text; one icon per item lets the column read as text
 with a marker instead of a picture with a caption.
 
 Icons are 96x96 viewBox at ~72px, in `#8ba3bd` / `#f2f5f8` with a small cyan
-accent, exactly the hero palette. The closing note gets a hairline and its own
+accent, exactly the hero palette.
+
+**The rule is not "no strokes", it is "objects are filled".** A stroke is
+correct when the thing being drawn IS a line: a flow connector, a tripod leg,
+a phone bezel. It is wrong when a solid object is drawn as an outline, which
+is what made the first figures read as a different language. Current state,
+measured per page: `facebook-reklama` 1 (bezel), `seo-pakalpojumi` 2 (tree
+connectors), `video-reklama` 3 (light stand), `ai-un-automatizacijas` 5 (flow
+connectors), everything else 0. All legitimate lines; do not "fix" them.
+
+`motifs/konsultacijas.njk` was redrawn for this: its calendar was an outlined
+grid at 6 strokes to 8 fills, the one stroke-heavy motif of the six. It is
+filled cells now, 0 strokes and 30 fills. The closing note gets a hairline and its own
 padding, or it reads as a runaway third sentence of the description.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
