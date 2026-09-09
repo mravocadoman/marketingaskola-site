@@ -1942,6 +1942,49 @@ Both forms are now written out, with a comment saying why.
 Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
 label 5.20:1, chip link 6.88:1. Nothing under 4.5.
 
+## Hero artwork is FRAMELESS, and that needs an exact ground (9 Sep 2026)
+
+Owner: *"would it look better without the frame and same background as section
+background, so the images would blend in the section instead of sitting as
+separate elements. and maybe we can animate them too."* Yes to both.
+
+`.hero-media` has no border and no fill. The artwork is generated on `#020d1c`,
+so with the frame gone it reads as drawn on the page rather than as a picture
+placed on it.
+
+**A frameless motif needs its ground to be EXACTLY `#020d1c`, not close.**
+Measured at the rendered image edge, the six were 3-6/255 off the canvas, and
+on a large flat dark field that is enough to show a faint rectangle. The model
+returns a different near-miss every roll however firmly the prompt states the
+hex, so arguing with it is a waste.
+
+`npm run ground` (`tools/match-ground.mjs`) fixes it deterministically: every
+pixel already within 12/255 of the canvas is snapped to exactly `#020d1c`,
+which catches the ground and the thin separations between shapes and touches
+nothing else. Verified: ink coverage is identical to 0.1% before and after on
+all six, so no drawing was altered, and the rendered edge delta went from 3-6
+to **0.0/255 on all six**. It refuses to write when the matched share falls
+outside 15-95%, because that means the tolerance is wrong for the image rather
+than the image being wrong. Same reasoning as `npm run whiten`, which does this
+for the white paper ground. **Run it after regenerating any hero slot.**
+
+### Motion
+
+The figure joins the hero cascade that already existed rather than introducing
+a new device: `hero-rise` at a 0.42s delay, landing after the CTA, so the hero
+assembles in reading order. It rises 22px rather than the text's 14px, because
+the same distance on a 460px block reads as no movement.
+
+Then `hero-drift`, 6px over 9s, infinite. That is the drifting-dot vocabulary
+the owner already approved, kept below the threshold where motion reads as an
+effect. **The entrance is on the FIGURE and the drift is on the IMG**, because
+two animations on one element fight over `transform`.
+
+Both sit inside `prefers-reduced-motion: no-preference`. Verified under
+`reduce`: both animation names resolve to `none` and the figure's opacity is
+1 — worth checking explicitly, because `backwards` fill on a cancelled
+animation is exactly how an element ends up stuck invisible.
+
 ## A dark motif needs ~35-45% ink, and that is measurable (9 Sep 2026)
 
 Owner: *"hero section is also too dark now; both before and next to generated
