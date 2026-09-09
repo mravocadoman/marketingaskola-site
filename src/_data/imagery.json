@@ -1115,8 +1115,8 @@
       "page": "cik-maksa-google-reklama",
       "placement": "Post cover: blog index card and og:image.",
       "aspect": "landscape",
-      "alt": "Meklēšanas rezultātu saraksts un budžeta kolonnas blakus",
-      "prompt": "A search results panel on the left drawn as one solid cool-grey slab holding an off-white search field and five off-white result bars of descending length, the second bar solid cyan. On the right, four solid columns of rising height standing for what each click costs, the tallest one cyan and lightly clipped by the right edge. The two objects are drawn large and whole, filling the middle of the frame with a modest dark margin. Every corner square; no rounded corners. Flat colour blocking only: no gradients, no glow, no 3D, no shadows. Cool grey #8ba3bd and off-white #f2f5f8 on dark navy #020d1c. Cyan #03c3f8 on two small elements only, about five percent of the frame at most. No text, letters, numbers or words anywhere. Objects only: no people, no hands, no faces, no logos."
+      "alt": "Budžeta kolonnas, kas dalās starp klikšķiem un vienu klientu",
+      "prompt": "A budget being spent, not a search page. On the left one tall solid cool-grey column standing for the monthly budget. From its base, four solid horizontal bars of decreasing length step down and to the right, standing for the money splitting across clicks, each one shorter than the last. At the end of the shortest bar sits a single small solid cyan square: the one click that became a customer. Above the group, three small cool-grey squares in a row, evenly spaced. Objects drawn large and whole, filling the middle of the frame with a modest dark margin on all sides; nothing cropped by an edge. Every corner square; no rounded corners, no circles. Flat colour blocking only: no gradients, no glow, no 3D, no shadows, no outlines. Cool grey #8ba3bd and off-white #f2f5f8 on dark navy #020d1c. Cyan #03c3f8 on ONE small element only, well under five percent of the frame. No search field, no result list, no text, letters, numbers or words anywhere. Objects only: no people, no hands, no faces, no logos."
     },
     {
       "id": "og-google-ads-kurss",
