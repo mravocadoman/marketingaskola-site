@@ -1953,6 +1953,54 @@ Both forms are now written out, with a comment saying why.
 Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
 label 5.20:1, chip link 6.88:1. Nothing under 4.5.
 
+## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
+
+Owner: *"can we make them as svgs or similar, break the image into elements and
+animate them so they appear one after another, finishing in the full image?"*
+Done, and it retires two problems rather than adding a feature.
+
+`src/_includes/motifs/*.njk` holds five hand-authored SVGs — `meta`, `seo`,
+`ai`, `konsultacijas`, `pakalpojumi` — included INLINE, because CSS can only
+reach the parts when the markup is in the document. Each drawable is a
+`<g class="m" style="--i:N">`, and the delay is
+`calc(0.46s + var(--i) * 0.075s)`, so a motif can carry any number of parts
+without touching CSS.
+
+**`transform-box: fill-box` is required on those groups.** Without it the scale
+pivots on the SVG user-space origin and every shape flies in from the corner
+instead of settling in place.
+
+**What this removed.** No ground to match, because there is no background rect —
+the canvas shows through, so `npm run ground` is no longer needed for these and
+`tools/match-ground.mjs` now takes explicit paths for whatever raster motifs
+remain. No ink-density target either; that rule still governs raster motifs but
+an SVG's weight is set by the drawing. And 100 KB of hero rasters became 20 KB
+of markup, crisp at any size.
+
+The six raster `hero-*.webp` files and their manifest slots are deleted. Git
+has them if a motif ever needs to go back to raster.
+
+## /video-reklama/ shows the actual actors (9 Sep 2026)
+
+Owner: *"why didnt you just reuse the improvizatori images from original WP
+website? they were already cuts with cyan rings; now it's just greyed
+squares..."* Correct, and the mistake was applying *"actual things, not people
+or logos"* as a blanket rule. It holds everywhere except the one page where the
+people ARE the product, and the five cutouts were already on that same page in
+the Aktieri section.
+
+`.hero-media--faces` overlaps the five portraits in a row; all five are
+transparent at the corners, checked, so they sit clean on the canvas. They pop
+in one at a time on the same easing as everything else rather than drifting,
+because five portraits drifting independently reads as wobble.
+
+**Selector trap, hit again:** `.hero-media--faces img` and `.hero-media img`
+have the SAME specificity, and the generic rule sits later in the file, so
+every portrait rendered at 100% and the row overflowed by 2208px. The rules are
+written `.hero-media.hero-media--faces img` to settle it by weight rather than
+by source order. This is the second time today a same-specificity collision
+shipped a visible bug; the first was `.paper .page-hero`.
+
 ## No white slabs: the band and the tick (9 Sep 2026)
 
 Owner, after seeing both: *"I'm not entirely a fan of entirely white sections
@@ -1989,7 +2037,7 @@ the `.paper` process section, replaced here. Do not reintroduce a full-width
 white block on a dark page — it has now been rejected twice, once for the hero
 and once for the mid-page section.
 
-## Hero artwork is FRAMELESS, and that needs an exact ground (9 Sep 2026)
+## Hero artwork is FRAMELESS — ground-matching now only for rasters (9 Sep 2026)
 
 Owner: *"would it look better without the frame and same background as section
 background, so the images would blend in the section instead of sitting as
@@ -2032,7 +2080,7 @@ Both sit inside `prefers-reduced-motion: no-preference`. Verified under
 1 — worth checking explicitly, because `backwards` fill on a cancelled
 animation is exactly how an element ends up stuck invisible.
 
-## A dark motif needs ~35-45% ink, and that is measurable (9 Sep 2026)
+## A dark motif needs ~35-45% ink — applies to RASTER motifs only (9 Sep 2026)
 
 Owner: *"hero section is also too dark now; both before and next to generated
 images."* Then, on the obvious fix: *"no, simply white hero doesnt work.

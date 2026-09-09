@@ -37,7 +37,7 @@
     "test:mobile": "node tools/test-mobile.mjs",
     "whiten": "node tools/whiten-paper.mjs",
     "lv:review": "node tools/lv-review.mjs",
-    "ground": "node tools/match-ground.mjs src/img/gen/hero-*.webp"
+    "ground": "node tools/match-ground.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
