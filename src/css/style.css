@@ -1851,6 +1851,12 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* Course tiles carry the same picture treatment as the ledger service cells. */
 .course-tile--media { padding-top: 0; }
 .course-tile--media .cell-media { margin-bottom: 22px; }
+/* A tile holding a motif rather than a photograph: the drawing sets the height
+   instead of being cropped to 16:10, and there is no card fill behind it - the
+   artwork already sits on the page ground. All three course motifs share one
+   viewBox, so the tiles still line up. */
+.cell-media.cell-media--motif { aspect-ratio: auto; background: none; overflow: visible; }
+.cell-media.cell-media--motif .motif { display: block; width: 100%; height: auto; }
 /* A full-width motif band under a page hero. Wider than .media--wide so it
    reads as a divider rather than as an illustration inside a column. */
 .media--band { aspect-ratio: 24 / 7; margin-bottom: clamp(44px, 5vw, 72px); }

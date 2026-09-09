@@ -1109,6 +1109,22 @@
       "alt": "Trīs savienoti taisnstūri uz tumša fona, pa kuriem no viena uz otru pāriet gaišzila līnija",
       "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c background: three plain rectangular nodes of different widths arranged left to right on an invisible horizontal rail, joined by a single continuous thin connecting line that runs through all three, the line filled flat cyan #03c3f8 while every node stays cool grey and white. One small notch on the middle node suggests a checkpoint. Vast negative space above, asymmetric composition, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers, logos or interface chrome.",
       "rationale": "An automation is a chain that passes work from step to step; the single cyan line is the work moving, the notch is the human checkpoint."
+    },
+    {
+      "id": "cover-cik-maksa-google-reklama",
+      "page": "cik-maksa-google-reklama",
+      "placement": "Post cover: blog index card and og:image.",
+      "aspect": "landscape",
+      "alt": "Meklēšanas rezultātu saraksts un budžeta kolonnas blakus",
+      "prompt": "A search results panel on the left drawn as one solid cool-grey slab holding an off-white search field and five off-white result bars of descending length, the second bar solid cyan. On the right, four solid columns of rising height standing for what each click costs, the tallest one cyan and lightly clipped by the right edge. The two objects are drawn large and whole, filling the middle of the frame with a modest dark margin. Every corner square; no rounded corners. Flat colour blocking only: no gradients, no glow, no 3D, no shadows. Cool grey #8ba3bd and off-white #f2f5f8 on dark navy #020d1c. Cyan #03c3f8 on two small elements only, about five percent of the frame at most. No text, letters, numbers or words anywhere. Objects only: no people, no hands, no faces, no logos."
+    },
+    {
+      "id": "og-google-ads-kurss",
+      "page": "google-ads-kurss",
+      "placement": "og:image only — the page body uses an inline SVG motif.",
+      "aspect": "landscape",
+      "alt": "Meklēšanas rezultāti ar apmaksātu vietu augšā un cenu kolonnas",
+      "prompt": "A search field drawn as a wide solid off-white bar across the upper area with a small cyan caret at its left end. Beneath it five solid result bars of descending length in cool grey, the topmost one solid cyan to mark the paid placement. To the right, three solid columns of rising height standing for the bid, the tallest in cool grey and lightly clipped by the right edge. Objects drawn large and whole, filling the middle of the frame with a modest dark margin. Every corner square; no rounded corners. Flat colour blocking only: no gradients, no glow, no 3D, no shadows. Cool grey #8ba3bd and off-white #f2f5f8 on dark navy #020d1c. Cyan #03c3f8 on two small elements only, about five percent of the frame at most. No text, letters, numbers or words anywhere. Objects only: no people, no hands, no faces, no logos."
     }
   ]
 }

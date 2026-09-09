@@ -4,7 +4,7 @@ title: "Cik maksā Google reklāma? Kā aprēķināt budžetu 2026. gadā"
 seoTitle: "Cik maksā Google reklāma? Cena un budžets | Mārketinga Skola"
 description: "Cik maksā Google reklāma un kā aprēķināt budžetu: no kā veidojas cena, kā rēķināt no vajadzīgā klientu skaita atpakaļ uz eiro un kas to ietekmē."
 date: 2026-09-08
-image: "/img/gen/google-ads-motivs.webp"
+image: "/img/gen/cover-cik-maksa-google-reklama.webp"
 categories: ["google-reklama"]
 permalink: "/cik-maksa-google-reklama/"
 keywords: ["cik maksā Google reklāma", "Google reklāmas cena", "Google Ads budžets", "klikšķa cena", "CPC", "Google reklāmas izmaksas"]

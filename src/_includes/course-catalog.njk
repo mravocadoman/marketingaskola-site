@@ -8,19 +8,19 @@
    labour the owner wanted removed. #}
 {% set catalog = [
   { slug: "meta", key: "meta-reklamas-kurss", url: "/meta-reklamas-kurss/",
-    img: "/img/gen/meta-reklamas-motivs.webp",
+    motif: "kurss-meta",
     alt: "Abstrakts sociālo tīklu plūsmas motīvs no pārklājošiem kvadrātveida laukiem",
     title: "Meta reklāmas kurss — izveido peļņu nesošas Facebook un Instagram kampaņas",
     ticks: ["Apgūsti Meta Ads pamatus un kampaņu stratēģiju", "Praktiski iestatījumi: kampaņu struktūra, testi un optimizācija", "Kā palielināt ROI un samazināt reklāmas izmaksas"],
     cta: "Uzzini vairāk" },
   { slug: "google", key: "google-ads-kurss", url: "/google-ads-kurss/",
-    img: "/img/gen/google-ads-motivs.webp",
+    motif: "kurss-google",
     alt: "Abstrakts izsoles motīvs — dažāda augstuma kolonnas virs meklēšanas joslas",
     title: "Google Ads kurss — reklāma cilvēkiem, kas jau meklē Tavu produktu",
     ticks: ["Atslēgvārdu izpēte, atbilstības veidi un negatīvie atslēgvārdi", "Meklēšanas kampaņas, Performance Max un Shopping", "Konversiju uzskaite: cik maksā klients, nevis klikšķis"],
     cta: "Uzzini vairāk" },
   { slug: "seo", key: "seo-kursi", url: "/seo-kursi/",
-    img: "/img/gen/seo-mekletaja-motivs.webp",
+    motif: "kurss-seo",
     alt: "Abstrakts meklētāja motīvs — aplis ar līniju un rezultātu joslām",
     title: "SEO kurss — apgūsti meklētājprogrammu pamatus",
     ticks: ["SEO pamati un praktiska optimizācija", "Kā veidot saturu, kas piesaista organisko datplūsmu", "Atslēgvārdu izpēte, tehniskais SEO un backlink stratēģija"],
@@ -29,7 +29,7 @@
 <div class="hgrid hgrid--3">
   {% for c in catalog %}{% if c.slug != catalogExclude %}{% set k = courseSessions.courses[c.key] %}
   <div class="course-tile course-tile--media">
-    <figure class="cell-media"><img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy"></figure>
+    <figure class="cell-media cell-media--motif">{% include "motifs/" + c.motif + ".njk" %}</figure>
     <div class="course-tag">Tiešsaistē · Iesācējiem · {{ k.hours }} stundas</div>
     <h3><a href="{{ c.url }}">{{ c.title }}</a></h3>
     <ul class="tick-list">
