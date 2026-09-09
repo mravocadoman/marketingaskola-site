@@ -5,7 +5,10 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..', '_site');
-const port = Number(process.argv[2]) || 8385;
+// PORT lets a second session run its own preview when 8385 is already taken
+// by another one - without it both sessions read the same _site and you end up
+// measuring somebody else's build.
+const port = Number(process.argv[2]) || Number(process.env.PORT) || 8385;
 const types = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript',
   '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp',

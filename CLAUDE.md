@@ -2074,6 +2074,26 @@ heading-comparison misses this, because the catalog renders course names from
 `courseSessions` rather than as static markup - compare what RENDERS, not what
 is written in the page source.
 
+**Three service pages got one on 10 Sep 2026, and two deliberately did not.**
+Owner asked for figures on "the rest of pakalpojumi". Each page was checked
+against the rule above first - a figure must say something the cells beside it
+do not.
+
+| page | figure | the gap it fills |
+| --- | --- | --- |
+| `/facebook-reklama/` | `meta-kas-izskir` | signal, genuinely different creatives, the learning phase - the blog's own shared editorial line, which the service page never stated |
+| `/video-reklama/` | `video-kas-aptur` | first seconds, one message, text on screen. Section 01 raises "Video pazūd plūsmā" and nothing answered it |
+| `/ai-un-automatizacijas/` | `automatizacijas-prieksnoteikumi` | what has to be true BEFORE automating. The page says what gets automated and what is not promised, never the preconditions |
+
+**`/pakalpojumi/` and `/seo-pakalpojumi/` have none, on purpose.** The hub runs
+services (6 cells) → process (4 steps) → the ladder (3 rungs); every angle a
+three-item figure could take is already a section, and `ladder.njk` closes the
+page. `/seo-pakalpojumi/` runs situation (3) → contents (6) → timelines (4) →
+costs (3) → FAQ, and "Tehniskais SEO" and "Saturs" are literally two of its
+cells, so the three-pillars framing would restate them. Adding one to either is
+the `kursi-tris-kanali` mistake again. If a figure is ever wanted there, give
+it a subject none of those sections covers - not a reshuffle of them.
+
 **Still open, same class of problem:** `konsultacija-kad` sits immediately
 after section 01 on `/marketinga-konsultacijas/`, and both answer "is this for
 me" in three items. The wording differs (the section is situations, the figure
