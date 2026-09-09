@@ -2017,7 +2017,23 @@ connectors), everything else 0. All legitimate lines; do not "fix" them.
 
 `motifs/konsultacijas.njk` was redrawn for this: its calendar was an outlined
 grid at 6 strokes to 8 fills, the one stroke-heavy motif of the six. It is
-filled cells now, 0 strokes and 30 fills. The closing note gets a hairline and its own
+filled cells now, 0 strokes and 30 fills.
+
+**The kursi hub has no figure, deliberately.** `kursi-tris-kanali` named the
+same three courses that `course-catalog.njk` lists directly beneath it with
+more detail, so it was pure duplication. Owner: *"for kursi, just remove these
+as its exactly the same as below."* Removed, file deleted. A literal
+heading-comparison misses this, because the catalog renders course names from
+`courseSessions` rather than as static markup - compare what RENDERS, not what
+is written in the page source.
+
+**Still open, same class of problem:** `konsultacija-kad` sits immediately
+after section 01 on `/marketinga-konsultacijas/`, and both answer "is this for
+me" in three items. The wording differs (the section is situations, the figure
+is triggers) so it is not literal duplication, but this note already records
+the rule from 4 Sep: *"Don't add an infographic that restates the cells next to
+it. The consultations page lost its band and got nothing back, because section
+01 already answers 'is this for me' in three cells."* Owner's call. The closing note gets a hairline and its own
 padding, or it reads as a runaway third sentence of the description.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
