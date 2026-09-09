@@ -1150,6 +1150,63 @@
       "alt": "Infografika no izgrieztām papīra formām: trīs skaitļi, ko mērīt garā B2B pārdošanas ciklā",
       "rationale": "With a six-month cycle a monthly report says nothing, so the article replaces it with three steps that move at different speeds.",
       "prompt": "Headline: «Trīs skaitļi garam ciklam». THREE items in one row. «01» «Jaunas sarunas» «Kustas ātri» - emblem: three solid cyan speech bubbles in a row, tightly spaced. «02» «Piedāvājumi» «Cik pārtop» - emblem: two pale grey documents with a navy arrow between them and one solid cyan corner. «03» «Noslēgti darījumi» «Kustas lēni» - emblem: one navy document with a solid cyan tick and a small navy handshake-free shape: two interlocking navy blocks beneath it."
+    },
+    {
+      "id": "hero-meta-reklama",
+      "page": "facebook-reklama",
+      "placement": "Right column of the .page-hero on /facebook-reklama/.",
+      "aspect": "landscape",
+      "alt": "Telefona rāmis ar reklāmas ierakstu plūsmā un blakus sakārtotas trīs alternatīvas reklāmas kartītes",
+      "prompt": "A single upright phone frame stands slightly left of centre, drawn as a bold flat rectangle with a thin white square-cornered outline. Inside it one feed post: a large flat COOL GREY rectangle standing for the ad image, two shorter darker grey bars beneath it for the caption, and one small solid cyan pill at the bottom for the call-to-action button - the cyan pill is the only large-ish cyan element in the picture. To the right, three smaller cards of identical size are stacked in a vertical column, flat cool grey, each with a thin outline and one short white bar near its top, standing for the alternative creatives being tested. All three cards sit fully inside the frame with a clear navy margin to their right; nothing is cut off at the right edge. Generous empty navy space across the top third. Cyan is rationed hard: it may cover no more than about five percent of the frame, used only on one or two small elements. Never fill a large shape with cyan. Every large surface is cool grey #8ba3bd on the dark navy ground. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "hero-seo-pakalpojumi",
+      "page": "seo-pakalpojumi",
+      "placement": "Right column of the .page-hero on /seo-pakalpojumi/.",
+      "aspect": "landscape",
+      "alt": "Meklēšanas rezultātu saraksts zem meklēšanas lauka, kurā viens rezultāts izcelts ciānkrāsā, un blakus lapas struktūras koks",
+      "prompt": "Two flat objects side by side. On the left, a long horizontal off-white capsule bar as a search field with a short solid cyan caret at its left end, and beneath it four horizontal result bars of descending length in cool grey, the second one solid cyan and slightly taller than the rest. On the right, a simple site-structure diagram: one small square at the top joined by thin straight cool-grey lines down to three squares in a row, and one of those three joined down to two more. All squares are flat, square-cornered, no interior detail. The diagram is cropped by the right edge. Wide empty navy margin at the bottom. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "hero-video-reklama",
+      "page": "video-reklama",
+      "placement": "Right column of the .page-hero on /video-reklama/.",
+      "aspect": "landscape",
+      "alt": "Vertikāls video kadrs ar atskaņošanas trīsstūri, blakus klapei un gaismas statīvam",
+      "prompt": "A tall vertical rectangle dominates the right of the composition as a 9:16 video frame, flat cool grey with a thin outline, holding one solid cyan equilateral play triangle dead centre. In front of its lower left corner sits a small clapperboard drawn as two flat stacked rectangles with three thick diagonal stripes across the top one. To the left, a simple light stand: a thin vertical cool-grey line on a small flat tripod base, topped by a square softbox panel angled toward the video frame. The clapperboard is cropped slightly by the bottom edge. Large empty navy area upper left. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "hero-ai-automatizacijas",
+      "page": "ai-un-automatizacijas",
+      "placement": "Right column of the .page-hero on /ai-un-automatizacijas/.",
+      "aspect": "landscape",
+      "alt": "Automatizācijas plūsma no formas caur zarojumu līdz aploksnei un datubāzei",
+      "prompt": "A left-to-right automation flow built from flat square-cornered panels joined by thin straight cool-grey connector lines with small square junction nodes. It starts at the left with a small form panel: a rectangle holding three short horizontal bars and one solid cyan pill. A connector runs right into a diamond that splits into two branches. The upper branch ends in an envelope drawn as a flat rectangle with a single triangular flap. The lower branch ends in a database drawn as three stacked flat ellipse-topped bands in cool grey. One connector segment and one junction node are solid cyan; everything else is cool grey. The flow is cropped by the right edge. Empty navy space along the bottom third. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "hero-konsultacijas",
+      "page": "marketinga-konsultacijas",
+      "placement": "Right column of the .page-hero on /marketinga-konsultacijas/.",
+      "aspect": "landscape",
+      "alt": "Kalendāra režģis ar vienu ciānkrāsā iezīmētu laiku un blakus piezīmju lapa ar atzīmju sarakstu",
+      "prompt": "Two flat objects sitting in the middle band of the frame, with clear empty navy above AND below them - nothing touches or is cropped by the bottom edge. On the left, a calendar drawn as a square-cornered rectangle outlined in cool grey and filled with the same dark navy as the background, divided into a five by four grid by thin cool grey lines, with a narrow cool grey header band across its top and exactly one interior cell filled solid cyan. On the right and slightly lower, a smaller upright note card drawn as a flat COOL GREY rectangle (not white, not off-white) carrying three short horizontal darker grey bars, each preceded by a small square outline checkbox, with only the topmost checkbox filled solid cyan. The note card overlaps the calendar's lower right corner slightly. Both objects are fully within the frame. Cyan is rationed hard: it may cover no more than about five percent of the frame, used only on one or two small elements. Never fill a large shape with cyan. Every large surface is cool grey #8ba3bd on the dark navy ground. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "hero-pakalpojumi",
+      "page": "pakalpojumi",
+      "placement": "Right column of the .page-hero on /pakalpojumi/.",
+      "aspect": "landscape",
+      "alt": "Sešas sakārtotas paneļu kartītes, no kurām viena izcelta ciānkrāsā",
+      "prompt": "Six flat square-cornered panels of identical size arranged as a loose two-row grid, slightly offset from one another as if fanned, drawn in cool grey with thin outlines and no interior detail except one short horizontal bar near the top of each. Exactly one panel, in the upper row, is filled solid cyan and sits a little forward of the others. The rightmost column of panels is cropped by the right edge of the frame. The arrangement sits low and right; the upper left third of the frame is empty navy. Objects and interface surfaces only: absolutely no people, no human figures, no silhouettes, no hands, no faces, and no brand logos or recognisable trademarks of any kind."
+    },
+    {
+      "id": "cover-ai-automatizacija-uznemumiem",
+      "page": "ai-automatizacija-uznemumiem",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Trīs savienoti taisnstūri uz tumša fona, pa kuriem no viena uz otru pāriet gaišzila līnija",
+      "prompt": "Flat vector editorial illustration on a solid near-black navy #020d1c background: three plain rectangular nodes of different widths arranged left to right on an invisible horizontal rail, joined by a single continuous thin connecting line that runs through all three, the line filled flat cyan #03c3f8 while every node stays cool grey and white. One small notch on the middle node suggests a checkpoint. Vast negative space above, asymmetric composition, subtle film grain. Absolutely flat, no gradients, no glow, no 3D, no text, letters, numbers, logos or interface chrome.",
+      "rationale": "An automation is a chain that passes work from step to step; the single cyan line is the work moving, the notch is the human checkpoint."
     }
   ]
 }

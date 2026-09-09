@@ -13,20 +13,25 @@ crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
 {% set o30 = booking.consultation.options[1] %}
 {% set bundle = booking.consultation.options[2] %}
 
-<section class="page-hero">
+<section class="page-hero page-hero--media">
   <div class="container">
-    <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Konsultācijas</span>
-    <h1>Saruna, pēc kuras zini, ko darīt tālāk</h1>
-    <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: {{ o60.duration }} vai {{ o30.duration }} Tavai situācijai, ilgākam darbam — {{ bundle.sessions }} sesiju komplekts. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
-    <div class="chips">
-      <span>€{{ o60.price }} + PVN / h</span>
-      <span>€{{ o30.price }} + PVN / 30 min</span>
-      <span>{{ bundle.sessions }} sesijas — €{{ bundle.price }} + PVN</span>
-      <span>Vada Rihards Zeiļa</span>
-    </div>
-    <div class="btn-wrap">
-      <a class="btn" href="#piesakies">Rezervēt konsultāciju</a>
-      <a class="btn btn--ghost" href="#ka-notiek">Kā notiek saruna</a>
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Konsultācijas</span>
+      <h1>Saruna, pēc kuras zini, ko darīt tālāk</h1>
+      <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: {{ o60.duration }} vai {{ o30.duration }} Tavai situācijai, ilgākam darbam — {{ bundle.sessions }} sesiju komplekts. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
+      <div class="chips">
+        <span>€{{ o60.price }} + PVN / h</span>
+        <span>€{{ o30.price }} + PVN / 30 min</span>
+        <span>{{ bundle.sessions }} sesijas — €{{ bundle.price }} + PVN</span>
+        <span>Vada Rihards Zeiļa</span>
+      </div>
+      <div class="btn-wrap">
+        <a class="btn" href="#piesakies">Rezervēt konsultāciju</a>
+        <a class="btn btn--ghost" href="#ka-notiek">Kā notiek saruna</a>
+      </div>
+      </div>
+      <figure class="hero-media"><img src="/img/gen/hero-konsultacijas.webp" alt="Kalendāra režģis ar vienu iezīmētu laiku un blakus piezīmju lapa ar atzīmju sarakstu" width="1536" height="1024" fetchpriority="high"></figure>
     </div>
   </div>
 </section>

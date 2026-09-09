@@ -1903,6 +1903,45 @@ until the person clicks a confirmation e-mail, which means they cannot be
 emailed in campaigns and group automations generally will not fire. That is
 correct for a newsletter and wrong for a lead magnet.
 
+## Service heroes carry artwork now (9 Sep 2026)
+
+Owner: *"for each service, in the hero section there should be a cool image...
+just to showcase what the service actually is in that picture. With the same
+kind of colors, but maybe just actual things, not people or logos."*
+
+`.page-hero--media` puts a `.hero-grid2` two-column grid inside the hero: copy
+left, `<figure class="hero-media">` right, collapsing to one column under
+980px. **Source order is text first on purpose** - on a phone the image falls
+below the headline and the CTA instead of pushing them off the first screen,
+the same reasoning as the 3 Sep homepage hero work. Measured at 390x844: the
+CTA stays above the fold and the artwork starts at 702px.
+
+`.hero-media` takes `--canvas`, not `--card`. The artwork is generated ON
+`#020d1c`, so a card-coloured box behind it draws a visible rectangle around a
+picture that otherwise blends into the page.
+
+Six new slots, all `default` style: `hero-meta-reklama`,
+`hero-seo-pakalpojumi`, `hero-video-reklama`, `hero-ai-automatizacijas`,
+`hero-konsultacijas`, `hero-pakalpojumi`.
+
+**Two extra constraints in these prompts, both from the owner's wording.**
+Objects only - the STYLE_SUFFIX still permits "a human silhouette", and these
+slots explicitly forbid people, hands, faces and logos on top of it. And the
+cyan budget is restated inside the prompt, because the model does not know it:
+*"no more than about five percent of the frame, never fill a large shape with
+cyan."*
+
+**That second rule was learned by getting it wrong.** The first
+`hero-meta-reklama` render put a huge solid cyan rectangle inside the phone as
+the ad image, because the prompt literally asked for one. It was the
+background-wash use the cyan budget exists to forbid. The fix is to make the
+big shape cool grey and let cyan land only on the small call-to-action pill.
+`hero-konsultacijas` failed differently on its first render: a large off-white
+sheet, the light-slab artifact `.img--card` was deleted for, plus a
+bottom-cropped composition. Both were regenerated with corrected prompts.
+**Proof-read every one of these against the cyan budget specifically** - a
+prompt that names a large cyan element will get you a large cyan element.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

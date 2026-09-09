@@ -814,6 +814,27 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 }
 .page-hero--pull { padding-bottom: clamp(130px, 15vw, 190px); }
 
+/* Service hero with artwork (9 Sep 2026). Owner: each service page should show
+   what the service IS in a picture, not only say it in the headline, and the
+   picture should be objects rather than people or logos.
+   Source order is text first, so on phones the copy and the CTA stay above the
+   image instead of being pushed down by it - the same reason the homepage hero
+   was reworked on 3 Sep. The figure carries the canvas colour, not --card: the
+   artwork is generated ON #020d1c, so a card-coloured box behind it would draw
+   a visible rectangle around a picture that already blends into the page. */
+.page-hero--media .hero-grid2 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 460px);
+  gap: clamp(32px, 4.5vw, 72px);
+  align-items: center;
+}
+.hero-media { margin: 0; border: 1px solid var(--line); background: var(--canvas); }
+.hero-media img { display: block; width: 100%; height: auto; }
+@media (max-width: 980px) {
+  .page-hero--media .hero-grid2 { grid-template-columns: 1fr; gap: clamp(28px, 4vw, 40px); }
+  .hero-media { max-width: 560px; }
+}
+
 /* Collapse the join: a hero already provides the top air, so the first
    section after it must not add a full --sec-pad on top of it. */
 .page-hero + .sec,
