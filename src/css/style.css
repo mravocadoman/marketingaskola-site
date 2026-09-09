@@ -857,6 +857,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    and reads as drawn on the page rather than as a picture sitting on it.
    Do not put the border back without re-checking those corner values. */
 .hero-media { margin: 0; border: 0; background: none; }
+
 /* SVG motifs (9 Sep 2026). Owner: "can we make them as svgs... break the image
    into elements and animate them so they appear one after another, finishing
    in the full image?" Inline SVG rather than <img>, because CSS can only reach
@@ -1111,6 +1112,15 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .media { margin: 0; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
 .media img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .media--wide { aspect-ratio: 3 / 2; }
+/* A band holding a motif instead of a photograph: no frame, no fill, page
+   ground, so it dissolves into the section the way the hero artwork does.
+   Written `.media.media--motif` and placed AFTER `.media`. Third time this bit
+   today: a single-class modifier ties with the base class on specificity, so
+   whichever sits later in the file wins, and mine sat earlier - the frame and
+   the card fill both survived. `.paper .page-hero` and `.hero-media--faces`
+   were the first two. Qualify modifiers with the base class. */
+.media.media--motif { border: 0; background: none; aspect-ratio: auto; overflow: visible; }
+.media.media--motif .motif { display: block; width: 100%; height: auto; }
 .media--square { aspect-ratio: 1; }
 .media--portrait { aspect-ratio: 3 / 4; }
 /* The founder frame carries deliberate headroom above the subject, which made
