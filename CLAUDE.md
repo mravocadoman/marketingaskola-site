@@ -1980,26 +1980,26 @@ of markup, crisp at any size.
 The six raster `hero-*.webp` files and their manifest slots are deleted. Git
 has them if a motif ever needs to go back to raster.
 
-## /video-reklama/ shows the actual actors (9 Sep 2026)
+## /video-reklama/ actors: cyan rings, not grey squares (9 Sep 2026)
 
-Owner: *"why didnt you just reuse the improvizatori images from original WP
-website? they were already cuts with cyan rings; now it's just greyed
-squares..."* Correct, and the mistake was applying *"actual things, not people
-or logos"* as a blanket rule. It holds everywhere except the one page where the
-people ARE the product, and the five cutouts were already on that same page in
-the Aktieri section.
+Owner: *"they were already cuts with cyan rings; now it's just greyed
+squares."* The complaint was about the **Aktieri section**, not the hero.
 
-`.hero-media--faces` overlaps the five portraits in a row; all five are
-transparent at the corners, checked, so they sit clean on the canvas. They pop
-in one at a time on the same easing as everything else rather than drifting,
-because five portraits drifting independently reads as wobble.
+`.img--actor img` carried `filter: grayscale(1)` plus `background: var(--card)`
+and a border, so five transparent cutouts drawn inside a cyan ring were
+rendered as grey squares in boxes — throwing away the exact thing the assets
+were made with. Now: no filter, no background, no border, `object-fit:
+contain`. **Never put grayscale back here.** It is the same mistake as fading
+logos with opacity, which this stylesheet already forbids.
 
-**Selector trap, hit again:** `.hero-media--faces img` and `.hero-media img`
-have the SAME specificity, and the generic rule sits later in the file, so
-every portrait rendered at 100% and the row overflowed by 2208px. The rules are
-written `.hero-media.hero-media--faces img` to settle it by weight rather than
-by source order. This is the second time today a same-specificity collision
-shipped a visible bug; the first was `.paper .page-hero`.
+**I misread this once and should not again.** I first moved the portraits INTO
+the hero and replaced the motif, which was the opposite of the ask. Owner:
+*"I asked for the video page the actors images to be used BELOW, replacing
+current grey actors. Take back the header image and add the animation."* The
+hero uses `motifs/video.njk` like the other five service pages; the portraits
+belong in the Aktieri section and nowhere else.
+
+`.hero-media--faces` and `@keyframes face-pop` are gone with it.
 
 ## No white slabs: the band and the tick (9 Sep 2026)
 

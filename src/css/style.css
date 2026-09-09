@@ -791,16 +791,21 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .img { margin: 0; }
 .img img { border-radius: var(--radius); display: block; border: 1px solid var(--line); }
 .img--plain img { border-radius: 0; border: 0; }
-/* uniform circular B&W crops for people galleries with mixed source assets */
+/* The actor portraits are already brand artwork: transparent cutouts inside a
+   cyan ring. They used to be forced grayscale inside a bordered square box,
+   which threw away the ring the assets were made with and rendered them as
+   grey squares - owner, 9 Sep 2026: "they were already cuts with cyan rings;
+   now it's just greyed squares". So no filter, no box, no border: the cutout
+   sits on the canvas as drawn. Never put grayscale back here; it is the same
+   mistake as fading logos with opacity. */
 .img--actor img {
   width: min(100%, 190px);
   aspect-ratio: 1;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 0;
   margin: 0 0 18px;
-  filter: grayscale(1);
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: none;
+  border: 0;
 }
 
 /* ---------- course pages ---------- */
@@ -859,21 +864,6 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    background rect means no ground to match, so tools/match-ground.mjs stops
    being needed for any slot converted this way. */
 .motif { display: block; width: 100%; height: auto; }
-/* /video-reklama/ sells improv ACTORS, so the hero shows them rather than an
-   abstract motif (9 Sep 2026). Owner: "why didnt you just reuse the
-   improvizatori images from original WP website? they were already cuts with
-   cyan rings; now it's just greyed squares."
-   Fair: the "objects, not people" rule for hero artwork is right everywhere
-   except the one page where the people ARE the product, and these cutouts were
-   already on the same page in the Aktieri section. All five are transparent at
-   the corners, checked, so they sit clean on the canvas. */
-/* `.hero-media--faces img` and `.hero-media img` have the SAME specificity and
-   the generic one is later in the file, so it wins and every portrait renders
-   at 100% - 2208px of overflow. Qualified with both classes to settle it by
-   weight rather than by source order. */
-.hero-media--faces { display: flex; align-items: center; justify-content: center; }
-.hero-media.hero-media--faces img { width: 24%; height: auto; margin-left: -5%; }
-.hero-media.hero-media--faces img:first-child { margin-left: 0; }
 .hero-media img { display: block; width: 100%; height: auto; }
 @media (max-width: 980px) {
   .page-hero--media .hero-grid2 { grid-template-columns: 1fr; gap: clamp(28px, 4vw, 40px); }
@@ -1149,7 +1139,6 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    during the delay. Same rise as .reveal, so the page reads as one system. */
 @keyframes hero-rise { from { opacity: 0; transform: translateY(var(--rise, 14px)); } }
 @keyframes motif-in { from { opacity: 0; transform: translateY(12px) scale(0.94); } }
-@keyframes face-pop { from { opacity: 0; transform: scale(0.82); } }
 @keyframes hero-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 @media (prefers-reduced-motion: no-preference) {
   .page-hero .chip,
@@ -1188,15 +1177,6 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
     animation-delay: calc(0.46s + var(--i, 0) * 0.075s);
   }
   .hero-media:has(.motif) { animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards, hero-drift 9s ease-in-out 2s infinite; }
-  /* The faces build up one after another instead of drifting: five portraits
-     each drifting independently would read as wobble. Same easing as the rest
-     of the hero cascade, starting where the figure's own entrance lands. */
-  .hero-media.hero-media--faces img { animation: face-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-  .hero-media.hero-media--faces img:nth-child(1) { animation-delay: 0.46s; }
-  .hero-media.hero-media--faces img:nth-child(2) { animation-delay: 0.58s; }
-  .hero-media.hero-media--faces img:nth-child(3) { animation-delay: 0.70s; }
-  .hero-media.hero-media--faces img:nth-child(4) { animation-delay: 0.82s; }
-  .hero-media.hero-media--faces img:nth-child(5) { animation-delay: 0.94s; }
 
   /* Tick items cascade inside their own list (main.js staggers by sibling
      index), so the shift is smaller than a card's or it reads as jitter. */
