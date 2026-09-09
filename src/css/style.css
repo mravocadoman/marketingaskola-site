@@ -828,7 +828,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   gap: clamp(32px, 4.5vw, 72px);
   align-items: center;
 }
-.hero-media { margin: 0; border: 1px solid var(--line); background: #020d1c; }
+.hero-media { margin: 0; border: 1px solid var(--line-strong); background: var(--canvas); }
 .hero-media img { display: block; width: 100%; height: auto; }
 @media (max-width: 980px) {
   .page-hero--media .hero-grid2 { grid-template-columns: 1fr; gap: clamp(28px, 4vw, 40px); }

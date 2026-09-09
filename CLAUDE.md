@@ -1942,6 +1942,62 @@ Both forms are now written out, with a comment saying why.
 Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
 label 5.20:1, chip link 6.88:1. Nothing under 4.5.
 
+## A dark motif needs ~35-45% ink, and that is measurable (9 Sep 2026)
+
+Owner: *"hero section is also too dark now; both before and next to generated
+images."* Then, on the obvious fix: *"no, simply white hero doesnt work.
+rething that."* Both correct. What follows is the measured answer, so nobody
+argues this one by eye again.
+
+**A white hero was tried and rejected.** It reverted the same day. The header
+directly above is dark and carries white logo artwork, so a white band
+starting immediately beneath it reads as two unrelated slabs rather than one
+page, and it gives away the thing that makes the site look like itself.
+
+**Stepping the background does not work either, and the numbers say why.**
+Hero on `--card` and the artwork panel on `--well` give contrast ratios of
+**1.06** and **1.15** against `--canvas`. That is invisible. This palette has
+no usable mid-tone between near-black and white, so "make the section slightly
+lighter" is not an available move here. Do not try it again.
+
+**The darkness was the artwork being empty.** Measured as the share of pixels
+above 0.20 relative luminance:
+
+| Slot | Before | After |
+| --- | --- | --- |
+| `hero-video-reklama` | 38.0% | 38.0%, untouched, already right |
+| `hero-pakalpojumi` | 37.7% | 37.7%, untouched, already right |
+| `hero-seo-pakalpojumi` | 18.7% | 53.6% |
+| `hero-meta-reklama` | 14.5% | 41.8% |
+| `hero-konsultacijas` | 9.2% | 36.8% |
+| `hero-ai-automatizacijas` | 8.1% | 25.2% |
+
+**Line-and-bar subjects resist this and need different wording.** SEO and
+automation are diagrams, so their mass is in strokes rather than solids, and
+the first rebalanced pass moved them only to 21.0% and 20.3% while the
+object-based slots hit 37-42% straight away. Saying *"a SOLID slab, a filled
+rectangle, not an outline"*, with explicit sizes (*"each bar about a twelfth
+of the frame height"*), is what moved them. Automation still sits at 25.2%,
+which was accepted: the composition is dense where it matters and pushing
+further risks the 74% overshoot again.
+
+Four of six were 82-92% empty near-black. The two that read fine were the two
+near 38%. **Target 35-45%.** Below ~20% a motif reads as a dark hole with a
+small object floating in it, however good the object is.
+
+**The overshoot is as easy to hit as the undershoot.** A prompt saying "FILL
+the frame", "run right up to the edges", "cropped on more than one side"
+produced **73.9%**: a close-up so tight the phone became abstract grey blocks,
+and it brought back rounded corners, which the square-geometry decision
+forbids. The working language is a *mid-shot*: objects drawn large but WHOLE
+and readable, at most one lightly clipped by one edge, a modest dark margin
+around the group, and an explicit "every corner is square".
+
+**How to check, rather than squinting:** count pixels above 0.20 luminance
+with sharp and compare against the table. `npm run images --only=<id> --force`
+regenerates one slot. Existing approved motifs sit at 15-18%, which is why the
+whole set has always felt dark; raise them if they are ever redrawn.
+
 ## Service heroes carry artwork now (9 Sep 2026)
 
 Owner: *"for each service, in the hero section there should be a cool image...
