@@ -1754,12 +1754,17 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    column - the course pages put this figure beside a sticky sidebar - one
    title wraps and the others do not, which pushed that column's diagram and
    footer 33px out of line with its neighbours. */
-.figcol h4 { font-size: var(--t-d1); margin: 12px 0 6px; color: var(--heading); min-height: 2.6em; }
+.figcol h4 { font-size: var(--t-d1); margin: 0 0 6px; color: var(--heading); min-height: 2.6em; }
 /* Two lines reserved: one column's description wraps and the others do not,
    which pushed its diagram and footer out of line with its neighbours. */
-.figcol > p { margin: 0; color: var(--muted); font-size: var(--t-sm); line-height: 1.5; min-height: 3em; }
-.figcol-art { margin: clamp(20px, 2.6vw, 34px) 0; }
-.figcol-foot { margin-top: auto; color: var(--muted); font-size: var(--t-sm); }
+.figcol > p { margin: 0 0 22px; color: var(--muted); font-size: var(--t-sm); line-height: 1.5; min-height: 3em; }
+/* An icon, not a diagram: one solid mark per item, sized so the column reads
+   as text with a marker rather than as a picture with a caption. */
+.figcol-icon { width: clamp(60px, 6vw, 76px); height: auto; margin: 20px 0 22px; }
+/* The closing note is a separate beat, not the next line of the description.
+   margin-top:auto bottom-aligns it across columns; the padding and hairline
+   are what stop it reading as a runaway third sentence. */
+.figcol-foot { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: var(--t-micro); letter-spacing: .04em; }
 @media (max-width: 780px) {
   .figcols-grid { grid-template-columns: 1fr; gap: 32px; }
   .figcols-grid { margin-left: 0; }

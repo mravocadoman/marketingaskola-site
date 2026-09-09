@@ -1991,6 +1991,23 @@ horizontal overflow.
 hidden `ul.dropdown` in the nav. Not caused by this work; confirmed on pages
 without a figure.
 
+**Rebuilt once, after a rejection worth recording.** The first version drew a
+detailed thin-outline diagram per column. Owner: *"I dont like these at all...
+they are not same style as the ones in the pakalpojumu header... make the
+elements lighter; also for these maybe just create separate icon for each
+thing being described."*
+
+Two concrete faults. The hero motifs are **solid filled shapes**; those
+diagrams were **2px strokes with `fill: none`**, so they were a different
+drawing language sitting on the same page - the check is literal, the figures
+now contain **zero `stroke=` attributes and 73 fills**. And a full diagram per
+column competes with the text; one icon per item lets the column read as text
+with a marker instead of a picture with a caption.
+
+Icons are 96x96 viewBox at ~72px, in `#8ba3bd` / `#f2f5f8` with a small cyan
+accent, exactly the hero palette. The closing note gets a hairline and its own
+padding, or it reads as a runaway third sentence of the description.
+
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
 Owner: *"can we make them as svgs or similar, break the image into elements and
