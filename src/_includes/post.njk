@@ -6,23 +6,32 @@ layout: base.njk
 
 <div class="read-progress" data-read-progress aria-hidden="true"></div>
 
-<section class="page-hero{% if image %} page-hero--cover{% endif %}">
-  {% if image %}
-  <figure class="hero-bg" aria-hidden="true">
-    <img src="{{ image | webp }}" alt="" fetchpriority="high" decoding="async">
-  </figure>
-  {% endif %}
-  <div class="container container--narrow">
-    <span class="chip">
-      {% if categories.length %}{% for c in categories %}<a href="/category/{{ c }}/">{{ categoriesBySlug[c] or c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% else %}Blogs{% endif %}
-    </span>
-    <h1>{{ title }}</h1>
-    <p class="article-meta">
-      <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
-      <span class="dot"></span>
-      <span>{{ content | readingTime }} min lasīšana</span>
-      {% if updated and ((updated | isoDate) != (date | isoDate)) %}<span class="dot"></span><span>atjaunots <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></span>{% endif %}
-    </p>
+{# The cover no longer fills the hero. Posts get the same two-column header as
+   the service and course pages: copy left, an animated motif right. The motif
+   is chosen by SUBJECT via src/_data/postMotifs.json, keyed on the permalink
+   slug rather than the filename, because several posts deliberately differ
+   (google-reklama-2025.md serves /google-reklama/).
+   `image` is untouched and still drives og:image and the blog index card - only
+   the hero stops rendering it. #}
+{% set slug = page.url | replace("/", "") %}
+{% set motifKey = postMotifs.bySlug[slug] or postMotifs.default %}
+<section class="page-hero page-hero--media">
+  <div class="container">
+    <div class="hero-grid2">
+      <div>
+        <span class="chip">
+          {% if categories.length %}{% for c in categories %}<a href="/category/{{ c }}/">{{ categoriesBySlug[c] or c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% else %}Blogs{% endif %}
+        </span>
+        <h1>{{ title }}</h1>
+        <p class="article-meta">
+          <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+          <span class="dot"></span>
+          <span>{{ content | readingTime }} min lasīšana</span>
+          {% if updated and ((updated | isoDate) != (date | isoDate)) %}<span class="dot"></span><span>atjaunots <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></span>{% endif %}
+        </p>
+      </div>
+      <figure class="hero-media">{% include "motifs/post-" + motifKey + ".njk" %}</figure>
+    </div>
   </div>
 </section>
 

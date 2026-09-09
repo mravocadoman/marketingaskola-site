@@ -2043,6 +2043,33 @@ it. The consultations page lost its band and got nothing back, because section
 01 already answers 'is this for me' in three cells."* Owner's call. The closing note gets a hairline and its own
 padding, or it reads as a runaway third sentence of the description.
 
+## Blog posts have the same two-column header (9 Sep 2026)
+
+Owner: *"I want all the blog posts to have the same style headers as the course
+pages and service pages... Don't make them full size anymore... the heading is
+on the left and on the right side there's this animation."*
+
+`post.njk` no longer renders the cover as a full-bleed `page-hero--cover`
+background. It uses `page-hero--media` like everything else: chip, headline and
+meta on the left, an animated motif on the right, assembling on load.
+
+**The motif is chosen by SUBJECT, not by category.** Categories are too coarse
+here - `digitalais-marketings` alone holds SEO, e-mail, keyword research and
+conversion tracking. `src/_data/postMotifs.json` maps each post to one of eight
+motifs (`post-meta`, `post-google`, `post-seo`, `post-strategy`, `post-ai`,
+`post-video`, `post-email`, `post-web`) with `strategy` as the fallback. All 42
+posts are mapped explicitly; nothing currently falls back.
+
+**The map is keyed on the PERMALINK slug, not the filename.** Several posts
+deliberately differ - `google-reklama-2025.md` serves `/google-reklama/` -
+because renaming the source file would orphan its cover image. The template
+derives the key from `page.url`.
+
+**`image:` front matter is untouched and must stay.** It still drives og:image
+(a real JPEG, which an inline SVG cannot be) and the blog index cards. Verified
+after the change: og:image present on posts, 40 covers still on `/blogs/`. Only
+the hero stopped rendering it.
+
 ## Course pages have headers too, and in-page motifs animate on scroll (9 Sep 2026)
 
 Owner: *"make headers for courses exactly in the same style and animations as
