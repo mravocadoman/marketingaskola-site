@@ -1536,6 +1536,29 @@ reverted to the text that produced those files — so `npm run images --force`
 reproduces what is on disk instead of silently redrawing pages that were
 deliberately left alone.
 
+**Ten blog covers were repointed on 10 Sep 2026** — that part of the 5 Sep note
+no longer holds for them. Owner, seeing the abstract set on the blog index:
+*"change and remake these images to something that's more similar to the topic
+they are describing; and re-make the animations from the new pictures."* The
+covers for `remarketings`, `konversiju-uzskaite`, `kas-ir-seo`,
+`google-reklamas-agentura`, `google-reklama-2025`, `maksligais-intelekts`,
+`reklamas-agenturas`, `digitalais-marketings`, `google-ads-pirma-kampana` and
+`instagram-reklama` were 19-Aug artwork — a loop, a split circle, a cog, a
+funnel — that said nothing about the article underneath. Their prompts now name
+the actual subject (a results list, a page button feeding a bar chart, a
+campaign tree, a bid auction, a feed advert) in the subject-explicit language
+STYLE_SUFFIX has asked for since 5 Sep, and every one was re-traced so the post
+header animates the new picture. **Everything else on the blog still keeps the
+artwork it has** — the 5 Sep instruction stands for the other 31 covers and for
+every page motif.
+
+Two things this pass had to fix by hand, both worth knowing before writing a
+prompt in this style: asking for an "auction" got a literal wooden gavel and a
+results panel full of interior detail (naming the shapes to EXCLUDE fixed it),
+and asking for a post image inside a phone got a large pure-white square — the
+light-slab artifact `.img--card` was deleted for. Say "no white anywhere in the
+picture" when a large fill is unavoidable.
+
 **What was tried and rejected**, so nobody repeats it: a precision-schematic
 hairline redraw of every motif (*"too much of everything in there"*), three
 rounds of thin-line white infographics (*"I honestly hate the white infographic

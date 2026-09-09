@@ -96,7 +96,8 @@ if (!KEY) { console.error('OPENAI_API_KEY missing'); process.exit(1); }
 
 // --- work list --------------------------------------------------------------
 const { slots } = JSON.parse(readFileSync(join(ROOT, 'src', '_data', 'imagery.json'), 'utf8'));
-let queue = slots.filter((s) => (ONLY ? s.id === ONLY : true));
+const ONLY_IDS = ONLY ? ONLY.split(',').map((s) => s.trim()).filter(Boolean) : null;
+let queue = slots.filter((s) => (ONLY_IDS ? ONLY_IDS.includes(s.id) : true));
 if (!FORCE) queue = queue.filter((s) => !existsSync(join(OUT, s.id + '.webp')));
 if (LIMIT) queue = queue.slice(0, LIMIT);
 

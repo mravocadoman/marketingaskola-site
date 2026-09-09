@@ -149,8 +149,8 @@
       "page": "digitalais-marketings",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Ciāna aplis ar koncentriskiem plāniem gredzeniem un maziem punktiem uz tumša fona, kas attēlo digitālā mārketinga izplatību",
-      "prompt": "Flat vector editorial motif on solid near-black navy #020d1c. One dense flat cyan #03c3f8 disc sits low-left, ringed by four widely spaced concentric white #ffffff hairline circles that run off the right edge; a scatter of tiny cool grey #55697e dots sits on the outermost rings, three of them cyan. Radiating, calm, engineered, heavy negative space to the right, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Četri kanālu simboli — meklēšanas rinda, aploksne, video kadrs un ciāna ieraksta kvadrāts — uz tumša fona",
+      "prompt": "The channels digital marketing actually runs on, set out plainly. Four bold solid shapes sit in a loose two-by-two arrangement with wide gaps between them: a short wide bar as a search result, a wide flat envelope, an upright rectangle holding a solid triangle as a video, and a plain square as a social feed post. All are cool grey except the feed square, which is solid cyan. One thin white hairline runs behind them from edge to edge. Generous empty navy around, the group pushed to the lower left.",
       "rationale": "Broad pillar piece on digital marketing — a single source reaching outward is the whole subject in one mark."
     },
     {
@@ -176,8 +176,8 @@
       "page": "google-reklama-2025",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Plāns ciāna gredzens ar garu kātu virs punktu lauka uz tumša fona, attēlojot meklēšanas reklāmu",
-      "prompt": "Flat vector editorial graphic on solid near-black navy #020d1c. A thin flat cyan #03c3f8 open ring with a long straight cyan stem lies diagonally across the upper right, hovering over a loose field of small cool grey #55697e dots spread across the lower left; exactly one dot inside the ring is flat cyan and slightly larger. White #ffffff hairline crosshair through that dot. Heavy negative space, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Reklāmas vieta rezultātu lapā un zem tās konkurējošu solījumu kolonnas, no kurām augstākā ir ciāna krāsā",
+      "prompt": "Draw only these shapes and nothing else. Across the upper left one wide solid cool grey horizontal bar stands alone as an advertising slot. Beneath it, standing on one thin white baseline, four plain solid vertical columns of clearly different heights are evenly spaced as competing bids; the second column is the tallest and is solid cyan, and one thin cyan line rises from its top edge to the underside of the bar above. Nothing else appears in the frame: no gavel, no hammer, no mallet, no scales, no panels, no cards, no stacked rows, and no interior detail of any kind inside any shape. Wide empty navy on the right, asymmetric.",
       "rationale": "Search-advertising relevance piece — finding one signal in a field, without drawing a search box."
     },
     {
@@ -185,8 +185,8 @@
       "page": "google-reklamas-agentura",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Trīs sašaurinātas horizontālas spraugas tumšā fonā, caur kurām krīt diski, un apakšā iznāk viens ciāna disks",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Three horizontal white #ffffff hairline slots stack down the centre-left, each narrower than the one above; small flat cool grey #3d5063 discs pass through and thin out at every level, and a single flat cyan #03c3f8 disc emerges below the last slot. Strictly flat, engineered, wide empty navy to the right, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Reklāmas konta panelis ar augošu ciāna līkni un vadības slīdņiem, blakus vienkārša cilvēka silueta figūra",
+      "prompt": "An advertising account being run by somebody else. Right of centre a wide solid cool grey panel carries one rising flat cyan polyline ending in a single small solid cyan square. Along the lower edge of the panel three short solid cool grey horizontal tracks each carry a small solid white square handle, as controls being set. At the far left one simple flat cool grey human silhouette stands facing the panel, built from plain geometric shapes with no facial features and no interior detail. Empty navy above.",
       "rationale": "Choosing an agency — a narrowing filter is the vetting process, distinct from the other dot-based motifs."
     },
     {
@@ -203,8 +203,8 @@
       "page": "instagram-reklama",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Ciāna punkts un pakāpienveida ceļš ar mazām atzīmēm uz tumša fona, attēlojot pirmos soļus Instagram reklāmā",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A single bold flat cyan #03c3f8 dot sits at the far lower left as an origin, and a stepped white #ffffff hairline path climbs right in sharp right-angle turns, passing four small hollow cool grey #55697e circles as waypoints and ending at a large flat cyan half-disc. Spare, engineered, most of the frame left empty navy, subtle grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Sociālo tīklu ieraksta reklāma ar profila rindu, attēla kvadrātu un ciāna aicinājuma pogu",
+      "prompt": "One advert inside a social feed, seen close up. Right of centre a large solid cool grey square stands as the post image, cropped by the right edge of the frame. Directly above it a small solid cool grey circle and one short solid cool grey bar form the account row. Directly beneath the square, one solid cyan horizontal block spans its full width as the call-to-action button, and beneath that two short cool grey bars. No white anywhere in the picture. Generous empty navy on the left, asymmetric.",
       "rationale": "\"Where do I start?\" article — an origin point and a stepped route is literally the question answered."
     },
     {
@@ -230,8 +230,8 @@
       "page": "kas-ir-seo",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Balta horizontāla līnija ar zarojošu ciāna sakņu struktūru zem tās un mazu apli virs, attēlojot organisko SEO redzamību",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. One long white #ffffff horizontal hairline crosses the frame as a ground plane; below it a branching structure of thin flat cyan #03c3f8 lines spreads downward like roots, thinning as it splits, with small cool grey #55697e nodes at the junctions. Above the line, a single small flat cyan disc sits alone in wide empty navy. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Meklēšanas lauks ar lupu un rezultātu saraksts, kura augšējais ieraksts ir ciāna krāsā",
+      "prompt": "A result climbing the search listing. Across the upper left one long solid cool grey horizontal bar stands as a search field, with a small solid cyan ring and a short cyan handle at its right end as a magnifier. Below it five solid cool grey horizontal bars of differing lengths stack downward with generous spacing as the results; the topmost result is solid cyan and reaches further left than the others. Empty navy on the right, asymmetric, calm.",
       "rationale": "SEO explainer — visible result above the line, structural work below it, with no magnifier or ranking-chart cliché."
     },
     {
@@ -257,8 +257,8 @@
       "page": "maksligais-intelekts",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Aplis, sadalīts divās nesakritīgās pusēs — viena gaišzila, otra pelēka",
-      "prompt": "Abstract flat composition on solid brand navy #00152c: one large perfect circle split down its vertical axis, the left half flat cyan #03c3f8 and the right half cool grey, the two halves offset vertically so the seam deliberately misaligns; a single thin white hairline runs through the gap. Placed off-centre left with enormous empty navy to the right, subtle film grain. Completely flat, no gradients, no glow, no 3D render, no text, letters, numbers or logos.",
+      "alt": "Ievades lauks ar ciāna līniju, kas ved uz trim izveidotām lapām, attēlojot mākslīgā intelekta darbu",
+      "prompt": "A request going in, finished work coming out. Low and left, one long solid cool grey horizontal bar stands as an input field with a single small solid cyan square at its right end. From that square one flat cyan line rises to the right and fans into three solid rectangular sheets of the same size, staggered like work being produced: two cool grey and the middle one solid cyan. Vast empty navy above the fan, asymmetric.",
       "rationale": "'Friend or threat' is a dichotomy — one form cleanly split into two mismatched halves."
     },
     {
@@ -311,8 +311,8 @@
       "page": "reklamas-agenturas",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Liels gaišzils segmentēts gredzens, kas daļēji aizsedz pelēku paneļu vēdekli",
-      "prompt": "Flat vector composition on solid brand navy #00152c: a large flat cyan #03c3f8 ring built from twelve evenly separated segments sits at the right edge, partially eclipsing a fan of four plain overlapping cool-grey rectangular panels angled behind it. Crisp cut edges, no shading or depth, a thin white hairline baseline, huge empty navy space at left, subtle film grain. Strictly flat, no gradients, no glow, no 3D render, no text, letters, numbers or logos.",
+      "alt": "Viena figūra ar mazu paneli pa kreisi un trīs figūras ar kopīgu paneli pa labi, attēlojot izvēli starp darīt pašam un aģentūru",
+      "prompt": "The choice between doing it yourself and handing it to a team. On the left one simple flat cool grey human silhouette stands alone beside a single small solid cool grey panel. Separated by generous empty navy, on the right three identical flat cool grey silhouettes stand shoulder to shoulder behind one wide solid cool grey panel that carries a single solid cyan rectangle. Every figure is built from plain geometric shapes with no facial features and no interior detail. Asymmetric, weight to the right.",
       "rationale": "Agency services are a fanned set of offerings driven by one segmented mechanism."
     },
     {
@@ -890,8 +890,8 @@
       "page": "konversiju-uzskaite",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Ciāna signāla līnija, kas ceļā pārtrūkst un atsākas, ar tumšu pārtraukumu vidū, attēlojot pazaudētus konversiju datus",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. A single flat cyan #03c3f8 horizontal line travels from the left edge; partway across it breaks into a run of short dashes that fade to cool grey #55697e, then resumes as a solid cyan line reaching the right edge, where it ends in one small solid cyan square. Below the break, three tiny grey squares fall away downward with generous empty navy around them. Asymmetric, off-centre, subtle film grain. No text, letters, numbers, logos or UI. No gradients, no glow, no 3D.",
+      "alt": "Mājaslapa ar ciāna pogu un līnija, kas ved uz augošām joslām, attēlojot konversiju uzskaiti",
+      "prompt": "A click on a page becoming a recorded number. Left of centre one tall solid cool grey slab stands as a web page, with a single solid cyan rectangle low on it as the button. From that button one flat cyan line runs right and slightly down to a small group of four solid cool grey vertical bars of rising height standing on a thin white baseline, the tallest of them solid cyan - the measurement that arrives afterwards. Wide empty navy above, asymmetric.",
       "rationale": "Conversion tracking explainer - the signal that leaves the site, loses part of itself on the way, and arrives incomplete."
     },
     {
@@ -917,8 +917,8 @@
       "page": "google-ads-pirma-kampana",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Balta meklēšanas rinda ar vienu ciāna bloku virs pārējiem rezultātiem, attēlojot pirmo Google Ads kampaņu",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Left of centre, one long white #ffffff horizontal hairline forms an empty input field, open at both ends. Beneath it, four flat cool grey #55697e horizontal bars of decreasing length stack downward with generous spacing, and one solid cyan #03c3f8 bar sits above them all, slightly wider, offset to the left. Vast empty navy on the right. Asymmetric, subtle film grain. No text, letters, numbers, logos or UI chrome. No gradients, no glow, no 3D.",
+      "alt": "Kampaņas struktūra: ciāna bloks augšā, zem tā reklāmu grupas un atsevišķi sludinājumi",
+      "prompt": "A first campaign seen as its structure. Near the top left one solid cyan rectangle stands as the campaign. Two thin white lines drop from it to two solid cool grey rectangles side by side beneath, the ad groups, and from each of those two shorter white lines drop to two smaller solid cool grey blocks, the individual adverts - four evenly spaced blocks along the bottom row. Everything cool grey except the one cyan rectangle at the top. Wide empty navy on the right, asymmetric.",
       "rationale": "First Google Ads campaign - the paid placement sitting above the organic rows, with nothing else in the frame."
     },
     {
@@ -1025,8 +1025,8 @@
       "page": "remarketings",
       "placement": "post cover (front matter image)",
       "aspect": "landscape",
-      "alt": "Ciāna līnija, kas izliecas atpakaļ pie sākuma punkta, attēlojot atkārtotu uzrunu tam pašam cilvēkam",
-      "prompt": "Flat vector editorial illustration on solid near-black navy #020d1c. Left of centre, one small solid cyan #03c3f8 square. A single flat cyan line leaves it travelling right, curves in a wide arc and returns to end beside the same square, forming an open loop that does not quite close. Two flat cool grey #55697e squares sit outside the loop, well apart, untouched by it. Generous empty navy. Asymmetric, subtle film grain. No text, letters, numbers, logos, arrows or UI chrome. No gradients, no glow, no 3D.",
+      "alt": "Kontaktu saraksts un ciāna līnija, kas ved uz reklāmas kartīti, attēlojot atkārtotu uzrunu tiem, kas uzņēmumu jau pazīst",
+      "prompt": "The people who already know the business, reached a second time. Left of centre a column of five bold solid cool grey horizontal bars stacked with even gaps, standing for an existing customer list. From the middle bar one flat cyan line runs to the right, curves once, and ends at a single solid cool grey square standing alone as an advert, with one narrow solid cyan bar across its lower edge as the button. Nothing else in the frame. Wide empty navy above, asymmetric, weight low and left.",
       "rationale": "Retargeting - the path that goes out and comes back to the same person, while everyone outside the loop is left alone."
     },
     {
