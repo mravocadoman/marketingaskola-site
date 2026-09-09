@@ -147,6 +147,17 @@ nothing. **Fix a failing smoke test the day it starts failing.**
 `gh` is logged in on this machine, so `gh run list`, `gh run view --log-failed`
 and `gh run rerun <id> --failed` all work directly.
 
+**Do not grab the run id with `--limit 1` straight after a push.** GitHub has
+not created the run yet at that moment, so you get the PREVIOUS run, watch it
+succeed, and then read a live site that has not been updated - which looks
+exactly like a deploy that ran and did nothing. Filter by the commit instead:
+
+```
+SHA=$(git rev-parse HEAD)
+RID=$(gh run list --workflow=deploy.yml --limit 10 --json databaseId,headSha \
+      -q ".[] | select(.headSha==\"$SHA\") | .databaseId" | head -1)
+```
+
 **A fourth status: `cancelled` is not a failure.** The workflow sets
 `concurrency: { group: deploy, cancel-in-progress: true }`, so pushing again
 while a deploy is running kills the earlier one. Two commits in quick
