@@ -1903,7 +1903,7 @@ until the person clicks a confirmation e-mail, which means they cannot be
 emailed in campaigns and group automations generally will not fire. That is
 correct for a newsletter and wrong for a lead magnet.
 
-## Service page heroes are LIGHT (9 Sep 2026)
+## Service page heroes are LIGHT — SUPERSEDED, see below (9 Sep 2026)
 
 Owner: *"hero section is also too dark now; both before and next to generated
 images. I think some contrast / lightness is needed here too to ease the
@@ -1941,6 +1941,42 @@ Both forms are now written out, with a comment saying why.
 
 Contrast measured on all six after the fix: h1 17.41:1, body 9.58:1, chip
 label 5.20:1, chip link 6.88:1. Nothing under 4.5.
+
+## No white slabs: the band and the tick (9 Sep 2026)
+
+Owner, after seeing both: *"I'm not entirely a fan of entirely white sections
+in the middle of the articles or pages as well. Fix those, maybe with different
+accents or different kinds of solutions, so we can make it more interesting
+without making it completely white."*
+
+So `.paper` is off the service pages entirely — heroes and process sections
+both. Two replacements, and they are the SAME device at two scales, which is
+the point:
+
+**`.sec--band`** is the process section: `--card` ground with a hairline top
+and bottom. That is exactly `.cta-band`'s treatment, already in the system.
+**The hairlines do the work, not the fill** — `--card` against `--canvas` is
+1.06:1 on its own, so removing the borders removes the section.
+
+**The tick** is a 24x3px cyan mark sitting on a rule that already existed. It
+now appears in three places, deliberately: the indexed eyebrows, each step
+inside a band, and each in-article `h2`. One accent meaning "a new section
+starts here", at three scales. When a step gets the tick, its numeral drops
+the cyan square it used to carry — two cyan marks per step is one too many.
+
+**Why the articles were not un-whited.** The white reading surface there is
+the owner's own earlier decision (*"keep white background for the blog
+posts"*), and the in-article infographics are white-on-white on purpose —
+`.infographic` takes `--canvas` precisely because a tinted panel draws a
+visible rim around a pure-white collage. So the long flat white run is broken
+with an accent per section rather than with a second surface. On paper cyan is
+decorative only, which a tick is; the heading stays `--heading` and links stay
+`--link`.
+
+**What this supersedes.** The white hero, tried and reverted the same day, and
+the `.paper` process section, replaced here. Do not reintroduce a full-width
+white block on a dark page — it has now been rejected twice, once for the hero
+and once for the mid-page section.
 
 ## Hero artwork is FRAMELESS, and that needs an exact ground (9 Sep 2026)
 

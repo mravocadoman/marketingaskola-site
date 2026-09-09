@@ -674,6 +674,25 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 /* full-width closing band — the ONE raised band per page */
 .cta-band { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: clamp(72px, 9vw, 120px) 0; }
+
+/* The process section reads as its own band, WITHOUT going white (9 Sep 2026).
+   A full .paper inversion was tried first and the owner rejected it: "not
+   entirely a fan of entirely white sections in the middle of the pages". This
+   is the .cta-band treatment - the --card ground plus a hairline top and
+   bottom - which the system already uses and which separates the section
+   without changing surface. The --card step against --canvas is only 1.06:1 on
+   its own; the hairlines are what actually draw the edge, so do not remove
+   them thinking the fill is doing the work. */
+.sec--band { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+/* Inside the band, each step gets the eyebrow's own device: a short cyan tick
+   sitting on its rule. Four small marks, so the sequence reads as a sequence
+   and the cyan stays far inside budget - it is the same "this starts here"
+   signal the indexed eyebrows use, applied one level down. */
+.sec--band .step { position: relative; }
+.sec--band .step::before { content: ""; position: absolute; top: -2px; left: 0; width: 24px; height: 3px; background: var(--cyan); }
+/* The numeral already carries a cyan square; two cyan marks per step is one
+   too many once the tick is on the rule. */
+.sec--band .step .step-num::after { display: none; }
 .cta-band-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 36px 72px; align-items: center; }
 .cta-band h2 { font-size: var(--t-d3); margin-bottom: 0.35em; max-width: 17ch; }
 .cta-band p { margin: 0; max-width: 46ch; color: var(--body); }
@@ -1167,6 +1186,26 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   padding-top: 1.1em;
   border-top: 1px solid var(--line);
   color: var(--heading);
+}
+/* Each in-article section opens with the same short cyan tick the indexed
+   eyebrows and the process steps use, sitting on the rule the h2 already had
+   (9 Sep 2026). Owner: "not entirely a fan of entirely white sections... make
+   it more interesting without making it completely white."
+   The article's white reading surface is the owner's own earlier decision and
+   its infographics are white-on-white on purpose - a tinted panel there puts a
+   visible rim around a pure-white image, which is why .infographic takes
+   --canvas. So the flat white run is broken with an accent rather than with a
+   second surface. Cyan is decorative here, which is what paper allows; the
+   heading text stays --heading and every link stays --link. */
+.article-body .prose h2 { position: relative; }
+.article-body .prose h2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 24px;
+  height: 3px;
+  background: var(--cyan);
 }
 .article-body .prose h3 { font-size: var(--t-d1); margin: 2em 0 0.6em; color: var(--heading); }
 .article-body .prose img { border: 1px solid var(--line); border-radius: var(--radius); margin: 2em 0; }
