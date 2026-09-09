@@ -588,7 +588,7 @@ its SIBLING in the right-hand column. Putting the intro `<p>` inside the left
 that is a different-looking section. Two of mine did exactly that and were
 corrected the same day.
 
-## The article column is 640px, and the left rail must be `1fr` (9 Sep 2026)
+## The article column is 720px, and the left rail must be `1fr` (9 Sep 2026)
 
 Owner: *"can you make blog post width slightly bigger"*. Measured before
 changing anything, and the finding was not what these notes claimed — they
@@ -617,11 +617,18 @@ column on the site, narrower than the single-column layout a phone gets,
 because that width is the squeeze just before the 1020px breakpoint drops the
 TOC.
 
-**640px is a stopping point, not an arbitrary cap.** At the 18px body size it
-is ~76 characters, the top of the comfortable measure. Do not raise it to
-"use the space": 700px lands near 83 characters, past what reads well for
-sustained text. If it ever has to grow, move the body size or the container
-with it and re-measure the character count, not the pixels.
+**Raised to 720px later the same day, on the owner's second ask** (*"make blog
+text area wider.. I thought I already asked you that"*). That is ~85
+characters at the 18px body size, past the classic comfortable measure, and
+that is the owner's call rather than an oversight - it has now been asked
+twice. Measured at 1440 / 1280 / 1100 / 1020px: a flat 720px with no
+horizontal overflow. If it goes wider again, raise the body size with it.
+
+**No rule and no cyan tick above an article `h2`.** One was added earlier the
+same day to break up the white column; the owner read it as a *"weird section
+break"*. Inside running prose the heading IS the break, and a hairline every
+few paragraphs chops the reading. The tick device belongs to eyebrows and
+steps, not to body copy.
 
 The text column ends up ~25px left of page centre, because the `fr` rail
 absorbs the slack instead of `justify-content` splitting it. That is invisible

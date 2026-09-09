@@ -1232,32 +1232,15 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .article-body .prose { font-size: var(--t-body); line-height: 1.78; }
 /* No enlarged first paragraph: it read as a different size mid-article and
    introduced a fourth text colour on top of the three the system allows. */
+/* No rule and no tick above an article h2 (9 Sep 2026). A hairline plus a cyan
+   mark was added to break up the white column and the owner read it as a
+   "weird section break" - inside running prose the heading itself is already
+   the break, and a horizontal rule every few paragraphs chops the reading.
+   The tick device stays where it belongs: eyebrows and steps, not body copy. */
 .article-body .prose h2 {
   font-size: var(--t-d2);
-  margin: 2.4em 0 0.7em;
-  padding-top: 1.1em;
-  border-top: 1px solid var(--line);
+  margin: 2.2em 0 0.7em;
   color: var(--heading);
-}
-/* Each in-article section opens with the same short cyan tick the indexed
-   eyebrows and the process steps use, sitting on the rule the h2 already had
-   (9 Sep 2026). Owner: "not entirely a fan of entirely white sections... make
-   it more interesting without making it completely white."
-   The article's white reading surface is the owner's own earlier decision and
-   its infographics are white-on-white on purpose - a tinted panel there puts a
-   visible rim around a pure-white image, which is why .infographic takes
-   --canvas. So the flat white run is broken with an accent rather than with a
-   second surface. Cyan is decorative here, which is what paper allows; the
-   heading text stays --heading and every link stays --link. */
-.article-body .prose h2 { position: relative; }
-.article-body .prose h2::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 24px;
-  height: 3px;
-  background: var(--cyan);
 }
 .article-body .prose h3 { font-size: var(--t-d1); margin: 2em 0 0.6em; color: var(--heading); }
 .article-body .prose img { border: 1px solid var(--line); border-radius: var(--radius); margin: 2em 0; }
@@ -1350,14 +1333,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    size rather than the 18px prose, so 62ch was rendering as ~76 characters. */
 .article-shell > .container { max-width: 1060px; }
 .article-grid {
-  grid-template-columns: 1fr minmax(0, 640px) 210px;
+  grid-template-columns: 1fr minmax(0, 720px) 210px;
   justify-content: center;
   gap: clamp(28px, 3.2vw, 48px);
 }
 .article-body { grid-column: 2; max-width: none; }
 .toc { grid-column: 3; }
 @media (max-width: 1020px) {
-  .article-grid { grid-template-columns: minmax(0, 640px); justify-content: center; }
+  .article-grid { grid-template-columns: minmax(0, 720px); justify-content: center; }
   .article-body, .toc { grid-column: 1; }
 }
 
