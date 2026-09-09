@@ -2091,6 +2091,52 @@ no-preference` block, and must stay there.** Under `reduce` it is never
 applied, so the drawing is simply present rather than invisible waiting for an
 observer that will never fire. That is the failure mode this pattern invites.
 
+## Motifs are TRACED from the original artwork, never redrawn (9 Sep 2026)
+
+Owner, after I hand-drew replacements: *"you are not using the same images. I
+asked you to repurpose existing headers - split them by pieces and animate, not
+invent new. I like the old style so just use and animate it, take longer if
+needed."*
+
+So nothing under `src/_includes/motifs/` is drawn by hand. Every include is
+produced by **`tools/trace-motif.mjs`** from the raster that was already on the
+page: quantise to the house palette, find connected regions per colour, walk
+each region's boundary, emit one `<g class="m">` per shape. The result IS the
+original picture, made of parts that can animate.
+
+`node tools/build-motifs.mjs` rebuilds the lot. **Blog posts trace their OWN
+cover**, so every post keeps the picture it had.
+
+### Four things that had to be got right, all found by measuring
+
+- **Draw order is grey, then off-white, then cyan, largest first.** That is
+  both correct z-order (a light bar sits ON its slab, and tracing the slab
+  fills the hole underneath) and a natural build-up.
+- **Boundaries stay rectilinear.** A curve fitter would round the very corners
+  the square-geometry decision insists on.
+- **RDP cannot run straight at a closed loop.** First and last point are the
+  same, so distance is measured against a zero-length line and the ring
+  collapses to two points - this silently emptied seven covers. Split the ring
+  at its furthest vertex, simplify two open chains, rejoin.
+- **Never simplify a thin shape.** A 1px grid line is entirely "within
+  tolerance" and flattens to a zero-area sliver, which is how a calendar grid
+  came out as broken dashes.
+
+### The gate, and why pixel agreement alone is not one
+
+**`tools/verify-motifs.mjs` decides what ships.** It renders each trace against
+its raster and applies TWO tests, because agreement alone lies on a sparse
+drawing: a cover that is 95% dark ground "matches" a trace that lost the
+picture entirely. So it also compares **retained ink**. With only the first
+test, 5 of 59 failed; with both, **16 did** - including `band-meta-targeting`,
+which looked fine and kept 15% of its drawing.
+
+Current state: **43 traced, 16 keep their raster.** A rejected motif is not a
+problem to fix - some of this artwork is not flat-block art and does not
+survive quantisation. `post.njk` falls back to `<img>`, and three bands went
+back to their rasters. A still picture that looks right beats an animated one
+that does not.
+
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
 Owner: *"can we make them as svgs or similar, break the image into elements and

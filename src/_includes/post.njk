@@ -14,7 +14,7 @@ layout: base.njk
    `image` is untouched and still drives og:image and the blog index card - only
    the hero stops rendering it. #}
 {% set slug = page.url | replace("/", "") %}
-{% set motifKey = postMotifs.bySlug[slug] or postMotifs.default %}
+{% set motifKey = postMotifs.bySlug[slug] %}
 <section class="page-hero page-hero--media">
   <div class="container">
     <div class="hero-grid2">
@@ -30,7 +30,9 @@ layout: base.njk
           {% if updated and ((updated | isoDate) != (date | isoDate)) %}<span class="dot"></span><span>atjaunots <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></span>{% endif %}
         </p>
       </div>
-      <figure class="hero-media">{% include "motifs/post-" + motifKey + ".njk" %}</figure>
+      {# A post whose cover did not trace faithfully keeps the raster. Better a
+         still picture that looks right than an animated one that does not. #}
+      <figure class="hero-media">{% if motifKey %}{% include "motifs/" + motifKey + ".njk" %}{% elif image %}<img src="{{ image | webp }}" alt="" fetchpriority="high" decoding="async">{% endif %}</figure>
     </div>
   </div>
 </section>
