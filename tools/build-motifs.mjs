@@ -212,7 +212,7 @@ function box(p, cw) {
 }
 
 /* The exact boundary of a set of cells, as compact relative h/v moves. */
-function clipPath(p, cw, ch) {
+function clipPath(p, cw, ch, off = 0) {
   const set = new Set(p.cells);
   const has = (x, y) => x >= 0 && y >= 0 && x < cw && y < ch && set.has(y * cw + x);
   const edges = new Map();
@@ -240,7 +240,7 @@ function clipPath(p, cw, ch) {
       const [ax, ay] = keep[keep.length - 1], [bx, by] = pts[i], [qx, qy] = pts[i + 1];
       if ((bx - ax) * (qy - by) !== (by - ay) * (qx - bx)) keep.push(pts[i]);
     }
-    d += `M${keep[0][0] * CELL} ${keep[0][1] * CELL}` + keep.slice(1).map((q, i) =>
+    d += `M${(keep[0][0] + off) * CELL} ${(keep[0][1] + off) * CELL}` + keep.slice(1).map((q, i) =>
       q[0] !== keep[i][0] ? `h${(q[0] - keep[i][0]) * CELL}` : `v${(q[1] - keep[i][1]) * CELL}`).join('') + 'z';
   }
   return d;
@@ -256,20 +256,25 @@ const pieces = async (srcId, name, alt) => {
    * pieces met. With the margin, every edge falls on pixels that are already
    * on screen and identical (canvas, or the earlier piece's own pixels), so
    * it has nothing to take. No later piece is ever revealed early. */
-  const owner = new Int32Array(cw * ch).fill(-1);
-  parts.forEach((p, j) => { for (const c of p.cells) owner[c] = j; });
+  // The grid is padded by one ground cell all round, so a piece cropped by the
+  // picture's own edge gets its margin too: a clip edge lying exactly ON the
+  // image edge anti-aliases a pixel the image edge already anti-aliases, and
+  // the last row came out up to 24/255 dimmer wherever artwork met the frame.
+  const PW = cw + 2, PH = ch + 2;
+  const pad = (c) => ((c / cw | 0) + 1) * PW + (c % cw) + 1;
+  const owner = new Int32Array(PW * PH).fill(-1);
+  parts.forEach((p, j) => { for (const c of p.cells) owner[pad(c)] = j; });
   const clips = parts.map((p, j) => {
-    const cells = new Set(p.cells);
-    for (const c of p.cells) {
-      const x = c % cw, y = c / cw | 0;
+    const cells = new Set();
+    for (const c0 of p.cells) {
+      const c = pad(c0), x = c % PW, y = c / PW | 0;
+      cells.add(c);
       for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
-        const nx = x + dx, ny = y + dy;
-        if (nx < 0 || ny < 0 || nx >= cw || ny >= ch) continue;
-        const n = ny * cw + nx;
+        const n = (y + dy) * PW + (x + dx);    // always inside the padded grid
         if (owner[n] < j) cells.add(n);        // ground (-1) or an earlier piece
       }
     }
-    return clipPath({ cells: [...cells] }, cw, ch);
+    return clipPath({ cells: [...cells] }, PW, PH, -1);
   });
 
   // Reassemble and compare. The pieces must BE the cover: worst 32px block
@@ -315,7 +320,20 @@ let ok = 0;
 const built = [];
 if (only !== '--posts-only') {
   console.log('page motifs:');
-  for (const [srcId, name] of PAGES) if (trace(srcId, name, altOf(srcId))) ok++;
+  /* The service pages - and the courses hub, which /pakalpojumi/ shows as its
+   * sixth tile - are assembled from pieces like the posts. Owner, 10 Sep 2026:
+   * "also do the same for pakalpojumi for consistency". The course pages still
+   * trace; their artwork is flat colour blocking and traces exactly. */
+  const PIECES_PAGES = new Set(['pakalpojumi', 'meta', 'seo', 'video', 'ai', 'konsultacijas',
+    'band-video-formats', 'band-ai-flow', 'band-konsultacijas-saruna', 'kurss-hub']);
+  const paged = [];
+  for (const [srcId, name] of PAGES) {
+    if (!PIECES_PAGES.has(name)) { if (trace(srcId, name, altOf(srcId))) ok++; continue; }
+    paged.push({ name, ...(await pieces(srcId, name, altOf(srcId))) }); ok++;
+  }
+  console.log(`  ${paged.length} page motifs assembled from pieces: ` +
+    paged.map((m) => `${m.name} ${m.n}`).join(', ') +
+    ` - worst reassembly ${Math.max(...paged.map((m) => m.worst)).toFixed(1)}/255`);
 }
 
 if (only !== '--pages-only') {
@@ -360,4 +378,4 @@ for (const [srcId, name] of pairs.filter(([, n]) => !n.startsWith('post-'))) {
 }
 
 fs.writeFileSync('/tmp/motif-pairs.json', JSON.stringify(pairs));
-console.log(`done: ${ok} motifs traced from the original artwork`);
+console.log(`done: ${ok} motifs built from the original artwork`);

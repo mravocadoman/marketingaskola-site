@@ -2142,14 +2142,32 @@ Five course motifs, same solid-fill language and `--i` stagger as the service
 ones: `kurss-meta`, `kurss-google`, `kurss-seo`, `kurss-tiktok`, `kurss-hub`.
 All five course pages now use `page-hero--media`. Zero strokes across the set.
 
-**In-page motifs use `.motif--scroll` and ride the reveal observer that already
-exists** in `main.js` - the parent picks up `.in` / `.is-visible` and the parts
-stagger from there. No second observer.
+**`.motif--scroll` rides the reveal observer that already exists** in
+`main.js` - the parent picks up `.in` and the parts stagger from there. No
+second observer.
 
-**The holding `opacity: 0` sits INSIDE the `prefers-reduced-motion:
-no-preference` block, and must stay there.** Under `reduce` it is never
-applied, so the drawing is simply present rather than invisible waiting for an
-observer that will never fire. That is the failure mode this pattern invites.
+**Correction, 10 Sep 2026: until that day NOTHING on the site carried
+`.motif--scroll`.** The CSS existed, no element used it, so every in-page motif
+ran the page-LOAD animation and had finished assembling before anyone scrolled
+to it. It is applied now on the `/pakalpojumi/` tiles and on the in-page bands
+of `/video-reklama/`, `/ai-un-automatizacijas/` and `/marketinga-konsultacijas/`.
+The course catalog tiles and the kursi hub band still run on load. Three fixes
+came with it, each measured in headless Chrome:
+
+- **The hold is `.reveal:not(.in) .motif--scroll .m`, not a bare
+  `.motif--scroll .m`.** The bare rule hid the drawing FOREVER wherever the
+  observer never runs - JS off, or no IntersectionObserver - because `.in`
+  never arrives. `.reveal` is only ever added by main.js, so without it
+  nothing is held. Verified: with JS disabled every tile piece is at opacity 1.
+- **A second selector covers the class ON the revealed element itself**
+  (`.reveal.in.motif--scroll .m`). A `.media` band is its own reveal target,
+  and a descendant selector can never match an element's own class - the band
+  would never have animated in.
+- **Fill mode is `both`, not `forwards`**, so each piece holds its from-state
+  through its own delay now that the hold rule releases the moment `.in` lands.
+
+Under `reduce` none of this applies (it sits inside the no-preference block and
+main.js adds no `.reveal`), so the drawing is simply present.
 
 ## Motifs are TRACED from the original artwork, never redrawn (9 Sep 2026)
 
@@ -2385,8 +2403,47 @@ against a plain `<img>` at the same size showed the same numbers, because an
 SVG `<image>` and an `<img>` resample at a different sub-pixel phase. Only an
 unclipped `<image>` inside the same svg isolates the clipping.
 
-Current state: **42 posts assembled from pieces (8-24 each, 476 KB of inline
-markup in total, 5.5 KB gzipped at worst); 15 page motifs traced.** Nothing
+**The service pages are pieces too (10 Sep 2026).** Owner: *"also do the same
+for pakalpojumi for consistency; what we display in pakalpojumi single page
+also put on pakalpojumi overall page."* Ten page motifs moved from trace to
+pieces - the six service heroes (`pakalpojumi`, `meta`, `seo`, `video`, `ai`,
+`konsultacijas`), the three service bands, and `kurss-hub`, because the hub
+shows it as its sixth tile. `PIECES_PAGES` in `build-motifs.mjs` is the list.
+The four course heroes and `band-services-module` still trace. The AI hero was
+38 traced shapes taking 3.2s to assemble; as capped pieces it is 24 in ~2s.
+
+**Every tile on `/pakalpojumi/` shows the header of the page it links to** -
+`<figure class="cell-media cell-media--motif motif--scroll">` around the SAME
+include the service page uses, assembling when scrolled to. They used to show
+unrelated band artwork: the Facebook tile had concentric rings while its page
+showed a phone, and the SEO tile had the SEO *course* motif. Keep them in
+step: a new service page gets its header include in its hub tile, not a
+picture of its own. **The homepage grid (three tiles) still shows the old band
+rasters** - same principle would apply there; not changed without asking.
+
+**The ten page-motif sources were NOT ground-matched,** despite the 9 Sep note
+above saying the six heroes were: measured, 0% of their ground sat on the
+canvas (mean offset 2.4-6.1/255). The pieces gate would have refused them.
+All ten are matched now.
+
+**Clips reach past the picture's own edge.** The pieces grid is padded by one
+ground cell all round. A clip edge lying exactly ON the image edge
+anti-aliases a pixel the image edge already anti-aliases, so wherever artwork
+is cropped by the frame - the house style does that deliberately - the last
+row rendered up to 24/255 dimmer (the clapperboard on `/video-reklama/`). The
+same fix took the worst blog-header block from 3.7 to 0.9/255.
+
+**Checked in headless Chrome, all of it:** each hub tile shows its own
+service's header, every tile piece stays at opacity 0 until its card is
+revealed and then runs the scroll animation, every hero, band and tile
+finishes within 3/255 of an unclipped image in the same svg, JS off shows
+everything, reduced motion shows everything with nothing animating.
+**When testing a scroll motif, wait for `.in` before freezing animations** - the
+first pass froze them before the observer fired, photographed held-invisible
+pieces and reported 117-246/255 "errors" that were never there.
+
+Current state: **42 posts and 10 page motifs assembled from pieces; 5 page
+motifs traced** (the four course heroes and `band-services-module`). Nothing
 falls back to a still. `post.njk`'s `{% elif image %}` fallback still exists
 for a post missing from the map.
 

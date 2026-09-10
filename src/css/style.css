@@ -1179,11 +1179,20 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
      The holding opacity:0 lives INSIDE this no-preference block on purpose -
      under `reduce` it is never applied, so the drawing is simply present
      rather than stuck invisible waiting for an observer that never fires. */
-  .motif--scroll .m { opacity: 0; }
+  /* Held hidden ONLY while main.js is holding the reveal (.reveal without .in).
+     It used to be a bare `.motif--scroll .m`, which hid the drawing forever
+     wherever the observer never ran - JS off, or no IntersectionObserver.
+     The second selector of each pair covers the class sitting ON the revealed
+     element itself (a .media band is its own reveal target), where a
+     descendant selector can never match. `both` fill holds the from-state
+     through each piece's delay, now that nothing else does. */
+  .reveal:not(.in) .motif--scroll .m,
+  .reveal.motif--scroll:not(.in) .m { opacity: 0; }
   .reveal.in .motif--scroll .m,
+  .reveal.in.motif--scroll .m,
   .is-visible .motif--scroll .m,
   .in .motif--scroll .m {
-    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: calc(var(--i, 0) * 0.07s);
   }
   /* Parts assemble in drawing order, then the whole motif drifts with the rest
