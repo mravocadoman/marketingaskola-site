@@ -2259,10 +2259,54 @@ acting on them — which covers are photographic, and which lost artwork with
 their diff and ink-kept scores. **All 42 posts animate; nothing falls back.**
 
 Everything measured above is still true and still worth reading — it is the
-reason the report exists. Treat a name on either list as *"redraw this cover as
-flat-block art"*, the way the ten covers on 10 Sep were redrawn, not as
-something to hide. Put the `continue` back in `photographic()` and the early
-`continue` back in the gate to return to stills; both are commented in place.
+reason the report exists. Put the `continue` back in `photographic()` to
+return photographs to stills; it is commented in place.
+
+### Tiles: when the trace loses the picture (10 Sep 2026, same day again)
+
+Reversing the gate shipped every trace — and six of them assembled into a
+FRAGMENT. Owner, pointing at the AI article: *"this is not animated"*, then
+*"the other images are still not animating! go through all of them."* It was
+animating; it was building a grey face and two dots, because the whole cyan
+network had been lost. Checked all 41 side by side, cover against final frame:
+the failures were exactly the line-and-dot artwork — `maksligais-intelekts-
+marketinga` (network gone), `socialie-tikli` (mesh and arcs gone),
+`marketinga-plans` (grid and chart gone), `marketinga-agentura-uzlabo-
+pardosanu` (dot cloud gone), `epasta_marketings` (fan became one wedge),
+`digitala-marketinga-tendences` (rising curve gone). Thin anti-aliased lines
+and dot fields do not survive quantisation — the limit this file already
+recorded for the rejected bands.
+
+**So `build-motifs.mjs` assembles those covers from their OWN pixels.** When a
+trace keeps under **0.8 of the ink**, the include is rewritten as square
+128px tiles of the real cover — each tile a clipped copy of one `<image>`,
+rising into place in a bottom-left to top-right sweep — so it ends on the
+COMPLETE artwork, because it is the artwork. Seven posts get tiles (the six
+above plus `digitala-marketinga-agentura-izaugsmei`, whose rings were lost).
+Same `<g class="m">` parts, same stagger CSS, same file path, so `post.njk` and
+the map did not change. Verified frame by frame at 2x: every final frame is
+the cover, no rectangle, no seams.
+
+- **Ink kept is the test, not diff.** Three traces flag `diff > 3%` with ink
+  kept ~1.0 (`5-visizplatitakas-...`, `atslegvardu-izpete`,
+  `instagram-reels-marketingam`) and look right — many small shapes a pixel
+  off. They stay traces; the report lists them as "loose fit, check by eye".
+- **Tiles need the cover's ground matched to `#020d1c`** (`tools/match-
+  ground.mjs`, ceiling raised to 0.995 for sparse covers). Then only tiles
+  holding artwork are emitted and the picture materialises out of the page.
+  Emission uses a 12/255 tolerance, not equality — the q90 re-encode leaves
+  1-3/255 of ringing that flagged all 96 tiles. Unmatched, every tile is
+  emitted (complete, never holed) and the build prints a WARNING naming the
+  file to match. Covers with house-style grain still emit all 96; those tiles
+  are canvas plus faint grain and are invisible.
+- **Tiles rise without scaling** (`.motif.motif--tiles .m { animation-name:
+  tile-in }`): a clipped `<image>`'s fill-box is the WHOLE picture, so a scale
+  would pivot every tile on the picture's centre.
+- **`--i` is normalised to 0-20** whatever the tile count, so a tile motif
+  takes as long as a 20-part trace (~2s) instead of growing with the picture.
+- **`imgBust` stamps `href="/img/…"` as well as `src`** — the tiles take their
+  picture from an SVG `<image href>`, which the transform used to skip, so a
+  redrawn cover would have stayed cached for a year inside the tiles.
 
 Checked on the page rather than by score, because the scores mislead here:
 `tiktok-reklamas-klientu-piesaistisanai` traces to three shapes and still reads
@@ -2438,14 +2482,13 @@ no drawing moved, and the file got 4.9% smaller. `npm run derived` picks the
 stale og twin up on its own (it compares mtimes, no `--force`), and rewrites
 only that twin — the other 47 re-encode byte-identical.
 
-**`match-ground.mjs` cannot be pointed at blog covers as it stands.** Its
-15-95% guard rejects 4 of the 9 post covers outright at 95.6-98.7% matched,
-`cover-socialie-tikli` among them. That band was calibrated for hero motifs,
-which target 35-45% ink and so sit at 55-65% ground; a sparse blog cover is
-legitimately ~97% ground and is not wrong for being so. It prints `SKIP` and
-**still exits 0**, so a run over a list of paths looks like it worked — read
-the per-file lines, never the exit code. Raise the ceiling deliberately before
-using it there.
+**`match-ground.mjs`'s ceiling was 95%, which refused sparse blog covers**
+(4 of 9 at 95.6-98.7% matched, `cover-socialie-tikli` among them) — the band
+was calibrated for hero motifs at 55-65% ground. Raised to **99.5%** the same
+day, when the tile motifs needed six covers matched; ink was checked before
+and after on all six and moved by at most 0.02%. It still prints `SKIP` and
+**still exits 0** on a refusal, so read the per-file lines, never the exit
+code.
 
 **The rewrite is a lossy q80 -> q90 re-encode and moves sizes both ways** —
 across those nine, -25% on a sparse drawing but **+16.6%** on a photographic

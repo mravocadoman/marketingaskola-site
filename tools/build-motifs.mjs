@@ -94,9 +94,69 @@ const trace = (srcId, name, alt) => {
   } catch { console.log(`  FAILED ${srcId}`); return false; }
 };
 
+/* TILES - for a cover the tracer cannot keep.
+ *
+ * Thin anti-aliased lines and dot fields do not survive quantisation: the
+ * area threshold drops them, so a network of lines comes back as a face and two
+ * dots. Owner, 10 Sep 2026, after seeing those: the header "is not animating".
+ * A still is not the answer either ("it was better than just plain image").
+ *
+ * So the real cover is assembled from its own pixels: square tiles of the
+ * picture, each a clipped copy of one <image>, rising into place in a diagonal
+ * sweep. It ends on the COMPLETE artwork, because it is the artwork.
+ *
+ * With the ground matched to #020d1c (tools/match-ground.mjs), only tiles that
+ * hold ARTWORK are emitted - a pixel further from the canvas than the matcher's
+ * own 12/255 tolerance - so the picture materialises out of the page. Exact
+ * equality is the wrong test: the q90 WebP re-encode leaves 1-3/255 of ringing
+ * across the ground, which flagged all 96 tiles on every cover. Unmatched, every
+ * tile is emitted - the picture is still complete, never holed, but its
+ * off-canvas ground shows as a faint rectangle, so the build warns. */
+const T = 128;          // tile edge in source px; square, like everything else
+const CANVAS = [2, 13, 28];
+const tiles = async (srcId, name, alt) => {
+  const src = path.join(GEN, `${srcId}.webp`);
+  const { data, info } = await sharp(src).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  const delta = (x, y) => { const i = (y * w + x) * 3;
+    return Math.max(Math.abs(data[i] - CANVAS[0]), Math.abs(data[i + 1] - CANVAS[1]), Math.abs(data[i + 2] - CANVAS[2])); };
+  // Corners within 6/255: WebP noise, not an unmatched ground (those sit at 4-12).
+  const matched = [[0, 0], [w - 1, 0], [0, h - 1], [w - 1, h - 1]].every(([x, y]) => delta(x, y) <= 6);
+  const off = (x, y) => delta(x, y) > (matched ? 12 : 0);
+  const cols = Math.ceil(w / T), rows = Math.ceil(h / T), cells = [];
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+    let hit = false;
+    for (let y = r * T; y < Math.min(h, (r + 1) * T) && !hit; y++)
+      for (let x = c * T; x < Math.min(w, (c + 1) * T); x++) if (off(x, y)) { hit = true; break; }
+    // Bottom-left to top-right, most compositions here rise that way. A small
+    // fixed jitter so the tiles arrive as pieces rather than as a clean wipe.
+    if (hit) cells.push({ c, r, band: c + (rows - 1 - r) + (((c * 7 + r * 13) % 5) - 2) * 0.35 });
+  }
+  cells.sort((a, b) => a.band - b.band);
+  const lo = cells.length ? cells[0].band : 0, hi = cells.length ? cells[cells.length - 1].band : 1;
+  const id = name.replace(/[^a-z0-9-]/gi, '');
+  const P = 2;           // clip overlap in px, so no hairline seam between tiles
+  const defs = [], parts = [];
+  cells.forEach(({ c, r, band }, k) => {
+    // --i spans 0-20 whatever the tile count, so the assembly takes as long as
+    // a 20-part trace (about 2s) instead of growing with the picture.
+    const i = hi > lo ? ((band - lo) / (hi - lo)) * 20 : 0;
+    defs.push(`<clipPath id="${id}-${k}"><rect x="${c * T - P}" y="${r * T - P}" width="${T + 2 * P}" height="${T + 2 * P}"/></clipPath>`);
+    parts.push(`  <g class="m" style="--i:${i.toFixed(2)}"><image href="/img/gen/${srcId}.webp" width="${w}" height="${h}" clip-path="url(#${id}-${k})"/></g>`);
+  });
+  const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  fs.writeFileSync(path.join(OUT, `${name}.njk`),
+    `{# Tiles of ${srcId}.webp - the tracer could not keep this artwork, so the real picture\n` +
+    `   assembles from its own pixels. Regenerate with tools/build-motifs.mjs; do not hand-edit. #}\n` +
+    `<svg class="motif motif--tiles" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(alt)}" xmlns="http://www.w3.org/2000/svg">\n` +
+    `  <defs>${defs.join('')}</defs>\n${parts.join('\n')}\n</svg>\n`);
+  return { n: cells.length, of: cols * rows, matched };
+};
+
 let ok = 0;
 const rejected = [];
 const photo = [];
+const tiled = [];
 if (only !== '--posts-only') {
   console.log('page motifs:');
   for (const [srcId, name] of PAGES) if (trace(srcId, name, altOf(srcId))) ok++;
@@ -142,7 +202,14 @@ if (only !== '--pages-only') {
      * ships; the numbers below say which finish on a rough picture, so a bad
      * one gets redrawn as flat-block art rather than quietly hidden. */
     const { pct, kept } = await fidelity(img, `post-${slug}`);
-    if (pct > 3 || kept < 0.8 || kept > 1.3) rejected.push({ slug, img, pct, kept });
+    /* Retained ink is the test that means "the picture is gone" - a diff over 3%
+     * on its own is usually just many small shapes sitting a pixel off, and
+     * those traces look right. Under 0.8 of the ink, the trace lost the artwork:
+     * build the real cover from tiles instead. */
+    if (kept < 0.8) {
+      const t = await tiles(img, `post-${slug}`, `Raksta motīvs: ${title.slice(0, 60)}`);
+      tiled.push({ slug, img, kept, ...t });
+    } else if (pct > 3 || kept > 1.3) rejected.push({ slug, img, pct, kept });
     map[slug] = `post-${slug}`; ok++;
   }
   /* MERGE, never replace. A checkout that cannot see every post - a worktree,
@@ -158,8 +225,13 @@ if (only !== '--pages-only') {
     console.log(`  ${photo.length} traced from a photographic cover (the figure will be rough):`);
     for (const sl of photo) console.log(`    ${sl}`);
   }
+  if (tiled.length) {
+    console.log(`  ${tiled.length} assembled from tiles of the real cover (the trace lost the artwork):`);
+    for (const t of tiled) console.log(`    ${t.slug.padEnd(52)} ink kept ${t.kept.toFixed(2)}  ${String(t.n).padStart(3)}/${t.of} tiles` +
+      (t.matched ? '' : `  WARNING ground not #020d1c - run: node tools/match-ground.mjs src/img/gen/${t.img}.webp`));
+  }
   if (rejected.length) {
-    console.log(`  ${rejected.length} shipped despite losing artwork (redraw as flat-block art to fix):`);
+    console.log(`  ${rejected.length} traced with a loose fit (diff over 3%, artwork kept - check by eye):`);
     for (const r of rejected)
       console.log(`    ${r.slug.padEnd(52)} diff ${r.pct.toFixed(2).padStart(5)}%  ink kept ${r.kept.toFixed(2)}`);
   }

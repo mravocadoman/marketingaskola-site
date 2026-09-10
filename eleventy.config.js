@@ -86,7 +86,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform("imgBust", function (content) {
     if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
     return content
-      .replace(/(\ssrc=")(\/img\/[^"?#]+)(")/g, (_, a, url, z) => a + stamp(url) + z)
+      // href too: an SVG <image> (the tile motifs) takes its picture from href,
+      // and without the stamp a redrawn cover stays cached for a year there.
+      .replace(/(\s(?:src|href)=")(\/img\/[^"?#]+)(")/g, (_, a, url, z) => a + stamp(url) + z)
       // og:image and twitter:image are absolute, and social scrapers cache by
       // URL just as hard - without this a redrawn cover keeps the old preview.
       .replace(/(\scontent="https:\/\/marketingaskola\.lv)(\/img\/[^"?#]+)(")/g,

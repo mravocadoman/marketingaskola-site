@@ -20,7 +20,11 @@ import path from 'node:path';
 
 const CANVAS = [2, 13, 28];
 const TOL = 12;          // max per-channel distance still counted as "ground"
-const MIN = 0.15, MAX = 0.95;
+// MAX was 0.95, set for hero motifs (35-45% ink, so 55-65% ground). A sparse
+// blog cover is legitimately ~97-99% ground - that refused 4 of 9 covers on
+// 10 Sep 2026 while still exiting 0. 0.995 still refuses an image whose
+// ARTWORK falls inside the tolerance, which is what the ceiling is for.
+const MIN = 0.15, MAX = 0.995;
 
 const files = process.argv.slice(2);
 if (!files.length) { console.error('usage: node tools/match-ground.mjs <file.webp…>'); process.exit(1); }
