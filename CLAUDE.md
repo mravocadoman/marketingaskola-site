@@ -2262,7 +2262,7 @@ Everything measured above is still true and still worth reading — it is the
 reason the report exists. Put the `continue` back in `photographic()` to
 return photographs to stills; it is commented in place.
 
-### Tiles: when the trace loses the picture (10 Sep 2026, same day again)
+### Tiles: when the trace loses the picture (10 Sep 2026, same day again) — SUPERSEDED by PIECES, below
 
 Reversing the gate shipped every trace — and six of them assembled into a
 FRAGMENT. Owner, pointing at the AI article: *"this is not animated"*, then
@@ -2322,15 +2322,73 @@ from the PAGES list at the same time. Their pages went back to rasters on
 9 Sep and nothing includes them, so tracing them again produced three files no
 template referenced and three warnings a reader had to learn to ignore.
 
-Current state: **29 posts animate, 12 keep their raster** (5 photographic,
-7 that lost the artwork), and one clean run of `node tools/build-motifs.mjs`
-prints no warnings at all. 68 inline motifs across the site, none blank.
+### PIECES — every post header is its own cover, split by its own objects (10 Sep 2026)
 
-Current state: **43 traced, 16 keep their raster.** A rejected motif is not a
-problem to fix - some of this artwork is not flat-block art and does not
-survive quantisation. `post.njk` falls back to `<img>`, and three bands went
-back to their rasters. A still picture that looks right beats an animated one
-that does not.
+Owner, after trace → still → trace → tiles in one day: *"so how do we fix it?
+We went from this to static image back to this state. Can we make it fuller so
+full picture is rendered piece by piece?"* **This is the current mechanism for
+all 42 posts.** Traces remain for the page motifs only, which are flat colour
+blocking and trace exactly.
+
+**What it is.** `pieces()` in `tools/build-motifs.mjs` splits the cover the way
+the tracer does - by colour class, then by connected region, masses first and
+the cyan accent last - but fills every piece with the **real pixels** of the
+cover: each piece is a clipped copy of one `<image>`. A photograph stays a
+photograph, a hairline stays a hairline, a dot field stays a dot field. And
+because every pixel that is not ground belongs to exactly one piece, **the last
+frame IS the cover** - nothing approximated, nothing dropped. The tracer's two
+failure modes (quantising continuous tone, discarding regions under a minimum
+area) are gone by construction, which is why no score or threshold is needed.
+
+**Rules that each came from a measured failure:**
+
+- **Ground = within 12/255 of `#020d1c`**, match-ground's own tolerance, so on
+  a matched cover everything outside the pieces is byte-for-byte the page
+  canvas. **Every post cover is ground-matched now** (24 more on 10 Sep).
+  The old "corners within 6/255 = matched" test was too loose: seven covers
+  passed it with **0%** of their ground actually on the canvas. Measure the mean
+  offset of the ground population, not the corners.
+- **The build reassembles the pieces with sharp and FAILS** if any 32px block
+  differs from the cover by more than 3/255, naming the file to ground-match.
+  It caught the loose-corner covers on the first run. Current worst: 0.9/255.
+- **Clips reach one cell past their piece** - into ground, and into pieces
+  drawn earlier, never into a later one. Drawn tight, an anti-aliased clip edge
+  took coverage from the pixels it crossed: a white hairline along a piece's
+  edge rendered visibly thinner, and touching pieces left faint seams. With the
+  margin every clip edge lands on identical pixels already on screen.
+  Verified in Chrome against one unclipped `<image>` in the SAME svg (so only
+  the clipping varies): average worst block 0.5/255 at 1x and 2x.
+- **Cyan is decided by chroma relative to brightness**, `(b-r) > 0.6b` and
+  `(g-r) > 0.5g`. Nearest-colour, and then a fixed RGB difference, both filed
+  the dim anti-aliased edge of a cyan line as grey, so a faint outline of every
+  cyan element arrived with the grey masses before the accent itself.
+- **A sparse region spanning the frame is split** (under 35% of its box, over
+  3% of the frame) - a dot field or a grid is ONE connected region and would
+  arrive in a single step. The cut goes where the cells **balance** (each side
+  keeps a quarter), through the emptiest gap there; cutting at the middle of
+  the box left one side empty whenever the art crowded into a corner, and
+  `marketinga-plans` assembled in 3 steps. Solid objects are never split.
+- **Each piece settles around its OWN centre**: inline `transform-origin` in
+  user units plus `.motif.motif--pieces .m { transform-box: view-box }`. A
+  clipped `<image>`'s fill-box is the whole picture, so the traces'
+  `fill-box` + `center` would pivot every piece on the picture's middle.
+- `--i` is capped to 0-20, so 24 pieces take as long as a 20-part motif (~2s).
+
+**The cover is preloaded on post pages** (`base.njk`, `layout == "post.njk"`),
+because it is now the first thing the hero needs. `imgBust` stamps the preload,
+the `<image href>` and the blog card with the same `?v=`, so it is one fetch -
+and usually a cache hit, since the reader arrived from the blog index card.
+
+**Measure a hero in Chrome against the SVG, not against an `<img>`.** The
+first comparison put the pieces 11-25/255 off the cover; the same comparison
+against a plain `<img>` at the same size showed the same numbers, because an
+SVG `<image>` and an `<img>` resample at a different sub-pixel phase. Only an
+unclipped `<image>` inside the same svg isolates the clipping.
+
+Current state: **42 posts assembled from pieces (8-24 each, 476 KB of inline
+markup in total, 5.5 KB gzipped at worst); 15 page motifs traced.** Nothing
+falls back to a still. `post.njk`'s `{% elif image %}` fallback still exists
+for a post missing from the map.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 

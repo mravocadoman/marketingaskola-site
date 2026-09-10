@@ -1149,7 +1149,6 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    during the delay. Same rise as .reveal, so the page reads as one system. */
 @keyframes hero-rise { from { opacity: 0; transform: translateY(var(--rise, 14px)); } }
 @keyframes motif-in { from { opacity: 0; transform: translateY(12px) scale(0.94); } }
-@keyframes tile-in { from { opacity: 0; transform: translateY(24px); } }
 @keyframes motif-in-scroll { from { opacity: 0; transform: translateY(14px) scale(0.94); } to { opacity: 1; transform: none; } }
 @keyframes hero-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 @media (prefers-reduced-motion: no-preference) {
@@ -1201,11 +1200,13 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
     animation: motif-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards;
     animation-delay: calc(0.46s + var(--i, 0) * 0.075s);
   }
-  /* Tile motifs rise WITHOUT scaling. Each tile is a clipped copy of the whole
-     picture, so its fill-box is the whole picture's box, and a scale would pivot
-     every tile on the picture's centre and pull the edges in. Translation needs
-     no origin, so it is correct for any box. */
-  .motif.motif--tiles .m { animation-name: tile-in; }
+  /* Post headers are PIECES of the real cover: each piece is a clipped copy of
+     the whole picture, so its fill-box is the whole picture's box and
+     `center` would pivot every piece on the picture's middle. Each piece
+     carries its own transform-origin inline, in user units, which is what
+     view-box resolves them against - so it settles in place like a traced
+     shape does. */
+  .motif.motif--pieces .m { transform-box: view-box; }
   .hero-media:has(.motif) { animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards, hero-drift 9s ease-in-out 2s infinite; }
 
   /* Tick items cascade inside their own list (main.js staggers by sibling
