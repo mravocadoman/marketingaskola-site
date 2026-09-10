@@ -2074,6 +2074,26 @@ heading-comparison misses this, because the catalog renders course names from
 `courseSessions` rather than as static markup - compare what RENDERS, not what
 is written in the page source.
 
+**Three service pages got one on 10 Sep 2026, and two deliberately did not.**
+Owner asked for figures on "the rest of pakalpojumi". Each page was checked
+against the rule above first - a figure must say something the cells beside it
+do not.
+
+| page | figure | the gap it fills |
+| --- | --- | --- |
+| `/facebook-reklama/` | `meta-kas-izskir` | signal, genuinely different creatives, the learning phase - the blog's own shared editorial line, which the service page never stated |
+| `/video-reklama/` | `video-kas-aptur` | first seconds, one message, text on screen. Section 01 raises "Video pazūd plūsmā" and nothing answered it |
+| `/ai-un-automatizacijas/` | `automatizacijas-prieksnoteikumi` | what has to be true BEFORE automating. The page says what gets automated and what is not promised, never the preconditions |
+
+**`/pakalpojumi/` and `/seo-pakalpojumi/` have none, on purpose.** The hub runs
+services (6 cells) → process (4 steps) → the ladder (3 rungs); every angle a
+three-item figure could take is already a section, and `ladder.njk` closes the
+page. `/seo-pakalpojumi/` runs situation (3) → contents (6) → timelines (4) →
+costs (3) → FAQ, and "Tehniskais SEO" and "Saturs" are literally two of its
+cells, so the three-pillars framing would restate them. Adding one to either is
+the `kursi-tris-kanali` mistake again. If a figure is ever wanted there, give
+it a subject none of those sections covers - not a reshuffle of them.
+
 **Still open, same class of problem:** `konsultacija-kad` sits immediately
 after section 01 on `/marketinga-konsultacijas/`, and both answer "is this for
 me" in three items. The wording differs (the section is situations, the figure
@@ -2192,6 +2212,51 @@ threshold it yields **248 fragments**, which is both meaningless to animate and
 past the tool's own sanity guard. Lowering the threshold or raising the trace
 resolution does not help, because the strokes are anti-aliased rather than
 flat. This technique suits flat colour blocking and nothing else.
+
+### The gate RUNS now, and a photograph is never traced at all (10 Sep 2026)
+
+Owner, with two URLs: *"some animations like these dont animate until the end."*
+Both were traces that finish on a picture which is not the artwork.
+
+Two separate faults, and the second is the one worth remembering.
+
+**1. The gate only reported.** `verify-motifs.mjs` measured every trace and
+printed "(keeps X.webp)" beside the failures - but nothing acted on it, and
+`build-motifs.mjs` went on mapping every trace that did not throw, so all nine
+shipped. It also read `/tmp/motif-pairs.json`, a file no committed tool wrote.
+The decision now lives where the map is written: build-motifs rasterises each
+trace with **sharp** (no headless Chrome, so the gate cannot be skipped by
+forgetting a second command), applies the same two tests at the same
+thresholds, and a post that fails is left out of `postMotifs.json` entirely -
+`post.njk`'s `{% elif image %}` then renders the cover as a picture. The sharp
+numbers match the Chrome ones to two decimals, so the metric transferred
+cleanly.
+
+**2. A frame-global test cannot see a small subject being destroyed.** This is
+the part that will catch someone out again. `vai-manam-biznesam-...` scored
+**diff 0.27%, ink kept 1.01** - very nearly perfect - with the standing figure
+in it reduced to a smear of specks. The figure is a tiny share of the frame;
+the wide band and the cyan branch carry nearly all the ink, so losing the
+person entirely moves neither number. **Do not answer this by tightening the
+thresholds** - at any setting that catches it, half the good traces die too.
+
+So photographic covers are decided from the SOURCE, not the score:
+`build-motifs.mjs` skips any cover whose manifest prompt says *photograph*, and
+five posts keep their raster on that rule alone
+(`digitala-marketinga-agentura-izaugsmei`, `maksligais-intelekts-marketinga`,
+`marketinga-macibas`, `tiktok-reklamas-klientu-piesaistisanai`,
+`vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings`). Continuous tone
+cannot survive quantisation to three flat colours; there is no threshold that
+makes it survive.
+
+`band-meta-targeting`, `band-smm-orbit` and `band-smm-cadence` were dropped
+from the PAGES list at the same time. Their pages went back to rasters on
+9 Sep and nothing includes them, so tracing them again produced three files no
+template referenced and three warnings a reader had to learn to ignore.
+
+Current state: **29 posts animate, 12 keep their raster** (5 photographic,
+7 that lost the artwork), and one clean run of `node tools/build-motifs.mjs`
+prints no warnings at all. 68 inline motifs across the site, none blank.
 
 Current state: **43 traced, 16 keep their raster.** A rejected motif is not a
 problem to fix - some of this artwork is not flat-block art and does not
