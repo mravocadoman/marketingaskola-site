@@ -2249,6 +2249,30 @@ five posts keep their raster on that rule alone
 cannot survive quantisation to three flat colours; there is no threshold that
 makes it survive.
 
+**SUPERSEDED THE SAME DAY — the gate REPORTS, it no longer excludes.** Shown
+three of the resulting stills, the owner: *"wait, revert, why are the headers
+not animated any more?"* and then *"well it was better than just plain image
+that's there now."* So the trade is settled in the other direction: **a rough
+assembly beats a still.** `build-motifs.mjs` traces and maps every post,
+photographic covers included, and prints the two lists at the end instead of
+acting on them — which covers are photographic, and which lost artwork with
+their diff and ink-kept scores. **All 42 posts animate; nothing falls back.**
+
+Everything measured above is still true and still worth reading — it is the
+reason the report exists. Treat a name on either list as *"redraw this cover as
+flat-block art"*, the way the ten covers on 10 Sep were redrawn, not as
+something to hide. Put the `continue` back in `photographic()` and the early
+`continue` back in the gate to return to stills; both are commented in place.
+
+Checked on the page rather than by score, because the scores mislead here:
+`tiktok-reklamas-klientu-piesaistisanai` traces to three shapes and still reads
+correctly, since the figure survives as negative space punched in the cyan bar;
+`digitala-marketinga-agentura-izaugsmei`, a true cut-out photograph, comes back
+as a flat-poster reading of the coat and the cyan disc — rougher than the
+photo, unmistakably the same picture. **Screenshot a hero AFTER its stagger
+finishes**: 21 parts take about 2s (`0.46s + i x 0.075s`), and a capture taken
+straight after navigation shows an empty hero and looks like a broken motif.
+
 `band-meta-targeting`, `band-smm-orbit` and `band-smm-cadence` were dropped
 from the PAGES list at the same time. Their pages went back to rasters on
 9 Sep and nothing includes them, so tracing them again produced three files no
@@ -2427,26 +2451,32 @@ using it there.
 across those nine, -25% on a sparse drawing but **+16.6%** on a photographic
 one. Cheap on a single flat motif, worth thinking about in bulk.
 
-### The underscore trap in build-motifs, and why not to fix it alone
+### The underscore trap in build-motifs (fixed 10 Sep 2026)
 
-`build-motifs.mjs` reads the cover out of front matter with
+`build-motifs.mjs` read the cover out of front matter with
 `/^image:\s*"\/img\/gen\/([a-z0-9-]+)\.webp"/` — **no underscore in the
 character class.** `epasta_marketings` is the one post whose cover carries one,
-so it is silently skipped as `no generated cover`, never gets a motif, and is
-the site's only raster hero. That is why the frameless set is not empty.
+so it was silently skipped as `no generated cover`, never got a motif, and was
+the site's only still hero — which is why the frameless raster set was not
+empty. The class is `[a-z0-9_-]+` now.
 
-**Do not "fix" that class on its own.** Traced, that cover scores
-`diff 10.05%, ink kept 0.24` against `verify-motifs.mjs` — a decisive fail, so
-the post should keep its raster regardless. The regex is only safe to fix once
-the reject list is wired into the map; until then build maps whatever traces,
-and the fix would ship a motif that lost three quarters of its artwork.
+It was deliberately left broken for one commit, while the gate still excluded:
+that cover scores `diff 10.02%, ink kept 0.24`, so fixing the regex then would
+have shipped a motif that lost three quarters of its artwork. Once the owner
+chose rough assemblies over stills that reason evaporated, and it went in.
+
+**Its cover is still ground-matched and that is not wasted.** `post.njk` falls
+back to `{% elif image %}` whenever a slug is missing from the map, so the
+raster is one deleted mapping away from being on screen again.
 
 Two smaller things found alongside it: `imagery.json` calls that slot
 `cover-epasta-marketings` (hyphen) while the post's front matter points at the
 underscore name, so both files sit in `src/img/gen/` and the hyphen one is
-unreferenced; and **`npm run motifs` rewrites `postMotifs.json` from whatever
-posts are on disk**, so running it in a worktree that cannot see the untracked
-draft silently drops that post's mapping.
+unreferenced; and **`npm run motifs` used to rewrite `postMotifs.json` from
+whatever posts are on disk**, so running it in a worktree that cannot see the
+untracked draft silently dropped that post's mapping. It MERGES over the
+existing map now, which is what makes it safe to run from a worktree at all —
+do not turn that back into a plain replace.
 
 ## A dark motif needs ~35-45% ink — applies to RASTER motifs only (9 Sep 2026)
 
