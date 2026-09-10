@@ -2326,6 +2326,63 @@ Both sit inside `prefers-reduced-motion: no-preference`. Verified under
 1 — worth checking explicitly, because `backwards` fill on a cancelled
 animation is exactly how an element ends up stuck invisible.
 
+## Ground-matching is scoped by FRAMELESS, not by "is it a raster" (10 Sep 2026)
+
+`.hero-media` is `border: 0; background: none` — **the only frameless raster
+context in the stylesheet.** Everywhere else artwork appears carries a
+hairline: `.media` (`--wide/--square/--portrait`), `.cell-media`,
+`.post-card > a:first-child`, `.infographic`. A ground 3-6/255 off the canvas
+is invisible inside a border, so none of those need matching, and leaving them
+alone is the rule rather than an exception to it.
+
+That answers "should ALL raster fallbacks be ground-matched, or none" —
+**neither: whatever renders in `.hero-media`.** The rejected page motifs are
+not in it. The three bands that went back to their rasters render in
+`.cell-media` and `.media--wide`, both bordered, so they are already correct
+and matching them would buy nothing.
+
+Measured across the built site, exactly one raster renders frameless:
+`cover-epasta_marketings.webp` on `/epasta_marketings/`. Ground-matched — the
+corner delta went 5 → **0.0/255**, sampled off the rendered `<img>` in the
+browser against a page canvas of `rgb(2,13,28)`; ink is identical at 13.12%, so
+no drawing moved, and the file got 4.9% smaller. `npm run derived` picks the
+stale og twin up on its own (it compares mtimes, no `--force`), and rewrites
+only that twin — the other 47 re-encode byte-identical.
+
+**`match-ground.mjs` cannot be pointed at blog covers as it stands.** Its
+15-95% guard rejects 4 of the 9 post covers outright at 95.6-98.7% matched,
+`cover-socialie-tikli` among them. That band was calibrated for hero motifs,
+which target 35-45% ink and so sit at 55-65% ground; a sparse blog cover is
+legitimately ~97% ground and is not wrong for being so. It prints `SKIP` and
+**still exits 0**, so a run over a list of paths looks like it worked — read
+the per-file lines, never the exit code. Raise the ceiling deliberately before
+using it there.
+
+**The rewrite is a lossy q80 -> q90 re-encode and moves sizes both ways** —
+across those nine, -25% on a sparse drawing but **+16.6%** on a photographic
+one. Cheap on a single flat motif, worth thinking about in bulk.
+
+### The underscore trap in build-motifs, and why not to fix it alone
+
+`build-motifs.mjs` reads the cover out of front matter with
+`/^image:\s*"\/img\/gen\/([a-z0-9-]+)\.webp"/` — **no underscore in the
+character class.** `epasta_marketings` is the one post whose cover carries one,
+so it is silently skipped as `no generated cover`, never gets a motif, and is
+the site's only raster hero. That is why the frameless set is not empty.
+
+**Do not "fix" that class on its own.** Traced, that cover scores
+`diff 10.05%, ink kept 0.24` against `verify-motifs.mjs` — a decisive fail, so
+the post should keep its raster regardless. The regex is only safe to fix once
+the reject list is wired into the map; until then build maps whatever traces,
+and the fix would ship a motif that lost three quarters of its artwork.
+
+Two smaller things found alongside it: `imagery.json` calls that slot
+`cover-epasta-marketings` (hyphen) while the post's front matter points at the
+underscore name, so both files sit in `src/img/gen/` and the hyphen one is
+unreferenced; and **`npm run motifs` rewrites `postMotifs.json` from whatever
+posts are on disk**, so running it in a worktree that cannot see the untracked
+draft silently drops that post's mapping.
+
 ## A dark motif needs ~35-45% ink — applies to RASTER motifs only (9 Sep 2026)
 
 Owner: *"hero section is also too dark now; both before and next to generated
