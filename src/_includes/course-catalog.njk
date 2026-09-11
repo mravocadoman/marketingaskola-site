@@ -29,7 +29,7 @@
 <div class="hgrid hgrid--3">
   {% for c in catalog %}{% if c.slug != catalogExclude %}{% set k = courseSessions.courses[c.key] %}
   <div class="course-tile course-tile--media">
-    <figure class="cell-media cell-media--motif">{% include "motifs/" + c.motif + ".njk" %}</figure>
+    <figure class="cell-media cell-media--motif motif--scroll">{% include "motifs/" + c.motif + ".njk" %}</figure>
     <div class="course-tag">Tiešsaistē · Iesācējiem · {{ k.hours }} stundas</div>
     <h3><a href="{{ c.url }}">{{ c.title }}</a></h3>
     <ul class="tick-list">
@@ -45,7 +45,7 @@
   {% endif %}{% endfor %}
   {% if catalogExclude %}
   <div class="course-tile course-tile--media">
-    <figure class="cell-media"><img src="/img/gen/kursi-programmas-motivs.webp" alt="Abstrakts kāpņveida motīvs, kas attēlo kursu programmas soļus" loading="lazy"></figure>
+    <figure class="cell-media cell-media--motif motif--scroll">{% include "motifs/kurss-hub.njk" %}</figure>
     <div class="course-tag">Katalogs</div>
     <h3><a href="/digitala-marketinga-kursi/">Visi kursi un apmācības vienuviet</a></h3>
     <ul class="tick-list">

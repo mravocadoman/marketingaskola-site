@@ -2149,10 +2149,10 @@ second observer.
 **Correction, 10 Sep 2026: until that day NOTHING on the site carried
 `.motif--scroll`.** The CSS existed, no element used it, so every in-page motif
 ran the page-LOAD animation and had finished assembling before anyone scrolled
-to it. It is applied now on the `/pakalpojumi/` tiles and on the in-page bands
-of `/video-reklama/`, `/ai-un-automatizacijas/` and `/marketinga-konsultacijas/`.
-The course catalog tiles and the kursi hub band still run on load. Three fixes
-came with it, each measured in headless Chrome:
+to it. Since 11 Sep it is on EVERY in-page motif: the tiles on `/` and
+`/pakalpojumi/`, the course catalog tiles, and every band. Headers are the only
+motifs that assemble on load. Three fixes came with it, each measured in
+headless Chrome:
 
 - **The hold is `.reveal:not(.in) .motif--scroll .m`, not a bare
   `.motif--scroll .m`.** The bare rule hid the drawing FOREVER wherever the
@@ -2163,13 +2163,18 @@ came with it, each measured in headless Chrome:
   (`.reveal.in.motif--scroll .m`). A `.media` band is its own reveal target,
   and a descendant selector can never match an element's own class - the band
   would never have animated in.
-- **Fill mode is `both`, not `forwards`**, so each piece holds its from-state
-  through its own delay now that the hold rule releases the moment `.in` lands.
+- **Fill mode is `backwards`** - it holds each piece's from-state through its
+  own delay, and after `.in` the resting style is already opacity 1, so
+  nothing needs holding afterwards. `both` was tried first and was WRONG: a
+  forwards fill keeps the finished animation alive, the piece stays on a GPU
+  layer, and hairlines in it resample differently from the page - measured
+  4.6-5.6/255 along every grid line of the two square bands. The headers
+  already used `backwards` and matched to 0.2/255, which is what gave it away.
 
 Under `reduce` none of this applies (it sits inside the no-preference block and
 main.js adds no `.reveal`), so the drawing is simply present.
 
-## Motifs are TRACED from the original artwork, never redrawn (9 Sep 2026)
+## Motifs are TRACED from the original artwork, never redrawn (9 Sep 2026) — HISTORY: the tracer is retired, every motif is PIECES now (see below)
 
 Owner, after I hand-drew replacements: *"you are not using the same images. I
 asked you to repurpose existing headers - split them by pieces and animate, not
@@ -2408,9 +2413,8 @@ for pakalpojumi for consistency; what we display in pakalpojumi single page
 also put on pakalpojumi overall page."* Ten page motifs moved from trace to
 pieces - the six service heroes (`pakalpojumi`, `meta`, `seo`, `video`, `ai`,
 `konsultacijas`), the three service bands, and `kurss-hub`, because the hub
-shows it as its sixth tile. `PIECES_PAGES` in `build-motifs.mjs` is the list.
-The four course heroes and `band-services-module` still trace. The AI hero was
-38 traced shapes taking 3.2s to assemble; as capped pieces it is 24 in ~2s.
+shows it as its sixth tile. The AI hero was 38 traced shapes taking 3.2s to
+assemble; as capped pieces it is 24 in ~2s.
 
 **Every tile on `/pakalpojumi/` shows the header of the page it links to** -
 `<figure class="cell-media cell-media--motif motif--scroll">` around the SAME
@@ -2418,8 +2422,8 @@ include the service page uses, assembling when scrolled to. They used to show
 unrelated band artwork: the Facebook tile had concentric rings while its page
 showed a phone, and the SEO tile had the SEO *course* motif. Keep them in
 step: a new service page gets its header include in its hub tile, not a
-picture of its own. **The homepage grid (three tiles) still shows the old band
-rasters** - same principle would apply there; not changed without asking.
+picture of its own. **The homepage's three tiles follow the same rule since
+11 Sep**, and so does the catalog's "Visi kursi" tile (the courses hub header).
 
 **The ten page-motif sources were NOT ground-matched,** despite the 9 Sep note
 above saying the six heroes were: measured, 0% of their ground sat on the
@@ -2442,10 +2446,42 @@ everything, reduced motion shows everything with nothing animating.
 first pass froze them before the observer fired, photographed held-invisible
 pieces and reported 117-246/255 "errors" that were never there.
 
-Current state: **42 posts and 10 page motifs assembled from pieces; 5 page
-motifs traced** (the four course heroes and `band-services-module`). Nothing
-falls back to a still. `post.njk`'s `{% elif image %}` fallback still exists
-for a post missing from the map.
+### ONE SYSTEM (11 Sep 2026)
+
+Owner: *"yes, one system"*. **Every motif on the site is pieces now** - 19 page
+motifs and 42 post headers, one builder, one CSS path. The tracer
+(`tools/trace-motif.mjs`) and its checker (`tools/verify-motifs.mjs`) are
+deleted, and with them the fidelity score, the photographic list and the
+`/tmp/motif-pairs.json` handoff: pieces reproduce the picture by construction,
+so there is nothing left to score. The four course heroes and
+`band-services-module` moved over, and **nine pieces of house artwork that were
+still plain `<img>` on live pages became motifs** - the three homepage tiles
+(now the service headers), `band-meta-targeting` and `band-brew-scale` on
+`/facebook-reklama/`, `band-smm-orbit` on `/marketinga-konsultacijas/`,
+`band-smm-cadence` on `/digitala-marketinga-kursi/`, and the catalog's "Visi
+kursi" tile. The line-art bands the tracer could never keep (248 fragments,
+15% ink) come back exact.
+
+**Deliberately NOT converted:** the three retired no-index pages
+(`/produkti/`, `/bezmaksas-e-gramata/`, `/socialo-mediju-marketings/`) keep
+their rasters - frozen on purpose. Blog index and category cards stay plain
+`<img>` thumbnails; forty inline motifs on one index page would be heavy for
+no gain. In-article infographics are the paper style with baked-in text, a
+different thing entirely.
+
+- `npm run motifs` rebuilds every motif (`--posts-only` / `--pages-only`).
+- **`npm run test:motifs`** drives every built page carrying a motif in
+  headless Chrome - found from `_site`, so a new page is covered without
+  touching the test: header pieces animate on load (desktop and phone),
+  in-page pieces stay hidden until scrolled to, every motif ends within
+  4/255 of an unclipped copy of its picture in the same svg, ids unique, and
+  JS-off / reduced-motion both show everything. `BASE=https://marketingaskola.lv`
+  runs it against production. **54 pages, 85 motifs, 301 checks, all passing
+  on 11 Sep.** It needs `npm run serve` (or the preview) running first; a
+  crash inside `page.evaluate` usually means the server died mid-run.
+
+`post.njk`'s `{% elif image %}` fallback still exists for a post missing from
+the map.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 

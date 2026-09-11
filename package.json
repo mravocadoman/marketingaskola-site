@@ -30,6 +30,7 @@
     "articles:tables": "node tools/rebuild-tables.mjs",
     "test:nav": "node tools/test-nav.mjs",
     "test:hero": "node tools/test-hero.mjs",
+    "test:motifs": "node tools/test-motifs.mjs",
     "photos": "node tools/photo-inventory.mjs",
     "derived": "node tools/derived-images.mjs",
     "check:mirror": "node tools/check-site.mjs archive/wordpress-mirror",
@@ -37,6 +38,7 @@
     "test:mobile": "node tools/test-mobile.mjs",
     "whiten": "node tools/whiten-paper.mjs",
     "lv:review": "node tools/lv-review.mjs",
+    "motifs": "node tools/build-motifs.mjs",
     "ground": "node tools/match-ground.mjs"
   },
   "devDependencies": {

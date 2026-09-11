@@ -1184,15 +1184,20 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
      wherever the observer never ran - JS off, or no IntersectionObserver.
      The second selector of each pair covers the class sitting ON the revealed
      element itself (a .media band is its own reveal target), where a
-     descendant selector can never match. `both` fill holds the from-state
-     through each piece's delay, now that nothing else does. */
+     descendant selector can never match. `backwards` fill holds the
+     from-state through each piece's delay, now that nothing else does - and
+     NOT `both`: a forwards fill keeps the finished animation alive, the piece
+     stays on a GPU layer, and hairlines in it resample differently from the
+     rest of the page (measured 4.6-5.6/255 along every grid line). Once .in
+     is on, the resting style is already opacity 1, so nothing needs holding
+     afterwards. */
   .reveal:not(.in) .motif--scroll .m,
   .reveal.motif--scroll:not(.in) .m { opacity: 0; }
   .reveal.in .motif--scroll .m,
   .reveal.in.motif--scroll .m,
   .is-visible .motif--scroll .m,
   .in .motif--scroll .m {
-    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
     animation-delay: calc(var(--i, 0) * 0.07s);
   }
   /* Parts assemble in drawing order, then the whole motif drifts with the rest
