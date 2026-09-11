@@ -1418,14 +1418,28 @@ closers quote a price through `{% offer %}`.
 three rungs in one place — Dari pats (course, price and hours from
 `courseSessions.json`) → the hub; Izlem kopā ar mums (consultation, price
 from `booking.json`) → `/marketinga-konsultacijas/`; Nodod mums (managed
-Meta ads from 500 €/mēn, video and automation priced by scope) →
+Meta ads for ad budgets from 1 000 €/mēn, video and automation priced by
+scope) →
 `/sazinies/`. It closes `/pakalpojumi/` in place of the old cta-band and
 sits above the application form on the course hub. **Exactly ONE
 `.arrow-link` per cell, as a direct child**, so `.cell:has(> .arrow-link)`
 makes each card clickable and still points at one URL; the block carries
 no button and therefore no cyan, so it is safe on a page that already has
-a primary CTA. The 500 €/mēn figure is the page's own public line
-(`/facebook-reklama/` hero and FAQ), not a new claim.
+a primary CTA.
+
+**The Meta ad-spend floor is 1 000 € a month (owner, 11 Sep 2026):** *"for meta
+ads, we do 1000eur adspend month minimum; otherwise they probably dont have
+budget, and we dont want to deal with low budget customers."* It was 500 €.
+It is the CLIENT'S AD BUDGET, paid to Meta - not our fee, which stays "atkarīga
+no darba apjoma". **One source: `site.metaMinAdSpend` in `site.json`** (a
+display string with no-break spaces, `1 000 €`), rendered by the ladder's
+third rung and by the `/facebook-reklama/` hero and budget FAQ. The one
+hand-typed copy is that page's meta `description:` - YAML cannot render
+Nunjucks - so change it there too. The FAQ does not just refuse: below the
+floor it routes the reader to the Meta course or a paid consultation, which
+is the ladder working as intended rather than a lost lead. The public reason
+given is the true one - a small budget gives the algorithm too little data
+and the management fee eats the return - never "we don't want you".
 
 **Meta ad management terms are public (owner, 7 Sep 2026):** *"meta ads is
 recurring with 3 months commitment; they dont pay if we dont provide
@@ -1445,8 +1459,9 @@ anywhere now says "atlaides kolektīviem" (no percentage or threshold
 existed), only "komandām sagatavojam atsevišķu piedāvājumu".
 
 **Owner-gated — NOT done, do not guess (plan §4, 6 Sep 2026):**
-1. Confirm 500 €/mēn is still the line you want quoted on `/pakalpojumi/`
-   and the course hub, and whether the ad posts should carry it too.
+1. ~~Confirm 500 €/mēn~~ — RESOLVED 11 Sep 2026: the floor is 1 000 €/mēn of
+   ad spend, see above. Whether the Meta blog posts should state it is still
+   open; none does today.
 2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
    (hub, meta description, catalog tile). Closed corporate sessions yes/no.
 3. Brew Company: 75 000 € per month (prose, and the `/facebook-reklama/`
