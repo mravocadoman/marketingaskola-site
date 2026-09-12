@@ -1460,8 +1460,18 @@ existed), only "komandām sagatavojam atsevišķu piedāvājumu".
 
 **Owner-gated — NOT done, do not guess (plan §4, 6 Sep 2026):**
 1. ~~Confirm 500 €/mēn~~ — RESOLVED 11 Sep 2026: the floor is 1 000 €/mēn of
-   ad spend, see above. Whether the Meta blog posts should state it is still
-   open; none does today.
+   ad spend, see above. Owner, 12 Sep: the Meta posts should carry it too, so
+   **nine now do** - every post whose closing section offers to run the ads
+   (`5-visizplatitakas-...`, `cik-maksa-reklama-facebook`,
+   `facebook-reklamas-izstrade`, `instagram-reklama`, `konversiju-uzskaite`,
+   `meta-reklamas`, `vai-manam-biznesam-...`, `socialie-tikli`,
+   `remarketings`). Each states it in its OWN words, because one stamped
+   clause across nine closers is the template this file warns about twice.
+   `kas-ir-seo` is the tenth post linking the service and was left alone: it
+   names Meta as a channel, it does not offer to run it. In posts the floor
+   comes from **`{% offer "meta-floor" %}`**, which reads the same
+   `site.metaMinAdSpend` - so it is inside the shortcode guard lv-polish
+   already protects, where a bare `{{ }}` would not be.
 2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
    (hub, meta description, catalog tile). Closed corporate sessions yes/no.
 3. Brew Company: 75 000 € per month (prose, and the `/facebook-reklama/`

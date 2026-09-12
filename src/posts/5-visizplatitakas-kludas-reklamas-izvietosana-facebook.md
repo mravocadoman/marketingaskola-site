@@ -85,4 +85,4 @@ Vai Facebook vispār ir Tavai auditorijai pareizā platforma, palīdz izvērtēt
 
 Ja kampaņu uzstādīšanu gribi apgūt no pamatiem un ar pasniedzēja atbalstu, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/), kurā strādā ar savu kontu rokās. Grupas sanāk {% offer "meta-reklamas-kurss", "cadence" %}; dalība ir {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi, lai konts tiek sakārtots bez Tavas iesaistes, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).
+Ja gribi, lai konts tiek sakārtots bez Tavas iesaistes, un Tavs reklāmas budžets ir vismaz {% offer "meta-floor" %} mēnesī, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai sāc ar bezmaksas 20 minūšu iepazīšanās zvanu, [piesakies šeit](/sazinies/).

@@ -127,6 +127,6 @@ Un ir vēl viens arguments, kuru vērts pateikt skaidri. Stunda, ko Tu pavadi Ev
 
 **Ja gribi, lai to vienkārši pārbauda un salabo**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Vienā stundā izejam cauri Tavam kontam un pasakām, kas skaitās pareizi, kas neskaitās vispār un ko darīt vispirms. Konkrēts saraksts, ko vari izpildīt pats vai iedot kādam citam. Stunda ir {% offer "60" %}.
 
-**Ja gribi, lai kontu vada un uztur kāds cits**, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/).
+**Ja gribi, lai kontu vada un uztur kāds cits**, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai [AI un automatizācijas pakalpojumu](/ai-un-automatizacijas/). Meta kontus pārņemam, ja reklāmas budžets ir vismaz {% offer "meta-floor" %} mēnesī.
 
 Lai kuru variantu izvēlies, izdari to pirms nākamā budžeta, nevis pēc tā. Nauda, kas iztērēta ar salūzušu uzskaiti, nav tikai iztērēta. Tā arī nav neko iemācījusi.

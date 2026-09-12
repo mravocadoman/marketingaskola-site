@@ -162,4 +162,4 @@ Soli pa solim šī uzstādīšana ir aprakstīta rakstā [Facebook reklāmas: k�
 
 Ja gribi visu sistēmu apgūt secīgi un ar savu kontu rokās, tam ir domāts [Meta reklāmas kurss](/meta-reklamas-kurss/). Nodarbības notiek {% offer "meta-reklamas-kurss", "cadence" %}, mazā grupā, un vieta tajās ir {% offer "meta-reklamas-kurss" %}.
 
-Ja gribi, lai kontu vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Esošam kontam der pilnā stunda, {% offer "60" %}.
+Ja gribi, lai kontu vada kāds cits, apskati [Facebook un Instagram reklāmas pakalpojumu](/facebook-reklama/) vai izrunā savu situāciju [individuālā konsultācijā](/marketinga-konsultacijas/). Vadību uzņemamies kontiem, kuros reklāmai mēnesī tērē vismaz {% offer "meta-floor" %}. Esošam kontam der pilnā stunda, {% offer "60" %}.

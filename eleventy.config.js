@@ -118,6 +118,9 @@ module.exports = function (eleventyConfig) {
   const lvNum = (n) => (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, "").replace(".", ",");
   eleventyConfig.addFilter("gross", (n, rate) => lvNum(Number(n) * (1 + (rate ?? 21) / 100)));
   eleventyConfig.addShortcode("offer", (key, field) => {
+    // The Meta ad-spend floor (the client's budget, not our fee). One source,
+    // site.metaMinAdSpend, shared with /facebook-reklama/ and the ladder.
+    if (key === "meta-floor") return readJSON("site.json").metaMinAdSpend;
     const sessions = readJSON("courseSessions.json"), booking = readJSON("booking.json");
     const course = sessions.courses[key];
     const opt = booking.consultation.options.find((o) => o.id === key);
