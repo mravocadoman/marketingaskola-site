@@ -151,6 +151,98 @@
           "full": true
         }
       ]
+    },
+    "liaa": {
+      "id": "196419637828650760",
+      "submit": "Saņemt cenu piedāvājumu",
+      "note": "Nosūtām pozīciju sarakstu ar cenām bez PVN 1 darba dienas laikā, e-pastā, lai sarakste paliek dokumentēta cenu aptaujai.",
+      "successTitle": "Paldies, pieprasījums saņemts.",
+      "successBody": "Cenu piedāvājumu ar pozīcijām un cenām bez PVN nosūtām 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai zvani +371 26673384.",
+      "fields": [
+        {
+          "name": "company",
+          "label": "Uzņēmuma nosaukums",
+          "type": "text",
+          "required": true,
+          "autocomplete": "organization"
+        },
+        {
+          "name": "regnr",
+          "label": "Reģistrācijas numurs",
+          "type": "text",
+          "required": true,
+          "into": "message"
+        },
+        {
+          "name": "name",
+          "label": "Kontaktpersonas vārds",
+          "type": "text",
+          "required": true,
+          "autocomplete": "given-name"
+        },
+        {
+          "name": "last_name",
+          "label": "Uzvārds",
+          "type": "text",
+          "required": true,
+          "autocomplete": "family-name"
+        },
+        {
+          "name": "email",
+          "label": "E-pasts",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email"
+        },
+        {
+          "name": "phone",
+          "label": "Tālrunis",
+          "type": "tel",
+          "required": true,
+          "autocomplete": "tel"
+        },
+        {
+          "name": "jumta_ligums",
+          "label": "Vai jums jau ir noslēgts LIAA jumta līgums?",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Jā",
+            "Nē",
+            "Gatavojamies pieteikties"
+          ]
+        },
+        {
+          "name": "pakalpojums",
+          "label": "Interesējošais pakalpojums",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Mārketinga materiāli",
+            "Telemārketings ārvalstu partneru meklēšanai",
+            "Abi pakalpojumi"
+          ]
+        },
+        {
+          "name": "tirgus",
+          "label": "Plānotais eksporta tirgus",
+          "type": "text",
+          "full": true,
+          "into": "message"
+        },
+        {
+          "name": "message",
+          "label": "Komentāri: ko plānojat eksportēt un kādā termiņā",
+          "type": "textarea",
+          "full": true
+        }
+      ],
+      "webhook": "https://marketingaskola.app.n8n.cloud/webhook/liaa-lead?k=ms-liaa-2026",
+      "_comment": "Two destinations, neither depending on the other: MailerLite (the provider, shared with the contact form) keeps the lead, and the n8n webhook e-mails the enquiry to Rihards and sends the applicant a confirmation. The key in the URL is obfuscation, not authentication - it ships in client JS, exactly like site.analytics.capiSecret, and only stops drive-by noise. Workflow: Marketinga Skola - LIAA pieteikumi (uSmnXxiT4rUcVAGj)."
     }
   }
 }

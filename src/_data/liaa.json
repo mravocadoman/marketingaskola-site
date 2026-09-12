@@ -1,0 +1,83 @@
+{
+  "_comment": "LIAA export-grant cluster. ONE source for every figure on /liaa-eksporta-atbalsts/, the two product pages, their JSON-LD and the quote PDF. Programme facts verified against liaa.business.gov.lv on 12 Sep 2026 (see CONTENT-RULES.md). Prices confirmed by the owner the same day. Never type these numbers into copy.",
+  "programme": {
+    "name": "MVU Eksporta atbalsta darbību plāns",
+    "rate": 60,
+    "yearCap": 40000,
+    "turnoverShare": 30,
+    "applyUntil": "31.12.2026",
+    "budget": 15400000,
+    "claimBy": "nākamā kalendārā gada 31. martam",
+    "quotes": 3,
+    "procurementThreshold": 70000,
+    "minPoints": 9,
+    "taxDebt": 1000,
+    "url": "https://liaa.business.gov.lv/atbalsta-iespejas/eksporta-atbalsta-darbibu-plans",
+    "excludedSectors": [
+      "tirdzniecība",
+      "finanšu starpniecība, izņemot finanšu tehnoloģijas",
+      "operācijas ar nekustamo īpašumu un noma",
+      "azartspēles",
+      "tabakas izstrādājumu ražošana",
+      "primārā lauksaimniecība, zvejniecība un akvakultūra"
+    ],
+    "gates": [
+      "Vismaz viens noslēgts finanšu gads ar apgrozījumu. Jaundibināti uzņēmumi nekvalificējas.",
+      "Vismaz 9 punkti LIAA pašpārbaudes kalkulatorā, kas pieejams programmas lapā.",
+      "Nozare nav starp izslēgtajām.",
+      "Nodokļu parāds nepārsniedz 1 000 eiro.",
+      "Vienlaikus nav spēkā Biznesa inkubācijas līgums ar LIAA."
+    ]
+  },
+  "offers": [
+    {
+      "id": "materiali",
+      "url": "/eksporta-marketinga-materiali/",
+      "nav": "Eksporta mārketinga materiāli",
+      "category": "Mārketinga vizuālo materiālu izstrāde līdz maketam",
+      "name": "Eksporta mārketinga materiālu izstrāde",
+      "price": 4900,
+      "cap": 5000,
+      "lead": "Bukleti, banneri un video makets eksporta tirgum, sagatavoti līdz maketa stadijai, ar fiksētu cenu un pozīciju sarakstu, ko var ielikt cenu aptaujas protokolā.",
+      "term": "15 darba dienas no apstiprināta brīfa",
+      "scope": [
+        ["Vizuālās identitātes adaptācija eksporta tirgum", "Krāsu, tipogrāfijas un izkārtojuma sistēma mērķa tirgum", "Zīmola adaptācijas vadlīnijas, PDF", "3 darba dienas"],
+        ["Produkta vai pakalpojuma buklets", "Angļu valodā, līdz 8 lappusēm, gatavs drukai kā makets", "Makets PDF un izejas fails", "6 darba dienas"],
+        ["Baneru komplekts nozares platformām", "5 izmēri digitālajām nozares platformām un kampaņām", "Maketi un izejas faili", "3 darba dienas"],
+        ["Videoklipa scenārijs, storyboard un dizaina makets", "Līdz 60 sekundēm, bez filmēšanas un montāžas", "Scenārijs, storyboard un makets", "2 darba dienas"],
+        ["Izejas faili un nodošanas dokumentācija", "Strukturēta failu nodošana ar aprakstu, ko satur katrs fails", "Nodošanas komplekts", "1 darba diena"]
+      ],
+      "inputs": [
+        "Esošie zīmola faili: logo, krāsas, fonti, ja tādi ir.",
+        "Produktu vai pakalpojumu apraksti un fotoattēli.",
+        "Mērķa tirgus un valoda, kurā materiāli tiks lietoti.",
+        "Viena atbildīgā persona, kas apstiprina maketus."
+      ]
+    },
+    {
+      "id": "telemarketings",
+      "url": "/eksporta-telemarketings/",
+      "nav": "Ārvalstu partneru meklēšana",
+      "category": "Telemārketings ārvalstu sadarbības partneru meklēšanai",
+      "name": "Ārvalstu sadarbības partneru meklēšana",
+      "price": 7900,
+      "cap": 8000,
+      "lead": "Strukturēta ārvalstu partneru meklēšanas programma: mērķa tirgus definīcija, kvalificēta kontaktu datubāze, daudzkanālu kontaktēšanās un pieteiktas tikšanās, nevis zvanu centra stundas.",
+      "term": "8 nedēļas no programmas sākuma",
+      "scope": [
+        ["Mērķa tirgus un ICP definēšana", "Nozares segmentācija un ideālā partnera profils diviem tirgiem", "Stratēģijas dokuments", "1. nedēļa"],
+        ["Potenciālo partneru datubāzes izveide", "Līdz 500 kvalificētiem kontaktiem divos tirgos", "CSV vai CRM eksports", "2. nedēļa"],
+        ["Kontaktu verifikācija un bagātināšana", "Lomu, e-pastu un uzņēmuma datu pārbaude", "Bagātināta datu kopa", "3. nedēļa"],
+        ["Daudzkanālu kontaktēšanās kampaņa", "E-pasts un zvani, trīs saskarsmes viļņi", "Kampaņas izpilde un žurnāls", "4. līdz 7. nedēļa"],
+        ["Atbilžu apstrāde, kvalificēšana un tikšanos pieteikšana", "Atbilžu apstrāde un tikšanos rezervēšana Tavā kalendārā", "Kvalificēto tikšanos saraksts", "4. līdz 8. nedēļa"],
+        ["Atskaite un nodošana", "Rezultāti, kontaktu statusi un nākamie soļi", "Gala atskaite ar pipeline", "8. nedēļa"]
+      ],
+      "inputs": [
+        "Produkta vai pakalpojuma apraksts un cenu līmenis angļu valodā.",
+        "Mērķa tirgi un nozares, kurās meklējam partnerus.",
+        "Piekļuve kalendāram vai laika logi, kuros pieņemat tikšanās.",
+        "Viena atbildīgā persona, kas atbild uz kvalificētiem kontaktiem."
+      ]
+    }
+  ]
+}

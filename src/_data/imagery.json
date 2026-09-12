@@ -1125,6 +1125,30 @@
       "aspect": "landscape",
       "alt": "Meklēšanas rezultāti ar apmaksātu vietu augšā un cenu kolonnas",
       "prompt": "A search field drawn as a wide solid off-white bar across the upper area with a small cyan caret at its left end. Beneath it five solid result bars of descending length in cool grey, the topmost one solid cyan to mark the paid placement. To the right, three solid columns of rising height standing for the bid, the tallest in cool grey and lightly clipped by the right edge. Objects drawn large and whole, filling the middle of the frame with a modest dark margin. Every corner square; no rounded corners. Flat colour blocking only: no gradients, no glow, no 3D, no shadows. Cool grey #8ba3bd and off-white #f2f5f8 on dark navy #020d1c. Cyan #03c3f8 on two small elements only, about five percent of the frame at most. No text, letters, numbers or words anywhere. Objects only: no people, no hands, no faces, no logos."
+    },
+    {
+      "id": "hero-liaa-eksports",
+      "page": "liaa-eksporta-atbalsts",
+      "aspect": "landscape",
+      "alt": "Trīs dokumentu lapas blakus, vidējā atzīmēta ar zilu kvadrātu.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: three plain upright document sheets stand side by side in a row, slightly overlapping, each a solid cool-grey #8ba3bd rectangle carrying four short darker horizontal bars standing in for lines of text; the middle sheet is off-white #f2f5f8 and carries one small solid cyan #03c3f8 square mark in its lower corner. Behind the row, one long solid off-white horizontal bar runs off the right edge of the frame. A modest dark margin surrounds the group. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters or numbers of any kind. Cyan covers no more than five percent of the frame.",
+      "rationale": "The pillar page is about a price survey of three quotes, one of which is chosen - the three sheets say that without a word."
+    },
+    {
+      "id": "hero-eksporta-materiali",
+      "page": "eksporta-marketinga-materiali",
+      "aspect": "landscape",
+      "alt": "Atvērts buklets, baneru taisnstūri un video kadra rāmis.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: an open two-page brochure spread lies flat and slightly angled at the left, its pages solid cool-grey #8ba3bd with a wide solid off-white #f2f5f8 block on one page and three short grey bars on the other; to its right a vertical stack of three narrow solid grey banner rectangles of different widths; at the far right a single upright rectangle frame in off-white holding one small solid cyan #03c3f8 triangle pointing right. A modest dark margin surrounds the group, and only the banner stack is lightly clipped by the right edge. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters or numbers of any kind. Cyan covers no more than five percent of the frame.",
+      "rationale": "The product is brochures, banners and a video maket - the artwork shows exactly those three deliverables and nothing else."
+    },
+    {
+      "id": "hero-eksporta-partneri",
+      "page": "eksporta-telemarketings",
+      "aspect": "landscape",
+      "alt": "Kontaktu kartīšu režģis, divas atzīmētas, blakus kalendāra ailei ar zilu bloku.",
+      "prompt": "Flat vector composition on solid #020d1c navy, mid-shot, objects drawn large and whole: a tidy grid of nine small solid cool-grey #8ba3bd cards, each carrying one small darker square in its top-left corner and two short bars beside it; two of the nine cards are solid off-white #f2f5f8 instead. To the right, separated by empty dark space, a single tall calendar column of five stacked solid grey cells, one of which is solid cyan #03c3f8. A modest dark margin surrounds both groups. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters or numbers of any kind. Cyan covers no more than five percent of the frame.",
+      "rationale": "The product turns a long contact list into a few booked meetings - a grid with two marked cards next to one booked calendar slot is that sentence as a picture."
     }
   ]
 }

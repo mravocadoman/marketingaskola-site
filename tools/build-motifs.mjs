@@ -37,6 +37,9 @@ const PAGES = [
   ['services-module-band', 'band-services-module'],
   ['meta-targeting-band', 'band-meta-targeting'], ['brew-scale-ratio', 'band-brew-scale'],
   ['smm-orbit-band', 'band-smm-orbit'], ['smm-cadence-grid', 'band-smm-cadence'],
+  ['hero-liaa-eksports', 'liaa-eksports'],
+  ['hero-eksporta-materiali', 'eksporta-materiali'],
+  ['hero-eksporta-partneri', 'eksporta-partneri'],
 ];
 
 /* PIECES - every post header is its own cover, split into its own objects.

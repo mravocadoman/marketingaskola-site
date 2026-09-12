@@ -12,6 +12,7 @@
       data-account="{{ forms.account }}"
       data-form-id="{{ f.id }}"
       data-fallback="{{ forms.fallbackEmail }}"
+      {%- if f.webhook %} data-webhook="{{ f.webhook }}"{% endif %}
       novalidate>
   <div class="form-grid">
     {% for fl in f.fields %}
@@ -41,6 +42,7 @@
              value="{{ p[fl.name] or '' }}"
              placeholder="{{ fl.placeholder or ' ' }}"
              {%- if fl.required %} required{% endif %}
+             {%- if fl.into %} data-into="{{ fl.into }}"{% endif %}
              {%- if fl.autocomplete %} autocomplete="{{ fl.autocomplete }}"{% endif %}
              {%- if fl.min %} min="{{ fl.min }}"{% endif %}>
       {%- endif %}

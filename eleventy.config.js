@@ -116,6 +116,9 @@ module.exports = function (eleventyConfig) {
   // build time rather than printing an empty string into a sentence.
   const readJSON = (f) => JSON.parse(fs.readFileSync(path.join(SRC, "_data", f), "utf8"));
   const lvNum = (n) => (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, "").replace(".", ",");
+  // 4900 -> "4 900" with a no-break space, the separator the site already uses
+  // ("75 000", "1 000 €"). Money in copy comes from data through this filter.
+  eleventyConfig.addFilter("eur", (n) => String(Math.round(Number(n))).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0"));
   eleventyConfig.addFilter("gross", (n, rate) => lvNum(Number(n) * (1 + (rate ?? 21) / 100)));
   eleventyConfig.addShortcode("offer", (key, field) => {
     // The Meta ad-spend floor (the client's budget, not our fee). One source,
@@ -281,6 +284,47 @@ module.exports = function (eleventyConfig) {
         course.hasCourseInstance = [inst];
       }
       graph.push(course);
+    }
+
+    /* Service + FAQPage from front matter, for the LIAA export pages.
+     * `service: { key }` looks the offer up in liaa.json, so the price in the
+     * schema is the same number the price box and the quote PDF print - the
+     * schema cannot drift from the page the way a typed price could.
+     * `faq: [{ q, a }]` marks up the accordion that is already on the page;
+     * never put a question here that the page does not visibly answer. */
+    if (c.service && c.liaa) {
+      const o = (c.liaa.offers || []).find((x) => x.id === c.service.key);
+      if (o) {
+        graph.push({
+          "@type": "Service",
+          "@id": pageUrl + "#service",
+          name: o.name,
+          serviceType: o.category,
+          description: o.lead,
+          provider: { "@id": orgId },
+          areaServed: "EU",
+          url: pageUrl,
+          offers: {
+            "@type": "Offer",
+            price: String(o.price),
+            priceCurrency: "EUR",
+            valueAddedTaxIncluded: false,
+            availability: "https://schema.org/InStock",
+            url: pageUrl,
+          },
+        });
+      }
+    }
+    if (c.faq && c.faq.length) {
+      graph.push({
+        "@type": "FAQPage",
+        "@id": pageUrl + "#faq",
+        mainEntity: c.faq.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      });
     }
 
     return { "@context": "https://schema.org", "@graph": graph };

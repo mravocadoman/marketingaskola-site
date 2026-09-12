@@ -1,0 +1,163 @@
+---
+layout: page.njk
+title: "Ārvalstu sadarbības partneru meklēšana | Mārketinga Skola"
+description: "Telemārketings ārvalstu partneru meklēšanai: līdz 500 kvalificētiem kontaktiem, daudzkanālu kampaņa un pieteiktas tikšanās. 7 900 € bez PVN, 8 nedēļas."
+permalink: "/eksporta-telemarketings/"
+crumb: { label: "LIAA eksporta atbalsts", url: "/liaa-eksporta-atbalsts/" }
+service: { key: "telemarketings" }
+faq:
+  - q: "Vai jūs garantējat konkrētu tikšanos skaitu?"
+    a: "Nē. Tikšanos skaits ir atkarīgs no tirgus, produkta un cenu līmeņa, un solīt to iepriekš nozīmētu solīt kaut ko, ko nekontrolējam. Mēs garantējam izpildi: definētu mērķa tirgu, kvalificētus kontaktus, trīs kontaktēšanās viļņus un atskaiti par katra kontakta statusu."
+  - q: "Kas tieši ir kvalificēts kontakts?"
+    a: "Uzņēmums mērķa tirgū un nozarē, kas atbilst norunātajam partnera profilam, ar pārbaudītu kontaktpersonas lomu un e-pastu. Nepārbaudītu adrešu saraksts nav kvalificēts kontakts un šajā programmā netiek skaitīts."
+  - q: "Vai zvanāt manā vārdā vai savā?"
+    a: "Tavā vārdā, ar Tavu piekrišanu un norunātu ziņojumu. Tikšanās tiek rezervētas Tavā kalendārā, un saraksti pēc tam pārņem uzņēmums, nevis mēs."
+  - q: "Cik tirgu ietilpst cenā?"
+    a: "Divi tirgi. Vairāk tirgu nozīmē vairāk segmentācijas un atsevišķu kontaktu datubāzi katram, tāpēc par to vienojamies atsevišķi kā papildu pozīciju."
+  - q: "Kas notiek ar kontaktiem pēc programmas?"
+    a: "Tie paliek pasūtītājam. Nodošanā ir kontaktu datubāze ar statusiem un sarakstes vēsture, tāpēc darbu var turpināt pats vai ar citu piegādātāju."
+---
+{% from "form.njk" import form with context %}
+{% set o = liaa.offers[1] %}
+{% set p = liaa.programme %}
+<section class="page-hero page-hero--media">
+  <div class="container">
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/liaa-eksporta-atbalsts/">LIAA eksporta atbalsts</a> · Partneru meklēšana</span>
+      <h1>Ārvalstu partneri, kas nonāk Tavā kalendārā<span class="accent-text">.</span></h1>
+      <p class="sub">{{ o.lead }} Cena {{ o.price | eur }} € bez PVN; ja LIAA apstiprina, {{ p.rate }}% no šīs summas var tikt atmaksāti.</p>
+      <div class="btn-wrap">
+        <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
+        <a class="btn btn--ghost" href="/liaa-eksporta-atbalsts/">Kā darbojas atbalsts</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/eksporta-partneri.njk" %}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">01</span> Saturs</span>
+        <h2>Ko tieši saņem</h2>
+      </div>
+      <p class="lead">Programma ar nedēļu sadalījumu, nevis nopirktas zvanu stundas. Katra pozīcija ar aprakstu, rezultātu un termiņu, tādā formā, ko var ielikt cenu aptaujas protokolā.</p>
+    </div>
+    {% include "liaa-scope.njk" %}
+    <div class="row cols-2 top">
+      <div class="col">{% include "liaa-price.njk" %}</div>
+      <div class="col">
+        <h3>Kas nav iekļauts</h3>
+        <ul class="tick-list">
+          <li>Sarunas pēc tikšanās. Tikšanos pieteicam un nododam; pārdošanas sarunas ved pats uzņēmums.</li>
+          <li>Vairāk nekā divi tirgi. Katrs papildu tirgus prasa savu segmentāciju un savu kontaktu datubāzi, tāpēc tā ir atsevišķa pozīcija.</li>
+          <li>Materiālu izstrāde. Prezentācijas, bukleti un video makets ir <a href="/eksporta-marketinga-materiali/">otrs pakalpojums</a>.</li>
+          <li>Ceļa un dalības izmaksas izstādēs vai tirdzniecības misijās.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">02</span> Sagatavošanās</span>
+        <h2>Kas jāsagatavo Tev</h2>
+      </div>
+      <p class="lead">Termiņš, {{ o.term }}, sākas no programmas sākuma. Bez šīm četrām lietām pirmā nedēļa paiet gaidot, nevis strādājot.</p>
+    </div>
+    <ul class="tick-list">
+      {%- for i in o.inputs %}
+      <li>{{ i }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">03</span> Atbalsts</span>
+        <h2>Kā tas iekļaujas cenu aptaujā</h2>
+      </div>
+      <p class="lead">Šis pakalpojums atbilst pozīcijai “{{ o.category }}”. Aptauju veic un dokumentē pats atbalsta saņēmējs; mēs esam viens no pretendentiem.</p>
+    </div>
+    <div class="hgrid hgrid--3">
+      <div class="cell">
+        <span class="cell-idx">01</span>
+        <h3>Salīdzināms piedāvājums</h3>
+        <p>Piedāvājumā ir pozīcijas, cenas bez PVN, rezultāti un termiņi pa nedēļām. Parasti vajag {{ p.quotes }} piedāvājumus par vienu un to pašu apjomu, tāpēc mūsējais ir uzrakstīts salīdzināmi.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">02</span>
+        <h3>Pierādāms darbs</h3>
+        <p>Kampaņas žurnāls, kontaktu statusi un tikšanos saraksts ir daļa no nodošanas. Pakalpojumam, kas notiek ārpus Tava redzesloka, tas ir vienīgais godīgais pierādījums.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">03</span>
+        <h3>Lēmums paliek LIAA</h3>
+        <p>Par atbilstību un izmaksu attiecināmību lemj LIAA. Mēs atbildam par izpildi un dokumentiem, nevis par atbalsta piešķiršanu.</p>
+      </div>
+    </div>
+    <p><a class="arrow-link" href="/liaa-eksporta-atbalsts/">Programmas nosacījumi un cenu aptaujas gaita</a></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">04</span> Jautājumi</span>
+        <h2>Biežākie jautājumi</h2>
+      </div>
+      <p class="lead">Tas, ko par šo pozīciju jautā pirms piedāvājuma pieprasīšanas.</p>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        {%- for f in faq.slice(0, 3) %}
+        <details class="faq"><summary>{{ f.q }}</summary><div><p>{{ f.a }}</p></div></details>
+        {%- endfor %}
+      </div>
+      <div class="col">
+        {%- for f in faq.slice(3) %}
+        <details class="faq"><summary>{{ f.q }}</summary><div><p>{{ f.a }}</p></div></details>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pieteikums">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">05</span> Pieteikums</span>
+        <h2>Saņem cenu piedāvājumu</h2>
+      </div>
+      <p class="lead">Vienas darba dienas laikā nosūtām piedāvājumu ar šīm pozīcijām, cenām bez PVN un termiņiem pa nedēļām, e-pastā, lai sarakste paliek dokumentēta.</p>
+    </div>
+    <div class="row cols-1">
+      <div class="col">{{ form("liaa", { pakalpojums: "Telemārketings ārvalstu partneru meklēšanai" }) }}</div>
+    </div>
+    {% include "liaa-disclaimer.njk" %}
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-band-inner">
+    <div>
+      <h2>Vajag arī materiālus, ar ko iet pie partneriem?</h2>
+      <p>Otrs pakalpojums ir bukleti, baneri un video makets eksporta tirgum, sagatavoti līdz maketa stadijai. Abi iekļaujas vienā gada limitā. Jautājumi: <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a>, +371 26673384.</p>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
+      <a class="btn btn--ghost" href="/eksporta-marketinga-materiali/">Mārketinga materiāli</a>
+    </div>
+  </div>
+</section>

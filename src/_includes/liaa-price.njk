@@ -1,0 +1,12 @@
+{# Three numbers for one LIAA offer. Expects `o` (an entry from liaa.offers) in
+   context. Every figure is computed from liaa.json, so the page, the JSON-LD
+   and the quote PDF can never print three different prices.
+   Rule 3 in CONTENT-RULES.md: net only, and it says "bez PVN" every time. #}
+<div class="panel">
+  <div class="stats">
+    <div class="stat"><span class="num">{{ o.price | eur }}<span class="sfx"> €</span></span><span class="label">Pakalpojuma cena bez PVN</span></div>
+    <div class="stat"><span class="num">{{ (o.price * liaa.programme.rate / 100) | eur }}<span class="sfx"> €</span></span><span class="label">Var tikt atmaksāti, ja LIAA apstiprina</span></div>
+    <div class="stat"><span class="num">{{ (o.price * (100 - liaa.programme.rate) / 100) | eur }}<span class="sfx"> €</span></span><span class="label">Tava daļa pēc atmaksas</span></div>
+  </div>
+  <p class="fine">Atmaksa ir {{ liaa.programme.rate }}% no attiecināmajām izmaksām bez PVN. Lēmumu pieņem LIAA; skaitļi šeit rāda aprēķinu, nevis apsolītu rezultātu.</p>
+</div>

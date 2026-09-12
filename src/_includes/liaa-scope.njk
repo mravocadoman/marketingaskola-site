@@ -1,0 +1,14 @@
+{# The itemised scope of one LIAA offer. Expects `o` in context.
+   A real <table> on purpose: the buyer copies these rows straight into the
+   cenu aptaujas protokols, and a grid of divs pastes as one long line. #}
+<div class="scope-wrap">
+  <table class="scope">
+    <thead><tr><th scope="col">Pozīcija</th><th scope="col">Apraksts</th><th scope="col">Rezultāts</th><th scope="col">Termiņš</th></tr></thead>
+    <tbody>
+      {%- for row in o.scope %}
+      <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td><td>{{ row[3] }}</td></tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
+<p class="fine">Kopējais izpildes termiņš: {{ o.term }}. Cena fiksēta, {{ o.price | eur }} € bez PVN, un nemainās, ja apjoms paliek šis. Druka, ražošana, filmēšana un mediju pirkšana neietilpst un netiek piedāvāta šīs pozīcijas ietvaros.</p>

@@ -110,6 +110,24 @@
 
   /* Last resort: never drop a lead because a third party is unreachable.
    * Hands the visitor a pre-filled email instead of an apology. */
+  /* A form may ALSO post to a webhook (forms.json -> forms.<key>.webhook),
+   * which is what puts the enquiry in front of a human and sends the reply.
+   * Deliberately fired in PARALLEL with the provider and never awaited: the
+   * two destinations must not be able to take each other down, and the
+   * visitor's confirmation already comes from the provider path.
+   * text/plain keeps it a "simple" request, so there is no preflight to
+   * configure and no CORS reply to read. */
+  function notify(form, data) {
+    var url = form.getAttribute('data-webhook');
+    if (!url) return;
+    try {
+      fetch(url, {
+        method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({ form: form.getAttribute('data-form'), page: location.pathname, data: data }),
+      }).catch(function () {});
+    } catch (e) { /* a blocked fetch must not cost the lead */ }
+  }
+
   function mailtoFallback(form, data) {
     var to = form.getAttribute('data-fallback');
     if (!to) return null;
@@ -167,6 +185,7 @@
       if (hp && hp.value) { succeed(form); return; }
 
       var data = collect(form);
+      notify(form, data);
       var build = providers[form.getAttribute('data-provider')];
       var req = build && build(form, data);
 

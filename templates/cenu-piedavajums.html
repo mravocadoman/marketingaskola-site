@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<title>Cenu piedāvājums</title>
+<!--
+  The quote a buyer puts into their LIAA cenu aptaujas protokols.
+
+  Rendered by tools/quote.mjs, which fills every double-brace slot from
+  src/_data/liaa.json plus the details given on the command line. Do not type
+  prices or scope rows in here; they come from the data file, so the quote, the
+  web page and the JSON-LD can never disagree.
+
+  Deliberately a WHITE A4 document, not the site's dark ledger: it is printed,
+  attached to an application and read next to two competitors' quotes. It
+  carries no LIAA, ERAF or EU emblem (CONTENT-RULES.md rule 7) and no claim of
+  approved-supplier status (rule 1).
+-->
+<style>
+  @page { size: A4; margin: 18mm 16mm 20mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 10.5pt/1.5 "Helvetica Neue", Arial, sans-serif; color: #10202f; background: #fff; }
+  h1 { font-size: 17pt; margin: 0 0 2mm; letter-spacing: -0.01em; }
+  h2 { font-size: 11pt; margin: 9mm 0 2mm; text-transform: uppercase; letter-spacing: .08em; color: #5a6b7c; font-weight: 600; }
+  p { margin: 0 0 3mm; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10mm; border-bottom: 1.5pt solid #10202f; padding-bottom: 4mm; }
+  .brand { font-size: 12pt; font-weight: 700; }
+  .meta { text-align: right; font-size: 9pt; color: #5a6b7c; white-space: nowrap; }
+  .parties { display: flex; gap: 10mm; margin: 6mm 0 0; }
+  .parties > div { flex: 1; font-size: 9.5pt; }
+  .parties strong { display: block; font-size: 9pt; text-transform: uppercase; letter-spacing: .06em; color: #5a6b7c; font-weight: 600; margin-bottom: 1.5mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  th, td { text-align: left; vertical-align: top; padding: 2.5mm 3mm 2.5mm 0; border-bottom: .5pt solid #c9d4de; }
+  th { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .06em; color: #5a6b7c; border-bottom: 1pt solid #10202f; }
+  td.n, th.n { text-align: right; padding-right: 0; white-space: nowrap; }
+  tfoot td { border-bottom: 0; padding-top: 3mm; font-weight: 600; }
+  tfoot tr:first-child td { border-top: 1pt solid #10202f; }
+  .total { font-size: 12pt; }
+  .note { font-size: 9pt; color: #45566a; }
+  ul { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1.5mm; }
+  .sign { display: flex; gap: 14mm; margin-top: 12mm; font-size: 9.5pt; }
+  .sign > div { flex: 1; border-top: .5pt solid #10202f; padding-top: 2mm; color: #5a6b7c; }
+  .fine { font-size: 8.5pt; color: #5a6b7c; line-height: 1.45; border-top: .5pt solid #c9d4de; padding-top: 3mm; margin-top: 8mm; }
+  tr { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div>
+    <div class="brand">{{ company.name }}</div>
+    <div class="note">{{ company.address }}<br>Reģ. nr. {{ company.regNr }}, PVN {{ company.vat }}<br>{{ email }}, {{ phone }}</div>
+  </div>
+  <div class="meta">
+    <strong>Cenu piedāvājums</strong><br>
+    Nr. {{ quoteNr }}<br>
+    Datums: {{ date }}<br>
+    Spēkā līdz: {{ validUntil }}
+  </div>
+</div>
+
+<div class="parties">
+  <div><strong>Pretendents</strong>{{ company.name }}<br>Reģ. nr. {{ company.regNr }}<br>{{ company.address }}</div>
+  <div><strong>Pasūtītājs</strong>{{ client.name }}<br>Reģ. nr. {{ client.regNr }}<br>{{ client.contact }}</div>
+</div>
+
+<h2>Priekšmets</h2>
+<h1>{{ offer.name }}</h1>
+<p>{{ offer.lead }}</p>
+<p class="note">Iepirkuma pozīcija: {{ offer.category }}.</p>
+
+<h2>Pozīcijas</h2>
+<table>
+  <thead>
+    <tr><th>Pozīcija</th><th>Apraksts</th><th>Rezultāts</th><th>Termiņš</th><th class="n">Cena bez PVN</th></tr>
+  </thead>
+  <tbody>
+    {{ rows }}
+  </tbody>
+  <tfoot>
+    <tr><td colspan="4">Kopā bez PVN</td><td class="n total">{{ priceNet }} €</td></tr>
+    <tr><td colspan="4">PVN 21%</td><td class="n">{{ priceVat }} €</td></tr>
+    <tr><td colspan="4">Kopā ar PVN</td><td class="n">{{ priceGross }} €</td></tr>
+  </tfoot>
+</table>
+<p class="note">Atbalsta programmā attiecināma ir summa bez PVN. Ja LIAA apstiprina pieteikumu, {{ rate }}% no tās, {{ priceSupport }} €, var tikt atmaksāti, un pasūtītāja daļa ir {{ priceOwn }} €. Šis ir aprēķins, nevis apsolīts rezultāts: lēmumu pieņem LIAA.</p>
+
+<h2>Izpildes termiņš</h2>
+<p>{{ offer.term }}. Termiņš sākas no apstiprināta brīfa. Katrai pozīcijai iekļauta viena apstiprināšanas kārta ar labojumiem.</p>
+
+<h2>Ko sagatavo pasūtītājs</h2>
+<ul>{{ inputs }}</ul>
+
+<h2>Nav iekļauts</h2>
+<p>Druka, ražošana un pavairošana, filmēšana un montāža, mediju pirkšana un reklāmas budžets, kā arī tulkošana valodās, kas nav norunātas brīfā. Šīs izmaksas atbalsta pozīcijā nav attiecināmas un šajā piedāvājumā netiek piedāvātas.</p>
+
+<h2>Apmaksa</h2>
+<p>50% pēc līguma noslēgšanas, 50% pēc nodošanas. Apmaksas termiņš 10 darba dienas no rēķina. Nodošanas komplektā ir izejas faili, akts un rēķins, kuru pozīcijas sakrīt ar šo piedāvājumu.</p>
+
+<div class="sign">
+  <div>{{ company.name }} pārstāvis<br>Rihards Zeiļa</div>
+  <div>Pasūtītāja pārstāvis</div>
+</div>
+
+<p class="fine">{{ company.name }} ir pakalpojumu sniedzējs, nevis atbalsta konsultants. Mēs neesam LIAA apstiprināts, akreditēts vai oficiāls partneris, un šāds statuss programmā nepastāv. Cenu aptauju veic, dokumentē un pieteikumu iesniedz pats atbalsta saņēmējs; lēmumu par atbalsta piešķiršanu un izmaksu attiecināmību pieņem LIAA. Cenas norādītas bez PVN, jo atbalstu aprēķina no neto izmaksām.</p>
+
+</body>
+</html>

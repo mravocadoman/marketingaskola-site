@@ -1,0 +1,245 @@
+---
+layout: page.njk
+title: "LIAA eksporta atbalsts: kā segt 60% no mārketinga izmaksām | Mārketinga Skola"
+description: "MVU eksporta atbalsta darbību plāns: 60% atmaksa, līdz 40 000 € gadā. Kam pienākas, kas ir attiecināms, kā notiek cenu aptauja un ko mēs piedāvājam."
+permalink: "/liaa-eksporta-atbalsts/"
+crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
+faq:
+  - q: "Vai Mārketinga Skola ir LIAA apstiprināts vai akreditēts pakalpojumu sniedzējs?"
+    a: "Nē, un šādas statusa nav nevienam. Programmā nav apstiprinātu pakalpojumu sniedzēju saraksta. Atbalsta saņēmējs pats veic cenu aptauju un pats izvēlas piegādātāju, tāpēc mēs esam viens no pretendentiem, no kura vari prasīt piedāvājumu."
+  - q: "Vai jūs garantējat, ka saņemšu atbalstu?"
+    a: "Nē. Lēmumu par atbilstību un izmaksu attiecināmību pieņem LIAA. Mēs atbildam par pakalpojuma izpildi un par to, ka piedāvājums ir sagatavots ar pozīcijām, cenām bez PVN un termiņiem, kā to prasa cenu aptauja."
+  - q: "Kāpēc cenas ir norādītas bez PVN?"
+    a: "Atbalstu aprēķina no neto izmaksām, tāpēc bez PVN ir tā summa, kas nonāk aprēķinā. PVN ir jāsamaksā, bet atbalstā to neieskaita."
+  - q: "Vai druka un ražošana ietilpst?"
+    a: "Nē. Mēs izstrādājam materiālus līdz maketam. Druka, ražošana, pavairošana, filmēšana un mediju pirkšana nav šī pakalpojuma daļa, un tās ir atsevišķas izmaksas, par kurām jāvienojas atsevišķi."
+  - q: "Cik piedāvājumu man jāsavāc?"
+    a: "Cenu aptaujā parasti vajag trīs salīdzināmus piedāvājumus par vienu un to pašu apjomu. Ja plānotā līguma summa pārsniedz 70 000 eiro, jārīko pilna iepirkuma procedūra. Aptauju veic un dokumentē pats atbalsta saņēmējs."
+  - q: "Cik ilgi jāgaida nauda?"
+    a: "Atbalstu izmaksā pēc tam, kad pakalpojums ir izpildīts, apmaksāts un izdevumi ir iesniegti LIAA. Praksē tas nozīmē, ka pilnu summu vispirms samaksā uzņēmums, un atmaksa seko vēlāk. Izdevumus par kārtējo gadu jāiesniedz līdz nākamā kalendārā gada 31. martam."
+  - q: "Ko darīt, ja mans uzņēmums neatbilst?"
+    a: "Tad pakalpojumu var pasūtīt arī bez atbalsta, par to pašu fiksēto cenu, vai sākt ar mazāku apjomu. Atbilstību ātrāk par visu parāda LIAA pašpārbaudes kalkulators programmas lapā."
+---
+{% from "form.njk" import form with context %}
+{% set p = liaa.programme %}
+<section class="page-hero page-hero--media">
+  <div class="container">
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · LIAA eksporta atbalsts</span>
+      <h1>{{ p.rate }}% no eksporta mārketinga izmaksām var atgriezties atpakaļ<span class="accent-text">.</span></h1>
+      <p class="sub">MVU eksporta atbalsta darbību plāns atmaksā {{ p.rate }}% no attiecināmajām izmaksām, līdz {{ p.yearCap | eur }} eiro gadā. Šī lapa paskaidro, kam tas pienākas un kā notiek cenu aptauja, un piedāvā divus pakalpojumus ar fiksētu cenu un pozīciju sarakstu, ko var ielikt aptaujas protokolā.</p>
+      <div class="btn-wrap">
+        <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
+        <a class="btn btn--ghost" href="{{ p.url }}" target="_blank" rel="noopener">LIAA programmas lapa</a>
+      </div>
+      </div>
+      <figure class="hero-media">{% include "motifs/liaa-eksports.njk" %}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">01</span> Programma</span>
+        <h2>Kas ir šis atbalsts</h2>
+      </div>
+      <p class="lead">Publiska programma maziem un vidējiem uzņēmumiem, kas plāno pārdot ārpus Latvijas. Tā nesedz pašu eksportu, bet gan darbības, kas to sagatavo: materiālus, dalību izstādēs, partneru meklēšanu un līdzīgas pozīcijas.</p>
+    </div>
+    <div class="stats stats--row">
+      <div class="stat"><span class="num">{{ p.rate }}<span class="sfx">%</span></span><span class="label">Atmaksa no attiecināmajām izmaksām bez PVN</span></div>
+      <div class="stat"><span class="num">{{ p.yearCap | eur }}<span class="sfx"> €</span></span><span class="label">Maksimums vienam saņēmējam gadā</span></div>
+      <div class="stat"><span class="num">{{ p.turnoverShare }}<span class="sfx">%</span></span><span class="label">No pēdējā noslēgtā gada neto apgrozījuma</span></div>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <ul class="tick-list">
+          <li>Pieteikties var līdz {{ p.applyUntil }}, kamēr programmai pietiek līdzekļu. Kopējais budžets ir {{ p.budget | eur }} eiro.</li>
+          <li>Atbalsta apmērs gadā nepārsniedz {{ p.turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma, tāpēc mazākam uzņēmumam griesti ir zemāki nekā {{ p.yearCap | eur }} eiro.</li>
+          <li>Nauda atgriežas pēc fakta: vispirms uzņēmums apmaksā rēķinu, tad iesniedz izdevumus. Izdevumus par kārtējo gadu iesniedz līdz {{ p.claimBy }}.</li>
+          <li>Pirms pasūtījuma jāveic cenu aptauja, un tā ir paša saņēmēja atbildība.</li>
+        </ul>
+        <p><a class="arrow-link" href="{{ p.url }}" target="_blank" rel="noopener">Programmas nosacījumi LIAA lapā</a></p>
+      </div>
+      <div class="col">
+        <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-services-module.njk" %}</figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">02</span> Atbilstība</span>
+        <h2>Kam tas ir paredzēts</h2>
+      </div>
+      <p class="lead">Pirms plānot budžetu, ir vērts izbraukt cauri nosacījumiem. Atbilstību galīgi izvērtē LIAA, bet šie ir tie punkti, pie kuriem pieteikumi apstājas visbiežāk.</p>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <h3>Pamatnosacījumi</h3>
+        <ul class="tick-list">
+          {%- for g in p.gates %}
+          <li>{{ g }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Nozares, kas nekvalificējas</h3>
+        <p>Programma neattiecas uz šīm nozarēm:</p>
+        <ul class="tick-list">
+          {%- for s in p.excludedSectors %}
+          <li>{{ s | capitalize }}</li>
+          {%- endfor %}
+        </ul>
+        <p class="fine">Saraksts ir saīsināts pēc programmas nosacījumiem. Precīzo formulējumu un pašpārbaudes kalkulatoru skati <a href="{{ p.url }}" target="_blank" rel="noopener">LIAA lapā</a>; tur redzēsi arī savu punktu skaitu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">03</span> Izmaksas</span>
+        <h2>Kas ir attiecināms un kas nav</h2>
+      </div>
+      <p class="lead">Šī ir tā vieta, kur budžets visbiežāk sašķobās. Attiecināma ir materiāla izstrāde, nevis tā pavairošana.</p>
+    </div>
+    <div class="hgrid hgrid--3">
+      <div class="cell">
+        <span class="cell-idx">01</span>
+        <h3>Attiecināms</h3>
+        <p>Mārketinga vizuālo materiālu izstrāde līdz maketam, ārvalstu partneru meklēšana un telemārketings, dalība starptautiskās izstādēs un tirdzniecības misijās, atbilstoši programmas nosacījumiem.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">02</span>
+        <h3>Nav attiecināms</h3>
+        <p>Druka, ražošana, pavairošana un mediju pirkšana. Tie ir reāli izdevumi, bet šajā pozīcijā tos neieskaita, tāpēc mēs tos nepiedāvājam kopā ar izstrādi un nerakstām vienā rindā.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">03</span>
+        <h3>PVN</h3>
+        <p>Atbalstu rēķina no izmaksām bez PVN. Tāpēc visas cenas šajā lapā ir bez PVN: tā ir summa, kas nonāk aprēķinā.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">04</span> Cenu aptauja</span>
+        <h2>Kā notiek iepirkums</h2>
+      </div>
+      <p class="lead">Atbalsta saņēmējs izvēlas piegādātāju pats, bet izvēle ir jāpamato. Aptauju veic un dokumentē uzņēmums; mēs esam viens no pretendentiem un iedodam piedāvājumu tādā formā, ko var pielikt protokolam.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h3>Apraksti apjomu</h3><p>Uzraksti, ko tieši vajag: pozīcijas, valodas, tirgus un termiņš. Visiem pretendentiem jāsaņem viens un tas pats apjoms, citādi piedāvājumi nav salīdzināmi.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Savāc {{ p.quotes }} piedāvājumus</h3><p>Parasti vajag {{ p.quotes }} salīdzināmus piedāvājumus ar cenām bez PVN. Ja plānotā līguma summa pārsniedz {{ p.procurementThreshold | eur }} eiro, jārīko pilna iepirkuma procedūra.</p></div>
+      <div class="step"><span class="step-num">03</span><h3>Noformē izvēli</h3><p>Sagatavo protokolu, kurā redzams, kas tika aptaujāts, ko katrs piedāvāja un kāpēc izvēlēts uzvarētājs. Zemākā cena nav vienīgais kritērijs, bet kritērijiem jābūt pierakstītiem iepriekš.</p></div>
+      <div class="step"><span class="step-num">04</span><h3>Pasūti un iesniedz</h3><p>Pēc izpildes un apmaksas iesniedz LIAA izdevumus kopā ar aptaujas dokumentiem. Mēs nodošanas brīdī iedodam pozīciju sarakstu un aktu, kas sakrīt ar piedāvājumu.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pakalpojumi">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">05</span> Piedāvājums</span>
+        <h2>Divi pakalpojumi ar fiksētu cenu</h2>
+      </div>
+      <p class="lead">Abi ir sagatavoti tā, lai iekļautos vienā gada limitā un lai piedāvājumu varētu pielikt cenu aptaujai bez pārrakstīšanas. Cenas ir bez PVN.</p>
+    </div>
+    <div class="row cols-2 top">
+      {%- for o in liaa.offers %}
+      <div class="col">
+        {#- the short `nav` label, not `name`: side by side, the full names wrap
+            to different line counts and the two price panels stop lining up. #}
+        <h3>{{ o.nav }}</h3>
+        <p>{{ o.lead }}</p>
+        {% include "liaa-price.njk" %}
+        <p><a class="arrow-link" href="{{ o.url }}">Pozīciju saraksts un termiņi</a></p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">06</span> Sadarbība</span>
+        <h2>Kā strādājam</h2>
+      </div>
+      <p class="lead">Fiksēta cena, pozīciju saraksts un dokumenti, kas sakrīt savā starpā. Tas ir viss, ko no piegādātāja prasa šī programma, un tieši tas šeit visbiežāk pietrūkst.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h3>Piedāvājums vienā darba dienā</h3><p>Aizpildi pieteikumu, un nosūtām cenu piedāvājumu ar pozīcijām, cenām bez PVN, rezultātiem un termiņiem. E-pastā, lai sarakste paliek dokumentēta.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Brīfs un līgums</h3><p>Pēc izvēles vienojamies par brīfu: tirgus, valoda, saturs un apstiprinātājs. Termiņš sākas no apstiprināta brīfa, nevis no līguma parakstīšanas, tāpēc abām pusēm ir skaidrs, kad kas notiek.</p></div>
+      <div class="step"><span class="step-num">03</span><h3>Izpilde ar starpposmiem</h3><p>Katra pozīcija tiek nodota atsevišķi, ar vienu apstiprināšanas kārtu. Tā apjoms nepieaug klusām, un cena paliek tā, kas bija piedāvājumā.</p></div>
+      <div class="step"><span class="step-num">04</span><h3>Nodošana un dokumenti</h3><p>Nodošanas komplektā ir izejas faili, akts un rēķins, kuru pozīcijas sakrīt ar piedāvājumu. Ar to uzņēmums var doties pie sava atbalsta pieteikuma.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">07</span> Jautājumi</span>
+        <h2>Biežākie jautājumi</h2>
+      </div>
+      <p class="lead">Atbildes uz to, ko par šo programmu jautā visbiežāk. Ja atbilde ir atkarīga no Tava gadījuma, to tā arī sakām.</p>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        {%- for f in faq.slice(0, 4) %}
+        <details class="faq"><summary>{{ f.q }}</summary><div><p>{{ f.a }}</p></div></details>
+        {%- endfor %}
+      </div>
+      <div class="col">
+        {%- for f in faq.slice(4) %}
+        <details class="faq"><summary>{{ f.q }}</summary><div><p>{{ f.a }}</p></div></details>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pieteikums">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">08</span> Pieteikums</span>
+        <h2>Saņem cenu piedāvājumu</h2>
+      </div>
+      <p class="lead">Aizpildi, un vienas darba dienas laikā nosūtām piedāvājumu ar pozīcijām un cenām bez PVN. Ja vēl vāc piedāvājumus salīdzināšanai, tas ir tieši tas dokuments, kas Tev vajadzīgs.</p>
+    </div>
+    <div class="row cols-1">
+      <div class="col">{{ form("liaa") }}</div>
+    </div>
+    {% include "liaa-disclaimer.njk" %}
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-band-inner">
+    <div>
+      <h2>Nav skaidrs, vai kvalificējies?</h2>
+      <p>Pastāsti savu situāciju, un pasakām, vai mūsu pakalpojums vispār iederas Tavā plānā. Atbilstību programmai izvērtē LIAA, bet apjomu un termiņus varam izrunāt uzreiz: <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a>, +371 26673384.</p>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
+      <a class="btn btn--ghost" href="/sazinies/">Pieteikties 20 min zvanam</a>
+    </div>
+  </div>
+</section>

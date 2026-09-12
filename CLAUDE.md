@@ -2817,6 +2817,104 @@ bottom-cropped composition. Both were regenerated with corrected prompts.
 **Proof-read every one of these against the cyan budget specifically** - a
 prompt that names a large cyan element will get you a large cyan element.
 
+## LIAA export-grant cluster (12 Sep 2026)
+
+Three pages selling into the **MVU eksporta atbalsta darbību plāns**, which
+reimburses 60% of eligible export-marketing cost up to 40 000 € a year:
+`/liaa-eksporta-atbalsts/` (pillar) plus two fixed-price products,
+`/eksporta-marketinga-materiali/` (4 900 € bez PVN) and
+`/eksporta-telemarketings/` (7 900 € bez PVN). Owner confirmed both prices and
+told me to publish the scope rows as drafted.
+
+**`CONTENT-RULES.md` at the repo root governs every word of it, and it is
+compliance, not style.** Read it before editing these pages or writing an ad
+for them. The short version: we are a supplier and never an approved or
+accredited one (no such status exists in this programme); never guarantee the
+grant; prices always ex-VAT because the support is computed on net cost;
+printing and production are outside the eligible scope and we say so plainly;
+the client runs their own cenu aptauja; every page carries
+`liaa-disclaimer.njk` verbatim; and no LIAA/ERAF/EU emblem anywhere. Plus: no
+em dashes in this Latvian copy.
+
+**`src/_data/liaa.json` is the one source for every figure** - the programme
+facts, both offers, their scope rows, delivery terms and required inputs. The
+price box (`liaa-price.njk`), the scope table (`liaa-scope.njk`), the page
+copy, the JSON-LD and the quote PDF all read it, so they cannot disagree. The
+`eur` filter formats an integer with no-break thousands.
+
+**A known conflict, deliberately not repeated on the site:** LIAA's older SKV
+page still states a 60 000 € annual cap. That is the previous programme; this
+one caps at 40 000 €. Expect clients to quote the old number.
+
+**Schema comes from front matter.** `service: { key }` looks the offer up in
+liaa.json and emits a `Service` with `offers.price` / `valueAddedTaxIncluded:
+false`; `faq: [{q, a}]` emits a `FAQPage` **and renders the visible accordion
+from the same array**, so a question can never be in the markup and not on the
+page. Both need `service`, `faq` and `liaa` inside the `sd` object in
+`base.njk` - that object is an explicit whitelist, and a new schema input that
+is not listed there silently produces nothing.
+
+### The lead form goes to two places, and neither waits for the other
+
+`forms.json -> forms.liaa` renders through the same macro as the other two
+forms. MailerLite keeps the lead; a webhook e-mails the enquiry to Rihards and
+sends the applicant a fixed confirmation. `forms.js` fires the webhook
+(`notify()`) BEFORE the provider and never awaits it: the two destinations
+must not be able to take each other down.
+
+- n8n workflow **"Mārketinga Skola — LIAA pieteikumi" (`uSmnXxiT4rUcVAGj`)**,
+  `POST /webhook/liaa-lead?k=...`, published 12 Sep 2026. Gmail credential
+  `D3Ad44nbxH1ffQZC` (Marketinga skola). Verified end to end: a wrong key dies
+  in the Code node with nothing sent, a good one sends both messages.
+- **The key is obfuscation, not authentication** - it ships in client JS,
+  exactly like `capiSecret`. It rides in the QUERY STRING and the body is
+  `text/plain` on purpose: both keep the POST a *simple* request, so there is
+  no preflight and no CORS to configure. A custom header would need both.
+- **The auto-reply echoes no user input** - only the recipient address varies.
+  The webhook is public, so a fixed template is what keeps it from being a
+  relay for attacker-written text. Keep it that way.
+- **Residual risk to watch:** anyone who reads the key can make the workflow
+  send that fixed Latvian confirmation to an arbitrary address. Volume is the
+  only real exposure; if it is ever abused, rotate the key in `forms.json` and
+  the Code node, or put a rate limit in front of it.
+
+**`data-into` used to work on selects only.** `form.njk` emitted the attribute
+in the `select` branch and nowhere else, so a TEXT field marked `into` was
+silently dropped by MailerLite as an unknown field. The LIAA form has two
+(`regnr`, `tirgus`), which is how it surfaced. Fixed; the input branch emits
+it too. If a field's answer is not arriving, check that first.
+
+### The quote PDF
+
+`npm run quote -- --offer=materiali --client="SIA X" --regnr=... --contact=...`
+renders `templates/cenu-piedavajums.html` and prints an A4 PDF through the
+puppeteer/Chrome that the other tools already use (`--html` writes the filled
+HTML instead). White paper, not the dark ledger, because it is printed and
+read beside two competitors' quotes.
+
+**The line prices are split across the scope rows and rounded so the column
+adds up to the fixed total exactly** - a quote whose column does not sum is
+the first thing a procurement reviewer notices. The tool also refuses to write
+if any template slot is left unfilled.
+
+### Artwork and placement
+
+Three new `default`-style slots (`hero-liaa-eksports`,
+`hero-eksporta-materiali`, `hero-eksporta-partneri`), ground-matched and built
+as pieces like everything else. The pillar's artwork is three quote documents
+with one marked, which is the cenu aptauja in one picture. `/pakalpojumi/`
+gained a seventh tile using `.cell--wide`, showing the pillar's own header per
+the hub-tile rule.
+
+**Still owner-gated, do not guess:**
+1. Search Console: the three URLs need submitting; I cannot sign in.
+2. Whether both offers may be sold together to one client inside the annual
+   cap, and what happens if the client wants only part of a scope.
+3. MailerLite double opt-in is still ON, so a LIAA enquirer lands
+   `unconfirmed` in the list. The n8n path is unaffected, which is why the
+   lead is not lost, but the list entry is not usable for e-mail until they
+   confirm.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
