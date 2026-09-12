@@ -1945,6 +1945,11 @@ artwork against the house style; the model drifts on "flat".
 
 ## Lead magnet: the automated page check (8 Sep 2026)
 
+**Since 12 Sep this is ONE OF TWO offers behind the same popup** - see "Two
+lead magnets, one engine" under the LIAA section. Everything below still
+describes the page check and still governs it; what changed is that it now
+runs on the blog and the course pages rather than everywhere.
+
 Owner asked for a lead magnet, "free ad or automation audit", as a popup.
 Built as an **automated on-page check**, deliberately not as a free audit.
 
@@ -2905,6 +2910,60 @@ as pieces like everything else. The pillar's artwork is three quote documents
 with one marked, which is the cenu aptauja in one picture. `/pakalpojumi/`
 gained a seventh tile using `.cell--wide`, showing the pillar's own header per
 the hub-tile rule.
+
+### Two lead magnets, one engine (12 Sep 2026)
+
+Owner: *"can we replace the current lead magnet / popup with something related
+to these new offers?"* Replaced where it earns its place, kept where it still
+fits, because the two audiences are not the same people.
+
+| Where | Offer |
+| --- | --- |
+| `/`, `/pakalpojumi/`, the four service pages, `/portfolio/` | the LIAA sagatave |
+| everywhere else (blog, course pages, categories) | the automated page check |
+| `/sazinies/`, `/privatuma-politika/`, `/marketinga-konsultacijas/` and the three LIAA pages | nothing |
+
+**Why split rather than swap.** Blog traffic is small local businesses doing
+it themselves, and an export grant is irrelevant to them; the commercial pages
+are where a buyer with a budget is reading. **Only ever one popup per
+visitor** either way - two overlays is how people leave. `base.njk` picks the
+variant from two lists and passes `data-variant`; `leadmagnet.js` shares the
+timing, the dismissal memory and the focus trap (the tuned part) and branches
+only on submit and result. The three LIAA pages are suppressed because the
+real form sits a few centimetres below.
+
+**The offer is a document, never an eligibility opinion.** `npm run sagatave`
+(`tools/liaa-sagatave.mjs`) renders `templates/eksporta-atbalsts-sagatave.html`
+to `src/faili/eksporta-atbalsts-sagatave.pdf`: page one is the programme's
+published conditions, page two a blank cenu aptaujas protokols the recipient
+fills in themselves. **Do not turn this into a "do you qualify?" checker** -
+CONTENT-RULES.md rule 2 forbids judging that, and LIAA publishes its own
+self-assessment calculator. Every figure is filled from `liaa.json`, so
+**re-run `npm run sagatave` after any change to that file**: the PDF is
+committed and nothing else notices when it goes stale.
+
+- **The file is handed over on screen AND e-mailed.** MailerLite double opt-in
+  would otherwise leave someone who gave a valid address with nothing at all.
+- **`/faili/` had to be added to `ASSET_RE`** in `eleventy.config.js` - the
+  build ships only referenced assets, and a PDF under a new prefix is invisible
+  to a scan that only knows `img|video|fonts`.
+- **The same webhook takes both**, distinguished by `form`: `liaa` is a quote
+  request from the pages' form, `liaa-sagatave` a download. The Code node picks
+  the subject and the reply, because promising a price quote to someone who
+  only downloaded a template is a promise they never asked for. **Both reply
+  bodies stay fixed literals** - the webhook is public, and a template that
+  echoed user input would make it a relay for attacker-written text.
+- `msTrack` fires `generate_lead` with `form_id: liaa-sagatave`, so GA4 can
+  tell the two magnets apart on the one key event.
+
+Verified in the browser on both variants: desktop exit intent and the phone's
+55% scroll gate both open it, the sagatave posts to MailerLite plus the
+webhook and renders a working download link, the page check still posts only
+the URL to `/audits` with no e-mail, and at 375px the sheet is 688px of an
+812px viewport with the CTA in view. **Pin `scroll-behavior: auto` before
+scripting a scroll** - `html { scroll-behavior: smooth }` makes `scrollTo`
+asynchronous, and the first phone run reported the popup broken when the page
+had simply not moved yet. Same trap as the forms test.
 
 **Still owner-gated, do not guess:**
 1. Search Console: the three URLs need submitting; I cannot sign in.

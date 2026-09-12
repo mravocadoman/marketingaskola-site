@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<title>Eksporta atbalsts: nosacījumi un cenu aptaujas sagatave</title>
+<!--
+  The lead magnet's download: two printed pages. Page one states the
+  programme's PUBLISHED conditions, page two is a blank cenu aptaujas
+  protokols the recipient fills in themselves.
+
+  Rendered by tools/liaa-sagatave.mjs; every figure is filled from
+  src/_data/liaa.json, so this document cannot quote a rate the site does not.
+
+  CONTENT-RULES.md applies in full. In particular: this states conditions, it
+  never judges whether a given company qualifies (LIAA decides), it never
+  offers to run the price survey for anyone, and it carries no LIAA, ERAF or
+  EU emblem. The date in the header is load-bearing - the programme has been
+  re-issued once already, so a reader has to be able to tell how old this is.
+-->
+<style>
+  @page { size: A4; margin: 16mm 15mm 18mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 10pt/1.5 "Helvetica Neue", Arial, sans-serif; color: #10202f; background: #fff; }
+  h1 { font-size: 18pt; line-height: 1.2; margin: 0 0 2mm; letter-spacing: -0.015em; }
+  h2 { font-size: 10pt; margin: 7mm 0 2mm; text-transform: uppercase; letter-spacing: .09em; color: #5a6b7c; font-weight: 600; }
+  h2 .ix { color: #0096c7; margin-right: 2mm; }
+  p { margin: 0 0 2.5mm; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10mm; border-bottom: 1.5pt solid #10202f; padding-bottom: 3.5mm; }
+  .brand { font-size: 11pt; font-weight: 700; }
+  .meta { text-align: right; font-size: 8.5pt; color: #5a6b7c; }
+  .lede { font-size: 10.5pt; margin: 4mm 0 0; max-width: 150mm; }
+  .figs { display: flex; gap: 6mm; margin: 5mm 0 0; }
+  .fig { flex: 1; border-top: 1pt solid #10202f; padding-top: 2mm; }
+  .fig b { display: block; font-size: 15pt; line-height: 1.1; letter-spacing: -0.02em; }
+  .fig span { display: block; font-size: 8pt; color: #5a6b7c; margin-top: 1mm; }
+  ul { margin: 0 0 2.5mm; padding-left: 4.5mm; }
+  li { margin-bottom: 1.5mm; }
+  .two { display: flex; gap: 8mm; }
+  .two > div { flex: 1; }
+  .steps { display: flex; gap: 5mm; }
+  .steps > div { flex: 1; font-size: 9pt; }
+  .steps b { display: block; font-size: 8pt; text-transform: uppercase; letter-spacing: .06em; color: #0096c7; margin-bottom: 1mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th, td { text-align: left; vertical-align: top; padding: 2mm 2.5mm 2mm 0; border-bottom: .5pt solid #c9d4de; }
+  th { font-size: 8pt; text-transform: uppercase; letter-spacing: .06em; color: #5a6b7c; border-bottom: 1pt solid #10202f; }
+  .fillrow td { height: 9mm; }
+  .fill { display: block; border-bottom: .5pt solid #8a9bad; height: 6mm; }
+  .fill--tall { height: 16mm; }
+  .note { font-size: 8.5pt; color: #45566a; }
+  .fine { font-size: 8pt; color: #5a6b7c; line-height: 1.45; border-top: .5pt solid #c9d4de; padding-top: 2.5mm; margin-top: 6mm; }
+  .page2 { break-before: page; }
+  .sign { display: flex; gap: 12mm; margin-top: 10mm; font-size: 9pt; }
+  .sign > div { flex: 1; border-top: .5pt solid #10202f; padding-top: 1.5mm; color: #5a6b7c; }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div>
+    <div class="brand">{{ company.name }} &middot; marketingaskola.lv</div>
+    <div class="note">{{ email }}, {{ phone }}</div>
+  </div>
+  <div class="meta">
+    Sagatavots {{ date }}<br>
+    pēc LIAA publiskotajiem nosacījumiem
+  </div>
+</div>
+
+<h1>Eksporta atbalsts: nosacījumi un cenu aptaujas sagatave</h1>
+<p class="lede">{{ programme.name }} atmaksā daļu no izmaksām, kas sagatavo uzņēmuma eksportu. Šī lapa apkopo publiskotos nosacījumus, un otrajā lapā ir cenu aptaujas protokola sagatave, ko aizpildi pats. Aktuālo redakciju vienmēr skati LIAA lapā: {{ programmeUrl }}</p>
+
+<div class="figs">
+  <div class="fig"><b>{{ rate }}%</b><span>Atmaksa no attiecināmajām izmaksām bez PVN</span></div>
+  <div class="fig"><b>{{ yearCap }} €</b><span>Maksimums vienam saņēmējam gadā</span></div>
+  <div class="fig"><b>{{ turnoverShare }}%</b><span>No pēdējā noslēgtā gada neto apgrozījuma</span></div>
+  <div class="fig"><b>{{ applyUntil }}</b><span>Pieteikties var līdz šim datumam</span></div>
+</div>
+
+<h2><span class="ix">01</span>Kā tas darbojas</h2>
+<ul>
+  <li>Atbalsts atgriežas pēc fakta: vispirms uzņēmums apmaksā rēķinu, tad iesniedz izdevumus. Izdevumus par kārtējo gadu iesniedz līdz {{ claimBy }}.</li>
+  <li>Gada atbalsts nepārsniedz {{ turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma, tāpēc mazākam uzņēmumam griesti ir zemāki nekā {{ yearCap }} eiro.</li>
+  <li>Aprēķina bāze ir izmaksas bez PVN. PVN jāsamaksā, bet atbalstā to neieskaita.</li>
+  <li>Pirms pasūtījuma jāveic cenu aptauja. To veic un dokumentē pats atbalsta saņēmējs.</li>
+</ul>
+
+<div class="two">
+  <div>
+    <h2><span class="ix">02</span>Pamatnosacījumi</h2>
+    <ul>{{ gates }}</ul>
+  </div>
+  <div>
+    <h2><span class="ix">03</span>Nozares, kas nekvalificējas</h2>
+    <ul>{{ sectors }}</ul>
+    <p class="note">Saraksts ir saīsināts. Precīzo formulējumu un pašpārbaudes kalkulatoru skati LIAA lapā; tur redzēsi arī savu punktu skaitu.</p>
+  </div>
+</div>
+
+<h2><span class="ix">04</span>Kas ir attiecināms un kas nav</h2>
+<div class="two">
+  <div>
+    <p><strong>Attiecināms.</strong> Mārketinga vizuālo materiālu izstrāde līdz maketam, ārvalstu partneru meklēšana un telemārketings, dalība starptautiskās izstādēs un tirdzniecības misijās, atbilstoši programmas nosacījumiem.</p>
+  </div>
+  <div>
+    <p><strong>Nav attiecināms.</strong> Druka, ražošana, pavairošana un mediju pirkšana. Tie ir reāli izdevumi, bet šajā pozīcijā tos neieskaita, tāpēc piedāvājumā tos labāk turēt atsevišķi no izstrādes.</p>
+  </div>
+</div>
+
+<h2><span class="ix">05</span>Cenu aptauja četros soļos</h2>
+<div class="steps">
+  <div><b>01 Apjoms</b>Uzraksti, ko tieši vajag: pozīcijas, valodas, tirgus un termiņš. Visiem pretendentiem jāsaņem viens un tas pats apjoms, citādi piedāvājumi nav salīdzināmi.</div>
+  <div><b>02 Piedāvājumi</b>Parasti vajag {{ quotes }} salīdzināmus piedāvājumus ar cenām bez PVN. Ja plānotā līguma summa pārsniedz {{ procurementThreshold }} eiro, jārīko pilna iepirkuma procedūra.</div>
+  <div><b>03 Protokols</b>Pieraksti, kas tika aptaujāts, ko katrs piedāvāja un kāpēc izvēlēts uzvarētājs. Kritērijiem jābūt noteiktiem iepriekš; zemākā cena nav vienīgais iespējamais kritērijs.</div>
+  <div><b>04 Iesniegšana</b>Pēc izpildes un apmaksas iesniedz LIAA izdevumus kopā ar aptaujas dokumentiem. Akta un rēķina pozīcijām jāsakrīt ar piedāvājumu.</div>
+</div>
+
+<p class="fine">{{ company.name }} ir pakalpojumu sniedzējs, nevis atbalsta konsultants. Mēs neesam LIAA apstiprināts, akreditēts vai oficiāls partneris, un šāds statuss programmā nepastāv. Šis dokuments apkopo publiskotos nosacījumus uz {{ date }} un nav juridiska vai iepirkuma konsultācija. Lēmumu par atbalsta piešķiršanu un izmaksu attiecināmību pieņem LIAA.</p>
+
+<div class="page2">
+  <div class="head">
+    <div>
+      <div class="brand">Cenu aptaujas protokols</div>
+      <div class="note">Sagatave. Aizpilda atbalsta saņēmējs.</div>
+    </div>
+    <div class="meta">marketingaskola.lv<br>{{ email }}</div>
+  </div>
+
+  <h2><span class="ix">01</span>Pasūtītājs un priekšmets</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:42mm">Uzņēmums</td><td><span class="fill"></span></td></tr>
+      <tr><td>Reģistrācijas numurs</td><td><span class="fill"></span></td></tr>
+      <tr><td>Iepirkuma priekšmets</td><td><span class="fill"></span></td></tr>
+      <tr><td>Apjoms, kas nosūtīts visiem pretendentiem</td><td><span class="fill fill--tall"></span></td></tr>
+      <tr><td>Izvēles kritēriji, noteikti pirms aptaujas</td><td><span class="fill fill--tall"></span></td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="ix">02</span>Aptaujātie pretendenti</h2>
+  <table>
+    <thead><tr><th style="width:8mm">Nr.</th><th>Pretendents</th><th style="width:32mm">Reģ. numurs</th><th style="width:28mm">Piedāvājuma datums</th><th style="width:30mm">Cena bez PVN</th></tr></thead>
+    <tbody>
+      <tr class="fillrow"><td>1.</td><td></td><td></td><td></td><td></td></tr>
+      <tr class="fillrow"><td>2.</td><td></td><td></td><td></td><td></td></tr>
+      <tr class="fillrow"><td>3.</td><td></td><td></td><td></td><td></td></tr>
+      <tr class="fillrow"><td>4.</td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <p class="note">Programmas nosacījumi parasti prasa {{ quotes }} salīdzināmus piedāvājumus par vienu un to pašu apjomu. Ceturtā rinda ir rezervē.</p>
+
+  <h2><span class="ix">03</span>Izvēle un pamatojums</h2>
+  <table>
+    <tbody>
+      <tr><td style="width:42mm">Izvēlētais pretendents</td><td><span class="fill"></span></td></tr>
+      <tr><td>Līguma summa bez PVN</td><td><span class="fill"></span></td></tr>
+      <tr><td>Pamatojums pēc iepriekš noteiktajiem kritērijiem</td><td><span class="fill fill--tall"></span></td></tr>
+      <tr><td>Pievienotie dokumenti</td><td><span class="fill"></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sign">
+    <div>Datums</div>
+    <div>Atbildīgā persona, paraksts</div>
+  </div>
+
+  <p class="fine">Sagatave ir palīglīdzeklis, nevis LIAA veidlapa. Pārbaudi, kāda forma un kādi pielikumi tiek prasīti Tavā pieteikumā: {{ programmeUrl }}</p>
+</div>
+
+</body>
+</html>

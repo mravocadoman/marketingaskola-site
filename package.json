@@ -40,7 +40,8 @@
     "lv:review": "node tools/lv-review.mjs",
     "motifs": "node tools/build-motifs.mjs",
     "ground": "node tools/match-ground.mjs",
-    "quote": "node tools/quote.mjs"
+    "quote": "node tools/quote.mjs",
+    "sagatave": "node tools/liaa-sagatave.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

@@ -15,6 +15,7 @@ const types = {
   '.svg': 'image/svg+xml', '.gif': 'image/gif', '.ico': 'image/x-icon', '.xml': 'application/xml',
   '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2',
   '.webmanifest': 'application/manifest+json', '.mp4': 'video/mp4', '.webm': 'video/webm', '.json': 'application/json',
+  '.pdf': 'application/pdf',
 };
 
 http.createServer((req, res) => {

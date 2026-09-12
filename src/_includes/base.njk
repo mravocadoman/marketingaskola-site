@@ -157,15 +157,48 @@
 {% endif %}
 
 {%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}
-{# Lead magnet: an automated on-page check. It reports only what one fetch of
-   the visitor's page can prove and routes the interpretation to the PAID
-   consultation - the copy rules forbid advertising free advisory work, and an
-   automated report is not advice. Renders only when site.analytics.auditUrl is
-   set, and never on the pages where the visitor is already converting. #}
-{% if site.analytics.auditUrl and not noindex and page.url not in ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/"] %}
+{# Lead magnet. TWO offers, one per audience, and only ever ONE popup per
+   visitor - two overlays is how people leave.
+
+   - On the commercial pages a business buyer is reading, so the offer is the
+     LIAA export-grant sagatave: the programme's published conditions plus a
+     blank cenu aptaujas protokols. A document, never advice - CONTENT-RULES.md
+     rule 2 forbids judging whether anyone qualifies, and LIAA publishes its own
+     self-assessment calculator.
+   - Everywhere else (the blog, the course pages) the reader is a small business
+     doing it themselves, for whom an export grant is irrelevant, so they keep
+     the automated on-page check. That reports only what one fetch of their page
+     can prove and routes every interpretation to the PAID consultation, because
+     the copy rules forbid advertising free advisory work.
+
+   Suppressed entirely where the visitor is already converting - including the
+   three LIAA pages, which carry the real form a few centimetres below. #}
+{% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/ai-un-automatizacijas/", "/portfolio/"] %}
+{% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/"] %}
+{% set lmVariant = "liaa" if page.url in lmLiaa else "audit" %}
+{% if not noindex and page.url not in lmOff and (site.analytics.auditUrl if lmVariant == "audit" else forms.forms.liaa.webhook) %}
 <div class="lm" data-lm hidden>
   <div class="lm-panel" role="dialog" aria-modal="true" aria-labelledby="lm-title">
     <button type="button" class="lm-close" data-lm-close aria-label="Aizvērt">&#215;</button>
+    {% if lmVariant == "liaa" %}
+    <span class="eyebrow">Bez maksas &middot; 2 lapas</span>
+    <h2 id="lm-title">{{ liaa.programme.rate }}% no eksporta mārketinga izmaksām var atgriezties atpakaļ</h2>
+    <p class="lm-sub">Valsts programma atmaksā {{ liaa.programme.rate }}% no attiecināmajām izmaksām, līdz {{ liaa.programme.yearCap | eur }} eiro gadā. Nosūtām divas lapas: nosacījumi, termiņi un izslēgtās nozares vienā lapā, un cenu aptaujas protokola sagatave, ko aizpildi pats.</p>
+
+    <form class="form lm-form" data-lm-form novalidate>
+      <p class="field field--select">
+        <span class="select-wrap">
+          <select id="lm-eksports" name="eksports" required>
+            <option value=""></option>
+            <option>Jau eksportējam</option>
+            <option>Plānojam sākt gada laikā</option>
+            <option>Vēl tikai skatāmies</option>
+          </select>
+        </span>
+        <label for="lm-eksports">Vai uzņēmums eksportē?<span class="req" aria-hidden="true">*</span></label>
+        <span class="field-error" data-error hidden></span>
+      </p>
+    {% else %}
     <span class="eyebrow">Bez maksas &middot; 20 sekundes</span>
     <h2 id="lm-title">Ko Google un Meta redz Tavā lapā?</h2>
     <p class="lm-sub">Deviņi punkti: pikselis, analītika, konversiju mērīšana un tas, kā lapa izskatās meklēšanas rezultātos. Mērīšana mēdz salūzt klusi. Reklāma turpina tērēt, bet dati vairs nenāk.</p>
@@ -180,6 +213,7 @@
         <label for="lm-url">Tavas mājaslapas adrese<span class="req" aria-hidden="true">*</span></label>
         <span class="field-error" data-error hidden></span>
       </p>
+    {% endif %}
       <p class="field">
         <input type="email" id="lm-email" name="email" placeholder=" " autocomplete="email" required>
         <label for="lm-email">E-pasts<span class="req" aria-hidden="true">*</span></label>
@@ -190,15 +224,23 @@
       <label class="form-consent"><input type="checkbox" name="consent" required>
         <span>Piekrītu, ka SIA &ldquo;Stonks&rdquo; apstrādā manus datus un sūta noderīgus materiālus. Atteikties var jebkurā brīdī. <a href="/privatuma-politika/">Privātuma politika</a></span></label>
       <span class="field-error" data-error hidden></span>
+      {% if lmVariant == "liaa" %}
+      <button class="btn" type="submit">Saņemt sagatavi</button>
+      <p class="lm-fine">Apkopoti publiskotie nosacījumi, nevis juridiska vai iepirkuma konsultācija. Par atbalsta piešķiršanu lemj LIAA.</p>
+      {% else %}
       <button class="btn" type="submit">Pārbaudīt manu lapu</button>
       <p class="lm-fine">Automātiska pārbaude. Cilvēka veiktu auditu tā neaizstāj.</p>
+      {% endif %}
     </form>
 
     <div class="lm-result" data-lm-result hidden></div>
   </div>
 </div>
 <script src="{{ "/js/leadmagnet.js" | bust }}" defer
+        data-variant="{{ lmVariant }}"
         data-audit="{{ site.analytics.auditUrl }}"
+        data-hook="{{ forms.forms.liaa.webhook }}"
+        data-file="/faili/eksporta-atbalsts-sagatave.pdf"
         data-ml-account="{{ forms.account }}"
         data-ml-form="{{ forms.forms.contact.id }}"></script>
 {% endif %}

@@ -1,4 +1,13 @@
-/* Lead magnet: the automated on-page check.
+/* Lead magnet. One engine, two offers - base.njk picks which by page, and the
+ * script reads it from data-variant:
+ *
+ *   "liaa"  - the export-grant sagatave, on the commercial pages. E-mail plus
+ *             one qualifying question; the file is handed over on screen AND
+ *             e-mailed by the n8n workflow, so closing the tab costs nothing.
+ *   "audit" - the automated on-page check, everywhere else.
+ *
+ * Only the submit and the result differ. The timing, the dismissal memory and
+ * the focus trap below are shared, and they are the tuned part.
  *
  * Two destinations on submit, deliberately independent:
  *   - the URL goes to the n8n webhook, which fetches the page and returns the
@@ -20,11 +29,14 @@
   var box = document.querySelector('[data-lm]');
   if (!box || !s) return;
 
+  var VARIANT = s.getAttribute('data-variant') === 'liaa' ? 'liaa' : 'audit';
   var AUDIT = s.getAttribute('data-audit');
+  var HOOK = s.getAttribute('data-hook');
+  var FILE = s.getAttribute('data-file');
   var ML_ACCOUNT = s.getAttribute('data-ml-account');
   var ML_FORM = s.getAttribute('data-ml-form');
   var KEY = 'ms-lm';
-  if (!AUDIT) return;
+  if (VARIANT === 'liaa' ? !HOOK : !AUDIT) return;
 
   var read = function () { try { return localStorage.getItem(KEY); } catch (e) { return 'seen'; } };
   var write = function (v) { try { localStorage.setItem(KEY, v); } catch (e) { /* private mode */ } };
@@ -50,7 +62,9 @@
     lastFocus = document.activeElement;
     box.hidden = false;
     document.body.style.overflow = 'hidden';
-    var first = box.querySelector('input');
+    // input OR select: the sagatave's first field is the qualifying dropdown,
+    // and querySelector('input') would skip straight past it to the e-mail.
+    var first = box.querySelector('input, select');
     if (first) first.focus();
     if (window.msTrack) window.msTrack('lead_magnet_open', { page_path: location.pathname });
   }
@@ -121,30 +135,56 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     clear();
-    var url = form.url.value.trim();
     var email = form.email.value.trim();
+    var url = '', eksports = '';
     var okAll = true;
-    if (!url || !/\.[a-z]{2,}/i.test(url)) { fail(form.url, 'Ieraksti mājaslapas adresi, piemēram, piemers.lv'); okAll = false; }
+    if (VARIANT === 'liaa') {
+      eksports = form.eksports.value;
+      if (!eksports) { fail(form.eksports, 'Izvēlies vienu variantu.'); okAll = false; }
+    } else {
+      url = form.url.value.trim();
+      if (!url || !/\.[a-z]{2,}/i.test(url)) { fail(form.url, 'Ieraksti mājaslapas adresi, piemēram, piemers.lv'); okAll = false; }
+    }
     if (!EMAIL_RE.test(email)) { fail(form.email, 'Pārbaudi e-pasta adresi.'); okAll = false; }
-    if (!form.consent.checked) { fail(form.consent, 'Bez piekrišanas nevaram nosūtīt rezultātu.'); okAll = false; }
+    if (!form.consent.checked) { fail(form.consent, 'Bez piekrišanas nevaram neko nosūtīt.'); okAll = false; }
     if (!okAll) return;
 
     var btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
-    btn.textContent = 'Pārbaudām…';
+    btn.textContent = VARIANT === 'liaa' ? 'Sūtām…' : 'Pārbaudām…';
 
-    // The list. Fire and forget: a MailerLite outage must not cost the report.
+    // The list. Fire and forget: a MailerLite outage must not cost the lead.
     if (ML_ACCOUNT && ML_FORM) {
       var body = new FormData();
       body.append('fields[email]', email);
-      body.append('fields[website]', url);
-      body.append('fields[source_page]', 'lapas parbaude');
+      if (url) body.append('fields[website]', url);
+      if (eksports) body.append('fields[message]', 'Eksporta statuss: ' + eksports);
+      body.append('fields[source_page]', VARIANT === 'liaa' ? 'liaa sagatave' : 'lapas parbaude');
       body.append('ml-submit', '1');
       body.append('anticsrf', 'true');
       fetch('https://assets.mailerlite.com/jsonp/' + ML_ACCOUNT + '/forms/' + ML_FORM + '/subscribe',
         { method: 'POST', body: body, mode: 'no-cors' }).catch(function () {});
     }
-    if (window.msTrack) window.msTrack('generate_lead', { form_id: 'lapas-parbaude', page_path: location.pathname }, { email: email });
+    var formId = VARIANT === 'liaa' ? 'liaa-sagatave' : 'lapas-parbaude';
+    if (window.msTrack) window.msTrack('generate_lead', { form_id: formId, page_path: location.pathname }, { email: email });
+
+    /* The sagatave. The same webhook the LIAA form uses, so the enquiry reaches
+     * a human whatever MailerLite does with the subscription; text/plain keeps
+     * it a simple request, so there is no preflight to configure. The file is
+     * shown on screen either way - the e-mail is the copy, not the delivery. */
+    if (VARIANT === 'liaa') {
+      try {
+        fetch(HOOK, {
+          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({
+            form: 'liaa-sagatave', page: location.pathname,
+            data: { email: email, message: 'Eksporta statuss: ' + eksports },
+          }),
+        }).catch(function () {});
+      } catch (e) { /* a blocked fetch must not cost the download */ }
+      handOver();
+      return;
+    }
 
     fetch(AUDIT, {
       method: 'POST',
@@ -157,6 +197,22 @@
         render({ ok: false, url: url, reason: 'pārbaude neatbildēja' });
       });
   });
+
+  /* The sagatave is handed over on screen, not held hostage for a confirmed
+     e-mail: MailerLite double opt-in would otherwise leave someone who gave a
+     valid address with nothing at all. */
+  function handOver() {
+    form.hidden = true;
+    result.hidden = false;
+    write('seen');
+    result.innerHTML =
+      '<h3>Sagatave ir gatava</h3>' +
+      '<p class="lm-sub">Divas lapas: programmas nosacījumi un cenu aptaujas protokola sagatave. To pašu failu nosūtām arī uz e-pastu.</p>' +
+      '<div class="btn-wrap"><a class="btn" href="' + FILE + '" download>Lejupielādēt PDF</a>' +
+      '<a class="btn btn--ghost" href="/liaa-eksporta-atbalsts/">Kā programma darbojas</a></div>' +
+      '<p class="lm-next">Ja jau zini apjomu un vāc piedāvājumus salīdzināšanai, ' +
+      '<a href="/liaa-eksporta-atbalsts/#pieteikums">cenu piedāvājumu ar pozīcijām</a> nosūtām vienas darba dienas laikā.</p>';
+  }
 
   function esc(t) {
     return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');

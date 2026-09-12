@@ -436,7 +436,7 @@ module.exports = function (eleventyConfig) {
   // in fonts.css), may carry the site host or a PATH_PREFIX segment in front,
   // and ends at a quote/paren/whitespace/?#&. That boundary is what keeps
   // player.vimeo.com/video/123 and &quot;-escaped feed markup out of the set.
-  const ASSET_RE = /(?:^|["'(=\s]|\.\.)(?:https?:\/\/(?:www\.)?marketingaskola\.lv)?((?:\/[\w.-]+)*?\/(?:img|video|fonts)\/[^"'()<>\s?#&]+)/g;
+  const ASSET_RE = /(?:^|["'(=\s]|\.\.)(?:https?:\/\/(?:www\.)?marketingaskola\.lv)?((?:\/[\w.-]+)*?\/(?:img|video|fonts|faili)\/[^"'()<>\s?#&]+)/g;
   const TEXT_EXT = new Set([".html", ".css", ".js", ".xml", ".json", ".webmanifest", ".txt"]);
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
     const out = path.resolve(__dirname, dir.output);
