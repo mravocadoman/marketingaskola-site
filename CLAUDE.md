@@ -342,6 +342,31 @@ lands, so it hits whatever is under those coordinates. The hub's form sits
 the button first. Suspect this the moment a headless click "succeeds" and
 nothing happens.
 
+**The contact form asks for the monthly ad budget (12 Sep 2026).** Owner
+wanted low-budget enquiries screened before the free call, so the form has a
+required `budget` select: under 1 000, 1 000-3 000, 3 000-10 000, over 10 000,
+and "Neattiecas (interesē cits pakalpojums)" so a video, SEO or automation
+enquiry is never blocked by it. The hint says *"ko maksā reklāmas platformai"* -
+the same confusion the meta description had, where a bare amount read as our
+fee.
+
+**It rides INSIDE the message field, and that is deliberate.** A field marked
+`"into": "message"` in `forms.json` is folded by `collect()` in `forms.js` into
+that field as a labelled line ("Reklāmas budžets mēnesī: 1 000-3 000 €",
+then a blank line, then what they wrote). Reason: **there is no MailerLite
+credential on this machine** - `.env` holds only `OPENAI_API_KEY` - so a
+`budget` custom field cannot be created from here, and `fields[budget]` for a
+field MailerLite does not know might be refused. A refused submission falls
+back to the `mailto:`, which is a worse lead. Folding needs nothing created and
+loses nothing. **To give it its own column later:** create a `budget` text
+field in MailerLite, then delete the `"into"` line. `collect()` feeds both the
+MailerLite post and the mailto, so neither path can miss it.
+
+`npm run test:forms` is **17/17** and one of those checks is exactly this: the
+payload carries the budget inside the message and sends no `fields[budget]`.
+The happy-path fill sets the select too, or the consent assertion before it
+would pass for the wrong reason.
+
 **Open decision — double opt-in is ON for these forms.** A submitted enquiry
 lands as `status: unconfirmed` until the person clicks a confirmation email.
 The lead and every custom field are still stored and visible in the dashboard,

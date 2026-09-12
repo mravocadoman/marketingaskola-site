@@ -54,6 +54,22 @@
           "autocomplete": "url"
         },
         {
+          "name": "budget",
+          "label": "Reklāmas budžets mēnesī",
+          "hint": "ko maksā reklāmas platformai",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Mazāk par 1 000 €",
+            "1 000–3 000 €",
+            "3 000–10 000 €",
+            "Virs 10 000 €",
+            "Neattiecas (interesē cits pakalpojums)"
+          ]
+        },
+        {
           "name": "message",
           "label": "Pastāsti vairāk par savu uzņēmumu un produktu vai pakalpojumu, ko piedāvā",
           "type": "textarea",

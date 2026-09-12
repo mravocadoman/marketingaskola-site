@@ -29,7 +29,7 @@
       <textarea id="{{ fid }}" name="{{ fl.name }}" rows="3" placeholder=" "{% if fl.required %} required{% endif %}>{{ p[fl.name] or "" }}</textarea>
       {%- elif fl.type == "select" %}
       <span class="select-wrap">
-        <select id="{{ fid }}" name="{{ fl.name }}"{% if fl.required %} required{% endif %}>
+        <select id="{{ fid }}" name="{{ fl.name }}"{% if fl.required %} required{% endif %}{% if fl.into %} data-into="{{ fl.into }}"{% endif %}>
           <option value=""></option>
           {%- for o in fl.options %}
           <option value="{{ o | safe }}"{% if p[fl.name] == o %} selected{% endif %}>{{ o | safe }}</option>

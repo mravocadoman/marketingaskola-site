@@ -58,6 +58,8 @@ await page.$eval('#contact-email', (n) => { n.value = 'lead@example.com'; });
 await page.$eval('#contact-name', (n) => { n.value = 'Anna'; });
 await page.$eval('#contact-last_name', (n) => { n.value = 'Berzina'; });
 await page.$eval('#contact-message', (n) => { n.value = 'Interese par Meta reklamam.'; });
+// required since 11 Sep 2026 - set it here so step 3 fails on consent alone
+await page.$eval('#contact-budget', (n) => { n.value = '1 000–3 000 €'; });
 await submit();
 await new Promise((r) => setTimeout(r, 200));
 check('consent required', captured === null, 'submit still blocked with consent unchecked');
@@ -74,6 +76,7 @@ for (const [k, v] of [['email', 'lead@example.com'], ['name', 'Anna'], ['message
   check(`payload carries ${k}`, !!captured && captured.body.includes(v), '');
 }
 check('honeypot not sent', !!captured && !captured.body.includes('company_url'), '');
+check('budget rides inside the message', !!captured && captured.body.includes('3 000') && !captured.body.includes('fields[budget]'), 'no MailerLite field needed');
 check('source_page sent', !!captured && captured.body.includes('/sazinies/'), '');
 
 // 5. honeypot: a filled trap sends nothing but looks successful

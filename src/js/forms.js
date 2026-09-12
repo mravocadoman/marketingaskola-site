@@ -94,6 +94,17 @@
       var v = (el.value || '').trim();
       if (v) data[el.name] = v;
     });
+    /* A field marked data-into travels INSIDE another field as a labelled
+     * line, so a new question needs no new MailerLite custom field - and an
+     * unknown field is exactly what could make MailerLite refuse the lead.
+     * Give it its own field later by creating it in MailerLite and dropping
+     * "into" from forms.json. */
+    Array.prototype.forEach.call(form.querySelectorAll('[data-into]'), function (el) {
+      var v = data[el.name], to = el.getAttribute('data-into');
+      if (!v) return;
+      delete data[el.name];
+      data[to] = labelFor(el) + ': ' + v + (data[to] ? '\n\n' + data[to] : '');
+    });
     return data;
   }
 
