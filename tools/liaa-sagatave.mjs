@@ -50,6 +50,17 @@ if (process.argv.includes('--html')) {
   fs.mkdirSync('src/faili', { recursive: true });
   await page.pdf({ path: 'src/faili/eksporta-atbalsts-sagatave.pdf', format: 'A4', printBackground: true });
   await b.close();
-  const kb = (fs.statSync('src/faili/eksporta-atbalsts-sagatave.pdf').size / 1024).toFixed(0);
-  console.log(`src/faili/eksporta-atbalsts-sagatave.pdf - ${kb} KB, ${p.rate}% / ${eur(p.yearCap)} €, sagatavots ${lvDate}`);
+
+  /* The document is TWO pages by design - the programme, then the procurement.
+   * The first version silently ran to four, with a near-empty page and a
+   * section stranded at the foot of another, and nothing noticed. Chrome writes
+   * these page objects uncompressed, so counting them is the cheap check that
+   * the copy still fits after an edit. */
+  const raw = fs.readFileSync('src/faili/eksporta-atbalsts-sagatave.pdf');
+  const pages = (raw.toString('latin1').match(/\/Type\s*\/Page[^s]/g) || []).length;
+  if (pages !== 2) {
+    console.error(`${pages} pages, expected 2 - the copy no longer fits. Shorten a section or move it to the other page; do not just let it spill.`);
+    process.exit(1);
+  }
+  console.log(`src/faili/eksporta-atbalsts-sagatave.pdf - ${pages} pages, ${(raw.length / 1024).toFixed(0)} KB, ${p.rate}% / ${eur(p.yearCap)} €, sagatavots ${lvDate}`);
 }

@@ -2965,6 +2965,40 @@ scripting a scroll** - `html { scroll-behavior: smooth }` makes `scrollTo`
 asynchronous, and the first phone run reported the popup broken when the page
 had simply not moved yet. Same trap as the forms test.
 
+### Two corrections the owner made on day one (12 Sep 2026)
+
+**"var atgriezties atpakaļ" was a pleonasm** - *atgriezties* already carries
+"back" - and it also made the costs return themselves. Owner: *"doesnt sounds
+grammatically correct"*. The line is **"{rate}% no eksporta mārketinga
+izmaksām var atgūt"** on the pillar h1 and in the popup. `atgūt` is the normal
+word for recovering money and keeps the claim conditional, which rule 2 needs.
+
+**Run `npm run lv:review` on new Latvian pages BEFORE shipping them.** It
+reported 47 findings across these three; about fifteen were real, and one was
+a grammar error repeated in five places: **`lai ... paliek` should be
+`lai ... būtu`** (a purpose clause takes the conditional). Also fixed:
+"Lēmums paliek LIAA" -> "...LIAA ziņā", "kontaktpersonas lomu" -> "amatu",
+"Termiņš, X, sākas no" -> "Termiņu, X, skaita no", "iet pie partneriem" ->
+"uzrunāt partnerus". **Deliberately NOT taken: "var tikt atmaksāti" ->
+"var atmaksāt"** - the passive is load-bearing here, because the active voice
+would name someone as paying. The tool cannot see a compliance rule.
+
+**The sagatave is TWO pages and the tool now fails if it is not.** The first
+version silently ran to four, with a near-empty page and a section stranded at
+the foot of another; owner: *"no empty / almost empty pages + no sections that
+start at the very bottom of page"*. `liaa-sagatave.mjs` counts `/Type /Page`
+in the output and exits 1 on anything but two, so a copy edit that no longer
+fits fails loudly instead of spilling. `h2 { break-after: avoid }` and
+`.block { break-inside: avoid }` are what keep a heading off the foot of a
+page. To see it rather than guess: render the filled HTML in puppeteer, wrap
+each page's nodes in a 210x297mm box with the `@page` margins as padding, and
+screenshot each box - the pane cannot open a PDF.
+
+The document is on the paper palette from the stylesheet (`--heading` #0b1b2b,
+`--body` #33475b, `--muted` #5a6f84) with the **indexed eyebrow** as its
+section head: cyan tick, cyan index, label, hairline to the edge. **Cyan is
+decorative only on paper** - it is never a word of text in here.
+
 **Still owner-gated, do not guess:**
 1. Search Console: the three URLs need submitting; I cannot sign in.
 2. Whether both offers may be sold together to one client inside the annual

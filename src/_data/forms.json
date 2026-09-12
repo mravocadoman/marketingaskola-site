@@ -155,7 +155,7 @@
     "liaa": {
       "id": "196419637828650760",
       "submit": "Saņemt cenu piedāvājumu",
-      "note": "Nosūtām pozīciju sarakstu ar cenām bez PVN 1 darba dienas laikā, e-pastā, lai sarakste paliek dokumentēta cenu aptaujai.",
+      "note": "Nosūtām pozīciju sarakstu ar cenām bez PVN 1 darba dienas laikā, pa e-pastu, lai sarakste būtu dokumentēta cenu aptaujai.",
       "successTitle": "Paldies, pieprasījums saņemts.",
       "successBody": "Cenu piedāvājumu ar pozīcijām un cenām bez PVN nosūtām 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai zvani +371 26673384.",
       "fields": [
