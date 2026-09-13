@@ -206,7 +206,7 @@
     result.hidden = false;
     write('seen');
     result.innerHTML =
-      '<h3>Sagatave ir gatava</h3>' +
+      '<h3>PDF ir gatavs</h3>' +
       '<p class="lm-sub">Divas lapas: programmas nosacījumi un cenu aptaujas protokola sagatave. To pašu failu nosūtām arī uz e-pastu.</p>' +
       '<div class="btn-wrap"><a class="btn" href="' + FILE + '" download>Lejupielādēt PDF</a>' +
       '<a class="btn btn--ghost" href="/liaa-eksporta-atbalsts/">Kā programma darbojas</a></div>' +
