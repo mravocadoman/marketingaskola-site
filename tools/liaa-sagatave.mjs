@@ -48,7 +48,29 @@ if (process.argv.includes('--html')) {
   const page = await b.newPage();
   await page.setContent(html, { waitUntil: 'load' });
   fs.mkdirSync('src/faili', { recursive: true });
-  await page.pdf({ path: 'src/faili/eksporta-atbalsts-sagatave.pdf', format: 'A4', printBackground: true });
+  // preferCSSPageSize is what makes the template's @page size AND margins
+  // count. Without it puppeteer uses its own margin option, which defaults to
+  // 0, and the PDF prints edge to edge however the CSS is written.
+  const OPTS = { format: 'A4', preferCSSPageSize: true, printBackground: true };
+  await page.pdf({ path: 'src/faili/eksporta-atbalsts-sagatave.pdf', ...OPTS });
+
+  /* --png=<dir>: rasterise each REAL page, not a mock-up of one. Every page is
+   * printed on its own with pageRanges (Chrome lays out the whole document
+   * first, so a page printed alone is identical to that page in the full PDF)
+   * and handed to macOS Quick Look. A screenshot of the HTML in a
+   * page-sized box is NOT this check - that is how zero margins shipped. */
+  const pngDir = (process.argv.find((a) => a.startsWith('--png=')) || '').slice(6);
+  if (pngDir) {
+    const { execFileSync } = await import('node:child_process');
+    fs.mkdirSync(pngDir, { recursive: true });
+    for (const n of [1, 2]) {
+      const one = `${pngDir}/page-${n}.pdf`;
+      await page.pdf({ path: one, ...OPTS, pageRanges: String(n) });
+      execFileSync('qlmanage', ['-t', '-s', '1400', '-o', pngDir, one], { stdio: 'ignore' });
+      fs.renameSync(`${one}.png`, `${pngDir}/page-${n}.png`);
+    }
+    console.log(`page images: ${pngDir}/page-1.png, ${pngDir}/page-2.png`);
+  }
   await b.close();
 
   /* The document is TWO pages by design - the programme, then the procurement.

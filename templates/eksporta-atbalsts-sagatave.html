@@ -23,7 +23,11 @@
   the header is load-bearing - the programme has been re-issued once already.
 -->
 <style>
-  @page { size: A4; margin: 15mm 14mm 13mm; }
+  /* Classic A4 document margins, 20 mm all round. These only reach the PDF
+     because liaa-sagatave.mjs passes preferCSSPageSize: puppeteer's page.pdf()
+     otherwise IGNORES @page margins and prints edge to edge at margin 0 - which
+     is exactly what the first versions shipped. */
+  @page { size: A4; margin: 20mm; }
   * { box-sizing: border-box; }
   :root {
     --ink: #0b1b2b; --body: #33475b; --muted: #5a6f84;
@@ -74,15 +78,14 @@
 
   table { width: 100%; border-collapse: collapse; font-size: 8.5pt; }
   th, td { text-align: left; vertical-align: top; padding: 1.8mm 2.5mm 1.8mm 0; border-bottom: 1pt solid var(--line); }
-  /* vertical-align: bottom, because "Piedāvājuma datums" wraps to two lines
-     while its neighbours do not - aligned to the top, the single-line headers
-     float above the rule and the row reads as broken. */
+  /* vertical-align: bottom, so a header that ever wraps to two lines keeps
+     its neighbours on the same baseline instead of floating above the rule. */
   th { font-size: 7.5pt; text-transform: uppercase; letter-spacing: .07em; color: var(--muted);
        border-bottom: 1pt solid var(--strong); font-weight: 600; vertical-align: bottom; }
   td.k { width: 46mm; color: var(--ink); }
-  .fillrow td { height: 8mm; }
+  .fillrow td { height: 7mm; }
   .fill { display: block; border-bottom: 1pt solid var(--strong); height: 5mm; }
-  .fill--tall { height: 13mm; }
+  .fill--tall { height: 10mm; }
 
   .note { font-size: 8pt; color: var(--muted); }
   .fine { font-size: 7.5pt; color: var(--muted); line-height: 1.4;
@@ -150,10 +153,10 @@
   <div class="block">
     <h2><span class="ix">05</span> Cenu aptauja četros soļos</h2>
     <div class="steps">
-      <div class="step"><b><i>01</i>Apjoms</b>Uzraksti, ko tieši vajag: pozīcijas, valodas, tirgus un termiņš. Visiem pretendentiem jāsaņem viens un tas pats apjoms, citādi piedāvājumi nav salīdzināmi.</div>
+      <div class="step"><b><i>01</i>Apjoms</b>Pozīcijas, valodas, tirgus un termiņš. Visiem pretendentiem viens un tas pats apjoms, citādi piedāvājumi nav salīdzināmi.</div>
       <div class="step"><b><i>02</i>Piedāvājumi</b>Parasti vajag {{ quotes }} salīdzināmus piedāvājumus ar cenām bez PVN. Ja plānotā līguma summa pārsniedz {{ procurementThreshold }} eiro, jārīko pilna iepirkuma procedūra.</div>
-      <div class="step"><b><i>03</i>Protokols</b>Pieraksti, kas tika aptaujāts, ko katrs piedāvāja un kāpēc izvēlēts uzvarētājs. Kritērijiem jābūt noteiktiem iepriekš; zemākā cena nav vienīgais iespējamais kritērijs.</div>
-      <div class="step"><b><i>04</i>Iesniegšana</b>Pēc izpildes un apmaksas iesniedz LIAA izdevumus kopā ar aptaujas dokumentiem. Akta un rēķina pozīcijām jāsakrīt ar piedāvājumu.</div>
+      <div class="step"><b><i>03</i>Protokols</b>Kas aptaujāts, ko katrs piedāvāja un kāpēc izvēlēts uzvarētājs. Kritērijiem jābūt noteiktiem iepriekš.</div>
+      <div class="step"><b><i>04</i>Iesniegšana</b>Pēc izpildes un apmaksas iesniedz izdevumus kopā ar aptaujas dokumentiem. Akta un rēķina pozīcijām jāsakrīt ar piedāvājumu.</div>
     </div>
   </div>
 
@@ -173,7 +176,7 @@
   <div class="block">
     <h2><span class="ix">07</span> Aptaujātie pretendenti</h2>
     <table>
-      <thead><tr><th style="width:7mm">Nr.</th><th>Pretendents</th><th style="width:30mm">Reģ. numurs</th><th style="width:26mm">Piedāvājuma datums</th><th style="width:28mm">Cena bez PVN</th></tr></thead>
+      <thead><tr><th style="width:7mm">Nr.</th><th>Pretendents</th><th style="width:30mm">Reģ. numurs</th><th style="width:24mm">Datums</th><th style="width:28mm">Cena bez PVN</th></tr></thead>
       <tbody>
         <tr class="fillrow"><td>1.</td><td></td><td></td><td></td><td></td></tr>
         <tr class="fillrow"><td>2.</td><td></td><td></td><td></td><td></td></tr>
@@ -181,7 +184,6 @@
         <tr class="fillrow"><td>4.</td><td></td><td></td><td></td><td></td></tr>
       </tbody>
     </table>
-    <p class="note">Programmas nosacījumi parasti prasa {{ quotes }} salīdzināmus piedāvājumus par vienu un to pašu apjomu. Ceturtā rinda ir rezervē.</p>
   </div>
 
   <div class="block">
@@ -200,7 +202,7 @@
     </div>
   </div>
 
-  <p class="fine">Sagatave ir palīglīdzeklis, nevis LIAA veidlapa. Pārbaudi, kāda forma un kādi pielikumi tiek prasīti Tavā pieteikumā: <a href="{{ programmeUrl }}">{{ programmeUrl }}</a>. Cenu aptauju veic, dokumentē un pieteikumu iesniedz pats atbalsta saņēmējs.</p>
+  <p class="fine">Sagatave ir palīglīdzeklis, nevis LIAA veidlapa. Aptauju veic un dokumentē pats atbalsta saņēmējs; prasītās formas skati LIAA lapā.</p>
 </div>
 
 </body>

@@ -2990,14 +2990,37 @@ start at the very bottom of page"*. `liaa-sagatave.mjs` counts `/Type /Page`
 in the output and exits 1 on anything but two, so a copy edit that no longer
 fits fails loudly instead of spilling. `h2 { break-after: avoid }` and
 `.block { break-inside: avoid }` are what keep a heading off the foot of a
-page. To see it rather than guess: render the filled HTML in puppeteer, wrap
-each page's nodes in a 210x297mm box with the `@page` margins as padding, and
-screenshot each box - the pane cannot open a PDF.
+page. To see it rather than guess: `npm run sagatave -- --png=<dir>` - see below.
 
 The document is on the paper palette from the stylesheet (`--heading` #0b1b2b,
 `--body` #33475b, `--muted` #5a6f84) with the **indexed eyebrow** as its
 section head: cyan tick, cyan index, label, hairline to the edge. **Cyan is
 decorative only on paper** - it is never a word of text in here.
+
+**Puppeteer ignores `@page` margins unless told not to (13 Sep 2026).** Owner:
+*"make it standard a4 size, no? and also theres no margins at all on the
+sides."* The page WAS A4 (MediaBox 210x297 mm) - but `page.pdf()` defaults
+`preferCSSPageSize` to false and its own `margin` to 0, so the template's
+`@page { margin }` never reached the file and every version printed edge to
+edge. `liaa-sagatave.mjs` passes `preferCSSPageSize: true` now, and the
+template carries classic 20 mm margins all round. **Any future puppeteer PDF
+here needs the same flag**, or its CSS margins are decoration.
+
+**Why nobody saw it: the check looked at a mock-up, not the file.** I had
+wrapped the HTML in a 210x297 mm box with the margins as padding and
+screenshotted that - which drew margins the PDF did not have. **Check the real
+PDF:** `npm run sagatave -- --png=<dir>` prints each page on its own with
+`pageRanges` (Chrome lays out the whole document first, so a page printed alone
+is identical to that page in the full file) and rasterises it with macOS
+`qlmanage`. The mock-up approach is retired; do not bring it back.
+
+Fitting two pages at the real 170x257 mm content box took one more cut: page 2
+measured **257.5 mm in a 257 mm box**, and because `.fine` cannot split, half
+a millimetre pushed the whole 13 mm block onto a third page. The pretendenti
+note went (step 02 already states the three-quote rule) and the page-2 fine
+print is one line (the full disclaimer and the LIAA link are on page 1).
+Current headroom: **page 1 24.7 mm, page 2 11 mm** - keep page 2 above ~5 mm
+when editing, or the next small change spills again.
 
 **Still owner-gated, do not guess:**
 1. Search Console: the three URLs need submitting; I cannot sign in.
