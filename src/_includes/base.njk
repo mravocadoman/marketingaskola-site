@@ -240,7 +240,7 @@
         data-variant="{{ lmVariant }}"
         data-audit="{{ site.analytics.auditUrl }}"
         data-hook="{{ forms.forms.liaa.webhook }}"
-        data-file="/faili/eksporta-atbalsts-sagatave.pdf"
+        data-file="{{ "/faili/eksporta-atbalsts-sagatave.pdf" | bust }}"
         data-ml-account="{{ forms.account }}"
         data-ml-form="{{ forms.forms.contact.id }}"></script>
 {% endif %}

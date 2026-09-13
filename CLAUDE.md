@@ -3043,6 +3043,17 @@ and phone on one line.
   contact line two. It is a grid now, with the contact row spanning the full
   width, at 28.8 mm.
 
+**The PDF link is cache-busted like CSS and images (13 Sep 2026).** SiteGround
+serves `/faili/` with `max-age=31536000` as well - checked on the live file - so
+a PDF redrawn at the same path never reaches a browser that already fetched it,
+and this one was redrawn four times on its first day. The popup's `data-file`
+goes through `| bust` now; `stamp` resolves any root path under `src/`, so
+`/faili/` needed no change to the filter. **Any new link to a file under
+`/faili/` must use `| bust`.** The one unversioned copy is the absolute link in
+the n8n reply e-mail: recipients fetch it once and fresh, so that is accepted,
+rather than baking a hash into the workflow that would go stale on the next
+update.
+
 **Still owner-gated, do not guess:**
 1. Search Console: the three URLs need submitting; I cannot sign in.
 2. Whether both offers may be sold together to one client inside the annual
