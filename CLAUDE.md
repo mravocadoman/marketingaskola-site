@@ -3019,8 +3019,29 @@ measured **257.5 mm in a 257 mm box**, and because `.fine` cannot split, half
 a millimetre pushed the whole 13 mm block onto a third page. The pretendenti
 note went (step 02 already states the three-quote rule) and the page-2 fine
 print is one line (the full disclaimer and the LIAA link are on page 1).
-Current headroom: **page 1 24.7 mm, page 2 11 mm** - keep page 2 above ~5 mm
-when editing, or the next small change spills again.
+Headroom after the CTA below: **page 1 6.2 mm, page 2 16.0 mm** - keep BOTH
+above ~5 mm when editing, or the next small change spills again.
+
+**The sagatave asks for the work - on page 1 only (13 Sep 2026).** Owner:
+*"should we also perhaps nudge them to consider us as a supplier? or CTA
+somewhere at the end?"* A panel sits above page 1's disclaimer: "Iekļauj mūs
+savā cenu aptaujā", both offers with their prices bez PVN, then link, e-mail
+and phone on one line.
+
+- **Not at the end of the document, deliberately.** Page 2 is the protokols the
+  buyer fills in and files with their application; an advert on that sheet
+  would sit in their procurement record.
+- **It asks to be INCLUDED in the survey**, as one of the pretendenti - the
+  only thing CONTENT-RULES rule 5 allows. **Never pre-fill us into the
+  pretendenti table or suggest selection criteria** on page 2: that stops being
+  a template and starts steering someone else's procurement.
+- Offers and prices are slots filled from `liaa.json`, not typed. The link
+  carries `utm_source=sagatave&utm_medium=pdf&utm_campaign=liaa`, so GA4 can
+  tell a visit from the PDF apart from one from the popup or the page.
+- The first version of the panel measured **36.8 mm** and pushed page 1 onto a
+  third page: in a narrow copy column the sentence ran three lines and the
+  contact line two. It is a grid now, with the contact row spanning the full
+  width, at 28.8 mm.
 
 **Still owner-gated, do not guess:**
 1. Search Console: the three URLs need submitting; I cannot sign in.

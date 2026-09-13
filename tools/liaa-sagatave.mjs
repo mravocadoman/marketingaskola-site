@@ -15,7 +15,7 @@ const site = JSON.parse(fs.readFileSync('src/_data/site.json', 'utf8'));
 const p = liaa.programme;
 
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
-const eur = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+const eur = (n) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0');
 const d = new Date();
 const lvDate = `${String(d.getDate()).padStart(2, '0')}.${String(d.getMonth() + 1).padStart(2, '0')}.${d.getFullYear()}.`;
 
@@ -28,6 +28,14 @@ const fill = {
   procurementThreshold: eur(p.procurementThreshold),
   gates: p.gates.map((g) => `<li>${esc(g)}</li>`).join('\n  '),
   sectors: p.excludedSectors.map((s) => `<li>${esc(s[0].toUpperCase() + s.slice(1))}</li>`).join('\n  '),
+  // The CTA's two offers, from the same file the pages and the quote read -
+  // a price typed into this PDF would be the one place it could go stale.
+  // Ex-VAT on every line, per CONTENT-RULES rule 3.
+  offers: liaa.offers.map((o) =>
+    `<div class="offer"><span>${esc(o.nav)}</span><b>${eur(o.price)}\u00a0€<small>bez PVN</small></b></div>`).join('\n    '),
+  // UTM-tagged so GA4 can tell a visit that came from the PDF from one that
+  // came from the popup or the page; #pieteikums lands on the quote form.
+  ctaUrl: 'https://marketingaskola.lv/liaa-eksporta-atbalsts/?utm_source=sagatave&amp;utm_medium=pdf&amp;utm_campaign=liaa#pieteikums',
 };
 
 let html = fs.readFileSync('templates/eksporta-atbalsts-sagatave.html', 'utf8');
