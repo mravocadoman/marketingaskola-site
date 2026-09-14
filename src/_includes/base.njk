@@ -174,7 +174,7 @@
    Suppressed entirely where the visitor is already converting - including the
    three LIAA pages, which carry the real form a few centimetres below. #}
 {% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/ai-un-automatizacijas/", "/portfolio/"] %}
-{% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/"] %}
+{% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/", "/cenu-aptauja-liaa/"] %}
 {% set lmVariant = "liaa" if page.url in lmLiaa else "audit" %}
 {% if not noindex and page.url not in lmOff and (site.analytics.auditUrl if lmVariant == "audit" else forms.forms.liaa.webhook) %}
 <div class="lm" data-lm hidden>

@@ -3146,13 +3146,44 @@ rather than baking a hash into the workflow that would go stale on the next
 update.
 
 **Still owner-gated, do not guess:**
-1. Search Console: the three URLs need submitting; I cannot sign in.
+1. Search Console: the three URLs and `/cenu-aptauja-liaa/` need submitting;
+   I cannot sign in.
 2. Whether both offers may be sold together to one client inside the annual
    cap, and what happens if the client wants only part of a scope.
 3. MailerLite double opt-in is still ON, so a LIAA enquirer lands
    `unconfirmed` in the list. The n8n path is unaffected, which is why the
    lead is not lost, but the list entry is not usable for e-mail until they
    confirm.
+
+### The how-to post, and four procurement facts (14 Sep 2026)
+
+`/cenu-aptauja-liaa/` (category `marketinga-strategija`) is the cluster's
+search entry: how to run the cenu aptauja itself. Every figure renders from
+`liaa.json`, it ends on `liaa-disclaimer.njk` like the three pages, and it is
+linked from the pillar's section 04, `reklamas-agenturas` and
+`digitala-marketinga-agentura-izaugsmei`. **The popup is off there** (`lmOff`):
+the audit variant is off-topic, and the LIAA variant would offer the PDF the
+post already links twice.
+
+Researched for it, all from the LIAA programme page, now in CONTENT-RULES.md:
+
+- Quotes must arrive **electronically** - e-mails or electronically signed
+  documents. A price given on the phone does not count.
+- The survey documents are **not submitted** to LIAA, but must be kept and
+  produced on request.
+- **No transactions with related parties**: the recipient, its members,
+  shareholders, council or board members, their relatives to the second
+  degree, spouses, representatives.
+- Procurement applies to a contract of **70 000 € or more** (MK Nr. 104), so
+  "pārsniedz" was wrong at the boundary. The pillar step, its FAQ and the
+  sagatave PDF say "vai vairāk" now.
+
+Two sentences came OUT for the same reason. "Kritērijiem jābūt pierakstītiem
+iepriekš" (pillar and PDF) is good practice, but LIAA does not publish it as a
+rule; "parasti vajag 3" softened a rule that is firm. **State only what the
+programme page states, at the strength it states it.** And a general agency
+post that links here must say *export* marketing: the programme reimburses
+export-marketing activities, not agency work as such.
 
 ## Copy rules
 

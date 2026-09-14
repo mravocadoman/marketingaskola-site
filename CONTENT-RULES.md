@@ -1,8 +1,8 @@
 # CONTENT-RULES.md — the LIAA export-grant pages
 
 Governs `/liaa-eksporta-atbalsts/`, `/eksporta-marketinga-materiali/`,
-`/eksporta-telemarketings/`, the quote template and any ad, e-mail or post
-that sells them. **These are compliance rules, not style preferences.** The
+`/eksporta-telemarketings/`, the how-to post `/cenu-aptauja-liaa/`, the quote
+template, the sagatave PDF and any ad, e-mail or post that sells them. **These are compliance rules, not style preferences.** The
 grant is public money with an audit trail, and the buyer forwards our page and
 our quote into their own application file — so anything wrong here becomes
 wrong inside somebody else's LIAA submission.
@@ -49,7 +49,8 @@ page, it does not go on the site.
 
 ## Verified programme facts
 
-Checked against liaa.business.gov.lv on **12 Sep 2026**. Re-verify before any
+Checked against liaa.business.gov.lv on **12 Sep 2026**; the four cenu aptauja
+rows (procurement, form, documents, related parties) on **14 Sep 2026**. Re-verify before any
 edit that touches a number; this programme has already been re-issued once.
 
 | Fact | Value | Where it renders |
@@ -60,8 +61,11 @@ edit that touches a number; this programme has already been re-issued once.
 | Applications open until | 31.12.2026 | pillar |
 | Programme budget | 15 400 000 € | pillar |
 | Costs claimed by | 31 March of the following calendar year | pillar |
-| Quotes needed in a cenu aptauja | 3 | pillar, both product pages |
-| Full procurement above | 70 000 € | pillar |
+| Quotes needed in a cenu aptauja | at least 3 | pillar, both product pages, post |
+| Procurement procedure from | a contract of 70 000 € or more (MK noteikumi Nr. 104, IV daļa); below it, a cenu aptauja | pillar, post, sagatave PDF |
+| Form of the quotes | submitted electronically: e-mails or electronically signed documents. A price given on the phone does not count | pillar, post, sagatave PDF |
+| Survey documents | not submitted to LIAA, but kept and produced on request | pillar, post, sagatave PDF |
+| Related parties | no transactions with the recipient, its members, shareholders, council or board members, their relatives to the second degree, spouses or representatives | post |
 | Self-assessment minimum | 9 points | eligibility |
 | Tax debt allowed | ≤1 000 € | eligibility |
 | Excluded sectors | 6, listed in `liaa.json` | eligibility |
@@ -79,7 +83,9 @@ quotes 60 000 at you, this is why.
   excluded sectors.
 - The same page's cenu aptauja guidance — three quotes, the 70 000 €
   procurement threshold, and the rule that the recipient runs and documents
-  the survey.
+  the survey; on 14 Sep 2026 also the electronic-submission rule, the storage
+  rule and the related-party ban. The page cites Cabinet Regulation No. 407
+  (<https://likumi.lv/ta/id/343803>) as the governing regulation.
 - Owner (Rihards), 12 Sep 2026: the two prices (4 900 € and 7 900 € bez PVN)
   and the scope rows, published as drafted.
 

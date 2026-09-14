@@ -63,6 +63,8 @@ Digitālā reklāma ar aģentūras palīdzību pārspēj tradicionālo TV vai av
 
 Kad aģentūra dod reālu vērtību un kad izdevīgāk darīt pašam, esam izvērtējuši rakstā [reklāmas aģentūras](/reklamas-agenturas/), bet to, ko aģentūra praktiski dara ikdienā, rakstā [kas ir mārketinga aģentūra](/marketinga-agentura-uzlabo-pardosanu/).
 
+Ja daļu eksporta mārketinga izmaksu plāno atgūt ar LIAA atbalstu, izvēle jāpamato ar cenu aptauju, kurā izvērtē vismaz {{ liaa.programme.quotes }} piedāvājumus. Soļi un biežākās kļūdas ir aprakstītas rakstā [cenu aptauja LIAA eksporta atbalstam](/cenu-aptauja-liaa/).
+
 ## Ceturtā iespēja: "mēs to izdarīsim ar mākslīgo intelektu"
 
 Šo variantu 2026. gadā apsver gandrīz katrs uzņēmums, tāpēc ir vērts to izvērtēt godīgi.

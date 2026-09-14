@@ -1158,6 +1158,15 @@
       "alt": "Viedtālrunis ar reklāmu plūsmā blakus augošam stabiņu grafikam.",
       "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: at the left an upright smartphone with square corners, its screen a solid cool-grey #8ba3bd panel showing one social feed post, an off-white #f2f5f8 image block across the upper part of the screen, two short darker bars beneath it standing in for text, and one small solid cyan #03c3f8 rectangle as the call-to-action button. At the right, separated by empty dark space, a bar chart of five solid vertical bars standing on one thin off-white baseline and rising steadily from left to right; the four shorter bars are cool grey, the tallest bar on the far right is off-white with a small solid cyan cap on its top edge. A modest dark margin surrounds both objects. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers, currency symbols or arrows of any kind. Cyan covers no more than five percent of the frame.",
       "rationale": "The homepage headline is 'Reklāma, kas atmaksājas' - an ad that pays back. A feed ad beside a rising chart says that at a glance, for the agency as a whole rather than one service. The cyan is a cap, not a bar, to stay inside the cyan budget."
+    },
+    {
+      "id": "cover-cenu-aptauja-liaa",
+      "page": "cenu-aptauja-liaa",
+      "aspect": "landscape",
+      "placement": "Blog post cover and animated post header for /cenu-aptauja-liaa/.",
+      "alt": "Starpliktuve ar trim cenu piedāvājumu rindām, vidējā atzīmēta.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: a large upright clipboard with square corners, its clip a small solid off-white #f2f5f8 block at the top, its sheet a solid cool-grey #8ba3bd panel carrying three wide horizontal rows separated by thin dark gaps; each row holds a short darker bar at its left and a solid bar of a different length at its right, like three quotes being compared; the middle row's right-hand bar is off-white #f2f5f8 and ends in one small solid cyan #03c3f8 square. To the right of the clipboard, separated by empty dark space, a slim off-white pen lies diagonally. A modest dark margin surrounds both objects. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers, currency symbols or ticks drawn as letters of any kind. Cyan covers no more than five percent of the frame.",
+      "rationale": "The post explains how to compare three quotes and document the choice. A clipboard of three compared rows with one marked says that without a word, and it differs from the LIAA pillar's three standing documents."
     }
   ]
 }

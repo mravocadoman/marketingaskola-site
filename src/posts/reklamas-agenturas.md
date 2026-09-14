@@ -66,6 +66,8 @@ Ja klients nes divsimt eiro peļņas un izmaksā piecdesmit, sadarbība ir izdev
 
 **Reklāmas budžets un aģentūras maksa vienmēr jāredz atsevišķi.** Ja tie ir sajaukti vienā summā, nevar saprast, par ko maksā.
 
+Ja kampaņa paredzēta eksporta tirgum un daļu izmaksu plāno atgūt ar LIAA eksporta atbalstu, piedāvājumu salīdzināšana vairs nav tikai laba prakse: vajag vismaz {{ liaa.programme.quotes }} elektroniski iesūtītus piedāvājumus. Kā to izdarīt un dokumentēt, aprakstīts rakstā [cenu aptauja LIAA eksporta atbalstam](/cenu-aptauja-liaa/).
+
 ## Pēc kā atpazīt labu partneri
 
 **Uzdod jautājumus, pirms sola rezultātu.** Cik maksā Tavs klients, kāda ir atkārtoto pirkumu daļa, kurš atbild uz pieteikumiem.
