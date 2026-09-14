@@ -40,6 +40,7 @@ const PAGES = [
   ['hero-liaa-eksports', 'liaa-eksports'],
   ['hero-eksporta-materiali', 'eksporta-materiali'],
   ['hero-eksporta-partneri', 'eksporta-partneri'],
+  ['hero-sakums', 'sakums'],
 ];
 
 /* PIECES - every post header is its own cover, split into its own objects.

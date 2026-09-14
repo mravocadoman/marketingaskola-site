@@ -38,6 +38,10 @@
     onScroll();
   }
 
+  /* The tempo knob lives in CSS (--motion on :root) so one number slows or
+     speeds everything; the JS timings below read the same value. */
+  var MOTION = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--motion')) || 1;
+
   /* ---------- scroll reveal ---------- */
   if (!reduce && 'IntersectionObserver' in window) {
     var targets = document.querySelectorAll(
@@ -52,7 +56,7 @@
           el.parentElement ? el.parentElement.children : [],
           function (s) { return s.classList && s.classList.contains('reveal'); }
         );
-        el.style.transitionDelay = Math.min(Math.max(0, sibs.indexOf(el)) * 70, 350) + 'ms';
+        el.style.transitionDelay = Math.min(Math.max(0, sibs.indexOf(el)) * 70 * MOTION, 350 * MOTION) + 'ms';
         el.classList.add('in');
         io.unobserve(el);
       });
@@ -82,7 +86,7 @@
         var target = parseFloat(digits.replace(/\s/g, '').replace(',', '.'));
         if (!isFinite(target)) return;
         var start = performance.now();
-        var dur = 900;
+        var dur = 900 * MOTION;
         el.setAttribute('data-count', '');
         (function tick(now) {
           var t = Math.min(1, (now - start) / dur);

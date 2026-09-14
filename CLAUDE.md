@@ -750,7 +750,12 @@ numbers: **90 declarations, 10 distinct sizes, 0 indistinguishable pairs, zero
 raw font-sizes left in the file.** If the audit ever reports fewer than 90
 declarations, it has gone blind again.
 
-## Homepage hero backdrop — drifting dots (21 Aug 2026)
+## Homepage hero backdrop — drifting dots (21 Aug 2026) — RETIRED 14 Sep 2026
+
+**History only.** The dots were retired when the homepage got a pieces motif like
+every other header (owner: *"retire the dots"*): `hero-fx.njk`, its CSS,
+`tools/test-hero.mjs` and `npm run test:hero` are deleted, and git has them.
+What follows records why they were built the way they were, in case they return.
 
 `src/_includes/hero-fx.njk` puts seven small cyan squares on curved paths behind
 the homepage headline. That is the whole effect.
@@ -2537,6 +2542,55 @@ different thing entirely.
 
 `post.njk`'s `{% elif image %}` fallback still exists for a post missing from
 the map.
+
+## Homepage header and the tempo knob (14 Sep 2026)
+
+Owner: *"design main page header as a svg animation that appears in intervals
+like the rest of the pages; agency appropriate? and make all of the animations
+animate slightly slower"*, then *"retire the dots"*.
+
+**The homepage hero is a pieces motif like every other header.**
+`motifs/sakums.njk`, built from `hero-sakums.webp`: a feed ad in a phone beside a
+rising bar chart, the headline "Reklāma, kas atmaksājas" as a picture. The
+tallest bar carries a small cyan CAP rather than being cyan, because a prompt that
+names a cyan mass gets a cyan slab back: 0.82% of the frame is cyan as shipped.
+Ink is 29.4%, a little under the 35-45 target, and was accepted rather than
+re-rolled into the overshoot that brings back rounded corners. The three stats
+moved out of the right column into a `.hero-stats` ledger row under the headline.
+
+- **`.hero-grid:has(> .hero-media)` has to stay inside `min-width: 981px`.**
+  `:has()` adds its argument's specificity, so unscoped it beat the 980px
+  one-column rule, and a 460px track with no content takes free space before a
+  `1fr` track gets any: on phones the copy column collapsed to a sliver and the
+  hero ran about 1 230px tall. `test:mobile` did not catch it - nothing
+  overflowed, the text just wrapped narrow. Same trap as the article grid's rail.
+- **Phones get no artwork** (`display: none` under 980px), so the logo strip
+  still reaches the first screen: 776px at 390x844, against 807px on production
+  before the change (the stats lost their panel padding). Production is the
+  cheapest "before" to measure against.
+- **The `.hero-grid .stat*` mobile rules are selector lists** with `.hero-stats`,
+  so any other page still using `.hero-grid` with a panel keeps its layout.
+
+**`--motion` on `:root` is the one tempo knob** - 1 is the original timing, 1.3
+since this change. Every entrance and ambient timing multiplies by it: header and
+scroll motif assembly, the hero rise, scroll reveals and their clip-wipe, eyebrow
+ticks, the h1 full-stop pop, step numerals, stat rules, the hero drift and both
+marquees. `main.js` reads the same variable for the reveal stagger and the counter
+duration. **Hover, focus and dropdown transitions are deliberately NOT on it**:
+slowed UI feedback reads as lag, not calm. To change the feel sitewide, change
+that one number.
+
+Two consequences in `tools/test-motifs.mjs`, both fixed:
+- the JS-off check waited a fixed 3 s, and at 1.3 the last header pieces were
+  still fading in; it now polls until no `motif-in` animation is running - from
+  Node, because page timers do not run with JavaScript disabled;
+- the phone header check skips a header that is not rendered, because a
+  `display: none` element runs no animations and would count as a failure.
+
+**Screenshot trap, hit while checking this:** a puppeteer screenshot with a `clip`
+taller than the viewport showed an EMPTY artwork column, while a viewport-sized
+shot of the same page had every piece at opacity 1 and 30% of that box drawn.
+Take viewport-sized shots of animated heroes, or finish the animations first.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 

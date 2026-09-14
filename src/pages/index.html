@@ -7,8 +7,6 @@ image: "/img/2025/03/Title-1.png"
 ---
 <section class="sec sec--hero">
   <div class="container">
-    <div class="hero-stage">
-    {% include "hero-fx.njk" %}
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Digitālā mārketinga aģentūra</p>
@@ -19,14 +17,17 @@ image: "/img/2025/03/Title-1.png"
           <a class="btn btn--ghost" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
         </div>
       </div>
-      <div class="panel">
-        <div class="stats">
-          <div class="stat"><span class="num">1M<span class="sfx">+ €</span></span><span class="label">pārvaldīti reklāmas budžeti</span></div>
-          <div class="stat"><span class="num">100<span class="sfx">+</span></span><span class="label">uzņēmumu, ar ko esam strādājuši</span></div>
-          <div class="stat"><span class="num">10<span class="sfx">+</span></span><span class="label">gadu pieredze reklāmā</span></div>
-        </div>
-      </div>
+      <figure class="hero-media">{% include "motifs/sakums.njk" %}</figure>
     </div>
+
+    {#- The proof numbers used to fill the right column. The artwork has it now,
+        so they run as one ledger row under the headline, above the logos. #}
+    <div class="hero-stats">
+      <div class="stats stats--row">
+        <div class="stat"><span class="num">1M<span class="sfx">+ €</span></span><span class="label">pārvaldīti reklāmas budžeti</span></div>
+        <div class="stat"><span class="num">100<span class="sfx">+</span></span><span class="label">uzņēmumu, ar ko esam strādājuši</span></div>
+        <div class="stat"><span class="num">10<span class="sfx">+</span></span><span class="label">gadu pieredze reklāmā</span></div>
+      </div>
     </div>
 
     <div class="logo-strip">

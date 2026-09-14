@@ -349,6 +349,17 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   align-items: center;
 }
 @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; } }
+/* The homepage hero carries artwork in its right column like every other page
+   header (14 Sep 2026). Scoped with :has so any other .hero-grid keeps its old
+   columns. The proof numbers that used to fill that column run as one ledger
+   row below the headline instead. */
+/* Desktop only, and it has to be: :has() adds its argument's specificity, so
+   outside a min-width query this beat the 980px one-column rule. And a 460px
+   track with nothing in it still takes free space BEFORE a 1fr track gets any,
+   so on phones the copy column collapsed to a sliver and the hero ran 1 200px
+   tall. Same grid trap as the article column's empty rail. */
+@media (min-width: 981px) { .hero-grid:has(> .hero-media) { grid-template-columns: minmax(0, 1fr) minmax(0, 460px); } }
+.hero-stats { margin-top: clamp(44px, 5vw, 72px); }
 
 /* the evidence panel — the featured card */
 .panel {
@@ -421,7 +432,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   align-items: center;
   gap: clamp(48px, 6vw, 88px);
   width: max-content;
-  animation: marquee 46s linear infinite;
+  animation: marquee calc(46s * var(--motion)) linear infinite;
   will-change: transform;
 }
 .marquee-track img {
@@ -434,7 +445,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
-@media (max-width: 640px) { .marquee-track img { height: 52px; } .marquee-track { animation-duration: 34s; } }
+@media (max-width: 640px) { .marquee-track img { height: 52px; } .marquee-track { animation-duration: calc(34s * var(--motion)); } }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; gap: 32px; }
   /* Header motion degrades to instant state changes: the underline, the caret,
@@ -448,7 +459,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 /* legacy marquee (unused on new pages, kept for compatibility) */
 .marquee { overflow: hidden; }
-.marquee-track { display: flex; align-items: center; gap: clamp(44px, 6vw, 80px); width: max-content; animation: marquee 36s linear infinite; padding: 6px 0; }
+.marquee-track { display: flex; align-items: center; gap: clamp(44px, 6vw, 80px); width: max-content; animation: marquee calc(36s * var(--motion)) linear infinite; padding: 6px 0; }
 .marquee-track img, .logo-row img { max-height: 44px; width: auto; display: block; margin: 0 auto; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; } }
@@ -1046,9 +1057,16 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   color: var(--muted);
 }
 
+/* ONE TEMPO KNOB for everything that animates on its own - entrances, scroll
+   reveals, motif assembly, counters (main.js reads it too), ambient loops.
+   1 = the original timing; 1.3 since 14 Sep 2026, owner: "make all of the
+   animations animate slightly slower". Hover, focus and dropdown feedback is
+   deliberately NOT on it: slowing UI feedback reads as lag, not calm. */
+:root { --motion: 1.3; }
+
 /* ---------- reveal ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal { opacity: 0; transform: translateY(12px); transition: opacity calc(0.5s * var(--motion)) ease, transform calc(0.5s * var(--motion)) ease; }
   .reveal.in { opacity: 1; transform: none; }
 }
 
@@ -1151,7 +1169,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* clip-wipe reveal for imagery (flat — no fade through a color) */
 @media (prefers-reduced-motion: no-preference) {
   .media.reveal { opacity: 1; transform: none; }
-  .media.reveal img { clip-path: inset(0 0 100% 0); transition: clip-path 0.85s cubic-bezier(0.22, 1, 0.36, 1); }
+  .media.reveal img { clip-path: inset(0 0 100% 0); transition: clip-path calc(0.85s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1); }
   .media.reveal.in img { clip-path: inset(0 0 0 0); }
 }
 
@@ -1167,23 +1185,23 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .page-hero h1,
   .page-hero .sub,
   .page-hero .chips,
-  .page-hero .btn-wrap { animation: hero-rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-  .page-hero .chip { animation-delay: 0.04s; }
-  .page-hero h1 { animation-delay: 0.1s; }
-  .page-hero .sub { animation-delay: 0.18s; }
-  .page-hero .chips { animation-delay: 0.26s; }
-  .page-hero .btn-wrap { animation-delay: 0.34s; }
+  .page-hero .btn-wrap { animation: hero-rise calc(0.6s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+  .page-hero .chip { animation-delay: calc(0.04s * var(--motion)); }
+  .page-hero h1 { animation-delay: calc(0.1s * var(--motion)); }
+  .page-hero .sub { animation-delay: calc(0.18s * var(--motion)); }
+  .page-hero .chips { animation-delay: calc(0.26s * var(--motion)); }
+  .page-hero .btn-wrap { animation-delay: calc(0.34s * var(--motion)); }
   /* The artwork lands last, after the CTA, so the hero assembles in reading
      order. It rises slightly further than the text because it is much bigger
      and the same 14px on a 460px block reads as no movement at all. */
-  .page-hero--media .hero-media { animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.42s backwards; }
+  .page-hero--media .hero-media { animation: hero-rise calc(0.75s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) calc(0.42s * var(--motion)) backwards; }
   .page-hero--media .hero-media { --rise: 22px; }
   /* Then it drifts, very slowly and very slightly. This is the hero-dot
      vocabulary the owner already approved, not a new device: 6px over 9s is
      below the threshold where motion reads as an effect. The drift is on the
      IMG and the entrance is on the FIGURE, because two animations on one
      element would fight over transform. */
-  .hero-media img { animation: hero-drift 9s ease-in-out 1.2s infinite; }
+  .hero-media img { animation: hero-drift calc(9s * var(--motion)) ease-in-out calc(1.2s * var(--motion)) infinite; }
   /* In-page motifs assemble when they scroll into view rather than on load.
      They ride the reveal observer that already exists in main.js: the parent
      picks up .in (or .is-visible), and the parts stagger from there.
@@ -1208,8 +1226,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .reveal.in.motif--scroll .m,
   .is-visible .motif--scroll .m,
   .in .motif--scroll .m {
-    animation: motif-in-scroll 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
-    animation-delay: calc(var(--i, 0) * 0.07s);
+    animation: motif-in-scroll calc(0.5s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    animation-delay: calc(var(--i, 0) * 0.07s * var(--motion));
   }
   /* Parts assemble in drawing order, then the whole motif drifts with the rest
      of the hero. transform-box: fill-box is required or the scale pivots on the
@@ -1222,8 +1240,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .motif .m {
     transform-box: fill-box;
     transform-origin: center;
-    animation: motif-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards;
-    animation-delay: calc(0.46s + var(--i, 0) * 0.075s);
+    animation: motif-in calc(0.45s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    animation-delay: calc((0.46s + var(--i, 0) * 0.075s) * var(--motion));
   }
   /* Post headers are PIECES of the real cover: each piece is a clipped copy of
      the whole picture, so its fill-box is the whole picture's box and
@@ -1232,7 +1250,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
      view-box resolves them against - so it settles in place like a traced
      shape does. */
   .motif.motif--pieces .m { transform-box: view-box; }
-  .hero-media:has(.motif) { animation: hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards, hero-drift 9s ease-in-out 2s infinite; }
+  .hero-media:has(.motif) { animation: hero-rise calc(0.75s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) calc(0.3s * var(--motion)) backwards, hero-drift calc(9s * var(--motion)) ease-in-out calc(2s * var(--motion)) infinite; }
 
   /* Tick items cascade inside their own list (main.js staggers by sibling
      index), so the shift is smaller than a card's or it reads as jitter. */
@@ -1388,7 +1406,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .sec-head .eyebrow::after {
     transform: scaleX(0);
     transform-origin: left center;
-    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s;
+    transition: transform calc(0.7s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) calc(0.08s * var(--motion));
   }
   .sec-head.in .eyebrow::before,
   .sec-head.in .eyebrow::after { transform: scaleX(1); }
@@ -1398,7 +1416,7 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .page-hero h1 .accent-text {
     display: inline-block;
     transform: scale(0);
-    animation: ms-pop 0.45s cubic-bezier(0.22, 1.5, 0.36, 1) 0.5s forwards;
+    animation: ms-pop calc(0.45s * var(--motion)) cubic-bezier(0.22, 1.5, 0.36, 1) calc(0.5s * var(--motion)) forwards;
   }
   @keyframes ms-pop { to { transform: scale(1); } }
 
@@ -1417,11 +1435,11 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .cell:hover .cell-idx { transform: translateY(-2px); color: var(--cyan); }
 
   /* 5. Ledger stats lift their rule as the numbers count up */
-  .stat { transition: border-color 0.4s ease; }
+  .stat { transition: border-color calc(0.4s * var(--motion)) ease; }
   .stat.in { border-top-color: var(--line-strong); }
 
   /* 6. Process step numerals rise slightly into place */
-  .step.reveal .step-num { transform: translateY(6px); transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s; }
+  .step.reveal .step-num { transform: translateY(6px); transition: transform calc(0.6s * var(--motion)) cubic-bezier(0.22, 1, 0.36, 1) calc(0.1s * var(--motion)); }
   .step.reveal.in .step-num { transform: none; }
 }
 
@@ -1592,49 +1610,12 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 @media (max-width: 620px) { .prose table { font-size: var(--t-micro); } }
 
 /* ==========================================================================
-   HERO BACKDROP — drifting signal dots behind the homepage headline.
-   A few cyan marks following curved paths at different speeds. No lattice and
-   no connecting lines: the first version had all of that and read as clutter.
-   The motion itself is SVG <animateMotion> (see hero-fx.njk for why), so there
-   is nothing to animate in CSS here.
+   HOMEPAGE HERO. The drifting cyan dots (hero-fx.njk, SVG animateMotion) were
+   retired on 14 Sep 2026 when the homepage got a pieces motif like every other
+   page header - owner: "retire the dots". Git has them if they come back.
    ========================================================================== */
 .sec--hero { position: relative; isolation: isolate; overflow: hidden; }
 .sec--hero > .container { position: relative; z-index: 1; }
-
-/* The layer is bounded to the headline area, NOT the whole hero section: the
-   client logo strip lives inside .sec--hero too, and dots were drifting across
-   the logos. It still bleeds full-width, clipped by the section overflow. */
-.hero-stage { position: relative; }
-.hero-fx {
-  position: absolute;
-  /* An <svg> is a REPLACED element: with height unset it takes its intrinsic
-     viewBox ratio and IGNORES bottom, which is how the layer ended up 900px
-     tall and running straight over the logo strip. Height is therefore given
-     explicitly rather than implied by top/bottom. */
-  top: calc(-1 * clamp(96px, 12vw, 168px));
-  height: calc(100% + clamp(96px, 12vw, 168px));
-  left: calc(50% - 50vw);
-  width: 100vw;
-  z-index: 0;
-  pointer-events: none;
-}
-.hero-fx .fx-dot { fill: var(--cyan); }
-
-/* Purely decorative, so with reduced motion the honest degradation is to drop
-   them entirely — a frozen dot in mid-air serves no one, and CSS cannot pause
-   a SMIL timeline. */
-@media (prefers-reduced-motion: reduce) {
-  .hero-fx { display: none; }
-}
-
-/* Dropped at exactly the point the hero restructures. Below 980px .hero-grid
-   collapses to one column, the headline grows into the bands the paths are
-   routed around, and dots start crossing the type. Narrower still, slice leaves
-   so small a window that they would only flicker through it — worse than no
-   motion at all. */
-@media (max-width: 980px) {
-  .hero-fx { display: none; }
-}
 
 /* ==========================================================================
    PEOPLE — a real face next to copy that names a real person.
@@ -1858,12 +1839,16 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
   .sec--hero .btn-wrap { gap: 10px; }
   .hero-grid { gap: 20px; }
   .sec--hero .btn-wrap { margin-top: 22px; }
+  /* Dropped on phones: the logo strip reaching the first screen at 390x844
+     (3 Sep 2026) is worth more than the artwork there. */
+  .hero-grid > .hero-media { display: none; }
+  .hero-stats { margin-top: 20px; }
   .hero-grid .panel { padding: 6px 20px; }
-  .hero-grid .stats { display: flex; flex-direction: column; }
-  .hero-grid .stat { display: flex; align-items: baseline; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); }
-  .hero-grid .stat:first-child { border-top: 0; padding-top: 12px; }
-  .hero-grid .stat .num { font-size: var(--t-d2); flex: 0 0 auto; min-width: 4.2ch; }
-  .hero-grid .stat .label { margin-top: 0; letter-spacing: 0.06em; line-height: 1.35; }
+  .hero-grid .stats, .hero-stats .stats { display: flex; flex-direction: column; gap: 0; }
+  .hero-grid .stat, .hero-stats .stat { display: flex; flex: none; align-items: baseline; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .hero-grid .stat:first-child, .hero-stats .stat:first-child { border-top: 0; padding-top: 12px; }
+  .hero-grid .stat .num, .hero-stats .stat .num { font-size: var(--t-d2); flex: 0 0 auto; min-width: 4.2ch; }
+  .hero-grid .stat .label, .hero-stats .stat .label { margin-top: 0; letter-spacing: 0.06em; line-height: 1.35; }
   .logo-strip { margin-top: 16px; padding: 16px 0 22px; }
   .logo-strip .caption { margin-bottom: 14px; }
 }

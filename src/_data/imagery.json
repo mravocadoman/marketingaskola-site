@@ -1149,6 +1149,15 @@
       "alt": "Kontaktu kartīšu režģis, divas atzīmētas, blakus kalendāra ailei ar zilu bloku.",
       "prompt": "Flat vector composition on solid #020d1c navy, mid-shot, objects drawn large and whole: a tidy grid of nine small solid cool-grey #8ba3bd cards, each carrying one small darker square in its top-left corner and two short bars beside it; two of the nine cards are solid off-white #f2f5f8 instead. To the right, separated by empty dark space, a single tall calendar column of five stacked solid grey cells, one of which is solid cyan #03c3f8. A modest dark margin surrounds both groups. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters or numbers of any kind. Cyan covers no more than five percent of the frame.",
       "rationale": "The product turns a long contact list into a few booked meetings - a grid with two marked cards next to one booked calendar slot is that sentence as a picture."
+    },
+    {
+      "id": "hero-sakums",
+      "page": "index",
+      "aspect": "landscape",
+      "placement": "Homepage hero, right column, assembled from pieces like every other page header.",
+      "alt": "Viedtālrunis ar reklāmu plūsmā blakus augošam stabiņu grafikam.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: at the left an upright smartphone with square corners, its screen a solid cool-grey #8ba3bd panel showing one social feed post, an off-white #f2f5f8 image block across the upper part of the screen, two short darker bars beneath it standing in for text, and one small solid cyan #03c3f8 rectangle as the call-to-action button. At the right, separated by empty dark space, a bar chart of five solid vertical bars standing on one thin off-white baseline and rising steadily from left to right; the four shorter bars are cool grey, the tallest bar on the far right is off-white with a small solid cyan cap on its top edge. A modest dark margin surrounds both objects. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers, currency symbols or arrows of any kind. Cyan covers no more than five percent of the frame.",
+      "rationale": "The homepage headline is 'Reklāma, kas atmaksājas' - an ad that pays back. A feed ad beside a rising chart says that at a glance, for the agency as a whole rather than one service. The cyan is a cap, not a bar, to stay inside the cyan budget."
     }
   ]
 }

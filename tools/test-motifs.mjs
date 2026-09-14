@@ -62,7 +62,10 @@ for (const url of pages) {
     // First frame: every header piece holds a running motif-in; every in-page
     // piece below the fold is held invisible until its card is revealed.
     const first = await p.evaluate(() => new Promise((done) => requestAnimationFrame(() => {
-      const hero = document.querySelector('.hero-media svg.motif--pieces');
+      // Only a header that is actually rendered at this width: the homepage
+      // drops its artwork below 980px, and a display:none element runs no
+      // animations, so counting its pieces would fail a correct page.
+      const hero = [...document.querySelectorAll('.hero-media svg.motif--pieces')].find((s) => s.getClientRects().length);
       const heroParts = hero ? hero.querySelectorAll('.m').length : 0;
       const heroAnims = hero ? document.getAnimations().filter((a) => a.animationName === 'motif-in' && hero.contains(a.effect.target)).length : 0;
       const below = [...document.querySelectorAll('.motif--scroll svg.motif--pieces, svg.motif--pieces.motif--scroll')]
@@ -107,7 +110,15 @@ for (const url of pages) {
 /* With JS off nothing may stay held, and under reduced motion nothing moves. */
 const hub = '/pakalpojumi/';
 const nojs = await b.newPage(); await nojs.setJavaScriptEnabled(false); await nojs.setViewport({ width: 1360, height: 900 });
-await nojs.goto(BASE + hub, { waitUntil: 'load' }); await new Promise((r) => setTimeout(r, 3000));
+await nojs.goto(BASE + hub, { waitUntil: 'load' });
+// Wait for the header assembly to actually finish rather than a fixed 3 s: its
+// length scales with --motion, and at 1.3 the last pieces were still fading in
+// at 3 s. Polled from Node, because page timers do not run with JS disabled.
+for (let t = 0; t < 60; t++) {
+  const busy = await nojs.evaluate(() => document.getAnimations().some((a) => a.animationName === 'motif-in' && a.playState === 'running'));
+  if (!busy) break;
+  await new Promise((r) => setTimeout(r, 250));
+}
 ok('JS off: every piece visible', await nojs.evaluate(() => [...document.querySelectorAll('svg.motif--pieces .m')].every((g) => getComputedStyle(g).opacity === '1')));
 const rm = await b.newPage(); await rm.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]); await rm.setViewport({ width: 1360, height: 900 });
 await rm.goto(BASE + hub, { waitUntil: 'load' });
