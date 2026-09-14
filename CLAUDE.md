@@ -1504,10 +1504,11 @@ existed), only "komandām sagatavojam atsevišķu piedāvājumu".
    already protects, where a bare `{{ }}` would not be.
 2. Team pricing: a discount and threshold, or delete "Atlaides kolektīviem"
    (hub, meta description, catalog tile). Closed corporate sessions yes/no.
-3. Brew Company: 75 000 € per month (prose, and the `/facebook-reklama/`
-   stat label) or the total (the portfolio tiles only add up as a total:
-   75 000 × 13,36 ≈ the 1M+ revenue tile)? STILL UNANSWERED and still the
-   one live claim that reads two ways — do not "fix" it by arithmetic, ask.
+3. ~~Brew Company: 75 000 € per month or the total?~~ RESOLVED 14 Sep 2026:
+   **75 000 € is the TOTAL ad spend over the project, not monthly** (owner).
+   `/portfolio/` and `/facebook-reklama/` say so now, and the numbers add up:
+   75 000 × 13,36 ≈ the 1M+ revenue. The owner asked not to keep raising it -
+   treat it as settled.
    Year of each portfolio case is also still missing. Excel Know How was
    1174 € in the stat and 1175 € in the prose; the stat was aligned to the
    prose (the older, original WordPress text) on 7 Sep — reverse it if the
@@ -2625,9 +2626,8 @@ order 32%, 34 automated jobs. Git has the long version.
 - The jump chips at the top of the page include `#starfleet-portraits` now.
 - **The other four cases' Latvian was tidied the same day** (owner: *"yes tidy
   the other cases too"*): calques, "kreatīvi", "eur", "vairāk kā" and the em
-  dashes, with no number changed. **The Brew Company "75 000 eiro mēnesī"
-  sentence was deliberately left word for word** - it is the open owner
-  question above (monthly or total), and rewording it would look like an answer.
+  dashes, with no number changed. The Brew Company 75 000 € was then
+  confirmed as the **total** ad spend and the copy corrected.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
