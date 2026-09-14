@@ -1063,6 +1063,18 @@ stream data detected": `close_convert_lead`, `purchase`, `qualify_lead`. They
 were left alone deliberately — harmless, and unstarring is the owner's call —
 but they do pad the conversions report with rows that will never populate.
 
+**The `Form ID` custom dimension is registered (14 Sep 2026, owner approved).**
+Event scope, parameter `form_id`: `forms.js` sends it with every form's
+`generate_lead` (the form's `data-form` key: `contact`, `course`, `liaa`) and
+`leadmagnet.js` with the popups' (`liaa-sagatave`, `lapas-parbaude`). It is
+what splits the one key event by source in reports and explorations. A new
+form needs only its own `data-form` key; the dimension does not change.
+**Custom dimensions are not retroactive** - leads before 14 Sep 2026 show
+`(not set)`. The ten MonsterInsights-era custom dimensions (`affiliate_label`,
+`email_address`, `wp_user_id` and the rest) were left in place; nothing sends
+them now, and archiving them is the owner's call. `email_address` must never
+receive data: Google's terms forbid personal data in Analytics.
+
 **Meta descriptions were rewritten for CTR the same day.** Google bolds query
 matches inside the snippet, so eight descriptions that never contained their
 own focus phrase were throwing away the cheapest CTR gain available to a page
