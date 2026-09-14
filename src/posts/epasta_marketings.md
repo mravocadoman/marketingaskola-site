@@ -4,7 +4,7 @@ title: "E-pasta mārketings: kā izveidot kampaņas, kas palielina pārdošanu"
 seoTitle: "E-pasta mārketings: kampaņas, kas pārdod | Mārketinga Skola"
 description: "E-pasta mārketings praksē: saraksts, kampaņas uzbūve, automatizācija, piegādājamības prasības un kāpēc atvēršanas rādītājs vairs nav uzticams."
 date: 2025-12-17
-updated: 2026-08-12
+updated: 2026-09-14
 image: "/img/gen/cover-epasta_marketings.webp"
 legacyImage: "/img/2025/12/epasta-marketings-ka-izveidot-kampanas-kas-palielina-pardosanu-thumbnail.png.png"
 categories: ["digitalais-marketings"]
@@ -75,7 +75,7 @@ Papildus Instantly.ai izmanto mākslīgo intelektu, lai palīdzētu iesaistīt k
 
 **Viens svarīgs nosacījums.** Šāda veida aukstā uzruna Eiropas Savienībā ir regulēta. Fiziskām personām nedrīkst sūtīt komerciālus e-pastus bez piekrišanas. B2B kontekstā uz uzņēmuma vispārējām adresēm tas dažos gadījumos ir pieļaujams, bet katrā e-pastā jābūt skaidrai iespējai atteikties un patiesai informācijai par sūtītāju. Ja neesi drošs, vai Tava kampaņa atbilst noteikumiem, sāc ar savu sarakstu, nevis ar pirktu datubāzi.
 
-Ja Tavs mērķis ir veidot savu sarakstu, nevis sūtīt aukstos e-pastus, pietiek ar vienkāršāku rīku. Šī mājaslapa izmanto [MailerLite](https://www.mailerlite.com/), kas ir bez maksas līdz tūkstoš adresātiem un ietver automatizācijas.
+Ja Tavs mērķis ir veidot savu sarakstu, nevis sūtīt aukstos e-pastus, pietiek ar vienkāršāku rīku. [MailerLite](https://www.mailerlite.com/) bezmaksas plāns der sarakstam līdz 250 adresātiem un ietver trīs automatizācijas.
 
 {% infographic { id: "info-epasta-kludas", title: "Divas biežākās e-pasta kļūdas", items: [
  { label: "Sūtījums bez mērķa", text: "Nav pateikts, ko cilvēkam darīt." },

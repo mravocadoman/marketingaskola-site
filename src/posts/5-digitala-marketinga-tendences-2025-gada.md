@@ -4,7 +4,7 @@ title: "Digitālā mārketinga tendences 2026. gadā: 5 lietas, kas mainās"
 seoTitle: "Digitālā mārketinga tendences 2026. gadā | Mārketinga Skola"
 description: "Digitālā mārketinga tendences 2026. un 2027. gadā: MI meklēšana, sociālie tīkli kā meklētājs, autentisks video un pirmās puses dati. Ko darīt ar katru."
 date: 2024-03-20
-updated: 2026-08-03
+updated: 2026-09-14
 image: "/img/gen/cover-5-digitala-marketinga-tendences-2025-gada.webp"
 legacyImage: "/img/2023/04/Digital-1200-628px-1.jpg"
 categories: ["marketinga-strategija"]
@@ -90,7 +90,7 @@ Vienlaikus paliek spēkā vecais noteikums: **MI melnrakstu vienmēr pārraksta 
 
 **Ieteikums:** izvēlies vienu atkārtotu soli, ko dari katru nedēļu, un automatizē tikai to. Kad tas strādā mēnesi, ņem nākamo.
 
-Rīkus, ar ko sākt, apskatām rakstā [7 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/), bet [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/) paskaidro, kā nepazaudēt savu toni. Ikdienas darbam noder [ChatGPT](https://chatgpt.com/) un [Claude](https://claude.ai/), vizuāļiem, [Canva](https://www.canva.com/), bet e-pastu sarakstam pietiek ar [MailerLite](https://www.mailerlite.com/) bezmaksas plānu.
+Rīkus, ar ko sākt, apskatām rakstā [7 mākslīgā intelekta rīki mārketingam](/maksliga-intelekta-riki/), bet [AI saturs bez zīmola balss zaudēšanas](/ai-saturs-bez-zimola-balss-zaudesanas/) paskaidro, kā nepazaudēt savu toni. Ikdienas darbam noder [ChatGPT](https://chatgpt.com/) un [Claude](https://claude.ai/), vizuāļiem, [Canva](https://www.canva.com/), bet e-pastu saraksta sākumam pietiek ar [MailerLite](https://www.mailerlite.com/) bezmaksas plānu.
 
 ## Ko ar to visu iesākt
 

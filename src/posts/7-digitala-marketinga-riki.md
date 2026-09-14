@@ -4,7 +4,7 @@ title: "7 Digitālā mārketinga rīki, kas atvieglos mārketingu internetā"
 seoTitle: "7 digitālā mārketinga rīki, kas noder | Mārketinga Skola"
 description: "Septiņi digitālā mārketinga rīki, ko mazam uzņēmumam tiešām vajag, sakārtoti pēc darba, un divi, kurus no vecajiem sarakstiem var izsvītrot."
 date: 2022-05-08
-updated: 2026-08-06
+updated: 2026-09-14
 image: "/img/gen/cover-7-digitala-marketinga-riki.webp"
 legacyImage: "/img/2022/05/5.jpg"
 categories: ["marketinga-strategija"]
@@ -53,7 +53,7 @@ Subtitri ir vajadzīgi. Lielākā daļa skatās bez skaņas.
 
 E-pasta saraksts ir vienīgais kanāls, kas pieder Tev. Sekotājus var atņemt platforma, pozīcijas meklētājā var mainīt algoritms, bet adrešu saraksts paliek Tavā rīcībā.
 
-MailerLite ir bez maksas līdz tūkstoš adresātiem un ietver automatizācijas. Arī šī mājaslapa to izmanto. Plašāk rakstā [e-pasta mārketings](/epasta_marketings/).
+MailerLite bezmaksas plāns der sarakstam līdz 250 adresātiem un ietver trīs automatizācijas. Plašāk rakstā [e-pasta mārketings](/epasta_marketings/).
 
 {% infographic { id: "info-marketinga-riki-darbi", title: "Septiņi darbi, septiņi rīki", items: [
  { label: "Melnraksti", text: "ChatGPT vai Claude." },
@@ -83,7 +83,7 @@ Divas lietas joprojām parādās ieteikumos, bet vairs neder.
 
 Īsā atbilde: mazam uzņēmumam šo sarakstu var sākt lietot gandrīz bez maksas.
 
-Bez maksas paliek Search Console, Analytics un Business Suite. Canva, CapCut un MailerLite darbojas bezmaksas versijās, ar kurām lielākā daļa iztiek gadiem. MailerLite kļūst maksas pēc tūkstoš adresātiem, Canva tad, kad vajag zīmola komplektu un komandas piekļuvi.
+Bez maksas paliek Search Console, Analytics un Business Suite. Canva un CapCut darbojas bezmaksas versijās, ar kurām lielākā daļa iztiek gadiem. MailerLite bez maksas der sarakstam līdz 250 adresātiem, bet Canva kļūst maksas, kad vajag zīmola komplektu un komandas piekļuvi.
 
 Vienīgais, par ko parasti tiešām jāmaksā, ir mākslīgā intelekta rīks. Arī tur bezmaksas versija der, ja to lieto dažas reizes nedēļā.
 

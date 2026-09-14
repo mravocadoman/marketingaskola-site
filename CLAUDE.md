@@ -415,7 +415,9 @@ list (free to 1 000 contacts, then $40 a month), so only the leads moved.
   `materiali` rows may go on a list. Enquiries used to land in the very
   MailerLite list the newsletters went to.
 - **The newsletter stays on MailerLite until the plan ends in November**, then
-  moves to a free tool with a cleaned list (owner's choice). Not done yet.
+  moves to a free tool with the WHOLE list: the owner said not to clean it, so
+  the inactive subscribers move too. Not done yet. Until then, popup sign-ups
+  (`materiali`) wait in the table; nothing adds them to a list.
 - `npm run test:forms` is **19/19** and stubs the lead endpoint AND every other
   n8n webhook: it used to let the Meta CAPI relay call through, so each run sent
   a fake Lead to Meta.
