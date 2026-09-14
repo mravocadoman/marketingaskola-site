@@ -334,7 +334,10 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* hero — the page is the hero */
 .sec--hero {
   border-top: 0;
-  padding: clamp(96px, 12vw, 168px) 0 0;
+  /* Same top padding as every other page header (.page-hero). It was
+     clamp(96px, 12vw, 168px) until 14 Sep 2026 - owner: too much empty space
+     above the heading. Phones keep their own value in the 980px block. */
+  padding: clamp(56px, 6.5vw, 92px) 0 0;
 }
 .sec--hero[style*="--bg"] { background-image: var(--bg); background-size: cover; background-position: center; position: relative; }
 .sec--hero[style*="--bg"]::before { content: ""; position: absolute; inset: 0; background: rgba(2, 13, 28, 0.92); }

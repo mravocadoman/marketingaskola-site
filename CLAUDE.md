@@ -2568,6 +2568,10 @@ moved out of the right column into a `.hero-stats` ledger row under the headline
   still reaches the first screen: 776px at 390x844, against 807px on production
   before the change (the stats lost their panel padding). Production is the
   cheapest "before" to measure against.
+- **The heading sits where every other page heading sits.** `.sec--hero` top
+  padding is `.page-hero`'s `clamp(56px, 6.5vw, 92px)`; it was
+  `clamp(96px, 12vw, 168px)`. Owner: too much empty space above the heading.
+  Phones keep their own value in the 980px block.
 - **The `.hero-grid .stat*` mobile rules are selector lists** with `.hero-stats`,
   so any other page still using `.hero-grid` with a panel keeps its layout.
 
@@ -2591,6 +2595,34 @@ Two consequences in `tools/test-motifs.mjs`, both fixed:
 taller than the viewport showed an EMPTY artwork column, while a viewport-sized
 shot of the same page had every piece at opacity 1 and 30% of that box drawn.
 Take viewport-sized shots of animated heroes, or finish the animations first.
+
+## Portfolio cases share one shape (14 Sep 2026)
+
+Owner, on Starfleet Portraits: *"make it the same style as others; currently
+there's far too much text."* It had grown to about five times the other cases:
+two text rows, a findings panel, two more titled rows, two stat rows and a long
+method note. Every case now has one shape: eyebrow, `h2` and a one-sentence lead;
+one short paragraph per column; one three-number stats block; and a cover image
+plus a results screenshot. The cut kept the facts that carry the case - 19 411 $
+revenue, 417 orders, ROAS 3,21, one campaign with the variety in the creative,
+the image beating the copy 2,7 times, the canvas default lifting the average
+order 32%, 34 automated jobs. Git has the long version.
+
+- **Starfleet Portraits has no images yet** - nothing in `src/img` or the
+  archive. It needs a cover and a Meta results screenshot to match the other
+  four; until then its stats run as one `.stats--row`.
+- **Revenue is not "nopelnīja".** 19 411 $ is Shopify revenue, so the copy says
+  "guva … ieņēmumus"; "nopelnīja" reads as profit.
+- **Its Latvian went through lv:review on its own** (a temp file at the repo
+  root, deleted after - the tool joins every path onto the root). Eleven
+  findings, nearly all taken. One mattered beyond style: the old panel title
+  said the image "decided 2,7 times more than the text", but the source numbers
+  are 2,7x when only the image changed against 1,25x when only the text did.
+  The copy now states both. Precision on a results page is part of the claim.
+- **No spend figure in its stats**, even though the other cases show
+  "investīcijas reklāmā": the source gives revenue and ROAS, not spend, and a
+  number is never derived by arithmetic on this site.
+- The jump chips at the top of the page include `#starfleet-portraits` now.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
