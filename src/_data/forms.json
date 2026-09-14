@@ -1,12 +1,10 @@
 {
-  "_comment": "Form definitions + provider wiring. Replaced the Tally iframes. Chose MailerLite over Resend because this is a static site with no server: MailerLite's form endpoint is designed to take a browser POST with no secret, while a Resend API key can never reach the browser and would need a serverless function hosted somewhere other than GitHub Pages. See CLAUDE.md.",
-  "provider": "mailerlite",
-  "account": "1475",
+  "_comment": "Form definitions and where they go. Every form and both popups post to ONE n8n workflow (Mārketinga Skola - mājaslapas pieteikumi, uSmnXxiT4rUcVAGj). It saves the enquiry in the n8n data table Mājaslapas pieteikumi, answers the browser, e-mails Rihards and, for the two LIAA forms only, sends a fixed reply. MailerLite took the leads until 14 Sep 2026, while the site had no server of its own. The path is still liaa-lead because the LIAA form used it first, and keeping it meant no gap while the workflow and the site were updated separately. The key in the URL is obfuscation, not authentication: it ships in client JS and only stops drive-by noise. See CLAUDE.md.",
+  "endpoint": "https://marketingaskola.app.n8n.cloud/webhook/liaa-lead?k=ms-liaa-2026",
   "fallbackEmail": "rihards@marketingaskola.lv",
   "consent": "Piekrītu, ka SIA “Stonks” (Mārketinga Skola) apstrādā manis norādītās ziņas, lai sazinātos par šo pieteikumu, saskaņā ar <a href=\"/privatuma-politika/\">privātuma politiku</a>. Piekrišanu var atsaukt jebkurā brīdī, rakstot uz rihards@marketingaskola.lv.",
   "forms": {
     "contact": {
-      "id": "196419637828650760",
       "submit": "Nosūtīt pieteikumu",
       "note": "Atbildēsim 1 darba dienas laikā. Ja apsver sadarbību, piedāvāsim bezmaksas 20 min iepazīšanās zvanu.",
       "successTitle": "Paldies — pieteikums saņemts.",
@@ -85,7 +83,6 @@
       ]
     },
     "course": {
-      "id": "196419640979621088",
       "submit": "Pieteikties kursam",
       "note": "Pieteikšanās ir bez maksas un neuzliek par pienākumu iegādāties kursu. Sazināsimies ar detaļām un datumiem.",
       "successTitle": "Paldies — pieteikums saņemts.",
@@ -153,7 +150,6 @@
       ]
     },
     "liaa": {
-      "id": "196419637828650760",
       "submit": "Saņemt cenu piedāvājumu",
       "note": "Nosūtām pozīciju sarakstu ar cenām bez PVN 1 darba dienas laikā, pa e-pastu, lai sarakste būtu dokumentēta cenu aptaujai.",
       "successTitle": "Paldies, pieprasījums saņemts.",
@@ -240,9 +236,7 @@
           "type": "textarea",
           "full": true
         }
-      ],
-      "webhook": "https://marketingaskola.app.n8n.cloud/webhook/liaa-lead?k=ms-liaa-2026",
-      "_comment": "Two destinations, neither depending on the other: MailerLite (the provider, shared with the contact form) keeps the lead, and the n8n webhook e-mails the enquiry to Rihards and sends the applicant a confirmation. The key in the URL is obfuscation, not authentication - it ships in client JS, exactly like site.analytics.capiSecret, and only stops drive-by noise. Workflow: Marketinga Skola - LIAA pieteikumi (uSmnXxiT4rUcVAGj)."
+      ]
     }
   }
 }

@@ -8,11 +8,8 @@
 {% set f = forms.forms[key] %}
 {% set p = preset or {} %}
 <form class="form" data-form="{{ key }}"
-      data-provider="{{ forms.provider }}"
-      data-account="{{ forms.account }}"
-      data-form-id="{{ f.id }}"
+      data-endpoint="{{ forms.endpoint }}"
       data-fallback="{{ forms.fallbackEmail }}"
-      {%- if f.webhook %} data-webhook="{{ f.webhook }}"{% endif %}
       novalidate>
   <div class="form-grid">
     {% for fl in f.fields %}

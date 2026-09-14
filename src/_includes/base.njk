@@ -176,7 +176,7 @@
 {% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/ai-un-automatizacijas/", "/portfolio/"] %}
 {% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/", "/cenu-aptauja-liaa/"] %}
 {% set lmVariant = "liaa" if page.url in lmLiaa else "audit" %}
-{% if not noindex and page.url not in lmOff and (site.analytics.auditUrl if lmVariant == "audit" else forms.forms.liaa.webhook) %}
+{% if not noindex and page.url not in lmOff and forms.endpoint and (lmVariant == "liaa" or site.analytics.auditUrl) %}
 <div class="lm" data-lm hidden>
   <div class="lm-panel" role="dialog" aria-modal="true" aria-labelledby="lm-title">
     <button type="button" class="lm-close" data-lm-close aria-label="Aizvērt">&#215;</button>
@@ -239,10 +239,8 @@
 <script src="{{ "/js/leadmagnet.js" | bust }}" defer
         data-variant="{{ lmVariant }}"
         data-audit="{{ site.analytics.auditUrl }}"
-        data-hook="{{ forms.forms.liaa.webhook }}"
-        data-file="{{ "/faili/eksporta-atbalsts-sagatave.pdf" | bust }}"
-        data-ml-account="{{ forms.account }}"
-        data-ml-form="{{ forms.forms.contact.id }}"></script>
+        data-hook="{{ forms.endpoint }}"
+        data-file="{{ "/faili/eksporta-atbalsts-sagatave.pdf" | bust }}"></script>
 {% endif %}
 
 <a class="wa-float" href="https://wa.me/37126673384?text={{ waText | urlencode }}" target="_blank" rel="noopener" data-track="whatsapp-float" aria-label="Rakstīt mums WhatsApp">

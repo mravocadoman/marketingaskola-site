@@ -278,6 +278,10 @@ Sources stay in `src/img/YYYY/MM/…` and are the source of truth. `npm run port
 
 ## Forms — hand-coded, MailerLite (21 Aug 2026)
 
+**SUPERSEDED on 14 Sep 2026: the forms post to n8n and our own table - see
+\"Forms go to n8n and our own table\" below.** Kept for the reasoning, the macro
+note and the tests' history.
+
 The Tally iframes are gone. `src/_data/forms.json` defines the fields,
 `src/_includes/form.njk` renders them, `src/js/forms.js` submits. Import the
 macro **with context** — `{% from "form.njk" import form with context %}` —
@@ -367,7 +371,8 @@ payload carries the budget inside the message and sends no `fields[budget]`.
 The happy-path fill sets the select too, or the consent assertion before it
 would pass for the wrong reason.
 
-**Open decision — double opt-in is ON for these forms.** A submitted enquiry
+**Resolved 14 Sep 2026: the owner turned double opt-in off on both forms, and
+the site no longer posts to MailerLite at all.** The original note: A submitted enquiry
 lands as `status: unconfirmed` until the person clicks a confirmation email.
 The lead and every custom field are still stored and visible in the dashboard,
 so nothing is lost, but unconfirmed subscribers cannot be emailed in campaigns
@@ -375,6 +380,49 @@ and group-join automations generally will not fire for them. That is sensible
 for a newsletter and wrong for "tell us about your business" — turn it off for
 these two forms in the MailerLite dashboard if enquiries should arrive
 confirmed. Left as-is because it is a consent decision, not a technical one.
+
+## Forms go to n8n and our own table (14 Sep 2026)
+
+Owner: *"wouldn't it make sense to go forward with resend and our own database
+instead? My mailerlite plan ends in november anyway"*, at about 400 € a year.
+Checked first: the site only added contacts to MailerLite (once double opt-in
+was off, no e-mail to a site visitor went through it), while the real use was the
+monthly newsletter to about 2 100 subscribers. Resend would cost MORE for that
+list (free to 1 000 contacts, then $40 a month), so only the leads moved.
+
+- **Every form and both popups post to ONE n8n workflow**, *Mārketinga Skola —
+  mājaslapas pieteikumi* (`uSmnXxiT4rUcVAGj`), via `forms.json -> endpoint`.
+  Nodes in order: parse and gate (key, known form, every value clipped) →
+  **insert into the data table `Mājaslapas pieteikumi` (`mpmOl8vcDnghCunc`)** →
+  respond `{"ok":true}` with `Access-Control-Allow-Origin:
+  https://marketingaskola.lv` → Gmail to Rihards → IF → the fixed Latvian reply,
+  for `liaa` and `liaa-sagatave` only.
+- **The row is saved BEFORE the site hears ok**, and the e-mails come after, so
+  a Gmail failure cannot lose a lead. Failures go to the shared alert workflow
+  `R9OmXjBXdhYetZkM`; successful executions are not stored, since the table holds
+  the data.
+- **The path is still `liaa-lead`.** The LIAA form used it first, and keeping it
+  meant no gap while the workflow and the site deployed separately. Rename both
+  sides together, if ever.
+- **`forms.js` waits for the answer now.** text/plain keeps the POST a simple
+  request with no preflight, and the CORS header lets the browser read `ok`. A
+  refusal, a network error, an unreadable reply or 15 s of silence hands the
+  visitor the pre-filled `mailto:` as before. The popups still fire and forget:
+  the file or the report is on screen either way.
+- **The `consent` column decides who may get a newsletter.** `pieteikums` for the
+  forms (their checkbox covers contacting them about the enquiry, nothing more),
+  `materiali` for the popups (theirs says we may send useful materials). Only
+  `materiali` rows may go on a list. Enquiries used to land in the very
+  MailerLite list the newsletters went to.
+- **The newsletter stays on MailerLite until the plan ends in November**, then
+  moves to a free tool with a cleaned list (owner's choice). Not done yet.
+- `npm run test:forms` is **19/19** and stubs the lead endpoint AND every other
+  n8n webhook: it used to let the Meta CAPI relay call through, so each run sent
+  a fake Lead to Meta.
+
+**Found alongside: the CAPI relay ignored cookie consent.** `msTrack` called it
+whether or not the visitor had clicked "Piekrītu", so a hashed e-mail reached
+Meta even after "Noraidīt". It is gated on `granted` now, like the pixel.
 
 ## Marks and white-slab artifacts
 
@@ -1988,9 +2036,8 @@ it becomes the free consulting the rule exists to prevent.
   marketingaskola.lv included. A detected consent manager downgrades those
   three checks. Verified: the site scores 8 ok / 1 unknown / 0 failures on
   itself, and 6 failures on a bare page.
-- **The e-mail never reaches n8n.** The browser sends the URL to the webhook
-  and the address straight to MailerLite, so no personal data enters n8n's
-  logs and a MailerLite outage cannot cost the visitor their report.
+- **Superseded 14 Sep 2026:** the e-mail goes to the leads workflow and our own
+  table now (see "Forms go to n8n"); the audit webhook still receives only the URL.
 - **CORS is pinned to `https://marketingaskola.lv`** in the respond node.
   n8n answers the preflight itself (verified: 204 with the right headers), so
   a JSON POST works from the site and from nowhere else. It therefore CANNOT
@@ -2028,11 +2075,8 @@ adjectives** - and it stays inside the rule above, because naming the nine
 machine-checkable points is not advice. One caveat remains, in the fine print
 only.
 
-**Owner action, and the lead magnet is worth little without it: MailerLite
-double opt-in is still ON.** Every address collected here lands `unconfirmed`
-until the person clicks a confirmation e-mail, which means they cannot be
-emailed in campaigns and group automations generally will not fire. That is
-correct for a newsletter and wrong for a lead magnet.
+**Resolved 14 Sep 2026:** double opt-in is off, and the popup's e-mail goes to
+our own table now.
 
 ## Service page heroes are LIGHT — SUPERSEDED, see below (9 Sep 2026)
 
@@ -2970,6 +3014,10 @@ is not listed there silently produces nothing.
 
 ### The lead form goes to two places, and neither waits for the other
 
+**Superseded 14 Sep 2026:** MailerLite is out, and the one workflow saves the
+lead first and then answers the site (see \"Forms go to n8n\"). The notes below
+on the key and the fixed replies still hold.
+
 `forms.json -> forms.liaa` renders through the same macro as the other two
 forms. MailerLite keeps the lead; a webhook e-mails the enquiry to Rihards and
 sends the applicant a fixed confirmation. `forms.js` fires the webhook
@@ -3168,10 +3216,8 @@ update.
    I cannot sign in.
 2. Whether both offers may be sold together to one client inside the annual
    cap, and what happens if the client wants only part of a scope.
-3. MailerLite double opt-in is still ON, so a LIAA enquirer lands
-   `unconfirmed` in the list. The n8n path is unaffected, which is why the
-   lead is not lost, but the list entry is not usable for e-mail until they
-   confirm.
+3. ~~MailerLite double opt-in~~ resolved 14 Sep 2026: off, and site leads no
+   longer go to MailerLite.
 
 ### The how-to post, and four procurement facts (14 Sep 2026)
 

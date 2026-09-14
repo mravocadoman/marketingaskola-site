@@ -1,41 +1,20 @@
 /* Form submission for the hand-coded forms that replaced the Tally iframes.
  *
- * Provider choice (see CLAUDE.md): MailerLite, not Resend. This site is static
- * on GitHub Pages with no server anywhere. MailerLite's form endpoint is built
- * to accept a browser POST and carries no secret, so it works from a static
- * page as-is. A Resend API key must never reach the browser, so Resend would
- * require a serverless function on some other host just to receive a form.
+ * Every form posts to ONE n8n workflow (forms.json -> endpoint). It saves the
+ * enquiry in our own n8n data table, answers {"ok":true}, then e-mails Rihards
+ * and, for the LIAA forms, the applicant. Until 14 Sep 2026 MailerLite took the
+ * leads, because the site had no server of its own; n8n is that server now.
+ * See CLAUDE.md.
  *
- * The provider lives behind an adapter: swapping to Resend later means adding
- * one entry below and changing "provider" in src/_data/forms.json — no markup
- * changes anywhere in the site.
+ * The body is text/plain on purpose: it keeps the POST a "simple" request, so
+ * the browser sends no preflight, and the workflow's reply carries
+ * Access-Control-Allow-Origin, so the answer can still be read.
  */
 (function () {
   'use strict';
 
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-  var providers = {
-    /* MailerLite's public embedded-form endpoint. Same one their own copy-paste
-     * embed uses, which is why it needs no key and accepts a cross-origin POST. */
-    mailerlite: function (form, data) {
-      var account = form.getAttribute('data-account');
-      var formId = form.getAttribute('data-form-id');
-      if (!account || !formId) return null;
-
-      var body = new FormData();
-      Object.keys(data).forEach(function (k) {
-        if (data[k]) body.append('fields[' + k + ']', data[k]);
-      });
-      body.append('ml-submit', '1');
-      body.append('anticsrf', 'true');
-
-      return {
-        url: 'https://assets.mailerlite.com/jsonp/' + account + '/forms/' + formId + '/subscribe',
-        body: body
-      };
-    }
-  };
+  var TIMEOUT = 15000;
 
   function labelFor(field) {
     var p = field.closest('.field');
@@ -95,10 +74,8 @@
       if (v) data[el.name] = v;
     });
     /* A field marked data-into travels INSIDE another field as a labelled
-     * line, so a new question needs no new MailerLite custom field - and an
-     * unknown field is exactly what could make MailerLite refuse the lead.
-     * Give it its own field later by creating it in MailerLite and dropping
-     * "into" from forms.json. */
+     * line, so the notification e-mail and the table's message column read as
+     * one text. Give it a column of its own by dropping "into" from forms.json. */
     Array.prototype.forEach.call(form.querySelectorAll('[data-into]'), function (el) {
       var v = data[el.name], to = el.getAttribute('data-into');
       if (!v) return;
@@ -108,26 +85,28 @@
     return data;
   }
 
-  /* Last resort: never drop a lead because a third party is unreachable.
-   * Hands the visitor a pre-filled email instead of an apology. */
-  /* A form may ALSO post to a webhook (forms.json -> forms.<key>.webhook),
-   * which is what puts the enquiry in front of a human and sends the reply.
-   * Deliberately fired in PARALLEL with the provider and never awaited: the
-   * two destinations must not be able to take each other down, and the
-   * visitor's confirmation already comes from the provider path.
-   * text/plain keeps it a "simple" request, so there is no preflight to
-   * configure and no CORS reply to read. */
-  function notify(form, data) {
-    var url = form.getAttribute('data-webhook');
-    if (!url) return;
-    try {
-      fetch(url, {
-        method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({ form: form.getAttribute('data-form'), page: location.pathname, data: data }),
-      }).catch(function () {});
-    } catch (e) { /* a blocked fetch must not cost the lead */ }
+  /* The lead counts as sent only once the workflow says so. A refusal, a
+   * network error, an unreadable reply or 15 seconds of silence all count as
+   * failure, and failure hands the visitor a pre-filled e-mail instead. */
+  function send(form, data) {
+    var request = fetch(form.getAttribute('data-endpoint'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ form: form.getAttribute('data-form'), page: location.pathname, data: data })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('status ' + r.status);
+      return r.json();
+    }).then(function (out) {
+      if (!out || out.ok !== true) throw new Error('rejected');
+    });
+    var timeout = new Promise(function (_, reject) {
+      setTimeout(function () { reject(new Error('timeout')); }, TIMEOUT);
+    });
+    return Promise.race([request, timeout]);
   }
 
+  /* Last resort: never drop a lead because the workflow is unreachable.
+   * Hands the visitor a pre-filled email instead of an apology. */
   function mailtoFallback(form, data) {
     var to = form.getAttribute('data-fallback');
     if (!to) return null;
@@ -169,6 +148,13 @@
       else status.removeAttribute('data-state');
     }
 
+    function fallback(data, lead) {
+      form.classList.remove('is-sending');
+      var href = mailtoFallback(form, data);
+      say(lead + (href ? 'Atveram e-pastu, lai pieteikums nepazustu…' : 'Raksti uz rihards@marketingaskola.lv'), 'error');
+      if (href) window.location.href = href;
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (form.classList.contains('is-sending')) return;
@@ -185,39 +171,13 @@
       if (hp && hp.value) { succeed(form); return; }
 
       var data = collect(form);
-      notify(form, data);
-      var build = providers[form.getAttribute('data-provider')];
-      var req = build && build(form, data);
-
-      if (!req) {
-        var href = mailtoFallback(form, data);
-        say('Forma pašlaik nav savienota. ' + (href ? 'Atveram e-pastu…' : 'Raksti uz rihards@marketingaskola.lv'), 'error');
-        if (href) window.location.href = href;
-        return;
-      }
+      if (!form.getAttribute('data-endpoint')) { fallback(data, 'Forma pašlaik nav savienota. '); return; }
 
       form.classList.add('is-sending');
       say('Sūtām…', 'sending');
-
-      fetch(req.url, { method: 'POST', body: req.body })
-        .then(function (r) { return r.json().catch(function () { return { success: true }; }); })
-        .then(function (out) {
-          if (out && out.success === false) throw new Error('rejected');
-          succeed(form);
-        })
-        .catch(function () {
-          /* A cross-origin POST of FormData is a "simple" request, so it still
-           * reaches the server even when the browser refuses to let us read the
-           * reply. Retry opaquely: if that resolves, the submission landed. */
-          return fetch(req.url, { method: 'POST', mode: 'no-cors', body: req.body })
-            .then(function () { succeed(form); })
-            .catch(function () {
-              form.classList.remove('is-sending');
-              var href = mailtoFallback(form, data);
-              say('Neizdevās nosūtīt. ' + (href ? 'Atveram e-pastu, lai pieteikums nepazustu…' : 'Raksti uz rihards@marketingaskola.lv'), 'error');
-              if (href) window.location.href = href;
-            });
-        });
+      send(form, data)
+        .then(function () { succeed(form); })
+        .catch(function () { fallback(data, 'Neizdevās nosūtīt. '); });
     });
 
     /* Clear a field's error as soon as the visitor starts fixing it. */

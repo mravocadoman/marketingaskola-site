@@ -98,7 +98,9 @@
     if (!meta) return;
     var id = name + '.' + Date.now() + '.' + Math.random().toString(36).slice(2, 10);
     try { if (window.fbq) window.fbq('track', meta, params || {}, { eventID: id }); } catch (e) { /* same */ }
-    try { toCapi(meta, params, id, identity); } catch (e) { /* same */ }
+    // The server road follows the same consent as the pixel: without "Piekrītu"
+    // nothing about the visitor goes to Meta, hashed or not.
+    if (read() === 'granted') { try { toCapi(meta, params, id, identity); } catch (e) { /* same */ } }
   };
 
   var add = function (src) {

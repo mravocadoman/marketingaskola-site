@@ -1,5 +1,5 @@
-// Drives the real form in a real browser. The MailerLite request is stubbed so
-// the test proves the client behaviour without creating subscribers.
+// Drives the real form in a real browser. The n8n lead endpoint is stubbed so
+// the test proves the client behaviour without writing rows or sending mail.
 import puppeteer from 'puppeteer-core';
 import { chromePath } from './_chrome.mjs';
 
@@ -26,15 +26,41 @@ const submit = async () => {
   await page.click('form.form button[type="submit"]');
 };
 
+// The workflow answers {"ok":true} with Access-Control-Allow-Origin, which is
+// what lets forms.js read the reply of a text/plain POST. stubStatus lets a
+// step play a refusal.
 let captured = null;
+let stubStatus = 200;
 await page.setRequestInterception(true);
 page.on('request', (req) => {
-  if (req.url().includes('assets.mailerlite.com')) {
-    captured = { url: req.url(), body: req.postData() || '' };
-    return req.respond({ status: 200, contentType: 'application/json', body: '{"success":true}' });
+  const url = req.url();
+  if (url.includes('app.n8n.cloud/webhook/liaa-lead')) {
+    captured = { url, body: req.postData() || '' };
+    return req.respond({
+      status: stubStatus,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: stubStatus === 200 ? '{"ok":true}' : '{"ok":false}',
+    });
+  }
+  // Every other n8n webhook is answered here too. A successful lead fires
+  // msTrack, which calls the live Meta CAPI relay: before 14 Sep 2026 each
+  // run of this test sent a fake lead to Meta's dataset.
+  if (url.includes('app.n8n.cloud/webhook/')) {
+    return req.respond({ status: 200, contentType: 'application/json', headers: { 'Access-Control-Allow-Origin': '*' }, body: '{"ok":true}' });
   }
   req.continue();
 });
+const payload = () => { try { return JSON.parse(captured.body); } catch { return {}; } };
+
+const fillContact = async () => {
+  await page.$eval('#contact-email', (n) => { n.value = 'lead@example.com'; });
+  await page.$eval('#contact-name', (n) => { n.value = 'Anna'; });
+  await page.$eval('#contact-last_name', (n) => { n.value = 'Berzina'; });
+  await page.$eval('#contact-message', (n) => { n.value = 'Interese par Meta reklamam.'; });
+  // required since 11 Sep 2026 - set it so a later step fails on its own cause
+  await page.$eval('#contact-budget', (n) => { n.value = '1 000–3 000 €'; });
+};
 
 await page.goto(BASE + '/sazinies/', { waitUntil: 'load' });
 
@@ -54,12 +80,7 @@ const emailErr = await page.$eval('#contact-email ~ .field-error', (n) => n.text
 check('invalid email caught', /e-pasta/i.test(emailErr), emailErr);
 
 // 3. consent is genuinely required
-await page.$eval('#contact-email', (n) => { n.value = 'lead@example.com'; });
-await page.$eval('#contact-name', (n) => { n.value = 'Anna'; });
-await page.$eval('#contact-last_name', (n) => { n.value = 'Berzina'; });
-await page.$eval('#contact-message', (n) => { n.value = 'Interese par Meta reklamam.'; });
-// required since 11 Sep 2026 - set it here so step 3 fails on consent alone
-await page.$eval('#contact-budget', (n) => { n.value = '1 000–3 000 €'; });
+await fillContact();
 await submit();
 await new Promise((r) => setTimeout(r, 200));
 check('consent required', captured === null, 'submit still blocked with consent unchecked');
@@ -71,15 +92,30 @@ await page.waitForSelector('.form-done', { timeout: 5000 }).catch(() => {});
 const done = await page.$('.form-done');
 check('success panel shown', !!done, done ? 'form replaced by confirmation' : 'MISSING');
 check('form removed after submit', !(await page.$('form.form')), 'prevents double submit');
-check('posted to contact form id', !!captured && captured.url.includes('196419637828650760'), captured ? captured.url.split('/forms/')[1] : 'no request');
+const p = captured ? payload() : {};
+const d = p.data || {};
+check('posted to the lead endpoint', !!captured && captured.url.includes('/webhook/liaa-lead'), captured ? captured.url.split('/webhook/')[1] : 'no request');
+check('form key sent', p.form === 'contact', p.form || '(none)');
 for (const [k, v] of [['email', 'lead@example.com'], ['name', 'Anna'], ['message', 'Interese']]) {
-  check(`payload carries ${k}`, !!captured && captured.body.includes(v), '');
+  check(`payload carries ${k}`, String(d[k] || '').includes(v), '');
 }
-check('honeypot not sent', !!captured && !captured.body.includes('company_url'), '');
-check('budget rides inside the message', !!captured && captured.body.includes('3 000') && !captured.body.includes('fields[budget]'), 'no MailerLite field needed');
-check('source_page sent', !!captured && captured.body.includes('/sazinies/'), '');
+check('honeypot not sent', !!captured && !('company_url' in d), '');
+check('budget rides inside the message', String(d.message || '').includes('3 000') && !('budget' in d), 'one readable message');
+check('source_page sent', d.source_page === '/sazinies/', d.source_page || '(none)');
 
-// 5. honeypot: a filled trap sends nothing but looks successful
+// 5. a refusal must not lose the lead: the visitor is handed a pre-filled e-mail
+captured = null;
+stubStatus = 500;
+await page.goto(BASE + '/sazinies/', { waitUntil: 'load' });
+await fillContact();
+await page.click('.form-consent input');
+await submit();
+await new Promise((r) => setTimeout(r, 800));
+const status = await page.$eval('.form-status', (n) => n.textContent).catch(() => '');
+check('refusal falls back to e-mail', !!captured && /Neizdevās/.test(status), status || '(no status)');
+stubStatus = 200;
+
+// 6. honeypot: a filled trap sends nothing but looks successful
 // The course form moved: since all three courses got a Stripe `bookUrl`
 // (4 Sep 2026) course-sessions.njk renders the buy button instead of the
 // form, so the only page still rendering form("course") is the hub.
@@ -98,7 +134,7 @@ await new Promise((r) => setTimeout(r, 400));
 check('honeypot blocks the request', captured === null, 'nothing sent');
 check('honeypot still shows success', !!(await page.$('.form-done')), 'bot learns nothing');
 
-// 6. the hub's course form asks which course, and offers the undecided option
+// 7. the hub's course form asks which course, and offers the undecided option
 // The preselect path (form("course", { course: courseName })) is NOT dead
 // code - course-sessions.njk still uses it in its fallback branch, which is
 // what a course renders when it has no bookUrl. There is simply no page in

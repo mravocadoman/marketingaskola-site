@@ -10,12 +10,11 @@
  * the focus trap below are shared, and they are the tuned part.
  *
  * Two destinations on submit, deliberately independent:
- *   - the URL goes to the n8n webhook, which fetches the page and returns the
- *     checks as JSON. No e-mail address is ever sent there, so nothing
- *     personal lands in n8n's execution logs.
- *   - the e-mail goes to MailerLite through the same public form endpoint the
- *     site's other forms use, so list-building keeps working even if the audit
- *     service is down.
+ *   - the e-mail goes to the same n8n workflow as the site's forms
+ *     (data-hook), which saves it in our own table and, for the sagatave,
+ *     e-mails the file.
+ *   - for the page check, the URL goes to the audit webhook, which fetches the
+ *     page and returns the checks as JSON. It only ever receives the URL.
  *
  * WHEN IT APPEARS. Never immediately: Google treats an interstitial that
  * covers the content on arrival as a ranking problem on mobile, and it is
@@ -33,10 +32,8 @@
   var AUDIT = s.getAttribute('data-audit');
   var HOOK = s.getAttribute('data-hook');
   var FILE = s.getAttribute('data-file');
-  var ML_ACCOUNT = s.getAttribute('data-ml-account');
-  var ML_FORM = s.getAttribute('data-ml-form');
   var KEY = 'ms-lm';
-  if (VARIANT === 'liaa' ? !HOOK : !AUDIT) return;
+  if (!HOOK || (VARIANT === 'audit' && !AUDIT)) return;
 
   var read = function () { try { return localStorage.getItem(KEY); } catch (e) { return 'seen'; } };
   var write = function (v) { try { localStorage.setItem(KEY, v); } catch (e) { /* private mode */ } };
@@ -153,38 +150,26 @@
     btn.disabled = true;
     btn.textContent = VARIANT === 'liaa' ? 'Sūtām…' : 'Pārbaudām…';
 
-    // The list. Fire and forget: a MailerLite outage must not cost the lead.
-    if (ML_ACCOUNT && ML_FORM) {
-      var body = new FormData();
-      body.append('fields[email]', email);
-      if (url) body.append('fields[website]', url);
-      if (eksports) body.append('fields[message]', 'Eksporta statuss: ' + eksports);
-      body.append('fields[source_page]', VARIANT === 'liaa' ? 'liaa sagatave' : 'lapas parbaude');
-      body.append('ml-submit', '1');
-      body.append('anticsrf', 'true');
-      fetch('https://assets.mailerlite.com/jsonp/' + ML_ACCOUNT + '/forms/' + ML_FORM + '/subscribe',
-        { method: 'POST', body: body, mode: 'no-cors' }).catch(function () {});
-    }
+    /* The lead. Same workflow and payload shape as the site's forms, so it
+     * lands in the same table; text/plain keeps it a simple request with no
+     * preflight. Fire and forget: the file or the report is on screen whatever
+     * the workflow does. */
     var formId = VARIANT === 'liaa' ? 'liaa-sagatave' : 'lapas-parbaude';
+    try {
+      fetch(HOOK, {
+        method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          form: formId, page: location.pathname,
+          data: VARIANT === 'liaa'
+            ? { email: email, message: 'Eksporta statuss: ' + eksports }
+            : { email: email, website: url },
+        }),
+      }).catch(function () {});
+    } catch (e) { /* a blocked fetch must not cost the lead */ }
     if (window.msTrack) window.msTrack('generate_lead', { form_id: formId, page_path: location.pathname }, { email: email });
 
-    /* The sagatave. The same webhook the LIAA form uses, so the enquiry reaches
-     * a human whatever MailerLite does with the subscription; text/plain keeps
-     * it a simple request, so there is no preflight to configure. The file is
-     * shown on screen either way - the e-mail is the copy, not the delivery. */
-    if (VARIANT === 'liaa') {
-      try {
-        fetch(HOOK, {
-          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify({
-            form: 'liaa-sagatave', page: location.pathname,
-            data: { email: email, message: 'Eksporta statuss: ' + eksports },
-          }),
-        }).catch(function () {});
-      } catch (e) { /* a blocked fetch must not cost the download */ }
-      handOver();
-      return;
-    }
+    // The sagatave is on screen at once; the e-mail is the copy, not the delivery.
+    if (VARIANT === 'liaa') { handOver(); return; }
 
     fetch(AUDIT, {
       method: 'POST',
@@ -198,9 +183,9 @@
       });
   });
 
-  /* The sagatave is handed over on screen, not held hostage for a confirmed
-     e-mail: MailerLite double opt-in would otherwise leave someone who gave a
-     valid address with nothing at all. */
+  /* The sagatave is handed over on screen, not held back until an e-mail
+     arrives: a mistyped address would otherwise leave the visitor with
+     nothing at all. */
   function handOver() {
     form.hidden = true;
     result.hidden = false;
