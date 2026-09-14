@@ -2623,6 +2623,11 @@ order 32%, 34 automated jobs. Git has the long version.
   "investīcijas reklāmā": the source gives revenue and ROAS, not spend, and a
   number is never derived by arithmetic on this site.
 - The jump chips at the top of the page include `#starfleet-portraits` now.
+- **The other four cases' Latvian was tidied the same day** (owner: *"yes tidy
+  the other cases too"*): calques, "kreatīvi", "eur", "vairāk kā" and the em
+  dashes, with no number changed. **The Brew Company "75 000 eiro mēnesī"
+  sentence was deliberately left word for word** - it is the open owner
+  question above (monthly or total), and rewording it would look like an answer.
 
 ## Hero motifs are inline SVG that assemble part by part (9 Sep 2026)
 
