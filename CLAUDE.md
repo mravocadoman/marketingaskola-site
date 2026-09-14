@@ -2563,12 +2563,18 @@ like the rest of the pages; agency appropriate? and make all of the animations
 animate slightly slower"*, then *"retire the dots"*.
 
 **The homepage hero is a pieces motif like every other header.**
-`motifs/sakums.njk`, built from `hero-sakums.webp`: a feed ad in a phone beside a
-rising bar chart, the headline "Reklāma, kas atmaksājas" as a picture. The
-tallest bar carries a small cyan CAP rather than being cyan, because a prompt that
-names a cyan mass gets a cyan slab back: 0.82% of the frame is cyan as shipped.
-Ink is 29.4%, a little under the 35-45 target, and was accepted rather than
-re-rolled into the overshoot that brings back rounded corners. The three stats
+`motifs/sakums.njk`, built from `hero-sakums.webp`. **Redrawn richer on 14 Sep
+2026** (owner: *"make the header 1st page image more interesting and complex
+as that is the first image they see"*): a phone showing a feed ad whose cyan
+button is wired to a results dashboard - metric tiles, bars rising under a
+stepped line with a cyan cap on the tallest, a results table - plus a funnel
+card and an audience grid. It was picked from five renders: three concepts,
+then two re-rolls of the dashboard. Every first render drew the phone with
+rounded corners and one blurred a grid, so the prompt now spells out a plain
+rectangle and "no blur, no soft focus". 24 pieces (the stagger cap), 0.37%
+cyan, ink 21.4% by the 0.20-luminance count - the dark slate panels sit just
+under that threshold, so the frame reads fuller than the number says. Inline
+markup went from 3.6 KB to 13.6 KB. The three stats
 moved out of the right column into a `.hero-stats` ledger row under the headline.
 
 - **`.hero-grid:has(> .hero-media)` has to stay inside `min-width: 981px`.**
