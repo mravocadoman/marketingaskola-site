@@ -7,17 +7,6 @@
 <title>{{subject}}</title>
 </head>
 <body style="margin:0;padding:0;background-color:#eef3f8;">
-<!--
-  The Mārketinga Skola newsletter. Rendered by tools/newsletter.mjs from a
-  newsletters/<issue>.json file: edit the words there, never here.
-
-  Tables and inline styles only, because Outlook and Gmail strip most CSS.
-  The body is white like the blog articles; header and footer carry the
-  site's navy. Cyan is decoration only (the small tick before each eyebrow),
-  never text: on white it fails contrast, the same rule as the site's paper.
-  Square corners everywhere, as on the site. The footer link uses Sender's
-  unsubscribe merge tag, and the renderer refuses to write without it.
--->
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{preheader}}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#eef3f8;">
 <tr><td align="center" style="padding:24px 12px;">
@@ -39,7 +28,7 @@
 <tr><td style="background-color:#020d1c;padding:24px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.6;color:#c9d8e8;">
 {{fine}}
 <p style="margin:0 0 8px;">Mārketinga Skola, SIA "Stonks" &middot; Liepu iela 28, Rēzekne &middot; <a href="mailto:rihards@marketingaskola.lv" style="color:#c9d8e8;text-decoration:underline;">rihards@marketingaskola.lv</a> &middot; +371&nbsp;26673384</p>
-<p style="margin:0;">Šo vēstuli saņem, jo Tavs e-pasts ir Mārketinga Skolas jaunumu sarakstā. <a href="{$unsubscribe_link}" style="color:#ffffff;text-decoration:underline;">Atteikties no vēstulēm</a></p>
+<p style="margin:0;">Šo vēstuli saņem, jo Tavs e-pasts ir Mārketinga Skolas jaunumu sarakstā. <a href="{{ unsubscribe_link }}" style="color:#ffffff;text-decoration:underline;">Atteikties no vēstulēm</a></p>
 </td></tr>
 </table>
 </td></tr>

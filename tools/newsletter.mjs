@@ -69,7 +69,9 @@ const html = fill(page, {
 // An unfilled slot or a missing unsubscribe link must never reach a list.
 const left = html.match(/\{\{\w+\}\}/);
 if (left) { console.error(`unfilled slot ${left[0]}`); process.exit(1); }
-if (!html.includes('href="{$unsubscribe_link}"')) { console.error('the unsubscribe link is missing'); process.exit(1); }
+// Sender reads Liquid tags only: a legacy {$tag} is stored as-is and reaches subscribers as literal text.
+if (html.includes('{$')) { console.error('legacy {$...} merge tag: Sender needs Liquid, e.g. {{ unsubscribe_link }}'); process.exit(1); }
+if (!html.includes('href="{{ unsubscribe_link }}"')) { console.error('the unsubscribe link is missing'); process.exit(1); }
 
 const out = file.replace(/\.json$/, '.html');
 fs.writeFileSync(out, html);
