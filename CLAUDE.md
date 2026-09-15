@@ -461,14 +461,20 @@ e-mail, at risk) and Resend (free only to 1 000 contacts, then $40 a month).
   that mentions LIAA gets `liaa-disclaimer.njk` in its footer word for word:
   the renderer reads the include the pages use, so the e-mail cannot drift
   from them and nobody has to remember it.
-- **Nothing sends until marketingaskola.lv passes SPF, DKIM and DMARC in
-  Sender** (`list_domains` shows `ready_to_send`). Drafts can be created before
-  that. DNS is at SiteGround (`ns1/ns2.siteground.net`). The domain has ONE SPF
-  record, so Sender's `include:sendersrv.com` goes inside it, never into a
-  second record. SPF allows 10 DNS lookups: on 15 Sep 2026 the record used 7,
-  two of them wasted on `+a +mx` repeating `a mx`. Merged without the repeats and
-  with Sender (2 lookups) and Google (1) added, it uses 8. Drop
-  `include:_spf.mlsend.com` when MailerLite ends.
+- **marketingaskola.lv passes SPF, DKIM and DMARC in Sender since 15 Sep 2026**
+  (`list_domains` shows `ready_to_send`; drafts could be created before that).
+  DNS is at SiteGround (`ns1/ns2.siteground.net`), in Site Tools → Domain → DNS
+  Zone Editor. **The SPF record is the TXT row named `marketingaskola.lv.` in
+  that list**, not a separate SPF screen: Email → Authentication answers "You
+  don't have access to this tool" for this login. The records as set that day:
+  - TXT `marketingaskola.lv.` =
+    `v=spf1 a mx include:marketingaskola.lv.spf.auto.dnssmarthost.net include:_spf.mlsend.com include:sendersrv.com include:_spf.google.com ~all`
+    ONE SPF record, 8 of the 10 DNS lookups SPF allows. The previous value used
+    7, two of them on `+a +mx` repeating `a mx`.
+  - CNAME `sender._domainkey` → `dkim.sendersrv.com`
+  - TXT `_dmarc` = `v=DMARC1; p=none;` (monitoring only, rejects nothing)
+
+  Drop `include:_spf.mlsend.com` when MailerLite ends.
 - **Found alongside, 15 Sep 2026: Google Workspace was missing from the
   domain's mail authentication.** The MX is `smtp.google.com`, yet the SPF
   record had no `include:_spf.google.com` and there was no DKIM key at the
