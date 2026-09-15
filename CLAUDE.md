@@ -426,6 +426,40 @@ list (free to 1 000 contacts, then $40 a month), so only the leads moved.
 whether or not the visitor had clicked "Piekrītu", so a hashed e-mail reached
 Meta even after "Noraidīt". It is gated on `granted` now, like the pixel.
 
+## Newsletter: Sender, drafted by Claude (15 Sep 2026)
+
+Owner, 15 Sep 2026: move the newsletter from MailerLite (plan ends November) to
+**Sender** (sender.net, free up to 2 500 subscribers), keep the whole list, and
+let Claude write the issues. Rejected on the way, so nobody reopens them:
+building our own sending (it saves about 20 cents a send and puts the
+deliverability of the marketingaskola.lv domain, which also carries client
+e-mail, at risk) and Resend (free only to 1 000 contacts, then $40 a month).
+
+- **Claude creates each issue as a Sender DRAFT through Sender's MCP connector**
+  (`https://mcp.sender.net/mcp`, OAuth with the owner's login). The connector
+  never sends or schedules: the owner opens the draft and presses Send.
+- **The Sender API is NOT in the free plan** (it starts at Standard, about $6 a
+  month). Fully automatic sends and an automatic sync of popup sign-ups would
+  need it, so on free, new `materiali` rows from the n8n table are added in
+  batches through the connector.
+- **One template, issues as JSON.** `npm run newsletter -- newsletters/<issue>.json`
+  renders `templates/newsletter.html` into `newsletters/<issue>.html`
+  (gitignored). Tables and inline styles only; white body like the blog
+  articles, navy header and footer, cyan only as the tick before each eyebrow.
+  Every site link gets `utm_source=sender&utm_medium=email&utm_campaign=<issue>`.
+  The renderer refuses to write with an unfilled slot or without Sender's
+  unsubscribe merge tag in the footer.
+- **Drag-and-drop editor designs cannot be created through the API or the
+  connector**, only HTML or text. That is why the template exists.
+- **Write every issue gender-neutral.** The MailerLite sends went out in a
+  female and a male version because Latvian participles change with gender
+  (pieteicies / pieteikusies); neutral wording makes one send enough.
+- **LIAA copy in a newsletter follows CONTENT-RULES.md** like a page does:
+  conditional wording, prices bez PVN, supplier and never approver. Any issue
+  that mentions LIAA gets `liaa-disclaimer.njk` in its footer word for word:
+  the renderer reads the include the pages use, so the e-mail cannot drift
+  from them and nobody has to remember it.
+
 ## Marks and white-slab artifacts
 
 `.img--card` (`background:#fff`) is **deleted**. It faked white paper behind

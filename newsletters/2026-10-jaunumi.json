@@ -1,0 +1,42 @@
+{
+  "_comment": "First Sender newsletter. DRAFT for the owner's review, not sent. Every sentence is gender-neutral, and the LIAA copy follows CONTENT-RULES.md: conditional wording, prices bez PVN, supplier and never approver. The renderer adds the LIAA disclaimer to the footer because the issue mentions LIAA.",
+  "subject": "60% no eksporta mārketinga izmaksām var atgūt",
+  "preheader": "Ko sedz LIAA eksporta atbalsts, kā veikt cenu aptauju un kad notiek oktobra kursi.",
+  "utm_campaign": "2026-10-jaunumi",
+  "title": "Eksporta mārketingam var atgūt 60%",
+  "intro": [
+    "Sveiki!",
+    "LIAA eksporta atbalsta programmā pieteikumus pieņem līdz 31.12.2026. Ja uzņēmums eksportē vai plāno sākt, šajā vēstulē ir tas, kas jāzina pirms pieteikšanās, un oktobra kursu datumi."
+  ],
+  "items": [
+    {
+      "eyebrow": "LIAA eksporta atbalsts",
+      "title": "Ko programma sedz",
+      "text": "Programma atmaksā 60% no attiecināmajām eksporta mārketinga izmaksām, līdz 40 000 eiro gadā. Attiecināma ir, piemēram, materiālu izstrāde līdz maketam un ārvalstu partneru meklēšana, bet druka un ražošana nav.",
+      "link": "Programmas pārskats",
+      "url": "/liaa-eksporta-atbalsts/"
+    },
+    {
+      "eyebrow": "Cenu aptauja",
+      "title": "Vismaz trīs piedāvājumi, iesūtīti elektroniski",
+      "text": "Pirms pakalpojuma pasūtīšanas vajag vismaz 3 salīdzināmus piedāvājumus, iesūtītus e-pastā vai ar elektronisko parakstu. Rakstā ir pieci soļi, biežākās kļūdas un protokola sagatave.",
+      "link": "Kā veikt cenu aptauju",
+      "url": "/cenu-aptauja-liaa/"
+    },
+    {
+      "eyebrow": "Kursi oktobrī",
+      "title": "Meta, SEO un Google Ads tiešsaistē",
+      "text": "Meta reklāmas kurss 6. oktobrī, SEO kurss 8. oktobrī, Google Ads kurss 27. oktobrī. Katrs ilgst 3 stundas tiešsaistē un maksā 150 € + PVN.",
+      "link": "Kursi un pieteikšanās",
+      "url": "/digitala-marketinga-kursi/"
+    }
+  ],
+  "cta": {
+    "text": "Pieprasīt cenu piedāvājumu",
+    "url": "/liaa-eksporta-atbalsts/#pieteikums"
+  },
+  "outro": [
+    "Ja jau vāc piedāvājumus cenu aptaujai, pozīciju sarakstu ar cenām bez PVN nosūtām vienas darba dienas laikā.",
+    "Rihards, Mārketinga Skola"
+  ]
+}

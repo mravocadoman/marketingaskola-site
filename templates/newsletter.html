@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>{{subject}}</title>
+</head>
+<body style="margin:0;padding:0;background-color:#eef3f8;">
+<!--
+  The Mārketinga Skola newsletter. Rendered by tools/newsletter.mjs from a
+  newsletters/<issue>.json file: edit the words there, never here.
+
+  Tables and inline styles only, because Outlook and Gmail strip most CSS.
+  The body is white like the blog articles; header and footer carry the
+  site's navy. Cyan is decoration only (the small tick before each eyebrow),
+  never text: on white it fails contrast, the same rule as the site's paper.
+  Square corners everywhere, as on the site. The footer link uses Sender's
+  unsubscribe merge tag, and the renderer refuses to write without it.
+-->
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{preheader}}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#eef3f8;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+<tr><td style="background-color:#020d1c;padding:22px 32px;">
+<a href="{{site}}"><img src="https://marketingaskola.lv/img/logo.png" width="148" alt="Mārketinga Skola" style="display:block;width:148px;max-width:148px;height:auto;border:0;"></a>
+</td></tr>
+<tr><td style="background-color:#ffffff;padding:36px 32px 12px;font-family:Arial,Helvetica,sans-serif;">
+<h1 style="margin:0 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:1.25;font-weight:700;color:#0b1b2b;">{{title}}</h1>
+{{intro}}
+</td></tr>
+{{items}}
+<tr><td style="background-color:#ffffff;padding:20px 32px 32px;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 24px;"><tr><td style="background-color:#00152c;">
+<a href="{{cta_url}}" style="display:inline-block;padding:14px 26px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;line-height:1.2;color:#ffffff;text-decoration:none;">{{cta_text}}</a>
+</td></tr></table>
+{{outro}}
+</td></tr>
+<tr><td style="background-color:#020d1c;padding:24px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.6;color:#c9d8e8;">
+{{fine}}
+<p style="margin:0 0 8px;">Mārketinga Skola, SIA "Stonks" &middot; Liepu iela 28, Rēzekne &middot; <a href="mailto:rihards@marketingaskola.lv" style="color:#c9d8e8;text-decoration:underline;">rihards@marketingaskola.lv</a> &middot; +371&nbsp;26673384</p>
+<p style="margin:0;">Šo vēstuli saņem, jo Tavs e-pasts ir Mārketinga Skolas jaunumu sarakstā. <a href="{$unsubscribe_link}" style="color:#ffffff;text-decoration:underline;">Atteikties no vēstulēm</a></p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>
+<!-- BLOCKS -->
+<!-- para --><p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;color:#33475b;">{{text}}</p><!-- /para -->
+<!-- item --><tr><td style="background-color:#ffffff;padding:8px 32px;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #dfe6ee;padding:22px 0 14px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td style="width:24px;height:3px;background-color:#03c3f8;font-size:0;line-height:0;">&nbsp;</td>
+<td style="padding-left:10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1;letter-spacing:1px;text-transform:uppercase;color:#5a6f84;">{{eyebrow}}</td>
+</tr></table>
+<h2 style="margin:12px 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:20px;line-height:1.3;font-weight:700;color:#0b1b2b;">{{title}}</h2>
+<p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;color:#33475b;">{{text}}</p>
+<a href="{{url}}" style="font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:#01608c;text-decoration:underline;">{{link}} &rarr;</a>
+</td></tr></table>
+</td></tr><!-- /item -->
+<!-- fine --><p style="margin:0 0 8px;color:#8ba3bd;">{{text}}</p><!-- /fine -->

@@ -4,3 +4,5 @@ _site/
 .env
 .env.*
 !.env.example
+# rendered newsletter issues (built from newsletters/*.json)
+newsletters/*.html
