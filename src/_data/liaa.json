@@ -8,6 +8,8 @@
     "applyUntil": "31.12.2026",
     "budget": 15400000,
     "claimBy": "nākamā kalendārā gada 31. martam",
+    "lastYear": 2026,
+    "decisionDays": 24,
     "quotes": 3,
     "procurementThreshold": 70000,
     "minPoints": 9,
@@ -41,11 +43,9 @@
       "lead": "Bukleti, baneri un video makets eksporta tirgum, sagatavoti līdz maketa stadijai, ar fiksētu cenu un pozīciju sarakstu, ko var ielikt cenu aptaujas protokolā.",
       "term": "15 darba dienas no apstiprināta brīfa",
       "scope": [
-        ["Vizuālās identitātes adaptācija eksporta tirgum", "Krāsu, tipogrāfijas un izkārtojuma sistēma mērķa tirgum", "Zīmola adaptācijas vadlīnijas, PDF", "3 darba dienas"],
-        ["Produkta vai pakalpojuma buklets", "Angļu valodā, līdz 8 lappusēm, gatavs drukai kā makets", "Makets PDF un izejas fails", "6 darba dienas"],
-        ["Baneru komplekts nozares platformām", "5 izmēri digitālajām nozares platformām un kampaņām", "Maketi un izejas faili", "3 darba dienas"],
-        ["Videoklipa scenārijs, storyboard un dizaina makets", "Līdz 60 sekundēm, bez filmēšanas un montāžas", "Scenārijs, storyboard un makets", "2 darba dienas"],
-        ["Izejas faili un nodošanas dokumentācija", "Strukturēta failu nodošana ar aprakstu, ko satur katrs fails", "Nodošanas komplekts", "1 darba diena"]
+        ["Produkta vai pakalpojuma buklets", "Angļu valodā, līdz 8 lappusēm, drukai gatavs makets. Ietver krāsu, tipogrāfijas un izkārtojuma pielāgošanu mērķa tirgum", "Makets PDF formātā un izejas faili ar aprakstu", "8 darba dienas"],
+        ["Baneru komplekts nozares platformām", "5 formāti nozares digitālajām platformām un kampaņām, tajā pašā vizuālajā sistēmā kā buklets", "Maketi un izejas faili ar aprakstu", "4 darba dienas"],
+        ["Videoklipa scenārijs, storyboard un dizaina makets", "Līdz 60 sekundēm, bez filmēšanas un montāžas", "Scenārijs, storyboard, makets un izejas faili", "3 darba dienas"]
       ],
       "inputs": [
         "Esošie zīmola faili: logo, krāsas, fonti, ja tādi ir.",
@@ -62,15 +62,16 @@
       "name": "Ārvalstu sadarbības partneru meklēšana",
       "price": 7900,
       "cap": 8000,
-      "lead": "Strukturēta ārvalstu partneru meklēšanas programma: mērķa tirgus definīcija, kvalificēta kontaktu datubāze, daudzkanālu kontaktēšanās un pieteiktas tikšanās, nevis zvanu centra stundas.",
+      "lead": "Strukturēta ārvalstu partneru meklēšanas programma: mērķa tirgus definīcija, kvalificēta kontaktu datubāze, saziņa vairākos kanālos un vismaz trīs notikušas tikšanās ar kvalificētiem partneriem, nevis zvanu centra stundas.",
       "term": "8 nedēļas no programmas sākuma",
+      "promise": "Vismaz trīs notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem. Ja astoņu nedēļu laikā tās vēl nav notikušas, darbu bez papildu maksas turpinām, līdz tās notiek, bet ne ilgāk kā līdz 2026. gada 31. decembrim. Tikšanās uzskatāmas par notikušām, ja uzņēmums tajās piedalās.",
       "scope": [
         ["Mērķa tirgus un ICP definēšana", "Nozares segmentācija un ideālā partnera profils diviem tirgiem", "Stratēģijas dokuments", "1. nedēļa"],
         ["Potenciālo partneru datubāzes izveide", "Līdz 500 kvalificētiem kontaktiem divos tirgos", "CSV vai CRM eksports", "2. nedēļa"],
         ["Kontaktu verifikācija un bagātināšana", "Amatu, e-pasta adrešu un uzņēmuma datu pārbaude", "Bagātināta datu kopa", "3. nedēļa"],
         ["Daudzkanālu kontaktēšanās kampaņa", "E-pasts un zvani, trīs saskarsmes viļņi", "Kampaņas izpilde un žurnāls", "4. līdz 7. nedēļa"],
-        ["Atbilžu apstrāde, kvalificēšana un tikšanos pieteikšana", "Atbilžu apstrāde un tikšanos rezervēšana Tavā kalendārā", "Kvalificēto tikšanos saraksts", "4. līdz 8. nedēļa"],
-        ["Atskaite un nodošana", "Rezultāti, kontaktu statusi un nākamie soļi", "Gala atskaite ar pipeline", "8. nedēļa"]
+        ["Atbilžu apstrāde, kvalificēšana un tikšanos pieteikšana", "Atbilžu apstrāde un tikšanos rezervēšana Tavā kalendārā", "Vismaz trīs notikušas tikšanās un to saraksts", "4. līdz 8. nedēļa"],
+        ["Atskaite un nodošana", "Rezultāti, kontaktu statusi, tikšanos apliecinājumi un turpmākās darbības", "Gala atskaite, kvalificēto kontaktu saraksts un tikšanos apliecinājumi", "8. nedēļa"]
       ],
       "inputs": [
         "Produkta vai pakalpojuma apraksts un cenu līmenis angļu valodā.",

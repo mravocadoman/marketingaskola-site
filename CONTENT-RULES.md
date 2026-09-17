@@ -60,7 +60,7 @@ Re-verify before any edit that touches a number; this programme has already been
 | Reimbursement rate | 60% of eligible cost | pillar, both product pages |
 | Cap per recipient per year | 40 000 € | pillar |
 | Ceiling vs turnover | ≤30% of last closed year's net turnover | pillar, eligibility |
-| Applications open until | 31.12.2026, or earlier if the funding runs out ("vai kamēr pieejams finansējums") | pillar (the funding caveat is not on the pages yet) |
+| Applications open until | 31.12.2026, or earlier if the funding runs out ("vai kamēr pieejams finansējums") | pillar ("kamēr programmai pietiek līdzekļu") and its FAQ |
 | Programme budget | 15 400 000 € | pillar |
 | Costs claimed by | 31 March of the following calendar year | pillar |
 | Quotes needed in a cenu aptauja | at least 3 | pillar, both product pages, post |
@@ -69,10 +69,10 @@ Re-verify before any edit that touches a number; this programme has already been
 | Survey documents | attached to the export activity plan when the company applies ("Plānam jāpievieno: Izmaksas pamatojošos dokumentus, piemēram, cenu aptauju"; FAQ: "jāiesniedz trīs savstarpēji salīdzināmi cenu piedāvājumi"), with a free-form protocol. Only cost-PROVING documents such as invoices are not submitted: "Izmaksas apliecinošie dokumenti LIAA nav jāiesniedz" | pillar, post, sagatave PDF |
 | Related parties | no transactions with the recipient, its members, shareholders, council or board members, their relatives to the second degree, spouses or representatives | post |
 | Support cap per activity | a cap on the SUPPORT, not on the price (MK 407 p. 51, "Maksimāli pieļaujamā atbalsta summa"): 5 000 € a year for visual materials (45.5) and 8 000 € for telemarketing (45.8). At 60% the caps are reached at 8 333 € and 13 333 € of cost | `liaa.json` `cap` (not rendered) |
-| Eligible materials | only brochures, banners and video clips: "tikai bukletu, baneru un video rullīšu izstrādes izmaksas" (FAQ). A photo shoot counts only inside a brochure or banner estimate; printing never | materials page |
-| Telemarketing result | "vismaz 3 notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem" (FAQ) | telemarketing page (not stated yet) |
-| Last year | "2026.gads ir pēdējais eksporta darbību plāna iesniegšanas un īstenošanas kalendārais gads"; activities already finished when the plan is submitted cannot be included | not on the pages yet |
-| Decision time | "LIAA 24 darba dienu laikā izvērtē plānu un pieņem lēmumu" | not on the pages yet |
+| Eligible materials | only brochures, banners and video clips: "tikai bukletu, baneru un video rullīšu izstrādes izmaksas" (FAQ). A photo shoot counts only inside a brochure or banner estimate; printing never. Since 17 Sep 2026 the materials package is exactly three lines: brochure, banner set, video | materials page, pillar, sagatave PDF |
+| Telemarketing result | "vismaz 3 notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem" (FAQ). Owner, 17 Sep 2026: promised as the result; work continues at no extra fee until they happen, not beyond 31.12.2026; a meeting counts when the company attends | telemarketing page, pillar offers, quote PDF (`promise` in `liaa.json`) |
+| Last year | "2026.gads ir pēdējais eksporta darbību plāna iesniegšanas un īstenošanas kalendārais gads"; activities already finished when the plan is submitted cannot be included | pillar, both offer pages, sagatave PDF (`lastYear`) |
+| Decision time | "LIAA 24 darba dienu laikā izvērtē plānu un pieņem lēmumu" | pillar, sagatave PDF (`decisionDays`) |
 | Conflict of interest | the applicant signs a declaration (FAQ) | none |
 | Self-assessment minimum | 9 points | eligibility |
 | Tax debt allowed | ≤1 000 € | eligibility |

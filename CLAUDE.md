@@ -3312,6 +3312,30 @@ programme page states, at the strength it states it.** And a general agency
 post that links here must say *export* marketing: the programme reimburses
 export-marketing activities, not agency work as such.
 
+### Offers reshaped after the rules check (17 Sep 2026)
+
+LIAA's regulation and FAQ were re-read on 17 Sep 2026 (details in
+CONTENT-RULES.md), and the owner approved three changes the same day:
+
+- **The materials package is exactly three lines: brochure, banner set,
+  video.** LIAA's FAQ supports only "bukletu, baneru un video rullīšu izstrādes
+  izmaksas", so the identity adaptation moved inside the brochure and banners
+  and the handover files inside every line. Still 15 working days, 4 900 €.
+- **Partner search promises three meetings that took place**, the result LIAA
+  requires, and keeps working at no extra fee until they happen, not beyond
+  31.12.2026. A meeting counts when the company attends. The wording lives in
+  `liaa.json` as `promise`: the scope include and the quote PDF render it, and
+  the page FAQ says the same in its own words.
+- **The deadline facts are on the pages:** 2026 is the last year to submit and
+  carry out a plan (`lastYear`), LIAA decides within 24 working days
+  (`decisionDays`), finished activities cannot be included, and the price
+  survey happens before the plan goes in. The sagatave PDF carries the first
+  two.
+
+Found alongside: both offer pages said "Termiņu, {{ o.term }}, skaita no …"
+while `term` already ends with its own start point, so the live sentence
+repeated itself. It reads "Izpildes termiņš ir {{ o.term }}" now.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

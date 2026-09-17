@@ -25,6 +25,7 @@ const fill = {
   'programme.name': p.name, programmeUrl: p.url,
   rate: p.rate, yearCap: eur(p.yearCap), turnoverShare: p.turnoverShare,
   applyUntil: p.applyUntil, claimBy: p.claimBy, quotes: p.quotes,
+  lastYear: p.lastYear, decisionDays: p.decisionDays,
   procurementThreshold: eur(p.procurementThreshold),
   gates: p.gates.map((g) => `<li>${esc(g)}</li>`).join('\n  '),
   sectors: p.excludedSectors.map((s) => `<li>${esc(s[0].toUpperCase() + s.slice(1))}</li>`).join('\n  '),

@@ -60,6 +60,8 @@ const fill = {
   'client.name': client, 'client.regNr': arg('regnr', '—'), 'client.contact': arg('contact', ''),
   'offer.name': offer.name, 'offer.lead': offer.lead, 'offer.category': offer.category, 'offer.term': offer.term,
   rows, inputs: offer.inputs.map((i) => `<li>${esc(i)}</li>`).join('\n  '),
+  // Only an offer that promises a result (partner search: three meetings) gets the section.
+  promise: offer.promise ? `<h2>Apsolītais rezultāts</h2>\n<p>${esc(offer.promise)}</p>` : '',
   priceNet: lvEur(net), priceVat: lvEur(vat), priceGross: lvEur(net + vat),
   rate: liaa.programme.rate, priceSupport: lvEur(support), priceOwn: lvEur(net - support),
 };

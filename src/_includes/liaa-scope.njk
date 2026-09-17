@@ -11,4 +11,7 @@
     </tbody>
   </table>
 </div>
+{%- if o.promise %}
+<p><strong>Apsolītais rezultāts.</strong> {{ o.promise }}</p>
+{%- endif %}
 <p class="fine">Kopējais izpildes termiņš: {{ o.term }}. Cena fiksēta, {{ o.price | eur }} € bez PVN, un nemainās, ja apjoms paliek šis. Druka, ražošana, filmēšana un mediju pirkšana neietilpst un netiek piedāvāta šīs pozīcijas ietvaros.</p>
