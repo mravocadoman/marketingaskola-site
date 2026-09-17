@@ -3116,9 +3116,11 @@ puppeteer/Chrome that the other tools already use (`--html` writes the filled
 HTML instead). White paper, not the dark ledger, because it is printed and
 read beside two competitors' quotes.
 
-**The line prices are split across the scope rows and rounded so the column
-adds up to the fixed total exactly** - a quote whose column does not sum is
-the first thing a procurement reviewer notices. The tool also refuses to write
+**The line prices follow each row's working days** (owner, 17 Sep 2026). The
+term column is parsed: "8 darba dienas" counts 8, a week 5, "4. līdz 7. nedēļa"
+20, and the tool exits if a term cannot be read. The last line takes the
+rounding, so the column adds up to the fixed total exactly - a quote whose column
+does not sum is the first thing a procurement reviewer notices. The tool also refuses to write
 if any template slot is left unfilled.
 
 ### Artwork and placement

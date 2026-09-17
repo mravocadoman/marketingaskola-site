@@ -39,13 +39,25 @@ const valid = new Date(today.getTime() + days * 864e5);
 const lvDate = (d) => `${String(d.getDate()).padStart(2, '0')}.${String(d.getMonth() + 1).padStart(2, '0')}.${d.getFullYear()}.`;
 
 /* One priced line per scope row keeps the quote comparable with a competitor's
-   and lets the buyer drop a position without re-quoting the whole thing. The
-   split is proportional and rounded so the lines add up to the fixed total
-   exactly - a quote whose column does not sum is the first thing a reviewer
-   notices. */
-const share = net / offer.scope.length;
-const lines = offer.scope.map((_, i) =>
-  i === offer.scope.length - 1 ? net - Math.round(share) * (offer.scope.length - 1) : Math.round(share));
+   and lets the buyer drop a position without re-quoting the whole thing. Each
+   line carries the price in proportion to its working days, read from the term
+   column: "8 darba dienas" is 8, a week is 5, "4. līdz 7. nedēļa" is 20. An even
+   split priced a three-day video like an eight-day brochure. The last line takes
+   the rounding, so the column adds up to the fixed total exactly - a quote whose
+   column does not sum is the first thing a reviewer notices. */
+const workdays = (term) => {
+  const range = term.match(/(\d+)\.\s*līdz\s*(\d+)\.\s*nedēļ/);
+  if (range) return (Number(range[2]) - Number(range[1]) + 1) * 5;
+  if (/nedēļ/.test(term)) return 5;
+  const days = term.match(/(\d+)\s*darba\s*dien/);
+  if (days) return Number(days[1]);
+  console.error(`cannot read working days from the term "${term}"`);
+  process.exit(1);
+};
+const weights = offer.scope.map((r) => workdays(r[3]));
+const totalDays = weights.reduce((a, b) => a + b, 0);
+const lines = weights.map((w) => Math.round(net * w / totalDays));
+lines[lines.length - 1] += net - lines.reduce((a, b) => a + b, 0);
 
 const esc = (s) => String(s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 const rows = offer.scope.map((r, i) =>
