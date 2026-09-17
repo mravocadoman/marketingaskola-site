@@ -50,25 +50,43 @@ page, it does not go on the site.
 ## Verified programme facts
 
 Checked against liaa.business.gov.lv on **12 Sep 2026**; the four cenu aptauja
-rows (procurement, form, documents, related parties) on **14 Sep 2026**. Re-verify before any
-edit that touches a number; this programme has already been re-issued once.
+rows (procurement, form, documents, related parties) on **14 Sep 2026**. The documents row
+was wrong and was corrected on **17 Sep 2026**, when the rows from "Support cap per activity"
+down were added from MK noteikumi Nr. 407 as amended by Nr. 360 and from the programme FAQ.
+Re-verify before any edit that touches a number; this programme has already been re-issued once.
 
 | Fact | Value | Where it renders |
 | --- | --- | --- |
 | Reimbursement rate | 60% of eligible cost | pillar, both product pages |
 | Cap per recipient per year | 40 000 € | pillar |
 | Ceiling vs turnover | ≤30% of last closed year's net turnover | pillar, eligibility |
-| Applications open until | 31.12.2026 | pillar |
+| Applications open until | 31.12.2026, or earlier if the funding runs out ("vai kamēr pieejams finansējums") | pillar (the funding caveat is not on the pages yet) |
 | Programme budget | 15 400 000 € | pillar |
 | Costs claimed by | 31 March of the following calendar year | pillar |
 | Quotes needed in a cenu aptauja | at least 3 | pillar, both product pages, post |
 | Procurement procedure from | a contract of 70 000 € or more (MK noteikumi Nr. 104, IV daļa); below it, a cenu aptauja | pillar, post, sagatave PDF |
 | Form of the quotes | submitted electronically: e-mails or electronically signed documents. A price given on the phone does not count | pillar, post, sagatave PDF |
-| Survey documents | not submitted to LIAA, but kept and produced on request | pillar, post, sagatave PDF |
+| Survey documents | attached to the export activity plan when the company applies ("Plānam jāpievieno: Izmaksas pamatojošos dokumentus, piemēram, cenu aptauju"; FAQ: "jāiesniedz trīs savstarpēji salīdzināmi cenu piedāvājumi"), with a free-form protocol. Only cost-PROVING documents such as invoices are not submitted: "Izmaksas apliecinošie dokumenti LIAA nav jāiesniedz" | pillar, post, sagatave PDF |
 | Related parties | no transactions with the recipient, its members, shareholders, council or board members, their relatives to the second degree, spouses or representatives | post |
+| Support cap per activity | a cap on the SUPPORT, not on the price (MK 407 p. 51, "Maksimāli pieļaujamā atbalsta summa"): 5 000 € a year for visual materials (45.5) and 8 000 € for telemarketing (45.8). At 60% the caps are reached at 8 333 € and 13 333 € of cost | `liaa.json` `cap` (not rendered) |
+| Eligible materials | only brochures, banners and video clips: "tikai bukletu, baneru un video rullīšu izstrādes izmaksas" (FAQ). A photo shoot counts only inside a brochure or banner estimate; printing never | materials page |
+| Telemarketing result | "vismaz 3 notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem" (FAQ) | telemarketing page (not stated yet) |
+| Last year | "2026.gads ir pēdējais eksporta darbību plāna iesniegšanas un īstenošanas kalendārais gads"; activities already finished when the plan is submitted cannot be included | not on the pages yet |
+| Decision time | "LIAA 24 darba dienu laikā izvērtē plānu un pieņem lēmumu" | not on the pages yet |
+| Conflict of interest | the applicant signs a declaration (FAQ) | none |
 | Self-assessment minimum | 9 points | eligibility |
 | Tax debt allowed | ≤1 000 € | eligibility |
 | Excluded sectors | 6, listed in `liaa.json` | eligibility |
+
+**Removed activities (MK Nr. 360, from 4 Jul 2026):** the product-launch advertising
+campaign (45.4), target market research (45.7) and trademark or logo strategy (45.3 now covers
+only trademark registration) are no longer supported. The programme page's cost table still
+lists them, marked "izmainīts no 04.07.2026." Visual materials (45.5) and telemarketing (45.8)
+are the only two activities an agency can sell here. Do not build offers on the removed rows.
+
+**Unresolved: excluded sectors.** The programme page now lists "Komercpakalpojumu nozare"
+where `liaa.json` names real-estate operations and rental. Ask LIAA what the term covers
+before changing the list; it is broad enough to exclude prospects by mistake.
 
 **Known conflict, deliberately not repeated:** LIAA's older SKV
 (Starptautiskās konkurētspējas veicināšana) page states a **60 000 €** annual
@@ -86,6 +104,9 @@ quotes 60 000 at you, this is why.
   the survey; on 14 Sep 2026 also the electronic-submission rule, the storage
   rule and the related-party ban. The page cites Cabinet Regulation No. 407
   (<https://likumi.lv/ta/id/343803>) as the governing regulation.
+- MK noteikumi Nr. 407, consolidated: <https://likumi.lv/ta/id/343803>, and the amending
+  MK noteikumi Nr. 360 (in force 4 Jul 2026): <https://likumi.lv/ta/id/369439>.
+- Programme FAQ: <https://liaa.business.gov.lv/atbalsta-iespejas/eksporta-atbalsta-darbibu-plans?section=biezak-uzdotie-jautajumi>
 - Owner (Rihards), 12 Sep 2026: the two prices (4 900 € and 7 900 € bez PVN)
   and the scope rows, published as drafted.
 

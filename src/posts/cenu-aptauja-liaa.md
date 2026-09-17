@@ -4,7 +4,7 @@ title: "Cenu aptauja LIAA eksporta atbalstam: kā to izdarīt pareizi"
 seoTitle: "Cenu aptauja LIAA atbalstam: soļi un kļūdas | Mārketinga Skola"
 description: "Kā veikt cenu aptauju LIAA eksporta atbalstam: cik piedāvājumu vajag, kādā formā tiem jāpienāk, ko uzglabāt un kādas ir biežākās kļūdas."
 date: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-17
 image: "/img/gen/cover-cenu-aptauja-liaa.webp"
 categories: ["marketinga-strategija"]
 permalink: "/cenu-aptauja-liaa/"
@@ -39,7 +39,7 @@ Otra prasība izriet no pašas aptaujas jēgas: piedāvājumiem jābūt salīdzi
 2. **Nosūti to vismaz {{ liaa.programme.quotes }} neatkarīgiem pakalpojumu sniedzējiem.** Lūdz cenu bez PVN, vēlams sadalītu pa pozīcijām.
 3. **Saņem atbildes elektroniski.** Ja kāds atbild zvanot, palūdz to pašu atsūtīt e-pastā.
 4. **Salīdzini un izvēlies.** Protokolā ieraksti, kas tika aptaujāts, ko katrs piedāvāja, kuru izvēlējies un kāpēc. Ja neizvēlies lētāko, pamatojumu pieraksti īpaši rūpīgi.
-5. **Uzglabā visu.** Pieprasījums, saņemtie piedāvājumi un izvēles pamatojums LIAA nav jāiesniedz, bet tie jāuzglabā un jāspēj uzrādīt, ja tos pieprasa.
+5. **Pievieno aptauju plānam.** Pieprasījumu, saņemtos piedāvājumus un izvēles pamatojumu pievieno eksporta darbību plānam, kad piesakies. Pēc tam tos glabā kopā ar pārējiem projekta dokumentiem.
 
 ## Ar ko nedrīkst slēgt darījumu
 

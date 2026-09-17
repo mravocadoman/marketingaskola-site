@@ -3295,8 +3295,9 @@ Researched for it, all from the LIAA programme page, now in CONTENT-RULES.md:
 
 - Quotes must arrive **electronically** - e-mails or electronically signed
   documents. A price given on the phone does not count.
-- The survey documents are **not submitted** to LIAA, but must be kept and
-  produced on request.
+- The survey documents **are attached to the export activity plan** when the
+  company applies. Corrected 17 Sep 2026: this line said they were not
+  submitted, which is true only of invoices and other cost-proving documents.
 - **No transactions with related parties**: the recipient, its members,
   shareholders, council or board members, their relatives to the second
   degree, spouses, representatives.
