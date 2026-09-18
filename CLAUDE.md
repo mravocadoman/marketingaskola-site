@@ -3333,6 +3333,14 @@ CONTENT-RULES.md), and the owner approved three changes the same day:
   (`decisionDays`), finished activities cannot be included, and the price
   survey happens before the plan goes in. The sagatave PDF carries the first
   two.
+- **Corrected 18 Sep 2026, two things the first version got wrong.** "Last
+  year" is conditional on the programme getting no extra funding, and the
+  condition now travels with it everywhere. And an activity does NOT have to
+  finish by 31 December: LIAA's FAQ lets one that cannot finish in time run to
+  the claim deadline, 31 March of the next year (`claimBy`). Both offer pages
+  said "visam jānotiek līdz gada beigām", which is stricter than LIAA; they now
+  quote the rule. The telemarketing promise still stops at 31.12.2026, which is
+  a business choice, not LIAA's rule.
 
 Found alongside: both offer pages said "Termiņu, {{ o.term }}, skaita no …"
 while `term` already ends with its own start point, so the live sentence
