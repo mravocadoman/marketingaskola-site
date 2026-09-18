@@ -1,12 +1,37 @@
-{# Three numbers for one LIAA offer. Expects `o` (an entry from liaa.offers) in
-   context. Every figure is computed from liaa.json, so the page, the JSON-LD
-   and the quote PDF can never print three different prices.
-   Rule 3 in CONTENT-RULES.md: net only, and it says "bez PVN" every time. #}
-<div class="panel">
-  <div class="stats">
-    <div class="stat"><span class="num">{{ o.price | eur }}<span class="sfx"> €</span></span><span class="label">Pakalpojuma cena bez PVN</span></div>
-    <div class="stat"><span class="num">{{ (o.price * liaa.programme.rate / 100) | eur }}<span class="sfx"> €</span></span><span class="label">Var tikt atmaksāti, ja LIAA apstiprina</span></div>
-    <div class="stat"><span class="num">{{ (o.price * (100 - liaa.programme.rate) / 100) | eur }}<span class="sfx"> €</span></span><span class="label">Tava daļa pēc atmaksas</span></div>
+{# One LIAA offer's price as a receipt: the price, minus LIAA's share, and what
+   the client is left paying, then how the money moves. Expects `o` (an entry
+   from liaa.offers). Every figure is computed from liaa.json, so the page, the
+   JSON-LD and the quote PDF can never print three different prices.
+   Rule 3 in CONTENT-RULES.md: net figures only, "bez PVN" every time. The
+   invoice is shown as "price + PVN", never as a computed gross number.
+   Rule 2: LIAA decides, so every support figure is conditional, and it is
+   never called a discount: we do not give it, LIAA pays it after the claim. #}
+{%- set rate = liaa.programme.rate -%}
+{%- set support = o.price * rate / 100 -%}
+<div class="panel price-calc">
+  <dl class="calc">
+    <div class="calc-row">
+      <dt>Pakalpojuma cena</dt>
+      <dd>{{ o.price | eur }} € <span class="calc-tax">bez PVN</span></dd>
+    </div>
+    <div class="calc-row">
+      <dt>LIAA atbalsts, {{ rate }}%<span class="calc-note">ja LIAA pieteikumu apstiprina</span></dt>
+      <dd>−{{ support | eur }} €</dd>
+    </div>
+    <div class="calc-row calc-row--total">
+      <dt>Tava daļa pēc atbalsta</dt>
+      <dd><span class="calc-num">{{ (o.price - support) | eur }}<span class="sfx"> €</span></span> <span class="calc-tax">bez PVN</span></dd>
+    </div>
+  </dl>
+  <div class="calc-bar" aria-hidden="true">
+    <span class="calc-bar-liaa" style="flex-basis: {{ rate }}%">LIAA {{ rate }}%</span>
+    <span class="calc-bar-you" style="flex-basis: {{ 100 - rate }}%">Tu {{ 100 - rate }}%</span>
   </div>
-  <p class="fine">Atmaksa ir {{ liaa.programme.rate }}% no attiecināmajām izmaksām bez PVN. Lēmumu pieņem LIAA; skaitļi šeit rāda aprēķinu, nevis apsolītu rezultātu.</p>
+  <p class="calc-flow-h">Kā notiek maksājumi</p>
+  <ol class="calc-flow">
+    <li><span><b>Vispirms apmaksā rēķinu:</b> {{ o.price | eur }}&nbsp;€ +&nbsp;PVN.</span></li>
+    <li><span><b>Pēc darba pabeigšanas iesniedz LIAA maksājuma pieprasījumu</b> līdz {{ liaa.programme.claimBy }}.</span></li>
+    <li><span><b>LIAA izmaksā atbalstu</b> pēc pieprasījuma izvērtēšanas, līdz {{ support | eur }}&nbsp;€. PVN atbalstā neieskaita.</span></li>
+  </ol>
+  <p class="fine">Lēmumu pieņem LIAA, un gada atbalsts nepārsniedz {{ liaa.programme.turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma. Skaitļi rāda aprēķinu, nevis apsolītu rezultātu.</p>
 </div>

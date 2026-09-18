@@ -3062,6 +3062,16 @@ price box (`liaa-price.njk`), the scope table (`liaa-scope.njk`), the page
 copy, the JSON-LD and the quote PDF all read it, so they cannot disagree. The
 `eur` filter formats an integer with no-break thousands.
 
+**The price box is a receipt (18 Sep 2026).** Owner: make it clear what the
+buyer pays, gets back and is left with. It reads as a sum (price bez PVN,
+minus LIAA's share "ja LIAA pieteikumu apstiprina", the client's share under a
+double rule, the only large numeral), then a 60/40 bar and three payment steps
+(pay the invoice, claim by `claimBy`, LIAA pays up to the support). The invoice
+is written "price + PVN" and never as a computed gross number (rule 3), and the
+support is never called a discount: LIAA pays it after the claim, we do not
+give it. On the pillar the two receipts sit in `.offer-cols`, a subgrid that
+keeps them level although the offer leads differ in length.
+
 **A known conflict, deliberately not repeated on the site:** LIAA's older SKV
 page still states a 60 000 € annual cap. That is the previous programme; this
 one caps at 40 000 €. Expect clients to quote the old number.

@@ -1133,6 +1133,40 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .media { margin: 0; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
 .media img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .media--wide { aspect-ratio: 3 / 2; }
+/* The LIAA price as a receipt (18 Sep 2026). Owner: the three equal numerals
+   did not say what a buyer pays, gets back or is left with. The rows read as a
+   sum - price, minus LIAA's share, the client's share under a double rule - and
+   the bar shows the split at a glance. The client's share is the only large
+   numeral. The support stays conditional in its own label (CONTENT-RULES 2). */
+.calc { margin: 0; }
+.calc-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.calc-row:first-child { border-top: 0; padding-top: 0; }
+.calc-row dt { color: var(--body); font-size: var(--t-base); }
+.calc-row dd { margin: 0; color: var(--heading); font-size: var(--t-base); font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+.calc-note { display: block; margin-top: 2px; color: var(--muted); font-size: var(--t-sm); }
+.calc-tax { color: var(--muted); font-size: var(--t-sm); }
+.calc-row--total { border-top: 3px double var(--line-strong); margin-top: 4px; padding-top: 16px; }
+.calc-row--total dt { color: var(--heading); font-weight: 600; }
+.calc-num { font-family: var(--font-display); font-weight: 600; font-size: var(--t-d2); line-height: 1; letter-spacing: -0.02em; }
+.calc-num .sfx { color: var(--cyan); }
+.calc-bar { display: flex; height: 30px; margin-top: 18px; border: 1px solid var(--line-strong); font-size: var(--t-micro); letter-spacing: 0.08em; text-transform: uppercase; }
+.calc-bar span { display: flex; align-items: center; padding: 0 10px; white-space: nowrap; overflow: hidden; }
+.calc-bar-liaa { background: var(--well); color: var(--muted); }
+.calc-bar-you { background: var(--body); color: var(--navy-ink); font-weight: 600; justify-content: flex-end; }
+.calc-flow-h { margin: 26px 0 6px; font-size: var(--t-micro); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.calc-flow { margin: 0; padding: 0; list-style: none; counter-reset: flow; }
+.calc-flow li { counter-increment: flow; display: grid; grid-template-columns: 22px 1fr; gap: 6px; padding: 5px 0; font-size: var(--t-sm); color: var(--body); }
+.calc-flow li::before { content: counter(flow); color: var(--muted); font-family: var(--font-display); font-weight: 600; }
+.calc-flow b { color: var(--heading); font-weight: 600; }
+.price-calc .fine { margin-top: 18px; }
+/* The two offers side by side on the LIAA pillar: their leads differ in length,
+   so the receipts started at different heights. A subgrid gives both columns
+   the same four rows (title, lead, receipt, link), so the receipts line up. */
+@media (min-width: 641px) {
+  .offer-cols { grid-template-rows: repeat(4, auto); row-gap: 0; }
+  .offer-cols > .col { display: grid; grid-template-rows: subgrid; grid-row: span 4; align-content: start; }
+}
+
 /* The LIAA scope table. The buyer copies this into their cenu aptaujas
    protokols, so it is a real <table> (copies as tab separated text), not a
    grid of divs. Hairlines and square corners like every other surface; it
