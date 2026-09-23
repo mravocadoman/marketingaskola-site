@@ -325,9 +325,11 @@ module.exports = function (eleventyConfig) {
             "@type": "Offer",
             price: String(o.price),
             priceCurrency: "EUR",
-            valueAddedTaxIncluded: false,
             availability: "https://schema.org/InStock",
             url: pageUrl,
+            // valueAddedTaxIncluded is a PriceSpecification property; on the
+            // Offer itself schema.org's validator calls it an unknown field.
+            priceSpecification: { "@type": "PriceSpecification", price: String(o.price), priceCurrency: "EUR", valueAddedTaxIncluded: false },
           },
         });
       }
@@ -355,9 +357,9 @@ module.exports = function (eleventyConfig) {
           name: o.label ? o.label + (o.duration ? " (" + o.duration + ")" : "") : o.duration,
           price: String(o.price),
           priceCurrency: "EUR",
-          valueAddedTaxIncluded: false,
           availability: "https://schema.org/InStock",
           url: pageUrl,
+          priceSpecification: { "@type": "PriceSpecification", price: String(o.price), priceCurrency: "EUR", valueAddedTaxIncluded: false },
         }));
       }
       graph.push(svc);
