@@ -40,6 +40,7 @@
     "motifs": "node tools/build-motifs.mjs",
     "ground": "node tools/match-ground.mjs",
     "quote": "node tools/quote.mjs",
+    "indexnow": "node tools/indexnow.mjs",
     "sagatave": "node tools/liaa-sagatave.mjs",
     "newsletter": "node tools/newsletter.mjs"
   },

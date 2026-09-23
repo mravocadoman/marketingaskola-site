@@ -44,7 +44,7 @@
   {% if layout == "post.njk" and image %}<link rel="preload" href="{{ image | webp }}" as="image" fetchpriority="high">{% endif %}
   <link rel="stylesheet" href="{{ "/css/fonts.css" | bust }}">
   <link rel="stylesheet" href="{{ "/css/style.css" | bust }}">
-  {%- set sd = { site: site, url: page.url, title: pageTitle, headline: title, description: description, image: pageImage, layout: layout, date: date, updated: updated, categories: categories, cat: cat, crumb: crumb, course: course, courseSessions: courseSessions, heroTitle: heroTitle, categoriesBySlug: categoriesBySlug, service: service, faq: faq, liaa: liaa } %}
+  {%- set sd = { site: site, url: page.url, title: pageTitle, headline: title, description: description, image: pageImage, layout: layout, date: date, updated: updated, categories: categories, cat: cat, crumb: crumb, course: course, courseSessions: courseSessions, heroTitle: heroTitle, categoriesBySlug: categoriesBySlug, service: service, faq: faq, liaa: liaa, author: author, howto: howto, booking: booking } %}
   <script type="application/ld+json">{{ sd | schemaGraph | jsonld | safe }}</script>
 </head>
 <body>

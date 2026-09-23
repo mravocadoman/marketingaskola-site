@@ -9,6 +9,22 @@ image: "/img/gen/cover-cenu-aptauja-liaa.webp"
 categories: ["marketinga-strategija"]
 permalink: "/cenu-aptauja-liaa/"
 keywords: ["cenu aptauja", "LIAA eksporta atbalsts", "cenu aptaujas protokols", "eksporta atbalsta darbību plāns", "iepirkums"]
+# The steps as schema, for assistants that quote procedures. Deliberately
+# without figures: the page renders the number of quotes from liaa.json, and a
+# number typed here would drift the day the programme changes it.
+howto:
+  name: "Kā veikt cenu aptauju LIAA eksporta atbalstam"
+  steps:
+    - name: "Uzraksti vienu pieprasījumu"
+      text: "Vienā pieprasījumā apraksti pozīcijas, daudzumu, valodas, mērķa tirgu un termiņu. To pašu tekstu nosūti visiem pretendentiem."
+    - name: "Nosūti to neatkarīgiem pakalpojumu sniedzējiem"
+      text: "Pieprasījumu nosūti savstarpēji neatkarīgiem pakalpojumu sniedzējiem un lūdz cenu bez PVN, vēlams sadalītu pa pozīcijām."
+    - name: "Saņem atbildes elektroniski"
+      text: "Piedāvājumiem jāpienāk elektroniski, e-pastā vai ar elektronisko parakstu. Ja kāds atbild zvanot, palūdz to pašu atsūtīt rakstiski."
+    - name: "Salīdzini un izvēlies"
+      text: "Protokolā ieraksti, kas tika aptaujāts, ko katrs piedāvāja, kuru izvēlējies un kāpēc. Ja neizvēlies lētāko, pamatojumu apraksti īpaši rūpīgi."
+    - name: "Pievieno aptauju plānam"
+      text: "Pieprasījumu, saņemtos piedāvājumus un izvēles pamatojumu pievieno eksporta atbalsta darbību plānam, kad piesakies, un pēc tam glabā kopā ar projekta dokumentiem."
 
 ---
 

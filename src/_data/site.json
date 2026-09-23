@@ -2,7 +2,7 @@
   "name": "Mārketinga Skola",
   "url": "https://marketingaskola.lv",
   "tagline": "Digitālā Mārketinga Aģentūra, kas Palīdz Tavam Biznesam Augt!",
-  "metaMinAdSpend": "1\u00a0000\u00a0€",
+  "metaMinAdSpend": "1 000 €",
   "image": "/img/og-default.jpg",
   "phone": "+371 26673384",
   "phoneIntl": "+37126673384",
@@ -98,5 +98,6 @@
       "label": "Sazinies",
       "url": "/sazinies/"
     }
-  ]
+  ],
+  "indexNowKey": "554e90d6ce81552fb4cee604cc2fa202"
 }

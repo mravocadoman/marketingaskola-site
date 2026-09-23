@@ -115,6 +115,9 @@ jobs:
           # server-side Site Tools CLI does it without the dashboard.
           ssh -i ~/.ssh/deploy_key -p "$SG_PORT" "$SG_USER@$SG_HOST" \
             "site-tools-client domain-all update id=1 flush_cache=1"
+      - name: Tell IndexNow what changed
+        continue-on-error: true
+        run: node tools/indexnow.mjs
       - name: Smoke test the live site
         run: |
           set +e

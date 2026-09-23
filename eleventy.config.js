@@ -151,6 +151,7 @@ module.exports = function (eleventyConfig) {
     const abs = (u) => (u && /^https?:/.test(u) ? u : base + (u || ""));
     const iso = (d) => (d ? new Date(d).toISOString().slice(0, 10) : undefined);
     const orgId = base + "/#organization";
+    const personId = base + "/#rihards";
     const siteId = base + "/#website";
     const pageUrl = abs(c.url);
     const isPost = c.layout === "post.njk";
@@ -175,7 +176,23 @@ module.exports = function (eleventyConfig) {
       },
       areaServed: "LV",
       sameAs: [site.facebook, site.instagram, site.linkedin],
-      founder: { "@type": "Person", name: "Rihards Zeiļa", sameAs: site.linkedin },
+      founder: { "@id": personId },
+    };
+    /* The author is a PERSON, not the company (18 Sep 2026). Assistants and
+     * search both read a named author as the expertise signal, and the
+     * WordPress site attributed every post to Rihards too, so this states
+     * what was already true rather than inventing a byline. A post can name
+     * someone else with `author:` in its front matter. */
+    const person = {
+      "@type": "Person",
+      "@id": personId,
+      name: "Rihards Zeiļa",
+      url: base + "/sazinies/",
+      image: abs("/img/team/rihards-brand-160.webp"),
+      jobTitle: "Digitālā mārketinga konsultants",
+      worksFor: { "@id": orgId },
+      sameAs: [site.linkedin],
+      knowsAbout: ["Meta reklāma", "Google Ads", "SEO", "digitālais mārketings", "eksporta mārketings"],
     };
     const website = {
       "@type": "WebSite",
@@ -211,7 +228,7 @@ module.exports = function (eleventyConfig) {
       crumbs.push({ name: c.crumb.label, url: abs(c.crumb.url) });
     }
     if (c.url !== "/") crumbs.push({ name: c.cat ? c.cat.name : (c.heroTitle || bare(c.title)), url: pageUrl });
-    const graph = [org, website, webpage];
+    const graph = [org, person, website, webpage];
     if (crumbs.length > 1) {
       const breadcrumb = {
         "@type": "BreadcrumbList",
@@ -234,7 +251,7 @@ module.exports = function (eleventyConfig) {
         image: [abs(c.image)],
         datePublished: iso(c.date),
         dateModified: iso(c.updated || c.date),
-        author: { "@id": orgId },
+        author: c.author ? { "@type": "Person", name: c.author } : { "@id": personId },
         publisher: { "@id": orgId },
         mainEntityOfPage: { "@id": pageUrl },
         inLanguage: "lv",
@@ -315,6 +332,51 @@ module.exports = function (eleventyConfig) {
         });
       }
     }
+    /* A service page that is not a LIAA offer: `service: { name, serviceType }`
+     * in front matter. Prices stay out unless the page prints them - most of
+     * these are quoted by scope, and a schema price the page does not show is
+     * a promise nobody made. `service: { booking: true }` takes the three
+     * consultation prices from booking.json, the same source the page renders. */
+    if (c.service && !c.service.key) {
+      const svc = {
+        "@type": "Service",
+        "@id": pageUrl + "#service",
+        name: c.service.name,
+        serviceType: c.service.serviceType || c.service.name,
+        description: c.service.description || c.description,
+        provider: { "@id": orgId },
+        areaServed: c.service.areaServed || "LV",
+        url: pageUrl,
+      };
+      const opts = c.service.booking ? (c.booking?.consultation?.options || []) : [];
+      if (opts.length) {
+        svc.offers = opts.map((o) => ({
+          "@type": "Offer",
+          name: o.label ? o.label + (o.duration ? " (" + o.duration + ")" : "") : o.duration,
+          price: String(o.price),
+          priceCurrency: "EUR",
+          valueAddedTaxIncluded: false,
+          availability: "https://schema.org/InStock",
+          url: pageUrl,
+        }));
+      }
+      graph.push(svc);
+    }
+
+    /* `howto: { name, steps: [{ name, text }] }` - only where the page really
+     * walks through steps. Keep numbers out of these strings: the page renders
+     * them from liaa.json, and a figure typed here would drift. */
+    if (c.howto && (c.howto.steps || []).length) {
+      graph.push({
+        "@type": "HowTo",
+        "@id": pageUrl + "#howto",
+        name: c.howto.name,
+        description: c.howto.description || c.description,
+        inLanguage: "lv",
+        step: c.howto.steps.map((st, i) => ({ "@type": "HowToStep", position: i + 1, name: st.name, text: st.text })),
+      });
+    }
+
     if (c.faq && c.faq.length) {
       graph.push({
         "@type": "FAQPage",
@@ -378,6 +440,50 @@ module.exports = function (eleventyConfig) {
   // link list. Inside a .cell the h3 says what the link is about, so the
   // accessible name becomes "Uzzini vairāk: Video reklāma" (WCAG 2.4.4 /
   // 2.5.3 - the visible text stays at the start of the name).
+  /* FAQPage from the accordion that is already on the page (18 Sep 2026).
+   * Ten pages carried visible Q&A with no markup around it, and those are the
+   * questions people put to an assistant ("cik maksā", "kam paredzēts").
+   * A transform rather than front matter, because the questions are written in
+   * the page body and copying them into YAML is how the two drift apart.
+   * ONLY summaries that end in a question mark: `.faq` is also the course
+   * pages' module accordion, and "1. Meta reklāmas pamati" is not a question.
+   * Pages that already emit FAQPage from front matter are left alone, and so
+   * are noindex pages. */
+  eleventyConfig.addTransform("faqSchema", function (content) {
+    const out = String(this.page.outputPath || "");
+    if (!out.endsWith(".html") || !content.includes('<details class="faq"')) return content;
+    if (content.includes('"FAQPage"') || content.includes('name="robots" content="noindex"')) return content;
+    const text = (html) =>
+      html
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/g, " ")
+        .replace(/&amp;/g, "&")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/\s+/g, " ")
+        .trim();
+    const qa = [];
+    const re = /<details class="faq"[^>]*>\s*<summary>([\s\S]*?)<\/summary>\s*<div>([\s\S]*?)<\/div>\s*<\/details>/g;
+    for (const m of content.matchAll(re)) {
+      const q = text(m[1]), a = text(m[2]);
+      if (q.endsWith("?") && a) qa.push({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } });
+    }
+    if (!qa.length) return content;
+    return content.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/, (whole, json) => {
+      let g;
+      try {
+        g = JSON.parse(json);
+      } catch (_) {
+        return whole; // malformed graph: leave the page exactly as it was
+      }
+      const page = (g["@graph"] || []).find((n) => n["@type"] === "WebPage");
+      g["@graph"].push({ "@type": "FAQPage", "@id": (page ? page["@id"] : "") + "#faq", mainEntity: qa });
+      return '<script type="application/ld+json">' + JSON.stringify(g) + "</script>";
+    });
+  });
+
   eleventyConfig.addTransform("cellLinkLabels", function (content) {
     if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) return content;
     return content.replace(/<div class="cell(?:\s[^"]*)?">[\s\S]*?<\/div>/g, (block) => {

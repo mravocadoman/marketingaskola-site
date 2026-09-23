@@ -3356,6 +3356,63 @@ Found alongside: both offer pages said "Termiņu, {{ o.term }}, skaita no …"
 while `term` already ends with its own start point, so the live sentence
 repeated itself. It reads "Izpildes termiņš ir {{ o.term }}" now.
 
+## Answer engines: what an assistant can read (18 Sep 2026)
+
+Owner: *"is the website AIEO / GEO optimised for llms?"* Measured before
+changing anything, and the retrieval half was already fine: `robots.txt`
+allows everything, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot,
+Google-Extended and Bingbot all get a full 200, and the pages are static HTML
+so nothing waits on JavaScript. **SiteGround's bot challenge does NOT block
+the AI fetchers** - checked by fetching a page through Anthropic's own fetcher
+and through a third-party reader, both from datacenter IPs: both got the real
+page and answered three questions off it correctly. Re-run that check before
+believing any report that the site is invisible to assistants.
+
+What was missing was the markup that makes the answers extractable:
+
+- **FAQPage now comes from the accordion itself.** The `faqSchema` transform
+  in `eleventy.config.js` reads the rendered `<details class="faq">` blocks and
+  injects a FAQPage node. **Only summaries ending in a question mark** - `.faq`
+  is also the course pages' module accordion, and "1. Meta reklāmas pamati" is
+  not a question. Pages that already emit FAQPage from front matter and
+  `noindex` pages are skipped. 11 pages carry it now, 71 questions; it was 3.
+  A new FAQ needs no schema work at all, which is the point of the transform.
+- **The article author is a Person, not the company.** One `#rihards` node,
+  referenced by `org.founder` and by every BlogPosting, and `post.njk`'s author
+  strip names him too, so the byline and the schema agree. The WordPress site
+  attributed posts to the same person, so this states what was already true.
+  A post can override with `author:` in front matter.
+- **Service on the five ordinary service pages** through `service: { name,
+  serviceType }` in front matter (the LIAA pages keep `service: { key }`).
+  **Prices stay out unless the page prints them** - these are quoted by scope,
+  and a schema price the page does not show is a promise nobody made.
+  `service: { booking: true }` on the consultation page takes the three prices
+  from `booking.json`, the same source the page renders.
+- **HowTo on `/cenu-aptauja-liaa/`** through `howto: { name, steps }`. The step
+  texts carry NO figures on purpose: the page renders the number of quotes from
+  `liaa.json`, and a number typed into front matter would drift.
+- **`/llms.txt`** (`src/llms.njk`) is the site in one page: what the company is,
+  the facts an assistant may quote, and every page worth reading with a
+  one-line description. Every number renders from `courseSessions.json`,
+  `booking.json`, `liaa.json` and `site.json`, and the article list is
+  generated, so it cannot go stale on its own. One English sentence identifies
+  the company for English-language questions; everything else is Latvian.
+- **IndexNow** (`npm run indexnow`, `tools/indexnow.mjs`, a deploy step after
+  the cache flush) submits the URLs whose sitemap `lastmod` is today, which is
+  exactly what a deploy just changed - never the whole site, which is what the
+  protocol asks. The key lives in `site.json` as `indexNowKey` and is served at
+  `/<key>.txt`; it is public by design. It matters because Bing feeds Copilot
+  and part of ChatGPT's search.
+
+**The biggest lever is off-site and is still open.** An assistant answering
+"which agency in Latvia does export marketing" repeats what other sites say,
+and marketingaskola.lv is in almost no directory. The partner list built the
+same day (`liaa-partneri.csv`, in the session scratchpad) names 38 associations,
+clusters and consultants, several of which publish member directories.
+
+**Also still open:** the site is Latvian only, so an English-language question
+never surfaces it. That is a business decision, not a defect.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

@@ -1,0 +1,58 @@
+---
+permalink: "/llms.txt"
+eleventyExcludeFromCollections: true
+---
+{#- llms.txt: one page that tells an assistant what this site is and where the
+    answers are. Everything numeric renders from the same data files the pages
+    use (courseSessions.json, booking.json, liaa.json), so it cannot quote a
+    price the site no longer charges. Pages marked noindex are left out, and
+    the post list is generated, so a new article appears here on its own. -#}
+# {{ site.name }}
+
+> Latvijas digitālā mārketinga aģentūra ({{ site.company.legalName }}, PVN {{ site.company.vat }}, {{ site.company.city }}). Meta un Google reklāmas, SEO, video, mārketinga automatizācija, kursi un LIAA eksporta atbalsta pakalpojumi. Saturs ir latviešu valodā.
+> In English: a Latvian digital marketing agency in {{ site.company.city }}, Latvia. Paid social and search advertising, SEO, video, marketing automation, training courses, and services eligible under LIAA's SME export support programme. All pages are in Latvian.
+
+Faktus, ko drīkst citēt: kursa cena {{ courseSessions.courses["meta-reklamas-kurss"].price }} € bez PVN; konsultācija {{ booking.consultation.options[0].duration }} maksā {{ booking.consultation.options[0].price }} € bez PVN; Meta reklāmu pārvaldībai minimālais reklāmas budžets {{ site.metaMinAdSpend }} mēnesī; LIAA eksporta atbalsts atmaksā {{ liaa.programme.rate }}% no attiecināmajām izmaksām līdz {{ liaa.programme.yearCap | eur }} € gadā. Lēmumu par atbalstu pieņem LIAA, nevis {{ site.name }}.
+
+## Pakalpojumi
+
+- [Pakalpojumu pārskats]({{ site.url }}/pakalpojumi/): visi pakalpojumi un darba gaita.
+- [Meta reklāma (Facebook, Instagram)]({{ site.url }}/facebook-reklama/): pārvaldītas kampaņas, reklāmas budžets no {{ site.metaMinAdSpend }} mēnesī, trīs mēnešu sākotnējais periods.
+- [SEO pakalpojumi]({{ site.url }}/seo-pakalpojumi/): audits, tehniskā optimizācija, saturs, termiņi un izmaksu diapazoni.
+- [Video reklāma]({{ site.url }}/video-reklama/): scenārijs, filmēšana un montāža, vertikāli un horizontāli formāti.
+- [AI un automatizācijas]({{ site.url }}/ai-un-automatizacijas/): pieteikumu plūsmas, CRM, e-pastu automatizācijas, atskaites.
+- [Mārketinga konsultācijas]({{ site.url }}/marketinga-konsultacijas/): maksas konsultācija; {{ booking.consultation.options[0].duration }} maksā {{ booking.consultation.options[0].price }} €, {{ booking.consultation.options[1].duration }} maksā {{ booking.consultation.options[1].price }} €, {{ booking.consultation.options[2].label }} maksā {{ booking.consultation.options[2].price }} €, cenas bez PVN.
+
+## LIAA eksporta atbalsts
+
+- [Programmas pārskats]({{ site.url }}/liaa-eksporta-atbalsts/): kam pienākas, kādas izmaksas ir attiecināmas, kā notiek cenu aptauja un maksājumi.
+- [Eksporta mārketinga materiāli]({{ site.url }}/eksporta-marketinga-materiali/): buklets, baneru komplekts un video, {{ liaa.offers[0].price | eur }} € bez PVN, {{ liaa.offers[0].term }}.
+- [Ārvalstu partneru meklēšana]({{ site.url }}/eksporta-telemarketings/): telemārketings ar vismaz trim notikušām tikšanās reizēm, {{ liaa.offers[1].price | eur }} € bez PVN, {{ liaa.offers[1].term }}.
+- [Kā veikt cenu aptauju]({{ site.url }}/cenu-aptauja-liaa/): soļi, forma, kļūdas un protokola sagatave.
+
+## Kursi
+
+{%- for slug, c in courseSessions.courses %}
+{%- if c.name %}
+- [{{ c.name }}]({{ site.url }}/{{ slug }}/): {{ c.hours }} stundas tiešsaistē, {{ c.price }} € bez PVN{% if c.instructor %}, pasniedzējs {{ c.instructor }}{% endif %}.
+{%- endif %}
+{%- endfor %}
+- [Visi kursi]({{ site.url }}/digitala-marketinga-kursi/): katalogs un pieteikšanās.
+
+## Par uzņēmumu
+
+- [Kontakti un komanda]({{ site.url }}/sazinies/): {{ site.company.legalName }}, {{ site.company.street }}, {{ site.company.city }}, {{ site.email }}, {{ site.phoneIntl }}.
+- [Portfolio]({{ site.url }}/portfolio/): klientu rezultāti ar skaitļiem un datumiem.
+- [Privātuma politika]({{ site.url }}/privatuma-politika/).
+
+## Raksti
+
+{%- for p in collections.posts %}
+- [{{ p.data.title }}]({{ site.url }}{{ p.url }}): {{ p.data.description }}
+{%- endfor %}
+
+## Piezīmes
+
+- Saturu drīkst citēt, norādot avotu un saiti uz konkrēto lapu.
+- Cenas ir bez PVN, ja nav norādīts citādi.
+- LIAA atbalsta lapās {{ site.name }} ir pakalpojumu sniedzējs, nevis LIAA apstiprināts vai akreditēts partneris; šāds statuss programmā nepastāv.
