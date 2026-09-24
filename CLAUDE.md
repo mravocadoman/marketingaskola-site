@@ -396,7 +396,8 @@ list (free to 1 000 contacts, then $40 a month), so only the leads moved.
   **insert into the data table `Mājaslapas pieteikumi` (`mpmOl8vcDnghCunc`)** →
   respond `{"ok":true}` with `Access-Control-Allow-Origin:
   https://marketingaskola.lv` → Gmail to Rihards → IF → the fixed Latvian reply,
-  for `liaa` and `liaa-sagatave` only.
+  for `liaa`, `liaa-sagatave` and `lapas-parbaude`. `contact` and `course` get
+  no auto-reply: Rihards answers those himself.
 - **The row is saved BEFORE the site hears ok**, and the e-mails come after, so
   a Gmail failure cannot lose a lead. Failures go to the shared alert workflow
   `R9OmXjBXdhYetZkM`; successful executions are not stored, since the table holds
@@ -2140,6 +2141,21 @@ only.
 **Resolved 14 Sep 2026:** double opt-in is off, and the popup's e-mail goes to
 our own table now.
 
+**It answers in writing since 24 Sep 2026.** Until then a page check collected
+an address and sent nothing back: the leads workflow's `replies` map had
+entries for `liaa` and `liaa-sagatave` only, so `sendReply` was false and the
+IF branch never fired. Nothing was broken - the popup promises no e-mail and
+the nine checks are on screen at once - but a lead who typed a real address
+heard nothing again. `lapas-parbaude` now has its own entry.
+**It cannot quote the result, and that is structural**: the checks live in the
+audits workflow (`PxXdIWi34gIyEfMz`) and the site renders them in the browser,
+while this reply is a fixed literal because the webhook is public. So it names
+the nine points that were looked at, says why a consent-gated tag reads as
+unverifiable rather than missing, and routes every interpretation to the paid
+consultation - the same rule that governs the on-screen report. Routing the
+result through the public webhook to quote it would make the e-mail a relay
+for attacker-written text; do not.
+
 ## Service page heroes are LIGHT — SUPERSEDED, see below (9 Sep 2026)
 
 Owner: *"hero section is also too dark now; both before and next to generated
@@ -3181,8 +3197,8 @@ committed and nothing else notices when it goes stale.
 - **The same webhook takes both**, distinguished by `form`: `liaa` is a quote
   request from the pages' form, `liaa-sagatave` a download. The Code node picks
   the subject and the reply, because promising a price quote to someone who
-  only downloaded a template is a promise they never asked for. **Both reply
-  bodies stay fixed literals** - the webhook is public, and a template that
+  only downloaded a template is a promise they never asked for. **Every reply
+  body stays a fixed literal** - the webhook is public, and a template that
   echoed user input would make it a relay for attacker-written text.
 - `msTrack` fires `generate_lead` with `form_id: liaa-sagatave`, so GA4 can
   tell the two magnets apart on the one key event.
