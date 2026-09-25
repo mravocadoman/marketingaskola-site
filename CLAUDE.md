@@ -2141,20 +2141,58 @@ only.
 **Resolved 14 Sep 2026:** double opt-in is off, and the popup's e-mail goes to
 our own table now.
 
-**It answers in writing since 24 Sep 2026.** Until then a page check collected
-an address and sent nothing back: the leads workflow's `replies` map had
-entries for `liaa` and `liaa-sagatave` only, so `sendReply` was false and the
-IF branch never fired. Nothing was broken - the popup promises no e-mail and
-the nine checks are on screen at once - but a lead who typed a real address
-heard nothing again. `lapas-parbaude` now has its own entry.
-**It cannot quote the result, and that is structural**: the checks live in the
-audits workflow (`PxXdIWi34gIyEfMz`) and the site renders them in the browser,
-while this reply is a fixed literal because the webhook is public. So it names
-the nine points that were looked at, says why a consent-gated tag reads as
-unverifiable rather than missing, and routes every interpretation to the paid
-consultation - the same rule that governs the on-screen report. Routing the
-result through the public webhook to quote it would make the e-mail a relay
-for attacker-written text; do not.
+**THE REPORT IS THE E-MAIL NOW (25 Sep 2026).** Owner: *"send the results to
+the email instead of popup, and use it as lead gen as it should be done."*
+Until then the nine checks rendered in the popup and the address was decoration
+- a throwaway one cost the visitor nothing, which is the definition of a lead
+magnet that is not one. Two days earlier it was worse: `lapas-parbaude` had no
+entry in the workflow's `replies` map, so `sendReply` was false and a visitor
+who typed a real address heard nothing at all.
+
+- **The browser no longer calls `/audits`.** `leadmagnet.js` posts once, to the
+  leads workflow, and that workflow calls the audits webhook itself
+  (`Palaist pārbaudi`), composes the report (`Salikt atskaiti`) and sends two
+  mails: the lead alert to Rihards first, then the report to the visitor.
+  `site.analytics.auditUrl` and `data-audit` are gone with it, and so are
+  `.lm-checks`/`.lm-check`/`.lm-mark`.
+- **The checks are still defined exactly once**, in
+  *Mārketinga Skola — automātiskā lapas pārbaude* (`PxXdIWi34gIyEfMz`), which is
+  now an internal function rather than a browser endpoint. Its CORS pin no
+  longer matters, and neither does the old "cannot be tested from localhost"
+  problem for the checks - but it still applies to the LEADS webhook, so on
+  localhost a page-check submit lands on the mailto fallback. That is the
+  expected local result.
+- **The call happens AFTER the site has its `{"ok":true}`**, so a slow page
+  cannot make the popup wait. The row is still saved before anything else, so
+  neither the checks nor Gmail can lose a lead.
+- **The report's body cannot be a fixed literal, so the rule moved to its
+  inputs.** Every line in it is either fixed text or a sentence our own checker
+  wrote; the ONLY thing from the browser is the page's **host**, re-derived in
+  the node and allowed only `[a-z0-9.-]`, because a hostname cannot carry a
+  sentence. Never print the raw url, never anything out of the fetched page.
+  That is what keeps a public webhook from becoming a relay for
+  attacker-written text.
+- **No prices and no course hours in the mail.** n8n cannot read
+  `courseSessions.json`, so a number typed there would be one more place a
+  price lives with nothing to keep it in sync. The three links carry the
+  numbers.
+- **It still reports only what one fetch proves** and routes every
+  interpretation to the paid consultation, exactly like the on-screen report
+  it replaced. Consent-gated tags are still "could not verify", with the
+  reason and a manual check spelled out, and the mail ends on an invitation to
+  reply - a machine report that starts a conversation is the whole point.
+- **Rihards's alert carries the result now**: the tally in the subject
+  (`- 6/9 prasa uzmanību`) and the failures by name in the body. Before this it
+  was an address and a URL, which said nothing about who was worth calling.
+- The popup's confirmation panel names the address the report is going to,
+  because a typo is the one failure the visitor can still fix. A failed post
+  falls back to a pre-filled `mailto:` and deliberately does NOT write `seen`,
+  so a lost lead can be asked again.
+
+Verified end to end against `example.com` before the site side shipped: one
+POST, `{"ok":true}` in 2 s, and both mails delivered - subject
+`example.com: 6 punkti prasa uzmanību`, six `!` lines, three `+`, and the alert
+`- 6/9 prasa uzmanību`. The two test rows in the table are from that.
 
 ## Service page heroes are LIGHT — SUPERSEDED, see below (9 Sep 2026)
 

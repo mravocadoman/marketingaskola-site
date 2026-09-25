@@ -9,12 +9,17 @@
  * Only the submit and the result differ. The timing, the dismissal memory and
  * the focus trap below are shared, and they are the tuned part.
  *
- * Two destinations on submit, deliberately independent:
- *   - the e-mail goes to the same n8n workflow as the site's forms
- *     (data-hook), which saves it in our own table and, for the sagatave,
- *     e-mails the file.
- *   - for the page check, the URL goes to the audit webhook, which fetches the
- *     page and returns the checks as JSON. It only ever receives the URL.
+ * ONE destination on submit (data-hook), the same n8n workflow as the site's
+ * forms: it saves the row and then mails the deliverable - the sagatave's PDF,
+ * or the page check's nine-point report.
+ *
+ * THE PAGE CHECK'S REPORT IS THE E-MAIL, and that is the whole point: it used
+ * to render on screen, so an address was optional and a throwaway one cost the
+ * visitor nothing. Now the address is what the report is worth. The browser no
+ * longer calls the audit webhook at all - the workflow runs the checks itself,
+ * after it has answered us, so a slow page cannot make this panel wait. So
+ * this file must tell the visitor whether the request GOT THROUGH, which is
+ * why the page check waits for the answer and the sagatave does not.
  *
  * WHEN IT APPEARS. Never immediately: Google treats an interstitial that
  * covers the content on arrival as a ranking problem on mobile, and it is
@@ -29,11 +34,10 @@
   if (!box || !s) return;
 
   var VARIANT = s.getAttribute('data-variant') === 'liaa' ? 'liaa' : 'audit';
-  var AUDIT = s.getAttribute('data-audit');
   var HOOK = s.getAttribute('data-hook');
   var FILE = s.getAttribute('data-file');
   var KEY = 'ms-lm';
-  if (!HOOK || (VARIANT === 'audit' && !AUDIT)) return;
+  if (!HOOK) return;
 
   var read = function () { try { return localStorage.getItem(KEY); } catch (e) { return 'seen'; } };
   var write = function (v) { try { localStorage.setItem(KEY, v); } catch (e) { /* private mode */ } };
@@ -150,37 +154,49 @@
     btn.disabled = true;
     btn.textContent = VARIANT === 'liaa' ? 'Sūtām…' : 'Pārbaudām…';
 
-    /* The lead. Same workflow and payload shape as the site's forms, so it
-     * lands in the same table; text/plain keeps it a simple request with no
-     * preflight. Fire and forget: the file or the report is on screen whatever
-     * the workflow does. */
+    /* Same workflow and payload shape as the site's forms, so it lands in the
+     * same table; text/plain keeps it a simple request with no preflight. */
     var formId = VARIANT === 'liaa' ? 'liaa-sagatave' : 'lapas-parbaude';
-    try {
-      fetch(HOOK, {
-        method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
-        body: JSON.stringify({
-          form: formId, page: location.pathname,
-          data: VARIANT === 'liaa'
-            ? { email: email, message: 'Eksporta statuss: ' + eksports }
-            : { email: email, website: url },
-        }),
-      }).catch(function () {});
-    } catch (e) { /* a blocked fetch must not cost the lead */ }
+    var payload = JSON.stringify({
+      form: formId, page: location.pathname,
+      data: VARIANT === 'liaa'
+        ? { email: email, message: 'Eksporta statuss: ' + eksports }
+        : { email: email, website: url },
+    });
     if (window.msTrack) window.msTrack('generate_lead', { form_id: formId, page_path: location.pathname }, { email: email });
 
-    // The sagatave is on screen at once; the e-mail is the copy, not the delivery.
-    if (VARIANT === 'liaa') { handOver(); return; }
+    // The sagatave is on screen at once, so its post can fail unseen: the
+    // e-mail is the copy, not the delivery.
+    if (VARIANT === 'liaa') {
+      try {
+        fetch(HOOK, {
+          method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' },
+          body: payload,
+        }).catch(function () {});
+      } catch (e) { /* a blocked fetch must not cost the lead */ }
+      handOver();
+      return;
+    }
 
-    fetch(AUDIT, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ url: url }),
-    })
-      .then(function (r) { return r.json(); })
-      .then(render)
-      .catch(function () {
-        render({ ok: false, url: url, reason: 'pārbaude neatbildēja' });
-      });
+    /* The page check has nothing to hand over on screen, so it has to know
+     * whether the request landed. Readable response (the workflow answers with
+     * Access-Control-Allow-Origin for this origin), and the same 15 s ceiling
+     * and mailto fallback as forms.js: a lost lead is worse than an error. */
+    var settled = false;
+    function settle(ok) {
+      if (settled) return;
+      settled = true;
+      if (ok) sent(email); else lost(email, url);
+    }
+    var timer = setTimeout(function () { settle(false); }, 15000);
+    try {
+      fetch(HOOK, {
+        method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: payload,
+      })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { clearTimeout(timer); settle(!!(d && d.ok)); })
+        .catch(function () { clearTimeout(timer); settle(false); });
+    } catch (e) { clearTimeout(timer); settle(false); }
   });
 
   /* The sagatave is handed over on screen, not held back until an e-mail
@@ -203,35 +219,39 @@
     return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   }
 
-  function render(d) {
+  /* The report is an e-mail now, so this panel's whole job is to say the
+     request landed, name the address it is going to (a typo is the one failure
+     the visitor can still fix), and give something to read while it arrives. */
+  function sent(email) {
     form.hidden = true;
     result.hidden = false;
     write('seen');
-
-    if (!d || !d.ok) {
-      result.innerHTML = '<h3>Neizdevās atvērt lapu</h3>' +
-        '<p>' + esc(d && d.url) + ' &mdash; ' + esc((d && d.reason) || 'nezināma kļūda') + '. ' +
-        'Pārbaudi adresi un mēģini vēlreiz, vai <a href="/sazinies/">uzraksti mums</a>.</p>';
-      return;
-    }
-
-    var rows = (d.checks || []).map(function (c) {
-      var mark = c.state === 'ok' ? '&#10003;' : (c.state === 'unknown' ? '?' : '&#33;');
-      return '<li class="lm-check lm-check--' + esc(c.state) + '"><span class="lm-mark" aria-hidden="true">' + mark +
-        '</span><div><strong>' + esc(c.title) + '</strong><span>' + esc(c.detail) + '</span></div></li>';
-    }).join('');
-
-    var head = d.fails
-      ? d.fails + ' no ' + d.total + ' punktiem ir vērts salabot'
-      : 'Viss pārbaudītais ir kārtībā';
-
     result.innerHTML =
-      '<h3>' + esc(head) + '</h3>' +
-      '<p class="lm-sub">Lapa: ' + esc(d.url) + '. Pārbaudīts tikai tas, ko var nolasīt no lapas koda.</p>' +
-      '<ul class="lm-checks">' + rows + '</ul>' +
-      '<p class="lm-next">Lielāko daļu no šī var salabot pats. Ja gribi, lai kāds izskata tieši Tavu situāciju un pasaka, ar ko sākt, ' +
-      'tam ir <a href="/marketinga-konsultacijas/">maksas konsultācija</a>.</p>' +
-      '<div class="btn-wrap"><a class="btn" href="/marketinga-konsultacijas/">Apskatīt konsultācijas</a>' +
+      '<h3>Pārbaude ir palaista</h3>' +
+      '<p class="lm-sub">Atskaite ar visiem deviņiem punktiem aiziet uz <strong>' + esc(email) +
+      '</strong> pāris minūšu laikā. Ja tās nav, paskaties mēstuļu mapē.</p>' +
+      '<div class="btn-wrap"><a class="btn" href="/konversiju-uzskaite/">Kā mēra konversijas</a>' +
+      '<button type="button" class="btn btn--ghost" data-lm-close>Aizvērt</button></div>' +
+      '<p class="lm-next">Ja gribi, lai kāds izskata tieši Tavu situāciju un pasaka, ar ko sākt, ' +
+      'tam ir <a href="/marketinga-konsultacijas/">maksas konsultācija</a>.</p>';
+  }
+
+  /* A lost request must not cost the lead, so it becomes a pre-filled mailto,
+     exactly as in forms.js. Deliberately does NOT write 'seen': nothing was
+     delivered, so the popup may ask again rather than the lead simply being
+     gone. */
+  function lost(email, url) {
+    form.hidden = true;
+    result.hidden = false;
+    var href = 'mailto:rihards@marketingaskola.lv?subject=' +
+      encodeURIComponent('Lapas pārbaude: ' + url) + '&body=' +
+      encodeURIComponent('Lapa: ' + url + '\nE-pasts: ' + email +
+        '\n\nLūdzu, atsūtiet lapas pārbaudes atskaiti.');
+    result.innerHTML =
+      '<h3>Pieprasījumu neizdevās nosūtīt</h3>' +
+      '<p class="lm-sub">Visticamāk, vainojams savienojums vai reklāmu bloķētājs. ' +
+      'Nosūti to pašu e-pastā, un atskaiti atsūtīsim ar roku.</p>' +
+      '<div class="btn-wrap"><a class="btn" href="' + esc(href) + '">Atvērt e-pastu</a>' +
       '<button type="button" class="btn btn--ghost" data-lm-close>Aizvērt</button></div>';
   }
 })();
