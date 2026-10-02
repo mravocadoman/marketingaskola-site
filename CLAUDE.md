@@ -169,6 +169,82 @@ cache-bust hash: compute `sha1(_site/css/style.css)[:8]` locally and compare
 it against the `?v=` the live HTML references. Equal means live; different
 means the deploy has not landed, whatever the run says.
 
+## A cached 304 took the homepage down for a week (2 Oct 2026)
+
+Owner: *"is the website live? I can access it, but in incognito it doesnt
+load."* It was live, and the homepage was genuinely broken for everyone who
+had never visited: SiteGround's proxy cache was serving a **bodyless 304** for
+`/`.
+
+```
+HTTP/2 304
+last-modified: Fri, 25 Sep 2026 20:28:45 GMT
+x-proxy-cache: HIT
+```
+
+A 304 means "use your cached copy" and carries no HTML. A returning browser
+revalidates and renders from its own cache, which is why the owner saw a normal
+site; an incognito window has nothing to fall back on and paints nothing.
+
+**How it was pinned down, and how to do it again in two minutes:**
+
+- **Only `/` was affected.** `/pakalpojumi/`, `/blogs/`, `/meta-reklamas-kurss/`,
+  `/sazinies/` and the CSS all answered 200. One poisoned entry, not an outage.
+- **The same URL with a junk query returned 200 and the full 66 KB.** A query
+  string changes the cache key, so it bypasses the stored object: that is the
+  one-command proof that the origin is healthy and the cache is the fault.
+
+```bash
+curl -sS -o /dev/null -w "%{http_code}\n" https://marketingaskola.lv/
+```
+
+**The fix is the cache flush**, which is the deploy's own last-but-two step:
+`gh workflow run deploy.yml -f target=siteground`, or the Site Tools CLI line
+in `deploy.yml` if you have the SSH user. Nothing in this repo can cause or
+prevent it - no origin is asked to emit a 304 to an unconditional GET - so if
+it recurs it is a SiteGround support ticket.
+
+### The monitor that catches it (2 Oct 2026)
+
+`npm run check:uptime` / `.github/workflows/uptime.yml`, daily at 05:17 UTC.
+Five pages, one plain GET each; it e-mails only when something is wrong and
+writes nothing at all on a good day, which is what the owner asked for.
+
+- **It runs on GITHUB ACTIONS, and that is a measured decision, not a
+  preference.** The first version ran the fetch in n8n and every single url
+  came back `202` with `sg-captcha: challenge` - SiteGround's bot challenge
+  answers n8n Cloud's IP, so the monitor would have been permanently blind
+  while looking healthy. GitHub's runners get the real pages (the deploy's own
+  smoke test reads 67 urls from there on every run). **Measure this before
+  moving the probe anywhere** - the obvious reasoning, that n8n fetches the
+  page check's urls fine, is wrong, because those are other people's sites.
+- **A challenge is never an alert.** If GitHub is ever challenged too, every
+  url reports `SKIP` and the run exits 0. A monitor that cries wolf each
+  morning is one nobody reads.
+- **No cache-busting query, and no conditional headers.** Both would walk
+  straight past the thing it exists to catch. It sends exactly what a
+  first-time visitor sends.
+- **A `DOWN` url is fetched a second time five seconds later** before anything
+  is sent. One blip must not e-mail anybody.
+- The e-mail comes from the n8n workflow **"Mārketinga Skola — lapas
+  uzraudzība"** (`thqrVJkzibX4NhZ0`, `POST /webhook/uptime?k=`), because a red
+  GitHub run is a weak signal here - this file records how two days of red
+  deploys trained everyone to wave them through. The webhook URL and key live
+  in the repo secret `UPTIME_HOOK`; with the secret unset the probe still runs
+  and still fails the job, it just sends no mail.
+- **The n8n side prints nothing it receives.** The probe posts only
+  `{path, status}`; the Code node matches each path against its own fixed list
+  and reads the status as an integer, and every sentence in the mail is written
+  there. Same rule as the other public webhooks.
+- **To test the alert path:** run the workflow by hand with the `extra` input,
+  or locally `BASE=http://127.0.0.1:9 UPTIME_HOOK=... node tools/check-uptime.mjs`,
+  which reports all five as unreachable and sends the real e-mail. Verified
+  that way on 2 Oct 2026.
+
+**Not built, and worth knowing it is missing:** nothing notices if the cron
+itself stops running. A dead-man's switch on the n8n side (no report for 48 h
+→ e-mail) would close that, and needs somewhere to keep the last-seen time.
+
 ## WhatsApp entry point (2 Sep 2026)
 
 `.wa-float` in `base.njk` is a fixed click-to-chat link to `wa.me/37126673384`

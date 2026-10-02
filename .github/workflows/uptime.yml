@@ -1,0 +1,33 @@
+name: Uptime
+
+# One plain GET of five pages a day, as a first-time visitor would send them.
+# It is here rather than in n8n because SiteGround's bot challenge answers
+# n8n Cloud's IP with a 202 while GitHub's runners get the real pages; see
+# tools/check-uptime.mjs. It writes nothing anywhere while the site is fine -
+# on a failure it posts to the n8n workflow that sends the e-mail, and the
+# red run is the second signal.
+
+on:
+  schedule:
+    # 05:17 UTC - a few minutes past the hour, because GitHub delays crons
+    # that pile up on the hour. 08:17 in Riga in summer, 07:17 in winter.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      extra:
+        description: "Extra path to probe as well, e.g. /does-not-exist/ to test the alert"
+        type: string
+        default: ""
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Probe the live site
+        env:
+          UPTIME_HOOK: ${{ secrets.UPTIME_HOOK }}
+        run: node tools/check-uptime.mjs ${{ inputs.extra }}
