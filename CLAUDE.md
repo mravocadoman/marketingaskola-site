@@ -36,6 +36,17 @@ the original.
   (Tally renders dark text — deliberate exception). `.sec--dark`/`.sec--soft`
   are deprecated no-ops (transparent). Type scale is large on purpose: hero
   ~96px desktop, sections clamp(6rem,10vw,10rem).
+  **Striped and boxed sections were proposed again on 2 Oct 2026 and rejected
+  again** (owner, shown a working preview: *"yeah i dont like it"*). The
+  proposal alternated section backgrounds, inset every other section behind a
+  1px border with the panel's cyan corner ticks, and removed the section
+  hairlines. Two things worth keeping from the exercise: the stripe half never
+  worked at all, because it referenced an undefined `--band` token, and
+  `:nth-of-type` counts `<section>` elements rather than `.sec`, so which
+  sections got the treatment depended on element position and flipped whenever
+  one was added. Build a preview before arguing about a look like this; it took
+  one build and one screenshot to settle.
+
 - **The header is DARK and must stay dark** — the brand logo
   (`src/img/logo.png`) is white artwork, invisible on light backgrounds.
   Likewise the client logos (`*-grey.png/webp`) are light grey: only show
