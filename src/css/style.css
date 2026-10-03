@@ -28,6 +28,10 @@
   --body: #c9d8e8;
   --muted: #8ba3bd;
   --well: #051e35;         /* inset fill: inputs, hover wells */
+  /* The one lighter surface, for banded sections. 1.29:1 against the canvas:
+     --card (1.06) and --well (1.15) were measured as invisible across a full
+     section, which is what made an earlier attempt at this read as nothing. */
+  --band: #0e2743;
   --warn: #ff9b9b;         /* validation only - never decorative */
   /* --- type scale (tools/apply-type-scale.mjs) --- */
   --t-micro: 0.75rem;   /* 12-12px · uppercase tracked micro-labels ONLY */
@@ -288,7 +292,7 @@ p { margin: 0 0 1.15em; }
 }
 
 /* ---------- sections: one canvas, hairline rhythm ---------- */
-.sec { padding: var(--sec-pad) 0; border-top: 1px solid var(--line); }
+.sec { padding: var(--sec-pad) 0; border-top: 1px solid var(--line-strong); }
 main > .sec:first-child, main > section:first-child { border-top: 0; }
 /* legacy section variants all sit on the same canvas — no stripes */
 .sec--dark, .sec--soft { background: transparent; color: var(--body); }
@@ -697,7 +701,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
    without changing surface. The --card step against --canvas is only 1.06:1 on
    its own; the hairlines are what actually draw the edge, so do not remove
    them thinking the fill is doing the work. */
-.sec--band { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sec--band, .sec--alt { background: var(--band); border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
+.sec--band, .sec--alt { --card: #1a3a5c; --well: #1d4166; }
 /* Inside the band, each step gets the eyebrow's own device: a short cyan tick
    sitting on its rule. Four small marks, so the sequence reads as a sequence
    and the cyan stays far inside budget - it is the same "this starts here"

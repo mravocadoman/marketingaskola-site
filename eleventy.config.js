@@ -451,6 +451,76 @@ module.exports = function (eleventyConfig) {
    * pages' module accordion, and "1. Meta reklāmas pamati" is not a question.
    * Pages that already emit FAQPage from front matter are left alone, and so
    * are noindex pages. */
+  /* Marks alternate content sections as bands, so a long dark page reads as a
+     stack of sections rather than one unbroken field. A transform rather than
+     CSS because `:nth-of-type` counts <section> elements regardless of class -
+     the hero is one - so the pattern would be decided by element position and
+     would flip whenever a section was added. Here it is computed from the real
+     list, lands in the built HTML, and can be read back.
+
+     Three rules, each load-bearing:
+       - a HERO is never banded, and never resets the rhythm: the first content
+         section stays plain, so the page opens calm.
+       - a section holding a MOTIF is never banded. In-page motifs are frameless
+         (`.media--motif`/`.cell-media--motif` set `background: none`) and the
+         pieces SVG paints no ground of its own, so the section colour shows
+         between the pieces while each piece carries a margin of #020d1c - a
+         lighter ground would draw a dark halo around every piece.
+       - an existing `.sec--band` or `.cta-band` counts as a band, so two never
+         end up touching and reading as one tall block. */
+  eleventyConfig.addTransform("sectionBands", function (content) {
+    const out = String(this.page.outputPath || "");
+    if (!out.endsWith(".html") || !content.includes("<section")) return content;
+    const open = content.indexOf("<main");
+    const close = content.lastIndexOf("</main>");
+    if (open === -1 || close <= open) return content;
+
+    const re = /<\/?section\b[^>]*>/g;
+    re.lastIndex = open;
+    const edits = [];
+    let depth = 0;
+    let banded = true; // the first content section stays plain
+    let start = null;
+    let m;
+    while ((m = re.exec(content)) && m.index < close) {
+      if (m[0][1] === "/") {
+        depth -= 1;
+        if (depth === 0 && start) {
+          const inner = content.slice(start.end, m.index);
+          const cls = start.cls;
+          if (/\bsec--hero\b|\bpage-hero\b/.test(cls)) {
+            // leave `banded` alone
+          } else if (/\bcta-band\b|\bsec--band\b/.test(cls)) {
+            banded = true;
+          } else if (!/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner)) {
+            banded = false;
+          } else if (!banded) {
+            edits.push(start);
+            banded = true;
+          } else {
+            banded = false;
+          }
+          start = null;
+        }
+        continue;
+      }
+      if (depth === 0) {
+        const cls = (m[0].match(/class="([^"]*)"/) || [])[1] || "";
+        start = { cls, tag: m[0], index: m.index, end: m.index + m[0].length };
+      }
+      if (!/\/>$/.test(m[0])) depth += 1;
+    }
+    if (!edits.length) return content;
+
+    // Applied back to front so the earlier offsets stay valid.
+    let html = content;
+    for (const e of edits.reverse()) {
+      const tag = e.tag.replace(/class="([^"]*)"/, 'class="$1 sec--alt"');
+      html = html.slice(0, e.index) + tag + html.slice(e.end);
+    }
+    return html;
+  });
+
   eleventyConfig.addTransform("faqSchema", function (content) {
     const out = String(this.page.outputPath || "");
     if (!out.endsWith(".html") || !content.includes('<details class="faq"')) return content;

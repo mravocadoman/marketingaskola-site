@@ -13,8 +13,9 @@ the original.
   of the white background at all"). **OWNER RULES: no gradients ever; no
   white/light page backgrounds; WCAG-safe contrast; generous scale — never
   shave section padding to fit content.**
-  ONE canvas `#020d1c` sitewide — backgrounds never change color, no
-  section stripes. Cards `#00152c` + mandatory 1px `rgba(255,255,255,.08)`
+  ONE canvas `#020d1c` plus ONE lighter band surface `--band` `#0e2743`
+  for alternate sections (3 Oct 2026, see "Sections had to separate" below).
+  Those are the only two page grounds; nothing else changes background. Cards `#00152c` + mandatory 1px `rgba(255,255,255,.08)`
   hairline; `#051e35` for inputs/hover fills/inset wells; depth = hairlines,
   NEVER box-shadows or glows. Three text tiers ONLY: headings `#ffffff`,
   body `#c9d8e8`, muted `#8ba3bd` (the floor — nothing dimmer ever carries
@@ -179,6 +180,55 @@ only the last push's run matters. Do not go debugging a cancelled run.
 cache-bust hash: compute `sha1(_site/css/style.css)[:8]` locally and compare
 it against the `?v=` the live HTML references. Equal means live; different
 means the deploy has not landed, whatever the run says.
+
+## Sections had to separate, and the page was too dark (3 Oct 2026)
+
+Owner: *"make the sections in the website easier to separate; probably applying
+section breaks or putting slightly lighter background for contrast... Right now
+its very dark and imo not pleasant to read."* Measured before changing
+anything, and it was two separate faults:
+
+- **The separator between sections was a 1.19:1 hairline** - `--line`, 8% white
+  on near-black. That is barely above invisible, which is the whole of "I can't
+  tell where a section ends". It is `--line-strong` now, a token that already
+  existed: **1.54:1**.
+- **The canvas is effectively black.** `#020d1c` is **L\* 0.4**, with white
+  headings at **19.5:1** and body at 13.4:1 against it. AAA asks 7:1. Being two
+  to three times past it is the halation range, where white on black shimmers
+  and tires the eye. **That part is NOT fixed** - see the end of this section.
+
+**`--band: #0e2743` is the one lighter surface**, 1.29:1 above the canvas, and
+`.sec--band` was moved onto it as well, so there is one band treatment rather
+than two. Inside a band `--card` lifts to `#1a3a5c` and `--well` to `#1d4166`:
+a card on a band must stay above its ground or it reads as a hole. Text on the
+band measures body 10.4:1, muted 5.8:1, headings 15.1:1.
+
+**Which sections get banded is decided by the `sectionBands` transform**, not by
+CSS. `:nth-of-type` counts `<section>` elements regardless of class and the
+hero is one, so a CSS rule would key the pattern to element position and flip it
+whenever a section was added - that was the fault in a version proposed the day
+before. Three rules, each load-bearing:
+
+- **A hero is never banded, and never resets the rhythm**, so the first content
+  section stays plain and the page opens calm.
+- **A section containing a motif is never banded.** In-page motifs are frameless
+  and the pieces SVG paints no ground, so the section colour shows between the
+  pieces while each piece carries a one-cell margin of `#020d1c` - a lighter
+  ground would draw a dark halo around every piece. Checked on the built site:
+  33 bands across 18 pages, **none** containing a motif.
+- **An existing `.sec--band` or the closing `.cta-band` counts as a band**, so
+  two never touch and read as one tall block.
+
+`/pakalpojumi/` therefore gets no new band at all - all three of its sections
+carry motifs - and keeps only the process band it already had. That is correct,
+not a bug.
+
+**Still open: the canvas itself.** Lifting `#020d1c` off black is what would
+actually answer "unpleasant to read", and it is a bigger job than a token:
+**137 generated images and 66 motif includes are ground-matched to that exact
+value**, and each piece carries a margin of it, so every hero would show faint
+halos until `npm run ground` and `npm run motifs` are re-run against the new
+canvas and `npm run test:motifs` passes. Offered and not taken yet.
 
 ## A cached 304 took the homepage down for a week (2 Oct 2026)
 
@@ -3023,8 +3073,12 @@ animation is exactly how an element ends up stuck invisible.
 
 ## Ground-matching is scoped by FRAMELESS, not by "is it a raster" (10 Sep 2026)
 
-`.hero-media` is `border: 0; background: none` — **the only frameless raster
-context in the stylesheet.** Everywhere else artwork appears carries a
+`.hero-media` is `border: 0; background: none` — **the only frameless RASTER
+context in the stylesheet.** (Corrected 3 Oct 2026: it is not the only
+frameless context. `.media--motif` and `.cell-media--motif` also set
+`background: none`, and a pieces SVG paints no ground of its own, so the
+section colour shows between the pieces. That is why a banded section may
+never contain a motif.) Everywhere else artwork appears carries a
 hairline: `.media` (`--wide/--square/--portrait`), `.cell-media`,
 `.post-card > a:first-child`, `.infographic`. A ground 3-6/255 off the canvas
 is invisible inside a border, so none of those need matching, and leaving them
@@ -3097,9 +3151,14 @@ page, and it gives away the thing that makes the site look like itself.
 
 **Stepping the background does not work either, and the numbers say why.**
 Hero on `--card` and the artwork panel on `--well` give contrast ratios of
-**1.06** and **1.15** against `--canvas`. That is invisible. This palette has
-no usable mid-tone between near-black and white, so "make the section slightly
-lighter" is not an available move here. Do not try it again.
+**1.06** and **1.15** against `--canvas`. That is invisible.
+
+**PARTLY SUPERSEDED 3 Oct 2026.** The two values above are indeed invisible,
+but the conclusion drawn from them - that the palette has no usable mid-tone,
+so never try a lighter section again - was too broad. `#0e2743` measures
+**1.29:1** against the canvas and reads clearly across a full-width section.
+What was missing was a big enough step, not room in the palette. The hero is
+still the wrong place for it, because its motif is frameless.
 
 **The darkness was the artwork being empty.** Measured as the share of pixels
 above 0.20 relative luminance:
