@@ -259,6 +259,16 @@ site; an incognito window has nothing to fall back on and paints nothing.
 curl -sS -o /dev/null -w "%{http_code}\n" https://marketingaskola.lv/
 ```
 
+**Do not trust `curl` from the dev Mac to check production.** SiteGround's bot
+challenge is per IP and it challenged this machine on 4 Oct 2026 after two days
+of automated fetching at the site - the uptime tests, the cache diagnosis, the
+verification loops. A challenged request answers `202` with a 168-byte robot
+page and `sg-captcha: challenge`, which reads exactly like an empty or broken
+site and briefly produced the wrong conclusion that a good deploy had shipped
+nothing. The two checks that stay honest: the deploy's **Verify the upload over
+SSH** step, which compares the server's `css/style.css` md5 against the build,
+and a real browser (the pane passes the challenge like any browser does).
+
 **The fix is the cache flush**, which is the deploy's own last-but-two step:
 `gh workflow run deploy.yml -f target=siteground`, or the Site Tools CLI line
 in `deploy.yml` if you have the SSH user. Nothing in this repo can cause or
