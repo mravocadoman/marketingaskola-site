@@ -223,6 +223,19 @@ before. Three rules, each load-bearing:
 carry motifs - and keeps only the process band it already had. That is correct,
 not a bug.
 
+**Corrected 5 Oct 2026, a defect the first version shipped with.** The adjacency
+rule only looked BACKWARDS, so the last content section could be banded hard
+against the closing `.cta-band`. The decision is a second pass over the whole
+list now, and it looks forward as well. In the same pass the `.cta-band` was
+reclassified as a **closer** rather than a band: it is `--card` `#00152c`, a
+different surface from `--band` `#0e2743`, so a band may sit against it and the
+two still read as two blocks. Only two SAME-coloured bands must never touch.
+
+**Adding a motif to a section takes it out of the rotation**, which shifts every
+band after it. That is how it should work, but it means a tile grid gaining
+artwork re-flows the page's rhythm - check the sequence afterwards rather than
+assuming. The homepage's three course tiles did exactly this on 5 Oct.
+
 **Still open: the canvas itself.** Lifting `#020d1c` off black is what would
 actually answer "unpleasant to read", and it is a bigger job than a token:
 **137 generated images and 66 motif includes are ground-matched to that exact
@@ -402,6 +415,25 @@ deleted so `npm run images` cannot recreate it. `aspect` in the PORTRAITS list
 sets the FRAME shape only — a taller frame draws more backdrop, it never crops
 or stretches the photograph. Match the slot exactly (`.media--portrait` is 3:4)
 or object-fit:cover silently crops the result.
+
+**The portraits carry NO field of their own since 5 Oct 2026.** The tool used to
+paint a solid `#020d1c` rectangle behind the cutout, which was invisible while
+every page was that colour - and became a dark tile on every portrait the moment
+banded sections arrived two days earlier. Owner, seeing the team wall: *"fix then
+the backgrounds of these pictures too, or change section color."* Now only the
+cyan disc and the white arc are drawn, so the figure sits on whatever is behind
+it: canvas, band or card. **Prefer this to painting the band colour in** - the
+same files appear on three different grounds, and a painted field is wrong on
+two of them and stale the next time a colour changes.
+- The backdrop guard moved with it: it tested that background pixels MATCHED the
+  drawn navy, and now tests that they are CLEAR (alpha < 10). It still catches
+  the failure it exists for - an opaque cutout leaves the photograph's own
+  background at full alpha, which fails both that and the pixel test.
+- `.team-card img` and `.instructor-card img` lost their 1px borders at the same
+  time: a border around a cutout frames an invisible square.
+- **The tool could not run on a Mac at all until 5 Oct 2026.** It rewrote `/`
+  into `\` when building the source path, so every photograph read as missing -
+  the same Windows-ism that was fixed in `check-site.mjs` on 2 Sep.
 
 `npm run portraits:brand` → `tools/brand-portraits.mjs` (non-generative):
 1. sharp square-crops the ORIGINAL photograph;
@@ -1870,7 +1902,20 @@ usually the clearest way to say what a page is about.
 **Only four images use treatment 2** — `meta-reklamas-motivs` (a feed post in a
 phone), `google-ads-motivs` (paid placement above organic results),
 `seo-mekletaja-motivs` (a result climbing the rankings) and
-`konsultacijas-saruna` (two profiles either side of one cyan square). Owner,
+`konsultacijas-saruna` (two profiles either side of one cyan square).
+
+**Three of them were redrawn to fill the frame on 5 Oct 2026.** Their prompts
+asked, word for word, for *"the empty left half of the frame"*, *"left third of
+the frame empty"* and *"everything is weighted right and cropped by the right
+edge"* - correct for a hero, where the empty side sits under the headline
+column, and a hole the moment the same motif is shown in a 16:10 tile. Measured
+before and after, as share of the frame left empty on each side:
+`meta` 60/0 → 13/10, `seo` 41/5 → 5/8, `google` 59/0 → 6/6, with ink up from
+15-38% to 20-38% and cyan still 1.4-2.9%. **Tightening the viewBox is not an
+alternative**: the ink spans 92% of the height but 40% of the width, so cropping
+to it gives a tall box that letterboxes in a wide tile. If a motif is ever drawn
+for a hero again, say the drawing spans the full width with an even margin -
+never that one side is empty. Owner,
 5 Sep 2026: *"dont change anything in the current dark background pages and blog
 thumbnails, i like them as they are. Apply the new UI-related style only to
 course and LP headers where appropriate."* Every other motif and all 31 blog

@@ -477,9 +477,8 @@ module.exports = function (eleventyConfig) {
 
     const re = /<\/?section\b[^>]*>/g;
     re.lastIndex = open;
-    const edits = [];
+    const found = [];
     let depth = 0;
-    let banded = true; // the first content section stays plain
     let start = null;
     let m;
     while ((m = re.exec(content)) && m.index < close) {
@@ -488,18 +487,12 @@ module.exports = function (eleventyConfig) {
         if (depth === 0 && start) {
           const inner = content.slice(start.end, m.index);
           const cls = start.cls;
-          if (/\bsec--hero\b|\bpage-hero\b/.test(cls)) {
-            // leave `banded` alone
-          } else if (/\bcta-band\b|\bsec--band\b/.test(cls)) {
-            banded = true;
-          } else if (!/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner)) {
-            banded = false;
-          } else if (!banded) {
-            edits.push(start);
-            banded = true;
-          } else {
-            banded = false;
-          }
+          start.kind = /\bsec--hero\b|\bpage-hero\b/.test(cls) ? "hero"
+            : /\bcta-band\b/.test(cls) ? "closer"
+            : /\bsec--band\b/.test(cls) ? "band"
+            : !/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner) ? "keep"
+            : "plain";
+          found.push(start);
           start = null;
         }
         continue;
@@ -509,6 +502,29 @@ module.exports = function (eleventyConfig) {
         start = { cls, tag: m[0], index: m.index, end: m.index + m[0].length };
       }
       if (!/\/>$/.test(m[0])) depth += 1;
+    }
+    /* Decided in a second pass, because the rule needs to look FORWARD as well
+       as back: a `.cta-band` closes most pages, and banding the section just
+       above it makes the two read as one tall block. Looking only at the
+       previous section missed that - the cta-band had not been seen yet. */
+    const edits = [];
+    let banded = true; // the first content section stays plain
+    for (let i = 0; i < found.length; i += 1) {
+      const sec = found[i];
+      if (sec.kind === "hero") continue;          // never banded, never resets
+      if (sec.kind === "band") { banded = true; continue; }
+      // The closing `.cta-band` is a DIFFERENT surface (--card, darker than
+      // --band), so a band may sit against it: the two read as two blocks.
+      // Only two same-coloured bands must never touch.
+      if (sec.kind === "closer") { banded = false; continue; }
+      if (sec.kind === "keep") { banded = false; continue; }
+      const next = found.slice(i + 1).find((s2) => s2.kind !== "hero");
+      if (!banded && !(next && next.kind === "band")) {
+        edits.push(sec);
+        banded = true;
+      } else {
+        banded = false;
+      }
     }
     if (!edits.length) return content;
 

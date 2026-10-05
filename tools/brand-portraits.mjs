@@ -65,14 +65,18 @@ const PORTRAITS = [
   { id: 'rihards-founder', src: 'src/img/2024/07/Untitled-design-4.webp', aspect: [3, 4] },
 ];
 
-// Flat brand backdrop — solid navy, one cyan disc, one thin white arc.
+// Brand backdrop — one cyan disc, one thin white arc, and NO field behind
+// them. A painted field was a dark #020d1c tile the moment the page behind it
+// was anything else, which is what happened when banded sections arrived on
+// 3 Oct 2026: every portrait became a dark square on a lighter ground. With no
+// field the figure sits on whatever is behind it - canvas, band or card - and
+// it survives any future change to those colours.
 // Drawn at whatever size the frame needs; the disc tracks the head, which sits
 // in the upper third of the subject block regardless of frame height.
 const makeBackdrop = (w, h, subjectTop) => {
   const headY = subjectTop + SIZE * 0.34;
   return Buffer.from(`
 <svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
-  <rect width="${w}" height="${h}" fill="${NAVY}"/>
   <circle cx="${w * 0.56}" cy="${headY}" r="${SIZE * 0.3}" fill="${CYAN}"/>
   <path d="M ${w * 0.80} ${headY + SIZE * 0.2}
            A ${SIZE * 0.26} ${SIZE * 0.26} 0 0 1 ${w * 0.54} ${headY + SIZE * 0.46}"
@@ -86,7 +90,7 @@ const queue = PORTRAITS.filter((p) => (ONLY ? p.id === ONLY : true));
 console.log(`local matting, no generative model → ${queue.length} portrait(s)\n`);
 
 for (const p of queue) {
-  const src = join(ROOT, p.src.replace(/\//g, '\\'));
+  const src = join(ROOT, p.src);
   if (!existsSync(src)) { failed.push(`${p.id}: missing ${p.src}`); continue; }
   const inPng = join(TMP, `${p.id}-in.png`);
   const cutPng = join(TMP, `${p.id}-cut.png`);
@@ -127,6 +131,13 @@ for (const p of queue) {
     // Compare only the band the photograph occupies; the drawn headroom above
     // it has no source to compare against.
     const srcRaw = await sharp(inPng).removeAlpha().raw().toBuffer();
+    // With no field drawn there is no colour to match, so the guard tests that
+    // the backdrop is actually CLEAR. It still catches the failure it exists
+    // for: an opaque cutout leaves the original photograph's background there
+    // at full alpha, which fails both tests.
+    const outAlpha = await sharp(composed)
+      .extract({ left: 0, top: subjectTop, width: SIZE, height: SIZE })
+      .ensureAlpha().extractChannel('alpha').raw().toBuffer();
     const outRaw = await sharp(composed)
       .extract({ left: 0, top: subjectTop, width: SIZE, height: SIZE })
       .removeAlpha().raw().toBuffer();
@@ -142,10 +153,9 @@ for (const p of queue) {
         // (Madara's is near-black, like the navy) — that was a bad test.
         bgTotal++;
         const r = outRaw[px * 3], g = outRaw[px * 3 + 1], b = outRaw[px * 3 + 2];
-        const isNavy = Math.abs(r - 2) < 12 && Math.abs(g - 13) < 12 && Math.abs(b - 28) < 14;
         const isCyan = Math.abs(r - 3) < 24 && Math.abs(g - 195) < 24 && Math.abs(b - 248) < 24;
         const isWhiteArc = r > 200 && g > 200 && b > 200;
-        if (isNavy || isCyan || isWhiteArc) bgReplaced++;
+        if (outAlpha[px] < 10 || isCyan || isWhiteArc) bgReplaced++;
       }
     }
     const mad = counted ? diff / counted : NaN;

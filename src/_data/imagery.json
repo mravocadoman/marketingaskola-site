@@ -15,7 +15,7 @@
       "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width — before the sidebar's course-card scrolls past.",
       "aspect": "landscape",
       "alt": "Sociālā tīkla ieraksts telefona rāmī — attēls, teksta rindas un ciānkrāsas reakcijas kvadrāts",
-      "prompt": "A social feed post. A tall vertical phone-shaped frame stands to the right of the frame, cropped by the right edge. Inside it, a large solid cool grey block fills the upper half as the post image, two shorter grey bars beneath it as caption lines, and one small solid cyan square at the lower left as the reaction. The empty left half of the frame is bare dark navy.",
+      "prompt": "A social feed post and the audience it reaches. Just left of centre a tall phone-shaped rectangle with square corners holds the post: a large solid cool grey block as the image, two shorter grey bars beneath it as caption lines, and one small solid cyan square at the lower left as the reaction. Filling the right of the frame at the same scale, a loose grid of nine small square-cornered grey tiles stands for the audience, one of them solid cyan. The drawing spans the full width with a modest even dark margin all round; no side of the frame is left empty, and nothing is cropped by an edge. Every corner is square.",
       "rationale": "Long text-only sales body with five collapsed FAQ blocks; one topic image at the top gives the Meta course a distinct visual identity against the SEO and TikTok pages."
     },
     {
@@ -24,7 +24,7 @@
       "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
       "aspect": "landscape",
       "alt": "Meklēšanas rezultātu saraksts, kurā viens rezultāts pakāpies uz augšu — SEO pozīciju uzlabošana",
-      "prompt": "Climbing the search rankings. A vertical stack of seven horizontal cool grey bars of descending length fills the right half, reading as a results list. One solid cyan bar has left the middle of the stack and sits alone at the top of it, clearly promoted above the others, with a visible gap where it came from. Left third of the frame empty.",
+      "prompt": "A page climbing the search rankings. In the right half, a vertical stack of seven horizontal cool grey bars of descending length reads as a results list, and one solid cyan bar has moved to the top of the stack with a visible gap where it came from. In the left half, drawn at the same scale, a large square-cornered panel stands for the page itself: one wide grey heading bar and three shorter grey text bars inside it. A single thin cyan line runs from the panel to the promoted bar. The drawing spans the full width with a modest even dark margin all round; no side of the frame is left empty, and nothing is cropped by an edge. Every corner is square.",
       "rationale": "Same text-dense course template as Meta — needs its own unmistakable motif (ranked list + circle) so the two pages never read as the same picture."
     },
     {
@@ -33,7 +33,7 @@
       "placement": "Inside .course-body, immediately above the opening <p class=\"lead\">, full column width.",
       "aspect": "landscape",
       "alt": "Meklēšanas rezultātu saraksts, kurā apmaksātā reklāma ciānkrāsā atrodas virs organiskajiem rezultātiem",
-      "prompt": "A paid search result. A long horizontal off-white capsule bar sits in the upper right as the search field, with a short solid cyan vertical caret inside its left end. Directly beneath it, five horizontal bars of descending length stack downward as results - the topmost bar is solid cyan and slightly wider than the rest, marking the paid placement; the others are cool grey. Everything is weighted right and cropped by the right edge; the left third is empty.",
+      "prompt": "A paid search result. A long horizontal off-white capsule search field spans almost the whole width of the frame near the top, with a small solid cyan caret inside its left end. Beneath it, centred, five horizontal bars of descending length stack downward as results: the topmost is solid cyan and slightly wider, marking the paid placement, the others cool grey. To the left of that stack, three small square-cornered grey blocks of different heights stand in a row as competing bids, the tallest nearest the stack. The drawing spans the full width with a modest even dark margin all round; no side of the frame is left empty, and nothing is cropped by an edge. Every corner is square.",
       "rationale": "The Google Ads course needs a motif that is unmistakably paid search — a bid auction over a query field — and cannot be confused with the SEO course's ranked-list-and-circle or Meta's concentric targeting rings."
     },
     {
