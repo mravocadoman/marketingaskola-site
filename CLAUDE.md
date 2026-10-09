@@ -150,6 +150,13 @@ live site**:
   wrong or the runner was challenged. `check-live.mjs` exits 3 for
   SiteGround's `protect_captcha` and the workflow downgrades only that to a
   warning; any other non-zero is a hard failure.
+  **Since 9 Oct 2026 a challenge PART-WAY through the run is caught too.** It
+  used to be detected only on the first fetch, the sitemap; on 9 Oct all 67
+  pages passed and then the two legacy-redirect probes were challenged, read
+  as broken redirects, and a good deploy went red. Every probe now treats a
+  202 as "not verified": it is listed as `SKIP`, and if nothing actually
+  failed the run exits 3 and becomes the warning. A real failure still exits
+  1 first. Tested against a stub server that answers two paths with a 202.
 
 **The trap this created:** `check-live.mjs` asserted that `/seo-pakalpojumi/`
 301s to `/pakalpojumi/`. When that URL became a real page on 8 Sep the

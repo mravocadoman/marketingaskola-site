@@ -24,6 +24,14 @@ ok(sm.status === 200, `sitemap.xml -> ${sm.status}`);
 const locs = [...(await sm.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 ok(locs.length > 50, `sitemap has only ${locs.length} urls`);
 
+// SiteGround's bot challenge can start PART-WAY through a run: early requests
+// pass, later ones get the 202 robot page. A challenged probe has verified
+// nothing either way, so it is recorded as not verified, never as a failure.
+// 9 Oct 2026: all 67 pages passed, then the two legacy-redirect probes were
+// challenged and reported as broken redirects - a good deploy went red.
+const challenged = [];
+const blocked = (r, label) => { if (r.status === 202) { challenged.push(label); return true; } return false; };
+
 let checked = 0;
 const queue = [...locs];
 await Promise.all(Array.from({ length: 8 }, async () => {
@@ -32,6 +40,7 @@ await Promise.all(Array.from({ length: 8 }, async () => {
     const path = loc.replace(PROD, '');
     try {
       const r = await get(path);
+      if (blocked(r, path)) continue;
       const html = await r.text();
       ok(r.status === 200, `${path} -> ${r.status}`);
       ok(/text\/html/.test(r.headers.get('content-type') || ''), `${path} content-type ${r.headers.get('content-type')}`);
@@ -48,19 +57,23 @@ for (const [path, type] of [
   ['/img/og-default.jpg', 'jpeg'], ['/video/lumi-2.webp', 'webp'],
 ]) {
   const r = await get(path, { method: 'HEAD' });
+  if (blocked(r, path)) continue;
   ok(r.status === 200, `${path} -> ${r.status}`);
   ok((r.headers.get('content-type') || '').includes(type), `${path} content-type ${r.headers.get('content-type')}`);
 }
 const v = await get('/video/lumi-2.mp4', { method: 'HEAD' });
-ok(v.status === 200 && Number(v.headers.get('content-length')) > 1e6, `/video/lumi-2.mp4 -> ${v.status} ${v.headers.get('content-length')}`);
+if (!blocked(v, '/video/lumi-2.mp4')) ok(v.status === 200 && Number(v.headers.get('content-length')) > 1e6, `/video/lumi-2.mp4 -> ${v.status} ${v.headers.get('content-length')}`);
 
 const nf = await get('/this-page-does-not-exist/');
-ok(nf.status === 404, `unknown url -> ${nf.status} (want 404)`);
-ok(/Šī lapa nav atrasta/.test(await nf.text()), 'unknown url does not serve the custom 404 page');
+if (!blocked(nf, '/this-page-does-not-exist/')) {
+  ok(nf.status === 404, `unknown url -> ${nf.status} (want 404)`);
+  ok(/Šī lapa nav atrasta/.test(await nf.text()), 'unknown url does not serve the custom 404 page');
+}
 
 if (withRedirects) {
   const expect = async (from, to) => {
     const r = await get(from, { method: 'HEAD' });
+    if (blocked(r, from)) return;
     const loc = r.headers.get('location') || '';
     ok([301, 308].includes(r.status) && loc.replace(BASE, '').replace(PROD, '') === to, `${from} -> ${r.status} ${loc || '(no location)'}; want 301 ${to}`);
   };
@@ -71,13 +84,14 @@ if (withRedirects) {
   // service page. Assert the page, so removing the 301 stays covered rather
   // than merely untested.
   const seo = await get('/seo-pakalpojumi/');
-  ok(seo.status === 200, `/seo-pakalpojumi/ -> ${seo.status} (want 200, it is a page now)`);
+  if (!blocked(seo, '/seo-pakalpojumi/')) ok(seo.status === 200, `/seo-pakalpojumi/ -> ${seo.status} (want 200, it is a page now)`);
   await expect('/wp-content/uploads/2023/12/Untitled-design-5.mp4', '/video/lumi-2.mp4');
   const gone = await get('/wp-login.php', { method: 'HEAD' });
-  ok(gone.status === 410, `/wp-login.php -> ${gone.status} (want 410)`);
+  if (!blocked(gone, '/wp-login.php')) ok(gone.status === 410, `/wp-login.php -> ${gone.status} (want 410)`);
   if (isProd) {
     for (const [url, want] of [['http://marketingaskola.lv/', 'https://marketingaskola.lv/'], ['https://www.marketingaskola.lv/', 'https://marketingaskola.lv/']]) {
       const r = await fetch(url, { redirect: 'manual', method: 'HEAD' });
+      if (blocked(r, url)) continue;
       ok([301, 308].includes(r.status) && (r.headers.get('location') || '') === want, `${url} -> ${r.status} ${r.headers.get('location')}; want 301 ${want}`);
     }
   }
@@ -85,5 +99,12 @@ if (withRedirects) {
 
 console.log(`${BASE}: ${checked}/${locs.length} sitemap urls checked, redirects ${withRedirects ? 'checked' : 'skipped'}, ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 for (const f of fails) console.log('  FAIL', f);
-console.log(fails.length ? `${fails.length} failure(s)` : 'all good');
-process.exit(fails.length ? 1 : 0);
+for (const c of challenged) console.log('  SKIP', c, '- bot challenge (202), not verified');
+if (fails.length) { console.log(`${fails.length} failure(s)`); process.exit(1); }
+if (challenged.length) {
+  // Exit 3 is what deploy.yml already downgrades to a warning for a challenge.
+  console.log(`no failures; ${challenged.length} probe(s) challenged - verify those from a normal network: npm run check:live`);
+  process.exit(3);
+}
+console.log('all good');
+process.exit(0);
