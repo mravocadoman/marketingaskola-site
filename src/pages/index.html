@@ -10,25 +10,28 @@ image: "/img/2025/03/Title-1.png"
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Digitālā mārketinga aģentūra</p>
-        <h1>Reklāma, kas atmaksājas<span class="accent-text">.</span></h1>
+        <h1>Reklāma, kas <em>atmaksājas</em><span class="accent-text">.</span></h1>
         <p class="sub">Esam digitālā mārketinga aģentūra Latvijā: Meta un Google reklāmas, video saturs un praktiski kursi. Palīdzam uzņēmumiem paredzami piesaistīt jaunus klientus.</p>
         <div class="btn-wrap">
           <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
           <a class="btn btn--ghost" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
         </div>
+        {#- The proof numbers sit under the headline in the LEFT column (9 Oct
+            2026), so text plus stats stands level with the hero reel on the
+            right. As a full-width row below the grid they were pushed under the
+            fold by the reel's height. Phones hide the reel, so there nothing
+            moves: the stats still follow the buttons. #}
+        <div class="hero-stats">
+          <div class="stats stats--row">
+            <div class="stat"><span class="num">1M<span class="sfx">+ €</span></span><span class="label">pārvaldīti reklāmas budžeti</span></div>
+            <div class="stat"><span class="num">100<span class="sfx">+</span></span><span class="label">uzņēmumu, ar ko esam strādājuši</span></div>
+            <div class="stat"><span class="num">10<span class="sfx">+</span></span><span class="label">gadu pieredze reklāmā</span></div>
+          </div>
+        </div>
       </div>
-      <figure class="hero-media">{% include "motifs/sakums.njk" %}</figure>
+      {% include "hero-reel.njk" %}
     </div>
 
-    {#- The proof numbers used to fill the right column. The artwork has it now,
-        so they run as one ledger row under the headline, above the logos. #}
-    <div class="hero-stats">
-      <div class="stats stats--row">
-        <div class="stat"><span class="num">1M<span class="sfx">+ €</span></span><span class="label">pārvaldīti reklāmas budžeti</span></div>
-        <div class="stat"><span class="num">100<span class="sfx">+</span></span><span class="label">uzņēmumu, ar ko esam strādājuši</span></div>
-        <div class="stat"><span class="num">10<span class="sfx">+</span></span><span class="label">gadu pieredze reklāmā</span></div>
-      </div>
-    </div>
 
     <div class="logo-strip">
       <p class="caption">Mums uzticas</p>
@@ -70,7 +73,7 @@ image: "/img/2025/03/Title-1.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">01</span> Pakalpojumi</span>
-        <h2>Ko digitālā mārketinga aģentūra dara Tavā vietā</h2>
+        <h2>Ko digitālā mārketinga aģentūra dara <em>Tavā vietā</em></h2>
       </div>
       <p class="lead">Viena komanda, kas atbild par rezultātu — no stratēģijas līdz gatavam video saturam. <a class="arrow-link" href="/pakalpojumi/">Visi pakalpojumi</a></p>
     </div>
@@ -105,7 +108,7 @@ image: "/img/2025/03/Title-1.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">02</span> Kā mēs strādājam</span>
-        <h2>Skaidrs process no pirmās sarunas līdz rezultātiem</h2>
+        <h2>Skaidrs process no pirmās sarunas līdz <em>rezultātiem</em></h2>
       </div>
       <p class="lead">Bez garām prezentācijām un miglainiem solījumiem — katrā solī Tu zini, kas notiek un kāpēc.</p>
     </div>
@@ -130,7 +133,7 @@ image: "/img/2025/03/Title-1.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">03</span> Klientu atsauksmes</span>
-        <h2>Ko par mums saka klienti</h2>
+        <h2>Ko par mums saka <em>klienti</em></h2>
       </div>
       <p class="lead">Reāli uzņēmumi un izmērāmi rezultāti. <a class="arrow-link" href="/portfolio/">Veiksmes stāsti</a></p>
     </div>
@@ -153,7 +156,7 @@ image: "/img/2025/03/Title-1.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">04</span> Kursi un apmācības</span>
-        <h2>Vēlies apgūt digitālo mārketingu pats?</h2>
+        <h2>Vēlies apgūt digitālo mārketingu <em>pats</em>?</h2>
       </div>
       <p class="lead">Praktiski kursi uzņēmējiem un speciālistiem — māca praktiķi, kas ikdienā pārvalda reālas kampaņas. <a class="arrow-link" href="/digitala-marketinga-kursi/">Visi kursi</a></p>
     </div>
@@ -188,7 +191,7 @@ image: "/img/2025/03/Title-1.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">05</span> Blogs</span>
-        <h2>Reklāmas padomi uzņēmējiem</h2>
+        <h2>Reklāmas padomi <em>uzņēmējiem</em></h2>
       </div>
       <p class="lead">Praktiski raksti bez liekas teorijas. <a class="arrow-link" href="/blogs/">Visi raksti</a></p>
     </div>
@@ -211,7 +214,7 @@ image: "/img/2025/03/Title-1.png"
 <section class="cta-band">
   <div class="container cta-band-inner">
     <div>
-      <h2>Gatavs piesaistīt vairāk klientu?</h2>
+      <h2>Gatavs piesaistīt <em>vairāk klientu</em>?</h2>
       <p>Aizpildi pieteikuma formu vai uzraksti mums WhatsApp — atbildēsim un izrunāsim, kā varam palīdzēt tieši Tavam biznesam.</p>
     </div>
     <div class="btn-wrap">

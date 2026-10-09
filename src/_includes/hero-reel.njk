@@ -1,0 +1,28 @@
+{#- Homepage hero reel (9 Oct 2026). The agency's REAL work instead of an
+    illustration of it: a feed-ad card playing /video/hero-reel.mp4 - a silent
+    15 s cut of four real ads (Fitosauna, Lumi mājas, two each), 665 KB - and
+    two result cards with real figures from the case studies. Each card names
+    its own client, so no clip is ever paired with a number that is not its
+    own. main.js plays the video only on wide screens, without reduced motion
+    or Save-Data, and only while it is on screen; the brand name in the bar
+    follows the cuts. Rebuild the reel: see the ffmpeg line in CLAUDE.md. #}
+<figure class="hero-media hero-reel" data-hero-reel>
+  <a class="reel-phone" href="/video-reklama/" aria-label="Mūsu video reklāmas: skatīt visus darbus">
+    <span class="reel-bar" aria-hidden="true"><span class="reel-avatar"></span><span class="reel-brand" data-reel-brand>Fitosauna</span><span class="reel-sponsored">Sponsorēts</span></span>
+    <video class="reel-video" muted loop playsinline preload="none" poster="/video/hero-reel.webp" width="480" height="854" aria-hidden="true">
+      <source src="/video/hero-reel.mp4" type="video/mp4">
+    </video>
+    <span class="reel-cta" aria-hidden="true">Uzzināt vairāk</span>
+  </a>
+  <a class="reel-card reel-card--a" href="/portfolio/#brew-company">
+    <span class="reel-card-label">The Brew Company</span>
+    <span class="reel-card-num">13,36<span class="sfx">x</span></span>
+    <span class="reel-card-sub">vidējais ROAS</span>
+  </a>
+  <a class="reel-card reel-card--b" href="/portfolio/#cetras-zoles">
+    <span class="reel-card-label">Četras Zoles</span>
+    <span class="reel-card-num">36,34<span class="sfx">x</span></span>
+    <span class="reel-card-sub">ROAS pēc pirmajiem 1 000 €</span>
+  </a>
+  <figcaption class="reel-caption"><span data-reel-client>Fitosauna</span> · mūsu video reklāma</figcaption>
+</figure>

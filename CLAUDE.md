@@ -17,7 +17,8 @@ the original.
   for alternate sections (3 Oct 2026, see "Sections had to separate" below).
   Those are the only two page grounds; nothing else changes background. Cards `#00152c` + mandatory 1px `rgba(255,255,255,.08)`
   hairline; `#051e35` for inputs/hover fills/inset wells; depth = hairlines,
-  NEVER box-shadows or glows. Three text tiers ONLY: headings `#ffffff`,
+  NEVER box-shadows or glows (relaxed 9 Oct 2026 for HARD, unblurred offsets
+  on hovered and clickable things only - see "v7 alive" below). Three text tiers ONLY: headings `#ffffff`,
   body `#c9d8e8`, muted `#8ba3bd` (the floor — nothing dimmer ever carries
   text; no opacity-faded text or logos; no font weight <400).
   **Cyan budget** (≤5% of any viewport, never as heading color/background
@@ -32,7 +33,8 @@ the original.
   (cyan top bar + corner ticks — max 1-2 per page), unboxed `.steps`,
   hairline `.testimonial` columns, `.cta-band` (the ONE `#00152c` full-bleed
   band per page), boxed `.cta` panel for inner pages. Buttons: cyan fill +
-  `#020d1c` text, radius 4px, flat hover `#45d4fa` (no translate, no glow);
+  `#020d1c` text, radius 4px, hover `#45d4fa` (since 9 Oct 2026 it also lifts
+  onto a hard white offset - see "v7 alive"; still no glow);
   `.btn--ghost` white 0.32 border. `.form-embed` stays a WHITE document card
   (Tally renders dark text — deliberate exception). `.sec--dark`/`.sec--soft`
   are deprecated no-ops (transparent). Type scale is large on purpose: hero
@@ -328,6 +330,155 @@ writes nothing at all on a good day, which is what the owner asked for.
 **Not built, and worth knowing it is missing:** nothing notices if the cron
 itself stops running. A dead-man's switch on the n8n side (no report for 48 h
 → e-mail) would close that, and needs somewhere to keep the last-seen time.
+
+## v7 "alive": the site responds (9 Oct 2026)
+
+Owner: *"make the design interactive, cool and a bit funky while retaining
+professionalism and the color scheme... play with the cyan accent, make bold
+underlines, cool animations"*, then *"we don't have to go as far as
+impromotion, but make this one at least somewhat fun."* Impromotion
+(`~/Impromotion`, same owner) was the reference he named; its MECHANICS were
+borrowed - spring easing, hard offset shadows, bold underlines, a kinetic
+headline - and its look was not: no pills, stickers, tilted cards, pink or
+handwriting. Palette, square geometry and the ledger devices all stay; what
+changed is how things respond. The block is commented in `style.css` under
+`v7 "ALIVE"`.
+
+**Three older rules are relaxed, only this far:**
+- **box-shadow:** HARD offsets only (no blur, no spread, no glow), and only on
+  something hovered, pressed or a hero result card;
+- **translate on hover:** buttons and clickable cards lift;
+- **cyan budget:** cyan may be a SURFACE where it marks an action - a lifted
+  card's block, a link flooding, a ghost button filling. Body text, headings at
+  rest and backgrounds never turn cyan.
+
+**The devices:**
+- `--ease-spring` / `--ease-out` tokens. Hover and focus use them at fixed
+  short durations, never multiplied by `--motion` (slowed feedback reads as lag).
+- **A card lifts only if it is a link** (`.cell:has(> .arrow-link)`,
+  `.course-tile:has(.arrow-link)`, `.post-card`): `--lift` 6px onto a cyan
+  block. A lift promises a click. Cells that lead nowhere keep the older 2px
+  cyan edge wipe, and lifting cards have it switched off - beside the block it
+  read as a three-sided frame.
+- **The lift uses the `translate` property, not `transform`**, because
+  `.reveal` animates `transform` on the same element. `.reveal` also declares
+  its own `transition`, which replaces the card's list, so revealed cards
+  carry both in one higher-specificity rule. And the reveal stagger sets an
+  inline `transition-delay` that applied to EVERY transition - a late card
+  also lifted late - so main.js clears it once the entrance has finished.
+- **Buttons:** primary lifts onto a hard white offset (cyan on paper, where
+  white vanishes); ghost floods cyan from the left and does not lift.
+- **Keyword underlines:** `<em>` inside an `h1`/`h2`/`h3` (or `.hl`) is a bold
+  cyan bar through the descenders, drawn in when its section reveals. ONE word
+  or phrase per heading, the one the reader should leave with. 17 page heroes
+  and every homepage section heading carry one; other pages' section headings
+  do not yet. A front-matter `heroTitle` takes `heroMark:` instead (the `mark`
+  filter), because heroTitle is also read as plain text by the schema graph
+  and the WhatsApp message.
+- **Kinetic headline:** main.js wraps each hero `h1` word in a clipping box so
+  it rises out of the line; on the homepage, with a real pointer, each letter
+  hops on hover. The `h1` keeps its full text as `aria-label` and the spans are
+  `aria-hidden`.
+- **Links in running text** (`main p > a`, `main li > a`, minus TOC, chips and
+  meta) carry a 2px cyan underline that floods to a highlighter on hover, with
+  NAVY ink - `--canvas` is white inside `.paper`, and white on cyan is 2.2:1.
+- Eyebrow index is a solid cyan chip, nav underline 3px and sprung, the rocket
+  logo lifts off on hover (full opacity - fading the logo was the one hover that
+  made something LESS visible), an open FAQ gets a cyan inset bar.
+- The `linear-gradient(var(--cyan), var(--cyan))` in these rules is ONE colour,
+  a flat fill - the only way to animate a bar's width on an inline element
+  without markup. The no-gradients rule is about colour ramps.
+- Reduced motion keeps every state and drops every movement.
+
+**Tried and rejected the same day:** a tilted cyan ticker strip carrying the
+service list. Owner: *"this doesnt fit the theme at all."* It was Impromotion's
+vocabulary, the only thing that tilted or moved on its own. Nothing here does.
+
+### Section headers are top-aligned (9 Oct 2026)
+
+Owner: *"in this alignment, the body text reads before the headline, because
+it is higher."* `.sec-head` bottom-aligned its two columns, so a long intro
+started above the heading. The eyebrow now runs full width on its own row and
+the heading and intro sit under it TOP-aligned, intro dropped 0.35em so its
+first line sits on the heading's. All 155 headers share one shape - a `<div>`
+holding eyebrow + `h2`, then an optional `p.lead` - so that div is
+`display: contents` and no markup changed. **Keep that shape** for new
+sections, or the grid areas will not find the pieces.
+
+### Less text: labels, terms, one-sentence leads (9 Oct 2026)
+
+Owner, on a seven-item list of two- and three-line sentences: *"this is just
+big blob of text... less text, put only what's important, reorder etc. Also
+for other similar sections the same."* Twelve sections across nine pages were
+measured as text-heavy and rewritten to one pattern:
+
+- **Leads: one sentence.** The heading already says half of what most leads
+  repeated.
+- **`.tick-list--labels`:** `<li><strong>Label</strong>One clause.</li>` - the
+  bold label on its own line is what a skimming reader takes away.
+- **`.terms`:** commercial terms set apart with the open-FAQ cyan bar, so the
+  strongest promise is not the second sentence of a lead. On
+  `/facebook-reklama/` it carries the no-fee clause in its live wording - still
+  load-bearing, see the offers section - plus the three-month period and the
+  separate ad budget, worded as the FAQ already words them.
+- Text that restated an adjacent figure or heading was cut, never a fact or a
+  hedge ("parasti" stays). **LIAA pages only gained labels**; every sentence
+  there is verbatim, because CONTENT-RULES.md governs that wording.
+- New Latvian went through `lv:review` as an isolated file of just the new
+  sentences (a whole-page run reports on text nobody touched): 17 of 24 taken.
+  Rejected: the load-bearing terms wording, and the site's own idioms
+  ("paredzami piesaistīt", "atved pieteikumus", "pieprasījumi").
+- Found alongside: two course pages had an EMPTY left column, left behind when
+  the decorative bands were removed on 4 Sep. Both now split their own content
+  across the two columns.
+
+### Smaller fixes the same day
+
+- **`.audio-embed`** for Spotify: an episode card is a fixed 232px, so inside
+  the 16:9 `.video-embed` the rest of the box was a black slab. Its 12px radius
+  is Spotify's own card radius, not ours.
+- **Empty grid slots:** an incomplete last row in `.hgrid--3` exposed the
+  grid's line-coloured background as a grey block. A canvas `::after` filler
+  takes the slot, counted per layout (three columns above 980px, two to 641px);
+  a last `.cell--wide` already spans its row.
+- `.cell .chip-row` gained a top margin - profile links sat flush on the bio.
+
+## The homepage hero is real work (9 Oct 2026)
+
+Owner: *"in the header of the main site, the picture HAS to be something more
+interesting... a cool video, or render image with chatgpt or gif, but it has
+to be cool."* The answer is not a better illustration: it is the agency's own
+ads. `src/_includes/hero-reel.njk` is a square-cornered feed-ad card playing
+`src/video/hero-reel.mp4` - a silent 15.2 s cut of four real ads, Fitosauna and
+Lumi mājas alternating, 665 KB, poster `hero-reel.webp` 23 KB - with a
+"Sponsorēts" bar whose brand name follows the cuts, and two result cards with
+real case figures (The Brew Company ROAS 13,36, Četras Zoles 36,34).
+
+- **Each result card names its own client.** Neither video client has published
+  results, so no clip may sit beside a number as if it produced it. If a
+  Fitosauna or Lumi result is ever published, it can go on a card - labelled.
+- **Playback:** only at 981px and up (phones hide the artwork so the logo strip
+  reaches the first screen), never under reduced motion or Save-Data, and only
+  while on screen. The cards count up after they pop in and drift a few pixels
+  against the cursor (`--px`/`--py`).
+- **The stats moved into the left column**, under the buttons: as a full-width
+  row they were pushed below the fold by the card's height. At 1280x820 the
+  whole hero now fits; phones are unchanged.
+- **The Fitosauna clips END on a white logo card** - a bright slab in a dark
+  hero - so only openings were cut. To rebuild or recut (then update `cuts` in
+  main.js, the brand-sync table):
+
+```
+cd src/video && ffmpeg -ss 0.0 -t 3.8 -i fitosauna-2.mp4 -ss 0.0 -t 3.8 -i lumi-1.mp4 \
+  -ss 0.2 -t 3.8 -i fitosauna-1.mp4 -ss 2.6 -t 3.8 -i lumi-4.mp4 -filter_complex \
+  "[0:v]scale=480:854,setsar=1,fps=25,setpts=PTS-STARTPTS[a];[1:v]scale=480:854,setsar=1,fps=25,setpts=PTS-STARTPTS[b];[2:v]scale=480:854,setsar=1,fps=25,setpts=PTS-STARTPTS[c];[3:v]scale=480:854,setsar=1,fps=25,setpts=PTS-STARTPTS[d];[a][b][c][d]concat=n=4:v=1:a=0[v]" \
+  -map "[v]" -an -c:v libx264 -preset slow -crf 27 -pix_fmt yuv420p -movflags +faststart hero-reel.mp4
+```
+
+  This ffmpeg has **no WebP encoder**: write the poster as PNG and convert it
+  with sharp.
+- **Service-page headers were deliberately left alone** (owner: *"leave
+  pakalpojumi as is for now"*). Blog posts keep their assembling motifs.
 
 ## WhatsApp entry point (2 Sep 2026)
 
@@ -2243,10 +2394,11 @@ own href. 15/15 pass across `/`, `/pakalpojumi/` and `/digitala-marketinga-kursi
 Owner: *"add cooler images and subtle animations to the course pages."* Done
 by extending what already exists, not by adding a library:
 
-- `main.js`'s reveal target list gained `.course-card, .instructor-card, .faq,
-  .tick-list li` — the stagger is per parent, so tick items cascade inside
-  their own list. `.tick-list li.reveal` uses a 6px rise instead of 12px,
-  because at list density the larger shift reads as jitter.
+- `main.js`'s reveal target list gained `.course-card, .instructor-card, .faq`.
+  It also gained `.tick-list li`, so each bullet cascaded in on its own -
+  **removed 9 Oct 2026**, owner: *"I dont like that bulleted texts are
+  appearing one by one, doesnt look professional."* A list arrives with its
+  section. Do not put list items back on the reveal list.
 - `.page-hero` children rise in on load through a **CSS-only** `hero-rise`
   keyframe with `backwards` fill. No observer, so a page can never be left
   with an invisible headline if the script fails. It applies to every inner
@@ -2910,6 +3062,11 @@ the map.
 
 ## Homepage header and the tempo knob (14 Sep 2026)
 
+**The hero artwork described here is SUPERSEDED (9 Oct 2026): the homepage
+hero is the reel - see "The homepage hero is real work" below.** The tempo
+knob and the layout traps in this section all still hold; `motifs/sakums.njk`
+is kept but no longer included anywhere.
+
 Owner: *"design main page header as a svg animation that appears in intervals
 like the rest of the pages; agency appropriate? and make all of the animations
 animate slightly slower"*, then *"retire the dots"*.
@@ -3027,6 +3184,12 @@ The six raster `hero-*.webp` files and their manifest slots are deleted. Git
 has them if a motif ever needs to go back to raster.
 
 ## /video-reklama/ actors: cyan rings, not grey squares (9 Sep 2026)
+
+**Five actors since 9 Oct 2026: Monta Kārkliņa was removed (owner).** Five
+cards in a three-column hairline grid leave one empty slot, which used to show
+the grid's own line-coloured background as a grey block; the generic filler in
+"v7 alive" covers it. Her photo file stays in `src/img/2023/11/`, unreferenced,
+so it no longer ships.
 
 Owner: *"they were already cuts with cyan rings; now it's just greyed
 squares."* The complaint was about the **Aktieri section**, not the hero.

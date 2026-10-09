@@ -43,9 +43,11 @@
   var MOTION = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--motion')) || 1;
 
   /* ---------- scroll reveal ---------- */
+  // List items are NOT reveal targets (9 Oct 2026). Each bullet faded in on its
+  // own; owner: "doesn't look professional". A list arrives with its section.
   if (!reduce && 'IntersectionObserver' in window) {
     var targets = document.querySelectorAll(
-      '.cell, .post-card, .testimonial, .step, .stat, .cta, .counter, .course-tile, .media, .blurb, .team-card, .sec-head, .course-card, .instructor-card, .faq, .tick-list li'
+      '.cell, .post-card, .testimonial, .step, .stat, .cta, .counter, .course-tile, .media, .blurb, .team-card, .sec-head, .course-card, .instructor-card, .faq'
     );
     targets.forEach(function (el) { el.classList.add('reveal'); });
     var io = new IntersectionObserver(function (entries) {
@@ -56,12 +58,66 @@
           el.parentElement ? el.parentElement.children : [],
           function (s) { return s.classList && s.classList.contains('reveal'); }
         );
-        el.style.transitionDelay = Math.min(Math.max(0, sibs.indexOf(el)) * 70 * MOTION, 350 * MOTION) + 'ms';
+        var delay = Math.min(Math.max(0, sibs.indexOf(el)) * 70 * MOTION, 350 * MOTION);
+        el.style.transitionDelay = delay + 'ms';
         el.classList.add('in');
         io.unobserve(el);
+        // The stagger delay applies to EVERY transition on the element, so it
+        // would also hold back the hover lift on a card. Drop it once the
+        // entrance has finished.
+        setTimeout(function () { el.style.transitionDelay = ''; }, delay + 700 * MOTION);
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
     targets.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- kinetic hero headline (9 Oct 2026) ----------
+     Wraps each word of a hero h1 in its own clipping box so it can rise out
+     of the line; on the homepage each letter too, so it can hop on hover.
+     The heading keeps its full text as aria-label and the spans are hidden
+     from assistive tech, so a screen reader hears one heading, not letters.
+     <em> keywords and the cyan full stop are kept as they are. */
+  if (!reduce) {
+    document.querySelectorAll('.sec--hero h1, .page-hero h1').forEach(function (h1) {
+      var letters = !!h1.closest('.sec--hero') && window.matchMedia('(hover: hover)').matches;
+      var n = 0;
+      h1.setAttribute('aria-label', h1.textContent.replace(/\s+/g, ' ').trim());
+      (function walk(node) {
+        Array.prototype.slice.call(node.childNodes).forEach(function (child) {
+          if (child.nodeType === 1) {
+            if (child.classList.contains('accent-text')) child.setAttribute('aria-hidden', 'true');
+            else walk(child);
+            return;
+          }
+          if (child.nodeType !== 3 || !child.textContent.trim()) return;
+          var frag = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            var w = document.createElement('span');
+            w.className = 'w';
+            w.setAttribute('aria-hidden', 'true');
+            var wi = document.createElement('span');
+            wi.className = 'wi';
+            wi.style.setProperty('--i', n++);
+            if (letters) {
+              Array.from(part).forEach(function (c) {
+                var ch = document.createElement('span');
+                ch.className = 'ch';
+                ch.textContent = c;
+                wi.appendChild(ch);
+              });
+            } else {
+              wi.textContent = part;
+            }
+            w.appendChild(wi);
+            frag.appendChild(w);
+          });
+          node.replaceChild(frag, child);
+        });
+      })(h1);
+      h1.classList.add('split');
+    });
   }
 
   /* ---------- ledger stat counters ----------
@@ -100,6 +156,72 @@
       });
     }, { threshold: 0.5 });
     stats.forEach(function (el) { countIO.observe(el); });
+  }
+
+  /* ---------- homepage hero reel (9 Oct 2026) ----------
+     Plays the reel only where it is shown (wide screens - phones hide the
+     artwork), never under reduced motion or Save-Data, and only while it is
+     on screen. The brand in the ad bar follows the cuts; the result cards
+     count up once they have popped in and drift against the cursor. */
+  var reel = document.querySelector('[data-hero-reel]');
+  if (reel) {
+    var vid = reel.querySelector('video');
+    var brandEl = reel.querySelector('[data-reel-brand]');
+    var clientEl = reel.querySelector('[data-reel-client]');
+    // Where each clip starts in hero-reel.mp4. Keep in step with the ffmpeg cut.
+    var cuts = [[0, 'Fitosauna'], [3.8, 'Lumi mājas'], [7.6, 'Fitosauna'], [11.4, 'Lumi mājas']];
+    var saveData = navigator.connection && navigator.connection.saveData;
+    if (vid && !reduce && !saveData && window.matchMedia('(min-width: 981px)').matches) {
+      vid.preload = 'auto';
+      var tryPlay = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) tryPlay(); else vid.pause(); });
+        }, { threshold: 0.2 }).observe(vid);
+      } else { tryPlay(); }
+      vid.addEventListener('timeupdate', function () {
+        var t = vid.currentTime, name = cuts[0][1];
+        for (var i = 0; i < cuts.length; i++) if (t >= cuts[i][0]) name = cuts[i][1];
+        if (brandEl && brandEl.textContent !== name) {
+          brandEl.textContent = name;
+          if (clientEl) clientEl.textContent = name;
+        }
+      });
+    }
+    if (!reduce && window.matchMedia('(hover: hover)').matches) {
+      var stage = reel.closest('.sec--hero') || reel;
+      stage.addEventListener('mousemove', function (e) {
+        var r = reel.getBoundingClientRect();
+        var px = (e.clientX - (r.left + r.width / 2)) / (window.innerWidth / 2);
+        var py = (e.clientY - (r.top + r.height / 2)) / (window.innerHeight / 2);
+        reel.style.setProperty('--px', Math.max(-1, Math.min(1, px)).toFixed(3));
+        reel.style.setProperty('--py', Math.max(-1, Math.min(1, py)).toFixed(3));
+      });
+      stage.addEventListener('mouseleave', function () {
+        reel.style.setProperty('--px', 0);
+        reel.style.setProperty('--py', 0);
+      });
+    }
+    if (!reduce) {
+      reel.querySelectorAll('.reel-card-num').forEach(function (el, k) {
+        var sfx = el.querySelector('.sfx');
+        var sfxHtml = sfx ? sfx.outerHTML : '';
+        var raw = (sfx ? el.textContent.replace(sfx.textContent, '') : el.textContent).trim();
+        var dec = (raw.split(',')[1] || '').length;
+        var target = parseFloat(raw.replace(',', '.'));
+        if (!isFinite(target)) return;
+        var show = function (v) { el.innerHTML = v.toFixed(dec).replace('.', ',') + sfxHtml; };
+        show(0);
+        setTimeout(function () {
+          var start = performance.now(), dur = 1100 * MOTION;
+          (function tick(now) {
+            var t = Math.min(1, (now - start) / dur);
+            show(target * (1 - Math.pow(1 - t, 3)));
+            if (t < 1) requestAnimationFrame(tick);
+          })(start);
+        }, (900 + k * 200) * MOTION);
+      });
+    }
   }
 
   /* ---------- article reading progress ---------- */

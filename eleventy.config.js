@@ -42,6 +42,25 @@ module.exports = function (eleventyConfig) {
 
   // "Kas ir SEO? | Mārketinga Skola" -> "Kas ir SEO?" (WhatsApp prefill, crumbs)
   eleventyConfig.addFilter("bareTitle", (t) => String(t || "").replace(/\s*[-|–—]\s*Mārketinga Skola\s*$/i, "").trim());
+  /* Underlines one keyword in a page hero: `heroMark: "atmaksājas"` beside
+     `heroTitle:` in front matter wraps the first occurrence in <em>, which the
+     stylesheet draws as a bold cyan bar. A separate field rather than markup
+     inside heroTitle, because heroTitle is also read as plain text - by the
+     schema graph and by the WhatsApp message. The title is escaped here, so
+     the template can mark the result safe. A mark that is not in the title
+     warns rather than failing the build. */
+  eleventyConfig.addFilter("mark", function (title, word) {
+    const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const t = esc(title || "");
+    if (!word) return t;
+    const w = esc(word);
+    const at = t.indexOf(w);
+    if (at === -1) {
+      console.warn(`[mark] "${word}" is not in the title "${title}" (${this.page && this.page.inputPath})`);
+      return t;
+    }
+    return t.slice(0, at) + "<em>" + w + "</em>" + t.slice(at + w.length);
+  });
 
   // In-article infographic: generated text-free artwork (tools/generate-images.mjs,
   // style "paper") plus an HTML legend carrying the Latvian labels. Renders

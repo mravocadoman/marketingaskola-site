@@ -29,7 +29,7 @@ faq:
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · LIAA eksporta atbalsts</span>
-      <h1>{{ p.rate }}% no eksporta mārketinga izmaksām var atgūt<span class="accent-text">.</span></h1>
+      <h1>{{ p.rate }}% no <em>eksporta mārketinga</em> izmaksām var atgūt<span class="accent-text">.</span></h1>
       <p class="sub">MVU eksporta atbalsta darbību plāns atmaksā {{ p.rate }}% no attiecināmajām izmaksām, līdz {{ p.yearCap | eur }} eiro gadā. Šī lapa paskaidro, kam tas pienākas un kā notiek cenu aptauja, un piedāvā divus pakalpojumus ar fiksētu cenu un pozīciju sarakstu, ko var ielikt aptaujas protokolā.</p>
       <div class="btn-wrap">
         <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
@@ -57,12 +57,12 @@ faq:
     </div>
     <div class="row cols-2 top">
       <div class="col">
-        <ul class="tick-list">
-          <li>Pieteikties var līdz {{ p.applyUntil }}, kamēr programmai pietiek līdzekļu. Kopējais budžets ir {{ p.budget | eur }} eiro.</li>
-          <li>Atbalsta apmērs gadā nepārsniedz {{ p.turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma, tāpēc mazākam uzņēmumam griesti ir zemāki nekā {{ p.yearCap | eur }} eiro.</li>
-          <li>Nauda atgriežas pēc fakta: vispirms uzņēmums apmaksā rēķinu, tad iesniedz izdevumus. Izdevumus par kārtējo gadu iesniedz līdz {{ p.claimBy }}.</li>
-          <li>Cenu aptauja jāveic pirms plāna iesniegšanas, jo piedāvājumus un protokolu pievieno plānam. Tā ir paša saņēmēja atbildība.</li>
-          <li>LIAA norāda, ka {{ p.lastYear }}. gads ir pēdējais gads, kad eksporta darbību plānu var iesniegt un īstenot, ja programmai netiek piešķirts papildu finansējums. Plānu LIAA izvērtē {{ p.decisionDays }} darba dienu laikā, un plānā nevar iekļaut darbības, kas jau ir pabeigtas.</li>
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Pieteikšanās</strong>Pieteikties var līdz {{ p.applyUntil }}, kamēr programmai pietiek līdzekļu. Kopējais budžets ir {{ p.budget | eur }} eiro.</li>
+          <li><strong>Griesti pēc apgrozījuma</strong>Atbalsta apmērs gadā nepārsniedz {{ p.turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma, tāpēc mazākam uzņēmumam griesti ir zemāki nekā {{ p.yearCap | eur }} eiro.</li>
+          <li><strong>Atmaksa pēc fakta</strong>Nauda atgriežas pēc fakta: vispirms uzņēmums apmaksā rēķinu, tad iesniedz izdevumus. Izdevumus par kārtējo gadu iesniedz līdz {{ p.claimBy }}.</li>
+          <li><strong>Cenu aptauja</strong>Cenu aptauja jāveic pirms plāna iesniegšanas, jo piedāvājumus un protokolu pievieno plānam. Tā ir paša saņēmēja atbildība.</li>
+          <li><strong>Termiņi un izvērtēšana</strong>LIAA norāda, ka {{ p.lastYear }}. gads ir pēdējais gads, kad eksporta darbību plānu var iesniegt un īstenot, ja programmai netiek piešķirts papildu finansējums. Plānu LIAA izvērtē {{ p.decisionDays }} darba dienu laikā, un plānā nevar iekļaut darbības, kas jau ir pabeigtas.</li>
         </ul>
         <p><a class="arrow-link" href="{{ p.url }}" target="_blank" rel="noopener">Programmas nosacījumi LIAA lapā</a></p>
       </div>

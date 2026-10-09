@@ -19,7 +19,7 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Konsultācijas</span>
-      <h1>Saruna, pēc kuras zini, ko darīt tālāk</h1>
+      <h1>Saruna, pēc kuras <em>zini, ko darīt</em> tālāk</h1>
       <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: {{ o60.duration }} vai {{ o30.duration }} Tavai situācijai, ilgākam darbam — {{ bundle.sessions }} sesiju komplekts. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
       <div class="chips">
         <span>€{{ o60.price }} + PVN / h</span>
@@ -105,8 +105,7 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     <div class="course-layout">
       <div class="course-body">
         <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-smm-orbit.njk" %}</figure>
-        <p class="lead">Informācija mainās katru dienu. Platformas, algoritmi un trendi nāk un iet. Taču laba mārketinga domāšana, skaidra stratēģija un pareizi lēmumi paliek.</p>
-        <p>Katra konsultācija tiek pielāgota Tev un Tavam biznesam. Materiālus, ko atsūti pirms zvana, izskatām iepriekš — lai sarunas laiks neaiziet konteksta stāstīšanai.</p>
+        <p>Materiālus, ko atsūti pirms zvana, izskatām iepriekš, lai sarunas laiks netiktu tērēts situācijas skaidrošanai.</p>
 
         <h2>Ko izrunājam</h2>
         <ul class="tick-list">
@@ -119,30 +118,17 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
           <li>mārketinga prioritātes tuvākajiem 3–6 mēnešiem</li>
           <li>komandas un ārpakalpojumu efektivitāti</li>
         </ul>
-        <p>Visus astoņus punktus vienā sarunā neizrunāsim. Sākumā vienojamies, kuri no tiem Tavā situācijā ir svarīgākie.</p>
+        <p>Visus astoņus vienā sarunā neizrunāsim. Sākumā izvēlamies tos, kas Tavā situācijā ir svarīgākie.</p>
 
         <h2>Ar ko Tu aizej</h2>
-        <ul class="tick-list">
-          <li>skaidru skatu no malas</li>
-          <li>prioritātes, kam pievērsties tagad, nevis “kaut kad vēlāk”</li>
-          <li>konkrētas idejas pārdošanas un izaugsmes uzlabošanai</li>
-          <li>sapratni, kas Tavā mārketingā strādā un kas nestrādā</li>
-          <li>virzienu tuvākajiem 3–6 mēnešiem</li>
-          <li>drošību par nākamajiem soļiem</li>
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Prioritāšu saraksts</strong>Pats to pieraksti sarunas laikā: kam pievērsties tagad, nevis “kaut kad vēlāk”.</li>
+          <li><strong>Skats no malas</strong>Kas Tavā mārketingā strādā un kas nestrādā.</li>
+          <li><strong>Virziens 3–6 mēnešiem</strong>Ar konkrētām idejām pārdošanas uzlabošanai.</li>
         </ul>
-        <p>Tu aiziesi ar prioritāšu sarakstu, ko pats pierakstīsi sarunas laikā, nevis ar minējumiem.</p>
 
         <h2>Kam konsultācija ir domāta</h2>
-        <p>Uzņēmējiem un vadītājiem, kuri vēlas augt gudrāk, nevis vienkārši darīt vairāk. Tā ir piemērota Tev, ja esi:</p>
-        <ul class="tick-list">
-          <li>uzņēmuma īpašnieks vai vadītājs</li>
-          <li>e-komercijas vai pakalpojumu biznesa pārstāvis</li>
-          <li>mārketinga vadītājs vai plaša spektra mārketinga speciālists</li>
-          <li>jaunuzņēmuma dibinātājs</li>
-          <li>eksperts, koučs vai konsultants</li>
-          <li>uzņēmējs, kurš apsver reklāmas, SEO vai sociālos medijus, bet nav pārliecināts par pareizo virzienu</li>
-        </ul>
-        <p>Ja Tev ir jautājumi, bet nav skaidru atbilžu — konsultācija ir īstais sākuma punkts.</p>
+        <p>Uzņēmumu īpašniekiem un vadītājiem, mārketinga speciālistiem, jaunuzņēmumu dibinātājiem, ekspertiem un konsultantiem. Īpaši tad, ja apsver reklāmu, SEO vai sociālos medijus, bet neesi pārliecināts par virzienu.</p>
       </div>
 
       <aside class="course-aside">
@@ -189,7 +175,7 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     </div>
     <div class="steps">
       <div class="step"><span class="step-num">01</span><h3>Rezervācija</h3><p>Izvēlies formātu un apmaksā ar karti.{% if booking.consultation.calendarUrl %} Turpat kalendārā izvēlies sev ērtu laiku un apstiprinājumu saņem uzreiz — bez sarakstes par to, kad kuram der.{% else %} Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %}</p></div>
-      <div class="step"><span class="step-num">02</span><h3>Sagatavošanās</h3><p>Pirms zvana atsūti mājaslapu, reklāmas vai īsu aprakstu par situāciju. Mēs to izskatām iepriekš, lai sarunas laiks neaiziet konteksta stāstīšanai.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Sagatavošanās</h3><p>Pirms zvana atsūti mājaslapu, reklāmas vai īsu aprakstu par situāciju. Mēs to izskatām iepriekš, lai sarunas laiks netiktu tērēts situācijas skaidrošanai.</p></div>
       <div class="step"><span class="step-num">03</span><h3>Konsultācija</h3><p>{{ o30.duration }} vai {{ o60.duration }} atkarībā no izvēlētā formāta — saruna, kurā “ķeramies vērsim pie ragiem”. Runājam par Tavu biznesu, nevis par nozari kopumā, un uzreiz saņem konkrētus ieteikumus un prioritātes.</p></div>
       <div class="step"><span class="step-num">04</span><h3>Nākamie soļi</h3><p>Visu vari ieviest pats vai ar savu komandu. Ja vēlies, varam vienoties par turpmāku sadarbību — bet tas nav konsultācijas nosacījums.</p><p>Ja secinām, ka darbu labāk deleģēt, <a href="/pakalpojumi/">pakalpojumus atradīsi šeit</a>.</p></div>
     </div>

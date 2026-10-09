@@ -107,6 +107,42 @@
       "declared": "0.85rem",
       "token": "--t-sm",
       "change": "unchanged"
+    },
+    {
+      "selector": ".reel-bar",
+      "declared": "var(--t-micro)",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".reel-cta",
+      "declared": "var(--t-sm)",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".reel-card-label",
+      "declared": "var(--t-micro)",
+      "token": "--t-micro",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".reel-card-num",
+      "declared": "var(--t-d2)",
+      "token": "--t-d2",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".reel-card-sub",
+      "declared": "var(--t-sm)",
+      "token": "--t-sm",
+      "change": "unchanged"
+    },
+    {
+      "selector": ".reel-caption",
+      "declared": "var(--t-micro)",
+      "token": "--t-micro",
+      "change": "unchanged"
     }
   ]
 }
