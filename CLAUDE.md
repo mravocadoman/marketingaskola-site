@@ -383,9 +383,12 @@ changed is how things respond. The block is commented in `style.css` under
   filter), because heroTitle is also read as plain text by the schema graph
   and the WhatsApp message.
 - **Kinetic headline:** main.js wraps each hero `h1` word in a clipping box so
-  it rises out of the line; on the homepage, with a real pointer, each letter
-  hops on hover. The `h1` keeps its full text as `aria-label` and the spans are
-  `aria-hidden`.
+  it rises out of the line. The `h1` keeps its full text as `aria-label` and the
+  spans are `aria-hidden`. **No per-letter hover hop** - it shipped for a day
+  and was removed, owner: *"don't make the letters in header change like for
+  impromotion during hover... this is not that funky of a website."* That is
+  the calibration for this whole layer: motion that RESPONDS, nothing that
+  performs.
 - **Links in running text** (`main p > a`, `main li > a`, minus TOC, chips and
   meta) carry a 2px cyan underline that floods to a highlighter on hover, with
   NAVY ink - `--canvas` is white inside `.paper`, and white on cyan is 2.2:1.
@@ -464,9 +467,8 @@ real case figures (The Brew Company ROAS 13,36, Četras Zoles 36,34).
 - **Each result card names its own client.** Neither video client has published
   results, so no clip may sit beside a number as if it produced it. If a
   Fitosauna or Lumi result is ever published, it can go on a card - labelled.
-- **Playback:** only at 981px and up (phones hide the artwork so the logo strip
-  reaches the first screen), never under reduced motion or Save-Data, and only
-  while on screen. The cards count up after they pop in and drift a few pixels
+- **Playback:** only at 981px and up (phones get their own horizontal reel,
+  below), never under reduced motion or Save-Data, and only while on screen. The cards count up after they pop in and drift a few pixels
   against the cursor (`--px`/`--py`).
 - **The stats moved into the left column**, under the buttons: as a full-width
   row they were pushed below the fold by the card's height. At 1280x820 the
@@ -486,6 +488,49 @@ cd src/video && ffmpeg -ss 0.0 -t 3.8 -i fitosauna-2.mp4 -ss 0.0 -t 3.8 -i lumi-
   with sharp.
 - **Service-page headers were deliberately left alone** (owner: *"leave
   pakalpojumi as is for now"*). Blog posts keep their assembling motifs.
+
+### Phones have their own reel, horizontal, under the headline (9 Oct 2026)
+
+Owner: *"create a similar video in the header for mobile but horizontal, from
+horizontal examples in video section"*, then *"put the video directly below
+headline"* and *"cut out few horizontal clips from the vertical videos too for
+diversity."* `src/_includes/hero-reel-wide.njk`, shown only under 981px, sits
+between the `h1` and the intro: headline, playing ad, then the words and the
+buttons. `src/video/hero-reel-wide.mp4` is 18 s, six 3 s clips, 972 KB at
+854x480: Dares4Us, Fitosauna, AmpsUp, Lumi mājas, Dares4Us, AmpsUp. The brand
+in its ad bar follows the `cuts` table in main.js's `startReel` call.
+
+- **The horizontal sources are private Vimeo embeds** (Dares4Us 1182622594,
+  AmpsUp 1182622532) and answer `401` to any direct request, with or without a
+  referer. What works: open `/video-reklama/` in a browser, navigate the tab to
+  the iframe's own `src` from that page, read `window.playerConfig.request.
+  files.hls` there, and fetch the 720p variant of the HLS master with ffmpeg
+  (`-map 0:v:0 -an -c copy`). The browser tool cannot see a cross-origin
+  frame's network traffic, which is why the config route is needed. The 720p
+  sources are NOT in the repo. **Dares4Us ends on an 8 s logo and "Download
+  now!" card** - cut before 29 s.
+- **Fitosauna and Lumi are 16:9 slices of the 9:16 clips** - `crop=480:270:0:Y`
+  then lanczos up to 854x480, Fitosauna-1 at Y=220 from 0.3 s, Lumi-1 at Y=230
+  from 13.2 s. Choose Y by sheeting frames across the WHOLE clip, not one
+  frame: a face must stay in the band for all three seconds (Lumi-1's opening
+  failed - he bends out of it), and the burned-in captions sit in the lower
+  third, where a band that half-cuts them looks broken. 480px sources make
+  these a little softer; fine at phone size.
+- **The card has no bottom bar on phones.** The whole card is the link, and a
+  button-like strip directly above the real call to action read as a second
+  button and pushed that button past the first screen. Measured: the primary
+  button ends at 773px on 375x812. On a 360x740 phone it ends 24px below the
+  first screen - the accepted cost of putting the video first.
+- **The client logo strip no longer reaches a phone's first screen.** The
+  14 Sep note made that a goal; the owner chose the video for that space.
+- **The local preview server ignores HTTP range requests** (`tools/serve.cjs`
+  answers 200 to a range), so a browser cannot seek in a video there - every
+  seek lands on 0. Production answers 206. Playback and looping do not need
+  seeking; do not debug a reel by seeking on localhost.
+- A preview tab that is not on screen (`document.hidden`) neither paints
+  playing video nor runs IntersectionObserver, so the reel looks black and
+  stuck at 0 s there. It is not broken; check it in a visible tab or by
+  drawing a frame to a canvas.
 
 ## WhatsApp entry point (2 Sep 2026)
 

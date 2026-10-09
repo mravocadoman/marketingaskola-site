@@ -1,0 +1,21 @@
+{#- The phone and tablet hero (9 Oct 2026). Owner: "create a similar video in
+    the header for mobile but horizontal, from horizontal examples in video
+    section." The desktop reel is vertical and hidden under 981px, so phones had
+    no artwork at all. /video/hero-reel-wide.mp4 is a silent 18 s cut, six
+    3 s clips from four clients - Dares4Us, Fitosauna, AmpsUp, Lumi mājas,
+    Dares4Us, AmpsUp - 972 KB at 854x480. Dares4Us and AmpsUp are the two
+    horizontal ads on /video-reklama/: private Vimeo embeds that refuse a
+    direct download, so their sources were taken at 720p through the player on
+    our own page and are not in the repo. Fitosauna and Lumi are 16:9 SLICES of
+    the vertical clips (480x270 bands, chosen so a face stays in frame for the
+    whole cut and no burned-in caption is half-cut), owner: "cut out few
+    horizontal clips from the vertical videos too for diversity". Shown only
+    under 981px, directly under the headline (owner: "put the video directly
+    below headline"). #}
+<a class="hero-reel-m" href="/video-reklama/" data-hero-reel-m aria-label="Mūsu video reklāmas: skatīt visus darbus">
+  <span class="reel-bar" aria-hidden="true"><span class="reel-avatar"></span><span class="reel-brand" data-reel-brand>Dares4Us</span><span class="reel-sponsored">Sponsorēts</span></span>
+  <video class="reel-m-video" muted loop playsinline preload="none" poster="/video/hero-reel-wide.webp" width="854" height="480" aria-hidden="true">
+    <source src="/video/hero-reel-wide.mp4" type="video/mp4">
+  </video>
+  <span class="reel-cta" aria-hidden="true">Skatīt mūsu video darbus</span>
+</a>

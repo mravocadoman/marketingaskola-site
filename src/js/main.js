@@ -73,13 +73,14 @@
 
   /* ---------- kinetic hero headline (9 Oct 2026) ----------
      Wraps each word of a hero h1 in its own clipping box so it can rise out
-     of the line; on the homepage each letter too, so it can hop on hover.
+     of the line. No per-letter hover hop (9 Oct 2026, owner: "don't make the
+     letters in header change like for impromotion during hover... this is not
+     that funky of a website").
      The heading keeps its full text as aria-label and the spans are hidden
      from assistive tech, so a screen reader hears one heading, not letters.
      <em> keywords and the cyan full stop are kept as they are. */
   if (!reduce) {
     document.querySelectorAll('.sec--hero h1, .page-hero h1').forEach(function (h1) {
-      var letters = !!h1.closest('.sec--hero') && window.matchMedia('(hover: hover)').matches;
       var n = 0;
       h1.setAttribute('aria-label', h1.textContent.replace(/\s+/g, ' ').trim());
       (function walk(node) {
@@ -100,16 +101,7 @@
             var wi = document.createElement('span');
             wi.className = 'wi';
             wi.style.setProperty('--i', n++);
-            if (letters) {
-              Array.from(part).forEach(function (c) {
-                var ch = document.createElement('span');
-                ch.className = 'ch';
-                ch.textContent = c;
-                wi.appendChild(ch);
-              });
-            } else {
-              wi.textContent = part;
-            }
+            wi.textContent = part;
             w.appendChild(wi);
             frag.appendChild(w);
           });
@@ -163,31 +155,37 @@
      artwork), never under reduced motion or Save-Data, and only while it is
      on screen. The brand in the ad bar follows the cuts; the result cards
      count up once they have popped in and drift against the cursor. */
+  var saveData = navigator.connection && navigator.connection.saveData;
+  // Plays a hero reel only where it is shown, never under reduced motion or
+  // Save-Data, and only while it is on screen. `cuts` is where each clip starts
+  // in the file - keep it in step with the ffmpeg cut - and the brand name in
+  // the ad bar follows it.
+  var startReel = function (vid, cuts, labels, mq) {
+    if (!vid || reduce || saveData || !window.matchMedia(mq).matches) return;
+    vid.preload = 'auto';
+    var tryPlay = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) tryPlay(); else vid.pause(); });
+      }, { threshold: 0.2 }).observe(vid);
+    } else { tryPlay(); }
+    vid.addEventListener('timeupdate', function () {
+      var t = vid.currentTime, name = cuts[0][1];
+      for (var i = 0; i < cuts.length; i++) if (t >= cuts[i][0]) name = cuts[i][1];
+      labels.forEach(function (el) { if (el && el.textContent !== name) el.textContent = name; });
+    });
+  };
+  var reelM = document.querySelector('[data-hero-reel-m]');
+  if (reelM) {
+    startReel(reelM.querySelector('video'),
+      [[0, 'Dares4Us'], [3, 'Fitosauna'], [6, 'AmpsUp'], [9, 'Lumi mājas'], [12, 'Dares4Us'], [15, 'AmpsUp']],
+      [reelM.querySelector('[data-reel-brand]')], '(max-width: 980px)');
+  }
   var reel = document.querySelector('[data-hero-reel]');
   if (reel) {
-    var vid = reel.querySelector('video');
-    var brandEl = reel.querySelector('[data-reel-brand]');
-    var clientEl = reel.querySelector('[data-reel-client]');
-    // Where each clip starts in hero-reel.mp4. Keep in step with the ffmpeg cut.
-    var cuts = [[0, 'Fitosauna'], [3.8, 'Lumi mājas'], [7.6, 'Fitosauna'], [11.4, 'Lumi mājas']];
-    var saveData = navigator.connection && navigator.connection.saveData;
-    if (vid && !reduce && !saveData && window.matchMedia('(min-width: 981px)').matches) {
-      vid.preload = 'auto';
-      var tryPlay = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(function (es) {
-          es.forEach(function (e) { if (e.isIntersecting) tryPlay(); else vid.pause(); });
-        }, { threshold: 0.2 }).observe(vid);
-      } else { tryPlay(); }
-      vid.addEventListener('timeupdate', function () {
-        var t = vid.currentTime, name = cuts[0][1];
-        for (var i = 0; i < cuts.length; i++) if (t >= cuts[i][0]) name = cuts[i][1];
-        if (brandEl && brandEl.textContent !== name) {
-          brandEl.textContent = name;
-          if (clientEl) clientEl.textContent = name;
-        }
-      });
-    }
+    startReel(reel.querySelector('video'),
+      [[0, 'Fitosauna'], [3.8, 'Lumi mājas'], [7.6, 'Fitosauna'], [11.4, 'Lumi mājas']],
+      [reel.querySelector('[data-reel-brand]'), reel.querySelector('[data-reel-client]')], '(min-width: 981px)');
     if (!reduce && window.matchMedia('(hover: hover)').matches) {
       var stage = reel.closest('.sec--hero') || reel;
       stage.addEventListener('mousemove', function (e) {
