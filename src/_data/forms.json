@@ -7,7 +7,7 @@
     "contact": {
       "submit": "Nosūtīt pieteikumu",
       "note": "Atbildēsim 1 darba dienas laikā. Ja apsver sadarbību, piedāvāsim bezmaksas 20 min iepazīšanās zvanu.",
-      "successTitle": "Paldies — pieteikums saņemts.",
+      "successTitle": "Paldies, pieteikums saņemts.",
       "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
       "fields": [
         {
@@ -85,7 +85,7 @@
     "course": {
       "submit": "Pieteikties kursam",
       "note": "Pieteikšanās ir bez maksas un neuzliek par pienākumu iegādāties kursu. Sazināsimies ar detaļām un datumiem.",
-      "successTitle": "Paldies — pieteikums saņemts.",
+      "successTitle": "Paldies, pieteikums saņemts.",
       "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā un nosūtīsim informāciju par nākamajām grupām un datumiem. Vietu var rezervēt arī uzreiz: <a href=\"/digitala-marketinga-kursi/#kursi\">izvēlies kursu un rezervē vietu tā lapā</a>.",
       "fields": [
         {

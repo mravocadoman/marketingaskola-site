@@ -48,7 +48,7 @@ Digitālā reklāma ietver plašu kanālu klāstu, sākot no Google Ads līdz Fa
 
 Aplūkosim katru no šiem digitālās reklāmas veidiem sīkāk, lai saprastu to priekšrocības un piemērotību dažādiem biznesa mērķiem.
 
-#### 1. SEO – meklētājprogrammu optimizācija
+#### 1. SEO: meklētājprogrammu optimizācija
 
 SEO (Search Engine Optimization) ir viens no efektīvākajiem ilgtermiņa reklāmas veidiem. Tas palīdz uzņēmumiem iegūt organisko apmeklējumu no Google un citām meklētājprogrammām.
 
@@ -58,7 +58,7 @@ SEO (Search Engine Optimization) ir viens no efektīvākajiem ilgtermiņa reklā
 - Uzlabo zīmola uzticamību, jo meklētājprogrammas labi optimizētas lapas biežāk uztver kā kvalitatīvas.
 - Nodrošina ilgtermiņa rezultātus. Labi optimizēts saturs var saglabāt augstu pozīciju meklētājā arī pēc vairākiem mēnešiem.
 
-#### 2. Google Ads – maksas reklāma meklētājos
+#### 2. Google Ads: maksas reklāma meklētājos
 
 Google Ads ir efektīva platforma, kas ļauj uzņēmumiem ātri sasniegt savu mērķauditoriju, rādot reklāmas Google meklēšanas rezultātos.
 
@@ -68,7 +68,7 @@ Google Ads ir efektīva platforma, kas ļauj uzņēmumiem ātri sasniegt savu m�
 - Precīza mērķauditorijas atlase. Reklāmas var pielāgot pēc vecuma, atrašanās vietas, interesēm un uzvedības.
 - Skaidra atdeve no ieguldījumiem (ROI). Var precīzi izsekot reklāmas izdevumiem un peļņai.
 
-#### 3. Facebook Ads reklāma – sociālo mediju mārketings
+#### 3. Facebook Ads reklāma: sociālo mediju mārketings
 
 Facebook Ads piedāvā uzņēmumiem efektīvu veidu, kā sasniegt mērķauditoriju sociālajos tīklos.
 
@@ -78,7 +78,7 @@ Facebook Ads piedāvā uzņēmumiem efektīvu veidu, kā sasniegt mērķauditori
 - Detalizēta auditorijas segmentēšana. Klientus var atlasīt pēc interesēm, vecuma, dzimuma un citiem kritērijiem.
 - Interaktivitāte. Video reklāmas, attēlu slīdrādes un citi formāti piesaista lietotāju uzmanību.
 
-#### 4. Satura mārketings – ilgtermiņa stratēģija
+#### 4. Satura mārketings: ilgtermiņa stratēģija
 
 Satura mārketings ir metode, kas ietver rakstu, blogu, video un citu vērtīgu materiālu veidošanu, lai piesaistītu un iesaistītu klientus.
 

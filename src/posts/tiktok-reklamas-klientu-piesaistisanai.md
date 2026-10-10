@@ -133,7 +133,7 @@ Vēl viens veids, kā veicināt klientu iesaisti, ir interaktīvie elementi. Izm
 
 Visbeidzot, sociālais pierādījums (social proof) ir būtisks uzticēšanās veidošanai. Pievienojot atsauksmes, klientu video vai citu cilvēku stāstus, Tu vari parādīt, ka tava produkta vai pakalpojuma vērtība jau ir atzīta. Uzticēšanās pieaug, kad cilvēki redz, ka "citi jau pērk". Tas var būt izšķirošs iemesls, kas mudina viņus veikt pirkumu.
 
-## No algoritma līdz pārdošanai – process nav lineārs
+## No algoritma līdz pārdošanai: process nav lineārs
 
 Daudzi joprojām domā, ka TikTok reklāmas ceļš ir vienkāršs: izveido video, palaid to un gaidi pārdošanas rezultātus. Patiesībā ceļš līdz panākumiem ir daudz dinamiskāks un mainīgāks.
 

@@ -10,7 +10,7 @@ permalink: "/cik-maksa-google-reklama/"
 keywords: ["cik maksā Google reklāma", "Google reklāmas cena", "Google Ads budžets", "klikšķa cena", "CPC", "Google reklāmas izmaksas"]
 ---
 
-Uz jautājumu "cik maksā Google reklāma" godīgā atbilde ir: tik, cik Tu pats nosaki. Google neprasa ne abonēšanas maksu, ne minimālo budžetu, un konts nemaksā neko, kamēr reklāmas nedarbojas. Maksā par rezultātu — parasti par klikšķi.
+Uz jautājumu "cik maksā Google reklāma" godīgā atbilde ir: tik, cik Tu pats nosaki. Google neprasa ne abonēšanas maksu, ne minimālo budžetu, un konts nemaksā neko, kamēr reklāmas nedarbojas. Maksā par rezultātu: parasti par klikšķi.
 
 Tāpēc pareizais jautājums nav "cik tas maksā", bet "cik man vajag ieguldīt, lai dabūtu vienu klientu". Uz to var atbildēt ar aritmētiku, un tieši to šis raksts arī dara.
 
@@ -24,11 +24,11 @@ Tas nozīmē, ka divi uzņēmumi ar vienādu piedāvāto likmi var maksāt ļoti
 
 ## Kas nosaka klikšķa cenu
 
-**Nozare un konkurence.** Tā ir lielākā atšķirība starp kontiem. Ja par vienu vārdu cīnās desmit uzņēmumi ar nopietniem budžetiem, klikšķis maksās vairākas reizes vairāk nekā nišā, kur konkurentu ir divi. Juridiskie pakalpojumi, apdrošināšana un finanses tradicionāli ir dārgākajā galā; vietējie amatnieku un servisa pakalpojumi — lētākajā.
+**Nozare un konkurence.** Tā ir lielākā atšķirība starp kontiem. Ja par vienu vārdu cīnās desmit uzņēmumi ar nopietniem budžetiem, klikšķis maksās vairākas reizes vairāk nekā nišā, kur konkurentu ir divi. Juridiskie pakalpojumi, apdrošināšana un finanses tradicionāli ir dārgākajā galā; vietējie amatnieku un servisa pakalpojumi, lētākajā.
 
 **Meklējuma nodoms.** "Kas ir siltumsūknis" un "siltumsūkņa uzstādīšana Rīgā" ir divi pilnīgi atšķirīgi cilvēki. Otrais ir dārgāks par klikšķi un daudzkārt lētāks par klientu. Tieši tāpēc plaši, vispārīgi vārdi bieži ir dārgākais veids, kā tērēt budžetu.
 
-**Reklāmas un lapas kvalitāte.** Skatīts iepriekš — tā strādā kā atlaide.
+**Reklāmas un lapas kvalitāte.** Skatīts iepriekš: tā strādā kā atlaide.
 
 **Ģeogrāfija un laiks.** Latvijā klikšķi parasti ir ievērojami lētāki nekā lielajos rietumu tirgos, bet arī meklējumu apjoms ir mazāks. Sezonālās nozarēs cena aug tieši tajā mēnesī, kad visi grib reklamēties.
 
@@ -48,7 +48,7 @@ Piemērs ar apzīmētiem skaitļiem. Pieņemsim, ka mēnesī gribi 10 jaunus kli
 - klikšķi: 10 ÷ 0,03 = **334 klikšķi**
 - budžets: 334 × 0,40 € = **aptuveni 134 € mēnesī**
 
-Skaitļi šeit ir tikai piemērs — Tavus divus svarīgākos, konversiju un klikšķa cenu, neviens rīks iepriekš nepateiks precīzi. Tos uzzina pirmajā mēnesī. Bet formulas virziens ir pareizs, un tas uzreiz parāda divas lietas.
+Skaitļi šeit ir tikai piemērs: Tavus divus svarīgākos, konversiju un klikšķa cenu, neviens rīks iepriekš nepateiks precīzi. Tos uzzina pirmajā mēnesī. Bet formulas virziens ir pareizs, un tas uzreiz parāda divas lietas.
 
 Pirmkārt, ja lapas konversija no 3 % nokrīt uz 1 %, budžets aug trīskārt bez jebkādām izmaiņām reklāmā. Otrkārt, visbiežāk lētākais veids, kā samazināt klienta cenu, nav labāka reklāma, bet labāka lapa, uz kuru tā ved; par to atsevišķi rakstā [mājaslapa, kas pārdod](/majaslapa-kas-pardod/).
 
@@ -56,13 +56,13 @@ Pirmkārt, ja lapas konversija no 3 % nokrīt uz 1 %, budžets aug trīskārt be
 
 Tehniski var sākt ar dažiem eiro dienā. Praktiski ar pārāk mazu budžetu problēma ir cita: dati krājas tik lēni, ka mēneša beigās joprojām nav zināms, kas strādā.
 
-Noderīgs orientieris ir nevis summa, bet notikumu skaits. Ja mēnesī nesanāk vismaz pārdesmit pieteikumu vai pirkumu, lēmumus pieņem pēc trokšņa. Rēķini budžetu tā, lai sanāktu pietiekami daudz konversiju, pēc kurām spriest — un ja tas nesanāk, sāc ar šaurāku pieprasījumu loku, nevis ar plašāku.
+Noderīgs orientieris ir nevis summa, bet notikumu skaits. Ja mēnesī nesanāk vismaz pārdesmit pieteikumu vai pirkumu, lēmumus pieņem pēc trokšņa. Rēķini budžetu tā, lai sanāktu pietiekami daudz konversiju, pēc kurām spriest, un ja tas nesanāk, sāc ar šaurāku pieprasījumu loku, nevis ar plašāku.
 
 Un neaizmirsti, ka reklāmas budžets un pārvaldības maksa ir divas atsevišķas pozīcijas. Budžetu Google noraksta no Tava konta; ja kontu vada aģentūra vai speciālists, tā ir atsevišķa izmaksa virsū.
 
 ## Kur budžets aizplūst visbiežāk
 
-**Bez konversiju mērīšanas.** Tas ir pirmais un dārgākais. Bez tās ne Tu, ne Google algoritms neredz, kuri klikšķi kļuva par klientiem — un algoritms, kuram nav ko mācīties, optimizē uz klikšķiem. Kā to uzstādīt, rakstā par [konversiju uzskaiti](/konversiju-uzskaite/).
+**Bez konversiju mērīšanas.** Tas ir pirmais un dārgākais. Bez tās ne Tu, ne Google algoritms neredz, kuri klikšķi kļuva par klientiem, un algoritms, kuram nav ko mācīties, optimizē uz klikšķiem. Kā to uzstādīt, rakstā par [konversiju uzskaiti](/konversiju-uzskaite/).
 
 **Bez noliegtajiem vārdiem.** Plašā atbilstība atradīs meklējumus, par kuriem Tu nekad nebūtu maksājis brīvprātīgi. Noliegto vārdu saraksts ir pirmā lieta, kas jāpārbauda katru nedēļu.
 
@@ -76,15 +76,15 @@ Un neaizmirsti, ka reklāmas budžets un pārvaldības maksa ir divas atsevišķ
 
 Divas lietas mainījušās tik daudz, ka vecie padomi vairs nestrādā.
 
-**Automatizācija pārņēmusi likmes.** Manuālā likmju uzstādīšana praktiski ir vēsture, un Performance Max vairs nav izvēle "papildus meklēšanai", bet noklusējums. Tas nozīmē, ka Tavs galvenais sviras punkts vairs nav likme, bet **signāls** — cik precīzi Tu pasaki sistēmai, kas ir vērtīgs rezultāts. Konts ar sakārtotu konversiju mērīšanu un konts bez tās šodien maksā atšķirīgu cenu par to pašu klientu.
+**Automatizācija pārņēmusi likmes.** Manuālā likmju uzstādīšana praktiski ir vēsture, un Performance Max vairs nav izvēle "papildus meklēšanai", bet noklusējums. Tas nozīmē, ka Tavs galvenais sviras punkts vairs nav likme, bet **signāls**: cik precīzi Tu pasaki sistēmai, kas ir vērtīgs rezultāts. Konts ar sakārtotu konversiju mērīšanu un konts bez tās šodien maksā atšķirīgu cenu par to pašu klientu.
 
-**Meklētājs sniedz atbildes pats.** Daļa vispārīgo jautājumu tiek atbildēta jau meklēšanas rezultātos, un līdz mājaslapai cilvēks nemaz nenonāk. Vispārīgie, informatīvie vārdi kļūst vēl sliktāks ieguldījums, bet konkrētie, ar pirkšanas nodomu — vērtīgāki. Praktiski tas nozīmē: mazāk plašuma, vairāk precizitātes.
+**Meklētājs sniedz atbildes pats.** Daļa vispārīgo jautājumu tiek atbildēta jau meklēšanas rezultātos, un līdz mājaslapai cilvēks nemaz nenonāk. Vispārīgie, informatīvie vārdi kļūst vēl sliktāks ieguldījums, bet konkrētie, ar pirkšanas nodomu, vērtīgāki. Praktiski tas nozīmē: mazāk plašuma, vairāk precizitātes.
 
 ## Vai Google reklāma ir dārgāka par Facebook
 
-Par klikšķi — parasti jā. Par klientu — bieži nē, un tas ir vienīgais salīdzinājums, kuram ir nozīme.
+Par klikšķi: parasti jā. Par klientu: bieži nē, un tas ir vienīgais salīdzinājums, kuram ir nozīme.
 
-Atšķirība ir nodomā. Google uzrunā cilvēku, kurš jau meklē risinājumu; Meta uzrunā cilvēku, kurš par to vēl nedomā. Tāpēc Google mēdz būt izdevīgāks pakalpojumiem, kurus meklē tad, kad vajag, bet Meta — produktiem, kurus var iepatikties ieraugot. Facebook puses skaitļi ir apkopoti rakstā [cik maksā reklāma Facebook tīklā](/cik-maksa-reklama-facebook/).
+Atšķirība ir nodomā. Google uzrunā cilvēku, kurš jau meklē risinājumu; Meta uzrunā cilvēku, kurš par to vēl nedomā. Tāpēc Google mēdz būt izdevīgāks pakalpojumiem, kurus meklē tad, kad vajag, bet Meta produktiem, kas iepatīkas no pirmā skatiena. Skaitļi par Facebook ir apkopoti rakstā [cik maksā reklāma Facebook tīklā](/cik-maksa-reklama-facebook/).
 
 Ja abi kanāli der, tos nav jāizvēlas. Meklēšana savāc esošo pieprasījumu, sociālie tīkli to rada, un [remarketings](/remarketings/) noķer tos, kas jau bija ieradušies.
 
@@ -96,8 +96,8 @@ Ja abi kanāli der, tos nav jāizvēlas. Meklēšana savāc esošo pieprasījumu
 4. Dod kampaņai divas nedēļas neaiztiktai un tikai tad vērtē.
 5. Skaties uz klienta cenu, nevis uz klikšķa cenu.
 
-Praktisku pirmās kampaņas uzstādīšanu soli pa solim esam aprakstījuši rakstā [Google Ads pirmā kampaņa](/google-ads-pirma-kampana/), bet plašāku skatu, kad šis kanāls vispār atmaksājas, — rakstā [vai Google reklāma ir efektīva](/google-reklama/).
+Praktisku pirmās kampaņas uzstādīšanu soli pa solim esam aprakstījuši rakstā [Google Ads pirmā kampaņa](/google-ads-pirma-kampana/), bet plašāku skatu, kad šis kanāls vispār atmaksājas, rakstā [vai Google reklāma ir efektīva](/google-reklama/).
 
-Ja gribi to apgūt pats, tieši šī loģika — konta uzbūve, atslēgvārdi, budžets un konversiju mērīšana — ir [Google Ads kursa](/google-ads-kurss/) saturs: {% offer "google-ads-kurss", "hours" %} tiešsaistē, {% offer "google-ads-kurss" %}, notiek {% offer "google-ads-kurss", "cadence" %}.
+Ja gribi to apgūt pats, tieši šī loģika (konta uzbūve, atslēgvārdi, budžets un konversiju mērīšana) ir [Google Ads kursa](/google-ads-kurss/) saturs: {% offer "google-ads-kurss", "hours" %} tiešsaistē, {% offer "google-ads-kurss" %}, notiek {% offer "google-ads-kurss", "cadence" %}.
 
 Ja gribi, lai budžetu plāno un kontu vada kāds cits, apskati [mūsu pakalpojumus](/pakalpojumi/). Un ja vajadzīgs tikai otrais viedoklis par jau esošu kontu, to var izrunāt [konsultācijā](/marketinga-konsultacijas/) ({% offer "60", "duration" %}, {% offer "60" %}).

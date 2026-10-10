@@ -26,13 +26,13 @@
   </div>
   {% endfor %}
 </div>
-<p class="fine">Cenai tiek pievienots PVN {{ booking.vatRate }}%. {% if booking.consultation.calendarUrl %}Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku — apstiprinājumu saņem e-pastā.{% else %}Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %}</p>
+<p class="fine">Cenai tiek pievienots PVN {{ booking.vatRate }}%. {% if booking.consultation.calendarUrl %}Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku, apstiprinājumu saņem e-pastā.{% else %}Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %}</p>
 <div class="fine-more">
   <details class="faq"><summary>Komplekts, pārcelšana un rēķins</summary><div>
-    <p>Komplekta sesijas rezervē pa vienai — pēc apmaksas saglabā kalendāra saiti un izmanto to katrai nākamajai reizei.</p>
+    <p>Komplekta sesijas rezervē pa vienai: pēc apmaksas saglabā kalendāra saiti un izmanto to katrai nākamajai reizei.</p>
     {% if booking.consultation.calendarUrl %}<p>Ja laiks vairs neder, pārcel to kalendārā vai raksti mums.</p>{% endif %}
     {% set invoiceBody = "Konsultācija: \nUzņēmums: \nReģ. nr.: \nE-pasts rēķinam: \nVēlamais laiks: " %}
-    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ "Rēķins: mārketinga konsultācija" | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a> — norādi formātu, uzņēmumu un reģistrācijas numuru. Pēc rēķina apmaksas nosūtām kalendāra saiti.</p>
+    <p>Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: <a href="mailto:{{ site.email }}?subject={{ "Rēķins: mārketinga konsultācija" | urlencode }}&amp;body={{ invoiceBody | urlencode }}">pieprasīt rēķinu</a>: norādi formātu, uzņēmumu un reģistrācijas numuru. Pēc rēķina apmaksas nosūtām kalendāra saiti.</p>
   </div></details>
 </div>
 {% else %}

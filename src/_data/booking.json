@@ -9,10 +9,10 @@
         "label": "Pilnā konsultācija",
         "duration": "60 minūtes",
         "price": 90,
-        "best": "Visai mārketinga situācijai — kanāli, piedāvājums, prioritātes",
+        "best": "Visai mārketinga situācijai: kanāli, piedāvājums, prioritātes",
         "url": "https://buy.stripe.com/6oU14ndC7ah38PL2984gg05",
         "calendarUrl": "https://cal.com/rihards-zeila-pglbwc/marketinga-konsultacija-60-minutes",
-        "best2": "Esošam reklāmas kontam — izejam cauri kampaņām un vienojamies, ko labot vispirms"
+        "best2": "Esošam reklāmas kontam: izejam cauri kampaņām un vienojamies, ko labot vispirms"
       },
       {
         "id": "30",
@@ -25,7 +25,7 @@
       },
       {
         "id": "bundle5",
-        "label": "Komplekts — 5 sesijas",
+        "label": "Komplekts: 5 sesijas",
         "duration": "5 × 60 minūtes",
         "price": 370,
         "best": "Ilgākam darbam: sesijas izmanto sev ērtā tempā",

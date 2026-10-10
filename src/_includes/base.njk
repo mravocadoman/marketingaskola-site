@@ -112,6 +112,7 @@
           <li><a href="/facebook-reklama/">Facebook reklāma</a></li>
           <li><a href="/seo-pakalpojumi/">SEO pakalpojumi</a></li>
           <li><a href="/video-reklama/">Video reklāma</a></li>
+          <li><a href="/majaslapu-izstrade/">Mājaslapu izstrāde</a></li>
           <li><a href="/ai-un-automatizacijas/">AI un automatizācijas</a></li>
           <li><a href="/marketinga-konsultacijas/">Mārketinga konsultācijas</a></li>
           <li><a href="/liaa-eksporta-atbalsts/">LIAA eksporta atbalsts</a></li>
@@ -173,7 +174,7 @@
 
    Suppressed entirely where the visitor is already converting - including the
    three LIAA pages, which carry the real form a few centimetres below. #}
-{% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/ai-un-automatizacijas/", "/portfolio/"] %}
+{% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/majaslapu-izstrade/", "/ai-un-automatizacijas/", "/portfolio/"] %}
 {% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/", "/cenu-aptauja-liaa/"] %}
 {% set lmVariant = "liaa" if page.url in lmLiaa else "audit" %}
 {% if not noindex and page.url not in lmOff and forms.endpoint %}

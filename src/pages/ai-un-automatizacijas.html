@@ -15,7 +15,7 @@ image: "/img/2024/07/Untitled-design-4.png"
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · AI un automatizācijas</span>
       <h1>Mazāk <em>roku darba</em> katrā mārketinga solī<span class="accent-text">.</span></h1>
-      <p class="sub">Pieteikumi, kas paši nonāk sistēmā. E-pasti, kas aiziet bez atgādinājuma. Atskaites, kas sagatavojas pašas. Sākam ar auditu, kurā saskaitām, cik stundu mēnesī aizņem atkārtotie darbi — un tikai pēc tam runājam par rīkiem.</p>
+      <p class="sub">Pieteikumi, kas paši nonāk sistēmā. E-pasti, kas aiziet bez atgādinājuma. Atskaites, kas sagatavojas pašas. Sākam ar auditu, kurā saskaitām, cik stundu mēnesī aizņem atkārtotie darbi, un tikai pēc tam runājam par rīkiem.</p>
       <div class="btn-wrap">
         <a class="btn" href="#piesakies">Pieteikties auditam</a>
         <a class="btn btn--ghost" href="#ko-automatizejam">Ko var automatizēt</a>
@@ -89,12 +89,67 @@ image: "/img/2024/07/Untitled-design-4.png"
       <div class="cell">
         <span class="cell-idx">05</span>
         <h3>Satura sagatavošana ar AI</h3>
-        <p>Melnraksti, teksta varianti reklāmu testiem, pārveidojumi no viena formāta citā. AI sagatavo, cilvēks izlemj un labo — publicēts netiek nekas neredzēts.</p>
+        <p>Melnraksti, teksta varianti reklāmu testiem, pārveidojumi no viena formāta citā. AI sagatavo, cilvēks izlemj un labo. Publicēts netiek nekas neredzēts.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">06</span>
         <h3>Komandas apmācība</h3>
         <p>Lai pēc ieviešanas sistēma nepaliek atkarīga no mums. Parādām, kā tā darbojas, un atstājam aprakstu, ko var izlasīt arī jauns darbinieks.</p>
+      </div>
+    </div>
+    <p class="proof-line">Piemērs no mūsu darba: <a href="/portfolio/#starfleet-portraits">Starfleet Portraits</a> pirmajos divos mēnešos saņēma 417 pasūtījumus, un to izpildi nodrošināja 34 automatizētas darbplūsmas un viens cilvēks, kas pārbaudīja rezultātu.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">03</span> Piemērs</span>
+        <h2>Tā darbojas mūsu pašu <em>pieteikumu plūsma</em></h2>
+      </div>
+      <p class="lead">Kad kāds mājaslapā pasūta lapas pārbaudi, viss tālāk notiek automātiski.</p>
+    </div>
+    {#- Our own live automation, not a mock-up of an imagined one: the n8n
+        workflows "mājaslapas pieteikumi" and "automātiskā lapas pārbaude".
+        The e-mail is the real report for example.com from the end-to-end test
+        of 25 Sep 2026 (six "!", three "+"), shortened to the check titles; the
+        real mail adds one explanatory sentence per check. If the workflow's
+        wording changes, change this too. #}
+    <div class="row cols-2 top">
+      <div class="col">
+        <ol class="flow">
+          <li><strong>Pieteikums</strong>Apmeklētājs norāda savu e-pasta adresi un lapu, ko pārbaudīt.</li>
+          <li><strong>Saglabāšana</strong>Pieteikums vispirms nonāk tabulā, tāpēc tas nevar pazust.</li>
+          <li><strong>Pārbaude</strong>Robots atver lapu un pārbauda deviņus punktus.</li>
+          <li><strong>Paziņojums mums</strong>Rihards saņem e-pastu ar rezultātu un zina, kam zvanīt.</li>
+          <li><strong>Atskaite apmeklētājam</strong>Apmeklētājs saņem rezultātu e-pastā.</li>
+        </ol>
+        <p class="proof-line">Ja kādā solī rodas kļūme, par to uzzinām uzreiz, nevis pēc nedēļas.</p>
+      </div>
+      <div class="col">
+        <figure class="mail">
+          <div class="mail-head">
+            <p><span>No</span>Mārketinga Skola</p>
+            <p><span>Tēma</span><strong>example.com: 6 punkti prasa uzmanību</strong></p>
+          </div>
+          <div class="mail-body">
+            <p>Paldies! Šeit ir example.com pārbaude.</p>
+            <p>6 prasa uzmanību, 0 nevarēja pārbaudīt, 3 kārtībā.</p>
+            <ul class="mail-checks">
+              <li class="bad">Google Analytics</li>
+              <li class="bad">Meta pikselis</li>
+              <li class="bad">Google Ads konversijas</li>
+              <li class="ok">Virsraksts meklētājā</li>
+              <li class="bad">Apraksts meklētājā</li>
+              <li class="ok">Galvenais virsraksts</li>
+              <li class="ok">Mobilā versija</li>
+              <li class="bad">Strukturētie dati</li>
+              <li class="bad">Koplietošanas attēls</li>
+            </ul>
+          </div>
+          <figcaption>Īsts pārbaudes e-pasts testa lapai example.com, saīsināts. Pilnajā vēstulē katram punktam ir paskaidrojums.</figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -104,7 +159,7 @@ image: "/img/2024/07/Untitled-design-4.png"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">03</span> Process</span>
+        <span class="eyebrow"><span class="idx">04</span> Process</span>
         <h2>Kā notiek sadarbība</h2>
       </div>
       <p class="lead">Sākam ar mērīšanu, nevis ar rīka izvēli. Rīks ir pēdējais lēmums, ne pirmais.</p>
@@ -138,7 +193,7 @@ image: "/img/2024/07/Untitled-design-4.png"
   <div class="container">
     <div class="row cols-2 top">
       <div class="col">
-        <span class="eyebrow"><span class="idx">04</span> Godīgi</span>
+        <span class="eyebrow"><span class="idx">05</span> Godīgi</span>
         <h2>Ko mēs nesolām</h2>
         <p style="margin-top:20px">Automatizācija neaizvieto stratēģiju un nepadara sliktu piedāvājumu par labu. Ja reklāma nenes rezultātu tāpēc, ka piedāvājums nav skaidrs, ātrāka procesa ieviešana to tikai paātrinās, ne salabos.</p>
         <p><strong style="color:var(--heading)">AI neraksta saturu Tavā vietā.</strong> Tas sagatavo melnrakstu. Bez cilvēka, kurš zina Tavu biznesu un izlabo, sanāk teksts, kas izskatās pareizs un neskan pēc Tevis. Mēs neko nepublicējam neizlasītu.</p>
@@ -165,7 +220,7 @@ image: "/img/2024/07/Untitled-design-4.png"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">05</span> Jautājumi</span>
+        <span class="eyebrow"><span class="idx">06</span> Jautājumi</span>
         <h2>Ko parasti jautā pirms sadarbības</h2>
       </div>
     </div>
@@ -177,7 +232,7 @@ image: "/img/2024/07/Untitled-design-4.png"
       </details>
         <details class="faq">
         <summary>Cik tas maksā?</summary>
-        <div><p>Cena ir atkarīga no darba apjoma — cik procesu, cik sistēmu un vai tās jau eksistē. Tāpēc sākam ar auditu: pēc tā ir konkrēts saraksts un konkrēts piedāvājums, nevis minējums. Ja pēc audita izlem nesadarboties, saraksts paliek Tev.</p></div>
+        <div><p>Cena ir atkarīga no darba apjoma: cik procesu, cik sistēmu un vai tās jau eksistē. Tāpēc sākam ar auditu: pēc tā ir konkrēts saraksts un konkrēts piedāvājums, nevis minējums. Ja pēc audita izlem nesadarboties, saraksts paliek Tev.</p></div>
       </details>
         <details class="faq">
         <summary>Cik ilgi tas aizņem?</summary>
@@ -206,10 +261,10 @@ image: "/img/2024/07/Untitled-design-4.png"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">06</span> Pieteikšanās</span>
+        <span class="eyebrow"><span class="idx">07</span> Pieteikšanās</span>
         <h2>Pastāsti, kur aiziet laiks</h2>
       </div>
-      <p class="lead">Aprakstī procesu, kas Tevi kaitina visvairāk. Atbildēsim, vai to ir vērts automatizēt un ar ko sāktu.</p>
+      <p class="lead">Apraksti procesu, kas Tevi kaitina visvairāk. Atbildēsim, vai to ir vērts automatizēt un ar ko sāktu.</p>
     </div>
     {{ form("contact") }}
   </div>

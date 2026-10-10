@@ -567,6 +567,10 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .btn--ghost:hover::before { transform: scaleX(1); }
 .btn--sm { padding: 10px 20px; font-size: var(--t-sm); }
 .btn-wrap { margin: clamp(32px, 4vw, 44px) 0 0; display: flex; gap: 16px; flex-wrap: wrap; }
+/* one muted line under a button row: what the click costs (the free call) */
+.fine.btn-note { margin-top: 14px; }
+/* one sentence of proof under a grid: a published result, linked to its case */
+.proof-line { margin: clamp(24px, 3vw, 36px) 0 0; max-width: 68ch; color: var(--muted); }
 .center .btn-wrap, .btn-wrap.center { justify-content: center; }
 .btn svg { flex-shrink: 0; }
 
@@ -1898,7 +1902,31 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 
 /* screenshots are real captures with their own light UI — they get a hairline
    frame so they read as evidence, not as a stray white block */
-.img--shot img { border: 1px solid var(--line); border-radius: var(--radius); background: var(--well); padding: 0; }
+.img--shot img { border: 1px solid var(--line); border-radius: var(--radius); background: var(--well); padding: 0; width: auto; max-width: 100%; }
+/* .flow: a numbered sequence of short labelled steps joined by one hairline
+   (AI page example). .mail: a real automated e-mail drawn as page markup on a
+   dark card, never a white mail-client slab (the "no white slabs" rule). */
+.flow { list-style: none; counter-reset: flow; margin: 0; padding: 0; }
+.flow li { counter-increment: flow; position: relative; padding: 0 0 22px 52px; color: var(--body); }
+.flow li::before { content: counter(flow, decimal-leading-zero); position: absolute; left: 0; top: 0; width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid var(--line-strong); font-size: var(--t-micro); font-weight: 600; letter-spacing: .06em; color: var(--heading); background: var(--canvas); }
+.flow li:not(:last-child)::after { content: ""; position: absolute; left: 17px; top: 34px; bottom: 0; width: 1px; background: var(--line-strong); }
+.flow li strong { display: block; color: var(--heading); font-weight: 600; }
+.mail { margin: 0; border: 1px solid var(--line); background: var(--card); }
+.mail-head { padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.mail-head p { margin: 0; display: flex; gap: 14px; font-size: var(--t-sm); color: var(--body); }
+.mail-head p + p { margin-top: 6px; }
+.mail-head span { min-width: 3.5em; color: var(--muted); }
+.mail-head strong { color: var(--heading); font-weight: 600; }
+.mail-body { padding: 18px 20px 20px; font-size: var(--t-sm); color: var(--body); }
+.mail-body p { margin: 0 0 10px; }
+.mail-checks { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 6px; }
+.mail-checks li { display: flex; gap: 12px; }
+.mail-checks li::before { width: 1.2em; font-weight: 700; text-align: center; }
+.mail-checks .bad::before { content: "!"; color: var(--heading); }
+.mail-checks .ok::before { content: "+"; color: var(--muted); }
+.mail figcaption { padding: 12px 20px; border-top: 1px solid var(--line); font-size: var(--t-sm); color: var(--muted); }
+/* a real screenshot says what it shows in one muted line underneath, never as an overlay on the numbers */
+.img--shot figcaption { margin-top: 12px; font-size: var(--t-sm); color: var(--muted); max-width: 60ch; }
 
 /* Tables in articles. Two pricing/comparison tables had collapsed into loose
    paragraphs during the WordPress import; rebuilt as real tables by

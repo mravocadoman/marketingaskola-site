@@ -1151,6 +1151,14 @@
       "rationale": "The product turns a long contact list into a few booked meetings - a grid with two marked cards next to one booked calendar slot is that sentence as a picture."
     },
     {
+      "id": "hero-majaslapas",
+      "page": "majaslapu-izstrade",
+      "aspect": "landscape",
+      "alt": "Landing page pārlūka logā un tā pati lapa telefonā, abās zila poga.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: a wide browser window drawn as a plain cool-grey #8ba3bd rectangle with sharp square corners and a thin darker top strip holding three small square dots at its left end; inside the window, a landing page: a large off-white #f2f5f8 hero block holding two short dark slate #3b4f6b bars for a headline and one small solid cyan #03c3f8 button below them, and under the hero block a row of three equal dark slate cards, each with one short off-white bar. Overlapping the window's lower right corner and standing in front of it, an upright smartphone drawn as a plain cool-grey rectangle with sharp square corners, no notch, no speaker slot and no side buttons, its screen showing the same page stacked vertically: an off-white hero block with two short slate bars, one small cyan button, and two slate cards beneath. A modest dark margin surrounds the group; nothing is clipped by the frame. Every corner in the picture is a sharp square corner. Purely flat colour blocking, no outlines around solid objects, no gradients, no glow, no depth, no shadows, no blur, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers or arrows of any kind. Cyan covers no more than five percent of the frame, only the two buttons.",
+      "rationale": "The service is a page that turns ad clicks into enquiries, built for the phone first - the same landing page on desktop and on a phone, with the one action marked in cyan, says that without a word."
+    },
+    {
       "id": "hero-sakums",
       "page": "index",
       "aspect": "landscape",

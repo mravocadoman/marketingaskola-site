@@ -3883,6 +3883,67 @@ clusters and consultants, several of which publish member directories.
 **Also still open:** the site is Latvian only, so an English-language question
 never surfaces it. That is a business decision, not a defect.
 
+## Persuasion pass, real visuals, the website service (10 Oct 2026)
+
+Owner: *"run some sort of persuasion / copywriting skill... to make the person
+continue reading the texts instead of just stating facts and to lead them to a
+decision"*, then *"add some visuals for pakalpojumi pages; i.e. actual ads
+examples; screenshots; UI screenshots"*, then *"remember to use natural latvian
+language, and not translation"*. Working files (offer brief, voice-of-customer
+brief, scored reports for `/` and `/facebook-reklama/`) live outside the repo in
+`~/Documents/Power Up/write-a-sales-page - marketingaskola/resources/`.
+
+- **Every service page now opens on the reader's problem, and the Meta no-fee
+  condition sits in the `/facebook-reklama/` hero**, not only in the terms box.
+  The homepage gained a three-card problem section ("Nauda aiziet, klienti
+  neatnāk") whose cards each link to their own rung. Its process steps are
+  reused on `/pakalpojumi/`. Unverified "visbiežāk / parasti" claims about what
+  enquirers say were removed: no data backs them.
+- **Proof is shown, not described.** `/facebook-reklama/` carries the four
+  real Ads Manager screenshots the portfolio already published (Brew Company,
+  Četras Zoles, Instant Change, Excel Know How) as `.img--shot` with a one-line
+  `figcaption`. Numbers in captions are read off the screenshot or quoted from
+  the portfolio, never computed. Screenshots render at natural size (no
+  upscaling). The portfolio's Excel Know How screenshot was mislabelled
+  "Mārketinga Skola" in its alt; fixed.
+- **`/ai-un-automatizacijas/` section 03 shows our own automation**: the five
+  steps of the leads workflow and the real report e-mail for example.com from
+  the 25 Sep end-to-end test, drawn as page markup on a dark card (`.flow`,
+  `.mail`). The wording comes from n8n's `Salikt atskaiti` and the audits
+  workflow; if either changes, change the mock. Its first proof line cites the
+  Starfleet result (417 orders, 34 automated workflows, one person checking).
+- **New service: `/majaslapu-izstrade/`, websites and landing pages as ONE
+  offer** (owner's ask). Hero artwork `hero-majaslapas` built as a pieces motif
+  like the other headers; tile 03 on `/pakalpojumi/` (eight tiles now, LIAA no
+  longer `.cell--wide`, the grid filler takes the ninth slot), nav, footer,
+  `llms.txt`, the LIAA-popup page list and the ladder's third rung all know it.
+  **Owner sign-off needed:** the page states no price, timeline or platform on
+  purpose; confirm scope, whether existing sites are reworked, and add a real
+  client example when there is one. Its example section is this site's own
+  rebuild, citing only facts recorded in this file, with a real capture of the
+  homepage (`src/img/2026/10/majaslapa-sakums.webp`; re-take it if the hero
+  changes).
+- **Section 03 "Darbi" lists five sites we built** (owner, the same day):
+  starfleetportraits.com (the wide lead card), fitosauna.com, Zaigas darbnīca
+  (fitosauna.github.io/zaigas-darbnica/), dzirkaliz.lv and impromotion.lv. Each
+  card is a `.cell--media` with a first-screen screenshot at 1440x900
+  (`src/img/2026/10/web-*.webp`, consent banners declined, never accepted) and
+  ONE link, to the live site. Re-take a screenshot when a site is redesigned.
+  Descriptions say only what the screenshot shows, plus two facts recorded
+  elsewhere: Starfleet's 417 orders and that Fitosauna is also a video client.
+- **No SEO case on our own site yet.** Search Console, read 10 Oct: since the
+  move clicks are up 12% on the month before, but down 55% on the same weeks
+  last year while position and query count improved. Publishing that would
+  undercut the SEO page; re-read in January 2027. The numbers are in the Power
+  Up folder (`05-seo-baseline.md`), not here, because they go stale.
+- **`lv:review` skips a `.md` file without front matter** (it strips front
+  matter by splitting on `---`, so the text comes out empty) and still reports
+  "0 findings". Give a temp file `---\ntitle: x\n---` first. Findings taken
+  this pass caught real grammar too: "Bez maksas" (not "Bezmaksas") as an
+  adverb, and the debitive takes the nominative ("kas lapai jāpanāk", not "ko").
+  Declined on purpose: anything rewording the no-fee clause, the fixed rung name
+  "iepazīšanās zvans", and the plain "cik maksā viens klients".
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
@@ -3911,6 +3972,20 @@ never surfaces it. That is a business decision, not a defect.
   from Rihards' own bio on `/sazinies/` — don't inflate them.
 - No invented claims, ratings, or star reviews; testimonials are verbatim
   from the original site.
+- **No punctuation dashes in visible copy (10 Oct 2026).** Owner: *"remove
+  most of the em dashes everywhere which is AI content giveaway."* 242 em
+  dashes and spaced en dashes became colons, commas, full stops or
+  parentheses, picked per sentence. Unspaced number ranges (`1–2`) are not
+  punctuation and stay. `node tools/dedash.mjs --check` lists any that come
+  back and exits 1; a dry run (no flag) has an OpenAI model propose fixes into
+  a report, and `--write` applies exactly that reviewed set. Its guard rejects
+  any proposal that changed a word, a tag or template code, but it cannot
+  judge Latvian: about one in ten proposals put a comma where a full stop
+  read better, so read the report before writing. **Left on purpose:**
+  testimonials and the actors' bios (verbatim), the privacy policy and the
+  EU funding notice (legal), the four retired noindex pages, YouTube's own
+  video titles in iframe attributes, and image alts / motif `aria-label`s
+  (not visible, and the motif labels regenerate from `imagery.json`).
 
 ## What was deliberately changed vs WordPress
 
