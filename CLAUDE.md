@@ -1052,6 +1052,10 @@ an ad campaign may point at it. It only lacked a meta description, now added.
 
 ## AI and automations service (21 Aug 2026)
 
+**Moved 11 Oct 2026 to `/marketinga-automatizacija/`** and refocused on
+marketing automation - see "One lead magnet, marketing automation, public
+reviews". The old URL 301s.
+
 `/ai-un-automatizacijas/` is a fifth service page following the same structure
 as the other service pages. Scope: pieteikumu plūsmas and CRM, e-pastu
 automatizācijas, segmentācija, atskaites, AI satura sagatavošana, komandas
@@ -2475,6 +2479,11 @@ artwork against the house style; the model drifts on "flat".
 
 ## Lead magnet: the automated page check (8 Sep 2026)
 
+**RETIRED from the popup on 11 Oct 2026** - the only lead magnet is the
+automation quiz now (see "One lead magnet, marketing automation, public
+reviews"). Kept for the workflow notes, which still describe the audits
+workflow and the `lapas-parbaude` branch of the leads workflow.
+
 **Since 12 Sep this is ONE OF TWO offers behind the same popup** - see "Two
 lead magnets, one engine" under the LIAA section. Everything below still
 describes the page check and still governs it; what changed is that it now
@@ -3619,6 +3628,10 @@ the hub-tile rule.
 
 ### Two lead magnets, one engine (12 Sep 2026)
 
+**SUPERSEDED 11 Oct 2026: one offer, the automation quiz** (see "One lead
+magnet, marketing automation, public reviews"). The sagatave PDF stays, linked
+from the LIAA pages.
+
 Owner: *"can we replace the current lead magnet / popup with something related
 to these new offers?"* Replaced where it earns its place, kept where it still
 fits, because the two audiences are not the same people.
@@ -3977,6 +3990,132 @@ brief, scored reports for `/` and `/facebook-reklama/`) live outside the repo in
   Declined on purpose: anything rewording the no-fee clause, the fixed rung name
   "iepazīšanās zvans", and the plain "cik maksā viens klients".
 
+## One lead magnet, marketing automation, public reviews (11 Oct 2026)
+
+Owner: *"I also want to change the current lead magnet on the website as dont
+think it applies for most of the site visitors... maybe an automation quiz to
+see what things can be automated in marketing easily to save money and time..
+also, for the AI and automation section in pakalpojumi, I want to focus on
+marketing automations specifically."* Asked and answered: the quiz is the ONLY
+lead magnet, its result arrives by e-mail, and the page moves.
+
+**The AI service is `/marketinga-automatizacija/` now.** `git mv` from
+`ai-un-automatizacijas.html`; the old URL 301s in `src/.htaccess`, and
+`check-live.mjs` probes that redirect, so it is covered by every deploy. Nav,
+footer, `llms.txt`, the imagery manifest, `seo-audit.mjs`, the hub tile, the
+homepage tile and five posts link the new URL. Cell 06 became "Konversiju dati
+reklāmai" (Conversions API), the one marketing automation the page lacked.
+The motif include keeps the name `motifs/ai.njk`; the file name is not public.
+
+**The quiz: `/automatizacijas-tests/`: four questions, a free scorecard, then
+AI.** Rebuilt twice on 11 Oct 2026. First as a nine-question scorecard (owner:
+*"we can make this better. Also, use natural latvian language"*), then cut down
+(owner: *"make it shorter, present more value upfront, and make it more
+personalized... wire in actual LLM to go through their responses and maybe even
+LP/website"*). Asked and answered: the scorecard is free, the e-mail is asked
+only for the AI analysis, and the AI text goes out by e-mail too, with
+safeguards.
+
+- **Four questions, one per area**, in `src/_data/quiz.json`: a form filled in
+  on a Friday evening (Pirmā atbilde), where leads land (Pieteikumi), people who
+  asked and did not buy (Tie, kas vēl domā), and which ad brought the last
+  client (Reklāmas mērīšana). Four realistic answers each, none obviously
+  "right" (the quiz-and-leadgen-asset-builder skill's rules). Each option has
+  `need` (0 in order, 1 partly, 2-3 needs attention), `score` per automation
+  code and usually a `find` sentence.
+- **The result appears at once, no e-mail**: the four areas on a three-square
+  meter, then "Ar ko sākt": codes with 2 points or more, top three, each with
+  **Šobrīd** (the visitor's own answer, told once across the list) and
+  **Risinājums**. White and grey only; no cyan in the scorecard.
+- **Then the AI step**: "Gribi ieteikumus tieši savam uzņēmumam?" asks for the
+  website (optional) and the e-mail (required) plus the `materiali` consent.
+  `quiz.js` posts ONE text/plain request to `quiz.aiEndpoint`, waits up to 60 s
+  with a progress line that says what is happening (it takes about 20 s), and
+  renders three suggestions: what the page offers, then per item why and a
+  first step. A failure offers a pre-filled mailto, as everywhere else.
+- **n8n: *Mārketinga Skola — automatizācijas tests ar AI*
+  (`4YG4HJztvL4OobWv`, `POST /webhook/tests-ai?k=`).** Validate (key, e-mail,
+  answer INDEXES, levels and codes against fixed patterns, a public hostname,
+  daily limits) → save the row in *Mājaslapas pieteikumi* → if allowed:
+  Firecrawl (`/v1/scrape`, the existing *Firecrawl API* key) reads the page as
+  markdown and raw HTML, a Code node detects forms, e-mail/phone fields,
+  WhatsApp, chat and booking tools, Meta pixel / GA4 / GTM / Ads tags and a
+  consent manager, and Claude (`claude-sonnet-5-5`, *Anthropic account*) writes
+  JSON → clean and assemble → answer the page → alert Rihards → mail the
+  visitor. Gmail is the *Marketinga skola* account; creation auto-picked the
+  personal one and it was corrected.
+- **The site sends only indexes and codes.** The workflow holds its own copy of
+  the four questions, area names and fallback titles, so **question text,
+  option order and area names in `quiz.json` must match it**. The page text is
+  fenced in the prompt as data, and the model is told to ignore instructions
+  inside it.
+- **The AI text is cleaned before it goes anywhere**, because our domain sends
+  it to an address the visitor typed: tags, links, bare domains, e-mail
+  addresses and phone numbers are stripped and lengths capped. If the reply is
+  not valid JSON with at least two suggestions, the fixed suggestions go out
+  instead and the alert says so. Tested with a reply that tried to slip in a
+  link and a phone number.
+- **Daily limits in workflow static data** (production runs only): 150 AI
+  analyses a day in all, three per e-mail and three per site. Past a limit the
+  visitor still gets the fixed suggestions and the lead is still saved.
+- **Two settings that failed first, worth knowing:** the Anthropic node returned
+  "Bad request" until its options were rewritten without a temperature, and the
+  first real reply was cut off at 1 500 tokens because the model's thinking
+  counts too, so the JSON never closed. `maxTokens` is 3 000.
+- **Tested for real on 11 Oct 2026** (executions 20248-20251) against
+  fitosauna.com with the table and both mails switched off: about 20 s, and the
+  suggestions used the page (two forms, a consultation offer, the 30-day
+  guarantee, pixel and GA4) together with the answers. Successful executions
+  are not stored; errors go to the shared alert workflow.
+- **The older path in the leads workflow** (`automatizacijas-tests` in *Parse
+  and gate*, its AREAS/QUIZ tables) is no longer called by the site. It is
+  harmless and was left in place.
+- **The form is `data-quiz-form`, never `data-form`.** `forms.js` binds every
+  `form[data-form]`.
+- **Linked from** the popup, the automation page's application section and the
+  closing section of `/marketinga-automatizacija-ar-ko-sakt/`.
+- **All of its Latvian went through `lv:review`.** Grammar worth remembering: a
+  `lai` purpose clause takes the conditional ("lai ... ierakstītu", "lai dati
+  nonāktu"), and "sagatavoja AI, balstoties uz", not "no", answers.
+
+**The popup is an invitation now, not a form.** `leadmagnet.js` keeps the
+tuned timing (20 s, exit intent on desktop, 55% scroll on phones, never with
+the cookie banner open) and offers one button, "Sākt testu". A dismissal or a
+click through mutes it for 60 days; finishing the quiz writes `seen` for good.
+Off on `/sazinies/`, the privacy policy, the consultation page, the quiz itself
+and the four LIAA pages. **The LIAA sagatave and the page check are no longer
+offered by the popup.** The sagatave PDF still exists and is linked from the
+LIAA pages and `/cenu-aptauja-liaa/`; the audits workflow still exists and is
+still called by the leads workflow for `lapas-parbaude`, which nothing on the
+site sends any more. Git has the two-variant popup.
+
+**Public reviews (owner: *"incorporate more reviews from FB and google on the
+page for social proof"*).** Read on 11 Oct 2026 in the owner's Chrome, with
+permission: Google 5,0 from 16 ratings (eight with text), Facebook 100%
+recommend from 6 (only one text is public). `src/_data/reviews.json` holds the
+totals, the profile links and nine quotes; `reviews-badges.njk` renders the
+two totals as links to the profiles and `review-cards.njk` renders quotes as
+the existing `.testimonial` columns, footer "Google atsauksme" /
+"Facebook atsauksme".
+
+- **Quotes are the reviewers' own words.** Only obvious typos were corrected
+  (aģentūŗām, matreālu, apgūšana, sadarību) and two long ones end at a full
+  sentence; nothing reworded. Names are first name plus initial, like the
+  existing testimonials. Edit `reviews.json`, never the pages.
+- **Placed:** the homepage's testimonials section (badges on top, a second row
+  of three under the client quotes), a new section 05 "Atsauksmes" on
+  `/meta-reklamas-kurss/` (six quotes; sections after it renumbered 06-10),
+  and two under the client logos on `/facebook-reklama/`. Toms's Google review
+  ("10+ freelanceri un aģentūras") is there because it answers the
+  burned-before objection that page is written against.
+- **Phones get one row** (`.row.reviews + .row.reviews` is hidden under 640px):
+  six stacked quotes ran 2 000px, and the badges link to all of them.
+- **No AggregateRating schema.** Google treats reviews a business publishes
+  about itself as ineligible for review rich results, and marking them up
+  risks a manual action for nothing.
+- **The totals go stale.** Re-read both profiles before quoting the numbers and
+  update `read` in the data file. Stars and the thumb are white, never cyan.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
@@ -4004,7 +4143,8 @@ brief, scored reports for `/` and `/facebook-reklama/`) live outside the repo in
 - Stats used on the homepage (10+ gadi, 100+ uzņēmumi, 1M+ € budžeti) come
   from Rihards' own bio on `/sazinies/` — don't inflate them.
 - No invented claims, ratings, or star reviews; testimonials are verbatim
-  from the original site.
+  from the original site. Ratings and public reviews come only from the
+  Google and Facebook profiles, through `src/_data/reviews.json` (11 Oct 2026).
 - **No punctuation dashes in visible copy (10 Oct 2026).** Owner: *"remove
   most of the em dashes everywhere which is AI content giveaway."* 242 em
   dashes and spaced en dashes became colons, commas, full stops or

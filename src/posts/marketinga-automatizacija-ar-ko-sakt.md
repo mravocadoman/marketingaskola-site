@@ -83,4 +83,6 @@ Vairāk par to, kur AI mārketingā tiešām noder, esam rakstījuši [šajā ra
 
 Ja no visa raksta jāpaņem viena lieta, tad šī: nedēļu pieraksti atkārtotos uzdevumus un sareizini skaitļus. Lēmums par rīkiem pēc tam kļūst daudz vienkāršāks, jo saraksts pasaka, ar ko sākt.
 
-Ja gribi, lai to izejam kopā, [pastāsti par savu situāciju](/ai-un-automatizacijas/), auditā tieši to arī darām.
+Ja gribi ātrāk saprast, ar ko sākt, [četru jautājumu tests](/automatizacijas-tests/) parādīs, kur Tev pazūd laiks vai klienti, un AI uzrakstīs ieteikumus tieši Tavam uzņēmumam.
+
+Ja gribi, lai to izejam kopā, [pastāsti par savu situāciju](/marketinga-automatizacija/), auditā tieši to arī darām.

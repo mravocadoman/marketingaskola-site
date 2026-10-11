@@ -1,0 +1,16 @@
+{#- The two public rating totals, each a link to the profile where every
+    review can be read. Figures come from src/_data/reviews.json, which says
+    when they were last read. Stars are white, never cyan (the cyan budget). #}
+{%- macro plural(n) %}{% if n % 10 == 1 and n % 100 != 11 %}atsauksme{% else %}atsauksmes{% endif %}{% endmacro -%}
+<div class="rating-row">
+  <a class="rating" href="{{ reviews.google.url }}" target="_blank" rel="noopener">
+    <span class="rating-num">{{ reviews.google.rating }}</span>
+    <span class="rating-stars" aria-hidden="true">{% for i in range(0, 5) %}{% icon "star" %}{% endfor %}</span>
+    <span class="rating-meta">Google · {{ reviews.google.count }} {{ plural(reviews.google.count) }}</span>
+  </a>
+  <a class="rating" href="{{ reviews.facebook.url }}" target="_blank" rel="noopener">
+    <span class="rating-num">{{ reviews.facebook.share }}</span>
+    <span class="rating-stars" aria-hidden="true">{% icon "thumb_up" %}</span>
+    <span class="rating-meta">iesaka · Facebook · {{ reviews.facebook.count }} {{ plural(reviews.facebook.count) }}</span>
+  </a>
+</div>

@@ -12,7 +12,7 @@ image: "/img/2025/03/Title-1.png"
         <p class="eyebrow">Digitālā mārketinga aģentūra</p>
         <h1>Reklāma, kas <em>atmaksājas</em><span class="accent-text">.</span></h1>
         {%- include "hero-reel-wide.njk" %}
-        <p class="sub">Reklāmai katru mēnesi aiziet nauda, bet neviens nevar pateikt, cik maksā viens klients? Meta un Google reklāmas, video saturs un AI automatizācijas, kur atskaite sākas ar klientiem, nevis klikšķiem.</p>
+        <p class="sub">Reklāmai katru mēnesi aiziet nauda, bet neviens nevar pateikt, cik maksā viens klients? Mēs to sakārtojam: vadām Meta un Google reklāmas, veidojam video un automatizācijas, un katru mēnesi parādām, cik klientu atnāca un cik maksāja katrs.</p>
         <div class="btn-wrap">
           <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
           <a class="btn btn--ghost" href="/digitala-marketinga-kursi/">Apskatīt kursus</a>
@@ -132,9 +132,9 @@ image: "/img/2025/03/Title-1.png"
       <div class="cell cell--media">
         <figure class="cell-media cell-media--motif motif--scroll">{% include "motifs/ai.njk" %}</figure>
         <span class="cell-idx">03</span>
-        <h3>AI un automatizācijas</h3>
+        <h3>Mārketinga automatizācija</h3>
         <p>Pieteikumu plūsmas, CRM un e-pastu automatizācijas, kas atņem roku darbu no ikdienas. Sākam ar auditu, nevis ar rīka izvēli.</p>
-        <a class="arrow-link" href="/ai-un-automatizacijas/">Uzzini vairāk</a>
+        <a class="arrow-link" href="/marketinga-automatizacija/">Uzzini vairāk</a>
       </div>
     </div>
   </div>
@@ -174,6 +174,7 @@ image: "/img/2025/03/Title-1.png"
       </div>
       <p class="lead">Skaitām klientus, nevis klikšķus. <a class="arrow-link" href="/portfolio/">Veiksmes stāsti</a></p>
     </div>
+    {% include "reviews-badges.njk" %}
     <div class="row cols-3 top">
       <div class="col">
         <blockquote class="testimonial"><div class="t-body"><p>Padarītais darbs kampaņas īstenošanā ļāva mums īsā laika periodā tikt pie 36 augstas kvalitātes potenciālajiem klientiem, no kuriem 8 kļuva par pastāvīgajiem klientiem!</p></div><footer><strong>Didzis K.</strong><span>More Timber</span></footer></blockquote>
@@ -185,6 +186,8 @@ image: "/img/2025/03/Title-1.png"
         <blockquote class="testimonial"><div class="t-body"><p>Sadarbība ar Mārketinga Skolu bija ļoti viegla, akurāta un visos termiņos. Profesionalitāte un precizitāte garantēta. Iesaku ikvienam!</p></div><footer><strong>Elīna B.</strong><span>Baronesse</span></footer></blockquote>
       </div>
     </div>
+    {% set reviewIds = ["agnese", "evija", "linda"] %}
+    {% include "review-cards.njk" %}
   </div>
 </section>
 

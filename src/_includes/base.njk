@@ -113,7 +113,7 @@
           <li><a href="/seo-pakalpojumi/">SEO pakalpojumi</a></li>
           <li><a href="/video-reklama/">Video reklāma</a></li>
           <li><a href="/majaslapu-izstrade/">Mājaslapu izstrāde</a></li>
-          <li><a href="/ai-un-automatizacijas/">AI un automatizācijas</a></li>
+          <li><a href="/marketinga-automatizacija/">Mārketinga automatizācija</a></li>
           <li><a href="/marketinga-konsultacijas/">Mārketinga konsultācijas</a></li>
           <li><a href="/liaa-eksporta-atbalsts/">LIAA eksporta atbalsts</a></li>
           <li><a href="/portfolio/">Portfolio</a></li>
@@ -158,89 +158,28 @@
 {% endif %}
 
 {%- set waText = "Sveiki! Rakstu no marketingaskola.lv lapas “" + ((heroTitle or title or site.name) | bareTitle) + "” (" + pageUrl + "). " %}
-{# Lead magnet. TWO offers, one per audience, and only ever ONE popup per
-   visitor - two overlays is how people leave.
-
-   - On the commercial pages a business buyer is reading, so the offer is the
-     LIAA export-grant sagatave: the programme's published conditions plus a
-     blank cenu aptaujas protokols. A document, never advice - CONTENT-RULES.md
-     rule 2 forbids judging whether anyone qualifies, and LIAA publishes its own
-     self-assessment calculator.
-   - Everywhere else (the blog, the course pages) the reader is a small business
-     doing it themselves, for whom an export grant is irrelevant, so they keep
-     the automated on-page check. That reports only what one fetch of their page
-     can prove and routes every interpretation to the PAID consultation, because
-     the copy rules forbid advertising free advisory work.
-
-   Suppressed entirely where the visitor is already converting - including the
-   three LIAA pages, which carry the real form a few centimetres below. #}
-{% set lmLiaa = ["/", "/pakalpojumi/", "/facebook-reklama/", "/seo-pakalpojumi/", "/video-reklama/", "/majaslapu-izstrade/", "/ai-un-automatizacijas/", "/portfolio/"] %}
-{% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/", "/cenu-aptauja-liaa/"] %}
-{% set lmVariant = "liaa" if page.url in lmLiaa else "audit" %}
-{% if not noindex and page.url not in lmOff and forms.endpoint %}
+{#- Lead magnet popup (11 Oct 2026): ONE offer everywhere, an invitation to the
+   marketing automation quiz at /automatizacijas-tests/. The owner retired the
+   LIAA sagatave and the automated page check as popups because neither applied
+   to most visitors. The quiz itself collects the e-mail; this panel only asks.
+   Timing, dismissal memory and the focus trap stay in leadmagnet.js.
+   Suppressed where the visitor is already converting, on the quiz itself, and
+   on the three LIAA pages, which carry their own form. #}
+{% set lmOff = ["/sazinies/", "/privatuma-politika/", "/marketinga-konsultacijas/", "/automatizacijas-tests/", "/liaa-eksporta-atbalsts/", "/eksporta-marketinga-materiali/", "/eksporta-telemarketings/", "/cenu-aptauja-liaa/"] %}
+{% if not noindex and page.url not in lmOff %}
 <div class="lm" data-lm hidden>
   <div class="lm-panel" role="dialog" aria-modal="true" aria-labelledby="lm-title">
     <button type="button" class="lm-close" data-lm-close aria-label="Aizvērt">&#215;</button>
-    {% if lmVariant == "liaa" %}
-    <span class="eyebrow">Bez maksas &middot; 2 lapas</span>
-    <h2 id="lm-title">{{ liaa.programme.rate }}% no eksporta mārketinga izmaksām var atgūt</h2>
-    <p class="lm-sub">Valsts programma atmaksā {{ liaa.programme.rate }}% no attiecināmajām izmaksām, līdz {{ liaa.programme.yearCap | eur }} eiro gadā. Nosūtām divas lapas: nosacījumi, termiņi un izslēgtās nozares vienā lapā, un cenu aptaujas protokola sagatave, ko aizpildi pats.</p>
-
-    <form class="form lm-form" data-lm-form novalidate>
-      <p class="field field--select">
-        <span class="select-wrap">
-          <select id="lm-eksports" name="eksports" required>
-            <option value=""></option>
-            <option>Jau eksportējam</option>
-            <option>Plānojam sākt gada laikā</option>
-            <option>Vēl tikai skatāmies</option>
-          </select>
-        </span>
-        <label for="lm-eksports">Vai uzņēmums eksportē?<span class="req" aria-hidden="true">*</span></label>
-        <span class="field-error" data-error hidden></span>
-      </p>
-    {% else %}
-    <span class="eyebrow">Bez maksas &middot; Atskaite e-pastā</span>
-    <h2 id="lm-title">Ko Google un Meta redz Tavā lapā?</h2>
-    <p class="lm-sub">Deviņi punkti: pikselis, analītika, konversiju mērīšana un tas, kā lapa izskatās meklēšanas rezultātos. Atskaiti ar visiem deviņiem nosūtām uz e-pastu pāris minūšu laikā. Mērīšana mēdz salūzt klusi: reklāma turpina tērēt, bet dati vairs nenāk.</p>
-
-    <form class="form lm-form" data-lm-form novalidate>
-      {# Field order matters: the input comes FIRST and the label AFTER, because
-         the floating label is driven by `input ~ label`, and placeholder=" "
-         (one space) is what makes :not(:placeholder-shown) fire. Getting this
-         wrong parks the label on top of the input. #}
-      <p class="field">
-        <input type="text" id="lm-url" name="url" placeholder=" " inputmode="url" autocomplete="url" required>
-        <label for="lm-url">Tavas mājaslapas adrese<span class="req" aria-hidden="true">*</span></label>
-        <span class="field-error" data-error hidden></span>
-      </p>
-    {% endif %}
-      <p class="field">
-        <input type="email" id="lm-email" name="email" placeholder=" " autocomplete="email" required>
-        <label for="lm-email">E-pasts<span class="req" aria-hidden="true">*</span></label>
-        <span class="field-error" data-error hidden></span>
-      </p>
-      {# Consent is NOT a .field: that class absolutely positions its direct
-         child label, which would lift this whole sentence onto the checkbox. #}
-      <label class="form-consent"><input type="checkbox" name="consent" required>
-        <span>Piekrītu, ka SIA &ldquo;Stonks&rdquo; apstrādā manus datus un sūta noderīgus materiālus. Atteikties var jebkurā brīdī. <a href="/privatuma-politika/">Privātuma politika</a></span></label>
-      <span class="field-error" data-error hidden></span>
-      {% if lmVariant == "liaa" %}
-      <button class="btn" type="submit">Saņemt sagatavi</button>
-      <p class="lm-fine">Apkopoti publiskotie nosacījumi, nevis juridiska vai iepirkuma konsultācija. Par atbalsta piešķiršanu lemj LIAA.</p>
-      {% else %}
-      <button class="btn" type="submit">Saņemt atskaiti</button>
-      <p class="lm-fine">Atskaiti nosūtām uz norādīto adresi. Automātiska pārbaude; cilvēka veiktu auditu tā neaizstāj.</p>
-      {% endif %}
-    </form>
-
-    <div class="lm-result" data-lm-result hidden></div>
+    <span class="eyebrow">Bez maksas &middot; 1 minūte</span>
+    <h2 id="lm-title">Kur Tavā mārketingā pazūd laiks un klienti?</h2>
+    <p class="lm-sub">Četri jautājumi, un rezultātu redzēsi uzreiz. Pēc tam AI var izlasīt Tavu mājaslapu un uzrakstīt ieteikumus tieši Tavam uzņēmumam.</p>
+    <div class="btn-wrap">
+      <a class="btn" href="/automatizacijas-tests/" data-lm-go>Sākt testu</a>
+      <button type="button" class="btn btn--ghost" data-lm-close>Ne tagad</button>
+    </div>
   </div>
 </div>
-<script src="{{ "/js/leadmagnet.js" | bust }}" defer
-        data-variant="{{ lmVariant }}"
-        data-hook="{{ forms.endpoint }}"
-        data-file="{{ "/faili/eksporta-atbalsts-sagatave.pdf" | bust }}"></script>
+<script src="{{ "/js/leadmagnet.js" | bust }}" defer></script>
 {% endif %}
 
 <a class="wa-float" href="https://wa.me/37126673384?text={{ waText | urlencode }}" target="_blank" rel="noopener" data-track="whatsapp-float" aria-label="Rakstīt mums WhatsApp">

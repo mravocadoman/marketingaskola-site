@@ -80,6 +80,7 @@ if (withRedirects) {
   await expect('/7-padomi-marketinga-strategijas-izstrade/', '/marketinga-strategijas-izstrade/');
   await expect('/meta-reklamas-kursi/', '/meta-reklamas-kurss/');
   await expect('/feed/', '/feed.xml');
+  await expect('/ai-un-automatizacijas/', '/marketinga-automatizacija/');
   // /seo-pakalpojumi/ stopped being a redirect on 8 Sep 2026 and became a real
   // service page. Assert the page, so removing the 301 stays covered rather
   // than merely untested.

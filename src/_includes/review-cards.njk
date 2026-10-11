@@ -1,0 +1,11 @@
+{#- Public reviews as testimonial columns. Set `reviewIds` (keys of
+    reviews.json items) before including; three per row, or two when
+    `reviewIds` has two. The quotes are the reviewers' own
+    words: never edit them here, edit reviews.json and say why there. #}
+<div class="row cols-{{ 2 if reviewIds.length == 2 else 3 }} top reviews">
+  {%- for id in reviewIds %}{% set r = reviews.items[id] %}
+  <div class="col">
+    <blockquote class="testimonial"><div class="t-body"><p>{{ r.text }}</p></div><footer><strong>{{ r.name }}</strong><span>{{ r.source }} atsauksme</span></footer></blockquote>
+  </div>
+  {%- endfor %}
+</div>

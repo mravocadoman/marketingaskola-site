@@ -1,0 +1,90 @@
+---
+layout: page.njk
+title: "Mārketinga automatizācijas tests | Mārketinga Skola"
+description: "Četri jautājumi, apmēram minūte: uzreiz redzi, kur Tavā mārketingā pazūd laiks un klienti. Pēc tam AI izlasa Tavu mājaslapu un uzraksta ieteikumus tieši Tavam uzņēmumam."
+permalink: "/automatizacijas-tests/"
+crumb: { label: "Mārketinga automatizācija", url: "/marketinga-automatizacija/" }
+---
+{#- The site's one lead magnet since 11 Oct 2026 (owner: the previous offers
+    did not apply to most visitors). Four questions, then a free scorecard on
+    screen; then an optional AI step that reads the visitor's site and writes
+    three suggestions, shown here and e-mailed (n8n "automatizācijas tests ar
+    AI"). Questions, areas, scores and texts live in src/_data/quiz.json;
+    quiz.js does the rest. Without JavaScript the questions read top to bottom
+    and the note offers e-mail instead. #}
+<section class="page-hero page-hero--media">
+  <div class="container">
+    <div class="hero-grid2">
+      <div>
+      <span class="chip"><a href="/marketinga-automatizacija/">Mārketinga automatizācija</a> · Tests</span>
+      <h1>Kur Tavā mārketingā pazūd laiks un <em>klienti</em>?</h1>
+      <p class="sub">Četri jautājumi, apmēram minūte. Uzreiz redzēsi, kas jau ir kārtībā un kur pazūd laiks vai klienti. Pēc tam AI var izlasīt Tavu mājaslapu un uzrakstīt ieteikumus tieši Tavam uzņēmumam.</p>
+      <div class="btn-wrap">
+        <a class="btn" href="#tests">Sākt testu</a>
+      </div>
+      <p class="fine btn-note">Bez maksas, rezultātu redzēsi uzreiz.</p>
+      </div>
+      <figure class="hero-media">{% include "motifs/ai.njk" %}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tests">
+  <div class="container quiz-wrap">
+    <form class="form quiz" data-quiz novalidate data-quiz-form="{{ quiz.formId }}">
+      <div class="quiz-progress" aria-hidden="true"><span data-quiz-bar></span></div>
+      <p class="quiz-count" data-quiz-count aria-live="polite"></p>
+      {% for q in quiz.questions %}
+      <fieldset class="quiz-step" data-step>
+        <legend><span class="quiz-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>{{ q.text }}</legend>
+        {% for o in q.options %}
+        <label class="quiz-opt"><input type="radio" name="{{ q.id }}" value="{{ loop.index0 }}"><span>{{ o.label }}</span></label>
+        {% endfor %}
+      </fieldset>
+      {% endfor %}
+      <div class="quiz-nav">
+        <button type="button" class="btn btn--ghost btn--sm" data-quiz-back hidden>Atpakaļ</button>
+      </div>
+      <noscript><p class="fine">Tests darbojas ar JavaScript. Ja tas ir izslēgts, uzraksti savas atbildes uz <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a>, un atbildēsim paši.</p></noscript>
+    </form>
+    <div class="quiz-result" data-quiz-result hidden aria-live="polite"></div>
+    <div class="quiz-ai" data-quiz-ai hidden>
+      <h3>Gribi ieteikumus tieši savam uzņēmumam?</h3>
+      <p>Ieraksti savas mājaslapas adresi. AI izlasīs lapu kopā ar Tavām atbildēm un uzrakstīs trīs ieteikumus, ar ko sākt. Tos redzēsi šeit, un kopiju saņemsi e-pastā.</p>
+      <form class="form quiz-ai-form" data-quiz-ai-form novalidate>
+        <p class="field">
+          <input type="text" id="quiz-site" name="website" placeholder=" " inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false">
+          <label for="quiz-site">Mājaslapas adrese</label>
+          <span class="field-error" data-error hidden></span>
+        </p>
+        <p class="field">
+          <input type="email" id="quiz-email" name="email" placeholder=" " autocomplete="email" required>
+          <label for="quiz-email">E-pasts<span class="req" aria-hidden="true">*</span></label>
+          <span class="field-error" data-error hidden></span>
+        </p>
+        <label class="form-consent"><input type="checkbox" name="consent" required>
+          <span>Piekrītu, ka SIA &ldquo;Stonks&rdquo; apstrādā manus datus, lai nosūtītu testa rezultātu un noderīgus materiālus. Atteikties var jebkurā brīdī. <a href="/privatuma-politika/">Privātuma politika</a></span></label>
+        <span class="field-error" data-error hidden></span>
+        <button class="btn" type="submit">Saņemt ieteikumus</button>
+        <p class="fine">Ja mājaslapas nav, atstāj adresi tukšu, un ieteikumi balstīsies tikai uz atbildēm.</p>
+      </form>
+      <div class="quiz-ai-out" data-quiz-ai-out aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-band-inner">
+    <div>
+      <h2>Gribi uzreiz parunāt?</h2>
+      <p>Ja jau zini, kur pazūd laiks, pastāsti par to 20 minūšu iepazīšanās zvanā. Pateiksim, ar ko mēs sāktu.</p>
+    </div>
+    <div class="btn-wrap">
+      <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
+      <a class="btn btn--ghost" href="/marketinga-automatizacija/">Mārketinga automatizācija</a>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="quiz-data">{{ quiz | dump | safe }}</script>
+<script src="{{ "/js/quiz.js" | bust }}" defer></script>

@@ -57,6 +57,10 @@ AddDefaultCharset utf-8
   RewriteRule ^digitala-marketinga-strategija-vaditajiem/?$ /digitala-marketinga-kursi/ [R=301,L]
   RewriteRule ^improvizacija-un-izklaide/?$ /video-reklama/ [R=301,L]
 
+  # 11 Oct 2026: the automation service narrowed to marketing automation and
+  # took a matching address. The old one keeps its links and rankings.
+  RewriteRule ^ai-un-automatizacijas/?$ /marketinga-automatizacija/ [R=301,L]
+
   # WordPress feeds -> the Atom feed.
   RewriteRule ^(?:category/[^/]+/)?feed/?$ /feed.xml [R=301,L]
   RewriteRule ^comments/feed/?$ /feed.xml [R=301,L]

@@ -1,0 +1,221 @@
+{
+  "_comment": "The marketing automation quiz (11 Oct 2026), the site's one lead magnet. Four questions, one per area, answered in about a minute; the scorecard and priorities show at once with no e-mail. Each option carries `need` (0 in order, 1 partly, 2-3 needs attention) for its area, `score` points per automation code and usually a `find` sentence; codes with 2 points or more are the priorities. The AI step posts to `aiEndpoint`, the n8n workflow 'Mārketinga Skola — automatizācijas tests ar AI' (4YG4HJztvL4OobWv): only answer INDEXES, area levels, codes, the site address and the e-mail. That workflow holds its own copy of the four questions, area names and fallback titles, so QUESTION TEXT, OPTION ORDER and AREA NAMES here must match it.",
+  "formId": "automatizacijas-tests",
+  "areas": [
+    {
+      "id": "pieteikumi",
+      "name": "Pieteikumi"
+    },
+    {
+      "id": "atbilde",
+      "name": "Pirmā atbilde"
+    },
+    {
+      "id": "doma",
+      "name": "Tie, kas vēl domā"
+    },
+    {
+      "id": "merisana",
+      "name": "Reklāmas mērīšana"
+    }
+  ],
+  "levels": [
+    "Kārtībā",
+    "Daļēji",
+    "Prasa uzmanību"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "area": "atbilde",
+      "text": "Piektdienas vakarā kāds aizpilda pieteikuma formu Tavā mājaslapā. Kad viņš saņem pirmo atbildi?",
+      "options": [
+        {
+          "label": "Dažu minūšu laikā, automātiski",
+          "need": 0,
+          "score": {}
+        },
+        {
+          "label": "Tajā pašā vakarā, ja kāds paskatās telefonā",
+          "need": 1,
+          "score": {
+            "reply": 1
+          },
+          "find": "Ātra atbilde ir atkarīga no tā, vai kāds tobrīd paskatās telefonā."
+        },
+        {
+          "label": "Pirmdien, kad sākas darba nedēļa",
+          "need": 2,
+          "score": {
+            "reply": 2
+          },
+          "find": "Brīvdienās atnākušie pieteikumi atbildi gaida līdz pirmdienai."
+        },
+        {
+          "label": "Kad kāds to pamana, arī pēc vairākām dienām",
+          "need": 3,
+          "score": {
+            "reply": 3
+          },
+          "find": "Pieteikums var gaidīt atbildi vairākas dienas."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "area": "pieteikumi",
+      "text": "Kur nonāk jauni pieteikumi?",
+      "options": [
+        {
+          "label": "Vienā sistēmā, kur redzams arī, no kurienes tie atnāca",
+          "need": 0,
+          "score": {}
+        },
+        {
+          "label": "Tabulā, ko kāds papildina ar roku",
+          "need": 2,
+          "score": {
+            "crm": 2
+          },
+          "find": "Pieteikumus tabulā pārraksta ar roku."
+        },
+        {
+          "label": "E-pastā, un tālāk katrs tiek galā pats",
+          "need": 2,
+          "score": {
+            "crm": 2
+          },
+          "find": "Pieteikumi paliek e-pastā, un kopēja saraksta nav."
+        },
+        {
+          "label": "Kur pagadās: e-pastā, Messenger, WhatsApp, telefonā",
+          "need": 3,
+          "score": {
+            "crm": 3
+          },
+          "find": "Pieteikumi nāk pa vairākiem kanāliem, un vienuviet tie nav redzami."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "area": "doma",
+      "text": "Kas notiek ar cilvēku, kurš apjautājās, bet nenopirka?",
+      "options": [
+        {
+          "label": "Nākamajās dienās saņem e-pastus, kas palīdz izlemt",
+          "need": 0,
+          "score": {}
+        },
+        {
+          "label": "Nonāk jaunumu vēstuļu sarakstā",
+          "need": 1,
+          "score": {
+            "nurture": 1
+          }
+        },
+        {
+          "label": "Kāds viņam piezvana, ja atceras",
+          "need": 2,
+          "score": {
+            "nurture": 2
+          },
+          "find": "Tos, kas nenopirka, uzrunā vēlreiz tikai tad, ja kāds atceras."
+        },
+        {
+          "label": "Parasti no mums vairs neko nedzird",
+          "need": 3,
+          "score": {
+            "nurture": 3
+          },
+          "find": "Kas uzreiz nenopērk, par Tevi parasti vairs neko nedzird."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "area": "merisana",
+      "text": "Vai zini, no kuras reklāmas atnāca Tavs pēdējais klients?",
+      "options": [
+        {
+          "label": "Jā, to rāda sistēma",
+          "need": 0,
+          "score": {}
+        },
+        {
+          "label": "Zinu, jo pajautāju viņam pašam",
+          "need": 1,
+          "score": {
+            "capi": 1
+          }
+        },
+        {
+          "label": "Varu nojaust",
+          "need": 2,
+          "score": {
+            "capi": 2,
+            "report": 1
+          },
+          "find": "Kura reklāma atved klientus, var tikai nojaust."
+        },
+        {
+          "label": "Nē",
+          "need": 3,
+          "score": {
+            "capi": 3,
+            "report": 1
+          },
+          "find": "Nav zināms, kura reklāma atved klientus."
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "code": "crm",
+      "title": "Visi pieteikumi vienuviet",
+      "short": "Katrs pieteikums uzreiz nonāk vienā sarakstā ar norādi, no kuras lapas un reklāmas tas atnāca. Nekas nav jāpārraksta, un nekas nepazūd.",
+      "link": {
+        "href": "/marketinga-automatizacija-ar-ko-sakt/",
+        "label": "Ar ko sākt automatizāciju"
+      }
+    },
+    {
+      "code": "reply",
+      "title": "Automātiska pirmā atbilde",
+      "short": "Dažas minūtes pēc pieteikuma cilvēks saņem vēstuli: ziņa ir saņemta, un viņš zina, kas notiks tālāk. Arī piektdienas vakarā.",
+      "link": {
+        "href": "/marketinga-automatizacija-ar-ko-sakt/",
+        "label": "Ar ko sākt automatizāciju"
+      }
+    },
+    {
+      "code": "capi",
+      "title": "Konversiju dati reklāmai",
+      "short": "Meta un Google uzzina par katru pieteikumu un pirkumu. Tu redzi, kura reklāma atved klientus, un reklāmas sistēma mācās no pircējiem, nevis no klikšķiem.",
+      "link": {
+        "href": "/konversiju-uzskaite/",
+        "label": "Kā strādā konversiju uzskaite"
+      }
+    },
+    {
+      "code": "nurture",
+      "title": "E-pasti tiem, kas vēl domā",
+      "short": "Tie, kas vēl domā, nākamajās dienās saņem dažus noderīgus e-pastus, kas atgādina par Tevi bez zvaniem un bez uzmācības.",
+      "link": {
+        "href": "/epasta_marketings/",
+        "label": "Par e-pasta mārketingu"
+      }
+    },
+    {
+      "code": "report",
+      "title": "Atskaite, kas top pati",
+      "short": "Reklāmas un pieteikumu dati vienā panelī. Mēneša atskaite ir gatava, kad to atver, un nevienam nav jākopē skaitļi.",
+      "link": {
+        "href": "/marketinga-automatizacija/",
+        "label": "Kā mēs to ieviešam"
+      }
+    }
+  ],
+  "aiEndpoint": "https://marketingaskola.app.n8n.cloud/webhook/tests-ai?k=ms-liaa-2026"
+}

@@ -1,6 +1,6 @@
 # Card icons
 
-Material Symbols, **Sharp** style, **filled**, weight 400 — from the npm package
+Material Symbols, **Sharp** style, **filled**, weight 400, from the npm package
 `@material-symbols/svg-400@0.48.0` (Google, Apache License 2.0, see `LICENSE`).
 Sharp because every corner on this site is square; filled because objects on
 this site are drawn as solid shapes, never outlines.

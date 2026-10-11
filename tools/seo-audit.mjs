@@ -60,7 +60,7 @@ const has = (text, phrase) => {
   return words(phrase).map(stem).every((w) => t.some((x) => kin(x, w)));
 };
 
-const MONEY = ['/pakalpojumi/', '/facebook-reklama/', '/video-reklama/', '/ai-un-automatizacijas/',
+const MONEY = ['/pakalpojumi/', '/facebook-reklama/', '/video-reklama/', '/marketinga-automatizacija/',
   '/marketinga-konsultacijas/', '/digitala-marketinga-kursi/', '/meta-reklamas-kurss/',
   '/google-ads-kurss/', '/seo-kursi/', '/sazinies/', '/'];
 

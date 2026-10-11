@@ -1,0 +1,17 @@
+{
+  "_comment": "Public reviews, read 11 Oct 2026 from the Google Business profile (16 ratings, all 5 stars, 8 with text) and the Facebook page (6 recommendations, 100%, only one public text). Quotes are the reviewers' own words: obvious typos and punctuation are corrected (aģentūŗām, matreālu, a dash), nothing reworded; two long ones end at a full sentence. Names as first name plus initial, like the site's other testimonials. The totals go stale: re-read both profiles before trusting them, and update `read` when you do. NOT used as AggregateRating schema - Google treats self-published reviews in Organization markup as ineligible.",
+  "read": "11.10.2026",
+  "google": { "rating": "5,0", "count": 16, "url": "https://www.google.com/maps?cid=11786117317390639446" },
+  "facebook": { "share": "100%", "count": 6, "url": "https://www.facebook.com/marketinga.skola/reviews" },
+  "items": {
+    "evija":   { "name": "Evija G.",   "source": "Google",   "topic": "Kursi", "text": "Rihards ir īsts profesionālis! Ja arī tu gribi sasniegt savu klientu ātri, efektīvi, tad piesakies tagad kursiem! Noteikti saņemsi vairāk nekā būsi gaidījis!" },
+    "linda":   { "name": "Linda V.",   "source": "Google",   "topic": "Meta reklāmas kurss", "text": "Apmeklēju Meta reklāmas kursu: tiešām vērtīgi! Ļoti praktiski, interesanti un daudz jaunu knifiņu, ko pielietot ikdienas darbā. Lielisks pasniedzējs un sakārtots saturs. Iesaku!" },
+    "olga":    { "name": "Olga J.",    "source": "Google",   "topic": "Meta reklāmas kurss", "text": "Apmeklēju Meta reklāmas kursus. Ļoti vērtīgi. Zinošs pasniedzējs, teorija + reāli piemēri. Atbildēja uz visiem auditorijas jautājumiem. Padalījās ar vērtīgiem materiāliem, kurus lietot turpmāk. Iesaku :)" },
+    "seneko":  { "name": "SIA Seneko", "source": "Google",   "topic": "Meta reklāmas kurss", "text": "Praktiskas zināšanas ar profesionālu attieksmi pret mācību priekšmetu. Ļoti iesaku ikvienam, kam nepieciešamas praktiskas zināšanas par reklāmas niansēm Meta platformā." },
+    "dana":    { "name": "Dana K.",    "source": "Google",   "topic": "Meta reklāmas kurss", "text": "Noderīgas un padziļinātas zināšanas, ļoti jauka attieksme un atbild uz visiem jautājumiem, kā arī dod materiālu, ko var izmantot pēc kursa apgūšanas." },
+    "katrina": { "name": "Katrīna B.", "source": "Google",   "topic": "Meta reklāmas kurss", "text": "Zinošs pasniedzējs, vērtīgi case study piemēri. Meta reklāmas pamati soli pa solim, kas ļaus izvairīties no dārgām kļūdām." },
+    "toms":    { "name": "Toms L.",    "source": "Google",   "topic": "Sadarbība", "text": "Iesaku Rihardu un visiem 100%. Biju mēģinājis sadarboties ar 10+ freelanceriem un aģentūrām. Kopš sāku sadarbību ar Rihardu, mana nebeidzamā meklēšana beidzās." },
+    "agnese":  { "name": "Agnese K.",  "source": "Google",   "topic": "Sadarbība", "text": "Mana vīra bizness bija iestrēdzis, un nekāda attīstība nenotika. Likās, ka jāpadodas, jo LV neesot naudas. Pēc draudzenes ieteikuma izvēlējāmies Mārketinga Skolu. Nereāli jūtami rezultāti, un tagad plaukstam citā jaudā." },
+    "normunds":{ "name": "Normunds M.", "source": "Facebook", "topic": "Kursi", "text": "Konkrēti un praktiski pa tēmai kursi un nedaudz vairāk." }
+  }
+}
