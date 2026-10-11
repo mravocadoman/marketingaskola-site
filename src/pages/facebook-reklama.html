@@ -36,16 +36,19 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
     <div class="hgrid hgrid--3">
       <div class="cell">
         <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "ads_click" %}</span>
         <h3>Klikšķi ir, klientu nav</h3>
         <p>Atskaitē ir sasniedzamība, klikšķi un sirsniņas, bet neviens nevar pateikt, cik maksāja viens pircējs.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "autorenew" %}</span>
         <h3>Kampaņu labo, kad rezultāts nepatīk</h3>
         <p>Izmaiņas ik pēc pāris dienām, un katra no tām kampaņu atkal atgriež mācīšanās fāzē.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">03</span>
+        <span class="card-icon">{% icon "bar_chart" %}</span>
         <h3>Ar aģentūru jau strādāji</h3>
         <p>Maksāji par pārvaldību, saņēmi atskaiti ar grafikiem un tā arī nesaprati, vai reklāma atmaksājas.</p>
       </div>
@@ -65,6 +68,11 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
     <div class="row cols-2 top">
       <div class="col">
         <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-meta-targeting.njk" %}</figure>
+        <div class="terms">
+          <p><strong>Ja pirms sākuma norunāto rezultātu nesasniedzam, par pārvaldību nemaksā.</strong></p>
+          <p>Sadarbība ir ikmēneša, ar trīs mēnešu sākuma periodu. Reklāmas budžets ir atsevišķs izdevums, to Meta noraksta tieši no Tava reklāmas konta.</p>
+        </div>
+        <p>Ja kampaņai vajag video, to nofilmē mūsu <a href="/video-reklama/">video komanda</a>. Ja pieteikumi jāapstrādā automātiski, palīdz <a href="/ai-un-automatizacijas/">AI un automatizācijas</a>.</p>
       </div>
       <div class="col">
         <ul class="tick-list tick-list--labels">
@@ -76,11 +84,6 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
           <li><strong>Budžeta pārvaldība</strong>Pārdale starp kampaņām visa mēneša garumā.</li>
           <li><strong>Ikmēneša atskaite</strong>Sākas ar klienta piesaistes cenu un atdevi, ja konversiju mērīšana strādā.</li>
         </ul>
-        <div class="terms">
-          <p><strong>Ja pirms sākuma norunāto rezultātu nesasniedzam, par pārvaldību nemaksā.</strong></p>
-          <p>Sadarbība ir ikmēneša, ar trīs mēnešu sākuma periodu. Reklāmas budžets ir atsevišķs izdevums, to Meta noraksta tieši no Tava reklāmas konta.</p>
-        </div>
-        <p>Ja kampaņai vajag video, to nofilmē mūsu <a href="/video-reklama/">video komanda</a>. Ja pieteikumi jāapstrādā automātiski, palīdz <a href="/ai-un-automatizacijas/">AI un automatizācijas</a>.</p>
       </div>
     </div>
     {% include "figures/meta-kas-izskir.njk" %}

@@ -62,12 +62,14 @@ faq:
           <li><strong>Griesti pēc apgrozījuma</strong>Atbalsta apmērs gadā nepārsniedz {{ p.turnoverShare }}% no pēdējā noslēgtā finanšu gada neto apgrozījuma, tāpēc mazākam uzņēmumam griesti ir zemāki nekā {{ p.yearCap | eur }} eiro.</li>
           <li><strong>Atmaksa pēc fakta</strong>Nauda atgriežas pēc fakta: vispirms uzņēmums apmaksā rēķinu, tad iesniedz izdevumus. Izdevumus par kārtējo gadu iesniedz līdz {{ p.claimBy }}.</li>
           <li><strong>Cenu aptauja</strong>Cenu aptauja jāveic pirms plāna iesniegšanas, jo piedāvājumus un protokolu pievieno plānam. Tā ir paša saņēmēja atbildība.</li>
-          <li><strong>Termiņi un izvērtēšana</strong>LIAA norāda, ka {{ p.lastYear }}. gads ir pēdējais gads, kad eksporta darbību plānu var iesniegt un īstenot, ja programmai netiek piešķirts papildu finansējums. Plānu LIAA izvērtē {{ p.decisionDays }} darba dienu laikā, un plānā nevar iekļaut darbības, kas jau ir pabeigtas.</li>
         </ul>
-        <p><a class="arrow-link" href="{{ p.url }}" target="_blank" rel="noopener">Programmas nosacījumi LIAA lapā</a></p>
       </div>
       <div class="col">
         <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-services-module.njk" %}</figure>
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Termiņi un izvērtēšana</strong>LIAA norāda, ka {{ p.lastYear }}. gads ir pēdējais gads, kad eksporta darbību plānu var iesniegt un īstenot, ja programmai netiek piešķirts papildu finansējums. Plānu LIAA izvērtē {{ p.decisionDays }} darba dienu laikā, un plānā nevar iekļaut darbības, kas jau ir pabeigtas.</li>
+        </ul>
+        <p><a class="arrow-link" href="{{ p.url }}" target="_blank" rel="noopener">Programmas nosacījumi LIAA lapā</a></p>
       </div>
     </div>
   </div>
@@ -117,16 +119,19 @@ faq:
     <div class="hgrid hgrid--3">
       <div class="cell">
         <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "check_circle" %}</span>
         <h3>Attiecināms</h3>
         <p>Bukletu, baneru un video izstrāde līdz maketam, ārvalstu partneru meklēšana un telemārketings, dalība starptautiskās izstādēs un tirdzniecības misijās, atbilstoši programmas nosacījumiem.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "cancel" %}</span>
         <h3>Nav attiecināms</h3>
         <p>Druka, ražošana, pavairošana un mediju pirkšana. Tie ir reāli izdevumi, bet šajā pozīcijā tos neieskaita, tāpēc mēs tos nepiedāvājam kopā ar izstrādi un nerakstām vienā rindā.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">03</span>
+        <span class="card-icon">{% icon "percent" %}</span>
         <h3>PVN</h3>
         <p>Atbalstu rēķina no izmaksām bez PVN. Tāpēc visas cenas šajā lapā ir bez PVN: tā ir summa, kas nonāk aprēķinā.</p>
       </div>

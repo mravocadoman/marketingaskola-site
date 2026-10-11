@@ -139,6 +139,22 @@ module.exports = function (eleventyConfig) {
   // ("75 000", "1 000 €"). Money in copy comes from data through this filter.
   eleventyConfig.addFilter("eur", (n) => String(Math.round(Number(n))).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0"));
   eleventyConfig.addFilter("gross", (n, rate) => lvNum(Number(n) * (1 + (rate ?? 21) / 100)));
+  // {% icon "name" %}: one Material Symbols icon (Sharp, filled) from
+  // src/_includes/icons/, inlined so CSS sets its colour. Decorative only:
+  // every card that carries one also has its own heading. A missing file
+  // fails the build rather than leaving an empty tile on the page.
+  const iconCache = new Map();
+  eleventyConfig.addShortcode("icon", (name) => {
+    if (!iconCache.has(name)) {
+      const file = path.join(SRC, "_includes", "icons", `${name}.svg`);
+      if (!fs.existsSync(file)) throw new Error(`icon "${name}" not found in _includes/icons/`);
+      const svg = fs.readFileSync(file, "utf8").trim()
+        .replace(/\s(width|height)="[^"]*"/g, "")
+        .replace("<svg ", '<svg class="icon" aria-hidden="true" focusable="false" fill="currentColor" ');
+      iconCache.set(name, svg);
+    }
+    return iconCache.get(name);
+  });
   eleventyConfig.addShortcode("offer", (key, field) => {
     // The Meta ad-spend floor (the client's budget, not our fee). One source,
     // site.metaMinAdSpend, shared with /facebook-reklama/ and the ladder.
@@ -509,7 +525,11 @@ module.exports = function (eleventyConfig) {
           start.kind = /\bsec--hero\b|\bpage-hero\b/.test(cls) ? "hero"
             : /\bcta-band\b/.test(cls) ? "closer"
             : /\bsec--band\b/.test(cls) ? "band"
-            : !/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner) ? "keep"
+            // Card grids stay on the canvas too (owner, 11 Oct 2026: cards on
+            // the lighter band read as "too much of a mix", even with the
+            // cards taking the band's colour). The band is for sections of
+            // running text, steps and FAQs; a grid of cards is already divided.
+            : !/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner) || /class="hgrid\b/.test(inner) ? "keep"
             : "plain";
           found.push(start);
           start = null;

@@ -49,16 +49,19 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     <div class="hgrid hgrid--3">
       <div class="cell">
         <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "pending" %}</span>
         <h3>Dari daudz, bet neesi drošs, vai pareizi</h3>
         <p>Reklāmas, saturs, kanāli: viss kaut kā notiek. Tikai neviens nevar pateikt, kas no tā tiešām strādā un kas nestrādā.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "visibility" %}</span>
         <h3>Savu biznesu ir grūti redzēt no malas</h3>
         <p>Tā ir katram, kas tajā strādā katru dienu. Tieši tāpēc paliek nepamanītas gan kļūdas, gan vienkāršākie risinājumi.</p>
       </div>
       <div class="cell">
         <span class="cell-idx">03</span>
+        <span class="card-icon">{% icon "contact_support" %}</span>
         <h3>Ir jautājumi, nav skaidru atbilžu</h3>
         <p>Apsver reklāmas, SEO vai sociālos medijus, bet neesi pārliecināts par pareizo virzienu un secību.</p>
       </div>
@@ -79,12 +82,14 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     <div class="hgrid hgrid--2">
       <div class="cell">
         <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "call" %}</span>
         <h3>Bezmaksas 20 minūšu iepazīšanās zvans</h3>
         <p>Domāts, ja apsver sadarbību ar mums kā aģentūru. Pastāsti, ko gribi sasniegt, un mēs pasakām, vai un kā varam palīdzēt. Tā ir saruna par sadarbību, nevis konsultācija par Tavu mārketingu.</p>
         <a class="arrow-link" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
       </div>
       <div class="cell">
         <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "event" %}</span>
         <h3>Mārketinga konsultācija: €{{ o60.price }} + PVN / h</h3>
         <p>Domāta, ja Tev vajadzīgi ieteikumi par savu biznesu neatkarīgi no tā, vai pēc tam strādāsim kopā. Maksas saruna: {{ o60.duration }} visai mārketinga situācijai vai {{ o30.duration }} vienam konkrētam jautājumam. Rezultāts ir prioritātes un konkrēti nākamie soļi. Īsā sesija: €{{ o30.price }} + PVN; ilgākam darbam ir {{ bundle.sessions }} sesiju komplekts par €{{ bundle.price }} + PVN.</p>
         <a class="arrow-link" href="#piesakies">Rezervēt konsultāciju</a>

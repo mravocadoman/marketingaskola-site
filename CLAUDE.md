@@ -227,6 +227,11 @@ before. Three rules, each load-bearing:
   33 bands across 18 pages, **none** containing a motif.
 - **An existing `.sec--band` or the closing `.cta-band` counts as a band**, so
   two never touch and read as one tall block.
+- **A section containing a card grid (`.hgrid`) is never banded** (added
+  11 Oct 2026). Owner, shown cards on the band - first a dark grid on the
+  lighter section, then the cards in the band's own colour: *"I'm still not
+  happy with the lighter background version."* The band is for running text,
+  steps and FAQs; a grid of cards is already divided by its hairlines.
 
 `/pakalpojumi/` therefore gets no new band at all - all three of its sections
 carry motifs - and keeps only the process band it already had. That is correct,
@@ -3931,6 +3936,34 @@ brief, scored reports for `/` and `/facebook-reklama/`) live outside the repo in
   ONE link, to the live site. Re-take a screenshot when a site is redesigned.
   Descriptions say only what the screenshot shows, plus two facts recorded
   elsewhere: Starfleet's 417 orders and that Fitosauna is also a video client.
+- **Every text card carries an icon (11 Oct 2026).** Owner: *"all of these in
+  all the pages need some sort of icons or images to make it more interesting
+  and easier to read.. instead of just boxed sections."* 59 text-only `.cell`s
+  on live pages got `<span class="card-icon">{% icon "name" %}</span>` above
+  their `h3`. Icons are **Material Symbols, Sharp, filled** (square corners,
+  solid shapes, like the rest of the site), vendored one file each in
+  `src/_includes/icons/` with the Apache-2.0 licence and a README; the `icon`
+  shortcode inlines them and a missing name fails the build. A plain grey
+  icon, never cyan (the cyan budget forbids mass icon tint), and **no tile behind
+  it**: the first version sat on an inset tile, and on a band that made four
+  tones in one card. Owner: *"to much of a mix in these sections, and it doesnt
+  read as professional."* The same day cards inside a band were given the
+  band's own surface (`--cell` / `--cell-hover`), and when that still did not
+  please, **card grids were taken off the band altogether** (the fourth band
+  rule under "Sections had to separate"). The `--cell` tokens stay as the
+  fallback for a hand-written `.sec--band` that ever holds cards. **A new text card
+  gets an icon too** - pick one that names the card's subject, not a generic
+  check mark. The two retired noindex pages were left without.
+- **A picture beside a list must not leave half the row empty (11 Oct 2026).**
+  Owner, on `/facebook-reklama/` "Ko Tu saņem": *"why not move part of the text
+  below the image in the empty space?"* Measured every picture-and-text row by
+  where each column's content ends (the columns themselves stretch to equal
+  height, so measuring them shows nothing): three were over 1.8:1 and were
+  rebalanced by moving whole blocks under the picture, wording untouched - the
+  Meta terms box and cross-sell note, the AI page's closing line, and the last
+  LIAA fact plus its programme link. Rows where a screenshot or portrait is the
+  taller side were left alone. Measure with lazy images forced to load, or a
+  2px unloaded image reads as a 146:1 row.
 - **No SEO case on our own site yet.** Search Console, read 10 Oct: since the
   move clicks are up 12% on the month before, but down 55% on the same weeks
   last year while position and query count improved. Publishing that would
