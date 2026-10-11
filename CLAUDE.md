@@ -3258,7 +3258,44 @@ of markup, crisp at any size.
 The six raster `hero-*.webp` files and their manifest slots are deleted. Git
 has them if a motif ever needs to go back to raster.
 
-## /video-reklama/ actors: cyan rings, not grey squares (9 Sep 2026)
+## /video-reklama/: AI video or actors with Impromotion (11 Oct 2026)
+
+Owner: *"add the same videos as in homepage at the top. Then, remove the actors
+list; and basically make the service that we both offer AI-generated videos,
+and have a partnership with Impromotion... Promote actors as premium version and
+AI-generated as the cheap alternative."*
+
+- **The header is the homepage reel**, through the same includes:
+  `hero-reel.njk` with `reelPlain` (no result cards: they are Meta ad results
+  and beside a video they would read as video results) and `reelHref` pointing
+  at the page's own `#video`, plus `hero-reel-wide.njk` under the `h1` on
+  phones, where `.page-hero .hero-reel` is hidden. main.js needed no change.
+  The `/pakalpojumi/` and homepage tiles still show `motifs/video.njk`: a
+  second playing video in a tile grid is not worth its weight, so this is the
+  one service whose tile is not its header.
+- **Section 02 "Divi veidi"** sets the two options side by side: **AI video**
+  ("Ātrāk un lētāk": no filming day, actors or crew, more variants for tests)
+  and **Video ar aktieriem** ("Premium": actors from Impromotion, filming and
+  editing by us). It closes on the ladder between them: test ideas cheaply
+  with AI, then film the one that proved itself with actors. No prices,
+  because none exist: "lētāk" is relative and the FAQ says why.
+- **Impromotion is an improv ACTORS collective** (impromotion.lv, the owner's
+  own site, which sells actors for events), not a video studio. So the copy
+  says they supply the actors and the script, filming and editing stay ours,
+  which is also what the Fitosauna testimonial on the page describes. The link
+  sits inline in a card with no `.arrow-link` (a stretched link would cover
+  it) and in the FAQ "Kas ir Impromotion?".
+- **The actors section is gone**, and with it the five profiles. The photos
+  stay in `src/img/2023/11/`, unreferenced, so they no longer ship. The 9 Sep
+  section below is history.
+- **No AI video example is on the page yet.** The works section is the four
+  actor-led campaigns. Add one when there is a real AI video to show; do not
+  generate a sample just to fill the slot.
+- The homepage tile, the hub's sub and tile and `llms.txt` describe both
+  options. New Latvian went through `lv:review` (18 findings, most taken; the
+  infinitive button "Salīdzināt abus veidus" kept, as every button here is).
+
+## /video-reklama/ actors: cyan rings, not grey squares (9 Sep 2026) — HISTORY: the actors section was removed 11 Oct 2026
 
 **Five actors since 9 Oct 2026: Monta Kārkliņa was removed (owner).** Five
 cards in a three-column hairline grid leave one empty slot, which used to show

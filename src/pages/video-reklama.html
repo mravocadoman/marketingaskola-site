@@ -1,26 +1,36 @@
 ---
 layout: page.njk
-title: "Video reklāma ar improvizācijas aktieriem | Mārketinga Skola"
-description: "Reklāmas video ar improvizācijas aktieriem: scenārijs, filmēšana un montāža vienā komandā. Vertikāli Reels un horizontāli Feed video, gatavi publicēšanai."
+title: "Video reklāma ar AI vai aktieriem | Mārketinga Skola"
+description: "Reklāmas video divos veidos: AI video, kas ir ātrāk un lētāk, vai video ar improvizācijas aktieriem kopā ar partneriem Impromotion. Scenārijs, video un montāža reklāmas formātos."
 permalink: "/video-reklama/"
 crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
 service: { name: "Video reklāmas izstrāde", serviceType: "Video produkcija" }
 image: "/img/2023/11/Screenshot.png"
 ---
 {% from "form.njk" import form with context %}
+{#- The header shows the agency's own ads (11 Oct 2026, owner: "add the same
+    videos as in homepage at the top"): the homepage reel, without its result
+    cards, and the wide cut under the headline on phones. Owner, same day:
+    "make the service that we both offer AI-generated videos, and have a
+    partnership with Impromotion... promote actors as premium version and
+    AI-generated as the cheap alternative." Impromotion is an improv actors
+    collective (impromotion.lv); the script, filming and editing stay ours,
+    which is what the Fitosauna testimonial below describes. #}
+{% set reelHref = "#video" %}{% set reelPlain = true %}
 <section class="page-hero page-hero--media">
   <div class="container">
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Video reklāma</span>
-      <h1>Reklāmas video ar <em>improvizācijas aktieriem</em>: no idejas līdz gatavam failam</h1>
-      <p class="sub">Uzņēmumiem, kam vajag video sociālo tīklu un YouTube reklāmām, bet nav ne scenārista, ne operatora, ne cilvēka, ko likt kadrā. Mēs uzrakstām scenāriju, atrodam aktieri savā komandā, nofilmējam un samontējam. Tu saņem gatavus failus publicēšanai.</p>
+      <h1>Reklāmas video divos veidos: ar AI vai ar <em>aktieriem</em></h1>
+      {%- include "hero-reel-wide.njk" %}
+      <p class="sub">AI video ir ātrākais un lētākais veids, kā tikt pie vairākiem video testiem. Ja kadrā vajag cilvēku, kas pārliecina, filmējam ar improvizācijas aktieriem sadarbībā ar Impromotion. Scenāriju un montāžu abos gadījumos veicam mēs.</p>
       <div class="btn-wrap">
         <a class="btn" href="#zvans">Pastāsti par savu ideju</a>
-        <a class="btn btn--ghost" href="#video">Skatīt darbus</a>
+        <a class="btn btn--ghost" href="#veidi">Salīdzināt abus veidus</a>
       </div>
       </div>
-      <figure class="hero-media">{% include "motifs/video.njk" %}</figure>
+      {% include "hero-reel.njk" %}
     </div>
   </div>
 </section>
@@ -57,30 +67,42 @@ image: "/img/2023/11/Screenshot.png"
   </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="veidi">
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">02</span> Pakalpojuma saturs</span>
-        <h2>Ko tieši nododam pēc filmēšanas</h2>
+        <span class="eyebrow"><span class="idx">02</span> Divi veidi</span>
+        <h2>AI video vai video ar aktieriem</h2>
       </div>
-      <p class="lead">Ne “radošu risinājumu”, bet konkrētu sarakstu: dokumentus, ko apstiprini, cilvēku, kas ir kadrā, un failus, ko vari uzlikt kampaņā.</p>
+      <p class="lead">Scenāriju un montāžu abos gadījumos veicam mēs. Atšķiras tas, kas ir kadrā, cik tas maksā un cik ātri tas ir gatavs.</p>
     </div>
-    <div class="row cols-2 top">
-      <div class="col">
-        <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-video-formats.njk" %}</figure>
-      </div>
-      <div class="col">
+    <div class="hgrid hgrid--2">
+      <div class="cell">
+        <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "smart_toy" %}</span>
+        <div class="course-tag">Ātrāk un lētāk</div>
+        <h3>AI video</h3>
+        <p>Video bez filmēšanas dienas: kadrus veidojam ar AI rīkiem pēc mūsu scenārija. Nav jāmaksā par aktieriem un filmēšanas grupu, tāpēc tas ir lētāk, un par to pašu budžetu var izveidot vairākus variantus testiem.</p>
         <ul class="tick-list">
-          <li><strong>Koncepts un vēstījums rakstiski</strong>: pēc uzņēmuma un mērķauditorijas izpētes, apstiprināms pirms filmēšanas, nevis pēc tās.</li>
-          <li><strong>Scenārijs</strong>, ko pārrunājam un pielāgojam kopā ar Tevi.</li>
-          <li><strong>Aktieris no mūsu improvizācijas komandas</strong>: piecu cilvēku sastāvs ar atšķirīgiem tipāžiem, izvēli piedāvājam mēs, apstiprini Tu.</li>
-          <li><strong>Filmēšanas diena, ko plānojam un vadām mēs</strong>: atsevišķa filmēšanas grupa Tev nav jāalgo.</li>
-          <li><strong>Montāža un gala faili</strong> tajos formātos, kur reklāma tiks rādīta: Lumi mājām no vienas filmēšanas sagatavojām 4 video gan vertikālā Reels, gan horizontālā Feed formātā.</li>
+          <li>Bez filmēšanas, aktieriem un filmēšanas grupas</li>
+          <li>Vairāki varianti, ko salīdzināt kampaņā</li>
+          <li>Labi der produktu video un idejām, ko gribi pārbaudīt</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "theater_comedy" %}</span>
+        <div class="course-tag">Premium</div>
+        <h3>Video ar aktieriem</h3>
+        <p>Īsts cilvēks kadrā, kas runā ar skatītāju un pārliecina. Aktierus nodrošina mūsu partneris <a href="https://impromotion.lv/" target="_blank" rel="noopener">Impromotion</a>, improvizācijas aktieru kolektīvs, bet filmēšanu un montāžu veicam mēs.</p>
+        <ul class="tick-list">
+          <li>Improvizācijas aktieri, kas uz vietas piedāvā variantus</li>
+          <li>Filmēšanas diena, ko plānojam un vadām mēs</li>
+          <li>No vienas filmēšanas vairāki video dažādos formātos</li>
         </ul>
       </div>
     </div>
-    {% include "figures/video-kas-aptur.njk" %}
+    <p class="proof-line">Ja nezini, kuru izvēlēties, var sākt ar AI video: lēti pārbaudīt vairākas idejas un pēc tam ar aktieriem nofilmēt to, kura sevi pierādījusi.</p>
   </div>
 </section>
 
@@ -88,70 +110,26 @@ image: "/img/2023/11/Screenshot.png"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">03</span> Aktieri</span>
-        <h2>Improvizācijas aktieri, nevis modeļi</h2>
+        <span class="eyebrow"><span class="idx">03</span> Pakalpojuma saturs</span>
+        <h2>Ko tieši saņem</h2>
       </div>
-      <p class="lead">Viņi nelasa tekstu no lapas, bet pielāgojas uz vietas un piedāvā variantus, tāpēc no vienas filmēšanas dienas parasti iznāk vairāki izmantojami video.</p>
+      <p class="lead">Nevis “radošu risinājumu”, bet konkrētu sarakstu: dokumentus, ko apstiprini, un failus, ko vari izmantot kampaņā.</p>
     </div>
-    <div class="hgrid hgrid--3">
-      <div class="cell">
-        <span class="cell-idx">01</span>
-        <figure class="img img--actor"><img src="/img/2023/11/profile-pic-3.webp" alt="Kristers Odziņš" loading="lazy"></figure>
-        <h3>Kristers Odziņš</h3>
-        <div class="course-tag">“Mācītājs”</div>
-        <p>Pozitīvs. Harizmātisks. Daži pat teiktu izskatīgs. Reklāmās padodas dot vieglumu un personību. Izmantojot desmitgades pieredzi improvizācijā, varu pielāgoties visām situācijām, kas filmēšanas laikā var izvērsties.</p>
-        <div class="chip-row">
-          <a class="chip-link" href="https://www.facebook.com/Kristers.Kukie">Facebook</a>
-          <a class="chip-link" href="https://www.instagram.com/kristersodzins/">Instagram</a>
-        </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <figure class="media media--wide media--motif motif--scroll">{% include "motifs/band-video-formats.njk" %}</figure>
       </div>
-      <div class="cell">
-        <span class="cell-idx">02</span>
-        <figure class="img img--actor"><img src="/img/2023/11/profile-pic-4.webp" alt="Leina Markevica" loading="lazy"></figure>
-        <h3>Leina Markevica</h3>
-        <div class="course-tag">“Zigrīda”</div>
-        <p>Meitene ar dzirkstošu enerģiju, kas aizraus publiku. Plašā improvizācijas un komēdijas pieredze palīdz pārvērst katru reklāmu neaizmirstamā pieredzē. Parunāsim, iepazīsimies un vienosimies par tavu perfekto reklāmas scenāriju.</p>
-        <div class="chip-row">
-          <a class="chip-link" href="https://www.facebook.com/markevica">Facebook</a>
-          <a class="chip-link" href="https://www.instagram.com/leinamarkevica/">Instagram</a>
-          <a class="chip-link" href="https://www.tiktok.com/@leinamarkevica">TikTok</a>
-        </div>
-      </div>
-      <div class="cell">
-        <span class="cell-idx">03</span>
-        <figure class="img img--actor"><img src="/img/2023/11/profile-pic-2.webp" alt="Sandis Elsts" loading="lazy"></figure>
-        <h3>Sandis Elsts</h3>
-        <div class="course-tag">“Sandis Valters”</div>
-        <p>Improvizators ar vairāk nekā 15 gadu pieredzi. Ar improvizāciju sāka nodarboties, jo netīšām aizgāja uz mēģinājumu, domādams, ka tas ir teātra pulciņš. Ļoti labi māk izlikties dumjāks kā patiesībā – vai arī vismaz tā domā. Darbojas kā aktieris dažādos improvizācijas kolektīvos, tostarp “Shitty Dinner”, “Plit” un “Spiediens”.</p>
-        <div class="chip-row">
-          <a class="chip-link" href="https://www.facebook.com/sandis.elsts">Facebook</a>
-          <a class="chip-link" href="https://www.instagram.com/sandiselsts/">Instagram</a>
-        </div>
-      </div>
-      <div class="cell">
-        <span class="cell-idx">04</span>
-        <figure class="img img--actor"><img src="/img/2023/11/profile-pic.webp" alt="Robins Reins" loading="lazy"></figure>
-        <h3>Robins Reins</h3>
-        <div class="course-tag">“Rozā”</div>
-        <p>Nosvērts. Mierīgs. Dažreiz nemierīgs. Uztaisām jauku un pozitīvu pasākumu kopā! Improvizācijas teātri nodarbojos gandrīz desmit gadus, esmu improvēzijs gan Latvijā, gan citā vietā Latvijā! Pamēģinājis esmu visu, ko var – studēt, rakt, lidot, dejot, dziedāt, būvēt, prezentēt, pārdot, analizēt – līdz ar to gan jau atradīsim, kā šo pieredzi integrēt tavā reklāmā!</p>
-        <div class="chip-row">
-          <a class="chip-link" href="https://www.facebook.com/RobinsRein">Facebook</a>
-          <a class="chip-link" href="https://www.instagram.com/robinrein/">Instagram</a>
-        </div>
-      </div>
-      <div class="cell">
-        <span class="cell-idx">05</span>
-        <figure class="img img--actor"><img src="/img/2023/11/profile-pic-6.webp" alt="Rihards Zeiļa" loading="lazy"></figure>
-        <h3>Rihards Zeiļa</h3>
-        <div class="course-tag">“Burkāns”</div>
-        <p>Rihards ir darbojies improvizācijas kolektīvos “Džins” un “Plit”, kā arī piedalījies “Spiediens” meistarklasēs. Apguvis improvizācijas mākslu arī Taizemes salā Koh Phangan no pieredzējuša Kalifornijas improvizācijas pasniedzēja Breeze.</p>
-        <div class="chip-row">
-          <a class="chip-link" href="https://www.facebook.com/profile.php?id=100000487541249">Facebook</a>
-          <a class="chip-link" href="https://twitter.com/rihards_ze">X</a>
-          <a class="chip-link" href="https://www.instagram.com/rihards.ze/">Instagram</a>
-        </div>
+      <div class="col">
+        <ul class="tick-list">
+          <li><strong>Koncepts un vēstījums rakstiski</strong>: pēc uzņēmuma un mērķauditorijas izpētes, apstiprināms pirms sākam veidot video, nevis pēc tam.</li>
+          <li><strong>Scenārijs</strong>, ko pārrunājam un pielāgojam kopā ar Tevi.</li>
+          <li><strong>AI video</strong>: kadri veidoti ar AI rīkiem pēc scenārija, bez filmēšanas dienas.</li>
+          <li><strong>Video ar aktieriem</strong>: aktieris no Impromotion kolektīva un filmēšanas diena, ko plānojam un vadām mēs. Aktieri piedāvājam mēs, apstiprini Tu.</li>
+          <li><strong>Montāža un gala faili</strong> tajos formātos, kur reklāma tiks rādīta: Lumi mājām no vienas filmēšanas sagatavojām 4 video gan vertikālā Reels, gan horizontālā Feed formātā.</li>
+        </ul>
       </div>
     </div>
+    {% include "figures/video-kas-aptur.njk" %}
   </div>
 </section>
 
@@ -162,29 +140,29 @@ image: "/img/2023/11/Screenshot.png"
         <span class="eyebrow"><span class="idx">04</span> Process</span>
         <h2>Trīs soļi, un katrā Tu kaut ko apstiprini</h2>
       </div>
-      <p class="lead">Nekas netiek filmēts, kamēr neesi redzējis konceptu un scenāriju.</p>
+      <p class="lead">Nekas netiek veidots, kamēr neesi redzējis konceptu un scenāriju.</p>
     </div>
     <div class="steps">
       <div class="step">
         <span class="step-num">01</span>
         <h3>Saruna un koncepts</h3>
-        <p>Pārrunājam zīmola vērtības, mērķi un vēstījumu, izpētām uzņēmumu un mērķauditoriju, un piedāvājam idejas, ko attīstām kopā ar Tevi.</p>
-        <p><strong>Tu redzi:</strong> konceptu un vēstījumu rakstiski, pirms tiek plānota filmēšana.</p>
+        <p>Pārrunājam zīmola vērtības, mērķi un vēstījumu, izpētām uzņēmumu un mērķauditoriju, un kopā izlemjam, vai video veidot ar AI vai ar aktieriem.</p>
+        <p><strong>Tu redzi:</strong> konceptu un vēstījumu rakstiski, pirms sākam veidot video.</p>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <h3>Scenārijs un sagatavošanās</h3>
-        <p>Pēc koncepta apstiprināšanas rakstām scenāriju, izvēlamies aktieri no komandas un plānojam produkciju: atrašanās vietu, kadru sarakstu un dienas grafiku.</p>
-        <p><strong>Tu redzi:</strong> scenāriju, piedāvāto aktieri un filmēšanas plānu, un apstiprini tos.</p>
+        <p>Pēc koncepta apstiprināšanas rakstām scenāriju. AI video gadījumā sagatavojam kadru sarakstu un vizuālo stilu, savukārt, ja video ir ar aktieriem, kopā ar Impromotion izvēlamies aktieri un plānojam filmēšanas dienu.</p>
+        <p><strong>Tu redzi:</strong> scenāriju un plānu (video ar aktieriem arī piedāvāto aktieri) un apstiprini tos.</p>
       </div>
       <div class="step">
         <span class="step-num">03</span>
-        <h3>Filmēšana un montāža</h3>
-        <p>Nofilmējam, samontējam un sagatavojam gala materiālu tajos formātos, kuros reklāma tiks rādīta.</p>
+        <h3>Video un montāža</h3>
+        <p>Izveidojam video ar AI vai nofilmējam ar aktieriem, samontējam un sagatavojam gala materiālu tajos formātos, kuros reklāma tiks rādīta.</p>
         <p><strong>Tu redzi:</strong> gatavus video failus, ko vari uzreiz likt kampaņā.</p>
       </div>
     </div>
-    <p><a class="arrow-link" href="#zvans">Pastāsti, ko gribi nofilmēt</a></p>
+    <p><a class="arrow-link" href="#zvans">Pastāsti, kādu video gribi</a></p>
   </div>
 </section>
 
@@ -265,10 +243,13 @@ image: "/img/2023/11/Screenshot.png"
     <div class="row cols-2 top">
       <div class="col">
         <details class="faq"><summary>Cik ilgs laiks paiet no pirmās sarunas līdz gataviem video?</summary><div>
-          <p>Tas ir atkarīgs no video skaita, filmēšanas vietas un aktieru grafikiem. Fitosaunas projektā, klienta paša vārdiem, izstrāde no A līdz Z aizņēma aptuveni 3 nedēļas. Konkrētu termiņu nosaucam pēc pirmās sarunas, kad zinām apjomu.</p>
+          <p>Tas ir atkarīgs no video skaita un no tā, vai vajag filmēšanu. AI video parasti ir gatavs ātrāk, jo filmēšanas diena nav jāplāno. Fitosaunas video ar aktieriem izstrāde no A līdz Z, pēc paša klienta vārdiem, aizņēma aptuveni 3 nedēļas. Konkrētu termiņu nosaucam pēc pirmās sarunas, kad zinām apjomu.</p>
         </div></details>
         <details class="faq"><summary>Kas jāsagatavo man?</summary><div>
-          <p>Zīmola vērtības, mērķis un vēstījums, ko gribi pateikt, to izrunājam pirmajā sarunā. Tālāk no Tevis vajadzīgi tikai divi apstiprinājumi: konceptam un scenārijam. Aktieru atlasi, produkcijas plānošanu, filmēšanu un montāžu organizējam mēs.</p>
+          <p>Zīmola vērtības, mērķis un vēstījums, ko gribi pateikt, to izrunājam pirmajā sarunā. Tālāk no Tevis vajadzīgi tikai divi apstiprinājumi: konceptam un scenārijam. Pārējo organizējam mēs, arī aktieru atlasi un filmēšanu, ja video ir ar aktieriem.</p>
+        </div></details>
+        <details class="faq"><summary>Ar ko AI video atšķiras no video ar aktieriem?</summary><div>
+          <p>AI video veidojam bez filmēšanas, tāpēc tas ir lētāks un ātrāk gatavs, un var uztaisīt vairāk variantu testiem. Video ar aktieriem ir dārgāks, bet īsts cilvēks kadrā parasti rada vairāk uzticības, īpaši, ja produktu vajag izskaidrot vai parādīt darbībā. Bieži vislabāk ir izmantot abus: ar AI pārbaudīt idejas un ar aktieriem nofilmēt to, kura sevi pierādījusi.</p>
         </div></details>
         <details class="faq"><summary>Kāpēc improvizācijas aktieri, nevis modeļi?</summary><div>
           <p>Filmēšanas laukumā reti viss notiek pēc plāna. Improvizācijas aktieris pielāgojas tam, kas notiek, un uz vietas piedāvā vairākus variantus vienam kadram. No tā izriet gan dzīvāks rezultāts, gan lielāks izmantojamā materiāla apjoms no vienas dienas.</p>
@@ -279,7 +260,10 @@ image: "/img/2023/11/Screenshot.png"
           <p>Tādos, kur reklāma tiks rādīta. Lumi mājām no vienas filmēšanas sagatavojām video gan vertikālā Reels, gan horizontālā Feed formātā; AmpsUp: YouTube reklāmu; Dares4Us: video Kickstarter kampaņai. Formātus saskaņojam koncepta posmā, pirms filmēšanas.</p>
         </div></details>
         <details class="faq"><summary>Cik tas maksā?</summary><div>
-          <p>Fiksēta cenrāža nav: summa atkarīga no video skaita, filmēšanas dienu skaita un iesaistīto aktieru skaita. Pastāsti, ko plāno filmēt, un pēc sarunas nosūtām konkrētu piedāvājumu.</p>
+          <p>Fiksētas cenas nav. AI video ir lētāks, jo nav jāmaksā par filmēšanas dienu, aktieriem un filmēšanas grupu. Video ar aktieriem izmaksas atkarīgas no video skaita, filmēšanas dienu skaita un aktieru skaita. Pastāsti, ko plāno, un pēc sarunas nosūtām konkrētu piedāvājumu.</p>
+        </div></details>
+        <details class="faq"><summary>Kas ir Impromotion?</summary><div>
+          <p>Improvizācijas aktieru kolektīvs, ar ko kopā veidojam video ar aktieriem. Aktierus nodrošina Impromotion, bet scenāriju, filmēšanu un montāžu veicam mēs. Aktierus var apskatīt <a href="https://impromotion.lv/" target="_blank" rel="noopener">impromotion.lv</a>.</p>
         </div></details>
         <details class="faq"><summary>Vai palīdzat arī ar reklāmu izvietošanu?</summary><div>
           <p>Video produkcija un kampaņu pārvaldība ir divi atsevišķi pakalpojumi, bet abus var pasūtīt kopā: Meta reklāmas ir mūsu ikdiena. Skaties <a href="/facebook-reklama/">Meta reklāmas pakalpojumu</a>.</p>
@@ -294,7 +278,7 @@ image: "/img/2023/11/Screenshot.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">08</span> Pieteikšanās</span>
-        <h2>Pastāsti, ko gribi nofilmēt</h2>
+        <h2>Pastāsti, kādu video gribi</h2>
       </div>
       <p class="lead">Aizpildi formu, raksti uz <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a> vai <a href="https://wa.me/37126673384" target="_blank" rel="noopener">WhatsApp +371 26673384</a>, atbildēsim ar jautājumiem, kas mums vajadzīgi piedāvājumam.</p>
     </div>
@@ -306,7 +290,7 @@ image: "/img/2023/11/Screenshot.png"
   <div class="container cta-band-inner">
     <div>
       <h2>Vispirms parunāsim 20 minūtes</h2>
-      <p>Bezmaksas 20 minūšu iepazīšanās zvans: pastāsti, ko gribi nofilmēt un kur to rādīsi, un mēs pateiksim, vai un kā to varam izdarīt.</p>
+      <p>Bezmaksas 20 minūšu iepazīšanās zvans: pastāsti, kādu video gribi un kur to rādīsi, un mēs pateiksim, vai labāk der AI video vai video ar aktieriem.</p>
     </div>
     <div class="btn-wrap">
       <a class="btn" href="/sazinies/">Pieteikties 20 min zvanam</a>

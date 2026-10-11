@@ -1116,6 +1116,11 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .reel-card-num { font-family: var(--font-display); font-weight: 600; font-size: var(--t-d2); line-height: 1.05; letter-spacing: -0.02em; color: var(--heading); font-variant-numeric: tabular-nums; }
 .reel-card-num .sfx { color: var(--cyan); }
 .reel-card-sub { font-size: var(--t-sm); color: var(--body); }
+/* The video page's header uses the reel without the result cards (11 Oct
+   2026): no room needs keeping for cards, and the inner-page hero hides its
+   artwork on phones, where the wide reel under the headline takes over. */
+.hero-reel--plain { padding: 0; max-width: 340px; }
+@media (max-width: 980px) { .page-hero .hero-reel { display: none; } }
 .reel-caption { margin-top: 14px; text-align: center; font-size: var(--t-micro); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) {
   .hero-reel .reel-phone { --rise: 26px; animation: hero-rise calc(0.8s * var(--motion)) var(--ease-out) calc(0.3s * var(--motion)) backwards; }
