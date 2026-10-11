@@ -1709,11 +1709,14 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
   justify-content: center;
   gap: clamp(28px, 3.2vw, 48px);
 }
-.article-body { grid-column: 2; max-width: none; }
-.toc { grid-column: 3; }
+.article-body { grid-column: 2; grid-row: 1; max-width: none; }
+/* The TOC precedes the article in the markup so it leads on small screens;
+   pinning both to row 1 keeps them side by side on desktop (without it the
+   auto-placement cursor pushes the article into a second row). */
+.toc { grid-column: 3; grid-row: 1; }
 @media (max-width: 1020px) {
   .article-grid { grid-template-columns: minmax(0, 720px); justify-content: center; }
-  .article-body, .toc { grid-column: 1; }
+  .article-body, .toc { grid-column: 1; grid-row: auto; }
 }
 
 /* v7 "alive" motion (9 Oct 2026). Entrances are on --motion; hovers are not. */

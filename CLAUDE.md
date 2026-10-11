@@ -1165,6 +1165,15 @@ container scoped to articles.
 Side effect worth knowing: in-article infographics render 48px wider, which
 helps — their baked-in labels were already marginal at small sizes.
 
+**The table of contents leads on phones and tablets (11 Oct 2026).** Owner:
+*"put satura rādītājs directly after the image (on top) for blog posts, instead
+of bottom."* Under 1020px the grid is one column, and the `<aside class="toc">`
+followed the article in the markup, so it landed after the last paragraph. It
+comes first in `post.njk` now; on desktop `.article-body` and `.toc` are both
+pinned to `grid-row: 1`, or the auto-placement cursor would drop the article
+into a second row under the sidebar. Measured at 1440/1100px (sidebar, same
+row, still sticky at 104px) and 900/390px (above the article, no overflow).
+
 ## Geometry — SQUARE, one decision (21 Aug 2026)
 
 The stylesheet had **seven** corner treatments at once: 8px, 6px, 5px, 4px, 2px,

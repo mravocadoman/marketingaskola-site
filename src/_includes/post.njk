@@ -40,6 +40,20 @@ layout: base.njk
 <div class="paper">
   <div class="container article-shell">
     <div class="article-grid">
+      {#- The table of contents comes FIRST in the markup (owner, 11 Oct 2026:
+          "directly after the image, on top"). On phones and tablets that puts it
+          under the header picture instead of after the whole article; on desktop
+          both pieces are pinned to row 1, so it stays the sticky right column. #}
+      {% if outline.length > 2 %}
+      <aside class="toc" aria-label="Satura rādītājs">
+        <p class="toc-h">Satura rādītājs</p>
+        <ol data-toc>
+          {% for h in outline %}
+          <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
+          {% endfor %}
+        </ol>
+      </aside>
+      {% endif %}
       <article class="article-body">
         <div class="prose">
           {{ body | safe }}
@@ -58,16 +72,6 @@ layout: base.njk
         </div>
       </article>
 
-      {% if outline.length > 2 %}
-      <aside class="toc" aria-label="Satura rādītājs">
-        <p class="toc-h">Satura rādītājs</p>
-        <ol data-toc>
-          {% for h in outline %}
-          <li><a href="#{{ h.id }}">{{ h.text }}</a></li>
-          {% endfor %}
-        </ol>
-      </aside>
-      {% endif %}
     </div>
   </div>
 </div>
