@@ -1,0 +1,51 @@
+{
+  "keyword": "META",
+  "slug": "meta-reklamas-ar-claude",
+  "date": "2026-10-13",
+  "title": "Meta reklāmas ar Claude: 7 noteikumi, pēc kuriem AI vada kampaņu",
+  "seoTitle": "Meta reklāmas ar Claude: 7 noteikumi | Mārketinga Skola",
+  "description": "Kā Claude katru rītu vada Meta kampaņu pēc 7 noteikumiem: sliekšņi, pilna ikdienas instrukcija, patiesā ROAS atskaite un pārbaude pirms budžeta tērēšanas.",
+  "categories": [
+    "socialo-tiklu-reklama",
+    "maksligais-intelekets"
+  ],
+  "keywords": [
+    "Meta reklāmas",
+    "Claude",
+    "AI reklāmu vadība",
+    "Meta Ads automatizācija",
+    "ROAS",
+    "e-komercija"
+  ],
+  "source": "social/magnets/meta-reklamas-ar-claude.source.md",
+  "facts": [
+    "Text already written and reviewed from the owner's ADS kit; the source file is the Latvian post body."
+  ],
+  "cover": {
+    "alt": "Čata logs ar septiņiem atzīmētiem noteikumiem, kas savienots ar reklāmu paneli ar budžeta slīdņiem un žurnālu",
+    "prompt": "An AI assistant running an ad campaign by fixed rules. On the left a tall chat window panel holding a few message bars and a checklist of seven square checkboxes, every one ticked. A single flat connecting line runs to the right into an ads dashboard panel with three horizontal budget sliders, a small rising bar chart and a run log of grey rows. One slider knob is the only cyan element. Two panels side by side, drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Kā Claude vada kampaņu katru rītu",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā Claude katru rītu vada Meta kampaņu",
+    "items": [
+      {
+        "label": "Patiesā atskaite",
+        "text": "9:00: tēriņš pret īstajiem pasūtījumiem"
+      },
+      {
+        "label": "Vēsture",
+        "text": "Vispirms izlasa savu žurnālu"
+      },
+      {
+        "label": "Noteikumi",
+        "text": "Rīkojas tikai 7 noteikumu robežās"
+      },
+      {
+        "label": "Pārbaude",
+        "text": "Katru izmaiņu nolasa atpakaļ un pieraksta"
+      }
+    ],
+    "prompt": "Headline: «Kā Claude vada kampaņu katru rītu». FOUR items in one row. «01» «Patiesā atskaite» «Tēriņš pret īstajiem pasūtījumiem» - emblem: a pale grey paper receipt with three navy bars and one cyan bar, beside a small navy coin stack. «02» «Vēsture» «Vispirms izlasa žurnālu» - emblem: an open navy notebook with pale grey lines and a cyan bookmark ribbon. «03» «Noteikumi» «Tikai 7 noteikumu robežās» - emblem: a pale grey paper card with seven small navy check squares in a column, one of them cyan. «04» «Pārbaude» «Katru izmaiņu pārbauda» - emblem: a navy magnifying glass, ring and handle cut from paper, over a pale grey slider with a cyan knob."
+  }
+}

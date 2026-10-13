@@ -291,6 +291,9 @@ module.exports = function (eleventyConfig) {
         mainEntityOfPage: { "@id": pageUrl },
         inLanguage: "lv",
         articleSection: (c.categories || []).map((s) => (c.categoriesBySlug || {})[s] || s),
+        // A lead-magnet guide opens its second part after an e-mail sign-up.
+        // Google's markup for gated text, so the hidden part is not cloaking.
+        ...(c.magnet ? { isAccessibleForFree: false, hasPart: { "@type": "WebPageElement", isAccessibleForFree: false, cssSelector: ".gated" } } : {}),
       });
     }
 

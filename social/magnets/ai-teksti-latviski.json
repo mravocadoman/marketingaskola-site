@@ -1,0 +1,47 @@
+{
+  "keyword": "LATVISKI",
+  "slug": "ai-teksti-latviski",
+  "date": "2026-10-13",
+  "title": "Kā panākt, ka AI raksta latviski: instrukcija un pārbaude",
+  "seoTitle": "AI teksti latviski: instrukcija un pārbaude | Mārketinga Skola",
+  "description": "Instrukcija, ar kuru mūsu AI raksta latviešu tekstus, angliskās frāzes, ko labojam visbiežāk, un pārbaude, ko veicam pirms katras publikācijas.",
+  "categories": [
+    "maksligais-intelekets",
+    "digitalais-marketings"
+  ],
+  "keywords": [
+    "AI teksti latviski",
+    "ChatGPT latviski",
+    "Claude latviski",
+    "AI saturs",
+    "latviešu valoda",
+    "mākslīgais intelekts"
+  ],
+  "source": "social/magnets/ai-teksti-latviski.source.md",
+  "facts": [
+    "Text already written and reviewed from our own writer and reviewer prompts."
+  ],
+  "cover": {
+    "alt": "Divas dokumenta lapas: kreisajā teksta joslas ir sajauktas, labajā sakārtotas, pāri labajai zīmulis",
+    "prompt": "Fixing a translated-sounding text: two document pages side by side, each made of grey text bars. On the left page the bars are jumbled, uneven and out of order; on the right page the same bars sit in neat, even lines. A pencil, drawn as a long solid bar with a pointed tip, lies across the right page, and one short correction mark under one bar is the only cyan element. Both pages drawn large and whole, the pair spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "AI teksts latviski trīs soļos",
+    "alt": "Infografika no izgrieztām papīra formām: trīs soļi, kā AI teksts kļūst dabisks latviski",
+    "items": [
+      {
+        "label": "Instrukcija",
+        "text": "Noteikumi un fakti pirms rakstīšanas"
+      },
+      {
+        "label": "Pārbaude",
+        "text": "Cits modelis tikai atzīmē aizdomīgo"
+      },
+      {
+        "label": "Lēmums",
+        "text": "Ko mainīt, izlemj cilvēks"
+      }
+    ],
+    "prompt": "Headline: «AI teksts latviski trīs soļos». THREE items in one row. «01» «Instrukcija» «Noteikumi un fakti pirms rakstīšanas» - emblem: a pale grey paper sheet with four navy lines and a small cyan square at the top. «02» «Pārbaude» «Cits modelis atzīmē aizdomīgo» - emblem: a pale grey paper page with navy bars, two of them underlined with short cyan marks. «03» «Lēmums» «Ko mainīt, izlemj cilvēks» - emblem: a navy hand-shaped paper cut-out holding a pale grey card with one cyan tick."
+  }
+}

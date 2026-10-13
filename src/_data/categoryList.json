@@ -16,7 +16,8 @@
       "epasta_marketings",
       "instagram-reels-marketingam",
       "meta-reklamas",
-      "reklamas-veidi"
+      "reklamas-veidi",
+      "ai-teksti-latviski"
     ]
   },
   {
@@ -47,7 +48,9 @@
       "marketinga-automatizacija-ar-ko-sakt",
       "maksligais-intelekts",
       "maksligais-intelekts-marketinga",
-      "maksliga-intelekta-riki"
+      "maksliga-intelekta-riki",
+      "ai-teksti-latviski",
+      "meta-reklamas-ar-claude"
     ]
   },
   {
@@ -83,7 +86,8 @@
       "marketinga-macibas",
       "vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
       "instagram-reklama",
-      "facebook-reklamas-izstrade"
+      "facebook-reklamas-izstrade",
+      "meta-reklamas-ar-claude"
     ]
   }
 ]

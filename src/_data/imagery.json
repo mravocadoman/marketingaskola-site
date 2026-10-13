@@ -1175,6 +1175,42 @@
       "alt": "Starpliktuve ar trim cenu piedāvājumu rindām, vidējā atzīmēta.",
       "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: a large upright clipboard with square corners, its clip a small solid off-white #f2f5f8 block at the top, its sheet a solid cool-grey #8ba3bd panel carrying three wide horizontal rows separated by thin dark gaps; each row holds a short darker bar at its left and a solid bar of a different length at its right, like three quotes being compared; the middle row's right-hand bar is off-white #f2f5f8 and ends in one small solid cyan #03c3f8 square. To the right of the clipboard, separated by empty dark space, a slim off-white pen lies diagonally. A modest dark margin surrounds both objects. Every corner is square. Purely flat colour blocking, no outlines, no gradients, no glow, no depth, no shadows, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers, currency symbols or ticks drawn as letters of any kind. Cyan covers no more than five percent of the frame.",
       "rationale": "The post explains how to compare three quotes and document the choice. A clipboard of three compared rows with one marked says that without a word, and it differs from the LIAA pillar's three standing documents."
+    },
+    {
+      "id": "cover-meta-reklamas-ar-claude",
+      "page": "meta-reklamas-ar-claude",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Čata logs ar septiņiem atzīmētiem noteikumiem, kas savienots ar reklāmu paneli ar budžeta slīdņiem un žurnālu",
+      "prompt": "An AI assistant running an ad campaign by fixed rules. On the left a tall chat window panel holding a few message bars and a checklist of seven square checkboxes, every one ticked. A single flat connecting line runs to the right into an ads dashboard panel with three horizontal budget sliders, a small rising bar chart and a run log of grey rows. One slider knob is the only cyan element. Two panels side by side, drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-meta-reklamas-ar-claude",
+      "page": "meta-reklamas-ar-claude",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā Claude katru rītu vada Meta kampaņu",
+      "prompt": "Headline: «Kā Claude vada kampaņu katru rītu». FOUR items in one row. «01» «Patiesā atskaite» «Tēriņš pret īstajiem pasūtījumiem» - emblem: a pale grey paper receipt with three navy bars and one cyan bar, beside a small navy coin stack. «02» «Vēsture» «Vispirms izlasa žurnālu» - emblem: an open navy notebook with pale grey lines and a cyan bookmark ribbon. «03» «Noteikumi» «Tikai 7 noteikumu robežās» - emblem: a pale grey paper card with seven small navy check squares in a column, one of them cyan. «04» «Pārbaude» «Katru izmaiņu pārbauda» - emblem: a navy magnifying glass, ring and handle cut from paper, over a pale grey slider with a cyan knob."
+    },
+    {
+      "id": "cover-ai-teksti-latviski",
+      "page": "ai-teksti-latviski",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Divas dokumenta lapas: kreisajā teksta joslas ir sajauktas, labajā sakārtotas, pāri labajai zīmulis",
+      "prompt": "Fixing a translated-sounding text: two document pages side by side, each made of grey text bars. On the left page the bars are jumbled, uneven and out of order; on the right page the same bars sit in neat, even lines. A pencil, drawn as a long solid bar with a pointed tip, lies across the right page, and one short correction mark under one bar is the only cyan element. Both pages drawn large and whole, the pair spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-ai-teksti-latviski",
+      "page": "ai-teksti-latviski",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: trīs soļi, kā AI teksts kļūst dabisks latviski",
+      "prompt": "Headline: «AI teksts latviski trīs soļos». THREE items in one row. «01» «Instrukcija» «Noteikumi un fakti pirms rakstīšanas» - emblem: a pale grey paper sheet with four navy lines and a small cyan square at the top. «02» «Pārbaude» «Cits modelis atzīmē aizdomīgo» - emblem: a pale grey paper page with navy bars, two of them underlined with short cyan marks. «03» «Lēmums» «Ko mainīt, izlemj cilvēks» - emblem: a navy hand-shaped paper cut-out holding a pale grey card with one cyan tick."
     }
   ]
 }

@@ -15,6 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
+import { pathToFileURL } from 'node:url';
 
 const GEN = 'src/img/gen';
 const OUT = 'src/_includes/motifs';
@@ -200,8 +201,10 @@ function clipPath(p, cw, ch, off = 0) {
   return d;
 }
 
-const pieces = async (srcId, name, alt) => {
-  const file = path.join(GEN, `${srcId}.webp`);
+/* The pieces of one picture as inline SVG markup. `href` is what each piece's
+ * <image> points at; the site passes its /img/gen/ path, the social renderer a
+ * file URL (tools/social-render.mjs animates a carousel cover with it). */
+export async function piecesSvg(file, href, id, alt) {
   const { w, h, cw, ch, pieces: parts } = await segment(file);
   /* Each clip reaches one cell PAST its piece - into ground, and into pieces
    * drawn before it - never into a later one. An anti-aliased clip edge takes
@@ -248,10 +251,9 @@ const pieces = async (srcId, name, alt) => {
     }
     worst = Math.max(worst, s / n);
   }
-  if (worst > 3) throw new Error(`${srcId}: pieces differ from the cover by ${worst.toFixed(1)}/255 in one block - ` +
+  if (worst > 3) throw new Error(`${path.basename(file)}: pieces differ from the cover by ${worst.toFixed(1)}/255 in one block - ` +
     `is its ground #020d1c? run: node tools/match-ground.mjs ${file}`);
 
-  const id = name.replace(/[^a-z0-9-]/gi, '');
   // --i spans 0-20 at most, so a busy cover takes as long as a 20-part motif (~2s)
   const step = parts.length > 21 ? 20 / (parts.length - 1) : 1;
   const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -259,17 +261,25 @@ const pieces = async (srcId, name, alt) => {
     // each piece settles around its OWN centre - see .motif--pieces in style.css
     const ox = ((p.x0 + p.x1 + 1) / 2) * CELL, oy = ((p.y0 + p.y1 + 1) / 2) * CELL;
     return `  <g class="m" style="--i:${+(k * step).toFixed(2)};transform-origin:${ox}px ${oy}px">` +
-      `<image href="/img/gen/${srcId}.webp" width="${w}" height="${h}" clip-path="url(#${id}-${k})"/></g>`;
+      `<image href="${href}" width="${w}" height="${h}" clip-path="url(#${id}-${k})"/></g>`;
   }).join('\n');
+  const svg = `<svg class="motif motif--pieces" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(alt)}" xmlns="http://www.w3.org/2000/svg">\n` +
+    `  <defs>${clips.map((d, k) => `<clipPath id="${id}-${k}"><path d="${d}"/></clipPath>`).join('')}</defs>\n${body}\n</svg>\n`;
+  return { svg, n: parts.length, worst };
+}
+
+const pieces = async (srcId, name, alt) => {
+  const r = await piecesSvg(path.join(GEN, `${srcId}.webp`), `/img/gen/${srcId}.webp`, name.replace(/[^a-z0-9-]/gi, ''), alt);
   fs.writeFileSync(path.join(OUT, `${name}.njk`),
     `{# Pieces of ${srcId}.webp - the real cover, split into its own objects and reassembled\n` +
     `   in place, so it ends on the complete picture. Regenerate with tools/build-motifs.mjs;\n` +
-    `   do not hand-edit. #}\n` +
-    `<svg class="motif motif--pieces" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(alt)}" xmlns="http://www.w3.org/2000/svg">\n` +
-    `  <defs>${clips.map((d, k) => `<clipPath id="${id}-${k}"><path d="${d}"/></clipPath>`).join('')}</defs>\n${body}\n</svg>\n`);
-  return { n: parts.length, worst, kb: fs.statSync(path.join(OUT, `${name}.njk`)).size / 1024 };
+    `   do not hand-edit. #}\n` + r.svg);
+  return { n: r.n, worst: r.worst, kb: fs.statSync(path.join(OUT, `${name}.njk`)).size / 1024 };
 };
 
+// Run as a script only; tools/social-render.mjs imports piecesSvg.
+if (import.meta.url === pathToFileURL(path.resolve(process.argv[1] || '')).href) await main();
+async function main() {
 let ok = 0;
 const built = [];
 if (only !== '--posts-only') {
@@ -314,3 +324,4 @@ if (only !== '--pages-only') {
 }
 
 console.log(`done: ${ok} motifs built from the original artwork`);
+}

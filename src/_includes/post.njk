@@ -1,8 +1,15 @@
 ---
 layout: base.njk
 ---
+{% from "form.njk" import form with context %}
 {% set body = content | withAnchors %}
 {% set outline = body | toc %}
+{#- Lead-magnet gate (13 Oct 2026). A post with `magnet:` front matter carries
+    <!-- gate --> where the copyable part starts and <!-- /gate --> before the
+    closing CTA (tools/magnet-post.mjs puts both in). Everything between them
+    opens after an e-mail sign-up; the CTA stays public. -#}
+{% set parts = (body | string).split("<!-- gate -->") if magnet else [body] %}
+{% set rest = parts[1].split("<!-- /gate -->") if parts.length > 1 else [] %}
 
 <div class="read-progress" data-read-progress aria-hidden="true"></div>
 
@@ -56,8 +63,34 @@ layout: base.njk
       {% endif %}
       <article class="article-body">
         <div class="prose">
-          {{ body | safe }}
+          {{ parts[0] | safe }}
         </div>
+        {%- if rest.length %}
+        {#- Inline so a returning subscriber never sees the gate flash before
+            deferred JS runs. Same key as forms.js. -#}
+        <script>try{if(localStorage.getItem("ms-gids"))document.documentElement.classList.add("gids-open","gids-known")}catch(e){}</script>
+        <aside class="panel gate" id="gids" aria-labelledby="gids-h">
+          <div class="gate-intro">
+            <h3 id="gids-h">Atver pārējo ceļvedi</h3>
+            <p>Ieraksti e-pastu, un ceļveža turpinājums atvērsies tepat šajā lapā. Turpinājumā:</p>
+            <ul class="tick-list">
+              {%- for h in rest[0] | toc %}
+              <li>{{ h.text }}</li>
+              {%- endfor %}
+            </ul>
+          </div>
+          {{ form("gids") }}
+        </aside>
+        <div class="prose gated">
+          {{ rest[0] | safe }}
+        </div>
+        <noscript><style>.gated{display:block}.gate{display:none}</style></noscript>
+        {%- if rest[1] %}
+        <div class="prose">
+          {{ rest[1] | safe }}
+        </div>
+        {%- endif %}
+        {%- endif %}
 
         <div class="author-strip">
           <img src="/img/team/rihards-brand-160.webp" alt="Rihards Zeiļa" loading="lazy" width="160" height="160">

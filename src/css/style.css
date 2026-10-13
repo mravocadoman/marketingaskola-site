@@ -1996,6 +1996,22 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .prose .table-scroll { overflow-x: auto; }
 @media (max-width: 620px) { .prose table { font-size: var(--t-micro); } }
 
+/* A prompt in a free guide (/materiali/): copied as is, so it keeps its line
+   breaks and wraps inside its own box instead of widening the page. */
+.prose pre {
+  margin: 1.5em 0;
+  padding: 18px 20px;
+  background: rgba(1, 96, 140, 0.05);
+  border: 1px solid var(--line);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--body);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.prose pre code { font: inherit; color: inherit; background: none; padding: 0; }
+
 /* ==========================================================================
    HOMEPAGE HERO. The drifting cyan dots (hero-fx.njk, SVG animateMotion) were
    retired on 14 Sep 2026 when the homepage got a pieces motif like every other
@@ -2328,3 +2344,19 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
    reads as a divider rather than as an illustration inside a column. */
 .media--band { aspect-ratio: 24 / 7; margin-bottom: clamp(44px, 5vw, 72px); }
 @media (max-width: 640px) { .media--band { aspect-ratio: 16 / 9; } }
+
+/* ==========================================================================
+   LEAD-MAGNET GATE (13 Oct 2026) — a guide post opens its copyable part after
+   an e-mail sign-up. post.njk splits the article; forms.js and an inline
+   check in post.njk add .gids-open (content shown) and, for a returning
+   subscriber, .gids-known (gate hidden). Without JS the noscript rule shows
+   everything, because the form cannot be sent anyway.
+   ========================================================================== */
+.gated { display: none; }
+.gids-open .gated { display: block; }
+.gids-known .gate,
+.gids-open .gate-intro { display: none; }
+.gate { margin: 2.5em 0; }
+.gate h3 { margin: 0 0 10px; }
+.gate .tick-list { margin: 14px 0 22px; }
+.gate .form-done { margin: 0; border: 0; padding: 0; background: none; }

@@ -1,0 +1,815 @@
+{
+  "_comment": "The standing social calendar for Mārketinga Skola (Facebook page + Instagram, Latvian). One row per post. `brief` and `facts` are the internal English notes the writer works from: every fact carries its source and date, and nothing outside them may appear in a post. `lv` is written by OpenAI (tools/social-write-lv.mjs) and checked with lv:review. Status: planned -> approved (checkpoint 1) -> designed (2) -> written (3) -> scheduled -> published, or killed. See docs/social-pipeline.md.",
+  "home": "social/calendar.json",
+  "channels": [
+    "facebook",
+    "instagram"
+  ],
+  "cadence": "Tue + Thu feed posts, Fri story",
+  "posts": [
+    {
+      "id": "2026-10-13-meta-ai-video",
+      "date": "2026-10-13",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "ai+html",
+      "pillar": "Reklāmas jaunumi",
+      "brief": "Meta's Advertising Week news: video generated from existing static images in Advantage+ creative is now generally available. What it means for a small advertiser: a cheap way to get video variants without filming. Our take: an AI video made from a still is a variant to test, not a story; test variants cheaply, then film the winner with real actors.",
+      "facts": [
+        "6 Oct 2026, Meta at Advertising Week New York: 'In Advantage+ creative, advertisers and agencies can now generate video from existing static assets, a feature that is now generally available.'",
+        "Ads Creative Studio gains video concepts, variations and editing (hooks, audio, length, captions, end scenes); it is available to selected ad partners and expanding.",
+        "Meta is testing an agentic business assistant that can plan campaigns, change targeting and budgets by conversation, and an import of brand voice guidelines. Testing, not live."
+      ],
+      "sources": [
+        "https://www.socialmediatoday.com/news/meta-introduces-new-ai-powered-tools-at-advertising-week/832288/"
+      ],
+      "cta": {
+        "label": "Video reklāma ar AI vai aktieriem",
+        "href": "/video-reklama/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "AI video der testam, labāko variantu filmē ar aktieriem",
+        "apraksts": "Meta Advantage+ creative tagad ļauj veidot video no esošiem attēliem bez filmēšanas. Skaidrojam, kāpēc Tev šādu AI video vērts uztvert kā testējamu variantu, nevis gatavu reklāmas materiālu, un veiksmīgāko variantu pēc tam filmēt ar aktieriem.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "2026-10-13",
+        "visual": {
+          "aki": {
+            "virsraksts": "Video varianti bez filmēšanas",
+            "teksts": "Lai testētu video reklāmas variantus, Tev nav uzreiz jāfilmē. Meta Advantage+ creative ļauj tos ģenerēt no esošiem attēliem."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Video no attēla: jau pieejams",
+              "teksts": "Meta pasākumā Advertising Week New York paziņoja: video ģenerēšana no esošiem attēliem Advantage+ creative tagad pieejama visiem reklāmdevējiem."
+            },
+            {
+              "virsraksts": "Vairāk iespēju video veidošanai",
+              "teksts": "Ads Creative Studio tagad var radīt video idejas un variantus un rediģēt ievadu, skaņu, garumu, titrus un noslēgumu. Pagaidām tikai atlasītiem partneriem."
+            },
+            {
+              "virsraksts": "Saruna par kampaņu: vēl tikai testos",
+              "teksts": "Meta testē AI asistentu, kas sarunā plāno kampaņas, maina targetingu un budžetu. Testē arī zīmola komunikācijas vadlīniju importu. Visiem tas vēl nav pieejams."
+            },
+            {
+              "virsraksts": "Mūsu pieeja: variants nav stāsts",
+              "teksts": "AI video no attēla uztver kā variantu testam, nevis stāstu. Vispirms testē variantus, pēc tam veiksmīgāko filmē ar īstiem aktieriem."
+            }
+          ],
+          "nosleguma_virsraksts": "Video reklāma ar AI vai aktieriem?",
+          "nosleguma_teksts": "Saglabā ierakstu nākamās video reklāmas plānošanai vai nosūti kolēģim, ar kuru pārrunā AI un filmēšanas iespējas.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "der testam"
+        },
+        "caption": {
+          "teksts": "Meta reklāma: video variantu testēšana vairs nav jāsāk ar filmēšanu.\n\nJa Tev jau ir reklāmas attēli, Advantage+ creative ļauj no tiem ģenerēt video. Mazam reklāmdevējam tā ir iespēja izmēģināt video variantus, pirms ieguldīt filmēšanā.\n\nMūsuprāt, kustīgs attēls vēl nav stāsts. AI video uztver kā reklāmas materiālu testam: vispirms salīdzini variantus, pēc tam veiksmīgāko ieceri attīsti filmēšanai ar aktieriem.\n\nSvarīgi nošķirt pieejamo no pieteiktā: video ģenerēšana no attēliem jau ir vispārēji pieejama, bet Meta biznesa asistents vēl ir testēšanā.\n\nKo Tu izvēlētos savai nākamajai video reklāmai: AI veidotus variantus testam vai filmēšanu ar aktieriem?",
+          "tagi": [
+            "#reklāma",
+            "#videoreklāma",
+            "#mārketings"
+          ],
+          "facebook": "Meta reklāma: video variantu testēšana vairs nav jāsāk ar filmēšanu.\n\nJa Tev jau ir reklāmas attēli, Advantage+ creative ļauj no tiem ģenerēt video. Mazam reklāmdevējam tā ir iespēja izmēģināt video variantus, pirms ieguldīt filmēšanā.\n\nMūsuprāt, kustīgs attēls vēl nav stāsts. AI video uztver kā reklāmas materiālu testam: vispirms salīdzini variantus, pēc tam veiksmīgāko ieceri attīsti filmēšanai ar aktieriem.\n\nSvarīgi nošķirt pieejamo no pieteiktā: video ģenerēšana no attēliem jau ir vispārēji pieejama, bet Meta biznesa asistents vēl ir testēšanā.\n\nKo Tu izvēlētos savai nākamajai video reklāmai: AI veidotus variantus testam vai filmēšanu ar aktieriem?\n\nSaite profilā.\n\n#reklāma #videoreklāma #mārketings",
+          "instagram": "Meta reklāma: video variantu testēšana vairs nav jāsāk ar filmēšanu.\n\nJa Tev jau ir reklāmas attēli, Advantage+ creative ļauj no tiem ģenerēt video. Mazam reklāmdevējam tā ir iespēja izmēģināt video variantus, pirms ieguldīt filmēšanā.\n\nMūsuprāt, kustīgs attēls vēl nav stāsts. AI video uztver kā reklāmas materiālu testam: vispirms salīdzini variantus, pēc tam veiksmīgāko ieceri attīsti filmēšanai ar aktieriem.\n\nSvarīgi nošķirt pieejamo no pieteiktā: video ģenerēšana no attēliem jau ir vispārēji pieejama, bet Meta biznesa asistents vēl ir testēšanā.\n\nKo Tu izvēlētos savai nākamajai video reklāmai: AI veidotus variantus testam vai filmēšanu ar aktieriem?\n\nSaite profilā.\n\n#reklāma #videoreklāma #mārketings",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Video reklāma ar AI vai aktieriem?"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-meta-ai-video.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-10-15-ai-models",
+      "date": "2026-10-15",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "html",
+      "pillar": "AI modeļi",
+      "brief": "The newest AI models from the last weeks, and what they change for marketing work. The useful question is not which is smartest but which does the job well and cheaply: Latvian texts, summaries, sorting leads. Prices keep falling, so automating routine marketing work costs less than a year ago.",
+      "facts": [
+        "29 Sep 2026: OpenAI released GPT-6.1 Sol; OpenAI says it nearly matches GPT-6 Astra at about one fifth of Astra's price.",
+        "28 Sep 2026: Anthropic released Claude Sonnet 5.5, which Anthropic says is 30%+ faster and costs up to 30% less than Sonnet 5 for most work.",
+        "7 Oct 2026: Anthropic released Claude Haiku 5.5, its cheapest and fastest small model, for high-volume work such as summaries and classification.",
+        "30 Sep 2026: Google announced Gemini 4 Argon; access is limited for now, a wider rollout is expected to start with paid API customers."
+      ],
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://www.anthropic.com/claude-haiku-5-5",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      ],
+      "cta": {
+        "label": "Mārketinga automatizācija",
+        "href": "/marketinga-automatizacija/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "4 jauni AI modeļi: kuru izvēlēties mārketingam",
+        "apraksts": "Apskatām jaunākos AI modeļus un to cenu atšķirības, lai Tev būtu vieglāk izvēlēties rīku latviešu tekstiem, kopsavilkumiem un pieteikumu šķirošanai. Uzzini, kā šos rīkus izmantot mārketinga automatizācijā.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "visual": {
+          "aki": {
+            "virsraksts": "AI izvēle ietekmē Tava darba izmaksas",
+            "teksts": "Kurš AI modelis der Taviem latviešu tekstiem vai kopsavilkumiem? Salīdzini ne tikai spējas, bet arī cenu."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "GPT-6.1 Sol: tuvu Astra, par zemāku cenu",
+              "teksts": "OpenAI norāda, ka GPT-6.1 Sol spēju ziņā gandrīz sasniedz GPT-6 Astra līmeni, bet maksā aptuveni piekto daļu no Astra cenas."
+            },
+            {
+              "virsraksts": "Claude Sonnet 5.5: ātrāk un lētāk",
+              "teksts": "Anthropic norāda, ka Claude Sonnet 5.5 vairumam darbu ir vismaz par 30% ātrāks un izmaksā līdz 30% mazāk nekā Sonnet 5."
+            },
+            {
+              "virsraksts": "Claude Haiku 5.5: liela apjoma darbam",
+              "teksts": "Anthropic lētākais un ātrākais mazais modelis. Paredzēts liela apjoma uzdevumiem, piemēram, kopsavilkumu veidošanai un klasificēšanai."
+            },
+            {
+              "virsraksts": "Gemini 4 Argon: piekļuve vēl ierobežota",
+              "teksts": "Google izziņojis Gemini 4 Argon, bet piekļuve pagaidām ir ierobežota. Sagaidāms, ka plašāka piekļuve vispirms būs maksas API klientiem."
+            }
+          ],
+          "nosleguma_virsraksts": "Mārketinga automatizācija: ar ko sākt?",
+          "nosleguma_teksts": "Sāc ar sava darba uzdevumu, tad salīdzini modeļus un cenas. Saglabā ierakstu vai nosūti to kolēģim.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "kuru izvēlēties"
+        },
+        "caption": {
+          "teksts": "AI modeļi mārketingam: svarīgākais nav gudrākais modelis, bet piemērotākais Tavam uzdevumam.\n\nLatviešu tekstu rakstīšana, kopsavilkumu veidošana un pieteikumu šķirošana ir atšķirīgi uzdevumi. Salīdzini modeļus, izmantojot savus darba piemērus, nevis izvēlies tikai pēc ražotāja solītajām spējām.\n\nOpenAI un Anthropic, piesakot jaunos modeļus, uzsver zemākas izmaksas. Taču izvēlē ņem vērā arī pieejamību: Gemini 4 Argon piekļuve pagaidām ir ierobežota.\n\nMārketinga automatizāciju sāc ar vienu ikdienas uzdevumu. Pārbaudi rezultāta kvalitāti un salīdzini izmaksas. Kuru darbu Tu vispirms uzticētu AI?",
+          "tagi": [
+            "#mākslīgaisintelekts",
+            "#mārketings",
+            "#automatizācija"
+          ],
+          "facebook": "AI modeļi mārketingam: svarīgākais nav gudrākais modelis, bet piemērotākais Tavam uzdevumam.\n\nLatviešu tekstu rakstīšana, kopsavilkumu veidošana un pieteikumu šķirošana ir atšķirīgi uzdevumi. Salīdzini modeļus, izmantojot savus darba piemērus, nevis izvēlies tikai pēc ražotāja solītajām spējām.\n\nOpenAI un Anthropic, piesakot jaunos modeļus, uzsver zemākas izmaksas. Taču izvēlē ņem vērā arī pieejamību: Gemini 4 Argon piekļuve pagaidām ir ierobežota.\n\nMārketinga automatizāciju sāc ar vienu ikdienas uzdevumu. Pārbaudi rezultāta kvalitāti un salīdzini izmaksas. Kuru darbu Tu vispirms uzticētu AI?\n\nSaite profilā.\n\n#mākslīgaisintelekts #mārketings #automatizācija",
+          "instagram": "AI modeļi mārketingam: svarīgākais nav gudrākais modelis, bet piemērotākais Tavam uzdevumam.\n\nLatviešu tekstu rakstīšana, kopsavilkumu veidošana un pieteikumu šķirošana ir atšķirīgi uzdevumi. Salīdzini modeļus, izmantojot savus darba piemērus, nevis izvēlies tikai pēc ražotāja solītajām spējām.\n\nOpenAI un Anthropic, piesakot jaunos modeļus, uzsver zemākas izmaksas. Taču izvēlē ņem vērā arī pieejamību: Gemini 4 Argon piekļuve pagaidām ir ierobežota.\n\nMārketinga automatizāciju sāc ar vienu ikdienas uzdevumu. Pārbaudi rezultāta kvalitāti un salīdzini izmaksas. Kuru darbu Tu vispirms uzticētu AI?\n\nSaite profilā.\n\n#mākslīgaisintelekts #mārketings #automatizācija",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "AI mārketingā: kurš modelis der darbam un budžetam",
+        "edited": "2026-10-13"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-ai-models.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-10-16-chatgpt-ads-story",
+      "date": "2026-10-16",
+      "slot": "story",
+      "format": "story with a poll",
+      "path": "html",
+      "pillar": "Reklāmas jaunumi",
+      "brief": "Ads in ChatGPT reached Europe. A story with a yes/no poll: have you seen an ad in ChatGPT yet?",
+      "facts": [
+        "OpenAI expanded ChatGPT ads to 31 European markets from 24 Aug 2026; reports describe them as the EU member states plus Norway, Iceland, Liechtenstein and Switzerland. Latvia's inclusion is from secondary reporting: VERIFY before posting.",
+        "Ads show only to Free and Go users; Plus, Pro and Enterprise stay ad-free.",
+        "In Europe ads launched without personalization; buying is at first through OpenAI's team and partners."
+      ],
+      "sources": [
+        "https://openai.com/index/chatgpt-ads-expands-across-europe/",
+        "https://thenextweb.com/news/chatgpt-ads-expand-31-european-markets"
+      ],
+      "cta": null,
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Vai Tev ChatGPT jau ir parādījusies reklāma?",
+        "apraksts": "ChatGPT reklāmas nonākušas Eiropā, un tās rāda tikai Free un Go lietotājiem. Stāstā ar aptauju jautāsim, vai ChatGPT Tev jau ir rādījis reklāmu: “Jā” vai “Nē”.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "lv:review 2026-10-11",
+        "visual": {
+          "akcents": "reklāma",
+          "teksts": "ChatGPT reklāmas tagad arī Eiropā. Tās rāda tikai Free un Go lietotājiem.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-12"
+        }
+      },
+      "approved": "2026-10-12"
+    },
+    {
+      "id": "2026-10-20-google-ai-max",
+      "date": "2026-10-20",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "html",
+      "pillar": "Google reklāma",
+      "brief": "Google is moving search campaigns to AI Max automatically. What changes and the three things to check in your own account: the search terms report, the AI-written headlines (text customization), and final URL expansion sending people to other pages.",
+      "facts": [
+        "Google: automatic upgrades to AI Max for campaigns with automatically created assets and campaign-level broad match begin in September 2026.",
+        "Google's 11 Jun 2026 update: the Dynamic Search Ads sunset and automatic upgrade are delayed to begin in February 2027.",
+        "After the upgrade, AI Max features can include search term matching, text customization and final URL expansion."
+      ],
+      "sources": [
+        "https://blog.google/products/ads-commerce/dsa-upgrade-to-ai-max-2026/"
+      ],
+      "cta": {
+        "label": "Google Ads kurss",
+        "href": "/google-ads-kurss/",
+        "data": "courseSessions.google-ads-kurss next date (27 Oct 2026)"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Google Ads pāriet uz AI Max: ko pārbaudīt savā kontā",
+        "apraksts": "Skaidrojam Google automātisko pāreju uz AI Max un trīs pārbaudes Tavā kontā: meklēšanas vienumu pārskatu, AI veidotos virsrakstus un gala URL paplašināšanu, kas var novirzīt apmeklētājus uz citām lapām. Aicinām uz Google Ads kursu.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "visual": {
+          "aki": {
+            "virsraksts": "Tavas reklāmas teksts var mainīties",
+            "teksts": "Pēc pārejas uz AI Max Google Ads var pielāgot reklāmas tekstu un novirzīt apmeklētājus uz citām lapām. Lūk, ko pārbaudīt Tavā kontā."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Kad sākas automātiskā pāreja?",
+              "teksts": "Kampaņām ar automātiski veidotiem materiāliem un plašo atbilstību kampaņas līmenī pāreja sākas 2026. gada septembrī. DSA pārejas sākums atlikts uz 2027. gada februāri."
+            },
+            {
+              "virsraksts": "Pārbaudi meklēšanas vienumus",
+              "teksts": "AI Max var ietvert meklēšanas vienumu atbilstības noteikšanu. Atver meklēšanas vienumu pārskatu: vai vaicājumi, kas aktivizē Tavu reklāmu, atbilst Tavam piedāvājumam?"
+            },
+            {
+              "virsraksts": "Pārlasi AI veidotos virsrakstus",
+              "teksts": "Teksta pielāgošana jeb text customization var būt daļa no AI Max. Pārbaudi AI veidotos reklāmas virsrakstus: vai tie precīzi raksturo Tavu piedāvājumu?"
+            },
+            {
+              "virsraksts": "Pārbaudi, uz kurām lapām ved reklāma",
+              "teksts": "Gala URL paplašināšana jeb final URL expansion var novirzīt cilvēkus uz citām lapām. Pārbaudi, vai šīs lapas atbilst reklāmas tekstam un Tavam piedāvājumam."
+            }
+          ],
+          "nosleguma_virsraksts": "Iepazīsti Google Ads kursu",
+          "nosleguma_teksts": "Kampaņas izveidi un pārbaudi soli pa solim aplūkojam kursā. Saglabā šo ierakstu nākamajai konta pārbaudei.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "ko pārbaudīt"
+        },
+        "caption": {
+          "teksts": "Google Ads pāreja uz AI Max: vai tā attiecas arī uz Tavām kampaņām?\n\nAutomātiskā pāreja attiecas uz kampaņām ar automātiski veidotiem materiāliem un plašo atbilstību kampaņas līmenī. Nejauc to ar Dynamic Search Ads pāreju: tās sākums ir atlikts.\n\nPārbaudot kontu, vērtē saikni starp meklēto, reklāmā rakstīto un landing page. Vai visos posmos cilvēks atrod to, ko Tu piedāvā? Slaidos atradīsi, kam pievērst uzmanību, jo AI Max var ietvert gan meklēšanas vienumu atbilstības noteikšanu, gan teksta pielāgošanu un gala URL paplašināšanu.\n\nJa vēlies mācīties par Google reklāmu, iepazīsti Mārketinga Skolas Google Ads kursu. Saglabā ierakstu nākamajai konta pārbaudei.",
+          "tagi": [
+            "#reklāma",
+            "#mārketings",
+            "#mācības"
+          ],
+          "facebook": "Google Ads pāreja uz AI Max: vai tā attiecas arī uz Tavām kampaņām?\n\nAutomātiskā pāreja attiecas uz kampaņām ar automātiski veidotiem materiāliem un plašo atbilstību kampaņas līmenī. Nejauc to ar Dynamic Search Ads pāreju: tās sākums ir atlikts.\n\nPārbaudot kontu, vērtē saikni starp meklēto, reklāmā rakstīto un landing page. Vai visos posmos cilvēks atrod to, ko Tu piedāvā? Slaidos atradīsi, kam pievērst uzmanību, jo AI Max var ietvert gan meklēšanas vienumu atbilstības noteikšanu, gan teksta pielāgošanu un gala URL paplašināšanu.\n\nJa vēlies mācīties par Google reklāmu, iepazīsti Mārketinga Skolas Google Ads kursu. Saglabā ierakstu nākamajai konta pārbaudei.\n\nGoogle Ads kurss: 27. oktobrī, 150 € + PVN.\nSaite profilā.\n\n#reklāma #mārketings #mācības",
+          "instagram": "Google Ads pāreja uz AI Max: vai tā attiecas arī uz Tavām kampaņām?\n\nAutomātiskā pāreja attiecas uz kampaņām ar automātiski veidotiem materiāliem un plašo atbilstību kampaņas līmenī. Nejauc to ar Dynamic Search Ads pāreju: tās sākums ir atlikts.\n\nPārbaudot kontu, vērtē saikni starp meklēto, reklāmā rakstīto un landing page. Vai visos posmos cilvēks atrod to, ko Tu piedāvā? Slaidos atradīsi, kam pievērst uzmanību, jo AI Max var ietvert gan meklēšanas vienumu atbilstības noteikšanu, gan teksta pielāgošanu un gala URL paplašināšanu.\n\nJa vēlies mācīties par Google reklāmu, iepazīsti Mārketinga Skolas Google Ads kursu. Saglabā ierakstu nākamajai konta pārbaudei.\n\nGoogle Ads kurss: 27. oktobrī, 150 € + PVN.\nSaite profilā.\n\n#reklāma #mārketings #mācības",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Pāreja uz AI Max: ko pārbaudīt Tavā Google Ads kontā",
+        "edited": "2026-10-13"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-google-ai-max.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-10-22-three-automations",
+      "date": "2026-10-22",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "ai+html",
+      "pillar": "Automatizācija",
+      "brief": "Three marketing automations a small business can set up within a week: an automatic first reply within minutes, all enquiries in one list with where they came from, and a short e-mail series for people who asked but did not buy. Close by inviting readers to the four-question test that shows where their own marketing loses time and clients.",
+      "facts": [
+        "Our own service and test content (src/_data/quiz.json, /marketinga-automatizacija/). No outside statistics."
+      ],
+      "sources": [
+        "/automatizacijas-tests/",
+        "/marketinga-automatizacija/"
+      ],
+      "cta": {
+        "label": "Automatizācijas tests",
+        "href": "/automatizacijas-tests/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Mārketinga automatizācija: ko sakārtot vienas nedēļas laikā",
+        "apraksts": "Iepazīsti trīs automatizācijas mazam uzņēmumam: automātisku pirmo atbildi dažu minūšu laikā, vienotu pieprasījumu sarakstu ar to avotiem un īsu e-pastu sēriju tiem, kuri interesējās, bet nenopirka. Atbildi uz četriem jautājumiem Automatizācijas testā un noskaidro, kur mārketingā Tu zaudē laiku un klientus.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "visual": {
+          "aki": {
+            "virsraksts": "Kur mārketingā zūd Tavs laiks un klienti?",
+            "teksts": "Pirmā atbilde, pieprasījumu uzskaite un saziņa pēc intereses izrādīšanas. Trīs lietas, ko mazā uzņēmumā vari automatizēt nedēļas laikā."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Pirmā atbilde dažu minūšu laikā",
+              "teksts": "Iestati automātisku pirmo atbildi uz klienta pieprasījumu. Tā cilvēks saņem atbildi dažu minūšu laikā, arī tad, ja Tu tobrīd nevari atbildēt."
+            },
+            {
+              "virsraksts": "Visi pieprasījumi vienā sarakstā",
+              "teksts": "Apkopo visus pieprasījumus automātiski vienā sarakstā. Pie katra saglabā arī avotu, lai Tu redzi, no kurienes tas atnācis."
+            },
+            {
+              "virsraksts": "E-pasti tiem, kuri jautāja, bet nenopirka",
+              "teksts": "Iestati īsu automātisku e-pastu sēriju cilvēkiem, kuri interesējās par Tavu piedāvājumu, bet neko nenopirka."
+            },
+            {
+              "virsraksts": "Ar ko sākt Tavā uzņēmumā?",
+              "teksts": "Aizpildi automatizācijas testu. Četri jautājumi palīdzēs ieraudzīt, kur Tavs mārketings zaudē laiku un klientus."
+            }
+          ],
+          "nosleguma_virsraksts": "Tavs nākamais solis: automatizācijas tests",
+          "nosleguma_teksts": "Saglabā ierakstu vai nosūti to kolēģim. Lai saprastu, ar ko sākt savā uzņēmumā, aizpildi automatizācijas testu.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "vienas nedēļas laikā"
+        },
+        "caption": {
+          "teksts": "Mārketinga automatizācija mazā uzņēmumā: sāc ar to, kas notiek pēc klienta jautājuma.\n\nUzlūko saziņu kā vienotu ceļu: no pirmās atbildes līdz pieprasījuma uzskaitei un turpmākai saziņai, ja pirkums nenotiek. Izvērtē, kurā posmā Tev ikreiz jāiesaistās un ko no tā vari uzticēt automatizācijai.\n\nSlaidos atradīsi trīs darbus, ko vari automatizēt nedēļas laikā. Lai saprastu, ar kuru sākt Tavā uzņēmumā, aizpildi automatizācijas testu. Četri jautājumi palīdzēs ieraudzīt, kur Tavā mārketingā zūd laiks un klienti.\n\nSaglabā ierakstu, lai atgrieztos pie tā, plānojot automatizāciju.",
+          "tagi": [
+            "#automatizācija",
+            "#mārketings",
+            "#mazaisbizness"
+          ],
+          "facebook": "Mārketinga automatizācija mazā uzņēmumā: sāc ar to, kas notiek pēc klienta jautājuma.\n\nUzlūko saziņu kā vienotu ceļu: no pirmās atbildes līdz pieprasījuma uzskaitei un turpmākai saziņai, ja pirkums nenotiek. Izvērtē, kurā posmā Tev ikreiz jāiesaistās un ko no tā vari uzticēt automatizācijai.\n\nSlaidos atradīsi trīs darbus, ko vari automatizēt nedēļas laikā. Lai saprastu, ar kuru sākt Tavā uzņēmumā, aizpildi automatizācijas testu. Četri jautājumi palīdzēs ieraudzīt, kur Tavā mārketingā zūd laiks un klienti.\n\nSaglabā ierakstu, lai atgrieztos pie tā, plānojot automatizāciju.\n\nSaite profilā.\n\n#automatizācija #mārketings #mazaisbizness",
+          "instagram": "Mārketinga automatizācija mazā uzņēmumā: sāc ar to, kas notiek pēc klienta jautājuma.\n\nUzlūko saziņu kā vienotu ceļu: no pirmās atbildes līdz pieprasījuma uzskaitei un turpmākai saziņai, ja pirkums nenotiek. Izvērtē, kurā posmā Tev ikreiz jāiesaistās un ko no tā vari uzticēt automatizācijai.\n\nSlaidos atradīsi trīs darbus, ko vari automatizēt nedēļas laikā. Lai saprastu, ar kuru sākt Tavā uzņēmumā, aizpildi automatizācijas testu. Četri jautājumi palīdzēs ieraudzīt, kur Tavā mārketingā zūd laiks un klienti.\n\nSaglabā ierakstu, lai atgrieztos pie tā, plānojot automatizāciju.\n\nSaite profilā.\n\n#automatizācija #mārketings #mazaisbizness",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Trīs mārketinga darbi, ko automatizēt nedēļas laikā",
+        "edited": "2026-10-13"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-three-automations.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-10-23-test-story",
+      "date": "2026-10-23",
+      "slot": "story",
+      "format": "story",
+      "path": "html",
+      "pillar": "Mūsu piedāvājums",
+      "brief": "Promote the automation test: four questions, about a minute, the result at once; then AI reads your website and writes three suggestions for your business.",
+      "facts": [
+        "The test on /automatizacijas-tests/: 4 questions, free scorecard, optional AI suggestions from the site."
+      ],
+      "sources": [
+        "/automatizacijas-tests/"
+      ],
+      "cta": {
+        "label": "Izpildīt testu",
+        "href": "/automatizacijas-tests/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "4 jautājumi par automatizāciju Tavā uzņēmumā",
+        "apraksts": "Izpildi testu /automatizacijas-tests/: atbildi uz 4 jautājumiem un saņem bezmaksas novērtējumu. Ja vēlies ieteikumus tieši Tavam uzņēmumam, izvēlies arī AI ieteikumus, kas balstīti uz Tavas mājaslapas saturu.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "lv:review 2026-10-11",
+        "visual": {
+          "akcents": "4 jautājumi",
+          "teksts": "Izpildi testu un saņem bezmaksas vērtējumu. Ja vēlies, arī AI ieteikumus, kas balstīti uz Tavas mājaslapas saturu.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-12"
+        }
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-test-story.webp"
+    },
+    {
+      "id": "2026-10-27-ai-act-labels",
+      "date": "2026-10-27",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "html",
+      "pillar": "AI un noteikumi",
+      "brief": "Do AI images in ads have to be labelled? The EU AI Act transparency rules apply since 2 August 2026. Explain plainly what they mean for an advertiser using AI images, video and text, and close with 'this is not legal advice; ask a lawyer for borderline cases'.",
+      "facts": [
+        "Since 2 Aug 2026, under Article 50 deployers must disclose that realistic AI-generated or manipulated image, audio or video content (deepfakes) is artificially generated.",
+        "AI-generated text published to inform the public on matters of public interest must be disclosed, unless it has undergone human editorial review with a person taking editorial responsibility.",
+        "Content published before 2 Aug 2026 need not be relabelled. What exactly counts as a deepfake is still debated."
+      ],
+      "sources": [
+        "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026"
+      ],
+      "cta": {
+        "label": "Konsultācija",
+        "href": "/marketinga-konsultacijas/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "AI attēls reklāmā: kad marķējums ir obligāts",
+        "apraksts": "Karuselī skaidrojam, ko Tev kā reklāmdevējam nozīmē ES AI akta pārredzamības noteikumi, ja kopš 2026. gada 2. augusta izmanto AI attēlus, video vai tekstu. Piesaki konsultāciju par AI izmantošanu mārketingā, taču šis nav juridisks padoms: robežgadījumos jautā juristam.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "2026-10-13",
+        "visual": {
+          "aki": {
+            "virsraksts": "Uzzini, kad reklāmā jāatklāj AI izmantošana",
+            "teksts": "Tu izmanto AI attēlus, video vai tekstu reklāmās? ES AI akta prasības atšķiras atkarībā no satura."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Dziļviltojumiem jānorāda izcelsme",
+              "teksts": "Kopš 2026. gada 2. augusta ES AI akta 50. pants prasa atklāt, ka AI radīti vai pārveidoti reālistiski attēli, audio un video (dziļviltojumi) ir mākslīgi radīti."
+            },
+            {
+              "virsraksts": "Tekstam svarīgs ir publicēšanas mērķis",
+              "teksts": "Ja AI radītu tekstu publicē, lai informētu sabiedrību par sabiedriski nozīmīgiem jautājumiem, AI izmantošana jāatklāj."
+            },
+            {
+              "virsraksts": "Cilvēka redakcionālā pārbaude: izņēmums",
+              "teksts": "Šādam tekstam AI izmantošana nav jāatklāj, ja cilvēks to ir redakcionāli pārbaudījis un uzņēmies redakcionālo atbildību."
+            },
+            {
+              "virsraksts": "Agrāk publicētais nav jāpārmarķē",
+              "teksts": "Pirms 2026. gada 2. augusta publicētais saturs nav jāpārmarķē. Savukārt par to, kas tieši uzskatāms par dziļviltojumu, joprojām notiek diskusijas."
+            }
+          ],
+          "nosleguma_virsraksts": "Piesakies konsultācijai",
+          "nosleguma_teksts": "Saglabā ierakstu vai nosūti kolēģim. Šis nav juridisks padoms. Neskaidros robežgadījumos jautā juristam.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "obligāts"
+        },
+        "caption": {
+          "teksts": "AI attēli reklāmās: vai par AI izmantošanu jāinformē ikreiz?\n\nJa Tu reklāmā izmanto AI, svarīgs ir satura veids. Reālistiskiem AI radītiem vai pārveidotiem attēliem, audio un video, kas ir dziļviltojumi, mākslīgā izcelsme jāatklāj. Taču par to, kas tieši uzskatāms par dziļviltojumu, joprojām notiek diskusijas.\n\nAI tekstam būtisks ir mērķis: vai tas informē sabiedrību par sabiedriski nozīmīgiem jautājumiem? Šāda teksta gadījumā jāatklāj AI izmantošana, izņemot gadījumus, kad cilvēks veicis redakcionālo pārbaudi un uzņēmies redakcionālo atbildību.\n\nJa vēlies pārrunāt AI izmantošanu Tavās reklāmās, piesakies konsultācijai. Šis nav juridisks padoms. Neskaidros robežgadījumos jautā juristam.\n\nSaglabā ierakstu, lai atgrieztos pie tā pirms nākamās reklāmas publicēšanas.",
+          "tagi": [
+            "#mākslīgaisintelekts",
+            "#reklāma",
+            "#digitālaismārketings"
+          ],
+          "facebook": "AI attēli reklāmās: vai par AI izmantošanu jāinformē ikreiz?\n\nJa Tu reklāmā izmanto AI, svarīgs ir satura veids. Reālistiskiem AI radītiem vai pārveidotiem attēliem, audio un video, kas ir dziļviltojumi, mākslīgā izcelsme jāatklāj. Taču par to, kas tieši uzskatāms par dziļviltojumu, joprojām notiek diskusijas.\n\nAI tekstam būtisks ir mērķis: vai tas informē sabiedrību par sabiedriski nozīmīgiem jautājumiem? Šāda teksta gadījumā jāatklāj AI izmantošana, izņemot gadījumus, kad cilvēks veicis redakcionālo pārbaudi un uzņēmies redakcionālo atbildību.\n\nJa vēlies pārrunāt AI izmantošanu Tavās reklāmās, piesakies konsultācijai. Šis nav juridisks padoms. Neskaidros robežgadījumos jautā juristam.\n\nSaglabā ierakstu, lai atgrieztos pie tā pirms nākamās reklāmas publicēšanas.\n\nSaite profilā.\n\n#mākslīgaisintelekts #reklāma #digitālaismārketings",
+          "instagram": "AI attēli reklāmās: vai par AI izmantošanu jāinformē ikreiz?\n\nJa Tu reklāmā izmanto AI, svarīgs ir satura veids. Reālistiskiem AI radītiem vai pārveidotiem attēliem, audio un video, kas ir dziļviltojumi, mākslīgā izcelsme jāatklāj. Taču par to, kas tieši uzskatāms par dziļviltojumu, joprojām notiek diskusijas.\n\nAI tekstam būtisks ir mērķis: vai tas informē sabiedrību par sabiedriski nozīmīgiem jautājumiem? Šāda teksta gadījumā jāatklāj AI izmantošana, izņemot gadījumus, kad cilvēks veicis redakcionālo pārbaudi un uzņēmies redakcionālo atbildību.\n\nJa vēlies pārrunāt AI izmantošanu Tavās reklāmās, piesakies konsultācijai. Šis nav juridisks padoms. Neskaidros robežgadījumos jautā juristam.\n\nSaglabā ierakstu, lai atgrieztos pie tā pirms nākamās reklāmas publicēšanas.\n\nSaite profilā.\n\n#mākslīgaisintelekts #reklāma #digitālaismārketings",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Vai AI attēli reklāmās ir jāmarķē?"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-ai-act-labels.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-10-29-meta-creatives",
+      "date": "2026-10-29",
+      "slot": "feed",
+      "format": "single image",
+      "path": "ai+html",
+      "pillar": "Meta reklāma",
+      "brief": "Meta's algorithm now picks the audience; what the advertiser controls is the signal and genuinely different ad materials. Three to five genuinely different ads per ad set do more than twenty near-copies, and a campaign needs to be left alone long enough to leave the learning phase.",
+      "facts": [
+        "The site's own editorial line for Meta (blog /meta-reklamas/ and the Meta cluster); no outside numbers."
+      ],
+      "sources": [
+        "/meta-reklamas/"
+      ],
+      "cta": {
+        "label": "Meta reklāmas kurss",
+        "href": "/meta-reklamas-kurss/",
+        "data": "courseSessions.meta-reklamas-kurss next date (3 Nov 2026)"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Meta izvēlas auditoriju. Ko vari ietekmēt Tu?",
+        "apraksts": "Meta algoritms izvēlas auditoriju, bet Tu vari ietekmēt signālus, izmantot būtiski atšķirīgus reklāmas materiālus un ļaut kampaņai bez liekas iejaukšanās pabeigt mācīšanās posmu. Iepazīsti Meta reklāmas kursu.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "lv:review 2026-10-11",
+        "visual": {
+          "akcents": "ietekmēt",
+          "teksts": "Tu vari ietekmēt datus, ko Meta saņem, un reklāmas materiālu dažādību. Dod kampaņai laiku pabeigt mācīšanās fāzi. Uzzini vairāk Meta reklāmas kursā.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-12"
+        },
+        "caption": {
+          "teksts": "Meta reklāma: vairāk līdzīgu reklāmas materiālu vēl nenozīmē lielāku dažādību.\n\nSvarīgs nav tikai materiālu skaits, bet arī tas, vai tie patiešām atšķiras. Daži būtiski atšķirīgi reklāmas materiāli ir vērtīgāki par daudzām gandrīz vienādām versijām.\n\nPirms nākamajām izmaiņām izvērtē, kādus datus saņem Meta un vai kampaņai ir bijis pietiekami daudz laika pabeigt mācīšanās fāzi. Ne viss jārisina ar vēl vienu reklāmas versiju.\n\nUzzini vairāk Meta reklāmas kursā. Vai Tavi reklāmas materiāli piedāvā dažādas pieejas vai tikai nelielas viena materiāla variācijas?",
+          "tagi": [
+            "#metareklāma",
+            "#digitālaismārketings",
+            "#mārketingaskola"
+          ],
+          "facebook": "Meta reklāma: vairāk līdzīgu reklāmas materiālu vēl nenozīmē lielāku dažādību.\n\nSvarīgs nav tikai materiālu skaits, bet arī tas, vai tie patiešām atšķiras. Daži būtiski atšķirīgi reklāmas materiāli ir vērtīgāki par daudzām gandrīz vienādām versijām.\n\nPirms nākamajām izmaiņām izvērtē, kādus datus saņem Meta un vai kampaņai ir bijis pietiekami daudz laika pabeigt mācīšanās fāzi. Ne viss jārisina ar vēl vienu reklāmas versiju.\n\nUzzini vairāk Meta reklāmas kursā. Vai Tavi reklāmas materiāli piedāvā dažādas pieejas vai tikai nelielas viena materiāla variācijas?\n\nMeta reklāmas kurss: 3. novembrī, 150 € + PVN.\nSaite profilā.\n\n#metareklāma #digitālaismārketings #mārketingaskola",
+          "instagram": "Meta reklāma: vairāk līdzīgu reklāmas materiālu vēl nenozīmē lielāku dažādību.\n\nSvarīgs nav tikai materiālu skaits, bet arī tas, vai tie patiešām atšķiras. Daži būtiski atšķirīgi reklāmas materiāli ir vērtīgāki par daudzām gandrīz vienādām versijām.\n\nPirms nākamajām izmaiņām izvērtē, kādus datus saņem Meta un vai kampaņai ir bijis pietiekami daudz laika pabeigt mācīšanās fāzi. Ne viss jārisina ar vēl vienu reklāmas versiju.\n\nUzzini vairāk Meta reklāmas kursā. Vai Tavi reklāmas materiāli piedāvā dažādas pieejas vai tikai nelielas viena materiāla variācijas?\n\nMeta reklāmas kurss: 3. novembrī, 150 € + PVN.\nSaite profilā.\n\n#metareklāma #digitālaismārketings #mārketingaskola",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        }
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-meta-creatives.webp"
+    },
+    {
+      "id": "2026-10-30-review-story",
+      "date": "2026-10-30",
+      "slot": "story",
+      "format": "story, review card",
+      "path": "html",
+      "pillar": "Atsauksmes",
+      "brief": "A participant's Google review of the Meta course, with the next course date.",
+      "facts": [
+        "Quote: reviews.json items.linda (Google review, verbatim). Next date: courseSessions.meta-reklamas-kurss (3 Nov 2026)."
+      ],
+      "sources": [
+        "src/_data/reviews.json",
+        "src/_data/courseSessions.json"
+      ],
+      "cta": {
+        "label": "Meta reklāmas kurss",
+        "href": "/meta-reklamas-kurss/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Vai Meta reklāmas kurss ir piemērots Tev?",
+        "apraksts": "Atsauksme Google profilā par Meta reklāmas kursu, lai Tu varētu izvērtēt, vai tas atbilst Tavām vajadzībām. Piesakies nākamajam Meta reklāmas kursam 2026. gada 3. novembrī.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "lv:review 2026-10-11"
+      },
+      "approved": "2026-10-12"
+    },
+    {
+      "id": "2026-11-03-conversion-signal",
+      "date": "2026-11-03",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "html",
+      "pillar": "Mērīšana",
+      "brief": "Meta and Google learn from what you send them. If the pixel misses conversions, the algorithm optimises for the wrong people. Explain the pixel plus the Conversions API, and what a lead or purchase sent from the server changes, in plain words.",
+      "facts": [
+        "The site's own article /konversiju-uzskaite/ (researched 5 Sep 2026): pixel plus Conversions API, Event Match Quality scored 1-10; tracking makes the real cost visible and gives the algorithm something to learn from."
+      ],
+      "sources": [
+        "/konversiju-uzskaite/"
+      ],
+      "cta": {
+        "label": "Konversiju uzskaite",
+        "href": "/konversiju-uzskaite/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Konversiju uzskaite: kā ieraudzīt patiesās izmaksas",
+        "apraksts": "Skaidrojam, kā darbojas pikselis un Conversions API un ko algoritmam dod no servera nosūtīti dati par pieteikumiem vai pirkumiem. Uzzini, kā konversiju uzskaite palīdz Tev redzēt patiesās izmaksas: /konversiju-uzskaite/.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "visual": {
+          "aki": {
+            "virsraksts": "Ko Tu zaudē, ja konversijas pazūd?",
+            "teksts": "Meta un Google mācās no Taviem datiem. Ja pikselis neuzskaita konversijas, algoritmam trūkst informācijas par to, kas piesakās vai pērk."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Pikselis kopā ar Conversions API",
+              "teksts": "Pikselis palīdz uzskaitīt darbības Tavā vietnē. Conversions API papildina šo uzskaiti, nosūtot informāciju par konversijām no servera."
+            },
+            {
+              "virsraksts": "Ko maina ziņa no servera?",
+              "teksts": "No servera nosūtīti dati par pieteikumu vai pirkumu dod algoritmam informāciju par notikušu konversiju. Tas ir notikums, no kura algoritms var mācīties."
+            },
+            {
+              "virsraksts": "Uzskaite atklāj patiesās izmaksas",
+              "teksts": "Konversiju uzskaite palīdz Tev redzēt, cik patiesībā izmaksā pieteikums vai pirkums. Bez tās izmaksu aina ir nepilnīga."
+            },
+            {
+              "virsraksts": "Pievērs uzmanību datu kvalitātei",
+              "teksts": "Konversiju uzskaitē pievērs uzmanību arī Event Match Quality vērtējumam. To vērtē skalā no 1 līdz 10."
+            }
+          ],
+          "nosleguma_virsraksts": "Konversiju uzskaite",
+          "nosleguma_teksts": "Saglabā ierakstu vai nosūti kolēģim. Kā pikselis un Conversions API darbojas kopā, lasi rakstā par konversiju uzskaiti.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "patiesās izmaksas"
+        },
+        "caption": {
+          "teksts": "Meta reklāma un Google Ads: vai konversiju uzskaite parāda visus pieteikumus un pirkumus?\n\nUzskaite nav tikai atskaitei. Tie paši dati, kas Tev palīdz saprast pieteikuma vai pirkuma patiesās izmaksas, dod reklāmas algoritmam informāciju, no kuras mācīties.\n\nJa pikselis kādu konversiju neuzskaita, tās trūkst arī algoritma mācīšanās datos. Conversions API papildina pikseļa uzskaiti ar informāciju no servera par notikušu pieteikumu vai pirkumu.\n\nTāpēc konversiju uzskaitē svarīgs ir ne tikai izmaksu rādītājs, bet arī dati, uz kuriem tas balstās. Saglabā ierakstu, lai atgrieztos pie tā, pārskatot savu konversiju uzskaiti.",
+          "tagi": [
+            "#konversijuuzskaite",
+            "#digitālaismārketings",
+            "#reklāmasdati"
+          ],
+          "facebook": "Meta reklāma un Google Ads: vai konversiju uzskaite parāda visus pieteikumus un pirkumus?\n\nUzskaite nav tikai atskaitei. Tie paši dati, kas Tev palīdz saprast pieteikuma vai pirkuma patiesās izmaksas, dod reklāmas algoritmam informāciju, no kuras mācīties.\n\nJa pikselis kādu konversiju neuzskaita, tās trūkst arī algoritma mācīšanās datos. Conversions API papildina pikseļa uzskaiti ar informāciju no servera par notikušu pieteikumu vai pirkumu.\n\nTāpēc konversiju uzskaitē svarīgs ir ne tikai izmaksu rādītājs, bet arī dati, uz kuriem tas balstās. Saglabā ierakstu, lai atgrieztos pie tā, pārskatot savu konversiju uzskaiti.\n\nSaite profilā.\n\n#konversijuuzskaite #digitālaismārketings #reklāmasdati",
+          "instagram": "Meta reklāma un Google Ads: vai konversiju uzskaite parāda visus pieteikumus un pirkumus?\n\nUzskaite nav tikai atskaitei. Tie paši dati, kas Tev palīdz saprast pieteikuma vai pirkuma patiesās izmaksas, dod reklāmas algoritmam informāciju, no kuras mācīties.\n\nJa pikselis kādu konversiju neuzskaita, tās trūkst arī algoritma mācīšanās datos. Conversions API papildina pikseļa uzskaiti ar informāciju no servera par notikušu pieteikumu vai pirkumu.\n\nTāpēc konversiju uzskaitē svarīgs ir ne tikai izmaksu rādītājs, bet arī dati, uz kuriem tas balstās. Saglabā ierakstu, lai atgrieztos pie tā, pārskatot savu konversiju uzskaiti.\n\nSaite profilā.\n\n#konversijuuzskaite #digitālaismārketings #reklāmasdati",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Ko Meta un Google mācās no Taviem datiem?",
+        "edited": "2026-10-13"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-conversion-signal.webp",
+      "motion": true
+    },
+    {
+      "id": "2026-11-05-ai-latvian",
+      "date": "2026-11-05",
+      "slot": "feed",
+      "format": "carousel, 5 slides",
+      "path": "ai+html",
+      "pillar": "AI saturs",
+      "brief": "Why AI texts in Latvian often sound translated (English sentence shapes, calques, wrong cases) and how to fix it: give the model a voice guide and real examples, ask for Latvian from the start rather than a translation, and have a Latvian read every text before it goes out. Our own practice: drafts written with an OpenAI model, then read and corrected by a person.",
+      "facts": [
+        "The site's own article /ai-saturs-bez-zimola-balss-zaudesanas/ and our own working practice; no outside numbers."
+      ],
+      "sources": [
+        "/ai-saturs-bez-zimola-balss-zaudesanas/"
+      ],
+      "cta": {
+        "label": "Lasīt rakstu",
+        "href": "/ai-saturs-bez-zimola-balss-zaudesanas/"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Latviešu vārdi, angļu teikumi: kļūda AI tekstos",
+        "apraksts": "Parādām, kā norādes par zīmola valodu, īsti piemēri un lūgums uzreiz rakstīt latviski palīdz Taviem tekstiem izvairīties no angliskas teikumu uzbūves, vārds vārdā tulkotām frāzēm un nepareiziem locījumiem. Lasi rakstu par AI saturu un mūsu praksi: melnrakstus veidojam ar OpenAI modeli, bet pirms publicēšanas katru tekstu izlasa un izlabo cilvēks, kurš pārzina latviešu valodu.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11",
+        "edited": "2026-10-13",
+        "visual": {
+          "aki": {
+            "virsraksts": "Lai AI tekstā nepazūd Tava zīmola balss",
+            "teksts": "AI tekstos latviski mēdz palikt angļu teikumu uzbūve, vārds vārdā tulkotas frāzes un nepareizi locījumi. Kā panākt dabiskāku valodu?"
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Latviski jau no pirmā uzdevuma",
+              "teksts": "Lūdz modelim uzreiz rakstīt latviski, nevis tulkot angļu tekstu. Norādi, ka vajadzīga dabiska latviešu valoda, nevis angļu teikumu uzbūve ar latviešu vārdiem."
+            },
+            {
+              "virsraksts": "Iedod zīmola balss vadlīnijas",
+              "teksts": "Apraksti, kā Tavs zīmols uzrunā lasītāju, kādus vārdus lieto un no kādiem izvairās. Iekļauj šīs norādes uzdevumā, nevis atstāj modeli minam."
+            },
+            {
+              "virsraksts": "Parādi īstu tekstu piemērus",
+              "teksts": "Pievieno reālus Tava zīmola tekstus, kuros skan vēlamā balss. Norādi, ko tajos saglabāt: vārdu izvēli, teikumu uzbūvi un uzrunas veidu."
+            },
+            {
+              "virsraksts": "Pirms publicēšanas pārbauda cilvēks",
+              "teksts": "Katru tekstu lai pārbauda cilvēks, kurš prot latviešu valodu. Arī mēs melnrakstus veidojam ar OpenAI modeli, pēc tam cilvēks tos izlasa un izlabo."
+            }
+          ],
+          "nosleguma_virsraksts": "Vairāk par AI un zīmola balsi",
+          "nosleguma_teksts": "Lasi rakstu \"AI saturs bez zīmola balss zaudēšanas\". Saglabā ierakstu, lai ieteikumi būtu pa rokai.",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "akcents": "angļu teikumi"
+        },
+        "caption": {
+          "teksts": "AI teksti latviešu valodā: vārdi ir pazīstami, bet kāpēc teikumi skan kā tulkojums?\n\nAngļu teikumu uzbūve, vārds vārdā tulkotas frāzes un nepareizi locījumi var palikt arī tekstā, kas sākumā šķiet labs. Tāpēc ar norādi «raksti latviski» vien nepietiek: modelim vajag arī Tava zīmola balss vadlīnijas un īstu tekstu piemērus.\n\nMārketinga Skolā melnrakstus veidojam ar OpenAI modeli. Pēc tam cilvēks tos izlasa un izlabo. Modeļa atbilde mums ir melnraksts, nevis publicējams teksts.\n\nRakstā \"AI saturs bez zīmola balss zaudēšanas\" lasi, kā šos principus izmantot sava zīmola tekstos.\n\nKas Tev AI tekstos visbiežāk liek aizķerties: neveikla vārdu izvēle vai nedabiska teikumu uzbūve?",
+          "tagi": [
+            "#mākslīgaisintelekts",
+            "#latviešuvaloda",
+            "#zīmolabalss"
+          ],
+          "facebook": "AI teksti latviešu valodā: vārdi ir pazīstami, bet kāpēc teikumi skan kā tulkojums?\n\nAngļu teikumu uzbūve, vārds vārdā tulkotas frāzes un nepareizi locījumi var palikt arī tekstā, kas sākumā šķiet labs. Tāpēc ar norādi «raksti latviski» vien nepietiek: modelim vajag arī Tava zīmola balss vadlīnijas un īstu tekstu piemērus.\n\nMārketinga Skolā melnrakstus veidojam ar OpenAI modeli. Pēc tam cilvēks tos izlasa un izlabo. Modeļa atbilde mums ir melnraksts, nevis publicējams teksts.\n\nRakstā \"AI saturs bez zīmola balss zaudēšanas\" lasi, kā šos principus izmantot sava zīmola tekstos.\n\nKas Tev AI tekstos visbiežāk liek aizķerties: neveikla vārdu izvēle vai nedabiska teikumu uzbūve?\n\nKomentē LATVISKI, un nosūtīsim saiti privātā ziņā. Bez maksas.\n\n#mākslīgaisintelekts #latviešuvaloda #zīmolabalss",
+          "instagram": "AI teksti latviešu valodā: vārdi ir pazīstami, bet kāpēc teikumi skan kā tulkojums?\n\nAngļu teikumu uzbūve, vārds vārdā tulkotas frāzes un nepareizi locījumi var palikt arī tekstā, kas sākumā šķiet labs. Tāpēc ar norādi «raksti latviski» vien nepietiek: modelim vajag arī Tava zīmola balss vadlīnijas un īstu tekstu piemērus.\n\nMārketinga Skolā melnrakstus veidojam ar OpenAI modeli. Pēc tam cilvēks tos izlasa un izlabo. Modeļa atbilde mums ir melnraksts, nevis publicējams teksts.\n\nRakstā \"AI saturs bez zīmola balss zaudēšanas\" lasi, kā šos principus izmantot sava zīmola tekstos.\n\nKas Tev AI tekstos visbiežāk liek aizķerties: neveikla vārdu izvēle vai nedabiska teikumu uzbūve?\n\nKomentē LATVISKI, un nosūtīsim saiti privātā ziņā. Bez maksas.\n\n#mākslīgaisintelekts #latviešuvaloda #zīmolabalss",
+          "model": "gpt-6-astra",
+          "written": "2026-10-13",
+          "edited": "2026-10-13"
+        },
+        "virsraksts_was": "Kāpēc AI teksti latviski izklausās pēc tulkojuma"
+      },
+      "approved": "2026-10-12",
+      "art": "social/art/social-ai-latvian.webp",
+      "motion": true,
+      "magnet": {
+        "keyword": "LATVISKI",
+        "slug": "ai-teksti-latviski",
+        "title": "Kā mēs panākam, ka AI raksta latviski",
+        "items": [
+          "Instrukcija, ar kuru mūsu AI raksta tekstus",
+          "Angliskās frāzes, ko labojam visbiežāk, ar piemēriem",
+          "Pārbaude, ko veicam pirms katras publikācijas"
+        ],
+        "url": "/ai-teksti-latviski/"
+      }
+    },
+    {
+      "id": "2026-11-06-result-story",
+      "date": "2026-11-06",
+      "slot": "story",
+      "format": "story, result card with screenshot",
+      "path": "html",
+      "pillar": "Rezultāti",
+      "brief": "One real result from the portfolio: Četras Zoles, ROAS 36,34 after the first 1 000 € of ad spend, with the Ads Manager screenshot.",
+      "facts": [
+        "Portfolio case #cetras-zoles: ROAS 36,34 after the first 1 000 € (homepage result card and /portfolio/)."
+      ],
+      "sources": [
+        "/portfolio/#cetras-zoles"
+      ],
+      "cta": {
+        "label": "Skatīt rezultātus",
+        "href": "/portfolio/#cetras-zoles"
+      },
+      "status": "approved",
+      "lv": {
+        "virsraksts": "Četras Zoles: ROAS 36,34",
+        "apraksts": "Četras Zoles rezultātu kartīte ar Ads Manager ekrānuzņēmumu: ROAS 36,34 pēc pirmajiem 1 000 € reklāmas tēriņiem. Skati rezultātus un novērtē reklāmas ieguldījuma atdevi konkrētā piemērā.",
+        "model": "gpt-6-astra",
+        "written": "2026-10-11"
+      },
+      "approved": "2026-10-12",
+      "art": "src/img/2021/01/purchases2.webp"
+    },
+    {
+      "id": "2026-11-10-claude-meta-rules",
+      "date": "2026-11-10",
+      "slot": "feed",
+      "format": "carousel, 10 slides",
+      "path": "ai+html",
+      "pillar": "Meta reklāma + AI",
+      "brief": "Lead magnet, example built from the owner's ADS kit (English B1, 20 Oct). Claude runs a live Meta campaign in one of our own ecommerce projects by seven rules. Never name the store, the product or the theme.",
+      "facts": [
+        "Since 29 Sep 2026 a scheduled Claude session manages one CBO campaign at $70 a day in a print-on-demand ecommerce project the owner runs (ADS kit, Notion B1 20 Oct).",
+        "Rules: judge on real shop orders, Meta over-reports 15-20%; one August week 68 claimed vs 54 real; no changes in learning, then one change every three days, 20% per step; pause at $40 with zero purchases or $60 with CPA over $30; 4-8 ads live, never pause the last good one; fatigue at frequency over 2.5 or CTR down 30%: one new test, one variable; kill switch: seven-day real CPA over $30 after $350, cut the budget and report; verify every write, log every run with the reasoning.",
+        "Date-bound: re-check before posting that the session has run every day since 29 Sep. The English post promises numbers in two weeks; do not promise them here unless the owner says so."
+      ],
+      "sources": [
+        "Notion: B1 · Tue 20 Oct · I handed my Meta ads to Claude (ADS)"
+      ],
+      "cta": {
+        "label": "Meta reklāma",
+        "href": "/facebook-reklama/"
+      },
+      "status": "example",
+      "art": "social/art/social-claude-meta-ads.webp",
+      "motion": true,
+      "magnet": {
+        "keyword": "META",
+        "slug": "meta-reklamas-ar-claude",
+        "title": "Mūsu Meta + Claude komplekts",
+        "items": [
+          "7 noteikumi ar visiem sliekšņiem",
+          "Pilna Claude ikdienas instrukcija",
+          "Patiesā ROAS atskaites instrukcija",
+          "Pārbaude pirms budžeta tērēšanas"
+        ],
+        "url": "/meta-reklamas-ar-claude/"
+      },
+      "lv": {
+        "virsraksts": "7 noteikumi, pēc kuriem Claude vada mūsu Meta reklāmas",
+        "apraksts": "Viena mūsu e-komercijas projekta Meta kampaņu kopš 29. septembra vada Claude. Ieraksts parāda 7 noteikumus, pēc kuriem tas strādā, un dod komplektu par komentāru META.",
+        "model": "claude-opus-5-5",
+        "written": "2026-10-13",
+        "visual": {
+          "akcents": "7 noteikumi",
+          "aki": {
+            "virsraksts": "Meta saskaita vairāk, nekā Tu pārdod",
+            "teksts": "Vienā augusta nedēļā Meta uzrādīja 68 pirkumus, bet veikalā bija 54. Tāpēc Claude lēmumus pieņem tikai pēc īstajiem pasūtījumiem."
+          },
+          "slaidi": [
+            {
+              "virsraksts": "Spried pēc veikala datiem, nevis pēc Meta",
+              "teksts": "Lēmumus Claude pieņem pēc īstajiem veikala pasūtījumiem. Mūsu projektā Meta pirkumu skaitu pārspīlē par 15 līdz 20 %."
+            },
+            {
+              "virsraksts": "Mācīšanās fāzē neko nemaina",
+              "teksts": "Kamēr kampaņa mācās, izmaiņu nav. Pēc tam ne biežāk kā reizi trijās dienās un ne vairāk kā par 20 % vienā reizē."
+            },
+            {
+              "virsraksts": "Skaidri apturēšanas sliekšņi",
+              "teksts": "Reklāmu aptur, ja iztērēti 40 $ un nav neviena pirkuma, vai ja iztērēti 60 $ un CPA ir virs 30 $."
+            },
+            {
+              "virsraksts": "Aktīvas 4 līdz 8 reklāmas",
+              "teksts": "Kampaņā vienmēr strādā 4 līdz 8 reklāmas. Pēdējo labi strādājošo reklāmu Claude nekad neaptur."
+            },
+            {
+              "virsraksts": "Nogurums: viens jauns tests",
+              "teksts": "Ja frekvence pārsniedz 2,5 vai CTR nokrītas par 30 %, Claude palaiž vienu jaunu testu un maina tikai vienu lietu."
+            },
+            {
+              "virsraksts": "Avārijas slēdzis",
+              "teksts": "Ja pēc tam, kad iztērēti 350 $, 7 dienu reālais CPA ir virs 30 $, Claude samazina budžetu un ziņo mums."
+            },
+            {
+              "virsraksts": "Katru izmaiņu pārbauda un pieraksta",
+              "teksts": "Pēc katras veiktās izmaiņas Claude pārbauda, vai tā tiešām notika, un pieraksta, ko izdarīja un kāpēc."
+            }
+          ],
+          "nosleguma_virsraksts": "",
+          "nosleguma_teksts": ""
+        },
+        "caption": {
+          "teksts": "Meta reklāmas ar Claude: kopš 29. septembra vienā no mūsu pašu e-komercijas projektiem kampaņu vada AI.\n\nTas maina budžetus, aptur reklāmas, palaiž testus un katru rītu atskaitās. Budžets ir 70 $ dienā: pietiekami mazs, lai kļūda pārāk nesāpētu, un pietiekami liels, lai tā tomēr maksātu naudu.\n\nAI te nav jābūt gudram. Tam jābūt konsekventam, un tieši šajā ziņā cilvēki kļūdās visbiežāk: tie paši noteikumi jāievēro arī septiņos no rīta.\n\nSlaidos ir visi 7 noteikumi. Kuru no tiem Tavā kontā ievēro visretāk?",
+          "tagi": [
+            "#metareklāma",
+            "#claude",
+            "#ekomercija"
+          ],
+          "model": "claude-opus-5-5",
+          "written": "2026-10-13",
+          "facebook": "Meta reklāmas ar Claude: kopš 29. septembra vienā no mūsu pašu e-komercijas projektiem kampaņu vada AI.\n\nTas maina budžetus, aptur reklāmas, palaiž testus un katru rītu atskaitās. Budžets ir 70 $ dienā: pietiekami mazs, lai kļūda pārāk nesāpētu, un pietiekami liels, lai tā tomēr maksātu naudu.\n\nAI te nav jābūt gudram. Tam jābūt konsekventam, un tieši šajā ziņā cilvēki kļūdās visbiežāk: tie paši noteikumi jāievēro arī septiņos no rīta.\n\nSlaidos ir visi 7 noteikumi. Kuru no tiem Tavā kontā ievēro visretāk?\n\nKomentē META, un privātā ziņā nosūtīsim saiti uz ceļvedi: sliekšņi un pilna Claude instrukcija. Bez maksas.\n\n#metareklāma #claude #ekomercija",
+          "instagram": "Meta reklāmas ar Claude: kopš 29. septembra vienā no mūsu pašu e-komercijas projektiem kampaņu vada AI.\n\nTas maina budžetus, aptur reklāmas, palaiž testus un katru rītu atskaitās. Budžets ir 70 $ dienā: pietiekami mazs, lai kļūda pārāk nesāpētu, un pietiekami liels, lai tā tomēr maksātu naudu.\n\nAI te nav jābūt gudram. Tam jābūt konsekventam, un tieši šajā ziņā cilvēki kļūdās visbiežāk: tie paši noteikumi jāievēro arī septiņos no rīta.\n\nSlaidos ir visi 7 noteikumi. Kuru no tiem Tavā kontā ievēro visretāk?\n\nKomentē META, un privātā ziņā nosūtīsim saiti uz ceļvedi: sliekšņi un pilna Claude instrukcija. Bez maksas.\n\n#metareklāma #claude #ekomercija"
+        }
+      }
+    }
+  ]
+}

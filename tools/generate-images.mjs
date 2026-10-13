@@ -5,6 +5,7 @@
 //   node tools/generate-images.mjs --only=cover-kas-ir-seo
 //   node tools/generate-images.mjs --force         # regenerate existing
 //   node tools/generate-images.mjs --limit=5 --quality=high
+//   node tools/generate-images.mjs --manifest=social/art.json --out=social/art
 //
 // Needs OPENAI_API_KEY (read from .env, which is gitignored).
 // Output: src/img/gen/<id>.webp — referenced from markup as /img/gen/<id>.webp
@@ -14,14 +15,17 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = join(ROOT, 'src', 'img', 'gen');
-mkdirSync(OUT, { recursive: true });
 
 // --- config -----------------------------------------------------------------
 const arg = (k, d) => {
   const hit = process.argv.find((a) => a.startsWith(`--${k}=`));
   return hit ? hit.split('=').slice(1).join('=') : d;
 };
+// The social posts keep their own manifest and output, so their artwork never
+// ships with the site.
+const OUT = join(ROOT, arg('out', 'src/img/gen'));
+const MANIFEST = join(ROOT, arg('manifest', 'src/_data/imagery.json'));
+mkdirSync(OUT, { recursive: true });
 const FORCE = process.argv.includes('--force');
 const ONLY = arg('only', null);
 const LIMIT = Number(arg('limit', 0));
@@ -95,7 +99,7 @@ const KEY = process.env.OPENAI_API_KEY;
 if (!KEY) { console.error('OPENAI_API_KEY missing'); process.exit(1); }
 
 // --- work list --------------------------------------------------------------
-const { slots } = JSON.parse(readFileSync(join(ROOT, 'src', '_data', 'imagery.json'), 'utf8'));
+const { slots } = JSON.parse(readFileSync(MANIFEST, 'utf8'));
 const ONLY_IDS = ONLY ? ONLY.split(',').map((s) => s.trim()).filter(Boolean) : null;
 let queue = slots.filter((s) => (ONLY_IDS ? ONLY_IDS.includes(s.id) : true));
 if (!FORCE) queue = queue.filter((s) => !existsSync(join(OUT, s.id + '.webp')));

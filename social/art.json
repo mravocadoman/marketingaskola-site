@@ -1,0 +1,65 @@
+{
+  "_comment": "Artwork for social/calendar.json posts, never shipped with the site. Generate: node tools/generate-images.mjs --manifest=social/art.json --out=social/art [--only=<id> --force]. Then node tools/match-ground.mjs social/art/<id>.webp, and trim the empty margin to the drawing plus 3% so it fills the slide (12 Oct 2026: done with sharp trim against #020d1c).",
+  "slots": [
+    {
+      "id": "social-meta-ai-video",
+      "post": "2026-10-13-meta-ai-video",
+      "aspect": "landscape",
+      "prompt": "A still product picture becoming a video: on the left a single flat picture card showing a simple product block on a plain ground; to its right three successive frames of the same picture step outward, each a little further along, ending in a tall vertical video frame with a small cyan play triangle at its centre. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-ai-models",
+      "post": "2026-10-15-ai-models",
+      "aspect": "landscape",
+      "prompt": "Choosing between AI models: three chat windows of clearly different sizes stand side by side on one baseline, each holding a few message bars; under each window a short stack of flat coins of a different height, the smallest window with the lowest stack. A small cyan square marker sits on the middle window. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-google-ai-max",
+      "post": "2026-10-20-google-ai-max",
+      "aspect": "landscape",
+      "prompt": "Checking a search terms report: a wide search field across the top, beneath it a report table of grey rows; a large magnifying glass, drawn as a solid ring with a solid handle, rests over the table and enlarges one row, and that one enlarged row carries a small cyan block at its left end. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-three-automations",
+      "post": "2026-10-22-three-automations",
+      "aspect": "landscape",
+      "prompt": "Three marketing automations in a row, joined by one flat connecting line with small square nodes: first an envelope sending an instant reply, then a single list panel of rows where every enquiry lands, then a sequence of three smaller envelopes stepping forward in time. One small cyan node sits on the line between the first and second object. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-test-story",
+      "post": "2026-10-23-test-story",
+      "aspect": "landscape",
+      "prompt": "A short quiz turning into a result: on the left four stacked answer rows, each a square checkbox followed by a grey answer bar, with one box filled; an arrow-shaped connector leads right to a result card holding three short horizontal bars of different lengths. The filled checkbox is the only cyan element. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-ai-act-labels",
+      "post": "2026-10-27-ai-act-labels",
+      "aspect": "landscape",
+      "prompt": "A labelled AI image in an advert: a large feed post card whose picture area shows a simple flat landscape of blocks and a sun disc; a small rectangular label tag hangs from the card s top right corner on a short cord, and the tag is the only cyan element. A second, plain post card sits partly behind the first. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-meta-creatives",
+      "post": "2026-10-29-meta-creatives",
+      "aspect": "landscape",
+      "prompt": "Genuinely different ad materials: five upright ad cards in a fanned row, each with clearly different content inside: one a simple standing figure silhouette, one a product block, one a bar chart, one a video frame with a play triangle, one a large quote mark block. A thin line from each card runs down into one shared square node below; that node is the only cyan element. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-conversion-signal",
+      "post": "2026-11-03-conversion-signal",
+      "aspect": "landscape",
+      "prompt": "Two signals feeding one ad system: on the left a browser window and below it a server cabinet; a flat line runs from each to one receiving block on the right. The line from the browser is broken by a clear gap, the line from the server is complete and ends in a small cyan square at the receiving block. Next to the receiving block a small rising bar chart. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-ai-latvian",
+      "post": "2026-11-05-ai-latvian",
+      "aspect": "landscape",
+      "prompt": "Fixing a translated-sounding text: two document pages side by side, each made of grey text bars. On the left page the bars are jumbled, uneven and out of order; on the right page the same bars sit in neat, even lines. A pencil, drawn as a long solid bar with a pointed tip, lies across the right page, and one short correction mark under one bar is the only cyan element. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    },
+    {
+      "id": "social-claude-meta-ads",
+      "post": "2026-11-10-claude-meta-rules",
+      "aspect": "landscape",
+      "prompt": "An AI assistant running an ad campaign by rules: on the left a chat window with a few message bars and a short checklist of seven square checkboxes, all ticked; a flat connecting line runs right into an ads dashboard panel with three horizontal budget sliders, a small bar chart and a run log list of grey rows. One slider knob is the only cyan element. Objects only: no people, no hands, no faces. A mid-shot: every object drawn large but whole and readable, the group spanning the full width of the frame with an even dark margin on every side, nothing cropped. Every corner is square, nothing rounded. Light shapes are cool grey #8ba3bd; white only on small details, never a large white fill. Cyan on no more than about five percent of the frame, only on one small element, never a large cyan shape. Lines of writing anywhere are drawn as plain grey bars with no letters."
+    }
+  ]
+}

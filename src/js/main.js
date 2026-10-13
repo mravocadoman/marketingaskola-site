@@ -92,9 +92,10 @@
           }
           if (child.nodeType !== 3 || !child.textContent.trim()) return;
           var frag = document.createDocumentFragment();
-          child.textContent.split(/(\s+)/).forEach(function (part) {
+          // [ \t\n]+, not \s+: a no-break space keeps "7 noteikumi" one word
+          child.textContent.split(/([ \t\n\r]+)/).forEach(function (part) {
             if (!part) return;
-            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            if (/^[ \t\n\r]+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
             var w = document.createElement('span');
             w.className = 'w';
             w.setAttribute('aria-hidden', 'true');

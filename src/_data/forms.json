@@ -237,6 +237,25 @@
           "full": true
         }
       ]
+    },
+    "gids": {
+      "_comment": "Lead-magnet gate (13 Oct 2026). Opens the rest of a guide post and signs the reader up for the newsletter; the leads workflow saves the row with consent 'materiali' and the newsletter sync adds it to Sender. 'unlock' tells forms.js to open the gated part, 'consent' replaces the general wording because this one is a newsletter sign-up.",
+      "submit": "Atvērt pārējo ceļvedi",
+      "note": "Reizi mēnesī sūtīsim Mārketinga Skolas jaunumus. Atrakstīties var ar vienu klikšķi katras vēstules beigās.",
+      "unlock": true,
+      "consent": "Piekrītu saņemt Mārketinga Skolas jaunumus e-pastā un piekrītu, ka SIA “Stonks” šim nolūkam apstrādā manu e-pasta adresi saskaņā ar <a href=\"/privatuma-politika/\">privātuma politiku</a>. Atrakstīties var jebkurā brīdī.",
+      "successTitle": "Paldies! Ceļvedis ir atvērts.",
+      "successBody": "Lasi tālāk tepat zemāk. Saiti uz šo lapu nosūtījām arī uz Tavu e-pastu.",
+      "fields": [
+        {
+          "name": "email",
+          "label": "E-pasts",
+          "type": "email",
+          "required": true,
+          "full": true,
+          "autocomplete": "email"
+        }
+      ]
     }
   }
 }

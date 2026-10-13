@@ -9,7 +9,7 @@
 {% set p = preset or {} %}
 <form class="form" data-form="{{ key }}"
       data-endpoint="{{ forms.endpoint }}"
-      data-fallback="{{ forms.fallbackEmail }}"
+      data-fallback="{{ forms.fallbackEmail }}"{% if f.unlock %} data-unlock{% endif %}
       novalidate>
   <div class="form-grid">
     {% for fl in f.fields %}
@@ -49,7 +49,7 @@
     {% endfor %}
     <label class="form-consent">
       <input type="checkbox" name="consent" required>
-      <span>{{ forms.consent | safe }}</span>
+      <span>{{ (f.consent or forms.consent) | safe }}</span>
     </label>
   </div>
 

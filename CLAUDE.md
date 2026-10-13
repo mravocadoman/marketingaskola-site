@@ -4162,6 +4162,80 @@ the existing `.testimonial` columns, footer "Google atsauksme" /
 - **The totals go stale.** Re-read both profiles before quoting the numbers and
   update `read` in the data file. Stars and the thumb are white, never cyan.
 
+## Social media pipeline (started 11 Oct 2026)
+
+The plan, the decisions and the open questions are in `docs/social-pipeline.md`.
+It covers Mārketinga Skola's Facebook page and Instagram, in Latvian, modelled on
+the Cowork "social content engine" flow: one standing calendar
+(`social/calendar.json`), then three checkpoints (calendar, designs, copy), and
+publishing through Zernio only after the owner says yes. Rihards's English
+personal pipeline in n8n is separate and stays as it is.
+
+- **Social Latvian is written by OpenAI** (owner: *"it writes better"*):
+  `node tools/social-write-lv.mjs [--only=<id>] [--force]`, `gpt-6-astra` by
+  default, from each row's English `brief` and sourced `facts`. Then
+  `lv:review`; neither check alone catches everything.
+- **Every news fact carries its source and date** in `facts`. A post may not use
+  a number that is not in them; the tool enforces it.
+- **The look is settled (13 Oct 2026): version A**, every post on the site's
+  canvas `#020d1c` with the ledger devices, rendered by `tools/social-render.mjs`.
+  Previewed and rejected the same day: cyan type-only covers alternating into a
+  checkerboard (owner: *"I liked the 1st version better"*), and a lighter
+  `#0e2743` ground with a cyan top edge. The fix for "it does not pop in a dark
+  feed" was motion, not colour.
+- **Every carousel cover is a 6 s video** (`"motion": true`, owner: *"love
+  it"*): the artwork takes itself apart and assembles again from the same pieces
+  the site headers use. `piecesSvg` is exported by `tools/build-motifs.mjs`,
+  which now runs its build only when called as a script; the site's 67 motifs
+  rebuilt byte-identical after that change. The loop opens and ends on the
+  finished cover, so any thumbnail frame is complete. Motion is ~5x the site's
+  motif-in, because 12px at 1080 wide is 4pt on a phone.
+- **Post shape, from the research in `docs/social-pipeline.md` (13 Oct 2026):**
+  a carousel is cover, hook slide, 4-6 points, closing: 7-9 slides. Slide 2
+  is a hook of its own because Instagram re-shows a skipped carousel from it.
+  Covers are a number, a contrarian claim, a named mistake or a how-to, with
+  the search keyword early, and a number on the cover must match the numbered
+  slides. **Posts carry no links**: Facebook reportedly caps affected Pages at
+  2 link posts a month and link posts get the fewest views, Instagram caption
+  links do not click. Captions end on save, send-to-a-colleague or a question,
+  then "Saite profilā."
+- **Lead magnets (13 Oct 2026):** a calendar row with `magnet: {keyword,
+  slug, title, items}` puts the keyword on the cover as a cyan bar and closes
+  on a gate slide; people comment the keyword and Zernio's comment-to-DM sends
+  the guide. **Each guide is a blog post** (owner, 13 Oct 2026: the
+  magnet is "a blog post with all sections, guides, graphics in the current
+  style, headers, animations ... and then CTA to our automation services"),
+  built by `node tools/magnet-post.mjs social/magnets/<slug>.json`: OpenAI
+  drafts the Latvian under `tools/_lv-rules.mjs` and the tool STOPS with an
+  lv-review report; the second run adds the infographic and the fixed
+  automation CTA, generates cover + infographic, builds the animated header,
+  and wires categories and the calendar. Proofread the infographic's Latvian
+  every time. Prompts in posts are ```text fences (`.prose pre`).
+- **The guides are gated behind a newsletter sign-up (13 Oct 2026).** Owner:
+  *"gate the lead magnets behind emails, so they get access when they sign up
+  for our mailing list."* A post with `magnet:` front matter carries
+  `<!-- gate -->` before its first ```text section and `<!-- /gate -->` before
+  the CTA (magnet-post.mjs puts both in); `post.njk` renders the first part,
+  then the gate panel (`form("gids")`, e-mail plus a newsletter consent of its
+  own), then `.gated`, then the public CTA. A sign-up posts to the leads
+  workflow as form `gids` with consent `materiali` and gets a welcome mail
+  carrying the guide's link (only a `/slug/` path is ever echoed). The scheduled
+  task `newsletter-signups` adds new `materiali` rows to the Sender group
+  Jaunumi daily. **Soft by design:** the text is in the HTML for search,
+  declared with `isAccessibleForFree: false` + `cssSelector: .gated` in the
+  BlogPosting, and one sign-up (`localStorage ms-gids`) opens every guide on
+  that device; a failed send unlocks too, so our outage never locks a reader
+  out. Captions say "nosūtīsim saiti privātā ziņā", never "bez e-pasta".
+  `/meta-reklamas-ar-claude/` adapts the owner's English ADS kit (never name the
+  store); `/ai-teksti-latviski/` shows the real prompts of `social-write-lv.mjs`
+  and `lv-review.mjs`, so change it when they change. Backlog and the LinkedIn research behind it are in
+  `docs/social-pipeline.md`.
+- **Post artwork never ships with the site:** `social/art.json` is its own
+  manifest, generated into `social/art/` with `generate-images.mjs
+  --manifest=social/art.json --out=social/art`, then ground-matched and trimmed
+  to the drawing. Subject-explicit, objects only. Pictures with several
+  separate objects animate best: one big shape gives a fade, not a build.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
@@ -4191,6 +4265,21 @@ the existing `.testimonial` columns, footer "Google atsauksme" /
 - No invented claims, ratings, or star reviews; testimonials are verbatim
   from the original site. Ratings and public reviews come only from the
   Google and Facebook profiles, through `src/_data/reviews.json` (11 Oct 2026).
+- **Industry slang is fine; never over-Latvianize (13 Oct 2026).** Owner:
+  *"kampaņas optimizācija etc is completely fine in the industry slang; I hate
+  super latvianized posts, as I dont ever use them myself."* Natural means
+  Latvian sentence shapes, not purist vocabulary: keep optimizācija,
+  konversijas, targetings, landing page, remārketings, ROAS, CTR; never coin
+  "galamērķa lapa" or "potenciālo klientu šķirošana" (the site says
+  "pieteikumi"). Both `social-write-lv.mjs` and `lv-review.mjs` carry this rule
+  in their prompts, and lv-review no longer suggests purist replacements. The
+  one standing exception is the noun "kreatīvs" (owner objected earlier; it
+  stays "reklāmas materiāls" unless he says otherwise).
+- **No linguistic jargon in public copy (13 Oct 2026).** The owner, a native
+  speaker, had to ask what "kalks" means, so a small-business reader will not
+  know it either. Say "vārds vārdā tulkota frāze" or "angliska frāze"; a guide
+  may name the term once, explained. The same goes for "divdabis",
+  "vēlējuma izteiksme" and the like: name the mistake by its example.
 - **No punctuation dashes in visible copy (10 Oct 2026).** Owner: *"remove
   most of the em dashes everywhere which is AI content giveaway."* 242 em
   dashes and spaced en dashes became colons, commas, full stops or

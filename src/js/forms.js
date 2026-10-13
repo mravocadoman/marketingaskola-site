@@ -116,7 +116,18 @@
       '&body=' + encodeURIComponent(lines.join('\n'));
   }
 
+  /* Lead-magnet gate (13 Oct 2026). A guide post shows its first part to
+   * everyone; the rest sits in .gated until the reader signs up. The choice is
+   * remembered, so every guide opens for a returning subscriber (post.njk reads
+   * the same key before paint). Soft by design: the text is in the page for
+   * search engines, marked as gated in the schema. */
+  function unlock() {
+    try { localStorage.setItem('ms-gids', '1'); } catch (e) {}
+    document.documentElement.classList.add('gids-open');
+  }
+
   function succeed(form) {
+    if (form.hasAttribute('data-unlock')) unlock();
     // GA4: the one place every successful submission passes through.
     if (window.msTrack) {
       var val = function (n) { var el = form.querySelector('[name="' + n + '"]'); return el ? el.value : ''; };
@@ -150,6 +161,8 @@
 
     function fallback(data, lead) {
       form.classList.remove('is-sending');
+      // Our outage must not lock a reader out of a guide; the mailto keeps the sign-up.
+      if (form.hasAttribute('data-unlock')) unlock();
       var href = mailtoFallback(form, data);
       say(lead + (href ? 'Atveram e-pastu, lai pieteikums nepazustu…' : 'Raksti uz rihards@marketingaskola.lv'), 'error');
       if (href) window.location.href = href;
@@ -187,4 +200,16 @@
   }
 
   document.querySelectorAll('form[data-form]').forEach(bind);
+
+  /* While a guide is locked, a contents link into the gated part would point
+   * at a hidden heading and do nothing. Send it to the sign-up instead. */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || document.documentElement.classList.contains('gids-open')) return;
+    var target = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    var gate = document.getElementById('gids');
+    if (!target || !gate || !target.closest('.gated')) return;
+    e.preventDefault();
+    gate.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  });
 })();

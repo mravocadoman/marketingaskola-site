@@ -6,3 +6,6 @@ _site/
 !.env.example
 # rendered newsletter issues (built from newsletters/*.json)
 newsletters/*.html
+
+# rendered social posts (built from social/calendar.json by tools/social-render.mjs)
+social/out/
