@@ -1,0 +1,52 @@
+{
+  "keyword": "LEADI",
+  "slug": "leti-leadi-dargi-klienti",
+  "date": "2026-11-02",
+  "title": "0,38 € par leadu, bet nopirka 2 %: ko lēti leadi tiešām nozīmē",
+  "seoTitle": "Lēti leadi, dārgi klienti | Mārketinga Skola",
+  "description": "Vebināra kampaņa ar 0,38 € par leadu, no kuriem nopirka 2 %. Ko šie skaitļi saka, kāpēc CPL ir cena, nevis rezultāts, un uz ko optimizēt tā vietā.",
+  "categories": [
+    "socialo-tiklu-reklama",
+    "digitalais-marketings"
+  ],
+  "keywords": [
+    "leadu ģenerēšana",
+    "CPL",
+    "Meta reklāmas",
+    "vebinārs",
+    "konversiju optimizācija",
+    "piltuve"
+  ],
+  "source": "social/magnets/leti-leadi-dargi-klienti.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/cheap-leads-post-mortem), written from systems he runs himself. Take its content, numbers and steps; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'."
+  ],
+  "cover": {
+    "alt": "Piltuve, kuras platajā augšā ir daudz apaļu žetonu, bet no šaurās apakšas iekrīt tikai divi",
+    "prompt": "Cheap leads that do not buy: a large funnel drawn as a clean outline, its wide top filled with many small round tokens; from the narrow bottom only two tokens drop into a small shopping basket below. Beside the funnel a price tag shape. One of the two dropping tokens is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Ko saka divi skaitļi",
+    "alt": "Infografika no izgrieztām papīra formām: četras atziņas par lētiem leadiem un pārdošanu",
+    "items": [
+      {
+        "label": "0,38 €",
+        "text": "Cena par leadu ir cena, nevis rezultāts"
+      },
+      {
+        "label": "2 %",
+        "text": "Piekrīt tie, kam tas neko nemaksā"
+      },
+      {
+        "label": "Pirkums",
+        "text": "Optimizē uz pirkumu, ne uz formu"
+      },
+      {
+        "label": "Saruna",
+        "text": "Mēri cenu par kvalificētu sarunu"
+      }
+    ],
+    "prompt": "Headline: «Ko saka divi skaitļi». FOUR items in one row. «01» «0,38 €» «Cena par leadu ir cena, nevis rezultāts» - emblem: a pale grey paper price tag with a navy string. «02» «2 %» «Piekrīt tie, kam tas neko nemaksā» - emblem: a navy paper funnel with two small cyan circles below it. «03» «Pirkums» «Optimizē uz pirkumu, ne uz formu» - emblem: a pale grey paper shopping basket with a navy handle and one cyan tab. «04» «Saruna» «Mēri cenu par kvalificētu sarunu» - emblem: two overlapping speech bubbles, one navy and one pale grey, with a small cyan dot."
+  }
+}

@@ -1211,6 +1211,96 @@
       "quality": "high",
       "alt": "Infografika no izgrieztām papīra formām: trīs soļi, kā AI teksts kļūst dabisks latviski",
       "prompt": "Headline: «AI teksts latviski trīs soļos». THREE items in one row. «01» «Instrukcija» «Noteikumi un fakti pirms rakstīšanas» - emblem: a pale grey paper sheet with four navy lines and a small cyan square at the top. «02» «Pārbaude» «Cits modelis atzīmē aizdomīgo» - emblem: a pale grey paper page with navy bars, two of them underlined with short cyan marks. «03» «Lēmums» «Ko mainīt, izlemj cilvēks» - emblem: a navy hand-shaped paper cut-out holding a pale grey card with one cyan tick."
+    },
+    {
+      "id": "cover-marketinga-nodala-ar-claude-un-n8n",
+      "page": "marketinga-nodala-ar-claude-un-n8n",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Deviņi kvadrātveida paneļi trīs rindās, septiņi aktīvi un divi apturēti, blakus viens ķeksītis",
+      "prompt": "A marketing department made of automations: nine square panels arranged in a three by three grid, seven drawn as solid filled panels each holding a small gear, two drawn as outlined empty panels each holding a small pause sign. To the right a single large checkbox with a tick, connected to the grid by one flat line; the tick is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-marketinga-nodala-ar-claude-un-n8n",
+      "page": "marketinga-nodala-ar-claude-un-n8n",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi no Notion rindas līdz publicētam ierakstam",
+      "prompt": "Headline: «Kā ieraksts nonāk tīklā». FOUR items in one row. «01» «Rinda» «Notion: viens ķeksītis apstiprina» - emblem: a pale grey paper list with three navy rows and one cyan check square. «02» «Sagatavošana» «8:00 n8n sadala ierakstu» - emblem: a navy paper clock beside three small pale grey cards fanned out. «03» «Publicēšana» «Zernio publicē 10:00» - emblem: a pale grey paper calendar page with one cyan square and a navy paper plane. «04» «Trauksme» «Telegram ziņo, ja kas salūzt» - emblem: a navy paper bell with a small cyan exclamation tab."
+    },
+    {
+      "id": "cover-linkedin-karuseli-ar-python",
+      "page": "linkedin-karuseli-ar-python",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Koda logs ar teksta joslām, no kura iznāk vēdeklī salikti slaidi ar stabiņu grafikiem",
+      "prompt": "Slides drawn by code: on the left a tall code window panel holding rows of short grey code bars; a single flat line runs to the right into a fan of four slide cards, each card holding a simple bar chart of three to four bars. On the front card one bar is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-linkedin-karuseli-ar-python",
+      "page": "linkedin-karuseli-ar-python",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi no ieraksta līdz pievienotam PDF karuselim",
+      "prompt": "Headline: «Kā kods uzzīmē karuseli». FOUR items in one row. «01» «Ieraksts» «Vispirms teksts un tā skaitļi» - emblem: a pale grey paper page with navy text lines and one cyan number tab. «02» «Skripts» «7-8 slaidi no tiem pašiem skaitļiem» - emblem: a navy paper code window with pale grey bars beside a small stack of slides. «03» «Pārbaude» «Nesaglabā, ja teksts nesader» - emblem: a pale grey paper slide with a navy ruler laid across it and a small cyan mark. «04» «PDF» «Pievienojas ierakstam pats» - emblem: a navy paper document with a folded corner clipped to a pale grey card by a cyan paper clip."
+    },
+    {
+      "id": "cover-e-komercijas-bizness-ar-claude",
+      "page": "e-komercijas-bizness-ar-claude",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Pasūtījumu kastes uz lentes, kas iet caur vārtiem, virs tām pulkstenis, vienai kastei slēdzene",
+      "prompt": "An online shop's operations: five closed order boxes standing on a long flat conveyor line that passes through two simple gate frames; above the line a round clock face. One box carries a padlock, and the padlock is the only cyan element. No products visible, boxes only. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-e-komercijas-bizness-ar-claude",
+      "page": "e-komercijas-bizness-ar-claude",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā vest izmaiņu žurnālu un saskaitīt, kur aiziet darbs",
+      "prompt": "Headline: «21 no 25 izmaiņām nebija par AI». FOUR items in one row. «01» «Tabula» «Viena rinda par katru izmaiņu» - emblem: a pale grey paper table with four navy columns and one cyan row. «02» «Kategorijas» «Fiksēts saraksts, AI atsevišķi» - emblem: a navy paper list of short pale grey tags, one tag cyan. «03» «Ieraksts» «Pieraksti dienā, kad palaid» - emblem: a pale grey paper calendar page with a navy pencil and one cyan day square. «04» «Skaits» «Ik pēc desmit rindām saskaiti» - emblem: a navy paper tally of short pale grey strokes with one cyan stroke across them."
+    },
+    {
+      "id": "cover-ai-kvalitates-kontrole",
+      "page": "ai-kvalitates-kontrole",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Dokuments ar pelēku taisnstūri, blakus vērtējuma kartīte ar divām joslām un apstiprinājuma zīmogs",
+      "prompt": "One AI checking another's work: on the left a document panel holding a single plain grey rectangle as a generated result; on the right a scorecard panel with two horizontal score bars and a round approval stamp; below them a curved return arrow carrying one coin. The approval stamp is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-ai-kvalitates-kontrole",
+      "page": "ai-kvalitates-kontrole",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā otrs modelis pārbauda AI rezultātu pirms klienta",
+      "prompt": "Headline: «Kā AI pārbauda AI». FOUR items in one row. «01» «Pirkums» «Vispirms samaksa, tad skaitļošana» - emblem: a pale grey paper card with a navy coin on it. «02» «Vērtējums» «Divas asis, slieksnis 85 %» - emblem: a navy paper scorecard with two pale grey bars and one cyan marker line. «03» «Atmaksa» «Trīs neveiksmes, un nauda atpakaļ» - emblem: a curved navy paper arrow carrying a pale grey coin with a cyan rim. «04» «Cilvēks» «Pirms nosūtīšanas skatās cilvēks» - emblem: a navy paper magnifying glass over a pale grey card with a small cyan tick."
+    },
+    {
+      "id": "cover-leti-leadi-dargi-klienti",
+      "page": "leti-leadi-dargi-klienti",
+      "placement": "post cover (front matter image)",
+      "aspect": "landscape",
+      "alt": "Piltuve, kuras platajā augšā ir daudz apaļu žetonu, bet no šaurās apakšas iekrīt tikai divi",
+      "prompt": "Cheap leads that do not buy: a large funnel drawn as a clean outline, its wide top filled with many small round tokens; from the narrow bottom only two tokens drop into a small shopping basket below. Beside the funnel a price tag shape. One of the two dropping tokens is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+    },
+    {
+      "id": "info-leti-leadi-dargi-klienti",
+      "page": "leti-leadi-dargi-klienti",
+      "placement": "in-article infographic",
+      "aspect": "landscape",
+      "style": "paper",
+      "quality": "high",
+      "alt": "Infografika no izgrieztām papīra formām: četras atziņas par lētiem leadiem un pārdošanu",
+      "prompt": "Headline: «Ko saka divi skaitļi». FOUR items in one row. «01» «0,38 €» «Cena par leadu ir cena, nevis rezultāts» - emblem: a pale grey paper price tag with a navy string. «02» «2 %» «Piekrīt tie, kam tas neko nemaksā» - emblem: a navy paper funnel with two small cyan circles below it. «03» «Pirkums» «Optimizē uz pirkumu, ne uz formu» - emblem: a pale grey paper shopping basket with a navy handle and one cyan tab. «04» «Saruna» «Mēri cenu par kvalificētu sarunu» - emblem: two overlapping speech bubbles, one navy and one pale grey, with a small cyan dot."
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "keyword": "KARUSELIS",
+  "slug": "linkedin-karuseli-ar-python",
+  "date": "2026-11-02",
+  "title": "LinkedIn karuseļi par 0 €, ko zīmē kods: bez Canva un dizainera",
+  "seoTitle": "LinkedIn karuseļi ar Python | Mārketinga Skola",
+  "description": "Kā viens Python skripts no ieraksta skaitļiem uzzīmē LinkedIn karuseli bez Canva un dizainera: instrukcija AI, pārbaude un PDF, ko pievienot ierakstam.",
+  "categories": [
+    "maksligais-intelekets",
+    "digitalais-marketings"
+  ],
+  "keywords": [
+    "LinkedIn karuselis",
+    "LinkedIn dokuments",
+    "Python",
+    "satura mārketings",
+    "Canva alternatīva",
+    "AI"
+  ],
+  "source": "social/magnets/linkedin-karuseli-ar-python.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/carousel-generator), written from systems he runs himself. Take its content, numbers and steps; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'."
+  ],
+  "cover": {
+    "alt": "Koda logs ar teksta joslām, no kura iznāk vēdeklī salikti slaidi ar stabiņu grafikiem",
+    "prompt": "Slides drawn by code: on the left a tall code window panel holding rows of short grey code bars; a single flat line runs to the right into a fan of four slide cards, each card holding a simple bar chart of three to four bars. On the front card one bar is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Kā kods uzzīmē karuseli",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi no ieraksta līdz pievienotam PDF karuselim",
+    "items": [
+      {
+        "label": "Ieraksts",
+        "text": "Vispirms teksts un tā skaitļi"
+      },
+      {
+        "label": "Skripts",
+        "text": "7-8 slaidi no tiem pašiem skaitļiem"
+      },
+      {
+        "label": "Pārbaude",
+        "text": "Nesaglabā, ja teksts nesader"
+      },
+      {
+        "label": "PDF",
+        "text": "Pievienojas ierakstam pats"
+      }
+    ],
+    "prompt": "Headline: «Kā kods uzzīmē karuseli». FOUR items in one row. «01» «Ieraksts» «Vispirms teksts un tā skaitļi» - emblem: a pale grey paper page with navy text lines and one cyan number tab. «02» «Skripts» «7-8 slaidi no tiem pašiem skaitļiem» - emblem: a navy paper code window with pale grey bars beside a small stack of slides. «03» «Pārbaude» «Nesaglabā, ja teksts nesader» - emblem: a pale grey paper slide with a navy ruler laid across it and a small cyan mark. «04» «PDF» «Pievienojas ierakstam pats» - emblem: a navy paper document with a folded corner clipped to a pale grey card by a cyan paper clip."
+  }
+}

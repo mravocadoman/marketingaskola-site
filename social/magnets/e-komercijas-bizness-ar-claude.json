@@ -1,0 +1,52 @@
+{
+  "keyword": "STARTS",
+  "slug": "e-komercijas-bizness-ar-claude",
+  "date": "2026-11-02",
+  "title": "E-komercijas bizness ar Claude: pilnais izstrādes žurnāls",
+  "seoTitle": "E-komercijas bizness ar Claude | Mārketinga Skola",
+  "description": "Kā viens cilvēks ar Claude palīdzību uzsāka e-komercijas biznesu: visas 25 izmaiņas, kāpēc tikai četras bija par AI un kā vest savu žurnālu.",
+  "categories": [
+    "maksligais-intelekets",
+    "digitalais-marketings"
+  ],
+  "keywords": [
+    "e-komercija",
+    "Claude",
+    "AI bizness",
+    "print-on-demand",
+    "automatizācija",
+    "operācijas"
+  ],
+  "source": "social/magnets/e-komercijas-bizness-ar-claude.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/ecommerce-business-built-with-claude), written from systems he runs himself. Take its content, numbers and steps; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'."
+  ],
+  "cover": {
+    "alt": "Pasūtījumu kastes uz lentes, kas iet caur vārtiem, virs tām pulkstenis, vienai kastei slēdzene",
+    "prompt": "An online shop's operations: five closed order boxes standing on a long flat conveyor line that passes through two simple gate frames; above the line a round clock face. One box carries a padlock, and the padlock is the only cyan element. No products visible, boxes only. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "21 no 25 izmaiņām nebija par AI",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā vest izmaiņu žurnālu un saskaitīt, kur aiziet darbs",
+    "items": [
+      {
+        "label": "Tabula",
+        "text": "Viena rinda par katru izmaiņu"
+      },
+      {
+        "label": "Kategorijas",
+        "text": "Fiksēts saraksts, AI atsevišķi"
+      },
+      {
+        "label": "Ieraksts",
+        "text": "Pieraksti dienā, kad palaid"
+      },
+      {
+        "label": "Skaits",
+        "text": "Ik pēc desmit rindām saskaiti"
+      }
+    ],
+    "prompt": "Headline: «21 no 25 izmaiņām nebija par AI». FOUR items in one row. «01» «Tabula» «Viena rinda par katru izmaiņu» - emblem: a pale grey paper table with four navy columns and one cyan row. «02» «Kategorijas» «Fiksēts saraksts, AI atsevišķi» - emblem: a navy paper list of short pale grey tags, one tag cyan. «03» «Ieraksts» «Pieraksti dienā, kad palaid» - emblem: a pale grey paper calendar page with a navy pencil and one cyan day square. «04» «Skaits» «Ik pēc desmit rindām saskaiti» - emblem: a navy paper tally of short pale grey strokes with one cyan stroke across them."
+  }
+}

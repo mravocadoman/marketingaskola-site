@@ -1,0 +1,52 @@
+{
+  "keyword": "KOMANDA",
+  "slug": "marketinga-nodala-ar-claude-un-n8n",
+  "date": "2026-11-02",
+  "title": "Mārketinga nodaļa no deviņām automatizācijām: kā izveidot savu",
+  "seoTitle": "Mārketinga nodaļa ar Claude un n8n | Mārketinga Skola",
+  "description": "Kā deviņas automatizācijas un viens cilvēks katru dienu publicē ierakstus ar Notion, n8n, Zernio un Claude, un kur šāda sistēma lūzt.",
+  "categories": [
+    "maksligais-intelekets",
+    "digitalais-marketings"
+  ],
+  "keywords": [
+    "mārketinga automatizācija",
+    "n8n",
+    "Claude",
+    "satura plānošana",
+    "Notion",
+    "sociālo tīklu publicēšana"
+  ],
+  "source": "social/magnets/marketinga-nodala-ar-claude-un-n8n.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/marketing-department-on-claude-and-n8n), written from systems he runs himself. Take its content, numbers and steps; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'."
+  ],
+  "cover": {
+    "alt": "Deviņi kvadrātveida paneļi trīs rindās, septiņi aktīvi un divi apturēti, blakus viens ķeksītis",
+    "prompt": "A marketing department made of automations: nine square panels arranged in a three by three grid, seven drawn as solid filled panels each holding a small gear, two drawn as outlined empty panels each holding a small pause sign. To the right a single large checkbox with a tick, connected to the grid by one flat line; the tick is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Kā ieraksts nonāk tīklā",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi no Notion rindas līdz publicētam ierakstam",
+    "items": [
+      {
+        "label": "Rinda",
+        "text": "Notion: viens ķeksītis apstiprina"
+      },
+      {
+        "label": "Sagatavošana",
+        "text": "8:00 n8n sadala ierakstu"
+      },
+      {
+        "label": "Publicēšana",
+        "text": "Zernio publicē 10:00"
+      },
+      {
+        "label": "Trauksme",
+        "text": "Telegram ziņo, ja kas salūzt"
+      }
+    ],
+    "prompt": "Headline: «Kā ieraksts nonāk tīklā». FOUR items in one row. «01» «Rinda» «Notion: viens ķeksītis apstiprina» - emblem: a pale grey paper list with three navy rows and one cyan check square. «02» «Sagatavošana» «8:00 n8n sadala ierakstu» - emblem: a navy paper clock beside three small pale grey cards fanned out. «03» «Publicēšana» «Zernio publicē 10:00» - emblem: a pale grey paper calendar page with one cyan square and a navy paper plane. «04» «Trauksme» «Telegram ziņo, ja kas salūzt» - emblem: a navy paper bell with a small cyan exclamation tab."
+  }
+}

@@ -82,7 +82,7 @@ if (!fs.existsSync(rel(postFile))) {
   const allowed = new Set(((user).match(/\d+(?:[.,]\d+)?/g) || []).map((n) => n.replace(',', '.')));
   const problems = (t) => {
     const bad = [];
-    if (/[—–]|\s-\s/.test(t.replace(/```[\s\S]*?```/g, ''))) bad.push('punctuation dash');
+    if (/[—–]|[ \t]-[ \t]/.test(t.replace(/```[\s\S]*?```/g, ''))) bad.push('punctuation dash');
     if ((t.match(/^## /gm) || []).length < 4) bad.push('fewer than 4 sections');
     if (/kreatīv(s|u|i|am|iem)\b/i.test(t)) bad.push('"kreatīvs" as a noun');
     for (const n of t.match(/\d+(?:[.,]\d+)?/g) || []) if (!allowed.has(n.replace(',', '.'))) bad.push(`number ${n} not in the source`);

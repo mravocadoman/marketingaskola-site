@@ -1,0 +1,51 @@
+{
+  "keyword": "KONTROLE",
+  "slug": "ai-kvalitates-kontrole",
+  "date": "2026-11-02",
+  "title": "AI, kas pārbauda cita AI darbu un atmaksā klientam naudu",
+  "seoTitle": "AI kvalitātes kontrole e-komercijā | Mārketinga Skola",
+  "description": "Kā otrs modelis vērtē katru AI ģenerēto rezultātu, pirms klients to redz: slieksnis 85 %, trīs mēģinājumi, automātiska atmaksa un cilvēka pārbaude.",
+  "categories": [
+    "maksligais-intelekets"
+  ],
+  "keywords": [
+    "AI kvalitātes kontrole",
+    "AI produkts",
+    "e-komercija",
+    "atmaksa",
+    "uzticība",
+    "Claude"
+  ],
+  "source": "social/magnets/ai-kvalitates-kontrole.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/ai-review-layer), written from systems he runs himself. Take its content, numbers and steps; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'."
+  ],
+  "cover": {
+    "alt": "Dokuments ar pelēku taisnstūri, blakus vērtējuma kartīte ar divām joslām un apstiprinājuma zīmogs",
+    "prompt": "One AI checking another's work: on the left a document panel holding a single plain grey rectangle as a generated result; on the right a scorecard panel with two horizontal score bars and a round approval stamp; below them a curved return arrow carrying one coin. The approval stamp is the only cyan element. All objects drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Kā AI pārbauda AI",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā otrs modelis pārbauda AI rezultātu pirms klienta",
+    "items": [
+      {
+        "label": "Pirkums",
+        "text": "Vispirms samaksa, tad skaitļošana"
+      },
+      {
+        "label": "Vērtējums",
+        "text": "Divas asis, slieksnis 85 %"
+      },
+      {
+        "label": "Atmaksa",
+        "text": "Trīs neveiksmes, un nauda atpakaļ"
+      },
+      {
+        "label": "Cilvēks",
+        "text": "Pirms nosūtīšanas skatās cilvēks"
+      }
+    ],
+    "prompt": "Headline: «Kā AI pārbauda AI». FOUR items in one row. «01» «Pirkums» «Vispirms samaksa, tad skaitļošana» - emblem: a pale grey paper card with a navy coin on it. «02» «Vērtējums» «Divas asis, slieksnis 85 %» - emblem: a navy paper scorecard with two pale grey bars and one cyan marker line. «03» «Atmaksa» «Trīs neveiksmes, un nauda atpakaļ» - emblem: a curved navy paper arrow carrying a pale grey coin with a cyan rim. «04» «Cilvēks» «Pirms nosūtīšanas skatās cilvēks» - emblem: a navy paper magnifying glass over a pale grey card with a small cyan tick."
+  }
+}

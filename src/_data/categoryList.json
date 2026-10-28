@@ -17,7 +17,11 @@
       "instagram-reels-marketingam",
       "meta-reklamas",
       "reklamas-veidi",
-      "ai-teksti-latviski"
+      "ai-teksti-latviski",
+      "leti-leadi-dargi-klienti",
+      "marketinga-nodala-ar-claude-un-n8n",
+      "linkedin-karuseli-ar-python",
+      "e-komercijas-bizness-ar-claude"
     ]
   },
   {
@@ -50,7 +54,11 @@
       "maksligais-intelekts-marketinga",
       "maksliga-intelekta-riki",
       "ai-teksti-latviski",
-      "meta-reklamas-ar-claude"
+      "meta-reklamas-ar-claude",
+      "marketinga-nodala-ar-claude-un-n8n",
+      "linkedin-karuseli-ar-python",
+      "e-komercijas-bizness-ar-claude",
+      "ai-kvalitates-kontrole"
     ]
   },
   {
@@ -87,7 +95,8 @@
       "vai-manam-biznesam-nepieciesams-socialo-tiklu-marketings",
       "instagram-reklama",
       "facebook-reklamas-izstrade",
-      "meta-reklamas-ar-claude"
+      "meta-reklamas-ar-claude",
+      "leti-leadi-dargi-klienti"
     ]
   }
 ]
