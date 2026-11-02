@@ -4252,6 +4252,57 @@ personal pipeline in n8n is separate and stays as it is.
   to the drawing. Subject-explicit, objects only. Pictures with several
   separate objects animate best: one big shape gives a fade, not a build.
 
+## Motion videos for Rihards's LinkedIn lead magnets (14 Oct 2026)
+
+`tools/record-html.mjs` renders an HTML scene to a 20 s 4:5 MP4 frame by frame (tempo 0.7);
+five templates in `social/motion/templates/`, one JSON spec per post in
+`social/motion/specs/`. Everything else (rules, hosting, the Notion
+`=== VIDEO URL ===` marker) is in `social/motion/README.md`. **Three colours
+only: whity, cyan, dark blue** (owner: *"dont invent the random blue color"*).
+The weekly scheduled task `lead-magnet-videos` makes one for every upcoming
+lead-magnet post that has none, alternating with carousels.
+
+## Iepirkumu radars: weekly public-procurement digest (2 Nov 2026)
+
+Owner, 13 Oct 2026: *"an automation that does weekly publiskie iepirkumi
+calls for ai / automation / marketing services for Mārketinga Skola to
+potentially apply for."* Design and fit definition:
+`docs/superpowers/specs/2026-10-13-iepirkumu-radars-design.md`.
+
+- **n8n workflow *Mārketinga Skola — iepirkumu radars* (`Qa4JJCGYINDrj1QG`)**,
+  Monday 07:00 Europe/Riga. Reads the previous Monday-Sunday from
+  `open.iub.gov.lv/data/notice/YYYY/MM/DD-MM-YYYY.json` → rough CPV + keyword
+  filter → Claude Sonnet 5.5 picks the fits → one e-mail to Rihards **only when
+  something fits**. A quiet week sends nothing; a Claude failure still sends the
+  rough list marked `nešķirots`; all seven days failing throws to the alert
+  workflow `R9OmXjBXdhYetZkM`.
+- **IUB open data is the only source, on purpose.** It carries every published
+  Latvian notice, including the above-threshold ones also sent to TED, so the
+  TED API adds nothing. Under 10 000 € nothing is published anywhere.
+- **Day files are finalised at about 02:13 Riga the next night**, so Sunday is
+  complete by Monday 07:00. The current day's file grows during the day and is
+  never read. n8n Cloud reaches open.iub.gov.lv without a challenge (measured;
+  unlike SiteGround).
+- **Claude returns only an index, a score and one sentence.** Title, buyer,
+  deadline, value and links come from the notice, and everything is escaped, so
+  the model cannot invent a deadline or a link. The fit definition, including
+  what is NOT a fit (event technical production such as the Liepāja 2027
+  tender, printing, IT systems), is the prompt in the node *Atlasīt
+  kandidātus*: change it there.
+- **To re-run an old week:** set `TEST_END` in *Nedēļas faili* to the Monday
+  after it, disable *Nosūtīt Rihardam*, run by hand, then put both back. Never
+  publish with `TEST_END` set.
+- `pil-discussion` is a "Paziņojums par apspriedi" (the e-mail lists it under
+  Gaidāmie); deadlines sit in `lots[].tenderingProcess` (or
+  `deadlineTimeComment` for an apspriede); `mk-contract` has no CPV and no EIS
+  link, only the public notice at `eformsb.pvs.iub.gov.lv/show/<identifier>`.
+- **Verified 2 Nov 2026:** 6-12 Oct picked VIAA's communication campaign,
+  Rīga's media-planning apspriede and Vidzeme's mentoring, and left Liepāja,
+  CCTV and printing out; 26 Oct-1 Nov sent a real e-mail with five fits.
+- **Not built:** reading the nolikums for turnover or reference requirements, a
+  trainee category, and a dead-man's switch for a cron that stops (the same gap
+  as the uptime monitor).
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier
