@@ -65,7 +65,7 @@ Mūsu sistēmā pārbaude atbild uz diviem neatkarīgiem jautājumiem:
 * Vai rezultāts atbilst klienta iesniegtajiem materiāliem?
 * Vai rezultāts izpilda klienta rakstīto uzdevumu?
 
-Rezultāts var precīzi atbilst materiāliem un tomēr ignorēt pusi uzdevuma. Var būt arī otrādi: katra norāde ir izpildīta, bet līdzības ar to, ko klients augšupielādēja, nav.
+Rezultāts var precīzi atbilst materiāliem un tomēr ignorēt pusi uzdevuma. Var būt arī otrādi: katra norāde ir izpildīta, bet rezultāts neatbilst tam, ko klients iesūtīja.
 
 | Kritērijs | Ar ko salīdzina | Ko pārbaude meklē? |
 | :--- | :--- | :--- |
