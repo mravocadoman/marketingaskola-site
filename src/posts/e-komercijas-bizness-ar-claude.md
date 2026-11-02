@@ -35,7 +35,7 @@ Tabulā saglabāta ieviešanas secība. **Ar AI saistītie ieraksti izcelti trek
 | **11** | **AI** | **Ieviesta AI rezultāta pārbaude** | **Tehniski nevainojams rezultāts tik un tā var būt acīmredzami nepareizs.** |
 | **12** | **AI** | **Ieviesta ievaddatu kvalitātes pārbaude** | **Slikti ievaddati dod sliktu rezultātu, un klients vaino rezultātu.** |
 | 13 | Pasūtījumu statusi | Apstiprinājums fiksē nemainīgu versiju | Izpildei bija jāsaņem tieši klienta apstiprinātā versija. |
-| **14** | **AI** | **Pievienota četrkārtīga izšķirtspējas palielināšana pirms drukas** | **Ekrānā pieņemama kvalitāte nebija pietiekama drukai.** |
+| **14** | **AI** | **Pievienots solis, kas pēc apstiprinājuma sagatavo failu drukai** | **Ekrānā pieņemama kvalitāte nebija pietiekama drukai.** |
 | 15 | Izņēmuma situācijas | Novērsta viena pasūtījuma atkārtota nosūtīšana ražošanai | Atkārtots pieprasījums vai dubultklikšķis varēja radīt otru pasūtījumu un reālas izmaksas. |
 | **16** | **AI** | **Ieviesta zināma defekta noteikšana** | **AI rezultātos atkārtojās konkrēta kļūda.** |
 | 17 | Integrācijas | Pievienota Shopify statusu sinhronizācija ar vienu klikšķi | Atšķirīgi izpildes statusi sistēmās radīja klientu atbalsta pieprasījumus. |
@@ -80,7 +80,7 @@ Arī UX izmaiņas nebija tikai vizuāla pielabošana: pasūtījuma forma, admini
 
 * **Rezultāta pārbaude:** modelis pārbauda katru rezultātu, pirms to redz klients.
 * **Ievaddatu pārbaude:** sistēma pārbauda augšupielādi un, ja tā neder, lūdz klientam citu, vēl pirms klients redz sliktu rezultātu.
-* **Izšķirtspējas palielināšana:** pēc apstiprinājuma sistēma sagatavo drukai tieši apstiprināto versiju.
+* **Faila sagatavošana drukai:** pēc apstiprinājuma sistēma sagatavo drukai tieši apstiprināto versiju.
 * **Zināma defekta noteikšana:** sistēma atpazīst vienu konkrētu, atkārtotu kļūdu, pirms to pamana klients.
 
 Trīs no četrām AI izmaiņām ir pārbaudes ap AI, kas padara to drošāk lietojamu. Tikai viena uzlabo pašu AI rezultātu. Žurnālā nav neviena ieraksta par modeļa nomaiņu vai prompta pārrakstīšanu.
@@ -174,7 +174,7 @@ Mūsu žurnālā īpaši nozīmīgi bija lēmumi par pasūtījumu dzīves ciklu.
 
 **Labojumiem vajag noslēgumu.** Nosaki labojumu statusus, pārejas, robežas un pabeigšanas nosacījumus. Bez skaidriem noteikumiem lūgumam pēc vēl viena neliela labojuma nav dabiska beigu punkta, un pasūtījums nekad nenoslēdzas.
 
-**Apstiprinājumam jāfiksē konkrēta versija.** Pasūtījumā jābūt skaidri redzamam, kuru versiju klients apstiprināja, un izpildei jānonāk tieši šai versijai. Mūsu projektā izšķirtspēju drukai palielinām tikai pēc apstiprinājuma, lai netērētu darbu versijām, kuras vēlāk vēl labos.
+**Apstiprinājumam jāfiksē konkrēta versija.** Pasūtījumā jābūt skaidri redzamam, kuru versiju klients apstiprināja, un izpildei jānonāk tieši šai versijai. Mūsu projektā failu drukai sagatavojam tikai pēc apstiprinājuma, lai netērētu darbu versijām, kuras vēlāk vēl labos.
 
 **Pasūtījumam vajag arī noslēgumu ar atmaksu.** Sistēmai jāļauj pasūtījumu apzināti noslēgt, nevis atstāt to rindā uz nenoteiktu laiku.
 

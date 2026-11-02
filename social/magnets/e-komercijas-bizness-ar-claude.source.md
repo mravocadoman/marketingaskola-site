@@ -1,5 +1,6 @@
 
-I built a print-on-demand ecommerce project with Claude, on the side. A customer uploads a photo, a model generates artwork from it, and the artwork gets printed and shipped.
+
+I built a print-on-demand ecommerce project with Claude, on the side. A customer sends what the AI needs, a model makes the product from it, and it gets printed and shipped.
 
 If you'd asked me what I spent the build on, I'd have said the AI. Sincerely. Then I counted my log, where I'd written down every change the day I shipped it.
 
@@ -49,9 +50,9 @@ In the order they shipped. <span class="hl">The highlighted rows are the four AI
 <tr><td>09</td><td>Order state</td><td>A proper process for revisions</td><td>Change requests lived in email and in my head.</td></tr>
 <tr><td>10</td><td>UX</td><td>Admin screen sorted by stage</td><td>I needed to see where each order was stuck.</td></tr>
 <tr class="hl"><td>11</td><td><span class="hl">AI</span></td><td>AI review layer</td><td>A technically fine image can still be obviously wrong.</td></tr>
-<tr class="hl"><td>12</td><td><span class="hl">AI</span></td><td>Photo quality gate</td><td>Bad photo, bad result, and the customer blames the result.</td></tr>
+<tr class="hl"><td>12</td><td><span class="hl">AI</span></td><td>Input quality check</td><td>Bad input, bad result, and the customer blames the result.</td></tr>
 <tr><td>13</td><td>Order state</td><td>Approval freezes a copy</td><td>The approved version must be exactly what prints.</td></tr>
-<tr class="hl"><td>14</td><td><span class="hl">AI</span></td><td>4x upscale before print</td><td>Fine on a phone, not good enough in print.</td></tr>
+<tr class="hl"><td>14</td><td><span class="hl">AI</span></td><td>Print-ready file after approval</td><td>Fine on a screen, not good enough in print.</td></tr>
 <tr><td>15</td><td>Edge case</td><td>Stopped double orders to the printer</td><td>A retry or a double click could send the same order twice. Each duplicate is a real object that costs money.</td></tr>
 <tr class="hl"><td>16</td><td><span class="hl">AI</span></td><td>Known-defect detection</td><td>One specific mistake in the generated images kept repeating.</td></tr>
 <tr><td>17</td><td>Integration</td><td>One-click Shopify status sync</td><td>Two systems disagreeing on "fulfilled" is how you get a support ticket.</td></tr>
@@ -94,9 +95,9 @@ I counted a change as AI only if it changed what the model does or what reaches 
 
 **The review layer (11).** "Generated" and "good enough" are different questions. An image can be clean and on-brief and still look wrong to a person in half a second. So a model checks every result first, and each bad one it catches is a revision that never happens. It's the only one of the four that makes the AI better, not just safer to run. It has [its own article](/blog/ai-review-layer).
 
-**The photo check (12).** Bad photo in, bad result out, and the customer blames the result. So the upload gets checked, and if the photo won't work, the customer is asked for another. People take that far better before they've seen a disappointing result.
+**The input check (12).** Bad input, bad result, and the customer blames the result. So what they send gets checked, and if it won't work, the customer is asked for something better. People take that far better before they've seen a disappointing result.
 
-**The upscale (14).** An image that looks perfect on screen isn't ready to print at full size. A 4x upscale enlarges it so it stays sharp, and no better prompt fixes this. It runs after approval, so only the approved version gets enlarged.
+**The print-ready file (14).** What looks perfect on screen isn't ready for print, and no better prompt fixes that. So a separate step prepares the print file. It runs after approval, so only the approved version gets prepared.
 
 **The known-defect check (16).** One specific mistake in the images came back often enough to get a name. Now the system catches it before a customer sees it. That's where AI work goes as a product grows up: not "make the model better" but "list the known failures and catch each one". It looks like quality control, not machine learning.
 
@@ -283,8 +284,8 @@ Not the image — the order. An order needs to know what it is waiting on, who i
 
 Every hour I spent on order state bought back hours of manual attention. Every hour I did not spend on it, I paid for later at a worse exchange rate.
 
-### 14 · Where the upscale sits
+### 14 · Where the print-file step sits
 
-The upscale sits between approval and print, which is a deliberate position: the customer approves what they saw, and the system then produces the print-ready version of exactly that. Putting it earlier means upscaling work that gets revised away. Putting it later means it is not part of the frozen snapshot.
+The print-file step sits between approval and print, which is a deliberate position: the customer approves what they saw, and the system then produces the print-ready version of exactly that. Putting it earlier means preparing work that gets revised away. Putting it later means it is not part of the frozen snapshot.
 
 </details>
