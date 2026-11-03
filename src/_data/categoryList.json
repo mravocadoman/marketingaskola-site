@@ -58,7 +58,9 @@
       "marketinga-nodala-ar-claude-un-n8n",
       "linkedin-karuseli-ar-python",
       "e-komercijas-bizness-ar-claude",
-      "ai-kvalitates-kontrole"
+      "ai-kvalitates-kontrole",
+      "pirmdienas-reklamu-parskats-ar-claude",
+      "black-friday-meta-reklamu-audits"
     ]
   },
   {
@@ -96,7 +98,9 @@
       "instagram-reklama",
       "facebook-reklamas-izstrade",
       "meta-reklamas-ar-claude",
-      "leti-leadi-dargi-klienti"
+      "leti-leadi-dargi-klienti",
+      "pirmdienas-reklamu-parskats-ar-claude",
+      "black-friday-meta-reklamu-audits"
     ]
   }
 ]

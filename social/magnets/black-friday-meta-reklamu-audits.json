@@ -1,0 +1,54 @@
+{
+  "keyword": "AUDITS",
+  "slug": "black-friday-meta-reklamu-audits",
+  "date": "2026-11-03",
+  "title": "Meta reklāmu audits pirms Black Friday: 7 prompti vienai konta pārbaudei",
+  "seoTitle": "Black Friday Meta reklāmu audits ar Claude | Mārketinga Skola",
+  "description": "Septiņi Claude prompti, kas pirms Black Friday tikai nolasa Meta reklāmu datus: faktiskie pasūtījumi, apnikušas reklāmas, budžeta grafiks un apturēšana.",
+  "categories": [
+    "socialo-tiklu-reklama",
+    "maksligais-intelekets"
+  ],
+  "keywords": [
+    "Black Friday",
+    "Meta reklāmas",
+    "reklāmu audits",
+    "Claude",
+    "budžets",
+    "e-komercija"
+  ],
+  "source": "social/magnets/black-friday-meta-reklamu-audits.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/black-friday-meta-ads-audit), built on the rules he runs on his own account. Take its content, numbers, steps and the seven prompts; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'.",
+    "Black Friday is Friday 27 November 2026. The safe budget ramp is +20 % every 3 days; four raises about double the budget; the last day to start the ramp is Sunday 15 November.",
+    "All seven prompts only read and report: they never change anything in the reader's ad account, and the reader makes every decision."
+  ],
+  "cover": {
+    "alt": "Pārbaudes lapa ar septiņām atzīmētām rindām, kas savienota ar novembra kalendāru, kur budžeta stabiņi kāpj līdz vienai dienai",
+    "prompt": "An ad account checked before a big sale. On the left a tall clipboard panel with seven short grey checklist rows, each with a small square box, every one ticked. A single flat connecting line runs to the right into a month calendar panel for late November with a staircase of four rising navy bars climbing toward one marked date near the end of the month. The marked date is the only cyan element. Two panels side by side, drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Audits pirms Black Friday četros soļos",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā pārbaudīt Meta reklāmu kontu pirms Black Friday",
+    "items": [
+      {
+        "label": "Pasūtījumi",
+        "text": "Salīdzini ar Meta skaitli"
+      },
+      {
+        "label": "Reklāmas",
+        "text": "Apnikušās nomaini ar testu"
+      },
+      {
+        "label": "Budžets",
+        "text": "+20 % ik pēc 3 dienām"
+      },
+      {
+        "label": "Apturēšana",
+        "text": "Noteikumi pirms izpārdošanas"
+      }
+    ],
+    "prompt": "Headline: «Audits pirms Black Friday četros soļos». FOUR items in one row. «01» «Pasūtījumi» «Salīdzini ar Meta skaitli» - emblem: two pale grey paper receipts side by side, one taller, with a cyan check between them. «02» «Reklāmas» «Apnikušās nomaini ar testu» - emblem: a navy paper card swapped for a fresh pale grey card by a curved arrow. «03» «Budžets» «+20 % ik pēc 3 dienām» - emblem: four navy paper steps rising, the top step cyan. «04» «Apturēšana» «Noteikumi pirms izpārdošanas» - emblem: a navy paper stop sign with a pale grey hand."
+  }
+}

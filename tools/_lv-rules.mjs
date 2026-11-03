@@ -15,4 +15,14 @@ export const LV_RULES = [
   '- Zīmolu un modeļu nosaukumi paliek oriģinālā (Meta, Google, ChatGPT, GPT-6.1 Sol, Claude).',
   '- Katram teikumam jābūt saprotamam pašam par sevi: nekādu "šie", "tas" vai "labāko" bez skaidras atsauces ("Šie ir 7 noteikumi" neder, jo nav pateikts, kam). Virsraksts ir pilna doma bez nekā virs tā.',
   '- Valūta aiz skaitļa: 150 €, 0,38 €, 70 $. Decimāldaļas ar komatu, tūkstoši ar atstarpi: 1 000.',
+  // Voice (owner, 3 Nov 2026: our drafts read as translated; he pointed at the Latvian newsletters of
+  // Infinitum Agency and Digital Journey as copy that works). Traits, not their sentences.
+  'Balss:',
+  '- Raksti kā cilvēks, kas runā ar vienu lasītāju, nevis kā rokasgrāmata vai iestāde. Sāc ar brīdi no lasītāja ikdienas (jautājums vai "Iedomājies, ..."), nevis ar definīciju.',
+  '- Viena doma vienā īsā rindkopā. Pēc garāka teikuma, kas paskaidro, liec īsu teikumu, kas pasaka galveno.',
+  '- Darbības vārdi un cilvēki, nevis lietvārdu virknes: "pārbaudi, vai skaitļi sakrīt", nevis "datu sakritības pārbaude"; "Claude aptur reklāmu", nevis "tiek veikta reklāmas apturēšana". Nelieto kancelejiskus vārdus: veikt, nodrošināt, īstenot, atbilstošs, attiecīgs, minētais.',
+  '- Lasītāja domu liec pēdiņās, kā viņš to pats nodomātu: „Vai šī reklāma tiešām pārdod?”',
+  '- Padomu virsraksts ir īss aicinājums darīt ("Skaties uz pirkuma cenu, nevis klikšķiem"), aiz tā viens vai divi teikumi un, ja ir, konkrēts piemērs ("Piemēram, ...").',
+  '- Skaidrībai lieto "nevis ..., bet ...". Angļu terminu, ja tas vajadzīgs, vienreiz paskaidro ar "jeb": "break-even jeb cena, kurā vēl nezaudē".',
+  '- Dzīvi latviski izteicieni ir vietā ("jādzēš ugunsgrēki", "ikdienas skrējienā"), tulkotas angļu idiomas nav.',
 ];

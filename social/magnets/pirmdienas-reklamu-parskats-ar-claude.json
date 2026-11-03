@@ -1,0 +1,53 @@
+{
+  "keyword": "PIRMDIENA",
+  "slug": "pirmdienas-reklamu-parskats-ar-claude",
+  "date": "2026-11-03",
+  "title": "Pirmdienas reklāmu sapulce kā Claude uzdevums: prompts un noteikumi",
+  "seoTitle": "Pirmdienas Meta reklāmu pārskats ar Claude | Mārketinga Skola",
+  "description": "Kā Claude katru pirmdienu izvērtē Meta reklāmas, aptur, palielina vai atstāj tās pēc rakstītiem noteikumiem un atsūta īsu ziņu. Prompts un noteikumi.",
+  "categories": [
+    "socialo-tiklu-reklama",
+    "maksligais-intelekets"
+  ],
+  "keywords": [
+    "Meta reklāmas",
+    "Claude",
+    "reklāmu pārskats",
+    "pirkuma izmaksas",
+    "checkout",
+    "automatizācija"
+  ],
+  "source": "social/magnets/pirmdienas-reklamu-parskats-ar-claude.source.md",
+  "facts": [
+    "The source is Rihards Zeila's own English guide (rihardszeila.com/blog/monday-ads-review-with-claude), written from a weekly Claude task he runs himself. Take its content, numbers, rules and the prompt; write the Latvian fresh, not sentence by sentence.",
+    "Never name the print-on-demand store, and never say or hint at what it sells, its theme or its niche: it is only 'a print-on-demand ecommerce project'.",
+    "The benchmarks are numbers from his own account, measured in early October 2026: say so, and that the reader's numbers will differ."
+  ],
+  "cover": {
+    "alt": "Nedēļas kalendārs ar atzīmētu pirmdienu, kas savienots ar vienas lapas atskaiti ar četriem lēmumiem",
+    "prompt": "A weekly ads review finished before the work week starts. On the left a tall planner panel with seven plain grey rows, each row only a thin line and one small square, the first square ticked; nothing inside the rows. A single flat connecting line runs to the right into a one-page report panel with four short grey bars, each ending in a small rounded verdict tag, and one horizontal bar split into a long part and a short part underneath. One verdict tag is the only cyan element. No people, no shopping or store symbols, no pictures, frames or photos. Two panels side by side, drawn large and whole, the group spanning the full width with an even dark margin."
+  },
+  "infographic": {
+    "title": "Pirmdienas pārskats četros soļos",
+    "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā Claude katru pirmdienu izvērtē Meta reklāmas",
+    "items": [
+      {
+        "label": "Secība",
+        "text": "Vispirms pirkuma izmaksas"
+      },
+      {
+        "label": "Par agru?",
+        "text": "Mazāk par 3 dienām: gaidi"
+      },
+      {
+        "label": "Lēmums",
+        "text": "Apturēt, palielināt vai atstāt"
+      },
+      {
+        "label": "Ziņa",
+        "text": "Ko mainīja un kāpēc"
+      }
+    ],
+    "prompt": "Headline: «Pirmdienas pārskats četros soļos». FOUR items in one row. «01» «Secība» «Vispirms pirkuma izmaksas» - emblem: a pale grey paper ladder of four navy rungs, the top rung cyan. «02» «Par agru?» «Mazāk par 3 dienām: gaidi» - emblem: a navy paper hourglass with pale grey sand. «03» «Lēmums» «Apturēt, palielināt vai atstāt» - emblem: three small paper tags fanned out, one cyan, two navy. «04» «Ziņa» «Ko mainīja un kāpēc» - emblem: a pale grey paper envelope with a small navy seal."
+  }
+}
