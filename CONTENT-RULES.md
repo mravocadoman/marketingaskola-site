@@ -55,6 +55,8 @@ was wrong and was corrected on **17 Sep 2026**, when the rows from "Support cap 
 down were added from MK noteikumi Nr. 407 as amended by Nr. 360 and from the programme FAQ.
 On **18 Sep 2026** the "Last year" row gained its funding condition and the "Completion" row
 was added: the pages had said every activity must finish by 31 December, which LIAA's FAQ does not say.
+On **3 Nov 2026** the deadline, last-year, completion and budget rows were re-checked after LIAA extended
+the programme into 2027 (announcement of **9 Oct 2026**, FAQ entry marked "izmainīts no 07.10.2026.").
 Re-verify before any edit that touches a number; this programme has already been re-issued once.
 
 | Fact | Value | Where it renders |
@@ -62,9 +64,10 @@ Re-verify before any edit that touches a number; this programme has already been
 | Reimbursement rate | 60% of eligible cost | pillar, both product pages |
 | Cap per recipient per year | 40 000 € | pillar |
 | Ceiling vs turnover | ≤30% of last closed year's net turnover | pillar, eligibility |
-| Applications open until | 31.12.2026, or earlier if the funding runs out ("vai kamēr pieejams finansējums") | pillar ("kamēr programmai pietiek līdzekļu") and its FAQ |
-| Programme budget | 15 400 000 € | pillar |
-| Costs claimed by | 31 March of the following calendar year | pillar |
+| Extension into 2027 | announced 9 Oct 2026: "eksporta atbalsta pieejamību pieejamā finansējuma ietvaros arī 2027. gadā". The condition "pieejamā finansējuma ietvaros" is part of the fact: never say support is available in 2027 without it. Covers the MVU eksporta atbalsta darbību plāns and the other sub-programmes of ERAF project 1.2.3.1/1/23/I/001. Contracts concluded by 29 Sep 2026 were amended unilaterally ("nosūtīts paziņojums par vienpusējiem grozījumiem līgumā un tā 1.pielikumā") to extend the period | pillar FAQ |
+| Applications open until | 31.12.2027, or earlier if the funding runs out ("Līdz 31.12.2027 vai kamēr pieejams finansējums"). Was 31.12.2026 until the 9 Oct 2026 extension | pillar ("kamēr programmai pietiek līdzekļu") and its FAQ, sagatave PDF (`applyUntil`) |
+| Programme budget | 20 434 299 € ("Pieejamais finansējums 20 434 299 EUR (ERAF un valsts budžets)"); was 15 400 000 € on 12 Sep 2026. The page also shows "Pieejamais atlikums 5 milj. EUR (uz 30.09.2026)", which the site does not quote | pillar (`budget`) |
+| Costs claimed by | 31 March of the following calendar year; for a 2027 plan, 31.03.2028 ("maksājuma pieprasījums jāiesniedz ne vēlāk kā 2028. gada 31. martā") | pillar, offer pages, sagatave PDF (`claimBy`) |
 | Quotes needed in a cenu aptauja | at least 3 | pillar, both product pages, post |
 | Procurement procedure from | a contract of 70 000 € or more (MK noteikumi Nr. 104, IV daļa); below it, a cenu aptauja | pillar, post, sagatave PDF |
 | Form of the quotes | submitted electronically: e-mails or electronically signed documents. A price given on the phone does not count | pillar, post, sagatave PDF |
@@ -72,9 +75,9 @@ Re-verify before any edit that touches a number; this programme has already been
 | Related parties | no transactions with the recipient, its members, shareholders, council or board members, their relatives to the second degree, spouses or representatives | post |
 | Support cap per activity | a cap on the SUPPORT, not on the price (MK 407 p. 51, "Maksimāli pieļaujamā atbalsta summa"): 5 000 € a year for visual materials (45.5) and 8 000 € for telemarketing (45.8). At 60% the caps are reached at 8 333 € and 13 333 € of cost | `liaa.json` `cap` (not rendered) |
 | Eligible materials | only brochures, banners and video clips: "tikai bukletu, baneru un video rullīšu izstrādes izmaksas" (FAQ). A photo shoot counts only inside a brochure or banner estimate; printing never. Since 17 Sep 2026 the materials package is exactly three lines: brochure, banner set, video | materials page, pillar, sagatave PDF |
-| Telemarketing result | "vismaz 3 notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem" (FAQ). Owner, 17 Sep 2026: promised as the result; work continues at no extra fee until they happen, not beyond 31.12.2026; a meeting counts when the company attends | telemarketing page, pillar offers, quote PDF (`promise` in `liaa.json`) |
-| Last year | "2026.gads ir pēdējais eksporta darbību plāna iesniegšanas un īstenošanas kalendārais gads, pie nosacījuma, ja Ministru kabineta noteikumos eksporta atbalsta nodrošināšanai netiek piešķirts papildu finansējums". The condition is part of the fact: never state the year without it. Activities already finished when the plan is submitted cannot be included | pillar, sagatave PDF (`lastYear`) |
-| Completion | activities must be started and carried out in the plan's year, but one that cannot be finished by 31 December is finished by the claim deadline: "tā ir jāpabeidz līdz maksājuma pieprasījuma iesniegšanas termiņa beigām, t.i. ne vēlāk kā līdz nākamā kalendārā gada 31.martam" (FAQ). So a 2026 activity may end by 31.03.2027. Never write that everything has to happen by year-end | both offer pages, pillar FAQ (`claimBy`) |
+| Telemarketing result | "vismaz 3 notikušas tikšanās ar kvalificētiem potenciālajiem ārvalstu klientiem vai sadarbības partneriem" (FAQ). Owner, 17 Sep 2026: promised as the result; work continues at no extra fee until they happen, not beyond 31.12.2026; a meeting counts when the company attends. **Open since 3 Nov 2026:** that cutoff is the owner's business choice, not LIAA's, and it predates the 2027 extension; for a programme starting in 2027 it has already passed. Only the owner changes it | telemarketing page, pillar offers, quote PDF (`promise` in `liaa.json`) |
+| Last year | "2027.gads ir pēdējais eksporta darbību plāna iesniegšanas un īstenošanas kalendārais gads, pie nosacījuma, ja Ministru kabineta noteikumos eksporta atbalsta nodrošināšanai netiek piešķirts papildu finansējums" (was 2026 until the 9 Oct 2026 extension). The condition is part of the fact: never state the year without it. Activities already finished when the plan is submitted cannot be included | pillar, sagatave PDF (`lastYear`) |
+| Completion | a plan may include only activities "kuras ir uzsāktas vai tiks uzsāktas un īstenotas konkrētajā gadā", the year the plan is for, so the offer pages say "gadā, par kuru plāns tiek iesniegts" and never name a year. One that cannot be finished by 31 December is finished by the claim deadline: "tā ir jāpabeidz līdz maksājuma pieprasījuma iesniegšanas termiņa beigām, t.i. ne vēlāk kā līdz nākamā kalendārā gada 31.martam" (FAQ). So a 2026 activity may end by 31.03.2027 and a 2027 one by 31.03.2028 ("Atbalstāmām darbībām jābūt pabeigtām līdz 31.12.2027., vai ne vēlāk kā līdz 31.03.2028."). Never write that everything has to happen by year-end | both offer pages, pillar FAQ (`claimBy`) |
 | Decision time | "LIAA 24 darba dienu laikā izvērtē plānu un pieņem lēmumu" | pillar, sagatave PDF (`decisionDays`) |
 | Conflict of interest | the applicant signs a declaration (FAQ) | none |
 | Self-assessment minimum | 9 points | eligibility |
@@ -110,6 +113,7 @@ quotes 60 000 at you, this is why.
 - MK noteikumi Nr. 407, consolidated: <https://likumi.lv/ta/id/343803>, and the amending
   MK noteikumi Nr. 360 (in force 4 Jul 2026): <https://likumi.lv/ta/id/369439>.
 - Programme FAQ: <https://liaa.business.gov.lv/atbalsta-iespejas/eksporta-atbalsta-darbibu-plans?section=biezak-uzdotie-jautajumi>
+- The 2027 extension, published 9 Oct 2026: <https://liaa.business.gov.lv/aktualitates/eksporta-atbalsts-uznemejiem-sobrid-pieejams-ari-2027-gada-darbibam>
 - Owner (Rihards), 12 Sep 2026: the two prices (4 900 € and 7 900 € bez PVN)
   and the scope rows, published as drafted.
 

@@ -1,14 +1,14 @@
 {
-  "_comment": "LIAA export-grant cluster. ONE source for every figure on /liaa-eksporta-atbalsts/, the two product pages, their JSON-LD and the quote PDF. Programme facts verified against liaa.business.gov.lv on 12 Sep 2026 (see CONTENT-RULES.md). Prices confirmed by the owner the same day. Never type these numbers into copy.",
+  "_comment": "LIAA export-grant cluster. ONE source for every figure on /liaa-eksporta-atbalsts/, the two product pages, their JSON-LD and the quote PDF. Programme facts verified against liaa.business.gov.lv on 12 Sep 2026; deadlines and budget re-verified on 3 Nov 2026 after LIAA extended the programme into 2027 (see CONTENT-RULES.md). Prices confirmed by the owner the same day. Never type these numbers into copy.",
   "programme": {
     "name": "MVU Eksporta atbalsta darbību plāns",
     "rate": 60,
     "yearCap": 40000,
     "turnoverShare": 30,
-    "applyUntil": "31.12.2026",
-    "budget": 15400000,
+    "applyUntil": "31.12.2027",
+    "budget": 20434299,
     "claimBy": "nākamā kalendārā gada 31. martam",
-    "lastYear": 2026,
+    "lastYear": 2027,
     "decisionDays": 24,
     "quotes": 3,
     "procurementThreshold": 70000,
