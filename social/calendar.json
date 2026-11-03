@@ -551,7 +551,7 @@
         "label": "Konversiju uzskaite",
         "href": "/konversiju-uzskaite/"
       },
-      "status": "approved",
+      "status": "killed",
       "lv": {
         "virsraksts": "Konversiju uzskaite: kā ieraudzīt patiesās izmaksas",
         "apraksts": "Skaidrojam, kā darbojas pikselis un Conversions API un ko algoritmam dod no servera nosūtīti dati par pieteikumiem vai pirkumiem. Uzzini, kā konversiju uzskaite palīdz Tev redzēt patiesās izmaksas: /konversiju-uzskaite/.",
@@ -606,7 +606,8 @@
       "art": "social/art/social-conversion-signal.webp",
       "motion": true,
       "notion": "https://app.notion.com/p/40decaef046f81ec9461f40dd185cf37",
-      "moved": "2026-11-03 -> 2026-11-17 in Notion (3 Nov merge)"
+      "moved": "2026-11-03 -> 2026-11-17 in Notion (3 Nov merge)",
+      "killed": "3 Nov evening, Rihards: cut merged posts that don't bring value. A generic pixel explainer with no hook and no guide."
     },
     {
       "id": "2026-11-05-ai-latvian",
@@ -626,7 +627,7 @@
         "label": "Lasīt rakstu",
         "href": "/ai-saturs-bez-zimola-balss-zaudesanas/"
       },
-      "status": "approved",
+      "status": "killed",
       "lv": {
         "virsraksts": "Latviešu vārdi, angļu teikumi: kļūda AI tekstos",
         "apraksts": "Parādām, kā norādes par zīmola valodu, īsti piemēri un lūgums uzreiz rakstīt latviski palīdz Taviem tekstiem izvairīties no angliskas teikumu uzbūves, vārds vārdā tulkotām frāzēm un nepareiziem locījumiem. Lasi rakstu par AI saturu un mūsu praksi: melnrakstus veidojam ar OpenAI modeli, bet pirms publicēšanas katru tekstu izlasa un izlabo cilvēks, kurš pārzina latviešu valodu.",
@@ -692,7 +693,8 @@
         "url": "/ai-teksti-latviski/"
       },
       "notion": "https://app.notion.com/p/40decaef046f8142914ed1dcabac272b",
-      "moved": "2026-11-05 -> 2026-11-11 in Notion (3 Nov merge)"
+      "moved": "2026-11-05 -> 2026-11-11 in Notion (3 Nov merge)",
+      "killed": "3 Nov evening, Rihards: \"latviski post is useless if the latvian in the creative and copy is bad; cut it.\""
     },
     {
       "id": "2026-11-06-result-story",
@@ -712,7 +714,7 @@
         "label": "Skatīt rezultātus",
         "href": "/portfolio/#cetras-zoles"
       },
-      "status": "approved",
+      "status": "killed",
       "lv": {
         "virsraksts": "Četras Zoles: ROAS 36,34",
         "apraksts": "Četras Zoles rezultātu kartīte ar Ads Manager ekrānuzņēmumu: ROAS 36,34 pēc pirmajiem 1 000 € reklāmas tēriņiem. Skati rezultātus un novērtē reklāmas ieguldījuma atdevi konkrētā piemērā.",
@@ -721,7 +723,8 @@
       },
       "approved": "2026-10-12",
       "art": "src/img/2021/01/purchases2.webp",
-      "notion": "https://app.notion.com/p/40decaef046f811c925df22e7d06489e"
+      "notion": "https://app.notion.com/p/40decaef046f811c925df22e7d06489e",
+      "killed": "3 Nov evening, Rihards: cut merged posts that don't bring value. A caption-less story repeating the 36x result the Batch One ROAS post tells on 16 Nov."
     },
     {
       "id": "2026-11-10-claude-meta-rules",

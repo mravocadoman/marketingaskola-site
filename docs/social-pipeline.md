@@ -131,19 +131,26 @@ them. Its Plan view changes dates and swaps neighbours.
 
 ## 5. Publishing: n8n + Zernio
 
-A new workflow, "Mārketinga Skola — sociālie ieraksti" (not built yet; until it exists the Latvian posts go
-out by hand from Post Desk). Since 3 Nov it reads the Notion calendar: rows with `FINAL POST LV`, approved by
-**Post Ready** (an `MS ·` row) or **Approved** (a Batch One row), on their date. It:
+n8n workflow `LUPj14M7Vs1zOEOr`, "Mārketinga Skola — latviešu ieraksti (Zernio)", built 3 Nov 2026 and
+**inactive until the owner** creates the `Zernio API` credential, runs its "List Zernio accounts" trigger, copies
+the Mārketinga Skola ids into its Config node and activates it. At 9:00 and 14:00 Riga it reads the Notion calendar:
+rows dated yesterday or today, approved by **Post Ready** (an `MS ·` row) or **Approved** (a Batch One row), not
+Archived, with **LV Posted** unticked. For each one it:
 
-- takes the caption, media URLs, channels and time;
-- schedules the post in Zernio;
-- saves a row in an n8n data table;
-- answers with the Zernio ids.
+- builds the post from `FINAL POST LV`, `FIRST COMMENT LV`, `LV VIDEO`, `LV SLIDES` and `LV CAROUSEL`;
+- schedules it in Zernio for 12:00 (a second row 17:00, a third 19:30) on the Mārketinga Skola Facebook page and
+  Instagram (the video, or else the slides as a carousel) and LinkedIn page (the video, or else the PDF);
+- ticks **LV Posted** at once, so a later failure can never post it twice;
+- for a keyword post, creates Zernio comment-to-DM automations bound to the new post (`postId`, they arm when it
+  publishes): a DM with an "Atvērt materiālu" button on Facebook and Instagram, a public reply with the link on
+  LinkedIn, which has no private replies;
+- sends a Telegram line.
 
-It is one execution per approved post, so the execution cap is not at risk.
-
-**Media hosting** is still open: Zernio needs a public URL or an upload.
-Supabase storage is what the personal pipeline uses.
+A keyword post must carry `=== LV MAGNET URL ===` (the guide on marketingaskola.lv; an `MS ·` row's MAGNET URL
+already is one), or the row fails and nothing is scheduled: a post that promises a DM must be able to send it.
+The Config node refuses Rihards's own Facebook page and personal LinkedIn. Media is already hosted on Supabase
+storage (`download/lv/`), the same as the personal pipeline. X and Threads come next, as a split thread, once the
+owner has opened those accounts (`social/out/profile-kit/kit.md`).
 
 ## 6. What worked
 
@@ -161,7 +168,7 @@ calendar session reads them first, before choosing formats and topics.
 3. **Voice profile;** confirmed by the owner.
 4. **The weekly session as a project skill,** with the three checkpoints and the
    calendar Artifact.
-5. **The n8n publisher and media hosting;** one real post end to end.
+5. **The n8n publisher** (built 3 Nov, inactive: see §5); one real post end to end.
 6. **The weekly metrics pull.**
 
 ## Open questions
