@@ -3872,8 +3872,8 @@ CONTENT-RULES.md), and the owner approved three changes the same day:
   31.12.2026. A meeting counts when the company attends. The wording lives in
   `liaa.json` as `promise`: the scope include and the quote PDF render it, and
   the page FAQ says the same in its own words.
-- **The deadline facts are on the pages:** 2026 is the last year to submit and
-  carry out a plan (`lastYear`), LIAA decides within 24 working days
+- **The deadline facts are on the pages:** the last year to submit and
+  carry out a plan (`lastYear`, 2027 since the extension below), LIAA decides within 24 working days
   (`decisionDays`), finished activities cannot be included, and the price
   survey happens before the plan goes in. The sagatave PDF carries the first
   two.
@@ -3885,6 +3885,22 @@ CONTENT-RULES.md), and the owner approved three changes the same day:
   said "visam jānotiek līdz gada beigām", which is stricter than LIAA; they now
   quote the rule. The telemarketing promise still stops at 31.12.2026, which is
   a business choice, not LIAA's rule.
+- **Extended into 2027 (LIAA, 9 Oct 2026; site updated 3 Nov 2026).** "Pieejamā
+  finansējuma ietvaros" support runs through 2027: applications until
+  31.12.2027 or while funding lasts (`applyUntil`), 2027 is now the conditional
+  last year (`lastYear`), and a 2027 plan's activities may run to 31.03.2028.
+  The budget on the programme page went from 15 400 000 € to 20 434 299 €
+  (`budget`). Contracts concluded by 29 Sep 2026 were amended unilaterally to
+  extend the period; the pillar FAQ says so. Source:
+  <https://liaa.business.gov.lv/aktualitates/eksporta-atbalsts-uznemejiem-sobrid-pieejams-ari-2027-gada-darbibam>.
+  **The offer pages no longer name the plan's year** - they say "gadā, par kuru
+  plāns tiek iesniegts", because a plan covers the year it is FOR and two years
+  are now open at once; rendering `lastYear` there would have told a buyer in
+  November 2026 that only 2027 activities count. `claimBy` stays the generic
+  "nākamā kalendārā gada 31. martam" for the same reason. **Still open, the
+  owner's call:** the telemarketing promise's 31.12.2026 cutoff (`promise` in
+  `liaa.json` and the page FAQ) is already past for any programme that starts
+  in 2027.
 
 Found alongside: both offer pages said "Termiņu, {{ o.term }}, skaita no …"
 while `term` already ends with its own start point, so the live sentence
