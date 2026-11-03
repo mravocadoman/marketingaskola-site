@@ -20,7 +20,7 @@ import path from 'node:path';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const arg = (n, d) => (process.argv.find((a) => a.startsWith(`--${n}=`)) || `=${d}`).split('=').slice(1).join('=');
 const WRITE = process.argv.includes('--write');
-const MODEL = arg('model', 'gpt-5');
+const MODEL = arg('model', 'gpt-6-astra');
 const slug = process.argv[2];
 if (!slug) { console.error('usage: node tools/lv-polish.mjs <slug> [--model=…] [--write]'); process.exit(1); }
 
