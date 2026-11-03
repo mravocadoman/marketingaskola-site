@@ -1,5 +1,5 @@
 {
-  "_comment": "The standing social calendar for Mārketinga Skola (Facebook page + Instagram, Latvian). One row per post. `brief` and `facts` are the internal English notes the writer works from: every fact carries its source and date, and nothing outside them may appear in a post. `lv` is written by OpenAI (tools/social-write-lv.mjs) and checked with lv:review. Status: planned -> approved (checkpoint 1) -> designed (2) -> written (3) -> scheduled -> published, or killed. See docs/social-pipeline.md.",
+  "_comment": "The standing social calendar for Mārketinga Skola (Facebook page + Instagram, Latvian). One row per post. `brief` and `facts` are the internal English notes the writer works from: every fact carries its source and date, and nothing outside them may appear in a post. `lv` is written by OpenAI (tools/social-write-lv.mjs) and checked with lv:review. Status: planned -> approved (checkpoint 1) -> designed (2) -> written (3) -> scheduled -> published, or killed. See docs/social-pipeline.md. Since 3 Nov 2026 the schedule itself is the Notion Content Calendar (Post Desk): a written post is handed over with tools/social-handoff.mjs and gets a `notion` link here; its date in Notion wins.",
   "home": "social/calendar.json",
   "channels": [
     "facebook",
@@ -604,7 +604,9 @@
       },
       "approved": "2026-10-12",
       "art": "social/art/social-conversion-signal.webp",
-      "motion": true
+      "motion": true,
+      "notion": "https://app.notion.com/p/40decaef046f81ec9461f40dd185cf37",
+      "moved": "2026-11-03 -> 2026-11-17 in Notion (3 Nov merge)"
     },
     {
       "id": "2026-11-05-ai-latvian",
@@ -688,7 +690,9 @@
           "Pārbaude, ko veicam pirms katras publikācijas"
         ],
         "url": "/ai-teksti-latviski/"
-      }
+      },
+      "notion": "https://app.notion.com/p/40decaef046f8142914ed1dcabac272b",
+      "moved": "2026-11-05 -> 2026-11-11 in Notion (3 Nov merge)"
     },
     {
       "id": "2026-11-06-result-story",
@@ -716,7 +720,8 @@
         "written": "2026-10-11"
       },
       "approved": "2026-10-12",
-      "art": "src/img/2021/01/purchases2.webp"
+      "art": "src/img/2021/01/purchases2.webp",
+      "notion": "https://app.notion.com/p/40decaef046f811c925df22e7d06489e"
     },
     {
       "id": "2026-11-10-claude-meta-rules",
@@ -738,7 +743,7 @@
         "label": "Meta reklāma",
         "href": "/facebook-reklama/"
       },
-      "status": "example",
+      "status": "killed",
       "art": "social/art/social-claude-meta-ads.webp",
       "motion": true,
       "magnet": {
@@ -809,7 +814,8 @@
           "facebook": "Meta reklāmas ar Claude: kopš 29. septembra vienā no mūsu pašu e-komercijas projektiem kampaņu vada AI.\n\nTas maina budžetus, aptur reklāmas, palaiž testus un katru rītu atskaitās. Budžets ir 70 $ dienā: pietiekami mazs, lai kļūda pārāk nesāpētu, un pietiekami liels, lai tā tomēr maksātu naudu.\n\nAI te nav jābūt gudram. Tam jābūt konsekventam, un tieši šajā ziņā cilvēki kļūdās visbiežāk: tie paši noteikumi jāievēro arī septiņos no rīta.\n\nSlaidos ir visi 7 noteikumi. Kuru no tiem Tavā kontā ievēro visretāk?\n\nKomentē META, un privātā ziņā nosūtīsim saiti uz ceļvedi: sliekšņi un pilna Claude instrukcija. Bez maksas.\n\n#metareklāma #claude #ekomercija",
           "instagram": "Meta reklāmas ar Claude: kopš 29. septembra vienā no mūsu pašu e-komercijas projektiem kampaņu vada AI.\n\nTas maina budžetus, aptur reklāmas, palaiž testus un katru rītu atskaitās. Budžets ir 70 $ dienā: pietiekami mazs, lai kļūda pārāk nesāpētu, un pietiekami liels, lai tā tomēr maksātu naudu.\n\nAI te nav jābūt gudram. Tam jābūt konsekventam, un tieši šajā ziņā cilvēki kļūdās visbiežāk: tie paši noteikumi jāievēro arī septiņos no rīta.\n\nSlaidos ir visi 7 noteikumi. Kuru no tiem Tavā kontā ievēro visretāk?\n\nKomentē META, un privātā ziņā nosūtīsim saiti uz ceļvedi: sliekšņi un pilna Claude instrukcija. Bez maksas.\n\n#metareklāma #claude #ekomercija"
         }
-      }
+      },
+      "killed": "3 Nov merge: the same post (7 rules, keyword META) goes out as the Latvian version of Batch One ADS on Thu 5 Nov."
     }
   ]
 }

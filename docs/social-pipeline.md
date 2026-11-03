@@ -104,15 +104,36 @@ VERIFY until checked.
 
 ## 4. The standing calendar
 
-`social/calendar.json` is the source, with one row per post: date, channel,
-type, source, path (`html` / `ai+html` / `text`) and status (planned, approved,
-designed, scheduled, published, killed). Each session shows it as a calendar
-view (an Artifact page), extends the horizon, and records what Zernio confirmed.
+**One schedule since 3 Nov 2026: the Notion Content Calendar.** Rihards asked to merge the two Latvian
+calendars and "put everything in the system going forward". So the posts for this page and Instagram sit in
+the same Notion database as his English Batch One posts, and Post Desk (claude.ai artifact
+5h4HzhZ2T12f85m5pmyEQT, source in acquisition-md/post-desk) is where he reads, edits, reorders and approves
+them. Its Plan view changes dates and swaps neighbours.
+
+- **Accounts:** English goes to his LinkedIn, then X and Threads. Latvian goes to the Mārketinga Skola
+  Facebook page and Instagram: both the `FINAL POST LV` of a Batch One row and this pipeline's own posts.
+- **A post of this pipeline** is a row named `MS · <Day d Mon> · <virsraksts> (KEYWORD)`, with
+  `=== FINAL POST LV ===`, `=== LV SLIDES ===` (and `=== MAGNET URL ===` for a lead magnet) in its body.
+  It is approved with the **Post Ready** box, never **Approved**: the English 08:00 packager takes the
+  oldest Approved row and fails on one without an English post, every morning, holding up the English ones.
+- **Two Latvian posts a day on the page** only when one is a story. Post Desk flags two `MS ·` rows on one
+  day; a Batch One row on the same day is fine for LinkedIn but means a second feed post on this page.
+- `social/calendar.json` stays the workshop: one row per post with brief, facts, path, the Latvian copy
+  and status (planned, approved, designed, written, published, killed). After checkpoint 3,
+  `node tools/social-handoff.mjs <id> [--date=…]` hosts the slides (JPGs and the moving cover, checked
+  byte for byte) and writes `social/out/<id>/notion.md`; the session creates the Notion row from it and adds
+  the `notion` link here. From then on the date in Notion is the one that counts.
+- The 3 Nov merge: `2026-11-05-ai-latvian` moved to 11 Nov (the Latvian ADS post, keyword META, has 5 Nov),
+  `2026-11-03-conversion-signal` to 17 Nov (it never went out), `2026-11-06-result-story` kept its Friday,
+  and `2026-11-10-claude-meta-rules` was killed as a duplicate of the Latvian ADS post. The October posts
+  marked approved never went out either (no publisher); they need a freshness check (course dates) before
+  they are handed over.
 
 ## 5. Publishing: n8n + Zernio
 
-A new workflow, "Mārketinga Skola — sociālie ieraksti", with a webhook called
-from the session after the final checkpoint. It:
+A new workflow, "Mārketinga Skola — sociālie ieraksti" (not built yet; until it exists the Latvian posts go
+out by hand from Post Desk). Since 3 Nov it reads the Notion calendar: rows with `FINAL POST LV`, approved by
+**Post Ready** (an `MS ·` row) or **Approved** (a Batch One row), on their date. It:
 
 - takes the caption, media URLs, channels and time;
 - schedules the post in Zernio;
@@ -133,7 +154,8 @@ calendar session reads them first, before choosing formats and topics.
 ## Order of work
 
 1. **Owner:** connect the Mārketinga Skola Facebook page and Instagram business
-   account in Zernio; move the Zernio key into an n8n credential and rotate it.
+   account in Zernio (3 Nov: Instagram is still not in any publisher); move the Zernio key into an n8n
+   credential and rotate it.
 2. **Templates and the render tool;** render one sample week from real site data
    for the owner to judge the look. Nothing is published yet.
 3. **Voice profile;** confirmed by the owner.
