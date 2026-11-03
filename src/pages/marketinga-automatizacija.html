@@ -14,7 +14,7 @@ image: "/img/2024/07/Untitled-design-4.png"
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Mārketinga automatizācija</span>
-      <h1>Mazāk <em>roku darba</em> katrā mārketinga solī<span class="accent-text">.</span></h1>
+      <h1>Mārketinga automatizācija, kas darbojas arī tad, kad <em>Tu neesi pie datora</em><span class="accent-text">.</span></h1>
       <p class="sub">Pieteikumi, kas paši nonāk sistēmā. E-pasti, kas aiziet bez atgādinājuma. Atskaites, kas sagatavojas pašas. Sākam ar auditu, kurā saskaitām, cik stundu mēnesī aizņem atkārtotie darbi, un tikai pēc tam runājam par rīkiem.</p>
       <div class="btn-wrap">
         <a class="btn" href="#piesakies">Pieteikties auditam</a>
@@ -112,49 +112,48 @@ image: "/img/2024/07/Untitled-design-4.png"
     <div class="sec-head">
       <div>
         <span class="eyebrow"><span class="idx">03</span> Piemērs</span>
-        <h2>Tā darbojas mūsu pašu <em>pieteikumu plūsma</em></h2>
+        <h2>Izmēģini mūsu pašu <em>automatizāciju</em></h2>
       </div>
-      <p class="lead">Kad kāds mājaslapā pasūta lapas pārbaudi, viss tālāk notiek automātiski.</p>
+      <p class="lead">Automatizācijas tests mūsu mājaslapā darbojas tieši tāpat kā plūsmas, ko veidojam klientiem: Tu atbildi uz četriem jautājumiem, un pārējo izdara sistēma.</p>
     </div>
-    {#- Our own live automation, not a mock-up of an imagined one: the n8n
-        workflows "mājaslapas pieteikumi" and "automātiskā lapas pārbaude".
-        The e-mail is the real report for example.com from the end-to-end test
-        of 25 Sep 2026 (six "!", three "+"), shortened to the check titles; the
-        real mail adds one explanatory sentence per check. If the workflow's
-        wording changes, change this too. #}
+    {#- Our own live automation: the n8n workflow "automatizācijas tests ar AI"
+        (4YG4HJztvL4OobWv) behind /automatizacijas-tests/. Every step here is in
+        CLAUDE.md under "One lead magnet, marketing automation, public reviews":
+        the row is saved first, Firecrawl reads the page, a Code node detects
+        forms, contact fields, WhatsApp, chat and booking tools, pixel, GA4, GTM,
+        Ads tags and a consent manager, Claude writes three suggestions, the text
+        is cleaned of links and contacts, fixed suggestions replace a bad reply.
+        If the workflow changes, change this too. (Until 3 Nov 2026 this section
+        showed the page check, which the site no longer offers.) #}
     <div class="row cols-2 top">
       <div class="col">
         <ol class="flow">
-          <li><strong>Pieteikums</strong>Apmeklētājs norāda savu e-pasta adresi un lapu, ko pārbaudīt.</li>
-          <li><strong>Saglabāšana</strong>Pieteikums vispirms nonāk tabulā, tāpēc tas nevar pazust.</li>
-          <li><strong>Pārbaude</strong>Robots atver lapu un pārbauda deviņus punktus.</li>
-          <li><strong>Paziņojums mums</strong>Rihards saņem e-pastu ar rezultātu un zina, kam zvanīt.</li>
-          <li><strong>Atskaite apmeklētājam</strong>Apmeklētājs saņem rezultātu e-pastā.</li>
+          <li><strong>Četri jautājumi</strong>Tu atbildi, kur nonāk pieteikumi, cik ātri uz tiem atbild un vai zini, no kuras reklāmas atnāca klients, un rezultātu redzi uzreiz.</li>
+          <li><strong>Saglabāšana</strong>Ja gribi ieteikumus savam uzņēmumam, norādi e-pasta adresi un mājaslapu. Pieteikums vispirms nonāk tabulā, tāpēc tas nevar pazust.</li>
+          <li><strong>Lapas izpēte</strong>Robots atver Tavu mājaslapu un pārbauda, kādas tajā ir pieteikuma formas un kontakti, vai ir čats vai rezervāciju rīks un vai ir uzstādīts Meta pikselis un Google Analytics.</li>
+          <li><strong>AI ieteikumi</strong>Claude no Tavām atbildēm un lapas satura uzraksta trīs ieteikumus, ar ko sākt, un sistēma pirms nosūtīšanas izņem saites un kontaktus no teksta, lai e-pastā nonāktu tikai ieteikumi.</li>
+          <li><strong>Rezultāts Tev, ziņa mums</strong>Apmēram pēc 20 sekundēm ieteikumi parādās lapā un aiziet Tev pa e-pastu, bet Rihards saņem ziņu par jaunu pieteikumu.</li>
         </ol>
-        <p class="proof-line">Ja kādā solī rodas kļūme, par to uzzinām uzreiz, nevis pēc nedēļas.</p>
+        <p class="proof-line">Ja AI atbilde neizdodas, ieteikumus Tu tik un tā saņem, jo sistēma tos aizstāj ar iepriekš sagatavotiem, un par kļūmi mēs uzzinām uzreiz.</p>
       </div>
       <div class="col">
-        <figure class="mail">
+        <figure class="mail mail--try">
           <div class="mail-head">
-            <p><span>No</span>Mārketinga Skola</p>
-            <p><span>Tēma</span><strong>example.com: 6 punkti prasa uzmanību</strong></p>
+            <p><span>Tests</span><strong>Automatizācijas tests ar AI</strong></p>
+            <p><span>Ilgums</span>Apmēram minūte</p>
           </div>
           <div class="mail-body">
-            <p>Paldies! Šeit ir example.com pārbaude.</p>
-            <p>6 prasa uzmanību, 0 nevarēja pārbaudīt, 3 kārtībā.</p>
-            <ul class="mail-checks">
-              <li class="bad">Google Analytics</li>
-              <li class="bad">Meta pikselis</li>
-              <li class="bad">Google Ads konversijas</li>
-              <li class="ok">Virsraksts meklētājā</li>
-              <li class="bad">Apraksts meklētājā</li>
-              <li class="ok">Galvenais virsraksts</li>
-              <li class="ok">Mobilā versija</li>
-              <li class="bad">Strukturētie dati</li>
-              <li class="bad">Koplietošanas attēls</li>
+            <p>Ko robots pārbauda Tavā mājaslapā:</p>
+            <ul class="tick-list">
+              <li>Pieteikuma formas un kontaktu lauki</li>
+              <li>WhatsApp, čats un rezervāciju rīki</li>
+              <li>Meta pikselis un Google Analytics</li>
+              <li>Google Tag Manager un Google Ads tagi</li>
+              <li>Sīkdatņu piekrišanas rīks</li>
             </ul>
+            <a class="btn" href="/automatizacijas-tests/">Sākt testu</a>
           </div>
-          <figcaption>Īsts pārbaudes e-pasts testa lapai example.com, saīsināts. Pilnajā vēstulē katram punktam ir paskaidrojums.</figcaption>
+          <figcaption>Rezultātu redzi uzreiz un bez maksas. E-pasta adresi lūdzam tikai tad, ja gribi AI ieteikumus savam uzņēmumam.</figcaption>
         </figure>
       </div>
     </div>
@@ -276,6 +275,7 @@ image: "/img/2024/07/Untitled-design-4.png"
   </div>
 </section>
 
+{#- The form above is the primary action; this band only offers alternatives, so no second cyan button in one viewport (3 Nov 2026). #}
 <section class="cta-band">
   <div class="container cta-band-inner">
     <div>
@@ -283,7 +283,7 @@ image: "/img/2024/07/Untitled-design-4.png"
       <p>Bezmaksas iepazīšanās zvans uzņēmumiem, kas apsver sadarbību. Izrunāsim situāciju un pateiksim, vai varam palīdzēt.</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="/sazinies/">Pieteikties 20 min zvanam</a>
+      <a class="btn btn--ghost" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
       <a class="btn btn--ghost" href="/pakalpojumi/">Visi pakalpojumi</a>
     </div>
   </div>

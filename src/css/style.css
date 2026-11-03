@@ -446,6 +446,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .stats--row .stat { border-top: 1px solid var(--line-strong); flex: 1; padding: 18px 0 0; }
 .stats--row .stat:first-child { border-top: 1px solid var(--line-strong); padding-top: 18px; }
 @media (max-width: 640px) { .stats--row { flex-direction: column; gap: 0; } .stats--row .stat { padding: 16px 0; } }
+/* whatever follows a stats row needs air: on /pakalpojumi/ and the LIAA page the labels touched the next block (3 Nov 2026) */
+.stats--row + * { margin-top: clamp(28px, 3.5vw, 44px); }
 
 /* client logo strip */
 .logo-strip { border-top: 1px solid var(--line); margin-top: clamp(56px, 7vw, 88px); padding: 36px 0 40px; }
@@ -571,11 +573,14 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .fine.btn-note { margin-top: 14px; }
 /* one sentence of proof under a grid: a published result, linked to its case */
 .proof-line { margin: clamp(24px, 3vw, 36px) 0 0; max-width: 68ch; color: var(--muted); }
+/* an ask placed straight after a proof section (Meta page): text and button on one hairline-topped row */
+.proof-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; margin-top: clamp(32px, 4vw, 52px); padding-top: clamp(24px, 3vw, 32px); border-top: 1px solid var(--line-strong); }
+.proof-cta p { margin: 0; max-width: 56ch; color: var(--heading); font-size: var(--t-lead); }
 .center .btn-wrap, .btn-wrap.center { justify-content: center; }
 .btn svg { flex-shrink: 0; }
 
 .arrow-link { font-family: var(--font-display); font-weight: 500; font-size: var(--t-sm); color: #fff; white-space: nowrap; }
-.arrow-link::after { content: " →"; display: inline-block; transition: transform 0.15s ease; }
+.arrow-link::after { content: "→"; display: inline-block; margin-left: 0.35em; transition: transform 0.15s ease; } /* a leading space inside an inline-block collapses, so the gap is a margin */
 .arrow-link:hover { text-decoration: none; color: #fff; }
 .arrow-link:hover::after { transform: translateX(4px); }
 
@@ -734,6 +739,11 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .cell h3 { margin: 0 0 12px; padding-right: 40px; }
 .cell p { flex: 1; margin-bottom: 0; font-size: var(--t-base); }
 .cell .arrow-link, .cell blockquote a { margin-top: 20px; display: inline-block; }
+/* booking cards: the price line must not grow like a card text (.cell p { flex: 1 }); the facts sit under it and the button drops to the bottom, so a short card has no hole under its price (design audit, 3 Nov 2026) */
+.cell > .price { flex: 0 0 auto; margin: 4px 0 0; font-family: var(--font-display); font-weight: 600; font-size: var(--t-d2); line-height: 1.1; color: var(--heading); font-variant-numeric: tabular-nums; }
+.cell > .price small { display: block; margin-top: 6px; font-family: var(--font-body); font-weight: 400; font-size: var(--t-sm); color: var(--muted); }
+.cell > .course-facts { margin-bottom: 24px; }
+.cell > .course-facts ~ .btn { margin-top: auto; }
 .cell blockquote { border: 0; margin: 0; padding: 0; }
 .cell blockquote p { margin: 0; }
 
@@ -886,11 +896,11 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
    sitting on its rule. Four small marks, so the sequence reads as a sequence
    and the cyan stays far inside budget - it is the same "this starts here"
    signal the indexed eyebrows use, applied one level down. */
-.sec--band .step { position: relative; }
-.sec--band .step::before { content: ""; position: absolute; top: -2px; left: 0; width: 24px; height: 3px; background: var(--cyan); }
+:is(.sec--band, .sec--alt) .step { position: relative; } /* sec--alt is the band the sectionBands transform adds: same ground, same step style (3 Nov 2026) */
+:is(.sec--band, .sec--alt) .step::before { content: ""; position: absolute; top: -2px; left: 0; width: 24px; height: 3px; background: var(--cyan); }
 /* The numeral already carries a cyan square; two cyan marks per step is one
    too many once the tick is on the rule. */
-.sec--band .step .step-num::after { display: none; }
+:is(.sec--band, .sec--alt) .step .step-num::after { display: none; }
 .cta-band-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 36px 72px; align-items: center; }
 .cta-band h2 { font-size: var(--t-d3); margin-bottom: 0.35em; max-width: 17ch; }
 .cta-band p { margin: 0; max-width: 46ch; color: var(--body); }
@@ -1230,6 +1240,8 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
    label is what a skimming reader takes away, the clause is there for the
    reader who stops. */
 .tick-list--labels li { margin-bottom: 1.05em; }
+/* short items that would otherwise fill only the left half of a full-width section (export pages, 02) */
+@media (min-width: 781px) { .tick-list--2col { columns: 2; column-gap: clamp(28px, 4vw, 64px); } .tick-list--2col li { break-inside: avoid; } }
 .tick-list--labels li strong { display: block; font-family: var(--font-display); font-weight: 600; color: var(--heading); }
 /* Commercial terms set apart from the copy, so the strongest promise on a page
    is not buried in the second sentence of a lead. The cyan inset bar is the
@@ -1465,6 +1477,20 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .scope th { color: var(--muted); font-size: var(--t-micro); text-transform: uppercase; letter-spacing: .08em; border-bottom-color: var(--line-strong); }
 .scope td:first-child { color: var(--heading); }
 .scope tbody tr:last-child td { border-bottom: 0; }
+/* Phones: the 660px table hid Rezultāts and Termiņš behind an unmarked sideways
+   scroll (design audit, 3 Nov 2026). Under 640px each row stacks as a labelled
+   block; it stays a real table, so copying still works. */
+@media (max-width: 640px) {
+  .scope-wrap { overflow: visible; }
+  .scope { min-width: 0; }
+  .scope thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .scope, .scope tbody, .scope tr, .scope td { display: block; width: 100%; }
+  .scope tr { padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .scope tbody tr:last-child { border-bottom: 0; }
+  .scope td { padding: 4px 0; border-bottom: 0; }
+  .scope td:first-child { font-family: var(--font-display); font-weight: 600; font-size: var(--t-base); padding-bottom: 8px; }
+  .scope td:not(:first-child)::before { content: attr(data-label); display: block; color: var(--muted); font-size: var(--t-micro); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 2px; }
+}
 
 /* A band holding a motif instead of a photograph: no frame, no fill, page
    ground, so it dissolves into the section the way the hero artwork does.
@@ -1957,6 +1983,13 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .mail-checks .bad::before { content: "!"; color: var(--heading); }
 .mail-checks .ok::before { content: "+"; color: var(--muted); }
 .mail figcaption { padding: 12px 20px; border-top: 1px solid var(--line); font-size: var(--t-sm); color: var(--muted); }
+/* .mail--try: the same frame holding an invitation to run the automation test (automation page, section 03). */
+.mail--try .tick-list { margin: 10px 0 20px; }
+.mail--try .tick-list li { margin-bottom: .45em; }
+/* the card is shorter than the five-step list beside it, so on desktop it travels with the reader */
+@media (min-width: 981px) { .col:has(> .mail--try) { position: sticky; top: calc(var(--topbar-h) + 104px); align-self: start; } }
+/* .mail--code: the same frame showing a real file from this site (SEO page, /llms.txt). */
+.mail--code pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: var(--t-sm); line-height: 1.6; color: var(--body); }
 /* a real screenshot says what it shows in one muted line underneath, never as an overlay on the numbers */
 .img--shot figcaption { margin-top: 12px; font-size: var(--t-sm); color: var(--muted); max-width: 60ch; }
 
@@ -2243,7 +2276,7 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .figcol h4 { font-size: var(--t-d1); margin: 0 0 6px; color: var(--heading); min-height: 2.6em; }
 /* Two lines reserved: one column's description wraps and the others do not,
    which pushed its diagram and footer out of line with its neighbours. */
-.figcol > p { margin: 0 0 22px; color: var(--muted); font-size: var(--t-sm); line-height: 1.5; min-height: 3em; }
+.figcol > p { margin: 0 0 22px; color: var(--body); font-size: var(--t-base); line-height: 1.5; min-height: 3em; } /* body tier, 16px: at 14px muted it read as a caption (design audit, 3 Nov 2026) */
 /* An icon, not a diagram: one solid mark per item, sized so the column reads
    as text with a marker rather than as a picture with a caption. */
 .figcol-icon { width: clamp(60px, 6vw, 76px); height: auto; margin: 20px 0 22px; }
@@ -2256,6 +2289,9 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
   .figcols-grid { margin-left: 0; }
   .figcol { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); padding-top: 24px; }
   .figcol:first-child { border-top: 0; padding-top: 0; }
+  /* one column: nothing to line up with, so the reserved lines were only holes */
+  .figcol h4, .figcol > p { min-height: 0; }
+  .figcol-icon { margin: 14px 0 16px; }
 }
 
 .infographic { margin: 2.4em 0; border: 1px solid var(--line); background: var(--canvas); }
@@ -2340,6 +2376,8 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
    viewBox, so the tiles still line up. */
 .cell-media.cell-media--motif { aspect-ratio: auto; background: none; overflow: visible; }
 .cell-media.cell-media--motif .motif { display: block; width: 100%; height: auto; }
+/* phones: nine full-width drawings made /pakalpojumi/ 4 200px of tiles (design audit, 3 Nov 2026); a smaller, centred drawing keeps the whole picture */
+@media (max-width: 640px) { .cell-media.cell-media--motif .motif { width: 70%; margin: 0 auto; } }
 /* A full-width motif band under a page hero. Wider than .media--wide so it
    reads as a divider rather than as an illustration inside a column. */
 .media--band { aspect-ratio: 24 / 7; margin-bottom: clamp(44px, 5vw, 72px); }

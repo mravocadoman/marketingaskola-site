@@ -4,7 +4,7 @@
   "tagline": "Digitālā Mārketinga Aģentūra, kas Palīdz Tavam Biznesam Augt!",
   "metaMinAdSpend": "1 000 €",
   "image": "/img/og-default.jpg",
-  "phone": "+371 26673384",
+  "phone": "+371 26673384",
   "phoneIntl": "+37126673384",
   "phoneNote": "(WhatsApp)",
   "email": "rihards@marketingaskola.lv",
@@ -42,8 +42,12 @@
       "url": "/pakalpojumi/",
       "children": [
         {
-          "label": "Meta un Instagram reklāma",
+          "label": "Facebook un Instagram reklāma",
           "url": "/facebook-reklama/"
+        },
+        {
+          "label": "Google Ads reklāma",
+          "url": "/google-ads-pakalpojumi/"
         },
         {
           "label": "SEO pakalpojumi",

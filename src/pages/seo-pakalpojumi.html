@@ -13,12 +13,13 @@ keywords: ["SEO pakalpojumi", "SEO optimizācija", "SEO speciālists", "SEO audi
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · SEO</span>
-      <h1>SEO pakalpojumi, kas atved <em>klientus</em>, nevis pozīcijas<span class="accent-text">.</span></h1>
+      <h1>SEO pakalpojumi, kas atved nevis pozīcijas, bet <em>klientus</em><span class="accent-text">.</span></h1>
       <p class="sub">Meklētājoptimizācija uzņēmumiem, kuriem organiskā plūsma ir jāpārvērš pieteikumos un pirkumos: audits, tehniskā sakārtošana, saturs un stratēģija, ko var izpildīt arī neliela komanda.</p>
       <div class="btn-wrap">
-        <a class="btn" href="/sazinies/">Pieteikties 20 min zvanam</a>
+        <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
         <a class="btn btn--ghost" href="#izmaksas">Kas nosaka cenu</a>
       </div>
+      <p class="fine btn-note">Bez maksas, 20 minūtes. Pasakām, vai un kā varam palīdzēt.</p>
       </div>
       <figure class="hero-media">{% include "motifs/seo.njk" %}</figure>
     </div>
@@ -107,11 +108,57 @@ keywords: ["SEO pakalpojumi", "SEO optimizācija", "SEO speciālists", "SEO audi
   </div>
 </section>
 
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">03</span> Piemērs</span>
+        <h2>Ko izdarījām savai <em>mājaslapai</em></h2>
+      </div>
+      <p class="lead">Kad 2026. gada augustā pārcēlām šo mājaslapu no WordPress, SEO bija daļa no pārbūves, nevis darbs, ko atliek uz vēlāku laiku.</p>
+    </div>
+    {#- Only what CLAUDE.md records as done on this site: WordPress permalinks
+        kept and 301s for changed URLs, Schema.org via schemaGraph/faqSchema,
+        lastmod from git, IndexNow after every deploy, meta descriptions
+        rewritten around the searched phrase, /llms.txt. No traffic claims:
+        there is no SEO result to publish yet (see "No SEO case on our own
+        site yet"). The excerpt is the real top of /llms.txt, shortened; if
+        src/llms.njk changes its opening, change this too. #}
+    <div class="row cols-2 top">
+      <div class="col">
+        <figure class="mail mail--code">
+          <div class="mail-head">
+            <p><span>Fails</span><strong>marketingaskola.lv/llms.txt</strong></p>
+          </div>
+          <div class="mail-body"><pre># Mārketinga Skola
+
+&gt; Latvijas digitālā mārketinga aģentūra (SIA Stonks, Rēzekne). Meta un Google reklāmas, SEO, video, mārketinga automatizācija, kursi un LIAA eksporta atbalsta pakalpojumi.
+
+## Pakalpojumi
+
+- [Pakalpojumu pārskats](https://marketingaskola.lv/pakalpojumi/): visi pakalpojumi un darba gaita.
+- [SEO pakalpojumi](https://marketingaskola.lv/seo-pakalpojumi/): audits, tehniskā optimizācija, saturs …</pre></div>
+          <figcaption>Īss mājaslapas apraksts AI asistentiem: kas mēs esam, kurus faktus drīkst citēt un kuras lapas lasīt. Saīsināts.</figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Neviena adrese nepazuda</strong>Vecās saites joprojām ved uz pareizo lapu, un mainītajām adresēm ir 301 pāradresācija, tāpēc Google nezaudēja to, ko jau zināja par lapām.</li>
+          <li><strong>Strukturētie dati</strong>Pakalpojumiem, kursiem, rakstiem un jautājumiem pievienojām Schema.org aprakstus, lai Google un AI asistenti informāciju nolasītu, nevis mēģinātu to uzminēt.</li>
+          <li><strong>Patiesi atjaunošanas datumi</strong>Sitemap rāda, kad katra lapa tiešām mainījās, nevis vienu kopīgu datumu visai vietnei.</li>
+          <li><strong>Izmaiņas meklētājiem uzreiz</strong>Pēc katras publicēšanas mainītās lapas automātiski paziņojam Bing caur IndexNow, un Bing datus izmanto arī Copilot un daļēji ChatGPT meklēšana.</li>
+          <li><strong>Apraksti ar meklēto frāzi</strong>Meta aprakstus pārrakstījām tā, lai tajos būtu frāze, ko cilvēki meklē, jo Google to rezultātos izceļ treknrakstā.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec sec--band">
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">03</span> Godīgi par termiņiem</span>
+        <span class="eyebrow"><span class="idx">04</span> Godīgi par termiņiem</span>
         <h2>SEO nav ātrs kanāls</h2>
       </div>
       <p class="lead">Tā ir šī pakalpojuma galvenā nianse, un labāk to zināt pirms sākuma, nevis pēc diviem mēnešiem.</p>
@@ -129,7 +176,7 @@ keywords: ["SEO pakalpojumi", "SEO optimizācija", "SEO speciālists", "SEO audi
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">04</span> Izmaksas</span>
+        <span class="eyebrow"><span class="idx">05</span> Izmaksas</span>
         <h2>Kas nosaka SEO cenu</h2>
       </div>
       <p class="lead">Vienotas cenrāža summas nav, jo darba apjoms atšķiras desmitkārt. Šie ir faktori, kas to nosaka.</p>
@@ -162,7 +209,7 @@ keywords: ["SEO pakalpojumi", "SEO optimizācija", "SEO speciālists", "SEO audi
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">05</span> Jautājumi</span>
+        <span class="eyebrow"><span class="idx">06</span> Jautājumi</span>
         <h2>Ko parasti jautā pirms sākuma</h2>
       </div>
     </div>
@@ -183,7 +230,7 @@ keywords: ["SEO pakalpojumi", "SEO optimizācija", "SEO speciālists", "SEO audi
       <h2>Sāksim ar to, ko rāda Tava lapa</h2>
       <p>20 minūšu zvanā izejam cauri Tavai situācijai un pasakām, vai SEO ir tā vieta, kur Tev vērts ieguldīt. Ja nav, arī to pateiksim.</p>
       <div class="btn-wrap">
-        <a class="btn" href="/sazinies/">Pieteikties zvanam</a>
+        <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
         <a class="btn btn--ghost" href="/kas-ir-seo/">Kas ir SEO</a>
       </div>
     </div>

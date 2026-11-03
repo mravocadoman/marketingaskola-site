@@ -100,4 +100,4 @@ Praktisku pirmās kampaņas uzstādīšanu soli pa solim esam aprakstījuši rak
 
 Ja gribi to apgūt pats, tieši šī loģika (konta uzbūve, atslēgvārdi, budžets un konversiju mērīšana) ir [Google Ads kursa](/google-ads-kurss/) saturs: {% offer "google-ads-kurss", "hours" %} tiešsaistē, {% offer "google-ads-kurss" %}, notiek {% offer "google-ads-kurss", "cadence" %}.
 
-Ja gribi, lai budžetu plāno un kontu vada kāds cits, apskati [mūsu pakalpojumus](/pakalpojumi/). Un ja vajadzīgs tikai otrais viedoklis par jau esošu kontu, to var izrunāt [konsultācijā](/marketinga-konsultacijas/) ({% offer "60", "duration" %}, {% offer "60" %}).
+Ja gribi, lai budžetu plāno un kontu vada kāds cits, apskati [mūsu Google Ads pakalpojumus](/google-ads-pakalpojumi/). Un ja vajadzīgs tikai otrais viedoklis par jau esošu kontu, to var izrunāt [konsultācijā](/marketinga-konsultacijas/) ({% offer "60", "duration" %}, {% offer "60" %}).

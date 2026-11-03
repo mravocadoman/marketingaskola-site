@@ -1,7 +1,7 @@
 ---
 layout: page.njk
-title: "Mārketinga konsultācijas | Mārketinga Skola"
-description: "Maksas mārketinga konsultācija uzņēmējiem un vadītājiem: €90/h, €60 par 30 min vai 5 sesiju komplekts par €370, cenas bez PVN. Prioritātes un nākamie soļi."
+title: "Mārketinga konsultācija: prioritātes 60 minūtēs | Mārketinga Skola"
+description: "Mārketinga konsultācija uzņēmējiem: stundā izejam cauri Tavai situācijai, un Tu aizej ar prioritātēm un nākamajiem soļiem. 90 € + PVN, laiku izvēlies uzreiz."
 permalink: "/marketinga-konsultacijas/"
 crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
 service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsultācijas", booking: true }
@@ -19,18 +19,18 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
     <div class="hero-grid2">
       <div>
       <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Konsultācijas</span>
-      <h1>Saruna, pēc kuras <em>zini, ko darīt</em> tālāk</h1>
-      <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: {{ o60.duration }} vai {{ o30.duration }} Tavai situācijai, ilgākam darbam: {{ bundle.sessions }} sesiju komplekts. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
+      <h1>Mārketinga konsultācija, pēc kuras <em>zini, ko darīt</em> tālāk<span class="accent-text">.</span></h1>
+      <p class="sub">Maksas mārketinga konsultācija uzņēmumu īpašniekiem un vadītājiem: {{ o60.duration }} vai {{ o30.duration }} par Tavu situāciju, bet ilgākam darbam ir {{ bundle.sessions }} sesiju komplekts. Pēc sarunas Tev ir prioritātes un konkrēti nākamie soļi, nevis minējumi.</p>
       <div class="chips">
-        <span>€{{ o60.price }} + PVN / h</span>
-        <span>€{{ o30.price }} + PVN / 30 min</span>
-        <span>{{ bundle.sessions }} sesijas: €{{ bundle.price }} + PVN</span>
-        <span>Vada Rihards Zeiļa</span>
+        <span>60&nbsp;min · {{ o60.price }}&nbsp;€ + PVN</span>
+        <span>30&nbsp;min · {{ o30.price }}&nbsp;€ + PVN</span>
+        <span>{{ bundle.sessions }}&nbsp;sesijas · {{ bundle.price }}&nbsp;€ + PVN</span>
       </div>
       <div class="btn-wrap">
         <a class="btn" href="#piesakies">Rezervēt konsultāciju</a>
         <a class="btn btn--ghost" href="#ka-notiek">Kā notiek saruna</a>
       </div>
+      <p class="fine btn-note">Konsultāciju vada Rihards Zeiļa. Laiku kalendārā vari izvēlēties uzreiz pēc apmaksas.</p>
       </div>
       <figure class="hero-media">{% include "motifs/konsultacijas.njk" %}</figure>
     </div>
@@ -90,8 +90,8 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
       <div class="cell">
         <span class="cell-idx">02</span>
         <span class="card-icon">{% icon "event" %}</span>
-        <h3>Mārketinga konsultācija: €{{ o60.price }} + PVN / h</h3>
-        <p>Domāta, ja Tev vajadzīgi ieteikumi par savu biznesu neatkarīgi no tā, vai pēc tam strādāsim kopā. Maksas saruna: {{ o60.duration }} visai mārketinga situācijai vai {{ o30.duration }} vienam konkrētam jautājumam. Rezultāts ir prioritātes un konkrēti nākamie soļi. Īsā sesija: €{{ o30.price }} + PVN; ilgākam darbam ir {{ bundle.sessions }} sesiju komplekts par €{{ bundle.price }} + PVN.</p>
+        <h3>Mārketinga konsultācija: {{ o60.price }}&nbsp;€ + PVN / h</h3>
+        <p>Domāta, ja Tev vajadzīgi ieteikumi par savu biznesu neatkarīgi no tā, vai pēc tam strādāsim kopā. Maksas saruna: {{ o60.duration }} visai mārketinga situācijai vai {{ o30.duration }} vienam konkrētam jautājumam. Rezultāts ir prioritātes un konkrēti nākamie soļi. Īsā sesija: {{ o30.price }}&nbsp;€ + PVN; ilgākam darbam ir {{ bundle.sessions }} sesiju komplekts par {{ bundle.price }}&nbsp;€ + PVN.</p>
         <a class="arrow-link" href="#piesakies">Rezervēt konsultāciju</a>
       </div>
     </div>
@@ -139,10 +139,10 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
       <aside class="course-aside">
         <div class="course-card">
           <p class="price-label">Konsultācijas cena</p>
-          <p class="price">€{{ o60.price }} <small>+ PVN / h</small></p>
+          <p class="price">{{ o60.price }}&nbsp;€ <small>+ PVN / h</small></p>
           <ul class="course-facts">
-            <li><span>Īsā sesija</span><span>€{{ o30.price }} + PVN / 30 min</span></li>
-            <li><span>{{ bundle.sessions }} sesiju komplekts</span><span>€{{ bundle.price }} + PVN</span></li>
+            <li><span>Īsā sesija</span><span>{{ o30.price }}&nbsp;€ + PVN / 30 min</span></li>
+            <li><span>{{ bundle.sessions }} sesiju komplekts</span><span>{{ bundle.price }}&nbsp;€ + PVN</span></li>
             <li><span>Ilgums</span><span>{{ o30.duration }} vai {{ o60.duration }}</span></li>
             <li><span>Pirms zvana</span><span>Izskatām Tavus materiālus</span></li>
             <li><span>Rezultāts</span><span>Prioritātes un nākamie soļi</span></li>
@@ -228,8 +228,8 @@ service: { name: "Mārketinga konsultācijas", serviceType: "Mārketinga konsult
           <p>Iepazīšanās zvans ir domāts tiem, kas apsver sadarbību ar mums kā aģentūru: tajā izrunājam, vai un kā varam palīdzēt. Konsultācija ir maksas pakalpojums: {{ o30.duration }} vai {{ o60.duration }} veltām tikai Tavai situācijai, un Tu aizej ar prioritātēm un konkrētiem nākamajiem soļiem neatkarīgi no tā, vai pēc tam strādāsim kopā.</p>
         </div></details>
         <details class="faq"><summary>Cik tas maksā un cik ilgi notiek?</summary><div>
-          <p>€{{ o60.price }} + PVN par stundu vai €{{ o30.price }} + PVN par īso sesiju. Formātu izvēlies Tu: {{ o30.duration }} ir pietiekami vienam konkrētam jautājumam, {{ o60.duration }} ļauj iziet cauri visai mārketinga situācijai.</p>
-          <p>Ja paredzi ilgāku darbu, ir {{ bundle.sessions }} sesiju komplekts par €{{ bundle.price }} + PVN: tas ir par {{ o60.price * bundle.sessions - bundle.price }} € lētāk nekā {{ bundle.sessions }} atsevišķas stundas. Sesijas izmanto sev ērtā tempā.</p>
+          <p>{{ o60.price }}&nbsp;€ + PVN par stundu vai {{ o30.price }}&nbsp;€ + PVN par īso sesiju. Formātu izvēlies Tu: {{ o30.duration }} ir pietiekami vienam konkrētam jautājumam, {{ o60.duration }} ļauj iziet cauri visai mārketinga situācijai.</p>
+          <p>Ja paredzi ilgāku darbu, ir {{ bundle.sessions }} sesiju komplekts par {{ bundle.price }}&nbsp;€ + PVN: tas ir par {{ o60.price * bundle.sessions - bundle.price }} € lētāk nekā {{ bundle.sessions }} atsevišķas stundas. Sesijas izmanto sev ērtā tempā.</p>
         </div></details>
         <details class="faq"><summary>Kā notiek rezervācija un apmaksa?</summary><div>
           <p>Izvēlies formātu un apmaksā ar karti.{% if booking.consultation.calendarUrl %} Uzreiz pēc apmaksas nokļūsti kalendārā, kur izvēlies sev ērtu laiku, un apstiprinājumu saņem e-pastā.{% else %} Pēc apmaksas sazināsimies vienas darba dienas laikā un saskaņosim Tev ērtu laiku.{% endif %} Uzņēmumiem izrakstām rēķinu ar bankas pārskaitījumu: tādā gadījumā vispirms uzraksti mums.</p>

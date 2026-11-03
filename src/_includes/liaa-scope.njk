@@ -6,7 +6,7 @@
     <thead><tr><th scope="col">Pozīcija</th><th scope="col">Apraksts</th><th scope="col">Rezultāts</th><th scope="col">Termiņš</th></tr></thead>
     <tbody>
       {%- for row in o.scope %}
-      <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td><td>{{ row[3] }}</td></tr>
+      <tr><td data-label="Pozīcija">{{ row[0] }}</td><td data-label="Apraksts">{{ row[1] }}</td><td data-label="Rezultāts">{{ row[2] }}</td><td data-label="Termiņš">{{ row[3] }}</td></tr>
       {%- endfor %}
     </tbody>
   </table>

@@ -119,4 +119,4 @@ Problēma nav laiks, bet secība. Ja kādu no šiem soļiem izdari nepareizā se
 
 **Ja konts jau strādā, bet rezultāts nesanāk**, sāc ar [individuālo konsultāciju](/marketinga-konsultacijas/). Stundas laikā izskatām kontu un konkrētā sarakstā pasakām, kur aiziet nauda. Šis skats no malas maksā {% offer "60" %}.
 
-**Ja gribi, lai kontu vada kāds cits**, apskati [mūsu pakalpojumus](/pakalpojumi/). Kā izvēlēties partneri un ko jautāt pirms līguma, rakstīts rakstā [Google reklāmas aģentūra](/google-reklamas-agentura/).
+**Ja gribi, lai kontu vada kāds cits**, apskati [mūsu Google Ads pakalpojumus](/google-ads-pakalpojumi/). Kā izvēlēties partneri un ko jautāt pirms līguma, rakstīts rakstā [Google reklāmas aģentūra](/google-reklamas-agentura/).

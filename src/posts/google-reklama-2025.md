@@ -128,4 +128,4 @@ Mārketinga Skolas Google reklāmas speciālists Kristaps Apeināns ar Google re
 
 Ja gribi to apgūt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā {% offer "google-ads-kurss", "cadence" %}, {% offer "google-ads-kurss", "hours" %} no atslēgvārdiem līdz konversiju uzskaitei par {% offer "google-ads-kurss" %}. Ja Meta reklāma Tev ir tikpat aktuāla, sāc ar [Meta reklāmas kursu](/meta-reklamas-kurss/) vai apskati [visus kursus](/digitala-marketinga-kursi/).
 
-Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Par to stundu maksāsi {% offer "60" %}. Visu kampaņu vadīšanu varam uzņemties mēs. Sk. [pakalpojumus](/pakalpojumi/).
+Ja gribi vispirms saprast, vai šis kanāls Tavam biznesam vispār ir īstais, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/). Par to stundu maksāsi {% offer "60" %}. Visu kampaņu vadīšanu varam uzņemties mēs, un kā tas notiek, apskati lapā [Google Ads pakalpojumi](/google-ads-pakalpojumi/).

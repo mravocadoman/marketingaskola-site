@@ -92,7 +92,10 @@
           }
           if (child.nodeType !== 3 || !child.textContent.trim()) return;
           var frag = document.createDocumentFragment();
-          // [ \t\n]+, not \s+: a no-break space keeps "7 noteikumi" one word
+          // [ \t\n]+, not \s+: a no-break space keeps "7 noteikumi" one word.
+          // Never put a comma straight after </em> in a hero h1: the h1 wraps
+          // with text-wrap: balance, which may break before it and leave the
+          // comma alone at the start of a line (SEO page, 3 Nov 2026).
           child.textContent.split(/([ \t\n\r]+)/).forEach(function (part) {
             if (!part) return;
             if (/^[ \t\n\r]+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }

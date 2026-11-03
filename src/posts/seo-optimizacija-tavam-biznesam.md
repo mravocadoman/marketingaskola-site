@@ -86,7 +86,7 @@ Savukārt **SEO (Search Engine Optimization)** ir veids, kā **organiski (bez ma
 
 **Piemērs:** Ja meklē "frizieris Rīgā", meklētājā pirmie 1 vai 2 rezultāti būs apmaksātas reklāmas (SEM) ar norādi "Reklāma". Zem tām būs organiskie rezultāti, proti, lapas, kas ir optimizētas ar SEO palīdzību.
 
-Abi kanāli sader kopā: par maksas pusi lasi rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/), bet organisko pusi sedz mūsu [SEO pakalpojumi](/seo-pakalpojumi/).
+Abi kanāli sader kopā: par maksas reklāmu lasi rakstā [cik maksā Google reklāma](/cik-maksa-google-reklama/), bet organisko meklēšanu sakārto mūsu [SEO pakalpojumi](/seo-pakalpojumi/).
 
 Apvienojot SEO un SEM, Tu vari palielināt savu redzamību un sasniegt klientus gan uzreiz, gan ilgtermiņā.
 

@@ -8,7 +8,7 @@
       "submit": "Nosūtīt pieteikumu",
       "note": "Atbildēsim 1 darba dienas laikā. Ja apsver sadarbību, piedāvāsim bezmaksas 20 min iepazīšanās zvanu.",
       "successTitle": "Paldies, pieteikums saņemts.",
-      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
       "fields": [
         {
           "name": "name",
@@ -153,7 +153,7 @@
       "submit": "Saņemt cenu piedāvājumu",
       "note": "Nosūtām pozīciju sarakstu ar cenām bez PVN 1 darba dienas laikā, pa e-pastu, lai sarakste būtu dokumentēta cenu aptaujai.",
       "successTitle": "Paldies, pieprasījums saņemts.",
-      "successBody": "Cenu piedāvājumu ar pozīcijām un cenām bez PVN nosūtām 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai zvani +371 26673384.",
+      "successBody": "Cenu piedāvājumu ar pozīcijām un cenām bez PVN nosūtām 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai zvani +371 26673384.",
       "fields": [
         {
           "name": "company",

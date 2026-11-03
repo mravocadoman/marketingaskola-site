@@ -71,7 +71,7 @@ faq:
       </div>
       <p class="lead">Izpildes termiņš ir {{ o.term }}. LIAA norāda, ka plānā var iekļaut darbības, ko sāk un īsteno gadā, par kuru plāns tiek iesniegts, bet darbības, ko nevar pabeigt līdz gada beigām, jāpabeidz līdz {{ p.claimBy }}, kas ir maksājuma pieprasījuma iesniegšanas termiņš. Jo ātrāk ir šīs četras lietas, jo ātrāk tas sākas.</p>
     </div>
-    <ul class="tick-list">
+    <ul class="tick-list tick-list--2col">
       {%- for i in o.inputs %}
       <li>{{ i }}</li>
       {%- endfor %}
@@ -152,14 +152,15 @@ faq:
   </div>
 </section>
 
+{#- The form above is the primary action; this band only offers alternatives, so no second cyan button in one viewport (3 Nov 2026). #}
 <section class="cta-band">
   <div class="container cta-band-inner">
     <div>
       <h2>Vajag arī partnerus, ne tikai materiālus?</h2>
-      <p>Otrs pakalpojums ir strukturēta ārvalstu partneru meklēšana: mērķa tirgus, kvalificēta kontaktu datubāze un vismaz trīs notikušas tikšanās. Abi iekļaujas viena gada atbalsta limitā. Jautājumi: <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a>, +371 26673384.</p>
+      <p>Otrs pakalpojums ir strukturēta ārvalstu partneru meklēšana: mērķa tirgus, kvalificēta kontaktu datubāze un vismaz trīs notikušas tikšanās. Abi iekļaujas viena gada atbalsta limitā. Jautājumi: <a href="mailto:rihards@marketingaskola.lv">rihards@marketingaskola.lv</a>, +371 26673384.</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="#pieteikums">Saņemt cenu piedāvājumu</a>
+      <a class="btn btn--ghost" href="#pieteikums">Saņemt cenu piedāvājumu</a>
       <a class="btn btn--ghost" href="/eksporta-telemarketings/">Partneru meklēšana</a>
     </div>
   </div>

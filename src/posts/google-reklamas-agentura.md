@@ -138,6 +138,8 @@ Vispirms pārbaudi konversiju uzskaiti un meklējumu atskaiti. Ļoti bieži prob
 
 Laba aģentūra ir vērtīga tad, kad tā atbild uz jautājumiem, kurus Tu vēl nebiji uzdevis. Slikta, tad, kad tā parāda skaistas atskaites bez sakara ar pārdošanu.
 
+Ja pēc šī raksta gribi, lai Google Ads kontu vada mūsu komanda, apskati [Google Ads pakalpojumus](/google-ads-pakalpojumi/): konts paliek reģistrēts Tava uzņēmuma vārdā, un atskaite sākas ar klienta cenu.
+
 Ja neesi drošs, vai Tev vajag aģentūru vai vienkārši sakārtotu kontu, to var izrunāt [individuālā konsultācijā](/marketinga-konsultacijas/); tas ir maksas pakalpojums, {% offer "60" %} par stundu. Ja gribi to darīt pats, [Google Ads kurss](/google-ads-kurss/) notiek tiešsaistē mazā grupā, ilgst {% offer "google-ads-kurss", "hours" %}, maksā {% offer "google-ads-kurss" %} un aptver tieši tos soļus, par kuriem šis raksts. Meta reklāmu apgūsi [Meta reklāmas kursā](/meta-reklamas-kurss/), bet visu klāstu skati [kursu sadaļā](/digitala-marketinga-kursi/).
 
 Apskati arī [mūsu veiksmes stāstus](/portfolio/) un [pakalpojumu klāstu](/pakalpojumi/).

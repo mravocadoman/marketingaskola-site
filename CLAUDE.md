@@ -4289,6 +4289,24 @@ potentially apply for."* Design and fit definition:
   what is NOT a fit (event technical production such as the Liepāja 2027
   tender, printing, IT systems), is the prompt in the node *Atlasīt
   kandidātus*: change it there.
+- **Narrowed on 3 Nov 2026 to the core only** (owner: *"keep only the most
+  relevant ones... vides reklāma we dont do for sure. Focus on Marketing
+  education; automations, digital ads mostly"*): digital ads (incl. digital
+  media planning and buying), marketing education, marketing automation and AI
+  for marketing. Outdoor, print, TV, radio, PR, events, websites or video on
+  their own are out, and mixed media buying stays only when online is clearly
+  the main part. Only score-3 fits are mailed. On 26 Oct-1 Nov it kept
+  Jūrmala's digital media tender and dropped Rīga's media buying (half radio
+  and outdoor), LDVC's health campaign and Čehova teātris' outdoor ads.
+- **The notice text cannot tell you whether we qualify.** Read the nolikums
+  before bidding: agency tenders ask for a minimum average turnover, named
+  Meta, Google and TikTok certificates and dated campaign proof, and a gap can
+  usually be closed only with a joint bid. SIA Stonks' own turnover is public:
+  data.gov.lv dataset `gada-parskatu-finansu-dati` (CKAN `datastore_search`
+  by `legal_entity_registration_number`, then the P&L resource by
+  `statement_id`). EIS documents download with a plain GET once the file id is
+  known; the id appears only after the page's own `viewDocument()` opens the
+  document modal.
 - **To re-run an old week:** set `TEST_END` in *Nedēļas faili* to the Monday
   after it, disable *Nosūtīt Rihardam*, run by hand, then put both back. Never
   publish with `TEST_END` set.
@@ -4302,6 +4320,136 @@ potentially apply for."* Design and fit definition:
 - **Not built:** reading the nolikums for turnover or reference requirements, a
   trainee category, and a dead-man's switch for a cron that stops (the same gap
   as the uptime monitor).
+
+## Client CRM (3 Nov 2026)
+
+Owner: *"Build a CRM ... that logs all current / past clients based from fireflies
+and whisperflow calls / schedules and emails in rihards@marketingaskola.lv and
+updates them automatically / reengages if we havent talked with them in a while."*
+Nothing of it lives in this repo; this section is the map.
+
+- **Store: Notion database "Mārketinga Skola clients"** in Business Hub
+  (`5ad217e7b0f642c2b555bf2d35c5a5e9`, data source
+  `collection://0d83017e-c13c-4bd4-8c74-90479fdb6ef1`). One page per client, call
+  notes as dated History bullets, newest first. Views: "Needs contact", a
+  board by Status, "Upcoming meetings", "Top clients" and "Open next steps". The empty "Contacts and CRM" template in Personal Hub is
+  unrelated.
+- **"Needs contact" is a CHECKBOX the daily task sets, not a formula.** Notion
+  views silently drop a filter on a formula, and SQL queries cannot read
+  formulas either. "Days since contact" is a formula for display only.
+- **Daily scheduled task `client-crm`** (`~/.claude/scheduled-tasks/client-crm/`,
+  09:00, state in `state.json`). It reads Wispr Flow, Fireflies (only when its
+  connector is signed in), the rihards@ calendar, rihards@ mail and the invoicing
+  app, updates pages, and writes **at most 3 Gmail drafts a day, never sends**.
+  Nudge after: active 30 days, prospect 21, partner 60, past client 120.
+- **rihards@ mail goes through n8n, not the Gmail connector.** The Claude Gmail
+  connector is signed in as support@starfleetportraits.com. *Mārketinga Skola —
+  CRM Gmail* (`RroQybrX2kAAHetZ`) does contacts, message search and drafts with the
+  "Marketinga skola | Gmail account 2" credential. **It is unpublished on purpose**:
+  the task runs it with MCP manual executions, so no public URL can read the
+  mailbox.
+- **Wispr Flow mixes clients with private sessions** (coaching, therapy, the
+  accountant, team calls). The task logs only client, prospect and partner
+  calls; on 3 Nov 6 of 13 recordings qualified.
+- **The backfill, 3 Nov:** 71 rows. 41 clients from the invoicing app (26 of them
+  have no invoices there, so they carry no dates and are never nudged until
+  something new happens; 12 got a contact and a date in the second sweep below), about 20 prospects from Calendly consultation-booking
+  forms, partners from calendar and calls. Internship applicants, a thesis
+  interview and vendors were left out. Five empty-form bookings carry
+  *Do not nudge* until someone checks who they are.
+- **Same day: a six-month sweep and the Fireflies import** took it to 80 rows. Sent
+  mail since May, the website leads table and Fireflies' 37 recordings (signed in
+  that day; summaries plus an `app.fireflies.ai/view/<id>` link on each page).
+  Fireflies only ever recorded calendar meetings and stopped on 13 Oct 2026, when
+  Wispr Flow took over; the task also reads its recap emails if the connector
+  ever drops. Course participants (LIFT, Thinkific, the monthly Meta course) are
+  NOT CRM rows unless they are a company with an ongoing relationship.
+- **The task also reads the website leads table** (`mpmOl8vcDnghCunc`) and skips
+  tests and brand-impersonation spam: a "KitchenAid" partnership offer from
+  kitchenaidglobal.us arrived through the contact form on 22 Oct 2026.
+- **Received mail from before mid-2025 carries a SENT label in rihards@**
+  (a mailbox migration), so the label cannot tell direction. The helper read it
+  and counted clients' replies as Rihards's own; since 3 Nov 2026 both of its code
+  nodes decide by the From address. `in:sent -from:me after:2025/06/01` returns
+  nothing, so only older mail is affected. `category:primary` matches nothing in
+  this mailbox either: filter with `-category:promotions` and the other negatives.
+- **Wide sweeps pass `minSent`/`minReceived`** to the contacts action. The Dec 2025
+  cold outreach ("100% līdzfinansēti mārketinga kursi", Woodpecker) and the LIFT
+  course mailings otherwise fill a 2 000-message window with one-way mail, and
+  the window silently ends weeks short of its start date.
+- **Second sweep, 3 Nov 2026: Jan 2025 to Apr 2026, received mail only.** It found
+  ten relationships the first pass missed, among them Baltyre (Meta lead-gen test),
+  Dares4Us (the Kickstarter video), Paracelsus (Meta ads Jul to Oct 2025), CLEANTECH
+  LATVIA (members' lecture) and six leads that stalled after an offer or a call. The 26 invoice-app clients
+  with no invoices turned out to be 2023 to 2025 company course orders; 12 now
+  have a contact, the rest have no mail in rihards@. 90 rows after it.
+- **Vendors look like clients in a sweep.** Aleph Holding (ad payment partner),
+  Capital (Apple repairs), Sistering and vDisain (selling to us), notscheduled.com
+  (a LinkedIn agency Rihards booked) and Open.lv's school mailings are not rows.
+  FiveFox Media (Pixel and CAPI session, audit docs, Oct 2025) is unclear and left out.
+- **Newsletters from a client's domain are not contact.** RBS sends course
+  announcements from lift@rbs.lv and info@rbs.lv; the task counts an email only
+  when Rihards sent one or it is written to him personally.
+- **Wispr Flow does not record calls on the phone.** Notetaker runs on Mac and
+  Windows only and captures what plays on the computer (Meet, Zoom, Teams,
+  WhatsApp, FaceTime) plus in-person talk through the laptop mic. Fireflies only
+  ever recorded calendar meetings, so dropping it loses nothing.
+
+## Services pass: Google Ads page, proof on the hub, fixes from a design audit (3 Nov 2026)
+
+Owner: *"for Mārketinga skola services on website, keep improving them in both
+content and design and keep going for as long as you can."* Priorities came
+from Search Console and GA4 (read in the owner's Chrome, read-only; the numbers
+are in the vault, not here) and a viewport-by-viewport design audit.
+
+- **`/google-ads-pakalpojumi/` is the Google Ads service page.** About 2 800
+  impressions a quarter for "google ads pakalpojumi", "google reklāmu
+  pakalpojumi" and the agency queries landed on the blog post
+  `/google-reklamas-agentura/`, while the homepage already said "vadām Meta un
+  Google reklāmas" and no page sold it. Every position on it is published in
+  that post (the client owns the account, reports start from the cost of a
+  client, the first three months, no guaranteed first place, fee and budget
+  shown apart) or on the Google Ads course page (Kristaps). **Deliberately
+  absent: the Meta no-fee clause, the Meta ad-spend floor and the three-month
+  term**, which are Meta terms only, and any price or minimum budget, which
+  the owner has not set. **Owner sign-off needed**, like `/majaslapu-izstrade/`.
+  It is in the nav, the footer, the hub (tile 02, so the grid is a full 3x3),
+  `llms.txt`, and the four Google posts link it instead of `/pakalpojumi/`.
+  Its header is `motifs/google-ads.njk` from the slot `hero-google-ads`
+  (a browser with paid search above Shopping cards, plus a result chart),
+  ground-matched and built as pieces like every other header.
+- **The nav says "Facebook un Instagram reklāma"**, not "Meta un Instagram"
+  (Meta includes Instagram, and people search "facebook un instagram
+  reklāma"). The Meta page's h1 now leads with the same phrase.
+- **`/pakalpojumi/` has proof and questions**: 02 Rezultāti (four stats, each
+  naming its client, quoted from the portfolio; two cooperation reviews; the
+  rating badges) and 04 Jautājumi. Prices in the answers render from the data
+  files.
+- **The automation page's example is the AI automation test**, not the page
+  check, which the site stopped offering on 11 Oct. The flow and the "Ko robots
+  pārbauda" card follow workflow `4YG4HJztvL4OobWv`; change both together.
+- **The SEO page shows what was done on this site** (03 Piemērs): kept URLs and
+  301s, Schema.org, git-dated sitemap, IndexNow, rewritten descriptions, and
+  the real top of `/llms.txt`. No traffic claim: there is still no SEO result
+  to publish.
+- **Never put a comma straight after `</em>` in a hero h1.** Hero h1s wrap with
+  `text-wrap: balance`, and Chrome will break before that comma even as plain
+  text after the kinetic word boxes, leaving it alone at the start of a line.
+  Reword instead ("…atved nevis pozīcijas, bet <em>klientus</em>.").
+- **A page that ends with a form has no cyan button in its closing band**
+  (video, automation, the three LIAA pages): the form is the primary action,
+  and two cyan buttons in one viewport break the budget.
+- **Prices put the euro sign after the number** everywhere, including
+  `booking.njk` ("90 € + PVN", never "€90").
+- Smaller, all in `style.css` with a comment: `.stats--row + *` gets top
+  margin; `.arrow-link::after` spaces the arrow with a margin (a leading space
+  inside an inline-block collapses); band steps look the same whether the
+  band was written by hand (`.sec--band`) or added by the transform
+  (`.sec--alt`); figure descriptions are body-sized and lose their reserved
+  lines on phones; booking cards keep the facts under the price
+  (`.cell > .price` must not grow); `.scope` stacks into labelled blocks under
+  640px; the automation try-card is sticky on desktop; `.tick-list--2col`.
+- The phone number is written with a no-break space so "+371" never strands.
 
 ## Copy rules
 

@@ -1337,6 +1337,14 @@
       "quality": "high",
       "alt": "Infografika no izgrieztām papīra formām: četri soļi, kā pārbaudīt Meta reklāmu kontu pirms Black Friday",
       "prompt": "Headline: «Audits pirms Black Friday četros soļos». FOUR items in one row. «01» «Pasūtījumi» «Salīdzini ar Meta skaitli» - emblem: two pale grey paper receipts side by side, one taller, with a cyan check between them. «02» «Reklāmas» «Apnikušās nomaini ar testu» - emblem: a navy paper card swapped for a fresh pale grey card by a curved arrow. «03» «Budžets» «+20 % ik pēc 3 dienām» - emblem: four navy paper steps rising, the top step cyan. «04» «Apturēšana» «Noteikumi pirms izpārdošanas» - emblem: a navy paper stop sign with a pale grey hand."
+    },
+    {
+      "id": "hero-google-ads",
+      "page": "google-ads-pakalpojumi",
+      "aspect": "landscape",
+      "alt": "Meklēšanas rezultātu lapa pārlūka logā ar apmaksāto rezultātu augšā un produktu kartītēm, blakus stabiņu diagramma.",
+      "prompt": "Flat vector still life on solid #020d1c navy, mid-shot, objects drawn large and whole: a wide browser window drawn as a plain cool-grey #8ba3bd rectangle with sharp square corners and a thin darker top strip holding three small square dots at its left end; inside the window, near the top, a long off-white #f2f5f8 search field with one small solid cyan #03c3f8 square at its left end; beneath the search field, a row of four equal square-cornered product cards, each an off-white block standing on a short dark slate #3b4f6b bar; beneath the cards, three long horizontal dark slate result bars stacked downward, the topmost one marked at its left end by a small solid cyan square as the paid placement. To the right of the window and overlapping its lower right corner, a square-cornered dark slate #3b4f6b panel standing in front of it, holding four solid vertical bars rising from left to right, three cool grey and the tallest one solid cyan. A modest dark margin surrounds the group; nothing is clipped by the frame. Every corner in the picture is a sharp square corner. Purely flat colour blocking, no outlines around solid objects, no gradients, no glow, no depth, no shadows, no blur, no white background anywhere, no people, hands, faces or logos, no text, letters, numbers or arrows of any kind. Cyan covers no more than five percent of the frame, only the small square in the search field, the paid-result marker and the tallest bar.",
+      "rationale": "Header for the Google Ads service page (3 Nov 2026): paid search above results plus Shopping cards and a result chart, so it reads as managed Google Ads rather than the course's bid-over-query motif it borrowed at first."
     }
   ]
 }

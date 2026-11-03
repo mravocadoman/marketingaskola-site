@@ -13,7 +13,7 @@
   <div class="cell">
     <span class="cell-idx">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
     <h3>{{ o.label }}</h3>
-    <p class="price">€{{ o.price }} <small>+ PVN · kopā {{ o.price | gross(booking.vatRate) }} €</small></p>
+    <p class="price">{{ o.price }}&nbsp;€ <small>+ PVN · kopā {{ o.price | gross(booking.vatRate) }} €</small></p>
     <ul class="course-facts">
       <li><span>Ilgums</span><span>{{ o.duration }}</span></li>
       <li><span>Piemērota</span><span>{{ o.best }}</span></li>
