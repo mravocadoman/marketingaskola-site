@@ -14,7 +14,7 @@ Iedomājies pirmdienas rītu: atver Ads Manager un atkal domā: „Kuras reklām
 
 ## Pieraksti savas robežas, pirms dod Claude atļauju
 
-Claude vajag nevis vispārīgu uzdevumu „uzlabo reklāmas”, bet skaidras robežas. Sāc ar saviem finanšu rādītājiem.
+Claude vajag nevis vispārīgu uzdevumu „uzlabo reklāmas”, bet skaidras robežas.
 
 Pieraksti kopā ar datumu:
 
@@ -22,13 +22,11 @@ Pieraksti kopā ar datumu:
 * **Mērķa pirkuma cenu:** cik Tu vēlies maksāt reklāmā par vienu pirkumu.
 * **Konta dienas budžeta griestus:** cik daudz viss reklāmas konts drīkst tērēt dienā bez Tavas papildu atļaujas.
 
-Claude piemēros Tavus skaitļus, bet pats nevarēs pateikt, vai finanšu robežas ir pareizas. Rūpīgākais darbs būs nevis prompta kopēšana, bet savu robežu noteikšana.
+Rūpīgākais darbs būs nevis prompta kopēšana, bet savu robežu noteikšana.
 
 Darbam vajadzīgs Claude plāns ar ieplānotiem uzdevumiem, savienojums Meta datu lasīšanai un atsevišķs savienojums reklāmu mainīšanai. Ieplānots uzdevums ir Claude sesija, kas pati sākas noteiktā laikā.
 
-Rihards datu lasīšanai izmanto Windsor.ai. Ja Tu uzturi dashboard jeb pārskatu paneli, uzdevumā vari iekļaut arī paneļa atjaunošanu.
-
-Rēķinies ar Claude plāna un savienojumu izmaksām, kā arī reklāmas budžetu. Programmēt nav vajadzīgs, taču izstrādātājs var palīdzēt pieslēgt reklāmas kontu, ja savā darbā Claude savienojumus vēl neizmanto.
+Rihards datu lasīšanai izmanto Windsor.ai. Programmēt nav vajadzīgs.
 
 {% infographic { id: "info-pirmdienas-reklamu-parskats-ar-claude", title: "Pirmdienas pārskats četros soļos", items: [
   { label: "Secība", text: "Vispirms pirkuma izmaksas" },
@@ -39,7 +37,7 @@ Rēķinies ar Claude plāna un savienojumu izmaksām, kā arī reklāmas budžet
 
 ## Vērtē pēc pirkuma cenas, nevis pēc visiem klikšķiem
 
-Pirmdienas pārskatā saglabā vienādu rādītāju secību. Reklāmu vērtē pēc pārdošanas, nevis pēc aktivitātes ap reklāmu.
+Reklāmu vērtē pēc pārdošanas, nevis pēc aktivitātes ap reklāmu.
 
 * **Pirkuma cena:** cik reklāmā izmaksāja viens pirkums. Galvenais lēmuma rādītājs.
 * **Sāktie checkout:** vai cilvēki sāk noformēt pirkumu jau tad, kad pirkumu vēl ir maz.
@@ -47,8 +45,6 @@ Pirmdienas pārskatā saglabā vienādu rādītāju secību. Reklāmu vērtē p�
 * **Link CTR un CPM:** saites klikšķu īpatsvars un reklāmas rādīšanas izmaksu rādītājs. Abi ir palīgrādītāji.
 
 Meta kopējie „clicks”, „CTR” un „CPC” ietver arī reakcijas un profila klikšķus. Pēc kopējiem klikšķiem vari kļūdaini palielināt budžetu reklāmai, kas cilvēkiem patīk, nevis reklāmai, kas pārdod.
-
-Arī lēts saites klikšķis pats par sevi nav iemesls palielināt budžetu. Sāc ar pirkuma cenu.
 
 ## Nosaki, kad reklāmu apturēt un kad nogaidīt
 
@@ -69,16 +65,16 @@ Budžetu palielini kampaņai, kuras pirkuma cena katrā no pēdējām 3 pilnajā
 
 ## Salīdzini ar Riharda kontu, nevis pārņem viņa mērķus
 
-Riharda konta rādītāji mērīti **2026. gada oktobra sākumā**. Tava konta skaitļi atšķirsies, tāpēc izmanto salīdzinājumu, lai saprastu atšķirību starp rezultātiem, nevis noteiktu savus mērķus.
+Riharda konta rādītāji mērīti **2026. gada oktobra sākumā**. Tava konta skaitļi atšķirsies.
 
 | Rādītājs | Reklāmas ar labiem rezultātiem | Apturētās reklāmas |
 | :--- | :--- | :--- |
 | Link CPC | No 0,44 līdz 0,62 $ | No 0,98 līdz 1,84 $ |
 | CPM | No 11 līdz 15 $ | No 18 līdz 31 $ |
 
-Riharda kontā ar pirkumu beidzās no 15 līdz 38 % sākto checkout. Tāpēc robeža zem 10 % bija ievērojami zemāka par kontā novēroto diapazonu.
+Riharda kontā ar pirkumu beidzās no 15 līdz 38 % sākto checkout.
 
-Riharda kontā checkout sākās aptuveni pēc katra desmitā saites klikšķa. Ja Tavā kontā checkout sāk daudz retāk, palielini 30 klikšķu slieksni. Neapturi reklāmas pēc sveša konta ritma.
+Riharda kontā checkout sākās aptuveni pēc katra desmitā saites klikšķa. Ja Tavā kontā checkout sāk daudz retāk, palielini 30 klikšķu slieksni.
 
 <!-- gate -->
 
@@ -95,8 +91,6 @@ Par katru aktīvo reklāmu pēdējās 7 dienās parādi iztērēto budžetu, sai
 ```
 
 Salīdzini vairāku reklāmu skaitļus ar Ads Manager. Tikai tad, kad skaitļi sakrīt, pievieno savienojumu, kas ļauj apturēt reklāmas, mainīt budžetu un palaist jaunu testu.
-
-Ja savienojums neatpazīst datu lauku, Claude jāmeklē īstais lauka nosaukums savienojuma dokumentācijā vai lauku sarakstā. Lauka nosaukumu nedrīkst uzminēt.
 
 ## Iekopē promptu un aizpildi sava konta datus
 
@@ -159,8 +153,6 @@ Atsūti īsu pārskatu ar šādām daļām:
 Skaidri nosauc nepārbaudīto informāciju. Nekad neaizstāj trūkstošus datus ar minējumu.
 ```
 
-Pirms uzdevuma saglabāšanas pārbaudi, vai promptā nav palikušas neaizpildītas figūriekavas. Īpaši pārbaudi budžeta griestus un pārskata saņēmēju.
-
 ## Izmēģini pārskatu bez atļaujas mainīt reklāmas
 
 Ieplāno Claude uzdevumu pirmdienas rītam. Pirmajās palaišanas reizēs prompta pašā sākumā pievieno:
@@ -171,19 +163,15 @@ Ieplāno Claude uzdevumu pirmdienas rītam. Pirmajās palaišanas reizēs prompt
 
 Salīdzini Claude ieteikumus ar saviem lēmumiem. Ja nepiekrīti ieteikumam, precizē noteikumu ar skaitli, nevis pievieno neskaidru prasību „vērtē uzmanīgāk”.
 
-Piemēram, 2 dienas veca reklāma ar 20 saites klikšķiem vēl nav pietiekami pārbaudīta neatkarīgi no iztērētā budžeta. Pārskatā jābūt skaidram lēmumam nogaidīt.
-
 Pārej pie automātiskām izmaiņām tikai pēc pilna pārskata izlasīšanas, kad piekrīti katrai ieteiktajai darbībai.
 
 ## Dod pastāvīgo atļauju un lasi neatrisinātos jautājumus
 
 Kad izmēģinājuma pārskats sakrīt ar Tavu vērtējumu, izdzēs norādi neko nemainīt. Claude drīkstēs rīkoties noteikumu robežās un pēc tam ziņot par izmaiņām.
 
-Tavā pirmdienas pārskatā īpašu uzmanību prasa jautājumi, kuriem vajadzīgs Tavs lēmums, un informācija, ko Claude nevarēja pārbaudīt. Nepārbaudītais nav pārskata sīkums.
+Tavā pirmdienas pārskatā īpašu uzmanību prasa jautājumi, kuriem vajadzīgs Tavs lēmums, un informācija, ko Claude nevarēja pārbaudīt.
 
 Ja vēl nevēlies pieslēgt automātiskas izmaiņas, sāc ar Ads Manager: saliec blakus pirkuma cenu, sākto checkout skaitu un link CPC. Sakārto reklāmas pēc pirkuma cenas un atzīmē nepārbaudītās reklāmas pēc vecuma un klikšķu skaita.
-
-Vispirms izproti lēmumu secību savā kontā. Pēc tam uztici Claude atkārtojamo darbu.
 
 Avots: [Riharda Zeilas ceļvedis par pirmdienas reklāmu pārskatu ar Claude](https://rihardszeila.com/blog/monday-ads-review-with-claude), kura pamatā ir viņa paša iknedēļas uzdevums.
 

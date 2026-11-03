@@ -70,7 +70,7 @@ if (!fs.existsSync(rel(postFile))) {
   const SYSTEM = [
     'Tu raksti Mārketinga Skolas (Latvijas digitālā mārketinga aģentūra) bloga rakstu, kas ir bezmaksas materiāls: praktisks ceļvedis, ko lasītājs saņem, kad sociālajos tīklos komentē atslēgvārdu.',
     ...LV_RULES,
-    'Formāts: Markdown bez virsraksta H1 (virsraksts ir atsevišķi). Ievads 2-3 teikumos, tad 5 līdz 8 sadaļas ar "## " virsrakstiem, īsas rindkopas, saraksti, kur ir soļi. Instrukcijas, ko lasītājs kopēs modelim, ieliec ```text blokos un raksti tās latviski. Tabulas Markdown formātā, ja salīdzina. Nebeidz ar aicinājumu pirkt pakalpojumu: to pievienosim paši. 900 līdz 1600 vārdu.',
+    'Formāts: Markdown bez virsraksta H1 (virsraksts ir atsevišķi). Ievads 2-3 teikumos, tad 5 līdz 8 sadaļas ar "## " virsrakstiem, īsas rindkopas, saraksti, kur ir soļi. Instrukcijas, ko lasītājs kopēs modelim, ieliec ```text blokos un raksti tās latviski. Tabulas Markdown formātā, ja salīdzina. Nebeidz ar aicinājumu pirkt pakalpojumu: to pievienosim paši. 700 līdz 1100 vārdu: labāk īsāk, jo tekstu pēc tam vēl pārbauda cilvēks.',
   ].join('\n');
   const user = [
     `Virsraksts: ${spec.title}`,
