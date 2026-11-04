@@ -1,29 +1,35 @@
 ---
 layout: page.njk
-title: "Mājaslapu un landing page izstrāde | Mārketinga Skola"
-description: "Mājaslapu un landing page izstrāde: teksts, dizains, izstrāde un mērīšana vienā komandā. Lapa, kas reklāmas klikšķus pārvērš pieteikumos."
+title: "Mājaslapu izstrāde ar AI | Mārketinga Skola"
+description: "Mājaslapu izstrāde ar AI: pirmo dizaina versiju redzi dažu dienu laikā, vienkāršu lapu palaižam pāris nedēļās. Fiksēta cena, teksts, dizains un mērīšana."
 permalink: "/majaslapu-izstrade/"
 crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
-service: { name: "Mājaslapu un landing page izstrāde", serviceType: "Mājaslapu izstrāde" }
+service: { name: "Mājaslapu izstrāde ar AI", serviceType: "Mājaslapu izstrāde" }
 image: "/img/gen/hero-majaslapas.webp"
 ---
-{#- Added 10 Oct 2026 at the owner's request: landing pages and full websites
-    as ONE service. Scope, prices, timelines and platforms are NOT stated on
-    purpose - the owner has not set them yet, and this page follows the AI
-    page's rule: describe the work, promise no number. The example section
-    cites only facts recorded in CLAUDE.md about this site's own rebuild. #}
+{% from "form.njk" import form with context %}
+{#- Added 10 Oct 2026 (landing pages and full websites as ONE service), made
+    the AI website offer on 4 Nov 2026. The owner asked for "the same offer"
+    as kingdigital.lv, which publishes NO prices: a fixed price agreed after a
+    requirements review, design in every project, simple sites in a couple of
+    weeks, a first version in a few days, free support after launch. So this
+    page states no price either (owner's choice, 4 Nov 2026); the form asks
+    for a project budget band instead. Three terms here are the owner's to
+    confirm: the first version "dažu dienu laikā", a simple site "pāris
+    nedēļās" and the first month of free small fixes after launch.
+    The example section cites only facts recorded in CLAUDE.md. #}
 <section class="page-hero page-hero--media">
   <div class="container">
     <div class="hero-grid2">
       <div>
-      <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Mājaslapas</span>
-      <h1>Mājaslapa, kas reklāmas klikšķus pārvērš <em>pieteikumos</em><span class="accent-text">.</span></h1>
-      <p class="sub">Landing page vienai kampaņai vai visa uzņēmuma mājaslapa. Par tekstu, dizainu, izstrādi un mērīšanu rūpējas viena komanda, kas pati vada arī reklāmas, tāpēc lapa ir gatava reklāmai no pirmās dienas.</p>
+      <span class="chip"><a href="/pakalpojumi/">Pakalpojumi</a> · Mājaslapas ar AI</span>
+      <h1>Mājaslapu ar AI izveidojam pāris <em>nedēļās</em><span class="accent-text">.</span></h1>
+      <p class="sub">AI uzzīmē pirmās dizaina versijas un uzraksta melnrakstu, tāpēc lapa top nedēļās, nevis mēnešos. Mēs izlemjam, kas lapā rakstīts, un pārbaudām, vai pieteikumi tiešām pienāk.</p>
       <div class="btn-wrap">
-        <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
+        <a class="btn" href="#pieteikums">Pastāstīt par savu lapu</a>
         <a class="btn btn--ghost" href="#darbi">Skatīt darbus</a>
       </div>
-      <p class="fine btn-note">Bez maksas, 20 minūtes. Pasakām, vai un kā varam palīdzēt.</p>
+      <p class="fine btn-note">Fiksētu cenu nosaucam pēc 20 minūšu iepazīšanās zvana.</p>
       </div>
       <figure class="hero-media">{% include "motifs/majaslapas.njk" %}</figure>
     </div>
@@ -66,7 +72,77 @@ image: "/img/gen/hero-majaslapas.webp"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">02</span> Pakalpojuma saturs</span>
+        <span class="eyebrow"><span class="idx">02</span> Kā strādājam</span>
+        <h2>AI paātrina, cilvēks <em>izlemj</em></h2>
+      </div>
+      <p class="lead">Pirmā versija vairs neprasa nedēļas, tāpēc vairāk laika paliek tam, lai lapa pārdotu.</p>
+    </div>
+    <div class="row cols-2 top">
+      <div class="col">
+        <h3>Ko dara AI</h3>
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Dizaina varianti</strong>Vairākas pirmās versijas dažās dienās, lai būtu no kā izvēlēties.</li>
+          <li><strong>Teksta melnraksts</strong>No Tava apraksta un no jautājumiem, ko klienti uzdod visbiežāk.</li>
+          <li><strong>Kods</strong>Lapu uzbūvējam ātrāk, un telefonā tā atveras bez gaidīšanas.</li>
+          <li><strong>Ilustrācijas</strong>Zīmola stilā tur, kur nav savu fotogrāfiju.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Ko dara cilvēks</h3>
+        <ul class="tick-list tick-list--labels">
+          <li><strong>Piedāvājums un teksts</strong>Ko lapa piedāvā, kādi ir virsraksti un kādā secībā cilvēks to lasa.</li>
+          <li><strong>Latviešu valoda</strong>Katru teikumu izlasa un izlabo cilvēks, lai tas neskanētu pēc tulkojuma.</li>
+          <li><strong>Formas un mērīšana</strong>Pārbaudām ar testa pieteikumu, pirms lapu palaižam.</li>
+          <li><strong>Pārbaude telefonā</strong>Ātrumu, izvēlni un pogas pārbaudām īstā telefonā, nevis tikai datorā.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">03</span> Lapu veidi</span>
+        <h2>No vienas lapas līdz <em>veikalam</em></h2>
+      </div>
+      <p class="lead">Sākam ar to, kas Tev vajadzīgs tagad, un vēlāk lapu var papildināt.</p>
+    </div>
+    <div class="hgrid hgrid--2">
+      <div class="cell">
+        <span class="cell-idx">01</span>
+        <span class="card-icon">{% icon "ads_click" %}</span>
+        <h3>Landing page</h3>
+        <p>Viena lapa vienai kampaņai: piedāvājums, atsauksmes un pieteikuma forma. Ātrākais veids, kā sākt reklamēties.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">02</span>
+        <span class="card-icon">{% icon "devices" %}</span>
+        <h3>Uzņēmuma mājaslapa</h3>
+        <p>Pakalpojumi, cenas, informācija par uzņēmumu un kontakti. Ja vajag, pievienojam blogu un citas valodas.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">03</span>
+        <span class="card-icon">{% icon "event" %}</span>
+        <h3>Pieraksts un pieteikumi</h3>
+        <p>Tiešsaistes pieraksts vai pieteikuma forma, kas ieraksta pieteikumu tabulā vai CRM un cilvēkam uzreiz nosūta atbildi.</p>
+      </div>
+      <div class="cell">
+        <span class="cell-idx">04</span>
+        <span class="card-icon">{% icon "shopping_cart" %}</span>
+        <h3>Interneta veikals</h3>
+        <p>Preču katalogs, grozs un maksājumi, tāpat kā Starfleet Portraits veikalā, kas redzams zemāk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">04</span> Pakalpojuma saturs</span>
         <h2>Ko Tu saņem</h2>
       </div>
       <p class="lead">Tev nav jāsaskaņo teksts, dizains, izstrāde un mērīšana starp četriem izpildītājiem.</p>
@@ -116,7 +192,7 @@ image: "/img/gen/hero-majaslapas.webp"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">03</span> Darbi</span>
+        <span class="eyebrow"><span class="idx">05</span> Darbi</span>
         <h2>Lapas, ko esam <em>izveidojuši</em></h2>
       </div>
       <p class="lead">E-veikals, ražotāju vietnes un pakalpojumu lapas, latviski un angliski.</p>
@@ -168,7 +244,7 @@ image: "/img/gen/hero-majaslapas.webp"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">04</span> Piemērs</span>
+        <span class="eyebrow"><span class="idx">06</span> Piemērs</span>
         <h2>Šī mājaslapa ir <em>mūsu darbs</em></h2>
       </div>
       <p class="lead">2026. gada augustā šo WordPress mājaslapu pārbūvējām par ātru statisku vietni.</p>
@@ -194,16 +270,16 @@ image: "/img/gen/hero-majaslapas.webp"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">05</span> Process</span>
+        <span class="eyebrow"><span class="idx">07</span> Process</span>
         <h2>Četri soļi, un katrā Tu kaut ko apstiprini</h2>
       </div>
       <p class="lead">Nekas netiek publicēts, kamēr neesi redzējis tekstu un dizainu.</p>
     </div>
     <div class="steps">
-      <div class="step"><span class="step-num">01</span><h3>Iepazīšanās zvans</h3><p>20 minūtes par to, kas lapai jāpanāk un no kurienes nāks apmeklētāji.</p></div>
-      <div class="step"><span class="step-num">02</span><h3>Struktūra un teksts</h3><p>Uzrakstām, ko lapa saka un kādā secībā. Tu apstiprini tekstu, pirms ķeramies pie dizaina.</p></div>
-      <div class="step"><span class="step-num">03</span><h3>Dizains un izstrāde</h3><p>Dizains Tavā stilā, vispirms telefonam. Tu apstiprini dizainu, pirms lapu publicējam.</p></div>
-      <div class="step"><span class="step-num">04</span><h3>Mērīšana un nodošana</h3><p>Formas un mērīšanu pārbaudām ar testa pieteikumu. Pēc tam lapa ir gatava reklāmai.</p></div>
+      <div class="step"><span class="step-num">01</span><h3>Iepazīšanās zvans</h3><p>20 minūšu saruna par to, kas lapai jāpanāk. Pēc zvana nosaucam fiksētu cenu un termiņu.</p></div>
+      <div class="step"><span class="step-num">02</span><h3>Pirmā versija</h3><p>Dažu dienu laikā parādām dizainu ar Tavu tekstu. Tu izvēlies virzienu un pasaki, ko mainīt.</p></div>
+      <div class="step"><span class="step-num">03</span><h3>Izstrāde</h3><p>Lapu būvējam pa daļām, un katru daļu redzi, pirms ejam tālāk.</p></div>
+      <div class="step"><span class="step-num">04</span><h3>Palaišana un atbalsts</h3><p>Formas un mērīšanu pārbaudām ar testa pieteikumu. Pirmo mēnesi pēc palaišanas sīkus labojumus veicam bez maksas.</p></div>
     </div>
   </div>
 </section>
@@ -212,17 +288,19 @@ image: "/img/gen/hero-majaslapas.webp"
   <div class="container">
     <div class="sec-head">
       <div>
-        <span class="eyebrow"><span class="idx">06</span> Jautājumi</span>
+        <span class="eyebrow"><span class="idx">08</span> Jautājumi</span>
         <h2>Ko parasti jautā pirms sākuma</h2>
       </div>
     </div>
     <div class="row cols-2 top">
       <div class="col">
+        <details class="faq"><summary>Cik tas maksā?</summary><div><p>Cena ir fiksēta, un to nosaucam pēc 20 minūšu zvana, kad zinām apjomu. To nosaka lapu skaits, tas, vai teksti un attēli jau ir, vai vajag pierakstu vai veikalu un cik valodās lapa būs. Ja vien nevienojamies par papildu darbu, cena darba gaitā nemainās.</p></div></details>
+        <details class="faq"><summary>Cik ilgā laikā lapa būs gatava?</summary><div><p>Landing page un vienkāršu mājaslapu parasti palaižam pāris nedēļās, un pirmo dizaina versiju redzi dažu dienu laikā. Lapa ar pierakstu, veikalu vai vairākām valodām prasa ilgāk. Precīzu termiņu ierakstām piedāvājumā, un daudz kas ir atkarīgs no tā, cik ātri saņemam materiālus un apstiprinājumus.</p></div></details>
+        <details class="faq"><summary>Vai lapa neizskatīsies pēc AI veidnes?</summary><div><p>Nē. AI dod pirmās versijas, bet virzienu izvēlamies kopā ar Tevi, un krāsas, attēlus un tekstu pielāgojam Tava zīmola stilam. Katru teikumu pirms publicēšanas izlasa cilvēks.</p></div></details>
         <details class="faq"><summary>Ar ko landing page atšķiras no mājaslapas?</summary><div><p>Landing page ir viena lapa vienam mērķim, parasti konkrētai reklāmas kampaņai: viens piedāvājums un viena darbība. Mājaslapa stāsta par visu uzņēmumu, un tajā ir vairākas lapas. Bieži izdevīgāk ir sākt ar landing page un mājaslapu sakārtot pēc tam.</p></div></details>
-        <details class="faq"><summary>Cik tas maksā?</summary><div><p>Cena ir atkarīga no apjoma: landing page ir mazāks darbs nekā visa mājaslapa, un daudz nosaka tas, vai teksti un attēli jau ir. Cenu nosaucam piedāvājumā pēc iepazīšanās zvana.</p></div></details>
-        <details class="faq"><summary>Cik ilgā laikā lapa būs gatava?</summary><div><p>Tas ir atkarīgs no apjoma un no tā, cik ātri saņemam materiālus un apstiprinājumus. Termiņu ierakstām piedāvājumā.</p></div></details>
       </div>
       <div class="col">
+        <details class="faq"><summary>Kas notiek pēc palaišanas?</summary><div><p>Pirmo mēnesi sīkus labojumus veicam bez maksas. Par tālāku atbalstu un izmaiņām vienojamies atsevišķi.</p></div></details>
         <details class="faq"><summary>Vai varat uzlabot esošo lapu, nevis taisīt jaunu?</summary><div><p>Jā. Bieži pietiek pārrakstīt pirmo ekrānu un sakārtot formu un mērīšanu. Vai jāsāk no jauna, pasakām pēc pirmās sarunas.</p></div></details>
         <details class="faq"><summary>Vai lapa būs gatava reklāmai?</summary><div><p>Jā, tas ir šī pakalpojuma mērķis. Pirms nodošanas pārbaudām, vai pikselis, Conversions API un formas strādā. Ja vēlies, reklāmu pēc tam vada mūsu <a href="/facebook-reklama/">Meta reklāmas</a> komanda.</p></div></details>
       </div>
@@ -230,14 +308,32 @@ image: "/img/gen/hero-majaslapas.webp"
   </div>
 </section>
 
+<section class="sec" id="pieteikums">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">09</span> Pieteikums</span>
+        <h2>Pastāsti par savu <em>lapu</em></h2>
+      </div>
+      <p class="lead">Jo vairāk uzzinām tagad, jo precīzāku cenu varam nosaukt pēc zvana.</p>
+    </div>
+    <div class="terms">
+      <p><strong>Fiksēta cena.</strong> To nosaucam pēc iepazīšanās zvana, un darba gaitā tā nemainās, ja vien nevienojamies par papildu darbu.</p>
+      <p>Pirmo dizaina versiju redzi dažu dienu laikā. Pirmo mēnesi pēc palaišanas sīkus labojumus veicam bez maksas.</p>
+    </div>
+    {{ form("majaslapa") }}
+  </div>
+</section>
+
+{#- The form above is the primary action; this band only offers alternatives, so no second cyan button in one viewport. #}
 <section class="cta-band">
   <div class="container cta-band-inner">
     <div>
-      <h2>Vispirms parunāsim 20 minūtes</h2>
-      <p>Pastāsti, kas lapai jāpanāk un no kurienes nāks apmeklētāji. Pēc zvana zināsi, vai sākt ar landing page, ar visu mājaslapu vai ar esošās lapas labojumiem.</p>
+      <h2>Ērtāk parunāt, nevis rakstīt?</h2>
+      <p>Piesakies 20 minūšu iepazīšanās zvanam. Pēc zvana zināsi, vai sākt ar landing page, ar visu mājaslapu vai ar esošās lapas labojumiem.</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
+      <a class="btn btn--ghost" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
       <a class="btn btn--ghost" href="/majaslapa-kas-pardod/">Kāpēc lapa nepārdod</a>
     </div>
   </div>

@@ -7,7 +7,7 @@
 {% macro form(key, preset) %}
 {% set f = forms.forms[key] %}
 {% set p = preset or {} %}
-<form class="form" data-form="{{ key }}"
+<form class="form" data-form="{{ key }}"{% if f.as %} data-as="{{ f.as }}"{% endif %}
       data-endpoint="{{ forms.endpoint }}"
       data-fallback="{{ forms.fallbackEmail }}"{% if f.unlock %} data-unlock{% endif %}
       novalidate>

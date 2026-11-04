@@ -256,6 +256,96 @@
           "autocomplete": "email"
         }
       ]
+    },
+    "majaslapa": {
+      "_comment": "Website offer form on /majaslapu-izstrade/ (4 Nov 2026). It posts AS contact, because the leads workflow only accepts the form keys it knows; GA4 still gets form_id majaslapa from data-form. The two selects ride inside the message, like the contact budget. To give it its own key, add majaslapa to FORMS and subjects in the Parse and gate node, then drop \"as\".",
+      "as": "contact",
+      "submit": "Nosūtīt pieteikumu",
+      "note": "Atbildēsim 1 darba dienas laikā. Fiksētu cenu nosaucam pēc bezmaksas 20 minūšu iepazīšanās zvana.",
+      "successTitle": "Paldies, pieteikums saņemts.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Vārds",
+          "type": "text",
+          "required": true,
+          "autocomplete": "given-name"
+        },
+        {
+          "name": "last_name",
+          "label": "Uzvārds",
+          "type": "text",
+          "required": true,
+          "autocomplete": "family-name"
+        },
+        {
+          "name": "email",
+          "label": "E-pasts",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email"
+        },
+        {
+          "name": "phone",
+          "label": "Tālrunis",
+          "type": "tel",
+          "autocomplete": "tel"
+        },
+        {
+          "name": "company",
+          "label": "Uzņēmuma nosaukums",
+          "type": "text",
+          "hint": "ja ir",
+          "autocomplete": "organization"
+        },
+        {
+          "name": "website",
+          "label": "Esošā mājaslapa",
+          "type": "url",
+          "hint": "ja ir",
+          "autocomplete": "url"
+        },
+        {
+          "name": "lapas_veids",
+          "label": "Ko vajag izveidot",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Landing page vienai kampaņai",
+            "Uzņēmuma mājaslapa",
+            "Mājaslapa ar pierakstu vai pieteikumiem",
+            "Interneta veikals",
+            "Esošās lapas uzlabošana",
+            "Vēl nezinu"
+          ]
+        },
+        {
+          "name": "lapas_budzets",
+          "label": "Aptuvenais budžets lapai",
+          "hint": "bez PVN",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Līdz 2 000 €",
+            "2 000–5 000 €",
+            "5 000–15 000 €",
+            "Virs 15 000 €",
+            "Vēl nezinu"
+          ]
+        },
+        {
+          "name": "message",
+          "label": "Pastāsti par uzņēmumu un to, kas lapai jāpanāk",
+          "type": "textarea",
+          "required": true,
+          "full": true
+        }
+      ]
     }
   }
 }

@@ -92,7 +92,9 @@
     var request = fetch(form.getAttribute('data-endpoint'), {
       method: 'POST',
       headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify({ form: form.getAttribute('data-form'), page: location.pathname, data: data })
+      /* data-as: post under a key the leads workflow already accepts, while
+       * GA4 keeps the form's own data-form name (forms.json "as"). */
+      body: JSON.stringify({ form: form.getAttribute('data-as') || form.getAttribute('data-form'), page: location.pathname, data: data })
     }).then(function (r) {
       if (!r.ok) throw new Error('status ' + r.status);
       return r.json();

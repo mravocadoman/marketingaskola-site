@@ -4451,6 +4451,40 @@ are in the vault, not here) and a viewport-by-viewport design audit.
   640px; the automation try-card is sticky on desktop; `.tick-list--2col`.
 - The phone number is written with a no-break space so "+371" never strands.
 
+## Websites with AI: the King Digital offer, no public prices (4 Nov 2026)
+
+Owner: *"let's make a new offer; website design with AI and price them similarly
+to https://kingdigital.lv/ - basically make the same offer."* King Digital
+publishes **no prices anywhere** (checked the LV, EN and RU pages, the service
+subpages and the sitemap): a fixed price after a requirements review, design in
+every project, simple sites "in a couple of weeks", a demo in a few days, free
+support for one to two months after launch, and budget bands in the contact
+form (under 5 000, 5 000-15 000, 15 000-30 000, over 30 000 €). Asked and
+answered: **no public prices, like them**, and the offer **replaces
+`/majaslapu-izstrade/`** rather than a second page competing for the same
+searches.
+
+- The page leads with AI as the speed ("Mājaslapu ar AI izveidojam pāris
+  nedēļās") and splits the work in section 02: AI drafts designs, text, code
+  and illustrations; a person decides the offer, edits every Latvian sentence,
+  tests forms and tracking, checks a real phone. Section 03 lists four kinds of
+  site (landing page, company site, bookings and enquiries, online shop), with
+  Starfleet Portraits as the shop example.
+- **Three terms are the owner's to confirm** before they are relied on: the
+  first design version "dažu dienu laikā", a simple site "pāris nedēļās", and
+  the first month of free small fixes after launch. They mirror King Digital's
+  and appear in the hero, the steps, the FAQ and the terms box.
+- **The form `majaslapa` posts AS `contact`** (`"as"` in `forms.json`, rendered
+  as `data-as`): the leads workflow `uSmnXxiT4rUcVAGj` rejects form keys it does
+  not list, so a new key would have fallen through to the mailto fallback. GA4
+  still gets `form_id: majaslapa`. The type of site and the budget band (under
+  2 000, 2 000-5 000, 5 000-15 000, over 15 000 €, bez PVN; finer than King
+  Digital's at the low end, where our buyers are) ride inside the message. For
+  a key of its own, add `majaslapa` to `FORMS` and `subjects` in *Parse and
+  gate*, then delete `"as"`.
+- Nav, the hub tile and `llms.txt` call it "Mājaslapas ar AI". The ladder's
+  third rung already said website prices depend on the scope.
+
 ## "More like an agency": first attempt rejected (3 Nov 2026)
 
 Owner: *"make it feel slightly more like an agency website, currently it barely
