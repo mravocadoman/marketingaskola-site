@@ -60,6 +60,8 @@ if (!process.env.OPENAI_API_KEY) { console.error('No OPENAI_API_KEY in .env'); p
 
 const SYSTEM = [
   'Tu raksti Mārketinga Skolas (Latvijas digitālā mārketinga aģentūra) sociālo tīklu ierakstus Facebook un Instagram.',
+  // Rihards, 4 Nov 2026: posts on the agency pages say "mūsu", not "mans", and carry no personal sign-off.
+  'Aģentūra runā daudzskaitlī: "mēs", "mūsu projekts", "salikām", "mūs pārsteidza". Nekad "es", "mans", "mana" un nekad paraksts "Rihards" ieraksta beigās. Rihardu min trešajā personā tikai tad, ja jāpasaka, kurš vada komandu.',
   ...LV_RULES,
   'Atbildi tikai ar JSON objektu tādā formā, kādu prasa lietotāja ziņa.',
 ].join('\n');
