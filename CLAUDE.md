@@ -4451,6 +4451,39 @@ are in the vault, not here) and a viewport-by-viewport design audit.
   640px; the automation try-card is sticky on desktop; `.tick-list--2col`.
 - The phone number is written with a no-break space so "+371" never strands.
 
+## "More like an agency": first attempt rejected (3 Nov 2026)
+
+Owner: *"make it feel slightly more like an agency website, currently it barely
+reads as one."* Built and shown as screenshots, then rejected outright: *"I dont
+like it at all."* So nobody rebuilds it: four portfolio case cards with the
+clients' own banners and two figures each straight under the hero, all six
+services as motif tiles, a five-person team row, courses as icon cards without
+artwork, the hero's ghost button to `/portfolio/`, and "Sazinies" as a ghost
+button in the header. Everything was reverted; ask what "agency" means to the
+owner before the next attempt. (Kept from the exercise: the reduced-motion
+logo strip no longer lists every logo twice.)
+
+## Team cards, no frames on cutouts, course reasons grid (4 Nov 2026)
+
+- **A cutout portrait never sits in a bordered box.** Owner: *"remove frame
+  around my head"*. `.img img` and `.media` both draw a hairline (and `.media`
+  a card fill), which around a transparent cutout is a square frame. Use
+  `img--plain` or `media--cutout`; the founder photo on `/sazinies/`, the
+  homepage process figure, the Meta and Google Ads course pages all do now.
+- **`brand-portraits.mjs` takes `erase: [{x, y, r}]`** (900px square): circles
+  the cutout drops, so the backdrop shows there. Transparency only, never new
+  pixels, so the "faces are never generated" rule holds. Used once, for the hair
+  ball on top of Katrīna's head (*"remove blob from katrīnas head"*).
+- **`/sazinies/` team is five cards** (`.team-grid--cards`, owner: *"make this
+  section appear cooler; maybe in cards"*): photo standing on the card's floor
+  line, name and role below, a cyan bar wiping in on hover. Five in a row on
+  desktop; three and two from 1020px down, with the short row centred.
+- **The course hub's five reasons are one grid** (`.hgrid--feature`, owner:
+  *"add icons ... and make it look cooler"*): the experts card is tall and lists
+  the three real instructors with their photos, read from `courseSessions.json`;
+  "Pēc kursa" links to the paid consultation. Not `.hgrid--3`, whose empty-slot
+  filler would add a sixth block to a full 3 x 2 grid.
+
 ## Copy rules
 
 - **Consultation policy** (owner, 21 Aug 2026 — supersedes the earlier

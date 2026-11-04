@@ -532,7 +532,8 @@ module.exports = function (eleventyConfig) {
             // the lighter band read as "too much of a mix", even with the
             // cards taking the band's colour). The band is for sections of
             // running text, steps and FAQs; a grid of cards is already divided.
-            : !/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner) || /class="hgrid\b/.test(inner) ? "keep"
+            // The /sazinies/ team cards too (4 Nov 2026: on the band they had no contrast).
+            : !/\bsec\b/.test(cls) || /class="[^"]*\bmotif\b/.test(inner) || /class="(?:hgrid|team-grid)\b/.test(inner) ? "keep"
             : "plain";
           found.push(start);
           start = null;

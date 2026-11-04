@@ -57,7 +57,11 @@ const PORTRAITS = [
   { id: 'kristaps',     src: 'src/img/2020/12/b-w.webp' },
   { id: 'matiss',       src: 'src/img/2024/04/Untitled-design-2.webp' },
   { id: 'matiss-seo',   src: 'src/img/2025/03/Untitled-design-2.webp' },
-  { id: 'katrina',      src: 'src/img/2021/09/FullSizeRender-1.webp' },
+  // erase: circles (in the 900px square) the cutout drops, so the backdrop
+  // shows there instead. Transparency only, never new pixels: the hair ball on
+  // top of her head (owner, 4 Nov 2026: "remove blob from katrīnas head").
+  { id: 'katrina',      src: 'src/img/2021/09/FullSizeRender-1.webp',
+    erase: [{ x: 617, y: 54, r: 38 }, { x: 619, y: 89, r: 13 }] },
   { id: 'madara',       src: 'src/img/2025/03/Untitled-design-3.webp' },
   // 3:4 founder frame, matching .media--portrait exactly so object-fit:cover
   // has nothing to crop for the homepage process section, which replaced a
@@ -105,6 +109,18 @@ for (const p of queue) {
 
     // 2. matting in its own process
     execFileSync(process.execPath, [join(ROOT, 'tools', '_matte.mjs'), inPng, cutPng], { stdio: 'pipe' });
+    if (p.erase) {
+      const { data, info } = await sharp(cutPng).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+      for (const { x, y, r } of p.erase) {
+        for (let j = Math.max(0, y - r - 2); j <= Math.min(info.height - 1, y + r + 2); j++) {
+          for (let i = Math.max(0, x - r - 2); i <= Math.min(info.width - 1, x + r + 2); i++) {
+            const k = (j * info.width + i) * 4 + 3;
+            data[k] = Math.round(data[k] * Math.min(1, Math.max(0, (Math.hypot(i - x, j - y) - r) / 2)));
+          }
+        }
+      }
+      await sharp(data, { raw: info }).png().toFile(cutPng);
+    }
 
     // 3 + 4. Use ONLY the matte's alpha channel and re-attach it to the ORIGINAL
     // pixels. The matting library resamples internally, so its RGB differs from

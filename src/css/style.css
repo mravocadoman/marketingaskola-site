@@ -499,7 +499,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 .marquee-track { display: flex; align-items: center; gap: clamp(44px, 6vw, 80px); width: max-content; animation: marquee calc(36s * var(--motion)) linear infinite; padding: 6px 0; }
 .marquee-track img, .logo-row img { max-height: 44px; width: auto; display: block; margin: 0 auto; }
 @keyframes marquee { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; } .marquee-track img[aria-hidden="true"] { display: none; } }
+/* ^ the second half of the track only exists to loop the scroll; static, it listed every logo twice */
 .marquee-label { font-size: var(--t-micro); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 22px; }
 
 /* rows / columns (legacy generated grid) */
@@ -1432,6 +1433,8 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
    ========================================================================== */
 .media { margin: 0; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
 .media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* A transparent team cutout: a hairline and a card fill around it draw a box around the person (owner, 4 Nov 2026: "remove frame around my head"). */
+.media--cutout { border: 0; background: none; }
 .media--wide { aspect-ratio: 3 / 2; }
 /* The LIAA price as a receipt (18 Sep 2026). Owner: the three equal numerals
    did not say what a buyer pays, gets back or is left with. The rows read as a
@@ -2398,3 +2401,41 @@ p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .gate h3 { margin: 0 0 10px; }
 .gate .tick-list { margin: 14px 0 22px; }
 .gate .form-done { margin: 0; border: 0; padding: 0; background: none; }
+
+/* ==========================================================================
+   TEAM CARDS AND COURSE REASONS (4 Nov 2026)
+   ========================================================================== */
+/* /sazinies/ team as cards (owner: "make this section appear cooler; maybe in
+   cards"). The cutout stands on the card's floor line; no frame around it. */
+.team-grid--cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+/* Lighter cards on the dark canvas (owner: "contrast is shit" when they sat
+   on the band): white 15:1, the role in body colour 10:1, card 1.29:1 off the page. */
+.team-grid--cards .team-card { width: auto; position: relative; display: flex; flex-direction: column; overflow: hidden; background: var(--band); border: 1px solid var(--line-strong); }
+.team-grid--cards .team-card p { color: var(--body); }
+.team-grid--cards .team-card img { max-width: none; width: 100%; margin: 20px 0 0; }
+.team-grid--cards .tc-body { flex: 1; padding: 18px 20px 22px; border-top: 1px solid var(--line-strong); }
+.team-grid--cards .team-card::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--cyan); transform: scaleX(0); transform-origin: left; }
+.team-grid--cards .team-card:hover::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: no-preference) {
+  .team-grid--cards .team-card img { transition: transform 0.5s var(--ease-out); transform-origin: bottom center; }
+  .team-grid--cards .team-card:hover img { transform: scale(1.04); }
+  .team-grid--cards .team-card::after { transition: transform 0.35s var(--ease-out); }
+}
+/* five cards never fill a row of three or two, so the short row centres */
+@media (max-width: 1020px) { .team-grid--cards { display: flex; flex-wrap: wrap; justify-content: center; } .team-grid--cards .team-card { flex: 0 0 calc((100% - 32px) / 3); } }
+@media (max-width: 640px) { .team-grid--cards { gap: 10px; } .team-grid--cards .team-card { flex-basis: calc((100% - 10px) / 2); } .team-grid--cards .tc-body { padding: 14px 14px 16px; } }
+
+/* Course reasons as one grid; the experts card is tall and shows the three
+   instructors (owner: "add icons ... and make it look cooler"). Not .hgrid--3,
+   whose empty-slot filler would add a sixth block to a full 3 x 2 grid. */
+.hgrid--feature { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hgrid--feature > .cell--lead { grid-row: span 2; }
+@media (max-width: 980px) { .hgrid--feature { grid-template-columns: 1fr 1fr; } .hgrid--feature > .cell--lead { grid-row: auto; grid-column: 1 / -1; } }
+@media (max-width: 640px) { .hgrid--feature { grid-template-columns: 1fr; } }
+.tutors { list-style: none; margin: 28px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); display: grid; gap: 14px; }
+.tutors li { display: flex; align-items: center; gap: 14px; margin: 0; padding: 0; }
+.tutors li::before { content: none; }
+.tutors img { width: 64px; height: 64px; object-fit: cover; object-position: center top; flex: none; }
+.tutors span { display: flex; flex-direction: column; line-height: 1.35; }
+.tutors strong { color: var(--heading); font-family: var(--font-display); font-weight: 500; }
+.tutors small { color: var(--muted); }

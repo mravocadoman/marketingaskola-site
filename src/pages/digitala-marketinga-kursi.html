@@ -62,24 +62,48 @@ permalink: "/digitala-marketinga-kursi/"
         <p>Kursi notiek grupās no {{ courseSessions.policy.minSeats }} dalībniekiem. Komandām: raksti, sagatavosim piedāvājumu.</p>
       </div>
     </div>
-    <div class="row cols-3 top">
-      <div class="col">
-        <div class="blurb"><h3>Mācies no pieredzējušiem ekspertiem</h3><p>Kursus vada praktiķi, kas ikdienā pārvalda reālas kampaņas. Jautājumus par savu biznesu uzdod cilvēkam, kurš to dara katru dienu.</p></div>
+    {#- The five reasons as one grid (4 Nov 2026, owner: "add icons ... and make
+        it look cooler"). The experts card leads and shows the three real
+        instructors, read from courseSessions like every other course fact. #}
+    <div class="hgrid hgrid--feature">
+      <div class="cell cell--lead">
+        <span class="card-icon">{% icon "school" %}</span>
+        <span class="cell-idx">01</span>
+        <h3>Mācies no pieredzējušiem ekspertiem</h3>
+        <p>Kursus vada praktiķi, kas ikdienā pārvalda reālas kampaņas. Jautājumus par savu biznesu uzdod cilvēkam, kurš to dara katru dienu.</p>
+        <ul class="tutors">
+          {%- for t in [["meta-reklamas-kurss", "rihards-brand"], ["google-ads-kurss", "kristaps-brand"], ["seo-kursi", "matiss-seo-brand"]] %}
+          {%- set c = courseSessions.courses[t[0]] %}
+          <li><img src="/img/team/{{ t[1] }}.webp" alt="" loading="lazy" width="900" height="900"><span><strong>{{ c.instructor }}</strong><small>{{ c.name }}</small></span></li>
+          {%- endfor %}
+        </ul>
       </div>
-      <div class="col">
-        <div class="blurb"><h3>Pieeja jaunākajām tendencēm un rīkiem</h3><p>Saņemsi aktuālu informāciju par jaunākajām digitālā mārketinga metodēm, platformām un stratēģijām.</p></div>
+      <div class="cell">
+        <span class="card-icon">{% icon "lightbulb" %}</span>
+        <span class="cell-idx">02</span>
+        <h3>Pieeja jaunākajām tendencēm un rīkiem</h3>
+        <p>Saņemsi aktuālu informāciju par jaunākajām digitālā mārketinga metodēm, platformām un stratēģijām.</p>
       </div>
-      <div class="col">
-        <div class="blurb"><h3>Efektīva un fokusēta programma</h3><p>Strukturēts apmācību plāns ar teoriju, praktisko darbu un Q&amp;A sesijām.</p></div>
+      <div class="cell">
+        <span class="card-icon">{% icon "fact_check" %}</span>
+        <span class="cell-idx">03</span>
+        <h3>Efektīva un fokusēta programma</h3>
+        <p>Strukturēts apmācību plāns ar teoriju, praktisko darbu un Q&amp;A sesijām.</p>
+      </div>
+      <div class="cell">
+        <span class="card-icon">{% icon "monitoring" %}</span>
+        <span class="cell-idx">04</span>
+        <h3>Pielietojamas zināšanas un reāls rezultāts</h3>
+        <p>Konkrēti soļi un metodes, kas palīdzēs palielināt pārdošanu, piesaistīt vairāk klientu un optimizēt mārketinga izmaksas.</p>
+      </div>
+      <div class="cell">
+        <span class="card-icon">{% icon "forum" %}</span>
+        <span class="cell-idx">05</span>
+        <h3>Pēc kursa</h3>
+        <p>Kursi ir praktiski, tāpēc lielākā daļa darba sākas pēc nodarbības. Ja gribi izrunāt tieši savu kontu, tam ir maksas konsultācija: {% offer "60", "hours" %} par {% offer "60" %}.</p>
+        <a class="arrow-link" href="/marketinga-konsultacijas/">Par konsultāciju</a>
       </div>
     </div>
-    <div class="row cols-2 top">
-      <div class="col">
-        <div class="blurb"><h3>Pēc kursa</h3><p>Kursi ir praktiski, tāpēc lielākā daļa darba sākas pēc nodarbības. Ja gribi izrunāt tieši savu kontu, tam ir maksas konsultācija: {% offer "60", "hours" %} par {% offer "60" %}.</p></div>
-      </div>
-      <div class="col">
-        <div class="blurb"><h3>Pielietojamas zināšanas un reāls rezultāts</h3><p>Konkrēti soļi un metodes, kas palīdzēs palielināt pārdošanu, piesaistīt vairāk klientu un optimizēt mārketinga izmaksas.</p></div>
-      </div>
     </div>
   </div>
 </section>
