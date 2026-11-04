@@ -131,11 +131,11 @@ them. Its Plan view changes dates and swaps neighbours.
 
 ## 5. Publishing: n8n + Zernio
 
-n8n workflow `LUPj14M7Vs1zOEOr`, "Mārketinga Skola — latviešu ieraksti (Zernio)", built 3 Nov 2026 and
-**inactive until the owner** creates the `Zernio API` credential, runs its "List Zernio accounts" trigger, copies
-the Mārketinga Skola ids into its Config node and activates it. At 9:00 and 14:00 Riga it reads the Notion calendar:
-rows dated yesterday or today, approved by **Post Ready** (an `MS ·` row) or **Approved** (a Batch One row), not
-Archived, with **LV Posted** unticked. For each one it:
+n8n workflow `LUPj14M7Vs1zOEOr`, "Mārketinga Skola — latviešu ieraksti (Zernio)", live since 4 Nov 2026 (the
+`Zernio API` credential is n8n's Late type; the Config node holds the Mārketinga Skola account ids). At 9:00 and
+14:00 Riga it reads the Notion calendar: rows dated yesterday or today, approved by **Post Ready** (an `MS ·` row)
+or **Approved** (a Batch One row), not Archived, **EN only** unticked, with **LV Posted** unticked. A row with no
+`FINAL POST LV` is skipped too. For each one it:
 
 - builds the post from `FINAL POST LV`, `FIRST COMMENT LV`, `LV VIDEO`, `LV SLIDES` and `LV CAROUSEL`;
 - schedules it in Zernio for 12:00 (a second row 17:00, a third 19:30) on the Mārketinga Skola Facebook page and
