@@ -174,8 +174,9 @@ function compose(p, out) {
   // No links in posts (13 Oct 2026): Facebook reportedly caps affected Pages at
   // 2 link posts a month and link posts get the fewest views; Instagram caption
   // links do not click. The link lives in the profile.
-  // A lead-magnet post ends on its keyword instead: comment it, get the magnet by DM.
-  const ask = p.magnet ? `Komentē ${p.magnet.keyword}, un nosūtīsim saiti privātā ziņā. Bez maksas.` : 'Saite profilā.';
+  // A lead-magnet post never asks for a comment in the caption (Rihards, 7 Nov 2026: it costs reach);
+  // the "Komentē KEYWORD" ask is on the cover and the gate slide, so the caption only names the guide.
+  const ask = p.magnet ? `Materiālā ${p.magnet.keyword} ir viss pārējais.` : 'Saite profilā.';
   const text = `${out.teksts}\n\n${[course, ask].filter(Boolean).join('\n')}\n\n${out.tagi.join(' ')}`;
   return { facebook: text, instagram: text };
 }
