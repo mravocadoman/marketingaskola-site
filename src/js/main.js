@@ -167,12 +167,26 @@
   var startReel = function (vid, cuts, labels, mq) {
     if (!vid || reduce || saveData || !window.matchMedia(mq).matches) return;
     vid.preload = 'auto';
-    var tryPlay = function () { var p = vid.play(); if (p && p.catch) p.catch(function () {}); };
+    // iOS refuses even muted autoplay in Low Power Mode, and some in-app
+    // browsers do too: play() rejects and only the poster shows (owner, 8 Nov
+    // 2026: "the hero video on mobile is not animating"). A tap is a user
+    // gesture that lifts the block, so the first one anywhere starts the reel.
+    var seen = false, gestures = ['touchend', 'click', 'keydown'];
+    var onGesture = function () {
+      gestures.forEach(function (t) { document.removeEventListener(t, onGesture, true); });
+      if (seen) tryPlay();
+    };
+    var tryPlay = function () {
+      var p = vid.play();
+      if (p && p.catch) p.catch(function () {
+        gestures.forEach(function (t) { document.addEventListener(t, onGesture, true); });
+      });
+    };
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (es) {
-        es.forEach(function (e) { if (e.isIntersecting) tryPlay(); else vid.pause(); });
+        es.forEach(function (e) { seen = e.isIntersecting; if (seen) tryPlay(); else vid.pause(); });
       }, { threshold: 0.2 }).observe(vid);
-    } else { tryPlay(); }
+    } else { seen = true; tryPlay(); }
     vid.addEventListener('timeupdate', function () {
       var t = vid.currentTime, name = cuts[0][1];
       for (var i = 0; i < cuts.length; i++) if (t >= cuts[i][0]) name = cuts[i][1];
