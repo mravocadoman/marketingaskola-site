@@ -18,7 +18,12 @@
   var capiUrl = script && script.getAttribute('data-capi');
   var capiSecret = script && script.getAttribute('data-capi-secret');
   var gtmId = script && script.getAttribute('data-gtm');
-  if (!ga4Id && !metaId && !gtmId) return;
+  // Google Ads (12 Nov 2026): the account's tag plus one conversion label per
+  // site event, keyed by the GA4 event name (site.json googleAdsLabels).
+  var adsId = script && script.getAttribute('data-ads');
+  var adsLabels = {};
+  try { adsLabels = JSON.parse(script.getAttribute('data-ads-labels') || '{}'); } catch (e) { /* none */ }
+  if (!ga4Id && !metaId && !gtmId && !adsId) return;
 
   var KEY = 'ms-consent';
   var banner = document.querySelector('[data-consent]');
@@ -94,9 +99,13 @@
 
   window.msTrack = function (name, params, identity) {
     try { gtag('event', name, params || {}); } catch (e) { /* never break the page for analytics */ }
+    var id = name + '.' + Date.now() + '.' + Math.random().toString(36).slice(2, 10);
+    // Google Ads conversion. transaction_id lets Google drop a double count.
+    if (adsId && adsLabels[name]) {
+      try { gtag('event', 'conversion', { send_to: adsId + '/' + adsLabels[name], transaction_id: id }); } catch (e) { /* same */ }
+    }
     var meta = META_EVENT[name];
     if (!meta) return;
-    var id = name + '.' + Date.now() + '.' + Math.random().toString(36).slice(2, 10);
     try { if (window.fbq) window.fbq('track', meta, params || {}, { eventID: id }); } catch (e) { /* same */ }
     // The server road follows the same consent as the pixel: without "Piekrītu"
     // nothing about the visitor goes to Meta, hashed or not.
@@ -120,12 +129,13 @@
       ad_personalization: 'granted',
       analytics_storage: 'granted'
     });
-    if (ga4Id) {
+    if (ga4Id || adsId) {
       // gtag.js reads the same window.dataLayer, so these queue safely before
-      // the script arrives.
+      // the script arrives. One gtag.js serves both ids.
       gtag('js', new Date());
-      gtag('config', ga4Id);
-      add('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4Id));
+      if (ga4Id) gtag('config', ga4Id);
+      if (adsId) gtag('config', adsId);
+      add('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4Id || adsId));
     }
     if (metaId) {
       // Meta's own loader, trimmed: fbq queues calls until fbevents.js arrives.

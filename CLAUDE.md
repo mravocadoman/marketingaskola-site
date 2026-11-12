@@ -4485,6 +4485,42 @@ searches.
 - Nav, the hub tile and `llms.txt` call it "Mājaslapas ar AI". The ladder's
   third rung already said website prices depend on the scope.
 
+## Google Ads: conversion tag, lead source, two landing pages (12 Nov 2026)
+
+Owner, before launching Google search campaigns on a 350 $ promo credit
+(plan and ad copy in `docs/google-ads-plan.md`): *"optimise the websites and
+meta ads pages and add conversion events to them before the launch."*
+
+- **The Google Ads tag loads only after "Piekrītu"**, from `consent.js`, next to
+  GA4 and on the same gtag.js. `site.json` `googleAdsId` is the account
+  (AW-18563708225, account 629-727-4403, billing SIA Stonks) and
+  `googleAdsLabels` maps a GA4 event name to a conversion label: `msTrack` sends
+  a Google Ads `conversion` (with `transaction_id`) for any event that has one.
+  Today `generate_lead` goes to "Lead" and `contact_click` to "Contact", the
+  actions Impromotion's site already uses; conversions are credited to the
+  clicked ad, so the two sites cannot mix inside a campaign. Own actions for
+  Mārketinga Skola are a label swap in `site.json`.
+- **Every WhatsApp link counts as `contact_click`** (main.js matches `wa.me`),
+  not only the float with `data-track`. The Meta page's closing WhatsApp
+  button had been tracked by nothing.
+- **Every lead carries its source.** main.js stores the visit's first utm tags
+  (or "google / cpc" for an auto-tagged click, or the referring site) in
+  sessionStorage `ms-src`, and forms.js adds `source` plus a last message line
+  "Avots: …". The leads workflow keeps it in `details` and the alert e-mail
+  shows it, so leads from visitors who refused cookies are still attributable.
+  That table is the real count; Google Ads only sees consented visitors.
+- **A url field accepts "mana-lapa.lv"**: forms.js prefixes https:// instead of
+  refusing it.
+- **`/facebook-reklama/` has its own form** (`forms.json` "meta", posted AS
+  contact): name, e-mail and the ad budget required, nothing else. Every primary
+  button goes to `#pieteikums`, the hero's second button to `#rezultati`, and the
+  closing band keeps only ghost buttons, because the form is the primary action.
+  Before this, every enquiry had to travel to `/sazinies/` first.
+- **`/majaslapu-izstrade/`** got the rating badges in the hero, a button straight
+  after the portfolio, and a form where only name, e-mail and the two selects
+  are required.
+- `.page-hero .rating-row` spaces the badges when a hero carries them.
+
 ## "More like an agency": first attempt rejected (3 Nov 2026)
 
 Owner: *"make it feel slightly more like an agency website, currently it barely

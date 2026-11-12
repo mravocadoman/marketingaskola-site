@@ -808,6 +808,8 @@ main > .sec:first-child, main > section:first-child { border-top: 0; }
 p + .row.reviews { margin-top: clamp(32px, 4vw, 48px); }
 .rating-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 clamp(28px, 3.5vw, 48px); }
 .rating-row:last-child { margin-bottom: 0; }
+/* In a page hero the badges sit under the button note (12 Nov 2026). */
+.page-hero .rating-row { margin-top: 22px; }
 /* Phones get one row of public reviews: six stacked quotes ran 2 000px, and
    the badges above them link to every review anyway. */
 @media (max-width: 640px) { .row.reviews + .row.reviews { display: none; } }

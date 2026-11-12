@@ -6,6 +6,10 @@ permalink: "/facebook-reklama/"
 crumb: { label: "Pakalpojumi", url: "/pakalpojumi/" }
 service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju reklāma" }
 ---
+{% from "form.njk" import form with context %}
+{#- 12 Nov 2026: the landing page for the Google Ads search campaign. Paid
+    traffic must not leave for /sazinies/ to enquire, so the page carries its
+    own short form (forms.json "meta") and every primary button goes to it. #}
 <section class="page-hero page-hero--media">
   <div class="container">
     <div class="hero-grid2">
@@ -14,10 +18,11 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
       <h1>Facebook un Instagram reklāma, kurā redzi <em>katru ieguldīto eiro</em><span class="accent-text">.</span></h1>
       <p class="sub">Facebook un Instagram reklāmas uzņēmumiem, kas reklāmā iegulda vismaz {{ site.metaMinAdSpend }} mēnesī. Atskaite sākas ar to, cik maksā viens klients, un, ja pirms sākuma norunāto rezultātu nesasniedzam, par pārvaldību nemaksā.</p>
       <div class="btn-wrap">
-        <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
-        <a class="btn btn--ghost" href="/portfolio/">Apskati portfolio</a>
+        <a class="btn" href="#pieteikums">Pieteikties iepazīšanās zvanam</a>
+        <a class="btn btn--ghost" href="#rezultati">Skatīt rezultātus</a>
       </div>
       <p class="fine btn-note">Bez maksas, 20 minūtes. Pasakām, vai un kā varam palīdzēt.</p>
+      {% include "reviews-badges.njk" %}
       </div>
       <figure class="hero-media">{% include "motifs/meta.njk" %}</figure>
     </div>
@@ -108,7 +113,7 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
   </div>
 </section>
 
-<section class="sec">
+<section class="sec" id="rezultati">
   <div class="container">
     <div class="sec-head">
       <div>
@@ -172,7 +177,7 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
         sits right after it. #}
     <div class="proof-cta">
       <p>Gribi saprast, kas būtu iespējams Tavā reklāmas kontā? Iepazīšanās zvanā 20 minūtēs pasakām, vai un kā varam palīdzēt.</p>
-      <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
+      <a class="btn" href="#pieteikums">Pieteikties iepazīšanās zvanam</a>
     </div>
   </div>
 </section>
@@ -248,14 +253,31 @@ service: { name: "Meta reklāmas pārvaldība", serviceType: "Sociālo mediju re
   </div>
 </section>
 
+<section class="sec" id="pieteikums">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow"><span class="idx">07</span> Pieteikums</span>
+        <h2>Sāksim ar 20 minūšu <em>sarunu</em></h2>
+      </div>
+      <p class="lead">Pastāsti, cik tērē un kas nestrādā: pēc zvana zināsi, vai varam palīdzēt un kas jālabo vispirms.</p>
+    </div>
+    <div class="terms">
+      <p><strong>Ja pirms sākuma norunāto rezultātu nesasniedzam, par pārvaldību nemaksā.</strong></p>
+      <p>Kampaņas vadām, ja reklāmas budžets ir vismaz {{ site.metaMinAdSpend }} mēnesī. Ja tas ir mazāks, izdevīgāk ir sākt ar <a href="/meta-reklamas-kurss/">Meta reklāmas kursu</a>.</p>
+    </div>
+    {{ form("meta") }}
+  </div>
+</section>
+
+{#- The form above is the primary action; this band only offers alternatives, so no second cyan button in one viewport. #}
 <section class="cta-band" id="zvans">
   <div class="container cta-band-inner">
     <div>
-      <h2>Sāksim ar 20 minūšu <em>sarunu</em></h2>
-      <p>Kamēr nav skaidrs, cik maksā viens klients, katra nākamā mēneša budžetu tērē uz labu laimi. Pastāsti, cik tērē un ko rāda atskaite: pēc 20 minūtēm zināsi, vai varam palīdzēt un kas jālabo vispirms. Ja gribi tikai otru viedokli par esošu kontu, piedāvājam <a href="/marketinga-konsultacijas/">60 minūšu konsultāciju par kontu</a> ({% offer "60" %}).</p>
+      <h2>Ērtāk uzrakstīt <em>WhatsApp</em>?</h2>
+      <p>Kamēr nav skaidrs, cik maksā viens klients, katra nākamā mēneša budžetu tērē uz labu laimi. Ja gribi tikai otru viedokli par esošu kontu, piedāvājam <a href="/marketinga-konsultacijas/">60 minūšu konsultāciju par kontu</a> ({% offer "60" %}).</p>
     </div>
     <div class="btn-wrap">
-      <a class="btn" href="/sazinies/">Pieteikties iepazīšanās zvanam</a>
       <a class="btn btn--ghost" href="https://wa.me/37126673384" target="_blank" rel="noopener">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.1-1.4A10 10 0 1 0 12 2zm5.8 14.2c-.25.7-1.45 1.35-2 1.4-.55.08-1.05.35-3.55-.74-3-1.32-4.9-4.4-5.05-4.6-.15-.2-1.2-1.6-1.2-3.05 0-1.45.76-2.16 1.03-2.46.27-.3.59-.37.79-.37h.57c.18 0 .43-.07.67.5l.92 2.22c.08.17.13.36.02.56l-.37.56-.53.57c-.16.16-.34.34-.15.67.2.33.87 1.44 1.87 2.33 1.29 1.15 2.37 1.5 2.71 1.67.34.17.53.14.73-.08l1.1-1.28c.25-.33.47-.25.79-.15l2.02.95c.33.17.55.25.63.39.08.13.08.78-.17 1.48z"/></svg>
         Rakstīt WhatsApp

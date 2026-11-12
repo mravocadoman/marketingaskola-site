@@ -44,6 +44,8 @@
       if (f.type === 'hidden' || f.closest('.hp')) return;
       setError(f, '');
       var v = (f.value || '').trim();
+      // People type "mana-lapa.lv"; add the scheme rather than refuse it.
+      if (v && f.type === 'url' && !/^[a-z]+:\/\//i.test(v)) { v = 'https://' + v; f.value = v; }
 
       if (f.type === 'checkbox') {
         if (f.required && !f.checked) {
@@ -82,6 +84,14 @@
       delete data[el.name];
       data[to] = labelFor(el) + ': ' + v + (data[to] ? '\n\n' + data[to] : '');
     });
+    /* Where the visit came from (main.js). It rides at the end of the message,
+     * like the budget, so the alert e-mail says whether an ad brought the lead. */
+    var src = '';
+    try { src = sessionStorage.getItem('ms-src') || ''; } catch (e) { /* private mode */ }
+    if (src) {
+      data.source = src;
+      if (form.querySelector('[name="message"]')) data.message = (data.message ? data.message + '\n\n' : '') + 'Avots: ' + src;
+    }
     return data;
   }
 

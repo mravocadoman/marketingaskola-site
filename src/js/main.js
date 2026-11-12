@@ -346,6 +346,21 @@
     if (el.getAttribute('data-date') < today) el.hidden = true;
   });
 
+  /* Where this visit came from (12 Nov 2026), kept for the whole visit so a
+     form on any later page still knows: utm tags, else "google / cpc" for an
+     auto-tagged Google Ads click, else the referring site. forms.js adds it
+     to the enquiry, so the leads table shows which leads the ads brought,
+     including those of visitors who refused cookies. */
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var s = [q.get('utm_source'), q.get('utm_medium'), q.get('utm_campaign')].filter(Boolean).join(' / ');
+    if (!s && (q.get('gclid') || q.get('gbraid') || q.get('wbraid'))) s = 'google / cpc';
+    if (!s && document.referrer) {
+      try { var h = new URL(document.referrer).host; if (h !== location.host) s = 'ref: ' + h.replace(/^www\./, ''); } catch (e) { /* bad referrer */ }
+    }
+    try { if (s && !sessionStorage.getItem('ms-src')) sessionStorage.setItem('ms-src', s.slice(0, 100)); } catch (e) { /* private mode */ }
+  })();
+
   /* GA4 outbound and intent tracking (6 Sep 2026).
      One delegated listener rather than per-element handlers, so nothing has to
      be wired into the markup when a new button appears. window.msTrack comes
@@ -359,6 +374,9 @@
 
     if (tag) {
       window.msTrack('contact_click', { method: tag, page_path: location.pathname });
+    } else if (href.indexOf('https://wa.me/') === 0) {
+      // Every WhatsApp link, not only the float that carries data-track.
+      window.msTrack('contact_click', { method: 'whatsapp', page_path: location.pathname });
     } else if (href.indexOf('https://buy.stripe.com') === 0) {
       // Money leaving for checkout: the closest thing this site has to a sale.
       window.msTrack('begin_checkout', { link_url: href, page_path: location.pathname });

@@ -21,7 +21,10 @@
     "capiUrl": "https://marketingaskola.app.n8n.cloud/webhook/meta-capi",
     "capiSecret": "ms-site-2026",
     "_auditNote": "Lead magnet: the popup posts a URL here and renders the returned checks inline. n8n workflow PxXdIWi34gIyEfMz. Empty = the popup never renders.",
-    "gtmId": ""
+    "gtmId": "",
+    "_adsNote": "Google Ads tag (12 Nov 2026), loaded by consent.js only after 'Piekrītu', like GA4. googleAdsLabels maps a GA4 event name to a conversion label in that account; an event without a label sends no Google Ads conversion. Account 629-727-4403 (billing SIA Stonks); until Mārketinga Skola has its own conversion actions there, these are the account's existing Lead and Contact actions, which Impromotion uses too. Conversions are credited to the clicked ad, so the two sites cannot mix inside a campaign.",
+    "googleAdsId": "AW-18563708225",
+    "googleAdsLabels": { "generate_lead": "KvtMCPnl-rQdEMHq7pNF", "contact_click": "NV7lCM7QgrUdEMHq7pNF" }
   },
   "company": {
     "name": "SIA “Stonks”",

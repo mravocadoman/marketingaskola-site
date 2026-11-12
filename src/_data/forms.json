@@ -82,6 +82,72 @@
         }
       ]
     },
+    "meta": {
+      "_comment": "Lead form on /facebook-reklama/ (12 Nov 2026), the page Google Ads sends to. Posts AS contact, like majaslapa. Shorter than contact on purpose: paid traffic, so only name, e-mail and the ad budget are required. The budget rides inside the message, and the budget floor is what screens the lead.",
+      "as": "contact",
+      "submit": "Pieteikties iepazīšanās zvanam",
+      "note": "Bez maksas, 20 minūtes. Atbildēsim 1 darba dienas laikā.",
+      "successTitle": "Paldies, pieteikums saņemts.",
+      "successBody": "Sazināsimies ar Tevi 1 darba dienas laikā. Ja lieta ir steidzama, raksti uz rihards@marketingaskola.lv vai WhatsApp +371 26673384.",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Vārds",
+          "type": "text",
+          "required": true,
+          "autocomplete": "given-name"
+        },
+        {
+          "name": "email",
+          "label": "E-pasts",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email"
+        },
+        {
+          "name": "phone",
+          "label": "Tālrunis",
+          "type": "tel",
+          "autocomplete": "tel"
+        },
+        {
+          "name": "company",
+          "label": "Uzņēmuma nosaukums",
+          "type": "text",
+          "hint": "ja ir",
+          "autocomplete": "organization"
+        },
+        {
+          "name": "website",
+          "label": "Mājaslapa",
+          "type": "url",
+          "hint": "ja ir",
+          "autocomplete": "url"
+        },
+        {
+          "name": "budget",
+          "label": "Reklāmas budžets mēnesī",
+          "hint": "ko maksā reklāmas platformai",
+          "type": "select",
+          "required": true,
+          "full": true,
+          "into": "message",
+          "options": [
+            "Mazāk par 1 000 €",
+            "1 000–3 000 €",
+            "3 000–10 000 €",
+            "Virs 10 000 €",
+            "Neattiecas (interesē cits pakalpojums)"
+          ]
+        },
+        {
+          "name": "message",
+          "label": "Kas šobrīd reklāmā nestrādā?",
+          "type": "textarea",
+          "full": true
+        }
+      ]
+    },
     "course": {
       "submit": "Pieteikties kursam",
       "note": "Pieteikšanās ir bez maksas un neuzliek par pienākumu iegādāties kursu. Sazināsimies ar detaļām un datumiem.",
@@ -258,7 +324,7 @@
       ]
     },
     "majaslapa": {
-      "_comment": "Website offer form on /majaslapu-izstrade/ (4 Nov 2026). It posts AS contact, because the leads workflow only accepts the form keys it knows; GA4 still gets form_id majaslapa from data-form. The two selects ride inside the message, like the contact budget. To give it its own key, add majaslapa to FORMS and subjects in the Parse and gate node, then drop \"as\".",
+      "_comment": "Website offer form on /majaslapu-izstrade/ (4 Nov 2026). It posts AS contact, because the leads workflow only accepts the form keys it knows; GA4 still gets form_id majaslapa from data-form. The two selects ride inside the message, like the contact budget. To give it its own key, add majaslapa to FORMS and subjects in the Parse and gate node, then drop \"as\". Since 12 Nov 2026 only name, e-mail and the two selects are required: it is a paid landing page, and the call fills in the rest.",
       "as": "contact",
       "submit": "Nosūtīt pieteikumu",
       "note": "Atbildēsim 1 darba dienas laikā. Fiksētu cenu nosaucam pēc bezmaksas 20 minūšu iepazīšanās zvana.",
@@ -276,7 +342,6 @@
           "name": "last_name",
           "label": "Uzvārds",
           "type": "text",
-          "required": true,
           "autocomplete": "family-name"
         },
         {
@@ -342,7 +407,6 @@
           "name": "message",
           "label": "Pastāsti par uzņēmumu un to, kas lapai jāpanāk",
           "type": "textarea",
-          "required": true,
           "full": true
         }
       ]
