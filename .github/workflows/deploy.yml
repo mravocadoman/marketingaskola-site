@@ -58,7 +58,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # onnxruntime-node (the local portrait matting tool) fetches a CUDA build
+      # from GitHub on install; that download answered 404 on 24 Nov 2026 and
+      # failed npm ci before anything shipped. CI never needs it.
       - run: npm ci
+        env:
+          npm_config_onnxruntime_node_install_cuda: skip
       - run: npx @11ty/eleventy
       - run: npm run check
       - name: SSH key
@@ -138,7 +143,12 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # onnxruntime-node (the local portrait matting tool) fetches a CUDA build
+      # from GitHub on install; that download answered 404 on 24 Nov 2026 and
+      # failed npm ci before anything shipped. CI never needs it.
       - run: npm ci
+        env:
+          npm_config_onnxruntime_node_install_cuda: skip
       - run: npx @11ty/eleventy --pathprefix="$PATH_PREFIX"
         env:
           PATH_PREFIX: /marketingaskola-site/
