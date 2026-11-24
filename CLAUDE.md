@@ -4246,6 +4246,15 @@ personal pipeline in n8n is separate and stays as it is.
   store); `/ai-teksti-latviski/` shows the real prompts of `social-write-lv.mjs`
   and `lv-review.mjs`, so change it when they change. Backlog and the LinkedIn research behind it are in
   `docs/social-pipeline.md`.
+- **The 2-3 Nov 2026 Batch One guides were taken down on 24 Nov 2026** (owner:
+  *"AI slop posts, they dont give any value"*). Seven posts translated from Rihards's
+  English kits (`/ai-kvalitates-kontrole/`, `/leti-leadi-dargi-klienti/`, the Monday
+  report, the Black Friday audit, the nine-automation department, the e-commerce
+  build log, the Python carousels) 301 to `/facebook-reklama/`,
+  `/marketinga-automatizacija/` or `/blogs/` in `src/.htaccess`, and their upcoming
+  Notion rows carry **EN only**. **Never turn an English Batch One kit into a site post
+  again.** A Latvian guide has to be written for this site's reader, and the owner reads
+  it before it ships.
 - **Post artwork never ships with the site:** `social/art.json` is its own
   manifest, generated into `social/art/` with `generate-images.mjs
   --manifest=social/art.json --out=social/art`, then ground-matched and trimmed

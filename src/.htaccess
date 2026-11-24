@@ -61,6 +61,13 @@ AddDefaultCharset utf-8
   # took a matching address. The old one keeps its links and rankings.
   RewriteRule ^ai-un-automatizacijas/?$ /marketinga-automatizacija/ [R=301,L]
 
+  # 24 Nov 2026: seven AI-written guide posts from 2-3 Nov taken down (owner:
+  # "they dont give any value"). Social DMs already sent their links, so each
+  # lands on the service it was about rather than a 404.
+  RewriteRule ^(?:pirmdienas-reklamu-parskats-ar-claude|black-friday-meta-reklamu-audits|leti-leadi-dargi-klienti)/?$ /facebook-reklama/ [R=301,L]
+  RewriteRule ^(?:marketinga-nodala-ar-claude-un-n8n|e-komercijas-bizness-ar-claude|ai-kvalitates-kontrole)/?$ /marketinga-automatizacija/ [R=301,L]
+  RewriteRule ^linkedin-karuseli-ar-python/?$ /blogs/ [R=301,L]
+
   # WordPress feeds -> the Atom feed.
   RewriteRule ^(?:category/[^/]+/)?feed/?$ /feed.xml [R=301,L]
   RewriteRule ^comments/feed/?$ /feed.xml [R=301,L]
