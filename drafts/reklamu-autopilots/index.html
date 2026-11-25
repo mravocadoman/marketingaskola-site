@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reklāmu Autopilots | Mārketinga Skola</title>
+<meta name="description" content="Jūsu Meta reklāmas katru dienu pārbauda un uzlabo AI pēc jūsu noteikumiem. Zaudējošās reklāmas apstājas, budžets pāriet uz uzvarētājām, jūs saņemat vienu ziņu dienā. Iestatīšana €590, vadība €149 mēnesī.">
+<meta property="og:title" content="Reklāmu Autopilots: jūsu Meta reklāmas uzlabojas katru dienu">
+<meta property="og:description" content="Pārtrauciet maksāt par reklāmām, kas nepārdod. Iestatīšana €590, vadība €149/mēn., 60 dienu garantija.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1530">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<style>
+:root{
+  --navy:#0b1530; --navy2:#13224a; --ink:#0f172a; --muted:#516079; --line:#e3e8f0;
+  --bg:#ffffff; --soft:#f5f7fb; --brand:#ff7a1a; --brand2:#e8630a; --ok:#14a06e; --bad:#e2453b; --cyan:#22c3e6;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif;line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(32px,5.2vw,56px);font-weight:800}
+h2{font-size:clamp(27px,3.6vw,40px);font-weight:800}
+h3{font-size:21px;font-weight:700}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.narrow{max-width:780px}
+section{padding:80px 0}
+.soft{background:var(--soft)}
+.dark{background:var(--navy);color:#e8edf7}
+.dark .muted{color:#a9b5cf}
+.muted{color:var(--muted)}
+.eyebrow{display:inline-block;font:700 13px/1.45 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--brand2);margin-bottom:14px}
+.dark .eyebrow{color:#ffb27a}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brand);color:#fff;text-decoration:none;font:800 18px/1.2 Manrope,sans-serif;padding:18px 28px;border-radius:12px;border:0;cursor:pointer;box-shadow:0 10px 24px -8px rgba(255,122,26,.6);transition:transform .15s,background .15s;min-height:56px}
+.btn:hover{background:var(--brand2);transform:translateY(-1px)}
+.btn small{display:block;font:500 13px Inter,sans-serif;opacity:.9}
+.btn-ghost{background:transparent;color:inherit;box-shadow:none;border:2px solid currentColor}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.under-cta{font-size:14px;color:var(--muted);margin-top:12px}
+.dark .under-cta{color:#a9b5cf}
+
+/* top bar */
+.topbar{background:var(--navy);color:#fff;font-size:14px;text-align:center;padding:9px 16px}
+.topbar b{color:#ffb27a}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 18px Manrope,sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#ffb27a);display:inline-block}
+.nav .btn{padding:10px 18px;font-size:15px;min-height:44px}
+
+/* hero */
+.hero{padding:56px 0 64px;background:linear-gradient(180deg,#fff, #f3f6fc)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand),#ff4f6d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:20px;color:var(--muted);max-width:560px}
+.checks{list-style:none;padding:0;margin:22px 0 28px}
+.checks li{position:relative;padding-left:32px;margin:9px 0}
+.checks li:before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--ok) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
+.hero-media{position:relative}
+.hero-media img{height:auto;border-radius:22px;box-shadow:0 30px 60px -25px rgba(11,21,48,.45);aspect-ratio:3/2;object-fit:cover;width:100%}
+.float-card{position:absolute;left:-26px;bottom:-28px;width:300px;max-width:78%;background:#fff;border-radius:16px;box-shadow:0 20px 40px -12px rgba(11,21,48,.35);padding:14px 16px;font-size:13.5px;line-height:1.45}
+.float-card .h{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+.float-card .dot{width:30px;height:30px;border-radius:50%;background:#2aa1da;display:grid;place-items:center;color:#fff;font-weight:800;font-size:13px}
+.float-card .t{color:var(--muted);font-size:12px;margin-left:auto}
+.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:22px;font-size:14px;color:var(--muted)}
+.trust b{color:var(--ink)}
+
+/* problem */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split img{height:auto;border-radius:20px;box-shadow:0 24px 48px -24px rgba(0,0,0,.4)}
+.pain{list-style:none;padding:0;margin:20px 0}
+.pain li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative}
+.pain li:before{content:"✕";position:absolute;left:4px;top:11px;color:var(--bad);font-weight:800}
+
+/* stat cards and charts */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.dark .card{background:var(--navy2);border-color:#24356a}
+.chart-card h3{font-size:19px}
+.chart-card .src{font-size:12.5px;color:var(--muted);margin-top:10px}
+.dark .chart-card .src{color:#8f9dbd}
+.bigstat{font:800 46px/1 Manrope,sans-serif;color:var(--brand)}
+.bars{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.bar{display:grid;grid-template-columns:110px 1fr 70px;align-items:center;gap:10px;font-size:14px}
+.bar .track{height:22px;background:#eef1f7;border-radius:6px;overflow:hidden}
+.dark .bar .track{background:#1c2c5a}
+.bar .fill{height:100%;border-radius:6px;background:var(--brand);width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.bar .fill.grey{background:#b7c1d4}
+.bar .fill.cyan{background:var(--cyan)}
+.bar .v{font-weight:700;text-align:right}
+.in .bar .fill{width:var(--w)}
+
+/* how */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{position:relative;padding:26px 22px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--navy);color:#fff;font:800 18px Manrope,sans-serif;margin-bottom:14px}
+.step .when{font-size:13px;font-weight:600;color:var(--brand2);text-transform:uppercase;letter-spacing:.06em}
+
+/* daily loop */
+.loop{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.loop ol{padding-left:0;list-style:none;margin:0}
+.loop li{display:grid;grid-template-columns:54px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid #24356a}
+.loop li .ic{width:46px;height:46px;border-radius:12px;background:#1c2c5a;display:grid;place-items:center;font-size:22px}
+.loop li b{display:block;color:#fff}
+.phone{max-width:360px;margin:0 auto;background:#0e1a3a;border-radius:38px;padding:14px;box-shadow:0 30px 70px -20px rgba(0,0,0,.6);border:1px solid #2a3a6c}
+.screen{background:#dfe8ee url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='3' cy='3' r='1.5' fill='%23c9d5dd'/%3E%3C/svg%3E");border-radius:28px;padding:18px 14px 22px;color:#0f172a;min-height:520px}
+.chat-h{display:flex;align-items:center;gap:10px;background:#fff;border-radius:14px;padding:10px 12px;margin-bottom:14px;font-size:14px}
+.chat-h .dot{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--brand),#ffb27a);display:grid;place-items:center;color:#fff;font-weight:800}
+.bubble{background:#fff;border-radius:4px 16px 16px 16px;padding:12px 14px;font-size:13.5px;line-height:1.5;box-shadow:0 1px 1px rgba(0,0,0,.08)}
+.bubble .row{display:flex;justify-content:space-between;gap:10px}
+.bubble hr{border:0;border-top:1px dashed #d6dde6;margin:8px 0}
+.bubble .g{color:var(--ok);font-weight:700}
+.bubble .r{color:var(--bad);font-weight:700}
+.bubble .time{text-align:right;color:#8a98ab;font-size:11px;margin-top:6px}
+
+/* compare */
+.compare{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:15.5px}
+.compare th,.compare td{padding:15px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.compare thead th{background:#f7f9fc;font:700 15px Manrope,sans-serif}
+.compare th.us,.compare td.us{background:#fff6ef}
+.compare thead th.us{background:var(--brand);color:#fff}
+.compare tr:last-child td{border-bottom:0}
+.compare .y{color:var(--ok);font-weight:700}
+.compare .n{color:var(--bad);font-weight:700}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* offer stack */
+.offer{max-width:880px;margin:0 auto;background:#fff;color:var(--ink);border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.55)}
+.offer-head{background:linear-gradient(135deg,var(--brand),#ff4f6d);color:#fff;padding:26px 30px}
+.offer-head h3{font-size:26px;margin:0}
+.stack{padding:10px 30px}
+.stack .it{display:grid;grid-template-columns:28px 1fr auto;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:start}
+.stack .it .ck{width:24px;height:24px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:800;margin-top:2px}
+.stack .it b{display:block}
+.stack .it span.d{color:var(--muted);font-size:14.5px}
+.stack .it .val{font-weight:700;color:var(--muted);white-space:nowrap}
+.stack .bonus .ck{background:var(--brand)}
+.stack .tag{display:inline-block;background:#fff1e6;color:var(--brand2);font:700 11px Manrope,sans-serif;padding:3px 8px;border-radius:6px;letter-spacing:.06em;text-transform:uppercase;margin-right:6px;vertical-align:2px}
+.total{display:flex;justify-content:space-between;padding:18px 30px;background:#f7f9fc;font-weight:700}
+.total s{color:var(--muted)}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.price>div{padding:26px 30px;text-align:center}
+.price>div+div{border-left:1px solid var(--line)}
+.price .amt{font:800 50px/1 Manrope,sans-serif;color:var(--navy)}
+.price .lbl{color:var(--muted);font-size:14.5px;margin-top:6px}
+.offer-cta{padding:6px 30px 30px;text-align:center}
+.offer-cta .btn{width:100%;flex-direction:column;gap:2px}
+.scarcity{display:flex;align-items:center;justify-content:center;gap:10px;font-size:14.5px;color:var(--muted);margin-top:14px}
+.slots{display:flex;gap:5px}
+.slots i{width:16px;height:16px;border-radius:4px;background:var(--brand)}
+.slots i.f{background:#d9dfe9}
+
+/* guarantee */
+.guar{display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:center;background:#fff;border:2px dashed #b9c4d8;border-radius:24px;padding:34px}
+.seal{width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffd29f,var(--brand) 60%,var(--brand2));display:grid;place-items:center;color:#fff;text-align:center;font:800 15px/1.15 Manrope,sans-serif;box-shadow:0 14px 30px -10px rgba(232,99,10,.7);border:6px solid #fff;outline:2px solid var(--brand)}
+.seal b{font-size:40px;display:block}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.calc label{display:block;font-weight:600;margin:18px 0 6px}
+.calc input[type=range]{width:100%;accent-color:var(--brand)}
+.calc .rv{font:800 22px Manrope,sans-serif;color:var(--navy)}
+.result{background:var(--navy);color:#fff;border-radius:20px;padding:30px}
+.result .num{font:800 52px/1 Manrope,sans-serif;color:#ffb27a;margin:6px 0 4px}
+.result .sm{color:#a9b5cf;font-size:14px}
+
+/* fit */
+.fit .card h3{display:flex;gap:10px;align-items:center}
+.fit ul{padding-left:20px;margin:0}
+.fit li{margin:8px 0}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 22px;margin:12px 0}
+summary{cursor:pointer;list-style:none;padding:20px 30px 20px 0;font:700 17.5px Manrope,sans-serif;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:16px;font-size:26px;color:var(--brand)}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted)}
+
+/* form */
+.form-card{background:#fff;color:var(--ink);border-radius:22px;padding:30px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.form-card label{display:block;font-weight:600;font-size:14.5px;margin:14px 0 6px}
+.form-card input,.form-card select,.form-card textarea{width:100%;font:inherit;padding:14px 14px;border:1.5px solid #cfd7e4;border-radius:10px;background:#fff;min-height:52px}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(255,122,26,.18)}
+.form-card .btn{width:100%;margin-top:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.hp{position:absolute;left:-9999px}
+.final-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.next{list-style:none;padding:0;margin:20px 0 0}
+.next li{display:flex;gap:12px;margin:12px 0}
+.next li span{flex:none;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+
+footer{background:#070e22;color:#8f9dbd;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.mobile-cta{display:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  section{padding:60px 0}
+  .hero-grid,.split,.loop,.calc,.final-grid,.grid2{grid-template-columns:1fr}
+  .grid3,.steps{grid-template-columns:1fr 1fr}
+  .hero{padding-top:30px}
+  .float-card{position:relative;left:auto;bottom:auto;margin:-40px auto 0;width:92%;max-width:360px}
+  .hero .lead{font-size:18px}
+  .guar{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .nav .btn{display:none}
+  .mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+  .mobile-cta.show{transform:none}
+  .mobile-cta .btn{width:100%;font-size:17px;padding:14px}
+  body{padding-bottom:0}
+}
+@media (max-width:600px){
+  body{font-size:16.5px}
+  .wrap{padding:0 16px}
+  .grid3,.steps,.form-row{grid-template-columns:1fr}
+  .price{grid-template-columns:1fr}
+  .price>div+div{border-left:0;border-top:1px solid var(--line)}
+  .stack,.offer-cta{padding-left:18px;padding-right:18px}
+  .total,.offer-head{padding-left:18px;padding-right:18px}
+  .stack .it{grid-template-columns:26px 1fr}
+  .stack .it .val{grid-column:2;font-size:14px}
+  .bar{grid-template-columns:86px 1fr 58px;font-size:13px}
+  .topbar{font-size:13px}
+  .compare{font-size:14px}
+  .compare th,.compare td{padding:12px 10px}
+}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.bar .fill{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">Dibinātāju cena pirmajiem 10 klientiem: <b>€590 iestatīšana + €149/mēn.</b> Pieņemam 5 jaunus klientus mēnesī.</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#"><i></i>Reklāmu Autopilots <span class="muted" style="font-weight:600;font-size:14px">· Mārketinga Skola</span></a>
+    <a class="btn" href="#pieteikties">Bezmaksas konta audits</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Meta reklāmām, kas tērē vismaz €1000 mēnesī</span>
+      <h1>Pārtrauciet maksāt par reklāmām, <em>kas nepārdod.</em></h1>
+      <p class="lead">Reklāmu Autopilots katru rītu pārbauda jūsu Facebook un Instagram reklāmas pret <b>reālajiem pasūtījumiem</b>, aptur zaudētājas un pārliek budžetu uz uzvarētājām. Pēc jūsu noteikumiem. Jūs saņemat vienu ziņu dienā.</p>
+      <ul class="checks">
+        <li>Katru dienu, 365 dienas gadā. Arī nedēļas nogalēs un atvaļinājumā.</li>
+        <li>Nekad nepārsniedz jūsu budžeta griestus. Nekad nepieskaras reklāmām, ko atzīmējat ar KEEP.</li>
+        <li>Pirmā nedēļa tikai atskaites: redzat katru lēmumu, pirms kaut kas mainās.</li>
+      </ul>
+      <a class="btn" href="#pieteikties">Saņemt bezmaksas konta auditu <span aria-hidden="true">→</span></a>
+      <p class="under-cta">2 minūšu forma. Atbildam 1 darba dienas laikā. Bez saistībām.</p>
+      <div class="trust">
+        <span><b>365</b> pārbaudes gadā</span>
+        <span><b>€149</b>/mēn. vadība</span>
+        <span><b>60 dienu</b> garantija</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" width="1536" height="1024" alt="E-veikala īpašniece mierīgi lasa rīta reklāmu atskaiti telefonā"></picture>
+      <div class="float-card" aria-hidden="true">
+        <div class="h"><span class="dot">RA</span>Reklāmu Autopilots <span class="t">08:12</span></div>
+        Vakar: tēriņš <b>€84</b>, reālie pasūtījumi <b>11</b>, ROAS <b style="color:var(--ok)">3,4</b>.<br>
+        Apturēta 1 reklāma (€61 bez pārdošanas). Budžets uzvarētājai +15%.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section>
+  <div class="wrap split">
+    <picture><source srcset="img/before.webp" type="image/webp"><img loading="lazy" src="img/before.jpg" width="900" height="900" alt="Noguris uzņēmējs vēlu vakarā pie datora ar reklāmu paneļiem"></picture>
+    <div>
+      <span class="eyebrow">Pazīstami?</span>
+      <h2>Meta reklāmas pašas no sevis nekļūst labākas. Tās kļūst dārgākas.</h2>
+      <ul class="pain">
+        <li>Ads Manager atverat reizi nedēļā, kad budžets jau iztērēts.</li>
+        <li>Meta rāda vienu skaitli, bankas konts citu.</li>
+        <li>Viena reklāma apēd visu budžetu, pārējās nekad netiek pārbaudītas.</li>
+        <li>Aģentūra skatās reizi mēnesī un sūta PDF, ko neviens nelasa.</li>
+        <li>Sezona, atvaļinājums vai slimība, un reklāmas paliek bez uzraudzības.</li>
+      </ul>
+      <p><b>Problēma nav jūsu produktā.</b> Problēma ir tajā, ka neviens nesēž pie jūsu reklāmām katru dienu. Autopilots sēž.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DATA / CHARTS -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 40px">
+      <span class="eyebrow">No mūsu pašu reklāmu konta</span>
+      <h2>Trīs lietas, ko mēs atradām, vadot paši savu e-veikalu 6 valstīs</h2>
+      <p class="muted">Šie nav pieņēmumi. Tie ir skaitļi no mūsu pašu Meta konta un veikala datiem, uz kuriem uzbūvēti Autopilota noteikumi.</p>
+    </div>
+    <div class="grid3 reveal" id="charts">
+      <div class="card chart-card">
+        <div class="bigstat">98%</div>
+        <h3>budžeta Meta atdeva vienai reklāmai no 17</h3>
+        <div class="bars">
+          <div class="bar"><span>1 reklāma</span><div class="track"><div class="fill" style="--w:98%"></div></div><span class="v">$506</span></div>
+          <div class="bar"><span>16 pārējās</span><div class="track"><div class="fill grey" style="--w:2.2%"></div></div><span class="v">$11</span></div>
+        </div>
+        <p class="src">Viena nedēļa, viena reklāmu kopa, $517 tēriņš. Vairāk reklāmu nenozīmē vairāk testu.</p>
+      </div>
+      <div class="card chart-card">
+        <div class="bigstat">+41%</div>
+        <h3>reālā klienta cena augstāka, nekā rāda Meta</h3>
+        <div class="bars">
+          <div class="bar"><span>Meta rāda</span><div class="track"><div class="fill cyan" style="--w:71%"></div></div><span class="v">$14.99</span></div>
+          <div class="bar"><span>Realitātē</span><div class="track"><div class="fill" style="--w:100%"></div></div><span class="v">$21.08</span></div>
+        </div>
+        <p class="src">Cena par pirkumu pēc Meta datiem pret reālo cenu par klientu no veikala pasūtījumiem, tas pats periods. Tāpēc Autopilots spriež pēc reālajiem pasūtījumiem.</p>
+      </div>
+      <div class="card chart-card">
+        <div class="bigstat">2,7×</div>
+        <h3>vairāk ietekmē attēls nekā teksts</h3>
+        <div class="bars">
+          <div class="bar"><span>Cits attēls</span><div class="track"><div class="fill" style="--w:100%"></div></div><span class="v">2,7×</span></div>
+          <div class="bar"><span>Cits teksts</span><div class="track"><div class="fill grey" style="--w:46%"></div></div><span class="v">1,25×</span></div>
+        </div>
+        <p class="src">Pirkuma cenas starpība starp labāko un sliktāko variantu. Tāpēc Autopilots testē jaunus vizuāļus, nevis bezgalīgi pārraksta tekstus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT DOES DAILY -->
+<section class="dark">
+  <div class="wrap loop">
+    <div>
+      <span class="eyebrow">Ko Autopilots dara katru rītu</span>
+      <h2>Pieci darbi, ko cilvēks dara reizi nedēļā. Autopilots tos dara katru dienu.</h2>
+      <ol>
+        <li><span class="ic">📊</span><div><b>Salīdzina Meta ar reālajiem pasūtījumiem</b><span class="muted">No Shopify, WooCommerce vai jūsu CRM. Bez klientu vārdiem un adresēm.</span></div></li>
+        <li><span class="ic">⏸️</span><div><b>Aptur reklāmas, kas tērē, bet nepārdod</b><span class="muted">Tikai tad, kad dati ir pietiekami. Nekad pēdējo pārdodošo reklāmu.</span></div></li>
+        <li><span class="ic">💶</span><div><b>Pārliek budžetu uz uzvarētājām</b><span class="muted">Maksimums ±20% vienā reizē, reizi 72 stundās, jūsu griestu robežās.</span></div></li>
+        <li><span class="ic">🎨</span><div><b>Sagatavo jaunus reklāmu vizuāļus testam</b><span class="muted">Līdz 3 nedēļā. Tie tiek izveidoti izslēgti, jums ir 24 h tos apskatīt.</span></div></li>
+        <li><span class="ic">📩</span><div><b>Atsūta vienu ziņu</b><span class="muted">Telegram, WhatsApp vai e-pastā. Ko mainīja, kāpēc, un vai kas vajadzīgs no jums.</span></div></li>
+      </ol>
+    </div>
+    <div class="phone reveal" aria-label="Dienas atskaites piemērs">
+      <div class="screen">
+        <div class="chat-h"><span class="dot">RA</span><div><b>Reklāmu Autopilots</b><div style="font-size:12px;color:#6b7a8f">jūsu dienas atskaite</div></div></div>
+        <div class="bubble">
+          <b>Otrdiena, 25. nov.</b>
+          <hr>
+          <div class="row"><span>Tēriņš vakar</span><b>€84,20</b></div>
+          <div class="row"><span>Reālie pasūtījumi</span><b>11</b></div>
+          <div class="row"><span>Ieņēmumi</span><b>€286,40</b></div>
+          <div class="row"><span>Reālais ROAS (7 d.)</span><span class="g">3,4 ▲</span></div>
+          <hr>
+          <b>Izdarīts:</b><br>
+          <span class="r">⏸</span> Apturēta "Video 3": €61 7 dienās, 0 pārdošanas.<br>
+          <span class="g">▲</span> Kampaņa "Pārdošana" €70 → €80/d. (ROAS 3d 3,8)<br>
+          🎨 2 jauni vizuāļi gaida jūsu apskati līdz rītdienai.
+          <hr>
+          <b>Nav izdarīts (jūsu noteikumi):</b><br>
+          Budžeta celšana kampaņai "Atlaides": pagājušas tikai 48 h kopš pēdējās izmaiņas.
+          <div class="time">08:12 ✓✓</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AFTER -->
+<section>
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Kā izskatās dzīve pēc tam</span>
+      <h2>Jūs izlasāt vienu ziņu pie rīta kafijas. Un ejat strādāt pie tā, kas jums patīk.</h2>
+      <p>Nekādu vakaru Ads Manager. Nekādu "vai man vajadzētu izslēgt šo reklāmu?". Autopilots pieņem ikdienas lēmumus pēc noteikumiem, ko kopā ar jums uzrakstām pirmajā tikšanās reizē, un jūs vienmēr redzat, ko un kāpēc tas izdarīja.</p>
+      <p>Gribat kādu reklāmu atstāt mierā? Pievienojat nosaukumam <b>KEEP</b>. Gribat visu apturēt? Uzrakstāt <b>STOP</b>. Kontrole paliek pie jums.</p>
+      <a class="btn" href="#pieteikties">Pieteikt bezmaksas auditu</a>
+    </div>
+    <picture><source srcset="img/after.webp" type="image/webp"><img loading="lazy" src="img/after.jpg" width="900" height="900" alt="Smaidošs uzņēmējs no rīta lasa īsu ziņu telefonā"></picture>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 40px">
+      <span class="eyebrow">Kā tas notiek</span>
+      <h2>No pieteikuma līdz autopilotam 3 nedēļās</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="when">1. diena</div><h3>Bezmaksas audits</h3><p class="muted">Paskatāmies jūsu kontu un parādām, kur pēdējās 90 dienās aizgāja nauda bez pārdošanas.</p></div>
+      <div class="step"><div class="when">1. nedēļa</div><h3>Jūsu noteikumi</h3><p class="muted">60 minūšu zvans. Budžeta grīdas un griesti, mērķa cena par pasūtījumu, ko nekad nedarīt.</p></div>
+      <div class="step"><div class="when">2. nedēļa</div><h3>Tikai atskaites</h3><p class="muted">Autopilots katru dienu raksta, ko darītu, bet neko nemaina. Kopā pārskatām lēmumus.</p></div>
+      <div class="step"><div class="when">3. nedēļa →</div><h3>Ieslēdzam</h3><p class="muted">Vispirms apturēšana un budžeta samazināšana, pēc nedēļas arī celšana un jauni testi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOPILOT VISUAL + SAFETY -->
+<section>
+  <div class="wrap split">
+    <picture><source srcset="img/autopilot.webp" type="image/webp"><img loading="lazy" src="img/autopilot.jpg" width="1400" height="933" alt="Autopilota vadības panelis ar reklāmu noteikumiem"></picture>
+    <div>
+      <span class="eyebrow">Drošības jostas</span>
+      <h2>AI, kas nevar "aizbraukt ar jūsu naudu"</h2>
+      <p class="muted">Katru lēmumu pirms izpildes pārbauda cieti ieprogrammēti limiti. Ja kaut kas nesakrīt, darbība netiek izpildīta un jūs to redzat atskaitē.</p>
+      <ul class="checks">
+        <li>Budžets nekad virs jūsu griestiem un zem grīdas.</li>
+        <li>Ne vairāk par 20% izmaiņu vienā reizē, ne biežāk kā reizi 72 h.</li>
+        <li>Nekad nemaina dzīvas reklāmas tekstu vai attēlu (tas izdzēš like un komentārus).</li>
+        <li>Nekad neieslēdz reklāmu, ko pats nav izveidojis.</li>
+        <li>Partnera piekļuve bez rēķinu un administratora tiesībām.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="soft">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 36px">
+      <span class="eyebrow">Salīdzinājums</span>
+      <h2>Kāpēc ne aģentūra un ne "izdarīšu pats"?</h2>
+    </div>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead><tr><th></th><th>Darīt pašam</th><th>Tipiska aģentūra</th><th class="us">Reklāmu Autopilots</th></tr></thead>
+        <tbody>
+          <tr><td>Cik bieži kāds skatās reklāmas</td><td>Kad atliek laiks</td><td>1× nedēļā vai mēnesī</td><td class="us"><b>Katru dienu</b></td></tr>
+          <tr><td>Spriež pēc reālajiem pasūtījumiem</td><td class="n">Reti</td><td class="n">Parasti pēc Meta datiem</td><td class="us y">Jā, katru dienu</td></tr>
+          <tr><td>Jūsu laiks mēnesī</td><td>8–15 h</td><td>2–3 h sapulcēs</td><td class="us"><b>~10 min</b> (ziņu lasīšana)</td></tr>
+          <tr><td>Strādā brīvdienās un svētkos</td><td class="n">Nē</td><td class="n">Nē</td><td class="us y">Jā</td></tr>
+          <tr><td>Jūs redzat katru lēmumu un iemeslu</td><td>–</td><td class="n">Mēneša atskaitē</td><td class="us y">Katru rītu</td></tr>
+          <tr><td>Cena</td><td>Jūsu stundas</td><td>Bieži €400+ mēnesī</td><td class="us"><b>€149 mēnesī</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section>
+  <div class="wrap calc">
+    <div>
+      <span class="eyebrow">Ātrs aprēķins</span>
+      <h2>Cik jūs šobrīd maksājat par reklāmām, kas nepārdod?</h2>
+      <p class="muted">Lielākajā daļā kontu, ko redzam, daļa budžeta aiziet reklāmām, kurām nav neviena pirkuma. Novietojiet slīdņus atbilstoši savam kontam.</p>
+      <label for="spend">Meta tēriņš mēnesī: <span class="rv" id="spendV">€2 000</span></label>
+      <input id="spend" type="range" min="500" max="20000" step="250" value="2000">
+      <label for="waste">Daļa, kas aiziet reklāmām bez pārdošanas: <span class="rv" id="wasteV">15%</span></label>
+      <input id="waste" type="range" min="5" max="40" step="1" value="15">
+    </div>
+    <div class="result" aria-live="polite">
+      <div class="sm">Nauda bez pārdošanas gadā</div>
+      <div class="num" id="yearV">€3 600</div>
+      <div class="sm">Autopilots gadā: €590 + 12 × €149 = <b style="color:#fff">€2 378</b></div>
+      <hr style="border:0;border-top:1px solid #24356a;margin:18px 0">
+      <div id="verdict" style="font-size:17px">Ja Autopilots atgūst tikai pusi no šīs summas, tas jau atmaksājas.</div>
+      <p class="sm" style="margin-top:14px">Šis ir aprēķins pēc jūsu ievadītajiem skaitļiem, ne solījums. Bezmaksas auditā parādām jūsu konta reālo summu.</p>
+      <a class="btn" href="#pieteikties" style="width:100%;margin-top:6px">Uzzināt savu reālo summu</a>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="dark" id="piedavajums">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 36px">
+      <span class="eyebrow">Piedāvājums</span>
+      <h2>Viss, kas jums vajadzīgs, lai reklāmas uzlabotos katru dienu</h2>
+      <p class="muted">Viena iestatīšanas maksa un zema mēneša maksa. Bez gada līguma.</p>
+    </div>
+    <div class="offer reveal">
+      <div class="offer-head"><h3>Reklāmu Autopilots · Dibinātāju piedāvājums</h3></div>
+      <div class="stack">
+        <div class="it"><span class="ck">✓</span><div><b>Ikdienas Autopilots</b><span class="d">Katru rītu: reālo pasūtījumu salīdzināšana, zaudētāju apturēšana, budžeta pārlikšana, jūsu limitu kontrole.</span></div><span class="val">vērtība €400/mēn.</span></div>
+        <div class="it"><span class="ck">✓</span><div><b>Jūsu personīgā noteikumu grāmata</b><span class="d">Uzrakstīta kopā ar jums: mērķa cena par pasūtījumu, grīdas, griesti, sezonas datumi, "nekad nedarīt" saraksts.</span></div><span class="val">vērtība €600</span></div>
+        <div class="it"><span class="ck">✓</span><div><b>Reālo pasūtījumu savienojums</b><span class="d">Shopify, WooCommerce vai CSV. Tikai summas un reklāmas, nekādi klientu personas dati.</span></div><span class="val">vērtība €250</span></div>
+        <div class="it"><span class="ck">✓</span><div><b>Ikdienas atskaite jūsu kanālā</b><span class="d">Telegram, WhatsApp vai e-pasts. Viena ziņa, bez paneļiem un parolēm.</span></div><span class="val">vērtība €100/mēn.</span></div>
+        <div class="it bonus"><span class="ck">★</span><div><span class="tag">Bonuss 1</span><b>"Naudas noplūdes" audits</b><span class="d">Konta pārbaude un saraksts ar reklāmām, kas pēdējās 90 dienās tērēja bez pārdošanas.</span></div><span class="val">vērtība €290</span></div>
+        <div class="it bonus"><span class="ck">★</span><div><span class="tag">Bonuss 2</span><b>Pikseļa un Conversions API pārbaude</b><span class="d">Ja Meta neredz jūsu pirkumus pareizi, Autopilots spriež akli. Pārbaudām un pasakām, kas jālabo.</span></div><span class="val">vērtība €190</span></div>
+        <div class="it bonus"><span class="ck">★</span><div><span class="tag">Bonuss 3</span><b>12 AI reklāmu vizuāļi pirmajos 30 dienās</b><span class="d">Pēc jūsu zīmola un labāko reklāmu parauga, gatavi testam. Jūs apstiprināt katru.</span></div><span class="val">vērtība €360</span></div>
+        <div class="it bonus"><span class="ck">★</span><div><span class="tag">Bonuss 4</span><b>Dibinātāju cena uz visu laiku</b><span class="d">Kad piedāvājums būs pilnībā atvērts, cena būs €990 + €249/mēn. Jums paliek €149, kamēr esat klients.</span></div><span class="val">ietaupījums €1 200/gadā</span></div>
+      </div>
+      <div class="total"><span>Kopējā vērtība pirmajā gadā</span><span>virs €8 000</span></div>
+      <div class="price">
+        <div><div class="amt">€590</div><div class="lbl">vienreizēja iestatīšana<br>(+ PVN)</div></div>
+        <div><div class="amt">€149<span style="font-size:22px">/mēn.</span></div><div class="lbl">ikdienas vadība<br>atceļama jebkurā mēnesī</div></div>
+      </div>
+      <div class="offer-cta">
+        <a class="btn" href="#pieteikties">Pieteikt bezmaksas auditu <small>maksāt neko nevajag, līdz redzat audita rezultātu</small></a>
+        <div class="scarcity"><span class="slots" aria-hidden="true"><i></i><i></i><i></i><i class="f"></i><i class="f"></i></span> Pieņemam 5 jaunus klientus mēnesī, katram personīgi iestatām noteikumus.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section>
+  <div class="wrap narrow">
+    <div class="guar reveal">
+      <div class="seal"><div><b>60</b>DIENU<br>GARANTIJA</div></div>
+      <div>
+        <h2 style="font-size:30px">Divkārša garantija. Risks ir mūsu pusē.</h2>
+        <p><b>1. Audita garantija.</b> Ja bezmaksas auditā neatrodam, ka pēdējās 90 dienās jūsu kontā vismaz €590 aizgāja reklāmām bez neviena pirkuma, iestatīšanu veicam bez maksas.</p>
+        <p><b>2. Rezultātu garantija.</b> Ja pēc 60 dienām jūsu reālais ROAS (ieņēmumi no veikala ÷ reklāmu tēriņš) nav augstāks nekā 60 dienās pirms sākuma, atmaksājam visas samaksātās mēneša maksas. Bez strīdiem.</p>
+        <p class="muted" style="font-size:14.5px;margin:0">Nosacījumi: budžets vismaz €20 dienā abos periodos, Autopilots ir ieslēgts, un jūs paši nemainījāt budžetus vai reklāmas tā vietā.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="soft">
+  <div class="wrap">
+    <div class="grid2">
+      <div>
+        <span class="eyebrow">Mēs to lietojam paši</span>
+        <h2>Autopilots radās mūsu pašu e-veikalā, nevis prezentācijā</h2>
+        <p>Mārketinga Skolas dibinātājs Rihards Zeila vada savu e-komercijas zīmolu ar Meta reklāmām ASV, Eiropā, Kanādā un Austrālijā. Noteikumi, pēc kuriem strādā Autopilots, ir uzrakstīti no šī konta datiem, ar reāliem pasūtījumiem, reāliem zaudējumiem un reālām kļūdām.</p>
+        <p>Tagad tieši tos pašus noteikumus pielāgojam jūsu biznesam.</p>
+      </div>
+      <div class="card" style="align-self:center">
+        <div class="grid2" style="gap:18px">
+          <div><div class="bigstat">3,34</div><div class="muted" style="font-size:14.5px">reālais ROAS 7 nedēļās uz $5 725 tēriņa, bez akcijām</div></div>
+          <div><div class="bigstat">~200</div><div class="muted" style="font-size:14.5px">pasūtījumu mēnesī no Meta un Google reklāmām</div></div>
+          <div><div class="bigstat">6</div><div class="muted" style="font-size:14.5px">veikali dažādās valstīs, ko Autopilots pārskata katru dienu</div></div>
+          <div><div class="bigstat">1</div><div class="muted" style="font-size:14.5px">ziņa dienā īpašniekam. Viss pārējais notiek pats.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="fit">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 36px">
+      <span class="eyebrow">Godīgi</span>
+      <h2>Kam tas der un kam ne</h2>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3><span style="color:var(--ok)">✓</span> Der, ja jūs</h3>
+        <ul>
+          <li>pārdodat internetā (e-veikals, pieteikumi, rezervācijas);</li>
+          <li>tērējat Meta reklāmām no €1 000 līdz €30 000 mēnesī;</li>
+          <li>jau esat ieguvuši pirmos pirkumus no reklāmām;</li>
+          <li>gribat kontroli, bet ne ikdienas darbu.</li>
+        </ul></div>
+      <div class="card"><h3><span style="color:var(--bad)">✕</span> Neder, ja jūs</h3>
+        <ul>
+          <li>vēl neesat palaidis nevienu reklāmu;</li>
+          <li>tērējat mazāk par €20 dienā (datu par maz lēmumiem);</li>
+          <li>meklējat zīmola stratēģiju vai video ražošanu;</li>
+          <li>gribat, lai neviens neko nemaina bez jūsu klikšķa.</li>
+        </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="soft">
+  <div class="wrap narrow">
+    <div class="center" style="margin-bottom:26px"><span class="eyebrow">Jautājumi</span><h2>Biežākie jautājumi</h2></div>
+    <details><summary>Vai AI var iztērēt vairāk naudas, nekā es gribu?</summary><p>Nē. Budžeta griesti katrai kampaņai ir ierakstīti kodā, ne tikai instrukcijās. Pat ja AI ieteiktu ko citu, pārbaude to noraidītu. Vienā reizē budžets var mainīties ne vairāk kā par 20%, un ne biežāk kā reizi 72 stundās.</p></details>
+    <details><summary>Kādu piekļuvi jums vajag?</summary><p>Partnera piekļuvi jūsu reklāmu kontam ar tiesībām vadīt kampaņas, bez administratora un bez rēķinu tiesībām. Veikalam tikai lasīšanas atslēgu pasūtījumu summām. Klientu vārdi, e-pasti un adreses netiek lasīti.</p></details>
+    <details><summary>Ko darīt, ja gribu kādu reklāmu atstāt mierā?</summary><p>Pievienojiet tās nosaukumam vārdu KEEP. Autopilots to nekad neapturēs. Ja gribat apturēt visu uzreiz, uzrakstiet mums STOP, un no nākamās dienas tas neko nedara.</p></details>
+    <details><summary>Vai Autopilots pats veido reklāmas?</summary><p>Tas sagatavo līdz 3 jauniem testa vizuāļiem nedēļā, bet tie tiek izveidoti izslēgti. Jums ir 24 stundas tos apskatīt. Izdzēsiet vai pievienojiet nosaukumam HOLD, un tie netiks ieslēgti.</p></details>
+    <details><summary>Vai ir līgums uz gadu?</summary><p>Nē. Mēneša maksu var atcelt jebkurā mēnesī. Iestatīšanas maksa ir vienreizēja, un uz to attiecas audita garantija.</p></details>
+    <details><summary>Ar ko tas atšķiras no Meta Advantage+?</summary><p>Advantage+ optimizē pēc Meta datiem un Meta mērķiem. Autopilots spriež pēc jūsu veikala reālajiem pasūtījumiem un jūsu noteikumiem: jūsu mērķa cenas par pasūtījumu, jūsu budžeta robežām un jūsu "nekad nedarīt" saraksta. Tie labi strādā kopā.</p></details>
+    <details><summary>Vai tas der Google reklāmām?</summary><p>Šobrīd Autopilots vada Meta (Facebook un Instagram) reklāmas. Google tēriņu varam iekļaut atskaitē, lai redzētu kopējo ROAS.</p></details>
+    <details><summary>Kas notiek ar maniem datiem?</summary><p>Mēs glabājam tikai reklāmu un pasūtījumu summas pa dienām un reklāmām. Klientu personas datus nelasām un neglabājam. Parakstām datu apstrādes līgumu (DPA) atbilstoši GDPR.</p></details>
+  </div>
+</section>
+
+<!-- FINAL CTA + FORM -->
+<section class="dark" id="pieteikties">
+  <div class="wrap final-grid">
+    <div>
+      <span class="eyebrow">Sāciet ar bezmaksas auditu</span>
+      <h2>Uzziniet, cik jūsu kontā aiziet reklāmām bez pārdošanas</h2>
+      <p class="muted">Aizpildiet formu. 1 darba dienas laikā sazināsimies, lai saņemtu piekļuvi lasīšanai, un 3 darba dienās atsūtīsim auditu. Ja tas jums neko jaunu nepasaka, mēs atvadāmies kā draugi.</p>
+      <ul class="next">
+        <li><span>1</span><div>Jūs aizpildāt formu (2 minūtes).</div></li>
+        <li><span>2</span><div>Mēs pārbaudām pēdējās 90 dienas jūsu kontā.</div></li>
+        <li><span>3</span><div>Jūs saņemat konkrētu summu un sarakstu ar reklāmām, kas tērēja bez pārdošanas.</div></li>
+        <li><span>4</span><div>Ja gribat, ieslēdzam Autopilotu. Ja ne, audits paliek jums.</div></li>
+      </ul>
+    </div>
+    <form class="form-card" name="audits" method="POST" action="/paldies.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="audits">
+      <p class="hp"><label>Neaizpildīt: <input name="bot-field"></label></p>
+      <h3 style="margin-bottom:4px">Bezmaksas konta audits</h3>
+      <p class="muted" style="font-size:14.5px;margin:0">Bez maksas un bez saistībām.</p>
+      <div class="form-row">
+        <div><label for="f-name">Vārds</label><input id="f-name" name="vards" autocomplete="name" required></div>
+        <div><label for="f-phone">Tālrunis</label><input id="f-phone" name="talrunis" type="tel" autocomplete="tel" inputmode="tel"></div>
+      </div>
+      <label for="f-email">E-pasts</label><input id="f-email" name="epasts" type="email" autocomplete="email" required>
+      <label for="f-site">Mājaslapa vai veikals</label><input id="f-site" name="majaslapa" inputmode="url" placeholder="piemers.lv" required>
+      <label for="f-spend">Meta reklāmu tēriņš mēnesī</label>
+      <select id="f-spend" name="teris" required>
+        <option value="">Izvēlieties</option>
+        <option>Līdz €1 000</option>
+        <option>€1 000 – €3 000</option>
+        <option>€3 000 – €10 000</option>
+        <option>€10 000 – €30 000</option>
+        <option>Virs €30 000</option>
+      </select>
+      <label for="f-note">Kas šobrīd traucē visvairāk? (nav obligāti)</label>
+      <textarea id="f-note" name="piezime" rows="3"></textarea>
+      <input type="hidden" name="utm" id="f-utm">
+      <button class="btn" type="submit">Saņemt bezmaksas auditu →</button>
+      <p class="under-cta" style="text-align:center">Jūsu dati tiek izmantoti tikai, lai sazinātos par auditu.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mārketinga Skola · Reklāmu Autopilots</span>
+    <span>Cenas norādītas bez PVN. Rezultāti atkarīgi no produkta, budžeta un tirgus.</span>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mcta"><a class="btn" href="#pieteikties">Bezmaksas konta audits →</a></div>
+
+<script>
+(function(){
+  // charts / reveal on scroll
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.2}) : null;
+  document.querySelectorAll('.reveal').forEach(function(el){ io ? io.observe(el) : el.classList.add('in'); });
+
+  // calculator
+  var s=document.getElementById('spend'), w=document.getElementById('waste');
+  function fmt(n){ return '€'+String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' '); }
+  function calc(){
+    var year = s.value*12*w.value/100;
+    document.getElementById('spendV').textContent=fmt(+s.value);
+    document.getElementById('wasteV').textContent=w.value+'%';
+    document.getElementById('yearV').textContent=fmt(year);
+    var cost=590+12*149, v=document.getElementById('verdict');
+    if(year/2 >= cost) v.textContent='Ja Autopilots atgūst tikai pusi no šīs summas, tas jau atmaksājas.';
+    else if(year >= cost) v.textContent='Autopilots atmaksājas, ja atgūst lielāko daļu no šīs summas, un vēl pirms jebkura pārdošanas pieauguma.';
+    else v.textContent='Ar šādu budžetu ietaupījums vien neatmaksā Autopilotu. Vērtība būs pārdošanas pieaugumā un jūsu laikā. Auditā pateiksim godīgi.';
+  }
+  s.addEventListener('input',calc); w.addEventListener('input',calc); calc();
+
+  // sticky mobile CTA after hero, hidden near the form
+  var m=document.getElementById('mcta'), form=document.getElementById('pieteikties');
+  function onScroll(){
+    var past = window.scrollY > 600, r=form.getBoundingClientRect(), near = r.top < window.innerHeight && r.bottom > 0;
+    m.classList.toggle('show', past && !near);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  // keep the ad source with the lead
+  try{ var u=document.getElementById('f-utm'); u.value = location.search.slice(1) || document.referrer || 'direct'; }catch(e){}
+})();
+</script>
+</body>
+</html>
